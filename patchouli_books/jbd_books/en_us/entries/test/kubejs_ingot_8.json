@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.lexicon.nickel_ingot.name",
+    "icon": "alltheores:nickel_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "alltheores:nickel_ingot"
+            },
+            "text": "patchouli.gui.lexicon.nickel_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.lexicon.nickel_ingot"
+        }
+    ]
+}
