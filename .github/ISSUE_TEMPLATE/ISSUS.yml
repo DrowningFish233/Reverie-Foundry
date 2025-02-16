@@ -1,0 +1,75 @@
+name: 整合包问题/反馈模板
+description: 提交与整合包相关的问题、建议或反馈
+title: "[问题类型]: "
+labels:
+  - 整合包
+  - 问题类型
+projects:
+  - Journey-of-Forging-Dreams/issus
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您抽出时间提供错误报告！请尽可能详细地描述您遇到的问题或建议，以便我们更好地了解和解决问题！
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: 须知
+      description: 是否已经检查过了此问题没有重复。
+      options:
+        - label: 确认
+          required: true
+
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 问题类型
+      description: 请选择您提交的问题类型。
+      options:
+        - 功能请求
+        - BUG
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 详细描述
+      description: 请详细描述您遇到的问题或建议，包括具体的操作步骤、期望结果和实际结果，最好请提供截图或视频。
+      placeholder: 例如：“我尝试了……，但出现了……，我期望的结果是……。”
+    validations:
+      required: true
+
+  - type: input
+    id: modpack-version
+    attributes:
+      label: 整合包版本
+      description: 您正在使用的整合包版本号。
+      placeholder: 例如：1.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: system-info
+    attributes:
+      label: 相关软件/系统信息
+      description: 请提供以下信息，以便我们更好地排查问题：
+        - 操作系统（如Windows 10、macOS Monterey等）
+        - 游戏版本（如Minecraft 1.17.1）
+        - 是否使用了其他模组或插件（如有，请列出）
+      placeholder: 例如：“操作系统：Windows 10；游戏版本：Minecraft 1.17.1；其他模组：无。”
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志文件
+      description: 请提供相关的日志文件内容。这将自动格式化为代码，无需使用反引号。
+      render: shell
+    validations:
+      required: true
