@@ -11,7 +11,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        感谢您抽出时间提供错误报告！请尽可能详细地描述您遇到的问题或建议，以便我们更好地了解和解决问题！
+        请尽可能简单的概括您遇到的问题或建议！（因为这是标题）
 
   - type: checkboxes
     id: code-of-conduct
@@ -23,6 +23,25 @@ body:
           required: true
 
 
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: 须知
+      description: 是正在使用最新版整合包。
+      options:
+        - label: 确认
+          required: true
+
+  - type: input
+    id: modpack-version
+    attributes:
+      label: 整合包版本
+      description: 您正在使用的整合包版本号。
+      placeholder: 例如：1.0.0
+    validations:
+      required: true
+
+
   - type: dropdown
     id: issue-type
     attributes:
@@ -31,6 +50,7 @@ body:
       options:
         - 功能请求
         - BUG
+        - 崩溃
         - 其他
     validations:
       required: true
@@ -44,20 +64,12 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: modpack-version
-    attributes:
-      label: 整合包版本
-      description: 您正在使用的整合包版本号。
-      placeholder: 例如：1.0.0
-    validations:
-      required: true
 
   - type: textarea
     id: logs
     attributes:
       label: 日志文件
-      description: 请提供相关的日志文件内容
+      description: 请提供相关的日志文件内容（若是以文件的形式上传到详细描述部分也是可以的）
       render: shell
     validations:
       required: true
