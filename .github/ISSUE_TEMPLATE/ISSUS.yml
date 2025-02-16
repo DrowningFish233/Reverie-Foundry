@@ -24,7 +24,7 @@ body:
 
 
   - type: checkboxes
-    id: code-of-conduct
+    id: code-of-conduct-1
     attributes:
       label: 须知
       description: 是正在使用最新版整合包。
