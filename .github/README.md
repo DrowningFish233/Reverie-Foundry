@@ -1,7 +1,5 @@
 # ⭐Journey of Forging Dreams⭐
 
-![Static Badge](https://img.shields.io/badge/Github-issus-yellow?logoSize=discord&link=https%3A%2F%2Fgithub.com%2FDrowningFish233%2FJourney-of-Forging-Dreams)
-
 🟢The storage location for the code related to the "Journey of Forging Dreams" modpack!
 ### 
 ![jofd](https://github.com/user-attachments/assets/f51cb945-73ca-4b5c-8284-c99db33a8514)
