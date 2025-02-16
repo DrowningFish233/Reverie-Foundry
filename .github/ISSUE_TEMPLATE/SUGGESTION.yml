@@ -1,0 +1,56 @@
+name: 建议功能
+description: 提交与整合包相关的新功能/特效的建议
+title: "[建议]: "
+labels:
+  - 整合包
+  - 建议类型
+projects:
+  - Journey-of-Forging-Dreams/suggestion
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请尽可能简单的概括您希望添加的建议！（因为这是标题）
+
+  - type: checkboxes
+    id: code-of-conduct
+    attributes:
+      label: 须知
+      description: 是否已经检查过了此建议没有重复。
+      options:
+        - label: 确认
+          required: true
+
+
+  - type: input
+    id: modpack-version
+    attributes:
+      label: 整合包版本
+      description: 您正在使用的整合包版本号。
+      placeholder: 例如：1.0.0
+    validations:
+      required: true
+
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: 建议类型
+      description: 请选择您提交的建议类型。
+      options:
+        - 旧有功能修改
+        - 新增物品或功能
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 详细描述
+      description: 请详细描述您希望在整合包内添加的功能或新物品。
+      placeholder: 例如：“效果名称：xxx; 效果功能：xxx;”
+    validations:
+      required: true
+
