@@ -40,7 +40,7 @@ body:
     attributes:
       label: 详细描述
       description: 请详细描述您遇到的问题或建议，包括具体的操作步骤、期望结果和实际结果，最好请提供截图或视频。
-      placeholder: 例如：“我尝试了……，但出现了……，我期望的结果是……。”
+      placeholder: 例如：“xxx物品出现了bug...并没有实现xxx功能”
     validations:
       required: true
 
@@ -54,22 +54,10 @@ body:
       required: true
 
   - type: textarea
-    id: system-info
-    attributes:
-      label: 相关软件/系统信息
-      description: 请提供以下信息，以便我们更好地排查问题：
-        - 操作系统（如Windows 10、macOS Monterey等）
-        - 游戏版本（如Minecraft 1.17.1）
-        - 是否使用了其他模组或插件（如有，请列出）
-      placeholder: 例如：“操作系统：Windows 10；游戏版本：Minecraft 1.17.1；其他模组：无。”
-    validations:
-      required: true
-
-  - type: textarea
     id: logs
     attributes:
       label: 日志文件
-      description: 请提供相关的日志文件内容。这将自动格式化为代码，无需使用反引号。
+      description: 请提供相关的日志文件内容
       render: shell
     validations:
       required: true
