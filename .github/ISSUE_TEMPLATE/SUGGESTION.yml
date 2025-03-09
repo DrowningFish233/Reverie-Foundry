@@ -1,4 +1,4 @@
-name: 建议功能
+name: 建议功能 (Suggestion feature)
 description: 提交与整合包相关的新功能/特效的建议
 title: "[建议]: "
 labels:
@@ -11,13 +11,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        请尽可能简单的概括您希望添加的建议！（因为这是标题）
+        请尽可能简单的概括您希望添加的建议！（Please describe your suggestion as simply as possible!）
 
   - type: checkboxes
     id: code-of-conduct
     attributes:
       label: 查重
-      description: 是否已经检查过了此建议没有重复。
+      description: 是否已经检查过了此建议没有重复。(Have you checked that this suggestion is not a duplicate?)
       options:
         - label: 确认
           required: true
@@ -27,7 +27,7 @@ body:
     id: modpack-version
     attributes:
       label: 整合包版本
-      description: 您正在使用的整合包版本号。
+      description: 您正在使用的整合包版本号。(The version number of the modpack you are using)
       placeholder: 例如：1.0.0
     validations:
       required: true
@@ -39,9 +39,9 @@ body:
       label: 建议类型
       description: 请选择您提交的建议类型。
       options:
-        - 旧有功能修改
-        - 新增物品或功能
-        - 其他
+        - 旧有功能修改 (Modification of existing features)
+        - 新增物品或功能 (Addition of new items or features)
+        - 其他 (other)
     validations:
       required: true
 
@@ -49,7 +49,7 @@ body:
     id: description
     attributes:
       label: 详细描述
-      description: 请详细描述您希望在整合包内添加的功能或新物品。
+      description: 请详细描述您希望在整合包内添加的功能或新物品。(Please provide a detailed description of the new features or items you would like to add to the modpack.)
       placeholder: 例如：“效果名称：xxx; 效果功能：xxx;”
     validations:
       required: true
