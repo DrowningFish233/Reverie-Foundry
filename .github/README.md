@@ -2,7 +2,8 @@
 
 🟢这里是存放<锻梦之旅>代码的地方
 ### 
-![jofd](https://github.com/user-attachments/assets/f51cb945-73ca-4b5c-8284-c99db33a8514)
+![jofd_2](https://github.com/user-attachments/assets/016b3649-79bc-4737-b64f-ba57b8fe755f)
+
 ### 
 🟢随着更新的进度，这个数字也会随之增加→ ```34%``` ←        
 ###               
