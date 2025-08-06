@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:animated_steel_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:animated_steel_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:animated_steel_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 20.0,
+      "armor_toughness": 10,
+      "armor/boots": 3.0,
+      "armor/chestplate": 7.0,
+      "armor/helmet": 4.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 25.0,
+      "attack_damage": 6.5,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 1.0,
+      "draw_speed": -0.3,
+      "durability": 825.0,
+      "enchantment_value": 4.0,
+      "harvest_speed": 10.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools",
+        "level_hint": "3",
+        "name": "diamond/钻石"
+      },
+      "magic_armor": 2.0,
+      "magic_damage": 1.0,
+      "ranged_damage": 1.6,
+      "rarity": 50.0,
+      "traits": []
+    }
+  }
+}

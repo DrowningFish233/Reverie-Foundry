@@ -1,0 +1,420 @@
+#Is talisman functionality enabled on server?
+[talismans]
+	Air_Talisman = true
+	Amethyst_Talisman = true
+	Apple_Talisman = true
+	Architect_Talisman = true
+	Arctic_Talisman = true
+	Battle_Talisman = true
+	Blaze_Talisman = true
+	Blinded_Talisman = true
+	Cactus_Talisman = true
+	Copper_Talisman = true
+	Creeper_Talisman = false
+	Day_Talisman = true
+	Diamond_Talisman = true
+	Dragon_Talisman = true
+	Earth_Talisman = true
+	Emerald_Talisman = true
+	Enchanting_Talisman = true
+	Enderman_Talisman = true
+	Fatigued_Talisman = true
+	Fire_Talisman = true
+	Fired_Talisman = true
+	Full_Moon_Talisman = true
+	Ghast_Talisman = true
+	Glowstone_Talisman = true
+	Gold_Talisman = true
+	Iron_Golem_Talisman = true
+	Iron_Talisman = true
+	Lapis_Talisman = true
+	Librarian_Talisman = true
+	Mooshroom_Talisman = true
+	Nauseated_Talisman = true
+	Nether_Star_Talisman = true
+	Night_Talisman = true
+	Obsidian_Talisman = true
+	Pickaxe_Talisman = true
+	Poisoned_Talisman = true
+	Rain_Talisman = true
+	Redstone_Talisman = true
+	Shulker_Talisman = true
+	Skeleton_Talisman = true
+	Slowed_Talisman = true
+	Snowy_Talisman = true
+	Spectral_Talisman = true
+	Storm_Talisman = true
+	Sun_Talisman = true
+	Thorny_Talisman = true
+	True_Sun_Talisman = true
+	Undying_Talisman = true
+	Vampiric_Talisman = true
+	Vindicator_Talisman = true
+	Void_Talisman = true
+	Water_Talisman = true
+	Weakened_Talisman = true
+	Witch_Talisman = true
+	Wither_Talisman = true
+	Withered_Talisman = true
+	Zombie_Talisman = true
+
+#Is soul functionality enabled on server?
+[souls]
+	Soul_Of_Colossus = true
+	Soul_Of_Flight_Mastery = true
+	Soul_Of_Supersonic = true
+
+[apple_talisman]
+	#How much additional health should the player receive?  Value is added to 1f and then multiplied by the heal amount
+	#Default is 0.25 for a 1.25f or 125% heal factor
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	apple_talisman_heal_factor = 0.25
+
+[architect_talisman]
+	#How much additional reach should the player have?  Value is added to base 5
+	#Default is 59 for a 64 block reach
+	# Default: 59
+	# Range: 0 ~ 59
+	architect_talisman_reach_distance = 59
+
+[battle_talisman]
+	#How long should the player be invincible after taking damage in ticks?
+	#Default is 5 for a 5 tick invincibility after taking damage
+	# Default: 5
+	# Range: 0 ~ 200
+	battle_talisman_invincibility_frames = 5
+
+[blaze_talisman]
+	#What radius should the talisman ignite hostiles from the player?
+	#Default is 4
+	# Default: 4
+	# Range: 0 ~ 16
+	blaze_talisman_burn_range = 4
+	#How long should the hostile entity be ignited for in seconds?
+	#Default is 3 for a 60 tick ignition
+	# Default: 3
+	# Range: 0 ~ 30
+	blaze_talisman_burn_duration = 3
+
+[blinded_talisman]
+	#How much additional damage should the player do while blinded?  Value is added to 1f and then multiplied by the damage amount
+	#Default is 0.25 for a 1.25f or 125% damage increase
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	blinded_talisman_damage_factor = 0.25
+
+[cactus_talisman]
+	#How much damage should be reflected back towards the attacker?  Value is multiplied by the damage received and then applied back to the attacker
+	#Default is 0.25 for a 25% damage reflection
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	cactus_talisman_reflected_damage = 0.25
+
+[copper_talisman]
+	#Area in block radius to attract items. Value is the radius around the talisman.
+	#Default is 10.
+	# Default: 10
+	# Range: 0 ~ 32
+	copper_talisman_area = 10
+	#Area in block radius around the player. Value determines the effective range.
+	#Default is 15.
+	# Default: 15
+	# Range: 0 ~ 64
+	copper_talisman_player_area = 15
+	#Speed multiplier for items moving towards the player based on distance.
+	#Default is 1.5, which is multiplied by the distance.
+	# Default: 1.5
+	# Range: 0.1 ~ 3.0
+	copper_talisman_drop_speed = 1.5
+	#Distance at which items are automatically picked up.
+	#Default is 1.5.
+	# Default: 1.5
+	# Range: 0.5 ~ 5.0
+	copper_talisman_distance_to_pickup = 1.5
+
+[creeper_talisman]
+	#Blast radius for the creeper explosion effect.
+	#Default is 4.
+	# Default: 4
+	# Range: 1 ~ 16
+	creeper_talisman_blast_radius = 1
+
+[day_talisman]
+	#Additional damage multiplier during daytime.
+	#Default is 0.05.
+	# Default: 0.05
+	# Range: 0.0 ~ 5.0
+	day_talisman_additional_damage = 0.05
+
+[diamond_talisman]
+	#Damage reduction percentage. Value is subtracted from 1f then multiplied by the incoming damage.
+	#Default is 0.2 for 20% damage reduction.
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	diamond_talisman_damage_reduction = 0.2
+
+[emerald_talisman]
+	#Increased damage to Illagers. Value is added to 1f and then multiplied by the damage amount.
+	#Default is 1.0 for 200% damage.
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	emerald_talisman_increased_illager_damage = 1.0
+
+[fatigued_talisman]
+	#Increased damage when fatigued. Value is added to 1f and then multiplied by the damage amount.
+	#Default is 0.25 for 125% damage.
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	fatigued_talisman_increased_damage = 0.25
+
+[fired_talisman]
+	#Increased damage when on fire. Value is added to 1f and then multiplied by the damage amount.
+	#Default is 0.25 for 125% damage.
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	fired_talisman_increased_damage = 0.25
+
+[full_moon_talisman]
+	#Increased damage during a full moon. Value is added to 1f and then multiplied by the damage amount.
+	#Default is 0.15 for 115% damage.
+	# Default: 0.15
+	# Range: 0.0 ~ 5.0
+	full_moon_talisman_increased_damage = 0.15
+
+[ghast_talisman]
+	#Radius in blocks to apply weakness effect.
+	#Default is 3.
+	# Default: 3
+	# Range: 0 ~ 15
+	ghast_talisman_radius = 3
+	#Duration of weakness effect in ticks.
+	#Default is 40 ticks.
+	# Default: 40
+	# Range: 0 ~ 200
+	ghast_talisman_effect_duration = 40
+
+[glowstone_talisman]
+	#Radius in blocks to apply glowing effect.
+	#Default is 12.
+	# Default: 12
+	# Range: 0 ~ 16
+	glowstone_talisman_radius = 12
+	#Duration of glowing effect in ticks.
+	#Default is 2 ticks.
+	# Default: 2
+	# Range: 0 ~ 200
+	glowstone_talisman_effect_duration = 2
+
+[iron_golem_talisman]
+	#Health boost multiplier. Value is multiplied by the base health and then added to the base health.
+	#Default is 2.0 for 300% health.
+	# Default: 2.0
+	# Range: 0.0 ~ 10.0
+	iron_golem_talisman_health_boost_multiplier = 2.0
+
+[iron_talisman]
+	#Damage reduction. Value is subtracted from 1f and multiplied to incoming damage.  This should be less than Diamond Talisman as it's used in that recipe.
+	#Default is 0.05 for 5% damage reduction.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	iron_talisman_damage_reduction = 0.05
+
+[lapis_talisman]
+	#Speed of XP orb pickup. Multiplied by distance from player.
+	#Default is 1.0.
+	# Default: 1.0
+	# Range: 0.1 ~ 3.0
+	lapis_talisman_xp_speed = 1.0
+	#Range of XP orb pickup radius in blocks.
+	#Default is 12.
+	# Default: 12
+	# Range: 0 ~ 16
+	lapis_talisman_xp_pickup_range = 12
+
+[mooshroom_talisman]
+	#Heal factor while standing on mycelium. Value is added to 1f and multiplied by the heal amount.
+	#Default is 0.02 for 102% heal.
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	mooshroom_talisman_heal_factor = 0.02
+
+[nauseated_talisman]
+	#Increased damage when under nausea effect. Value is added to 1f and multiplied by the damage amount.
+	#Default is 0.25 for 125% damage.
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	nauseated_talisman_increased_damage = 0.25
+
+[nether_star_talisman]
+	#Critical hit multiplier. Value is added to 1f for critical damage.
+	#Default is 0.5 for 150% critical damage.
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	nether_star_talisman_crit_multiplier = 0.5
+
+[night_talisman]
+	#Increased armor at night. Value multiplied by current armor then added to armor count.
+	#Default is 0.10 for 110% armor.
+	# Default: 0.1
+	# Range: 0.0 ~ 5.0
+	night_talisman_increased_armor = 0.1
+
+[pickaxe_talisman]
+	#Mining speed multiplier. Value is multiplied with the base mining speed.
+	#Default is 2.0.
+	# Default: 2.0
+	# Range: 0.0 ~ 5.0
+	pickaxe_talisman_mining_speed_multiplier = 2.0
+
+[poisoned_talisman]
+	#Increased damage when poisoned. Value is added to 1f and multiplied by the damage amount.
+	#Default is 0.25 for 125% damage.
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	poisoned_talisman_increased_damage = 0.25
+
+[rain_talisman]
+	#Increased movement speed while raining. Value is added to 1f and multiplied by the movement speed.
+	#Default is 0.5 for 150% speed.
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	rain_talisman_increased_speed = 0.5
+
+[redstone_talisman]
+	#Armor repair duration in milliseconds. Value is added to a random integer between 0 and 2500 milliseconds.
+	#Default is 5000 milliseconds (5 seconds)
+	# Default: 5000
+	# Range: 0 ~ 100000
+	redstone_talisman_armor_repair_duration = 5000
+
+[skeleton_talisman]
+	#Increased arrow damage. Value is added to 1f and multiplied by the damage amount.
+	#Default is 0.5 for 150% damage.
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	skeleton_talisman_increased_arrow_damage = 0.5
+
+[slowed_talisman]
+	#Increased damage when slowed. Value is added to 1f and multiplied by the damage amount.
+	#Default is 0.25 for 125% damage.
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	slowed_talisman_increased_damage = 0.25
+
+[snowy_talisman]
+	#Increased damage in snowing biomes. Value is added to 1f and multiplied by the damage amount.
+	#Default is 0.2 for 120% damage.
+	# Default: 0.2
+	# Range: 0.0 ~ 5.0
+	snowy_talisman_increased_damage = 0.2
+
+[storm_talisman]
+	#Increased damage during storms. Value is added to 1f and multiplied by the damage amount.
+	#Default is 0.15 for 115% damage.
+	# Default: 0.15
+	# Range: 0.0 ~ 5.0
+	storm_talisman_increased_damage = 0.15
+
+[sun_talisman]
+	#Increased damage when sunny. Value is added to 1f and multiplied by the damage amount.
+	#Default is 0.05 for 105% damage.
+	# Default: 0.05
+	# Range: 0.0 ~ 5.0
+	sun_talisman_increased_damage = 0.05
+
+[true_sun_talisman]
+	#Increased damage when sunny and exposed to the sky. Value is added to 1f and multiplied by the damage amount.
+	#Default is 0.05 for 105% damage.
+	# Default: 0.05
+	# Range: 0.0 ~ 5.0
+	true_sun_talisman_increased_damage = 0.05
+
+[undying_talisman]
+	#Undying cooldown in milliseconds.
+	#Default is 24000 milliseconds.
+	# Default: 24000
+	# Range: 0 ~ 100000
+	undying_talisman_cooldown = 24000
+	#Distance teleported backwards in blocks.
+	#Default is 10 blocks.
+	# Default: 10
+	# Range: 0 ~ 16
+	undying_talisman_teleport_distance = 10
+
+[vampiric_talisman]
+	#Heal factor from damage dealt. Value is multiplied by the damage dealt.
+	#Default is 0.2 for 20% healing.
+	# Default: 0.2
+	# Range: 0.0 ~ 5.0
+	vampiric_talisman_heal_factor = 0.2
+
+[vindicator_talisman]
+	#Boost cooldown in ticks.
+	#Default is 600 ticks.
+	# Default: 600
+	# Range: 0 ~ 5000
+	vindicator_talisman_boost_cooldown = 600
+	#Boost damage modifier. Added to 1f and multiplied by base damage.
+	#Default is 0.5 for 150% damage.
+	# Default: 0.5
+	# Range: 0.0 ~ 5.0
+	vindicator_talisman_boost_damage_modifier = 0.5
+	#Weapon swap time in ticks.
+	#Default is 60 ticks.
+	# Default: 60
+	# Range: 0 ~ 5000
+	vindicator_talisman_weapon_swap_time = 60
+
+[weakened_talisman]
+	#Increased damage when under weakness effect. Value added to 1f and multiplied by damage.
+	#Default is 0.25 for 125% damage.
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	weakened_talisman_increased_damage = 0.25
+
+[withered_talisman]
+	#Increased damage when under wither effect. Value added to 1f and multiplied by damage.
+	#Default is 0.25 for 125% damage.
+	# Default: 0.25
+	# Range: 0.0 ~ 5.0
+	withered_talisman_increased_damage = 0.25
+
+[zombie_talisman]
+	#Attack speed boost.
+	#Default is 5.5.
+	# Default: 5.5
+	# Range: 0.0 ~ 10.0
+	zombie_talisman_attack_speed_boost = 5.5
+	#Max attacks before speed boost wears off.
+	#Default is 3.
+	# Default: 3
+	# Range: 0 ~ 10
+	zombie_talisman_max_attacks = 3
+	#Cooldown period in ticks.
+	#Default is 5000 ticks.
+	# Default: 5000
+	# Range: 0 ~ 100000
+	zombie_talisman_cooldown_period = 5000
+
+[soul_of_supersonic]
+	#Walk speed multiplier. Multiplied to current walk speed and added to total.
+	#Default is 1.75.
+	# Default: 1.75
+	# Range: 0.0 ~ 5.0
+	soul_of_supersonic_walk_speed_multiplier = 1.75
+	#Fly speed multiplier. Multiplied to current fly speed and added to total.
+	#Default is 2.5.
+	# Default: 2.5
+	# Range: 0.0 ~ 5.0
+	soul_of_supersonic_fly_speed_multiplier = 2.5
+
+[soul_of_colossus]
+	#Health multiplier. Multiplied by base health and added to base health.
+	#Default is 4.0.
+	# Default: 4.0
+	# Range: 0.0 ~ 10.0
+	soul_of_colossus_health_multiplier = 4.0
+	#Remove negative effects.
+	#Default is true.
+	soul_of_colossus_remove_negative_effects = true

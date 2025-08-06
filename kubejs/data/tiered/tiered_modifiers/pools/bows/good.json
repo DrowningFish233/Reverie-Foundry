@@ -1,0 +1,18 @@
+{
+  "weight": 2,
+  "verifiers": [
+    {
+      "tag": "c:tools/bow"
+    }
+  ],
+  "tiers": [
+    "tiered:bows/kubejs_bow_1",
+    "tiered:bows/kubejs_bow_3",
+    "tiered:bows/kubejs_bow_7",
+    "tiered:bows/kubejs_bow_8",
+    "tiered:bows/kubejs_bow_9",
+    "tiered:bows/kubejs_bow_10",
+    "tiered:bows/kubejs_bow_11",
+    "tiered:bows/kubejs_bow_12"
+  ]
+}

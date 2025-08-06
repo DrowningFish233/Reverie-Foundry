@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.twilightforest.knightmetal_ingot.name",
+    "icon": "twilightforest:knightmetal_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "twilightforest:knightmetal_ingot"
+            },
+            "text": "patchouli.gui.twilightforest.knightmetal_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.twilightforest.knightmetal_ingot"
+        }
+    ]
+}

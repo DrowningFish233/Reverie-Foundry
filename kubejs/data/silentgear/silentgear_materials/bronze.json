@@ -1,0 +1,114 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/bronze"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/bronze"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFD6903B",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.bronze"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 15.0,
+      "armor/boots": 2.0,
+      "armor/chestplate": 6.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 13.0,
+      "armor_toughness": 1.0,
+      "attack_damage": 2.5,
+      "attack_speed": 0.2,
+      "charging_value": 1.1,
+      "draw_speed": -0.2,
+      "durability": 300.0,
+      "enchantment_value": 12.0,
+      "harvest_speed": 6.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_bronze_tools",
+        "level_hint": "2",
+        "name": "bronze"
+      },
+      "magic_armor": 6.0,
+      "magic_damage": 1.0,
+      "ranged_damage": 2.0,
+      "rarity": 15.0,
+      "repair_value": 0.15,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:sharp"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "armor_durability": {
+        "operation": "ADD",
+        "value": 2.0
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.75
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.1
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 96.0
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 0.75
+      },
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_bronze_tools",
+        "level_hint": "2",
+        "name": "bronze"
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 6.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

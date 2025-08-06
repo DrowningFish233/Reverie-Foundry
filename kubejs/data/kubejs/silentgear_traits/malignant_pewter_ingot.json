@@ -1,0 +1,107 @@
+{
+    "conditions": [
+        {
+            "type": "silentgear:or",
+            "values": [
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:armor"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:tool"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:curio"
+                }
+            ]
+        }
+    ],
+    "description": {
+        "translate": "trait.silentgear.malignant_pewter_ingot.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:attribute",
+            "attribute_modifiers": {
+                "all/any": [
+                    {
+                        "attribute": "malum:scythe_proficiency",
+                        "operation": "add_multiplied_base",
+                        "values": [
+                            0.35
+                        ]
+                    },
+                    {
+                        "attribute": "malum:soul_ward_capacity",
+                        "operation": "add_value",
+                        "values": [
+                            20.0
+                        ]
+                    },
+                    {
+                        "attribute": "malum:soul_ward_recovery_rate",
+                        "operation": "add_multiplied_base",
+                        "values": [
+                            0.25
+                        ]
+                    },
+                    {
+                        "attribute": "malum:soul_ward_integrity",
+                        "operation": "add_multiplied_base",
+                        "values": [
+                            0.20
+                        ]
+                    },
+                    {
+                        "attribute": "malum:arcane_resonance",
+                        "operation": "add_multiplied_base",
+                        "values": [
+                            0.25
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "silentgear:wielder_effect",
+            "potion_effects": {
+                "silentgear:armor": [
+                    {
+                        "effect": "kubejs:malignant_pewter_ingot",
+                        "type": "full_set_only",
+                        "duration": 38,
+                        "levels": [
+                            1
+                        ]
+                    }
+                ],
+                "silentgear:tool": [
+                    {
+                        "effect": "kubejs:malignant_pewter_ingot",
+                        "type": "trait_level",
+                        "duration": 38,
+                        "levels": [
+                            1
+                        ]
+                    }
+                ],
+                "silentgear:curio": [
+                    {
+                        "effect": "kubejs:malignant_pewter_ingot",
+                        "type": "trait_level",
+                        "duration": 38,
+                        "levels": [
+                            1
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "max_level": 1,
+    "name": {
+        "translate": "trait.silentgear.malignant_pewter_ingot"
+    }
+}

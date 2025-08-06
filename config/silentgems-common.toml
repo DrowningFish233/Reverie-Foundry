@@ -1,0 +1,11 @@
+[glowrose]
+	#The light level of free-standing glowroses.
+	#Existing glowroses may not update until broken and replaced.
+	# Default: 10
+	# Range: 0 ~ 15
+	normalLight = 10
+	#The light level of glowroses planted in vanilla flower pots.
+	#Existing blocks may not update until broken and replaced.
+	# Default: 15
+	# Range: 0 ~ 15
+	pottedLight = 15

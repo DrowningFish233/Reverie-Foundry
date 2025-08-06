@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.lead_rod.name",
+    "icon": "kubejs:lead_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:lead_rod"
+            },
+            "text": "patchouli.gui.kubejs.lead_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.lead_rod"
+        }
+    ]
+}

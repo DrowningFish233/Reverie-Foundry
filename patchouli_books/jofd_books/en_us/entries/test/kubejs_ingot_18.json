@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.aluminum_ingot.name",
+    "icon": "kubejs:aluminum_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:aluminum_ingot"
+            },
+            "text": "patchouli.gui.kubejs.aluminum_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.aluminum_ingot"
+        }
+    ]
+}

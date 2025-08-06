@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.rhodium_ingot.name",
+    "icon": "kubejs:rhodium_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:rhodium_ingot"
+            },
+            "text": "patchouli.gui.kubejs.rhodium_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.rhodium_ingot"
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/invar"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/invar"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFC2CBB8",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.invar"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 18.0,
+      "armor/boots": 2.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 20.0,
+      "armor_toughness": 2.0,
+      "attack_damage": 3.5,
+      "attack_speed": 0.0,
+      "charging_value": 1.2,
+      "draw_speed": 0.0,
+      "durability": 640.0,
+      "enchantment_value": 13.0,
+      "harvest_speed": 7.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 6.0,
+      "magic_damage": 3.0,
+      "ranged_damage": 2.0,
+      "rarity": 50.0,
+      "repair_value": 0.15,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.35
+                }
+              ]
+            }
+          ],
+          "level": 2,
+          "trait": "silentgear:adamant"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1
+      },
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.3
+      },
+      "rarity": 50.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

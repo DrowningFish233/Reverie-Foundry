@@ -1,0 +1,30 @@
+#Mod functionality enabled.
+modEnabled = true
+#Keep player experience after death.
+keepExperience = true
+#Keep player score after death.
+keepScore = true
+#Keep player hunger after death.
+keepHunger = true
+#Keep player saturation after death.
+keepSaturation = true
+#Keep player potion effects after death.
+keepPotionEffects = false
+#Damage player's items durability after death.
+applyDurabilityPenalty = true
+#Keep all slots without clarifying like vanilla rule.
+keepAllSlots = false
+#A comma-separated list of slot IDs to keep inventory, using strict format. Example: '0,1,2,36,37'
+keepedSlots = "0,1,2,3,4,5,6,7,8,36,37,38,39,40"
+#A comma-separated list of item IDs to keep after death, using strict format. Example: 'minecraft:torch,minecraft:arrow'
+keepedItems = "minecraft:torch,minecraft:arrow"
+#Modifier that would be multiplied by your previous experience amount. Enabled keep experience required.
+keepedExperienceModifier = 0.5
+#Modifier that would be multiplied by your previous hunger amount. Enabled keep hunger required.
+keepedHungerModifier = 0.7
+#Minimal value of hunger after your death, to prevent spawn with empty hunger bar.
+keepedHungerMinLimit = 10
+#Modifier that would be multiplied by your previous saturation amount. Enabled keep saturation required.
+keepedSaturationModifier = 0.7
+#A modifier applied to an item's durability if the item is saved, when possible.
+durabilityModifier = 0.90

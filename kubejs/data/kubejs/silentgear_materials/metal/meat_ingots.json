@@ -1,0 +1,59 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:meat_ingots"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:meat_ingots"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:meat_ingots"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 8.0,
+      "armor_toughness": 4,
+      "armor/boots": 1.0,
+      "armor/chestplate": 3.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 1.0,
+      "armor_durability": 16.0,
+      "attack_damage": 2.5,
+      "attack_speed": 0.1,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 0.8,
+      "durability": 380.0,
+      "enchantment_value": 12.0,
+      "harvest_speed": 4.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",
+        "level_hint": "1",
+        "name": "stone/石"
+      },
+      "magic_armor": 8.0,
+      "magic_damage": 2.0,
+      "projectile_accuracy": 1.1,
+      "projectile_speed": 1.2,
+      "ranged_damage": 1.0,
+      "rarity": 35.0,
+      "traits": []
+    }
+  }
+}

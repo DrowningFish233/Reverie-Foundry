@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.cobalt_rod.name",
+    "icon": "kubejs:cobalt_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:cobalt_rod"
+            },
+            "text": "patchouli.gui.kubejs.cobalt_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.cobalt_rod"
+        }
+    ]
+}

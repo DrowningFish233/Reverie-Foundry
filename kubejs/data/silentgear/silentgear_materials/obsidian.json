@@ -1,0 +1,84 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "rock",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:obsidians"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF443464",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.obsidian"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 20.0,
+      "armor/boots": 3.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 13.0,
+      "armor_toughness": 4.0,
+      "attack_damage": 3.0,
+      "attack_speed": -0.4,
+      "charging_value": 0.6,
+      "draw_speed": -0.4,
+      "durability": 1024.0,
+      "enchantment_value": 7.0,
+      "harvest_speed": 6.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_obsidian_tools",
+        "level_hint": "1",
+        "name": "obsidian"
+      },
+      "magic_armor": 8.0,
+      "magic_damage": 2.0,
+      "projectile_accuracy": 0.7,
+      "projectile_speed": 0.7,
+      "ranged_damage": 0.0,
+      "rarity": 10.0,
+      "repair_value": -0.25,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:jagged"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:crushing"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": -0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:chipping"
+        }
+      ]
+    }
+  }
+}

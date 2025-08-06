@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.zinc_ingot.name",
+    "icon": "kubejs:zinc_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:zinc_ingot"
+            },
+            "text": "patchouli.gui.kubejs.zinc_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.zinc_ingot"
+        }
+    ]
+}

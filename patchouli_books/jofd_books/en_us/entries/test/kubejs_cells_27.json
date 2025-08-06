@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.lapis_cell.name",
+    "icon": "kubejs:lapis_cell",
+    "category": "patchouli:kubejs_cells",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:lapis_cell"
+            },
+            "text": "patchouli.gui.kubejs.lapis_cell.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.lapis_cell"
+        }
+    ]
+}

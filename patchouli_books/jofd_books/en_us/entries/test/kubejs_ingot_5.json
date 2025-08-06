@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.minecraft.gold_ingot.name",
+    "icon": "minecraft:gold_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "minecraft:gold_ingot"
+            },
+            "text": "patchouli.gui.minecraft.gold_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.minecraft.gold_ingot"
+        }
+    ]
+}

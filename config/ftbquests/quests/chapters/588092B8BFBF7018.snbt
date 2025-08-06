@@ -1,0 +1,49 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "588092B8BFBF7018"
+	group: ""
+	id: "588092B8BFBF7018"
+	images: [
+		{
+			height: 6.0d
+			image: "kubejs:textures/gui/sms2.png"
+			order: 254
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			height: 5.0d
+			image: "kubejs:textures/gui/sms3.png"
+			order: 255
+			rotation: 0.0d
+			width: 6.0d
+			x: -3.440476190476197d
+			y: 5.595238095238095d
+		}
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: -3.0d
+			y: 5.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		icon: {
+			id: "productivelib:upgrade_simulator"
+		}
+		id: "156C1BF5B0ED7E84"
+		tasks: [{
+			id: "3B98C17B9E9550C9"
+			type: "checkmark"
+		}]
+		x: -3.5d
+		y: 5.5d
+	}]
+}

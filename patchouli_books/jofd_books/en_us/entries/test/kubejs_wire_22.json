@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.nickel_wire.name",
+    "icon": "kubejs:nickel_wire",
+    "category": "patchouli:kubejs_wire",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:nickel_wire"
+            },
+            "text": "patchouli.gui.kubejs.nickel_wire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.nickel_wire"
+        }
+    ]
+}

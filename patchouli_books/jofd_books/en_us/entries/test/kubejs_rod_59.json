@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.frigidite_rod.name",
+    "icon": "kubejs:frigidite_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:frigidite_rod"
+            },
+            "text": "patchouli.gui.kubejs.frigidite_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.frigidite_rod"
+        }
+    ]
+}

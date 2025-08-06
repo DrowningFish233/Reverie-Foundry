@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.titanium_wire.name",
+    "icon": "kubejs:titanium_wire",
+    "category": "patchouli:kubejs_wire",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:titanium_wire"
+            },
+            "text": "patchouli.gui.kubejs.titanium_wire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.titanium_wire"
+        }
+    ]
+}

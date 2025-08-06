@@ -1,0 +1,17 @@
+[General]
+	#
+	############################################
+	#Enable this stop getting OpenGL messages
+	#Useful for when you're constantly getting spammed with them
+	#-------------------------------------------
+	#Default: false
+	#-------------------------------------------
+	"Boolean: Disable OpenGL Logging" = false
+	#
+	############################################
+	#Enable this to see debug messages
+	#-------------------------------------------
+	#Default: false
+	#-------------------------------------------
+	"Boolean: Debug" = false
+

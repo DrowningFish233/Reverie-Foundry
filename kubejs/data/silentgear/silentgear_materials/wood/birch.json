@@ -1,0 +1,22 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:wood",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:birch_planks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFD7C185",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.wood.birch"
+    },
+    "name_prefix": ""
+  },
+  "properties": {}
+}

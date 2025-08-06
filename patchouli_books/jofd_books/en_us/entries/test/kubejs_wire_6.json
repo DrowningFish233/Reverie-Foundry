@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.brass_wire.name",
+    "icon": "kubejs:brass_wire",
+    "category": "patchouli:kubejs_wire",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:brass_wire"
+            },
+            "text": "patchouli.gui.kubejs.brass_wire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.brass_wire"
+        }
+    ]
+}

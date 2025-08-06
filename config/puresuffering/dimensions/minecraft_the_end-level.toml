@@ -1,0 +1,33 @@
+#How often should Fixed Invasions occur.
+# Default: 8
+# Range: > 1
+fixedInvasionRarity = 8
+#Determines if fixed invasions can be canceled.
+cancelableFixedInvasions = true
+#How often should fixed invasions be canceled.
+#NOTE: An invasion is canceled once in every 'value' fixed invasions.
+#NOTE: If an invasion is set to be cancel on the same cycle as a hyper/nightmare invasion, it will not be cancled.
+# Default: 32
+# Range: > 1
+fixedCancelInvasionRarity = 32
+#Max Fixed Invasions that can occur at once.
+# Default: 3
+# Range: > 1
+maxFixedInvasions = 3
+#How many days should pass when the Fixed Invasion Tier increases.
+# Default: 40
+# Range: > 0
+fixedTierIncreaseDelay = 40
+#How often should Hyper Invasions occur.
+#NOTE: Changes will only take effect after the next Hyper invasion occurs or a new world is started.
+# Default: 10
+# Range: > 1
+hyperInvasionRarity = 10
+#How often should Nightmare Invasions occur.
+#NOTE: Changes will only take effect after the next Nightmare invasion occurs or a new world is started.
+# Default: 4
+# Range: > 1
+nightmareInvasionRarity = 4
+#Sets the light level to zero during invasions in this dimension.
+#NOTE: Does not affect brightness.
+zeroLightLevelDuringInvasions = false

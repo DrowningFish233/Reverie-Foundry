@@ -1,0 +1,22 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:terracotta",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:magenta_terracotta"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF95576C",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.terracotta.magenta"
+    },
+    "name_prefix": ""
+  },
+  "properties": {}
+}

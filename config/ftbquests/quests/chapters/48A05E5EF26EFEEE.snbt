@@ -1,0 +1,225 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "48A05E5EF26EFEEE"
+	group: ""
+	icon: {
+		id: "minecraft:cooked_cod"
+	}
+	id: "48A05E5EF26EFEEE"
+	images: [{
+		alpha: 150
+		height: 5.0d
+		image: "minecraft:item/cooked_cod"
+		rotation: 0.0d
+		width: 5.0d
+		x: -0.5d
+		y: -1.5d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "aquaculture:atlantic_cod"
+			}
+			id: "017488D14BA19FAA"
+			rewards: [{
+				auto: "enabled"
+				disable_reward_screen_blur: true
+				id: "599DC0AB46A0F1B6"
+				ignore_reward_blocking: true
+				item: {
+					components: {
+						"patchouli:book": "patchouli:jofd_books"
+					}
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "358BFE80F8E286BB"
+					type: "checkmark"
+				}
+				{
+					disable_toast: true
+					id: "1750046D8FF6E1D6"
+					stat: "minecraft:total_world_time"
+					type: "stat"
+					value: 500
+				}
+			]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "0CCFA64CA88D2D22"
+			tasks: [{
+				id: "6C74D4BF477D8F99"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "235321663034A6FB"
+			rewards: [{
+				id: "4396AB110ECB4C9D"
+				item: {
+					count: 1
+					id: "waystones:waystone"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4E672C9A0EFF1047"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "075AC794CF9E3665"
+			tasks: [{
+				id: "46012C86914DC29F"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "17DE5C30E0CA8765"
+			tasks: [{
+				id: "45BDFA326BB0A8FD"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "3C4F9B874C336EB6"
+			tasks: [{
+				id: "308969B113784A45"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "1AC360E218A91528"
+			tasks: [{
+				id: "5D2CDDF6BB5E3C97"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "7FFEDC8A8DA45A2F"
+			tasks: [{
+				id: "5E61C66706DB394E"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "3A5DD56949CF4827"
+			tasks: [{
+				id: "2953AA70E267ADF7"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			id: "0594FF6909227B41"
+			ignore_reward_blocking: true
+			rewards: [
+				{
+					id: "0CAEEF90E1800338"
+					item: {
+						components: {
+							"eccentrictome:mod_list": {
+								iceandfire: [{
+									components: {
+										"patchouli:book": "iceandfire:iceandfire"
+									}
+									count: 1
+									id: "patchouli:guide_book"
+								}]
+								irons_spellbooks: [{
+									components: {
+										"patchouli:book": "irons_spellbooks:iss_guide_book"
+									}
+									count: 1
+									id: "patchouli:guide_book"
+								}]
+								patchouli: [{
+									components: {
+										"patchouli:book": "patchouli:jofd_books"
+									}
+									count: 1
+									id: "patchouli:guide_book"
+								}]
+								productivemetalworks: [{
+									components: {
+										"patchouli:book": "productivemetalworks:guide"
+									}
+									count: 1
+									id: "patchouli:guide_book"
+								}]
+							}
+						}
+						count: 1
+						id: "eccentrictome:tome"
+					}
+					type: "item"
+				}
+				{
+					id: "090E54040286E6F8"
+					item: {
+						count: 1
+						id: "malum:encyclopedia_arcana"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5A0F513FCD1F0C69"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			id: "13AFD3688361872A"
+			tasks: [{
+				id: "4CB25FFD3173ADD6"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			id: "08E8BFF0167D55FD"
+			tasks: [{
+				id: "74F32723CAE1E025"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+	]
+}

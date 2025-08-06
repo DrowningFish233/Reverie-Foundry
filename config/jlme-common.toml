@@ -1,0 +1,92 @@
+[Parry]
+	#Chance of blocking an attack 0.15 at default.
+	Chance = 0.15
+
+[Evasive]
+	Chance = 0.25
+
+[Lifesteal]
+	#Percentage of damage healed per level.
+	Percentage = 0.1
+
+[Purge]
+	#Chance per level
+	Chance = 0.1
+
+["Ash Destroyer"]
+	#Percentage of damage per level
+	"Damage Increase" = 0.2
+
+[Viper]
+	#Base damage bonus for poisoned enemies, doesnt scale with levels
+	"Poisoned base damage" = 2.25
+	#Damage bonus per level to poisoned enemies
+	"Poisoned bonus damage" = 0.75
+	#Base damage bonus for withered enemies, doesnt scale with levels
+	"Withered base damage" = 1.5
+	#Damage bonus per level to withered enemies
+	"Withered bonus damage" = 0.5
+
+["Swifter Slashes"]
+	#Chance to ignore iframes per level
+	Chance = 0.02
+
+[Adept]
+	#Percentual increase in experience per level
+	"Percentual increase" = 0.5
+
+["Piercing Capabilities"]
+	#Percentage of damage that ignores reductions per level
+	Percentage = 0.25
+
+["Lethal Cadence"]
+	#Chance of ignoring iframes
+	Chance = 0.4
+
+[Range]
+	#Multiplier Speed for arrows, below 1 will cause arrows to be slower
+	Boost = 2.0
+
+["Arrow Piercing"]
+	#Percentage of damage that ignores reductions per level
+	Percentage = 0.25
+
+[Vulnerability]
+	#Percentage of damage increased per level
+	Percentage = 0.08
+
+["Double Edge"]
+	#Percentage of damage dealt increased
+	"Damage Bonus" = 0.25
+	#Percentage of damage dealt to itself
+	"Self Damage" = 0.5
+
+["Magic Piercing"]
+	#Initial percentage of damage that ignores enchantments
+	Base = 0.15
+	#Percentage of damage that ignores enchantments per level
+	Percentage = 0.15
+
+["Critical Strike"]
+	#Percentage of damage per level
+	"Level Damage Increase" = 0.25
+	#Base percentage damage
+	"Base Damage Increase" = 0.5
+	#Percentage chance per level
+	"Chance Increase" = 0.05
+
+["Giant Slayer"]
+	#Percentage of damage per level
+	"Level Damage Increase" = 0.01
+	#Base percentage damage
+	"Base Damage Increase" = 0.03
+
+[Executioner]
+	#Percentage of missing health as damage per level
+	"Level Damage Increase" = 0.1
+	#Base Percentage of missing health as damage
+	"Base Damage Increase" = 0.1
+
+[Shielded]
+	#Max amount of absorption per level
+	Absorption = 2.0

@@ -1,0 +1,81 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/uranium"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/uranium"
+      }
+    }
+  },
+  "display": {
+    "color": "#FF21FF0F",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.uranium"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 13.0,
+      "armor/boots": 2.0,
+      "armor/chestplate": 5.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 20.0,
+      "armor_toughness": 1.0,
+      "attack_damage": 2.0,
+      "attack_speed": 0.1,
+      "charging_value": 1.5,
+      "draw_speed": 0.1,
+      "durability": 800.0,
+      "enchantment_value": 17.0,
+      "harvest_speed": 6.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 3.0,
+      "magic_damage": 2.0,
+      "ranged_damage": 0.5,
+      "rarity": 50.0,
+      "repair_value": -0.15,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "draw_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1
+      },
+      "rarity": 40.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

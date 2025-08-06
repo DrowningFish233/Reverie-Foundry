@@ -1,0 +1,82 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/compressed_iron"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/compressed_iron"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFA6A6A6",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.compressed_iron"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 20.0,
+      "armor/boots": 3.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 24.0,
+      "armor_toughness": 2.0,
+      "attack_damage": 4.0,
+      "attack_speed": -0.2,
+      "charging_value": 0.8,
+      "draw_speed": 0.0,
+      "durability": 1024.0,
+      "enchantment_value": 12.0,
+      "harvest_speed": 9.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 4.0,
+      "magic_damage": 1.0,
+      "ranged_damage": 3.0,
+      "rarity": 40.0,
+      "repair_value": -0.15,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.25
+      },
+      "rarity": 40.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

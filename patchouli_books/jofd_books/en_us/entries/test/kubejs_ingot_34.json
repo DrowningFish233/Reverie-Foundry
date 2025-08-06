@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.mythril_ingot.name",
+    "icon": "kubejs:mythril_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:mythril_ingot"
+            },
+            "text": "patchouli.gui.kubejs.mythril_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.mythril_ingot"
+        }
+    ]
+}

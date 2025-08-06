@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.nickel_plate.name",
+    "icon": "kubejs:nickel_plate",
+    "category": "patchouli:kubejs_plate",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:nickel_plate"
+            },
+            "text": "patchouli.gui.kubejs.nickel_plate.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.nickel_plate"
+        }
+    ]
+}

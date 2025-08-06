@@ -1,0 +1,23 @@
+{
+  "loot_table": "lootintegrations:chests/medium",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "nova_structures:chests/ancient_city": 2,
+    "nova_structures:chests/end_castle/lesser_loot": 2,
+    "nova_structures:pots/end_castle/pot_end_castle": 1,
+    "nova_structures:chests/jungle_ruins/jungle_ruins_house": 1,
+    "nova_structures:chests/jungle_ruins/jungle_ruins_main_temple": 1,
+    "nova_structures:chests/jungle_ruins/jungle_ruins_main_temple_wild": 1,
+    "nova_structures:chests/illager_hideout_library": 1,
+    "nova_structures:chests/creeping_crypt/vault_creeping": 2,
+    "nova_structures:chests/lone_citadel/c_library": 1,
+    "nova_structures:chests/lone_citadel/c_vault": 2,
+    "nova_structures:chests/lone_citadel/c_vault_boss": 2,
+    "nova_structures:chests/shrine/combat_treasure_4": 2,
+    "nova_structures:chests/shrine/combat_treasure_5": 3,
+    "nova_structures:chests/shrine/vault_shrine_ominous": 2,
+    "nova_structures:chests/toxic_lair/toxic_ominous_vault": 2,
+    "nova_structures:chests/witch_villa/library": 1,
+    "nova_structures:chests/bunker_altar": 1
+  }
+}

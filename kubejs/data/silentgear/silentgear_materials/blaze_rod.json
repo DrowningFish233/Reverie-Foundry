@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": [],
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/blaze"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFFFC600",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.blaze_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.2
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:reach"
+        }
+      ]
+    }
+  }
+}

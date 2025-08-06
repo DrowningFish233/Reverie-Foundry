@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.estalt_ingot.name",
+    "icon": "kubejs:estalt_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:estalt_ingot"
+            },
+            "text": "patchouli.gui.kubejs.estalt_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.estalt_ingot"
+        }
+    ]
+}

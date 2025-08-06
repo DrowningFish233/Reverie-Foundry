@@ -1,0 +1,59 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:xelkive_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:xelkive_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:xelkive_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 34.0,
+      "armor_toughness": 24,
+      "armor/boots": 6.0,
+      "armor/chestplate": 11.0,
+      "armor/helmet": 10.0,
+      "armor/leggings": 7.0,
+      "armor_durability": 50.0,
+      "attack_damage": 14.0,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 1.3,
+      "draw_speed": 0.0,
+      "durability": 3000.0,
+      "enchantment_value": 18.0,
+      "harvest_speed": 13.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
+        "level_hint": "4",
+        "name": "netherite/下界合金"
+      },
+      "magic_armor": 16.0,
+      "magic_damage": 2.0,
+      "projectile_accuracy": 1.1,
+      "ranged_damage": 6.0,
+      "rarity": 100.0,
+      "traits": []
+    }
+  }
+}

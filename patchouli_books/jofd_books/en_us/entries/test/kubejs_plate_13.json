@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.dark_cryopla_plate.name",
+    "icon": "kubejs:dark_cryopla_plate",
+    "category": "patchouli:kubejs_plate",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:dark_cryopla_plate"
+            },
+            "text": "patchouli.gui.kubejs.dark_cryopla_plate.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.dark_cryopla_plate"
+        }
+    ]
+}

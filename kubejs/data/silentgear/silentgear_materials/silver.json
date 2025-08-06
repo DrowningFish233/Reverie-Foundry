@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/silver"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/silver"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFCBCCEA",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.silver"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 11.0,
+      "armor/boots": 1.0,
+      "armor/chestplate": 5.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 3.0,
+      "armor_durability": 9.0,
+      "attack_damage": 0.0,
+      "attack_speed": 0.2,
+      "charging_value": 1.1,
+      "draw_speed": 0.3,
+      "durability": 64.0,
+      "enchantment_value": 20.0,
+      "harvest_speed": 11.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_gold_tool",
+        "level_hint": "1",
+        "name": "gold"
+      },
+      "magic_armor": 10.0,
+      "magic_damage": 4.0,
+      "ranged_damage": 0.0,
+      "rarity": 40.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1
+      },
+      "rarity": 40.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

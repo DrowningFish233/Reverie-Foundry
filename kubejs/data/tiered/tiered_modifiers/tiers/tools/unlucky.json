@@ -1,0 +1,22 @@
+{
+  "weight": 1,
+  "reforge_experience_cost": 4,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:toolsmiths_hammer",
+  "style": {
+    "color": "#dc143c"
+  },
+  "attributes": [
+    {
+      "type": "generic.luck",
+      "modifier": {
+        "id": "tiered:unlucky",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": -0.25
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

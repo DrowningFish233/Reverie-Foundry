@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.electrum_rod.name",
+    "icon": "kubejs:electrum_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:electrum_rod"
+            },
+            "text": "patchouli.gui.kubejs.electrum_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.electrum_rod"
+        }
+    ]
+}

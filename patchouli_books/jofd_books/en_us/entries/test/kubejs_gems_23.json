@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.ultranium_gem.name",
+    "icon": "kubejs:ultranium_gem",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:ultranium_gem"
+            },
+            "text": "patchouli.gui.kubejs.ultranium_gem.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.ultranium_gem"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.xelkive_ingot.name",
+    "icon": "kubejs:xelkive_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:xelkive_ingot"
+            },
+            "text": "patchouli.gui.kubejs.xelkive_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.xelkive_ingot"
+        }
+    ]
+}

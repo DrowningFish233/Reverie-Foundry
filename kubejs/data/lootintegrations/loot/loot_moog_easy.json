@@ -1,0 +1,17 @@
+{
+  "loot_table": "lootintegrations:chests/easy",
+  "max_result_itemcount": 8,
+  "integrated_loot_tables": {
+    "mvs:cathedral_rare": 1,
+    "mvs:houses_rare": 1,
+    "mvs:pillager": 2,
+    "mvs:swamps": 1,
+    "mss:cathedral_rare": 1,
+    "mss:houses_rare": 1,
+    "mss:pillager": 2,
+    "mss:swamps": 1,
+    "mes:cathedral_rare": 1,
+    "mes:houses_rare": 1,
+    "mes:swamps": 1
+  }
+}

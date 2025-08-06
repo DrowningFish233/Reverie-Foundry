@@ -1,0 +1,291 @@
+{
+    "type": "gateways:normal",
+    "color": "#2a8c1a",
+    "size": "medium",
+    "waves": [
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "terra_entity:goblin_peon"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [
+                {
+                    "type": "gateways:stack",
+                    "stack": {
+                        "id": "minecraft:rotten_flesh",
+                        "count": 8
+                    }
+                }
+            ],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "terra_entity:goblin_scout"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "terra_entity:goblin_archer"
+                }
+            ],
+            "max_wave_time": 800,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:stack_list",
+                    "stacks": [
+                        {
+                            "id": "minecraft:arrow",
+                            "count": 16
+                        },
+                        {
+                            "id": "minecraft:bone",
+                            "count": 8
+                        }
+                    ]
+                }
+            ],
+            "setup_time": 150
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "terra_entity:goblin_warrior"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "terra_entity:anger_goblin"
+                }
+            ],
+            "max_wave_time": 800,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:stack_list",
+                    "stacks": [
+                        {
+                            "id": "minecraft:iron_ingot",
+                            "count": 8
+                        },
+                        {
+                            "id": "minecraft:gold_nugget",
+                            "count": 16
+                        }
+                    ]
+                }
+            ],
+            "setup_time": 200
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "terra_entity:goblin_sorcerer"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "terra_entity:goblin_thief"
+                }
+            ],
+            "max_wave_time": 1000,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:stack_list",
+                    "stacks": [
+                        {
+                            "id": "minecraft:gold_ingot",
+                            "count": 4
+                        },
+                        {
+                            "id": "minecraft:emerald",
+                            "count": 2
+                        },
+                        {
+                            "id": "minecraft:lapis_lazuli",
+                            "count": 8
+                        }
+                    ]
+                }
+            ],
+            "setup_time": 280
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "terra_entity:goblin_sorcerer",
+                    "nbt": {
+                        "CustomName": "{\"text\":\"哥布林大祭司\",\"color\":\"dark_green\"}",
+                        "CustomNameVisible": true,
+                        "PersistenceRequired": 1
+                    },
+                    "modifiers": [
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.max_health",
+                            "operation": "add_multiplied_total",
+                            "value": 0.5
+                        },
+                        {
+                            "type": "gateways:attribute",
+                            "attribute": "minecraft:generic.armor",
+                            "operation": "add_value",
+                            "value": 6.0
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 2,
+                    "entity": "terra_entity:goblin_warrior"
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "terra_entity:anger_goblin"
+                }
+            ],
+            "max_wave_time": 1200,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.3
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:stack_list",
+                    "stacks": [
+                        {
+                            "id": "minecraft:emerald",
+                            "count": 8
+                        },
+                        {
+                            "id": "minecraft:gold_ingot",
+                            "count": 12
+                        },
+                        {
+                            "id": "minecraft:diamond",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "gateways:experience",
+                    "experience": 250,
+                    "orb_size": 15
+                }
+            ],
+            "setup_time": 340
+        }
+    ],
+    "rewards": [
+        {
+            "type": "gateways:stack_list",
+            "stacks": [
+                {
+                    "id": "minecraft:emerald_block",
+                    "count": 2
+                },
+                {
+                    "id": "minecraft:gold_block",
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "failures": [
+        {
+            "type": "gateways:explosion",
+            "strength": 3,
+            "fire": false,
+            "block_damage": true
+        }
+    ]
+}

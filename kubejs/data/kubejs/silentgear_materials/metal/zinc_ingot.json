@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:zinc_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:zinc_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:zinc_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 8.0,
+      "armor_toughness": 10,
+      "armor/boots": 1.0,
+      "armor/chestplate": 3.0,
+      "armor/helmet": 1.0,
+      "armor/leggings": 3.0,
+      "armor_durability": 8.0,
+      "attack_damage": 1.0,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 1.5,
+      "draw_speed": 0.0,
+      "durability": 162.0,
+      "enchantment_value": 20.0,
+      "harvest_speed": 3.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",
+        "level_hint": "1",
+        "name": "stone/石"
+      },
+      "magic_armor": 6.0,
+      "magic_damage": 3.0,
+      "ranged_damage": 0.0,
+      "rarity": 140.0,
+      "traits": []
+    }
+  }
+}

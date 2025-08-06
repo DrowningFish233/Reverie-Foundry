@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.silver_ingot.name",
+    "icon": "kubejs:silver_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:silver_ingot"
+            },
+            "text": "patchouli.gui.kubejs.silver_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.silver_ingot"
+        }
+    ]
+}

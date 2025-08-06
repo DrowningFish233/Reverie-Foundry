@@ -1,0 +1,190 @@
+{
+  "Dimensions": [
+    "minecraft:overworld"
+  ],
+  "InvasionTime": "DAY",
+  "Rarity": 4,
+  "SeverityInfo": [
+    {
+      "MobCapPercentage": 0.6,
+      "MobSpawnList": [
+        {
+          "EntityType": "terra_entity:goblin_peon",
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 15
+        },
+        {
+          "EntityType": "terra_entity:goblin_archer",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 12
+        },
+        {
+          "EntityType": "terra_entity:goblin_warrior",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 10
+        }
+      ],
+      "TickDelay": 30
+    },
+    {
+      "MobCapPercentage": 0.7,
+      "MobSpawnList": [
+        {
+          "EntityType": "terra_entity:goblin_peon",
+          "MaxCount": 5,
+          "MinCount": 3,
+          "Weight": 15
+        },
+        {
+          "EntityType": "terra_entity:goblin_archer",
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 12
+        },
+        {
+          "EntityType": "terra_entity:goblin_warrior",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 10
+        },
+        {
+          "EntityType": "terra_entity:goblin_thief",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 8
+        }
+      ],
+      "TickDelay": 24
+    },
+    {
+      "MobCapPercentage": 0.8,
+      "MobSpawnList": [
+        {
+          "EntityType": "terra_entity:goblin_peon",
+          "MaxCount": 6,
+          "MinCount": 3,
+          "Weight": 15
+        },
+        {
+          "EntityType": "terra_entity:goblin_archer",
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 12
+        },
+        {
+          "EntityType": "terra_entity:goblin_warrior",
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 10
+        },
+        {
+          "EntityType": "terra_entity:goblin_thief",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "terra_entity:goblin_scout",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 6
+        }
+      ],
+      "TickDelay": 18
+    },
+    {
+      "MobCapPercentage": 0.9,
+      "MobSpawnList": [
+        {
+          "EntityType": "terra_entity:goblin_peon",
+          "MaxCount": 8,
+          "MinCount": 4,
+          "Weight": 15
+        },
+        {
+          "EntityType": "terra_entity:goblin_archer",
+          "MaxCount": 6,
+          "MinCount": 3,
+          "Weight": 12
+        },
+        {
+          "EntityType": "terra_entity:goblin_warrior",
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 10
+        },
+        {
+          "EntityType": "terra_entity:goblin_thief",
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 8
+        },
+        {
+          "EntityType": "terra_entity:goblin_scout",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 6
+        },
+        {
+          "EntityType": "terra_entity:anger_goblin",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 4
+        }
+      ],
+      "TickDelay": 12
+    },
+    {
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "terra_entity:goblin_peon",
+          "MaxCount": 10,
+          "MinCount": 5,
+          "Weight": 15
+        },
+        {
+          "EntityType": "terra_entity:goblin_archer",
+          "MaxCount": 8,
+          "MinCount": 4,
+          "Weight": 12
+        },
+        {
+          "EntityType": "terra_entity:goblin_warrior",
+          "MaxCount": 6,
+          "MinCount": 3,
+          "Weight": 10
+        },
+        {
+          "EntityType": "terra_entity:goblin_thief",
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 8
+        },
+        {
+          "EntityType": "terra_entity:goblin_scout",
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 6
+        },
+        {
+          "EntityType": "terra_entity:anger_goblin",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "terra_entity:goblin_sorcerer",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 2
+        }
+      ],
+      "TickDelay": 6
+    }
+  ],
+  "Tier": 1
+}

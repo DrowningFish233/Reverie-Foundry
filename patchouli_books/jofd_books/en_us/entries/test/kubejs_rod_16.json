@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.echo_rod.name",
+    "icon": "kubejs:echo_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:echo_rod"
+            },
+            "text": "patchouli.gui.kubejs.echo_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.echo_rod"
+        }
+    ]
+}

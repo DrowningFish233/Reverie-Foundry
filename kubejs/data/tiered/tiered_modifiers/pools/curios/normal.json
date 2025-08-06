@@ -1,0 +1,23 @@
+{
+  "weight": 5,
+  "verifiers": [
+    {
+      "tag": "curios:accessory"
+    },
+    {
+      "tag": "curios:spellbook"
+    },
+    {
+      "tag": "curios:necklace"
+    },
+    {
+      "tag": "curios:ring"
+    }
+  ],
+  "tiers": [
+    "tiered:curios/kubejs_curios_0",
+    "tiered:curios/kubejs_curios_0",
+    "tiered:curios/kubejs_curios_0",
+    "tiered:curios/kubejs_curios_0"
+  ]
+}

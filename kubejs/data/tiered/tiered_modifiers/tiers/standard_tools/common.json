@@ -1,0 +1,12 @@
+{
+  "weight": 8,
+  "reforge_experience_cost": 1,
+  "reforge_durability_cost": 1,
+  "reforge_item": "tiered:toolsmiths_hammer",
+  "style": {
+    "color": "gray"
+  },
+  "attributes": [
+    
+  ]
+}

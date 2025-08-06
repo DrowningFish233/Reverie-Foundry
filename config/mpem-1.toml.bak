@@ -1,0 +1,349 @@
+	#渲染优化 | Rendering Optimization
+	[rendering_optimization.metal_renderer]
+		#Metal 渲染器 | Metal Renderer
+		#强制使用Metal渲染器（即使在非Mac系统上）
+		#Force Metal renderer even on non-Mac systems
+		forceMetal = false
+
+	[rendering_optimization.advanced_culling]
+		#高级剔除 | Advanced Culling
+		#启用树叶渲染优化
+		#Enable leaf rendering optimizations
+		enabled = tr
+		#剔除深度 (1-5)，值越高性能越好但可能导致视觉异常
+		#Culling depth (1-5), Higher values = better performance but may cause visual artifacts
+		# Default: 5
+		# Range: 1 ~ 5
+		cullingDepth = 4
+		#随机剔除率 (0.0-1.0)，防止可见的剔除模式
+		#Random rejection rate (0.0-1.0), Prevents visible culling patterns
+		# Default: 0.75
+		# Range: 0.0 ~ 1.0
+		rejectionRate = 0.55
+		#使用高级剔除算法，更精确但稍慢
+		#Use advanced culling algorithm, More precise but slightly slower
+		advancedCulling = true
+
+		[rendering_optimization.advanced_culling.ultra_culling]
+			#超激进剔除 | Ultra Culling
+			#启用超激进剔除（对所有方块/实体生效）
+			#Enable ultra-aggressive culling (affects all blocks/entities)
+			ultraCulling = false
+			#剔除深度 (1-4)，值越大剔除越激进但可能出现bug
+			#Culling depth (1-4), Higher values = more aggressive culling but may cause bugs
+			# Default: 4
+			# Range: 1 ~ 4
+			ultraDepth = 4
+			#仅剔除背向玩家的面（防止正面消失），值范围0.0-1.0
+			#Only cull backfaces (prevent front-face disappearance), value range 0.0-1.0
+			# Default: 0.97
+			# Range: 0.0 ~ 1.0
+			ultraBackfaceOnly = 0.95
+
+		[rendering_optimization.advanced_culling.chest_optimization]
+			#Enable chest rendering optimization
+			enableOptimization = true
+			#Rendering mode
+			#Allowed Values: SIMPLE, VANILLA, SEMI_COMPLEX
+			renderMode = "SIMPLE"
+			#Optimize ender chests
+			optimizeEnderChests = true
+			#Optimize trapped chests
+			optimizeTrappedChests = false
+			#Max render distance in chunks
+			# Default: 32
+			# Range: 1 ~ 128
+			maxRenderDistance = 32
+
+	[rendering_optimization.path_tracing]
+		#路径追踪 | Path Tracing
+		#启用异步路径追踪进行剔除
+		#Enable async path tracing for culling
+		asyncTracing = true
+		#路径追踪线程数 (1-8)
+		#Number of threads for path tracing (1-8)
+		# Default: 2
+		# Range: 1 ~ 8
+		tracingThreads = 2
+		#最大追踪距离（方块）
+		#Max tracing distance in blocks
+		# Default: 6.0
+		# Range: 1.0 ~ 16.0
+		traceDistance = 6.0
+		#回退简单剔除距离（方块）
+		#Fallback simple culling distance in blocks
+		# Default: 16.0
+		# Range: 4.0 ~ 32.0
+		fallbackDistance = 16.0
+
+	[rendering_optimization.leaf_optimization]
+		#树叶优化 | Leaf Optimization
+		#使用高级树叶剔除算法
+		#Use advanced leaf culling algorithm
+		advancedLeafCulling = false
+		#简单剔除所需的最小树叶连接数 (1-6)
+		#Minimum connected leaves for simple culling (1-6)
+		# Default: 2
+		# Range: 1 ~ 6
+		minConnections = 2
+		#启用红树林根优化
+		#Enable mangrove roots optimization
+		optimizeMangrove = true
+
+	[rendering_optimization.inactive_optimization]
+		#非活动状态优化 | Inactive Optimization
+		#窗口非活动时降低FPS
+		#Enable FPS reduction when window is inactive
+		reduceFpsWhenInactive = false
+		#非活动状态FPS限制 (5-60)
+		#FPS limit when window is inactive (5-60)
+		# Default: 10
+		# Range: 5 ~ 60
+		inactiveFpsLimit = 10
+		#窗口非活动时降低渲染距离
+		#Enable render distance reduction when window is inactive
+		reduceRenderDistanceWhenInactive = false
+		#非活动状态渲染距离 (2-12)
+		#Render distance when window is inactive (2-12)
+		# Default: 2
+		# Range: 2 ~ 12
+		inactiveRenderDistance = 2
+
+[entity_optimization]
+	#实体优化 | Entity Optimization
+	#优化实体碰撞检测
+	#Optimize entity collision detection
+	disableEntityCollisions = true
+	#优化实体AI计算
+	#Optimize entity AI calculations
+	optimizeEntityAI = true
+	#实体激活范围 (方块)
+	#Entity activation range (blocks)
+	# Default: 32
+	# Range: 16 ~ 128
+	entityActivationRange = 32
+	#启用死亡实体清理
+	#Enable dead entity cleanup
+	entityCleanup = true
+	#减少远处实体的同步频率
+	#Reduce entity sync frequency for distant entities
+	reduceEntityUpdates = true
+
+	[entity_optimization.entity_tick_optimization]
+		#实体Tick优化 | Entity Tick Optimization
+		#启用实体tick优化
+		#Enable entity tick optimization
+		optimizeEntities = false
+		#水平检测范围(方块)
+		#Horizontal detection range (blocks)
+		# Default: 64
+		# Range: 1 ~ 256
+		horizontalRange = 64
+		#垂直检测范围(方块)
+		#Vertical detection range (blocks)
+		# Default: 32
+		# Range: 1 ~ 256
+		verticalRange = 32
+		#忽略已死亡的实体
+		#Ignore dead entities
+		ignoreDeadEntities = false
+
+	[entity_optimization.entity_whitelist]
+		#实体白名单 | Entity Whitelist
+		#实体白名单（始终优化）
+		#Entity whitelist (always optimized)
+		entityWhitelist = ["minecraft:ender_dragon"]
+		#模组实体白名单
+		#Mod entity whitelist
+		entityModWhitelist = ["create"]
+		#袭击实体白名单
+		#Raid entity whitelist
+		raidEntityWhitelist = ["minecraft:witch"]
+
+	[entity_optimization.raid_events]
+		#袭击事件 | Raid Events
+		#在袭击中保持袭击者tick
+		#Keep raider ticking during raids
+		tickRaidersInRaid = true
+
+[item_optimization]
+	#物品优化 | Item Optimization
+	#启用物品优化系统
+	#Enable item optimization system
+	OpenIO = false
+
+	[item_optimization.stack_merging]
+		#堆叠合并 | Stack Merging
+		#合并物品的最大堆叠数量（-1表示无限制）
+		#Maximum stack size for merged items (-1 = no limit)
+		# Default: -1
+		# Range: > -1
+		maxStackSize = -1
+		#物品合并检测半径（方块）
+		#Item merge detection radius in blocks
+		# Default: 1.5
+		# Range: 0.1 ~ 10.0
+		mergeDistance = 1.5
+		#在合并后的物品上显示堆叠数量
+		#Show stack count on merged items
+		showStackCount = false
+
+	[item_optimization.custom_stack_size]
+		#自定义堆叠 | Custom Stack Size
+		#启用自定义堆叠大小
+		#Enable custom stack sizes
+		enabled = false
+		#最大物品堆叠大小 (1-9999)
+		#Maximum item stack size (1-9999)
+		# Default: 64
+		# Range: 1 ~ 9999
+		maxStackSize = 64
+
+	[item_optimization.item_lists]
+		#物品列表 | Item Lists
+		#0: 禁用 1: 白名单模式 2: 黑名单模式
+		#0: Disabled, 1: Whitelist, 2: Blacklist
+		# Default: 0
+		# Range: 0 ~ 2
+		listMode = 0
+		#白名单/黑名单中的物品注册名列表
+		#Item registry names for whitelist/blacklist
+		itemList = []
+
+	[item_optimization.item_entities]
+		#物品实体 | Item Entities
+		#优化物品实体tick
+		#Optimize item entity ticking
+		optimizeItems = false
+		#物品实体白名单
+		#Item entity whitelist
+		itemWhitelist = ["minecraft:diamond"]
+
+[memory_optimization]
+	#内存优化 | Memory Optimization
+	#内存清理间隔(秒)
+	#Memory cleanup interval (seconds)
+	# Default: 600
+	# Range: 60 ~ 3600
+	cleanInterval = 600
+	#清理时触发垃圾回收
+	#Trigger garbage collection during cleanup
+	enableGC = true
+
+[progressive_loading]
+	#渐进加载 | Progressive Loading
+	#每tick加载的实体数量
+	#Number of entities to load per tick
+	# Default: 10
+	# Range: 1 ~ 100
+	entityLoadBatchSize = 10
+	#每tick加载的方块实体数量
+	#Number of tile entities to load per tick
+	# Default: 5
+	# Range: 1 ~ 50
+	tileEntityLoadBatchSize = 5
+	#实体更新最小间隔(ms)
+	#Minimum tick interval (ms) between entity updates
+	# Default: 10
+	# Range: 1 ~ 100
+	minTickInterval = 10
+	#实体更新最大间隔(ms)
+	#Maximum tick interval (ms) between entity updates
+	# Default: 100
+	# Range: 10 ~ 1000
+	maxTickInterval = 100
+	#调整tick速率的TPS阈值（20的百分比）
+	#TPS threshold for adjusting tick rate (percentage of 20)
+	# Default: 0.85
+	# Range: 0.1 ~ 1.0
+	tpsAdjustThreshold = 0.85
+
+[chunk_optimization]
+	#区块优化 | Chunk Optimization
+	#主动卸载非活动区块
+	#Aggressively unload inactive chunks
+	aggressiveChunkUnloading = true
+	#区块卸载延迟 (秒)
+	#Chunk unload delay (seconds)
+	# Default: 60
+	# Range: 10 ~ 600
+	chunkUnloadDelay = 60
+	#玩家短距离移动时减少区块更新
+	#Reduce chunk updates when player moves short distances
+	reduceChunkUpdates = true
+	#过滤冗余方块更新数据包
+	#Filter redundant block update packets
+	filterRedundantBlockUpdates = true
+	#异步区块生成线程数
+	#Number of threads for async chunk generation
+	# Default: 2
+	# Range: 1 ~ 8
+	chunkGenThreads = 2
+
+[async_optimization]
+	#异步优化 | Async Optimization
+	#启用异步粒子处理
+	#Enable asynchronous particle processing
+	asyncParticles = false
+	#每tick最大异步操作数
+	#Max async operations processed per tick
+	# Default: 1000
+	# Range: 100 ~ 10000
+	maxAsyncOpsPerTick = 1000
+	#出错后禁用该事件类型的异步处理
+	#Disable async for event type after errors
+	disableAsyncOnError = true
+	#异步事件超时时间(秒)
+	#Timeout in seconds for async events
+	# Default: 2
+	# Range: 1 ~ 10
+	asyncEventTimeout = 2
+	#等待异步事件完成
+	#Wait for async events to complete
+	waitForAsyncEvents = false
+
+	[async_optimization.thread_configuration]
+		#线程配置 | Thread Configuration
+		#异步系统最大CPU核心数
+		#Max CPU Cores for async system
+		# Default: 4
+		# Range: 2 ~ 9999
+		maxCPUPro = 2
+		#最大线程数
+		#Max Threads for general async operations
+		# Default: 4
+		# Range: 2 ~ 9999
+		maxthreads = 2
+
+[event_system]
+	#事件系统 | Event System
+	#启用高性能异步事件功能
+	#Enable high-performance async event system
+	featureEnabled = true
+	#不应异步处理的事件类列表（支持通配符）
+	#Event classes that should NOT be processed asynchronously (supports wildcards)
+	classBlacklist = ["net.neoforged.neoforge.event.TickEvent", "net.neoforged.neoforge.event.level.LevelTickEvent", "net.neoforged.neoforge.event.entity.living.*"]
+	#不应异步处理的模组ID列表
+	#Mod IDs whose events should NOT be processed asynchronously
+	modBlacklist = []
+	#启用严格的类存在检查（推荐关闭以确保稳定性）
+	#Enable strict class existence checking (disable for stability)
+	strictClassChecking = false
+
+[debug_options]
+	#调试选项 | Debug Options
+	#启用调试日志
+	#Enable debug logging
+	debug = false
+	#记录方块相关事件
+	#Log block related events
+	logBlockEvents = false
+
+[miscellaneous]
+	#其他设置 | Miscellaneous
+	#玩家登录时发送消息
+	#Send message on player login
+	sendLoginMessage = false
+	#维度白名单
+	#Dimension whitelist
+	dimensionWhitelist = []

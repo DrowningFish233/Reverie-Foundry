@@ -1,0 +1,25 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 2,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "dark_aqua"
+  },
+  "attributes": [
+    {
+      "type": "irons_spellbooks:max_mana",
+      "modifier": {
+        "id": "tiered:max_mana",
+        "operation": "ADD_VALUE",
+        "amount": 50
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    }
+  ]
+}

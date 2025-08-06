@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.garnet.name",
+    "icon": "kubejs:garnet",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:garnet"
+            },
+            "text": "patchouli.gui.kubejs.garnet.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.garnet"
+        }
+    ]
+}

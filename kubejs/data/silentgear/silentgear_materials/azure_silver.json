@@ -1,0 +1,139 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/azure_silver"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/azure_silver"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFCBBAFF",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.azure_silver"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 13.0,
+      "armor/boots": 2.0,
+      "armor/chestplate": 5.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 17.0,
+      "attack_damage": 5.0,
+      "attack_speed": 0.0,
+      "charging_value": 1.4,
+      "draw_speed": 0.0,
+      "durability": 197.0,
+      "enchantment_value": 29.0,
+      "harvest_speed": 19.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_azure_silver_tools",
+        "level_hint": "3",
+        "name": "azure_silver"
+      },
+      "magic_armor": 13.0,
+      "magic_damage": 7.0,
+      "projectile_accuracy": 1.1,
+      "projectile_speed": 1.2,
+      "ranged_damage": 2.0,
+      "rarity": 83.0,
+      "repair_value": 0.5,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ],
+          "level": 4,
+          "trait": "silentgear:moonwalker"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": -0.2
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 3.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:bending"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "armor_durability": {
+        "operation": "ADD",
+        "value": 3.0
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.2
+      },
+      "durability": {
+        "operation": "ADD",
+        "value": 83.0
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 3.0
+      },
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_azure_silver_tools",
+        "level_hint": "3",
+        "name": "azure_silver"
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.0
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 31.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:fortunate"
+        }
+      ]
+    }
+  }
+}

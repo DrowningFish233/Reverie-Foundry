@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.peridot.name",
+    "icon": "kubejs:peridot",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:peridot"
+            },
+            "text": "patchouli.gui.kubejs.peridot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.peridot"
+        }
+    ]
+}

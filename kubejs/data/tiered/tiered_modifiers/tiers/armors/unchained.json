@@ -1,0 +1,39 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 3,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "dark_red"
+  },
+  "attributes": [
+    {
+      "type": "generic.armor",
+      "modifier": {
+        "id": "tiered:unchained_1",
+        "operation": "ADD_VALUE",
+        "amount": -2
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    },
+    {
+      "type": "generic.attack_damage",
+      "modifier": {
+        "id": "tiered:unchained_2",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.10
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    }
+  ]
+}

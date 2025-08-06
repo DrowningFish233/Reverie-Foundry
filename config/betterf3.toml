@@ -1,0 +1,62 @@
+general = {disable_mod = true, auto_start = false, space_modules = true, shadow_text = false, animations = true, animationSpeed = 1.5, fontScale = 1.1, background_color = 1867534416, hide_debug_crosshair = false, hide_sidebar = true, hide_bossbar = true, always_show_profiler = false, always_show_tps = true, always_show_ping = false}
+[[modules_left]]
+	name = "minecraft"
+	name_color = 10506797
+	value_color = 43520
+	enabled = true
+	lines = {minecraft = true}
+[[modules_left]]
+	name = "fps"
+	color_high = 5635925
+	color_med = 16777045
+	color_low = 16733525
+	enabled = true
+	lines = {fps = true}
+[[modules_left]]
+	name = "graphics"
+	name_color = 16755200
+	value_color = 5636095
+	enabled = true
+	lines = {render_distance = true, graphics = false, clouds = false, biome_blend_radius = false, shader = false}
+[[modules_left]]
+	name = "server"
+	name_color = 11184810
+	value_color = 16777045
+	enabled = true
+	lines = {server_tick = true, packets_sent = true, packets_received = true, tick_manager_status = true}
+[[modules_left]]
+	name = "coords"
+	name_color = 16733525
+	color_x = 16733525
+	color_y = 5635925
+	color_z = 5636095
+	enabled = true
+	lines = {player_coords = true, block_coords = true, chunk_relative_coords = true, chunk_coords = true, velocity = true, absolute_velocity = true, horizontal_velocity = true}
+[[modules_left]]
+	name = "location"
+	name_color = 43520
+	value_color = 5636095
+	enabled = true
+	lines = {dimension = true, facing = true, rotation = false, light = true, light_server = false, highest_block = true, highest_block_server = false, biome = true, local_difficulty = false, day_ticks = true, days_played = true, slime_chunk = true}
+[[modules_left]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+
+[[modules_right]]
+	name = "entity"
+	name_color = 16733525
+	value_color = 16777045
+	total_entities_color = 16755200
+	enabled = true
+	lines = {particles = true, entities = true, monster = true, creature = true, ambient = true, axolotls = false, underground_water_creature = true, water_creature = true, water_ambient = true, misc = true}
+[[modules_right]]
+	name = "chunks"
+	name_color = 43775
+	value_color = 16777045
+	chunks_enabled_color = 5635925
+	chunks_disabled_color = 16733525
+	total_chunks_color = 16755200
+	enabled = true
+	lines = {chunk_sections = true, chunk_culling = true, pending_chunks = true, pending_uploads = true, available_buffers = true, client_chunk_cache = true, loaded_chunks = true, loaded_chunks_server = false, forceloaded_chunks = true, spawn_chunks = true, chunk_file = false}

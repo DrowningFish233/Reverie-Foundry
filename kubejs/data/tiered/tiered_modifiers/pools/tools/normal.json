@@ -1,0 +1,20 @@
+{
+  "weight": 7,
+  "verifiers": [
+    {
+      "tag": "minecraft:shovels"
+    },
+    {
+      "tag": "minecraft:pickaxes"
+    },
+    {
+      "tag": "minecraft:hoes"
+    },
+    {
+      "id": "minecraft:fishing_rod"
+    }
+  ],
+  "tiers": [
+    "tiered:standard_tools/common"
+  ]
+}

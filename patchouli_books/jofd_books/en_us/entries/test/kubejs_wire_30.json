@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.silicon_wire.name",
+    "icon": "kubejs:silicon_wire",
+    "category": "patchouli:kubejs_wire",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:silicon_wire"
+            },
+            "text": "patchouli.gui.kubejs.silicon_wire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.silicon_wire"
+        }
+    ]
+}

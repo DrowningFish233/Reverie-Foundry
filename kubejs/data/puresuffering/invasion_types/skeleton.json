@@ -1,0 +1,220 @@
+{
+    "Dimensions": [
+        "minecraft:overworld"
+    ],
+    "InvasionTime": "NIGHT",
+    "Rarity": 15,
+    "SeverityInfo": [
+        {
+            "MobCapPercentage": 0.5,
+            "MobSpawnList": [
+                {
+                    "EntityType": "minecraft:skeleton",
+                    "MaxCount": 4,
+                    "MinCount": 2,
+                    "Weight": 12
+                },
+                {
+                    "EntityType": "minecraft:wither_skeleton",
+                    "MaxCount": 1,
+                    "MinCount": 0,
+                    "Weight": 3
+                },
+                {
+                    "EntityType": "terra_entity:anger_bones",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 6
+                },
+                {
+                    "EntityType": "terra_entity:dark_caster",
+                    "MaxCount": 1,
+                    "MinCount": 0,
+                    "Weight": 2
+                }
+            ],
+            "TickDelay": 30
+        },
+        {
+            "MobCapPercentage": 0.6,
+            "MobSpawnList": [
+                {
+                    "EntityType": "minecraft:skeleton",
+                    "MaxCount": 5,
+                    "MinCount": 3,
+                    "Weight": 12
+                },
+                {
+                    "EntityType": "minecraft:wither_skeleton",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 3
+                },
+                {
+                    "EntityType": "terra_entity:anger_bones",
+                    "MaxCount": 3,
+                    "MinCount": 1,
+                    "Weight": 6
+                },
+                {
+                    "EntityType": "terra_entity:short_bones",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 4
+                },
+                {
+                    "EntityType": "terra_entity:dark_caster",
+                    "MaxCount": 1,
+                    "MinCount": 0,
+                    "Weight": 3
+                }
+            ],
+            "TickDelay": 25
+        },
+        {
+            "MobCapPercentage": 0.7,
+            "MobSpawnList": [
+                {
+                    "EntityType": "minecraft:skeleton",
+                    "MaxCount": 6,
+                    "MinCount": 3,
+                    "Weight": 12
+                },
+                {
+                    "EntityType": "minecraft:wither_skeleton",
+                    "MaxCount": 3,
+                    "MinCount": 1,
+                    "Weight": 3
+                },
+                {
+                    "EntityType": "terra_entity:anger_bones",
+                    "MaxCount": 4,
+                    "MinCount": 2,
+                    "Weight": 6
+                },
+                {
+                    "EntityType": "terra_entity:short_bones",
+                    "MaxCount": 3,
+                    "MinCount": 1,
+                    "Weight": 4
+                },
+                {
+                    "EntityType": "terra_entity:big_bones",
+                    "MaxCount": 1,
+                    "MinCount": 0,
+                    "Weight": 2
+                },
+                {
+                    "EntityType": "terra_entity:dark_caster",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 3
+                }
+            ],
+            "TickDelay": 20
+        },
+        {
+            "MobCapPercentage": 0.8,
+            "MobSpawnList": [
+                {
+                    "EntityType": "minecraft:skeleton",
+                    "MaxCount": 8,
+                    "MinCount": 4,
+                    "Weight": 12
+                },
+                {
+                    "EntityType": "minecraft:wither_skeleton",
+                    "MaxCount": 4,
+                    "MinCount": 2,
+                    "Weight": 3
+                },
+                {
+                    "EntityType": "terra_entity:anger_bones",
+                    "MaxCount": 5,
+                    "MinCount": 2,
+                    "Weight": 6
+                },
+                {
+                    "EntityType": "terra_entity:big_anger_bones",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 4
+                },
+                {
+                    "EntityType": "terra_entity:big_bones",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 2
+                },
+                {
+                    "EntityType": "twilightforest:skeleton_druid",
+                    "MaxCount": 1,
+                    "MinCount": 0,
+                    "Weight": 1
+                },
+                {
+                    "EntityType": "terra_entity:dark_caster",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 4
+                }
+            ],
+            "TickDelay": 15
+        },
+        {
+            "MobCapPercentage": 0.9,
+            "MobSpawnList": [
+                {
+                    "EntityType": "minecraft:skeleton",
+                    "MaxCount": 10,
+                    "MinCount": 5,
+                    "Weight": 12
+                },
+                {
+                    "EntityType": "minecraft:wither_skeleton",
+                    "MaxCount": 5,
+                    "MinCount": 2,
+                    "Weight": 3
+                },
+                {
+                    "EntityType": "terra_entity:big_anger_bones",
+                    "MaxCount": 3,
+                    "MinCount": 1,
+                    "Weight": 4
+                },
+                {
+                    "EntityType": "terra_entity:big_muscle_anger_bones",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 3
+                },
+                {
+                    "EntityType": "terra_entity:big_helmet_anger_bones",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 3
+                },
+                {
+                    "EntityType": "terra_entity:cursed_skull",
+                    "MaxCount": 1,
+                    "MinCount": 0,
+                    "Weight": 1
+                },
+                {
+                    "EntityType": "twilightforest:skeleton_druid",
+                    "MaxCount": 2,
+                    "MinCount": 1,
+                    "Weight": 1
+                },
+                {
+                    "EntityType": "terra_entity:dark_caster",
+                    "MaxCount": 3,
+                    "MinCount": 1,
+                    "Weight": 4
+                }
+            ],
+            "TickDelay": 10
+        }
+    ],
+    "Tier": 2
+}

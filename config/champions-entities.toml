@@ -1,0 +1,22 @@
+#List of entity configurations
+[[entities]]
+	entity = "minecraft:creeper"
+	minTier = 1
+	maxTier = 5
+	presetAffixes = []
+	affixList = ["champions:knocking", "champions:wounding", "champions:paralyzing", "champions:molten"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:silverfish"
+	minTier = 1
+	maxTier = 5
+	presetAffixes = []
+	affixList = ["champions:infested"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:endermite"
+	minTier = 1
+	maxTier = 5
+	presetAffixes = []
+	affixList = ["champions:infested"]
+	affixPermission = "BLACKLIST"

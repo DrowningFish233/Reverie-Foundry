@@ -1,0 +1,124 @@
+{
+	/* Specify the destroy time of a block, i.e. how long it takes to break the specified block.
+	   Dirt has 0.5, stone has 1.5, obsidian has 50. -1 makes the block unbreakable. For example:
+	   "minecraft:.*_planks": 50
+	   This example will make all vanilla planks require the same time as obsidian to be broken.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"destroy_time": { },
+	/* Specify whether the block can be naturally ignited by lava. For example:
+	   "minecraft:.*_log": false
+	   This example will make logs not burn when next to e.g. a lava lake.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"ignited_by_lava": { },
+	/* Specify whether a tool must be used for the block to drop, or if using a tool just makes breaking faster. For example:
+	   "minecraft:diamond_ore": false
+	   This example will make diamond ore drop diamonds when broken by hand or with any tool.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"requires_correct_tool_for_drops": { },
+	/* Specify whether the block is randomly ticking.
+	   Random ticking is used by e.g. crops to grow, or ice to melt. For example:
+	   "minecraft:snow": false
+	   This example will make snow layers not melt.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"is_randomly_ticking": { 
+		"minecraft:spruce_leaves":false ,
+		"minecraft:oak_leaves":false ,
+		"minecraft:birch_leaves":false ,
+		"minecraft:jungle_leaves":false ,
+		"minecraft:acacia_leaves":false ,
+		"minecraft:dark_oak_leaves":false ,
+		"minecraft:mangrove_leaves":false ,
+		"minecraft:cherry_leaves":false ,
+		"minecraft:azalea_leaves":false ,
+		"minecraft:flowering_azalea_leaves":false ,
+		"silentgear:netherwood_leaves":false ,
+		"biomesoplenty:origin_leaves":false ,
+		"biomesoplenty:flowering_oak_leaves":false ,
+		"biomesoplenty:cypress_leaves":false ,
+		"biomesoplenty:snowblossom_leaves":false ,
+		"biomesoplenty:rainbow_birch_leaves":false ,
+		"biomesoplenty:fir_leaves":false ,
+		"biomesoplenty:pine_leaves":false ,
+		"biomesoplenty:red_maple_leaves":false ,
+		"biomesoplenty:orange_maple_leaves":false ,
+		"biomesoplenty:yellow_maple_leaves":false ,
+		"biomesoplenty:redwood_leaves":false ,
+		"biomesoplenty:mahogany_leaves":false ,
+		"biomesoplenty:jacaranda_leaves":false ,
+		"biomesoplenty:palm_leaves":false ,
+		"biomesoplenty:willow_leaves":false ,
+		"biomesoplenty:dead_leaves":false ,
+		"biomesoplenty:magic_leaves":false ,
+		"biomesoplenty:umbran_leaves":false ,
+		"biomesoplenty:hellbark_leaves":false ,
+		"biomesoplenty:empyreal_leaves":false ,
+		"iceandfire:dreadwood_leaves":false ,
+		"twilightforest:transformation_leaves":false ,
+		"twilightforest:time_leaves":false ,
+		"twilightforest:dark_leaves":false ,
+		"twilightforest:mangrove_leaves":false ,
+		"twilightforest:canopy_leaves":false ,
+		"twilightforest:twilight_oak_leaves":false ,
+		"allthemodium:demonic_leaves":false ,
+		"allthemodium:soul_leaves":false ,
+		"allthemodium:ancient_leaves":false ,
+		"twilightforest:mining_leaves":false ,
+		"twilightforest:sorting_leaves":false ,
+		"twilightforest:rainbow_oak_leaves":false ,
+		"twilightforest:giant_leaves":false ,
+		"twilightforest:mangrove_leaves":false ,
+		"twilightforest:canopy_leaves":false ,
+		"twilightforest:twilight_oak_leaves":false ,
+		"allthemodium:demonic_leaves":false ,
+		"allthemodium:soul_leaves":false ,
+		"allthemodium:ancient_leaves":false 
+	},
+	
+	/* Specify the light level. Must be between 0 and 15. This can be modified for blocks, or for single block states only. For example:
+	   "minecraft:redstone_torch[lit=true]": 15
+	   This example will make powered redstone torches give off the same light level as glowstone.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"light_level": { },
+	/* Specify a modifier with which the jump height of players jumping while on the block will be multiplied.
+	   Most blocks use 1 here, honey blocks use 0.5. For example:
+	   "minecraft:cobblestone": 0.8
+	   This example will make players no longer jump a full block while on cobblestone.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"jump_factor": { },
+	/* Specify a modifier with which the movement speed of players walking over the block will be multiplied.
+	   Most blocks use 1 here, honey blocks and soul sand use 0.4. For example:
+	   "minecraft:cobblestone": 0.9
+	   This example will make walking on cobblestone slightly slower.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"speed_factor": { 
+		"minecraft:dirt_path": 1.1
+	},
+	/* Specify whether the block has collision or not.
+	   By default, stone and dirt have collision, while torches and tall grass do not. For example:
+	   "minecraft:.*_sapling": true
+	   This example will make saplings block the player's movement.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"has_collision": { },
+	/* Specify the explosion resistance of a block.
+	   Dirt has 0.5, stone and has 6, obsidian has 1200. 3600000 or more makes the block completely explosion resistant. For example:
+	   "minecraft:dirt": 1000
+	   This example will make dirt nearly as explosion-proof as obsidian.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"explosion_resistance": { },
+	/* Specify the friction values of the block.
+	   Default is 0.6, slime blocks use 0.8, and ice uses 0.98. For example:
+	   "minecraft:stone": 0.98
+	   This example will make walking on stone feel like walking on ice.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"friction": { }
+}

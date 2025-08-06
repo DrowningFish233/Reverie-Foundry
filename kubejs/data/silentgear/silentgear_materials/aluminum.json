@@ -1,0 +1,100 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/aluminum"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/aluminum"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFBFD4DE",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.aluminum"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 14.0,
+      "armor/boots": 2.0,
+      "armor/chestplate": 6.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 15.0,
+      "armor_toughness": 0.5,
+      "attack_damage": 2.0,
+      "attack_speed": 0.2,
+      "charging_value": 0.9,
+      "draw_speed": 0.2,
+      "durability": 365.0,
+      "enchantment_value": 14.0,
+      "harvest_speed": 8.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 3.0,
+      "magic_damage": 2.0,
+      "ranged_damage": 2.0,
+      "rarity": 25.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ],
+          "level": 2,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:synergistic"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.2
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.1
+      },
+      "rarity": 30.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:synergistic"
+        }
+      ]
+    }
+  }
+}

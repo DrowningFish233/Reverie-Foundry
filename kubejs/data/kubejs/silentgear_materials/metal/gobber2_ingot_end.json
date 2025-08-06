@@ -1,0 +1,60 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "gobber2:gobber2_ingot_end"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "gobber2:gobber2_ingot_end"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.gobber2:gobber2_ingot_end"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 36.0,
+      "armor_toughness": 10,
+      "armor/boots": 7.0,
+      "armor/chestplate": 12.0,
+      "armor/helmet": 10.0,
+      "armor/leggings": 7.0,
+      "armor_durability": 25.0,
+      "attack_damage": 8.0,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 0.7,
+      "draw_speed": 0.1,
+      "durability": 2500.0,
+      "enchantment_value": 22.0,
+      "harvest_speed": 6.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+        "level_hint": "8",
+        "name": "下界戈伯"
+      },
+      "magic_armor": 10.0,
+      "magic_damage": 4.0,
+      "projectile_accuracy": 1.1,
+      "projectile_speed": 1.0,
+      "ranged_damage": 2.0,
+      "rarity": 140.0,
+      "traits": []
+    }
+  }
+}

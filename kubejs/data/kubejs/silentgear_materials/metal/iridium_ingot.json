@@ -1,0 +1,58 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "intermediate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "alltheores:iridium_ingot"
+        },
+        "part_substitutes": {
+            "silentgear:rod": {
+                "item": "alltheores:iridium_ingot"
+            }
+        }
+    },
+    "display": {
+        "color": "#C0C0C0",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.alltheores:iridium_ingot"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "armor": 10.0,
+            "armor_toughness": 6,
+            "armor/boots": 2.0,
+            "armor/chestplate": 4.0,
+            "armor/helmet": 2.0,
+            "armor/leggings": 3.0,
+            "armor_durability": 10.0,
+            "attack_damage": 2.5,
+            "attack_speed": 0.3,
+            "attack_speed/axe": -0.15,
+            "attack_speed/hoe": -0.1,
+            "charging_value": 1.2,
+            "draw_speed": 0.3,
+            "durability": 350,
+            "enchantment_value": 15,
+            "harvest_speed": 4.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+                "level_hint": "2",
+                "name": "iron/铁"
+            },
+            "magic_armor": 8.0,
+            "magic_damage": 2.0,
+            "ranged_damage": 1.5,
+            "rarity": 30,
+            "traits": []
+        }
+    }
+}

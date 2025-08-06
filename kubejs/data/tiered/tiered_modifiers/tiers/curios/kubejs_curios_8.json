@@ -1,0 +1,29 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 8,
+  "reforge_durability_cost": 4,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "red"
+  },
+  "attributes": [
+    {
+      "type": "minecraft:generic.armor",
+      "modifier": {
+        "id": "tiered:kubejs_curios_8a",
+        "operation": "add_value",
+        "amount": -2
+      },
+      "optional_curio_slots": [
+        "back",
+        "ring",
+        "accessory",
+        "bracelet",
+        "charm",
+        "belt",
+        "necklace",
+        "spellbook"
+      ]
+    }
+  ]
+}

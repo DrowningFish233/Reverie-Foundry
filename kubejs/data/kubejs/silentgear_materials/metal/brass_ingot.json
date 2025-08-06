@@ -1,0 +1,60 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:brass_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:brass_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:brass_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.0,
+      "armor_toughness": 10,
+      "armor/boots": 2.0,
+      "armor/chestplate": 4.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 6.0,
+      "attack_damage": 0.5,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 1.5,
+      "draw_speed": 0.3,
+      "durability": 26.0,
+      "enchantment_value": 30.0,
+      "harvest_speed": 12.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_gold_tools",
+        "level_hint": "1",
+        "name": "gold/金"
+      },
+      "magic_armor": 12.0,
+      "magic_damage": 5.0,
+      "projectile_accuracy": 1.0,
+      "projectile_speed": 1.1,
+      "ranged_damage": 0.0,
+      "rarity": 55.0,
+      "traits": []
+    }
+  }
+}

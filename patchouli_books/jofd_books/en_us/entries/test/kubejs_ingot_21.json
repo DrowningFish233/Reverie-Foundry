@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.berkelium_ingot.name",
+    "icon": "kubejs:berkelium_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:berkelium_ingot"
+            },
+            "text": "patchouli.gui.kubejs.berkelium_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.berkelium_ingot"
+        }
+    ]
+}

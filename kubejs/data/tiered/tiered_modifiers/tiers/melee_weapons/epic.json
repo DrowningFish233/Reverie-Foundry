@@ -1,0 +1,44 @@
+{
+  "weight": 2,
+  "reforge_experience_cost": 8,
+  "reforge_durability_cost": 4,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "dark_purple"
+  },
+  "attributes": [
+    {
+      "type": "generic.attack_damage",
+      "modifier": {
+        "id": "tiered:epic_weapon_0",
+        "operation": "ADD_VALUE",
+        "amount": 0.375
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.armor",
+      "modifier": {
+        "id": "tiered:epic_weapon_1",
+        "operation": "ADD_VALUE",
+        "amount": 2
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.armor_toughness",
+      "modifier": {
+        "id": "tiered:epic_weapon_2",
+        "operation": "ADD_VALUE",
+        "amount": 1
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+    "conditions": [
+        {
+            "type": "silentgear:or",
+            "values": [
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:armor"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:tool"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:curio"
+                }
+            ]
+        }
+    ],
+    "description": {
+        "translate": "trait.silentgear.luck.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:wielder_effect",
+            "potion_effects": {
+                "silentgear:armor": [
+                    {
+                        "type": "full_set_only",
+                        "duration": 38,
+                        "effect": "kubejs:luck",
+                        "levels": [
+                            1
+                        ]
+                    }
+                ],
+                "silentgear:tool": [
+                    {
+                        "type": "trait_level",
+                        "duration": 38,
+                        "effect": "kubejs:luck",
+                        "levels": [
+                            1
+                        ]
+                    }
+                ],
+                "silentgear:curio": [
+                    {
+                        "type": "trait_level",
+                        "duration": 38,
+                        "effect": "kubejs:luck",
+                        "levels": [
+                            1
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "max_level": 1,
+    "name": {
+        "translate": "trait.silentgear.luck"
+    }
+}

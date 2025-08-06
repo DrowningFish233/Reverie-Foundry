@@ -1,0 +1,9 @@
+{
+  "USE_EYE_OF_ENDER": false,
+  "THROW_EYE_OF_ENDER": false,
+  "FRAME_HAS_RANDOM_EYE": false,
+  "EYE_BREAK_PROBABILITY": 10,
+  "IS_CRYPTIC_EYE_OBTAINABLE": false,
+  "IS_EVIL_EYE_OBTAINABLE": false,
+  "CAN_REMOVE_EYE": true
+}

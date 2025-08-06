@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:tungsten_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:tungsten_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#3A3A3A",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:tungsten_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 16.0,
+      "armor_toughness": 12,
+      "armor/boots": 3.0,
+      "armor/chestplate": 7.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 5.0,
+      "armor_durability": 20.0,
+      "attack_damage": 4.0,
+      "attack_speed": 0.2,
+      "attack_speed/axe": -0.3,
+      "attack_speed/hoe": -0.2,
+      "charging_value": 0.8,
+      "draw_speed": 0.1,
+      "durability": 800,
+      "enchantment_value": 10,
+      "harvest_speed": 6.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools",
+        "level_hint": "3",
+        "name": "diamond/钻石"
+      },
+      "magic_armor": 5.0,
+      "magic_damage": 1.0,
+      "ranged_damage": 2.5,
+      "rarity": 70,
+      "traits": []
+    }
+  }
+}

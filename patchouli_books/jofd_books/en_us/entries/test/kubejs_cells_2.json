@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.alexandrite_cell.name",
+    "icon": "kubejs:alexandrite_cell",
+    "category": "patchouli:kubejs_cells",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:alexandrite_cell"
+            },
+            "text": "patchouli.gui.kubejs.alexandrite_cell.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.alexandrite_cell"
+        }
+    ]
+}

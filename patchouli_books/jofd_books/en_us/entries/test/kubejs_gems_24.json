@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.minecraft.emerald.name",
+    "icon": "minecraft:emerald",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "minecraft:emerald"
+            },
+            "text": "patchouli.gui.minecraft.emerald.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.minecraft.emerald"
+        }
+    ]
+}

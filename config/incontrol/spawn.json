@@ -1,0 +1,75 @@
+[
+    {
+        "mob": "terra_entity:guide",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:demolitionist",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:goblin_tinkerer",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:arms_dealer",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:nurse",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:merchant",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:painter",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:dryad",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:dye_trader",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:traveling_merchant",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:witch_doctor",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:party_girl",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:angler",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:old_man",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:clothier",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:truffle",
+        "result": "deny"
+    },
+    {
+        "mob": "terra_entity:mechanic",
+        "result": "deny"
+    },
+    {
+        "phase": "angrymobs",
+        "when": "onjoin",
+        "angry": true
+    }
+]

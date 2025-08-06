@@ -1,0 +1,33 @@
+#World Specific Value Options:
+[wsv]
+	#The seed value used to generate world-specific values. By default, it is set to your world seed on world load. If you change this, some alchemy rules will change!
+	# Default: 42
+	# Range: -9223372036854775808 ~ 9223372036854775807
+	seed = 42
+	#Whether to use the above customized alchemy seed instead of the automatically generated one.
+	useCustomSeed = false
+
+#Balance Options:
+[balance]
+	#The scale that the Reduction reaction sets nearby creatures to. [Default: 0.6]
+	# Default: 0.6
+	# Range: 0.05 ~ 0.95
+	shrinkSmallSize = 0.6
+	#The scale that the Enlargement reaction sets nearby creatures to. [Default: 1.5]
+	# Default: 1.5
+	# Range: 1.05 ~ 10.0
+	growLargeSize = 1.5
+	#The step height that the Reduction reaction sets nearby creatures to. Normal is 0.6. [Default: 0.45]
+	# Default: 0.45
+	# Range: 0.01 ~ 0.6
+	shrinkSmallStep = 0.45
+	#The step height that the Enlargement reaction sets nearby creatures to. Normal is 0.6. [Default: 1.0]
+	# Default: 1.0
+	# Range: 0.6 ~ 5.0
+	growLargeStep = 1.0
+	#The number of ticks between Vortex Stone activations. Values 8 or below allow for infinite upward flight. [Default: 9]
+	# Default: 9
+	# Range: 0 ~ 64
+	vortexStoneCooldown = 9
+	#A list of reaction aliases to disable. To see the reaction aliases, use /reactive reaction list [Default: []]
+	disabledReactions = []

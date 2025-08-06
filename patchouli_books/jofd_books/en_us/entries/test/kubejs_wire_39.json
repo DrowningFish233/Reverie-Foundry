@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.thulium_wire.name",
+    "icon": "kubejs:thulium_wire",
+    "category": "patchouli:kubejs_wire",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:thulium_wire"
+            },
+            "text": "patchouli.gui.kubejs.thulium_wire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.thulium_wire"
+        }
+    ]
+}

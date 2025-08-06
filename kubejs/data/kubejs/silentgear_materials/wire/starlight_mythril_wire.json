@@ -1,0 +1,44 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal_fiber"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:starlight_mythril_wire"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#FFFFFFFF",
+        "main_texture_type": "LOW_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.starlight_mythril_wire"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:binding": {
+            "repair_efficiency": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:flexible"
+                }
+            ]
+        },
+        "silentgear:cord": {
+            "draw_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.2
+            }
+        }
+    }
+}

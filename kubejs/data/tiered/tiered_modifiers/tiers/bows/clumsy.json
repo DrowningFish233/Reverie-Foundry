@@ -1,0 +1,10 @@
+{
+    "weight": 0,
+    "reforge_experience_cost": 0,
+    "reforge_durability_cost": 0,
+    "reforge_item": "tiered:weaponsmiths_hammer",
+    "style": {
+        "color": "aqua"
+    },
+    "attributes": []
+}

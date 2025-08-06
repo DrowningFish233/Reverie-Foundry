@@ -1,0 +1,7 @@
+// Set extraction to "extract" to extract currently unextracted resources.
+{
+  "extract": {
+    "missingwilds": "extract"
+  },
+  "from_resource_packs": {}
+}

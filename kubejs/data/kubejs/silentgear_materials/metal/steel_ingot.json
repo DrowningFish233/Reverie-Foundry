@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:steel_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:steel_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:steel_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 22.0,
+      "armor_toughness": 6,
+      "armor/boots": 3.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 4.0,
+      "armor/leggings": 7.0,
+      "armor_durability": 25.0,
+      "attack_damage": 7.0,
+      "attack_speed": -0.1,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 0.5,
+      "draw_speed": -0.3,
+      "durability": 600.0,
+      "enchantment_value": 8.0,
+      "harvest_speed": 10.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_hardensteel_tools",
+        "level_hint": "2.5",
+        "name": "hardensteel"
+      },
+      "magic_armor": 2.0,
+      "magic_damage": 1.0,
+      "ranged_damage": 2.4,
+      "rarity": 45.0,
+      "traits": []
+    }
+  }
+}

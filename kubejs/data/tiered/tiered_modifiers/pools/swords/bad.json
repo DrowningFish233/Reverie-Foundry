@@ -1,0 +1,34 @@
+{
+  "weight": 4,
+  "verifiers": [
+    {
+      "tag": "gobber2:swords"
+    },
+    {
+      "tag": "minecraft:swords"
+    },
+    {
+      "tag": "minecraft:axes"
+    },
+    {
+      "tag": "gobber2:pickaxes"
+    },
+    {
+      "tag": "gobber2:axes"
+    },
+    {
+      "tag": "gobber2:hoes"
+    },
+    {
+      "tag": "c:tools/melee_weapon"
+    }
+  ],
+  "tiers": [
+    "tiered:swords/kubejs_sword_4",
+    "tiered:swords/kubejs_sword_6",
+    "tiered:swords/kubejs_sword_7",
+    "tiered:swords/kubejs_sword_8",
+    "tiered:swords/kubejs_sword_9",
+    "tiered:swords/kubejs_sword_10"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.rhodium_plate.name",
+    "icon": "kubejs:rhodium_plate",
+    "category": "patchouli:kubejs_plate",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:rhodium_plate"
+            },
+            "text": "patchouli.gui.kubejs.rhodium_plate.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.rhodium_plate"
+        }
+    ]
+}

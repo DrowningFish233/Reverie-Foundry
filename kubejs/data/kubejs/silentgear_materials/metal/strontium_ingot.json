@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:strontium_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:strontium_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#CD7F32",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:strontium_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 14.0,
+      "armor_toughness": 8,
+      "armor/boots": 3.0,
+      "armor/chestplate": 6.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 5.0,
+      "armor_durability": 12.0,
+      "attack_damage": 3.0,
+      "attack_speed": 0.25,
+      "attack_speed/axe": -0.15,
+      "attack_speed/hoe": 0.1,
+      "charging_value": 1.5,
+      "draw_speed": 0.3,
+      "durability": 350,
+      "enchantment_value": 22,
+      "harvest_speed": 5.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+        "level_hint": "2",
+        "name": "iron/铁"
+      },
+      "magic_armor": 8.0,
+      "magic_damage": 4.0,
+      "ranged_damage": 1.8,
+      "rarity": 45,
+      "traits": []
+    }
+  }
+}

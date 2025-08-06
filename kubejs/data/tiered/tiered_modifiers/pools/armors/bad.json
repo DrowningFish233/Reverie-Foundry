@@ -1,0 +1,29 @@
+{
+  "weight": 2,
+  "verifiers": [
+    {
+      "tag": "minecraft:head_armor"
+    },
+    {
+      "tag": "minecraft:chest_armor"
+    },
+    {
+      "tag": "minecraft:leg_armor"
+    },
+    {
+      "tag": "minecraft:foot_armor"
+    },
+    {
+      "tag": "c:armors"
+    },
+    {
+      "tag": "gobber2:armor"
+    }
+  ],
+  "tiers": [
+    "tiered:armors/dented",
+    "tiered:armors/unchained",
+    "tiered:armors/kubejs_unluck",
+    "tiered:armors/kubejs_spell_bad"
+  ]
+}

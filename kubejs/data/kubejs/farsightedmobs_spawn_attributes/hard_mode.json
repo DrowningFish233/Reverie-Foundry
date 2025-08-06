@@ -1,0 +1,38 @@
+{
+  "priority": 10,
+  "condition": {
+    "condition": "minecraft:all_of",
+    "terms": [
+      {
+        "condition": "farsightedmobs:difficulty",
+        "value": 3
+      }
+    ]
+  },
+  "attributes": [
+    {
+      "key": "minecraft:generic.max_health",
+      "modifier": {
+        "id": "kubejs:hard_mode",
+        "amount": 0.4,
+        "operation": "add_multiplied_base"
+      }
+    },
+    {
+      "key": "apothic_attributes:arrow_damage",
+      "modifier": {
+        "id": "kubejs:hard_mode",
+        "amount": 0.5,
+        "operation": "add_multiplied_base"
+      }
+    },
+    {
+      "key": "minecraft:generic.follow_range",
+      "modifier": {
+        "id": "kubejs:hard_mode",
+        "amount": 6,
+        "operation": "add_value"
+      }
+    }
+  ]
+}

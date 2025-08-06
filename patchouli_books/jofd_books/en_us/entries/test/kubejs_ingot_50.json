@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.thlanium_ingot.name",
+    "icon": "kubejs:thlanium_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:thlanium_ingot"
+            },
+            "text": "patchouli.gui.kubejs.thlanium_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.thlanium_ingot"
+        }
+    ]
+}

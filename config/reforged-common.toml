@@ -1,0 +1,15 @@
+#
+############################################
+#Disabling this will force all crafted items to recieve tiers without attributes
+#That would be the common tier for most items
+#-------------------------------------------
+#Default: true
+#-------------------------------------------
+"Boolean: Can Crafted Items Receive Tiers" = true
+#
+############################################
+#
+#Default: false
+#-------------------------------------------
+"Boolean: Can Broken Items Be Reforged" = true
+

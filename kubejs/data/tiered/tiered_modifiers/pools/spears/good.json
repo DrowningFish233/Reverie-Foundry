@@ -1,0 +1,16 @@
+{
+  "weight": 2,
+  "verifiers": [
+    {
+      "tag": "c:tools/spears"
+    }
+  ],
+  "tiers": [
+    "tiered:melee_weapons/sharp",
+    "tiered:melee_weapons/keen",
+    "tiered:melee_weapons/critical",
+    "tiered:melee_weapons/epic",
+    "tiered:melee_weapons/legendary",
+    "tiered:melee_weapons/rare"
+  ]
+}

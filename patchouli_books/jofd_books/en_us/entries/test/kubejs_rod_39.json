@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.steel_rod.name",
+    "icon": "kubejs:steel_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:steel_rod"
+            },
+            "text": "patchouli.gui.kubejs.steel_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.steel_rod"
+        }
+    ]
+}

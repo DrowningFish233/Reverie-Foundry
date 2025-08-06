@@ -1,0 +1,23 @@
+{
+  "loot_table": "lootintegrations:chests/nether",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "nova_structures:chests/nether_keep/fortress_overhaul_loot": 2,
+    "nova_structures:chests/nether_keep/vault_keep": 2,
+    "nova_structures:chests/nether_keep/vault_keep_generic": 1,
+    "nova_structures:equipment/nether_keep/equipment_keep": 1,
+    "nova_structures:pots/pot_nether_skeleton": 1,
+    "nova_structures:chests/end_castle/castle_brewing": 1,
+    "nova_structures:chests/hamlet/hamlet_tresure": 2,
+    "nova_structures:chests/nether_port/nether_port_chest": 1,
+    "nova_structures:chests/nether_skeleton_tower/skeleton_tower_camp": 1,
+    "nova_structures:chests/nether_skeleton_tower/skeleton_tower_chest": 2,
+    "nova_structures:chests/piglin_camp/chest": 1,
+    "nova_structures:chests/piglin_donjon/donjon_generic": 1,
+    "nova_structures:chests/piglin_donjon/vault_piglin_donjon": 3,
+    "nova_structures:chests/piglin_outstation/outstation_generic": 1,
+    "nova_structures:chests/piglin_outstation/outstation_tower": 2,
+    "nova_structures:chests/piglin_outstation/outstation_treasure": 3,
+    "nova_structures:chests/piglin_outstation/vault_piglin_outstation": 2
+  }
+}

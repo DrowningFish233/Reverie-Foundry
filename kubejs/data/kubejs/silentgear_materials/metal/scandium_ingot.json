@@ -1,0 +1,60 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "medium"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:scandium_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:scandium_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#b6a27c",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:scandium_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 15.0,
+      "armor_toughness": 4,
+      "armor/boots": 2.0,
+      "armor/chestplate": 6.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 5.0,
+      "armor_durability": 8.0,
+      "attack_damage": 2.0,
+      "attack_speed": 0.3,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 0.8,
+      "draw_speed": -0.2,
+      "durability": 500.0,
+      "enchantment_value": 11.0,
+      "harvest_speed": 8.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+        "level_hint": "2",
+        "name": "iron/铁"
+      },
+      "magic_armor": 2.0,
+      "magic_damage": 1.0,
+      "projectile_accuracy": 0.0,
+      "projectile_speed": 0.0,
+      "ranged_damage": 2.0,
+      "rarity": 40.0,
+      "traits": []
+    }
+  }
+}

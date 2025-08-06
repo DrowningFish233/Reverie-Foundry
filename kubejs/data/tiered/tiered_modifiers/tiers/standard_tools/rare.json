@@ -1,0 +1,33 @@
+{
+  "weight": 4,
+  "reforge_experience_cost": 6,
+  "reforge_durability_cost": 3,
+  "reforge_item": "tiered:toolsmiths_hammer",
+  "style": {
+    "color": "blue"
+  },
+  "attributes": [
+    {
+      "type": "generic.attack_damage",
+      "modifier": {
+        "id": "tiered:rare_tool_0",
+        "operation": "ADD_VALUE",
+        "amount": 0.25
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.armor",
+      "modifier": {
+        "id": "tiered:rare_tool_1",
+        "operation": "ADD_VALUE",
+        "amount": 1
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

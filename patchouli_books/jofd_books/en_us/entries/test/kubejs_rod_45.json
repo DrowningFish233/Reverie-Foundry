@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.tin_rod.name",
+    "icon": "kubejs:tin_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:tin_rod"
+            },
+            "text": "patchouli.gui.kubejs.tin_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.tin_rod"
+        }
+    ]
+}

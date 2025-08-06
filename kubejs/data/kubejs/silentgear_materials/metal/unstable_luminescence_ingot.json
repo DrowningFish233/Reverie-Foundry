@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:unstable_luminescence_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:unstable_luminescence_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:unstable_luminescence_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.0,
+      "armor_toughness": 0,
+      "armor/boots": 2.0,
+      "armor/chestplate": 4.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 8.0,
+      "attack_damage": 1.5,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 1.0,
+      "draw_speed": -0.2,
+      "durability": 200.0,
+      "enchantment_value": 22.0,
+      "harvest_speed": 7.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",
+        "level_hint": "1",
+        "name": "stone/石"
+      },
+      "magic_armor": 16.0,
+      "magic_damage": 4.0,
+      "ranged_damage": 1.3,
+      "rarity": 40.0,
+      "traits": []
+    }
+  }
+}

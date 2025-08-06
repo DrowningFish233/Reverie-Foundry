@@ -1,0 +1,25 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:stone",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "rock",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:granite"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF9F6B58",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.stone.granite"
+    },
+    "name_prefix": ""
+  },
+  "properties": {}
+}

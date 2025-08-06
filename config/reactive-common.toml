@@ -1,0 +1,36 @@
+#Options:
+[config]
+	#The crucible performs a stage of its calculations once every X game ticks. Lower numbers are more responsive, but laggier. [Default: 5]
+	# Default: 5
+	# Range: 1 ~ 900
+	crucibleTickDelay = 5
+	#The crucible affect entities with an area of this radius. [Default: 12]
+	# Default: 12
+	# Range: 2 ~ 64
+	crucibleRange = 12
+	#The crucible checks an area this many blocks in radius up to a few times a second. Do not set this too high. [Default: 6]
+	# Default: 6
+	# Range: 2 ~ 16
+	areaMemoryRange = 6
+	#Certain effects might teleport entities if they are not in this blacklist. [Default: "minecraft:ender_dragon", "minecraft:wither", "minecraft:warden"]
+	doNotTeleport = ["minecraft:ender_dragon", "minecraft:wither", "minecraft:warden"]
+	#Whether acid should dissolve entity blocks. This would delete the contents of said blocks. [Default: false]
+	acidMeltBlockEntities = false
+	#Blocks with a base break time beyond this cannot be displaced or made to fall. For finer control, use the relevant block tags. [Default: 35.0]
+	# Default: 35.0
+	# Range: 0.0 ~ 10000.0
+	maxMoveBlockBreakTime = 35.0
+	#The maximum number of blocks that can be displaced at once by a certain effect. [Default: 128]
+	# Default: 128
+	# Range: 4 ~ 4096
+	maxDisplaceCount = 128
+	#The maximum distance that a block like Copper can convey a displacement pulse [Default: 8]
+	# Default: 8
+	# Range: 1 ~ 4096
+	copperDisplaceConductRange = 8
+	#Whether the Radiant Staff of Power produces permanent light sources. When false, its lights will gradually vanish. [Default: true]
+	lightStaffLightsPermanent = true
+	#Whether to register the /reactive command on startup. [Default: true]
+	registerCommand = true
+	#This enables the GUI for Litmus Paper. Disabling it restores the original chat-based reporting. [Default: true]
+	litmusScreen = true

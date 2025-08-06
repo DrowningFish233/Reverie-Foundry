@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.twilightforest.ironwood_ingot.name",
+    "icon": "twilightforest:ironwood_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "twilightforest:ironwood_ingot"
+            },
+            "text": "patchouli.gui.twilightforest.ironwood_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.twilightforest.ironwood_ingot"
+        }
+    ]
+}

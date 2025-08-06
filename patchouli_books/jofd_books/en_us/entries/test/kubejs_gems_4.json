@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.ametrine.name",
+    "icon": "kubejs:ametrine",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:ametrine"
+            },
+            "text": "patchouli.gui.kubejs.ametrine.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.ametrine"
+        }
+    ]
+}

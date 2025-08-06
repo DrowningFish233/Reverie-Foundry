@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.bismuth_cell.name",
+    "icon": "kubejs:bismuth_cell",
+    "category": "patchouli:kubejs_cells",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:bismuth_cell"
+            },
+            "text": "patchouli.gui.kubejs.bismuth_cell.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.bismuth_cell"
+        }
+    ]
+}

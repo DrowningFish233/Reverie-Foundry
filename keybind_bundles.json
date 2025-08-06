@@ -1,0 +1,56 @@
+[
+  {
+    "id": "98f80dcf-3ac7-4914-b383-ee3f955d30ff",
+    "name": "b",
+    "entries": [
+      {
+        "key": "keybind.sophisticatedbackpacks.open_backpack",
+        "title": "打开背包",
+        "icon": {
+          "id": "sophisticatedbackpacks:diamond_backpack",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.curios.open.desc",
+        "title": "打开/关闭饰品栏",
+        "icon": {
+          "id": "terra_curio:terraspark_boots",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.ftbchunks.waypoint_manager",
+        "title": "路径点管理",
+        "icon": {
+          "id": "waystones:waystone",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.ftbchunks.map",
+        "title": "打开地图",
+        "icon": {
+          "id": "minecraft:map",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.ftbquests.quests",
+        "title": "打开任务",
+        "icon": {
+          "id": "ftbquests:book",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.refinedstorage.open_wireless_grid",
+        "title": "打开无线终端",
+        "icon": {
+          "id": "refinedstorage:wireless_grid",
+          "count": 1
+        }
+      }
+    ]
+  }
+]

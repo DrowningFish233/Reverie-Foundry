@@ -1,0 +1,26 @@
+{
+  "Dimensions": [
+    "minecraft:the_nether"
+  ],
+  "InvasionPriority": "SECONDARY_ONLY",
+  "InvasionTime": "BOTH",
+  "Rarity": 70,
+  "SeverityInfo": [
+    {
+      "FixedMobCap": 1,
+      "ForceNoSleep": true,
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:wither",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 1200
+    }
+  ],
+  "Tier": 6
+}

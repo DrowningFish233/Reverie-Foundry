@@ -1,0 +1,47 @@
+{
+  "weight": 2,
+  "verifiers": [
+    {
+      "tag": "minecraft:head_armor"
+    },
+    {
+      "tag": "minecraft:chest_armor"
+    },
+    {
+      "tag": "minecraft:leg_armor"
+    },
+    {
+      "tag": "minecraft:foot_armor"
+    },
+    {
+      "tag": "c:armors"
+    },
+    {
+      "tag": "gobber2:armor"
+    }
+  ],
+  "tiers": [
+    "tiered:armors/fortified",
+    "tiered:armors/heavy",
+    "tiered:armors/reinforced",
+    "tiered:armors/resilient",
+    "tiered:standard_armors/epic",
+    "tiered:standard_armors/legendary",
+    "tiered:standard_armors/rare",
+    "tiered:armors/kubejs_armor",
+    "tiered:armors/kubejs_armor_2",
+    "tiered:armors/kubejs_armor_3",
+    "tiered:armors/kubejs_armor_4",
+    "tiered:armors/kubejs_armor_toughness",
+    "tiered:armors/kubejs_armor_toughness_2",
+    "tiered:armors/kubejs_armor_toughness_3",
+    "tiered:armors/kubejs_armor_toughness_4",
+    "tiered:armors/kubejs_spell_power",
+    "tiered:armors/kubejs_spell_power_2",
+    "tiered:armors/kubejs_spell_power_3",
+    "tiered:armors/kubejs_luck",
+    "tiered:armors/kubejs_max_mana",
+    "tiered:armors/kubejs_max_mana",
+    "tiered:armors/kubejs_max_mana_2"
+  ]
+}

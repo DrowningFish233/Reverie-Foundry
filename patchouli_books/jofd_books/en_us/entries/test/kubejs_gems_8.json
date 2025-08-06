@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.opal.name",
+    "icon": "kubejs:opal",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:opal"
+            },
+            "text": "patchouli.gui.kubejs.opal.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.opal"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+  "registry_name": "twilightforest:naga",
+  "drops": [
+    {
+      "ingredient": {
+        "item": "kubejs:naga_soul_scale"
+      },
+      "chance": "0.6",
+      "min": "2",
+      "max": "4"
+    }
+  ]
+}

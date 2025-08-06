@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.carbonatite_ingot.name",
+    "icon": "kubejs:carbonatite_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:carbonatite_ingot"
+            },
+            "text": "patchouli.gui.kubejs.carbonatite_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.carbonatite_ingot"
+        }
+    ]
+}

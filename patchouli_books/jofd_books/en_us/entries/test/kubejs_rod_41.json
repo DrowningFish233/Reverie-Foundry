@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.tellurium_rod.name",
+    "icon": "kubejs:tellurium_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:tellurium_rod"
+            },
+            "text": "patchouli.gui.kubejs.tellurium_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.tellurium_rod"
+        }
+    ]
+}

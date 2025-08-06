@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.steel_plate.name",
+    "icon": "kubejs:steel_plate",
+    "category": "patchouli:kubejs_plate",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:steel_plate"
+            },
+            "text": "patchouli.gui.kubejs.steel_plate.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.steel_plate"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.lunium_nova_ingot.name",
+    "icon": "kubejs:lunium_nova_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:lunium_nova_ingot"
+            },
+            "text": "patchouli.gui.kubejs.lunium_nova_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.lunium_nova_ingot"
+        }
+    ]
+}

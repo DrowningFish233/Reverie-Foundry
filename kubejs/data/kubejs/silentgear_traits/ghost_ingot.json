@@ -1,0 +1,83 @@
+{
+    "conditions": [
+        {
+            "type": "silentgear:or",
+            "values": [
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:armor"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:tool"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:curio"
+                }
+            ]
+        }
+    ],
+    "description": {
+        "translate": "trait.silentgear.ghost_ingot.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:attribute",
+            "attribute_modifiers": {
+                "all/any": [
+                    {
+                        "attribute": "terra_curio:player.aggro",
+                        "operation": "add_value",
+                        "values": [
+                            -300,
+                            -600
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "silentgear:wielder_effect",
+            "potion_effects": {
+                "silentgear:armor": [
+                    {
+                        "effect": "kubejs:ghost_ingot",
+                        "type": "full_set_only",
+                        "duration": 38,
+                        "levels": [
+                            1,
+                            1
+                        ]
+                    }
+                ],
+                "silentgear:tool": [
+                    {
+                        "effect": "kubejs:ghost_ingot",
+                        "type": "trait_level",
+                        "duration": 38,
+                        "levels": [
+                            1,
+                            1
+                        ]
+                    }
+                ],
+                "silentgear:curio": [
+                    {
+                        "effect": "kubejs:ghost_ingot",
+                        "type": "trait_level",
+                        "duration": 38,
+                        "levels": [
+                            1,
+                            1
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "max_level": 2,
+    "name": {
+        "translate": "trait.silentgear.ghost_ingot"
+    }
+}

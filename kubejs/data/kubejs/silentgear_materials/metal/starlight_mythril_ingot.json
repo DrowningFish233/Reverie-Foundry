@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:starlight_mythril_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:starlight_mythril_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:starlight_mythril_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.0,
+      "armor_toughness": 8,
+      "armor/boots": 1.0,
+      "armor/chestplate": 5.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 11.0,
+      "attack_damage": 2.0,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 1.7,
+      "draw_speed": 0.4,
+      "durability": 323.0,
+      "enchantment_value": 36.0,
+      "harvest_speed": 8.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+        "level_hint": "2",
+        "name": "iron/铁"
+      },
+      "magic_armor": 25.0,
+      "magic_damage": 8.0,
+      "ranged_damage": 0.0,
+      "rarity": 80.0,
+      "traits": []
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.invar_rod.name",
+    "icon": "kubejs:invar_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:invar_rod"
+            },
+            "text": "patchouli.gui.kubejs.invar_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.invar_rod"
+        }
+    ]
+}

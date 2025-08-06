@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.sapphire.name",
+    "icon": "kubejs:sapphire",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:sapphire"
+            },
+            "text": "patchouli.gui.kubejs.sapphire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.sapphire"
+        }
+    ]
+}

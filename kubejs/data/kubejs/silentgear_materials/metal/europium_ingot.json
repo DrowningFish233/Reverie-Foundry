@@ -1,0 +1,60 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:europium_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:europium_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#5f5cd1",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:europium_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 12.0,
+      "armor_toughness": 10,
+      "armor/boots": 1.0,
+      "armor/chestplate": 5.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 14.0,
+      "attack_damage": 3.0,
+      "attack_speed": -0.5,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 0.7,
+      "draw_speed": 0.1,
+      "durability": 260.0,
+      "enchantment_value": 25.0,
+      "harvest_speed": 6.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+        "level_hint": "2",
+        "name": "iron/铁"
+      },
+      "magic_armor": 4.0,
+      "magic_damage": 3.0,
+      "projectile_accuracy": 1.0,
+      "projectile_speed": 0.6,
+      "ranged_damage": 1.0,
+      "rarity": 65.0,
+      "traits": []
+    }
+  }
+}

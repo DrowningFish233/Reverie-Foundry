@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.scandium_rod.name",
+    "icon": "kubejs:scandium_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:scandium_rod"
+            },
+            "text": "patchouli.gui.kubejs.scandium_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.scandium_rod"
+        }
+    ]
+}

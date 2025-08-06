@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.sunstone.name",
+    "icon": "kubejs:sunstone",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:sunstone"
+            },
+            "text": "patchouli.gui.kubejs.sunstone.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.sunstone"
+        }
+    ]
+}

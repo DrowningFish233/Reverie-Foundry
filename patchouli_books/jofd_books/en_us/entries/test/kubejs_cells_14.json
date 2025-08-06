@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.rose_quartz_cell.name",
+    "icon": "kubejs:rose_quartz_cell",
+    "category": "patchouli:kubejs_cells",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:rose_quartz_cell"
+            },
+            "text": "patchouli.gui.kubejs.rose_quartz_cell.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.rose_quartz_cell"
+        }
+    ]
+}

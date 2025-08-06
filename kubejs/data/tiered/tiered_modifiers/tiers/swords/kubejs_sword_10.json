@@ -1,0 +1,22 @@
+{
+  "weight": 4,
+  "reforge_experience_cost": 1,
+  "reforge_durability_cost": 1,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "red"
+  },
+  "attributes": [
+    {
+      "type": "minecraft:player.block_interaction_range",
+      "modifier": {
+        "id": "tiered:kubejs_sword_10d",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": -0.18
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

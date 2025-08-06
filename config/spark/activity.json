@@ -1,0 +1,41 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Drowning_Fish233",
+      "uniqueId": "7566be57-fe2b-4132-a293-53321b661d69"
+    },
+    "time": 1752662889761,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/o2x2r6Sop5"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Drowning_Fish233",
+      "uniqueId": "7566be57-fe2b-4132-a293-53321b661d69"
+    },
+    "time": 1752662886515,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/E26vIkJZiE"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Drowning_Fish233",
+      "uniqueId": "7566be57-fe2b-4132-a293-53321b661d69"
+    },
+    "time": 1752662884984,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/PMCXTZ4igd"
+    }
+  }
+]

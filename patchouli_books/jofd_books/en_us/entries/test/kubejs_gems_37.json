@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.alltheores.fluorite.name",
+    "icon": "alltheores:fluorite",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "alltheores:fluorite"
+            },
+            "text": "patchouli.gui.alltheores.fluorite.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.alltheores.fluorite"
+        }
+    ]
+}

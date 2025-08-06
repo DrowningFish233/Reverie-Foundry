@@ -1,0 +1,13 @@
+#Settings for the melter
+[melter]
+	#How much liquid fits into the melter, in mB
+	# Default: 1000
+	# Range: > 1
+	capacity = 1000
+
+#Settings for heat sources
+[heat_sources]
+	#Read heat sources from config
+	fromConfig = true
+	#List of heat source blocks or fluids. Each element in a list must follow the order: type (block, fluid), name, heat level (1-10), additional information shown in JEI
+	heatSources = [["block", "minecraft:torch", "1", ""], ["block", "minecraft:soul_torch", "1", ""], ["block", "minecraft:wall_torch", "1", ""], ["block", "minecraft:soul_wall_torch", "1", ""], ["block", "minecraft:fire", "2", ""], ["block", "minecraft:soul_fire", "2", ""], ["block", "minecraft:campfire", "2", ""], ["block", "minecraft:soul_campfire", "2", ""], ["block", "minecraft:magma_block", "3", ""], ["fluid", "minecraft:lava", "4", ""], ["block", "create:lit_blaze_burner", "2", "Lit"], ["block", "create:blaze_burner/fading", "3", "Heated"], ["block", "create:blaze_burner/kindled", "3", "Heated"], ["block", "create:blaze_burner/seething", "5", "Super-Heated"]]

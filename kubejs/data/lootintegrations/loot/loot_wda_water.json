@@ -1,0 +1,14 @@
+{
+  "loot_table": "lootintegrations:chests/water",
+  "max_result_itemcount": 8,
+  "integrated_loot_tables": {
+    "dungeons_arise:chests/fishing_hut/fishing_hut_barrels": 1,
+    "dungeons_arise:chests/illager_galley/illager_galley_treasure": 3,
+    "dungeons_arise:chests/typhon/typhon_treasure": 2,
+    "dungeons_arise_seven_seas:chests/corsair_corvette/corsair_corvette_treasure": 2,
+    "dungeons_arise_seven_seas:chests/pirate_junk/pirate_junk_treasure": 2,
+    "dungeons_arise_seven_seas:chests/small_yacht/small_yacht_treasure": 2,
+    "dungeons_arise_seven_seas:chests/unicorn_galleon/unicorn_galleon_treasure": 2,
+    "dungeons_arise_seven_seas:chests/victory_frigate/victory_frigate_treasure": 4
+  }
+}

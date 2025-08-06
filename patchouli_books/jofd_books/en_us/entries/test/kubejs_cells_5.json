@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.aquamarine_cell.name",
+    "icon": "kubejs:aquamarine_cell",
+    "category": "patchouli:kubejs_cells",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:aquamarine_cell"
+            },
+            "text": "patchouli.gui.kubejs.aquamarine_cell.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.aquamarine_cell"
+        }
+    ]
+}

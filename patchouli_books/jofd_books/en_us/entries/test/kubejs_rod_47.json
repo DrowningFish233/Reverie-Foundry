@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.uranium_rod.name",
+    "icon": "kubejs:uranium_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:uranium_rod"
+            },
+            "text": "patchouli.gui.kubejs.uranium_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.uranium_rod"
+        }
+    ]
+}

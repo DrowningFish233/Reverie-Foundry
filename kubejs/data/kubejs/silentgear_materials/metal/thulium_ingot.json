@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:thulium_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:thulium_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#6e4340",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:thulium_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 10.0,
+      "armor_toughness": 6,
+      "armor/boots": 1.8,
+      "armor/chestplate": 4.0,
+      "armor/helmet": 1.8,
+      "armor/leggings": 2.8,
+      "armor_durability": 8.0,
+      "attack_damage": 1.2,
+      "attack_speed": 0.35,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.05,
+      "charging_value": 2.0,
+      "draw_speed": 0.5,
+      "durability": 250,
+      "enchantment_value": 35,
+      "harvest_speed": 2.5,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",
+        "level_hint": "1",
+        "name": "stone/石"
+      },
+      "magic_armor": 20.0,
+      "magic_damage": 10.0,
+      "ranged_damage": 1.8,
+      "rarity": 65,
+      "traits": []
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.osmium_rod.name",
+    "icon": "kubejs:osmium_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:osmium_rod"
+            },
+            "text": "patchouli.gui.kubejs.osmium_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.osmium_rod"
+        }
+    ]
+}

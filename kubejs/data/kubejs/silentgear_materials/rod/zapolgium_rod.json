@@ -1,0 +1,42 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": [],
+        "part_substitutes": {
+            "silentgear:rod": {
+                "item": "kubejs:zapolgium_rod"
+            }
+        }
+    },
+    "display": {
+        "color": "#FFF6E2CD",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.zapolgium_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "attack_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.1
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.2
+            },
+            "ranged_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.1
+            },
+            "traits": []
+        }
+    }
+}

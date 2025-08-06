@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.lunium_nova_wire.name",
+    "icon": "kubejs:lunium_nova_wire",
+    "category": "patchouli:kubejs_wire",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:lunium_nova_wire"
+            },
+            "text": "patchouli.gui.kubejs.lunium_nova_wire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.lunium_nova_wire"
+        }
+    ]
+}

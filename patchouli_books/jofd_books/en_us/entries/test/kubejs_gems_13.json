@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.rose_quartz.name",
+    "icon": "kubejs:rose_quartz",
+    "category": "patchouli:kubejs_gems",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:rose_quartz"
+            },
+            "text": "patchouli.gui.kubejs.rose_quartz.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.rose_quartz"
+        }
+    ]
+}

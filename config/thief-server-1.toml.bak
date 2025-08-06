@@ -1,0 +1,105 @@
+[crime]
+	# Breaking protected blocks (#thief:break_protected/<level>) in protected structure (#thief:protected) is considered a crime.
+	# Default: true
+	breaking_protected_blocks = true
+	# Interacting with protected blocks (#thief:interact_protected/<level>) in protected structure (#thief:protected) is considered a crime.
+	# Default: true
+	interacting_with_protected_blocks = true
+	# Crime severity for kicking a villager out of bed.
+	# Default: LIGHT
+	#Allowed Values: NONE, LIGHT, MEDIUM, HEAVY
+	kicking_villager_out_of_bed = "LIGHT"
+	# Crime severity for sleeping in a bed that belongs to a villager.
+	# Default: MEDIUM
+	#Allowed Values: NONE, LIGHT, MEDIUM, HEAVY
+	sleeping_in_villagers_bed = "MEDIUM"
+	# Check for crimes only in #thief:protected structures. If disabled, whole world is 'protected'.
+	# Default: true.
+	crime_only_in_protected_structures = true
+	# Killing protected entities (#thief:killing_protected/<level>) in protected structure (#thief:protected) is considered a crime.
+	# Default: true
+	killing_protected_entities = true
+
+[witness]
+	# Max distance (in blocks) at which an entity can notice a crime.
+	# Default: 32
+	# Range: 1 ~ 64
+	max_notice_distance = 16
+	# Distance (in blocks) at which an entity always notices a crime, even through blocks. This value is halved when entity is sleeping.
+	# Default: 6
+	# Range: 0 ~ 64
+	always_notice_distance = 6
+
+[punishment]
+	# Minimum reputation level needed for a villager to trade with the player. Anything lower will prevent the trade.
+	# Default: DISTRUSTED
+	#Allowed Values: HATED, UNWELCOME, DISTRUSTED, NEUTRAL, ACCEPTED, RESPECTED, HONORED
+	trade_reputation_threshold = "DISTRUSTED"
+	# Minimum crime severity at which guards (#thief:guards) will attack the player, if not already attacking something else. Set to NONE to disable.
+	# Default: MEDIUM
+	#Allowed Values: NONE, LIGHT, MEDIUM, HEAVY
+	guard_attack_threshold = "MEDIUM"
+
+	[punishment.reputation]
+		# [LIGHT] Value added to 'Major Negative' reputation gossip.
+		# Default: 0
+		# Range: 0 ~ 100
+		light_major_change = 0
+		# [LIGHT] Value added to 'Minor Negative' reputation gossip.
+		# Default: 15
+		# Range: 0 ~ 200
+		light_minor_change = 15
+		# [MEDIUM] Value added to 'Major Negative' reputation gossip.
+		# Default: 5
+		# Range: 0 ~ 100
+		medium_major_change = 5
+		# [MEDIUM] Value added to 'Minor Negative' reputation gossip.
+		# Default: 25
+		# Range: 0 ~ 200
+		medium_minor_change = 25
+		# [HEAVY] Value added to 'Major Negative' reputation gossip.
+		# Default: 20
+		# Range: 0 ~ 100
+		heavy_major_change = 20
+		# [HEAVY] Value added to 'Minor Negative' reputation gossip.
+		# Default: 50
+		# Range: 0 ~ 200
+		heavy_minor_change = 50
+
+[gifts]
+	# Villagers accept gifts (#thief:villager_gifts) that will improve player's reputation with them. Just use the item on a Villager.
+	# Default: true
+	enabled = true
+	# 'Minor Positive' reputation increase per gift.
+	# Default: 2
+	# Default: 2
+	# Range: 0 ~ 25
+	minor_positive_increase = 2
+	# 'Minor Negative' reputation reduction per gift.
+	# Default: 5
+	# Default: 5
+	# Range: 0 ~ 200
+	minor_negative_reduction = 5
+	# Giving gifts requires 'sneak' to be held.
+	# Default: true
+	requires_sneak = true
+
+[hero_of_the_village]
+	# Players with 'Hero of the Village' buff can steal without consequences.
+	# Default: true
+	hero_can_steal = true
+	# 'Major Positive' reputation increase with nearby villagers when raid is defeated.
+	# Default: 2
+	# Default: 2
+	# Range: 0 ~ 20
+	major_positive_increase = 2
+	# 'Minor Positive' reputation increase with nearby villagers when raid is defeated.
+	# Default: 25
+	# Default: 25
+	# Range: 0 ~ 25
+	minor_positive_increase = 25
+
+[misc]
+	# Fix villager trade reputation (gossip) not applying properly when using shift+click to trade (shift+clicking is considered one trade operation, instead of many).
+	# Default: true.
+	fix_shift_click_villager_trading_reputation = true

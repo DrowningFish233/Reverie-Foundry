@@ -1,0 +1,51 @@
+{
+    "conditions": [
+        {
+            "type": "silentgear:or",
+            "values": [
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:armor"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:tool"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:curio"
+                }
+            ]
+        }
+    ],
+    "description": {
+        "translate": "trait.silentgear.hallowed_gold_ingot.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:attribute",
+            "attribute_modifiers": {
+                "all/any": [
+                    {
+                        "attribute": "malum:scythe_proficiency",
+                        "operation": "add_multiplied_base",
+                        "values": [
+                            0.15
+                        ]
+                    },
+                    {
+                        "attribute": "irons_spellbooks:holy_spell_power",
+                        "operation": "add_multiplied_base",
+                        "values": [
+                            0.1
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "max_level": 1,
+    "name": {
+        "translate": "trait.silentgear.hallowed_gold_ingot"
+    }
+}

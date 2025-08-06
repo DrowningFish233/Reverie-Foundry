@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.moonstone_cell.name",
+    "icon": "kubejs:moonstone_cell",
+    "category": "patchouli:kubejs_cells",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:moonstone_cell"
+            },
+            "text": "patchouli.gui.kubejs.moonstone_cell.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.moonstone_cell"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 8,
+  "reforge_durability_cost": 4,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "aqua"
+  },
+  "attributes": [
+    {
+      "type": "apothic_attributes:arrow_damage",
+      "modifier": {
+        "id": "tiered:kubejs_bow_12a",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.10
+      },
+      "optional_equipment_slots": [
+        "HAND"
+      ]
+    },
+    {
+      "type": "apothic_attributes:crit_chance",
+      "modifier": {
+        "id": "tiered:kubejs_bow_12b",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.03
+      },
+      "optional_equipment_slots": [
+        "HAND"
+      ]
+    }
+  ]
+}

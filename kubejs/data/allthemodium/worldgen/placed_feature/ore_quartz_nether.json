@@ -1,0 +1,27 @@
+{
+  "feature": "allthemodium:ore_quartz",
+  "placement": [
+    {
+      "count": 40,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "height": {
+        "min_inclusive": {
+          "above_bottom": 64
+        },
+        "max_inclusive": {
+          "above_bottom": 128
+        },
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

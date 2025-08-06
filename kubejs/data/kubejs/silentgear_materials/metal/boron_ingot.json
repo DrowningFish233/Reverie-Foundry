@@ -1,0 +1,60 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:boron_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:boron_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#618098",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:boron_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 13.0,
+      "armor_toughness": 10,
+      "armor/boots": 2.0,
+      "armor/chestplate": 5.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 13.0,
+      "attack_damage": 2.0,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 0.7,
+      "draw_speed": 0.1,
+      "durability": 1350.0,
+      "enchantment_value": 16.0,
+      "harvest_speed": 6.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",
+        "level_hint": "2",
+        "name": "stone/石"
+      },
+      "magic_armor": 6.0,
+      "magic_damage": 1.0,
+      "projectile_accuracy": 1.1,
+      "projectile_speed": 1.0,
+      "ranged_damage": 0.0,
+      "rarity": 20.0,
+      "traits": []
+    }
+  }
+}

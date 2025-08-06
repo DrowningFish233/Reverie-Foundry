@@ -1,0 +1,401 @@
+{
+  "Dimensions": [
+    "minecraft:overworld"
+  ],
+  "InvasionPriority": "PRIMARY_ONLY",
+  "InvasionTime": "BOTH",
+  "Rarity": 13,
+  "SeverityInfo": [
+    {
+      "ForceNoSleep": true,
+      "MobCapPercentage": 0.6,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:blaze",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:skeleton",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:zombified_piglin",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:piglin",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 6
+        },
+        {
+          "EntityType": "minecraft:piglin_brute",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:hoglin",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:magma_cube",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 3
+        }
+      ],
+      "SkyRenderInfo": {
+        "Brightness": 0.3,
+        "FogRenderInfo": {
+          "FlickerRGBOffset": [
+            [
+              -0.85,
+              -0.85,
+              -0.85,
+              0.0,
+              350.0
+            ]
+          ],
+          "RGBOffset": [
+            0.85,
+            0.15,
+            0.0
+          ]
+        },
+        "LightLevel": 0,
+        "RGBOffset": [
+          -0.1,
+          -0.85,
+          -0.85
+        ],
+        "SunMoonAlpha": 0.15
+      },
+      "TickDelay": 18
+    },
+    {
+      "ForceNoSleep": true,
+      "MobCapPercentage": 0.75,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:blaze",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:skeleton",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:zombified_piglin",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:piglin",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 6
+        },
+        {
+          "EntityType": "minecraft:piglin_brute",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:hoglin",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:magma_cube",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:ghast",
+          "ForceDespawn": true,
+          "IgnoreSpawnRules": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:wither_skeleton",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 3
+        }
+      ],
+      "SkyRenderInfo": {
+        "Brightness": 0.25,
+        "FogRenderInfo": {
+          "FlickerRGBOffset": [
+            [
+              -0.9,
+              -0.9,
+              -0.9,
+              0.0,
+              300.0
+            ]
+          ],
+          "RGBOffset": [
+            0.9,
+            0.2,
+            0.0
+          ]
+        },
+        "LightLevel": 0,
+        "RGBOffset": [
+          -0.15,
+          -0.9,
+          -0.9
+        ],
+        "SunMoonAlpha": 0.1
+      },
+      "TickDelay": 15
+    },
+    {
+      "ForceNoSleep": true,
+      "MobCapPercentage": 0.85,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:blaze",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 2,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:skeleton",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:zombified_piglin",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:piglin",
+          "ForceDespawn": true,
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 6
+        },
+        {
+          "EntityType": "minecraft:piglin_brute",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:hoglin",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:magma_cube",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:ghast",
+          "ForceDespawn": true,
+          "IgnoreSpawnRules": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:wither_skeleton",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:zoglin",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "SkyRenderInfo": {
+        "Brightness": 0.2,
+        "FogRenderInfo": {
+          "FlickerRGBOffset": [
+            [
+              -0.95,
+              -0.95,
+              -0.95,
+              0.0,
+              250.0
+            ]
+          ],
+          "RGBOffset": [
+            0.95,
+            0.25,
+            0.0
+          ]
+        },
+        "LightLevel": 0,
+        "RGBOffset": [
+          -0.2,
+          -0.95,
+          -0.95
+        ],
+        "SunMoonAlpha": 0.05
+      },
+      "TickDelay": 12
+    },
+    {
+      "ForceNoSleep": true,
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:blaze",
+          "ForceDespawn": true,
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:skeleton",
+          "ForceDespawn": true,
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:zombified_piglin",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:piglin",
+          "ForceDespawn": true,
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 6
+        },
+        {
+          "EntityType": "minecraft:piglin_brute",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:hoglin",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:magma_cube",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:ghast",
+          "ForceDespawn": true,
+          "IgnoreSpawnRules": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:wither_skeleton",
+          "ForceDespawn": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:zoglin",
+          "ForceDespawn": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "SkyRenderInfo": {
+        "Brightness": 0.15,
+        "FogRenderInfo": {
+          "FlickerRGBOffset": [
+            [
+              -1.0,
+              -1.0,
+              -1.0,
+              0.0,
+              200.0
+            ]
+          ],
+          "RGBOffset": [
+            1.0,
+            0.3,
+            0.0
+          ]
+        },
+        "LightLevel": 0,
+        "RGBOffset": [
+          -0.25,
+          -1.0,
+          -1.0
+        ],
+        "SunMoonAlpha": 0.0
+      },
+      "TickDelay": 9
+    }
+  ],
+  "StopConversions": true,
+  "Tier": 4,
+  "TimeModifier": "DAY_TO_NIGHT",
+  "WeatherType": "CLEAR"
+}

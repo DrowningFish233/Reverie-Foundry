@@ -1,0 +1,133 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/tyrian_steel"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/tyrian_steel"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFB01080",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.tyrian_steel"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 25.0,
+      "armor/boots": 4.0,
+      "armor/chestplate": 9.0,
+      "armor/helmet": 5.0,
+      "armor/leggings": 7.0,
+      "armor_durability": 81.0,
+      "armor_toughness": 12.0,
+      "attack_damage": 8.0,
+      "attack_speed": 0.0,
+      "charging_value": 1.1,
+      "draw_speed": 0.0,
+      "durability": 3652.0,
+      "enchantment_value": 16.0,
+      "harvest_speed": 18.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_tyrian_steel_tools",
+        "level_hint": "4",
+        "name": "tyrian_steel"
+      },
+      "magic_armor": 12.0,
+      "magic_damage": 6.0,
+      "projectile_accuracy": 1.1,
+      "projectile_speed": 1.1,
+      "ranged_damage": 4.0,
+      "rarity": 100.0,
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ],
+          "level": 3,
+          "trait": "silentgear:sturdy"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.5
+                }
+              ]
+            }
+          ],
+          "level": 1,
+          "trait": "silentgear:void_ward"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": -2.0
+      },
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ],
+          "level": 4,
+          "trait": "silentgear:sturdy"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "durability": {
+        "operation": "ADD",
+        "value": 251.0
+      },
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_tyrian_steel_tools",
+        "level_hint": "4",
+        "name": "tyrian_steel"
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 30.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:imperial"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:gold_digger"
+        }
+      ]
+    }
+  }
+}

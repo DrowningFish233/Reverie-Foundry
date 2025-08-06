@@ -1,0 +1,25 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 2,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "yellow"
+  },
+  "attributes": [
+    {
+      "type": "irons_spellbooks:spell_power",
+      "modifier": {
+        "id": "tiered:kubejs_spell_power_3",
+        "operation": "add_multiplied_base",
+        "amount": 0.06
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    }
+  ]
+}

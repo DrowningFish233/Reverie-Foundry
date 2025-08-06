@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.tellurium_wire.name",
+    "icon": "kubejs:tellurium_wire",
+    "category": "patchouli:kubejs_wire",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:tellurium_wire"
+            },
+            "text": "patchouli.gui.kubejs.tellurium_wire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.tellurium_wire"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+  "feature": "minecraft:ore_iron",
+  "placement": [
+    {
+      "count": 30,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "height": {
+        "min_inclusive": {
+          "absolute": 64
+        },
+        "max_inclusive": {
+          "absolute": 156
+        },
+        "type": "minecraft:trapezoid"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

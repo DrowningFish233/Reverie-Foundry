@@ -1,0 +1,8 @@
+{
+  "id": "lost_eye",
+  "rarity": "common",
+  "loot_to_inject_id": "endrem:minecraft/chests/abandoned_mineshaft",
+  "loot_tables_id": [
+    "minecraft:chests/abandoned_mineshaft"
+  ]
+}

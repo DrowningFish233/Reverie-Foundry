@@ -1,0 +1,16 @@
+{
+	/* Specify an entity to set the given attribute values for. Regex may be used for the attribute names as well. For example:
+	   "minecraft:.*": {"minecraft:generic.max_health": 40}
+	   This example will set the max health of all vanilla living entities to 40.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"attribute_base_values": 
+	{
+		"minecraft:allay":{
+			"minecraft:generic.max_health": 40
+		},
+		"minecraft:iron_golem":{
+			"minecraft:generic.max_health": 120
+		}
+	}
+}

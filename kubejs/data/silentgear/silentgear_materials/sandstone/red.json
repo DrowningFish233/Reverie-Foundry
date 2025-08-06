@@ -1,0 +1,22 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:sandstone",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:sandstone/red_blocks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFD97B30",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.sandstone.red"
+    },
+    "name_prefix": ""
+  },
+  "properties": {}
+}

@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.uranium_ingot.name",
+    "icon": "kubejs:uranium_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:uranium_ingot"
+            },
+            "text": "patchouli.gui.kubejs.uranium_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.uranium_ingot"
+        }
+    ]
+}

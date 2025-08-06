@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.mythril_wire.name",
+    "icon": "kubejs:mythril_wire",
+    "category": "patchouli:kubejs_wire",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:mythril_wire"
+            },
+            "text": "patchouli.gui.kubejs.mythril_wire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.mythril_wire"
+        }
+    ]
+}

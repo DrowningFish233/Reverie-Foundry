@@ -1,0 +1,44 @@
+ambienceUpdateDefaultAdditions = true
+ambienceUpdateDefaultFogColor = true
+ambienceUpdateDefaultFoliageColor = true
+ambienceUpdateDefaultGrassColor = true
+ambienceUpdateDefaultLoop = true
+ambienceUpdateDefaultMood = true
+ambienceUpdateDefaultMusic = true
+ambienceUpdateDefaultParticles = true
+ambienceUpdateDefaultSkyColor = true
+ambienceUpdateDefaultWaterColor = true
+ambienceUpdateDefaultWaterFogColor = true
+blockSoundsUpdateEndRods = true
+blockSoundsUpdateEndPortalFrame = true
+blockSoundsUpdateEndPortals = true
+blockSoundsUpdateEndStone = true
+blockSoundsUpdateEndStoneBricks = true
+blockSoundsUpdateShulkerBoxes = true
+blockSoundUpdateChorus = true
+blockSoundUpdatePurpur = true
+elytraAddOpenCloseSounds = true
+elytraSneakToStopGliding = true
+elytraUpdateEquipSound = true
+endermanStereoStareSound = true
+endermiteExpandHitRange = true
+endermiteUpdateSounds = true
+enderPearlBreakParticles = true
+enderPearlUpdateTeleportSound = true
+enderPearlUpdateThrowSound = true
+rubblemiteExpandHitRange = true
+shulkerBulletEnforceOwnerLimit = true
+shulkerBulletRebalanceLevitation = true
+shulkerHurtByPiercing = true
+silverfishExpandHitRange = true
+tridentsReturnFromVoid = true
+voidPoofParticlesUponDeath = true
+# Default: 3
+# Range: > -2147483648
+shulkerBulletEnforceCountLimit = 3
+# Default: 30
+# Range: > -2147483648
+shulkerBulletEnforceDistanceLimit = 30
+# Default: 30
+# Range: > -2147483648
+shulkerBulletEnforceTimeLimit = 30

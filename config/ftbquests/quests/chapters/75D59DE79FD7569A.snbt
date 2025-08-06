@@ -1,0 +1,308 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "75D59DE79FD7569A"
+	group: ""
+	id: "75D59DE79FD7569A"
+	images: [
+		{
+			height: 2.5d
+			image: "kubejs:textures/gui/diff.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -4.5d
+			y: -9.0d
+		}
+		{
+			dependency: "66EA89C1E75509EB"
+			height: 5.0d
+			image: "kubejs:textures/gui/green1.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependency: "66EA89C1E75509EB"
+			height: 5.0d
+			image: "kubejs:textures/gui/night.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependency: "66EA89C1E75509EB"
+			height: 5.0d
+			image: "kubejs:textures/gui/red3.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependency: "66EA89C1E75509EB"
+			height: 5.0d
+			image: "kubejs:textures/gui/red4.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependency: "66EA89C1E75509EB"
+			height: 5.0d
+			image: "kubejs:textures/gui/yellow1.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			dependency: "66EA89C1E75509EB"
+			height: 5.0d
+			image: "kubejs:textures/gui/yellow2.png"
+			order: 100
+			rotation: 0.0d
+			width: 5.0d
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependency: "66EA89C1E75509EB"
+			height: 5.0d
+			image: "kubejs:textures/gui/red5.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependency: "66EA89C1E75509EB"
+			height: 5.0d
+			image: "kubejs:textures/gui/red6.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependency: "66EA89C1E75509EB"
+			height: 5.0d
+			image: "kubejs:textures/gui/green2.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -8.5d
+			y: -2.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: {
+				id: "cataclysm:altar_of_amethyst"
+			}
+			id: "66EA89C1E75509EB"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				id: "1774F453CC38D27B"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "1FBA0FE6A13F8E70"
+			tasks: [{
+				id: "386951FF6BD39CF1"
+				type: "checkmark"
+			}]
+			x: -10.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "321B703A9E877386"
+			tasks: [{
+				id: "0F94A88142CE9ECF"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66EA89C1E75509EB"]
+			disable_recipe_mod: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "6E0EE5297B295288"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "521262C33714D2BA"
+				ignore_reward_blocking: true
+				table_id: 6566410977513582803L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "0B3D56BA0124B9F7"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "6E25E82DBD18D2C8"
+			rewards: [
+				{
+					command: "/gamerule doDaylightCycle false"
+					disable_reward_screen_blur: true
+					exclude_from_claim_all: true
+					icon: {
+						id: "terra_curio:moon_stone"
+					}
+					id: "497C56F71A3C4297"
+					ignore_reward_blocking: true
+					permission_level: 4
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "enabled"
+					command: "/time set midnight"
+					disable_reward_screen_blur: true
+					exclude_from_claim_all: true
+					icon: {
+						id: "terra_curio:moon_stone"
+					}
+					id: "737667DDDD217523"
+					ignore_reward_blocking: true
+					permission_level: 4
+					silent: true
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "398647A5A01A9246"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "01A177C5961D5AA7"
+			tasks: [{
+				id: "3F1777BEE4A29C52"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "110C8BBFDBFBA375"
+			rewards: [{
+				auto: "enabled"
+				command: "/kubejs stages add @p difficult_6 "
+				disable_reward_screen_blur: true
+				exclude_from_claim_all: true
+				icon: {
+					components: {
+						"ftbquests:missing_item": "knightquest:wither_helmet"
+					}
+					id: "ftbquests:missing_item"
+				}
+				id: "1759F8E53B84EEF3"
+				ignore_reward_blocking: true
+				permission_level: 4
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "100B5EC4DB6167A4"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "29833D624EE0F60A"
+			tasks: [{
+				id: "021398C940FCDA12"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "34AFC6414A805C2D"
+			tasks: [{
+				id: "34FE428FE172708E"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "5B941F073DDCD277"
+			tasks: [{
+				id: "2335869017325BED"
+				type: "checkmark"
+			}]
+			x: -10.5d
+			y: -2.0d
+		}
+	]
+}

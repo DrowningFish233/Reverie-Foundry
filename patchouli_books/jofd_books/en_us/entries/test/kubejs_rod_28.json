@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.nlatstone_rod.name",
+    "icon": "kubejs:nlatstone_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:nlatstone_rod"
+            },
+            "text": "patchouli.gui.kubejs.nlatstone_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.nlatstone_rod"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.mythril_plate.name",
+    "icon": "kubejs:mythril_plate",
+    "category": "patchouli:kubejs_plate",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:mythril_plate"
+            },
+            "text": "patchouli.gui.kubejs.mythril_plate.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.mythril_plate"
+        }
+    ]
+}

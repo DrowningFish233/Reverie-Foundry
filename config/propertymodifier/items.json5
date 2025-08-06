@@ -1,0 +1,14 @@
+{
+	/* Specify the components of items here, using the item name (or a regex for item names) as the key. For example:
+	   ".*": {"minecraft:max_stack_size": 64}
+	   This example will make all (non-damageable) items stackable to 64. Be aware that this will be merged with existing components, overwriting the values where applicable.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"default_components": { },
+	/* Specify crafting remainder items for other items here, using the item name (or a regex for item names) as the key. For example:
+	   "minecraft:.*_(soup|stew)": "minecraft:bowl"
+	   This example will make all of Minecraft's soup and stew items return a bowl if used in a crafting table.
+	   When modifying this map, the game must be restarted for the changes to take effect.
+	*/
+	"crafting_remainders": { }
+}

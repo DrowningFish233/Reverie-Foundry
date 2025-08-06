@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.celeslar_plate.name",
+    "icon": "kubejs:celeslar_plate",
+    "category": "patchouli:kubejs_plate",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:celeslar_plate"
+            },
+            "text": "patchouli.gui.kubejs.celeslar_plate.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.celeslar_plate"
+        }
+    ]
+}

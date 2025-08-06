@@ -1,0 +1,79 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "organic",
+      "wood"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "minecraft:planks"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "minecraft:stick"
+      }
+    }
+  },
+  "display": {
+    "color": "#FF896727",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.wood"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 7.0,
+      "armor/boots": 1.0,
+      "armor/chestplate": 3.0,
+      "armor/helmet": 1.0,
+      "armor/leggings": 2.0,
+      "armor_durability": 8.0,
+      "attack_damage": 0.0,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.2,
+      "attack_speed/hoe": -2.0,
+      "charging_value": 0.6,
+      "draw_speed": 0.0,
+      "durability": 59.0,
+      "enchantment_value": 15.0,
+      "harvest_speed": 2.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_wood_tools",
+        "level_hint": "0",
+        "name": "wood"
+      },
+      "magic_armor": 2.0,
+      "projectile_accuracy": 0.9,
+      "projectile_speed": 1.0,
+      "ranged_damage": 0.0,
+      "rarity": 1.0,
+      "repair_value": 0.25,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flammable"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:jagged"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "organic",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:gems/prismarine"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF91C5B7",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.prismarine"
+    },
+    "name_prefix": {
+      "translate": "material.silentgear.prismarine"
+    }
+  },
+  "properties": {
+    "silentgear:coating": {
+      "armor_durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.125
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.075
+      },
+      "knockback_resistance": {
+        "operation": "ADD",
+        "value": 0.25
+      },
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.67
+            }
+          ],
+          "level": 5,
+          "trait": "silentgear:aquatic"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:not",
+              "value": {
+                "type": "silentgear:material_ratio",
+                "ratio": 0.67
+              }
+            }
+          ],
+          "level": 3,
+          "trait": "silentgear:aquatic"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.67
+            }
+          ],
+          "level": 3,
+          "trait": "silentgear:swift_swim"
+        }
+      ]
+    }
+  }
+}

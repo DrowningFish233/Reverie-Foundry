@@ -1,0 +1,27 @@
+{
+  "feature": "alltheores:ore_uranium",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 9
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "height": {
+        "min_inclusive": {
+          "absolute": -64
+        },
+        "max_inclusive": {
+          "absolute": 175
+        },
+        "type": "minecraft:trapezoid"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

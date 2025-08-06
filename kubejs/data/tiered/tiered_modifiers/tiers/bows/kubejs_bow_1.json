@@ -1,0 +1,66 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 8,
+  "reforge_durability_cost": 4,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "gold"
+  },
+  "attributes": [
+    {
+      "type": "apothic_attributes:arrow_damage",
+      "modifier": {
+        "id": "tiered:kubejs_bow_1e",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.25
+      },
+      "optional_equipment_slots": [
+        "HAND"
+      ]
+    },
+    {
+      "type": "apothic_attributes:arrow_velocity",
+      "modifier": {
+        "id": "tiered:kubejs_bow_1d",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.15
+      },
+      "optional_equipment_slots": [
+        "HAND"
+      ]
+    },
+    {
+      "type": "apothic_attributes:draw_speed",
+      "modifier": {
+        "id": "tiered:kubejs_bow_1c",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.1
+      },
+      "optional_equipment_slots": [
+        "HAND"
+      ]
+    },
+    {
+      "type": "apothic_attributes:crit_chance",
+      "modifier": {
+        "id": "tiered:kubejs_bow_1a",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.05
+      },
+      "optional_equipment_slots": [
+        "HAND"
+      ]
+    },
+    {
+      "type": "generic.attack_knockback",
+      "modifier": {
+        "id": "tiered:kubejs_bow_1b",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.05
+      },
+      "optional_equipment_slots": [
+        "HAND"
+      ]
+    }
+  ]
+}

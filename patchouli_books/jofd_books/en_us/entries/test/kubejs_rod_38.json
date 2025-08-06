@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.starlight_mythril_rod.name",
+    "icon": "kubejs:starlight_mythril_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:starlight_mythril_rod"
+            },
+            "text": "patchouli.gui.kubejs.starlight_mythril_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.starlight_mythril_rod"
+        }
+    ]
+}

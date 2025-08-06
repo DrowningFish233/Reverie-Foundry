@@ -1,0 +1,39 @@
+{
+	icon: {
+		id: "minecraft:wolf_spawn_egg"
+	}
+	id: "5B2093FE63EC30D3"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			auto: "enabled"
+			command: "/incontrol setphase angrymobs"
+			disable_reward_screen_blur: true
+			exclude_from_claim_all: true
+			icon: {
+				id: "minecraft:wolf_spawn_egg"
+			}
+			id: "7D68FC48AF26A5C1"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "enabled"
+			command: "/incontrol clearphase angrymobs"
+			disable_reward_screen_blur: true
+			exclude_from_claim_all: true
+			icon: {
+				id: "minecraft:wolf_spawn_egg"
+			}
+			id: "0271EB97C3EE0E0B"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+	]
+	use_title: true
+}

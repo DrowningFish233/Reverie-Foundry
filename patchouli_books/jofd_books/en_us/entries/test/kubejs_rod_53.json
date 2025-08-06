@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.xeproda_rod.name",
+    "icon": "kubejs:xeproda_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:xeproda_rod"
+            },
+            "text": "patchouli.gui.kubejs.xeproda_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.xeproda_rod"
+        }
+    ]
+}

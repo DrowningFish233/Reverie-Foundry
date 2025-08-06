@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.invar_ingot.name",
+    "icon": "kubejs:invar_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:invar_ingot"
+            },
+            "text": "patchouli.gui.kubejs.invar_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.invar_ingot"
+        }
+    ]
+}

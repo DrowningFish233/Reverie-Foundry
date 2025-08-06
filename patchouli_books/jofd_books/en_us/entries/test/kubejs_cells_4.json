@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.ametrine_cell.name",
+    "icon": "kubejs:ametrine_cell",
+    "category": "patchouli:kubejs_cells",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:ametrine_cell"
+            },
+            "text": "patchouli.gui.kubejs.ametrine_cell.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.ametrine_cell"
+        }
+    ]
+}

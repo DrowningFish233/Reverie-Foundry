@@ -1,0 +1,36 @@
+{
+	/* Whether to print all blocks' properties or not. This will only log non-default properties.
+	   Default property values are:
+	   - Explosion Resistance: 0
+	   - Friction: 0.6
+	   - Jump Factor: 1
+	   - Speed Factor: 1
+	   - Has Collision: true
+	   - Is Randomly Ticking: false
+	   - Light Level: 0 (printed per-blockstate if not the same for all blockstates)
+	   - Destroy Time: 0 (printed per-blockstate if not the same for all blockstates)
+	   - Ignited By Lava: false (printed per-blockstate if not the same for all blockstates)
+	   - Requires Correct Tool To Drop: false (printed per-blockstate if not the same for all blockstates)
+	*/
+	"log_blocks": false,
+	/* Whether to print all items' properties or not. This will only log non-default data components.
+	   Default data components include: {
+	       "minecraft:max_stack_size": 64,
+	       "minecraft:lore": [],
+	       "minecraft:enchantments": {
+	           "levels": {},
+	           "show_in_tooltip": true
+	       },
+	       "minecraft:repair_cost": 0,
+	       "minecraft:attribute_modifiers": {
+	           "modifiers": [],
+	           "show_in_tooltip": true
+	       },
+	       "minecraft:rarity": "common"
+	   }
+	*/
+	"log_items": false,
+	/* Whether to print all entities' properties or not.
+	*/
+	"log_entities": false
+}

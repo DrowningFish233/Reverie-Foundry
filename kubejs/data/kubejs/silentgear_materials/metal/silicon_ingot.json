@@ -1,0 +1,60 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:silicon_ingot"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "kubejs:silicon_ingot"
+      }
+    }
+  },
+  "display": {
+    "color": "#B22222",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:silicon_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 8.0,
+      "armor_toughness": 0,
+      "armor/boots": 1.0,
+      "armor/chestplate": 3.0,
+      "armor/helmet": 2.0,
+      "armor/leggings": 2.0,
+      "armor_durability": 6.0,
+      "attack_damage": 1.5,
+      "attack_speed": 0.1,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": 0.0,
+      "charging_value": 0.7,
+      "draw_speed": -0.1,
+      "durability": 6.0,
+      "enchantment_value": 7.0,
+      "harvest_speed": 4.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_wood_tools",
+        "level_hint": "0",
+        "name": "wood/木"
+      },
+      "magic_armor": 0.0,
+      "magic_damage": 0.0,
+      "projectile_accuracy": 0.8,
+      "projectile_speed": 1.0,
+      "ranged_damage": 0.0,
+      "rarity": 7.0,
+      "traits": []
+    }
+  }
+}

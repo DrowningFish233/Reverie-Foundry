@@ -1,0 +1,59 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": false,
+    "categories": [
+      "intangible"
+    ],
+    "gear_type_blacklist": [
+      "silentgear:all"
+    ],
+    "ingredient": [],
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFFFFFFF",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.example"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:binding": {},
+    "silentgear:coating": {},
+    "silentgear:cord": {},
+    "silentgear:fletching": {},
+    "silentgear:grip": {},
+    "silentgear:lining": {},
+    "silentgear:main": {
+      "armor": 4.0,
+      "armor/boots": 1.0,
+      "armor/chestplate": 1.0,
+      "armor/helmet": 1.0,
+      "armor/leggings": 1.0,
+      "armor_durability": 6.0,
+      "armor_toughness": 1.0,
+      "attack_damage": 1.0,
+      "attack_speed": 0.0,
+      "charging_value": 1.0,
+      "draw_speed": 0.0,
+      "durability": 100.0,
+      "enchantment_value": 1.0,
+      "harvest_speed": 1.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_wooden_tool",
+        "level_hint": "0",
+        "name": "wood"
+      },
+      "magic_armor": 1.0,
+      "magic_damage": 1.0,
+      "ranged_damage": 0.0,
+      "rarity": 0.0
+    },
+    "silentgear:rod": {},
+    "silentgear:setting": {},
+    "silentgear:tip": {}
+  }
+}

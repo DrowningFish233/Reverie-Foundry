@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.void_wire.name",
+    "icon": "kubejs:void_wire",
+    "category": "patchouli:kubejs_wire",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:void_wire"
+            },
+            "text": "patchouli.gui.kubejs.void_wire.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.void_wire"
+        }
+    ]
+}

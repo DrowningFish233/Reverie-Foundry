@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.tungsten_rod.name",
+    "icon": "kubejs:tungsten_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:tungsten_rod"
+            },
+            "text": "patchouli.gui.kubejs.tungsten_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.tungsten_rod"
+        }
+    ]
+}

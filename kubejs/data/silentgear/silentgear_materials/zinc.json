@@ -1,0 +1,89 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/zinc"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/zinc"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFC9D3CE",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.zinc"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 10.0,
+      "armor/boots": 1.0,
+      "armor/chestplate": 5.0,
+      "armor/helmet": 1.0,
+      "armor/leggings": 3.0,
+      "armor_durability": 10.0,
+      "attack_damage": 1.5,
+      "attack_speed": 0.0,
+      "charging_value": 1.1,
+      "draw_speed": 0.0,
+      "durability": 192.0,
+      "enchantment_value": 15.0,
+      "harvest_speed": 3.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_stone_tool",
+        "level_hint": "1",
+        "name": "stone"
+      },
+      "magic_armor": 2.0,
+      "magic_damage": 1.0,
+      "ranged_damage": 0.0,
+      "rarity": 10.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.05
+      },
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": -0.05
+      },
+      "rarity": 15.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
+    }
+  }
+}

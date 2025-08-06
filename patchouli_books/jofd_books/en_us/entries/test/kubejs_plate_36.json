@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.stellar_plate.name",
+    "icon": "kubejs:stellar_plate",
+    "category": "patchouli:kubejs_plate",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:stellar_plate"
+            },
+            "text": "patchouli.gui.kubejs.stellar_plate.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.stellar_plate"
+        }
+    ]
+}

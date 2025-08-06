@@ -1,0 +1,86 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:wood",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "organic",
+      "wood"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgear:netherwood_planks"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "silentgear:rods/netherwood"
+      }
+    }
+  },
+  "display": {
+    "color": "#FF7D272D",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.netherwood"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 8.0,
+      "armor/boots": 1.0,
+      "armor/chestplate": 4.0,
+      "armor/helmet": 1.0,
+      "armor/leggings": 2.0,
+      "armor_durability": 12.0,
+      "attack_damage": 0.0,
+      "attack_speed": 0.2,
+      "charging_value": 0.7,
+      "draw_speed": 0.0,
+      "durability": 72.0,
+      "enchantment_value": 13.0,
+      "harvest_speed": 2.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherwood_tools",
+        "level_hint": "0",
+        "name": "netherwood"
+      },
+      "magic_armor": 6.0,
+      "projectile_accuracy": 0.8,
+      "projectile_speed": 1.0,
+      "ranged_damage": 0.0,
+      "rarity": 4.0,
+      "repair_efficiency": 0.5,
+      "repair_value": 0.1,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:flexible"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:jagged"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.5
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

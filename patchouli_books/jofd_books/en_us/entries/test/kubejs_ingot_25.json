@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.dark_cryopla_ingot.name",
+    "icon": "kubejs:dark_cryopla_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:dark_cryopla_ingot"
+            },
+            "text": "patchouli.gui.kubejs.dark_cryopla_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.dark_cryopla_ingot"
+        }
+    ]
+}

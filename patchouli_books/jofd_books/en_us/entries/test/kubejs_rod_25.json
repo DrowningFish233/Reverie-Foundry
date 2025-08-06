@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.midnight_abyssal_rod.name",
+    "icon": "kubejs:midnight_abyssal_rod",
+    "category": "patchouli:kubejs_rod",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:midnight_abyssal_rod"
+            },
+            "text": "patchouli.gui.kubejs.midnight_abyssal_rod.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.midnight_abyssal_rod"
+        }
+    ]
+}

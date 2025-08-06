@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.spinel_cell.name",
+    "icon": "kubejs:spinel_cell",
+    "category": "patchouli:kubejs_cells",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:spinel_cell"
+            },
+            "text": "patchouli.gui.kubejs.spinel_cell.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.spinel_cell"
+        }
+    ]
+}

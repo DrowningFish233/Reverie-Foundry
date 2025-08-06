@@ -1,0 +1,214 @@
+{
+  "Dimensions": [
+    "minecraft:overworld"
+  ],
+  "InvasionTime": "NIGHT",
+  "Rarity": 1,
+  "SeverityInfo": [
+    {
+      "MobCapPercentage": 0.6,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:zombie",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 12
+        },
+        {
+          "EntityType": "minecraft:husk",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "variantsandventures:thicket",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 6
+        },
+        {
+          "EntityType": "variantsandventures:gelid",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "iceandfire:dread_ghoul",
+          "MaxCount": 1,
+          "MinCount": 0,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 30
+    },
+    {
+      "MobCapPercentage": 0.7,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:zombie",
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 12
+        },
+        {
+          "EntityType": "minecraft:zombie_villager",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        },
+        {
+          "EntityType": "minecraft:husk",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "variantsandventures:thicket",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 6
+        },
+        {
+          "EntityType": "variantsandventures:gelid",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "iceandfire:dread_ghoul",
+          "MaxCount": 1,
+          "MinCount": 0,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 24
+    },
+    {
+      "MobCapPercentage": 0.8,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:zombie",
+          "MaxCount": 6,
+          "MinCount": 2,
+          "Weight": 12
+        },
+        {
+          "EntityType": "minecraft:zombie_villager",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 1
+        },
+        {
+          "EntityType": "minecraft:husk",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "variantsandventures:thicket",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 6
+        },
+        {
+          "EntityType": "variantsandventures:gelid",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "iceandfire:dread_ghoul",
+          "MaxCount": 1,
+          "MinCount": 0,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 18
+    },
+    {
+      "MobCapPercentage": 0.9,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:zombie",
+          "MaxCount": 8,
+          "MinCount": 3,
+          "Weight": 12
+        },
+        {
+          "EntityType": "minecraft:zombie_villager",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 1
+        },
+        {
+          "EntityType": "minecraft:husk",
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "variantsandventures:thicket",
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 6
+        },
+        {
+          "EntityType": "variantsandventures:gelid",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "iceandfire:dread_ghoul",
+          "MaxCount": 2,
+          "MinCount": 0,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 12
+    },
+    {
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:zombie",
+          "MaxCount": 10,
+          "MinCount": 4,
+          "Weight": 12
+        },
+        {
+          "EntityType": "minecraft:zombie_villager",
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 1
+        },
+        {
+          "EntityType": "minecraft:husk",
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 8
+        },
+        {
+          "EntityType": "variantsandventures:thicket",
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 6
+        },
+        {
+          "EntityType": "variantsandventures:gelid",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "iceandfire:dread_ghoul",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 6
+    }
+  ],
+  "Tier": 1
+}

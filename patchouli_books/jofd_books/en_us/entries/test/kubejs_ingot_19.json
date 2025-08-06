@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.acril_ingot.name",
+    "icon": "kubejs:acril_ingot",
+    "category": "patchouli:kubejs_ingot",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:acril_ingot"
+            },
+            "text": "patchouli.gui.kubejs.acril_ingot.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.acril_ingot"
+        }
+    ]
+}

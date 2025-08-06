@@ -1,0 +1,25 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 2,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "red"
+  },
+  "attributes": [
+    {
+      "type": "generic.luck",
+      "modifier": {
+        "id": "tiered:kubejs_unluck",
+        "operation": "ADD_VALUE",
+        "amount": -1
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    }
+  ]
+}

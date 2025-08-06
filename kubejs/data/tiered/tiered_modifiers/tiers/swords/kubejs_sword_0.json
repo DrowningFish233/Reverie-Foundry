@@ -1,0 +1,99 @@
+{
+  "weight": 1,
+  "reforge_experience_cost": 1,
+  "reforge_durability_cost": 1,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "light_purple"
+  },
+  "attributes": [
+    {
+      "type": "generic.luck",
+      "modifier": {
+        "id": "tiered:kubejs_sword_1a",
+        "operation": "ADD_VALUE",
+        "amount": -0.01
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.max_health",
+      "modifier": {
+        "id": "tiered:kubejs_sword_1a",
+        "operation": "ADD_VALUE",
+        "amount": 0.01
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.attack_damage",
+      "modifier": {
+        "id": "tiered:kubejs_sword_1a",
+        "operation": "ADD_VALUE",
+        "amount": 0.01
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.attack_damage",
+      "modifier": {
+        "id": "tiered:kubejs_sword_1a",
+        "operation": "ADD_VALUE",
+        "amount": 0.01
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.movement_speed",
+      "modifier": {
+        "id": "tiered:kubejs_sword_1b",
+        "operation": "ADD_VALUE",
+        "amount": 0.01
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "apothic_attributes:crit_chance",
+      "modifier": {
+        "id": "tiered:kubejs_sword_1c",
+        "operation": "ADD_VALUE",
+        "amount": 0.01
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "minecraft:player.block_interaction_range",
+      "modifier": {
+        "id": "tiered:kubejs_sword_1d",
+        "operation": "ADD_VALUE",
+        "amount": 0.01
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.attack_knockback",
+      "modifier": {
+        "id": "tiered:kubejs_sword_1e",
+        "operation": "ADD_VALUE",
+        "amount": 0.01
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

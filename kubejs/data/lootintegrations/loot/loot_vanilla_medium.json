@@ -1,0 +1,12 @@
+{
+  "loot_table": "lootintegrations:chests/medium",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "minecraft:chests/woodland_mansion": 1,
+    "minecraft:chests/stronghold_library": 1,
+    "minecraft:chests/stronghold_crossing": 1,
+    "minecraft:chests/stronghold_corridor": 1,
+    "minecraft:chests/desert_pyramid": 1,
+    "minecraft:chests/jungle_temple": 1
+  }
+}

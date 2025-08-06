@@ -1,0 +1,42 @@
+# Sort the enchantments by its level
+sort_by_level = true
+# Sort enchantments on enchanted books
+sort_books = true
+# Sort the enchantments in ascending order
+ascending_sort = false
+# Display the original order when shift pressed
+sneak_display = false
+# Compatible mode (may cause performance losses)
+# Enabling this config will disable [show_max_level] and [highlight_treasure]
+compatible_mode = true
+# Properly sort the tooltip if enchantment descriptions are present
+# (Only needed if you notice issues)
+handle_description = false
+
+[Treasure]
+	# Sort the treasure enchantments independently
+	independent_treasure_sort = true
+	# Sort the treasure enchantments in reverse
+	reverse_treasure_sort = false
+	# The style to be used for treasure enchantments
+	# Define the style data in the 'key:value,key:value' format
+	treasure_style = "color:gold"
+
+[MaxLevel]
+	# Show the max level of the enchantments
+	show_max_level = false
+	# The style to be used for enchantments that reached max. level
+	# Define the style data in the 'key:value,key:value' format
+	max_level_style = ""
+	# The style to be used for the max. level information part
+	# Define the style data in the 'key:value,key:value' format
+	max_level_info_style = "color:dark_gray"
+
+[Curse]
+	# Sort the curses independently
+	independent_curse_sort = true
+	# Sort the curses in reverse
+	reverse_curse_sort = false
+	# The style to be used for curses
+	# Define the style data in the 'key:value,key:value' format
+	curse_style = "color:dark_red"

@@ -1,0 +1,29 @@
+{
+  "weight": 5,
+  "verifiers": [
+    {
+      "tag": "minecraft:head_armor"
+    },
+    {
+      "tag": "minecraft:chest_armor"
+    },
+    {
+      "tag": "minecraft:leg_armor"
+    },
+    {
+      "tag": "minecraft:foot_armor"
+    },
+    {
+      "tag": "forge:shields"
+    },
+    {
+      "tag": "c:armors"
+    },
+    {
+      "tag": "gobber2:armor"
+    }
+  ],
+  "tiers": [
+    "tiered:standard_armors/common"
+  ]
+}

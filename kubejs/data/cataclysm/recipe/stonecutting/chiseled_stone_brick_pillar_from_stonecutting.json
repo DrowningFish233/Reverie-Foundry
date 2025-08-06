@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": [
+    {
+      "item": "minecraft:stone_bricks"
+    },
+    {
+      "item": "minecraft:stone"
+    },
+    {
+      "item": "minecraft:chiseled_stone_bricks"
+    }
+  ],
+  "result": {
+    "id": "cataclysm:chiseled_stone_brick_pillar",
+    "count": 1
+  }
+}

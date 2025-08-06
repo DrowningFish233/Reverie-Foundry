@@ -1,0 +1,44 @@
+{
+  "weight": 4,
+  "reforge_experience_cost": 1,
+  "reforge_durability_cost": 1,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "red"
+  },
+  "attributes": [
+    {
+      "type": "generic.movement_speed",
+      "modifier": {
+        "id": "tiered:kubejs_sword_6b",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": -0.10
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "minecraft:player.block_interaction_range",
+      "modifier": {
+        "id": "tiered:kubejs_sword_6b",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": -0.10
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.attack_knockback",
+      "modifier": {
+        "id": "tiered:kubejs_sword_6c",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": -0.10
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+#Whether the DFU should be loaded lazily.
+lazyDFU = true
+#Should automatic upgrading of structures be stored on disk to limit DFU loading in the future.
+autoStructureUpgrade = true
+#Should the structure scan be done async to the server thread. Might be faster but likely more unstable with less RAM.
+asyncStructureUpgrade = false
+#Send a visible system message to inform the user of the structure scan start and completion.
+displayStructureUpgradeMessage = false
+#Fix multiple issues caused by mods caching objects that prevent the correct disposal of dimensions and integrated servers.
+fixMemoryIssues = true

@@ -1,0 +1,33 @@
+{
+  "weight": 4,
+  "reforge_experience_cost": 1,
+  "reforge_durability_cost": 1,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "dark_gray"
+  },
+  "attributes": [
+    {
+      "type": "generic.movement_speed",
+      "modifier": {
+        "id": "tiered:kubejs_sword_2b",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": 0.15
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.attack_knockback",
+      "modifier": {
+        "id": "tiered:kubejs_sword_2e",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": -0.1
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

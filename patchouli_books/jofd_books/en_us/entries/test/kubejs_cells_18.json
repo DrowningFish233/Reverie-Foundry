@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.sunstone_cell.name",
+    "icon": "kubejs:sunstone_cell",
+    "category": "patchouli:kubejs_cells",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:sunstone_cell"
+            },
+            "text": "patchouli.gui.kubejs.sunstone_cell.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.sunstone_cell"
+        }
+    ]
+}

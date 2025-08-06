@@ -1,0 +1,22 @@
+{
+  "loot_table": "lootintegrations:chests/village",
+  "max_result_itemcount": 9,
+  "integrated_loot_tables": {
+    "minecraft:chests/village/village_weaponsmith": 1,
+    "minecraft:chests/village/village_toolsmith": 1,
+    "minecraft:chests/village/village_temple": 1,
+    "minecraft:chests/village/village_tannery": 1,
+    "minecraft:chests/village/village_taiga_house": 1,
+    "minecraft:chests/village/village_snowy_house": 1,
+    "minecraft:chests/village/village_shepherd": 1,
+    "minecraft:chests/village/village_savanna_house": 1,
+    "minecraft:chests/village/village_plains_house": 1,
+    "minecraft:chests/village/village_mason": 1,
+    "minecraft:chests/village/village_fletcher": 1,
+    "minecraft:chests/village/village_fisher": 1,
+    "minecraft:chests/village/village_desert_house": 1,
+    "minecraft:chests/village/village_cartographer": 1,
+    "minecraft:chests/village/village_butcher": 1,
+    "minecraft:chests/village/village_armorer": 1
+  }
+}

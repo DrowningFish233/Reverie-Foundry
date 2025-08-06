@@ -1,0 +1,8 @@
+{
+  "id": "magical_eye",
+  "rarity": "rare",
+  "loot_to_inject_id": "endrem:minecraft/entities/evoker",
+  "loot_tables_id": [
+    "minecraft:entities/evoker"
+  ]
+}

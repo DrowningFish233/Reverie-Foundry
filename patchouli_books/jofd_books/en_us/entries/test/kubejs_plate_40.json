@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.thulium_plate.name",
+    "icon": "kubejs:thulium_plate",
+    "category": "patchouli:kubejs_plate",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:thulium_plate"
+            },
+            "text": "patchouli.gui.kubejs.thulium_plate.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.thulium_plate"
+        }
+    ]
+}

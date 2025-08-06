@@ -1,0 +1,380 @@
+{
+	/* 
+	   
+	   ***********************
+	   Ore Blast Resistance
+	   ***********************
+	*/
+	"oreBlastResistance": 3600000,
+	/* 
+	   
+	   ***********************
+	   Item Cooldown Settings
+	   ***********************
+	*/
+	"ringBlinkCooldown": 60,
+	"ringMinerCooldown": 80,
+	"ringAboveCooldown": 80,
+	"ringExplorerCooldown": 480,
+	"sniperSwordCooldown": 60,
+	"sniperStaffCooldown": 60,
+	"staffSoundCooldown": 80,
+	/* 
+	   
+	   ***********************
+	   Ring of Explorer Settings
+	   ***********************
+	*/
+	"ringExplorerMinRange": 500,
+	"ringExplorerMaxRange": 6000,
+	/* 
+	   
+	   ***********************
+	   Misc Ring Settings
+	   ***********************
+	*/
+	"ringRepairDelay": 240,
+	"ringAttractionPullRadius": 4,
+	"ringAttractionBlockingDistance": 4,
+	"ringAttractionMode": true,
+	"ringDismissalVelocity": 0.20000000298023224,
+	"ringDismissalLift": 1.5,
+	"ringDismissalRange": 8.0,
+	"ringAirWalkingGlass": false,
+	"effectDuration": 8,
+	/* 
+	   
+	   ***********************
+	   Ring/Staff of Farmer Settings
+	   ***********************
+	*/
+	"ringFarmerTickDelay": 40,
+	"ringFarmerRadius": 4,
+	"staffFarmerTickDelay": 40,
+	"staffFarmerRadius": 6,
+	"staffFarmerReplant": true,
+	"staffFarmerBreaking": true,
+	/* 
+	   
+	   ***********************
+	   Ring of Miner Settings
+	   ***********************
+	*/
+	"ringMinerHorizRange": 3,
+	"ringMinerVerticalRange": 2,
+	"ringMinerReverseDropMode": false,
+	/* 
+	   
+	   ***********************
+	   Ring of Strength Settings
+	   ***********************
+	*/
+	"ringStrengthLevel": 2,
+	"ringStrengthResistanceLevel": 1,
+	/* 
+	   
+	   ***********************
+	   Staff of Transformation Settings
+	   ***********************
+	*/
+	"staffTransformationDurability": 128,
+	/* 
+	   
+	   ***********************
+	   Staff of Sound Settings
+	   ***********************
+	*/
+	"staffSoundDamage": 10.0,
+	"staffSoundChargeTime": 30,
+	"staffSoundKillBoxExpand": 3,
+	/* 
+	   
+	   ***********************
+	   Medallion of Exp Settings
+	   ***********************
+	*/
+	"medallionExpOrbsMultiplier": 3,
+	/* 
+	   
+	   ***********************
+	   Medallion of Healing Settings
+	   ***********************
+	*/
+	"medallionLesserHealingHunger": 2,
+	"medallionLesserHealingSaturation": 0.10000000149011612,
+	"medallionHealingHunger": 4,
+	"medallionHealingSaturation": 0.20000000298023224,
+	"medallionGreaterHealingHunger": 6,
+	"medallionGreaterHealingSaturation": 0.30000001192092896,
+	/* 
+	   
+	   ***********************
+	   Medallion of Shielding Settings
+	   ***********************
+	*/
+	"medallionShieldingHoriz": 3,
+	"medallionShieldingVertical": 2,
+	"medallionShieldingAgainstWither": true,
+	/* 
+	   
+	   ***********************
+	   Medallion of Suffering Settings
+	   ***********************
+	*/
+	"medallionSufferingRange": 6,
+	"medallionSufferingDamage": 2,
+	/* 
+	   
+	   ***********************
+	   Gobber Goo (food) Settings
+	   ***********************
+	*/
+	"gooHunger": 5,
+	"gooSaturation": 0.699999988079071,
+	"gooeyApplehunger": 6,
+	"gooeyAppleSaturation": 0.800000011920929,
+	"gooeyBreadHunger": 5,
+	"gooeyBreadSaturation": 0.800000011920929,
+	"gooeyBeefHunger": 7,
+	"gooeyBeefSaturation": 0.8999999761581421,
+	"gooeyBeefstewHunger": 8,
+	"gooeyBeefstewSaturation": 1.0,
+	/* 
+	   
+	   ***********************
+	   Nether Goo (food) Settings
+	   ***********************
+	*/
+	"netherGooHunger": 7,
+	"netherGooSaturation": 0.8999999761581421,
+	"netherGooeyApplehunger": 8,
+	"netherGooeyAppleSaturation": 1.0,
+	"netherGooeyBreadHunger": 8,
+	"netherGooeyBreadSaturation": 1.0,
+	"netherGooeyBeefHunger": 10,
+	"netherGooeyBeefSaturation": 1.2000000476837158,
+	"netherGooeyBeefstewHunger": 12,
+	"netherGooeyBeefstewSaturation": 1.5,
+	/* 
+	   
+	   ***********************
+	   Foo (fuel) Settings
+	   - max allowed 128000
+	   ***********************
+	*/
+	"gobberFooDuration": 40000,
+	"netherFooDuration": 60000,
+	"endFooDuration": 80000,
+	/* 
+	   
+	   ***********************
+	   Gobber Tools Settings
+	   ***********************
+	*/
+	"gobberToolsDurability": 3800,
+	"gobberToolsMiningSpeed": 9.0,
+	"gobberToolsAttackDamage": 9.0,
+	"gobberSwordAttackDamage": 1,
+	"gobberAxeAttackDamage": 1,
+	"gobberToolsEnchantability": 20,
+	/* 
+	   
+	   ***********************
+	   Nether Tool Settings
+	   ***********************
+	*/
+	"netherToolsDurability": 5200,
+	"netherToolsMiningSpeed": 12.0,
+	"netherToolsAttackDamage": 9.0,
+	"netherSwordAttackDamage": 3,
+	"netherAxeAttackDamage": 2,
+	"netherToolsEnchantability": 25,
+	/* 
+	   
+	   ***********************
+	   End Tool Settings
+	   ***********************
+	*/
+	"endToolsDurability": 8000,
+	"endToolsMiningSpeed": 14.0,
+	"endToolsAttackDamage": 9.0,
+	"endSwordAttackDamage": 6,
+	"endAxeAttackDamage": 6,
+	"endToolsEnchantability": 30,
+	"endToolsUnbreakable": true,
+	/* 
+	   
+	   ***********************
+	   Tool Full Damage
+	   - affects hammers/excavators
+	   ***********************
+	*/
+	"toolFullDamage": false,
+	/* 
+	   
+	   ***********************
+	   Sniper Staff/Sword Settings
+	   ***********************
+	*/
+	"sniperSpeed": 60.0,
+	"sniperDivergence": 0.0,
+	"sniperAlwaysCriticalHit": true,
+	"sniperBaseDamage": 0,
+	/* 
+	   
+	   ***********************
+	   Bow Zoom Settings
+	   ***********************
+	*/
+	"bowZoom": 0.550000011920929,
+	/* 
+	   
+	   ***********************
+	   Gobber Bow Settings
+	   ***********************
+	*/
+	"gobberBowSpeed": 7.0,
+	"gobberBowDivergence": 0.0,
+	"gobberBowDropDistance": 40,
+	"gobberBowDurability": 3800,
+	"gobberBowAlwaysCriticalHit": false,
+	/* 
+	   
+	   ***********************
+	   Nether Bow Settings
+	   ***********************
+	*/
+	"netherBowSpeed": 9.0,
+	"netherBowDivergence": 0.0,
+	"netherBowDropDistance": 60,
+	"netherBowDurability": 5200,
+	"netherBowAlwaysCriticalHit": false,
+	/* 
+	   
+	   ***********************
+	   End Bow Settings
+	   ***********************
+	*/
+	"endBowSpeed": 12.0,
+	"endBowDivergence": 0.0,
+	"endBowDropDistance": 80,
+	"endBowDurability": 8000,
+	"endBowAlwaysCriticalHit": true,
+	/* 
+	   
+	   ***********************
+	   Gobber Armor Settings
+	   ***********************
+	*/
+	"gobberArmorDurabilityMultiplier": 71,
+	"gobberArmorEnchantability": 25,
+	"gobberToughness": 2.5,
+	"gobberKnockbackResistance": 0.10000000149011612,
+	"gobberArmorHelmetProtection": 6,
+	"gobberArmorChestplateProtection": 11,
+	"gobberArmorLeggingsProtection": 9,
+	"gobberArmorBootsProtection": 6,
+	/* 
+	   
+	   ***********************
+	   Nether Armor Settings
+	   ***********************
+	*/
+	"netherArmorDurabilityMultiplier": 83,
+	"netherArmorEnchantability": 30,
+	"netherToughness": 2.75,
+	"netherKnockbackResistance": 0.10000000149011612,
+	"netherArmorHelmetProtection": 7,
+	"netherArmorChestplateProtection": 12,
+	"netherArmorLeggingsProtection": 10,
+	"netherArmorBootsProtection": 7,
+	/* 
+	   
+	   ***********************
+	   End Armor Settings
+	   ***********************
+	*/
+	"endArmorDurabilityMultiplier": 100,
+	"endArmorEnchantability": 30,
+	"endToughness": 3.0,
+	"endKnockbackResistance": 0.20000000298023224,
+	"endArmorHelmetProtection": 8,
+	"endArmorChestplateProtection": 13,
+	"endArmorLeggingsProtection": 11,
+	"endArmorBootsProtection": 8,
+	"endArmorUnbreakable": true,
+	/* 
+	   
+	   ***********************
+	   Dragon Armor Settings
+	   ***********************
+	*/
+	"dragonArmorDurabilityMultiplier": 100,
+	"dragonArmorEnchantability": 30,
+	"dragonToughness": 3.0,
+	"dragonKnockbackResistance": 0.20000000298023224,
+	"dragonArmorHelmetProtection": 8,
+	"dragonArmorChestplateProtection": 13,
+	"dragonArmorLeggingsProtection": 11,
+	"dragonArmorBootsProtection": 8,
+	"dragonArmorUnbreakable": true,
+	/* 
+	   
+	   ***********************
+	   Gobber Armor Perks Settings
+	   ***********************
+	*/
+	"enableGobberArmorWaterBreathing": false,
+	"enableGobberArmorAutofeed": false,
+	"gobberArmorhunger": 3,
+	"gobberArmorSaturation": 0.10000000149011612,
+	/* 
+	   
+	   ***********************
+	   Nether Armor Perks Settings
+	   ***********************
+	*/
+	"enableNetherArmorFireProtection": false,
+	"enableNetherArmorPoisonWitherCuring": false,
+	"enableNetherArmorAutofeed": false,
+	"netherArmorHunger": 3,
+	"netherArmorSaturation": 0.15000000596046448,
+	/* 
+	   
+	   ***********************
+	   End Armor Perks Settings
+	   ***********************
+	*/
+	"enableEndArmorWaterBreathing": false,
+	"enableEndArmorFireProtection": false,
+	"enableEndArmorAutofeed": false,
+	"enableEndArmorNoFallDamage": false,
+	"enableEndArmorNegEffectProtection": false,
+	"enableEndArmorBlastProtection": false,
+	"endArmorHunger": 4,
+	"endArmorSaturation": 0.15000000596046448,
+	/* 
+	   
+	   ***********************
+	   Dragon Armor Perks Settings
+	   ***********************
+	*/
+	"enableDragonArmorWaterBreathing": false,
+	"enableDragonArmorFireProtection": false,
+	"enableDragonArmorAutofeed": false,
+	"enableDragonArmorNoFallDamage": false,
+	"enableDragonArmorNegEffectProtection": false,
+	"enableDragonArmorBlastProtection": false,
+	"dragonArmorHunger": 5,
+	"dragonArmorSaturation": 0.15000000596046448,
+	"enableDragonArmorStarOffhand": false,
+	"enableDragonArmorFlyAnywhere": false,
+	/* 
+	   
+	   ***********************
+	   Dragon Armor Perks Settings
+	   - caution, immune to /kill command on servers
+	   ***********************
+	*/
+	"enableDragonArmorVoidProtection": false
+}

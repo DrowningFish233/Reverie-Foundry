@@ -1,0 +1,29 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 8,
+  "reforge_durability_cost": 4,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "blue"
+  },
+  "attributes": [
+    {
+      "type": "apothic_attributes:crit_chance",
+      "modifier": {
+        "id": "tiered:kubejs_curios_9a",
+        "operation": "add_multiplied_base",
+        "amount": 0.01
+      },
+      "optional_curio_slots": [
+        "back",
+        "ring",
+        "accessory",
+        "bracelet",
+        "charm",
+        "belt",
+        "necklace",
+        "spellbook"
+      ]
+    }
+  ]
+}
