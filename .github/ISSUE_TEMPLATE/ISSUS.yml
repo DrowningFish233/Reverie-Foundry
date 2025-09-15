@@ -16,20 +16,13 @@ body:
         Please provide detailed description of the issue you encountered, which will help us quickly identify and fix the problem.
 
   - type: checkboxes
-    id: duplicate-check
+    id: prerequisites
     attributes:
-      label: 重复检查 | Duplicate Check
-      description: 请确认您已检查过此问题是否已存在 | Please confirm you have checked if this issue already exists
+      label: 前提确认 | Prerequisites Confirmation
+      description: 请确认以下事项 | Please confirm the following
       options:
         - label: 我已检查过现有议题，确认这是新问题 | I have checked existing issues and confirmed this is a new bug
           required: true
-
-  - type: checkboxes
-    id: latest-version-check
-    attributes:
-      label: 版本确认 | Version Confirmation
-      description: 请确认您使用的是最新版本 | Please confirm you are using the latest version
-      options:
         - label: 我使用的是最新版整合包 | I am using the latest version of the modpack
           required: true
 
@@ -58,45 +51,24 @@ body:
       required: true
 
   - type: textarea
-    id: problem-description
+    id: issue-details
     attributes:
-      label: 问题描述 | Problem Description
-      description: 请详细描述您遇到的问题 | Please provide detailed description of the problem
+      label: 问题详情 | Issue Details
+      description: 请详细描述问题的情况 | Please provide detailed description of the issue
       placeholder: |
-        问题现象/Phenomenon:
-        发生时间/When it occurred:
-        影响范围/Impact:
-    validations:
-      required: true
+        ## 问题描述 | Problem Description
+        - 问题现象/Phenomenon:
+        - 发生时间/When it occurred: 
+        - 影响范围/Impact:
 
-  - type: textarea
-    id: reproduction-steps
-    attributes:
-      label: 复现步骤 | Reproduction Steps
-      description: 请详细描述如何复现这个问题 | Please provide detailed steps to reproduce the issue
-      placeholder: |
+        ## 行为对比 | Behavior Comparison
+        - 预期行为/Expected Behavior: 正常情况下应该...
+        - 实际行为/Actual Behavior: 但实际上发生了...
+
+        ## 复现步骤 | Reproduction Steps
         1. 第一步 | Step 1
         2. 第二步 | Step 2
         3. 第三步 | Step 3
-        ...
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: 预期行为 | Expected Behavior
-      description: 请描述您期望的正常行为 | Please describe what you expected to happen
-      placeholder: "正常情况下应该... | Under normal circumstances it should..."
-    validations:
-      required: true
-
-  - type: textarea
-    id: actual-behavior
-    attributes:
-      label: 实际行为 | Actual Behavior
-      description: 请描述实际发生的行为 | Please describe what actually happened
-      placeholder: "但实际上发生了... | But actually what happened is..."
     validations:
       required: true
 
@@ -112,10 +84,10 @@ body:
       required: false
 
   - type: textarea
-    id: screenshots
+    id: media-evidence
     attributes:
-      label: 截图/视频 | Screenshots/Videos
-      description: 请提供相关的截图或视频证据 | Please provide relevant screenshots or video evidence
+      label: 截图/视频证据 | Screenshots/Video Evidence
+      description: 请提供相关的截图或视频 | Please provide relevant screenshots or videos
       placeholder: |
         请提供图片链接或描述截图内容
         Please provide image links or describe screenshot content
