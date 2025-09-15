@@ -29,7 +29,7 @@ body:
     attributes:
       label: 整合包版本 | Modpack Version
       description: 您正在使用的整合包版本号 | The version number of the modpack you are using
-      placeholder: 例如/Example: 1.0.0
+      placeholder: "例如/Example: 1.0.0"
     validations:
       required: true
 
@@ -39,12 +39,12 @@ body:
       label: 建议类型 | Suggestion Type
       description: 请选择建议的类型 | Please select the type of suggestion
       options:
-        - 新增功能 (New Feature)
-        - 功能改进 (Feature Improvement) 
-        - 游戏平衡 (Game Balance)
-        - 用户体验 (User Experience)
-        - 性能优化 (Performance Optimization)
-        - 其他 (Other)
+        - "新增功能 (New Feature)"
+        - "功能改进 (Feature Improvement)"
+        - "游戏平衡 (Game Balance)"
+        - "用户体验 (User Experience)"
+        - "性能优化 (Performance Optimization)"
+        - "其他 (Other)"
     validations:
       required: true
 
@@ -66,7 +66,7 @@ body:
     attributes:
       label: 理由说明 | Rationale
       description: 请说明为什么这个建议对整合包有益 | Please explain why this suggestion would benefit the modpack
-      placeholder: 这个建议将改善... | This suggestion would improve...
+      placeholder: "这个建议将改善... | This suggestion would improve..."
     validations:
       required: false
 
@@ -75,6 +75,6 @@ body:
     attributes:
       label: 附加信息 | Additional Context
       description: 添加任何其他相关信息或截图 | Add any other relevant information or screenshots
-      placeholder: 可在此处添加图片链接或额外说明 | You can add image links or additional notes here
+      placeholder: "可在此处添加图片链接或额外说明 | You can add image links or additional notes here"
     validations:
       required: false
