@@ -1,75 +1,132 @@
-name: 错误反馈(suggestion)
-description: 提交与整合包相关的问题与反馈
-title: "[反馈]: "
+name: 错误报告 (Bug Report)
+description: 提交与整合包相关的问题与反馈 | Submit issues and feedback related to the modpack
+title: "[BUG]: "
 labels:
-  - 整合包
-  - 问题类型
+  - 整合包/Modpack
+  - 问题/Bug
 projects:
-  - Journey-of-Forging-Dreams/issus
+  - Reverie-Foundry/Issues
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
-        请尽可能简单的概括您遇到的问题！（Please describe the problem you encountered as simply as possible!）
+        ## 错误报告指南 | Bug Report Guidelines
+        请详细描述您遇到的问题，这将帮助我们快速定位和修复问题。
+        Please provide detailed description of the issue you encountered, which will help us quickly identify and fix the problem.
 
   - type: checkboxes
-    id: code-of-conduct
+    id: duplicate-check
     attributes:
-      label: 须知
-      description: 是否已经检查过了此问题没有重复。(Has this issue been checked to ensure it is not a duplicate?)
+      label: 重复检查 | Duplicate Check
+      description: 请确认您已检查过此问题是否已存在 | Please confirm you have checked if this issue already exists
       options:
-        - label: 确认
+        - label: 我已检查过现有议题，确认这是新问题 | I have checked existing issues and confirmed this is a new bug
           required: true
 
-
   - type: checkboxes
-    id: code-of-conduct-1
+    id: latest-version-check
     attributes:
-      label: 须知
-      description: 是正在使用最新版整合包。(Is it using the latest version of the modpack?)
+      label: 版本确认 | Version Confirmation
+      description: 请确认您使用的是最新版本 | Please confirm you are using the latest version
       options:
-        - label: 确认
+        - label: 我使用的是最新版整合包 | I am using the latest version of the modpack
           required: true
 
   - type: input
     id: modpack-version
     attributes:
-      label: 整合包版本
-      description: 您正在使用的整合包版本号。(The version number of the modpack you are using)
-      placeholder: 例如：1.0.0
+      label: 整合包版本 | Modpack Version
+      description: 您正在使用的具体版本号 | The specific version number you are using
+      placeholder: "例如/Example: 1.2.0"
     validations:
       required: true
-
 
   - type: dropdown
     id: issue-type
     attributes:
-      label: 问题类型
-      description: 请选择您提交的问题类型。
+      label: 问题类型 | Issue Type
+      description: 请选择遇到的问题类型 | Please select the type of issue you encountered
       options:
-        - BUG
-        - 崩溃 (crashes)
-        - 优化 (Optimize)
-        - 其他 (other)
+        - "游戏崩溃 (Game Crash)"
+        - "功能异常 (Function Abnormal)"
+        - "性能问题 (Performance Issue)"
+        - "视觉错误 (Visual Bug)"
+        - "配方问题 (Recipe Issue)"
+        - "其他问题 (Other Issue)"
     validations:
       required: true
 
   - type: textarea
-    id: description
+    id: problem-description
     attributes:
-      label: 详细描述 (Detailed description)
-      description: 请详细描述您遇到的问题，包括具体的操作步骤、期望结果和实际结果，最好请提供截图或视频。
-      placeholder: 例如：“xxx物品出现了bug...并没有实现xxx功能”
+      label: 问题描述 | Problem Description
+      description: 请详细描述您遇到的问题 | Please provide detailed description of the problem
+      placeholder: |
+        问题现象/Phenomenon:
+        发生时间/When it occurred:
+        影响范围/Impact:
     validations:
       required: true
-
 
   - type: textarea
-    id: logs
+    id: reproduction-steps
     attributes:
-      label: 日志文件 (Log file)
-      description: 请提供相关的日志文件内容（若是以文件的形式上传到详细描述部分也是可以的）
-      render: shell
+      label: 复现步骤 | Reproduction Steps
+      description: 请详细描述如何复现这个问题 | Please provide detailed steps to reproduce the issue
+      placeholder: |
+        1. 第一步 | Step 1
+        2. 第二步 | Step 2
+        3. 第三步 | Step 3
+        ...
     validations:
       required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 预期行为 | Expected Behavior
+      description: 请描述您期望的正常行为 | Please describe what you expected to happen
+      placeholder: "正常情况下应该... | Under normal circumstances it should..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 实际行为 | Actual Behavior
+      description: 请描述实际发生的行为 | Please describe what actually happened
+      placeholder: "但实际上发生了... | But actually what happened is..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-logs
+    attributes:
+      label: 错误日志 | Error Logs
+      description: 请提供相关的错误日志（如有） | Please provide relevant error logs (if any)
+      placeholder: |
+        请将日志内容粘贴在此处，或提供日志文件链接
+        Please paste log content here or provide a link to log files
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图/视频 | Screenshots/Videos
+      description: 请提供相关的截图或视频证据 | Please provide relevant screenshots or video evidence
+      placeholder: |
+        请提供图片链接或描述截图内容
+        Please provide image links or describe screenshot content
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 附加信息 | Additional Context
+      description: 添加任何其他相关信息 | Add any other relevant information
+      placeholder: "其他可能有助于解决问题的信息 | Other information that may help resolve the issue"
+    validations:
+      required: false
