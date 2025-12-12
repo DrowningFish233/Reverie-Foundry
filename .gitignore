@@ -1,0 +1,9 @@
+# FTB Quests Lang Splitter
+# 忽略原始的语言文件
+config/ftbquests/quests/lang/zh_cn.snbt
+
+# 忽略恢复文件夹中的文件
+config/ftbquests/quests/lang/recovery/*.snbt
+
+# 忽略所有已合并的文件
+config/ftbquests/quests/lang/**/*.snbt_merged
