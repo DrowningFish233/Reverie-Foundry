@@ -1,6 +1,15 @@
+.mixin.out
+.idea
+.probe
+.vscode
+kubejs/client_scripts/jsconfig.json
+kubejs/startup_scripts/jsconfig.json
+kubejs/server_scripts/jsconfig.json
+kubejs/config/probe-settings.json
+
 # FTB Quests Lang Splitter
 # 忽略原始的语言文件
-config/ftbquests/quests/lang/zh_cn.snbt
+config/ftbquests/quests/lang/*.snbt
 
 # 忽略恢复文件夹中的文件
 config/ftbquests/quests/lang/recovery/*.snbt
