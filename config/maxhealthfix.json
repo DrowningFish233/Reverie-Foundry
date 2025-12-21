@@ -1,7 +1,0 @@
-{
-  "mod_enabled": {
-    "//": "Determines if the mod and its features are enabled.",
-    "//default": true,
-    "value": true
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "id": "black_eye",
-  "rarity": "common",
-  "loot_to_inject_id": "endrem:minecraft/chests/buried_treasure",
-  "loot_tables_id": [
-    "minecraft:chests/buried_treasure"
-  ]
-}

@@ -1,8 +1,0 @@
-{
-  "id": "cursed_eye",
-  "rarity": "common",
-  "loot_to_inject_id": "endrem:minecraft/chests/bastion_treasure",
-  "loot_tables_id": [
-    "minecraft:chests/bastion_treasure"
-  ]
-}

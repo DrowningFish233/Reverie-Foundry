@@ -1,8 +1,0 @@
-{
-  "id": "wither_eye",
-  "rarity": "epic",
-  "loot_to_inject_id": "endrem:minecraft/entities/wither",
-  "loot_tables_id": [
-    "minecraft:entities/wither"
-  ]
-}

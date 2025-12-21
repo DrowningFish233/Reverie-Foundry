@@ -1,8 +1,0 @@
-{
-  "id": "nether_eye",
-  "rarity": "rare",
-  "loot_to_inject_id": "endrem:minecraft/chests/nether_bridge",
-  "loot_tables_id": [
-    "minecraft:chests/nether_bridge"
-  ]
-}
