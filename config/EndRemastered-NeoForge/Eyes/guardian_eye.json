@@ -1,8 +1,0 @@
-{
-  "id": "guardian_eye",
-  "rarity": "rare",
-  "loot_to_inject_id": "endrem:minecraft/entities/elder_guardian",
-  "loot_tables_id": [
-    "minecraft:entities/elder_guardian"
-  ]
-}

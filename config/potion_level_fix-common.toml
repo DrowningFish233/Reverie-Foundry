@@ -1,5 +1,0 @@
-["Potion Level Fix"]
-	#If true, effect display using Roman numerals (vanilla); if false, display using Arabic numerals.
-	"Effect Number Type" = false
-	#If true, potion display using Roman numerals (vanilla); if false, display using Arabic numerals.
-	"Potion Number Type" = true

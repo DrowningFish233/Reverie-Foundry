@@ -1,2 +1,0 @@
-showCfgButton:true
-tooltipLineLength:280
