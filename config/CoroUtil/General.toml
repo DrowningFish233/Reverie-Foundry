@@ -1,0 +1,8 @@
+#General mod settings
+[general]
+	#logging
+	useLoggingLog = false 
+	#-
+	useLoggingDebug = false
+	#-
+	useLoggingError = true

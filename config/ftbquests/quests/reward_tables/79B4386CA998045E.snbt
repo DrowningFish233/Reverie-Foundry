@@ -1,0 +1,57 @@
+{
+	icon: {
+		id: "terra_curio:detoxification_capsule"
+	}
+	id: "79B4386CA998045E"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			auto: "enabled"
+			exclude_from_claim_all: true
+			id: "5A96A10395D12A33"
+			item: {
+				components: {
+					"sophisticatedcore:number_of_inventory_slots": 27
+					"sophisticatedcore:number_of_upgrade_slots": 1
+					"sophisticatedcore:render_info_tag": {
+						upgradeItems: [{ }]
+					}
+					"sophisticatedcore:storage_uuid": [I;
+						-1571602382
+						838091731
+						-1615349510
+						905170370
+					]
+				}
+				count: 1
+				id: "sophisticatedbackpacks:backpack"
+			}
+			team_reward: false
+		}
+		{
+			auto: "enabled"
+			exclude_from_claim_all: true
+			id: "7D8C106B8D90BF8D"
+			ignore_reward_blocking: true
+			item: {
+				components: {
+					"sophisticatedcore:number_of_inventory_slots": 27
+					"sophisticatedcore:number_of_upgrade_slots": 1
+					"sophisticatedcore:render_info_tag": {
+						upgradeItems: [{ }]
+					}
+					"sophisticatedcore:storage_uuid": [I;
+						1534042837
+						-1365160647
+						-2094601211
+						-1448495043
+					]
+				}
+				count: 1
+				id: "sophisticatedbackpacks:backpack"
+			}
+			team_reward: false
+		}
+	]
+}
