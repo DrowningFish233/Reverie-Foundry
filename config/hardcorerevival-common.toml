@@ -1,0 +1,38 @@
+#The time in seconds in which a player can still be rescued from death. Set to 0 to disable the timer.
+secondsUntilDeath = 120
+#If true, the timer until death continues even if the player logs out.
+continueTimerWhileOffline = false
+#The threshold of seconds that knockout will be treated as a consecutive knockout. See resumeTimerOnConsecutiveKnockout and multiplyTimerOnConsecutiveKnockout.
+consecutiveKnockoutThresholdSeconds = 40
+#If true, the timer until death resumes from its last time on consecutive knockouts.
+resumeTimerOnConsecutiveKnockout = true
+#The multiplier to apply to the time remaining on consecutive knockouts.
+multiplyTimerOnConsecutiveKnockout = 1.0
+#The time in ticks it takes to rescue a player. 20 ticks are one second.
+rescueActionTicks = 40
+#The amount of health to respawn with when a player was rescued, out of 20.
+rescueRespawnHealth = 2
+#The food level to respawn with when a player was rescued, out of 20.
+rescueRespawnFoodLevel = 5
+#Effects applied to a player when rescued, in the format "effect|duration|amplifier"
+rescueRespawnEffects = ["minecraft:hunger|600|0", "minecraft:weakness|1200|0"]
+#The distance at which a player can rescue another.
+rescueDistance = 3.0
+#If true, knocked out players will glow, making them visible through blocks.
+glowOnKnockout = true
+#If true, knocked out players are still able to run commands. OPs are always able to run commands.
+allowCommands = true
+#If true, knocked out players are still able to punch nearby enemies.
+allowUnarmedMelee = false
+#If true, knocked out players are still able to fire bows.
+allowBows = false
+#If true, knocked out players are still able to fire pistols from Mr Crayfish's Gun Mod.
+allowPistols = false
+#Set to false to remove the Accept your Fate button and force players to wait out the timer.
+allowAcceptingFate = true
+#If true, Hardcore Revival will not be active in singleplayer.
+disableInSingleplayer = true
+#If true, Hardcore Revival will not be active when playing alone in multiplayer.
+disableInLonelyMultiplayer = true
+#The damage sources that kill a player instantly, without a K.O. period.
+instantDeathSources = ["minecraft:lava"]

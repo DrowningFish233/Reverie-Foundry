@@ -1,0 +1,40 @@
+#Safe values for settings are 0 - 1 (inclusive).
+#0 means animation off (no smoothness) and bigger values mean slower animation speed (high smoothness).
+#Press F3+T in a world to update the config.
+[Hotbar]
+	#Hotbar scroll smoothness. 0 = Off, 1 = Maximum smoothness
+	# Default: 0.2
+	# Range: 0.0 ~ 1.0
+	smoothness = 0.2
+	#Enable Hotbar rollover when scrolling
+	rollover = true
+
+[Chat]
+	#Chat scroll smoothness. 0 = Off, 1 = Maximum smoothness
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	smoothness = 0.0
+	#Chat opening animation smoothness. 0 = Off, 1 = Maximum smoothness
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	openingSmoothness = 0.0
+
+[creativeScreen]
+	#Creative screen scroll smoothness. 0 = Off, 1 = Maximum smoothness
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	smoothness = 0.5
+
+[entryList]
+	#Entry list scroll smoothness. 0 = Off, 1 = Maximum smoothness
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	smoothness = 0.0
+	#Entry list scroll speed in pixels. 0 = Auto, max 100
+	# Default: 30.0
+	# Range: 0.0 ~ 100.0
+	speed = 30.0
+
+[misc]
+	#Enable mask debug visualization
+	enableMaskDebug = false

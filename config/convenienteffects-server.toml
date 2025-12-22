@@ -1,0 +1,9 @@
+#Blindness effect is affected by potion level and affects detection range of mobs.
+#Default Value: true
+stronger_blindness = true
+#Fire resistance prevents the entity from keeping on burning after stepping out of the fire source.
+#Default Value: true
+no_fire_resistance_burn_time = true
+#Allow falling at normal speed while the slow falling effect is active when sneaking. The player will still not take any fall damage.
+#Default Value: true
+slow_falling_quick_descent = true

@@ -1,0 +1,34 @@
+[spawnconfig]
+	#Spawn configs:
+	#Will the Abyssologer affect players with Darkness?
+	do_abyssologer_darkness = true
+	#Will the Abyssologer spawn?
+	spawn_abyssologer = true
+	#Will the Crystal Zombie spawn?
+	spawn_crystal_zombie = true
+	#Will the Swamp Zombie spawn?
+	spawn_swamp_zombie = true
+	#Will the Glow Skeleton spawn?
+	spawn_glow_skeleton = true
+	#Will the Lava Squid spawn?
+	spawn_lava_squid = true
+	#Will the Mother Lava Squid spawn?
+	spawn_mother_lava_squid = true
+	#Will the Overgrown Skeleton spawn?
+	spawn_overgrown_skeleton = true
+	#Will the Demon Eye spawn?
+	spawn_demon_eye = true
+	#Will the Ender Eye spawn?
+	spawn_ender_eye = true
+	#Will the Corrupted Ancient Hero spawn?
+	spawn_ancient_hero = true
+	#Will the Wisp spawn?
+	spawn_wisp = true
+	#Will the Soul spawn?
+	spawn_soul = true
+	#Will the Spectral Skull spawn?
+	spawn_spectral_skull = true
+	#Will the Desert Acolyte spawn?
+	spawn_desert_acolyte = true
+	#Will the Desert Sorceress spawn?
+	spawn_desert_sorceress = true

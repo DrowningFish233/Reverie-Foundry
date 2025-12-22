@@ -1,0 +1,23 @@
+[durability]
+	# Default: 256
+	# Range: > 1
+	inferiumDurability = 256
+	# Default: 512
+	# Range: > 1
+	prudentiumDurability = 512
+	# Default: 1024
+	# Range: > 1
+	tertiumDurability = 1024
+	# Default: 2048
+	# Range: > 1
+	imperiumDurability = 2048
+	# Default: 4096
+	# Range: > 1
+	supremiumDurability = 4096
+
+[durabilityEnabled]
+	inferiumDurabilityEnabled = true
+	prudentiumDurabilityEnabled = true
+	tertiumDurabilityEnabled = true
+	imperiumDurabilityEnabled = true
+	supremiumDurabilityEnabled = true

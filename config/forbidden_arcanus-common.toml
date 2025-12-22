@@ -1,0 +1,27 @@
+	[items.boom_arrow]
+		#Should Boom Arrow explosions deal Block Damage [default: false]
+		block_damage = false
+		#Radius of Boom Arrow explosions [default: 3]
+		# Default: 3
+		# Range: 1 ~ 10
+		explosion_radius = 3
+
+	[items.mundabitur_dust]
+		#Should right-clicking a Creeper with Mundabitur Dust charge the Creeper [default: true]
+		charge_creeper = true
+
+	[blocks.stella_arcanum]
+		#Should Stella Arcanum explode when mined [default: true]
+		explode = true
+		#Should Stella Arcanum explosions deal Block Damage (if explosions enabled) [default: true]
+		block_damage = true
+		#Radius of Stella Arcanum explosions (if explosions enabled) [default: 3]
+		# Default: 3
+		# Range: 1 ~ 10
+		explosion_radius = 3
+
+	[blocks.edelwood_ladder]
+		#The speed multiplier that gets added to the players y movement when on the ladder [default: 2.0
+		# Default: 2.0
+		# Range: 0.0 ~ 10.0
+		speed = 2.0

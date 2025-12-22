@@ -1,0 +1,10 @@
+{
+  "replace_roman_numerals": {
+    "//": [
+      "When enabled roman numerals will be replaced with arabic numerals. For example 4",
+      "will be displayed in place of IV.                                               "
+    ],
+    "//default": false,
+    "value": false
+  }
+}

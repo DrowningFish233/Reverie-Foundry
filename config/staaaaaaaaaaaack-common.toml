@@ -1,0 +1,33 @@
+["Item merge settings"]
+	#The maximum horizontal block distance over which dropped items attempt to merge with each other.
+	#Default: 1.25, Minecraft default: 0.5
+	# Default: 1.25
+	# Range: 0.5 ~ 10.0
+	maxMergeDistanceHorizontal = 1.25
+	#The maximum vertical block distance over which dropped items attempt to merge with each other.
+	#Default: 0.0, Minecraft default: 0.0
+	# Default: 0.0
+	# Range: 0.0 ~ 10.0
+	maxMergeDistanceVertical = 0.0
+	#The maximum number of extra items that an item entity can hold.
+	#Default: 2147483647
+	# Default: 2147483647
+	# Range: > 1
+	maxSize = 2147483647
+	#Enable for merging non-stackable item.
+	#Should be used with caution while playing with other mods.
+	#Default: false
+	enableForUnstackableItem = false
+	#Set this "true" to make `itemList` a whitelist, it's a blacklist when set to "false".
+	#Default: false
+	itemListAsWhitelist = false
+	#The list of items that should or should not exceed their original max stack size.
+	#Or You can by using the item tag "#staaaaaaaaaaaack:blacklist" to blacklist the item.
+	#e.g., ["minecraft:diamond_block", "minecraft:coal"]
+	itemList = []
+	#Set this "true" to make `dimensionList` a whitelist, it's a blacklist when set to "false".
+	#Default: false
+	dimensionListAsWhitelist = false
+	#The list of dimension that should or should not make item exceed their original max stack size.
+	#e.g., ["minecraft:overworld", "minecraft:the_nether"]
+	dimensionList = []

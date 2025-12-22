@@ -1,0 +1,75 @@
+[DISPLAYS]
+	#The x position of the display for coins
+	# Default: 0
+	# Range: > -2147483648
+	xDisplayCoins = 0
+	#The y position of the display for coins
+	# Default: 0
+	# Range: > -2147483648
+	yDisplayCoins = 0
+
+[BUTTONS]
+	#The x position of the button for silver coins
+	# Default: 0
+	# Range: -750 ~ 750
+	xSilverButton = 0
+	#The y position of the button for silver coins
+	# Default: 0
+	# Range: -750 ~ 750
+	ySilverButton = 0
+	#The x position of the button for gold coins
+	# Default: 0
+	# Range: -750 ~ 750
+	xGoldButton = 0
+	#The y position of the button for gold coins
+	# Default: 0
+	# Range: -750 ~ 750
+	yGoldButton = 0
+	#The x position of the button for crystal coins
+	# Default: 0
+	# Range: -750 ~ 750
+	xCrystalButton = 0
+	#The y position of the button for crystal coins
+	# Default: 0
+	# Range: -750 ~ 750
+	yCrystalButton = 0
+	#Enable the button to convert silver coins to gold coins
+	enableSilverForGoldButton = false
+	#The x position of the button to convert silver coins to gold coins
+	# Default: 0
+	# Range: -750 ~ 750
+	xSilverForGoldButton = 0
+	#The y position of the button to convert silver coins to gold coins
+	# Default: 0
+	# Range: -750 ~ 750
+	ySilverForGoldButton = 0
+	#Enable the button to convert gold coins to silver coins
+	enableGoldForSilverButton = false
+	#The x position of the button to convert gold coins to silver coins
+	# Default: 0
+	# Range: -750 ~ 750
+	xGoldForSilverButton = 0
+	#The y position of the button to convert gold coins to silver coins
+	# Default: 0
+	# Range: -750 ~ 750
+	yGoldForSilverButton = 0
+	#Enable the button to convert gold coins to crystal coins
+	enableGoldForCrystalButton = false
+	#The x position of the button to convert gold coins to crystal coins
+	# Default: 0
+	# Range: -750 ~ 750
+	xGoldForCrystalButton = 0
+	#The y position of the button to convert gold coins to crystal coins
+	# Default: 0
+	# Range: -750 ~ 750
+	yGoldForCrystalButton = 0
+	#Enable the button to convert crystal coins to gold coins
+	enableCrystalForGoldButton = false
+	#The x position of the button to convert crystal coins to gold coins
+	# Default: 0
+	# Range: -750 ~ 750
+	xCrystalForGoldButton = 0
+	#The y position of the button to convert crystal coins to gold coins
+	# Default: 0
+	# Range: -750 ~ 750
+	yCrystalForGoldButton = 0

@@ -1,0 +1,34 @@
+#show inventory item durability
+showInventoryItemDurability = false
+#Armor Around Hotbar
+armorAroundHotbar = true
+#show effect duration
+effectDuration = true
+#HUD position
+#Allowed Values: BOTTOM_RIGHT, BOTTOM_LEFT, TOP_RIGHT, TOP_LEFT
+hudPosition = "BOTTOM_RIGHT"
+#hide hud damage over percent
+# Default: 100
+# Range: 0 ~ 100
+hideDamageOverPercent = 100
+#play sound when durability is lower than this
+# Default: 100
+# Range: 0 ~ 1500
+soundBelowDurability = 100
+#play sound when percent is lower than this
+# Default: 100
+# Range: 0 ~ 100
+soundBelowPercent = 100
+#show percent rather than durability
+showPercentRatherThanDurability = false
+#percent to show damage rather than durability
+# Default: 80
+# Range: 0 ~ 100
+percentToShowDamageRatherThanDurability = 80
+#show free inventory slots
+showFreeInventorySlots = true
+#warning mode
+#Allowed Values: NONE, SOUND, VISUAL, BOTH
+warningMode = "BOTH"
+#show  trinkets
+showAllTrinkets = true

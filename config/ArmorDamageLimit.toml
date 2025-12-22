@@ -1,0 +1,6 @@
+["Armor Damage Limit Config"]
+	# Default: 0.2
+	# Range: 0.01 ~ 1.0
+	"Max Armor Durability Loss Percentage" = 0.04
+	#Armor items that will not be protected
+	"Item Protection Blacklist" = ["modA:armorB", "modC:armorD"]

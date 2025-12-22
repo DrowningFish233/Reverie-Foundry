@@ -1,0 +1,35 @@
+# Default: 10.0
+# Range: -1000.0 ~ 1000.0
+"% chance for player to drop money" = 10.0
+#Structures that have coins, specific rates can be changed via datapacks.
+Structures = ["minecraft:chests/stronghold_library", "minecraft:chests/bastion_treasure", "minecraft:chests/stronghold_corridor", "minecraft:chests/pillager_outpost", "minecraft:chests/buried_treasure", "minecraft:chests/simple_dungeon", "minecraft:chests/abandoned_mineshaft"]
+#% chance for mobs tagged bourgeoisie to drop bronze coins
+# Default: 50.0
+# Range: -1000.0 ~ 1000.0
+"% chance bronze coins" = 50.0
+# Default: 9
+# Range: -1000 ~ 1000
+"Min amount of Bronze Coins to be dropped" = 9
+# Default: 35
+# Range: -1000 ~ 1000
+"Max amount of Bronze Coins to be dropped" = 35
+#% chance for mobs tagged bourgeoisie to drop silver coins
+# Default: 80.0
+# Range: -1000.0 ~ 1000.0
+"% chance silver coins" = 80.0
+# Default: 1
+# Range: -1000 ~ 1000
+"Min amount of Silver Coins to be dropped" = 1
+# Default: 1
+# Range: -1000 ~ 1000
+"Max amount of Silver Coins to be dropped" = 1
+#% chance for mobs tagged bourgeoisie to drop gold coins
+# Default: 0.0
+# Range: -1000.0 ~ 1000.0
+"% chance gold coins" = 0.0
+# Default: 0
+# Range: -1000 ~ 1000
+"Min amount of Gold Coins to be dropped" = 0
+# Default: 0
+# Range: -1000 ~ 1000
+"Max amount of Gold Coins to be dropped" = 0

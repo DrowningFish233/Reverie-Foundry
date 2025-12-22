@@ -1,0 +1,47 @@
+chorusFlowerHumming = true
+chorusFlowerPollen = true
+endPortalUpdateParticles = true
+endPortalUpdateTravelSound = true
+debugHudClientInfo = true
+debugHudEnabled = false
+debugHudMusicInfo = true
+debugHudPlayerInfo = true
+debugMagniaSproutHitboxes = false
+elytraAddFovEffects = true
+elytraAddGlidingSound = true
+# Default: 100
+# Range: > -2147483648
+elytraFovEffectIntensity = 100
+enderPearlAddParticles = true
+mirrorScreenEffectEnabled = true
+mirrorTooltipDisplayCoordinates = false
+mirrorTooltipDisplayDimension = true
+mirrorTooltipDisplayDistance = true
+mirrorTooltipEnabled = true
+mirrorTooltipShiftToDisplay = false
+nebuliteToolHudEnabled = true
+# Default: 50
+# Range: > -2147483648
+mirrorScreenEffectOverlayIntensity = 50
+# Default: 50
+# Range: > -2147483648
+mirrorScreenEffectVignetteIntensity = 50
+# Default: 0
+# Range: > -2147483648
+nebuliteToolHudOffset = 0
+# Default: 100
+# Range: > -2147483648
+nebuliteToolHudOpacity = 100
+portalParticleEmissive = true
+endermiteEmissiveEyes = true
+shulkerBulletLoopSound = true
+endermanStaticOverlay = true
+endermanStaticSound = true
+skyboxAddDynamicFogDensity = true
+skyboxScalesBrightnessWithGamma = true
+skyboxUpdateEnabled = true
+# Default: 40
+# Range: > -2147483648
+skyboxBrightnessScaleFactor = 40
+#Allowed Values: VANILLA, IMPROVED, MIDNIGHT
+lightingStyle = "IMPROVED"
