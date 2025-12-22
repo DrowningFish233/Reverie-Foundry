@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.lacrima.name",
+	"icon": "cataclysm:lacrima",
+	"category": "patchouli:kubejs_gems",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "cataclysm:lacrima"
+			},
+			"text": "patchouli.gui.kubejs.lacrima.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.lacrima"
+		}
+	]
+}

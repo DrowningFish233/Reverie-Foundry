@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.stymphalian_bird_feather.name",
+	"icon": "iceandfire:stymphalian_bird_feather",
+	"category": "patchouli:kubejs_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "iceandfire:stymphalian_bird_feather"
+			},
+			"text": "patchouli.gui.kubejs.stymphalian_bird_feather.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.stymphalian_bird_feather"
+		}
+	]
+}

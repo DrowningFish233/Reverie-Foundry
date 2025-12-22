@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.bronze_ingot.name",
+	"icon": "kubejs:bronze_ingot",
+	"category": "patchouli:kubejs_ingot",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "kubejs:bronze_ingot"
+			},
+			"text": "patchouli.gui.kubejs.bronze_ingot.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.bronze_ingot"
+		}
+	]
+}

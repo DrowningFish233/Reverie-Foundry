@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.dragonsteel_fire_ingot.name",
+	"icon": "iceandfire:dragonsteel_fire_ingot",
+	"category": "patchouli:kubejs_ingot",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "iceandfire:dragonsteel_fire_ingot"
+			},
+			"text": "patchouli.gui.kubejs.dragonsteel_fire_ingot.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.dragonsteel_fire_ingot"
+		}
+	]
+}

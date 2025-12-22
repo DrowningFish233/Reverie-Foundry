@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.strontium_ingot.name",
+	"icon": "kubejs:strontium_ingot",
+	"category": "patchouli:kubejs_ingot",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "kubejs:strontium_ingot"
+			},
+			"text": "patchouli.gui.kubejs.strontium_ingot.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.strontium_ingot"
+		}
+	]
+}

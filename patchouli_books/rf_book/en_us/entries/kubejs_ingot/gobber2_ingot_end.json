@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.gobber2_ingot_end.name",
+	"icon": "gobber2:gobber2_ingot_end",
+	"category": "patchouli:kubejs_ingot",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "gobber2:gobber2_ingot_end"
+			},
+			"text": "patchouli.gui.kubejs.gobber2_ingot_end.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.gobber2_ingot_end"
+		}
+	]
+}

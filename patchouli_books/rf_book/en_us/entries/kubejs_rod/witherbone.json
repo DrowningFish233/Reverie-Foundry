@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.witherbone.name",
+	"icon": "iceandfire:witherbone",
+	"category": "patchouli:kubejs_rod",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "iceandfire:witherbone"
+			},
+			"text": "patchouli.gui.kubejs.witherbone.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.witherbone"
+		}
+	]
+}

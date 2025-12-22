@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.iron_wire.name",
+	"icon": "createaddition:iron_wire",
+	"category": "patchouli:kubejs_wire",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "createaddition:iron_wire"
+			},
+			"text": "patchouli.gui.kubejs.iron_wire.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.iron_wire"
+		}
+	]
+}

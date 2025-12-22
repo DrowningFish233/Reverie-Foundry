@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.copper_wire.name",
+	"icon": "createaddition:copper_wire",
+	"category": "patchouli:kubejs_wire",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "createaddition:copper_wire"
+			},
+			"text": "patchouli.gui.kubejs.copper_wire.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.copper_wire"
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.allthemodium_ingot.name",
+	"icon": "allthemodium:allthemodium_ingot",
+	"category": "patchouli:kubejs_ingot",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "allthemodium:allthemodium_ingot"
+			},
+			"text": "patchouli.gui.kubejs.allthemodium_ingot.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.allthemodium_ingot"
+		}
+	]
+}

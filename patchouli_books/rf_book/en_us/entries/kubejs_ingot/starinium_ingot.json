@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.starinium_ingot.name",
+	"icon": "kubejs:starinium_ingot",
+	"category": "patchouli:kubejs_ingot",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "kubejs:starinium_ingot"
+			},
+			"text": "patchouli.gui.kubejs.starinium_ingot.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.starinium_ingot"
+		}
+	]
+}

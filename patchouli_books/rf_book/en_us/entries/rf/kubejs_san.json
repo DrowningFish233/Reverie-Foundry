@@ -1,0 +1,18 @@
+{
+    "name": "patchouli.gui.kubejs.sanity_curios.name",
+    "icon": "kubejs:sanity_curios",
+    "category": "patchouli:kubejs_san",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": {
+                "item": "kubejs:sanity_curios"
+            },
+            "text": "patchouli.gui.kubejs.sanity_curios.text"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.sanity_curios"
+        }
+    ]
+}

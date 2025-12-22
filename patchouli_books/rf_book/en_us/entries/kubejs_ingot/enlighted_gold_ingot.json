@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.enlighted_gold_ingot.name",
+	"icon": "kubejs:enlighted_gold_ingot",
+	"category": "patchouli:kubejs_ingot",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "kubejs:enlighted_gold_ingot"
+			},
+			"text": "patchouli.gui.kubejs.enlighted_gold_ingot.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.enlighted_gold_ingot"
+		}
+	]
+}

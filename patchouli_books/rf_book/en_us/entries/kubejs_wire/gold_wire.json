@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.gold_wire.name",
+	"icon": "createaddition:gold_wire",
+	"category": "patchouli:kubejs_wire",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "createaddition:gold_wire"
+			},
+			"text": "patchouli.gui.kubejs.gold_wire.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.gold_wire"
+		}
+	]
+}

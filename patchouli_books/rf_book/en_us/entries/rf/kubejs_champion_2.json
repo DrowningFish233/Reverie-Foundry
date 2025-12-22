@@ -1,0 +1,11 @@
+{
+    "name": "patchouli.gui.kubejs.kubejs_champion.radiation.name",
+    "icon": "alshanex_familiars:summoner_trinket",
+    "category": "patchouli:kubejs_champion",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "patchouli.gui.kubejs.kubejs_champion.radiation"
+        }
+    ]
+}

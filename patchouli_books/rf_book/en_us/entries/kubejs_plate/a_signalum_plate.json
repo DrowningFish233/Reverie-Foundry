@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.a_signalum_plate.name",
+	"icon": "alltheores:signalum_plate",
+	"category": "patchouli:kubejs_plate",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "alltheores:signalum_plate"
+			},
+			"text": "patchouli.gui.kubejs.a_signalum_plate.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.a_signalum_plate"
+		}
+	]
+}
