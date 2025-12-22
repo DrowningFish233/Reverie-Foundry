@@ -1,0 +1,4 @@
+#Additionally jump boost will allow entities to walk up blocks without jumping, including full blocks at a given effect strength.
+#Default Value: true
+#Requires Restart: Game
+jump_boost_increases_step_height = true

@@ -1,0 +1,763 @@
+[boots-unbreaking-protection]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 17
+	# Range: 1 ~ 64
+	emerald-cost = 17
+
+[boots-unbreaking-fire_protection]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 17
+	# Range: 1 ~ 64
+	emerald-cost = 17
+
+[boots-unbreaking-projectile_protection]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 15
+	# Range: 1 ~ 64
+	emerald-cost = 15
+
+[boots-unbreaking-depth_strider]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 14
+	# Range: 1 ~ 64
+	emerald-cost = 14
+
+[boots-unbreaking-fall_protection]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 15
+	# Range: 1 ~ 64
+	emerald-cost = 15
+
+[chestplate-unbreaking-protection]
+	# Default: 6
+	# Range: 1 ~ 64
+	diamond-cost = 6
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[chestplate-unbreaking-fire_protection]
+	# Default: 6
+	# Range: 1 ~ 64
+	diamond-cost = 6
+	# Default: 20
+	# Range: 1 ~ 64
+	emerald-cost = 20
+
+[chestplate-unbreaking-projectile_protection]
+	# Default: 6
+	# Range: 1 ~ 64
+	diamond-cost = 6
+	# Default: 20
+	# Range: 1 ~ 64
+	emerald-cost = 20
+
+[chestplate-unbreaking-blast_protection]
+	# Default: 6
+	# Range: 1 ~ 64
+	diamond-cost = 6
+	# Default: 24
+	# Range: 1 ~ 64
+	emerald-cost = 24
+
+[chestplate-unbreaking-thorns]
+	# Default: 6
+	# Range: 1 ~ 64
+	diamond-cost = 6
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[leggings-unbreaking-protection]
+	# Default: 5
+	# Range: 1 ~ 64
+	diamond-cost = 5
+	# Default: 21
+	# Range: 1 ~ 64
+	emerald-cost = 21
+
+[leggings-unbreaking-fire_protection]
+	# Default: 5
+	# Range: 1 ~ 64
+	diamond-cost = 5
+	# Default: 21
+	# Range: 1 ~ 64
+	emerald-cost = 21
+
+[leggings-unbreaking-projectile_protection]
+	# Default: 5
+	# Range: 1 ~ 64
+	diamond-cost = 5
+	# Default: 18
+	# Range: 1 ~ 64
+	emerald-cost = 18
+
+[leggings-unbreaking-blast_protection]
+	# Default: 5
+	# Range: 1 ~ 64
+	diamond-cost = 5
+	# Default: 19
+	# Range: 1 ~ 64
+	emerald-cost = 19
+
+[leggings-unbreaking-thorns]
+	# Default: 5
+	# Range: 1 ~ 64
+	diamond-cost = 5
+	# Default: 22
+	# Range: 1 ~ 64
+	emerald-cost = 22
+
+[helmet-unbreaking-protection]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 18
+	# Range: 1 ~ 64
+	emerald-cost = 18
+
+[helmet-unbreaking-fire_protection]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 18
+	# Range: 1 ~ 64
+	emerald-cost = 18
+
+[helmet-unbreaking-projectile_protection]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 16
+	# Range: 1 ~ 64
+	emerald-cost = 16
+
+[helmet-unbreaking-respiration]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 15
+	# Range: 1 ~ 64
+	emerald-cost = 15
+
+[helmet-unbreaking-aqua_affinity]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 13
+	# Range: 1 ~ 64
+	emerald-cost = 13
+
+[axe-unbreaking-sharpness]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 27
+	# Range: 1 ~ 64
+	emerald-cost = 27
+
+[axe-unbreaking-looting]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 21
+	# Range: 1 ~ 64
+	emerald-cost = 21
+
+[axe-looting-sharpness]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 28
+	# Range: 1 ~ 64
+	emerald-cost = 28
+
+[axe-looting-smite]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[axe-looting-bane_of_arthropods]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 23
+	# Range: 1 ~ 64
+	emerald-cost = 23
+
+[axe-unbreaking-smite]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 24
+	# Range: 1 ~ 64
+	emerald-cost = 24
+
+[axe-unbreaking-bane_of_arthropods]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 22
+	# Range: 1 ~ 64
+	emerald-cost = 22
+
+[axe-unbreaking-efficiency]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 19
+	# Range: 1 ~ 64
+	emerald-cost = 19
+
+[axe-unbreaking-fortune]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 21
+	# Range: 1 ~ 64
+	emerald-cost = 21
+
+[axe-fortune-efficiency]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 24
+	# Range: 1 ~ 64
+	emerald-cost = 24
+
+[sword-unbreaking-sharpness]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 27
+	# Range: 1 ~ 64
+	emerald-cost = 27
+
+[sword-unbreaking-looting]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 21
+	# Range: 1 ~ 64
+	emerald-cost = 21
+
+[sword-looting-sharpness]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 28
+	# Range: 1 ~ 64
+	emerald-cost = 28
+
+[sword-looting-smite]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[sword-looting-bane_of_anthropods]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 23
+	# Range: 1 ~ 64
+	emerald-cost = 23
+
+[sword-unbreaking-smite]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 24
+	# Range: 1 ~ 64
+	emerald-cost = 24
+
+[sword-unbreaking-bane_of_anthropods]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 22
+	# Range: 1 ~ 64
+	emerald-cost = 22
+
+[pickaxe-unbreaking-efficiency]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 20
+	# Range: 1 ~ 64
+	emerald-cost = 20
+
+[pickaxe-unbreaking-fortune]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 24
+	# Range: 1 ~ 64
+	emerald-cost = 24
+
+[pickaxe-fortune-efficiency]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 26
+	# Range: 1 ~ 64
+	emerald-cost = 26
+
+[shovel-unbreaking-efficiency]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 18
+	# Range: 1 ~ 64
+	emerald-cost = 18
+
+[shovel-unbreaking-fortune]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 20
+	# Range: 1 ~ 64
+	emerald-cost = 20
+
+[shovel-fortune-efficiency]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 22
+	# Range: 1 ~ 64
+	emerald-cost = 22
+
+[items-book]
+	# Default: 2
+	# Range: 1 ~ 64
+	cost = 2
+	# Default: 12
+	# Range: 1 ~ 64
+	result = 12
+	# Default: 8
+	# Range: 1 ~ 24
+	uses = 8
+	# Default: 5
+	# Range: 1 ~ 24
+	xp = 5
+
+[items-paper]
+	# Default: 6
+	# Range: 1 ~ 64
+	cost = 6
+	# Default: 1
+	# Range: 1 ~ 64
+	result = 1
+	# Default: 10
+	# Range: 1 ~ 24
+	uses = 10
+	# Default: 5
+	# Range: 1 ~ 24
+	xp = 5
+
+[items-ink-sac]
+	# Default: 5
+	# Range: 1 ~ 64
+	cost = 5
+	# Default: 1
+	# Range: 1 ~ 64
+	result = 1
+	# Default: 10
+	# Range: 1 ~ 24
+	uses = 10
+	# Default: 4
+	# Range: 1 ~ 24
+	xp = 4
+
+[items-writable-book]
+	# Default: 1
+	# Range: 1 ~ 64
+	cost = 1
+	# Default: 1
+	# Range: 1 ~ 64
+	result = 1
+	# Default: 3
+	# Range: 1 ~ 24
+	uses = 3
+	# Default: 6
+	# Range: 1 ~ 24
+	xp = 6
+
+[items-lantern]
+	# Default: 7
+	# Range: 1 ~ 64
+	cost = 7
+	# Default: 1
+	# Range: 1 ~ 64
+	result = 1
+	# Default: 4
+	# Range: 1 ~ 24
+	uses = 4
+	# Default: 6
+	# Range: 1 ~ 24
+	xp = 6
+
+[items-bookshelf]
+	# Default: 9
+	# Range: 1 ~ 64
+	cost = 9
+	# Default: 1
+	# Range: 1 ~ 64
+	result = 1
+	# Default: 4
+	# Range: 1 ~ 24
+	uses = 4
+	# Default: 12
+	# Range: 1 ~ 24
+	xp = 12
+
+[items-name-tag]
+	# Default: 12
+	# Range: 1 ~ 64
+	cost = 12
+	# Default: 12
+	# Range: 1 ~ 64
+	result = 12
+	# Default: 12
+	# Range: 1 ~ 24
+	uses = 12
+	# Default: 12
+	# Range: 1 ~ 24
+	xp = 12
+
+[items-glass]
+	# Default: 16
+	# Range: 1 ~ 64
+	cost = 16
+	# Default: 16
+	# Range: 1 ~ 64
+	result = 16
+	# Default: 16
+	# Range: 1 ~ 24
+	uses = 16
+	# Default: 16
+	# Range: 1 ~ 24
+	xp = 16
+
+[items-clock]
+	# Default: 12
+	# Range: 1 ~ 64
+	cost = 12
+	# Default: 12
+	# Range: 1 ~ 64
+	result = 12
+	# Default: 12
+	# Range: 1 ~ 24
+	uses = 12
+	# Default: 12
+	# Range: 1 ~ 24
+	xp = 12
+
+[items-compass]
+	# Default: 12
+	# Range: 1 ~ 64
+	cost = 12
+	# Default: 12
+	# Range: 1 ~ 64
+	result = 12
+	# Default: 12
+	# Range: 1 ~ 24
+	uses = 12
+	# Default: 12
+	# Range: 1 ~ 24
+	xp = 12
+
+[books-all_damage_protection]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 45
+	# Range: 1 ~ 64
+	emerald-cost = 45
+
+[books-fall_protection]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 45
+	# Range: 1 ~ 64
+	emerald-cost = 45
+
+[books-projectile_protection]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 45
+	# Range: 1 ~ 64
+	emerald-cost = 45
+
+[books-sharpness]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 50
+	# Range: 1 ~ 64
+	emerald-cost = 50
+
+[books-smite]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 35
+	# Range: 1 ~ 64
+	emerald-cost = 35
+
+[books-bane_of_arthropods]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 35
+	# Range: 1 ~ 64
+	emerald-cost = 35
+
+[books-knockback]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[books-efficiency]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 35
+	# Range: 1 ~ 64
+	emerald-cost = 35
+
+[books-power]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 35
+	# Range: 1 ~ 64
+	emerald-cost = 35
+
+[books-loyalty]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 30
+	# Range: 1 ~ 64
+	emerald-cost = 30
+
+[books-impaling]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 40
+	# Range: 1 ~ 64
+	emerald-cost = 40
+
+[books-multishot]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 15
+	# Range: 1 ~ 64
+	emerald-cost = 15
+
+[books-quick_charge]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[books-piercing]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[books-vanishing_curse]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 15
+	# Range: 1 ~ 64
+	emerald-cost = 15
+
+[books-respiration]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 30
+	# Range: 1 ~ 64
+	emerald-cost = 30
+
+[books-aqua_affinity]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 15
+	# Range: 1 ~ 64
+	emerald-cost = 15
+
+[books-depth_strider]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 35
+	# Range: 1 ~ 64
+	emerald-cost = 35
+
+[books-frost_walker]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[books-fire_aspect]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 20
+	# Range: 1 ~ 64
+	emerald-cost = 20
+
+[books-looting]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 40
+	# Range: 1 ~ 64
+	emerald-cost = 40
+
+[books-sweeping_edge]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 30
+	# Range: 1 ~ 64
+	emerald-cost = 30
+
+[books-fortune]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 35
+	# Range: 1 ~ 64
+	emerald-cost = 35
+
+[books-punch]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[books-flame]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 15
+	# Range: 1 ~ 64
+	emerald-cost = 15
+
+[books-luck_of_the_sea]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[books-lure]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[books-riptide]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 30
+	# Range: 1 ~ 64
+	emerald-cost = 30
+
+[books-thorns]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 50
+	# Range: 1 ~ 64
+	emerald-cost = 50
+
+[books-binding_curse]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[books-silk_touch]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 45
+	# Range: 1 ~ 64
+	emerald-cost = 45
+
+[books-unbreaking]
+	# Default: 3
+	# Range: 1 ~ 64
+	diamond-cost = 3
+	# Default: 40
+	# Range: 1 ~ 64
+	emerald-cost = 40
+
+[books-infinity]
+	# Default: 1
+	# Range: 1 ~ 64
+	diamond-cost = 1
+	# Default: 35
+	# Range: 1 ~ 64
+	emerald-cost = 35
+
+[books-channeling]
+	# Default: 2
+	# Range: 1 ~ 64
+	diamond-cost = 2
+	# Default: 25
+	# Range: 1 ~ 64
+	emerald-cost = 25
+
+[books-mending]
+	# Default: 5
+	# Range: 1 ~ 64
+	diamond-cost = 5
+	# Default: 60
+	# Range: 1 ~ 64
+	emerald-cost = 60

@@ -1,0 +1,31 @@
+#Whether Pillager Caravans should be active at all.
+enabled = true
+#Whether to show a toast when a player encounters a caravan.
+showEncounterToast = true
+#Whether to use light mode for the toast.
+toastLightMode = false
+
+[SpawnOptions]
+	#Additional multiplier applied to the base cooldowns defined in the datapack.
+	#Larger caravans usually have longer cooldowns after spawning.
+	#This value scales all existing cooldowns globally (1.0 = 100%).
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	spawnCooldownMultiplier = 1.0
+	#Minimum world age in ticks required before caravans can start spawning.
+	#24'000 ticks = 1 Minecraft day.
+	# Default: 24000
+	# Range: > 0
+	spawnWorldAgeRequired = 24000
+	#Cooldown in ticks after a failed caravan spawn attempt before trying again.
+	# Default: 1200
+	# Range: > 0
+	spawnFailedCooldown = 1200
+	#Base distance from the player where caravans will spawn.
+	# Default: 32
+	# Range: > 0
+	spawnDistance = 32
+	#Random variance added to the base spawn distance (0~value).
+	# Default: 32
+	# Range: > 0
+	spawnDistanceVariance = 32

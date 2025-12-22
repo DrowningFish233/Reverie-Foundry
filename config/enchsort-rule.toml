@@ -1,0 +1,327 @@
+[[entries]]
+name = "minecraft:punch"
+max_lvl = 5
+
+[[entries]]
+name = "minecraft:thorns"
+max_lvl = 5
+
+[[entries]]
+name = "apothic_enchanting:crescendo_of_bolts"
+max_lvl = 5
+
+[[entries]]
+name = "apothic_enchanting:chromatic"
+max_lvl = 1
+
+[[entries]]
+name = "apothic_enchanting:infusion"
+max_lvl = 1
+
+[[entries]]
+name = "nova_structures:conductivity_curse"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:bane_of_arthropods"
+max_lvl = 10
+
+[[entries]]
+name = "minecraft:wind_burst"
+max_lvl = 8
+
+[[entries]]
+name = "minecraft:soul_speed"
+max_lvl = 7
+
+[[entries]]
+name = "apothic_enchanting:scavenger"
+max_lvl = 3
+
+[[entries]]
+name = "mysticalagriculture:soul_siphoner"
+max_lvl = 9
+
+[[entries]]
+name = "mysticalagriculture:mystical_enlightenment"
+max_lvl = 9
+
+[[entries]]
+name = "nova_structures:boss_behaviour"
+max_lvl = 1
+
+[[entries]]
+name = "nova_structures:piercing"
+max_lvl = 8
+
+[[entries]]
+name = "minecraft:quick_charge"
+max_lvl = 5
+
+[[entries]]
+name = "minecraft:breach"
+max_lvl = 8
+
+[[entries]]
+name = "apothic_enchanting:chainsaw"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:swift_sneak"
+max_lvl = 5
+
+[[entries]]
+name = "minecraft:projectile_protection"
+max_lvl = 11
+
+[[entries]]
+name = "minecraft:impaling"
+max_lvl = 10
+
+[[entries]]
+name = "minecraft:flame"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:channeling"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:blast_protection"
+max_lvl = 9
+
+[[entries]]
+name = "minecraft:frost_walker"
+max_lvl = 7
+
+[[entries]]
+name = "nova_structures:photosynthesis"
+max_lvl = 1
+
+[[entries]]
+name = "apothic_enchanting:knowledge_of_the_ages"
+max_lvl = 3
+
+[[entries]]
+name = "nova_structures:traveler"
+max_lvl = 7
+
+[[entries]]
+name = "apothic_enchanting:icy_thorns"
+max_lvl = 5
+
+[[entries]]
+name = "apothic_enchanting:worker_exploitation"
+max_lvl = 1
+
+[[entries]]
+name = "apothic_enchanting:rebounding"
+max_lvl = 5
+
+[[entries]]
+name = "nova_structures:outreach"
+max_lvl = 8
+
+[[entries]]
+name = "apothic_enchanting:life_mending"
+max_lvl = 3
+
+[[entries]]
+name = "minecraft:power"
+max_lvl = 9
+
+[[entries]]
+name = "minecraft:lure"
+max_lvl = 8
+
+[[entries]]
+name = "minecraft:unbreaking"
+max_lvl = 8
+
+[[entries]]
+name = "minecraft:loyalty"
+max_lvl = 9
+
+[[entries]]
+name = "minecraft:smite"
+max_lvl = 10
+
+[[entries]]
+name = "minecraft:infinity"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:efficiency"
+max_lvl = 9
+
+[[entries]]
+name = "minecraft:density"
+max_lvl = 10
+
+[[entries]]
+name = "minecraft:looting"
+max_lvl = 8
+
+[[entries]]
+name = "apothic_enchanting:shield_bash"
+max_lvl = 7
+
+[[entries]]
+name = "minecraft:feather_falling"
+max_lvl = 11
+
+[[entries]]
+name = "apothic_enchanting:growth_serum"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:vanishing_curse"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:multishot"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:depth_strider"
+max_lvl = 7
+
+[[entries]]
+name = "minecraft:mending"
+max_lvl = 1
+
+[[entries]]
+name = "nova_structures:ghasted"
+max_lvl = 7
+
+[[entries]]
+name = "minecraft:fire_aspect"
+max_lvl = 5
+
+[[entries]]
+name = "nova_structures:power"
+max_lvl = 9
+
+[[entries]]
+name = "nova_structures:shulker_boss"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:respiration"
+max_lvl = 7
+
+[[entries]]
+name = "minecraft:sharpness"
+max_lvl = 9
+
+[[entries]]
+name = "minecraft:riptide"
+max_lvl = 9
+
+[[entries]]
+name = "minecraft:sweeping_edge"
+max_lvl = 8
+
+[[entries]]
+name = "minecraft:binding_curse"
+max_lvl = 1
+
+[[entries]]
+name = "apothic_enchanting:endless_quiver"
+max_lvl = 1
+
+[[entries]]
+name = "apothic_enchanting:natures_blessing"
+max_lvl = 7
+
+[[entries]]
+name = "minecraft:protection"
+max_lvl = 8
+
+[[entries]]
+name = "soul_incursion:soulbound"
+max_lvl = 1
+
+[[entries]]
+name = "nova_structures:wither_coated"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:piercing"
+max_lvl = 8
+
+[[entries]]
+name = "apothic_enchanting:reflective_defenses"
+max_lvl = 7
+
+[[entries]]
+name = "nova_structures:gravity"
+max_lvl = 8
+
+[[entries]]
+name = "nova_structures:shulker_miniboss"
+max_lvl = 1
+
+[[entries]]
+name = "nova_structures:multishot"
+max_lvl = 1
+
+[[entries]]
+name = "apothic_enchanting:tempting"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:silk_touch"
+max_lvl = 1
+
+[[entries]]
+name = "nova_structures:antidote"
+max_lvl = 1
+
+[[entries]]
+name = "minecraft:luck_of_the_sea"
+max_lvl = 8
+
+[[entries]]
+name = "apothic_enchanting:berserkers_fury"
+max_lvl = 3
+
+[[entries]]
+name = "minecraft:knockback"
+max_lvl = 5
+
+[[entries]]
+name = "apothic_enchanting:stable_footing"
+max_lvl = 1
+
+[[entries]]
+name = "nova_structures:wax_wings"
+max_lvl = 1
+
+[[entries]]
+name = "nova_structures:illagers_bane"
+max_lvl = 10
+
+[[entries]]
+name = "minecraft:fortune"
+max_lvl = 8
+
+[[entries]]
+name = "minecraft:fire_protection"
+max_lvl = 9
+
+[[entries]]
+name = "apothic_enchanting:boon_of_the_earth"
+max_lvl = 5
+
+[[entries]]
+name = "minecraft:aqua_affinity"
+max_lvl = 1
+
+[[entries]]
+name = "farmersdelight:backstabbing"
+max_lvl = 8
+
+[[entries]]
+name = "apothic_enchanting:miners_fervor"
+max_lvl = 5

@@ -1,0 +1,160 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6F830705E51A6BDE"
+	group: "7F00D0D8C7C916A0"
+	icon: {
+		id: "malum:runewood_sapling"
+	}
+	id: "6F830705E51A6BDE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			hide_text_until_complete: true
+			id: "1A58667FA2440598"
+			rewards: [
+				{
+					auto: "enabled"
+					exclude_from_claim_all: true
+					id: "31C0EC4D0576323F"
+					ignore_reward_blocking: true
+					table_id: 8769696413750133854L
+					type: "choice"
+				}
+				{
+					id: "7288A9CC1A7ADD0A"
+					item: {
+						components: {
+							"!minecraft:attribute_modifiers": { }
+							"minecraft:item_name": "{\"translate\":\"item.silentgear.saw.nameProper\",\"with\":[{\"translate\":\"material.silentgear.wood\"}]}"
+							"minecraft:tool": {
+								rules: [
+									{
+										blocks: "#minecraft:incorrect_for_wooden_tool"
+										correct_for_drops: 0b
+									}
+									{
+										blocks: "#minecraft:mineable/axe"
+										correct_for_drops: 1b
+										speed: 0.5f
+									}
+								]
+							}
+							"silentgear:construction": {
+								broken_count: 0
+								example: 0b
+								parts: [
+									{
+										item: {
+											components: {
+												"silentgear:material_list": [{
+													item: {
+														count: 1
+														id: "minecraft:oak_planks"
+													}
+													material: "silentgear:wood"
+												}]
+											}
+											count: 1
+											id: "silentgear:saw_blade"
+										}
+										part: "silentgear:saw_blade"
+									}
+									{
+										item: {
+											components: {
+												"silentgear:material_list": [{
+													item: {
+														count: 1
+														id: "minecraft:oak_planks"
+													}
+													material: "silentgear:wood"
+												}]
+											}
+											count: 1
+											id: "silentgear:rod"
+										}
+										part: "silentgear:rod"
+									}
+								]
+								repairedCount: 0
+							}
+							"silentgear:model_index": 2
+							"silentgear:model_key": "saw:saw_blade{wood},rod{wood},"
+							"silentgear:properties": {
+								"silentgear:armor": 7.0f
+								"silentgear:armor_durability": 8.0f
+								"silentgear:armor_toughness": 0.0f
+								"silentgear:attack_damage": 2.0f
+								"silentgear:attack_reach": 6.0f
+								"silentgear:attack_speed": 1.4f
+								"silentgear:block_reach": 0.0f
+								"silentgear:charging_value": 0.6f
+								"silentgear:draw_speed": 0.0f
+								"silentgear:durability": 118.0f
+								"silentgear:enchantment_value": 7.5f
+								"silentgear:harvest_speed": 0.5f
+								"silentgear:harvest_tier": {
+									incorrect_blocks_for_tool: "minecraft:incorrect_for_wooden_tool"
+									level_hint: "0"
+									name: "wood"
+								}
+								"silentgear:knockback_resistance": 0.0f
+								"silentgear:magic_armor": 2.0f
+								"silentgear:magic_damage": 0.0f
+								"silentgear:projectile_accuracy": 0.9f
+								"silentgear:projectile_speed": 1.0f
+								"silentgear:ranged_damage": 0.0f
+								"silentgear:rarity": 1.0f
+								"silentgear:repair_efficiency": 1.5f
+								"silentgear:repair_value": 0.25f
+								"silentgear:traits": [
+									{
+										conditions: [ ]
+										level: 1
+										trait: "silentgear:flammable"
+									}
+									{
+										conditions: [{
+											gear_type: "silentgear:tool"
+											type: "silentgear:gear_type"
+										}]
+										level: 1
+										trait: "silentgear:jagged"
+									}
+									{
+										conditions: [ ]
+										level: 2
+										trait: "silentgear:flexible"
+									}
+								]
+							}
+						}
+						count: 1
+						id: "silentgear:saw"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "1B3D8C6E12F08794"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "0840A780542BF10B"
+			tasks: [{
+				id: "7CCEF302E660A068"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "overrides": {
+        "chunksfadein": {
+            "+depends": {
+                "embeddium": ">0.2.18+mc1.20.1"
+            },
+            "-depends": {
+                "sodium": "IGNORED"
+            }
+        }
+    }
+}

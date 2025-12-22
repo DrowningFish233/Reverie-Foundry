@@ -1,0 +1,26 @@
+{
+  "encounterEntries": [
+    {
+      "entity_id": "example:entity_1",
+      "avoid": [
+        "example:avoid_1",
+        "example:avoid_2"
+      ],
+      "hostile": [
+        "example:hostile_1",
+        "example:hostile_2"
+      ]
+    },
+    {
+      "entity_id": "example:entity_2",
+      "avoid": [
+        "example:avoid_3",
+        "example:avoid_4"
+      ],
+      "hostile": [
+        "example:hostile_3",
+        "example:hostile_4"
+      ]
+    }
+  ]
+}

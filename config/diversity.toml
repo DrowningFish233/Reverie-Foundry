@@ -1,0 +1,73 @@
+[entity]
+"9 lives cat" = false
+"Baby nametag" = true
+"Brushable parrot/chicken" = true
+"Chicken egg try hatch on despawn" = true
+"Explosive sniffer" = true
+"Fox bury items" = true
+"Horse can seat on boat" = true
+"Pat you pets" = true
+"Piglin treats golden trimmed armor as golden armor" = true
+"No tamed horse wandering" = true
+"Rabbit breed after eats carrot crops" = true
+"Random size fishes/squid" = true
+"Silent nametag" = true
+"Smaller bee" = true
+"Sniffer sniff moss block" = true
+"Snow Golem produces powder snow" = true
+"Wandering trader announcer" = false
+
+[general]
+"Banner trophies" = false
+"Bigger radius bookshelf for enchanting table" = false
+"Bonemeal coral fan/block" = true
+"Bonemeal small flowers" = true
+"Bundle's Enchantment" = false
+"Wash filled map with Cauldron" = false
+"Click through sign/itemframe" = true
+"1 tick delay copper bulb" = false
+"Day counter" = "DISABLE"
+"Deepslate generator" = true
+"Faster minecart" = true
+"Faster oxidization" = false
+"Glow berry gives glow effect" = true
+"Invisible item frame" = false
+"Backup Enchantments" = false
+"No level limit anvil" = false
+"Enable permission system" = false
+"Prevent farmland trampling" = true
+"No set spawn on sleep" = false
+"Shulker label" = true
+"Sleep doesn't skip weather" = "RAIN_ONLY"			# [DISABLE, RAIN_ONLY, ALL_WEATHER]
+"Sneak through sweet berry" = true
+"Torch burns target" = true
+"Usable suspicious block" = true
+"Wet sponge dry in warm biome" = true
+"XP crops" = false
+
+[item]
+"Bundle place function" = false
+"Check Villagers schedule" = true
+"Clock shows current time" = false
+"Hoe harvests crops" = "ALL"
+"Mace rotate blocks" = false
+"Shear can pickpocket villager" = true
+"Shear can defuse TNT" = true
+"Shear prevents plant from growing" = true
+"Slime chunk detector" = true
+"Spyglass what is that?" = "ALL"			# [ALL, BLOCK_ONLY, ENTITY_ONLY, DISABLE]
+"Trident can call thunder storm" = true
+"Waxed copper indicator" = false
+
+[recipe]
+"Bundle recipe" = true
+"Suspicious sand/gravel recipe" = true
+
+[command]
+"Emote commands" = false
+
+[cursed]
+"End stone is cheese" = false
+"Hydrophobic elytra" = false
+"Reverse phantom spawn condition" = true
+

@@ -1,0 +1,36 @@
+{
+  "dynamicCursor": true,
+  "clickAnimation": false,
+  "cursors": {
+    "hand_grab": {
+      "xHotSpot": 13,
+      "yHotSpot": 12,
+      "link": "textures/gui/customcursor_hand_grab.png",
+      "size": 32
+    },
+    "beam": {
+      "xHotSpot": 10,
+      "yHotSpot": 12,
+      "link": "textures/gui/customcursor_beam.png",
+      "size": 32
+    },
+    "pointer": {
+      "xHotSpot": 5,
+      "yHotSpot": 3,
+      "link": "textures/gui/customcursor.png",
+      "size": 32
+    },
+    "cross": {
+      "xHotSpot": 12,
+      "yHotSpot": 11,
+      "link": "textures/gui/customcursor_cross.png",
+      "size": 32
+    },
+    "hand": {
+      "xHotSpot": 10,
+      "yHotSpot": 4,
+      "link": "textures/gui/customcursor_hand.png",
+      "size": 32
+    }
+  }
+}

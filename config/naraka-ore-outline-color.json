@@ -1,0 +1,10 @@
+{
+  "default_color": "#aaaaaaaa",
+  "#minecraft:diamond_ores": "#ff49edd9",
+  "#minecraft:redstone_ores": "#ffff0000",
+  "#minecraft:emerald_ores": "#ff16dd63",
+  "#minecraft:gold_ores": "#fffef55f",
+  "#minecraft:iron_ores": "#ffffffff",
+  "minecraft:ancient_debris": "#ff644740",
+  "#naraka:nectarium_ores": "#ffe494df"
+}

@@ -1,0 +1,24 @@
+#Time in seconds before an effect is about to end when any visuals begin to fade back to normal.
+#Default Value: 3
+# Default: 3
+# Range: 1 ~ 20
+effect_fade_time = 3
+#Fire resistance provides better vision in lava, no longer shows the flame overlay.
+#Default Value: true
+better_fire_resistance_vision = true
+#Control rendering of mob effect particles on the player.
+#The discreet setting will greatly reduce the amount of particles and makes them transparent, just like vanilla particles from beacon effects.
+#Default Value: DISCREET
+#Allowed Values: NONE, DISCREET, ALL
+first_person_effect_particles = "DISCREET"
+#Control rendering of mob effect particles on the player.
+#The discreet setting will greatly reduce the amount of particles and makes them transparent, just like vanilla particles from beacon effects.
+#Default Value: DISCREET
+#Allowed Values: NONE, DISCREET, ALL
+third_person_effect_particles = "DISCREET"
+#Night vision fades away when ending instead of flashing.
+#Default Value: true
+no_night_vision_flashing = true
+#Should the effect particles setting affect all entities in the level, not just your player.
+#Default Value: false
+reduce_effect_particles_for_all_entities = false

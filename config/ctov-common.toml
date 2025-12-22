@@ -1,0 +1,29 @@
+#Structure spawning
+[structures]
+	#Should CTOV small village generates?
+	generatesmallVillage = true
+	#Should CTOV medium village generates?
+	generatemediumVillage = true
+	#Should CTOV large village generates?
+	generatelargeVillage = true
+	#Should CTOV Pillager Outpost generates?
+	generatePillagerOutpost = true
+
+#Structure spawning frequency
+[weights]
+	#CTOV small village spawn chances
+	# Default: 10
+	# Range: > 0
+	smallVillageWeight = 10
+	#CTOV medium village spawn chance
+	# Default: 4
+	# Range: > 0
+	mediumVillageWeight = 4
+	#CTOV large village spawn chance
+	# Default: 1
+	# Range: > 0
+	generatelargeVillage = 1
+	#CTOV Pillager Outpost spawn chance
+	# Default: 1
+	# Range: > 0
+	generatePillagerOutpost = 1

@@ -1,0 +1,14 @@
+#Whether to disable Gaze rites entirely.
+disableGazeRites = false
+#Whether to allow Villagers to drop Umbral Spirits on a multiplayer server. Singleplayer is always allowed.
+doVillagerUmbralsOnServer = false
+#List of entity IDs (e.g., 'minecraft:villager') that can drop Umbral Spirits when killed with a Veil Dagger. Players are always on this list.
+umbralDropEntities = ["minecraft:villager"]
+#Chance (0.0 to 1.0) for configured entities to drop Umbral Spirits when killed with a Veil Dagger. It's always 100% for players.
+# Default: 0.1
+# Range: 0.0 ~ 1.0
+umbralDropChance = 0.1
+#How much Soul Ward Integrity for a single Armour Toughness point
+# Default: 5.0
+# Range: 1.0 ~ 10.0
+integrityRatio = 5.0

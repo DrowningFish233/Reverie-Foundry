@@ -1,0 +1,3 @@
+#Set this to true to disable translucent particles, for shader compatibility with some shaders which implement a deferred lighting pass.
+#Default Value: false
+opaque_sparkle_particles = false

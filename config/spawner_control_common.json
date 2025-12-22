@@ -1,0 +1,25 @@
+{
+  "ignoreRestrictions": false,
+  "spawnLimit": true,
+  "spawnLimitValue": 15,
+  "dropXp": true,
+  "dropXpValueBase": 15,
+  "dropXpValueAdd1": 15,
+  "dropXpValueAdd2": 15,
+  "spawnCount": 4,
+  "spawnRange": 4,
+  "spawnDelay": 20,
+  "minSpawnDelay": 200,
+  "maxSpawnDelay": 800,
+  "playerRange": 16,
+  "maxNearbyEntities": 6,
+  "lootDropType": "ROLL",
+  "lootDropChance": 1.0,
+  "lootDropList": [
+    "minecraft:gold_ingot=2",
+    "minecraft:glowstone_dust=4",
+    "minecraft:lapis_lazuli=4",
+    "minecraft:diamond=1",
+    "minecraft:redstone=4"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+	// Update Notifier
+	menuAlert: false,
+	chatAlert: true,
+	chatMessage: "欢迎来到淬梦工坊!",
+	platform: "CURSEFORGE",
+	modpackName: "Reverie Foundry",
+	modpackId: "my-modpack",
+	modpackHome: "https://github.com/me/My-Modpack",
+	localVersion: "1.0.0",
+	checkMcVersion: false,
+	loader: "neoforge",
+	versionAPI: "https://raw.githubusercontent.com/me/My-Modpack/main/Packwiz/pack.toml",
+	changelogLink: "https://raw.githubusercontent.com/me/My-Modpack/main/CHANGELOG.md",
+	versionType: [
+		"release",
+		"beta",
+		"alpha"
+	],
+	nameFilters: [],
+	versionFilters: [],
+	// Chat Welcome
+	chatWelcome: false,
+	chatWelcomeMessage: "Welcome to <modpack-name> <version>!",
+	// Window Utils
+	customIcon: false,
+	customTitle: false,
+	title: "<modpack-name> <version> | Minecraft <mc>",
+	// Ram Alert
+	ramMenuAlert: false,
+	ramChatAlert: false,
+	minRam: 8192
+}

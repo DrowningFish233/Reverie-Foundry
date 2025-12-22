@@ -1,0 +1,139 @@
+	#Incinerator's Try Hard Config
+	["Cataclysm's Weapon Config".The_Incinerator]
+		# Default: 60
+		# Range: 1 ~ 100
+		"Charging time (ticks) of The Incinerator" = 60
+		# Default: 60
+		# Range: 1 ~ 100
+		"(Client Only) Max Charging time (ticks) to Form the Biggest Magic Circle underfoot when charging" = 60
+		# Default: 6.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Basic Damage dealt by The Incinerator's Skill" = 18.0
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		"Max Health Damage Percentage dealt by The Incinerator's Skill" = 2.0
+		# Default: 1.0
+		# Range: 0.0 ~ 100.0
+		"The Radius of the ignis circles released by The Incinerator's Skill" = 2.0
+
+	["Cataclysm's Weapon Config".The_Immolator]
+		# Default: 45
+		# Range: 1 ~ 100
+		"Charging time (ticks) of The Immolator" = 30
+		# Default: 45
+		# Range: 1 ~ 100
+		"(Client Only) Max Charging time (ticks) to Form the Biggest Magic Circle underfoot when charging" = 45
+		# Default: 6.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Basic Ignis Circle Damage dealt by The Immolator's Skill" = 18.0
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		"Max Health Damage Percentage dealt by The Immolator's Skill" = 2.0
+		# Default: 2.5
+		# Range: 0.0 ~ 100.0
+		"The Radius of the ignis circles released by The Immolator's Skill" = 3.5
+		# Default: 6.0
+		# Range: 0.01 ~ 250.0
+		"[Questionable, maybe unused method] The Radius of the Quake released by The Immolator's Skill" = 8.0
+		# Default: 2.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		"[Questionable, maybe unused method] Quake Damage Multiplier of The Immolator's Skill" = 6.0
+
+	["Cataclysm's Weapon Config".Tidal_Claws]
+		# Default: 3.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		"Tentacle Damage released by Tidal Claws" = 9.0
+		# Default: 16.0
+		# Range: 1.0 ~ 1.7976931348623157E308
+		"Tentacle's First Detection Range released by Tidal Claws" = 16.0
+		# Default: 16.0
+		# Range: 1.0 ~ 1.7976931348623157E308
+		"Tentacle's Second Detection Range released by Tidal Claws" = 16.0
+		# Default: 30.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		"Hook's Max Range released by Tidal Claws" = 30.0
+		# Default: 12.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		"Hook's Max Speed released by Tidal Claws" = 12.0
+
+	["Cataclysm's Weapon Config".Gauntlet_of_Bulwark]
+		# Default: 1.2
+		# Range: 1.0 ~ 1.7976931348623157E308
+		"Charge Damage Multiplier Of Gauntlet Of Bulwark" = 1.6
+
+	["Cataclysm's Weapon Config".Bloom_Stone_Pauldrons]
+		# Default: 240
+		# Range: > 1
+		"Cooldown time (ticks) of Bloom Stone Pauldrons to shoot Amethyst Cluster" = 240
+
+	["Cataclysm's Weapon Config".The_Annihilator]
+		# Default: 6.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		"Skill Range Of The Annihilator" = 8.0
+		# Default: 2.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		"Skill Damage Multiplier Of The Annihilator" = 3
+		# Default: 40
+		# Range: 1 ~ 1000
+		"Charging time (ticks) of The Annihilator" = 20
+		# Default: 100
+		# Range: > 1
+		"Skill Cooldown time (ticks) of The Annihilator" = 120
+
+	["Cataclysm's Weapon Config".Gauntlet_of_Guard]
+		# Default: 11.0
+		# Range: 0.01 ~ 1.7976931348623157E308
+		"Attraction Radius Of Gauntlet Of Guard" = 11.0
+		# Default: 0.1
+		# Range: 0.01 ~ 1.7976931348623157E308
+		"Scale of Normalized Attraction Vector Of Gauntlet Of Guard" = 0.1
+
+	["Cataclysm's Weapon Config".Cursed_Bow]
+		"Whether Cursed Bow can be enchanted on Enchantment Table, and with Infinity and Flaming Arrow" = true
+
+	["Cataclysm's Weapon Config".Cursium_Armor]
+		# Default: 200
+		# Range: > 1
+		"Skill Cooldown time (ticks) of Cursium Helmet" = 200
+		# Default: 200
+		# Range: > 1
+		"Skill Cooldown time (ticks) of Cursium Boots" = 200
+		# Default: -1.7999999523162842
+		# Range: -114514.0 ~ 114514.0
+		"Skill Speed of Cursium Boots" = -1.7999999523162842
+
+	["Cataclysm's Weapon Config".Ignitium_Armor]
+		# Default: 300
+		# Range: > 1
+		"Skill Cooldown time (ticks) of Ignitium Helmet" = 300
+
+	["Cataclysm's Weapon Config".Ceraunus]
+		# Default: 0.5
+		# Range: 0.05 ~ 10.0
+		"Ceraunus Charging Time (Seconds)" = 0.5
+		# Default: 4
+		# Range: 1 ~ 360
+		"Number Of Ceraunus Waves" = 4
+		# Default: 60
+		# Range: 1 ~ 3600
+		"Life Time (ticks) Of Ceraunus Waves" = 60
+		# Default: 2.5
+		# Range: 0.01 ~ 15.0
+		"Velocity of Thrown Ceraunus" = 3.5
+
+	["Cataclysm's Weapon Config".Astrape]
+		# Default: 0.5
+		# Range: 0.05 ~ 10.0
+		"Astrape Charging Time (Seconds)" = 0.5
+		# Default: 0.15
+		# Range: 0.01 ~ 114514.0
+		"Astrape Lightning Acceleration Power" = 0.3
+		# Default: 1.0
+		# Range: 0.0 ~ 256.0
+		"Astrape Lightning Area Radius" = 3.0
+
+	["Cataclysm's Weapon Config".Laser_Gatling]
+		"Whether Laser Gatling can ignite blocks when used by the player" = false
+		# Default: 1.0
+		# Range: 0.01 ~ 100.0
+		"Laser Speed Multiplier" = 1.5

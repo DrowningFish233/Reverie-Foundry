@@ -1,0 +1,62 @@
+#垃圾箱页面数
+# Default: 1
+# Range: 1 ~ 100
+dustbinPage = 1
+#打扫间隔（以s为单位）。
+#注：当时间为0s时，则不开启打扫。
+# Default: 600
+# Range: > 0
+cleaningInterval = 600
+#白名单
+#添加可清扫的实体
+entityTypesWhite = ["minecraft:arrow", "minecraft:spectral_arrow"]
+#黑名单
+#添加不可清扫的实体
+entityTypesBlack = []
+#在60s内会向玩家发送什么信息。
+#这个"$1"代表的是剩余开始清扫的时间。（以s为单位）
+cleaningTimeMessage = "§a[§6熟鳕鱼§a]§f: 我会在§6$1§f秒内开始打扫！"
+#清理后会向玩家发送什么信息。"$1" 代表被清理掉落物品的数量， "$2" 代表被杀死实体的数量。
+afterCleaningMessage = "§a[§6熟鳕鱼§a]§f: 我会在§6 $1个 §f掉落物和§6 $2个 §f不重要的实体被清理掉了。"
+#清理后会向玩家发送什么聊天消息。命令将附加到聊天消息的末尾。
+afterCleaningMessageChat = "§a[§6熟鳕鱼§a]§f: 你的东西少了吗？请打开垃圾桶~ "
+#用指令(/royalcitygladiolussweep sweep item_entities)清除掉落物后，"$1" 代表被清理掉落物品的数量，命令将附加到聊天消息的末尾。
+sweepItemEntitiesMessage = "§a[§6熟鳕鱼§a]§f: 此次清理了§6 $1个 §f掉落物，你的东西少了吗？请打开垃圾桶~ "
+#用指令(/royalcitygladiolussweep sweep mobs)清除怪物后，"$1"代表被杀死怪物的数量。
+sweepMobsMessage = "§a[§6熟鳕鱼§a]§f: 此次清除§6 $1个 §f怪物。"
+#用指令(/royalcitygladiolussweep sweep all_entity)清除所有实体后，"$1" 代表被杀死怪物的数量，命令将附加到聊天消息的末尾。
+sweepAllEntityMessage = "§a[§6熟鳕鱼§a]§f: 此次清理§6 $1个 §f实体，你的东西少了吗？请打开垃圾桶~ "
+#用指令(/royalcitygladiolussweep sweep animals)清除动物后，"$1" 代表被杀死动物数量。
+sweepAnimalsMessage = "§a[§6熟鳕鱼§a]§f: 此次清除§6 $1个 §f动物。"
+#用指令(/royalcitygladiolussweep sweep other_entities)清除其他实体后，"$1" 代表被杀死其他实体的数量。
+sweepOtherEntitiesMessage = "§a[§6熟鳕鱼§a]§f: 此次清除§6 $1个 §f其他实体。"
+#用指令(/royalcitygladiolussweep sweep xp_entities)清除经验值实体后，"$1" 代表被杀死经验值实体的数量。
+sweepXpEntitiesMessage = "§a[§6熟鳕鱼§a]§f: 此次清除§6 $1个 §f经验值实体。"
+#玩家打开垃圾桶的权限级别。
+# Default: 0
+# Range: 0 ~ 4
+openDustbinLevel = 1
+#清除掉落物权限级别。
+# Default: 0
+# Range: 0 ~ 4
+sweepItemEntitiesLevel = 0
+#清除怪物权限级别。
+# Default: 1
+# Range: 0 ~ 4
+sweepMobsLevel = 1
+#清除所有实体权限级别。
+# Default: 1
+# Range: 0 ~ 4
+sweepAllEntityLevel = 1
+#清除动物权限级别。
+# Default: 1
+# Range: 0 ~ 4
+sweepAnimalsLevel = 1
+#清除其他实体权限级别。
+# Default: 1
+# Range: 0 ~ 4
+sweepOtherEntitiesLevel = 1
+#清除经验值实体权限级别。
+# Default: 0
+# Range: 0 ~ 4
+sweepXpEntitiesLevel = 0

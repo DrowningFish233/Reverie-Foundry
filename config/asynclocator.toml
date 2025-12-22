@@ -1,0 +1,30 @@
+#The maximum number of threads in the async locator thread pool.
+#There's an upper limit of 64. This should only be increased if you're experiencing
+#simultaneous location lookups causing issues AND you have the hardware capable of handling
+#the extra possible threads.
+#The default of 1 should be suitable for most users.
+#This value must not exceed 64.
+asyncLocatorThreads = 1
+#Maximum search radius in blocks for /locate biome command.
+#The vanilla value is 6400.
+#It is not recommended to change the value unless you want to test something or have some issue.
+# Default: 6400
+# Range: 1600 ~ 12800
+biomeSearchRadius = 6400
+#When a merchant's treasure map offer ends up not finding a feature location,
+#remove the offer instead of marking it out of stock.
+removeMerchantInvalidMapOffer = false
+
+["Feature Toggles"]
+	#If true, enables asynchronous locating of structures for dolphin treasures.
+	dolphinTreasureEnabled = true
+	#If true, enables asynchronous locating of structures when Eyes Of Ender are thrown.
+	eyeOfEnderEnabled = true
+	#If true, enables asynchronous locating of structures for exploration maps found in chests.
+	explorationMapEnabled = true
+	#If true, enables asynchronous locating of structures for the locate command.
+	locateCommandEnabled = true
+	#If true, enables asynchronous locating of biomes for the locate command.
+	locateBiomeCommandEnabled = true
+	#If true, enables asynchronous locating of structures for villager trades.
+	villagerTradeEnabled = true
