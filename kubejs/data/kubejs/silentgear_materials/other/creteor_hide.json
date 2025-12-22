@@ -1,0 +1,97 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "organic",
+            "cloth",
+            "basic"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "eternal_starlight:creteor_hide"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#FF805133",
+        "main_texture_type": "LOW_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.eternal_starlight:creteor_hide"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:grip": {
+            "attack_speed": {
+                "operation": "ADD",
+                "value": 0.2
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.2
+            },
+            "repair_efficiency": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:flexible"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
+        },
+        "silentgear:lining": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "silentgear:flexible"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
+        },
+        "silentgear:main": {
+            "armor": 11.0,
+            "armor/boots": 2.0,
+            "armor/chestplate": 4.0,
+            "armor/helmet": 2.0,
+            "armor/leggings": 3.0,
+            "armor_durability": 5.0,
+            "charging_value": 0.8,
+            "durability": 0.2,
+            "enchantment_value": 15.0,
+            "magic_armor": 10.0,
+            "rarity": 15.0,
+            "traits": [
+                {
+                    "conditions": [
+                        {
+                            "type": "silentgear:gear_type",
+                            "gear_type": "silentgear:boots"
+                        }
+                    ],
+                    "level": 1,
+                    "trait": "silentgear:snow_walker"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
+        }
+    }
+}

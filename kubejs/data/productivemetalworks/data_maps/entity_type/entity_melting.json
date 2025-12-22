@@ -1,0 +1,18 @@
+{
+  "values": {
+    "minecraft:player": {
+      "fluid": {
+        "amount": 10,
+        "id": "irons_spellbooks:blood"
+      },
+      "gui_scale": 0.8
+    },
+    "minecraft:blaze": {
+      "fluid": {
+        "amount": 10,
+        "id": "productivemetalworks:molten_blaze"
+      },
+      "gui_scale": 0.8
+    }
+  }
+}

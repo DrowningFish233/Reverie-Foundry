@@ -1,0 +1,14 @@
+{
+  "type": "iceandfire:dragonforge",
+  "dragonType": "ice",
+  "cookTime": 500,
+  "input": {
+    "item": "allthemodium:allthemodium_ingot"
+  },
+  "blood": {
+    "item": "iceandfire:ice_dragon_blood"
+  },
+  "result": {
+    "id": "iceandfire:dragonsteel_ice_ingot"
+  }
+}

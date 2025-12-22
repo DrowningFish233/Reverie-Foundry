@@ -1,0 +1,55 @@
+{
+    "conditions": [
+        {
+            "type": "silentgear:or",
+            "values": [
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:armor"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:tool"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:curio"
+                }
+            ]
+        }
+    ],
+    "description": {
+        "translate": "trait.silentgear.lunium_nova.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:attribute",
+            "attribute_modifiers": {
+                "all/any": [
+                    {
+                        "attribute": "malum:charge_recovery_rate",
+                        "operation": "add_multiplied_base",
+                        "values": [
+                            0.2,
+                            0.35,
+                            0.5
+                        ]
+                    },
+                    {
+                        "attribute": "malum:charge_capacity",
+                        "operation": "add_value",
+                        "values": [
+                            1,
+                            2,
+                            3
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "max_level": 3,
+    "name": {
+        "translate": "trait.silentgear.lunium_nova"
+    }
+}

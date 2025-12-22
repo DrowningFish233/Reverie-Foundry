@@ -1,0 +1,54 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:scandium_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#b39371",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:scandium_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "repair_efficiency": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.05
+            },
+            "rarity": {
+                "operation": "ADD",
+                "value": 4
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "magic_armor": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                }
+            ]
+        }
+    }
+}

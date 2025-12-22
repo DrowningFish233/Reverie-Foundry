@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "eternal_starlight:starlight_mangrove_hanging_sign"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "axe_dig"
+  },
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "eternal_starlight:starlight_mangrove_planks"
+      }
+    }
+  ]
+}

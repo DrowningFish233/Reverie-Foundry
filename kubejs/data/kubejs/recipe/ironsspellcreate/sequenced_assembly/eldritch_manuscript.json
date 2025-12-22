@@ -1,0 +1,68 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:paper"
+  },
+  "loops": 4,
+  "results": [
+    {
+      "chance": 75.0,
+      "id": "irons_spellbooks:eldritch_manuscript"
+    },
+    {
+      "chance": 50.0,
+      "id": "irons_spellbooks:ancient_knowledge_fragment"
+    },
+    {
+      "chance": 10.0,
+      "id": "minecraft:echo_shard"
+    },
+    {
+      "chance": 10.0,
+      "id": "minecraft:sculk_shrieker"
+    },
+    {
+      "chance": 5.0,
+      "id": "minecraft:potato"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 125,
+          "fluid": "irons_spellbooks:timeless_slurry"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:paper"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "irons_spellbooks:ancient_knowledge_fragment"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:paper"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:paper"
+  }
+}

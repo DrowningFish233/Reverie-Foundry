@@ -1,0 +1,12 @@
+{
+  "weight": 3,
+  "verifiers": [
+    {
+      "tag": "c:tools/spears"
+    }
+  ],
+  "tiers": [
+    "tiered:melee_weapons/dull",
+    "tiered:melee_weapons/berserk"
+  ]
+}

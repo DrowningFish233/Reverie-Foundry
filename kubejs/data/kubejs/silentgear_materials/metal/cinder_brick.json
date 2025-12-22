@@ -1,0 +1,60 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "stone"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "eternal_starlight:cinder_brick"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#ad9787",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.eternal_starlight:cinder_brick"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "armor": 12.0,
+            "armor_durability": 8.0,
+            "armor_toughness": 4,
+            "armor/boots": 3.0,
+            "armor/chestplate": 3.0,
+            "armor/helmet": 3.0,
+            "armor/leggings": 3.0,
+            "attack_damage": 3.0,
+            "attack_speed": -0.2,
+            "charging_value": 0.8,
+            "durability": 250.0,
+            "enchantment_value": 8.0,
+            "harvest_speed": 4.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",
+                "level_hint": "1",
+                "name": "stone/石"
+            },
+            "knockback_resistance": 0.3,
+            "magic_armor": 6.0,
+            "rarity": 25.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:brittle"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
+        }
+    }
+}

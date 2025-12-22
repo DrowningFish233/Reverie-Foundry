@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "irons_spellbooks:uncommon_ink"
+    }
+  ],
+  "results": [
+    {
+      "id": "irons_spellbooks:uncommon_ink"
+    }
+  ]
+}

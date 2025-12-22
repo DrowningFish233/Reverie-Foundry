@@ -1,0 +1,24 @@
+{
+    "conditions": [],
+    "description": {
+        "translate": "trait.silentgear.swamp_silver_ingot.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:cancel_effects",
+            "cleared_effects": [
+                "minecraft:poison",
+                "minecraft:wither",
+                "minecraft:nausea",
+                "minecraft:hunger",
+                "minecraft:slowness",
+                "minecraft:infested",
+                "minecraft:blindness"
+            ]
+        }
+    ],
+    "max_level": 1,
+    "name": {
+        "translate": "trait.silentgear.swamp_silver_ingot"
+    }
+}

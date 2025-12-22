@@ -1,0 +1,41 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal_fiber"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:void_wire"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#207784",
+        "main_texture_type": "LOW_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:void_wire"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:binding": {},
+        "silentgear:cord": {
+            "ranged_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.05
+            },
+            "draw_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.15
+            },
+            "projectile_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.4
+            },
+            "traits": []
+        }
+    }
+}

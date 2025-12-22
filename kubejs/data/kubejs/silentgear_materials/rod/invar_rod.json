@@ -1,0 +1,60 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:invar_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#919b7d",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:invar_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "repair_efficiency": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.15
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 2.5
+            },
+            "ranged_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.1
+            },
+            "enchantment_value": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.20
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:dropped_experience"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:adamant"
+                }
+            ]
+        }
+    }
+}

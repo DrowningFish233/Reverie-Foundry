@@ -1,0 +1,41 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "exposure:high_sensitivity_black_and_white_film"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": {
+        "id": "exposure:developed_black_and_white_film"
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "exposure:high_sensitivity_black_and_white_film"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 250,
+          "fluid": "minecraft:water"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "exposure:high_sensitivity_black_and_white_film"
+          }
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "item": {
+      "id": "exposure:high_sensitivity_black_and_white_film"
+    }
+  }
+}

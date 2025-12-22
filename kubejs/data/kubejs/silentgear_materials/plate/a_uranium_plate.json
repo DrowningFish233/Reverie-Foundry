@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "alltheores:uranium_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#c4d8a1",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.alltheores:uranium_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "knockback_resistance": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:radiance"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:sturdy"
+                }
+            ]
+        }
+    }
+}

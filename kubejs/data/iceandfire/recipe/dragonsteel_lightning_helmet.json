@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "iceandfire:dragonsteel_lightning_ingot"
+  },
+  "base": {
+    "tag": "iceandfire:scale_helmet_lightning"
+  },
+  "result": {
+    "count": 1,
+    "id": "iceandfire:dragonsteel_lightning_helmet"
+  },
+  "template": {
+    "item": "kubejs:dragon_upgrade_smithing_template"
+  }
+}

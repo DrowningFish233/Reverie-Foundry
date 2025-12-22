@@ -1,0 +1,46 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "rock"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "malum:refined_brilliance"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#bee5a4",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.malum:refined_brilliance"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "armor": 15.0,
+            "armor/boots": 3.0,
+            "armor/chestplate": 5.0,
+            "armor/helmet": 4.0,
+            "armor/leggings": 3.0,
+            "armor_durability": 6.0,
+            "attack_damage": 2.0,
+            "attack_speed": 0.0,
+            "charging_value": 1.6,
+            "durability": 70.0,
+            "enchantment_value": 70.0,
+            "harvest_speed": 6.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+                "level_hint": "2",
+                "name": "iron/铁"
+            },
+            "magic_armor": 8.0,
+            "rarity": 70.0
+        }
+    }
+}

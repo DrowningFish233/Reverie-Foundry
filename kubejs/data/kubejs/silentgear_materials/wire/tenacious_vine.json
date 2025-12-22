@@ -1,0 +1,51 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal_fiber"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "eternal_starlight:tenacious_vine"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#2e2054",
+        "main_texture_type": "LOW_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.eternal_starlight:tenacious_vine"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:tenacious_vine"
+                }
+            ]
+        },
+        "silentgear:cord": {
+            "ranged_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.5
+            },
+            "draw_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.5
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:tenacious_vine"
+                }
+            ]
+        }
+    }
+}

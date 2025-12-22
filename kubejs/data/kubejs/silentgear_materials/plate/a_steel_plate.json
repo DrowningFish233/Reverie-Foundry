@@ -1,0 +1,49 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "alltheores:steel_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#78797d",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.alltheores:steel_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor_toughness": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:hard"
+                },
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "silentgear:flexible"
+                }
+            ]
+        }
+    }
+}

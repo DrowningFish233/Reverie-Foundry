@@ -1,0 +1,76 @@
+{
+  "Dimensions": [
+    "minecraft:the_nether"
+  ],
+  "InvasionPriority": "SECONDARY_ONLY",
+  "InvasionTime": "BOTH",
+  "Rarity": 5,
+  "SeverityInfo": [
+    {
+      "MobCapPercentage": 0.2,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:ghast",
+          "IgnoreSpawnRules": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 80
+    },
+    {
+      "MobCapPercentage": 0.4,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:ghast",
+          "IgnoreSpawnRules": true,
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 65
+    },
+    {
+      "MobCapPercentage": 0.5,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:ghast",
+          "IgnoreSpawnRules": true,
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 50
+    },
+    {
+      "MobCapPercentage": 0.6,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:ghast",
+          "IgnoreSpawnRules": true,
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 35
+    },
+    {
+      "MobCapPercentage": 0.8,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:ghast",
+          "IgnoreSpawnRules": true,
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 20
+    }
+  ],
+  "Tier": 2
+}

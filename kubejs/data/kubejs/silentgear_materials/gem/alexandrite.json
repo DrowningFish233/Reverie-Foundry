@@ -1,0 +1,71 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:alexandrite"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#b6acfa",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:alexandrite"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 20.0,
+      "armor/boots": 2.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 4.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 34.0,
+      "armor_toughness": 8.0,
+      "attack_damage": 4.0,
+      "attack_speed": 0.0,
+      "attack_speed/hoe": 0.0,
+      "attack_reach": 0.0,
+      "charging_value": 1.4,
+      "draw_speed": 0.1,
+      "durability": 1280.0,
+      "enchantment_value": 22.0,
+      "harvest_speed": 10.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
+        "level_hint": "4",
+        "name": "netherite"
+      },
+      "knockback_resistance": 0.4,
+      "magic_armor": 24.0,
+      "magic_damage": 0.0,
+      "projectile_accuracy": 0.0,
+      "projectile_speed": 1.5,
+      "ranged_damage": 3.0,
+      "rarity": 100.0,
+      "repair_value": 0.0,
+      "traits": []
+    },
+    "silentgear:setting": {
+      "traits": []
+    },
+    "silentgear:tip": {
+      "durability": {
+        "operation": "ADD",
+        "value": 280.0
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.0
+      }
+    }
+  }
+}

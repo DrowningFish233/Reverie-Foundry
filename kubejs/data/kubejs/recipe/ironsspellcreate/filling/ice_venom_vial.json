@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "irons_spellbooks:ice_venom"
+    }
+  ],
+  "results": [
+    {
+      "id": "irons_spellbooks:ice_venom_vial"
+    }
+  ]
+}

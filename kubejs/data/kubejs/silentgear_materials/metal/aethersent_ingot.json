@@ -1,0 +1,69 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "basic"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "eternal_starlight:aethersent_ingot"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#a783f0",
+        "main_texture_type": "LOW_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.eternal_starlight:aethersent_ingot"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "armor": 19.0,
+            "armor/boots": 3.0,
+            "armor/chestplate": 7.0,
+            "armor/helmet": 3.0,
+            "armor/leggings": 6.0,
+            "armor_durability": 10.0,
+            "attack_damage": 1.0,
+            "attack_speed": 0.0,
+            "attack_speed/axe": -0.2,
+            "attack_speed/hoe": -1.0,
+            "charging_value": 0.5,
+            "draw_speed": -0.2,
+            "durability": 800.0,
+            "enchantment_value": 5.0,
+            "harvest_speed": 4.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",
+                "level_hint": "1",
+                "name": "stone"
+            },
+            "projectile_accuracy": 0.8,
+            "projectile_speed": 1.0,
+            "ranged_damage": 0.0,
+            "rarity": 4.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:ancient"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:aethersent_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
+        }
+    }
+}

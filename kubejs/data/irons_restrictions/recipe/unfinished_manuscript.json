@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "irons_restrictions:fragment"
+    },
+    {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    {
+      "item": "irons_spellbooks:magic_cloth"
+    },
+    {
+      "item": "irons_spellbooks:magic_cloth"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_restrictions:unfinished_manuscript"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "weight": 25,
+    "verifiers": [
+        {
+            "tag": "c:tools/bow"
+        }
+    ],
+    "tiers": [
+        "tiered:bows/common"
+    ]
+}

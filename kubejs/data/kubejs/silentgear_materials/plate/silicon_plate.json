@@ -1,0 +1,39 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:silicon_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#b9c3cb",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:silicon_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:brittle"
+                }
+            ]
+        }
+    }
+}

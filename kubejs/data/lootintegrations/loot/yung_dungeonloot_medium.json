@@ -1,0 +1,13 @@
+{
+  "loot_table": "lootintegrations:chests/medium",
+  "max_result_itemcount": 12,
+  "integrated_loot_tables": {
+    "betterdeserttemples:chests/library": 3,
+    "betterdeserttemples:chests/pharaoh_hidden": 2,
+    "betterdeserttemples:chests/tomb_pharaoh": 2,
+    "betterdungeons:zombie_dungeon/chests/special": 2,
+    "betterstrongholds:chests/treasure": 3,
+    "betterstrongholds:chests/grand_library": 2,
+    "betterjungletemples:chests/treasure": 2
+  }
+}

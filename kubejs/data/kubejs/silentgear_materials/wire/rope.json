@@ -1,0 +1,45 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"other"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "farmersdelight:rope"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#FF5e3819",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.kubejs.rope"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:binding": {
+			"durability": 32,
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:monkey"
+				}
+			]
+		},
+		"silentgear:cord": {
+			"durability": 32,
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:monkey"
+				}
+			]
+		}
+	}
+}

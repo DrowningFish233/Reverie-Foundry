@@ -1,0 +1,26 @@
+{
+  "cooldown": 48000,
+  "leader": {
+    "type": "minecraft:vindicator"
+  },
+  "members": [
+    {
+      "type": "minecraft:evoker",
+      "count": 1
+    },
+    {
+      "type": "minecraft:vindicator",
+      "count": 2
+    },
+    {
+      "type": "minecraft:pillager",
+      "count": 2
+    },
+    {
+      "type": "minecraft:llama",
+      "armor": "minecraft:gray_carpet",
+      "cargo": "classic_caravans:cargo/desert_grave",
+      "count": 4
+    }
+  ]
+}

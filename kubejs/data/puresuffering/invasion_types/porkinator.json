@@ -1,0 +1,166 @@
+{
+  "Dimensions": [
+    "minecraft:the_nether"
+  ],
+  "InvasionTime": "BOTH",
+  "Rarity": 4,
+  "SeverityInfo": [
+    {
+      "MobCapPercentage": 0.6,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:piglin",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 7
+        },
+        {
+          "EntityType": "minecraft:zombified_piglin",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:hoglin",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 4
+        }
+      ],
+      "TickDelay": 28
+    },
+    {
+      "MobCapPercentage": 0.7,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:piglin",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 7
+        },
+        {
+          "EntityType": "minecraft:piglin_brute",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 2
+        },
+        {
+          "EntityType": "minecraft:zombified_piglin",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:hoglin",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 4
+        }
+      ],
+      "TickDelay": 24
+    },
+    {
+      "MobCapPercentage": 0.8,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:piglin",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 7
+        },
+        {
+          "EntityType": "minecraft:piglin_brute",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 2
+        },
+        {
+          "EntityType": "minecraft:zombified_piglin",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:hoglin",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 4
+        }
+      ],
+      "TickDelay": 20
+    },
+    {
+      "MobCapPercentage": 0.9,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:piglin",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 7
+        },
+        {
+          "EntityType": "minecraft:piglin_brute",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 2
+        },
+        {
+          "EntityType": "minecraft:zombified_piglin",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:hoglin",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:zoglin",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 16
+    },
+    {
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:piglin",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 7
+        },
+        {
+          "EntityType": "minecraft:piglin_brute",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 2
+        },
+        {
+          "EntityType": "minecraft:zombified_piglin",
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:hoglin",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 4
+        },
+        {
+          "EntityType": "minecraft:zoglin",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 12
+    }
+  ],
+  "Tier": 1
+}

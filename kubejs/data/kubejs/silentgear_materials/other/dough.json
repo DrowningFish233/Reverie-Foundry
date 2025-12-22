@@ -1,0 +1,63 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "organic",
+            "basic"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "tag": "c:dough"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#faefda",
+        "main_texture_type": "LOW_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.c:dough"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:grip": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:farmersdelight"
+                }
+            ]
+        },
+        "silentgear:lining": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:farmersdelight"
+                }
+            ]
+        },
+        "silentgear:main": {
+            "armor": 4.0,
+            "armor/boots": 1.0,
+            "armor/chestplate": 1.0,
+            "armor/helmet": 1.0,
+            "armor/leggings": 1.0,
+            "armor_durability": 2.0,
+            "charging_value": 0.2,
+            "durability": 64,
+            "enchantment_value": 2.0,
+            "rarity": 1.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:farmersdelight"
+                }
+            ]
+        }
+    }
+}

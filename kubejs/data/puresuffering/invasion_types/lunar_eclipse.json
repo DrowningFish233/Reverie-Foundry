@@ -1,0 +1,78 @@
+{
+  "DayNightCycleRequirement": "NEEDS_CYCLE",
+  "Dimensions": [
+    "minecraft:overworld"
+  ],
+  "InvasionPriority": "PRIMARY_ONLY",
+  "InvasionTime": "NIGHT",
+  "Rarity": 7,
+  "SeverityInfo": [
+    {
+      "MobCapPercentage": 0.6,
+      "SkyRenderInfo": {
+        "FogRenderInfo": {
+          "RGBOffset": [
+            0.05,
+            0.0,
+            0.0
+          ]
+        },
+        "LightLevel": 0,
+        "MoonTexture": "puresuffering:textures/environment/lunar_eclipse_moon.png",
+        "RGBOffset": [
+          0.0,
+          -0.1,
+          -0.1
+        ],
+        "WeatherVisibility": 0.1
+      },
+      "TickDelay": 25
+    },
+    {
+      "MobCapPercentage": 0.8,
+      "SkyRenderInfo": {
+        "FogRenderInfo": {
+          "RGBOffset": [
+            0.1,
+            0.0,
+            0.0
+          ]
+        },
+        "LightLevel": 0,
+        "MoonTexture": "puresuffering:textures/environment/lunar_eclipse_moon.png",
+        "RGBOffset": [
+          0.0,
+          -0.2,
+          -0.2
+        ],
+        "WeatherVisibility": 0.2
+      },
+      "TickDelay": 20
+    },
+    {
+      "MobCapPercentage": 1.0,
+      "SkyRenderInfo": {
+        "FogRenderInfo": {
+          "RGBOffset": [
+            0.15,
+            0.0,
+            0.0
+          ]
+        },
+        "LightLevel": 0,
+        "MoonTexture": "puresuffering:textures/environment/lunar_eclipse_moon.png",
+        "RGBOffset": [
+          0.0,
+          -0.3,
+          -0.3
+        ],
+        "WeatherVisibility": 0.3
+      },
+      "TickDelay": 15
+    }
+  ],
+  "SpawningSystem": "BIOME_BOOSTED",
+  "Tier": 2,
+  "TimeChangeability": "ONLY_NIGHT",
+  "TimeModifier": "NONE"
+}

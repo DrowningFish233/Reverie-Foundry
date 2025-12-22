@@ -1,0 +1,123 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "intermediate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "malum:soul_stained_steel_ingot"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#cc7beb",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.malum:soul_stained_steel_ingot"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "armor": 20.0,
+            "armor/boots": 3.0,
+            "armor/chestplate": 8.0,
+            "armor/helmet": 3.0,
+            "armor/leggings": 6.0,
+            "armor_durability": 33.0,
+            "armor_toughness": 8.0,
+            "attack_damage": 3.0,
+            "attack_speed": 0.0,
+            "attack_speed/hoe": 1.0,
+            "charging_value": 0.8,
+            "draw_speed": -0.2,
+            "durability": 1561.0,
+            "enchantment_value": 10.0,
+            "harvest_speed": 8.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools",
+                "level_hint": "3",
+                "name": "diamond/钻石"
+            },
+            "magic_armor": 4.0,
+            "magic_damage": 1.0,
+            "projectile_accuracy": 1.1,
+            "projectile_speed": 0.9,
+            "ranged_damage": 2.0,
+            "rarity": 70.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:soul_stained_steel_ingot"
+                }
+            ]
+        },
+        "silentgear:rod": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:flexible"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:soul_stained_steel_ingot"
+                }
+            ]
+        },
+        "silentgear:tip": {
+            "armor_durability": {
+                "operation": "ADD",
+                "value": 4.0
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 1.0
+            },
+            "draw_speed": {
+                "operation": "ADD",
+                "value": 0.2
+            },
+            "durability": {
+                "operation": "ADD",
+                "value": 128.0
+            },
+            "harvest_speed": {
+                "operation": "ADD",
+                "value": 1.0
+            },
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools",
+                "level_hint": "3",
+                "name": "diamond/钻石"
+            },
+            "rarity": {
+                "operation": "ADD",
+                "value": 8.0
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:soul_stained_steel_ingot"
+                }
+            ]
+        }
+    }
+}

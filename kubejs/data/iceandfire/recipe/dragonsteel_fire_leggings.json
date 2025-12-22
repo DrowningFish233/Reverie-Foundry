@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "iceandfire:dragonsteel_fire_ingot"
+  },
+  "base": {
+    "tag": "iceandfire:scale_leggings_fire"
+  },
+  "result": {
+    "count": 1,
+    "id": "iceandfire:dragonsteel_fire_leggings"
+  },
+  "template": {
+    "item": "kubejs:dragon_upgrade_smithing_template"
+  }
+}

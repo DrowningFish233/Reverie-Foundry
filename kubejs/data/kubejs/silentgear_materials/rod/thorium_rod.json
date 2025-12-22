@@ -1,0 +1,58 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:thorium_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#bb65c3",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:thorium_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "repair_efficiency": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
+            },
+            "rarity": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 2.5
+            },
+            "attack_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:malarite"
+                }
+            ]
+        }
+    }
+}

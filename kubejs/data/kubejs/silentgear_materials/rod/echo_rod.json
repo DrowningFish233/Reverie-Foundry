@@ -1,0 +1,40 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:echo_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#156071",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:echo_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "magic_armor": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "magic_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.2
+            },
+            "ranged_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 1
+            },
+            "traits": []
+        }
+    }
+}

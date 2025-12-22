@@ -1,0 +1,50 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:rhodium_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#ac7d6a",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:rhodium_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "charging_value": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 6
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.5
+            },
+            "repair_efficiency": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.4
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:reach"
+                }
+            ]
+        }
+    }
+}

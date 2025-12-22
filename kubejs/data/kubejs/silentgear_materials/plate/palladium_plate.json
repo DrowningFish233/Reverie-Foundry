@@ -1,0 +1,53 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:palladium_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#f1b6ab",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:palladium_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "magic_armor": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgems:critical_strike"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:imperial"
+                },
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "silentgear:flexible"
+                }
+            ]
+        }
+    }
+}

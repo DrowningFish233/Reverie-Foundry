@@ -1,0 +1,12 @@
+{
+  "loot_table": "lootintegrations:chests/water",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "minecraft:chests/underwater_ruin_small": 1,
+    "minecraft:chests/underwater_ruin_big": 1,
+    "minecraft:chests/shipwreck_treasure": 1,
+    "minecraft:chests/shipwreck_supply": 1,
+    "minecraft:chests/shipwreck_map": 1,
+    "minecraft:chests/buried_treasure": 1
+  }
+}

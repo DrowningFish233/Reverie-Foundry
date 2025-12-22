@@ -1,0 +1,51 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:silver_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#838383",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:silver_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "durability": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.1
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 5
+            },
+            "enchantment_value": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:adamant"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                }
+            ]
+        }
+    }
+}

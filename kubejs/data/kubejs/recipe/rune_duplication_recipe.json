@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "bdb",
+    "cba"
+  ],
+  "key": {
+    "a": {
+      "item": "irons_spellbooks:cinder_essence"
+    },
+    "b": {
+      "item": "minecraft:tuff"
+    },
+    "c": {
+      "item": "irons_spellbooks:arcane_ingot"
+    },
+    "d": {
+      "item": "irons_spellbooks:blank_rune"
+    }
+  },
+  "result": {
+    "id": "irons_spellbooks:blank_rune",
+    "count": 2
+  }
+}

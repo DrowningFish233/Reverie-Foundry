@@ -1,0 +1,236 @@
+{
+    "type": "gateways:normal",
+    "color": "#1a5c9e",
+    "size": "small",
+    "rewards": [
+        {
+            "type": "gateways:entity_loot",
+            "entity": "ftboceanmobs:tentacled_horror",
+            "rolls": 75
+        }
+    ],
+    "waves": [
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "ftboceanmobs:riftling_observer"
+                }
+            ],
+            "max_wave_time": 800,
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "ftboceanmobs:riftling_observer",
+                    "rolls": 10
+                }
+            ],
+            "setup_time": 100
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 4,
+                    "entity": "ftboceanmobs:sludgeling"
+                }
+            ],
+            "max_wave_time": 800,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 2.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.05
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": -0.15
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "ftboceanmobs:sludgeling",
+                    "rolls": 15
+                }
+            ],
+            "setup_time": 150
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 5,
+                    "entity": "ftboceanmobs:rift_minotaur"
+                }
+            ],
+            "max_wave_time": 800,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 3.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": -0.1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "ftboceanmobs:rift_minotaur",
+                    "rolls": 20
+                }
+            ],
+            "setup_time": 200
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 6,
+                    "entity": "ftboceanmobs:abyssal_winged"
+                }
+            ],
+            "max_wave_time": 1000,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 5.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.3
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.15
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": -0.05
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:entity_loot",
+                    "entity": "ftboceanmobs:abyssal_winged",
+                    "rolls": 25
+                }
+            ],
+            "setup_time": 280
+        },
+        {
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "count": 1,
+                    "entity": "ftboceanmobs:tentacled_horror",
+                    "nbt": {
+                        "CustomName": "{\"text\":\"深渊恐魔\",\"color\":\"dark_purple\"}",
+                        "CustomNameVisible": true,
+                        "PersistenceRequired": 1
+                    }
+                },
+                {
+                    "type": "gateways:standard",
+                    "count": 3,
+                    "entity": "ftboceanmobs:rift_demon"
+                }
+            ],
+            "max_wave_time": 1200,
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.35
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 5.0
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.5
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.knockback_resistance",
+                    "operation": "add_value",
+                    "value": 0.2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:experience",
+                    "experience": 500,
+                    "orb_size": 25
+                }
+            ],
+            "setup_time": 340
+        }
+    ]
+}

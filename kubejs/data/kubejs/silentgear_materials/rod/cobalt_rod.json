@@ -1,0 +1,46 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:cobalt_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#59a1dd",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:cobalt_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "draw_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "projectile_accuracy": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:cobalt_ingot"
+                }
+            ]
+        }
+    }
+}

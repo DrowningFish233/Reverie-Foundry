@@ -1,0 +1,15 @@
+{
+  "weight": 2,
+  "verifiers": [
+    {
+      "tag": "minecraft:swords"
+    },
+    {
+      "tag": "minecraft:axes"
+    },
+    {
+      "tag": "c:tools/mace"
+    }
+  ],
+  "tiers": []
+}

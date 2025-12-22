@@ -1,0 +1,43 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "create:experience_nugget"
+    },
+    {
+      "item": "create:experience_nugget"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 500,
+      "fluid": "irons_spellbooks:blood"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "irons_spellbooks:rare_ink"
+    }
+  ],
+  "results": [
+    {
+      "amount": 750,
+      "id": "irons_spellbooks:epic_ink"
+    }
+  ]
+}

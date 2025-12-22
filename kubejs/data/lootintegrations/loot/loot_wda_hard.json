@@ -1,0 +1,13 @@
+{
+  "loot_table": "lootintegrations:chests/hard",
+  "max_result_itemcount": 8,
+  "integrated_loot_tables": {
+    "dungeons_arise:chests/shiraz_palace/shiraz_palace_elite": 2,
+    "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_treasure": 1,
+    "dungeons_arise:chests/aviary/aviary_treasure": 1,
+    "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure": 1,
+    "dungeons_arise:chests/infested_temple/infested_temple_vault_treasure": 1,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous_treasure": 2,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous": 1
+  }
+}

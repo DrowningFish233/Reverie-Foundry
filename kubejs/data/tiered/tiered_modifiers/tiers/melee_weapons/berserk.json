@@ -1,0 +1,55 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 3,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "red"
+  },
+  "attributes": [
+    {
+      "type": "generic.attack_damage",
+      "modifier": {
+        "id": "tiered:berserk_0",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.25
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "generic.attack_speed",
+      "modifier": {
+        "id": "tiered:berserk_1",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": -0.25
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "minecraft:player.block_interaction_range",
+      "modifier": {
+        "id": "tiered:berserk_2",
+        "operation": "ADD_VALUE",
+        "amount": -1
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "minecraft:player.entity_interaction_range",
+      "modifier": {
+        "id": "tiered:berserk_3",
+        "operation": "ADD_VALUE",
+        "amount": -1
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

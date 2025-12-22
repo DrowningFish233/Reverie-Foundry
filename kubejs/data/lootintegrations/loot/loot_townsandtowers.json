@@ -1,0 +1,18 @@
+{
+  "loot_table": "lootintegrations:chests/easy",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "minecraft:chests/pillager_outpost": 2,
+    "kaisyn:outpost/common/armory": 2,
+    "kaisyn:outpost/common/outpost_beach_barrel": 1,
+    "kaisyn:outpost/common/outpost_mediterranean_barrel": 1,
+    "kaisyn:outpost/common/outpost_rustic_barrel": 1,
+    "kaisyn:village/exclusives/village_classic_blacksmith": 1,
+    "kaisyn:village/exclusives/village_wandering_trader_hut": 1,
+    "kaisyn:village/exclusives/village_mediterranean_house": 1,
+    "kaisyn:village/village_badlands_house": 1,
+    "kaisyn:village/village_jungle_house": 1,
+    "kaisyn:village/village_mushroom_house": 1,
+    "kaisyn:village/village_swamp_house": 1
+  }
+}

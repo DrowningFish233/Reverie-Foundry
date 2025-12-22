@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:leather_boots"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 250,
+      "fluid": "create_wizardry:mana"
+    }
+  ],
+  "results": [
+    {
+      "id": "irons_spellbooks:wandering_magician_boots"
+    }
+  ]
+}

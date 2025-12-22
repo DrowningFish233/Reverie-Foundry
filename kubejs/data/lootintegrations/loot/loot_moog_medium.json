@@ -1,0 +1,9 @@
+{
+  "loot_table": "lootintegrations:chests/medium",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "mvs:rare": 2,
+    "mss:arena": 2,
+    "mss:rare": 2
+  }
+}

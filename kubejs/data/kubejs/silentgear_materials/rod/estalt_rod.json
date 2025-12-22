@@ -1,0 +1,65 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:estalt_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#6d483c",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:estalt_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "repair_efficiency": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.2
+            },
+            "magic_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "ranged_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.2
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:flame_ward"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:fireproof"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:fluxing"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:heat_resistant"
+                }
+            ]
+        }
+    }
+}

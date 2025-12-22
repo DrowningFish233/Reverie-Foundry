@@ -1,0 +1,22 @@
+{
+  "loot_table": "lootintegrations:chests/nether",
+  "max_result_itemcount": 8,
+  "integrated_loot_tables": {
+    "dungeons_arise:chests/plague_asylum/plague_asylum_potions": 1,
+    "dungeons_arise:chests/lighthouse/lighthouse_top": 1,
+    "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_normal": 2,
+    "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_barrels": 1,
+    "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_treasure": 3,
+    "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_theater": 2,
+    "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_supply": 1,
+    "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_normal": 2,
+    "dungeons_arise:chests/foundry/foundry_treasure": 3,
+    "dungeons_arise:chests/foundry/foundry_passage_normal": 1,
+    "dungeons_arise:chests/foundry/foundry_normal": 2,
+    "dungeons_arise:chests/foundry/foundry_lava_pit": 1,
+    "dungeons_arise:chests/foundry/foundry_chains": 1,
+    "dungeons_arise:chests/aviary/aviary_normal": 2,
+    "dungeons_arise:chests/aviary/aviary_barrels": 1,
+    "totw_additions:chests/nether_tower/nether_tower_chest": 1
+  }
+}

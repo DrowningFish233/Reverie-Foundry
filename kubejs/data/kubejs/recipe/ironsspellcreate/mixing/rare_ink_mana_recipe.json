@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "create_wizardry:mana"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "irons_spellbooks:uncommon_ink"
+    },
+    {
+      "item": "create:experience_nugget"
+    }
+  ],
+  "results": [
+    {
+      "amount": 750,
+      "id": "irons_spellbooks:rare_ink"
+    }
+  ]
+}

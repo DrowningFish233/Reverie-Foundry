@@ -1,0 +1,25 @@
+{
+  "weight": 5,
+  "reforge_experience_cost": 2,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "#FF96FF"
+  },
+  "attributes": [
+    {
+      "type": "minecraft:generic.max_health",
+      "modifier": {
+        "id": "tiered:kubejs_armor_6",
+        "operation": "ADD_VALUE",
+        "amount": 4
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    }
+  ]
+}

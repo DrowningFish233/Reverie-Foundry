@@ -1,0 +1,57 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "gobber2:gobber2_ingot_nether"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#af3d6a",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.gobber2:gobber2_ingot_nether"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 36.0,
+      "armor/boots": 7.0,
+      "armor/chestplate": 16.0,
+      "armor/helmet": 7.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 68.0,
+      "armor_toughness": 11.0,
+      "attack_damage": 10.0,
+      "attack_speed": 0.0,
+      "charging_value": 1.0,
+      "durability": 2600.0,
+      "enchantment_value": 140.0,
+      "harvest_speed": 12.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_vibranium_tools",
+        "level_hint": "6",
+        "name": "vibranium/振金"
+      },
+      "knockback_resistance": 0.4,
+      "magic_armor": 8.0,
+      "projectile_speed": 5.0,
+      "projectile_accuracy": 0.1,
+      "rarity": 140.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:gobber_nether"
+        }
+      ]
+    }
+  }
+}

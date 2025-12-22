@@ -1,0 +1,7 @@
+{
+  "order": 999,
+  "icon": "curios:slot/ego",
+  "validators": [
+    "curios:tag"
+  ]
+}

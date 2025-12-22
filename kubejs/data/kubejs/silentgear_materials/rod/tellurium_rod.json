@@ -1,0 +1,44 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:tellurium_rod"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#8ed7b9",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:tellurium_rod"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": -0.1
+      },
+      "magic_armor": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.25
+      },
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": -0.2
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 20
+      },
+      "traits": []
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "loot_table": "lootintegrations:chests/water",
+  "max_result_itemcount": 12,
+  "integrated_loot_tables": {
+    "betteroceanmonuments:chests/upper_side_chamber": 3
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "weight": 2,
+  "verifiers": [
+    {
+      "tag": "c:tools/shields"
+    }
+  ],
+  "tiers": [
+    "tiered:shields/fortified",
+    "tiered:shields/heavy",
+    "tiered:shields/reinforced",
+    "tiered:shields/resilient"
+  ]
+}

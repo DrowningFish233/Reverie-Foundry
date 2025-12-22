@@ -1,0 +1,37 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:vibranite_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#15596b",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:vibranite_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor_toughness": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "magic_armor": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "traits": []
+        }
+    }
+}

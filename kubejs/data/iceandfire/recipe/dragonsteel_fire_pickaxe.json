@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "iceandfire:dragonsteel_fire_ingot"
+  },
+  "base": {
+    "item": "iceandfire:dragonbone_pickaxe"
+  },
+  "result": {
+    "count": 1,
+    "id": "iceandfire:dragonsteel_fire_pickaxe"
+  },
+  "template": {
+    "item": "kubejs:dragon_upgrade_smithing_template"
+  }
+}

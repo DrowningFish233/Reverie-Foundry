@@ -1,0 +1,44 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:mythril_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#bf86a2",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:mythril_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "magic_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.15
+            },
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.2
+            },
+            "enchantment_value": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.2
+            },
+            "magic_armor": {
+                "operation": "ADD",
+                "value": 5
+            },
+            "traits": []
+        }
+    }
+}

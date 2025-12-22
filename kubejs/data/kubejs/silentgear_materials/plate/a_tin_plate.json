@@ -1,0 +1,44 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "alltheores:tin_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#dff1f8",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.alltheores:tin_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:dropped_experience"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:flexible"
+                }
+            ]
+        }
+    }
+}

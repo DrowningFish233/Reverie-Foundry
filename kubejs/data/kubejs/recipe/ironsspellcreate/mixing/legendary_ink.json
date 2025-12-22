@@ -1,0 +1,49 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "create:experience_nugget"
+    },
+    {
+      "item": "create:experience_nugget"
+    },
+    {
+      "item": "create:experience_nugget"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 500,
+      "fluid": "create_wizardry:lightning"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "irons_spellbooks:epic_ink"
+    }
+  ],
+  "results": [
+    {
+      "amount": 750,
+      "id": "irons_spellbooks:legendary_ink"
+    }
+  ]
+}

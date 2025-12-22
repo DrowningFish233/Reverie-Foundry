@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:burning_blossom"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count" : 2,
+        "id": "minecraft:orange_dye"
+      }
+    }
+    
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

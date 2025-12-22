@@ -1,0 +1,31 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_ink_sac"
+    },
+    {
+      "item": "minecraft:glow_ink_sac"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "irons_spellbooks:common_ink"
+    }
+  ],
+  "results": [
+    {
+      "amount": 750,
+      "id": "irons_spellbooks:uncommon_ink"
+    }
+  ]
+}

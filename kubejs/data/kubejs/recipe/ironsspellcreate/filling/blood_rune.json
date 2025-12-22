@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "irons_spellbooks:blank_rune"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "irons_spellbooks:blood"
+    }
+  ],
+  "results": [
+    {
+      "id": "irons_spellbooks:blood_rune"
+    }
+  ]
+}

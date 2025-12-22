@@ -1,0 +1,47 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:frigidite_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#ddfcfc",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:frigidite_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "knockback_resistance": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "magic_armor": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:flexible"
+                }
+            ]
+        }
+    }
+}

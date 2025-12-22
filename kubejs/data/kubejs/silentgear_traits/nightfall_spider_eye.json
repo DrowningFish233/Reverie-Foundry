@@ -1,0 +1,19 @@
+{
+    "conditions": [],
+    "description": {
+        "translate": "trait.silentgear.nightfall_spider_eye.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:cancel_effects",
+            "cleared_effects": [
+                "kubejs:eye",
+                "minecraft:glowing"
+            ]
+        }
+    ],
+    "max_level": 1,
+    "name": {
+        "translate": "trait.silentgear.nightfall_spider_eye"
+    }
+}

@@ -1,0 +1,89 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:enchanted_book"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "chance": 45.0,
+      "id": "irons_spellbooks:ruined_book"
+    },
+    {
+      "chance": 60.0,
+      "id": "minecraft:leather"
+    },
+    {
+      "chance": 30.0,
+      "id": "minecraft:paper"
+    },
+    {
+      "chance": 5.0,
+      "id": "minecraft:sculk_vein"
+    },
+    {
+      "chance": 5.0,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 3.0,
+      "id": "minecraft:echo_shard"
+    },
+    {
+      "chance": 2.0,
+      "id": "minecraft:sculk_shrieker"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:enchanted_book"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 500,
+          "fluid": "irons_spellbooks:timeless_slurry"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:enchanted_book"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:enchanted_book"
+        },
+        {
+          "item": "minecraft:sculk_catalyst"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:enchanted_book"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:enchanted_book"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:enchanted_book"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:enchanted_book"
+  }
+}

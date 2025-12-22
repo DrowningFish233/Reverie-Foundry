@@ -1,0 +1,22 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "irons_spellbooks:eldritch_manuscript"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "irons_spellbooks:ancient_knowledge_fragment"
+    },
+    {
+      "chance": 0.5,
+      "id": "irons_spellbooks:ancient_knowledge_fragment"
+    },
+    {
+      "chance": 0.25,
+      "id": "irons_spellbooks:ancient_knowledge_fragment"
+    }
+  ]
+}

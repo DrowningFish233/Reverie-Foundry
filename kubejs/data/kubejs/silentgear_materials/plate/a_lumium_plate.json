@@ -1,0 +1,32 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "alltheores:lumium_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#FFFFE0",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.alltheores:lumium_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "magic_armor": {
+                "operation": "ADD",
+                "value": 2
+            }
+        }
+    }
+}

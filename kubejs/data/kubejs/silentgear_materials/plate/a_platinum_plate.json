@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "alltheores:platinum_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#edf3f6",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.alltheores:platinum_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "knockback_resistance": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.1
+            },
+            "magic_armor": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:dropped_experience"
+                },
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "silentgear:flexible"
+                }
+            ]
+        }
+    }
+}

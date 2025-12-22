@@ -1,0 +1,179 @@
+{
+  "Dimensions": [
+    "minecraft:overworld"
+  ],
+  "InvasionTime": "NIGHT",
+  "Rarity": 4,
+  "SeverityInfo": [
+    {
+      "MobCapPercentage": 0.2,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:pillager",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 13
+        },
+        {
+          "EntityType": "minecraft:vindicator",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "minecraft:witch",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 10
+        }
+      ],
+      "TickDelay": 45
+    },
+    {
+      "MobCapPercentage": 0.4,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:pillager",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 13
+        },
+        {
+          "EntityType": "minecraft:vindicator",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "minecraft:witch",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 10
+        },
+        {
+          "EntityType": "minecraft:ravager",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 3
+        }
+      ],
+      "TickDelay": 36
+    },
+    {
+      "MobCapPercentage": 0.6,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:pillager",
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 13
+        },
+        {
+          "EntityType": "minecraft:vindicator",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "minecraft:witch",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 10
+        },
+        {
+          "EntityType": "minecraft:ravager",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:evoker",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 5
+        }
+      ],
+      "TickDelay": 27
+    },
+    {
+      "MobCapPercentage": 0.8,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:pillager",
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 13
+        },
+        {
+          "EntityType": "minecraft:vindicator",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "minecraft:witch",
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 10
+        },
+        {
+          "EntityType": "minecraft:ravager",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:evoker",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 5
+        }
+      ],
+      "TickDelay": 18
+    },
+    {
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:pillager",
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 13
+        },
+        {
+          "EntityType": "minecraft:vindicator",
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 8
+        },
+        {
+          "EntityType": "minecraft:witch",
+          "MaxCount": 4,
+          "MinCount": 1,
+          "Weight": 10
+        },
+        {
+          "EntityType": "minecraft:ravager",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:evoker",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 5
+        },
+        {
+          "EntityType": "minecraft:illusioner",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 9
+    }
+  ],
+  "Tier": 2
+}

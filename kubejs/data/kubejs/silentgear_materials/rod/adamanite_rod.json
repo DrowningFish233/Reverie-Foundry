@@ -1,0 +1,74 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:adamanite_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#d5483d",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:adamanite_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "attack_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.1
+            },
+            "enchantment_value": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.2
+            },
+            "draw_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.15
+            },
+            "rarity": {
+                "operation": "ADD",
+                "value": 8
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:dropped_experience"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [
+                        {
+                            "type": "silentgear:or",
+                            "values": [
+                                {
+                                    "type": "silentgear:material_count",
+                                    "count": 3
+                                },
+                                {
+                                    "type": "silentgear:material_ratio",
+                                    "ratio": 0.33
+                                }
+                            ]
+                        }
+                    ],
+                    "level": 1,
+                    "trait": "silentgear:flame_ward"
+                }
+            ]
+        }
+    }
+}

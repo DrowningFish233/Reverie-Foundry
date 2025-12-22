@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "tag": "c:dusts"
+    },
+    {
+      "type": "fluid_tag",
+      "amount": 1000,
+      "fluid_tag": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 750,
+      "id": "irons_spellbooks:timeless_slurry"
+    }
+  ]
+}

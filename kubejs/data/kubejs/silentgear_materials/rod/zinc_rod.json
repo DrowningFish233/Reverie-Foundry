@@ -1,0 +1,60 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:zinc_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#86ada0",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:zinc_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "enchantment_value": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "ranged_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
+            },
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.05
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:dropped_experience"
+                },
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "silentgear:soft"
+                }
+            ]
+        }
+    }
+}

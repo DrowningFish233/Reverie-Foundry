@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "gobber2:gobber2_ingot_end"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#95f3b5",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.gobber2:gobber2_ingot_end"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 40.0,
+      "armor/boots": 8.0,
+      "armor/chestplate": 16.0,
+      "armor/helmet": 8.0,
+      "armor/leggings": 8.0,
+      "armor_durability": 130.0,
+      "armor_toughness": 14.0,
+      "attack_damage": 13.0,
+      "attack_speed": 0.2,
+      "attack_reach": 1.0,
+      "charging_value": 1.1,
+      "durability": 4000.0,
+      "enchantment_value": 200.0,
+      "harvest_speed": 15.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_unobtainium_tools",
+        "level_hint": "7",
+        "name": "unobtainium/难得素"
+      },
+      "knockback_resistance": 1.0,
+      "magic_armor": 32.0,
+      "projectile_speed": 10.0,
+      "projectile_accuracy": 0.2,
+      "rarity": 200.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:gobber_end"
+        }
+      ]
+    }
+  }
+}

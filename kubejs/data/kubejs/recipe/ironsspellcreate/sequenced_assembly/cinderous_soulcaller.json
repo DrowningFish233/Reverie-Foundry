@@ -1,0 +1,51 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bell"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "irons_spellbooks:cinderous_soulcaller"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:bell"
+        },
+        {
+          "type": "fluid_tag",
+          "amount": 1000,
+          "fluid_tag": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:bell"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:bell"
+        },
+        {
+          "item": "minecraft:netherite_scrap"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:bell"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:bell"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:amethyst_shard"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "id": "irons_spellbooks:permafrost_shard"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 1000,
+          "fluid": "irons_spellbooks:ice_venom"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:amethyst_shard"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:amethyst_shard"
+        },
+        {
+          "item": "minecraft:blue_ice"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:amethyst_shard"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:amethyst_shard"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:amethyst_shard"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:amethyst_shard"
+  }
+}

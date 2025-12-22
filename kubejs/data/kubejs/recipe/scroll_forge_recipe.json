@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    " b ",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:polished_deepslate"
+    },
+    "b": {
+      "item": "minecraft:obsidian"
+    },
+    "c": {
+      "item": "irons_spellbooks:shriving_stone"
+    }
+  },
+  "result": {
+    "id": "irons_spellbooks:scroll_forge",
+    "count": 1
+  }
+}

@@ -1,0 +1,60 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:platinum_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#7ac1cf",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:platinum_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "enchantment_value": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            },
+            "repair_efficiency": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.05
+            },
+            "rarity": {
+                "operation": "ADD",
+                "value": 10
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:dropped_experience"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "silentgear:soft"
+                }
+            ]
+        }
+    }
+}

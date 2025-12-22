@@ -1,0 +1,62 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "gem",
+            "other"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:atalphaite"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#b6acfa",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:atalphaite"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:setting": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:eternal_starlight"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:atalphaite"
+                }
+            ]
+        },
+        "silentgear:tip": {
+            "durability": {
+                "operation": "ADD",
+                "value": 500.0
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 5.0
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:atalphaite"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
+        }
+    }
+}

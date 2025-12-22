@@ -1,0 +1,56 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:aluminum_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#e8e8e8",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:aluminum_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.2
+            },
+            "ranged_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [
+                        {
+                            "type": "silentgear:material_ratio",
+                            "ratio": 0.5
+                        }
+                    ],
+                    "level": 1,
+                    "trait": "silentgear:soft"
+                }
+            ]
+        }
+    }
+}

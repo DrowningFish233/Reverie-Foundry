@@ -1,0 +1,101 @@
+{
+  "Dimensions": [
+    "minecraft:the_end"
+  ],
+  "InvasionPriority": "SECONDARY_ONLY",
+  "InvasionTime": "NIGHT",
+  "Rarity": 7,
+  "SeverityInfo": [
+    {
+      "MobCapPercentage": 0.2,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:silverfish",
+          "MaxCount": 3,
+          "MinCount": 1,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:endermite",
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 30
+    },
+    {
+      "MobCapPercentage": 0.4,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:silverfish",
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:endermite",
+          "MaxCount": 2,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 24
+    },
+    {
+      "MobCapPercentage": 0.6,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:silverfish",
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:endermite",
+          "MaxCount": 4,
+          "MinCount": 2,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 18
+    },
+    {
+      "MobCapPercentage": 0.8,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:silverfish",
+          "MaxCount": 6,
+          "MinCount": 3,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:endermite",
+          "MaxCount": 5,
+          "MinCount": 2,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 12
+    },
+    {
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:silverfish",
+          "MaxCount": 8,
+          "MinCount": 3,
+          "Weight": 3
+        },
+        {
+          "EntityType": "minecraft:endermite",
+          "MaxCount": 6,
+          "MinCount": 2,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 6
+    }
+  ],
+  "Tier": 1
+}

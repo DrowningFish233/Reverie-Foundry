@@ -1,0 +1,61 @@
+{
+    "conditions": [
+        {
+            "type": "silentgear:or",
+            "values": [
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:armor"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:tool"
+                },
+                {
+                    "type": "silentgear:gear_type",
+                    "gear_type": "silentgear:curio"
+                }
+            ]
+        }
+    ],
+    "description": {
+        "translate": "trait.silentgear.frosted_helve.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:attribute",
+            "attribute_modifiers": {
+                "all/any": [
+                    {
+                        "attribute": "irons_spellbooks:max_mana",
+                        "operation": "add_value",
+                        "values": [
+                            80,
+                            160
+                        ]
+                    },
+                    {
+                        "attribute": "irons_spellbooks:mana_regen",
+                        "operation": "add_multiplied_base",
+                        "values": [
+                            0.05,
+                            0.1
+                        ]
+                    },
+                    {
+                        "attribute": "irons_spellbooks:ice_spell_power",
+                        "operation": "add_multiplied_base",
+                        "values": [
+                            0.05,
+                            0.1
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "max_level": 2,
+    "name": {
+        "translate": "trait.silentgear.frosted_helve"
+    }
+}

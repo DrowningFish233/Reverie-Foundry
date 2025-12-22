@@ -1,0 +1,34 @@
+{
+  "values": {
+    "allthemodium:soul_lava": {
+      "consumption": 0.1,
+      "speed": 1.0,
+      "temperature": 3000
+    },
+    "minecraft:lava": {
+      "consumption": 0.2,
+      "speed": 0.5,
+      "temperature": 1500
+    },
+    "eternal_starlight:ether": {
+      "consumption": 0.4,
+      "speed": 1.5,
+      "temperature": 3000
+    },
+    "kubejs:gobber2_foo": {
+      "consumption": 0.3,
+      "speed": 1.0,
+      "temperature": 2000
+    },
+    "kubejs:gobber2_foo_nether": {
+      "consumption": 0.2,
+      "speed": 2.0,
+      "temperature": 4000
+    },
+    "kubejs:gobber2_foo_end": {
+      "consumption": 0.1,
+      "speed": 3.0,
+      "temperature": 6000
+    }
+  }
+}

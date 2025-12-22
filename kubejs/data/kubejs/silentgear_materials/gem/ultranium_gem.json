@@ -1,0 +1,74 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:ultranium_gem"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#ff6a30",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:ultranium_gem"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 25.0,
+      "armor/boots": 5.0,
+      "armor/chestplate": 10.0,
+      "armor/helmet": 5.0,
+      "armor/leggings": 5.0,
+      "armor_durability": 55.0,
+      "armor_toughness": 16.0,
+      "attack_damage": 8.0,
+      "attack_speed": 0.2,
+      "attack_reach": 1.0,
+      "charging_value": 1.2,
+      "draw_speed": 0.2,
+      "durability": 2800.0,
+      "enchantment_value": 35.0,
+      "harvest_speed": 15.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_vibranium_tools",
+        "level_hint": "6",
+        "name": "vibranium"
+      },
+      "knockback_resistance": 1.0,
+      "magic_armor": 32.0,
+      "magic_damage": 0.0,
+      "projectile_accuracy": 1.25,
+      "projectile_speed": 2.0,
+      "ranged_damage": 7.0,
+      "rarity": 200.0,
+      "repair_value": 0.0,
+      "traits": []
+    },
+    "silentgear:setting": {
+      "traits": []
+    },
+    "silentgear:tip": {
+      "durability": {
+        "operation": "ADD",
+        "value": 500.0
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 5.0
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.0
+      }
+    }
+  }
+}

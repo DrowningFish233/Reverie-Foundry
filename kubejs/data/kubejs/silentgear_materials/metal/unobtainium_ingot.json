@@ -1,0 +1,67 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "allthemodium:unobtainium_ingot"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#a62be0",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.allthemodium:unobtainium_ingot"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "armor": 40.0,
+            "armor/boots": 8.0,
+            "armor/chestplate": 16.0,
+            "armor/helmet": 8.0,
+            "armor/leggings": 8.0,
+            "armor_durability": 600.0,
+            "armor_toughness": 60.0,
+            "attack_damage": 18.0,
+            "attack_speed": -1.0,
+            "charging_value": 0.0,
+            "durability": 14000.0,
+            "enchantment_value": 200.0,
+            "harvest_speed": 15.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_unobtainium_tools",
+                "level_hint": "7",
+                "name": "unobtainium/难得素"
+            },
+            "knockback_resistance": 1.0,
+            "magic_armor": 0.0,
+            "projectile_speed": 18.0,
+            "projectile_accuracy": -1.0,
+            "rarity": 200.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:indestructible"
+                },
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "silentgear:synergistic"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:brilliant"
+                }
+            ]
+        }
+    }
+}

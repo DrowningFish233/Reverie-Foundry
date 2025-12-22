@@ -1,0 +1,47 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "iceandfire:ghost_ingot"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#8df8ca",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.iceandfire:ghost_ingot"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "attack_damage": 8.0,
+            "attack_reach": 3.0,
+            "attack_speed": 0.2,
+            "charging_value": 1.1,
+            "durability": 3000.0,
+            "enchantment_value": 100.0,
+            "harvest_speed": 10.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+                "level_hint": "2",
+                "name": "iron/铁"
+            },
+            "rarity": 100.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:ghost_ingot"
+                }
+            ]
+        }
+    }
+}

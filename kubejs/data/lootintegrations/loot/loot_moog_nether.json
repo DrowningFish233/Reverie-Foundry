@@ -1,0 +1,9 @@
+{
+  "loot_table": "lootintegrations:chests/nether",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "mns:houses": 1,
+    "mns:treasure": 2,
+    "mns:uncommon": 1
+  }
+}

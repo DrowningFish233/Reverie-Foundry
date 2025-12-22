@@ -1,0 +1,74 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "gem",
+            "advanced"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "cataclysm:lacrima"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#7fffd4",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.cataclysm:lacrima"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "armor": 0.0,
+            "armor/boots": 0.0,
+            "armor/chestplate": 0.0,
+            "armor/helmet": 0.0,
+            "armor/leggings": 0.0,
+            "armor_durability": 0.0,
+            "armor_toughness": 0.0,
+            "attack_damage": 0.0,
+            "attack_speed": 0.0,
+            "attack_reach": 0.0,
+            "charging_value": 0.0,
+            "draw_speed": 0.0,
+            "durability": 256.0,
+            "enchantment_value": 0.0,
+            "harvest_speed": 0.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+                "level_hint": "2",
+                "name": "iron"
+            },
+            "knockback_resistance": 0.0,
+            "magic_armor": 0.0,
+            "magic_damage": 0.0,
+            "projectile_accuracy": 0.0,
+            "projectile_speed": 0.0,
+            "ranged_damage": 0.0,
+            "rarity": 0.0,
+            "repair_value": 0.0,
+            "traits": []
+        },
+        "silentgear:setting": {
+            "traits": []
+        },
+        "silentgear:tip": {
+            "durability": {
+                "operation": "ADD",
+                "value": 256.0
+            },
+            "attack_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 1.1
+            },
+            "magic_damage": {
+                "operation": "ADD",
+                "value": 1.0
+            }
+        }
+    }
+}

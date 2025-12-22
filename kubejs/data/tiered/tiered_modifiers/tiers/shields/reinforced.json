@@ -1,0 +1,22 @@
+{
+  "weight": 1,
+  "reforge_experience_cost": 4,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "dark_gray"
+  },
+  "attributes": [
+    {
+      "type": "generic.armor",
+      "modifier": {
+        "id": "tiered:reinforced",
+        "operation": "ADD_VALUE",
+        "amount": 2
+      },
+      "optional_equipment_slots": [
+        "OFFHAND"
+      ]
+    }
+  ]
+}

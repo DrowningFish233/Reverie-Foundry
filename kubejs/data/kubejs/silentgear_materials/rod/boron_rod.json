@@ -1,0 +1,50 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:boron_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#7a89b0",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:boron_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
+            },
+            "attack_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.1
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.05
+            },
+            "projectile_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.5
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:boron_ingot"
+                }
+            ]
+        }
+    }
+}

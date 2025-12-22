@@ -1,0 +1,42 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "bone"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "irons_spellbooks:frozen_bone"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#eaf8f9",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.irons_spellbooks:frozen_bone"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "durability": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.35
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:frozen_bone"
+                }
+            ]
+        }
+    }
+}

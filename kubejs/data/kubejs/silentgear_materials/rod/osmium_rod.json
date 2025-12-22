@@ -1,0 +1,51 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:osmium_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#a5bad4",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:osmium_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            },
+            "repair_efficiency": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            },
+            "rarity": {
+                "operation": "ADD",
+                "value": 5
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:dropped_experience"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                }
+            ]
+        }
+    }
+}

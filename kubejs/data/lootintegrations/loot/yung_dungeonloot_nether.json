@@ -1,0 +1,14 @@
+{
+  "loot_table": "lootintegrations:chests/nether",
+  "max_result_itemcount": 12,
+  "integrated_loot_tables": {
+    "betterdungeons:small_nether_dungeon/chests/common": 3,
+    "betterfortresses:chests/extra": 3,
+    "betterfortresses:chests/obsidian": 3,
+    "betterfortresses:chests/puzzle": 3,
+    "betterfortresses:chests/hall": 3,
+    "betterfortresses:chests/quarters": 1,
+    "betterfortresses:chests/storage": 1,
+    "betterfortresses:chests/worship": 1
+  }
+}

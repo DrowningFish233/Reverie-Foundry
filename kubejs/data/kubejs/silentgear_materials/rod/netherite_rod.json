@@ -1,0 +1,56 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:netherite_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#4b4042",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:netherite_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "repair_efficiency": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "enchantment_value": {
+                "operation": "ADD",
+                "value": 3
+            },
+            "rarity": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.05
+            },
+            "draw_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            },
+            "traits": []
+        }
+    }
+}

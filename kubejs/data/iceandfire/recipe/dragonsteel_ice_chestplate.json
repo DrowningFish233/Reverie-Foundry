@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "iceandfire:dragonsteel_ice_ingot"
+  },
+  "base": {
+    "tag": "iceandfire:scale_chestplate_ice"
+  },
+  "result": {
+    "count": 1,
+    "id": "iceandfire:dragonsteel_ice_chestplate"
+  },
+  "template": {
+    "item": "kubejs:dragon_upgrade_smithing_template"
+  }
+}

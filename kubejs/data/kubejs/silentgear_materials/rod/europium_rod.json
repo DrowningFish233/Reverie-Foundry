@@ -1,0 +1,44 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:europium_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#d6b5ed",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:europium_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "attack_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.5
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 4
+            },
+            "draw_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.4
+            },
+            "projectile_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.6
+            },
+            "traits": []
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "weight": 3,
+  "reforge_experience_cost": 4,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "dark_blue"
+  },
+  "attributes": [
+    {
+      "type": "generic.armor",
+      "modifier": {
+        "id": "tiered:fortified",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.25
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    }
+  ]
+}

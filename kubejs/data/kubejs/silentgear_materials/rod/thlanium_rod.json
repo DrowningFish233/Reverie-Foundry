@@ -1,0 +1,48 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:thlanium_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#b4a0db",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:thlanium_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "durability": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.1
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.2
+            },
+            "enchantment_value": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.1
+            },
+            "attack_reach": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.1
+            },
+            "armor": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "traits": []
+        }
+    }
+}

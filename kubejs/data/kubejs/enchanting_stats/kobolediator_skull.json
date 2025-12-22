@@ -1,0 +1,11 @@
+{
+	"block": "cataclysm:kobolediator_skull",
+	"stats": {
+		"maxEterna": 5,
+		"eterna": 1,
+		"quanta": 8,
+		"arcana": 0,
+		"rectification": 0,
+		"clues": 0
+	}
+}

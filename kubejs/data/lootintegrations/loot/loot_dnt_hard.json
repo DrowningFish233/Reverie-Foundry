@@ -1,0 +1,11 @@
+{
+  "loot_table": "lootintegrations:chests/hard",
+  "max_result_itemcount": 12,
+  "integrated_loot_tables": {
+    "nova_structures:chests/end_castle/greater_loot": 2,
+    "nova_structures:chests/end_castle/treasure_lighthouse": 1,
+    "nova_structures:chests/end_castle/vault_brigattine": 2,
+    "nova_structures:chests/end_castle/vault_galleon": 2,
+    "nova_structures:chests/end_castle/vault_slope": 2
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "weight": 0,
+  "verifiers": [
+    {
+      "tag": "minecraft:shovels"
+    },
+    {
+      "tag": "minecraft:pickaxes"
+    },
+    {
+      "tag": "minecraft:hoes"
+    }
+  ],
+  "tiers": []
+}

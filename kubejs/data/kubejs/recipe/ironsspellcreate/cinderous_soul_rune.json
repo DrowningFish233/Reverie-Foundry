@@ -1,0 +1,25 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "r": {
+      "item": "irons_spellbooks:fire_rune"
+    },
+    "s": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "nrn",
+    "rsr",
+    "nrn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "irons_spellbooks:cinderous_soul_rune"
+  }
+}

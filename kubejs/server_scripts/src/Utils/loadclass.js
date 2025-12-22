@@ -1,0 +1,51 @@
+// priority: 1000
+function require(/**@type {String}*/classpath) {
+    let javaclass = classpath.split('/').slice(1)
+    let classname = javaclass.pop()//获取类名
+    let newclasspath = javaclass.concat(classname.substring(1)).join('.')
+    let thisclass = {}
+    thisclass[classname] = Java.loadClass(newclasspath)
+    return thisclass
+}
+const $SummonManager = Java.loadClass("io.redspace.ironsspellbooks.capabilities.magic.SummonManager")
+const $DataComponent = Java.loadClass("net.rain.kubejs_datacomponent.KubeJSDataComponent$DataComponentAPI")
+const $ChunkPos = Java.loadClass("net.minecraft.world.level.ChunkPos")
+const $BlockEvent$NeighborNotifyEvent = Java.loadClass('net.neoforged.neoforge.event.level.BlockEvent$NeighborNotifyEvent')
+const $SgRegistries = Java.loadClass('net.silentchaos512.gear.setup.SgRegistries');
+const $SilentGear = Java.loadClass('net.silentchaos512.gear.SilentGear');
+const $DataResource = Java.loadClass('net.silentchaos512.gear.api.util.DataResource')
+const $TraitHelper = Java.loadClass('net.silentchaos512.gear.util.TraitHelper')
+const $SpellRegistry = Java.loadClass('io.redspace.ironsspellbooks.api.registry.SpellRegistry')
+const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
+const curiosHelper = $CuriosApi.getCuriosHelper();
+const $DamageSource = Java.loadClass("net.minecraft.world.damagesource.DamageSource");
+const $AttributeRegistry = Java.loadClass("io.redspace.ironsspellbooks.api.registry.AttributeRegistry")
+const $MagicData = Java.loadClass("io.redspace.ironsspellbooks.api.magic.MagicData")
+const $CastSource = Java.loadClass("io.redspace.ironsspellbooks.api.spells.CastSource")
+const $ResourceLocation = Java.loadClass("net.minecraft.resources.ResourceLocation")
+const $Random = Java.loadClass("java.util.Random");
+const random = new $Random();
+const $EnchantmentHelper = Java.loadClass("net.minecraft.world.item.enchantment.EnchantmentHelper");
+const $MeteorClass = Java.loadClass('cn.leolezury.eternalstarlight.common.entity.projectile.AethersentMeteor')
+const $ScreenShakeVfx = Java.loadClass('cn.leolezury.eternalstarlight.common.vfx.ScreenShakeVfx')
+const $ServerLevel = Java.loadClass('net.minecraft.server.level.ServerLevel')
+const $LunarThorn = Java.loadClass('cn.leolezury.eternalstarlight.common.entity.attack.LunarThorn')
+const $ESEntities = Java.loadClass('cn.leolezury.eternalstarlight.common.registry.ESEntities')
+const $ClipContext = Java.loadClass('net.minecraft.world.level.ClipContext')
+const $BlockPos = Java.loadClass('net.minecraft.core.BlockPos')
+const $HitResult = Java.loadClass('net.minecraft.world.phys.HitResult')
+const $Mth = Java.loadClass('net.minecraft.util.Mth')
+const $LivingEntity = Java.loadClass("net.minecraft.world.entity.LivingEntity")
+const $EntityUtils = Java.loadClass("xyz.faewulf.lib.util.entity.EntityUtils")
+const $Minecraft = Java.loadClass("net.minecraft.client.Minecraft")
+const $PotionRegistry = Java.loadClass('io.redspace.ironsspellbooks.registries.PotionRegistry')
+const $PotionItem = Java.loadClass('net.minecraft.world.item.PotionItem')
+const $DataComponents = Java.loadClass('net.minecraft.core.component.DataComponents')
+const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+const $MobEffectEvent$Expired = Java.loadClass("net.neoforged.neoforge.event.entity.living.MobEffectEvent$Expired");
+const $MobEffectEvent$Added = Java.loadClass("net.neoforged.neoforge.event.entity.living.MobEffectEvent$Added");
+const $LivingDamageEvent$Pre = Java.loadClass("net.neoforged.neoforge.event.entity.living.LivingDamageEvent$Pre");
+const $GearSickleItem = Java.loadClass("net.silentchaos512.gear.item.gear.GearSickleItem");
+const $MysteriousItemConversionCategory = Java.loadClass("com.simibubi.create.compat.jei.category.MysteriousItemConversionCategory")
+const $ConversionRecipe = Java.loadClass("com.simibubi.create.compat.jei.ConversionRecipe")
+const $ASUtils = Java.loadClass("net.acetheeldritchking.aces_spell_utils.utils.ASUtils")

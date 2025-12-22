@@ -1,0 +1,45 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "slime",
+            "organic",
+            "intermediate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "eternal_starlight:lunaris_cactus_gel_block"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#e6d3e8",
+        "main_texture_type": "LOW_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.eternal_starlight:lunaris_cactus_gel_block"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor_toughness": {
+                "operation": "ADD",
+                "value": 0.6
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:bounce"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
+        }
+    }
+}

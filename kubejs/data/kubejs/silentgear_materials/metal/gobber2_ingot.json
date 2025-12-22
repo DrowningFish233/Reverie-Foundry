@@ -1,0 +1,57 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "gobber2:gobber2_ingot"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#67b1e5",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.gobber2:gobber2_ingot"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "armor": 32.0,
+            "armor/boots": 6.0,
+            "armor/chestplate": 14.0,
+            "armor/helmet": 6.0,
+            "armor/leggings": 6.0,
+            "armor_durability": 60.0,
+            "armor_toughness": 10.0,
+            "attack_damage": 8.0,
+            "attack_speed": 0.0,
+            "charging_value": 0.9,
+            "durability": 1900.0,
+            "enchantment_value": 100.0,
+            "harvest_speed": 10.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_allthemodium_tools",
+                "level_hint": "5",
+                "name": "allthemodium/ATM"
+            },
+            "knockback_resistance": 0.4,
+            "projectile_speed": 6.0,
+            "projectile_accuracy": -0.2,
+            "ranged_damage": 1.0,
+            "rarity": 100.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:gobber"
+                }
+            ]
+        }
+    }
+}

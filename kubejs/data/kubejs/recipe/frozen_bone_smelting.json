@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 2,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "irons_spellbooks:frozen_bone"
+  },
+  "result": {
+    "id": "minecraft:bone"
+  }
+}

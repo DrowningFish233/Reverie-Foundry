@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:fortress",
+    "medieval_nether:castle",
+    "medieval_nether:dome",
+    "medieval_nether:house",
+    "medieval_nether:ship",
+    "medieval_nether:shrine"
+  ]
+}

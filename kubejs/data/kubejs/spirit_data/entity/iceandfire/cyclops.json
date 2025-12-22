@@ -1,0 +1,14 @@
+{
+    "registry_name": "iceandfire:cyclops",
+    "primary_type": "malum:wicked",
+    "spirits": [
+        {
+            "spirit": "malum:wicked",
+            "count": 2
+        },
+        {
+            "spirit": "malum:earthen",
+            "count": 4
+        }
+    ]
+}

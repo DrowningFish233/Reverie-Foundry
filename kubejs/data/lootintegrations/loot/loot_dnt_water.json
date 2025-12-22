@@ -1,0 +1,15 @@
+{
+  "loot_table": "lootintegrations:chests/water",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "nova_structures:chests/trident_trial_monument/ttm_boss_vault_heart": 1,
+    "nova_structures:chests/trident_trial_monument/ttm_boss_vault_trident": 1,
+    "nova_structures:chests/trident_trial_monument/ttm_common_vault": 1,
+    "nova_structures:equipment/trident_trial_monument/equipment_trident_trial_monument": 1,
+    "nova_structures:chests/illager_hideout_fishing": 1,
+    "nova_structures:chests/water_supply": 1,
+    "nova_structures:chests/conduit_ruin/conduit_ruin_big": 2,
+    "nova_structures:chests/conduit_ruin/conduit_ruin_main": 2,
+    "nova_structures:chests/conduit_ruin/conduit_ruin_small": 1
+  }
+}

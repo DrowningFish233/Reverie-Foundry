@@ -1,0 +1,55 @@
+{
+  "Dimensions": [
+    "minecraft:overworld",
+    "minecraft:the_end"
+  ],
+  "InvasionPriority": "SECONDARY_ONLY",
+  "InvasionTime": "NIGHT",
+  "Rarity": 21,
+  "SeverityInfo": [
+    {
+      "FixedMobCap": 1,
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:warden",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 540
+    },
+    {
+      "FixedMobCap": 2,
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:warden",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 360
+    },
+    {
+      "FixedMobCap": 3,
+      "ForceNoSleep": true,
+      "MobCapPercentage": 1.0,
+      "MobSpawnList": [
+        {
+          "EntityType": "minecraft:warden",
+          "ForceDespawn": true,
+          "MaxCount": 1,
+          "MinCount": 1,
+          "Weight": 1
+        }
+      ],
+      "TickDelay": 180
+    }
+  ],
+  "Tier": 5
+}

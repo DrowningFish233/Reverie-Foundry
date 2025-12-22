@@ -1,0 +1,60 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:yttrium_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#c09d53",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:yttrium_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "repair_efficiency": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.05
+            },
+            "rarity": {
+                "operation": "ADD",
+                "value": 4
+            },
+            "charging_value": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.2
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.25
+            },
+            "enchantment_value": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "attack_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 3
+            },
+            "traits": []
+        }
+    }
+}

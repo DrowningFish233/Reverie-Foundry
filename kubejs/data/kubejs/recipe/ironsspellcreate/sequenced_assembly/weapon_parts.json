@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:iron_sword"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "id": "irons_spellbooks:weapon_parts"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_sword"
+        },
+        {
+          "item": "irons_spellbooks:arcane_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:iron_sword"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_sword"
+        },
+        {
+          "item": "irons_spellbooks:mithril_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:iron_sword"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_sword"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:iron_sword"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:iron_sword"
+  }
+}

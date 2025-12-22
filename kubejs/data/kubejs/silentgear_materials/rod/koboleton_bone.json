@@ -1,0 +1,44 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "bone"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "cataclysm:koboleton_bone"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#98867b",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.cataclysm:koboleton_bone"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "durability": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.45
+            },
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.15
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.6
+            },
+            "draw_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.4
+            },
+            "traits": []
+        }
+    }
+}

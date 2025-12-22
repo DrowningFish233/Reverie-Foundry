@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "iceandfire:dragonsteel_ice_ingot"
+  },
+  "base": {
+    "item": "iceandfire:dragonbone_axe"
+  },
+  "result": {
+    "count": 1,
+    "id": "iceandfire:dragonsteel_ice_axe"
+  },
+  "template": {
+    "item": "kubejs:dragon_upgrade_smithing_template"
+  }
+}

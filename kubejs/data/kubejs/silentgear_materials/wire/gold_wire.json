@@ -1,0 +1,33 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal_fiber"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "createaddition:gold_wire"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#f7d349",
+        "main_texture_type": "LOW_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.createaddition:gold_wire"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:binding": {},
+        "silentgear:cord": {
+            "draw_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.05
+            },
+            "traits": []
+        }
+    }
+}

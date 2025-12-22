@@ -1,0 +1,101 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "chance": 15.0,
+      "id": "irons_spellbooks:dragonskin"
+    },
+    {
+      "chance": 75.0,
+      "id": "minecraft:obsidian"
+    },
+    {
+      "chance": 35.0,
+      "id": "minecraft:phantom_membrane"
+    },
+    {
+      "chance": 10.0,
+      "id": "minecraft:crying_obsidian"
+    },
+    {
+      "chance": 10.0,
+      "id": "minecraft:ender_eye"
+    },
+    {
+      "chance": 5.0,
+      "id": "create:sturdy_sheet"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:phantom_membrane"
+        },
+        {
+          "item": "minecraft:end_crystal"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:phantom_membrane"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:phantom_membrane"
+        },
+        {
+          "item": "minecraft:obsidian"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:phantom_membrane"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "minecraft:phantom_membrane"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 1000,
+          "fluid": "irons_spellbooks:timeless_slurry"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:phantom_membrane"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "minecraft:phantom_membrane"
+        }
+      ],
+      "results": [
+        {
+          "id": "minecraft:phantom_membrane"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "minecraft:phantom_membrane"
+  }
+}

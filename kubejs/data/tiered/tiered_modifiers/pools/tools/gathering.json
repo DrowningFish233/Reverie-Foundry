@@ -1,0 +1,18 @@
+{
+  "weight": 3,
+  "verifiers": [
+    {
+      "tag": "minecraft:pickaxes"
+    },
+    {
+      "tag": "minecraft:shovels"
+    },
+    {
+      "tag": "minecraft:axes"
+    }
+  ],
+  "tiers": [
+    "tiered:gathering_tools/hasteful",
+    "tiered:gathering_tools/swift"
+  ]
+}

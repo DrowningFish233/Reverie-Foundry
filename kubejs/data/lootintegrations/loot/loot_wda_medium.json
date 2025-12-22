@@ -1,0 +1,30 @@
+{
+  "loot_table": "lootintegrations:chests/medium",
+  "max_result_itemcount": 7,
+  "integrated_loot_tables": {
+    "dungeons_arise:chests/mines_treasure_big": 3,
+    "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_enchants": 1,
+    "dungeons_arise:chests/shiraz_palace/shiraz_palace_treasure": 4,
+    "dungeons_arise:chests/shiraz_palace/shiraz_palace_library": 1,
+    "dungeons_arise:chests/scorched_mines/scorched_mines_treasure": 2,
+    "dungeons_arise:chests/plague_asylum/plague_asylum_treasure": 4,
+    "dungeons_arise:chests/mushroom_mines/mushroom_mines_treasure": 3,
+    "dungeons_arise:chests/mechanical_nest/mechanical_nest_equipment": 2,
+    "dungeons_arise:chests/keep_kayra/keep_kayra_treasure": 4,
+    "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure": 2,
+    "dungeons_arise:chests/keep_kayra/keep_kayra_garden_treasure": 2,
+    "dungeons_arise:chests/infested_temple/infested_temple_top_treasure": 2,
+    "dungeons_arise:chests/infested_temple/infested_temple_vault_ominous": 2,
+    "dungeons_arise:chests/infested_temple/infested_temple_vault_normal": 1,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal_treasure": 2,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal": 1,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_treasure": 2,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_top": 1,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_normal": 1,
+    "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_basement": 1,
+    "dungeons_arise:chests/illager_fort/illager_fort_treasure": 3,
+    "dungeons_arise:chests/heavenly_rider/heavenly_rider_treasure": 2,
+    "dungeons_arise_seven_seas:chests/victory_frigate/victory_frigate_normal_lower": 2,
+    "underground_bunker:chests/underground_bunker/underground_bunker_treasure": 2
+  }
+}

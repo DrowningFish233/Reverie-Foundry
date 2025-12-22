@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "irons_restrictions:fragment"
+    },
+    "B": {
+      "item": "kubejs:magic_fluorite"
+    }
+  },
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "result": {
+    "components": {
+      "irons_restrictions:school_component": "kubejs:dream"
+    },
+    "count": 1,
+    "id": "irons_restrictions:manuscript"
+  }
+}

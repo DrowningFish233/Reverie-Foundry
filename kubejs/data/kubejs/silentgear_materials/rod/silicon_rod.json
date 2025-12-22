@@ -1,0 +1,46 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:silicon_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#7a838b",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:silicon_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "rarity": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "enchantment_value": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.25
+            },
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.15
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:silicon_rod"
+                }
+            ]
+        }
+    }
+}

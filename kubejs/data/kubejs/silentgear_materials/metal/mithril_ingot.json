@@ -1,0 +1,60 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "irons_spellbooks:mithril_ingot"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#bdf3f3",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.irons_spellbooks:mithril_ingot"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:main": {
+            "armor": 20.0,
+            "armor/boots": 4.0,
+            "armor/chestplate": 8.0,
+            "armor/helmet": 4.0,
+            "armor/leggings": 4.0,
+            "armor_durability": 40.0,
+            "armor_toughness": 8.0,
+            "attack_damage": 9.0,
+            "attack_speed": 0.0,
+            "charging_value": 1.0,
+            "durability": 1200.0,
+            "enchantment_value": 100.0,
+            "harvest_speed": 10.0,
+            "harvest_tier": {
+                "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
+                "level_hint": "4",
+                "name": "netherite/下界合金"
+            },
+            "magic_armor": 24.0,
+            "projectile_speed": 5.0,
+            "rarity": 100.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:arcane_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:mithril_ingot"
+                }
+            ]
+        }
+    }
+}

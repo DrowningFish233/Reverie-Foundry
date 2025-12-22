@@ -1,0 +1,52 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:xelkive_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#a1eae0",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:xelkive_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "rarity": {
+                "operation": "ADD",
+                "value": 20
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.6
+            },
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.25
+            },
+            "attack_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "magic_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.15
+            },
+            "magic_armor": {
+                "operation": "ADD",
+                "value": 4
+            },
+            "traits": []
+        }
+    }
+}

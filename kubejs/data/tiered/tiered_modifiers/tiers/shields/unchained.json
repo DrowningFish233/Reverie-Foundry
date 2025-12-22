@@ -1,0 +1,33 @@
+{
+  "weight": 1,
+  "reforge_experience_cost": 3,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "dark_red"
+  },
+  "attributes": [
+    {
+      "type": "generic.armor",
+      "modifier": {
+        "id": "tiered:unchained_0",
+        "operation": "ADD_VALUE",
+        "amount": -2
+      },
+      "optional_equipment_slots": [
+        "OFFHAND"
+      ]
+    },
+    {
+      "type": "generic.attack_damage",
+      "modifier": {
+        "id": "tiered:unchained_1",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.25
+      },
+      "optional_equipment_slots": [
+        "OFFHAND"
+      ]
+    }
+  ]
+}

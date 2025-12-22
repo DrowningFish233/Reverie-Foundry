@@ -1,0 +1,37 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:acril_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#e5dda7",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:acril_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "armor_toughness": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "traits": []
+        }
+    }
+}

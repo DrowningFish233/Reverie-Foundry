@@ -1,0 +1,58 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal",
+            "ballistic_plate"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:lunium_nova_plate"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#a2ebc4",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:lunium_nova_plate"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:lining": {
+            "armor": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "armor_toughness": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:lunium_nova"
+                },
+                {
+                    "conditions": [
+                        {
+                            "type": "silentgear:material_ratio",
+                            "ratio": 0.3
+                        }
+                    ],
+                    "level": 2,
+                    "trait": "silentgear:moonwalker"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:lunium_nova_ingot"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "loot_table": "lootintegrations:chests/easy",
+  "max_result_itemcount": 8,
+  "integrated_loot_tables": {
+    "imst:airship": 2,
+    "imst:balloon": 2,
+    "imst:bandit_camp": 2
+  }
+}

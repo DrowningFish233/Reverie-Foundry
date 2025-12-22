@@ -1,0 +1,63 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "iceandfire:dragonsteel_ice_ingot"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#79c5d2",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.iceandfire:dragonsteel_ice_ingot"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 30.0,
+      "armor_toughness": 20.0,
+      "armor/boots": 5.0,
+      "armor/chestplate": 11.0,
+      "armor/helmet": 6.0,
+      "armor/leggings": 8.0,
+      "armor_durability": 50.0,
+      "attack_damage": 16.0,
+      "attack_speed": 0.2,
+      "charging_value": 1.3,
+      "durability": 4000.0,
+      "enchantment_value": 25.0,
+      "harvest_speed": 10.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
+        "level_hint": "4",
+        "name": "netherite/下界合金"
+      },
+      "magic_armor": 18.0,
+      "magic_damage": 5.0,
+      "projectile_accuracy": 1.2,
+      "ranged_damage": 3.0,
+      "rarity": 85.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dragonsteel_ice_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "kubejs:dragonskill"
+        }
+      ]
+    }
+  }
+}

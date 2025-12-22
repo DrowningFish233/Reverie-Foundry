@@ -1,0 +1,44 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:kunzite"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#ff89cc",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:kunzite"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "durability": 200.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "traits": []
+    },
+    "silentgear:setting": {
+      "traits": []
+    },
+    "silentgear:tip": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 1.4
+      }
+    }
+  }
+}

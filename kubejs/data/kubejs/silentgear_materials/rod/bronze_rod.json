@@ -1,0 +1,51 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:bronze_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#fbfbc7",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:bronze_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 3
+            },
+            "attack_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "enchantment_value": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:dropped_experience"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:sharp"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:viculeam_rod"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#9c0058",
+        "main_texture_type": "HIGH_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:viculeam_rod"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:rod": {
+            "attack_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.1
+            },
+            "harvest_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.2
+            },
+            "ranged_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.1
+            },
+            "traits": []
+        }
+    }
+}

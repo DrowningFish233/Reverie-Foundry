@@ -1,0 +1,43 @@
+{
+    "type": "silentgear:simple",
+    "parent": "silentgear:empty",
+    "crafting": {
+        "can_salvage": true,
+        "categories": [
+            "metal_fiber"
+        ],
+        "gear_type_blacklist": [],
+        "ingredient": {
+            "item": "kubejs:silver_wire"
+        },
+        "part_substitutes": {}
+    },
+    "display": {
+        "color": "#838383",
+        "main_texture_type": "LOW_CONTRAST",
+        "name": {
+            "translate": "material.silentgear.kubejs:silver_wire"
+        },
+        "name_prefix": ""
+    },
+    "properties": {
+        "silentgear:binding": {},
+        "silentgear:cord": {
+            "ranged_damage": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": -0.05
+            },
+            "draw_speed": {
+                "operation": "MULTIPLY_TOTAL",
+                "value": 0.05
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:malleable"
+                }
+            ]
+        }
+    }
+}
