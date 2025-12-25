@@ -8,10 +8,12 @@ PlayerEvents.loggedIn(event => {
     event.server.scheduleInTicks(5, () => {
         $CooldownManager.cleanupPlayer(player);
         console.log("[进入世界]已对冷却进行清理!");
+        /*
         FilesJS.watchDirectory('kubejs/data/kubejs/silentgear_materials', (changedPath) => {
             console.log('文件已更改:', changedPath);
             generatePatchouliEntries();
         });
+        */
         loggedInplayersanity(player);
         updateplayersanity(player, player_sanity);
     });

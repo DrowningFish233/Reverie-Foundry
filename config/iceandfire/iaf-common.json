@@ -1,13 +1,12 @@
 {
   "dragon": {
-    "maxHealth": 500.0,
+    "maxHealth": 800.0,
     "eggBornTime": 7200,
     "maxPathingNodes": 5000,
     "villagersFear": true,
     "animalsFear": true,
-    "": {},
     "generate.skeletons": true,
-    "generate.skeletonChance": 0.002,
+    "generate.skeletonChance": 0.001,
     "generate.denGoldAmount": 0.3,
     "generate.oreRatio": 0.022222222222222223,
     "griefing": true,
@@ -25,8 +24,8 @@
     "sleep": true,
     "digWhenStuck": true,
     "breakBlockCooldown": 5,
-    "targetSearchLength": 128,
-    "wanderFromHomeDistance": 30,
+    "targetSearchLength": 96,
+    "wanderFromHomeDistance": 26,
     "hungerTickRate": 3000,
     "blockBreakingDropChance": 0.0,
     "explosiveBreath": true,
@@ -128,7 +127,8 @@
   "ghost": {
     "maxHealth": 30.0,
     "attackDamage": 3.0,
-    "fromPlayerDeaths": true
+    "fromPlayerDeaths": true,
+    "alwaysSpawnFromChest": false
   },
   "tools": {
     "dragonFireAbility": true,
@@ -139,7 +139,6 @@
     "dragonsteelFrozenDuration": 300,
     "dragonBloodFrozenDuration": 100,
     "phantasmalBladeAbility": true,
-    "": {},
     "dragonLightningSearchRange": 10.0,
     "dragonLightningDamageReduction": 0.5,
     "dragonLightningMaxSearchCount": 10
@@ -178,6 +177,5 @@
   "misc": {
     "enableDragonSeeker": true,
     "dreadQueenMaxHealth": 750.0
-  },
-  "version": 3
+  }
 }

@@ -29,16 +29,35 @@
         "level_hint": "2",
         "name": "iron"
       },
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:twin_shadows"
+        }
+      ]
     },
     "silentgear:setting": {
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:twin_shadows"
+        }
+      ]
     },
     "silentgear:tip": {
       "harvest_speed": {
         "operation": "MULTIPLY_TOTAL",
         "value": 1.4
-      }
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:twin_shadows"
+        }
+      ]
     }
   }
 }

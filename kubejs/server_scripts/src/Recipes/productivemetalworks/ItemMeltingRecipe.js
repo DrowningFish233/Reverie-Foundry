@@ -135,5 +135,14 @@ ServerEvents.recipes(event => {
     register(new ItemMeltingRecipe("kubejs:berkelium_ingot", 1000, 0, {}).setResult("kubejs:berkelium", 90));
     register(new ItemMeltingRecipe("kubejs:zirconium_ingot", 1000, 0, {}).setResult("kubejs:zirconium", 90));
     register(new ItemMeltingRecipe("alltheores:fluorite", 1000, 0, {}).setResult("kubejs:fluorite", 90));
+    register(new ItemMeltingRecipe("kubejs:blood_orb", 1000, 0, {}).setResult("kubejs:blood_orb", 30));
+    register(new ItemMeltingRecipe("kubejs:tellurium_nugget", 1000, 0, {}).setResult("kubejs:tellurium", 10));
+    register(new ItemMeltingRecipe("kubejs:europium_nugget", 1000, 0, {}).setResult("kubejs:europium", 10));
+    register(new ItemMeltingRecipe("kubejs:titanium_nugget", 1000, 0, {}).setResult("kubejs:titanium", 10));
+    register(new ItemMeltingRecipe("malum:soul_stained_steel_ingot", 1000, 0, {}).setResult("kubejs:soul_stained_steel", 90));
+    register(new ItemMeltingRecipe("malum:soul_stained_steel_plating", 1000, 0, {}).setResult("kubejs:soul_stained_steel", 130));
+    register(new ItemMeltingRecipe("malum:soul_stained_steel_nugget", 1000, 0, {}).setResult("kubejs:soul_stained_steel", 10));
+    register(new ItemMeltingRecipe("malum:block_of_soul_stained_steel", 1000, 0, {}).setResult("kubejs:soul_stained_steel", 810));
+    register(new ItemMeltingRecipe("irons_spellbooks:mithril_ingot", 1000, 0, {}).setResult("kubejs:mithril", 90));
 
 });

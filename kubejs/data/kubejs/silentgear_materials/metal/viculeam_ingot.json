@@ -48,7 +48,23 @@
       "magic_damage": 4.0,
       "ranged_damage": 2.2,
       "rarity": 65.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "kubejs:high_health"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:greedy"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        }
+      ]
     }
   }
 }

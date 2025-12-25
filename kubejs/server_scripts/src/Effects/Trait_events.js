@@ -130,6 +130,7 @@ function allthe_sin_event(event) {
  * 词缀效果
  */
 function affix_event(event) {
+    high_health(event);
     vorant_ingot(event);
     gobber(event);
     gobberhurt(event);
@@ -235,7 +236,7 @@ PlayerEvents.tick(event => {
     if (tick % 43 === 0) {
         lunium_nova(event, player);
         fiery_tears(event, player, tick)
-
+        cosmos_aurora_ingot(event, player)
     }
     if (tick % 41 === 0) {
         lacrima(event, player);

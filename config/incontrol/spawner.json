@@ -321,5 +321,102 @@
                 ]
             }
         }
+    },
+    {
+        "mob": [
+            "endermanoverhaul:warped_forest_enderman"
+        ],
+        "persecond": 1,
+        "attempts": 2,
+        "amount": {
+            "minimum": 2,
+            "maximum": 3
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "mindist": 16,
+            "maxdist": 32,
+            "minheight": 0,
+            "maxheight": 120,
+            "maxthis": 6,
+            "and": {
+                "biome": [
+                    "minecraft:warped_forest"
+                ]
+            }
+        }
+    },
+    {
+        "mob": [
+            "endermanoverhaul:warped_forest_enderman"
+        ],
+        "persecond": 1,
+        "attempts": 2,
+        "amount": {
+            "minimum": 2,
+            "maximum": 3
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "mindist": 16,
+            "maxdist": 32,
+            "minheight": 0,
+            "maxheight": 120,
+            "maxthis": 6,
+            "and": {
+                "biome": [
+                    "minecraft:warped_forest"
+                ]
+            }
+        }
+    },
+    {
+        "mob": [
+            "endermanoverhaul:crimson_forest_enderman"
+        ],
+        "persecond": 1,
+        "attempts": 2,
+        "amount": {
+            "minimum": 2,
+            "maximum": 3
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "mindist": 16,
+            "maxdist": 32,
+            "minheight": 0,
+            "maxheight": 120,
+            "maxthis": 6,
+            "and": {
+                "biome": [
+                    "minecraft:crimson_forest"
+                ]
+            }
+        }
+    },
+    {
+        "mob": [
+            "endermanoverhaul:flower_fields_enderman"
+        ],
+        "persecond": 2,
+        "attempts": 4,
+        "amount": {
+            "minimum": 2,
+            "maximum": 3
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "mindist": 20,
+            "maxdist": 80,
+            "minheight": 15,
+            "maxheight": 200,
+            "maxthis": 12,
+            "and": {
+                "seesky": true,
+                "biome": [
+                    "minecraft:flower_forest"
+                ]
+            }
+        }
     }
 ]

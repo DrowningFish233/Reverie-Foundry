@@ -4,6 +4,7 @@
     "minecraft:falling_anvil",
     "minecraft:falling_stalactite",
     "kubejs:wrath",
-    "kubejs:bleed"
+    "kubejs:bleed",
+    "kubejs:rod_of_discord"
   ]
 }

@@ -29,6 +29,7 @@
     "minecraft:campfire",
     "kubejs:wrath",
     "kubejs:bleed",
-    "kubejs:dream_magic"
+    "kubejs:dream_magic",
+    "kubejs:rod_of_discord"
   ]
 }

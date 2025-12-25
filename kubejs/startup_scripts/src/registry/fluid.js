@@ -82,7 +82,10 @@ let fluids = [
     { id: 'gobber2', color: 0x67b1e5 },
     { id: 'gobber2_nether', color: 0xaf3d6a },
     { id: 'gobber2_end', color: 0x95f3b5 },
-    { id: 'fluorite', color: 0xeda4db }
+    { id: 'fluorite', color: 0xeda4db },
+    { id: 'blood_orb', color: 0x9c1f2f },
+    { id: 'soul_stained_steel', color: 0x5A1F6B },
+    { id: 'mithril', color: 0xBBF0F0 }
 
 ];
 

@@ -1,0 +1,18 @@
+{
+    "conditions": [],
+    "description": {
+        "translate": "trait.silentgear.hunger.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:cancel_effects",
+            "cleared_effects": [
+                "minecraft:hunger"
+            ]
+        }
+    ],
+    "max_level": 1,
+    "name": {
+        "translate": "trait.silentgear.hunger"
+    }
+}

@@ -275,7 +275,7 @@ ServerEvents.recipes(event => {
         {
             A: 'malum:refined_soulstone',
             B: 'irons_spellbooks:blank_rune',
-            C: 'malum:stripped_soulwood_log'
+            C: '#malum:soulwood_logs'
         }
     )
     event.shaped(
@@ -291,6 +291,7 @@ ServerEvents.recipes(event => {
             C: 'biomesoplenty:unmapped_end_stone'
         }
     )
+    /*
     event.shaped(
         Item.of('naraka:imitation_gold_block', 1),
         [
@@ -303,6 +304,7 @@ ServerEvents.recipes(event => {
             B: 'minecraft:yellow_dye',
         }
     )
+    */
     event.shaped(
         Item.of('refinedstorage:creative_controller', 1),
         [
@@ -406,6 +408,122 @@ ServerEvents.recipes(event => {
             A: 'silentgems:citrine',
             B: '#c:gems/quartz',
             C: 'minecraft:amethyst_shard'
+        }
+    )
+    event.shaped(
+        Item.of('kubejs:celeslar_ingot', 1),
+        [
+            'AEA',
+            'CBD',
+            'AAA'
+        ],
+        {
+            A: 'eternal_starlight:raw_aethersent',
+            B: 'eternal_starlight:starcore',
+            C: 'eternal_starlight:red_starlight_crystal_shard',
+            D: 'eternal_starlight:blue_starlight_crystal_shard',
+            E: 'eternal_starlight:starlit_diamond'
+        }
+    )
+    event.shaped(
+        Item.of('kubejs:tellurium_ingot', 1),
+        [
+            'AAA',
+            'AAA',
+            'AAA'
+        ],
+        {
+            A: 'kubejs:tellurium_nugget',
+        }
+    )
+    event.shaped(
+        Item.of('kubejs:europium_ingot', 1),
+        [
+            'AAA',
+            'AAA',
+            'AAA'
+        ],
+        {
+            A: 'kubejs:europium_nugget'
+        }
+    )
+    event.shaped(
+        Item.of('kubejs:titanium_ingot', 1),
+        [
+            'AAA',
+            'AAA',
+            'AAA'
+        ],
+        {
+            A: 'kubejs:titanium_nugget'
+        }
+    )
+    event.shaped(
+        Item.of('kubejs:cosmos_aurora_ingot', 1),
+        [
+            ' BB',
+            'ACB',
+            'AA '
+        ],
+        {
+            A: 'kubejs:soul_of_light',
+            B: 'kubejs:soul_of_night',
+            C: 'eternal_starlight:aethersent_ingot'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:xelkive_ingot', 1),
+        [
+            'CDC',
+            'CEC',
+            'ABA'
+        ],
+        {
+            A: 'malum:hallowed_gold_ingot',
+            B: 'hazennstuff:hallowed_ingot',
+            C: 'irons_spellbooks:divine_pearl',
+            D: 'enderscape:nebulite',
+            E: 'irons_spellbooks:mithril_ingot'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:cosmos_aurora_ingot', 1),
+        [
+            'AAA',
+            'ACA',
+            'AAA'
+        ],
+        {
+            A: 'kubejs:soul_of_light',
+            C: 'kubejs:dark_cryopla_ingot'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:dark_cryopla_ingot', 1),
+        [
+            'AAA',
+            'ACA',
+            'AAA'
+        ],
+        {
+            A: 'kubejs:soul_of_night',
+            C: 'kubejs:cosmos_aurora_ingot'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:scroll_of_friendship', 1),
+        [
+            ' A ',
+            'ACA',
+            ' A '
+        ],
+        {
+            C: 'irons_restrictions:fragment',
+            A: 'create:experience_nugget'
         }
     )
 })

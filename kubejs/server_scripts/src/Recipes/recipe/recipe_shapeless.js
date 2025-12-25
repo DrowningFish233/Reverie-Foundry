@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('kubejs:magic_fluorite', 1),
         [
-            'hazennstuff:deus_essence',
+            'malum:refined_brilliance',
             'alltheores:fluorite'
         ]
     )
@@ -48,5 +48,31 @@ ServerEvents.recipes(event => {
             'iceandfire:manuscript'
         ]
     )
-
+    event.shapeless(
+        Item.of('kubejs:yttrium_ingot', 1),
+        [
+            'alltheores:sulfur',
+            '#c:salt'
+        ]
+    )
+    event.shapeless(
+        Item.of('hazennstuff:deus_essence', 1),
+        [
+            'illagerinvasion:primal_essence'
+        ]
+    )
+    event.shapeless(
+        Item.of('create:refined_radiance', 1),
+        [
+            '3x kubejs:soul_of_light',
+            'create:chromatic_compound'
+        ]
+    )
+    event.shapeless(
+        Item.of('create:shadow_steel', 1),
+        [
+            '3x kubejs:soul_of_night',
+            'create:chromatic_compound'
+        ]
+    )
 })

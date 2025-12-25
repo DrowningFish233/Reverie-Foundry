@@ -51,10 +51,22 @@
       "ranged_damage": 3.0,
       "rarity": 140.0,
       "repair_value": 0.4,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:kitty_vision"
+        }
+      ]
     },
     "silentgear:setting": {
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:kitty_vision"
+        }
+      ]
     },
     "silentgear:tip": {
       "durability": {
@@ -72,7 +84,14 @@
       "projectile_accuracy": {
         "operation": "ADD",
         "value": 0.1
-      }
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:kitty_vision"
+        }
+      ]
     }
   }
 }

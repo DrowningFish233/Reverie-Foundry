@@ -51,10 +51,32 @@
             "ranged_damage": 0.0,
             "rarity": 0.0,
             "repair_value": 0.0,
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:topaz"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:amber"
+                }
+            ]
         },
         "silentgear:setting": {
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:topaz"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:amber"
+                }
+            ]
         },
         "silentgear:tip": {
             "durability": {
@@ -68,7 +90,19 @@
             "magic_damage": {
                 "operation": "ADD",
                 "value": 1.0
-            }
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:topaz"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:amber"
+                }
+            ]
         }
     }
 }

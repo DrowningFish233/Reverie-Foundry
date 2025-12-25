@@ -48,7 +48,13 @@
       "magic_damage": 2.0,
       "ranged_damage": 0.0,
       "rarity": 65.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:systemtime"
+        }
+      ]
     }
   }
 }

@@ -51,10 +51,22 @@
       "ranged_damage": 0.0,
       "rarity": 70.0,
       "repair_value": 0.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:emerald"
+        }
+      ]
     },
     "silentgear:setting": {
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:emerald"
+        }
+      ]
     },
     "silentgear:tip": {
       "durability": {
@@ -64,7 +76,14 @@
       "harvest_speed": {
         "operation": "ADD",
         "value": 6.0
-      }
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:emerald"
+        }
+      ]
     }
   }
 }

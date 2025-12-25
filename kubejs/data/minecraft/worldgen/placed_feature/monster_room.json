@@ -1,0 +1,50 @@
+{
+  "feature": {
+    "type": "minecraft:fossil",
+    "config": {
+      "max_empty_corners_allowed": 4,
+      "fossil_structures": [
+        "minecraft:monster_room/default",
+        "minecraft:monster_room/default",
+        "minecraft:monster_room/default",
+        "minecraft:monster_room/default"
+      ],
+      "overlay_structures": [
+        "minecraft:monster_room/zombie",
+        "minecraft:monster_room/zombie",
+        "minecraft:monster_room/skeleton",
+        "minecraft:monster_room/spider"
+      ],
+      "fossil_processors": "trek:mossify_50_percent",
+      "overlay_processors": "trek:mossify_50_percent"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 80
+    },
+    {
+      "type": "minecraft:count",
+      "count": 1
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "max_inclusive": {
+          "below_top": 0
+        },
+        "min_inclusive": {
+          "absolute": 0
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

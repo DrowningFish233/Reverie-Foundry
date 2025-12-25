@@ -97,7 +97,7 @@ function one_six_seven_four(event, player) {
 function exp_to_death(event, player) {
     const COOLDOWN_KEY = "exp_to_death_cd"
 
-    if (!player.hasEffect('kubejs:exp_to_death')) {
+    if (!fu_hasTraitAnywhere(player, "kubejs:exp_to_death")) {
         return
     }
 

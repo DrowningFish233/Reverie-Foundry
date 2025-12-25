@@ -51,10 +51,32 @@
       "ranged_damage": 3.0,
       "rarity": 140.0,
       "repair_value": 0.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:lucky"
+        }
+      ]
     },
     "silentgear:setting": {
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:lucky"
+        }
+      ]
     },
     "silentgear:tip": {
       "durability": {
@@ -68,7 +90,19 @@
       "harvest_speed": {
         "operation": "ADD",
         "value": 3.0
-      }
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:lucky"
+        }
+      ]
     }
   }
 }

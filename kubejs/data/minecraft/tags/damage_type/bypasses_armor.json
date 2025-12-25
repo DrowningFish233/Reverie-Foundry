@@ -19,6 +19,7 @@
     "minecraft:sonic_boom",
     "minecraft:outside_border",
     "kubejs:wrath",
-    "kubejs:bleed"
+    "kubejs:bleed",
+    "kubejs:rod_of_discord"
   ]
 }

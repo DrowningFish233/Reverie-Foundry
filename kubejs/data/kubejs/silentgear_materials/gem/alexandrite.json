@@ -52,10 +52,22 @@
       "ranged_damage": 3.0,
       "rarity": 100.0,
       "repair_value": 0.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:alexandrite"
+        }
+      ]
     },
     "silentgear:setting": {
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:alexandrite"
+        }
+      ]
     },
     "silentgear:tip": {
       "durability": {
@@ -65,7 +77,14 @@
       "attack_damage": {
         "operation": "ADD",
         "value": 1.0
-      }
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:alexandrite"
+        }
+      ]
     }
   }
 }

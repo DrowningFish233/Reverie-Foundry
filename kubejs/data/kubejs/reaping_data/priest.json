@@ -1,0 +1,13 @@
+{
+    "registry_name": "irons_spellbooks:priest",
+    "drops": [
+        {
+            "ingredient": {
+                "item": "kubejs:soul_of_light"
+            },
+            "chance": "0.3",
+            "min": "1",
+            "max": "2"
+        }
+    ]
+}

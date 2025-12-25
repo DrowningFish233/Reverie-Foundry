@@ -1,0 +1,13 @@
+{
+    "registry_name": "illagerinvasion:illusioner",
+    "drops": [
+        {
+            "ingredient": {
+                "item": "kubejs:soul_of_night"
+            },
+            "chance": "0.3",
+            "min": "1",
+            "max": "2"
+        }
+    ]
+}

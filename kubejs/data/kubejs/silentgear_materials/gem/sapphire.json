@@ -51,10 +51,22 @@
       "ranged_damage": 0.0,
       "rarity": 70.0,
       "repair_value": 0.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:promotion"
+        }
+      ]
     },
     "silentgear:setting": {
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:promotion"
+        }
+      ]
     },
     "silentgear:tip": {
       "durability": {
@@ -68,7 +80,19 @@
       "harvest_speed": {
         "operation": "ADD",
         "value": 3.0
-      }
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:promotion"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:turtle"
+        }
+      ]
     }
   }
 }

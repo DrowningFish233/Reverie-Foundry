@@ -55,6 +55,8 @@ StartupEvents.registry("creative_mode_tab", event => {
     tab.displayName = Text.translatable("item_group.kubejs.other")
     tab.content(showRestrictedItems => [
         "create:chromatic_compound",
+        "create:shadow_steel",
+        "create:refined_radiance",
         "kubejs:papyrus_scarab",
         "kubejs:fluid_sac",
         "kubejs:biomass_liquid",

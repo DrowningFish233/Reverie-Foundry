@@ -1,6 +1,4 @@
 //priority: 100
-
-
 /**
  * 随机移除一个负面效果
  */
@@ -210,4 +208,734 @@ function getplayerName(playerString) {
     const regex = /ServerPlayer\['([^']+)'/;
     const match = regex.exec(playerString);
     return match ? match[1] : "未知玩家";
+}
+
+
+function getRandomEnchantedBookId() {
+    const enchantmentsData = {
+        "enchantments": [
+            {
+                "id": "malum:animated",
+                "maxLevel": 7,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:aqua_affinity",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "malum:ascension",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "farmersdelight:backstabbing",
+                "maxLevel": 8,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:bane_of_arthropods",
+                "maxLevel": 10,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:berserkers_fury",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:binding_curse",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:blast_protection",
+                "maxLevel": 9,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:blood_mana_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:boon_of_the_earth",
+                "maxLevel": 5,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:breach",
+                "maxLevel": 8,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "malum:capacitor",
+                "maxLevel": 7,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "create:capacity",
+                "maxLevel": 6,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:cd_reduction_enchant",
+                "maxLevel": 9,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:chainsaw",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:channeling",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:chromatic",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:crescendo_of_bolts",
+                "maxLevel": 5,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:daylight_anthem_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:density",
+                "maxLevel": 10,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:depth_strider",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "dungeons_arise:discharge",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:dominion_helm_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:efficiency",
+                "maxLevel": 9,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:endless_quiver",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "dungeons_arise:ensnaring",
+                "maxLevel": 6,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:excitatio_arcana_enchant",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:fearless",
+                "maxLevel": 6,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:feather_falling",
+                "maxLevel": 11,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:fertile",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:fire_aspect",
+                "maxLevel": 5,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:fire_protection",
+                "maxLevel": 9,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:flame",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:fortune",
+                "maxLevel": 8,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:frost_walker",
+                "maxLevel": 7,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:gathering",
+                "maxLevel": 6,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:gentle_graveyard_keeper_enchant",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:glacial_sowing",
+                "maxLevel": 6,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:growth_serum",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "malum:haunted",
+                "maxLevel": 7,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:homing",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:hopeless_power_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:ice_fire_song_enchant",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:icy_thorns",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:impaling",
+                "maxLevel": 10,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:infinity",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:infusion",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:knockback",
+                "maxLevel": 5,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:knowledge_of_the_ages",
+                "maxLevel": 3,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:life_mending",
+                "maxLevel": 3,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "enderscape:lightspeed",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "dungeons_arise:lolths_curse",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:looting",
+                "maxLevel": 8,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:loyalty",
+                "maxLevel": 9,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:luck_of_the_sea",
+                "maxLevel": 8,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:lure",
+                "maxLevel": 8,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:mana_mending_enchant",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:mana_reaper_enchant",
+                "maxLevel": 9,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:max_mana_enchant",
+                "maxLevel": 9,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:mending",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:miners_fervor",
+                "maxLevel": 5,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "terra_entity:multi_boomerang",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:multishot",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:natures_blessing",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:necrovolt_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:nether_heart_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:nocturne_aria_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:ocean_grace_enchant",
+                "maxLevel": 8,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:overheat",
+                "maxLevel": 6,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:party_leader_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:phase_dashed_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:piercing",
+                "maxLevel": 8,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:poisoning",
+                "maxLevel": 8,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "create:potato_recovery",
+                "maxLevel": 6,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:power",
+                "maxLevel": 9,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:power_is_power_enchant",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:precision",
+                "maxLevel": 9,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:projectile_protection",
+                "maxLevel": 11,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:protection",
+                "maxLevel": 8,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:punch",
+                "maxLevel": 5,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "dungeons_arise:purification",
+                "maxLevel": 4,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:quick_charge",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "enderscape:rebound",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "malum:rebound",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:rebounding",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:red_lotus_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:reflective_defenses",
+                "maxLevel": 7,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "malum:replenishing",
+                "maxLevel": 7,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:respiration",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "ftboceanmobs:rift_disruptor",
+                "maxLevel": 10,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:riptide",
+                "maxLevel": 9,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:scavenger",
+                "maxLevel": 3,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:sharpness",
+                "maxLevel": 9,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:shield_bash",
+                "maxLevel": 7,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:silk_touch",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:smite",
+                "maxLevel": 10,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:soul_snatcher",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:soul_speed",
+                "maxLevel": 7,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:spell_streak_enchant",
+                "maxLevel": 9,
+                "maxLootLevel": 5,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "malum:spirit_plunder",
+                "maxLevel": 6,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:stable_footing",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:sweeping_edge",
+                "maxLevel": 8,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:swift_sneak",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:tearing",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:tempting",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:thorns",
+                "maxLevel": 5,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "eternal_starlight:tracing",
+                "maxLevel": 6,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "enderscape:transdimensional",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:unbreaking",
+                "maxLevel": 8,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:vanishing_curse",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:vlad_tepes_enchant",
+                "maxLevel": 8,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "dungeons_arise:voltaic_shot",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "malum:weavers_haste",
+                "maxLevel": 8,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "malum:weavers_propagation",
+                "maxLevel": 8,
+                "maxLootLevel": 4,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "terra_entity:whip_sweep",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "minecraft:wind_burst",
+                "maxLevel": 8,
+                "maxLootLevel": 3,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "apothic_enchanting:worker_exploitation",
+                "maxLevel": 1,
+                "maxLootLevel": 1,
+                "forcedLevelCap": -1
+            },
+            {
+                "id": "majospellenchantment:zoophony_enchant",
+                "maxLevel": 7,
+                "maxLootLevel": 2,
+                "forcedLevelCap": -1
+            }
+        ]
+    };
+    const Enchantments = enchantmentsData.enchantments.map(e => e.id);
+
+    const randomIndex = Math.floor(Math.random() * Enchantments.length);
+    const randomEnchantmentId = Enchantments[randomIndex];
+
+    const enchantmentConfig = enchantmentsData.enchantments.find(e => e.id === randomEnchantmentId);
+
+    const maxLevel = enchantmentConfig.forcedLevelCap > 0 ?
+        Math.min(enchantmentConfig.forcedLevelCap, enchantmentConfig.maxLevel) :
+        enchantmentConfig.maxLevel;
+
+    const randomLevel = Math.floor(Math.random() * maxLevel) + 1;
+
+    return `minecraft:enchanted_book[stored_enchantments={levels:{"${randomEnchantmentId}":${randomLevel}}}]`;
 }

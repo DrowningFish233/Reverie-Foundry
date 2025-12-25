@@ -42,6 +42,11 @@
                     "conditions": [],
                     "level": 2,
                     "trait": "silentgear:flutter"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:ponder_up"
                 }
             ]
         }

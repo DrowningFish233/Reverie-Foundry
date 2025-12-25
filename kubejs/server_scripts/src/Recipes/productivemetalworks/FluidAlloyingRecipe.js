@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("productivemetalworks:molten_steel", 45),
+                createFluidTag("c:molten_steel", 45),
                 createFluid("productivemetalworks:molten_quartz", 45)
             ],
             {
@@ -307,6 +307,35 @@ ServerEvents.recipes(event => {
             {
                 amount: 90,
                 id: "kubejs:strontium"
+            },
+            6
+        )
+    );
+
+    register(
+        new FluidAlloyingRecipe(
+            [
+                createFluid("kubejs:blood_orb", 40),
+                createFluidTag("c:molten_steel", 30),
+                createFluidTag("kubejs:blood", 20)
+            ],
+            {
+                amount: 90,
+                id: "kubejs:vibranite"
+            },
+            6
+        )
+    );
+    register(
+        new FluidAlloyingRecipe(
+            [
+                createFluid("productivemetalworks:molten_netherite", 30),
+                createFluid("kubejs:mithril", 30),
+                createFluid("kubejs:soul_stained_steel", 30)
+            ],
+            {
+                amount: 90,
+                id: "kubejs:ultimate"
             },
             6
         )

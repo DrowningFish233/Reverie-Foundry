@@ -48,7 +48,13 @@
       "magic_damage": 4.0,
       "ranged_damage": 0.0,
       "rarity": 75.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:six_life_death_set"
+        }
+      ]
     }
   }
 }

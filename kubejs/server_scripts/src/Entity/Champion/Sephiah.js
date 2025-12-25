@@ -15,13 +15,15 @@ ChampionsJs.addSephiahName(event => {
   }
 });
 
+
+
 // 根据击杀数返回固定的 Sephirah 名称
 function getSephirahName(killCount) {
-  // 从最高阶向最低阶检查（确保优先匹配高阶）
-  for (let sephirah of SEPHIRAH_NAMES.reverse()) {
+  for (var i = SEPHIRAH_NAMES.length - 1; i >= 0; i--) {
+    var sephirah = SEPHIRAH_NAMES[i];
     if (killCount >= sephirah.minKills) {
       return sephirah.name;
     }
   }
-  return "Malchut"; // 默认Malchut
+  return "Malchut";
 }

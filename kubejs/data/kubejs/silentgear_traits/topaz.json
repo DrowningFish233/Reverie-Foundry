@@ -22,7 +22,7 @@
         "translate": "trait.silentgear.topaz.desc"
     },
     "effects": [],
-    "max_level": 1,
+    "max_level": 3,
     "name": {
         "translate": "trait.silentgear.topaz"
     }

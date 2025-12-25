@@ -586,10 +586,10 @@ const TraitConfigs = {
         }
     },
 */
-    bribery: {
-        id: "kubejs:wip",
+    high_health: {
+        id: "kubejs:high_health",
         config: (trait) => {
-            trait.setMaxLevel(1)
+            trait.setMaxLevel(5)
                 .addConditions([
                     trait.createOrCondition([
                         trait.createGearTypeCondition("silentgear:armor"),
@@ -597,6 +597,15 @@ const TraitConfigs = {
                         trait.createGearTypeCondition("silentgear:curio")
                     ])
                 ])
+            /*
+            .addAttribute([
+                trait.createAttributeValue(
+                    "irons_spellbooks:lightning_spell_power",
+                    "add_multiplied_base",
+                    [0.1]
+                )
+            ])
+            */
         }
     }
 }

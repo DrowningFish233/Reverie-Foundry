@@ -21,43 +21,7 @@
     "description": {
         "translate": "trait.silentgear.lacrima.desc"
     },
-    "effects": [
-        {
-            "type": "silentgear:wielder_effect",
-            "potion_effects": {
-                "silentgear:armor": [
-                    {
-                        "type": "full_set_only",
-                        "duration": 38,
-                        "effect": "kubejs:lacrima",
-                        "levels": [
-                            1
-                        ]
-                    }
-                ],
-                "silentgear:tool": [
-                    {
-                        "type": "trait_level",
-                        "duration": 38,
-                        "effect": "kubejs:lacrima",
-                        "levels": [
-                            1
-                        ]
-                    }
-                ],
-                "silentgear:curio": [
-                    {
-                        "type": "trait_level",
-                        "duration": 38,
-                        "effect": "kubejs:lacrima",
-                        "levels": [
-                            1
-                        ]
-                    }
-                ]
-            }
-        }
-    ],
+    "effects": [],
     "max_level": 1,
     "name": {
         "translate": "trait.silentgear.lacrima"

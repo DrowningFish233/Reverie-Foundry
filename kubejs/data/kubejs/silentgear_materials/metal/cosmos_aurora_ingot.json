@@ -48,7 +48,18 @@
       "magic_damage": 2.0,
       "ranged_damage": 0.0,
       "rarity": 65.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:cosmos_aurora_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:combustion_boost"
+        }
+      ]
     }
   }
 }

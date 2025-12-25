@@ -14,6 +14,7 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of('eternal_starlight:sonar_bomb').withWeight(30).setCount([1, 2]));
             pool.addEntry(LootEntry.of('eternal_starlight:frozen_bomb').withWeight(30).setCount([1, 2]));
             pool.addEntry(LootEntry.of('farmersdelight:rope').withWeight(30).setCount([4, 12]));
+            pool.addEntry(LootEntry.of('silentgear:phantom_light').withWeight(30).setCount([1, 2]));
             pool.rolls([1, 2]);
         });
 

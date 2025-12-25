@@ -193,40 +193,40 @@
 	#Weight for Malchut
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	malchut = 1.1
+	malchut = 1.0
 	#Weight for Yesod
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	yesod = 1.2
+	yesod = 1.4
 	#Weight for Hod
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	hod = 1.3
+	hod = 1.6
 	#Weight for Netzach
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	netzach = 1.4
+	netzach = 1.8
 	#Weight for Tiphereth
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	tiphereth = 1.5
+	tiphereth = 2
 	#Weight for Geburah
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	geburah = 1.6
+	geburah = 2.2
 	#Weight for Chesed
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	chesed = 1.7
+	chesed = 2.4
 	#Weight for Binah
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	binah = 1.8
+	binah = 2.6
 	#Weight for Cochma
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	cochma = 1.9
+	cochma = 2.8
 	#Weight for Kether
 	# Default: 10.0
 	# Range: 0.0 ~ 1.7976931348623157E308
-	kether = 2
+	kether = 3

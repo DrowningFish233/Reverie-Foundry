@@ -74,12 +74,12 @@ LootJS.modifiers(event => {
         "terra_entity:golden_slime"
     ]).addLoot(LootEntry.of("eternal_starlight:starlight_silver_coin")
         .apply(item => {
-            item.setCount(Math.floor(Math.random() * 9) + 2);
+            item.setCount({ min: 2, max: 10 });
         })
         .randomChance(0.6)
     ).addLoot(LootEntry.of('minecraft:emerald')
         .apply(item => {
-            item.setCount(Math.floor(Math.random() * 10) + 3);
+            item.setCount({ min: 3, max: 12 });
         })
         .randomChance(0.8)
     );
@@ -88,7 +88,7 @@ LootJS.modifiers(event => {
         "terra_entity:devourer"
     ]).addLoot(LootEntry.of("minecraft:rotten_flesh")
         .apply(item => {
-            item.setCount(Math.floor(Math.random() * 3) + 1);
+            item.setCount({ min: 1, max: 3 });
         })
         .randomChance(0.9)
     );
@@ -97,7 +97,7 @@ LootJS.modifiers(event => {
         "minecraft:cave_spider"
     ]).addLoot(LootEntry.of("alshanex_familiars:spider_fang")
         .apply(item => {
-            item.setCount(1);
+            item.setCount({ min: 1, max: 1 });
         })
         .randomChance(0.5)
     );
@@ -106,7 +106,7 @@ LootJS.modifiers(event => {
         "irons_spellbooks:priest"
     ]).addLoot(LootEntry.of('kubejs:lava_bible')
         .apply(item => {
-            item.setCount(1);
+            item.setCount({ min: 1, max: 1 });
         })
         .randomChance(0.3)
     );
@@ -115,7 +115,7 @@ LootJS.modifiers(event => {
         "irons_spellbooks:apothecarist"
     ]).addLoot(LootEntry.of('kubejs:lava_bible')
         .apply(item => {
-            item.setCount(1);
+            item.setCount({ min: 1, max: 1 });
         })
         .randomChance(0.45)
     );
@@ -125,7 +125,7 @@ LootJS.modifiers(event => {
         "irons_spellbooks:cryomancer"
     ]).addLoot(LootEntry.of('kubejs:lava_bible')
         .apply(item => {
-            item.setCount(1);
+            item.setCount({ min: 1, max: 1 });
         })
         .randomChance(0.6)
     );
@@ -134,7 +134,7 @@ LootJS.modifiers(event => {
         "irons_spellbooks:necromancer"
     ]).addLoot(LootEntry.of('kubejs:lava_bible')
         .apply(item => {
-            item.setCount(1);
+            item.setCount({ min: 1, max: 1 });
         })
         .randomChance(0.2)
     );
@@ -143,16 +143,139 @@ LootJS.modifiers(event => {
         "irons_spellbooks:archevoker"
     ]).addLoot(LootEntry.of('kubejs:lava_bible')
         .apply(item => {
-            item.setCount(1);
+            item.setCount({ min: 1, max: 1 });
         })
         .randomChance(0.4)
     );
+
     event.addEntityModifier([
         "deathtaxes:scavenger"
     ]).addLoot(LootEntry.of('kubejs:raw_manflesh')
         .apply(item => {
-            item.setCount(1);
+            item.setCount({ min: 1, max: 1 });
         })
         .randomChance(0.4)
+    );
+
+    event.addEntityModifier([
+        "terra_entity:visual_neuron"
+    ]).addLoot(LootEntry.of('kubejs:blood_orb')
+        .apply(item => {
+            item.setCount({ min: 1, max: 2 });
+        })
+        .randomChance(0.4)
+    );
+
+    event.addEntityModifier([
+        "terra_entity:brain_of_cthulhu"
+    ]).addLoot(LootEntry.of('kubejs:blood_orb')
+        .apply(item => {
+            item.setCount({ min: 8, max: 13 });
+        })
+    );
+
+    event.addEntityModifier([
+        "terra_entity:eye_of_cthulhu"
+    ]).addLoot(LootEntry.of('kubejs:xeproda_ingot')
+        .apply(item => {
+            item.setCount({ min: 2, max: 4 });
+        })
+    );
+
+    event.addEntityModifier([
+        "terra_entity:snow_flinx"
+    ]).addLoot(LootEntry.of('hazennstuff:permafrost_fragment')
+        .apply(item => {
+            item.setCount({ min: 1, max: 2 })
+        })
+    );
+
+    event.addEntityModifier([
+        "terra_entity:queen_bee"
+    ]).addLoot(LootEntry.of('kubejs:solimrith_ingot')
+        .apply(item => {
+            item.setCount({ min: 1, max: 3 })
+        })
+    );
+
+    event.addEntityModifier([
+        "terra_entity:skeletron"
+    ]).addLoot(LootEntry.of('kubejs:viculeam_ingot')
+        .apply(item => {
+            item.setCount({ min: 2, max: 5 })
+        })
+    );
+
+    event.addEntityModifier([
+        "bosses_of_mass_destruction:lich"
+    ]).addLoot(LootEntry.of('kubejs:plumbumanite_ingot')
+        .apply(item => {
+            item.setCount({ min: 2, max: 5 })
+        })
+    );
+    event.addEntityModifier([
+        "terra_entity:ghost"
+    ]).addLoot(LootEntry.of('kubejs:plumbumanite_ingot')
+        .apply(item => {
+            item.setCount({ min: 0, max: 3 })
+        })
+    );
+    event.addEntityModifier([
+        "terra_entity:king_slime"
+    ]).addLoot(LootEntry.of('gobber2:gobber2_goo')
+        .apply(item => {
+            item.setCount({ min: 1, max: 2 })
+        })
+    )
+        .addLoot(LootEntry.of('gobber2:gobber2_goo_nether')
+            .apply(item => {
+                item.setCount({ min: 1, max: 1 })
+            })
+        )
+    event.addEntityModifier([
+        "irons_spellbooks:dead_king"
+    ]).addLoot(LootEntry.of('kubejs:necroplasm')
+        .apply(item => {
+            item.setCount({ min: 7, max: 19 })
+        })
+    );
+    event.addEntityModifier([
+        "gametechbcs_spellbooks:hard_dead_king"
+    ]).addLoot(LootEntry.of('kubejs:necroplasm')
+        .apply(item => {
+            item.setCount({ min: 13, max: 48 })
+        })
+    );
+
+    event.addEntityModifier([
+        "endermanoverhaul:soulsand_valley_enderman"
+    ]).addLoot(LootEntry.of('iceandfire:ectoplasm')
+        .apply(item => {
+            item.setCount({ min: 0, max: 3 })
+        })
+    );
+
+    event.addEntityModifier([
+        "cataclysm:ender_guardian"
+    ]).addLoot(LootEntry.of('kubejs:ruinous_soul')
+        .apply(item => {
+            item.setCount({ min: 9, max: 24 })
+        })
+    );
+
+    event.addEntityModifier([
+        "cataclysm:ignis"
+    ]).addLoot(LootEntry.of('kubejs:ashes_of_calamity')
+        .apply(item => {
+            item.setCount({ min: 9, max: 24 })
+        })
+    );
+
+    event.addEntityModifier([
+        "cataclysm:ancient_remnant"
+    ]).addLoot(LootEntry.of('terra_curio:sandstorm_in_a_bottle')
+        .apply(item => {
+            item.setCount({ min: 0, max: 1 })
+        })
     );
 }); 

@@ -11,3 +11,6 @@ const $ModDamageTypes = Java.loadClass('top.theillusivec4.champions.common.regis
 const $ModRarity = Java.loadClass("org.confluence.lib.common.component.ModRarity");
 const $ConfluenceMagicLib = Java.loadClass("org.confluence.lib.ConfluenceMagicLib")
 const $Player = Java.loadClass("net.minecraft.world.entity.player.Player")
+const $SummonManager = Java.loadClass("io.redspace.ironsspellbooks.capabilities.magic.SummonManager")
+const $BloodNeedle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.blood_needle.BloodNeedle')
+const $DamageSource = Java.loadClass("net.minecraft.world.damagesource.DamageSource");

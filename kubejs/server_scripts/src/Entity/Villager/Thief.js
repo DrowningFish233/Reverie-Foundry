@@ -7,8 +7,11 @@ ThiefEvents.crimeCommited(event => {
 ThiefEvents.giftGiven(event => {
     let player = event.entity
     if (!fu_hasTraitAnywhere(player, "kubejs:bribery") || !player.isPlayer()) return
-
+    let pData = player.persistentData;
+    let Sanity = pData.getInt(sanity) || 0;
     player.heal(1)
+
+    updateplayersanity(player, Sanity + 1)
 
     player.potionEffects.add(
         "minecraft:hero_of_the_village",

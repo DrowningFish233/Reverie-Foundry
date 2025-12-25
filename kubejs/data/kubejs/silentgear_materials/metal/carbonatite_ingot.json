@@ -51,7 +51,7 @@
       "traits": [
         {
           "conditions": [],
-          "level": 1,
+          "level": 2,
           "trait": "kubejs:carbonatite_ingot"
         }
       ]

@@ -5,13 +5,13 @@ sort_books = true
 # Sort the enchantments in ascending order
 ascending_sort = true
 # Display the original order when shift pressed
-sneak_display = false
+sneak_display = true
 # Compatible mode (may cause performance losses)
 # Enabling this config will disable [show_max_level] and [highlight_treasure]
-compatible_mode = true
+compatible_mode = false
 # Properly sort the tooltip if enchantment descriptions are present
 # (Only needed if you notice issues)
-handle_description = false
+handle_description = true
 
 [Treasure]
 	# Sort the treasure enchantments independently

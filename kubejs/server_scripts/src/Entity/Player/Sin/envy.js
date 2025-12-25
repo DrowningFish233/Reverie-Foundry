@@ -7,6 +7,7 @@ PlayerEvents.tick(event => {
     let envy_number = player.persistentData.getInt("envy_number") || 0;
     if (envy_number > 0) {
         envy_number -= 1;
+        envy_number = Math.max(0, envy_number - 1);
         player.persistentData.putInt("envy_number", envy_number);
     }
 });

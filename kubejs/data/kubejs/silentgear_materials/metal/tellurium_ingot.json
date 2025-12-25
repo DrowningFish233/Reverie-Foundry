@@ -48,7 +48,18 @@
             "magic_damage": 8.0,
             "ranged_damage": 2.0,
             "rarity": 60,
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:fortunate"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:hunger"
+                }
+            ]
         }
     }
 }

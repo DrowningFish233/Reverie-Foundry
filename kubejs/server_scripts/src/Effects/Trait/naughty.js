@@ -3,8 +3,8 @@
  */
 function naughty(event) {
     const { source, entity } = event;
-    const player = source.player || source.actual;
-    if (!player.player || !entity.living || !player.hasEffect("kubejs:naughty")) {
+    const player = source.player;
+    if (!player || !player.isPlayer() || !entity.isLiving() || !player.hasEffect("kubejs:naughty")) {
         return;
     }
     const playerMaxHealth = player.getMaxHealth()

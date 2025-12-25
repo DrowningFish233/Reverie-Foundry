@@ -86,7 +86,7 @@ ICON_ROTATING_SPEED = 0.0
 # 
 # Default: 1.0
 # Range: -Infinity ~ Infinity
-SECOND_PANEL_RENDERER_SPEED = 1.0
+SECOND_PANEL_RENDERER_SPEED = 0.6
 # Divider line color. Options: 'match_inner_frame_color', 'match_item_name_color' or a hex ARGB color (e.g., 0xA0EFEFEF).
 # 
 # Default: match_inner_frame_color
@@ -119,7 +119,7 @@ CHAOS_PALETTE_COLORS = "0xFF9F373A, 0xFF81191B, 0xFF370809"
 # 
 # Default: 30
 # Range: -Infinity ~ Infinity
-SECOND_PANEL_SIZE_X = 30
+SECOND_PANEL_SIZE_X = 40
 # Size (in pixels) of the second panel in the Y axis when a 3D preview is shown.
 # 
 # Default: 60

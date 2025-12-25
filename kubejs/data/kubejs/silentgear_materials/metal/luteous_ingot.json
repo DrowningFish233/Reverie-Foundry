@@ -37,7 +37,7 @@
       "charging_value": 1.0,
       "draw_speed": 0.1,
       "durability": 2302.0,
-      "enchantment_value": 18.0,
+      "enchantment_value": 36.0,
       "harvest_speed": 10.0,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
@@ -48,7 +48,28 @@
       "magic_damage": 5.0,
       "ranged_damage": 3.0,
       "rarity": 85.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:exp_to_death"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:citrine"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "kubejs:exalted_beauty_gem"
+        }
+      ]
     }
   }
 }

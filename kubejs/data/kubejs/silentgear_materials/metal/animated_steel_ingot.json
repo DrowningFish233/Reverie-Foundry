@@ -53,6 +53,11 @@
           "conditions": [],
           "level": 1,
           "trait": "silentgear:renew"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:animated_steel_ingot"
         }
       ]
     }

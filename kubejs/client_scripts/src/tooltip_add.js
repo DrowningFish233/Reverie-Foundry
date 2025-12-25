@@ -295,16 +295,6 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.dragon_upgrade.required_items', 'blue'),
         ]
     },
-    'darkdoppelganger:shadow_orb': {
-        lines: [
-            TooltipUtils.simpleText('tooltip.shadow_orb.title', 'gray'),
-        ]
-    },
-    'darkdoppelganger:summon_scroll': {
-        lines: [
-            TooltipUtils.simpleText('tooltip.summon_scroll.title', 'gray'),
-        ]
-    },
     'betteremeralds:wallet': {
         lines: [
             TooltipUtils.simpleText('tooltip.wallet.title', 'green'),
@@ -457,11 +447,21 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.irons_restrictions.manuscript', 'yellow'),
             TooltipUtils.simpleText('tooltip.irons_restrictions.manuscript.2', 'gold'),
         ]
+    },
+    'create:refined_radiance': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.common.refined_radiance', 'blue'),
+            TooltipUtils.simpleText('tooltip.common.refined_radiance.2', 'blue'),
+        ]
     }
 };
 
 // 通用提示
 const commonTooltips = {
+    'alshanex_familiars:crystal_berry': TooltipUtils.simpleText('tooltip.common.crystal_berry', 'blue'),
+    'create:shadow_steel': TooltipUtils.simpleText('tooltip.common.shadow_steel', 'blue'),
+    'kubejs:soul_of_light': TooltipUtils.simpleText('tooltip.common.soul_of_light', 'pink_dye'),
+    'kubejs:soul_of_night': TooltipUtils.simpleText('tooltip.common.soul_of_night', 'dark_purple'),
     'create:wrench': TooltipUtils.simpleText('tooltip.common.wrench_compatibility', 'blue'),
     'refinedstorage:wrench': TooltipUtils.simpleText('tooltip.common.wrench_compatibility', 'blue'),
     'irons_spellbooks:mithril_weave': TooltipUtils.simpleText('tooltip.common.mithril_weave', 'yellow'),

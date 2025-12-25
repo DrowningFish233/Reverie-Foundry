@@ -15,6 +15,7 @@
 	"crabSpawnWeight": 14,
 	"crabSpawnMinGroupSize": 2,
 	"crabSpawnMaxGroupSize": 4,
+	"crabPotionOfReachingDuration": 3600,
 	"reachingStatusEffectModifier": 1,
 	"enableGlare": true,
 	"enableGlareSpawn": true,

@@ -10,7 +10,7 @@
   "mapVanillaElements": {
     "enderscape:debug": {
       "enabled": {
-        "value": "AUTO"
+        "value": "ON"
       },
       "pass": 4
     },
@@ -19,6 +19,12 @@
         "value": "AUTO"
       },
       "pass": 3
+    },
+    "eternal_starlight:offhand_attack_indicator": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
     },
     "create:toolbox": {
       "enabled": {
@@ -370,7 +376,7 @@
     },
     "patchouli:book_overlay": {
       "enabled": {
-        "value": "OFF"
+        "value": "ON"
       },
       "pass": 1
     },
@@ -388,7 +394,7 @@
     },
     "minecraft:chat": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 4
     }
@@ -446,7 +452,7 @@
     },
     "creativecore": {
       "enabled": {
-        "value": "AUTO"
+        "value": "ON"
       },
       "pass": 4
     },

@@ -1,7 +1,5 @@
 // priority: 999
-
-
-// 定义材料列表
+// 定义材料列表(kubejs)
 global.materials = [
     { material: 'kubejs:atalphaite' },
     { material: 'kubejs:amber' },

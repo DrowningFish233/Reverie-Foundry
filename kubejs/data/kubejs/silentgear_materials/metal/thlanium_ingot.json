@@ -53,6 +53,11 @@
           "conditions": [],
           "level": 3,
           "trait": "kubejs:chalyblux"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:enderman"
         }
       ]
     }

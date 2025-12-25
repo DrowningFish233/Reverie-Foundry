@@ -51,10 +51,22 @@
       "ranged_damage": 5.0,
       "rarity": 140.0,
       "repair_value": 0.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:citrine"
+        }
+      ]
     },
     "silentgear:setting": {
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:citrine"
+        }
+      ]
     },
     "silentgear:tip": {
       "durability": {
@@ -68,7 +80,14 @@
       "charging_value": {
         "operation": "MULTIPLY_TOTAL",
         "value": 0.1
-      }
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:citrine"
+        }
+      ]
     }
   }
 }

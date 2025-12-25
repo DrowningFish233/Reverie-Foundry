@@ -31,7 +31,14 @@ global.new_materials = [
     { id: 'corruption', maxStackSize: 64 },
     { id: 'drowning_fish', maxStackSize: 1, rarity: 'epic' },
     { id: 'lava_bible', maxStackSize: 4, rarity: 'rare' },
-    { id: 'material_patchouli_generator', maxStackSize: 1, rarity: 'epic' }
+    { id: 'material_patchouli_generator', maxStackSize: 1, rarity: 'epic' },
+    { id: 'soul_of_night', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/soul_of_night" },
+    { id: 'soul_of_light', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/soul_of_light" },
+    { id: 'necroplasm', maxStackSize: 48, rarity: 'rare', texture: "kubejs:item/misc/necroplasm" },
+    { id: 'ruinous_soul', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/ruinous_soul" },
+    { id: 'ashes_of_calamity', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/ashes_of_calamity" }
+
+
 
 ];
 
@@ -222,6 +229,18 @@ StartupEvents.registry('item', event => {
         let rodName = rod.replace('_rod', '');
         event.create(rod)
             .texture(`kubejs:item/rods/${rodName}`)
+            .maxStackSize(64);
+    });
+
+    // 粒类
+    const nuggets = [
+        'tellurium_nugget', 'europium_nugget', 'titanium_nugget'
+    ];
+
+    nuggets.forEach(nugget => {
+        let nuggetsName = nugget.replace('_nugget', '');
+        event.create(nugget)
+            .texture(`kubejs:item/nuggets/${nuggetsName}`)
             .maxStackSize(64);
     });
 

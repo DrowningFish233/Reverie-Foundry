@@ -166,4 +166,14 @@ ServerEvents.recipes(event => {
             1
         )
     );
+
+    register(
+        new ApothecInfusionRecipe(
+            "alltheores:electrum_ingot",
+            "kubejs:electrum_ingot",
+            { eterna: 20, quanta: 20, arcana: 20 },
+            { eterna: -1, quanta: -1, arcana: -1 },
+            1
+        )
+    );
 });

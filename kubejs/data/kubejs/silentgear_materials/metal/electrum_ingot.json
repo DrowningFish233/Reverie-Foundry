@@ -48,7 +48,18 @@
       "magic_damage": 6.0,
       "ranged_damage": 1.0,
       "rarity": 60.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:gift_heaven"
+        }
+      ]
     }
   }
 }

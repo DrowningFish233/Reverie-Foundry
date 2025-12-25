@@ -173,6 +173,20 @@
         },
         {
           "type": "minecraft:item",
+          "name": "kubejs:kunzite",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "kubejs:sunstone",
           "weight": 3,
           "functions": [

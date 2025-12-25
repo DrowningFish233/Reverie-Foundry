@@ -264,7 +264,6 @@ ServerEvents.tags('item', event => {
     event.add('c:gems/pearl', 'kubejs:pearl')
     event.add('c:gems/ruby', 'kubejs:ruby')
     event.add('c:gems/topaz', 'kubejs:topaz')
-    event.add('c:gems/peridot', 'kubejs:peridot')
 
     event.add('kubejs:blood',
         'irons_spellbooks:blood',
@@ -325,8 +324,49 @@ ServerEvents.tags('item', event => {
     event.add('kubejs:foods/emergency_sanity_elixir_a', 'kubejs:emergency_sanity_elixir_a')
     event.add('kubejs:foods/emergency_sanity_elixir_b', 'kubejs:emergency_sanity_elixir_b')
     event.add('kubejs:foods/emergency_sanity_elixir_y', 'kubejs:emergency_sanity_elixir_y')
+    //ore
+    event.add('minecraft:iron_ores',
+        'natures_spirit:chert_iron_ore',
+        'eternal_starlight_vo:grimstone_iron_ore',
+        'eternal_starlight_vo:haze_ice_iron_ore',
+        'eternal_starlight_vo:eternal_ice_iron_ore',
+        'silentgear:crimson_iron_ore',
+        'silentgear:blackstone_crimson_iron_ore',
+        'eternal_starlight_vo:voidstone_iron_ore'
+    );
 
+    event.add('minecraft:iron_ores',
+        'natures_spirit:chert_iron_ore',
+        'eternal_starlight_vo:grimstone_iron_ore',
+        'eternal_starlight_vo:haze_ice_iron_ore',
+        'eternal_starlight_vo:eternal_ice_iron_ore',
+        'silentgear:crimson_iron_ore',
+        'silentgear:blackstone_crimson_iron_ore',
+        'eternal_starlight_vo:voidstone_iron_ore'
+    );
+    event.add(
+        'kubejs:perfusion',
+        'kubejs:adamanite_ingot',
+        'kubejs:brass_ingot',
+        'kubejs:bronze_ingot',
+        'kubejs:invar_ingot',
+        'kubejs:nickel_ingot',
+        'kubejs:osmium_ingot',
+        'kubejs:platinum_ingot',
+        'kubejs:tin_ingot',
+        'kubejs:zinc_ingot'
+    )
 })
 
 ServerEvents.tags('block', event => {
-})
+    event.add('minecraft:iron_ores',
+        'natures_spirit:chert_iron_ore',
+        'eternal_starlight_vo:grimstone_iron_ore',
+        'eternal_starlight_vo:haze_ice_iron_ore',
+        'eternal_starlight_vo:eternal_ice_iron_ore',
+        'silentgear:crimson_iron_ore',
+        'silentgear:blackstone_crimson_iron_ore',
+        'eternal_starlight_vo:voidstone_iron_ore'
+    );
+});
+

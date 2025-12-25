@@ -1,0 +1,7 @@
+{
+  "loot_table": "lootintegrations:chests/water",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "cataclysm:entities/the_leviathan": 3
+  }
+}

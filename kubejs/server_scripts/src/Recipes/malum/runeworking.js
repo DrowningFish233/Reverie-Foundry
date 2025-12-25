@@ -84,9 +84,15 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(
         new RuneworkingRecipeJSON("irons_spellbooks:arcane_essence", "kubejs:cobalt_ingot")
-            .setInputCount(4)
+            .setInputCount(8)
             .setSecondaryInput("alltheores:nickel_ingot", 1)
             .setSoundType("malum:runic_workbench_shapes_tainted_rune")
     );
 
+    registerCustomRecipe(
+        new RuneworkingRecipeJSON("create:brass_ingot", "kubejs:acril_ingot")
+            .setInputCount(1)
+            .setSecondaryInput("irons_spellbooks:lightning_bottle", 1)
+            .setSoundType("malum:runic_workbench_shapes_tainted_rune")
+    );
 })

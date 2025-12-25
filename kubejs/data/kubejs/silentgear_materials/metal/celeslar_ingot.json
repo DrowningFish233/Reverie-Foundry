@@ -51,6 +51,11 @@
       "traits": [
         {
           "conditions": [],
+          "level": 3,
+          "trait": "kubejs:combustion_boost"
+        },
+        {
+          "conditions": [],
           "level": 2,
           "trait": "kubejs:celeslar_ingot"
         },

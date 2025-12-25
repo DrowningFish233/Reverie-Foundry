@@ -52,6 +52,11 @@
                 {
                     "conditions": [],
                     "level": 1,
+                    "trait": "kubejs:gift_heaven"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
                     "trait": "kubejs:terraulite_ingot"
                 },
                 {

@@ -51,16 +51,35 @@
       "ranged_damage": 0.0,
       "rarity": 70.0,
       "repair_value": 0.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:spinel"
+        }
+      ]
     },
     "silentgear:setting": {
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:spinel"
+        }
+      ]
     },
     "silentgear:tip": {
       "harvest_speed": {
         "operation": "MULTIPLY_TOTAL",
         "value": 1.2
-      }
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:spinel"
+        }
+      ]
     }
   }
 }

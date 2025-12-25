@@ -1,0 +1,8 @@
+{
+  "loot_table": "lootintegrations:chests/hard",
+  "max_result_itemcount": 12,
+  "integrated_loot_tables": {
+    "cataclysm:entities/the_harbinger": 4,
+    "cataclysm:entities/ender_guardian": 4
+  }
+}

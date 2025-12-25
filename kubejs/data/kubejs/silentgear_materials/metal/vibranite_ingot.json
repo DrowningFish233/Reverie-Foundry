@@ -53,6 +53,11 @@
           "conditions": [],
           "level": 2,
           "trait": "kubejs:set_ponder"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:overload"
         }
       ]
     }

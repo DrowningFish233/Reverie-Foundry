@@ -51,10 +51,22 @@
       "ranged_damage": 7.0,
       "rarity": 200.0,
       "repair_value": 0.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:promotion"
+        }
+      ]
     },
     "silentgear:setting": {
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:promotion"
+        }
+      ]
     },
     "silentgear:tip": {
       "durability": {
@@ -68,7 +80,14 @@
       "magic_damage": {
         "operation": "ADD",
         "value": 2.0
-      }
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:promotion"
+        }
+      ]
     }
   }
 }

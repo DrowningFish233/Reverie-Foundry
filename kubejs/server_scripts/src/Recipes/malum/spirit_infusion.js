@@ -373,4 +373,70 @@ ServerEvents.recipes(event => {
             .addExtraInput('malum:warp_flux', 12)
             .addExtraInput('hazennstuff:starkissed_zenalite', 2)
     );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:meat_ingots', 'kubejs:rhexis_ingot')
+            .addSpirit("sacred", 8)
+            .addSpirit("arcane", 8)
+            .addSpirit("aqueous", 8)
+            .addExtraInput('malum:imitation_flesh', 4)
+            .addExtraInput('malum:living_flesh', 8)
+            .addExtraInput('kubejs:meat', 16)
+            .addExtraInput('#minecraft:meat', 32)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:rhexis_ingot', 'kubejs:vorant_ingot')
+            .addSpirit("umbral", 2)
+            .addExtraInput('kubejs:rhexis_ingot', 1)
+            .addExtraInput('silentgear:crimson_steel_ingot', 2)
+            .addExtraInput('ftboceanmobs:sludge_ball', 4)
+            .addExtraInput('#minecraft:meat', 8)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('iceandfire:sapphire_gem', 'kubejs:sapphire')
+            .addSpirit("umbral", 1)
+            .addExtraInput('alltheores:fluorite_dust', 8)
+            .addExtraInput('silentgear:diamond_shard', 4)
+            .addExtraInput('malum:mnemonic_fragment', 8)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:magic_fluorite', 'kubejs:chalyblux_ingot')
+            .addSpirit("umbral", 1)
+            .addExtraInput('#c:ingots', 2)
+            .addExtraInput('kubejs:soul_of_light', 6)
+            .addExtraInput('kubejs:soul_of_night', 6)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('#kubejs:perfusion', 'kubejs:luteous_ingot')
+            .addSpirit("arcane", 16)
+            .addSpirit("umbral", 1)
+            .addExtraInput('kubejs:soul_of_light', 4)
+            .addExtraInput('kubejs:soul_of_night', 4)
+            .addExtraInput('malum:mnemonic_fragment', 6)
+            .addExtraInput('malum:malignant_lead', 3)
+            .addExtraInput('malum:null_slate', 4)
+            .addExtraInput('malum:hex_ash', 16)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:mysterious_orb', 'alshanex_familiars:bard_trinket')
+            .addSpirit("arcane", 16)
+            .addExtraInput('kubejs:soul_of_light', 4)
+            .addExtraInput('minecraft:note_block', 2)
+            .addExtraInput('alshanex_familiars:sound_rune', 4)
+            .addExtraInput('irons_restrictions:fragment', 2)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:mysterious_orb', 'alshanex_familiars:bard_harp')
+            .addSpirit("arcane", 16)
+            .addExtraInput('kubejs:soul_of_light', 4)
+            .addExtraInput('minecraft:stick', 8)
+            .addExtraInput('minecraft:string', 6)
+            .addExtraInput('alshanex_familiars:sound_rune', 2)
+    );
 });

@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.blazing_quartz.name",
+	"icon": "malum:blazing_quartz",
+	"category": "patchouli:kubejs_gems",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "malum:blazing_quartz"
+			},
+			"text": "patchouli.gui.kubejs.blazing_quartz.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.blazing_quartz"
+		}
+	]
+}

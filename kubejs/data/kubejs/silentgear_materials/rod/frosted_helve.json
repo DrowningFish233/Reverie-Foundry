@@ -41,8 +41,13 @@
             "traits": [
                 {
                     "conditions": [],
-                    "level": 3,
+                    "level": 2,
                     "trait": "kubejs:frozen_bone"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:frosted_helve"
                 }
             ]
         }

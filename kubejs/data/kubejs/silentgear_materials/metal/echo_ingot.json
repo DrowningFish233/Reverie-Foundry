@@ -53,6 +53,11 @@
           "conditions": [],
           "level": 1,
           "trait": "kubejs:echo_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:shivering_gel"
         }
       ]
     }

@@ -1,0 +1,8 @@
+{
+  "loot_table": "lootintegrations:chests/nether",
+  "max_result_itemcount": 10,
+  "integrated_loot_tables": {
+    "cataclysm:entities/netherite_monstrosity": 3,
+    "cataclysm:entities/ignis": 4
+  }
+}

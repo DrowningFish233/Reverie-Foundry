@@ -48,7 +48,18 @@
       "magic_damage": 4.0,
       "ranged_damage": 4.0,
       "rarity": 77.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "kubejs:malarite"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "kubejs:high_health"
+        }
+      ]
     }
   }
 }

@@ -4,6 +4,7 @@ let bannedItems = [
     'malum:weavers_workbench',
     'malum:esoteric_spool',
     'alltheores:enderium_plate',
+    /*
     'naraka:soul_infused_redstone_block',
     'naraka:soul_infused_copper_block',
     'naraka:soul_infused_gold_block',
@@ -34,6 +35,7 @@ let bannedItems = [
     'naraka:soul_infused_lapis_block',
     'naraka:soul_infused_diamond_block',
     'naraka:soul_infused_emerald_block'
+    */
 ];
 
 // 材料替换配置(前:需要替换的材料.后:替换为的材料)

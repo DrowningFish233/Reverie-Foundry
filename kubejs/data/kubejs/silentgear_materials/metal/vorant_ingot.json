@@ -54,7 +54,17 @@
         {
           "conditions": [],
           "level": 3,
+          "trait": "kubejs:meat_ingots"
+        },
+        {
+          "conditions": [],
+          "level": 3,
           "trait": "kubejs:vorant_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:stellar"
         }
       ]
     }

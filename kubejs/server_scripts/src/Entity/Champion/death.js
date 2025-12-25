@@ -5,15 +5,15 @@ const FINAL_BOSS = "darkdoppelganger:dark_doppelganger";
 
 // Sephirah 名称映射
 const SEPHIRAH_NAMES = [
-    { requiredKills: 2, name: "Yesod" },
-    { requiredKills: 4, name: "Hod" },
-    { requiredKills: 6, name: "Netzach" },
-    { requiredKills: 8, name: "Tiphereth" },
-    { requiredKills: 10, name: "Geburah" },
-    { requiredKills: 12, name: "Chesed" },
-    { requiredKills: 14, name: "Binah" },
-    { requiredKills: 16, name: "Cochma" },
-    { requiredKills: 18, name: "Kether" }
+    { minKills: 2, name: "Yesod" },
+    { minKills: 4, name: "Hod" },
+    { minKills: 6, name: "Netzach" },
+    { minKills: 8, name: "Tiphereth" },
+    { minKills: 10, name: "Geburah" },
+    { minKills: 12, name: "Chesed" },
+    { minKills: 14, name: "Binah" },
+    { minKills: 16, name: "Cochma" },
+    { minKills: 18, name: "Kether" }
 ];
 
 

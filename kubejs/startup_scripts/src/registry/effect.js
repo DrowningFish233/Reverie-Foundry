@@ -10,7 +10,6 @@ const alcoholEffects = [
     "kubejs:tequila_sunrise", "kubejs:tequila"
 ];
 
-const $DamageSource = Java.loadClass("net.minecraft.world.damagesource.DamageSource");
 
 StartupEvents.registry('mob_effect', event => {
     event.create('custom_effect')
@@ -79,22 +78,8 @@ StartupEvents.registry('mob_effect', event => {
                 entity.attack(entity.damageSources().magic(), damageAmount);
             }
         });
-    event.create('twin_shadows')
-        .beneficial()
-        .color("white_dye")
-        .modifyAttribute('minecraft:generic.attack_speed',
-            'c047331e-1678-47e0-b6df-c9c4b2ac29e8',
-            0.5,
-            'add_multiplied_base'
-        )
-        .modifyAttribute('minecraft:generic.attack_damage',
-            '5d7cbf71-f7ba-46c0-a2b9-6303529f76a9',
-            -0.25,
-            "add_multiplied_base"
-        );
-    event.create('exalted_beauty_gem')
-        .beneficial()
-        .color("green")
+
+
     event.create('kubejs:bleed')
         .harmful()
         .color("red")
@@ -238,9 +223,6 @@ StartupEvents.registry('mob_effect', event => {
         .harmful()
         .color("blue")
     //opal
-    event.create('iridescence')
-        .harmful()
-        .color("blue")
     event.create('bloodjade')
         .harmful()
         .color("blue")
@@ -408,12 +390,6 @@ StartupEvents.registry('mob_effect', event => {
     event.create('achroous_ingot')
         .beneficial()
         .color("green")
-    event.create('animated_steel_ingot')
-        .beneficial()
-        .color("yelow")
-    event.create('overload')
-        .beneficial()
-        .color("yelow")
     event.create('overload_buff_1')
         .beneficial()
         .color("yelow")
@@ -462,13 +438,6 @@ StartupEvents.registry('mob_effect', event => {
             0.3,
             'add_multiplied_base'
         )
-
-    event.create('emerald')
-        .beneficial()
-        .color("green")
-    event.create('exp_to_death')
-        .beneficial()
-        .color("green")
     event.create('vomit')
         .color(0x000000)
         .harmful()
@@ -487,9 +456,6 @@ StartupEvents.registry('mob_effect', event => {
     event.create('gold_body')
         .beneficial()
         .color("gold")
-    event.create('enderman')
-        .beneficial()
-        .color("green")
     event.create('echo_shard')
         .beneficial()
         .color("green")
@@ -611,12 +577,6 @@ StartupEvents.registry('mob_effect', event => {
         .harmful()
     event.create('protect')
         .color(0x000000)
-        .beneficial()
-    event.create('lacrima')
-        .color(0x000000)
-        .beneficial()
-    event.create('fiery_tears')
-        .color("red")
         .beneficial()
     //加护
     event.create('protection')
@@ -1271,8 +1231,7 @@ event.create('purple_haze_attack')
             0.2,
             "add_multiplied_total"
         );
-    event.create('gift_heaven')
-        .beneficial()
+
     event.create('maximum_health_reduction')
         .harmful()
         .color(0xFFFF00)
@@ -1287,4 +1246,12 @@ event.create('purple_haze_attack')
         .harmful()
     event.create('elemental_mix')
         .harmful()
+    event.create('spell_power_increase')
+        .beneficial()
+        .color(0xFFFF00)
+        .modifyAttribute('irons_spellbooks:spell_power',
+            '4a8a687f-ba07-411e-a58f-90ab6154a4c1',
+            0.1,
+            "add_multiplied_base"
+        )
 }); 

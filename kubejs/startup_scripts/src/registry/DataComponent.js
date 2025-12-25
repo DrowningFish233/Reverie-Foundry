@@ -11,3 +11,10 @@ $DataComponent.register("vorant_ingot_playerkill",
         .persistent(true)
         .networked(true)
 )
+
+$DataComponent.register("add_enchantment_count",
+    $DataComponent.builder()
+        .type("DOUBLE")
+        .persistent(true)
+        .networked(true)
+)

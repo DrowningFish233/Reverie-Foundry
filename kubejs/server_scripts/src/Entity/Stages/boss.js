@@ -1,6 +1,7 @@
 /**
  * 阶段限制BOSS id(仅禁止被攻击)
  */
+
 const BOSS_MOBS = [
     //戈伯后
     ["astage/boss/gauntlet", "terra_entity:eater_of_world", "first_kill_dead_king"],
@@ -8,6 +9,7 @@ const BOSS_MOBS = [
     ["astage/boss/queen_bee", "terra_entity:queen_bee", "first_kill_dead_king"],
     ["astage/boss/skeletron", "terra_entity:skeletron", "first_kill_dead_king"],
     ["astage/boss/lich", "bosses_of_mass_destruction:lich", "first_kill_dead_king"],
+
     //下界戈伯后
     ["astage/boss/gauntlet", "bosses_of_mass_destruction:gauntlet", "first_kill_skeletron"],
     ["astage/boss/fire_boss", "irons_spellbooks:fire_boss", "first_kill_skeletron"],
@@ -18,6 +20,8 @@ const BOSS_MOBS = [
     ["astage/boss/ignis", "cataclysm:ignis", "first_kill_skeletron"],
     ["astage/boss/netherite_monstrosity", "cataclysm:netherite_monstrosity", "first_kill_skeletron"],
     ["astage/boss/maledictus", "cataclysm:maledictus", "first_kill_skeletron"],
+    ["astage/boss/hippocamtus", "cataclysm:hippocamtus", "first_kill_skeletron"],
+
     //末地戈伯后
     ["astage/boss/ender_dragon", "minecraft:ender_dragon", "first_kill_fire_boss"],
     ["astage/boss/obsidilith", "bosses_of_mass_destruction:obsidilith", "first_kill_fire_boss"],

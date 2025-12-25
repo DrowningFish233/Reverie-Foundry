@@ -15,24 +15,26 @@ const MOBS = [
 
     ["astage/mob/wildfire", "friendsandfoes:wildfire", "first_kill_fire_boss"],
 
-    ["astage/mob/windswept_hills_enderman", "endermanoverhaul:windswept_hills_enderman", "first_kill_ender_guardian"],
+    //末地末影人击败末影龙解锁
     ["astage/mob/end_islands_enderman", "endermanoverhaul:end_islands_enderman", "first_kill_ender_guardian"],
+    ["astage/mob/end_enderman", "endermanoverhaul:end_enderman", "first_kill_ender_guardian"],
+    /*
+    ["astage/mob/windswept_hills_enderman", "endermanoverhaul:windswept_hills_enderman", "first_kill_ender_guardian"],
     ["astage/mob/flower_fields_enderman", "endermanoverhaul:flower_fields_enderman", "first_kill_ender_guardian"],
     ["astage/mob/ice_spikes_enderman", "endermanoverhaul:ice_spikes_enderman", "first_kill_ender_guardian"],
     ["astage/mob/mushroom_fields_enderman", "endermanoverhaul:mushroom_fields_enderman", "first_kill_ender_guardian"],
     ["astage/mob/nether_wastes_enderman", "endermanoverhaul:nether_wastes_enderman", "first_kill_ender_guardian"],
     ["astage/mob/coral_enderman", "endermanoverhaul:coral_enderman", "first_kill_ender_guardian"],
     ["astage/mob/savanna_enderman", "endermanoverhaul:savanna_enderman", "first_kill_ender_guardian"],
-
     ["astage/mob/snowy_enderman", "endermanoverhaul:snowy_enderman", "first_kill_ender_guardian"],
     ["astage/mob/badlands_enderman", "endermanoverhaul:badlands_enderman", "first_kill_ender_guardian"],
     ["astage/mob/cave_enderman", "endermanoverhaul:cave_enderman", "first_kill_ender_guardian"],
     ["astage/mob/crimson_forest_enderman", "endermanoverhaul:crimson_forest_enderman", "first_kill_ender_guardian"],
     ["astage/mob/desert_enderman", "endermanoverhaul:desert_enderman", "first_kill_ender_guardian"],
-    ["astage/mob/end_enderman", "endermanoverhaul:end_enderman", "first_kill_ender_guardian"],
     ["astage/mob/soulsand_valley_enderman", "endermanoverhaul:soulsand_valley_enderman", "first_kill_ender_guardian"],
     ["astage/mob/swamp_enderman", "endermanoverhaul:swamp_enderman", "first_kill_ender_guardian"],
     ["astage/mob/savanna_enderman", "endermanoverhaul:warped_forest_enderman", "first_kill_ender_guardian"],
+    */
 ];
 
 MOBS.forEach(([id, mob, stage]) => {

@@ -1,5 +1,3 @@
-let $SummonManager = Java.loadClass("io.redspace.ironsspellbooks.capabilities.magic.SummonManager")
-let $BloodNeedle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.blood_needle.BloodNeedle')
 
 // 法术注册
 StartupEvents.registry('irons_spellbooks:spells', event => {
@@ -205,11 +203,10 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
 
             const spellLevel = ctx.getSpellLevel();
             const volleyCount = spellLevel;
-            const delayBetweenShots = 20;
 
             // 发射多轮三连发
             for (let i = 0; i < volleyCount; i++) {
-                server.scheduleInTicks(i * delayBetweenShots, () => {
+                server.scheduleInTicks(i * 5, () => {
                     if (player.isRemoved()) return;
 
                     // 三连发角度
@@ -219,12 +216,12 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
 
                         // 基础设置
                         arrow.setOwner(player);
-                        [arrow.x, arrow.y, arrow.z] = [player.x, player.y + 1.5, player.z]; // 从眼部高度发射
+                        [arrow.x, arrow.y, arrow.z] = [player.x, player.y + 1.5, player.z];
 
                         // 计算方向
                         const radPitch = player.pitch * (Math.PI / 180);
                         const radYaw = (player.yaw + yawOffset) * (Math.PI / 180);
-                        const speed = 1.2 + spellLevel * 0.3; // 等级越高速度越快
+                        const speed = 1.2 + spellLevel * 0.3;
 
                         arrow.setMotion(
                             -Math.sin(radYaw) * Math.cos(radPitch) * speed,
@@ -295,9 +292,8 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             let player = ctx.entity
             // 条件检查
             if (!ctx.entity.isPlayer()) return
-            // 效果实现：
+            // 效果实现
             let durationTicks = 20 * (spellLevel * 5 + 5);
-            player.potionEffects.add("kubejs:boom_effects", durationTicks, 0);
             player.potionEffects.add("kubejs:damage_amplification", durationTicks, 2);
 
         })

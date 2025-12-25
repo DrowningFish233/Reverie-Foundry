@@ -1,0 +1,13 @@
+{
+    "registry_name": "irons_spellbooks:archevoker",
+    "drops": [
+        {
+            "ingredient": {
+                "item": "kubejs:soul_of_light"
+            },
+            "chance": "0.7",
+            "min": "3",
+            "max": "6"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+	"conditions": [
+		{
+			"type": "silentgear:or",
+			"values": [
+				{
+					"type": "silentgear:gear_type",
+					"gear_type": "silentgear:armor"
+				},
+				{
+					"type": "silentgear:gear_type",
+					"gear_type": "silentgear:tool"
+				},
+				{
+					"type": "silentgear:gear_type",
+					"gear_type": "silentgear:curio"
+				}
+			]
+		}
+	],
+	"description": {
+		"translate": "trait.kubejs.cosmos_aurora_ingot.desc"
+	},
+	"effects": [
+		{
+			"type": "silentgear:attribute",
+			"attribute_modifiers": {
+				"all/any": [
+					{
+						"attribute": "irons_spellbooks:lightning_spell_power",
+						"operation": "add_multiplied_base",
+						"values": [
+							0.1
+						]
+					}
+				]
+			}
+		}
+	],
+	"max_level": 5,
+	"name": {
+		"translate": "trait.kubejs.cosmos_aurora_ingot"
+	}
+}
