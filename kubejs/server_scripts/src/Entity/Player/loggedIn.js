@@ -16,6 +16,7 @@ PlayerEvents.loggedIn(event => {
         */
         loggedInplayersanity(player);
         updateplayersanity(player, player_sanity);
+        reloadBooks(event)
     });
 });
 

@@ -12,7 +12,7 @@
         },
         "conditions": {
             "dimension": "minecraft:overworld",
-            "mindist": 20,
+            "mindist": 24,
             "maxdist": 80,
             "minheight": 15,
             "maxheight": 200,
@@ -57,7 +57,7 @@
             "terra_entity:blood_crawler",
             "terra_entity:face_monster"
         ],
-        "persecond": 4,
+        "persecond": 1,
         "attempts": 8,
         "amount": {
             "minimum": 1,
@@ -65,10 +65,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 64,
-            "minheight": 30,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 16,
             "and": {
                 "biome": "biomesoplenty:visceral_heap"
@@ -81,7 +81,7 @@
             "terra_entity:man_eater",
             "terra_entity:hornet"
         ],
-        "persecond": 2,
+        "persecond": 1,
         "attempts": 8,
         "amount": {
             "minimum": 1,
@@ -89,10 +89,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 64,
-            "minheight": 30,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 8,
             "and": {
                 "biome": "biomesoplenty:undergrowth"
@@ -103,7 +103,7 @@
         "mob": [
             "terra_entity:nymph"
         ],
-        "persecond": 2,
+        "persecond": 1,
         "attempts": 6,
         "amount": {
             "minimum": 1,
@@ -111,10 +111,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 64,
-            "minheight": 30,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 1,
             "and": {
                 "biome": "biomesoplenty:crystalline_chasm"
@@ -125,7 +125,7 @@
         "mob": [
             "cataclysm:amethyst_crab"
         ],
-        "persecond": 2,
+        "persecond": 1,
         "attempts": 6,
         "amount": {
             "minimum": 1,
@@ -133,10 +133,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 64,
-            "minheight": 30,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 1,
             "and": {
                 "biome": "biomesoplenty:crystalline_chasm"
@@ -149,7 +149,7 @@
             "terra_entity:demon",
             "terra_entity:fire_imp"
         ],
-        "persecond": 4,
+        "persecond": 1,
         "attempts": 6,
         "amount": {
             "minimum": 1,
@@ -157,10 +157,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 64,
-            "minheight": 30,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 4,
             "and": {
                 "biome": [
@@ -175,7 +175,7 @@
             "terra_entity:lava_slime",
             "terra_entity:hell_bat"
         ],
-        "persecond": 4,
+        "persecond": 1,
         "attempts": 6,
         "amount": {
             "minimum": 1,
@@ -183,10 +183,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 64,
-            "minheight": 30,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 8,
             "and": {
                 "biome": "biomesoplenty:erupting_inferno"
@@ -199,7 +199,7 @@
             "terra_entity:bunny",
             "terra_entity:jewel_bunny"
         ],
-        "persecond": 2,
+        "persecond": 1,
         "attempts": 6,
         "amount": {
             "minimum": 1,
@@ -207,10 +207,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 64,
-            "minheight": 30,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 12,
             "and": {
                 "biome": "minecraft:basalt_deltas"
@@ -233,8 +233,8 @@
         },
         "conditions": {
             "dimension": "minecraft:overworld",
-            "mindist": 16,
-            "maxdist": 32,
+            "mindist": 24,
+            "maxdist": 96,
             "minheight": -120,
             "maxheight": 40,
             "maxthis": 8,
@@ -256,8 +256,8 @@
         },
         "conditions": {
             "dimension": "minecraft:overworld",
-            "mindist": 16,
-            "maxdist": 32,
+            "mindist": 24,
+            "maxdist": 96,
             "minheight": -120,
             "maxheight": 40,
             "maxthis": 2,
@@ -279,8 +279,8 @@
         },
         "conditions": {
             "dimension": "minecraft:overworld",
-            "mindist": 16,
-            "maxdist": 32,
+            "mindist": 24,
+            "maxdist": 96,
             "minheight": 0,
             "maxheight": 120,
             "maxthis": 4,
@@ -303,8 +303,8 @@
         },
         "conditions": {
             "dimension": "minecraft:overworld",
-            "mindist": 16,
-            "maxdist": 32,
+            "mindist": 24,
+            "maxdist": 96,
             "minheight": 0,
             "maxheight": 120,
             "maxthis": 6,
@@ -334,10 +334,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 32,
-            "minheight": 0,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 6,
             "and": {
                 "biome": [
@@ -350,7 +350,7 @@
         "mob": [
             "endermanoverhaul:warped_forest_enderman"
         ],
-        "persecond": 2,
+        "persecond": 1,
         "attempts": 3,
         "amount": {
             "minimum": 2,
@@ -358,10 +358,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 64,
-            "minheight": 30,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 12,
             "and": {
                 "biome": [
@@ -374,7 +374,7 @@
         "mob": [
             "endermanoverhaul:crimson_forest_enderman"
         ],
-        "persecond": 2,
+        "persecond": 1,
         "attempts": 3,
         "amount": {
             "minimum": 2,
@@ -382,10 +382,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 16,
-            "maxdist": 64,
-            "minheight": 30,
-            "maxheight": 120,
+            "mindist": 24,
+            "maxdist": 96,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 12,
             "and": {
                 "biome": [
@@ -398,7 +398,7 @@
         "mob": [
             "endermanoverhaul:flower_fields_enderman"
         ],
-        "persecond": 2,
+        "persecond": 1,
         "attempts": 4,
         "amount": {
             "minimum": 2,
@@ -406,10 +406,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 20,
+            "mindist": 24,
             "maxdist": 80,
-            "minheight": 15,
-            "maxheight": 200,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 12,
             "and": {
                 "biome": [
@@ -423,7 +423,7 @@
             "minecraft:wither_skeleton",
             "endermanoverhaul:nether_wastes_enderman"
         ],
-        "persecond": 2,
+        "persecond": 1,
         "attempts": 4,
         "amount": {
             "minimum": 2,
@@ -431,10 +431,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 20,
+            "mindist": 24,
             "maxdist": 80,
-            "minheight": 15,
-            "maxheight": 200,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 20,
             "and": {
                 "biome": [
@@ -447,7 +447,7 @@
         "mob": [
             "endermanoverhaul:nether_wastes_enderman"
         ],
-        "persecond": 2,
+        "persecond": 1,
         "attempts": 4,
         "amount": {
             "minimum": 2,
@@ -455,10 +455,10 @@
         },
         "conditions": {
             "dimension": "minecraft:the_nether",
-            "mindist": 20,
+            "mindist": 24,
             "maxdist": 80,
-            "minheight": 15,
-            "maxheight": 200,
+            "minheight": 1,
+            "maxheight": 256,
             "maxthis": 12,
             "and": {
                 "biome": [

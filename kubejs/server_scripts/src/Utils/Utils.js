@@ -1,4 +1,17 @@
 //priority: 100
+
+/**
+ * 修复书籍不重载
+ * @param {*} event 
+ */
+function reloadBooks(event) {
+    const instance = $BookRegistry.INSTANCE;
+    const level = event.getLevel();
+    instance.reloadContents(level);
+    // 发送反馈消息
+    event.player.tell("§a书籍已重新加载！");
+}
+
 /**
  * 随机移除一个负面效果
  */
