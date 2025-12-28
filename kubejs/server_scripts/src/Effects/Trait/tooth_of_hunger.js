@@ -7,7 +7,7 @@ function tooth_of_hunger_remastered(event) {
     const attacker = source.player || source.actual;
 
     // 检查条件
-    if (!attacker || !attacker.player || !entity.living) {
+    if (!attacker || !attacker.isPlayer() || !entity.living) {
         return;
     }
     if (!fu_hasTraitMainHand(attacker, "kubejs:tooth_of_hunger")) return;

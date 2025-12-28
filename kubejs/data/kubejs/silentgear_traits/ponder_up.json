@@ -21,43 +21,7 @@
     "description": {
         "translate": "trait.kubejs.ponder_up.desc"
     },
-    "effects": [
-        {
-            "type": "silentgear:target_effect",
-            "effects_by_level": {
-                "silentgear:armor": {
-                    "1": [
-                        {
-                            "id": "kubejs:ponder_up",
-                            "duration": 100,
-                            "neoforge:cures": [],
-                            "show_icon": true
-                        }
-                    ]
-                },
-                "silentgear:tool": {
-                    "1": [
-                        {
-                            "id": "kubejs:ponder_up",
-                            "duration": 100,
-                            "neoforge:cures": [],
-                            "show_icon": true
-                        }
-                    ]
-                },
-                "silentgear:curio": {
-                    "1": [
-                        {
-                            "id": "kubejs:ponder_up",
-                            "duration": 100,
-                            "neoforge:cures": [],
-                            "show_icon": true
-                        }
-                    ]
-                }
-            }
-        }
-    ],
+    "effects": [],
     "max_level": 3,
     "name": {
         "translate": "trait.kubejs.ponder_up"

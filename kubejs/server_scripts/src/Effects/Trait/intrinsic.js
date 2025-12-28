@@ -5,7 +5,7 @@
 function intrinsic(event) {
     const { source, entity } = event;
     const attacker = source.player;
-    if (!attacker || !attacker.player || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:intrinsic")) {
+    if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:intrinsic")) {
         return;
     }
     const exp_level = Math.min(attacker.xpLevel, 900); // 等级上限900级

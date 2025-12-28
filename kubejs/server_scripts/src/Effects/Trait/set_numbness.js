@@ -8,7 +8,7 @@
 function set_numbness_effects(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
-    if (!attacker || !attacker.player || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:set_numbness")) {
+    if (!attacker || !attacker.isPlayer() || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:set_numbness")) {
         return;
     }
     entity.potionEffects.add("kubejs:numbness", 30, 0);
@@ -21,7 +21,7 @@ function set_numbness_effects(event) {
 function numbness_effects(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
-    if (!entity.living || !attacker || !attacker.player || !fu_hasTraitAnywhere(attacker, "kubejs:set_numbness")) {
+    if (!entity.living || !attacker || !attacker.isPlayer() || !fu_hasTraitAnywhere(attacker, "kubejs:set_numbness")) {
         return;
     }
     entity.potionEffects.add("kubejs:numbness", 20 * 5, 0);

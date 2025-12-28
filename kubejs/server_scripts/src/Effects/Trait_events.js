@@ -130,6 +130,10 @@ function allthe_sin_event(event) {
  * 词缀效果
  */
 function affix_event(event) {
+    plague_effects(event);
+    radiance_effects(event);
+    ponder_up_effects(event);
+    boron_ingot_effects(event);
     high_health(event);
     vorant_ingot(event);
     gobber(event);
@@ -228,7 +232,7 @@ PlayerEvents.tick(event => {
     if (!player) return;
     const tick = player.tickCount;
     meat_ingots(event, tick);
-    atalphaite(event, player, tick);
+    xelkive_ingot_effect(event, player, tick);
     if (tick % 23 === 0) {
         prismarine_crystals(event, player);
         calamatium_ingot_effect(event, player)

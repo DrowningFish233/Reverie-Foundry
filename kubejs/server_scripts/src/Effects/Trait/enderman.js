@@ -1,7 +1,7 @@
 ItemEvents.foodEaten(event => {
     const { source, entity } = event;
     const attacker = event.player;
-    if (!entity.isLiving() || !attacker || !attacker.player || !attacker.hasEffect("kubejs:enderman")) {
+    if (!entity.isLiving() || !attacker || !attacker.isPlayer() || !attacker.hasEffect("kubejs:enderman")) {
         return;
     }
     const level = attacker.level; // 获取当前维度

@@ -6,7 +6,7 @@ function boom_effects(event) {
     const attacker = source.player || source.actual;
 
     // 条件检查
-    if (!entity.isLiving() || !attacker || !attacker.player || !fu_hasTraitAnywhere(attacker, "kubejs:atalphaite")) {
+    if (!entity.isLiving() || !attacker || !attacker.isPlayer() || !fu_hasTraitAnywhere(attacker, "kubejs:atalphaite")) {
         return;
     }
     // 伤害加成

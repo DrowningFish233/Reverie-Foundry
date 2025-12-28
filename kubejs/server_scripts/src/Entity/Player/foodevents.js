@@ -7,6 +7,8 @@ ItemEvents.foodEaten(event => {
     for (let [key, handler] of Object.entries(FoodEatenevents)) {
         handler(event, player, magicData);
     }
+
+
 });
 
 /**
@@ -98,7 +100,7 @@ FoodEatenevents.register("food", function (event, player, magicData) {
     CooldownHelper.gluttonyCooldown(event, player);
 
     if (player.getFoodLevel() === 20) {
-        const newSanity = SanityHelper.updateSanity(player, 1);
+        const newSanity = SanityHelper.updateSanity(player, 2);
         SanityHelper.checkSanityThreshold(player, newSanity);
     }
 });

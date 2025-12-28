@@ -98,7 +98,7 @@ function GenerateSilentGearTrait(traitId, event, boolean, handler) {
     }
 
     /**
-     * 添加命中效果（自动根据条件中的装备类型生成包裹）
+     * 添加命中效果（自动根据条件中的装备类型生成包裹） // 慎用...暂时废弃
      * @param {Object} effectsByLevel 按等级的效果
      * @returns {GenerateSilentGearTrait}
      */
@@ -142,7 +142,7 @@ function GenerateSilentGearTrait(traitId, event, boolean, handler) {
     }
 
     /**
-     * 创建药水效果
+     * 创建药水效果 // 慎用...暂时废弃
      * @param {string} id 效果ID
      * @param {number} duration 持续时间
      * @param {string[]} cures 治疗方式

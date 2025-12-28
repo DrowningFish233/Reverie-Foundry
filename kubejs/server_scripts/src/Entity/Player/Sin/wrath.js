@@ -48,7 +48,7 @@ function wrath_onPlayerHurt(event) {
 function wrath_effect(event) {
     const { source, entity } = event;
     let attacker = source.player || source.entity;
-    if (!entity.isLiving() || !attacker || !attacker.player || event.damage <= 0) {
+    if (!entity.isLiving() || !attacker || !attacker.isPlayer() || event.damage <= 0) {
         return;
     }
     if (entity.hasEffect("kubejs:wrath_damage") && attacker.hasEffect("kubejs:wrath")) {
@@ -64,7 +64,7 @@ function wrathlastAttackTime(event) {
     const { source, entity } = event;
     const attacker = source.player || source.entity;
 
-    if (!attacker || !attacker.player || !entity.isLiving() || attacker.hasEffect("kubejs:wrath")) {
+    if (!attacker || !attacker.isPlayer() || !entity.isLiving() || attacker.hasEffect("kubejs:wrath")) {
         return;
     }
     attacker.persistentData.putInt("idleTimer", 0);

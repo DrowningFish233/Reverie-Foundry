@@ -7,7 +7,6 @@ function require(/**@type {String}*/classpath) {
     thisclass[classname] = Java.loadClass(newclasspath)
     return thisclass
 }
-const $BookRegistry = Java.loadClass("vazkii.patchouli.common.book.BookRegistry")
 const $ServerPlayer = Java.loadClass("net.minecraft.server.level.ServerPlayer");
 const $PlayerWakeUpEvent = Java.loadClass("net.neoforged.neoforge.event.entity.player.PlayerWakeUpEvent");
 const $SummonManager = Java.loadClass("io.redspace.ironsspellbooks.capabilities.magic.SummonManager")

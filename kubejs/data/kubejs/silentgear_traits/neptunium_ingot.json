@@ -21,67 +21,7 @@
 	"description": {
 		"translate": "trait.kubejs.neptunium_ingot.desc"
 	},
-	"effects": [
-		{
-			"type": "silentgear:target_effect",
-			"effects_by_level": {
-				"silentgear:armor": {
-					"1": [
-						{
-							"id": "kubejs:decay",
-							"duration": 20,
-							"neoforge:cures": [],
-							"show_icon": true
-						}
-					],
-					"2": [
-						{
-							"id": "kubejs:decay",
-							"duration": 40,
-							"neoforge:cures": [],
-							"show_icon": true
-						}
-					]
-				},
-				"silentgear:tool": {
-					"1": [
-						{
-							"id": "kubejs:decay",
-							"duration": 20,
-							"neoforge:cures": [],
-							"show_icon": true
-						}
-					],
-					"2": [
-						{
-							"id": "kubejs:decay",
-							"duration": 40,
-							"neoforge:cures": [],
-							"show_icon": true
-						}
-					]
-				},
-				"silentgear:curio": {
-					"1": [
-						{
-							"id": "kubejs:decay",
-							"duration": 20,
-							"neoforge:cures": [],
-							"show_icon": true
-						}
-					],
-					"2": [
-						{
-							"id": "kubejs:decay",
-							"duration": 40,
-							"neoforge:cures": [],
-							"show_icon": true
-						}
-					]
-				}
-			}
-		}
-	],
+	"effects": [],
 	"max_level": 2,
 	"name": {
 		"translate": "trait.kubejs.neptunium_ingot"

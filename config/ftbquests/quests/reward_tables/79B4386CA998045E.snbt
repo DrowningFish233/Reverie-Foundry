@@ -21,6 +21,7 @@
 			}
 			id: "4E3EDC65B6FED37D"
 			ignore_reward_blocking: true
+			permission_level: 4
 			silent: true
 			type: "command"
 		}
@@ -31,6 +32,7 @@
 			}
 			id: "0587A8A6F15D12D2"
 			ignore_reward_blocking: true
+			permission_level: 4
 			type: "command"
 		}
 		{
@@ -39,6 +41,7 @@
 				id: "sophisticatedbackpacks:backpack"
 			}
 			id: "6705463FAB6A4578"
+			permission_level: 4
 			silent: true
 			type: "command"
 		}
@@ -48,6 +51,8 @@
 				id: "kubejs:purple_haze"
 			}
 			id: "2B36732E586C7836"
+			ignore_reward_blocking: true
+			permission_level: 4
 			type: "command"
 		}
 	]

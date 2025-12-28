@@ -5,7 +5,7 @@ function multicolor(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
 
-    if (!attacker || !attacker.player || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:multicolor")) {
+    if (!attacker || !attacker.isPlayer() || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:multicolor")) {
         return;
     }
     const debuffs = [

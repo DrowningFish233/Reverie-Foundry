@@ -4,7 +4,7 @@
 function life_drain(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
-    if (!attacker || !attacker.player || !entity.living || !attacker.hasEffect("kubejs:life_drain")) {
+    if (!attacker || !attacker.isPlayer() || !entity.living || !attacker.hasEffect("kubejs:life_drain")) {
         return;
     }
     let existingEffect = attacker.getEffect("kubejs:life_drain");

@@ -2,7 +2,7 @@ function gluttony(event) {
     const { source, entity } = event;
     let attacker = source.player || source.entity;
 
-    if (!attacker || !attacker.player || !entity.isLiving() || !attacker.hasEffect("kubejs:gluttony")) {
+    if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !attacker.hasEffect("kubejs:gluttony")) {
         return;
     }
 

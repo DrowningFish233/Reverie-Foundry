@@ -5,7 +5,7 @@ function moonstone(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
 
-    if (!attacker || !attacker.player || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:moonstone")) {
+    if (!attacker || !attacker.isPlayer() || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:moonstone")) {
         return;
     }
 

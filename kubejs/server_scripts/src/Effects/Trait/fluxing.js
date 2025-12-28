@@ -6,7 +6,7 @@ function fluxing(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
 
-    if (!attacker || !attacker.player || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:fluxing")) {
+    if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:fluxing")) {
         return;
     }
     if (entity.isOnFire() || entity.isInLava()) {

@@ -51,7 +51,7 @@ function fiery_tears_attack(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
 
-    if (!attacker || !attacker.player || !entity.living || !attacker.hasEffect("kubejs:fiery_tears_2")) {
+    if (!attacker || !attacker.isPlayer() || !entity.living || !attacker.hasEffect("kubejs:fiery_tears_2")) {
         return;
     }
     const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:fiery_tears");

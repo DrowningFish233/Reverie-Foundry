@@ -5,7 +5,7 @@ function thermal_springstone_ingot(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
 
-    if (!attacker || !attacker.player || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:thermal_springstone_ingot")) {
+    if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:thermal_springstone_ingot")) {
         return;
     }
 

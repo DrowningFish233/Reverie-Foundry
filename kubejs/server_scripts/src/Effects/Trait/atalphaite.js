@@ -4,7 +4,7 @@
  * @param {*} player 
  * @param {*} tick 
  */
-function atalphaite(event, player, tick) {
+function xelkive_ingot_effect(event, player, tick) {
     if (tick % 100 === 0 || tick % 200 === 0) {
         if (!player.isLiving() || !fu_hasTraitAnywhere(player, "kubejs:xelkive_ingot")) return;
 

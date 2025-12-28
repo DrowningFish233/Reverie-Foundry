@@ -5,7 +5,7 @@
 function citrine(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
-    if (!attacker || !attacker.player || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:citrine")) {
+    if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:citrine")) {
         return;
     }
     const playerXpLevel = Math.min(attacker.xpLevel, 900); // 等级上限900级

@@ -4,7 +4,7 @@
 function iridescence(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
-    if (!attacker || !attacker.player || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:iridescence")) {
+    if (!attacker || !attacker.isPlayer() || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:iridescence")) {
         return;
     }
 

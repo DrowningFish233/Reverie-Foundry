@@ -4,7 +4,7 @@
 function malarite(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
-    if (!attacker || !attacker.player || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:malarite")) {
+    if (!attacker || !attacker.isPlayer() || !entity.living || !fu_hasTraitAnywhere(attacker, "kubejs:malarite")) {
         return;
     }
     entity.potionEffects.add("minecaft:poison", 40, 0);
