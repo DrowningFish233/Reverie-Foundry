@@ -3,6 +3,8 @@ mixin:
   loginVT: true
   # Optimized VarLong implementation
   bestVarLong: true
+  # Enable new encryption optimizations on the client side
+  clientEncrypt: true
 fix:
   issues128:
     # Fix Traffic Statistics

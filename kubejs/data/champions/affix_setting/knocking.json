@@ -2,5 +2,9 @@
   "type": "champions:knocking",
   "category": "cc",
   "enable": true,
-  "hasSub": false
+  "hasSub": false,
+  "tier": {
+    "max": 100,
+    "min": 1
+  }
 }

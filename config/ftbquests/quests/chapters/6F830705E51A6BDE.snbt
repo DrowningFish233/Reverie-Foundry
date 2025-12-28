@@ -16,7 +16,7 @@
 			id: "1A58667FA2440598"
 			rewards: [
 				{
-					auto: "enabled"
+					auto: "disabled"
 					exclude_from_claim_all: true
 					id: "31C0EC4D0576323F"
 					ignore_reward_blocking: true

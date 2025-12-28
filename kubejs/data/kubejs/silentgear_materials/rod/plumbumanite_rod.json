@@ -58,7 +58,13 @@
                 "operation": "ADD",
                 "value": 35
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:six_life_death_set"
+                }
+            ]
         }
     }
 }

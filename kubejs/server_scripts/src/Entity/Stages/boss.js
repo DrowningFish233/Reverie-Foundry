@@ -4,7 +4,7 @@
 
 const BOSS_MOBS = [
     //戈伯后
-    ["astage/boss/gauntlet", "terra_entity:eater_of_world", "first_kill_dead_king"],
+    ["astage/boss/eater_of_world", "terra_entity:eater_of_world", "first_kill_dead_king"],
     ["astage/boss/brain_of_cthulhu", "terra_entity:brain_of_cthulhu", "first_kill_dead_king"],
     ["astage/boss/queen_bee", "terra_entity:queen_bee", "first_kill_dead_king"],
     ["astage/boss/skeletron", "terra_entity:skeletron", "first_kill_dead_king"],
@@ -26,8 +26,10 @@ const BOSS_MOBS = [
     ["astage/boss/ender_dragon", "minecraft:ender_dragon", "first_kill_fire_boss"],
     ["astage/boss/obsidilith", "bosses_of_mass_destruction:obsidilith", "first_kill_fire_boss"],
     ["astage/boss/ender_guardian", "cataclysm:ender_guardian", "first_kill_fire_boss"],
-    ["astage/boss/dark_doppelganger", "darkdoppelganger:dark_doppelganger", "first_kill_fire_boss"],
     ["astage/boss/rift_weaver", "ftboceanmobs:rift_weaver", "first_kill_fire_boss"],
+
+    ["astage/boss/dark_doppelganger", "darkdoppelganger:dark_doppelganger", "first_kill_ender_guardian"],
+
 
 ];
 

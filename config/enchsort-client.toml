@@ -5,7 +5,7 @@ sort_books = true
 # Sort the enchantments in ascending order
 ascending_sort = true
 # Display the original order when shift pressed
-sneak_display = true
+sneak_display = false
 # Compatible mode (may cause performance losses)
 # Enabling this config will disable [show_max_level] and [highlight_treasure]
 compatible_mode = false

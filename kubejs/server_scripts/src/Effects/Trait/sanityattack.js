@@ -9,9 +9,7 @@ function sanityattack(event) {
     const { source, entity } = event;
     const attacker = source.player
 
-    if (!attacker || !attacker.isLiving()) {
-        return;
-    }
+    if (!attacker || !attacker.isLiving()) return;
 
     // 获取理智值
     const pData = attacker.persistentData;

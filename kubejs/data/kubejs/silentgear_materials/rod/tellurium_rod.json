@@ -38,7 +38,18 @@
         "operation": "ADD",
         "value": 20
       },
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:fortunate"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:hunger"
+        }
+      ]
     }
   }
 }

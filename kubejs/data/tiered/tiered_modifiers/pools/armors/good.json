@@ -21,10 +21,6 @@
     }
   ],
   "tiers": [
-    "tiered:armors/fortified",
-    "tiered:armors/heavy",
-    "tiered:armors/reinforced",
-    "tiered:armors/resilient",
     "tiered:standard_armors/epic",
     "tiered:standard_armors/legendary",
     "tiered:standard_armors/rare",

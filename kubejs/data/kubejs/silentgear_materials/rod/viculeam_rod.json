@@ -34,7 +34,18 @@
                 "operation": "MULTIPLY_TOTAL",
                 "value": 0.1
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:high_health"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:greedy"
+                }
+            ]
         }
     }
 }

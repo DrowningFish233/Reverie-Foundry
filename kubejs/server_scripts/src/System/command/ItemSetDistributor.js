@@ -57,8 +57,24 @@ const itemSet2 = [
     { id: "kubejs:exploding_chocolate_bar", count: 5 }
 ];
 
+const itemSet3 = [
+    { command: "sorcerer", oneUse: true },
+    { id: "sophisticatedbackpacks:backpack", count: 1 },
+    { id: 'irons_restrictions:unfinished_manuscript', count: 6 },
+    { id: 'irons_restrictions:uncommon_upgrade', count: 1 },
+    { id: 'irons_restrictions:rare_upgrade', count: 1 }
+];
+
+const itemSet4 = [
+    { command: "warrior", oneUse: true },
+    { id: "sophisticatedbackpacks:backpack", count: 1 },
+    { id: 'gobber2:gobber2_gooey_bread', count: 8 },
+    { id: 'minecraft:iron_sword', count: 1 },
+    { id: 'enderscape:end_stone_rubble_shield', count: 1 },
+    { id: 'kubejs:everclear', count: 1 }
+];
 // 存储所有奖励设置
-const allItemSets = [itemSet1, itemSet2];
+const allItemSets = [itemSet1, itemSet2, itemSet3, itemSet4];
 
 // 命令跟踪的全局子类别
 const commandSubcategory = 'itemCommands';

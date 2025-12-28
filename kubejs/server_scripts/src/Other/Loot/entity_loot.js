@@ -175,6 +175,14 @@ LootJS.modifiers(event => {
     );
 
     event.addEntityModifier([
+        "terra_entity:brain_of_cthulhu"
+    ]).addLoot(LootEntry.of('kubejs:melting_eyeball')
+        .apply(item => {
+            item.setCount({ min: 0, max: 1 });
+        })
+    );
+
+    event.addEntityModifier([
         "terra_entity:eye_of_cthulhu"
     ]).addLoot(LootEntry.of('kubejs:xeproda_ingot')
         .apply(item => {
@@ -240,6 +248,13 @@ LootJS.modifiers(event => {
         })
     );
     event.addEntityModifier([
+        "irons_spellbooks:dead_king"
+    ]).addLoot(LootEntry.of('kubejs:low_heart_of_darkness')
+        .apply(item => {
+            item.setCount({ min: 0, max: 1 })
+        })
+    );
+    event.addEntityModifier([
         "gametechbcs_spellbooks:hard_dead_king"
     ]).addLoot(LootEntry.of('kubejs:necroplasm')
         .apply(item => {
@@ -277,5 +292,111 @@ LootJS.modifiers(event => {
         .apply(item => {
             item.setCount({ min: 0, max: 1 })
         })
+    );
+
+    event.addEntityModifier([
+        "eternal_starlight:lunar_monstrosity"
+    ]).addLoot(LootEntry.of('kubejs:blue_star')
+        .apply(item => {
+            item.setCount({ min: 0, max: 1 });
+        })
+    );
+
+    event.addEntityModifier([
+        "eternal_starlight:starlight_golem"
+    ]).addLoot(LootEntry.of('kubejs:fragment_of_the_universe')
+        .apply(item => {
+            item.setCount({ min: 0, max: 1 });
+        })
+    );
+
+    event.addEntityModifier([
+        "cataclysm:ignis",
+        "cataclysm:the_leviathan",
+        "cataclysm:ancient_remnant",
+        "cataclysm:maledictus",
+        "cataclysm:scylla",
+        "cataclysm:the_harbinger",
+        "cataclysm:ender_guardian",
+        "cataclysm:netherite_monstrosity",
+        "minecraft:wither",
+        "minecraft:ender_dragon",
+        "bosses_of_mass_destruction:gauntlet",
+        "bosses_of_mass_destruction:lich",
+        "bosses_of_mass_destruction:obsidilith",
+        "bosses_of_mass_destruction:void_blossom",
+        "irons_spellbooks:fire_boss",
+        "terra_entity:dungeon_guardian",
+        "terra_entity:skeletron",
+        "terra_entity:king_slime",
+        "terra_entity:eye_of_cthulhu",
+        "terra_entity:brain_of_cthulhu",
+        "terra_entity:queen_bee",
+        "irons_spellbooks:dead_king"
+    ]).addLoot(LootEntry.of('kubejs:supreme_healing_potion')
+        .apply(item => {
+            item.setCount({ min: 1, max: 4 });
+        })
+        .randomChance(0.75)
+    );
+
+    event.addEntityModifier([
+        "cataclysm:ignis",
+        "cataclysm:the_leviathan",
+        "cataclysm:ancient_remnant",
+        "cataclysm:maledictus",
+        "cataclysm:scylla",
+        "cataclysm:the_harbinger",
+        "cataclysm:ender_guardian",
+        "cataclysm:netherite_monstrosity",
+        "minecraft:wither",
+        "minecraft:ender_dragon",
+        "bosses_of_mass_destruction:gauntlet",
+        "bosses_of_mass_destruction:lich",
+        "bosses_of_mass_destruction:obsidilith",
+        "bosses_of_mass_destruction:void_blossom",
+        "irons_spellbooks:fire_boss",
+        "terra_entity:dungeon_guardian",
+        "terra_entity:skeletron",
+        "terra_entity:king_slime",
+        "terra_entity:eye_of_cthulhu",
+        "terra_entity:brain_of_cthulhu",
+        "terra_entity:queen_bee",
+        "irons_spellbooks:dead_king"
+    ]).addLoot(LootEntry.of('kubejs:omega_healing_potion')
+        .apply(item => {
+            item.setCount({ min: 1, max: 3 });
+        })
+        .randomChance(0.5)
+    );
+
+    event.addEntityModifier([
+        "cataclysm:ignis",
+        "cataclysm:the_leviathan",
+        "cataclysm:ancient_remnant",
+        "cataclysm:maledictus",
+        "cataclysm:scylla",
+        "cataclysm:the_harbinger",
+        "cataclysm:ender_guardian",
+        "cataclysm:netherite_monstrosity",
+        "minecraft:wither",
+        "minecraft:ender_dragon",
+        "bosses_of_mass_destruction:gauntlet",
+        "bosses_of_mass_destruction:lich",
+        "bosses_of_mass_destruction:obsidilith",
+        "bosses_of_mass_destruction:void_blossom",
+        "irons_spellbooks:fire_boss",
+        "terra_entity:dungeon_guardian",
+        "terra_entity:skeletron",
+        "terra_entity:king_slime",
+        "terra_entity:eye_of_cthulhu",
+        "terra_entity:brain_of_cthulhu",
+        "terra_entity:queen_bee",
+        "irons_spellbooks:dead_king"
+    ]).addLoot(LootEntry.of('kubejs:supreme_mana_potion')
+        .apply(item => {
+            item.setCount({ min: 1, max: 5 });
+        })
+        .randomChance(0.75)
     );
 }); 

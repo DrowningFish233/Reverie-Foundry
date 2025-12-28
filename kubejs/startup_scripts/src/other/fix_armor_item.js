@@ -37,7 +37,7 @@ ItemEvents.modification((event) => {
                 modifier: { amount: 0.1, operation: "add_multiplied_base", id: "8564f797-7d70-41f5-9e45-3dd647616574" },
             }
         ];
-        item.setAttributeModifiers(modifiers);
+        item.setAttributeModifiersWithTooltip(modifiers);
     });
     event.modify("kubejs:spell_resistance_chestplate", (item) => {
         const modifiers = [
@@ -77,7 +77,7 @@ ItemEvents.modification((event) => {
                 modifier: { amount: 0.1, operation: "add_multiplied_base", id: "c77234b0-334d-4af2-ac9a-a7a4ec9a7314" },
             }
         ];
-        item.setAttributeModifiers(modifiers);
+        item.setAttributeModifiersWithTooltip(modifiers);
     });
     event.modify("kubejs:spell_resistance_leggings", (item) => {
         const modifiers = [
@@ -117,7 +117,7 @@ ItemEvents.modification((event) => {
                 modifier: { amount: 0.1, operation: "add_multiplied_base", id: "ad7715cc-cb8b-46b2-9f22-7eb15e060422" },
             }
         ];
-        item.setAttributeModifiers(modifiers);
+        item.setAttributeModifiersWithTooltip(modifiers);
     });
     event.modify("kubejs:spell_resistance_boots", (item) => {
         const modifiers = [
@@ -157,7 +157,7 @@ ItemEvents.modification((event) => {
                 modifier: { amount: 0.1, operation: "add_multiplied_base", id: "d32c829e-f63e-4229-af53-d6875c8f336b" },
             }
         ];
-        item.setAttributeModifiers(modifiers);
+        item.setAttributeModifiersWithTooltip(modifiers);
     });
     event.modify("kubejs:azure_dawnbreaker_helmet", (item) => {
         const modifiers = [
@@ -182,7 +182,7 @@ ItemEvents.modification((event) => {
                 modifier: { amount: 0.1, operation: "add_multiplied_base", id: "e5567aca-785c-40f8-90e2-b4f31b43b4d4" },
             },
         ];
-        item.setAttributeModifiers(modifiers);
+        item.setAttributeModifiersWithTooltip(modifiers);
     });
     event.modify("kubejs:azure_dawnbreaker_chestplate", (item) => {
         const modifiers = [
@@ -207,7 +207,7 @@ ItemEvents.modification((event) => {
                 modifier: { amount: 0.1, operation: "add_multiplied_base", id: "48b896fe-6363-4f78-afef-a196d346571b" },
             },
         ];
-        item.setAttributeModifiers(modifiers);
+        item.setAttributeModifiersWithTooltip(modifiers);
     });
     event.modify("kubejs:azure_dawnbreaker_leggings", (item) => {
         const modifiers = [
@@ -232,7 +232,7 @@ ItemEvents.modification((event) => {
                 modifier: { amount: 0.1, operation: "add_multiplied_base", id: "73b8cfdc-be41-446b-9167-f0ad0df11eae" },
             },
         ];
-        item.setAttributeModifiers(modifiers);
+        item.setAttributeModifiersWithTooltip(modifiers);
     });
     event.modify("kubejs:azure_dawnbreaker_boots", (item) => {
         const modifiers = [
@@ -257,7 +257,7 @@ ItemEvents.modification((event) => {
                 modifier: { amount: 0.1, operation: "add_multiplied_base", id: "5eaef39c-27f8-4d9c-84ff-084d89b16750" },
             },
         ];
-        item.setAttributeModifiers(modifiers);
+        item.setAttributeModifiersWithTooltip(modifiers);
     });
     event.modify("malum:umbral_spirit", (item) => {
         item.setMaxStackSize(32)

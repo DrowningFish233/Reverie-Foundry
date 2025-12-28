@@ -35,7 +35,18 @@
                 "operation": "MULTIPLY_TOTAL",
                 "value": 0.4
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:sleep_aid"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:combustion_boost"
+                }
+            ]
         }
     }
 }

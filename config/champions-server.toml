@@ -86,7 +86,7 @@
 		#The base movement speed bonus
 		# Default: 0.25
 		# Range: 0.0 ~ 1.7976931348623157E308
-		hastyMovementBonus = 0.25
+		hastyMovementBonus = 0.20
 
 	[affixes.infested]
 		#The amount of parasites to spawn per interval
@@ -153,17 +153,17 @@
 		#The minimum percent of damage to reflect back
 		# Default: 0.1
 		# Range: 0.0 ~ 1.0
-		reflectiveMinPercent = 0.1
+		reflectiveMinPercent = 0.0
 		#The maximum percent of damage to reflect back
 		# Default: 0.35
 		# Range: 0.0 ~ 1.0
-		reflectiveMaxPercent = 0.35
+		reflectiveMaxPercent = 0.0
 		#The maximum amount of damage to reflect back
 		# Default: 100
 		# Range: > 0
-		reflectiveMax = 100
+		reflectiveMax = 1
 		#Set to true to enable deadly reflected strikes
-		reflectiveLethal = true
+		reflectiveLethal = false
 
 	[affixes.magnetic]
 		#Strength of the magnetic pulling effect
@@ -175,13 +175,13 @@
 		#The percent chance that an attack will wound targets
 		# Default: 0.4
 		# Range: 0.0 ~ 1.0
-		woundingChance = 0.4
+		woundingChance = 0.3
 
 	[affixes.shielding]
 		#The percent chance that an attack will wound targets
 		# Default: 0.5
 		# Range: 0.0 ~ 1.0
-		shieldingChance = 0.5
+		shieldingChance = 0.0
 
 [integrations]
 	#Scaling Health

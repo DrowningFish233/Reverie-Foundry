@@ -57,11 +57,6 @@
         },
         {
           "conditions": [],
-          "level": 2,
-          "trait": "kubejs:sleep_aid"
-        },
-        {
-          "conditions": [],
           "level": 1,
           "trait": "kubejs:bribery"
         },

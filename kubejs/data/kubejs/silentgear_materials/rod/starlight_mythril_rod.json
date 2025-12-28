@@ -50,7 +50,28 @@
                 "operation": "ADD",
                 "value": 40
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:swamp_silver_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:eternal_starlight"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:ancient"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:aethersent_ingot"
+                }
+            ]
         }
     }
 }

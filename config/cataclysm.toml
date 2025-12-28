@@ -96,7 +96,7 @@
 	#Cursed Tombstone Summon cooldown Minute
 	# Default: 1
 	# Range: 1 ~ 300
-	"Cursed Tombstone Summon cooldown Minute" = 30
+	"Cursed Tombstone Summon cooldown Minute" = 20
 
 ["Entity damage"]
 	#Void Rune's Damage
@@ -192,11 +192,11 @@
 	#EnderGuardian's Health Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	EnderGuardianHealthMultiplier = 1.8
+	EnderGuardianHealthMultiplier = 2.0
 	#EnderGuardian's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	EnderGuardianDamageMultiplier = 1.4
+	EnderGuardianDamageMultiplier = 2.0
 	#EnderGuardian's DamageCap
 	# Default: 22.0
 	# Range: 0.0 ~ 1000000.0
@@ -204,7 +204,7 @@
 	#EnderGuardian's Healing with out target
 	# Default: 25.0
 	# Range: 0.0 ~ 1000000.0
-	EnderGuardianNatureHealing = 60.0
+	EnderGuardianNatureHealing = 100.0
 	#Ender guardian's block breaking ignore the MobGriefing
 	EnderguardianBlockBreaking = true
 	#Guardian's Immune to Long distance attack range.
@@ -272,11 +272,11 @@
 	#Monstrosity's Healing Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	MonstrosityHealingMultiplier = 1.0
+	MonstrosityHealingMultiplier = 1.2
 	# Monstrosity's Healing with out target
 	# Default: 25.0
 	# Range: 0.0 ~ 1000000.0
-	MonstrosityNatureHealing = 60.0
+	MonstrosityNatureHealing = 100.0
 	#Monstrosity's DamageCap
 	# Default: 22.0
 	# Range: 0.0 ~ 1000000.0
@@ -326,7 +326,7 @@
 	#Ignis's Health Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	IgnisHealthMultiplier = 1.5
+	IgnisHealthMultiplier = 1.2
 	#Ignis's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
@@ -372,7 +372,7 @@
 	#Prowler's Health Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	ProwlerHealthMultiplier = 1.5
+	ProwlerHealthMultiplier = 1.2
 	#Prowler's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
@@ -498,7 +498,7 @@
 	#Amethyst Crab's EarthQuake Damage
 	# Default: 5.0
 	# Range: 0.0 ~ 1000000.0
-	AmethystCrabEarthQuakeDamage = 5.0
+	AmethystCrabEarthQuakeDamage = 15.0
 	#Amethyst Crab's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
@@ -542,7 +542,7 @@
 	#Remnant's EarthQuake Damage
 	# Default: 11.0
 	# Range: 0.0 ~ 1000000.0
-	"Remnant's EarthQuakeDamage" = 15.0
+	"Remnant's EarthQuakeDamage" = 18.0
 	#Ancient Remnant's DamageTime
 	# Default: 12
 	# Range: 0 ~ 100
@@ -556,7 +556,7 @@
 
 [Kobolediator]
 	#Kobolediator's block breaking ignore the MobGriefing
-	KobolediatorBlockBreaking = false
+	KobolediatorBlockBreaking = true
 	#Kobolediator's Health Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
@@ -788,7 +788,7 @@
 	#Scylla's DamageCap
 	# Default: 22.0
 	# Range: 0.0 ~ 1000000.0
-	"Scylla DamageCap" = 28.0
+	"Scylla DamageCap" = 1000.0
 	#Scylla's DamageTime
 	# Default: 25
 	# Range: 0 ~ 100

@@ -31,7 +31,13 @@
                 "operation": "MULTIPLY_TOTAL",
                 "value": 0.05
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:amaramber_ingot"
+                }
+            ]
         }
     }
 }

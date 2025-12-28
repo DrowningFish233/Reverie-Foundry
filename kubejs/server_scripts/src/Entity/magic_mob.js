@@ -19,13 +19,15 @@ EntityJSEvents.addGoalSelectors('bosses_of_mass_destruction:void_blossom', event
 })
 //黑曜石巨柱
 EntityJSEvents.addGoalSelectors('bosses_of_mass_destruction:obsidilith', event => {
-    event.arbitraryGoal(2, (e) => {
+    event.arbitraryGoal(1, (e) => {
         return new WizardAttackGoal(e, 1, 120)
             .setSpells(
                 [
-                    Spell.of('irons_spellbooks:fang_ward'),
+                    Spell.of('irons_spellbooks:black_hole'),
+                    Spell.of('hazennstuff:stellar_collapse'),
                     Spell.of('irons_spellbooks:fang_strike'),
-                    Spell.of('irons_spellbooks:lob_creeper')
+                    Spell.of('irons_spellbooks:lob_creeper'),
+                    Spell.of('irons_spellbooks:magic_missile')
                 ], // 攻击
                 [],// 防御
                 [], // 移动
@@ -37,8 +39,8 @@ EntityJSEvents.addGoalSelectors('bosses_of_mass_destruction:obsidilith', event =
 })
 //下界铁掌
 EntityJSEvents.addGoalSelectors('bosses_of_mass_destruction:gauntlet', event => {
-    event.arbitraryGoal(2, (e) => {
-        return new WizardAttackGoal(e, 1, 120)
+    event.arbitraryGoal(1, (e) => {
+        return new WizardAttackGoal(e, 1, 80)
             .setIsFlying()
             .setSpellQuality(0.8, 1.2)
             .setSpells(
@@ -61,18 +63,18 @@ EntityJSEvents.addGoalSelectors('bosses_of_mass_destruction:gauntlet', event => 
 //月藤巨物
 EntityJSEvents.addGoalSelectors('eternal_starlight:lunar_monstrosity', event => {
     event.arbitraryGoal(1, (e) => {
-        return new WizardAttackGoal(e, 1, 120)
+        return new WizardAttackGoal(e, 1, 100)
             .setSpells(
                 [
-                    Spell.of('irons_spellbooks:sculk_tentacles'),
-                    Spell.of('irons_spellbooks:eldritch_blast'),
-                    Spell.of('irons_spellbooks:poison_splash')
+                    Spell.of('hazennstuff:golden_shower'),
+                    Spell.of('hazennstuff:counterspell_spider_lily'),
+                    Spell.of('hazennstuff:thorn_chakram'),
+                    Spell.of('hazennstuff:death_sentence')
+
                 ], // 攻击
                 [],// 防御
                 [], // 移动
-                [
-                    Spell.of('irons_spellbooks:slow'),
-                ]// 支援
+                []// 支援
             )
     })
 })

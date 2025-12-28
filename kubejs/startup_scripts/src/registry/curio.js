@@ -212,7 +212,7 @@ StartupEvents.registry('item', event => {
         )
     event.create("totem_of_undying")
         .texture('kubejs:item/curios/totem_of_undying')
-        .tag("curios:necklace")
+        .tag("curios:charm")
         .unstackable()
         .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
     event.create("red_shoes")

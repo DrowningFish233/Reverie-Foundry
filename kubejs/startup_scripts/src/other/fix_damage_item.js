@@ -19,7 +19,9 @@ const attackBonuses = {
     'allthemodium:unobtainium_shovel': -20,
     'allthemodium:unobtainium_mace': -20,
     'allthemodium:unobtainium_hoe': -20,
-    'kubejs:starfury': 2
+    'kubejs:starfury': 2,
+    'kubejs:narrator': 1
+
 };
 
 NativeEvents.onEvent(ItemAttrEvent, event => {
@@ -33,7 +35,7 @@ NativeEvents.onEvent(ItemAttrEvent, event => {
         operation: "add_value"
     }, "mainhand");
 });
-
+/*
 ItemEvents.modification(event => {
     for (let itemId in attackBonuses) {
         event.modify(itemId, item => {
@@ -43,4 +45,21 @@ ItemEvents.modification(event => {
         });
     }
 });
+*/
 
+
+const attackspeed = {
+    'kubejs:narrator': 2.4
+};
+
+NativeEvents.onEvent(ItemAttrEvent, event => {
+    let itemId = event.itemStack.id;
+    let bonus = attackspeed[itemId];
+    if (bonus == null) return;
+
+    event.addModifier("minecraft:generic.attack_speed", {
+        id: itemId + "_attack_speed_mod",
+        amount: bonus,
+        operation: "add_value"
+    }, "mainhand");
+});

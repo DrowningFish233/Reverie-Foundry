@@ -48,7 +48,18 @@
       "magic_damage": 5.0,
       "ranged_damage": 2.0,
       "rarity": 55.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:life_drain"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:mithril_ingot"
+        }
+      ]
     }
   }
 }

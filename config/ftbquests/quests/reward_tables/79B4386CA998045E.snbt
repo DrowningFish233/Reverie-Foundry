@@ -7,51 +7,48 @@
 	order_index: 2
 	rewards: [
 		{
-			auto: "enabled"
-			exclude_from_claim_all: true
-			id: "5A96A10395D12A33"
-			item: {
+			command: "/rf give sorcerer"
+			icon: {
 				components: {
-					"sophisticatedcore:number_of_inventory_slots": 27
-					"sophisticatedcore:number_of_upgrade_slots": 1
-					"sophisticatedcore:render_info_tag": {
-						upgradeItems: [{ }]
+					"irons_spellbooks:spell_container": {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
 					}
-					"sophisticatedcore:storage_uuid": [I;
-						-1571602382
-						838091731
-						-1615349510
-						905170370
-					]
 				}
-				count: 1
-				id: "sophisticatedbackpacks:backpack"
+				id: "irons_spellbooks:dragonskin_spell_book"
 			}
-			team_reward: false
+			id: "4E3EDC65B6FED37D"
+			ignore_reward_blocking: true
+			silent: true
+			type: "command"
 		}
 		{
-			auto: "enabled"
-			exclude_from_claim_all: true
-			id: "7D8C106B8D90BF8D"
+			command: "/rf give warrior"
+			icon: {
+				id: "minecraft:iron_sword"
+			}
+			id: "0587A8A6F15D12D2"
 			ignore_reward_blocking: true
-			item: {
-				components: {
-					"sophisticatedcore:number_of_inventory_slots": 27
-					"sophisticatedcore:number_of_upgrade_slots": 1
-					"sophisticatedcore:render_info_tag": {
-						upgradeItems: [{ }]
-					}
-					"sophisticatedcore:storage_uuid": [I;
-						1534042837
-						-1365160647
-						-2094601211
-						-1448495043
-					]
-				}
-				count: 1
+			type: "command"
+		}
+		{
+			command: "/rf give traveler"
+			icon: {
 				id: "sophisticatedbackpacks:backpack"
 			}
-			team_reward: false
+			id: "6705463FAB6A4578"
+			silent: true
+			type: "command"
+		}
+		{
+			command: "/rf give drunkard"
+			icon: {
+				id: "kubejs:purple_haze"
+			}
+			id: "2B36732E586C7836"
+			type: "command"
 		}
 	]
 }

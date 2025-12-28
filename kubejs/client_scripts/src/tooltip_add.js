@@ -40,6 +40,7 @@ const TooltipUtils = {
 
 // 物品tooltip配置
 const itemTooltips = {
+    /*
     // 绝缘套装
     'kubejs:spell_resistance_helmet': {
         effects: TooltipUtils.generateEquipmentEffects('tooltip.slot.head', [
@@ -116,7 +117,7 @@ const itemTooltips = {
         ])
     },
 
-
+*/
     'aquaculture:wooden_fillet_knife': {
         lines: [
             TooltipUtils.simpleText('tooltip.wooden_fillet_knife', 'aqua'),
@@ -237,6 +238,15 @@ const itemTooltips = {
     'kubejs:crowbar': {
         lines: [
             TooltipUtils.simpleText('tooltip.crowbar.unbreakable', 'blue'),
+            TooltipUtils.simpleText('tooltip.rf', 'pink_dye'),
+        ]
+    },
+    'kubejs:narrator': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.narrator.tooltip', 'blue'),
+            TooltipUtils.simpleText('tooltip.narrator.tooltip.2', 'blue'),
+            TooltipUtils.simpleText('tooltip.narrator.tooltip.3', 'blue'),
+            TooltipUtils.simpleText('tooltip.null.tooltip', 'blue'),
             TooltipUtils.simpleText('tooltip.rf', 'pink_dye'),
         ]
     },

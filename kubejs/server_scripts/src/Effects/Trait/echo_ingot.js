@@ -6,9 +6,7 @@
 function echo_ingot(event) {
     const { source, entity } = event;
     const attacker = source.player
-    if (!attacker || !attacker.isLiving()) {
-        return;
-    }
+    if (!attacker || !attacker.isLiving()) return;
 
     const COOLDOWN_KEY = "echo_ingot_COOLDOWN_KEY"
     if ($CooldownManager.hasCooldown(attacker, COOLDOWN_KEY)) return

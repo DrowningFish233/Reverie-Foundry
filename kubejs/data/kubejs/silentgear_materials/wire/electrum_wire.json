@@ -31,7 +31,18 @@
                 "operation": "MULTIPLY_TOTAL",
                 "value": 0.35
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:gift_heaven"
+                }
+            ]
         }
     }
 }

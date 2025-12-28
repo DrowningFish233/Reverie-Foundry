@@ -10,7 +10,6 @@ ISSEvents.spellOnCast(event => {
 });
 
 
-
 // 学派属性映射表
 const SCHOOL_ATTRIBUTES = {
     "irons_spellbooks:fire": "irons_spellbooks:fire_spell_power",
@@ -24,7 +23,9 @@ const SCHOOL_ATTRIBUTES = {
     "irons_spellbooks:eldritch": "irons_spellbooks:eldritch_spell_power",
     "cataclysm_spellbooks:abyssal": "cataclysm_spellbooks:abyssal_spell_power",
     "familiarslib:sound": "familiarslib:sound_spell_power",
-    "kubejs:dream": "kubejs:dream_spell_power"
+    "kubejs:dream": "kubejs:dream_spell_power",
+    "hazennstuff:radiance": "hazennstuff:radiance_spell_power",
+    "hazennstuff:shadow": "hazennstuff:shadow_spell_power"
 };
 
 
@@ -34,56 +35,64 @@ ISSEvents.spellOnCast(event => {
 
 //法术事件总线
 ISSEvents.spellPostCast(event => {
-    const school = detectSpellSchool(event);
-    if (school) {
-        // 学派处理逻辑
-        switch (school) {
-            case "irons_spellbooks:fire":
-                //炽焰法术流派
-                blazing_magic(event);
-                mana_quenching(event);
-                break;
-            case "cataclysm_spellbooks:abyssal":
-                //深渊法术流派
-                break;
-            case "kubejs:dream":
-                //幻梦法术流派
-                break;
-            case "irons_spellbooks:nature":
-                //自然法术流派
-                break;
-            case "irons_spellbooks:evocation":
-                //召唤法术流派
-                break;
-            case "irons_spellbooks:ender":
-                //末影法术流派
-                break;
-            case "irons_spellbooks:ice":
-                //冰霜法术流派
-                break;
-            case "familiarslib:sound":
-                //旋律法术流派
-                break;
-            case "irons_spellbooks:holy":
-                //神圣法术流派
-                break;
-            case "irons_spellbooks:blood":
-                starinium_ingot(event);
-                //猩红法术流派
-                break;
-            case "irons_spellbooks:lightning":
-                //雷霆法术流派
-                break;
-            case "kubejs:dream":
-                //幻梦法术流派
-                break;
-            case "irons_spellbooks:eldritch":
-                //远古巫术
-                break;
-            default:
-                // 未知学派处理
-                break;
-        }
+    const spell = event.getSpell();
+    const school = spell.getSchoolType().getId();
+    // 学派处理逻辑
+    switch (school) {
+        case "irons_spellbooks:fire":
+            //炽焰法术流派
+            blazing_magic(event);
+            mana_quenching(event);
+            break;
+        case "hazennstuff:radiance":
+            //光辉法术流派
+            break;
+        case "hazennstuff:shadow":
+            //暗影法术流派
+            break;
+        case "cataclysm_spellbooks:abyssal":
+            //深渊法术流派
+            break;
+        case "kubejs:dream":
+            //幻梦法术流派
+            break;
+        case "irons_spellbooks:nature":
+            //自然法术流派
+            break;
+        case "irons_spellbooks:evocation":
+            //召唤法术流派
+            break;
+        case "irons_spellbooks:ender":
+            //末影法术流派
+            break;
+        case "irons_spellbooks:ice":
+            //冰霜法术流派
+            break;
+        case "familiarslib:sound":
+            //旋律法术流派
+            break;
+        case "irons_spellbooks:holy":
+            //神圣法术流派
+            break;
+        case "irons_spellbooks:blood":
+            starinium_ingot(event);
+            //猩红法术流派
+            break;
+        case "irons_spellbooks:lightning":
+            //雷霆法术流派
+            break;
+        case "kubejs:dream":
+            //幻梦法术流派
+            break;
+        case "irons_spellbooks:eldritch":
+            //远古巫术
+            break;
+        case "irons_spellbooks:eldritch":
+            //远古巫术
+            break;
+        default:
+            // 未知学派处理
+            break;
     }
 });
 

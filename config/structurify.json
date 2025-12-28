@@ -1,11 +1,11 @@
 {
-  "config_version": "2.0.7b",
-  "config_datetime": "2025-11-26_08-37-51",
+  "config_version": "2.0.10",
+  "config_datetime": "2025-12-27_22-05-04",
   "general": {
     "disable_all_structures": false,
     "prevent_structure_overlap": true,
     "enable_global_spacing_and_separation_modifier": true,
-    "global_spacing_and_separation_modifier": 1.1
+    "global_spacing_and_separation_modifier": 0.8
   },
   "structure_namespaces": [
     {
@@ -74,80 +74,64 @@
         "#is_ocean",
         "#is_beach"
       ]
-    },
-    {
-      "name": "qrafty:orbital",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin",
-      "override_global_biome_check": false,
-      "enable_biome_check": false,
-      "biome_check_mode": "BLACKLIST",
-      "biome_check_blacklisted_biomes": [
-        "#is_river",
-        "#is_ocean",
-        "#is_beach"
-      ]
     }
   ],
   "structure_sets": [
     {
+      "spacing": 67,
+      "separation": 50,
       "name": "irons_spellbooks:ice_spider_den",
       "salt": 126346,
       "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "spacing": 67,
-      "separation": 50
+      "override_global_spacing_and_separation_modifier": false
     },
     {
+      "spacing": 52,
+      "separation": 50,
       "name": "irons_spellbooks:impaled_icebreaker",
       "salt": 87959402,
       "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "spacing": 52,
-      "separation": 50
+      "override_global_spacing_and_separation_modifier": false
     },
     {
+      "spacing": 19,
+      "separation": 18,
       "name": "irons_spellbooks:mangrove_hut",
       "salt": 169476080,
       "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "spacing": 19,
-      "separation": 18
+      "override_global_spacing_and_separation_modifier": false
     },
     {
+      "spacing": 39,
+      "separation": 33,
       "name": "irons_spellbooks:mountain_tower",
       "salt": 194767080,
       "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "spacing": 39,
-      "separation": 33
+      "override_global_spacing_and_separation_modifier": false
     },
     {
+      "spacing": 59,
+      "separation": 50,
       "name": "irons_spellbooks:pyromancer_tower",
       "salt": 1512684,
       "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "spacing": 59,
-      "separation": 50
+      "override_global_spacing_and_separation_modifier": false
     },
     {
+      "spacing": 13,
+      "separation": 8,
       "name": "mss:arena",
       "salt": 982034754,
       "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "spacing": 13,
-      "separation": 8
+      "override_global_spacing_and_separation_modifier": false
     },
     {
+      "spacing": 59,
+      "separation": 31,
       "name": "skyvillages:skyvillage",
       "salt": 23734816,
       "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "spacing": 59,
-      "separation": 31
+      "override_global_spacing_and_separation_modifier": false
     }
   ]
 }

@@ -119,7 +119,7 @@ StartupEvents.registry("champions:affix", event => {
                 return true;
             })
         })
-    event.create('naga')
+    event.create('transform')
         .settings(setting => {
             setting.withDefault()
                 .setPrefix("affix.")
@@ -133,37 +133,64 @@ StartupEvents.registry("champions:affix", event => {
         .behavior(behavior => {
             // 攻击行为
             behavior.onAttack((champion, player, damageSource, amount) => {
-                const naga = champion.getLivingEntity();
-                const maxHealth = naga.getMaxHealth();
-                const currentHealth = naga.getHealth();
+                const transform = champion.getLivingEntity();
+                const transformID = transform.getType();
+
+                const isNetheriteMonstrosity = transformID === "cataclysm:netherite_monstrosity";
+
+                const maxHealth = transform.getMaxHealth();
+                const currentHealth = transform.getHealth();
                 const healthPercent = currentHealth / maxHealth * 100;
 
                 if (!player || !player.isPlayer()) return false;
+
+                let tremorAmplifier = 7;
                 if (player.isBlocking()) {
-                    player.potionEffects.add('kubejs:tremor', 20 * 5, 1);
+                    tremorAmplifier = 3;
                 }
+
+                if (!isNetheriteMonstrosity) {
+                    tremorAmplifier = Math.floor(tremorAmplifier / 2);
+                }
+
+                player.potionEffects.add('kubejs:tremor', 20 * 5, tremorAmplifier);
+
+                if (isNetheriteMonstrosity && healthPercent < 50 && Math.random() < 0.5) {
+                    if (player.hasEffect("kubejs:tremor")) {
+                        let tremorEffect = player.getEffect("kubejs:tremor");
+                        let tremorLevel = tremorEffect.getAmplifier();
+                        let newTremorLevel = tremorLevel - 1;
+                        entity.potionEffects.add("kubejs:hurt", 20 * 8, 0);
+                        entity.potionEffects.add("minecraft:slowness", 20 * 8, 0);
+                        entity.removeEffect("kubejs:tremor");
+                        if (newTremorLevel < 1) {
+                            entity.removeEffect("kubejs:tremor");
+                        } else {
+                            entity.potionEffects.add("kubejs:tremor", tremorEffect.getDuration(), newTremorLevel);
+                        }
+                    }
+                }
+
                 return true; // 总是返回布尔值
             });
 
             // 服务器更新行为
             behavior.onServerUpdate(champion => {
-                const naga = champion.getLivingEntity();
-                const maxHealth = naga.getMaxHealth();
-                const currentHealth = naga.getHealth();
-                const healthPercent = currentHealth / maxHealth * 100;
+                const transform = champion.getLivingEntity();
+                const transformID = transform.getType();
 
-                // 血量低于75%时，增加速度和攻击力
-                if (healthPercent < 75) {
-                    naga.potionEffects.add('minecraft:strength', 60, 0);
-                    naga.potionEffects.add('minecraft:speed', 60, healthPercent < 50 ? 1 : 0);
-                }
+                if (transformID !== "cataclysm:netherite_monstrosity") return;
+
+                const maxHealth = transform.getMaxHealth();
+                const currentHealth = transform.getHealth();
+                const healthPercent = currentHealth / maxHealth * 100;
 
                 // 血量低于50%时，降低周围生物移动速度
                 if (healthPercent < 50) {
-                    if (naga.tickCount % 100 === 0) {
-                        naga.level.getEntities(
-                            naga,
-                            naga.getBoundingBox().inflate(3)
+                    if (transform.tickCount % 100 === 0) {
+                        transform.level.getEntities(
+                            transform,
+                            transform.getBoundingBox().inflate(6)
                         ).forEach(e => {
                             if (e && e.isLiving() && e.isPlayer()) {
                                 e.potionEffects.add('minecraft:slowness', 20 * 3, 0);
@@ -173,6 +200,7 @@ StartupEvents.registry("champions:affix", event => {
                 }
             });
         });
+
     event.create('lich')
         .settings(setting => {
             setting.withDefault()
@@ -191,6 +219,11 @@ StartupEvents.registry("champions:affix", event => {
 
                 const debuffList = [
                     'kubejs:miracle_blight',
+                    "kubejs:bleed",
+                    "kubejs:hurt",
+                    "kubejs:fire",
+                    "kubejs:bloodlust",
+                    "kubejs:radiance",
                     'minecraft:slowness',
                     'minecraft:weakness',
                     'minecraft:poison',
@@ -214,7 +247,7 @@ StartupEvents.registry("champions:affix", event => {
             })
             behavior.onHeal((champion, amount) => {
                 const entity = champion.getLivingEntity(); // 先获取实际的实体对象
-                if (!entity) return false; // 防止空指针错误
+                if (!entity) return false;
 
                 const buffList = [
                     'minecraft:strength',
@@ -328,7 +361,7 @@ StartupEvents.registry("champions:affix", event => {
                 let entity = champion.getLivingEntity()
                 if (!entity) return amount;
                 if (Math.random() < getDodgeChance(entity)) {
-                    return 0; // 闪避成功，伤害归零
+                    return 0; // 闪避
                 }
                 return newAmount;
             });
@@ -361,7 +394,7 @@ StartupEvents.registry("champions:affix", event => {
                 return true
             })
         })
-    event.create('wound')
+    event.create('suppress')
         .settings(setting => {
             setting.withDefault()
                 .setPrefix("affix.")

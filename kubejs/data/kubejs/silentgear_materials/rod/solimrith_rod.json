@@ -46,7 +46,18 @@
                 "operation": "ADD",
                 "value": 40
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:malarite"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:high_health"
+                }
+            ]
         }
     }
 }

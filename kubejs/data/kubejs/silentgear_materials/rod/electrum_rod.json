@@ -38,7 +38,18 @@
                 "operation": "MULTIPLY_BASE",
                 "value": 0.15
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:gift_heaven"
+                }
+            ]
         }
     }
 }

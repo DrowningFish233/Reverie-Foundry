@@ -2,5 +2,9 @@
   "type": "champions:shielding",
   "category": "defence",
   "enable": false,
-  "hasSub": false
+  "hasSub": false,
+  "tier": {
+    "max": 100,
+    "min": 99
+  }
 }

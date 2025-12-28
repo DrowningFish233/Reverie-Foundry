@@ -439,4 +439,42 @@ ServerEvents.recipes(event => {
             .addExtraInput('minecraft:string', 6)
             .addExtraInput('alshanex_familiars:sound_rune', 2)
     );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('#silentgems:glowroses', 'kubejs:bismuthgems')
+            .addSpirit("infernal", 8)
+            .addSpirit("aerial", 8)
+            .addSpirit("earthen", 8)
+            .addExtraInput('kubejs:necroplasm', 4)
+            .addExtraInput('alltheores:fluorite', 12)
+            .addExtraInput('#c:gems', 8)
+            .addExtraInput('#silentgear:starlight_charger_catalysts', 4)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('#silentgems:glowroses', 'kubejs:ultranium_gem')
+            .addSpirit("umbral", 6)
+            .addExtraInput('kubejs:ashes_of_calamity', 6)
+            .addExtraInput('hazennstuff:deus_essence', 1)
+            .addExtraInput('#c:gems', 16)
+            .addExtraInput('#silentgear:starlight_charger_catalysts', 4)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('#c:ingots/uranium', 'kubejs:achroous_ingot')
+            .addSpirit("sacred", 6)
+            .addSpirit("earthen", 6)
+            .addExtraInput('malum:warp_flux', 2)
+            .addExtraInput('malum:hex_ash', 8)
+            .addExtraInput('malum:refined_soulstone', 4)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('irons_spellbooks:mithril_ingot', 'kubejs:mythril_ingot')
+            .addSpirit("wicked", 6)
+            .addSpirit("infernal", 6)
+            .addExtraInput('malum:warp_flux', 2)
+            .addExtraInput('malum:hex_ash', 8)
+            .addExtraInput('malum:refined_soulstone', 4)
+    );
 });

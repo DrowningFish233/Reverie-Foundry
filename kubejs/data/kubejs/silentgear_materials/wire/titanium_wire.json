@@ -36,6 +36,11 @@
                     "conditions": [],
                     "level": 4,
                     "trait": "silentgear:flexible"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:arrow"
                 }
             ]
         }

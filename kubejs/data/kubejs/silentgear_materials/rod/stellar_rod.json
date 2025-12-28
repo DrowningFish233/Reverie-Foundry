@@ -46,7 +46,13 @@
                 "operation": "MULTIPLY_TOTAL",
                 "value": 0.3
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:systemtime"
+                }
+            ]
         }
     }
 }

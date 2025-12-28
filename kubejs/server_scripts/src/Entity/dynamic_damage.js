@@ -15,7 +15,8 @@ function applyAdaptiveReduction(entity, duration, amplifier) {
  */
 const ENTITY_CONFIG = {
     "eternal_starlight:starlight_golem": { duration: 30, level: 1 },
-    "eternal_starlight:lunar_monstrosity": { duration: 30, level: 1 }
+    "eternal_starlight:lunar_monstrosity": { duration: 30, level: 1 },
+    "deathtaxes:scavenger": { duration: 100, level: 2 }
 
 };
 

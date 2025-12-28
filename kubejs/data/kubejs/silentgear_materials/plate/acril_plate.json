@@ -31,7 +31,13 @@
                 "operation": "ADD",
                 "value": 1
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:acril_ingot"
+                }
+            ]
         }
     }
 }

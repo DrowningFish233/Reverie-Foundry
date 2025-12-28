@@ -356,6 +356,28 @@ ServerEvents.tags('item', event => {
         'kubejs:tin_ingot',
         'kubejs:zinc_ingot'
     )
+
+    event.add(
+        'kubejs:repeat/spider_fang',
+        'alshanex_familiars:spider_fang',
+        'hazennstuff:spider_fang'
+    )
+    event.add(
+        'kubejs:coral',
+        'minecraft:brain_coral_block',
+        'minecraft:horn_coral_block',
+        'minecraft:tube_coral_block',
+        'minecraft:bubble_coral_block',
+        'minecraft:horn_coral_fan',
+        'minecraft:fire_coral_fan',
+        'minecraft:bubble_coral_fan',
+        'minecraft:brain_coral_fan',
+        'minecraft:tube_coral_fan',
+        'minecraft:horn_coral',
+        'minecraft:fire_coral',
+        'minecraft:bubble_coral',
+        'minecraft:brain_coral'
+    )
 })
 
 ServerEvents.tags('block', event => {

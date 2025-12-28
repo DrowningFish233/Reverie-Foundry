@@ -46,7 +46,18 @@
                 "operation": "ADD",
                 "value": -4
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:xeproda"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:wip"
+                }
+            ]
         }
     }
 }

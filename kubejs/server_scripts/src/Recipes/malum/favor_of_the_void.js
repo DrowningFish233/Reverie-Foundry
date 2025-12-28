@@ -56,4 +56,12 @@ ServerEvents.recipes(event => {
     registerCustomRecipe(
         new VoidFavorRecipeJSON("kubejs:limpid_spirit", "malum:umbral_spirit")
     );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON("kubejs:low_heart_of_darkness", "kubejs:heart_of_darkness")
+    );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON("endrem:corrupted_eye", "endrem:cursed_eye")
+    );
 });

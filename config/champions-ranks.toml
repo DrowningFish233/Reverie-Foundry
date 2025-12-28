@@ -61,3 +61,12 @@
 	growthFactor = 6
 	effects = []
 	presetAffixes = []
+
+[[ranks]]
+	tier = 7
+	numAffixes = 3
+	defaultColor = "#FFD700"
+	weight = 0
+	growthFactor = 1
+	effects = []
+	presetAffixes = []

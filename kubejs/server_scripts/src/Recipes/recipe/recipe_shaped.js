@@ -526,5 +526,297 @@ ServerEvents.recipes(event => {
             A: 'create:experience_nugget'
         }
     )
-})
 
+    event.shaped(
+        Item.of('kubejs:narrator', 1),
+        [
+            'AAA',
+            'ACA',
+            'AAA'
+        ],
+        {
+            C: 'minecraft:writable_book',
+            A: 'minecraft:diamond_sword'
+        }
+    )
+
+    event.shaped(
+        Item.of('endermanoverhaul:badlands_hood', 1),
+        [
+            'AAA',
+            'ACA',
+            '   '
+        ],
+        {
+            C: 'minecraft:leather_helmet',
+            A: '#minecraft:terracotta'
+        }
+    )
+
+    event.shaped(
+        Item.of('endermanoverhaul:savanna_hood', 1),
+        [
+            'AAA',
+            'ACA',
+            '   '
+        ],
+        {
+            C: 'minecraft:leather_helmet',
+            A: '#c:sands'
+        }
+    )
+
+    event.shaped(
+        Item.of('endermanoverhaul:snowy_hood', 1),
+        [
+            'AAA',
+            'ACA',
+            '   '
+        ],
+        {
+            C: 'minecraft:leather_helmet',
+            A: '#extradelight:chilling_items',
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:sanity_curios', 1),
+        [
+            ' A ',
+            'A A',
+            ' C '
+        ],
+        {
+            A: 'minecraft:string',
+            C: 'minecraft:ender_eye',
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:mana_flower', 1),
+        [
+            'BC ',
+            'CAC',
+            'CCC'
+        ],
+        {
+            A: 'minecraft:potion[potion_contents={potion:"irons_spellbooks:instant_mana_one"}]',
+            B: '#minecraft:flowers',
+            C: 'irons_spellbooks:arcane_essence',
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:mana_flower', 1),
+        [
+            'BC ',
+            'CAC',
+            'CCC'
+        ],
+        {
+            A: 'minecraft:potion[potion_contents={potion:"irons_spellbooks:instant_mana_one"}]',
+            B: '#minecraft:flowers',
+            C: 'irons_spellbooks:arcane_essence',
+        }
+    )
+
+
+
+    event.shaped(
+        Item.of('endrem:cold_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: '#extradelight:chilling_items',
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:magical_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: 'irons_spellbooks:arcane_essence'
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:black_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: 'minecraft:prismarine_shard'
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:lost_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: '#c:ingots',
+        }
+    )
+
+
+    event.shaped(
+        Item.of('endrem:guardian_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: '#minecraft:fishes',
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:wither_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: 'minecraft:wither_skeleton_skull',
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:cryptic_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: 'malum:refined_brilliance',
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:evil_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: 'farmersdelight:milk_bottle'
+        }
+    )
+
+
+    event.shaped(
+        Item.of('endrem:corrupted_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: 'minecraft:emerald'
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:witch_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: 'minecraft:potion'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:carbonatite_ingot', 1),
+        [
+            'CAC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            A: 'minecraft:enchanted_book',
+            B: 'minecraft:iron_ingot',
+            C: 'kubejs:soul_of_night'
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:rogue_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: 'minecraft:redstone'
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:old_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: '#c:sandstone/blocks'
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:nether_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: 'minecraft:blaze_powder'
+        }
+    )
+
+    event.shaped(
+        Item.of('endrem:exotic_eye', 1),
+        [
+            'CCC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            B: 'minecraft:ender_eye',
+            C: '#kubejs:coral'
+        }
+    )
+})

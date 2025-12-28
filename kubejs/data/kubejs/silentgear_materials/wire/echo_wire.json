@@ -31,7 +31,18 @@
                 "operation": "MULTIPLY_TOTAL",
                 "value": -0.2
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:echo_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:shivering_gel"
+                }
+            ]
         }
     }
 }

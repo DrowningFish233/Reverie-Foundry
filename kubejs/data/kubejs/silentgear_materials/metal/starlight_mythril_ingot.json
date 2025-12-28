@@ -48,7 +48,28 @@
       "magic_damage": 8.0,
       "ranged_damage": 0.0,
       "rarity": 80.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:swamp_silver_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "kubejs:eternal_starlight"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:ancient"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:aethersent_ingot"
+        }
+      ]
     }
   }
 }

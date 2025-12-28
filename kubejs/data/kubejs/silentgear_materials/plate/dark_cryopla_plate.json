@@ -35,7 +35,23 @@
                 "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:combustion_boost"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:ether_resistance"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:golem_steel_ingot"
+                }
+            ]
         }
     }
 }

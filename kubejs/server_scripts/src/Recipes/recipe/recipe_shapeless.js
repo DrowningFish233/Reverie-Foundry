@@ -75,4 +75,20 @@ ServerEvents.recipes(event => {
             'create:chromatic_compound'
         ]
     )
+    event.shapeless(
+        Item.of('kubejs:starlight_mythril_ingot', 1),
+        [
+            'eternal_starlight:deepsilver_ingot',
+            'eternal_starlight:aethersent_ingot',
+            'malum:runic_sapball'
+        ]
+    )
+    event.shapeless(
+        Item.of('minecraft:wither_skeleton_skull', 1),
+        [
+            'minecraft:skeleton_skull',
+            '#c:dyes/black',
+            '#minecraft:coals'
+        ]
+    )
 })

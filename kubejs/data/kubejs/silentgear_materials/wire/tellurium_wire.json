@@ -38,6 +38,16 @@
             "traits": [
                 {
                     "conditions": [],
+                    "level": 23,
+                    "trait": "silentgear:fortunate"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:hunger"
+                },
+                {
+                    "conditions": [],
                     "level": 3,
                     "trait": "silentgear:brittle"
                 }

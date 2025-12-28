@@ -35,7 +35,23 @@
                 "operation": "MULTIPLY_BASE",
                 "value": 1.35
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:nlatstone_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:xelkive_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "silentgear:holy"
+                }
+            ]
         }
     }
 }

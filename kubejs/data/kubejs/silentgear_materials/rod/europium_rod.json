@@ -38,7 +38,18 @@
                 "operation": "MULTIPLY_BASE",
                 "value": 0.6
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:knockback"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:wip"
+                }
+            ]
         }
     }
 }

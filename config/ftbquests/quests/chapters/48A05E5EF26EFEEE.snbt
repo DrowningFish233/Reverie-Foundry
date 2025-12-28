@@ -135,18 +135,21 @@
 			ignore_reward_blocking: true
 			rewards: [
 				{
-					id: "22296A142A5F3416"
-					item: {
-						count: 1
-						id: "eccentrictome:tome"
-					}
-					type: "item"
-				}
-				{
 					id: "090E54040286E6F8"
 					item: {
 						count: 1
 						id: "malum:encyclopedia_arcana"
+					}
+					type: "item"
+				}
+				{
+					id: "6BE657EE31C6BB8D"
+					item: {
+						components: {
+							"patchouli:book": "patchouli:rf_book"
+						}
+						count: 1
+						id: "patchouli:guide_book"
 					}
 					type: "item"
 				}

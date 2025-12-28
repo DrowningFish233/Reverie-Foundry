@@ -24,9 +24,11 @@ function applyCrossSchoolLevelBonus(event) {
     const player = event.player;
 
     // 前置条件检查
-    if (!player.hasEffect("kubejs:mithril_ingot")) return;
+    if (!fu_hasTraitAnywhere(player, "kubejs:mithril_ingot")) return;
 
-    const school = detectSpellSchool(event);
+    const spell = event.getSpell();
+    const school = spell.getSchoolType().getId();
+
     if (!school) return;
 
     // 获取所有法术流派数量
@@ -69,26 +71,6 @@ function applyCrossSchoolLevelBonus(event) {
     }
 }
 
-/**
- * 检测当前释放法术的学派
- * @param {Internal.SpellPostCastEvent} event 
- * @returns {string|null} 返回学派ID，如果不是已知法术则返回null
- */
-function detectSpellSchool(event) {
-    const player = event.player;
-    if (!player || player.removed) return null;
-
-    // 从magicData中提取法术ID
-    const magicDataStr = event.player.magicData.toString();
-    const spellIdMatch = magicDataStr.match(/spellID:([^\],]+)/);
-    const spellId = spellIdMatch ? spellIdMatch[1].trim() : null;
-
-    if (!spellId) return null;
-
-    // 从映射表中查找学派
-    return SPELL_SCHOOL_MAP[spellId] || null;
-}
-
 
 /**
  * MagicData获取
@@ -121,3 +103,23 @@ function reduceMana(event) {
     let manaCost = currentMana / 10;
     magicData.setMana(currentMana - manaCost);
 }
+
+/**
+ * 检测当前释放法术的学派 || 神秘穷举 
+ * @param {Internal.SpellPostCastEvent} event 
+ * @returns {string|null} 返回学派ID，如果不是已知法术则返回null
+function detectSpellSchool(event) {
+    const player = event.player;
+    if (!player || player.removed) return null;
+
+    // 从magicData中提取法术ID
+    const magicDataStr = event.player.magicData.toString();
+    const spellIdMatch = magicDataStr.match(/spellID:([^\],]+)/);
+    const spellId = spellIdMatch ? spellIdMatch[1].trim() : null;
+
+    if (!spellId) return null;
+
+    // 从映射表中查找学派
+    return SPELL_SCHOOL_MAP[spellId] || null;
+}
+*/

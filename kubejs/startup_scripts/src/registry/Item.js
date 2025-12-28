@@ -248,5 +248,6 @@ StartupEvents.registry('item', event => {
     event.create('starfury', 'sword')
         .tier('diamond')
         .attackDamageBaseline(22.0);
+
 });
 

@@ -1,6 +1,6 @@
 const commandMap = {
     "tp": {
-        "disabled": false, // 是否禁用该命令（true=禁用，false=不禁用）
+        "disabled": true, // 是否禁用该命令（true=禁用，false=不禁用）
         "permissionLevel": 4,  // 权限等级（0-4，OP是4）
         // "stage": "admin",  // 阶段名称
         // "dimension": "minecraft:overworld"  // 维度限制

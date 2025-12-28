@@ -53,6 +53,11 @@
           "conditions": [],
           "level": 1,
           "trait": "kubejs:radiance"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:bounce"
         }
       ]
     }

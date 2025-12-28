@@ -54,7 +54,13 @@
                 "operation": "ADD",
                 "value": 3
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:amaramber_ingot"
+                }
+            ]
         }
     }
 }

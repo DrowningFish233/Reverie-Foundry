@@ -35,7 +35,23 @@
                 "operation": "MULTIPLY_BASE",
                 "value": 1.2
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:high_health"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:greedy"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:hard"
+                }
+            ]
         }
     }
 }

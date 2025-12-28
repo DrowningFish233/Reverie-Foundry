@@ -43,7 +43,6 @@ EntityEvents.death(event => {
         if (!AStages.playerHasStage(bossStage.stage, player) &&
             entityType === bossStage.boss) {
 
-            // 添加阶段
             AStages.addStageToPlayer(bossStage.stage, player);
 
             bossStage.messages.forEach(msg => {

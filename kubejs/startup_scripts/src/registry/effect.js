@@ -177,15 +177,11 @@ StartupEvents.registry('mob_effect', event => {
     event.create('fight_to_death')
         .beneficial()
         .color("pink")
-    event.create('intrinsic')
-        .beneficial()
-        .color("pink")
+
     event.create('fluxing')
         .beneficial()
         .color("pink")
-    event.create('amns')
-        .beneficial()
-        .color("pink")
+
     event.create('exp_drop')
         .beneficial()
         .color("pink")
@@ -218,15 +214,8 @@ StartupEvents.registry('mob_effect', event => {
     event.create('sanity')
         .harmful()
         .color("blue")
-    //孔赛石
-    event.create('multicolor')
-        .harmful()
-        .color("blue")
     //opal
     event.create('bloodjade')
-        .harmful()
-        .color("blue")
-    event.create('bloodjade_set')
         .harmful()
         .color("blue")
     event.create('naughty')
@@ -240,9 +229,7 @@ StartupEvents.registry('mob_effect', event => {
             1,
             'add_value'
         )
-    event.create('amber')
-        .harmful()
-        .color("blue")
+
     event.create('fire')
         .beneficial()
         .color("red")
@@ -381,9 +368,7 @@ StartupEvents.registry('mob_effect', event => {
             '0.19',
             'add_value'
         )
-    event.create('alexandrite')
-        .beneficial()
-        .color("red")
+
     event.create('chainmail_arrow')
         .beneficial()
         .color("yelow")
@@ -422,9 +407,7 @@ StartupEvents.registry('mob_effect', event => {
             20,
             'add_value'
         )
-    event.create('acril_ingot')
-        .beneficial()
-        .color("yelow")
+
     event.create('prismarine_crystals_1')
         .beneficial()
         .color("yelow")
@@ -542,7 +525,7 @@ StartupEvents.registry('mob_effect', event => {
         .harmful()
         .modifyAttribute('minecraft:generic.movement_speed',
             '3e5d6e4d-d4af-4974-90bc-967c96064fec',
-            -0.15,
+            -0.05,
             "add_multiplied_total"
         );
     event.create('eye')
@@ -558,9 +541,7 @@ StartupEvents.registry('mob_effect', event => {
     event.create('chaotic_teleport')
         .color(0x000000)
         .beneficial()
-    event.create('wither_howitzer')
-        .color(0x000000)
-        .beneficial()
+
 
     event.create('blazing_magic')
         .color(0x000000)
@@ -1177,8 +1158,7 @@ event.create('purple_haze_attack')
 
     event.create('melting_eyeball_ego_effect')
         .beneficial()
-    event.create('aethersent_ingot')
-        .beneficial()
+
     event.create('lucid')
         .beneficial()
 
@@ -1254,4 +1234,5 @@ event.create('purple_haze_attack')
             0.1,
             "add_multiplied_base"
         )
+
 }); 

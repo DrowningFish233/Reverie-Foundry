@@ -55,6 +55,11 @@
                     "conditions": [],
                     "level": 1,
                     "trait": "kubejs:xeproda"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:wip"
                 }
             ]
         }

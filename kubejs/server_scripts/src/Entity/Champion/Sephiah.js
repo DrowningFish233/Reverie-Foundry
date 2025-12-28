@@ -27,3 +27,4 @@ function getSephirahName(killCount) {
   }
   return "Malchut";
 }
+

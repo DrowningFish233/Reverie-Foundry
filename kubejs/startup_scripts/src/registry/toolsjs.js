@@ -1,4 +1,12 @@
 ItemEvents.toolTierRegistry(event => {
+    event.add('narrator', tier => {
+        tier.setUses(800)
+        tier.setSpeed(4)
+        tier.setAttackDamageBonus(6)
+        tier.setEnchantmentValue(20)
+        tier.setRepairIngredient('minecraft:diamond')
+    })
+
     event.add('crowbar', tier => {
         tier.setUses(1145)
         tier.setSpeed(6)
@@ -24,3 +32,14 @@ ItemEvents.modification(event => {
         event.setUnbreakable()
     })
 })
+
+
+StartupEvents.registry('item', event => {
+    event.create('narrator', 'sword')
+        .tier('narrator')
+        .rarity("epic")
+        .modifyTier(tier => {
+            tier.speed = 24
+            tier.setUses(800)
+        })
+});

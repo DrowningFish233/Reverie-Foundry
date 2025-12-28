@@ -2,5 +2,9 @@
   "type": "champions:wounding",
   "category": "offense",
   "enable": true,
-  "hasSub": true
+  "hasSub": true,
+  "tier": {
+    "max": 100,
+    "min": 1
+  }
 }

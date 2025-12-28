@@ -6,7 +6,7 @@
 	#Set to true to enable champions from normal mob spawners
 	championSpawners = false
 	#Set to true to enable champions from trial spawners
-	championTrialSpawners = false
+	championTrialSpawners = true
 	#The minimum tier of champions that will have death messages sent out upon defeat (0 to disable)
 	# Default: 0
 	# Range: > 0

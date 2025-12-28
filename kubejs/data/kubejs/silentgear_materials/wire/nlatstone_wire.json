@@ -31,7 +31,23 @@
                 "operation": "MULTIPLY_TOTAL",
                 "value": -0.05
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:nlatstone_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:combustion_boost"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:golem_steel_ingot"
+                }
+            ]
         }
     }
 }

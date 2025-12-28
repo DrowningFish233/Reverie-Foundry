@@ -214,6 +214,40 @@ RecipeViewerEvents.addInformation('item', event => {
         '主要通过制作与冒险获得,也可通过挖掘刷怪笼概率获取 (爆率真的很低!)',
         '试图通过奥术布匹来修复残缺的术法知识，可惜这种方法并不会百分百成功'
     ]);
+
+    event.add('allthemodium:allthemodium_ingot', [
+        'ATM锭可以前往下界，找到下界荒地的狱墟末影人',
+        '诡异森林的诡森末影人',
+        '绯红森林的绯红末影人',
+        '右键向它们交易获得对应材料',
+        '如果想要直视末影人而不激怒他们，请制作群系兜帽'
+    ]);
+
+    event.add('allthemodium:vibranium_ingot', [
+        '振金锭可以前往下界，找到猪灵',
+        '右键向它们交易获得对应材料'
+    ]);
+
+    event.add('allthemodium:unobtainium_ingot', [
+        '难得素可以前往末地，寻找漂游者',
+        '右键向它们交易获得对应材料'
+    ]);
+
+    event.add('malum:warp_flux', [
+        '对末影人类型的生物触发隐秘收割获得'
+    ]);
+
+    event.add('malum:astral_weave', [
+        '对恶魂或幻翼触发隐秘收割获得'
+    ]);
+
+    event.add('malum:rotting_essence', [
+        '对僵尸类生物触发隐秘收割获得'
+    ]);
+
+    event.add('malum:grim_talc', [
+        '对骷髅类生物触发隐秘收割获得'
+    ]);
 });
 
 

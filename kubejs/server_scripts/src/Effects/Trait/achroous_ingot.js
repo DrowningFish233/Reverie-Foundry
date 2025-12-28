@@ -9,9 +9,7 @@ function achroous_ingot(event) {
     const { source, entity } = event;
     const attacker = source.player || source.actual;
 
-    if (!attacker || !attacker.isLiving()) {
-        return;
-    }
+    if (!attacker || !attacker.isLiving()) return;
     if (!fu_hasTraitAnywhere(attacker, "kubejs:achroous_ingot")) return;
 
     const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:achroous_ingot");

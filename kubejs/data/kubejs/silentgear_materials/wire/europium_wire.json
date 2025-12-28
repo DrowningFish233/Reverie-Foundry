@@ -31,7 +31,18 @@
                 "operation": "MULTIPLY_TOTAL",
                 "value": -0.05
             },
-            "traits": []
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:knockback"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:wip"
+                }
+            ]
         }
     }
 }

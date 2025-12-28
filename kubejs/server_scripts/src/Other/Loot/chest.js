@@ -260,3 +260,15 @@ LootJS.lootTables(event => {
     }
 });
 
+
+/**战利品 */
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("formationsnether:blackstone_remnant");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('kubejs:ruby').withWeight(30).setCount([1, 2]));
+            pool.addEntry(LootEntry.of('minecraft:gold_ingot').withWeight(50).setCount([1, 6]));
+            pool.rolls([1, 2]);
+        });
+    }
+})
