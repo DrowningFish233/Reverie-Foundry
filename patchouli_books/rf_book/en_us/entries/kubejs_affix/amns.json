@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.amns",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.amns",
+			"text": "trait.silentgear.amns.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.amns.applicable",
+			"text": "trait.silentgear.amns.applicable_text"
+		}
+	]
+}

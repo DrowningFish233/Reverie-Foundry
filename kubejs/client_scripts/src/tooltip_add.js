@@ -328,8 +328,15 @@ const itemTooltips = {
     },
     'kubejs:material_patchouli_generator': {
         lines: [
-            TooltipUtils.simpleText('tooltip.drowning_fish.title.2', 'yellow'),
-            TooltipUtils.simpleText('tooltip.drowning_fish.title.3', 'yellow'),
+            TooltipUtils.simpleText('tooltip.material_patchouli_generator.title.1', 'yellow'),
+            TooltipUtils.simpleText('tooltip.material_patchouli_generator.title.2', 'yellow'),
+            TooltipUtils.simpleText('tooltip.material_patchouli_generator.title.3', 'yellow'),
+        ]
+    },
+    'kubejs:trait_fish': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.material_patchouli_generator.title.2', 'yellow'),
+            TooltipUtils.simpleText('tooltip.material_patchouli_generator.title.3', 'yellow'),
         ]
     },
     'kubejs:lightingball': {
@@ -468,6 +475,12 @@ const itemTooltips = {
 
 // 通用提示
 const commonTooltips = {
+    'terra_entity:king_slime_spawn_egg': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'terra_entity:brain_of_cthulhu_spawn_egg': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'terra_entity:queen_bee_spawn_egg': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'terra_entity:eater_of_world_spawn_egg': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'terra_entity:cthulhu_eye_spawn_egg': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'terra_entity:skeletron_spawn_egg': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'alshanex_familiars:crystal_berry': TooltipUtils.simpleText('tooltip.common.crystal_berry', 'blue'),
     'create:shadow_steel': TooltipUtils.simpleText('tooltip.common.shadow_steel', 'blue'),
     'kubejs:soul_of_light': TooltipUtils.simpleText('tooltip.common.soul_of_light', 'pink_dye'),

@@ -59,7 +59,7 @@
         },
         {
           "conditions": [],
-          "level": 3,
+          "level": 2,
           "trait": "kubejs:radiance"
         }
       ]
@@ -77,13 +77,13 @@
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "kubejs:radiance"
+          "level": 2,
+          "trait": "silentgear:malleable"
         },
         {
           "conditions": [],
           "level": 2,
-          "trait": "silentgear:malleable"
+          "trait": "kubejs:radiance"
         }
       ]
     }

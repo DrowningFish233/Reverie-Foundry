@@ -1,0 +1,22 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:wood",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:acacia_planks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFBA6337",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.wood.acacia"
+    },
+    "name_prefix": ""
+  },
+  "properties": {}
+}

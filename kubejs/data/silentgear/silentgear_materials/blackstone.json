@@ -1,0 +1,92 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "rock",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:blackstone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF3C3947",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.blackstone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 5.0,
+      "armor/boots": 1.0,
+      "armor/chestplate": 2.0,
+      "armor/helmet": 1.0,
+      "armor/leggings": 1.0,
+      "armor_durability": 5.0,
+      "attack_damage": 1.0,
+      "attack_speed": 0.0,
+      "attack_speed/axe": -0.2,
+      "attack_speed/hoe": -1.0,
+      "charging_value": 0.6,
+      "draw_speed": -0.2,
+      "durability": 151.0,
+      "enchantment_value": 4.0,
+      "harvest_speed": 4.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_blackstone_tools",
+        "level_hint": "1",
+        "name": "blackstone"
+      },
+      "projectile_accuracy": 0.8,
+      "projectile_speed": 1.0,
+      "ranged_damage": 0.0,
+      "rarity": 9.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:jagged"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": -0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:jagged"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:hard"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "conditions": [],
+  "description": {
+    "translate": "trait.silentgear.fiery.desc"
+  },
+  "effects": [],
+  "max_level": 2,
+  "name": {
+    "translate": "trait.silentgear.fiery"
+  }
+}

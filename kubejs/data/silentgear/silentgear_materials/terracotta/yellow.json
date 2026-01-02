@@ -1,0 +1,22 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:terracotta",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:yellow_terracotta"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFB98423",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.terracotta.yellow"
+    },
+    "name_prefix": ""
+  },
+  "properties": {}
+}

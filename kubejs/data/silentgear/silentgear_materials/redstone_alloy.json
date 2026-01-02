@@ -1,0 +1,82 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/redstone_alloy"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/redstone_alloy"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFE60006",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.redstone_alloy"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 17.0,
+      "armor/boots": 2.0,
+      "armor/chestplate": 7.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 5.0,
+      "armor_durability": 20.0,
+      "armor_toughness": 1.0,
+      "attack_damage": 2.0,
+      "attack_speed": 0.2,
+      "charging_value": 0.9,
+      "draw_speed": 0.2,
+      "durability": 840.0,
+      "enchantment_value": 18.0,
+      "harvest_speed": 11.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_iron_tool",
+        "level_hint": "2",
+        "name": "iron"
+      },
+      "magic_armor": 8.0,
+      "magic_damage": 4.0,
+      "ranged_damage": 1.0,
+      "rarity": 45.0,
+      "repair_value": -0.15,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:eroded"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.2
+      },
+      "rarity": 45.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

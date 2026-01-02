@@ -607,22 +607,6 @@ ServerEvents.recipes(event => {
     )
 
     event.shaped(
-        Item.of('kubejs:mana_flower', 1),
-        [
-            'BC ',
-            'CAC',
-            'CCC'
-        ],
-        {
-            A: 'minecraft:potion[potion_contents={potion:"irons_spellbooks:instant_mana_one"}]',
-            B: '#minecraft:flowers',
-            C: 'irons_spellbooks:arcane_essence',
-        }
-    )
-
-
-
-    event.shaped(
         Item.of('endrem:cold_eye', 1),
         [
             'CCC',
@@ -817,6 +801,20 @@ ServerEvents.recipes(event => {
         {
             B: 'minecraft:ender_eye',
             C: '#kubejs:coral'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:gold_crown', 1),
+        [
+            ' A ',
+            'BCB',
+            ' A '
+        ],
+        {
+            A: 'malum:hallowed_gold_nugget',
+            B: 'minecraft:gold_ingot',
+            C: 'malum:hallowed_gold_ingot'
         }
     )
 })

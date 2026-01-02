@@ -399,4 +399,91 @@ LootJS.modifiers(event => {
         })
         .randomChance(0.75)
     );
-}); 
+});
+
+
+LootJS.lootTables(event => {
+    event.getLootTable("terra_entity:entities/spore_skeleton").removeItem("terra_entity:skeletron_spawn_egg")
+    event.getLootTable("terra_entity:entities/spore_skeleton").firstPool()
+        .addEntry(LootEntry.of('hazennstuff:glowing_mushroom').withWeight(15).setCount([0, 2]))
+        .addEntry(LootEntry.of('minecraft:brown_mushroom').withWeight(30).setCount([1, 2]))
+        .addEntry(LootEntry.of('minecraft:red_mushroom').withWeight(30).setCount([1, 2]))
+
+    event.getLootTable("terra_entity:entities/spore_zombie").firstPool()
+        .addEntry(LootEntry.of('hazennstuff:glowing_mushroom').withWeight(15).setCount([0, 2]))
+        .addEntry(LootEntry.of('minecraft:brown_mushroom').withWeight(30).setCount([1, 2]))
+        .addEntry(LootEntry.of('minecraft:red_mushroom').withWeight(30).setCount([1, 2]))
+
+    event.getLootTable("terra_entity:entities/black_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/blue_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/corrupt_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/crimson_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/desert_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/evil_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/green_dumpling_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/green_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/honey_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/ice_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/jungle_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/lava_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/luminous_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/pink_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/purple_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/red_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/swamp_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/tropic_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/yellow_slime").removeItem('terra_entity:king_slime_spawn_egg')
+    event.getLootTable("terra_entity:entities/eye_of_cthulhu").removeItem('terra_entity:eater_of_world_spawn_egg')
+    event.getLootTable("terra_entity:entities/eye_of_cthulhu").removeItem('terra_entity:brain_of_cthulhu_spawn_egg')
+
+    event.getLootTable("terra_entity:entities/anger_bones").removeItem('terra_entity:skeletron_spawn_egg')
+    event.getLootTable("terra_entity:entities/base_bones").removeItem('terra_entity:skeletron_spawn_egg')
+    event.getLootTable("terra_entity:entities/big_anger_bones").removeItem('terra_entity:skeletron_spawn_egg')
+    event.getLootTable("terra_entity:entities/big_bones").removeItem('terra_entity:skeletron_spawn_egg')
+    event.getLootTable("terra_entity:entities/big_helmet_anger_bones").removeItem('terra_entity:skeletron_spawn_egg')
+    event.getLootTable("terra_entity:entities/big_muscle_anger_bones").removeItem('terra_entity:skeletron_spawn_egg')
+    event.getLootTable("terra_entity:entities/short_bones").removeItem('terra_entity:skeletron_spawn_egg')
+    event.getLootTable("terra_entity:entities/spore_skeleton").removeItem('terra_entity:skeletron_spawn_egg')
+    event.getLootTable("terra_entity:entities/undead_viking").removeItem('terra_entity:skeletron_spawn_egg')
+    event.getLootTable("terra_entity:entities/cursed_skull").removeItem('terra_entity:skeletron_spawn_egg')
+
+    event.getLootTable("terra_entity:entities/hornet").removeItem('terra_entity:queen_bee_spawn_egg')
+
+    event.getLootTable("terra_entity:entities/crimson_kemera").removeItem('terra_entity:brain_of_cthulhu_spawn_egg')
+    event.getLootTable("terra_entity:entities/crimson_slime").removeItem('terra_entity:brain_of_cthulhu_spawn_egg')
+    event.getLootTable("terra_entity:entities/bloody_spore").removeItem('terra_entity:brain_of_cthulhu_spawn_egg')
+    event.getLootTable("terra_entity:entities/blood_crawler").removeItem('terra_entity:brain_of_cthulhu_spawn_egg')
+    event.getLootTable("terra_entity:entities/blood_zombie").removeItem('terra_entity:brain_of_cthulhu_spawn_egg')
+    event.getLootTable("terra_entity:entities/demon_eye").removeItem('terra_entity:cthulhu_eye_spawn_egg')
+
+    event.getLootTable("terra_entity:entities/corrupt_slime").removeItem('terra_entity:eater_of_world_spawn_egg')
+    event.getLootTable("terra_entity:entities/eater_of_souls").removeItem('terra_entity:eater_of_world_spawn_egg')
+    event.getLootTable("terra_entity:entities/devourer").removeItem('terra_entity:eater_of_world_spawn_egg')
+    event.getLootTable("terra_entity:entities/decayeder").removeItem('terra_entity:eater_of_world_spawn_egg')
+    event.getLootTable("terra_entity:entities/evil_slime").removeItem('terra_entity:eater_of_world_spawn_egg')
+    event.getLootTable("terra_entity:entities/drippler").removeItem('terra_entity:eater_of_world_spawn_egg')
+
+    event.getLootTable("terra_entity:entities/drippler").removeItem('terra_entity:cthulhu_eye_spawn_egg')
+    event.getLootTable("terra_entity:entities/wandering_eye_fish").removeItem('terra_entity:cthulhu_eye_spawn_egg')
+    //世界吞噬者
+    let roostTable = event.getLootTable("terra_entity:entities/eater_of_worlds")
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('hazennstuff:shadow_scale').withWeight(30).setCount([1, 6]));
+        })
+        roostTable.createPool(pool => {
+            pool.addEntry(LootEntry.of('hazennstuff:shadow_scale').withWeight(40).setCount([1, 4]));
+            pool.addEntry(LootEntry.of('ftboceanmobs:sludge_ball').withWeight(30).setCount([1, 3]));
+            pool.addEntry(LootEntry.of('create:experience_nugget').withWeight(30).setCount([1, 3]));
+            pool.addEntry(LootEntry.of('minecraft:phantom_membrane').withWeight(30).setCount([1, 2]));
+            pool.addEntry(LootEntry.of('kubejs:foul_flesh').withWeight(30).setCount([1, 4]))
+            pool.rolls([1, 2]);
+        });
+        roostTable.createPool(pool => {
+            pool.addEntry(LootEntry.of('hazennstuff:shadow_scale').withWeight(40).setCount([1, 3]));
+            pool.addEntry(LootEntry.of('kubejs:foul_flesh').withWeight(10).setCount([1, 4]))
+            pool.rolls([1, 2]);
+        });
+
+    }
+})

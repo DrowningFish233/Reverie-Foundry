@@ -14,7 +14,7 @@ function aquamarine(event) {
     const weapon = attacker.getMainHandItem();
     if (!weapon.isDamageableItem()) return;
 
-    const durabilityCost = 1 + random.nextInt(10);
+    const durabilityCost = 1 + Math.floor(Math.random() * 10);
     weapon.setDamageValue(weapon.getDamageValue() + durabilityCost);
     new_damage(event, STAGE.ADDITIVE, 1 + (0.1 * durabilityCost));
     if (weapon.getDamageValue() >= weapon.getMaxDamage()) {

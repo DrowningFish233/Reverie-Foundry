@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.racker",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.racker",
+			"text": "trait.silentgear.racker.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.racker.applicable",
+			"text": "trait.silentgear.racker.applicable_text"
+		}
+	]
+}

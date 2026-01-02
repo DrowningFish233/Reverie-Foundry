@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.luck",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.luck",
+			"text": "trait.silentgear.luck.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.luck.applicable",
+			"text": "trait.silentgear.luck.applicable_text"
+		}
+	]
+}

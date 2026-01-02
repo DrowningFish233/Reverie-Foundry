@@ -15,7 +15,7 @@ function achroous_ingot(event) {
     const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:achroous_ingot");
     const damageChance = traitLevel * 0.1;
 
-    if (random.nextFloat() < damageChance) {
+    if (Math.random() < damageChance) {
         attacker.attack($DamageSource("magic"), 5);
     }
 }

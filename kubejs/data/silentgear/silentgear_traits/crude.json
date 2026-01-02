@@ -1,0 +1,16 @@
+{
+  "conditions": [],
+  "description": {
+    "translate": "trait.silentgear.crude.desc"
+  },
+  "effects": [
+    {
+      "type": "silentgear:synergy_multiplier",
+      "multiplier": -0.04
+    }
+  ],
+  "max_level": 5,
+  "name": {
+    "translate": "trait.silentgear.crude"
+  }
+}

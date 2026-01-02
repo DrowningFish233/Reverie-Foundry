@@ -11,7 +11,7 @@ function generic_luck(event) {
 
     const luck = attacker.getAttribute('minecraft:generic.luck')?.value ?? 0;
 
-    const diceRoll = 1 + random.nextInt(10);
+    const diceRoll = 1 + Math.floor(Math.random() * 10);
     if (diceRoll <= traitLevel) {
         const bonusPercent = (20 * traitLevel - luck);
         const minBonus = 5;

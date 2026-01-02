@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.silky",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.silky",
+			"text": "trait.silentgear.silky.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.silky.applicable",
+			"text": "trait.silentgear.silky.applicable_text"
+		}
+	]
+}

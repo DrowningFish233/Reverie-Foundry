@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.garnet",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.garnet",
+			"text": "trait.silentgear.garnet.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.garnet.applicable",
+			"text": "trait.silentgear.garnet.applicable_text"
+		}
+	]
+}

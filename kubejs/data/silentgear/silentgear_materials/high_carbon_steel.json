@@ -1,0 +1,61 @@
+{
+  "type": "silentgear:custom_compound",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "type": "silentgear:custom_compound",
+      "item": "silentgear:custom_ingot",
+      "material": "silentgear:high_carbon_steel"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF848484",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.high_carbon_steel"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 20.0,
+      "armor/boots": 3.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 24.0,
+      "armor_toughness": 2.0,
+      "attack_damage": 4.0,
+      "attack_speed": -0.2,
+      "charging_value": 0.8,
+      "draw_speed": -0.2,
+      "durability": 420.0,
+      "enchantment_value": 11.0,
+      "harvest_speed": 6.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_high_carbon_steel_tools",
+        "level_hint": "2",
+        "name": "high_carbon_steel"
+      },
+      "magic_armor": 6.0,
+      "magic_damage": 1.0,
+      "ranged_damage": 2.0,
+      "rarity": 40.0,
+      "repair_value": 0.05,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    }
+  }
+}

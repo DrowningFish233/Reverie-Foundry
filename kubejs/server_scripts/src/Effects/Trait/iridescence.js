@@ -12,7 +12,7 @@ function iridescence(event) {
 
     const minDamage = traitLevel;
     const maxDamage = traitLevel + 6;
-    const addedDamage = minDamage + random.nextInt(maxDamage - minDamage + 1);
+    const addedDamage = minDamage + Math.floor(Math.random() * (maxDamage - minDamage + 1));
 
     new_damage(event, STAGE.FLAT, addedDamage);
 }

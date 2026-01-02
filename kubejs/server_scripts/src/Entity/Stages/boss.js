@@ -9,7 +9,6 @@ const BOSS_MOBS = [
     ["astage/boss/queen_bee", "terra_entity:queen_bee", "first_kill_dead_king"],
     ["astage/boss/skeletron", "terra_entity:skeletron", "first_kill_dead_king"],
     ["astage/boss/lich", "bosses_of_mass_destruction:lich", "first_kill_dead_king"],
-
     //下界戈伯后
     ["astage/boss/gauntlet", "bosses_of_mass_destruction:gauntlet", "first_kill_skeletron"],
     ["astage/boss/fire_boss", "irons_spellbooks:fire_boss", "first_kill_skeletron"],
@@ -19,15 +18,14 @@ const BOSS_MOBS = [
     ["astage/boss/ancient_remnant", "cataclysm:ancient_remnant", "first_kill_skeletron"],
     ["astage/boss/ignis", "cataclysm:ignis", "first_kill_skeletron"],
     ["astage/boss/netherite_monstrosity", "cataclysm:netherite_monstrosity", "first_kill_skeletron"],
-    ["astage/boss/maledictus", "cataclysm:maledictus", "first_kill_skeletron"],
+    ["astage/boss/maledictus", "cataclys18m:maledictus", "first_kill_skeletron"],
     ["astage/boss/hippocamtus", "cataclysm:hippocamtus", "first_kill_skeletron"],
-
     //末地戈伯后
     ["astage/boss/ender_dragon", "minecraft:ender_dragon", "first_kill_fire_boss"],
     ["astage/boss/obsidilith", "bosses_of_mass_destruction:obsidilith", "first_kill_fire_boss"],
     ["astage/boss/ender_guardian", "cataclysm:ender_guardian", "first_kill_fire_boss"],
     ["astage/boss/rift_weaver", "ftboceanmobs:rift_weaver", "first_kill_fire_boss"],
-
+    //最终
     ["astage/boss/dark_doppelganger", "darkdoppelganger:dark_doppelganger", "first_kill_ender_guardian"],
 
 

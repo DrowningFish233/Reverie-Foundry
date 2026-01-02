@@ -1,0 +1,20 @@
+{
+	"name": "trait.kubejs.farmersdelight",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.kubejs.farmersdelight",
+			"text": "trait.kubejs.farmersdelight.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.kubejs.farmersdelight.applicable",
+			"text": "trait.kubejs.farmersdelight.applicable_text"
+		}
+	]
+}

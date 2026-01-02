@@ -1,0 +1,44 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": false,
+    "categories": [
+      "organic",
+      "wood"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": [],
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "silentgear:rods/rough"
+      }
+    }
+  },
+  "display": {
+    "color": "#FF6B4909",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.wood.rough"
+    },
+    "name_prefix": {
+      "translate": "misc.silentgear.crude"
+    }
+  },
+  "properties": {
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:crude"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:bending"
+        }
+      ]
+    }
+  }
+}

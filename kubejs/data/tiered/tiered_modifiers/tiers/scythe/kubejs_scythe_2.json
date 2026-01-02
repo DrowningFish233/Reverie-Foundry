@@ -1,0 +1,22 @@
+{
+  "weight": 5,
+  "reforge_experience_cost": 2,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "#828282"
+  },
+  "attributes": [
+    {
+      "type": "malum:scythe_proficiency",
+      "modifier": {
+        "id": "tiered:kubejs_scythe_2a",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": -0.15
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

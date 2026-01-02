@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.cursium_ingot",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.cursium_ingot",
+			"text": "trait.silentgear.cursium_ingot.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.cursium_ingot.applicable",
+			"text": "trait.silentgear.cursium_ingot.applicable_text"
+		}
+	]
+}

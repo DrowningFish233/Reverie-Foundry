@@ -1,0 +1,96 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:gems/amethyst"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFA31DE6",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.amethyst"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 15.0,
+      "armor/boots": 3.0,
+      "armor/chestplate": 5.0,
+      "armor/helmet": 3.0,
+      "armor/leggings": 4.0,
+      "armor_durability": 10.0,
+      "attack_damage": 1.0,
+      "attack_speed": 0.0,
+      "charging_value": 1.3,
+      "draw_speed": 0.0,
+      "durability": 210.0,
+      "enchantment_value": 16.0,
+      "harvest_speed": 6.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_amethyst_tools",
+        "level_hint": "1.5",
+        "name": "amethyst"
+      },
+      "magic_armor": 10.0,
+      "magic_damage": 3.0,
+      "projectile_accuracy": 1.0,
+      "projectile_speed": 1.0,
+      "ranged_damage": 1.0,
+      "rarity": 35.0,
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.7
+            }
+          ],
+          "level": 1,
+          "trait": "silentgear:renew"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:cursed"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": -0.25
+      },
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_amethyst_tools",
+        "level_hint": "1.5",
+        "name": "amethyst"
+      },
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.66
+            }
+          ],
+          "level": 1,
+          "trait": "silentgear:silky"
+        }
+      ]
+    }
+  }
+}

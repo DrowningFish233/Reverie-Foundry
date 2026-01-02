@@ -18,7 +18,7 @@
   "debugMode": false,
   "sleepDelay": 10,
   "hitboxLimit": 50,
-  "skipMarkerArmorStands": true,
+  "captureRate": 5,
   "tickCulling": true,
   "tickCullingWhitelist": [
     "create:gantry_contraption",
@@ -56,7 +56,9 @@
     "minecraft:bamboo_raft",
     "minecraft:bamboo_chest_raft"
   ],
-  "disableF3": false,
+  "disableF3": true,
   "skipEntityCulling": false,
-  "skipBlockEntityCulling": false
+  "skipBlockEntityCulling": false,
+  "blockEntityFrustumCulling": true,
+  "forceDisplayCulling": false
 }

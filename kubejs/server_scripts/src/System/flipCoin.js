@@ -1,7 +1,7 @@
 function flipCoin(sanity) {
     const probability = 0.5 + (sanity * 0.01);
     const clampedProb = Math.max(0.05, Math.min(0.95, probability));
-    return random.nextDouble() < clampedProb ? 1 : 0;
+    return Math.random() < clampedProb ? 1 : 0;
 }
 
 // 硬币重投逻辑

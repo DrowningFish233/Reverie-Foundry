@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.fluxing",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.fluxing",
+			"text": "trait.silentgear.fluxing.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.fluxing.applicable",
+			"text": "trait.silentgear.fluxing.applicable_text"
+		}
+	]
+}

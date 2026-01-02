@@ -1,0 +1,19 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1230BFFD2EFCEA44"
+	group: "17FDF36D1B965C72"
+	id: "1230BFFD2EFCEA44"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "27B6C00949F92CCF"
+		tasks: [{
+			id: "41B2935DE3D7CE30"
+			item: { count: 1, id: "malum:encyclopedia_arcana" }
+			type: "item"
+		}]
+		x: -0.5d
+		y: 0.5d
+	}]
+}

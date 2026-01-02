@@ -9,7 +9,7 @@ function attack_taunt(event) {
         return;
     }
     new_damage(event, STAGE.MULTIPLY, 0.7);
-    if (random.nextFloat() < 0.3) {
+    if (Math.random() < 0.3) {
         entity.potionEffects.add("kubejs:taunt", 200, 0);
     }
 }

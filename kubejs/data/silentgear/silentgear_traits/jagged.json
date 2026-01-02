@@ -1,0 +1,32 @@
+{
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "silentgear:tool"
+    }
+  ],
+  "description": {
+    "translate": "trait.silentgear.jagged.desc"
+  },
+  "effects": [
+    {
+      "type": "silentgear:number_property_modifier",
+      "property_modifiers": {
+        "silentgear:attack_damage": {
+          "base_multiplier": 0.1667,
+          "multiply_damage_ratio": true,
+          "multiply_original_value": true
+        },
+        "silentgear:ranged_damage": {
+          "base_multiplier": -0.1667,
+          "multiply_damage_ratio": true,
+          "multiply_original_value": true
+        }
+      }
+    }
+  ],
+  "max_level": 5,
+  "name": {
+    "translate": "trait.silentgear.jagged"
+  }
+}

@@ -1,0 +1,20 @@
+{
+	"name": "trait.kubejs.high_health",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.kubejs.high_health",
+			"text": "trait.kubejs.high_health.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.kubejs.high_health.applicable",
+			"text": "trait.kubejs.high_health.applicable_text"
+		}
+	]
+}

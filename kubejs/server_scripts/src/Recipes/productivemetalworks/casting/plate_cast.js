@@ -52,8 +52,8 @@ ServerEvents.recipes(event => {
     { plate: "kubejs:boron_plate", fluid: "kubejs:boron" },
     { plate: "kubejs:brass_plate", fluid: "kubejs:brass" },
     { plate: "kubejs:bronze_plate", fluid: "kubejs:bronze" },
-    { plate: "kubejs:tin_plate", fluid: "kubejs:tin" }
-
+    { plate: "kubejs:tin_plate", fluid: "kubejs:tin" },
+    { plate: "kubejs:netherite_plate", fluid: "productivemetalworks:molten_netherite" }
 
   ];
 

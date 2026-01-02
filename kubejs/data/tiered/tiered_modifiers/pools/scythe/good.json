@@ -1,0 +1,21 @@
+{
+  "weight": 50,
+  "verifiers": [
+    {
+      "tag": "malum:scythe"
+    }
+  ],
+  "tiers": [
+    "tiered:scythe/kubejs_scythe_0",
+    "tiered:scythe/kubejs_scythe_12",
+    "tiered:scythe/kubejs_scythe_13",
+    "tiered:scythe/kubejs_scythe_14",
+    "tiered:scythe/kubejs_scythe_15",
+    "tiered:scythe/kubejs_scythe_6",
+    "tiered:scythe/kubejs_scythe_7",
+    "tiered:scythe/kubejs_scythe_8",
+    "tiered:scythe/kubejs_scythe_9",
+    "tiered:scythe/kubejs_scythe_10",
+    "tiered:scythe/kubejs_scythe_11"
+  ]
+}

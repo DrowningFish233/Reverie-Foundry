@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.silicon_rod",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.silicon_rod",
+			"text": "trait.silentgear.silicon_rod.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.silicon_rod.applicable",
+			"text": "trait.silentgear.silicon_rod.applicable_text"
+		}
+	]
+}

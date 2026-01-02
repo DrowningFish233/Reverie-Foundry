@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.flame_ward",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.flame_ward",
+			"text": "trait.silentgear.flame_ward.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.flame_ward.applicable",
+			"text": "trait.silentgear.flame_ward.applicable_text"
+		}
+	]
+}

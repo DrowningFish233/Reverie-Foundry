@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "silentgear:pickaxe"
+    }
+  ],
+  "description": {
+    "translate": "trait.silentgear.spoon.desc"
+  },
+  "effects": [],
+  "max_level": 1,
+  "name": {
+    "translate": "trait.silentgear.spoon"
+  }
+}

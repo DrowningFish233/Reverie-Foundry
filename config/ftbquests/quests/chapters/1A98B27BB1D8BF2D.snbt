@@ -1,0 +1,168 @@
+{
+	autofocus_id: "60C42244ED37BA5F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1A98B27BB1D8BF2D"
+	group: "17FDF36D1B965C72"
+	id: "1A98B27BB1D8BF2D"
+	images: [{
+		height: 4.0d
+		image: "irons_spellbooks:item/chronicle_old"
+		rotation: 0.0d
+		width: 4.0d
+		x: 0.0d
+		y: 1.0d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "60C42244ED37BA5F"
+			rewards: [{
+				count: 4
+				id: "6A2D32AE8C303B37"
+				item: {
+					count: 1
+					id: "irons_restrictions:fragment"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E67FAD790EF983F"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "11C363982673E669"
+			tasks: [{
+				id: "290BDE205DE707C9"
+				item: { count: 1, id: "irons_spellbooks:inscription_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			id: "58DE58D4F8290C1C"
+			tasks: [{
+				id: "1241D4845D2FA0FE"
+				item: { components: { "ftbfiltersystem:filter": "item(irons_spellbooks:scroll)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			id: "365CB8C1A73A9AAC"
+			tasks: [{
+				id: "61E28A897E5CCF57"
+				item: { components: { "ftbfiltersystem:filter": "or(item(irons_restrictions:manuscript)item(irons_spellbooks:eldritch_manuscript))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			id: "09B874FF837E5C80"
+			tasks: [{
+				id: "24414CD8C86B97F5"
+				item: { components: { "ftbfiltersystem:filter": "or(item(irons_restrictions:common_upgrade)item(irons_restrictions:uncommon_upgrade)item(irons_restrictions:rare_upgrade)item(irons_restrictions:epic_upgrade)item(irons_restrictions:legendary_upgrade))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "166A08FB452DBCF9"
+			tasks: [{
+				id: "4B0D559CB9259B9F"
+				item: { count: 1, id: "irons_restrictions:unfinished_manuscript" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			id: "24A6B77DD8DEA131"
+			tasks: [{
+				id: "36C977BD4D881D5A"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(curios:spellbook)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "4B3F9F49C0FF6B3B"
+			tasks: [{
+				id: "38B4C442C0398B8E"
+				item: { components: { "ftbfiltersystem:filter": "or(item(irons_spellbooks:common_ink)item(irons_spellbooks:uncommon_ink)item(irons_spellbooks:rare_ink)item(irons_spellbooks:epic_ink)item(irons_spellbooks:legendary_ink))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"3A08D5D6D65FF6F2"
+				"297A862AB87A213C"
+			]
+			dependency_requirement: "one_completed"
+			id: "0BCF6B18963AB88F"
+			optional: true
+			progression_mode: "flexible"
+			tasks: [{
+				entity: "irons_spellbooks:dead_king"
+				id: "7E93491B4DD82458"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.5d
+			y: -13.5d
+		}
+		{
+			id: "297A862AB87A213C"
+			tasks: [{
+				id: "37AB5FDA5B162A86"
+				item: { count: 1, id: "irons_spellbooks:wayward_compass" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["297A862AB87A213C"]
+			id: "3A08D5D6D65FF6F2"
+			optional: true
+			progression_mode: "flexible"
+			rewards: [{
+				count: 8
+				id: "607BFFB216B5C6B6"
+				item: {
+					count: 1
+					id: "irons_spellbooks:arcane_essence"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "42E1F7D1048AB5D0"
+				structure: "irons_spellbooks:catacombs"
+				type: "structure"
+			}]
+			x: 6.5d
+			y: -10.0d
+		}
+		{
+			id: "55BA0F294A5D2F55"
+			tasks: [{
+				id: "4295715DEB0B8AC0"
+				item: { components: { "ftbfiltersystem:filter": "item(kubejs:mana_flower)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.0d
+		}
+	]
+}

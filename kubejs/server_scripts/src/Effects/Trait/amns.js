@@ -21,7 +21,8 @@ PlayerEvents.chat((event) => {
             "minecraft:darkness"
         ];
 
-        const randomEffect = potionEffects[random.nextInt(potionEffects.length)];
+        const randomIndex = Math.floor(Math.random() * potionEffects.length);
+        const randomEffect = potionEffects[randomIndex];
 
         player.potionEffects.add(randomEffect, 30 * 20, 1, false, true);
     }

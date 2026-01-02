@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgems.cloaking",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgems.cloaking",
+			"text": "trait.silentgems.cloaking.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgems.cloaking.applicable",
+			"text": "trait.silentgems.cloaking.applicable_text"
+		}
+	]
+}

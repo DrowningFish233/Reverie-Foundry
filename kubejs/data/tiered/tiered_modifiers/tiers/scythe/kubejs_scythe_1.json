@@ -1,0 +1,55 @@
+{
+  "weight": 5,
+  "reforge_experience_cost": 2,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:weaponsmiths_hammer",
+  "style": {
+    "color": "#96FF96"
+  },
+  "attributes": [
+    {
+      "type": "malum:scythe_proficiency",
+      "modifier": {
+        "id": "tiered:kubejs_scythe_1a",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": 0.05
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "malum:spirit_spoils",
+      "modifier": {
+        "id": "tiered:kubejs_scythe_1b",
+        "operation": "ADD_VALUE",
+        "amount": 1
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "minecraft:generic.attack_speed",
+      "modifier": {
+        "id": "tiered:kubejs_scythe_1c",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": -0.10
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "apothic_attributes:crit_damage",
+      "modifier": {
+        "id": "tiered:kubejs_scythe_1c",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": 0.05
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "trait.kubejs.twin_shadows",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.kubejs.twin_shadows",
+			"text": "trait.kubejs.twin_shadows.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.kubejs.twin_shadows.applicable",
+			"text": "trait.kubejs.twin_shadows.applicable_text"
+		}
+	]
+}

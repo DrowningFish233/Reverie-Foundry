@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.witherbone",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.witherbone",
+			"text": "trait.silentgear.witherbone.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.witherbone.applicable",
+			"text": "trait.silentgear.witherbone.applicable_text"
+		}
+	]
+}

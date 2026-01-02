@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.synergistic",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.synergistic",
+			"text": "trait.silentgear.synergistic.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.synergistic.applicable",
+			"text": "trait.silentgear.synergistic.applicable_text"
+		}
+	]
+}

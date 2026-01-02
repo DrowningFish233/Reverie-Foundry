@@ -66,4 +66,6 @@ EntityJSEvents.attributes(event => {
     event.modify('minecraft:iron_golem', attribute => {
         attribute.add("minecraft:generic.max_health", 120)
     })
+
+
 })

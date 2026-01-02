@@ -1,0 +1,100 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "endgame"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:ingots/refined_obsidian"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "tag": "c:rods/refined_obsidian"
+      }
+    }
+  },
+  "display": {
+    "color": "#FF665482",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.refined_obsidian"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 30.0,
+      "armor/boots": 5.0,
+      "armor/chestplate": 12.0,
+      "armor/helmet": 5.0,
+      "armor/leggings": 8.0,
+      "armor_durability": 50.0,
+      "armor_toughness": 16.0,
+      "attack_damage": 10.0,
+      "attack_speed": 0.3,
+      "charging_value": 0.8,
+      "draw_speed": 0.2,
+      "durability": 2500.0,
+      "enchantment_value": 40.0,
+      "harvest_speed": 20.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_diamond_tool",
+        "level_hint": "3",
+        "name": "diamond"
+      },
+      "magic_armor": 6.0,
+      "magic_damage": 4.0,
+      "ranged_damage": 4.0,
+      "rarity": 70.0,
+      "repair_value": -0.3,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "durability": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.25
+      },
+      "rarity": 70.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "durability": {
+        "operation": "ADD",
+        "value": 600.0
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:vulcan"
+        }
+      ]
+    }
+  }
+}

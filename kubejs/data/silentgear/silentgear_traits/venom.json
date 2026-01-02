@@ -1,0 +1,84 @@
+{
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "silentgear:tool"
+    }
+  ],
+  "description": {
+    "translate": "trait.silentgear.venom.desc"
+  },
+  "effects": [
+    {
+      "type": "silentgear:target_effect",
+      "effects_by_level": {
+        "silentgear:tool": {
+          "1": [
+            {
+              "duration": 80,
+              "id": "minecraft:poison",
+              "neoforge:cures": [
+                "honey",
+                "protected_by_totem",
+                "milk"
+              ],
+              "show_icon": true
+            }
+          ],
+          "2": [
+            {
+              "duration": 160,
+              "id": "minecraft:poison",
+              "neoforge:cures": [
+                "honey",
+                "protected_by_totem",
+                "milk"
+              ],
+              "show_icon": true
+            }
+          ],
+          "3": [
+            {
+              "duration": 240,
+              "id": "minecraft:poison",
+              "neoforge:cures": [
+                "honey",
+                "protected_by_totem",
+                "milk"
+              ],
+              "show_icon": true
+            }
+          ],
+          "4": [
+            {
+              "duration": 320,
+              "id": "minecraft:poison",
+              "neoforge:cures": [
+                "honey",
+                "protected_by_totem",
+                "milk"
+              ],
+              "show_icon": true
+            }
+          ],
+          "5": [
+            {
+              "duration": 400,
+              "id": "minecraft:poison",
+              "neoforge:cures": [
+                "honey",
+                "protected_by_totem",
+                "milk"
+              ],
+              "show_icon": true
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "max_level": 5,
+  "name": {
+    "translate": "trait.silentgear.venom"
+  }
+}

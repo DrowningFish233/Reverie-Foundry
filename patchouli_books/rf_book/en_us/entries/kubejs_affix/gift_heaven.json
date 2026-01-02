@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.gift_heaven",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.gift_heaven",
+			"text": "trait.silentgear.gift_heaven.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.gift_heaven.applicable",
+			"text": "trait.silentgear.gift_heaven.applicable_text"
+		}
+	]
+}

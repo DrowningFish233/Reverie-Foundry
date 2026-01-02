@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.greedy",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.greedy",
+			"text": "trait.silentgear.greedy.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.greedy.applicable",
+			"text": "trait.silentgear.greedy.applicable_text"
+		}
+	]
+}

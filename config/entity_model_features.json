@@ -24,5 +24,6 @@
   "enforceOptifineSubFoldersVariantOnly": true,
   "enforceOptiFineAnimSyntaxLimits": true,
   "allowOptifineFallbackProperties": true,
-  "showReloadErrorToast": true
+  "showReloadErrorToast": true,
+  "exportRotations": false
 }

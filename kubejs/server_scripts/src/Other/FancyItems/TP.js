@@ -4,18 +4,17 @@ ItemEvents.firstRightClicked('kubejs:scroll_of_friendship', event => {
     let players = level.players
     if (player.isFake()) return
 
-    let ohtherPlayers = players.filter(p => !p.equals(player))
+    let otherPlayers = players.filter(p => !p.equals(player))
 
-    if (ohtherPlayers.length === 0) {
-        player.tell(Text.translate('message.scroll_of_friendship.find').color('yellow'))
+    if (otherPlayers.length > 0) {
 
         let closestPlayer = null
         let closestDistance = Infinity
-        for (let ohtherPlayer of ohtherPlayers) {
-            let distance = player.distanceToEntity(ohtherPlayer)
+        for (let otherPlayer of otherPlayers) {
+            let distance = player.distanceToEntity(otherPlayer)
             if (distance < closestDistance) {
                 closestDistance = distance
-                closestPlayer = ohtherPlayer
+                closestPlayer = otherPlayer
             }
         }
         if (closestPlayer) {

@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.wind_blast",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.wind_blast",
+			"text": "trait.silentgear.wind_blast.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.wind_blast.applicable",
+			"text": "trait.silentgear.wind_blast.applicable_text"
+		}
+	]
+}

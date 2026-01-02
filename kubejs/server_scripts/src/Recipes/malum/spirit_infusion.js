@@ -477,4 +477,12 @@ ServerEvents.recipes(event => {
             .addExtraInput('malum:hex_ash', 8)
             .addExtraInput('malum:refined_soulstone', 4)
     );
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:gold_crown', 'terra_entity:king_slime_spawn_egg')
+            .addSpirit("earthen", 6)
+            .addSpirit("arcane", 3)
+            .addExtraInput('minecraft:slime_ball', 16)
+            .addExtraInput('minecraft:honey_bottle', 1)
+    );
 });

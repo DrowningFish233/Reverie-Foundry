@@ -1,0 +1,76 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "organic",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:bone_block"
+    },
+    "part_substitutes": {
+      "silentgear:rod": {
+        "item": "minecraft:bone"
+      }
+    }
+  },
+  "display": {
+    "color": "#FFFCFBED",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.bone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 5.0,
+      "armor/boots": 1.0,
+      "armor/chestplate": 2.0,
+      "armor/helmet": 1.0,
+      "armor/leggings": 1.0,
+      "armor_durability": 4.0,
+      "attack_damage": 2.0,
+      "attack_speed": 0.1,
+      "charging_value": 0.9,
+      "draw_speed": 0.0,
+      "durability": 108.0,
+      "enchantment_value": 5.0,
+      "harvest_speed": 4.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_bone_tools",
+        "level_hint": "1",
+        "name": "bone"
+      },
+      "magic_armor": 1.0,
+      "magic_damage": 1.0,
+      "projectile_accuracy": 1.0,
+      "projectile_speed": 0.9,
+      "ranged_damage": 1.0,
+      "rarity": 8.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:chipping"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    }
+  }
+}

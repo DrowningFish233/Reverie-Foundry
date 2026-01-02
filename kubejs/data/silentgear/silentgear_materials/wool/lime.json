@@ -1,0 +1,22 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:wool",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:lime_wool"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF70B919",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.wool.lime"
+    },
+    "name_prefix": ""
+  },
+  "properties": {}
+}

@@ -132,7 +132,7 @@ ItemEvents.firstRightClicked((event) => {
     ];
 
     // 随机选择一种附魔
-    const randomEnchantment = ENCHANTMENT_POOL[random.nextInt(ENCHANTMENT_POOL.length)];
+    const randomEnchantment = ENCHANTMENT_POOL[Math.floor(Math.random() * ENCHANTMENT_POOL.length)];
     const currentLevel = item.getEnchantmentLevel(randomEnchantment) || 0;
     const newLevel = currentLevel + 1;
 

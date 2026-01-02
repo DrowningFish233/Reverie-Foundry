@@ -1,0 +1,22 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:wood",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:spruce_planks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF82613A",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.wood.spruce"
+    },
+    "name_prefix": ""
+  },
+  "properties": {}
+}

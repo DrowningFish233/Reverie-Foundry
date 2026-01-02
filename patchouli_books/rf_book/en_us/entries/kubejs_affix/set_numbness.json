@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.set_numbness",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.set_numbness",
+			"text": "trait.silentgear.set_numbness.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.set_numbness.applicable",
+			"text": "trait.silentgear.set_numbness.applicable_text"
+		}
+	]
+}

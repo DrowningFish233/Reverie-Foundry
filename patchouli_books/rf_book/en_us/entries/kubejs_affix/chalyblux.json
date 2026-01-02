@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.chalyblux",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.chalyblux",
+			"text": "trait.silentgear.chalyblux.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.chalyblux.applicable",
+			"text": "trait.silentgear.chalyblux.applicable_text"
+		}
+	]
+}

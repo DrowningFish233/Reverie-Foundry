@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.snow_walker",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.snow_walker",
+			"text": "trait.silentgear.snow_walker.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.snow_walker.applicable",
+			"text": "trait.silentgear.snow_walker.applicable_text"
+		}
+	]
+}

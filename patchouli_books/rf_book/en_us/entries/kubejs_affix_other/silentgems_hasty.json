@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgems.hasty",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgems.hasty",
+			"text": "trait.silentgems.hasty.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgems.hasty.applicable",
+			"text": "trait.silentgems.hasty.applicable_text"
+		}
+	]
+}

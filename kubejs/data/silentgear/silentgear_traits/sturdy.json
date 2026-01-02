@@ -1,0 +1,17 @@
+{
+  "conditions": [],
+  "description": {
+    "translate": "trait.silentgear.sturdy.desc"
+  },
+  "effects": [
+    {
+      "type": "silentgear:durability",
+      "activation_chance": 0.175,
+      "effect_scale": -1
+    }
+  ],
+  "max_level": 5,
+  "name": {
+    "translate": "trait.silentgear.sturdy"
+  }
+}

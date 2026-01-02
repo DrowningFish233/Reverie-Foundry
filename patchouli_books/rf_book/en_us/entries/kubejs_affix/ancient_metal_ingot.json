@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.ancient_metal_ingot",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.ancient_metal_ingot",
+			"text": "trait.silentgear.ancient_metal_ingot.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.ancient_metal_ingot.applicable",
+			"text": "trait.silentgear.ancient_metal_ingot.applicable_text"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.flammable",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.flammable",
+			"text": "trait.silentgear.flammable.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.flammable.applicable",
+			"text": "trait.silentgear.flammable.applicable_text"
+		}
+	]
+}

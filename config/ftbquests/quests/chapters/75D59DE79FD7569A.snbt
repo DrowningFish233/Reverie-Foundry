@@ -123,6 +123,44 @@
 				id: "minecraft:small_amethyst_bud"
 			}
 			id: "1FBA0FE6A13F8E70"
+			rewards: [
+				{
+					count: 4
+					id: "5DB45D0A5AC19D79"
+					item: {
+						count: 1
+						id: "kubejs:terraulite_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "606AE07743E98ECB"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "2633D2ADCE0C1F10"
+					item: {
+						count: 1
+						id: "minecraft:oak_log"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "72CED5C9502101EB"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "386951FF6BD39CF1"
 				type: "checkmark"

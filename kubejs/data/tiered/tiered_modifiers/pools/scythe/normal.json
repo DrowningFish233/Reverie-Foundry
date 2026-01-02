@@ -1,0 +1,11 @@
+{
+  "weight": 25,
+  "verifiers": [
+    {
+      "tag": "malum:scythe"
+    }
+  ],
+  "tiers": [
+    "tiered:scythe/kubejs_scythe_common"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.refractive",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.refractive",
+			"text": "trait.silentgear.refractive.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.refractive.applicable",
+			"text": "trait.silentgear.refractive.applicable_text"
+		}
+	]
+}

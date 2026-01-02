@@ -2,7 +2,7 @@
 #0: Default, 1: Still Style, 2: Dynamic Style
 # Default: 1
 # Range: 0 ~ 2
-boss_bar_style = 0
+boss_bar_style = 1
 enableNonSpiderModel = false
 #Boss Bar Number Offset X.
 # Default: 0

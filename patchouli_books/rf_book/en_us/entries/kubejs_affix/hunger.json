@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.hunger",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.hunger",
+			"text": "trait.silentgear.hunger.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.hunger.applicable",
+			"text": "trait.silentgear.hunger.applicable_text"
+		}
+	]
+}

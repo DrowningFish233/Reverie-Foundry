@@ -21,8 +21,8 @@ function animated_steel_ingot(event) {
         const extraDamage = 0.5 * sharpnessLevel + 0.5;
         entity.attack($DamageSource("generic"), extraDamage);
     }
-    if (random.nextInt(100) < repairChance) {
-        const repairedAmount = 1 + random.nextInt(3);
+    if (Math.floor(Math.random() * 100) < repairChance) {
+        const repairedAmount = 1 + Math.floor(Math.random() * 3);
         const newDamage = Math.max(0, weapon.getDamageValue() - repairedAmount);
         weapon.setDamageValue(newDamage);
     }

@@ -1,0 +1,16 @@
+{
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "silentgear:tool"
+    }
+  ],
+  "description": {
+    "translate": "trait.silentgear.ancient.desc"
+  },
+  "effects": [],
+  "max_level": 5,
+  "name": {
+    "translate": "trait.silentgear.ancient"
+  }
+}

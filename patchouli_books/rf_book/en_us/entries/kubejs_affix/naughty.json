@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.naughty",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.naughty",
+			"text": "trait.silentgear.naughty.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.naughty.applicable",
+			"text": "trait.silentgear.naughty.applicable_text"
+		}
+	]
+}

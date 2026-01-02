@@ -12,5 +12,8 @@
     "show_progress": false,
     "text_overflow_mode": "overflow",
     "book_texture": "patchouli:textures/gui/book_cyan.png",
-    "model": "kubejs:book_models"
+    "model": "kubejs:book_models",
+    "macros": {
+        "$(ovo)": "%"
+    }
 }

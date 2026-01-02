@@ -1,0 +1,20 @@
+{
+	"name": "trait.kubejs.gobber_end",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.kubejs.gobber_end",
+			"text": "trait.kubejs.gobber_end.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.kubejs.gobber_end.applicable",
+			"text": "trait.kubejs.gobber_end.applicable_text"
+		}
+	]
+}

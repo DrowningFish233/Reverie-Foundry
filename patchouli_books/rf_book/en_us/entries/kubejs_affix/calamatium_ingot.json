@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.calamatium_ingot",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.calamatium_ingot",
+			"text": "trait.silentgear.calamatium_ingot.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.calamatium_ingot.applicable",
+			"text": "trait.silentgear.calamatium_ingot.applicable_text"
+		}
+	]
+}

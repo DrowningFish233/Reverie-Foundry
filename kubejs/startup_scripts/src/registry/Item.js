@@ -32,11 +32,14 @@ global.new_materials = [
     { id: 'drowning_fish', maxStackSize: 1, rarity: 'epic' },
     { id: 'lava_bible', maxStackSize: 4, rarity: 'rare' },
     { id: 'material_patchouli_generator', maxStackSize: 1, rarity: 'epic' },
+    { id: 'trait_fish', maxStackSize: 1, rarity: 'epic' },
     { id: 'soul_of_night', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/soul_of_night" },
     { id: 'soul_of_light', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/soul_of_light" },
     { id: 'necroplasm', maxStackSize: 48, rarity: 'rare', texture: "kubejs:item/misc/necroplasm" },
     { id: 'ruinous_soul', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/ruinous_soul" },
-    { id: 'ashes_of_calamity', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/ashes_of_calamity" }
+    { id: 'ashes_of_calamity', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/ashes_of_calamity" },
+    { id: 'gold_crown', maxStackSize: 1, rarity: 'epic' },
+
 
 
 

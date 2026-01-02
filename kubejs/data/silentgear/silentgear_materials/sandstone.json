@@ -1,0 +1,62 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "rock",
+      "basic"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:sandstone/uncolored_blocks"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFE3DBB0",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.sandstone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 5.0,
+      "armor/boots": 1.0,
+      "armor/chestplate": 2.0,
+      "armor/helmet": 1.0,
+      "armor/leggings": 1.0,
+      "armor_durability": 6.0,
+      "attack_damage": 1.0,
+      "attack_speed": 0.1,
+      "attack_speed/axe": -0.1,
+      "attack_speed/hoe": -1.0,
+      "charging_value": 0.7,
+      "draw_speed": -0.1,
+      "durability": 117.0,
+      "enchantment_value": 7.0,
+      "harvest_speed": 4.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_sandstone_tools",
+        "level_hint": "1",
+        "name": "sandstone"
+      },
+      "projectile_accuracy": 0.8,
+      "projectile_speed": 1.0,
+      "ranged_damage": 0.0,
+      "rarity": 7.0,
+      "repair_value": -0.1
+    },
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    }
+  }
+}

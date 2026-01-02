@@ -1,0 +1,20 @@
+{
+	"name": "trait.kubejs.cobalt_ingot",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.kubejs.cobalt_ingot",
+			"text": "trait.kubejs.cobalt_ingot.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.kubejs.cobalt_ingot.applicable",
+			"text": "trait.kubejs.cobalt_ingot.applicable_text"
+		}
+	]
+}

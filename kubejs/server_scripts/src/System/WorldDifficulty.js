@@ -43,8 +43,8 @@ EntityEvents.checkSpawn(event => {
         'difficult_2': { health: 3, attack: 3, armor: 3, toughness: 3 },
         'difficult_3': { health: 4, attack: 4, armor: 4, toughness: 4 },
         'difficult_4': { health: 5, attack: 5, armor: 5, toughness: 5 },
-        'difficult_5': { health: 8, attack: 8, armor: 8, toughness: 8 },
-        'difficult_6': { health: 10, attack: 10, armor: 10, toughness: 10 }
+        'difficult_5': { health: 6, attack: 6, armor: 6, toughness: 6 },
+        'difficult_6': { health: 8, attack: 8, armor: 8, toughness: 8 }
     };
 
     for (let difficulty in difficultyLevels) {

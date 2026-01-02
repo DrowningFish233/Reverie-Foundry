@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.exalted_beauty_gem",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.exalted_beauty_gem",
+			"text": "trait.silentgear.exalted_beauty_gem.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.exalted_beauty_gem.applicable",
+			"text": "trait.silentgear.exalted_beauty_gem.applicable_text"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.crude",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.crude",
+			"text": "trait.silentgear.crude.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.crude.applicable",
+			"text": "trait.silentgear.crude.applicable_text"
+		}
+	]
+}

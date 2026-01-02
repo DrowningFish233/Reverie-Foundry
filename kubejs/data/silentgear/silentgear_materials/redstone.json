@@ -1,0 +1,71 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "dust",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "tag": "c:dusts/redstone"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FFBB0000",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.redstone"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "additive": true,
+      "attack_damage": 4.0,
+      "charging_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "harvest_speed": 12.0,
+      "ranged_damage": 2.0,
+      "rarity": 30.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:imperial"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2.0
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": 0.3
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_TOTAL",
+        "value": 0.2
+      },
+      "ranged_damage": {
+        "operation": "ADD",
+        "value": 2.0
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 10.0
+      }
+    }
+  }
+}

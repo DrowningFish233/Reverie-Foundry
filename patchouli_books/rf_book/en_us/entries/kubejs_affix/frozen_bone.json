@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.frozen_bone",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.frozen_bone",
+			"text": "trait.silentgear.frozen_bone.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.frozen_bone.applicable",
+			"text": "trait.silentgear.frozen_bone.applicable_text"
+		}
+	]
+}

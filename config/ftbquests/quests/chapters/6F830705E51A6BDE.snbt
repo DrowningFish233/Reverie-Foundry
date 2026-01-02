@@ -154,7 +154,7 @@
 				type: "checkmark"
 			}]
 			x: 0.5d
-			y: 2.5d
+			y: 4.0d
 		}
 	]
 }

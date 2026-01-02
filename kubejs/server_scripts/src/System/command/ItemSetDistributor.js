@@ -42,6 +42,13 @@
  * - 后续对象定义要给予的物品，需指定 'id' 和 'count'
  */
 
+const itemSet0 = [
+    { command: "randomenchanted", oneUse: true },
+    { id: getRandomEnchantedBookId(), count: 1 },
+    { id: getRandomEnchantedBookId(), count: 1 },
+    { id: getRandomEnchantedBookId(), count: 1 },
+]
+
 const itemSet1 = [
     { command: "drunkard", oneUse: true },
     { id: `minecraft:bundle[bundle_contents=[{count:1,id:"kubejs:bloody_mary"},{count:1,id:"kubejs:star_beam_rye"},{count:1,id:"kubejs:lightingball"},{count:1,id:"kubejs:everclear"},{count:1,id:"kubejs:evergreen_gin"},{count:1,id:"kubejs:rum"},{count:1,id:"kubejs:caribbean_rum"},{count:1,id:"kubejs:screwdriver"},{count:1,id:"kubejs:white_wine"},{count:1,id:"kubejs:fireball"},{count:1,id:"kubejs:cinnamon_roll"},{count:1,id:"kubejs:moscow_mule"},{count:1,id:"kubejs:purple_haze"},{count:1,id:"kubejs:margarita"},{count:1,id:"kubejs:red_wine"},{count:1,id:"kubejs:tequila"}]]` },
@@ -73,8 +80,10 @@ const itemSet4 = [
     { id: 'enderscape:end_stone_rubble_shield', count: 1 },
     { id: 'kubejs:everclear', count: 1 }
 ];
+
+
 // 存储所有奖励设置
-const allItemSets = [itemSet1, itemSet2, itemSet3, itemSet4];
+const allItemSets = [itemSet0, itemSet1, itemSet2, itemSet3, itemSet4];
 
 // 命令跟踪的全局子类别
 const commandSubcategory = 'itemCommands';

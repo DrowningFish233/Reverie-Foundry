@@ -1,0 +1,39 @@
+{
+  "conditions": [
+    {
+      "type": "silentgear:gear_type",
+      "gear_type": "silentgear:tool"
+    }
+  ],
+  "description": {
+    "translate": "trait.silentgear.ignite.desc"
+  },
+  "effects": [
+    {
+      "type": "silentgear:block_placer",
+      "block": {
+        "Name": "minecraft:fire",
+        "Properties": {
+          "age": "0",
+          "east": "false",
+          "north": "false",
+          "south": "false",
+          "up": "false",
+          "west": "false"
+        }
+      },
+      "cooldown": 0,
+      "damage_on_use": 1,
+      "sound": {
+        "pitch": 1.0,
+        "pitch_deviation": 0.2,
+        "sound": "minecraft:item.flintandsteel.use",
+        "volume": 1.0
+      }
+    }
+  ],
+  "max_level": 1,
+  "name": {
+    "translate": "trait.silentgear.ignite"
+  }
+}

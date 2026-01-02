@@ -1,0 +1,40 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "slime",
+      "organic",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "minecraft:slime_block"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#FF8CD782",
+    "main_texture_type": "LOW_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.slime"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 0.5
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:bounce"
+        }
+      ]
+    }
+  }
+}

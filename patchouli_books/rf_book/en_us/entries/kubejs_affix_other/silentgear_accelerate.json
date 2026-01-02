@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.accelerate",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.accelerate",
+			"text": "trait.silentgear.accelerate.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.accelerate.applicable",
+			"text": "trait.silentgear.accelerate.applicable_text"
+		}
+	]
+}

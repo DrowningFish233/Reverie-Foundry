@@ -91,4 +91,12 @@ ServerEvents.recipes(event => {
             '#minecraft:coals'
         ]
     )
+
+    event.shapeless(
+        Item.of('patchouli:guide_book[patchouli:book="patchouli:rf_book"]', 1),
+        [
+            'minecraft:book',
+            'minecraft:cooked_cod'
+        ]
+    )
 })

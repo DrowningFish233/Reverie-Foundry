@@ -161,11 +161,13 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
     event.remove("kubejs:hangover_tea");
     event.remove("kubejs:drowning_fish");
     event.remove("kubejs:material_patchouli_generator");
+    event.remove("kubejs:trait_fish");
 
 });
 
 StartupEvents.modifyCreativeTab("minecraft:op_blocks", (event) => {
     event.add("kubejs:drowning_fish")
     event.add("kubejs:material_patchouli_generator")
+    event.add("kubejs:trait_fish")
 
 });

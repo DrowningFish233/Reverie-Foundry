@@ -10,6 +10,8 @@ StartupEvents.registry('sound_event', event => {
     event.create('withdrawal')
     event.create('tremor_burst_1')
     event.create('tremor_burst_2')
+    event.create('boss_summon')
+    event.create('final_boss_summon')
 
 })
 

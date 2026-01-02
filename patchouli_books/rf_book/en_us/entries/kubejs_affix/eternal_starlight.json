@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.eternal_starlight",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.eternal_starlight",
+			"text": "trait.silentgear.eternal_starlight.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.eternal_starlight.applicable",
+			"text": "trait.silentgear.eternal_starlight.applicable_text"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"name": "trait.silentgear.exp_to_death",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "trait.silentgear.exp_to_death",
+			"text": "trait.silentgear.exp_to_death.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "trait.silentgear.exp_to_death.applicable",
+			"text": "trait.silentgear.exp_to_death.applicable_text"
+		}
+	]
+}

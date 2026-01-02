@@ -5,7 +5,7 @@ function kubejs_arrow(event) {
     const entity = event.entity;
     if (event.source.getType() !== 'arrow') return;
     if (fu_getHighestTraitLevelAnywhere(entity, "kubejs:arrow")) return;
-    if (random.nextDouble() < 0.1) {
+    if (Math.random() < 0.1) {
         const healAmount = entity.getMaxHealth() * 0.1;
         entity.setHealth(Math.min(
             entity.getHealth() + healAmount,
@@ -23,7 +23,7 @@ function chainmail_arrow(event) {
     const entity = event.entity;
     if (event.source.getType() !== 'arrow') return;
     if (!entity.hasEffect('kubejs:chainmail_arrow')) return;
-    if (random.nextDouble() < 0.05) {
+    if (Math.random() < 0.05) {
         const healAmount = entity.getMaxHealth() * 0.01;
         entity.setHealth(Math.min(
             entity.getHealth() + healAmount,
