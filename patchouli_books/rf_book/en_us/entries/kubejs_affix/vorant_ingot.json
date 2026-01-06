@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.vorant_ingot",
+	"name": "patchouli.gui.trait.kubejs.vorant_ingot",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.vorant_ingot",
-			"text": "trait.kubejs.vorant_ingot.desc"
+			"title": "patchouli.gui.trait.kubejs.vorant_ingot",
+			"text": "patchouli.gui.trait.kubejs.vorant_ingot.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.vorant_ingot.applicable",
-			"text": "trait.kubejs.vorant_ingot.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.vorant_ingot.applicable",
+			"text": "patchouli.gui.trait.kubejs.vorant_ingot.applicable_text"
 		}
 	]
 }

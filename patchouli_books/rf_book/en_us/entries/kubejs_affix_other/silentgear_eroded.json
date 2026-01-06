@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.eroded",
+	"name": "patchouli.gui.trait.silentgear.eroded",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.eroded",
-			"text": "trait.silentgear.eroded.desc"
+			"title": "patchouli.gui.trait.silentgear.eroded",
+			"text": "patchouli.gui.trait.silentgear.eroded.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.eroded.applicable",
-			"text": "trait.silentgear.eroded.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.eroded.applicable",
+			"text": "patchouli.gui.trait.silentgear.eroded.applicable_text"
 		}
 	]
 }

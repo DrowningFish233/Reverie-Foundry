@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.iridescence",
+	"name": "patchouli.gui.trait.silentgear.iridescence",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.iridescence",
-			"text": "trait.silentgear.iridescence.desc"
+			"title": "patchouli.gui.trait.silentgear.iridescence",
+			"text": "patchouli.gui.trait.silentgear.iridescence.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.iridescence.applicable",
-			"text": "trait.silentgear.iridescence.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.iridescence.applicable",
+			"text": "patchouli.gui.trait.silentgear.iridescence.applicable_text"
 		}
 	]
 }

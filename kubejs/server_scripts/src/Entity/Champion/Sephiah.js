@@ -9,7 +9,7 @@ ChampionsJs.addSephiahName(event => {
   const killCount = pData.getInt("kill") || 0;
 
   // 当BOSS击杀数大于0时:
-  if (killCount > 0) {
+  if (killCount > 3) {
     const sephirahName = getSephirahName(killCount);
     event.setName(sephirahName);
   }

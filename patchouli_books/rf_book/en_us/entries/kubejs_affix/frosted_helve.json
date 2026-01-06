@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.frosted_helve",
+	"name": "patchouli.gui.trait.silentgear.frosted_helve",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.frosted_helve",
-			"text": "trait.silentgear.frosted_helve.desc"
+			"title": "patchouli.gui.trait.silentgear.frosted_helve",
+			"text": "patchouli.gui.trait.silentgear.frosted_helve.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.frosted_helve.applicable",
-			"text": "trait.silentgear.frosted_helve.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.frosted_helve.applicable",
+			"text": "patchouli.gui.trait.silentgear.frosted_helve.applicable_text"
 		}
 	]
 }

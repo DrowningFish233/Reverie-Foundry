@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.prismarine_crystals",
+	"name": "patchouli.gui.trait.kubejs.prismarine_crystals",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.prismarine_crystals",
-			"text": "trait.kubejs.prismarine_crystals.desc"
+			"title": "patchouli.gui.trait.kubejs.prismarine_crystals",
+			"text": "patchouli.gui.trait.kubejs.prismarine_crystals.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.prismarine_crystals.applicable",
-			"text": "trait.kubejs.prismarine_crystals.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.prismarine_crystals.applicable",
+			"text": "patchouli.gui.trait.kubejs.prismarine_crystals.applicable_text"
 		}
 	]
 }

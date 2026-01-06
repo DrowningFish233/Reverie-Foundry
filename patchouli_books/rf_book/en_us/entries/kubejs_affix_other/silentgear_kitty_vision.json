@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.kitty_vision",
+	"name": "patchouli.gui.trait.silentgear.kitty_vision",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.kitty_vision",
-			"text": "trait.silentgear.kitty_vision.desc"
+			"title": "patchouli.gui.trait.silentgear.kitty_vision",
+			"text": "patchouli.gui.trait.silentgear.kitty_vision.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.kitty_vision.applicable",
-			"text": "trait.silentgear.kitty_vision.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.kitty_vision.applicable",
+			"text": "patchouli.gui.trait.silentgear.kitty_vision.applicable_text"
 		}
 	]
 }

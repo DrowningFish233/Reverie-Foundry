@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.booster",
+	"name": "patchouli.gui.trait.silentgems.booster",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.booster",
-			"text": "trait.silentgems.booster.desc"
+			"title": "patchouli.gui.trait.silentgems.booster",
+			"text": "patchouli.gui.trait.silentgems.booster.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.booster.applicable",
-			"text": "trait.silentgems.booster.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.booster.applicable",
+			"text": "patchouli.gui.trait.silentgems.booster.applicable_text"
 		}
 	]
 }

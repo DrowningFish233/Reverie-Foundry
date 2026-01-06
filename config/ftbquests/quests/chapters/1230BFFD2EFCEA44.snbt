@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "1230BFFD2EFCEA44"
 	group: "17FDF36D1B965C72"
+	icon: {
+		id: "malum:encyclopedia_esoterica"
+	}
 	id: "1230BFFD2EFCEA44"
 	order_index: 2
 	quest_links: [ ]

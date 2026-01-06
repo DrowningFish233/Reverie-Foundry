@@ -37,7 +37,7 @@
 	#Alternator max input in FE (Energy transfer, not generation).
 	# Default: 5000
 	# Range: > 0
-	generator_max_output = 7500
+	generator_max_output = 10000
 	#Alternator internal capacity in FE.
 	# Default: 5000
 	# Range: > 0
@@ -102,11 +102,11 @@
 	#Accumulator max input in FE/t (Energy transfer).
 	# Default: 5000
 	# Range: > 0
-	accumulator_max_input = 5000
+	accumulator_max_input = 7500
 	#Accumulator max output in FE/t (Energy transfer).
 	# Default: 5000
 	# Range: > 0
-	accumulator_max_output = 5000
+	accumulator_max_output = 7500
 	#Accumulator internal capacity per block in FE.
 	# Default: 2000000
 	# Range: > 0
@@ -125,11 +125,11 @@
 	#PEI max input in FE/t (Energy transfer).
 	# Default: 5000
 	# Range: > 0
-	pei_max_input = 5000
+	pei_max_input = 7500
 	#PEI max output in FE/t (Energy transfer).
 	# Default: 5000
 	# Range: > 0
-	pei_max_output = 5000
+	pei_max_output = 7500
 
 #Tesla Coil
 [tesla_coil]
@@ -160,7 +160,7 @@
 	#Damaged dealt to mobs when Tesla Coil is fired (in half hearts).
 	# Default: 3
 	# Range: > 0
-	tesla_coil_hurt_mob = 3
+	tesla_coil_hurt_mob = 8
 	#The duration of the Shocked effect for mobs (in ticks).
 	# Default: 20
 	# Range: > 0
@@ -168,7 +168,7 @@
 	#Damaged dealt to players when Tesla Coil is fired (in half hearts).
 	# Default: 2
 	# Range: > 0
-	tesla_coil_hurt_player = 2
+	tesla_coil_hurt_player = 4
 	#The duration of the Shocked effect for players (in ticks).
 	# Default: 20
 	# Range: > 0
@@ -187,4 +187,4 @@
 	#Barbed Wire Damage.
 	# Default: 2.0
 	# Range: 0.0 ~ 3.4028234663852886E38
-	barbed_wire_damage = 2.0
+	barbed_wire_damage = 4.0

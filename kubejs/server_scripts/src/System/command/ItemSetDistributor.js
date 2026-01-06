@@ -44,10 +44,7 @@
 
 const itemSet0 = [
     { command: "randomenchanted", oneUse: true },
-    { id: getRandomEnchantedBookId(), count: 1 },
-    { id: getRandomEnchantedBookId(), count: 1 },
-    { id: getRandomEnchantedBookId(), count: 1 },
-]
+    { id: () => getRandomEnchantedBookId(), count: 1 }]
 
 const itemSet1 = [
     { command: "drunkard", oneUse: true },
@@ -58,9 +55,9 @@ const itemSet1 = [
 const itemSet2 = [
     { command: "traveler", oneUse: true },
     { id: "sophisticatedbackpacks:copper_backpack", count: 1 },
-    { id: getRandomEnchantedBookId(), count: 1 },
-    { id: getRandomEnchantedBookId(), count: 1 },
-    { id: getRandomEnchantedBookId(), count: 1 },
+    { id: () => getRandomEnchantedBookId(), count: 1 },
+    { id: () => getRandomEnchantedBookId(), count: 1 },
+    { id: () => getRandomEnchantedBookId(), count: 1 },
     { id: "kubejs:exploding_chocolate_bar", count: 5 }
 ];
 
@@ -169,10 +166,19 @@ ServerEvents.commandRegistry(event => {
     );
 });
 
+/**
+ * v2 修复随机附魔不随机.png
+ */
 function giveItems(player, items) {
     try {
         items.forEach(item => {
-            if (item.id) player.give(Item.of(item.id, item.count || 1));
+            if (item.id) {
+                let itemId = item.id;
+                if (typeof item.id === 'function') {
+                    itemId = item.id();
+                }
+                player.give(Item.of(itemId, item.count || 1));
+            }
         });
         player.server.tell(Component.translatable('rf.command.give.success', items[0].command, player.getName().getString()));
     } catch (error) {

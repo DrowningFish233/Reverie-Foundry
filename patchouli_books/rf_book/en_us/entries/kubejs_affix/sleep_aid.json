@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.sleep_aid",
+	"name": "patchouli.gui.trait.kubejs.sleep_aid",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.sleep_aid",
-			"text": "trait.kubejs.sleep_aid.desc"
+			"title": "patchouli.gui.trait.kubejs.sleep_aid",
+			"text": "patchouli.gui.trait.kubejs.sleep_aid.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.sleep_aid.applicable",
-			"text": "trait.kubejs.sleep_aid.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.sleep_aid.applicable",
+			"text": "patchouli.gui.trait.kubejs.sleep_aid.applicable_text"
 		}
 	]
 }

@@ -103,7 +103,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -115,7 +115,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: -1.5d
 		}
 		{
@@ -127,7 +127,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -4.0d
+			x: -5.0d
 			y: -1.5d
 		}
 		{
@@ -142,7 +142,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 2.0d
+			x: 1.0d
 			y: -1.5d
 		}
 		{
@@ -290,6 +290,17 @@
 			}]
 			x: -1.0d
 			y: -18.0d
+		}
+		{
+			id: "4939B8B2FE7A3B5D"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
+				id: "044E77370D2F22F9"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -1.5d
 		}
 	]
 }

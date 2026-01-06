@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.hallowed_gold_ingot",
+	"name": "patchouli.gui.trait.silentgear.hallowed_gold_ingot",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.hallowed_gold_ingot",
-			"text": "trait.silentgear.hallowed_gold_ingot.desc"
+			"title": "patchouli.gui.trait.silentgear.hallowed_gold_ingot",
+			"text": "patchouli.gui.trait.silentgear.hallowed_gold_ingot.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.hallowed_gold_ingot.applicable",
-			"text": "trait.silentgear.hallowed_gold_ingot.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.hallowed_gold_ingot.applicable",
+			"text": "patchouli.gui.trait.silentgear.hallowed_gold_ingot.applicable_text"
 		}
 	]
 }

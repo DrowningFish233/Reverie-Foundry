@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.life_drain",
+	"name": "patchouli.gui.trait.silentgear.life_drain",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.life_drain",
-			"text": "trait.silentgear.life_drain.desc"
+			"title": "patchouli.gui.trait.silentgear.life_drain",
+			"text": "patchouli.gui.trait.silentgear.life_drain.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.life_drain.applicable",
-			"text": "trait.silentgear.life_drain.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.life_drain.applicable",
+			"text": "patchouli.gui.trait.silentgear.life_drain.applicable_text"
 		}
 	]
 }

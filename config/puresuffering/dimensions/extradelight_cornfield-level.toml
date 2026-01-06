@@ -1,3 +1,16 @@
+#How often should Hyper Invasions occur.
+#NOTE: Changes will only take effect after the next Hyper invasion occurs or a new world is started.
+# Default: 12
+# Range: > 1
+hyperInvasionRarity = 5
+#How often should Nightmare Invasions occur.
+#NOTE: Changes will only take effect after the next Nightmare invasion occurs or a new world is started.
+# Default: 5
+# Range: > 1
+nightmareInvasionRarity = 3
+#Sets the light level to zero during invasions in this dimension.
+#NOTE: Does not affect brightness.
+zeroLightLevelDuringInvasions = true
 #How often should Fixed Invasions occur.
 # Default: 12
 # Range: > 1
@@ -18,16 +31,3 @@ maxFixedInvasions = 3
 # Default: 40
 # Range: > 0
 fixedTierIncreaseDelay = 40
-#How often should Hyper Invasions occur.
-#NOTE: Changes will only take effect after the next Hyper invasion occurs or a new world is started.
-# Default: 12
-# Range: > 1
-hyperInvasionRarity = 12
-#How often should Nightmare Invasions occur.
-#NOTE: Changes will only take effect after the next Nightmare invasion occurs or a new world is started.
-# Default: 5
-# Range: > 1
-nightmareInvasionRarity = 5
-#Sets the light level to zero during invasions in this dimension.
-#NOTE: Does not affect brightness.
-zeroLightLevelDuringInvasions = false

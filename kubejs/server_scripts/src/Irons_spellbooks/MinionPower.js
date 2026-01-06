@@ -1,4 +1,3 @@
-
 EntityEvents.spawned(event => {
     let validEntities = [
         'irons_spellbooks:summoned_zombie',

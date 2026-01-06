@@ -21,9 +21,6 @@
     }
   ],
   "tiers": [
-    "tiered:standard_armors/epic",
-    "tiered:standard_armors/legendary",
-    "tiered:standard_armors/rare",
     "tiered:armors/kubejs_armor",
     "tiered:armors/kubejs_armor_2",
     "tiered:armors/kubejs_armor_3",

@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.bending",
+	"name": "patchouli.gui.trait.silentgear.bending",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.bending",
-			"text": "trait.silentgear.bending.desc"
+			"title": "patchouli.gui.trait.silentgear.bending",
+			"text": "patchouli.gui.trait.silentgear.bending.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.bending.applicable",
-			"text": "trait.silentgear.bending.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.bending.applicable",
+			"text": "patchouli.gui.trait.silentgear.bending.applicable_text"
 		}
 	]
 }

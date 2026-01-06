@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.high_health",
+	"name": "patchouli.gui.trait.kubejs.high_health",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.high_health",
-			"text": "trait.kubejs.high_health.desc"
+			"title": "patchouli.gui.trait.kubejs.high_health",
+			"text": "patchouli.gui.trait.kubejs.high_health.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.high_health.applicable",
-			"text": "trait.kubejs.high_health.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.high_health.applicable",
+			"text": "patchouli.gui.trait.kubejs.high_health.applicable_text"
 		}
 	]
 }

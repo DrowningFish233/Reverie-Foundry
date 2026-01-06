@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.malarite",
+	"name": "patchouli.gui.trait.silentgear.malarite",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.malarite",
-			"text": "trait.silentgear.malarite.desc"
+			"title": "patchouli.gui.trait.silentgear.malarite",
+			"text": "patchouli.gui.trait.silentgear.malarite.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.malarite.applicable",
-			"text": "trait.silentgear.malarite.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.malarite.applicable",
+			"text": "patchouli.gui.trait.silentgear.malarite.applicable_text"
 		}
 	]
 }

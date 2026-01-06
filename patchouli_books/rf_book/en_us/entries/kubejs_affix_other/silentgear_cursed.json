@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.cursed",
+	"name": "patchouli.gui.trait.silentgear.cursed",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.cursed",
-			"text": "trait.silentgear.cursed.desc"
+			"title": "patchouli.gui.trait.silentgear.cursed",
+			"text": "patchouli.gui.trait.silentgear.cursed.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.cursed.applicable",
-			"text": "trait.silentgear.cursed.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.cursed.applicable",
+			"text": "patchouli.gui.trait.silentgear.cursed.applicable_text"
 		}
 	]
 }

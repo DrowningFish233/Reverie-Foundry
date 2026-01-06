@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.leaping",
+	"name": "patchouli.gui.trait.silentgems.leaping",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.leaping",
-			"text": "trait.silentgems.leaping.desc"
+			"title": "patchouli.gui.trait.silentgems.leaping",
+			"text": "patchouli.gui.trait.silentgems.leaping.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.leaping.applicable",
-			"text": "trait.silentgems.leaping.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.leaping.applicable",
+			"text": "patchouli.gui.trait.silentgems.leaping.applicable_text"
 		}
 	]
 }

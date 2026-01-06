@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.plague",
+	"name": "patchouli.gui.trait.kubejs.plague",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.plague",
-			"text": "trait.kubejs.plague.desc"
+			"title": "patchouli.gui.trait.kubejs.plague",
+			"text": "patchouli.gui.trait.kubejs.plague.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.plague.applicable",
-			"text": "trait.kubejs.plague.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.plague.applicable",
+			"text": "patchouli.gui.trait.kubejs.plague.applicable_text"
 		}
 	]
 }

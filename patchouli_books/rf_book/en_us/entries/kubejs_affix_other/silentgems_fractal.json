@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.fractal",
+	"name": "patchouli.gui.trait.silentgems.fractal",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.fractal",
-			"text": "trait.silentgems.fractal.desc"
+			"title": "patchouli.gui.trait.silentgems.fractal",
+			"text": "patchouli.gui.trait.silentgems.fractal.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.fractal.applicable",
-			"text": "trait.silentgems.fractal.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.fractal.applicable",
+			"text": "patchouli.gui.trait.silentgems.fractal.applicable_text"
 		}
 	]
 }

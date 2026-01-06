@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.reach",
+	"name": "patchouli.gui.trait.silentgear.reach",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.reach",
-			"text": "trait.silentgear.reach.desc"
+			"title": "patchouli.gui.trait.silentgear.reach",
+			"text": "patchouli.gui.trait.silentgear.reach.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.reach.applicable",
-			"text": "trait.silentgear.reach.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.reach.applicable",
+			"text": "patchouli.gui.trait.silentgear.reach.applicable_text"
 		}
 	]
 }

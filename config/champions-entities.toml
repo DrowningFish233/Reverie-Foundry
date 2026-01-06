@@ -1,176 +1,491 @@
 #List of entity configurations
 [[entities]]
 	entity = "minecraft:creeper"
-	minTier = 1
-	maxTier = 5
+	minTier = 0
+	maxTier = 1
 	presetAffixes = []
-	affixList = ["champions:knocking", "champions:wounding", "champions:paralyzing", "champions:molten"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:ender_dragon"
+	minTier = 7
+	maxTier = 7
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:wither"
+	minTier = 7
+	maxTier = 7
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:elder_guardian"
+	minTier = 0
+	maxTier = 4
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:zombie"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:drowned"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:husk"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:zombie_villager"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:skeleton"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:wither_skeleton"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:stray"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:slime"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:guardian"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:warden"
+	minTier = 7
+	maxTier = 7
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "minecraft:silverfish"
-	minTier = 1
-	maxTier = 5
+	minTier = 0
+	maxTier = 1
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:phantom"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:vex"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:witch"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:pillager"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:evoker"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:ravager"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:vindicator"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:hoglin"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:piglin_brute"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:ghast"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:blaze"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "minecraft:endermite"
-	minTier = 1
-	maxTier = 5
+	minTier = 0
+	maxTier = 1
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:shulker"
+	minTier = 0
+	maxTier = 4
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:piglin"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:zombified_piglin"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:spider"
+	minTier = 0
+	maxTier = 1
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "minecraft:enderman"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "cataclysm:ignis"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "cataclysm:the_leviathan"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "cataclysm:ancient_remnant"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "cataclysm:maledictus"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "cataclysm:scylla"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "cataclysm:the_harbinger"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "cataclysm:ender_guardian"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "cataclysm:netherite_monstrosity"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
-	affixPermission = "BLACKLIST"
-[[entities]]
-	entity = "cataclysm:wither"
-	minTier = 7
-	maxTier = 7
-	presetAffixes = []
-	affixList = ["champions:infested"]
-	affixPermission = "BLACKLIST"
-[[entities]]
-	entity = "cataclysm:ender_dragon"
-	minTier = 7
-	maxTier = 7
-	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "bosses_of_mass_destruction:gauntlet"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "bosses_of_mass_destruction:lich"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "bosses_of_mass_destruction:obsidilith"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "bosses_of_mass_destruction:void_blossom"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "irons_spellbooks:fire_boss"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "terra_entity:dungeon_guardian"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "terra_entity:skeletron"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "terra_entity:king_slime"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "terra_entity:eye_of_cthulhu"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "terra_entity:brain_of_cthulhu"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "terra_entity:queen_bee"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "irons_spellbooks:dead_king"
 	minTier = 7
 	maxTier = 7
 	presetAffixes = []
-	affixList = ["champions:infested"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:lionfish"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:deepling"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:deepling_angler"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:deepling_priest"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:deepling_warlock"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:deepling_brute"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:draugr"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:royal_draugr"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:cindaria"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:symbiocto"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:octohost"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:urchinkin"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:endermaptera"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "cataclysm:elite_draugr"
+	minTier = 0
+	maxTier = 2
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "iceandfire:cyclops"
+	minTier = 0
+	maxTier = 4
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "iceandfire:siren"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "iceandfire:sea_serpent"
+	minTier = 0
+	maxTier = 3
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "iceandfire:gorgon"
+	minTier = 7
+	maxTier = 7
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
 	affixPermission = "BLACKLIST"

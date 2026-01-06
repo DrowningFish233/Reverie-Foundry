@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.cosmos_aurora_ingot",
+	"name": "patchouli.gui.trait.kubejs.cosmos_aurora_ingot",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.cosmos_aurora_ingot",
-			"text": "trait.kubejs.cosmos_aurora_ingot.desc"
+			"title": "patchouli.gui.trait.kubejs.cosmos_aurora_ingot",
+			"text": "patchouli.gui.trait.kubejs.cosmos_aurora_ingot.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.cosmos_aurora_ingot.applicable",
-			"text": "trait.kubejs.cosmos_aurora_ingot.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.cosmos_aurora_ingot.applicable",
+			"text": "patchouli.gui.trait.kubejs.cosmos_aurora_ingot.applicable_text"
 		}
 	]
 }

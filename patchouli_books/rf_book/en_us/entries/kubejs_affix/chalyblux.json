@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.chalyblux",
+	"name": "patchouli.gui.trait.silentgear.chalyblux",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.chalyblux",
-			"text": "trait.silentgear.chalyblux.desc"
+			"title": "patchouli.gui.trait.silentgear.chalyblux",
+			"text": "patchouli.gui.trait.silentgear.chalyblux.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.chalyblux.applicable",
-			"text": "trait.silentgear.chalyblux.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.chalyblux.applicable",
+			"text": "patchouli.gui.trait.silentgear.chalyblux.applicable_text"
 		}
 	]
 }

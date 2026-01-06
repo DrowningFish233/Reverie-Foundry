@@ -43,6 +43,10 @@
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
+			hide_until_deps_complete: false
+			icon: {
+				id: "minecraft:chest"
+			}
 			id: "0CCFA64CA88D2D22"
 			tasks: [{
 				id: "6C74D4BF477D8F99"
@@ -53,6 +57,9 @@
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
+			icon: {
+				id: "waystones:waystone"
+			}
 			id: "235321663034A6FB"
 			rewards: [{
 				id: "4396AB110ECB4C9D"
@@ -71,6 +78,12 @@
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/font/icons/kube.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "075AC794CF9E3665"
 			tasks: [{
 				id: "46012C86914DC29F"
@@ -81,6 +94,12 @@
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
+			icon: {
+				components: {
+					"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/entry_ok.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "17DE5C30E0CA8765"
 			tasks: [{
 				id: "45BDFA326BB0A8FD"
@@ -91,6 +110,12 @@
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
+			icon: {
+				components: {
+					"ftbquests:icon": "fzzy_config:textures/gui/sprites/widget/entry_error.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "3C4F9B874C336EB6"
 			tasks: [{
 				id: "308969B113784A45"
@@ -101,6 +126,12 @@
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
+			icon: {
+				components: {
+					"ftbquests:icon": "fancymenu:textures/contextmenu/icons/reload.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "1AC360E218A91528"
 			tasks: [{
 				id: "2EC02285907CD741"
@@ -111,6 +142,12 @@
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/font/icons/id.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "7FFEDC8A8DA45A2F"
 			tasks: [{
 				id: "5E61C66706DB394E"
@@ -121,6 +158,12 @@
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ok_zoomer:textures/gui/sprites/key_binds/settings.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "3A5DD56949CF4827"
 			tasks: [{
 				id: "2953AA70E267ADF7"
@@ -159,7 +202,7 @@
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			id: "13AFD3688361872A"
@@ -168,7 +211,7 @@
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			id: "360AE4AB3B482FAC"
@@ -177,7 +220,29 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: 3.0d
+			y: 4.5d
+		}
+		{
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "25C5815C5583AA74"
+			tasks: [{
+				id: "5485E40AEB12B374"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			id: "2BC4F19D1B343BF2"
+			tasks: [{
+				id: "48BCB8F83B6E7D33"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(kubejs:foods/emergency_sanity_elixir_a)item_tag(kubejs:foods/emergency_sanity_elixir_b)item_tag(kubejs:foods/emergency_sanity_elixir_y))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
 		}
 	]
 }

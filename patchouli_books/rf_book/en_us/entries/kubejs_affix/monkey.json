@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.monkey",
+	"name": "patchouli.gui.trait.kubejs.monkey",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.monkey",
-			"text": "trait.kubejs.monkey.desc"
+			"title": "patchouli.gui.trait.kubejs.monkey",
+			"text": "patchouli.gui.trait.kubejs.monkey.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.monkey.applicable",
-			"text": "trait.kubejs.monkey.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.monkey.applicable",
+			"text": "patchouli.gui.trait.kubejs.monkey.applicable_text"
 		}
 	]
 }

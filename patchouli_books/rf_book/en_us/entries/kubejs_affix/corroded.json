@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.corroded",
+	"name": "patchouli.gui.trait.kubejs.corroded",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.corroded",
-			"text": "trait.kubejs.corroded.desc"
+			"title": "patchouli.gui.trait.kubejs.corroded",
+			"text": "patchouli.gui.trait.kubejs.corroded.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.corroded.applicable",
-			"text": "trait.kubejs.corroded.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.corroded.applicable",
+			"text": "patchouli.gui.trait.kubejs.corroded.applicable_text"
 		}
 	]
 }

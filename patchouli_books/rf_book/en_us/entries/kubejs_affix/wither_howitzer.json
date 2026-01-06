@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.wither_howitzer",
+	"name": "patchouli.gui.trait.silentgear.wither_howitzer",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.wither_howitzer",
-			"text": "trait.silentgear.wither_howitzer.desc"
+			"title": "patchouli.gui.trait.silentgear.wither_howitzer",
+			"text": "patchouli.gui.trait.silentgear.wither_howitzer.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.wither_howitzer.applicable",
-			"text": "trait.silentgear.wither_howitzer.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.wither_howitzer.applicable",
+			"text": "patchouli.gui.trait.silentgear.wither_howitzer.applicable_text"
 		}
 	]
 }

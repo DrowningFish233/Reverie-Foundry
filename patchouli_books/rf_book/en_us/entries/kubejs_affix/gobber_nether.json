@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.gobber_nether",
+	"name": "patchouli.gui.trait.kubejs.gobber_nether",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.gobber_nether",
-			"text": "trait.kubejs.gobber_nether.desc"
+			"title": "patchouli.gui.trait.kubejs.gobber_nether",
+			"text": "patchouli.gui.trait.kubejs.gobber_nether.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.gobber_nether.applicable",
-			"text": "trait.kubejs.gobber_nether.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.gobber_nether.applicable",
+			"text": "patchouli.gui.trait.kubejs.gobber_nether.applicable_text"
 		}
 	]
 }

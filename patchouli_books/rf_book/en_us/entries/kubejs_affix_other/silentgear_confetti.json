@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.confetti",
+	"name": "patchouli.gui.trait.silentgear.confetti",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.confetti",
-			"text": "trait.silentgear.confetti.desc"
+			"title": "patchouli.gui.trait.silentgear.confetti",
+			"text": "patchouli.gui.trait.silentgear.confetti.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.confetti.applicable",
-			"text": "trait.silentgear.confetti.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.confetti.applicable",
+			"text": "patchouli.gui.trait.silentgear.confetti.applicable_text"
 		}
 	]
 }

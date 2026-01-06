@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.promotion",
+	"name": "patchouli.gui.trait.kubejs.promotion",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.promotion",
-			"text": "trait.kubejs.promotion.desc"
+			"title": "patchouli.gui.trait.kubejs.promotion",
+			"text": "patchouli.gui.trait.kubejs.promotion.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.promotion.applicable",
-			"text": "trait.kubejs.promotion.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.promotion.applicable",
+			"text": "patchouli.gui.trait.kubejs.promotion.applicable_text"
 		}
 	]
 }

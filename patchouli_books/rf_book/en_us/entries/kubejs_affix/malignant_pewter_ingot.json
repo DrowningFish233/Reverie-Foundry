@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.malignant_pewter_ingot",
+	"name": "patchouli.gui.trait.silentgear.malignant_pewter_ingot",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.malignant_pewter_ingot",
-			"text": "trait.silentgear.malignant_pewter_ingot.desc"
+			"title": "patchouli.gui.trait.silentgear.malignant_pewter_ingot",
+			"text": "patchouli.gui.trait.silentgear.malignant_pewter_ingot.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.malignant_pewter_ingot.applicable",
-			"text": "trait.silentgear.malignant_pewter_ingot.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.malignant_pewter_ingot.applicable",
+			"text": "patchouli.gui.trait.silentgear.malignant_pewter_ingot.applicable_text"
 		}
 	]
 }

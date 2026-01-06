@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.swift_swim",
+	"name": "patchouli.gui.trait.silentgear.swift_swim",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.swift_swim",
-			"text": "trait.silentgear.swift_swim.desc"
+			"title": "patchouli.gui.trait.silentgear.swift_swim",
+			"text": "patchouli.gui.trait.silentgear.swift_swim.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.swift_swim.applicable",
-			"text": "trait.silentgear.swift_swim.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.swift_swim.applicable",
+			"text": "patchouli.gui.trait.silentgear.swift_swim.applicable_text"
 		}
 	]
 }

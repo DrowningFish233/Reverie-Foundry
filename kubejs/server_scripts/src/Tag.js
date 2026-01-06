@@ -378,6 +378,12 @@ ServerEvents.tags('item', event => {
         'minecraft:bubble_coral',
         'minecraft:brain_coral'
     )
+
+    event.add(
+        'kubejs:evil_materials',
+        'hazennstuff:shadow_scale',
+        'kubejs:blood_orb'
+    )
 })
 
 ServerEvents.tags('block', event => {

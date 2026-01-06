@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.unstable_luminescence_ingot",
+	"name": "patchouli.gui.trait.kubejs.unstable_luminescence_ingot",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.unstable_luminescence_ingot",
-			"text": "trait.kubejs.unstable_luminescence_ingot.desc"
+			"title": "patchouli.gui.trait.kubejs.unstable_luminescence_ingot",
+			"text": "patchouli.gui.trait.kubejs.unstable_luminescence_ingot.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.unstable_luminescence_ingot.applicable",
-			"text": "trait.kubejs.unstable_luminescence_ingot.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.unstable_luminescence_ingot.applicable",
+			"text": "patchouli.gui.trait.kubejs.unstable_luminescence_ingot.applicable_text"
 		}
 	]
 }

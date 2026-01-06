@@ -39,9 +39,22 @@ global.new_materials = [
     { id: 'ruinous_soul', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/ruinous_soul" },
     { id: 'ashes_of_calamity', maxStackSize: 32, rarity: 'rare', texture: "kubejs:item/misc/ashes_of_calamity" },
     { id: 'gold_crown', maxStackSize: 1, rarity: 'epic' },
-
-
-
+    { id: 'summon_gauntlet', maxStackSize: 1 },
+    { id: 'summon_lich', maxStackSize: 1 },
+    { id: 'summon_obsidilith', maxStackSize: 1 },
+    { id: 'summon_void_blossom', maxStackSize: 1 },
+    { id: 'summon_fire_boss', maxStackSize: 1 },
+    { id: 'summon_dead_king', maxStackSize: 1 },
+    { id: 'summon_amethyst_crab', maxStackSize: 1 },
+    { id: 'summon_ignis', maxStackSize: 1 },
+    { id: 'summon_the_leviathan', maxStackSize: 1 },
+    { id: 'summon_ancient_remnant', maxStackSize: 1 },
+    { id: 'summon_maledictus', maxStackSize: 1 },
+    { id: 'summon_scylla', maxStackSize: 1 },
+    { id: 'summon_the_harbinger', maxStackSize: 1 },
+    { id: 'summon_ender_guardian', maxStackSize: 1 },
+    { id: 'summon_netherite_monstrosity', maxStackSize: 1 },
+    { id: 'randomweapon', maxStackSize: 1 },
 
 ];
 

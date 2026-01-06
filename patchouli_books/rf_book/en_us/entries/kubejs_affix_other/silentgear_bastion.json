@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.bastion",
+	"name": "patchouli.gui.trait.silentgear.bastion",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.bastion",
-			"text": "trait.silentgear.bastion.desc"
+			"title": "patchouli.gui.trait.silentgear.bastion",
+			"text": "patchouli.gui.trait.silentgear.bastion.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.bastion.applicable",
-			"text": "trait.silentgear.bastion.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.bastion.applicable",
+			"text": "patchouli.gui.trait.silentgear.bastion.applicable_text"
 		}
 	]
 }

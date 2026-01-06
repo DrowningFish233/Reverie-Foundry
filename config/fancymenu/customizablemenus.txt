@@ -6,9 +6,6 @@ net.minecraft.client.gui.screens.ReceivingLevelScreen {
 net.minecraft.client.gui.screens.PauseScreen {
 }
 
-net.minecraft.client.gui.screens.TitleScreen {
-}
-
 net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
 }
 
@@ -30,6 +27,6 @@ net.minecraft.client.gui.screens.ProgressScreen {
 net.minecraft.client.gui.screens.ConnectScreen {
 }
 
-de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+net.minecraft.client.gui.screens.TitleScreen {
 }
 

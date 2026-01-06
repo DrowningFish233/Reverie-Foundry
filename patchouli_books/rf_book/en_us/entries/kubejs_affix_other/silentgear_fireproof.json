@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.fireproof",
+	"name": "patchouli.gui.trait.silentgear.fireproof",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.fireproof",
-			"text": "trait.silentgear.fireproof.desc"
+			"title": "patchouli.gui.trait.silentgear.fireproof",
+			"text": "patchouli.gui.trait.silentgear.fireproof.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.fireproof.applicable",
-			"text": "trait.silentgear.fireproof.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.fireproof.applicable",
+			"text": "patchouli.gui.trait.silentgear.fireproof.applicable_text"
 		}
 	]
 }

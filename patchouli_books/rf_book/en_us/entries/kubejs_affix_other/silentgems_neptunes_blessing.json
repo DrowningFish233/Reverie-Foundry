@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.neptunes_blessing",
+	"name": "patchouli.gui.trait.silentgems.neptunes_blessing",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.neptunes_blessing",
-			"text": "trait.silentgems.neptunes_blessing.desc"
+			"title": "patchouli.gui.trait.silentgems.neptunes_blessing",
+			"text": "patchouli.gui.trait.silentgems.neptunes_blessing.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.neptunes_blessing.applicable",
-			"text": "trait.silentgems.neptunes_blessing.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.neptunes_blessing.applicable",
+			"text": "patchouli.gui.trait.silentgems.neptunes_blessing.applicable_text"
 		}
 	]
 }

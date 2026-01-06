@@ -120,7 +120,7 @@
 				value: 1L
 			}]
 			x: 4.5d
-			y: -13.5d
+			y: -11.0d
 		}
 		{
 			id: "297A862AB87A213C"
@@ -152,7 +152,7 @@
 				type: "structure"
 			}]
 			x: 6.5d
-			y: -10.0d
+			y: -9.0d
 		}
 		{
 			id: "55BA0F294A5D2F55"
@@ -163,6 +163,20 @@
 			}]
 			x: 4.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["0BCF6B18963AB88F"]
+			hide_until_deps_complete: true
+			id: "7655A85408A81AA1"
+			tasks: [{
+				consume_items: true
+				count: 6L
+				id: "2E510831660F901F"
+				item: { count: 1, id: "irons_spellbooks:arcane_essence" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -11.0d
 		}
 	]
 }

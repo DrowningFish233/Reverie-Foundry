@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.citrine",
+	"name": "patchouli.gui.trait.silentgear.citrine",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.citrine",
-			"text": "trait.silentgear.citrine.desc"
+			"title": "patchouli.gui.trait.silentgear.citrine",
+			"text": "patchouli.gui.trait.silentgear.citrine.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.citrine.applicable",
-			"text": "trait.silentgear.citrine.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.citrine.applicable",
+			"text": "patchouli.gui.trait.silentgear.citrine.applicable_text"
 		}
 	]
 }

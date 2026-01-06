@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.fiery_tears",
+	"name": "patchouli.gui.trait.silentgear.fiery_tears",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.fiery_tears",
-			"text": "trait.silentgear.fiery_tears.desc"
+			"title": "patchouli.gui.trait.silentgear.fiery_tears",
+			"text": "patchouli.gui.trait.silentgear.fiery_tears.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.fiery_tears.applicable",
-			"text": "trait.silentgear.fiery_tears.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.fiery_tears.applicable",
+			"text": "patchouli.gui.trait.silentgear.fiery_tears.applicable_text"
 		}
 	]
 }

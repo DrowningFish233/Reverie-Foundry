@@ -22,12 +22,12 @@ fixedTierIncreaseDelay = 40
 #NOTE: Changes will only take effect after the next Hyper invasion occurs or a new world is started.
 # Default: 10
 # Range: > 1
-hyperInvasionRarity = 10
+hyperInvasionRarity = 15
 #How often should Nightmare Invasions occur.
 #NOTE: Changes will only take effect after the next Nightmare invasion occurs or a new world is started.
 # Default: 4
 # Range: > 1
-nightmareInvasionRarity = 4
+nightmareInvasionRarity = 9
 #Sets the light level to zero during invasions in this dimension.
 #NOTE: Does not affect brightness.
 zeroLightLevelDuringInvasions = false

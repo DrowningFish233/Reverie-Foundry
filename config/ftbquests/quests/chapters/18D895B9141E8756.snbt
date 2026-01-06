@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "18D895B9141E8756"
 	group: "17FDF36D1B965C72"
+	icon: {
+		id: "create:wrench"
+	}
 	id: "18D895B9141E8756"
 	images: [{
 		height: 8.0d
@@ -12,7 +15,7 @@
 		x: -7.5d
 		y: -4.5d
 	}]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{

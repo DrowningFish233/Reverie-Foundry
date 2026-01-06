@@ -485,4 +485,289 @@ ServerEvents.recipes(event => {
             .addExtraInput('minecraft:slime_ball', 16)
             .addExtraInput('minecraft:honey_bottle', 1)
     );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('malum:imitation_flesh', 'terra_entity:cthulhu_eye_spawn_egg')
+            .addSpirit("wicked", 6)
+            .addSpirit("eldritch", 6)
+            .addExtraInput('minecraft:slime_ball', 4)
+            .addExtraInput('kubejs:meat', 6)
+            .addExtraInput('iceandfire:ectoplasm', 3)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('minecraft:skeleton_skull', 'terra_entity:skeletron_spawn_egg')
+            .addSpirit("wicked", 6)
+            .addSpirit("eldritch", 6)
+            .addExtraInput('#c:bones', 12)
+            .addExtraInput('#kubejs:evil_materials', 4)
+            .addExtraInput('iceandfire:ectoplasm', 2)
+            .addExtraInput('kubejs:necroplasm', 1)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'terra_entity:eater_of_world_spawn_egg')
+            .addSpirit("wicked", 6)
+            .addSpirit("eldritch", 6)
+            .addExtraInput('alshanex_familiars:spider_fang', 4)
+            .addExtraInput('kubejs:meat', 6)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'terra_entity:brain_of_cthulhu_spawn_egg')
+            .addSpirit("wicked", 6)
+            .addSpirit("eldritch", 6)
+            .addExtraInput('#minecraft:meat', 4)
+            .addExtraInput('kubejs:meat', 6)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'terra_entity:queen_bee_spawn_egg')
+            .addSpirit("earthen", 6)
+            .addSpirit("aerial", 6)
+            .addExtraInput('minecraft:feather', 4)
+            .addExtraInput('alshanex_familiars:spider_fang', 3)
+    );
+
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_gauntlet')
+            .addSpirit("infernal", 6)
+            .addSpirit("eldritch", 6)
+            .addExtraInput('minecraft:ancient_debris', 1)
+            .addExtraInput('minecraft:ender_eye', 1)
+            .addExtraInput('minecraft:netherrack', 16)
+            .addExtraInput('minecraft:iron_ingot', 8)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_lich')
+            .addSpirit("wicked", 6)
+            .addSpirit("aerial", 6)
+            .addExtraInput('bosses_of_mass_destruction:soul_star', 1)
+            .addExtraInput('hazennstuff:permafrost_fragment', 4)
+            .addExtraInput('#extradelight:chilling_items', 8)
+            .addExtraInput('#c:bones', 8)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_obsidilith')
+            .addSpirit("wicked", 6)
+            .addSpirit("earthen", 6)
+            .addExtraInput('minecraft:obsidian', 6)
+            .addExtraInput('minecraft:end_stone', 12)
+            .addExtraInput('minecraft:ender_eye', 8)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_void_blossom')
+            .addSpirit("sacred", 6)
+            .addSpirit("earthen", 6)
+            .addExtraInput('#c:seeds', 3)
+            .addExtraInput('create:tree_fertilizer', 5)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_fire_boss')
+            .addSpirit("arcane", 6)
+            .addSpirit("infernal", 6)
+            .addExtraInput('irons_spellbooks:cinder_essence', 4)
+            .addExtraInput('irons_spellbooks:arcane_essence', 12)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_dead_king')
+            .addSpirit("arcane", 6)
+            .addSpirit("eldritch", 6)
+            .addExtraInput('#c:bones', 8)
+            .addExtraInput('irons_spellbooks:magic_cloth', 3)
+            .addExtraInput('minecraft:skeleton_skull', 1)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('minecraft:amethyst_block', 'kubejs:summon_dead_king')
+            .addSpirit("arcane", 6)
+            .addSpirit("eldritch", 6)
+            .addExtraInput('#c:bones', 8)
+            .addExtraInput('minecraft:amethyst_shard', 6)
+            .addExtraInput('#kubejs:evil_materials', 2)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_ignis')
+            .addSpirit("sacred", 6)
+            .addSpirit("infernal", 6)
+            .addExtraInput('minecraft:magma_block', 8)
+            .addExtraInput('cataclysm:flame_eye', 1)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_ignis')
+            .addSpirit("sacred", 6)
+            .addSpirit("infernal", 6)
+            .addExtraInput('minecraft:magma_block', 8)
+            .addExtraInput('cataclysm:burning_ashes', 1)
+            .addExtraInput('cataclysm:dying_ember', 4)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_the_leviathan')
+            .addSpirit("eldritch", 6)
+            .addSpirit("aqueous", 6)
+            .addExtraInput('#kubejs:cora', 4)
+            .addExtraInput('minecraft:nautilus_shell', 2)
+            .addExtraInput('cataclysm:abyss_eye', 1)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_the_leviathan')
+            .addSpirit("eldritch", 6)
+            .addSpirit("aqueous", 6)
+            .addExtraInput('#kubejs:cora', 4)
+            .addExtraInput('minecraft:nautilus_shell', 2)
+            .addExtraInput('minecraft:heart_of_the_sea', 1)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_ancient_remnant')
+            .addSpirit("earthen", 6)
+            .addSpirit("sacred", 6)
+            .addExtraInput('#c:sands', 4)
+            .addExtraInput('minecraft:emerald', 2)
+            .addExtraInput('cataclysm:desert_eye', 1)
+            .addExtraInput('minecraft:gold_ingot', 2)
+            .addExtraInput('minecraft:rotten_flesh', 2)
+            .addExtraInput('#c:bones', 2)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_ancient_remnant')
+            .addSpirit("earthen", 6)
+            .addSpirit("sacred", 6)
+            .addExtraInput('#c:sands', 16)
+            .addExtraInput('minecraft:emerald', 4)
+            .addExtraInput('cataclysm:ancient_metal_ingot', 2)
+            .addExtraInput('minecraft:gold_ingot', 4)
+            .addExtraInput('minecraft:rotten_flesh', 4)
+            .addExtraInput('#c:bones', 4)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_maledictus')
+            .addSpirit("earthen", 6)
+            .addSpirit("sacred", 6)
+            .addExtraInput('minecraft:emerald', 4)
+            .addExtraInput('cataclysm:black_steel_ingot', 4)
+            .addExtraInput('#c:bones', 4)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_maledictus')
+            .addSpirit("arcane", 3)
+            .addSpirit("aerial", 3)
+            .addExtraInput('minecraft:emerald', 2)
+            .addExtraInput('cataclysm:cursed_eye', 1)
+            .addExtraInput('#c:bones', 2)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_scylla')
+            .addSpirit("arcane", 6)
+            .addSpirit("aerial", 6)
+            .addExtraInput('cataclysm:lacrima', 2)
+            .addExtraInput('minecraft:lightning_rod', 1)
+            .addExtraInput('minecraft:prismarine_shard', 4)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_scylla')
+            .addSpirit("arcane", 3)
+            .addSpirit("aerial", 3)
+            .addExtraInput('minecraft:lightning_rod', 1)
+            .addExtraInput('cataclysm:storm_eye', 1)
+            .addExtraInput('minecraft:prismarine_shard', 2)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_the_harbinger')
+            .addSpirit("wicked", 4)
+            .addSpirit("aerial", 8)
+            .addExtraInput('cataclysm:mech_eye', 1)
+            .addExtraInput('minecraft:redstone_block', 4)
+            .addExtraInput('minecraft:iron_block', 4)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_the_harbinger')
+            .addSpirit("wicked", 4)
+            .addSpirit("aerial", 8)
+            .addExtraInput('minecraft:redstone_block', 2)
+            .addExtraInput('cataclysm:witherite_ingot', 1)
+            .addExtraInput('minecraft:iron_block', 2)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_ender_guardian')
+            .addSpirit("eldritch", 6)
+            .addSpirit("arcane", 6)
+            .addExtraInput('minecraft:end_stone', 16)
+            .addExtraInput('minecraft:shulker_shell', 2)
+            .addExtraInput('cataclysm:void_eye', 1)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_ender_guardian')
+            .addSpirit("eldritch", 6)
+            .addSpirit("arcane", 6)
+            .addExtraInput('minecraft:shulker_shell', 2)
+            .addExtraInput('cataclysm:void_core', 1)
+            .addExtraInput('cataclysm:void_jaw', 4)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_netherite_monstrosity')
+            .addSpirit("arcane", 6)
+            .addSpirit("infernal", 6)
+            .addExtraInput('cataclysm:monstrous_eye', 1)
+            .addExtraInput('minecraft:gilded_blackstone', 6)
+            .addExtraInput('minecraft:magma_cream', 4)
+    );
+
+    //召唤仪式
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_netherite_monstrosity')
+            .addSpirit("arcane", 3)
+            .addSpirit("infernal", 3)
+            .addExtraInput('cataclysm:lava_power_cell', 2)
+            .addExtraInput('minecraft:gilded_blackstone', 3)
+            .addExtraInput('minecraft:magma_cream', 2)
+    );
 });

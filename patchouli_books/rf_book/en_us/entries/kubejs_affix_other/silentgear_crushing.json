@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.crushing",
+	"name": "patchouli.gui.trait.silentgear.crushing",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.crushing",
-			"text": "trait.silentgear.crushing.desc"
+			"title": "patchouli.gui.trait.silentgear.crushing",
+			"text": "patchouli.gui.trait.silentgear.crushing.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.crushing.applicable",
-			"text": "trait.silentgear.crushing.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.crushing.applicable",
+			"text": "patchouli.gui.trait.silentgear.crushing.applicable_text"
 		}
 	]
 }

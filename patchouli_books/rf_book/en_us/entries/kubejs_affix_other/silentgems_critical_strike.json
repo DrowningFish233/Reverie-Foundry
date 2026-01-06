@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.critical_strike",
+	"name": "patchouli.gui.trait.silentgems.critical_strike",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.critical_strike",
-			"text": "trait.silentgems.critical_strike.desc"
+			"title": "patchouli.gui.trait.silentgems.critical_strike",
+			"text": "patchouli.gui.trait.silentgems.critical_strike.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.critical_strike.applicable",
-			"text": "trait.silentgems.critical_strike.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.critical_strike.applicable",
+			"text": "patchouli.gui.trait.silentgems.critical_strike.applicable_text"
 		}
 	]
 }

@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.emerald",
+	"name": "patchouli.gui.trait.silentgear.emerald",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.emerald",
-			"text": "trait.silentgear.emerald.desc"
+			"title": "patchouli.gui.trait.silentgear.emerald",
+			"text": "patchouli.gui.trait.silentgear.emerald.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.emerald.applicable",
-			"text": "trait.silentgear.emerald.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.emerald.applicable",
+			"text": "patchouli.gui.trait.silentgear.emerald.applicable_text"
 		}
 	]
 }

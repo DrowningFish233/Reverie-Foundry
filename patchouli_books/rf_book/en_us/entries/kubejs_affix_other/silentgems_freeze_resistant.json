@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.freeze_resistant",
+	"name": "patchouli.gui.trait.silentgems.freeze_resistant",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.freeze_resistant",
-			"text": "trait.silentgems.freeze_resistant.desc"
+			"title": "patchouli.gui.trait.silentgems.freeze_resistant",
+			"text": "patchouli.gui.trait.silentgems.freeze_resistant.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.freeze_resistant.applicable",
-			"text": "trait.silentgems.freeze_resistant.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.freeze_resistant.applicable",
+			"text": "patchouli.gui.trait.silentgems.freeze_resistant.applicable_text"
 		}
 	]
 }

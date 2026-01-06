@@ -28,11 +28,72 @@ EntityEvents.spawned('minecraft:item', event => {
         case 'terra_entity:brain_of_cthulhu_spawn_egg':
             summonMob(10, entity, 'terra_entity:brain_of_cthulhu', 'kubejs:boss_summon')
             break;
+
+        case 'kubejs:summon_amethyst_crab':
+            summonMob(10, entity, 'cataclysm:amethyst_crab', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_gauntlet':
+            summonMob(10, entity, 'bosses_of_mass_destruction:gauntlet', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_lich':
+            summonMob(10, entity, 'bosses_of_mass_destruction:lich', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_obsidilith':
+            summonMob(10, entity, 'bosses_of_mass_destruction:obsidilith', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_void_blossom':
+            summonMob(10, entity, 'bosses_of_mass_destruction:void_blossom', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_fire_boss':
+            summonMob(10, entity, 'irons_spellbooks:fire_boss', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_dead_king':
+            summonMob(10, entity, 'irons_spellbooks:dead_king', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_amethyst_crab':
+            summonMob(10, entity, 'cataclysm:amethyst_crab', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_ignis':
+            summonMob(10, entity, 'cataclysm:ignis', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_the_leviathan':
+            summonMob(10, entity, 'cataclysm:the_leviathan', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_ancient_remnant':
+            summonMob(10, entity, 'cataclysm:ancient_remnant', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_maledictus':
+            summonMob(10, entity, 'cataclysm:maledictus', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_scylla':
+            summonMob(10, entity, 'cataclysm:scylla', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_the_harbinger':
+            summonMob(10, entity, 'cataclysm:the_harbinger', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_ender_guardian':
+            summonMob(10, entity, 'cataclysm:ender_guardian', 'kubejs:boss_summon')
+            break;
+
+        case 'kubejs:summon_netherite_monstrosity':
+            summonMob(10, entity, 'cataclysm:netherite_monstrosity', 'kubejs:boss_summon')
+            break;
     }
 })
-
-
-
 
 
 

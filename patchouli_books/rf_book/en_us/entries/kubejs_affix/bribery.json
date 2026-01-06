@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.bribery",
+	"name": "patchouli.gui.trait.kubejs.bribery",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.bribery",
-			"text": "trait.kubejs.bribery.desc"
+			"title": "patchouli.gui.trait.kubejs.bribery",
+			"text": "patchouli.gui.trait.kubejs.bribery.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.bribery.applicable",
-			"text": "trait.kubejs.bribery.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.bribery.applicable",
+			"text": "patchouli.gui.trait.kubejs.bribery.applicable_text"
 		}
 	]
 }

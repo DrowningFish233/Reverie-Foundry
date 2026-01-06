@@ -1,4 +1,54 @@
 /**
+ * 从原版模组翻译文件中读取词缀翻译
+ */
+function getOriginalModTranslation(traitId, modName) {
+    // 原版模组翻译文件路径
+    let langPaths = [
+        `kubejs/assets/silentgear/lang/zh_cn.json`,
+        `kubejs/assets/silentgems/lang/zh_cn.json`,
+    ];
+
+    let nameKey = `trait.${modName}.${traitId}`;
+    let descKey = `${nameKey}.desc`;
+
+    let result = {
+        nameKey: nameKey,
+        descKey: descKey,
+        name: null,
+        description: null
+    };
+
+    // 尝试从所有可能的翻译文件中读取
+    for (let langPath of langPaths) {
+        try {
+            if (FilesJS.exists(langPath)) {
+                let langContent = FilesJS.readFile(langPath);
+                let langData = JSON.parse(langContent);
+
+                // 读取名称
+                if (langData[nameKey] && !result.name) {
+                    result.name = langData[nameKey];
+                }
+
+                // 读取描述
+                if (langData[descKey] && !result.description) {
+                    result.description = langData[descKey];
+                }
+
+                // 如果都找到了，提前结束
+                if (result.name && result.description) {
+                    break;
+                }
+            }
+        } catch (e) {
+            console.log(`读取翻译文件失败 ${langPath}:`, e.message);
+        }
+    }
+
+    return result;
+}
+
+/**
  * 扫描 SilentGear 和 SilentGems 的原版词缀并生成帕秋莉手册条目
  */
 function generateSilentGearGemsTraitEntries() {
@@ -33,7 +83,7 @@ function generateSilentGearGemsTraitEntries() {
     let generatedCount = 0;
     let skippedCount = 0;
 
-    // 确保英文目标文件夹存在
+    // 确保目标文件夹存在
     let enTargetFolder = `${patchouliEnPath}/kubejs_affix_other`;
     ensureDirectory(enTargetFolder);
 
@@ -66,7 +116,7 @@ function generateSilentGearGemsTraitEntries() {
             return fileName.endsWith('.json');
         });
 
-        console.log(`  找到 ${jsonFiles.length} 个词缀文件`);
+        //console.log(`  找到 ${jsonFiles.length} 个词缀文件`);
 
         // 处理每个词缀文件
         for (let filePath of jsonFiles) {
@@ -75,28 +125,40 @@ function generateSilentGearGemsTraitEntries() {
                 let fileName = getFileNameFromPath(filePath);
                 let traitId = fileName.replace('.json', '');
 
-                console.log(`  处理词缀: ${traitId}`);
-
                 // 读取词缀文件内容
                 let fileContent = FilesJS.readFile(filePath);
                 let traitData = JSON.parse(fileContent);
 
                 if (!traitData || !traitData.name) {
-                    console.log(`  跳过无效文件: ${fileName}`);
                     skippedCount++;
                     continue;
                 }
 
-                // 使用原版翻译键
-                let nameKey = traitData.name.translate || `${mod.langKeyPrefix}${traitId}`;
-                let descKey = traitData.description ? (traitData.description.translate || `${nameKey}.desc`) : `${nameKey}.desc`;
+                // 获取原版翻译
+                let originalTranslation = getOriginalModTranslation(traitId, mod.mod);
 
-                console.log(`    名称键: ${nameKey}`);
-                console.log(`    描述键: ${descKey}`);
+                // 使用原版翻译键，并添加帕秋莉前缀
+                let nameKey = traitData.name.translate || originalTranslation.nameKey;
+                let descKey = traitData.description ? (traitData.description.translate || originalTranslation.descKey) : originalTranslation.descKey;
 
-                // 获取显示名称
+                // 添加帕秋莉前缀
+                let patchedNameKey = addPatchouliPrefix(nameKey);
+                let patchedDescKey = addPatchouliPrefix(descKey);
+                let patchedApplicableKey = addPatchouliPrefix(`${nameKey}.applicable`);
+                let patchedApplicableTextKey = addPatchouliPrefix(`${nameKey}.applicable_text`);
+
+                // 获取显示名称（优先使用原版翻译）
                 let displayName = traitId.charAt(0).toUpperCase() + traitId.slice(1);
+                if (originalTranslation.name) {
+                    displayName = originalTranslation.name;
+                }
+
+                // 获取描述（优先使用原版翻译）
                 let description = "";
+                if (originalTranslation.description) {
+                    description = originalTranslation.description;
+                }
+
                 let applicableTypes = "适用于所有装备类型";
 
                 // 获取适用装备类型
@@ -104,12 +166,17 @@ function generateSilentGearGemsTraitEntries() {
                     applicableTypes = getTraitApplicableGearTypes(traitData);
                 }
 
+                // 格式化文本
+                let formattedDisplayName = formatTextForPatchouli(displayName);
+                let formattedDescription = formatTextForPatchouli(description);
+                let formattedApplicableTypes = formatTextForPatchouli(applicableTypes);
+
                 // 使用附魔书作为图标
                 let icon = 'minecraft:enchanted_book';
 
-                // 创建帕秋莉条目数据（直接使用原版翻译键）
+                // 创建帕秋莉条目数据（使用带前缀的翻译键）
                 let entryData = {
-                    "name": nameKey,
+                    "name": patchedNameKey,
                     "icon": icon,
                     "category": `patchouli:kubejs_affix_other`,
                     "pages": [
@@ -118,13 +185,13 @@ function generateSilentGearGemsTraitEntries() {
                             "item": {
                                 "item": icon
                             },
-                            "title": nameKey,
-                            "text": descKey
+                            "title": patchedNameKey,
+                            "text": patchedDescKey
                         },
                         {
                             "type": "patchouli:text",
-                            "title": `${nameKey}.applicable`,
-                            "text": `${nameKey}.applicable_text`
+                            "title": patchedApplicableKey,
+                            "text": patchedApplicableTextKey
                         }
                     ]
                 };
@@ -133,13 +200,21 @@ function generateSilentGearGemsTraitEntries() {
                 let entryPath = `${enTargetFolder}/${mod.mod}_${traitId}.json`;
                 JsonIO.write(entryPath, entryData);
 
-                // 添加翻译键
-                // 这里只添加手册特有的键
-                translations[`${nameKey}.applicable`] = "适用装备类型";
-                translations[`${nameKey}.applicable_text`] = applicableTypes;
+                if (formattedDisplayName) {
+                    translations[patchedNameKey] = formattedDisplayName;
+                    //console.log(`    添加名称翻译: ${patchedNameKey} = ${formattedDisplayName}`);
+                }
+
+                if (formattedDescription) {
+                    translations[patchedDescKey] = formattedDescription;
+                    //console.log(`    添加描述翻译: ${patchedDescKey} = ${formattedDescription}`);
+                }
+
+                translations[patchedApplicableKey] = "适用装备类型";
+                translations[patchedApplicableTextKey] = formattedApplicableTypes;
 
                 generatedCount++;
-                console.log(`  已生成条目: ${mod.mod}_${traitId}`);
+                //console.log(`  已生成条目: ${mod.mod}_${traitId}`);
 
             } catch (e) {
                 console.log(`处理词缀文件失败: ${filePath}`, e);

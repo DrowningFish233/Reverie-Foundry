@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.lucky",
+	"name": "patchouli.gui.trait.silentgear.lucky",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.lucky",
-			"text": "trait.silentgear.lucky.desc"
+			"title": "patchouli.gui.trait.silentgear.lucky",
+			"text": "patchouli.gui.trait.silentgear.lucky.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.lucky.applicable",
-			"text": "trait.silentgear.lucky.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.lucky.applicable",
+			"text": "patchouli.gui.trait.silentgear.lucky.applicable_text"
 		}
 	]
 }

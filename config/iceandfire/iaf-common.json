@@ -8,7 +8,7 @@
     "generate.skeletons": true,
     "generate.skeletonChance": 0.001,
     "generate.denGoldAmount": 0.3,
-    "generate.oreRatio": 0.022222222222222223,
+    "generate.oreRatio": 0.023,
     "griefing": true,
     "tamedGriefing": true,
     "flapNoiseDistance": 4,
@@ -23,7 +23,7 @@
     "canDespawn": true,
     "sleep": true,
     "digWhenStuck": true,
-    "breakBlockCooldown": 5,
+    "breakBlockCooldown": 10,
     "targetSearchLength": 96,
     "wanderFromHomeDistance": 26,
     "hungerTickRate": 3000,
@@ -33,7 +33,7 @@
     "dragonFlightSpeedMod": 1.0,
     "maxTamedDragonAge": 128,
     "maxBreathTimeMul": 2.0,
-    "neutralToPlayer": false,
+    "neutralToPlayer": true,
     "enableBrushDragonScales": true,
     "maxBrushScalesDropPerTime": 2,
     "brushTimesMul": 1.0,
@@ -61,24 +61,24 @@
   "siren": {
     "maxHealth": 50.0,
     "maxSingTime": 12000,
-    "timeBetweenSongs": 2000
+    "timeBetweenSongs": 3000
   },
   "gorgon": {
-    "maxHealth": 100.0
+    "maxHealth": 120.0
   },
   "deathworm": {
-    "spawnChance": 0.03333333333333333,
-    "targetSearchLength": 48,
-    "maxHealth": 10.0,
-    "attackDamage": 3.0,
+    "spawnChance": 0.035,
+    "targetSearchLength": 32,
+    "maxHealth": 30.0,
+    "attackDamage": 5.0,
     "attackMonsters": true
   },
   "cockatrice": {
     "spawn": true,
     "spawnWeight": 4,
     "chickenSearchLength": 32,
-    "eggChance": 0.03333333333333333,
-    "maxHealth": 40.0,
+    "eggChance": 0.04,
+    "maxHealth": 50.0,
     "chickensLayRottenEggs": true
   },
   "bird": {
@@ -103,14 +103,14 @@
     "villagerSearchLength": 48.0,
     "tameTime": 400,
     "flightSpeed": 1.75,
-    "maxHealth": 50.0,
+    "maxHealth": 80.0,
     "attackDamage": 7.0
   },
   "seaSerpent": {
     "spawnChance": 0.004,
     "griefing": true,
-    "baseHealth": 20.0,
-    "attackDamage": 4.0
+    "baseHealth": 30.0,
+    "attackDamage": 5.0
   },
   "lich": {
     "spawn": true,
@@ -126,7 +126,7 @@
   },
   "ghost": {
     "maxHealth": 30.0,
-    "attackDamage": 3.0,
+    "attackDamage": 4.0,
     "fromPlayerDeaths": true,
     "alwaysSpawnFromChest": false
   },
@@ -159,7 +159,7 @@
     "dragonsteelArmorKnockbackResistance": 0.1
   },
   "worldgen": {
-    "dangerousDistanceLimit": 1000.0,
+    "dangerousDistanceLimit": 5000.0,
     "generateFireDragonCaveChance": 1.0,
     "generateFireDragonRoostChance": 1.0,
     "generateIceDragonCaveChance": 1.0,

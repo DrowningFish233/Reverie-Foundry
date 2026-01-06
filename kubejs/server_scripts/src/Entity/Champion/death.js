@@ -1,24 +1,24 @@
-
-
 // 最终BOSS
 const FINAL_BOSS = "darkdoppelganger:dark_doppelganger";
 
 // Sephirah 名称映射
 const SEPHIRAH_NAMES = [
-    { minKills: 2, name: "Yesod" },
-    { minKills: 4, name: "Hod" },
-    { minKills: 6, name: "Netzach" },
-    { minKills: 8, name: "Tiphereth" },
-    { minKills: 10, name: "Geburah" },
-    { minKills: 12, name: "Chesed" },
-    { minKills: 14, name: "Binah" },
-    { minKills: 16, name: "Cochma" },
-    { minKills: 18, name: "Kether" }
+    { minKills: 3, name: "Malchut" },
+    { minKills: 6, name: "Yesod" },
+    { minKills: 9, name: "Hod" },
+    { minKills: 12, name: "Netzach" },
+    { minKills: 15, name: "Tiphereth" },
+    { minKills: 18, name: "Geburah" },
+    { minKills: 21, name: "Chesed" },
+    { minKills: 24, name: "Binah" },
+    { minKills: 27, name: "Cochma" },
+    { minKills: 30, name: "Kether" }
 ];
 
 
 // 位阶消息键值映射
 const RANK_MESSAGE_KEYS = {
+    "Malchut": { prefix: "sephirah.malchut.prefix", message: "sephirah.malchut.message" },
     "Yesod": { prefix: "sephirah.yesod.prefix", message: "sephirah.yesod.message" },
     "Hod": { prefix: "sephirah.hod.prefix", message: "sephirah.hod.message" },
     "Netzach": { prefix: "sephirah.netzach.prefix", message: "sephirah.netzach.message" },
@@ -41,15 +41,16 @@ EntityEvents.death(event => {
     const player = event.source.player;
     if (!player) return;
 
-    const entityType = event.entity.type;
     const pData = player.persistentData;
+    const entityType = event.entity.type;
+
 
     // 检查是否是最终BOSS
     if (entityType === FINAL_BOSS) {
         const currentKills = pData.getInt("kill") || 0;
 
         // 确保击杀数不会低于0
-        const newKills = Math.max(0, currentKills - 2);
+        const newKills = Math.max(0, currentKills - 3);
         pData.putInt("kill", newKills);
         event.server.tell(
             Text.join(
@@ -65,7 +66,7 @@ EntityEvents.death(event => {
     if (BOSS_LIST.includes(entityType)) {
         const currentKills = pData.getInt("kill") || 0;
         // 如果已经达到最大击杀数，不再增加
-        if (currentKills >= 18) {
+        if (currentKills >= 30) {
             return;
         }
 
@@ -74,7 +75,7 @@ EntityEvents.death(event => {
 
         // 检查是否达到位阶要求
         for (let sephirah of SEPHIRAH_NAMES) {
-            if (newKills === sephirah.requiredKills) {
+            if (newKills === sephirah.minKills) {
                 const messageKeys = RANK_MESSAGE_KEYS[sephirah.name];
                 if (messageKeys) {
                     const playerName = getplayerName(player.toString());

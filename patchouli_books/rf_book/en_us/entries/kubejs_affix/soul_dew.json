@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.soul_dew",
+	"name": "patchouli.gui.trait.silentgear.soul_dew",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.soul_dew",
-			"text": "trait.silentgear.soul_dew.desc"
+			"title": "patchouli.gui.trait.silentgear.soul_dew",
+			"text": "patchouli.gui.trait.silentgear.soul_dew.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.soul_dew.applicable",
-			"text": "trait.silentgear.soul_dew.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.soul_dew.applicable",
+			"text": "patchouli.gui.trait.silentgear.soul_dew.applicable_text"
 		}
 	]
 }

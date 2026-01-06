@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.combustion_boost",
+	"name": "patchouli.gui.trait.silentgear.combustion_boost",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.combustion_boost",
-			"text": "trait.silentgear.combustion_boost.desc"
+			"title": "patchouli.gui.trait.silentgear.combustion_boost",
+			"text": "patchouli.gui.trait.silentgear.combustion_boost.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.combustion_boost.applicable",
-			"text": "trait.silentgear.combustion_boost.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.combustion_boost.applicable",
+			"text": "patchouli.gui.trait.silentgear.combustion_boost.applicable_text"
 		}
 	]
 }

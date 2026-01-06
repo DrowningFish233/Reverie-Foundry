@@ -125,15 +125,6 @@
 			id: "1FBA0FE6A13F8E70"
 			rewards: [
 				{
-					count: 4
-					id: "5DB45D0A5AC19D79"
-					item: {
-						count: 1
-						id: "kubejs:terraulite_ingot"
-					}
-					type: "item"
-				}
-				{
 					count: 8
 					id: "606AE07743E98ECB"
 					item: {
@@ -159,6 +150,12 @@
 						id: "minecraft:iron_ingot"
 					}
 					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08D44DB184D9838B"
+					table_id: 8769696413750133854L
+					type: "choice"
 				}
 			]
 			tasks: [{
@@ -276,23 +273,36 @@
 				id: "minecraft:small_amethyst_bud"
 			}
 			id: "110C8BBFDBFBA375"
-			rewards: [{
-				auto: "enabled"
-				command: "/kubejs stages add @p difficult_6 "
-				disable_reward_screen_blur: true
-				exclude_from_claim_all: true
-				icon: {
-					components: {
-						"ftbquests:missing_item": "knightquest:wither_helmet"
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/kubejs stages clear @p"
+					exclude_from_claim_all: true
+					icon: {
+						id: "minecraft:wither_skeleton_skull"
 					}
-					id: "ftbquests:missing_item"
+					id: "462D52E228A4BD62"
+					ignore_reward_blocking: true
+					permission_level: 4
+					silent: true
+					team_reward: false
+					type: "command"
 				}
-				id: "1759F8E53B84EEF3"
-				ignore_reward_blocking: true
-				permission_level: 4
-				silent: true
-				type: "command"
-			}]
+				{
+					auto: "enabled"
+					command: "/kubejs stages add @p difficult_6"
+					exclude_from_claim_all: true
+					icon: {
+						id: "minecraft:wither_skeleton_skull"
+					}
+					id: "2C437A71A95E6CCC"
+					ignore_reward_blocking: true
+					permission_level: 4
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "100B5EC4DB6167A4"
 				type: "checkmark"
@@ -370,6 +380,39 @@
 			}]
 			x: -10.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			id: "56CB359C8D5426A3"
+			tasks: [{
+				id: "735FCCA157A46245"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			id: "142C80D05D6B1FDC"
+			rewards: [{
+				auto: "enabled"
+				command: "/kubejs stages clear @p"
+				exclude_from_claim_all: true
+				id: "667762DC69B2AD5E"
+				ignore_reward_blocking: true
+				permission_level: 4
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				id: "4841C69FA35E0AB5"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -6.0d
 		}
 	]
 }

@@ -1,4 +1,10 @@
-const blacklisted_mobs = ["minecraft:player", "minecraft:creeper", "minecraft:enderman"] // 在这里添加你想要排除的实体
+const blacklisted_mobs = [
+    "powerful_dummy:test_dummy",
+    "powerful_dummy:test_dummy_water",
+    "powerful_dummy:test_dummy_arthropod",
+    "powerful_dummy:test_dummy_illager",
+    "powerful_dummy:test_dummy_undead"
+]
 
 function clamp(value, min, max) {
     return Math.min(Math.max(value, min), max);
@@ -10,12 +16,27 @@ function plunder_effect(event) {
     if (!entity.potionEffects.isActive("kubejs:plunder")) return;
 
     let lvl = entity.getEffect("kubejs:plunder")?.amplifier
-    let drop_chance = clamp(0.1 * (lvl * 1.5) * damage, 0.05, 1.0)
+    let base_chance = 0.1 * (lvl * 1.5)
 
-    // 检查实体是否在黑名单中
+    let currentHealth = entity.getHealth()
+    let maxHealth = entity.getMaxHealth()
+
+    let damageRatio = damage / currentHealth
+
+    let damageInfluence = 0
+    if (damageRatio >= 0.05) {
+        damageInfluence = 1.0
+    } else {
+        damageInfluence = damageRatio / 0.05
+    }
+
+    let adjusted_base_chance = base_chance * damageInfluence
+
+    let drop_chance = clamp(adjusted_base_chance * damage, 0.05, 1.0)
+
     let entityType = entity.getType()
     if (blacklisted_mobs.find(mob => mob.toString() === entityType)) {
-        return; // 如果在黑名单中，直接返回
+        return;
     }
 
     // 检查是否有手持物品
@@ -23,10 +44,11 @@ function plunder_effect(event) {
     let offHandItem = entity.getOffhandItem()
     let hasHandItems = mainHandItem && !mainHandItem.isEmpty() || offHandItem && !offHandItem.isEmpty()
 
-    if (hasHandItems && (Math.random() - 0.1) < drop_chance) {
-
+    if (hasHandItems && Math.random() < drop_chance) {
         // 玩家处理逻辑
-        if (entity.player) {
+        if (entity.isPlayer()) {
+            let itemStack = getCuriosItem(entity, 'cataclysm:sticky_gloves');
+            if (itemStack !== null) return;
             // 优先掠夺主手，如果主手有物品
             if (mainHandItem && !mainHandItem.isEmpty()) {
                 let item_to_drop = mainHandItem
@@ -40,7 +62,6 @@ function plunder_effect(event) {
                 entity.setItemSlot(1, "minecraft:air")
             }
         }
-        // 其他实体处理逻辑
         else {
             // 优先掠夺主手，如果主手有物品
             if (mainHandItem && !mainHandItem.isEmpty()) {
@@ -61,9 +82,5 @@ function plunder_effect(event) {
                 entity.setItemSlot(1, "minecraft:air")
             }
         }
-        return;
-    }
-    else {
-        return;
     }
 }

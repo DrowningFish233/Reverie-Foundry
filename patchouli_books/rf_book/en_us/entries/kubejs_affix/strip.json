@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.strip",
+	"name": "patchouli.gui.trait.silentgear.strip",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.strip",
-			"text": "trait.silentgear.strip.desc"
+			"title": "patchouli.gui.trait.silentgear.strip",
+			"text": "patchouli.gui.trait.silentgear.strip.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.strip.applicable",
-			"text": "trait.silentgear.strip.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.strip.applicable",
+			"text": "patchouli.gui.trait.silentgear.strip.applicable_text"
 		}
 	]
 }

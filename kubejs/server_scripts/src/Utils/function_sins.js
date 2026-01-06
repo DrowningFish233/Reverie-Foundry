@@ -153,7 +153,6 @@ function depravityDamage(event) {
         // 计算沉沦伤害倍率（1-5）
         const depravityMultiplier = Math.min(5, 1 + depravityValue / 100);
 
-        // 应用到伤害系统(独立乘区)
         new_damage(event, STAGE.MULTIPLY, depravityMultiplier);
 
         const reduction = Math.max(1, Math.floor(depravityValue * 0.05));

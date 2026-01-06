@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.radiance",
+	"name": "patchouli.gui.trait.kubejs.radiance",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.radiance",
-			"text": "trait.kubejs.radiance.desc"
+			"title": "patchouli.gui.trait.kubejs.radiance",
+			"text": "patchouli.gui.trait.kubejs.radiance.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.radiance.applicable",
-			"text": "trait.kubejs.radiance.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.radiance.applicable",
+			"text": "patchouli.gui.trait.kubejs.radiance.applicable_text"
 		}
 	]
 }

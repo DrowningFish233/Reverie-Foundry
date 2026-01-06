@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.holy",
+	"name": "patchouli.gui.trait.silentgear.holy",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.holy",
-			"text": "trait.silentgear.holy.desc"
+			"title": "patchouli.gui.trait.silentgear.holy",
+			"text": "patchouli.gui.trait.silentgear.holy.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.holy.applicable",
-			"text": "trait.silentgear.holy.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.holy.applicable",
+			"text": "patchouli.gui.trait.silentgear.holy.applicable_text"
 		}
 	]
 }

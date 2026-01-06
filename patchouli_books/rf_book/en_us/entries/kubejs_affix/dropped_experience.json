@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.dropped_experience",
+	"name": "patchouli.gui.trait.silentgear.dropped_experience",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.dropped_experience",
-			"text": "trait.silentgear.dropped_experience.desc"
+			"title": "patchouli.gui.trait.silentgear.dropped_experience",
+			"text": "patchouli.gui.trait.silentgear.dropped_experience.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.dropped_experience.applicable",
-			"text": "trait.silentgear.dropped_experience.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.dropped_experience.applicable",
+			"text": "patchouli.gui.trait.silentgear.dropped_experience.applicable_text"
 		}
 	]
 }

@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.twinkletoes",
+	"name": "patchouli.gui.trait.silentgems.twinkletoes",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.twinkletoes",
-			"text": "trait.silentgems.twinkletoes.desc"
+			"title": "patchouli.gui.trait.silentgems.twinkletoes",
+			"text": "patchouli.gui.trait.silentgems.twinkletoes.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.twinkletoes.applicable",
-			"text": "trait.silentgems.twinkletoes.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.twinkletoes.applicable",
+			"text": "patchouli.gui.trait.silentgems.twinkletoes.applicable_text"
 		}
 	]
 }

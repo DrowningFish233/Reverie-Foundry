@@ -11,7 +11,7 @@
     "link_hover_color": "AA00AA",
     "show_progress": false,
     "text_overflow_mode": "overflow",
-    "book_texture": "patchouli:textures/gui/book_cyan.png",
+    "book_texture": "patchouli:textures/gui/book_purple.png",
     "model": "kubejs:book_models",
     "macros": {
         "$(ovo)": "%"

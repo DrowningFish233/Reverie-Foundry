@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.spinel",
+	"name": "patchouli.gui.trait.silentgear.spinel",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.spinel",
-			"text": "trait.silentgear.spinel.desc"
+			"title": "patchouli.gui.trait.silentgear.spinel",
+			"text": "patchouli.gui.trait.silentgear.spinel.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.spinel.applicable",
-			"text": "trait.silentgear.spinel.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.spinel.applicable",
+			"text": "patchouli.gui.trait.silentgear.spinel.applicable_text"
 		}
 	]
 }

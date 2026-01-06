@@ -65,7 +65,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			id: "0CC6907B16C93F5E"
@@ -75,7 +75,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 2.5d
+			y: 1.5d
 		}
 		{
 			id: "04DD58980F332FEE"
@@ -85,7 +85,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 4.5d
+			y: 3.0d
 		}
 		{
 			id: "182289427E06D427"
@@ -95,7 +95,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 6.5d
+			y: 4.5d
 		}
 		{
 			id: "41E17B4557322ADD"
@@ -104,7 +104,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:spear_blueprint)item(silentgear:spear_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: -1.5d
 		}
 		{
@@ -114,8 +114,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:trident_blueprint)item(silentgear:trident_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.5d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			id: "31259F6B81819141"
@@ -124,8 +124,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:mace_blueprint)item(silentgear:mace_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.5d
+			x: -2.5d
+			y: 1.5d
 		}
 		{
 			id: "7458C276CADE77AC"
@@ -134,8 +134,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:shield_template)item(silentgear:shield_blueprint))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			id: "05A4F69164ABBCCA"
@@ -144,8 +144,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:bow_blueprint)item(silentgear:bow_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 6.5d
+			x: -2.5d
+			y: 4.5d
 		}
 		{
 			id: "496E4A2F2E407B7E"
@@ -154,7 +154,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:slingshot_blueprint)item(silentgear:slingshot_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -4.0d
 			y: -1.5d
 		}
 		{
@@ -164,8 +164,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:arrow_blueprint)item(silentgear:arrow_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 2.5d
+			x: -4.0d
+			y: 1.5d
 		}
 		{
 			id: "147DBFF8D9EC5476"
@@ -174,8 +174,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:crossbow_blueprint)item(silentgear:crossbow_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 0.5d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			id: "7DDA9820D328CC3F"
@@ -184,8 +184,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:pickaxe_blueprint)item(silentgear:pickaxe_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.5d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			id: "49840E89ACF73DAF"
@@ -194,8 +194,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:shovel_blueprint)item(silentgear:shovel_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 6.5d
+			x: -4.0d
+			y: 4.5d
 		}
 		{
 			id: "00C7BD5A5443E2F4"
@@ -204,7 +204,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:axe_blueprint)item(silentgear:axe_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -7.0d
+			x: -5.5d
 			y: -1.5d
 		}
 		{
@@ -214,8 +214,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:paxel_blueprint)item(silentgear:paxel_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: 0.5d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			id: "18AC27B34367E1DD"
@@ -224,8 +224,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:hammer_blueprint)item(silentgear:hammer_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: 2.5d
+			x: -5.5d
+			y: 1.5d
 		}
 		{
 			id: "7CACDAC57F697371"
@@ -234,7 +234,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:prospector_hammer_blueprint)item(silentgear:prospector_hammer_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -7.0d
 			y: -1.5d
 		}
 		{
@@ -244,8 +244,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:excavator_blueprint)item(silentgear:excavator_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: 0.5d
+			x: -7.0d
+			y: 0.0d
 		}
 		{
 			id: "63423F9C2A3931E5"
@@ -254,8 +254,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:saw_blueprint)item(silentgear:saw_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: 4.5d
+			x: -5.5d
+			y: 3.0d
 		}
 		{
 			id: "4A7080BE52CC6335"
@@ -264,8 +264,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:hoe_blueprint)item(silentgear:hoe_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: 6.5d
+			x: -5.5d
+			y: 4.5d
 		}
 		{
 			id: "257E95B5ED03904D"
@@ -274,8 +274,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:mattock_blueprint)item(silentgear:mattock_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: 2.5d
+			x: -7.0d
+			y: 1.5d
 		}
 		{
 			id: "501A9D4E77A9D0EA"
@@ -284,8 +284,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:sickle_blueprint)item(silentgear:sickle_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: 4.5d
+			x: -7.0d
+			y: 3.0d
 		}
 		{
 			id: "4BA0280CD5AC4EB5"
@@ -294,8 +294,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:shears_blueprint)item(silentgear:shears_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: 6.5d
+			x: -7.0d
+			y: 4.5d
 		}
 		{
 			id: "01DFC41A894B42AC"
@@ -304,7 +304,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:fishing_rod_template)item(silentgear:fishing_rod_blueprint))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -11.0d
+			x: -8.5d
 			y: -1.5d
 		}
 		{
@@ -314,8 +314,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:helmet_blueprint)item(silentgear:helmet_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 0.5d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			id: "6AE4DE3DC4964CB6"
@@ -324,8 +324,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:chestplate_blueprint)item(silentgear:chestplate_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 2.5d
+			x: -8.5d
+			y: 1.5d
 		}
 		{
 			id: "0EE6ADB913E3CF80"
@@ -334,8 +334,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:leggings_blueprint)item(silentgear:leggings_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 4.5d
+			x: -8.5d
+			y: 3.0d
 		}
 		{
 			id: "429669316E4CF3A9"
@@ -344,8 +344,68 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:boots_blueprint)item(silentgear:boots_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 6.5d
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			id: "0490EDB36F1CF908"
+			tasks: [{
+				id: "44677F03D2145DD9"
+				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:elytra_blueprint)item(silentgear:elytra_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			id: "291925E282FCB75C"
+			tasks: [{
+				id: "508096ECD78B8896"
+				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:ring_template)item(silentgear:ring_blueprint))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			id: "3280E06AA7147B28"
+			tasks: [{
+				id: "201E6C48702846AC"
+				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:bracelet_blueprint)item(silentgear:bracelet_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 1.5d
+		}
+		{
+			id: "54F1765FA7F3571B"
+			tasks: [{
+				id: "4E656DDCE29C8902"
+				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:necklace_blueprint)item(silentgear:necklace_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.0d
+		}
+		{
+			id: "50B7EEE2AA34EAFE"
+			tasks: [{
+				id: "6890A68210C54FB5"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(silentgear:repair_kits)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			id: "3D854DF7007E1CB8"
+			tasks: [{
+				id: "15CDC1890BE66757"
+				item: { count: 1, id: "kubejs:randomweapon" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
 		}
 	]
 }

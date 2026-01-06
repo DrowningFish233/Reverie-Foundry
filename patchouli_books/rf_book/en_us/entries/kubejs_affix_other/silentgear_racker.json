@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.racker",
+	"name": "patchouli.gui.trait.silentgear.racker",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.racker",
-			"text": "trait.silentgear.racker.desc"
+			"title": "patchouli.gui.trait.silentgear.racker",
+			"text": "patchouli.gui.trait.silentgear.racker.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.racker.applicable",
-			"text": "trait.silentgear.racker.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.racker.applicable",
+			"text": "patchouli.gui.trait.silentgear.racker.applicable_text"
 		}
 	]
 }

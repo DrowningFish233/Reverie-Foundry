@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.nightfall_spider_eye",
+	"name": "patchouli.gui.trait.silentgear.nightfall_spider_eye",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.nightfall_spider_eye",
-			"text": "trait.silentgear.nightfall_spider_eye.desc"
+			"title": "patchouli.gui.trait.silentgear.nightfall_spider_eye",
+			"text": "patchouli.gui.trait.silentgear.nightfall_spider_eye.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.nightfall_spider_eye.applicable",
-			"text": "trait.silentgear.nightfall_spider_eye.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.nightfall_spider_eye.applicable",
+			"text": "patchouli.gui.trait.silentgear.nightfall_spider_eye.applicable_text"
 		}
 	]
 }

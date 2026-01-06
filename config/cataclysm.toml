@@ -102,71 +102,71 @@
 	#Void Rune's Damage
 	# Default: 7.0
 	# Range: 0.0 ~ 1000000.0
-	Voidrunedamage = 14.0
+	Voidrunedamage = 10.0
 	#Ashen Breath's Damage
 	# Default: 4.0
 	# Range: 0.0 ~ 1000000.0
-	Ashenbreathdamage = 8.0
+	Ashenbreathdamage = 6.0
 	#Death Laser's Damage
 	# Default: 5.0
 	# Range: 0.0 ~ 1000000.0
-	DeathLaserdamage = 20.0
+	DeathLaserdamage = 10.0
 	#Death Laser's Hp Damage
 	# Default: 5.0
 	# Range: 0.0 ~ 100.0
-	DeathLaserHpdamage = 10.0
+	DeathLaserHpdamage = 7.0
 	#Player's Laser's Damage
 	# Default: 7.0
 	# Range: 0.0 ~ 1000000.0
-	Laserdamage = 14.0
+	Laserdamage = 10.0
 	#Blazing Bone's Damage
 	# Default: 5.0
 	# Range: 0.0 ~ 1000000.0
-	BlazingBonedamage = 10.0
+	BlazingBonedamage = 8.0
 	#Lionfish Spike's Damage
 	# Default: 4.0
 	# Range: 0.0 ~ 1000000.0
-	LionfishSpikedamage = 8.0
+	LionfishSpikedamage = 6.0
 	#Wither Howizter's Damage
 	# Default: 8.0
 	# Range: 0.0 ~ 1000000.0
-	WitherHowizterdamage = 16.0
+	WitherHowizterdamage = 12.0
 	#Dimensional Rift's Damage
 	# Default: 10.0
 	# Range: 0.0 ~ 1000000.0
-	DimensionalRiftdamage = 20.0
+	DimensionalRiftdamage = 15.0
 	#Wither Homing Missile's Damage
 	# Default: 3.0
 	# Range: 0.0 ~ 1000000.0
-	WitherHomingMissiledamage = 6.0
+	WitherHomingMissiledamage = 4.0
 	#Abyss Blast's Damage
 	# Default: 10.0
 	# Range: 0.0 ~ 1000000.0
-	AbyssBlastdamage = 20.0
+	AbyssBlastdamage = 15.0
 	#Abyss Blast's Hp Damage
 	# Default: 0.1
 	# Range: 0.0 ~ 1.0
-	AbyssBlastHpdamage = 0.2
+	AbyssBlastHpdamage = 0.15
 	#Abyss Orb's Damage
 	# Default: 4.0
 	# Range: 0.0 ~ 1000000.0
-	AbyssOrbdamage = 8.0
+	AbyssOrbdamage = 6.0
 	#Lava bomb's Radius
 	# Default: 2
 	# Range: 1 ~ 7
-	Lavabombradius = 4
+	Lavabombradius = 3
 	#Amethyst Cluster's Damage
 	# Default: 12.0
 	# Range: 0.0 ~ 1000000.0
-	"Amethyst Cluster Damage" = 20.0
+	"Amethyst Cluster Damage" = 18.0
 	#Sandstorm's Damage
 	# Default: 5.0
 	# Range: 0.0 ~ 1000000.0
-	"Sandstorm Damage" = 10.0
+	"Sandstorm Damage" = 7.0
 	#Ancient Desert Stele's Damage
 	# Default: 18.0
 	# Range: 0.0 ~ 1000000.0
-	"Ancient Desert Stele Damage" = 24.0
+	"Ancient Desert Stele Damage" = 21.0
 	#Player's Phantom Arrow's Damage
 	# Default: 8.0
 	# Range: 0.0 ~ 1000000.0
@@ -182,11 +182,11 @@
 	#Flame jet's Damage
 	# Default: 7.0
 	# Range: 0.0 ~ 1000000.0
-	"Flame Jet Damage" = 14.0
+	"Flame Jet Damage" = 10.0
 	#Flare Bomb's Damage
 	# Default: 7.0
 	# Range: 0.0 ~ 1000000.0
-	"Flare Bomb Damage" = 14.0
+	"Flare Bomb Damage" = 10.0
 
 ["Ender Guardian"]
 	#EnderGuardian's Health Multiplier
@@ -196,7 +196,7 @@
 	#EnderGuardian's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	EnderGuardianDamageMultiplier = 2.0
+	EnderGuardianDamageMultiplier = 1.0
 	#EnderGuardian's DamageCap
 	# Default: 22.0
 	# Range: 0.0 ~ 1000000.0
@@ -204,7 +204,7 @@
 	#EnderGuardian's Healing with out target
 	# Default: 25.0
 	# Range: 0.0 ~ 1000000.0
-	EnderGuardianNatureHealing = 100.0
+	EnderGuardianNatureHealing = 25.0
 	#Ender guardian's block breaking ignore the MobGriefing
 	EnderguardianBlockBreaking = true
 	#Guardian's Immune to Long distance attack range.
@@ -268,7 +268,7 @@
 	#Monstrosity's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	MonstrosityDamageMultiplier = 1.2
+	MonstrosityDamageMultiplier = 0.8
 	#Monstrosity's Healing Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
@@ -276,7 +276,7 @@
 	# Monstrosity's Healing with out target
 	# Default: 25.0
 	# Range: 0.0 ~ 1000000.0
-	MonstrosityNatureHealing = 100.0
+	MonstrosityNatureHealing = 25.0
 	#Monstrosity's DamageCap
 	# Default: 22.0
 	# Range: 0.0 ~ 1000000.0
@@ -320,7 +320,7 @@
 	#Golem's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	GolemDamageMultiplier = 1.2
+	GolemDamageMultiplier = 0.8
 
 [Ignis]
 	#Ignis's Health Multiplier
@@ -330,11 +330,11 @@
 	#Ignis's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	IgnisDamageMultiplier = 1.2
+	IgnisDamageMultiplier = 0.8
 	#Ignis's Healing with out target
 	# Default: 25.0
 	# Range: 0.0 ~ 1000000.0
-	IgnisNatureHealing = 60.0
+	IgnisNatureHealing = 25.0
 	#Ignis's Healing Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
@@ -362,7 +362,7 @@
 	#Revenant's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	RevenantDamageMultiplier = 1.2
+	RevenantDamageMultiplier = 0.8
 
 ["The Prowler"]
 	#The Prowler's Immune to Long distance attack range.
@@ -376,7 +376,7 @@
 	#Prowler's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	ProwlerDamageMultiplier = 1.2
+	ProwlerDamageMultiplier = 0.8
 
 ["The Harbinger"]
 	#Harbinger's Health Multiplier
@@ -386,7 +386,7 @@
 	#Harbinger's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	HarbingerDamageMultiplier = 1.2
+	HarbingerDamageMultiplier = 0.8
 	#Harbinger's Healing Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
@@ -394,11 +394,11 @@
 	#Harbinger's Wither Missile's Damage
 	# Default: 8.0
 	# Range: 0.0 ~ 1000000.0
-	"Harbinger's WitherMissiledamage" = 16.0
+	"Harbinger's WitherMissiledamage" = 10.0
 	#Harbinger's laser's Damage
 	# Default: 5.0
 	# Range: 0.0 ~ 1000000.0
-	"Harbinger's laser damage" = 10.0
+	"Harbinger's laser damage" = 8.0
 	#Harbinger's Immune to Long distance attack range.
 	# Default: 35.0
 	# Range: 1.0 ~ 1000000.0
@@ -426,11 +426,11 @@
 	#Leviathan's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	LeviathanDamageMultiplier = 1.2
+	LeviathanDamageMultiplier = 0.8
 	#Leviathan's Healing with out target
 	# Default: 25.0
 	# Range: 0.0 ~ 1000000.0
-	LeviathanNatureHealing = 60.0
+	LeviathanNatureHealing = 25.0
 	#Leviathan's Immune to Long distance attack range.
 	# Default: 38.0
 	# Range: 1.0 ~ 1000000.0
@@ -472,7 +472,7 @@
 	#BabyLeviathan's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	BabyLeviathanDamageMultiplier = 1.2
+	BabyLeviathanDamageMultiplier = 0.8
 
 ["Modern Remnant"]
 	#Modern Remnant's Health Multiplier
@@ -482,7 +482,7 @@
 	#Modern Remnant's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	ModernRemnantDamageMultiplier = 1.2
+	ModernRemnantDamageMultiplier = 0.8
 
 ["Netherite Ministrosity"]
 	#Ministrosity's Health Multiplier
@@ -498,11 +498,11 @@
 	#Amethyst Crab's EarthQuake Damage
 	# Default: 5.0
 	# Range: 0.0 ~ 1000000.0
-	AmethystCrabEarthQuakeDamage = 15.0
+	AmethystCrabEarthQuakeDamage = 10.0
 	#Amethyst Crab's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	AmethystCrabDamageMultiplier = 1.2
+	AmethystCrabDamageMultiplier = 0.8
 
 ["Ancient Remnant"]
 	#Ancient Remnant's Health Multiplier
@@ -512,11 +512,11 @@
 	#Ancient Remnant's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	AncientRemnantDamageMultiplier = 1.2
+	AncientRemnantDamageMultiplier = 0.8
 	#AncientRemnant's Healing with out target
 	# Default: 25.0
 	# Range: 0.0 ~ 1000000.0
-	AncientRemnantNatureHealing = 60.0
+	AncientRemnantNatureHealing = 25.0
 	#Ancient Remnant's Immune to Long distance attack range.
 	# Default: 14.0
 	# Range: 1.0 ~ 1000000.0
@@ -542,7 +542,7 @@
 	#Remnant's EarthQuake Damage
 	# Default: 11.0
 	# Range: 0.0 ~ 1000000.0
-	"Remnant's EarthQuakeDamage" = 18.0
+	"Remnant's EarthQuakeDamage" = 14.0
 	#Ancient Remnant's DamageTime
 	# Default: 12
 	# Range: 0 ~ 100
@@ -564,7 +564,7 @@
 	#Kobolediator's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	KobolediatorDamageMultiplier = 1.2
+	KobolediatorDamageMultiplier = 0.8
 
 [Wadjet]
 	#Wadjet's Health Multiplier
@@ -574,7 +574,7 @@
 	#Wadjet's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	WadjetDamageMultiplier = 1.2
+	WadjetDamageMultiplier = 0.8
 
 [Aptrgangr]
 	#Aptrgangr's Health Multiplier
@@ -584,7 +584,7 @@
 	#Aptrgangr's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	AptrgangrDamageMultiplier = 1.2
+	AptrgangrDamageMultiplier = 0.8
 	#Axe Blade's Damage
 	# Default: 8.0
 	# Range: 0.0 ~ 1000000.0
@@ -598,7 +598,7 @@
 	#Maledictus's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	MaledictusDamageMultiplier = 1.2
+	MaledictusDamageMultiplier = 0.8
 	#Maledictus's Immune to Long distance attack range.
 	# Default: 12.0
 	# Range: 1.0 ~ 1000000.0
@@ -606,11 +606,11 @@
 	#Maledictus's Healing with out target
 	# Default: 25.0
 	# Range: 0.0 ~ 1000000.0
-	MaledictusNatureHealing = 60.0
+	MaledictusNatureHealing = 25.0
 	#Maledictus's Phantom Halberd Damage
 	# Default: 10.0
 	# Range: 0.0 ~ 1000000.0
-	"Maledictus' Phantom Halberd Damage'" = 15.0
+	"Maledictus' Phantom Halberd Damage'" = 13.0
 	#Maledictus's DamageCap
 	# Default: 20.0
 	# Range: 0.0 ~ 1000000.0
@@ -638,7 +638,7 @@
 	#Maledictus's Phantom Arrow's Damage
 	# Default: 5.0
 	# Range: 0.0 ~ 1000000.0
-	"Maledictus's Phantom Arrow Damage" = 8.0
+	"Maledictus's Phantom Arrow Damage" = 7.0
 	#Maledictus's cracked block breaking ignore the MobGriefing
 	MaledictusBlockBreaking = true
 	#Maledictus's DamageTime
@@ -746,7 +746,7 @@
 	#Clawdian's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	ClawdianDamageMultiplier = 1.2
+	ClawdianDamageMultiplier = 0.8
 
 [Scylla]
 	#Scylla's Health Multiplier
@@ -756,7 +756,7 @@
 	#Scylla's Damage Multiplier
 	# Default: 1.0
 	# Range: 0.0 ~ 1000000.0
-	ScyllaDamageMultiplier = 1.2
+	ScyllaDamageMultiplier = 0.8
 	#Scylla's Immune to Long distance attack range.
 	# Default: 10.0
 	# Range: 1.0 ~ 1000000.0
@@ -764,27 +764,27 @@
 	#Scylla's Spear Damage
 	# Default: 14.0
 	# Range: 0.0 ~ 1000000.0
-	"Scylla's Spear Damage" = 20.0
+	"Scylla's Spear Damage" = 16.0
 	#Scylla's Lightning Storm
 	# Default: 10.0
 	# Range: 0.0 ~ 1000000.0
-	"Scylla's Lightning Storm" = 20.0
+	"Scylla's Lightning Storm" = 14.0
 	#Scylla's Lightning Area
 	# Default: 4.0
 	# Range: 0.0 ~ 1000000.0
-	"Scylla's Lightning Area" = 8.0
+	"Scylla's Lightning Area" = 6.0
 	#Scylla's Storm Serpent
 	# Default: 16.0
 	# Range: 0.0 ~ 1000000.0
-	"Scylla's Snake Damage" = 32.0
+	"Scylla's Snake Damage" = 20.0
 	#Scylla's Anchor Damage
 	# Default: 16.0
 	# Range: 0.0 ~ 1000000.0
-	"Scylla's Anchor Damage" = 28.0
+	"Scylla's Anchor Damage" = 20.0
 	#Scylla's Healing with out target
 	# Default: 25.0
 	# Range: 0.0 ~ 1000000.0
-	"Scylla NatureHealing" = 50.0
+	"Scylla NatureHealing" = 25.0
 	#Scylla's DamageCap
 	# Default: 22.0
 	# Range: 0.0 ~ 1000000.0

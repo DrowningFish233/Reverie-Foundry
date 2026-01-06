@@ -7,7 +7,6 @@ ItemEvents.firstRightClicked('kubejs:scroll_of_friendship', event => {
     let otherPlayers = players.filter(p => !p.equals(player))
 
     if (otherPlayers.length > 0) {
-
         let closestPlayer = null
         let closestDistance = Infinity
         for (let otherPlayer of otherPlayers) {

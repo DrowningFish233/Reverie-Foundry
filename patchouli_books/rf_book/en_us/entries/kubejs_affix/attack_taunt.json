@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.attack_taunt",
+	"name": "patchouli.gui.trait.silentgear.attack_taunt",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.attack_taunt",
-			"text": "trait.silentgear.attack_taunt.desc"
+			"title": "patchouli.gui.trait.silentgear.attack_taunt",
+			"text": "patchouli.gui.trait.silentgear.attack_taunt.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.attack_taunt.applicable",
-			"text": "trait.silentgear.attack_taunt.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.attack_taunt.applicable",
+			"text": "patchouli.gui.trait.silentgear.attack_taunt.applicable_text"
 		}
 	]
 }

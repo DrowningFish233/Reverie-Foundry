@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.moonwalker",
+	"name": "patchouli.gui.trait.silentgear.moonwalker",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.moonwalker",
-			"text": "trait.silentgear.moonwalker.desc"
+			"title": "patchouli.gui.trait.silentgear.moonwalker",
+			"text": "patchouli.gui.trait.silentgear.moonwalker.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.moonwalker.applicable",
-			"text": "trait.silentgear.moonwalker.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.moonwalker.applicable",
+			"text": "patchouli.gui.trait.silentgear.moonwalker.applicable_text"
 		}
 	]
 }

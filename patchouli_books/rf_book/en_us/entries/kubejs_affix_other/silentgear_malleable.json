@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.malleable",
+	"name": "patchouli.gui.trait.silentgear.malleable",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.malleable",
-			"text": "trait.silentgear.malleable.desc"
+			"title": "patchouli.gui.trait.silentgear.malleable",
+			"text": "patchouli.gui.trait.silentgear.malleable.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.malleable.applicable",
-			"text": "trait.silentgear.malleable.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.malleable.applicable",
+			"text": "patchouli.gui.trait.silentgear.malleable.applicable_text"
 		}
 	]
 }

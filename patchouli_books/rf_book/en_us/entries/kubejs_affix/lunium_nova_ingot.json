@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.lunium_nova_ingot",
+	"name": "patchouli.gui.trait.kubejs.lunium_nova_ingot",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.lunium_nova_ingot",
-			"text": "trait.kubejs.lunium_nova_ingot.desc"
+			"title": "patchouli.gui.trait.kubejs.lunium_nova_ingot",
+			"text": "patchouli.gui.trait.kubejs.lunium_nova_ingot.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.lunium_nova_ingot.applicable",
-			"text": "trait.kubejs.lunium_nova_ingot.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.lunium_nova_ingot.applicable",
+			"text": "patchouli.gui.trait.kubejs.lunium_nova_ingot.applicable_text"
 		}
 	]
 }

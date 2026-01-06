@@ -38,23 +38,33 @@ EntityEvents.checkSpawn(event => {
     if (!diffStage) return;
 
     let difficultyLevels = {
-        'difficult_0': { health: 1, attack: 1, armor: 1, toughness: 1 },
-        'difficult_1': { health: 2, attack: 2, armor: 2, toughness: 2 },
-        'difficult_2': { health: 3, attack: 3, armor: 3, toughness: 3 },
-        'difficult_3': { health: 4, attack: 4, armor: 4, toughness: 4 },
-        'difficult_4': { health: 5, attack: 5, armor: 5, toughness: 5 },
-        'difficult_5': { health: 6, attack: 6, armor: 6, toughness: 6 },
-        'difficult_6': { health: 8, attack: 8, armor: 8, toughness: 8 }
+        'difficult_0': { health: 1, attack: 1, armor: 1, toughness: 1, level: 0 },
+        'difficult_1': { health: 2, attack: 2, armor: 2, toughness: 2, level: 1 },
+        'difficult_2': { health: 3, attack: 3, armor: 3, toughness: 3, level: 2 },
+        'difficult_3': { health: 4, attack: 4, armor: 4, toughness: 4, level: 3 },
+        'difficult_4': { health: 5, attack: 5, armor: 5, toughness: 5, level: 4 },
+        'difficult_5': { health: 6, attack: 6, armor: 6, toughness: 6, level: 5 },
+        'difficult_6': { health: 8, attack: 8, armor: 8, toughness: 8, level: 6 }
     };
+
+    // 查找玩家拥有的最高难度阶段
+    let highestDifficulty = null;
+    let highestLevel = -1;
 
     for (let difficulty in difficultyLevels) {
         if (diffStage.some(stage => stage === difficulty)) {
-            if (entity.persistentData.contains(difficulty)) continue;
-
-            entity.persistentData.putInt(difficulty, 1);
-            enhanceEntityAttributes(entity, difficultyLevels[difficulty]);
-            break;
+            if (difficultyLevels[difficulty].level > highestLevel) {
+                highestLevel = difficultyLevels[difficulty].level;
+                highestDifficulty = difficulty;
+            }
         }
+    }
+
+    if (highestDifficulty) {
+        if (entity.persistentData.contains(highestDifficulty)) return;
+        entity.persistentData.putInt(highestDifficulty, 1);
+        // 应用属性增强
+        enhanceEntityAttributes(entity, difficultyLevels[highestDifficulty]);
     }
 
     // 确保所有生物（无论是否有难度阶段）都会将血量设置为最大值

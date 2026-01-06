@@ -13,7 +13,7 @@
         "part_substitutes": {}
     },
     "display": {
-        "color": "#8A2BE2",
+        "color": "#74fcdf",
         "main_texture_type": "HIGH_CONTRAST",
         "name": {
             "translate": "material.silentgear.cataclysm:cursium_ingot"

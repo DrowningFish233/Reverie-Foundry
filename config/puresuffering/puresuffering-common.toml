@@ -12,7 +12,7 @@
 		#Will disable explosions, fire, etc... from entities spawned by invasions.
 		invasionAntiGrief = true
 		#Rather than the invasion occuring once in every 'rarity' days, it will instead be set to occur every 'rarity' days.
-		consistentInvasions = false
+		consistentInvasions = true
 		#Tiers make certain invasions only able to occur after so many days, turning this off will make the world ignore the day count when selecting invasions.
 		tieredInvasions = true
 		#Hyper Aggression is what invasion mobs have to target the player from across the world, turning this off will make them use default targeting.
@@ -41,12 +41,12 @@
 		#The amount of days until an invasion can start.
 		# Default: 1
 		# Range: > 0
-		invasionStartDelay = 10
+		invasionStartDelay = 50
 		#The max amount of mobs that can spawn from Primary Invasions at once.
 		#NOTE: Reduce for increased performance!
 		# Default: 100
 		# Range: > 0
-		primaryInvasionMobCap = 60
+		primaryInvasionMobCap = 50
 		#The max amount of mobs that can spawn from Secondary Invasions at once.
 		#NOTE: Reduce for increased performance!
 		# Default: 25
@@ -56,7 +56,7 @@
 		#NOTE: Setting to 0 will disable the limit, limits specified by a datapack will still apply.
 		# Default: 0
 		# Range: > 0
-		mobKillLimit = 0
+		mobKillLimit = 80
 		#Maximum amount of chunks an invasion mob can spawn away from the player.
 		# Default: 8
 		# Range: 1 ~ 8
@@ -64,7 +64,7 @@
 		#How many blocks around the player are invasion mobs not allowed to spawn.
 		# Default: 16
 		# Range: 1 ~ 256
-		noSpawnMobsBlockRadius = 16
+		noSpawnMobsBlockRadius = 24
 
 [invasions]
 	#List of Invasions that can't occur.
@@ -77,15 +77,15 @@
 	#List of Dimensions that should use Overworld Invasions.
 	#NOTE: May not work with randomly generated dimensions! (RFTools/Mystcraft)
 	#Ex: 'twilightforest:twilight_forest', 'lostcities:lostcity' (swap '' with quotation marks)
-	overworldLikeDimensions = ['extradelight:cornfield']
+	overworldLikeDimensions = ['extradelight:cornfield','eternal_starlight:starlight']
 	#List of Dimensions that should use Nether Invasions.
 	#NOTE: May not work with randomly generated dimensions! (RFTools/Mystcraft)
 	#Ex: 'twilightforest:twilight_forest', 'lostcities:lostcity' (swap '' with quotation marks)
-	netherLikeDimensions = []
+	netherLikeDimensions = ['iceandfire:dread_land']
 	#List of Dimensions that should use End Invasions.
 	#NOTE: May not work with randomly generated dimensions! (RFTools/Mystcraft)
 	#Ex: 'twilightforest:twilight_forest', 'lostcities:lostcity' (swap '' with quotation marks)
-	endLikeDimensions = []
+	endLikeDimensions = ['allthemodium:the_other']
 	#List of mobs that won't be hyper aggressive towards the player. (If setting is turned on)
 	hyperAggressionBlacklist = ["minecraft:vex"]
 	#List of mobs that can't be hyper charged. (If setting is turned on)

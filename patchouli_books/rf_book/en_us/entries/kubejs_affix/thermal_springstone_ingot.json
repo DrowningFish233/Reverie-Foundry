@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.thermal_springstone_ingot",
+	"name": "patchouli.gui.trait.silentgear.thermal_springstone_ingot",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.thermal_springstone_ingot",
-			"text": "trait.silentgear.thermal_springstone_ingot.desc"
+			"title": "patchouli.gui.trait.silentgear.thermal_springstone_ingot",
+			"text": "patchouli.gui.trait.silentgear.thermal_springstone_ingot.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.thermal_springstone_ingot.applicable",
-			"text": "trait.silentgear.thermal_springstone_ingot.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.thermal_springstone_ingot.applicable",
+			"text": "patchouli.gui.trait.silentgear.thermal_springstone_ingot.applicable_text"
 		}
 	]
 }

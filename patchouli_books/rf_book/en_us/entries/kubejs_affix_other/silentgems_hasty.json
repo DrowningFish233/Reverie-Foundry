@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.hasty",
+	"name": "patchouli.gui.trait.silentgems.hasty",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.hasty",
-			"text": "trait.silentgems.hasty.desc"
+			"title": "patchouli.gui.trait.silentgems.hasty",
+			"text": "patchouli.gui.trait.silentgems.hasty.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.hasty.applicable",
-			"text": "trait.silentgems.hasty.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.hasty.applicable",
+			"text": "patchouli.gui.trait.silentgems.hasty.applicable_text"
 		}
 	]
 }

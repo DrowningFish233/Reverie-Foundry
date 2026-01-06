@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.tanzanite",
+	"name": "patchouli.gui.trait.silentgear.tanzanite",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.tanzanite",
-			"text": "trait.silentgear.tanzanite.desc"
+			"title": "patchouli.gui.trait.silentgear.tanzanite",
+			"text": "patchouli.gui.trait.silentgear.tanzanite.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.tanzanite.applicable",
-			"text": "trait.silentgear.tanzanite.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.tanzanite.applicable",
+			"text": "patchouli.gui.trait.silentgear.tanzanite.applicable_text"
 		}
 	]
 }

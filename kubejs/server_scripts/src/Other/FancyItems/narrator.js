@@ -1,5 +1,4 @@
 EntityEvents.beforeHurt(event => {
-
     const { source, entity } = event;
     const attacker = source.player
 
@@ -23,6 +22,4 @@ EntityEvents.beforeHurt(event => {
         }
     ]
     item.setAttributeModifiersWithTooltip(modifiers);
-
-
 })

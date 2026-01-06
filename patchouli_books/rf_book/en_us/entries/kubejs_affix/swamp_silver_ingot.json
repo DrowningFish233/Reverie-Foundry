@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.swamp_silver_ingot",
+	"name": "patchouli.gui.trait.silentgear.swamp_silver_ingot",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.swamp_silver_ingot",
-			"text": "trait.silentgear.swamp_silver_ingot.desc"
+			"title": "patchouli.gui.trait.silentgear.swamp_silver_ingot",
+			"text": "patchouli.gui.trait.silentgear.swamp_silver_ingot.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.swamp_silver_ingot.applicable",
-			"text": "trait.silentgear.swamp_silver_ingot.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.swamp_silver_ingot.applicable",
+			"text": "patchouli.gui.trait.silentgear.swamp_silver_ingot.applicable_text"
 		}
 	]
 }

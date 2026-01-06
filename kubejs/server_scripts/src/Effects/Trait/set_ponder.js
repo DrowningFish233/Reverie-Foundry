@@ -15,5 +15,5 @@ function set_ponder(event) {
 
     let traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:set_ponder");
 
-    entity.potionEffects.add("kubejs:ponder", 500, traitLevel * 100);
+    entity.potionEffects.add("kubejs:ponder", 500, traitLevel * 2);
 }

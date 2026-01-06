@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.power",
+	"name": "patchouli.gui.trait.silentgems.power",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.power",
-			"text": "trait.silentgems.power.desc"
+			"title": "patchouli.gui.trait.silentgems.power",
+			"text": "patchouli.gui.trait.silentgems.power.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.power.applicable",
-			"text": "trait.silentgems.power.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.power.applicable",
+			"text": "patchouli.gui.trait.silentgems.power.applicable_text"
 		}
 	]
 }

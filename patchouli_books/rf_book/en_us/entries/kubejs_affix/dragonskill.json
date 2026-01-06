@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.dragonskill",
+	"name": "patchouli.gui.trait.kubejs.dragonskill",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.dragonskill",
-			"text": "trait.kubejs.dragonskill.desc"
+			"title": "patchouli.gui.trait.kubejs.dragonskill",
+			"text": "patchouli.gui.trait.kubejs.dragonskill.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.dragonskill.applicable",
-			"text": "trait.kubejs.dragonskill.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.dragonskill.applicable",
+			"text": "patchouli.gui.trait.kubejs.dragonskill.applicable_text"
 		}
 	]
 }

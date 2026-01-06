@@ -279,7 +279,7 @@ LootJS.modifiers(event => {
     );
 
     event.addEntityModifier([
-        "cataclysm:ignis"
+        "irons_spellbooks:fire_boss"
     ]).addLoot(LootEntry.of('kubejs:ashes_of_calamity')
         .apply(item => {
             item.setCount({ min: 9, max: 24 })
@@ -462,7 +462,8 @@ LootJS.lootTables(event => {
     event.getLootTable("terra_entity:entities/decayeder").removeItem('terra_entity:eater_of_world_spawn_egg')
     event.getLootTable("terra_entity:entities/evil_slime").removeItem('terra_entity:eater_of_world_spawn_egg')
     event.getLootTable("terra_entity:entities/drippler").removeItem('terra_entity:eater_of_world_spawn_egg')
-
+    event.getLootTable("terra_entity:entities/drippler").removeItem('terra_entity:brain_of_cthulhu_spawn_egg')
+    event.getLootTable("terra_entity:entities/wandering_eye_fish").removeItem('terra_entity:brain_of_cthulhu_spawn_egg')
     event.getLootTable("terra_entity:entities/drippler").removeItem('terra_entity:cthulhu_eye_spawn_egg')
     event.getLootTable("terra_entity:entities/wandering_eye_fish").removeItem('terra_entity:cthulhu_eye_spawn_egg')
     //世界吞噬者
@@ -484,6 +485,5 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of('kubejs:foul_flesh').withWeight(10).setCount([1, 4]))
             pool.rolls([1, 2]);
         });
-
     }
 })

@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgems.barrier_jacket",
+	"name": "patchouli.gui.trait.silentgems.barrier_jacket",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgems.barrier_jacket",
-			"text": "trait.silentgems.barrier_jacket.desc"
+			"title": "patchouli.gui.trait.silentgems.barrier_jacket",
+			"text": "patchouli.gui.trait.silentgems.barrier_jacket.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgems.barrier_jacket.applicable",
-			"text": "trait.silentgems.barrier_jacket.applicable_text"
+			"title": "patchouli.gui.trait.silentgems.barrier_jacket.applicable",
+			"text": "patchouli.gui.trait.silentgems.barrier_jacket.applicable_text"
 		}
 	]
 }

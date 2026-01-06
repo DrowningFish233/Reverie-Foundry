@@ -1,4 +1,18 @@
 /**
+ * 格式化文本，将 % 转换为 $(ovo)
+ */
+function formatTextForPatchouli(text) {
+    if (typeof text !== 'string') {
+        return text;
+    }
+
+    // 将百分比格式转换为帕秋莉格式
+    let formattedText = text.replace(/%/g, '$(ovo)');
+
+    return formattedText;
+}
+
+/**
  * 从kubejs本地化文件中获取装备词缀的显示名称
  */
 function getTraitDisplayNameFromKubejsLang(traitId) {
@@ -187,11 +201,30 @@ function getTraitApplicableGearTypes(traitData) {
 }
 
 /**
+ * 为翻译键添加帕秋莉前缀
+ */
+function addPatchouliPrefix(key) {
+    // 如果已经有patchouli前缀，直接返回
+    if (key.startsWith('patchouli.gui.')) {
+        return key;
+    }
+
+    // 否则添加前缀
+    return `patchouli.gui.${key}`;
+}
+
+/**
  * 生成装备词缀的帕秋莉条目数据
  */
 function createPatchouliTraitEntry(traitId, icon, nameKey) {
+    // 添加帕秋莉前缀
+    let patchedNameKey = addPatchouliPrefix(nameKey);
+    let patchedDescKey = addPatchouliPrefix(`${nameKey}.desc`);
+    let patchedApplicableKey = addPatchouliPrefix(`${nameKey}.applicable`);
+    let patchedApplicableTextKey = addPatchouliPrefix(`${nameKey}.applicable_text`);
+
     return {
-        "name": nameKey,
+        "name": patchedNameKey,
         "icon": icon,
         "category": `patchouli:kubejs_affix`,
         "pages": [
@@ -200,13 +233,13 @@ function createPatchouliTraitEntry(traitId, icon, nameKey) {
                 "item": {
                     "item": icon
                 },
-                "title": nameKey,
-                "text": `${nameKey}.desc`
+                "title": patchedNameKey,
+                "text": patchedDescKey
             },
             {
                 "type": "patchouli:text",
-                "title": `${nameKey}.applicable`,
-                "text": `${nameKey}.applicable_text`
+                "title": patchedApplicableKey,
+                "text": patchedApplicableTextKey
             }
         ]
     };
@@ -226,9 +259,9 @@ function generatePatchouliTraitEntries() {
     let translations = {};
     try {
         translations = JsonIO.read(langPath) || {};
-        console.log('正在读取帕秋莉翻译文件');
+        //console.log('正在读取帕秋莉翻译文件');
     } catch (e) {
-        console.log('帕秋莉翻译文件不存在，将创建新文件');
+        //console.log('帕秋莉翻译文件不存在，将创建新文件');
     }
 
     let generatedCount = 0;
@@ -237,7 +270,7 @@ function generatePatchouliTraitEntries() {
 
     // 检查词缀文件夹是否存在
     if (!FilesJS.exists(traitsBasePath)) {
-        console.log(`词缀文件夹不存在: ${traitsBasePath}`);
+        //console.log(`词缀文件夹不存在: ${traitsBasePath}`);
         return {
             generated: 0,
             langUsed: 0,
@@ -251,7 +284,7 @@ function generatePatchouliTraitEntries() {
     try {
         allFiles = FilesJS.listFiles(traitsBasePath);
     } catch (e) {
-        console.log(`读取词缀文件夹失败: ${traitsBasePath}`);
+        //console.log(`读取词缀文件夹失败: ${traitsBasePath}`);
         return {
             generated: 0,
             langUsed: 0,
@@ -261,7 +294,7 @@ function generatePatchouliTraitEntries() {
     }
 
     if (allFiles.length === 0) {
-        console.log(`词缀文件夹为空: ${traitsBasePath}`);
+        //console.log(`词缀文件夹为空: ${traitsBasePath}`);
         return {
             generated: 0,
             langUsed: 0,
@@ -276,7 +309,7 @@ function generatePatchouliTraitEntries() {
         return fileName.endsWith('.json');
     });
 
-    console.log(`找到 ${jsonFiles.length} 个装备词缀文件`);
+    //console.log(`找到 ${jsonFiles.length} 个装备词缀文件`);
 
     // 确保英文目标文件夹存在
     let enTargetFolder = `${patchouliEnPath}/kubejs_affix`;
@@ -296,7 +329,7 @@ function generatePatchouliTraitEntries() {
             let traitData = JSON.parse(fileContent);
 
             if (!traitData || !traitData.name) {
-                //console.log(`跳过无效文件: ${fileName}`);
+                console.log(`跳过无效文件: ${fileName}`);
                 skippedCount++;
                 continue;
             }
@@ -306,8 +339,8 @@ function generatePatchouliTraitEntries() {
             let nameKey = originalKeys.nameKey;
             let descKey = originalKeys.descKey;
 
-            //console.log(`  名称键: ${nameKey}`);
-            //console.log(`  描述键: ${descKey}`);
+            //console.log(`  原始名称键: ${nameKey}`);
+            //console.log(`  原始描述键: ${descKey}`);
 
             // 获取显示名称（优先使用本地化文件）
             let langResult = getTraitDisplayNameFromKubejsLang(traitId);
@@ -320,9 +353,11 @@ function generatePatchouliTraitEntries() {
                     nameKey = traitData.name.translate;
                 }
                 langUsedCount++;
+                //console.log(`  从本地化获取名称: ${displayName}`);
             } else {
                 // 从翻译键中提取
                 displayName = getTraitDisplayNameFromTranslateKey(traitId, traitData);
+                //console.log(`  从翻译键提取名称: ${displayName}`);
             }
 
             let description = getTraitDescription(traitId, traitData);
@@ -330,15 +365,30 @@ function generatePatchouliTraitEntries() {
             let icon = getTraitIcon(traitData);
             let entryData = createPatchouliTraitEntry(traitId, icon, nameKey);
 
+            // 为帕秋莉翻译添加前缀
+            let patchedNameKey = addPatchouliPrefix(nameKey);
+            let patchedDescKey = addPatchouliPrefix(descKey);
+            let patchedApplicableKey = addPatchouliPrefix(`${nameKey}.applicable`);
+            let patchedApplicableTextKey = addPatchouliPrefix(`${nameKey}.applicable_text`);
+
+            // 格式化文本：将 % 转换为 $(ovo)
+            let formattedDisplayName = formatTextForPatchouli(displayName);
+            let formattedDescription = formatTextForPatchouli(description);
+            let formattedApplicableTypes = formatTextForPatchouli(applicableTypes);
+
+            // 写入翻译
+            translations[patchedNameKey] = formattedDisplayName;
+            translations[patchedDescKey] = formattedDescription;
+            translations[patchedApplicableKey] = "适用装备类型";
+            translations[patchedApplicableTextKey] = formattedApplicableTypes;
+
+            //console.log(`  帕秋莉名称键: ${patchedNameKey}`);
+            //console.log(`  帕秋莉描述键: ${patchedDescKey}`);
+            //console.log(`  格式化后名称: ${formattedDisplayName}`);
+            //console.log(`  格式化后描述: ${formattedDescription}`);
+
             let entryPath = `${enTargetFolder}/${traitId}.json`;
             JsonIO.write(entryPath, entryData);
-
-            translations[nameKey] = displayName;
-
-            translations[descKey] = description;
-
-            translations[`${nameKey}.applicable`] = "适用装备类型";
-            translations[`${nameKey}.applicable_text`] = applicableTypes;
 
             generatedCount++;
 
@@ -357,10 +407,10 @@ function generatePatchouliTraitEntries() {
     }
 
     // 统计信息
-    console.log('装备词缀生成完成');
-    console.log(`已生成条目: ${generatedCount} 个`);
-    console.log(`从本地化文件获取名称: ${langUsedCount} 个`);
-    console.log(`已跳过文件: ${skippedCount} 个`);
+    //console.log('装备词缀生成完成');
+    //console.log(`已生成条目: ${generatedCount} 个`);
+    //console.log(`从本地化文件获取名称: ${langUsedCount} 个`);
+    //console.log(`已跳过文件: ${skippedCount} 个`);
 
     return {
         generated: generatedCount,

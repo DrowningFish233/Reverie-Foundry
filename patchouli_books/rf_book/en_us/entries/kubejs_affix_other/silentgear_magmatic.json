@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.magmatic",
+	"name": "patchouli.gui.trait.silentgear.magmatic",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.magmatic",
-			"text": "trait.silentgear.magmatic.desc"
+			"title": "patchouli.gui.trait.silentgear.magmatic",
+			"text": "patchouli.gui.trait.silentgear.magmatic.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.magmatic.applicable",
-			"text": "trait.silentgear.magmatic.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.magmatic.applicable",
+			"text": "patchouli.gui.trait.silentgear.magmatic.applicable_text"
 		}
 	]
 }

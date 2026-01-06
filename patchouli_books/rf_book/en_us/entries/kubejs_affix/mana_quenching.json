@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.mana_quenching",
+	"name": "patchouli.gui.trait.kubejs.mana_quenching",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.mana_quenching",
-			"text": "trait.kubejs.mana_quenching.desc"
+			"title": "patchouli.gui.trait.kubejs.mana_quenching",
+			"text": "patchouli.gui.trait.kubejs.mana_quenching.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.mana_quenching.applicable",
-			"text": "trait.kubejs.mana_quenching.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.mana_quenching.applicable",
+			"text": "patchouli.gui.trait.kubejs.mana_quenching.applicable_text"
 		}
 	]
 }

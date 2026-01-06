@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.adamant",
+	"name": "patchouli.gui.trait.silentgear.adamant",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix_other",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.adamant",
-			"text": "trait.silentgear.adamant.desc"
+			"title": "patchouli.gui.trait.silentgear.adamant",
+			"text": "patchouli.gui.trait.silentgear.adamant.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.adamant.applicable",
-			"text": "trait.silentgear.adamant.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.adamant.applicable",
+			"text": "patchouli.gui.trait.silentgear.adamant.applicable_text"
 		}
 	]
 }

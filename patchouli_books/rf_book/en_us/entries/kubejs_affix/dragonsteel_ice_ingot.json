@@ -1,5 +1,5 @@
 {
-	"name": "trait.kubejs.dragonsteel_ice_ingot",
+	"name": "patchouli.gui.trait.kubejs.dragonsteel_ice_ingot",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.kubejs.dragonsteel_ice_ingot",
-			"text": "trait.kubejs.dragonsteel_ice_ingot.desc"
+			"title": "patchouli.gui.trait.kubejs.dragonsteel_ice_ingot",
+			"text": "patchouli.gui.trait.kubejs.dragonsteel_ice_ingot.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.kubejs.dragonsteel_ice_ingot.applicable",
-			"text": "trait.kubejs.dragonsteel_ice_ingot.applicable_text"
+			"title": "patchouli.gui.trait.kubejs.dragonsteel_ice_ingot.applicable",
+			"text": "patchouli.gui.trait.kubejs.dragonsteel_ice_ingot.applicable_text"
 		}
 	]
 }

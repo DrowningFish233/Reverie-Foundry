@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.tenacious_vine",
+	"name": "patchouli.gui.trait.silentgear.tenacious_vine",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.tenacious_vine",
-			"text": "trait.silentgear.tenacious_vine.desc"
+			"title": "patchouli.gui.trait.silentgear.tenacious_vine",
+			"text": "patchouli.gui.trait.silentgear.tenacious_vine.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.tenacious_vine.applicable",
-			"text": "trait.silentgear.tenacious_vine.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.tenacious_vine.applicable",
+			"text": "patchouli.gui.trait.silentgear.tenacious_vine.applicable_text"
 		}
 	]
 }

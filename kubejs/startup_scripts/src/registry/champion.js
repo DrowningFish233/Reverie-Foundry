@@ -1,12 +1,3 @@
-
-// 闪避概率 = (1 - 当前血量百分比) * 0.4，上限 40 %
-function getDodgeChance(entity) {
-    const maxHealth = entity.getMaxHealth();
-    const currentHealth = entity.getHealth();
-    return Math.max(0, 1 - currentHealth / maxHealth) * 0.4;
-}
-
-
 StartupEvents.registry("champions:affix", event => {
     event.create('fire_aura')
 
@@ -274,12 +265,13 @@ StartupEvents.registry("champions:affix", event => {
             setting.withDefault()
                 .setPrefix("affix.")
                 .setCategory("defense")
-            setting
         })
         .behavior(behavior => {
             behavior.onAttack((champion, target, damageSource, amount) => {
                 if (target.isPlayer()) {
                     let player = target;
+                    let itemStack = getCuriosItem(player, 'cataclysm:sticky_gloves');
+                    if (itemStack !== null) return true;
                     let item = player.mainHandItem;
                     const EnchantmentLevel = item.getEnchantmentLevel("minecraft:looting");
                     if (EnchantmentLevel == 0) {
@@ -332,17 +324,22 @@ StartupEvents.registry("champions:affix", event => {
             //offense攻击
             //defense防御
             //cc控制
-            setting
         })
         .behavior(behavior => {
             behavior.onDamage((champion, source, amount, newAmount) => {
                 const player = source.getPlayer();
-                if (player) {// 确保是玩家造成的伤害
-                    const cap = Math.floor(player.getMaxHealth() * 0.2); // 上限：玩家最大生命 20%
-                    const reflect = Math.min(Math.floor(amount * 0.25), cap);
-                    player.attack($DamageSource("champions:reflection"), reflect);              // 反伤
-                }
-                return newAmount;
+                if (player) {
+                    const currentHealth = player.getHealth();
+                    if (currentHealth <= 2) {
+                        const reflect = currentHealth + 1;
+                        player.attack($DamageSource("champions:reflection"), reflect);
+                    } else {
+                        const cap = Math.floor(player.getMaxHealth() * 0.15);
+                        const baseReflect = Math.floor(amount * 0.25);
+                        const reflect = Math.max(1, Math.min(baseReflect, cap));
+                        player.attack($DamageSource("champions:reflection"), reflect);
+                    }
+                } return newAmount;
             });
         })
     event.create('parry')
@@ -354,14 +351,13 @@ StartupEvents.registry("champions:affix", event => {
             //offense攻击
             //defense防御
             //cc控制
-            setting
         })
         .behavior(behavior => {
             behavior.onDamage((champion, damageSource, amount, newAmount) => {
                 let entity = champion.getLivingEntity()
                 if (!entity) return amount;
                 if (Math.random() < getDodgeChance(entity)) {
-                    return 0; // 闪避
+                    return 0; // 招架
                 }
                 return newAmount;
             });

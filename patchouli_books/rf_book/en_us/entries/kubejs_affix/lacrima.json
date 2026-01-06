@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.lacrima",
+	"name": "patchouli.gui.trait.silentgear.lacrima",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.lacrima",
-			"text": "trait.silentgear.lacrima.desc"
+			"title": "patchouli.gui.trait.silentgear.lacrima",
+			"text": "patchouli.gui.trait.silentgear.lacrima.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.lacrima.applicable",
-			"text": "trait.silentgear.lacrima.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.lacrima.applicable",
+			"text": "patchouli.gui.trait.silentgear.lacrima.applicable_text"
 		}
 	]
 }

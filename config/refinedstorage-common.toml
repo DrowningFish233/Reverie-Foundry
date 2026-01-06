@@ -1,5 +1,5 @@
 #Allowed Values: STRETCH, SMALL, MEDIUM, LARGE, EXTRA_LARGE
-screenSize = "EXTRA_LARGE"
+screenSize = "STRETCH"
 smoothScrolling = true
 # Default: 256
 # Range: 3 ~ 256
@@ -23,7 +23,7 @@ debug = false
 [diskDrive]
 	# Default: 10
 	# Range: 0 ~ 9223372036854775807
-	energyUsage = 5
+	energyUsage = 2
 	# Default: 4
 	# Range: 0 ~ 9223372036854775807
 	energyUsagePerDisk = 2
@@ -31,19 +31,19 @@ debug = false
 [diskInterface]
 	# Default: 6
 	# Range: 0 ~ 9223372036854775807
-	energyUsage = 3
+	energyUsage = 2
 	# Default: 4
 	# Range: 0 ~ 9223372036854775807
 	energyUsagePerDisk = 2
 
 [grid]
-	largeFont = false
+	largeFont = true
 	preventSortingWhileShiftIsDown = true
 	detailedTooltip = true
 	rememberSearchQuery = false
 	# Default: 10
 	# Range: 0 ~ 9223372036854775807
-	energyUsage = 5
+	energyUsage = 2
 	synchronizer = "refinedstorage_emi_integration:emi"
 	resourceType = ""
 	#Allowed Values: ASCENDING, DESCENDING
@@ -56,14 +56,14 @@ debug = false
 [craftingGrid]
 	# Default: 14
 	# Range: 0 ~ 9223372036854775807
-	energyUsage = 7
+	energyUsage = 2
 	#Allowed Values: NONE, CLEAR_TO_NETWORK, CLEAR_TO_INVENTORY
 	craftingMatrixCloseBehavior = "NONE"
 
 [patternGrid]
 	# Default: 14
 	# Range: 0 ~ 9223372036854775807
-	energyUsage = 7
+	energyUsage = 2
 
 [storageBlock]
 	# Default: 2
@@ -233,15 +233,15 @@ debug = false
 [securityManager]
 	# Default: 16
 	# Range: 0 ~ 9223372036854775807
-	energyUsage = 8
+	energyUsage = 4
 
 [relay]
 	# Default: 8
 	# Range: 0 ~ 9223372036854775807
-	inputNetworkEnergyUsage = 8
+	inputNetworkEnergyUsage = 4
 	# Default: 8
 	# Range: 0 ~ 9223372036854775807
-	outputNetworkEnergyUsage = 8
+	outputNetworkEnergyUsage = 4
 
 [autocrafter]
 	# Default: 4
@@ -254,7 +254,7 @@ debug = false
 [autocrafterManager]
 	# Default: 16
 	# Range: 0 ~ 9223372036854775807
-	energyUsage = 8
+	energyUsage = 4
 	#Allowed Values: ALL, PATTERN_INPUTS, PATTERN_OUTPUTS, AUTOCRAFTER_NAMES
 	searchMode = "ALL"
 	#Allowed Values: VISIBLE, NOT_FULL, ALL
@@ -263,7 +263,7 @@ debug = false
 [autocraftingMonitor]
 	# Default: 16
 	# Range: 0 ~ 9223372036854775807
-	energyUsage = 8
+	energyUsage = 4
 
 [wirelessAutocraftingMonitor]
 	# Default: 1000

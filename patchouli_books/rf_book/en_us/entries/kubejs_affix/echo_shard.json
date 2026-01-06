@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.echo_shard",
+	"name": "patchouli.gui.trait.silentgear.echo_shard",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.echo_shard",
-			"text": "trait.silentgear.echo_shard.desc"
+			"title": "patchouli.gui.trait.silentgear.echo_shard",
+			"text": "patchouli.gui.trait.silentgear.echo_shard.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.echo_shard.applicable",
-			"text": "trait.silentgear.echo_shard.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.echo_shard.applicable",
+			"text": "patchouli.gui.trait.silentgear.echo_shard.applicable_text"
 		}
 	]
 }

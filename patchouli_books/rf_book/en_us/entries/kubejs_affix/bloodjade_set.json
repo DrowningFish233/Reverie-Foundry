@@ -1,5 +1,5 @@
 {
-	"name": "trait.silentgear.bloodjade_set",
+	"name": "patchouli.gui.trait.silentgear.bloodjade_set",
 	"icon": "minecraft:enchanted_book",
 	"category": "patchouli:kubejs_affix",
 	"pages": [
@@ -8,13 +8,13 @@
 			"item": {
 				"item": "minecraft:enchanted_book"
 			},
-			"title": "trait.silentgear.bloodjade_set",
-			"text": "trait.silentgear.bloodjade_set.desc"
+			"title": "patchouli.gui.trait.silentgear.bloodjade_set",
+			"text": "patchouli.gui.trait.silentgear.bloodjade_set.desc"
 		},
 		{
 			"type": "patchouli:text",
-			"title": "trait.silentgear.bloodjade_set.applicable",
-			"text": "trait.silentgear.bloodjade_set.applicable_text"
+			"title": "patchouli.gui.trait.silentgear.bloodjade_set.applicable",
+			"text": "patchouli.gui.trait.silentgear.bloodjade_set.applicable_text"
 		}
 	]
 }
