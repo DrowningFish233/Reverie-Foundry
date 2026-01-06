@@ -28,3 +28,12 @@ function getSephirahName(killCount) {
   return "Malchut";
 }
 
+// 获取位阶索引
+function getSephirahIndex(rankName) {
+  for (let i = 0; i < SEPHIRAH_NAMES.length; i++) {
+    if (SEPHIRAH_NAMES[i].name === rankName) {
+      return i;
+    }
+  }
+  return -1;
+}

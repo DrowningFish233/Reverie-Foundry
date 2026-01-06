@@ -248,6 +248,14 @@ RecipeViewerEvents.addInformation('item', event => {
     event.add('malum:grim_talc', [
         '对骷髅类生物触发隐秘收割获得'
     ]);
+
+    event.add('kubejs:bad_apple', [
+        '食用后必定获得如下效果：',
+        '位阶降低1级',
+        '食用后随机获得如下效果：',
+        '理智值随机增加或减少30点',
+        '法力值随机增加或减少1000点'
+    ]);
 });
 
 

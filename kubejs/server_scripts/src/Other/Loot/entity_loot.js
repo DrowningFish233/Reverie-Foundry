@@ -244,7 +244,7 @@ LootJS.modifiers(event => {
         "irons_spellbooks:dead_king"
     ]).addLoot(LootEntry.of('kubejs:necroplasm')
         .apply(item => {
-            item.setCount({ min: 7, max: 19 })
+            item.setCount({ min: 11, max: 21 })
         })
     );
     event.addEntityModifier([

@@ -44,21 +44,37 @@ EntityEvents.death(event => {
     const pData = player.persistentData;
     const entityType = event.entity.type;
 
-
     // 检查是否是最终BOSS
     if (entityType === FINAL_BOSS) {
         const currentKills = pData.getInt("kill") || 0;
+        const oldRank = getSephirahName(currentKills);
 
         // 确保击杀数不会低于0
         const newKills = Math.max(0, currentKills - 3);
         pData.putInt("kill", newKills);
-        event.server.tell(
-            Text.join(
-                Text.translate(DEMOTION_MESSAGE.prefix).color("#FF5555"),
-                " ",
-                Text.translate(DEMOTION_MESSAGE.message).color("#FFFFFF")
-            )
-        );
+
+        const newRank = getSephirahName(newKills);
+
+        // 只有当位阶实际降低时才显示提示
+        if (oldRank !== newRank && oldRank !== "Malchut") {
+            const oldRankIndex = getSephirahIndex(oldRank);
+            const newRankIndex = getSephirahIndex(newRank);
+
+            if (oldRankIndex > newRankIndex) {
+                const playerName = getplayerName(player.toString());
+
+                event.server.tell(
+                    Text.join(
+                        Text.of(playerName).color("#FFD700"),
+                        " ",
+                        Text.translate(DEMOTION_MESSAGE.prefix).color("#FF5555"),
+                        " ",
+                        Text.translate(DEMOTION_MESSAGE.message).color("#FFFFFF"),
+                        Text.of(" (" + oldRank + " → " + newRank + ")").color("#AAAAAA")
+                    )
+                );
+            }
+        }
         return;
     }
 

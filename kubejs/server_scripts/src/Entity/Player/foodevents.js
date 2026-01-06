@@ -155,6 +155,49 @@ FoodEatenevents.register("foul_flesh", function (event, player, magicData) {
     SanityHelper.updateSanity(player, -15);
 });
 
+FoodEatenevents.register("bad_apple", function (event, player, magicData) {
+    if (!(event.item.getId() == "kubejs:bad_apple")) return;
+
+    const pData = player.persistentData;
+    const oldKillCount = pData.getInt("kill") || 0;
+    const oldRank = getSephirahName(oldKillCount);
+
+    // 计算新的kill值（确保不会小于0）
+    const newKillCount = Math.max(0, oldKillCount - 3);
+    pData.putInt('kill', newKillCount);
+
+    const newRank = getSephirahName(newKillCount);
+    const playerName = getplayerName(player.toString());
+
+    if (oldRank !== newRank && oldRank !== "Malchut") {
+        const oldRankIndex = getSephirahIndex(oldRank);
+        const newRankIndex = getSephirahIndex(newRank);
+
+        if (oldRankIndex > newRankIndex) {
+            event.server.tell(
+                Text.join(
+                    Text.of(playerName).color("#FFD700"),
+                    " ",
+                    Text.translate(DEMOTION_MESSAGE.prefix).color("#FF5555"),
+                    " ",
+                    Text.translate(DEMOTION_MESSAGE.message).color("#FFFFFF"),
+                    Text.of(" (" + oldRank + " → " + newRank + ")").color("#AAAAAA")
+                )
+            );
+        }
+    }
+
+    const sanityRandom = Math.random();
+    const sanityChange = sanityRandom < 0.5 ? 30 : -30;
+    SanityHelper.updateSanity(player, sanityChange);
+
+    const manaRandom = Math.random();
+    const manaChange = manaRandom < 0.5 ? 1000 : -1000;
+    magicData.addMana(manaChange);
+    magicData.addMana(-1);
+
+});
+
 FoodEatenevents.register("grape_beer", function (event, player, magicData) {
     if (!(event.item.getId() == "kubejs:grape_beer")) return;
     if (!player.hasEffect("kubejs:grape_beer")) {

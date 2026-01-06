@@ -13,6 +13,16 @@ StartupEvents.registry("item", event => {
         })
         .tag('kubejs:bluestar')
         .texture('kubejs:item/food/blue_star')
+    event.create('bad_apple')
+        .food(food => {
+            food.nutrition(10)
+                .saturation(1)
+                .eatSeconds(5)
+                .effect("fruitsdelight:sweetening", 1200, 2, 0.9)
+                .effect("minecraft:nausea", 200, 0, 0.75)
+        })
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+        .texture('kubejs:item/food/bad_apple')
     event.create('raw_manflesh')
         .food(food => {
             food.nutrition(6)

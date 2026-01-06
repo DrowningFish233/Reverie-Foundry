@@ -20,14 +20,6 @@
         }
       },
       {
-        "key": "key.ftbchunks.waypoint_manager",
-        "title": "路径点管理",
-        "icon": {
-          "id": "waystones:waystone",
-          "count": 1
-        }
-      },
-      {
         "key": "key.ftbchunks.map",
         "title": "打开地图",
         "icon": {
@@ -48,6 +40,14 @@
         "title": "打开无线终端",
         "icon": {
           "id": "refinedstorage:wireless_grid",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.ftbchunks.waypoint_manager",
+        "title": "路径点管理",
+        "icon": {
+          "id": "waystones:waystone",
           "count": 1
         }
       }

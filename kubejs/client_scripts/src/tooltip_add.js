@@ -475,6 +475,8 @@ const itemTooltips = {
 
 // 通用提示
 const commonTooltips = {
+    'kubejs:bad_apple': TooltipUtils.simpleText('tooltip.common.bad_apple', 'pink_dye'),
+
     'kubejs:randomweapon': TooltipUtils.simpleText('tooltip.common.randomweapon', 'yellow'),
     'terra_entity:king_slime_spawn_egg': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'terra_entity:brain_of_cthulhu_spawn_egg': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),

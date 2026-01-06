@@ -54,6 +54,8 @@ StartupEvents.registry("creative_mode_tab", event => {
     let tab = event.create("kubejs:tab_3").icon(() => 'kubejs:fragment_of_the_universe')
     tab.displayName = Text.translatable("item_group.kubejs.other")
     tab.content(showRestrictedItems => [
+        "kubejs:bad_apple",
+        "kubejs:red_skull",
         "create:chromatic_compound",
         "create:shadow_steel",
         "create:refined_radiance",
@@ -95,6 +97,8 @@ StartupEvents.registry("creative_mode_tab", event => {
 });
 
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
+    event.remove("kubejs:red_skull");
+    event.remove("kubejs:bad_apple");
     event.remove("kubejs:exploding_chocolate_bar");
     event.remove("kubejs:exploding_chocolate_bar");
     event.remove("kubejs:necromantic_scroll");

@@ -12,6 +12,14 @@ const curiosEffects = new Map([
     ['kubejs:papyrus_scarab', (player, event) => {
         player.potionEffects.add("kubejs:minion_capacity", 20 * 6, 0)
     }],
+    ['kubejs:red_skull', (player, event) => {
+        let currentHealth = player.getHealth();
+        let maxHealth = player.getMaxHealth();
+        let healthPercentage = currentHealth / maxHealth;
+        if (healthPercentage <= 0.5) {
+            player.potionEffects.add("minecraft:strength", 20 * 3, 2);
+        }
+    }],
     ['kubejs:melting_eyeball', (player, event) => {
         player.potionEffects.add("kubejs:protect", 20 * 3, 0);
     }],

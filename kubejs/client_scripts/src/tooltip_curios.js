@@ -77,6 +77,12 @@ const trinkets = {
             { type: 'debuff', textKey: "tooltip.heart_of_darkness.effect.1" }
         ]
     },
+    'kubejs:red_skull': {
+        descriptionKey: "tooltip.red_skull.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.red_skull.effect" }
+        ]
+    },
     'kubejs:red_shoes': {
         descriptionKey: "tooltip.red_shoes.description",
         effects: [

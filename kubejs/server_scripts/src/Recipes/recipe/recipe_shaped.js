@@ -817,4 +817,17 @@ ServerEvents.recipes(event => {
             C: 'malum:hallowed_gold_ingot'
         }
     )
+
+    event.shaped(
+        Item.of('kubejs:bad_apple', 1),
+        [
+            'BBB',
+            'BCB',
+            'BBB'
+        ],
+        {
+            B: 'kubejs:necroplasm',
+            C: 'minecraft:apple'
+        }
+    )
 })

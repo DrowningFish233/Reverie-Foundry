@@ -99,4 +99,11 @@ ServerEvents.recipes(event => {
             'minecraft:cooked_cod'
         ]
     )
+    event.shapeless(
+        Item.of('kubejs:red_skull', 1),
+        [
+            'terra_curio:obsidian_skull',
+            '3x minecraft:red_dye'
+        ]
+    )
 })
