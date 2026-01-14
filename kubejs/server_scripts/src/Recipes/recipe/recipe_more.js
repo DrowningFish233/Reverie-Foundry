@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'irons_spellbooks:druidic_spell_book' })
     event.remove({ output: 'irons_spellbooks:inscription_table' })
     event.remove({ output: 'endrem:exotic_eye' })
+    event.remove({ output: 'silentgear:metal_press' })
     event.remove({ input: '#alltheores:ore_hammers' })
     event.remove({ mod: 'productivelib' })
     event.smelting('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)

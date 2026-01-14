@@ -13,4 +13,3 @@ function getCuriosItem(player, itemId) {
     }
     return null;
 }
-

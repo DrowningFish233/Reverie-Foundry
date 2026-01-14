@@ -55,6 +55,7 @@ global.new_materials = [
     { id: 'summon_ender_guardian', maxStackSize: 1 },
     { id: 'summon_netherite_monstrosity', maxStackSize: 1 },
     { id: 'randomweapon', maxStackSize: 1 },
+    { id: 'glimmering_golden_amber', maxStackSize: 16, rarity: 'rare', texture: "kubejs:item/misc/glimmering_golden_amber" },
 
 ];
 

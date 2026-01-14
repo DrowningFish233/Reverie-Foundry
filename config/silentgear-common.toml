@@ -180,18 +180,18 @@
 	#The rate at which the starlight charger gathers energy during the night
 	# Default: 100
 	# Range: > 0
-	charge_rate = 100
+	charge_rate = 200
 	#The maximum amount of energy the starlight charger can store
 	# Default: 1000000
 	# Range: > 0
-	max_charge = 1000000
+	max_charge = 2000000
 	#If enabled, allows the starlight charger to charge the individual materials inside a gear part
 	can_charge_parts = false
 	#The time of day the starlight charger can gather energy
 	#Allowed Values: DAYTIME, NIGHTTIME, ANYTIME
 	work_time = "NIGHTTIME"
 	#If true, the starlight charger only works with a clear view of the sky above it
-	requires_view_of_sky = false
+	requires_view_of_sky = true
 
 	[debug.logging]
 		#Log property calculations in the log file every time gear properties are recalculated

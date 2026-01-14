@@ -252,6 +252,7 @@ RecipeViewerEvents.addInformation('item', event => {
     event.add('kubejs:bad_apple', [
         '食用后必定获得如下效果：',
         '位阶降低1级',
+        ' ',
         '食用后随机获得如下效果：',
         '理智值随机增加或减少30点',
         '法力值随机增加或减少1000点'

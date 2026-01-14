@@ -407,5 +407,75 @@
 			x: 6.0d
 			y: 1.5d
 		}
+		{
+			id: "0CFA26B3944AAF49"
+			tasks: [{
+				id: "375C5DB86FBD444E"
+				item: { count: 1, id: "silentgear:starlight_charger" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			id: "727E7E58CDD35234"
+			tasks: [{
+				id: "447C140EC187E545"
+				item: { count: 1, id: "silentgear:alloy_forge" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			id: "62FCCE8BC35F8C17"
+			tasks: [{
+				id: "163AF1709545A350"
+				item: { count: 1, id: "silentgear:recrystallizer" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			id: "712A04EBF3733C96"
+			tasks: [{
+				id: "2CE5DA10720D5C94"
+				item: { count: 1, id: "silentgear:material_grader" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -4.0d
+		}
+		{
+			id: "750FC99EE02F979D"
+			tasks: [{
+				id: "215EC4E258DC33CA"
+				item: { count: 1, id: "silentgear:refabricator" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			id: "3D29D3316A8362E6"
+			tasks: [{
+				id: "356D41DE10BDD0E6"
+				item: { count: 1, id: "silentgear:stone_anvil" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			id: "21F608E19AD6FDF6"
+			tasks: [{
+				id: "4A2D3E033EE55A5D"
+				item: { count: 1, id: "silentgear:salvager" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.5d
+		}
 	]
 }

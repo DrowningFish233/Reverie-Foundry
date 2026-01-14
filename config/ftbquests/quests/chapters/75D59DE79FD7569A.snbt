@@ -384,6 +384,9 @@
 		{
 			dependencies: ["66EA89C1E75509EB"]
 			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:zombie_head"
+			}
 			id: "56CB359C8D5426A3"
 			tasks: [{
 				id: "735FCCA157A46245"
@@ -395,6 +398,9 @@
 		{
 			dependencies: ["66EA89C1E75509EB"]
 			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:player_head"
+			}
 			id: "142C80D05D6B1FDC"
 			rewards: [{
 				auto: "enabled"

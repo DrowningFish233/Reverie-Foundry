@@ -47,7 +47,7 @@
     "fightSpeedMod": 1.0
   },
   "pixie": {
-    "size": 5,
+    "size": 2,
     "stealItems": false
   },
   "cyclops": {
@@ -171,7 +171,7 @@
     "generateGraveYardChance": 1.0,
     "generateHydraCaveChance": 1.0,
     "generateMausoleumChance": 1.0,
-    "generatePixieVillageChance": 1.0,
+    "generatePixieVillageChance": 0.5,
     "generateSirenIslandChance": 1.0
   },
   "misc": {
