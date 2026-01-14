@@ -62,7 +62,7 @@ EntityEvents.spawned('minecraft:item', event => {
             break;
 
         case 'kubejs:summon_ignis':
-            summonMob(10, entity, 'cataclysm:ignis', 'kubejs:boss_summon')
+            summonMobWithDimensions(10, entity, 'cataclysm:ignis', 'kubejs:boss_summon', 'minecraft:the_nether')
             break;
 
         case 'kubejs:summon_the_leviathan':
@@ -86,132 +86,59 @@ EntityEvents.spawned('minecraft:item', event => {
             break;
 
         case 'kubejs:summon_ender_guardian':
-            summonMob(10, entity, 'cataclysm:ender_guardian', 'kubejs:boss_summon')
+            summonMobWithDimensions(10, entity, 'cataclysm:ender_guardian', 'kubejs:boss_summon', 'minecraft:the_end')
             break;
 
         case 'kubejs:summon_netherite_monstrosity':
             summonMob(10, entity, 'cataclysm:netherite_monstrosity', 'kubejs:boss_summon')
             break;
+
+        case 'kubejs:summon_frostling_pet':
+            summonMob(10, entity, 'alshanex_familiars:frostling_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_mage_pet':
+            summonMob(10, entity, 'alshanex_familiars:mage_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_archmage_pet':
+            summonMob(10, entity, 'alshanex_familiars:archmage_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_summoner_pet':
+            summonMob(10, entity, 'alshanex_familiars:summoner_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_necromancer_pet':
+            summonMob(10, entity, 'alshanex_familiars:necromancer_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_hunter_pet':
+            summonMob(10, entity, 'alshanex_familiars:hunter_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_druid_pet':
+            summonMob(10, entity, 'alshanex_familiars:druid_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_illusionist_pet':
+            summonMob(10, entity, 'alshanex_familiars:illusionist_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_scorcher_pet':
+            summonMob(10, entity, 'alshanex_familiars:scorcher_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_cleric_pet':
+            summonMob(10, entity, 'alshanex_familiars:cleric_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_plague_pet':
+            summonMob(10, entity, 'alshanex_familiars:plague_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'kubejs:summon_bard_pet':
+            summonMob(10, entity, 'alshanex_familiars:bard_pet', 'alshanex_familiars:angel_cast')
+            break;
     }
 })
-
-
-
-/**
- * 召唤生物函数
- * 
- * 为什么不让我走createEntity，呜，苦露西
- * 
- * @param {integer} interval 执行前的等待时间（单位：Tick）
- * @param {ItemEntity} entity 被抛出的物品实体
- * @param {string} mobId 要召唤的生物ID
- * @param {string} sound 播放的音效
- */
-function summonMob(interval, entity, mobId, sound) {
-    // 设置拾取延迟，防止在此过程中物品被捡起
-    entity.setPickUpDelay(interval * 2);
-
-    entity.server.scheduleInTicks(interval, () => {
-        // 如果物品实体已不存在，则终止执行
-        if (!entity || !entity.isAlive()) return;
-
-        let { level } = entity;
-
-        try {
-            let pos = entity.position();
-
-            let mob = $TEUtils.spawnEntity(mobId, level, pos);
-
-            if (!mob) return;
-
-            // 播放音效
-            if (sound) {
-                level[$playersound](
-                    null,
-                    pos.x,
-                    pos.y,
-                    pos.z,
-                    sound,
-                    "players",
-                    1.0,
-                    1.0
-                );
-            }
-
-            entity.item.count--;
-
-            if (entity.item.count <= 0) {
-                entity.discard();
-            }
-
-        } catch (error) {
-            console.error(`召唤生物时出错: ${error}`);
-        }
-    });
-}
-
-/**
- * @param {integer} interval 执行前的等待时间（单位：Tick）
- * @param {ItemEntity} entity 被抛出的物品实体
- * @param {string} mobId 要召唤的生物ID
- * @param {string} sound 播放的音效
- * @param {allowedDimensions} dimensions 需要的维度
- */
-
-function summonMobWithCustomDimensions(interval, entity, mobId, sound, allowedDimensions) {
-    entity.setPickUpDelay(interval * 2)
-    entity.server.scheduleInTicks(interval, () => {
-        if (!entity || !entity.isAlive())
-            return
-
-        let { level } = entity
-        let dimensionId = level.dimension.toString()
-
-        // 使用传入的允许维度列表，如果没传则默认主世界
-        let dimensions = allowedDimensions || [
-            'minecraft:overworld'
-        ]
-
-        if (!dimensions.includes(dimensionId)) {
-            entity.discard()
-            return
-        }
-
-        let pos = {
-            x: entity.getX(),
-            y: entity.getY(),
-            z: entity.getZ()
-        };
-
-        try {
-            let pos = entity.position();
-
-            let mob = $TEUtils.spawnEntity(mobId, level, pos);
-
-            if (!mob) return;
-
-            // 播放音效
-            if (sound) {
-                level[$playersound](
-                    null,
-                    pos.x,
-                    pos.y,
-                    pos.z,
-                    sound,
-                    "players",
-                    1.0,
-                    1.0
-                );
-            }
-
-            entity.item.count--;
-
-            if (entity.item.count <= 0) {
-                entity.discard();
-            }
-
-        } catch (error) {
-            console.error(`召唤生物时出错: ${error}`);
-        }
-    })
-}

@@ -940,3 +940,154 @@ function getRandomEnchantedBookId() {
 
     return `minecraft:enchanted_book[stored_enchantments={levels:{"${randomEnchantmentId}":${randomLevel}}}]`;
 }
+
+/**
+ * 召唤生物函数
+ * 
+ * 为什么不让我走createEntity，呜，苦露西
+ * 
+ * @param {integer} interval 执行前的等待时间（单位：Tick）
+ * @param {ItemEntity} entity 被抛出的物品实体
+ * @param {string} mobId 要召唤的生物ID
+ * @param {string} sound 播放的音效
+ */
+function summonMob(interval, entity, mobId, sound) {
+    // 设置拾取延迟，防止在此过程中物品被捡起
+    entity.setPickUpDelay(interval * 2);
+
+    entity.server.scheduleInTicks(interval, () => {
+        // 如果物品实体已不存在，则终止执行
+        if (!entity || !entity.isAlive()) return;
+
+        let { level } = entity;
+
+        try {
+            let pos = entity.position();
+
+            let mob = $TEUtils.spawnEntity(mobId, level, pos);
+
+            if (!mob) return;
+
+            // 播放音效
+            if (sound) {
+                level[$playersound](
+                    null,
+                    pos.x,
+                    pos.y,
+                    pos.z,
+                    sound,
+                    "players",
+                    1.0,
+                    1.0
+                );
+            }
+
+            entity.item.count--;
+
+            if (entity.item.count <= 0) {
+                entity.discard();
+            }
+
+        } catch (error) {
+            console.error(`召唤生物时出错: ${error}`);
+        }
+    });
+}
+
+/**
+ * @param {integer} interval 执行前的等待时间（单位：Tick）
+ * @param {ItemEntity} entity 被抛出的物品实体
+ * @param {string} mobId 要召唤的生物ID
+ * @param {string} sound 播放的音效
+ * @param {allowedDimensions} dimensions 需要的维度
+ */
+
+function summonMobWithDimensions(interval, entity, mobId, sound, allowedDimensions) {
+    entity.setPickUpDelay(interval * 2)
+    entity.server.scheduleInTicks(interval, () => {
+        if (!entity || !entity.isAlive())
+            return
+
+        let { level } = entity
+        let dimensionId = level.dimension.toString()
+
+        // 使用传入的允许维度列表，如果没传则默认主世界
+        let dimensions = allowedDimensions || [
+            'minecraft:overworld'
+        ]
+
+        let pos = {
+            x: entity.getX(),
+            y: entity.getY(),
+            z: entity.getZ()
+        };
+
+        if (!dimensions.includes(dimensionId)) {
+            entity.discard()
+            playRandomFailSound(level, pos)
+            return
+        }
+
+        try {
+            let pos = entity.position();
+
+            let mob = $TEUtils.spawnEntity(mobId, level, pos);
+
+            if (!mob) return;
+
+            // 播放音效
+            if (sound) {
+                level[$playersound](
+                    null,
+                    pos.x,
+                    pos.y,
+                    pos.z,
+                    sound,
+                    "players",
+                    1.0,
+                    1.0
+                );
+            }
+
+            entity.item.count--;
+
+            if (entity.item.count <= 0) {
+                entity.discard();
+            }
+
+        } catch (error) {
+            console.error(`召唤生物时出错: ${error}`);
+        }
+    })
+}
+
+
+/**
+ * 播放随机失败音效
+ * @param {Level} level 世界
+ * @param {Object} pos 位置坐标 {x, y, z}
+ */
+function playRandomFailSound(level, pos) {
+    // 失败音效列表
+    const failSounds = [
+        'malum:totemic_rite_cancelled',
+        'malum:blight_propagates',
+        'malum:totemic_growth',
+    ]
+
+    // 随机选择音效
+    const randomIndex = Math.floor(Math.random() * failSounds.length)
+    const failSound = failSounds[randomIndex]
+
+    // 播放音效
+    level[$playersound](
+        null,
+        pos.x,
+        pos.y,
+        pos.z,
+        failSound,
+        "players",
+        1.0,
+        1.0
+    )
+}
