@@ -27,6 +27,7 @@ function loggedInplayersanity(player) {
     if (!pData.contains(magicSwitch)) pData.putInt(magicSwitch, 0);
     //成瘾性
     if (!pData.contains(addiction)) pData.putInt(addiction, 0);
+    if (!pData.contains(depression)) pData.putInt(depression, 0);
     //其他
     for (let sin in sins) {
         if (!pData.contains(sins[sin])) {

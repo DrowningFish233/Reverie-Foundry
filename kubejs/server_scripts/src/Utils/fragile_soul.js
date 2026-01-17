@@ -1,10 +1,3 @@
-const HEALTH_MODIFIER_ID = 'death_based_health';
-const DEATH_COUNT_KEY = 'player_deaths';
-const SYSTEM_ENABLED_KEY = 'death_system_enabled';
-
-// 全局系统状态
-const systemEnabledByDefault = false;
-
 // 更新玩家生命值
 function updateHealth(player) {
     const pData = player.persistentData;
@@ -102,7 +95,7 @@ ItemEvents.foodEaten(event => {
 
     const pData = player.persistentData;
 
-    if (['minecraft:golden_apple', 'minecraft:enchanted_golden_apple'].includes(event.item.id)) {
+    if (['minecraft:golden_apple', 'minecraft:enchanted_golden_apple', 'kubejs:bad_apple'].includes(event.item.id)) {
         let deaths = 0;
         if (pData.contains(DEATH_COUNT_KEY)) {
             deaths = pData.getInt(DEATH_COUNT_KEY);

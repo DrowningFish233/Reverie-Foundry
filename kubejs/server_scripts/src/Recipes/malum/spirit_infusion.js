@@ -630,19 +630,9 @@ ServerEvents.recipes(event => {
         new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_the_leviathan')
             .addSpirit("eldritch", 6)
             .addSpirit("aqueous", 6)
-            .addExtraInput('#kubejs:cora', 4)
+            .addExtraInput('#kubejs:coral', 4)
             .addExtraInput('minecraft:nautilus_shell', 2)
             .addExtraInput('cataclysm:abyss_eye', 1)
-    );
-
-    //召唤仪式
-    registerCustomRecipe(
-        new SpiritInfusionRecipeJSON('kubejs:necroplasm', 'kubejs:summon_the_leviathan')
-            .addSpirit("eldritch", 6)
-            .addSpirit("aqueous", 6)
-            .addExtraInput('#kubejs:cora', 4)
-            .addExtraInput('minecraft:nautilus_shell', 2)
-            .addExtraInput('minecraft:heart_of_the_sea', 1)
     );
 
     //召唤仪式
@@ -769,5 +759,139 @@ ServerEvents.recipes(event => {
             .addExtraInput('cataclysm:lava_power_cell', 2)
             .addExtraInput('minecraft:gilded_blackstone', 3)
             .addExtraInput('minecraft:magma_cream', 2)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:frostling_shard', 'kubejs:summon_frostling_pet')
+            .addSpirit("arcane", 3)
+            .addSpirit("aqueous", 3)
+            .addExtraInput('irons_spellbooks:permafrost_shard', 1)
+            .addExtraInput('irons_spellbooks:frozen_bone', 4)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:scorcher_shard', 'kubejs:summon_scorcher_pet')
+            .addSpirit("sacred", 3)
+            .addSpirit("infernal", 3)
+            .addExtraInput('minecraft:blaze_rod', 3)
+            .addExtraInput('eternal_starlight:starfire', 2)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:summoner_shard', 'kubejs:summon_summoner_pet')
+            .addSpirit("arcane", 3)
+            .addSpirit("sacred", 3)
+            .addExtraInput('irons_spellbooks:evocation_rune', 1)
+            .addExtraInput('minecraft:emerald', 6)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:archmage_shard', 'kubejs:summon_archmage_pet')
+            .addSpirit("arcane", 8)
+            .addExtraInput('malum:runic_sap', 2)
+            .addExtraInput('malum:arcane_charcoal', 6)
+            .addExtraInput('irons_spellbooks:arcane_essence', 16)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:druid_shard', 'kubejs:summon_druid_pet')
+            .addSpirit("aqueous", 3)
+            .addSpirit("earthen", 3)
+            .addExtraInput('irons_spellbooks:nature_rune', 2)
+            .addExtraInput("#irons_spellbooks:nature_focus", 3)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:hunter_shard', 'kubejs:summon_hunter_pet')
+            .addSpirit("arcane", 3)
+            .addSpirit("earthen", 3)
+            .addExtraInput('kubejs:meat', 4)
+            .addExtraInput("#c:foods/cooked_meat", 3)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:lightning_mage_shard', 'kubejs:summon_mage_pet')
+            .addSpirit("arcane", 3)
+            .addSpirit("earthen", 3)
+            .addExtraInput('createaddition:spool', 2)
+            .addExtraInput('#irons_spellbooks:lightning_focus', 3)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:illusionist_shard', 'kubejs:summon_illusionist_pet')
+            .addSpirit("arcane", 3)
+            .addSpirit("eldritch", 3)
+            .addExtraInput('illagerinvasion:unusual_dust', 4)
+            .addExtraInput('illagerinvasion:illusionary_dust', 2)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:bard_shard', 'kubejs:summon_bard_pet')
+            .addSpirit("arcane", 3)
+            .addSpirit("eldritch", 3)
+            .addExtraInput('minecraft:disc_fragment_5', 1)
+            .addExtraInput('minecraft:note_block', 2)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:cleric_shard', 'kubejs:summon_cleric_pet')
+            .addSpirit("sacred", 6)
+            .addExtraInput('#irons_spellbooks:holy_focus', 4)
+            .addExtraInput('irons_spellbooks:arcane_essence', 16)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:bard_shard', 'kubejs:summon_bard_pet')
+            .addSpirit("arcane", 3)
+            .addSpirit("eldritch", 3)
+            .addExtraInput('minecraft:disc_fragment_5', 1)
+            .addExtraInput('minecraft:note_block', 2)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:necromancer_shard', 'kubejs:summon_necromancer_pet')
+            .addSpirit("wicked", 6)
+            .addExtraInput('irons_spellbooks:blood_vial', 4)
+            .addExtraInput('minecraft:zombie_head', 1)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:plague_shard', 'kubejs:summon_plague_pet')
+            .addSpirit("earthen", 6)
+            .addExtraInput('alshanex_familiars:spider_fang', 4)
+            .addExtraInput('alshanex_familiars:poison_vial', 1)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    //召唤仪式-魔宠
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('alshanex_familiars:dragon_warrior_shard', 'kubejs:summon_dragon_warrior_pet')
+            .addSpirit("arcane", 6)
+            .addExtraInput('minecraft:ender_pearl', 4)
+            .addExtraInput('irons_spellbooks:ender_rune', 1)
+            .addExtraInput('irons_spellbooks:arcane_essence', 8)
     );
 });

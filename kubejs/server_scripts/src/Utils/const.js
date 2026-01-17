@@ -44,6 +44,7 @@ const wither_howitzer = "wither_howitzer"
 const magicSwitch = "magicSwitch"
 const sanityDrainRate = "sanityDrainRate"
 const addiction = "addiction"
+const depression = "depression"
 const $playersound = "playSound(net.minecraft.world.entity.player.Player,double,double,double,net.minecraft.sounds.SoundEvent,net.minecraft.sounds.SoundSource,float,float)"
 const key_bind_weapons = [
     "silentgear:katana",
@@ -95,6 +96,114 @@ const kubejs_player = [
     'minecraft:player'
 ]
 
+
+// 黑名单配置 
+const DIFFICULTY_BLACKLIST = [
+    "cataclysm:ignis",
+    "cataclysm:the_leviathan",
+    "cataclysm:ancient_remnant",
+    "cataclysm:maledictus",
+    "cataclysm:scylla",
+    "cataclysm:the_harbinger",
+    "cataclysm:ender_guardian",
+    "cataclysm:netherite_monstrosity",
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+    "bosses_of_mass_destruction:gauntlet",
+    "bosses_of_mass_destruction:lich",
+    "bosses_of_mass_destruction:obsidilith",
+    "bosses_of_mass_destruction:void_blossom",
+    "irons_spellbooks:fire_boss",
+    "terra_entity:dungeon_guardian",
+    "terra_entity:skeletron",
+    "terra_entity:king_slime",
+    "terra_entity:eye_of_cthulhu",
+    "terra_entity:brain_of_cthulhu",
+    "terra_entity:queen_bee",
+    "irons_spellbooks:dead_king"
+];
+
+// 基础难度配置
+const GAME_DIFFICULTY_LEVELS = {
+    "EASY": {
+        health: 1.0,
+        attack: 1.0,
+        armor: 1.0,
+        toughness: 1.0,
+        follow_range: 0
+    },
+    "NORMAL": {
+        health: 1.2,
+        attack: 1.2,
+        armor: 1.2,
+        toughness: 1.0,
+        follow_range: 0
+    },
+    "HARD": {
+        health: 1.5,
+        attack: 1.5,
+        armor: 1.5,
+        toughness: 1.0,
+        follow_range: 10
+    }
+};
+
+// 玩家阶段难度加成
+const STAGE_DIFFICULTY_BONUS = {
+    'difficult_0': { health: 1, attack: 1, armor: 1, toughness: 1, level: 0 },
+    'difficult_1': { health: 2, attack: 2, armor: 2, toughness: 2, level: 1 },
+    'difficult_2': { health: 3, attack: 3, armor: 3, toughness: 3, level: 2 },
+    'difficult_3': { health: 4, attack: 4, armor: 4, toughness: 4, level: 3 },
+    'difficult_4': { health: 5, attack: 5, armor: 5, toughness: 5, level: 4 },
+    'difficult_5': { health: 6, attack: 6, armor: 6, toughness: 6, level: 5 },
+    'difficult_6': { health: 8, attack: 8, armor: 8, toughness: 8, level: 6 }
+};
+
+
+// 最终BOSS
+const FINAL_BOSS = "darkdoppelganger:dark_doppelganger";
+
+// Sephirah 名称映射
+const SEPHIRAH_NAMES = [
+    { minKills: 3, name: "Malchut" },
+    { minKills: 6, name: "Yesod" },
+    { minKills: 9, name: "Hod" },
+    { minKills: 12, name: "Netzach" },
+    { minKills: 15, name: "Tiphereth" },
+    { minKills: 18, name: "Geburah" },
+    { minKills: 21, name: "Chesed" },
+    { minKills: 24, name: "Binah" },
+    { minKills: 27, name: "Cochma" },
+    { minKills: 30, name: "Kether" }
+];
+
+const HEALTH_MODIFIER_ID = 'death_based_health';
+const DEATH_COUNT_KEY = 'player_deaths';
+const SYSTEM_ENABLED_KEY = 'death_system_enabled';
+
+// 全局系统状态
+const systemEnabledByDefault = false;
+
+
+// 位阶消息键值映射
+const RANK_MESSAGE_KEYS = {
+    "Malchut": { prefix: "sephirah.malchut.prefix", message: "sephirah.malchut.message" },
+    "Yesod": { prefix: "sephirah.yesod.prefix", message: "sephirah.yesod.message" },
+    "Hod": { prefix: "sephirah.hod.prefix", message: "sephirah.hod.message" },
+    "Netzach": { prefix: "sephirah.netzach.prefix", message: "sephirah.netzach.message" },
+    "Tiphereth": { prefix: "sephirah.tiphereth.prefix", message: "sephirah.tiphereth.message" },
+    "Geburah": { prefix: "sephirah.geburah.prefix", message: "sephirah.geburah.message" },
+    "Chesed": { prefix: "sephirah.chesed.prefix", message: "sephirah.chesed.message" },
+    "Binah": { prefix: "sephirah.binah.prefix", message: "sephirah.binah.message" },
+    "Cochma": { prefix: "sephirah.cochma.prefix", message: "sephirah.cochma.message" },
+    "Kether": { prefix: "sephirah.kether.prefix", message: "sephirah.kether.message" }
+};
+
+// 降级消息
+const DEMOTION_MESSAGE = {
+    prefix: "sephirah.demotion.prefix",
+    message: "sephirah.demotion.message"
+};
 /*
 // 法术学派映射表
 // 我为什么要写他？？

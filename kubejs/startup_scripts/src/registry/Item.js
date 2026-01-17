@@ -68,6 +68,8 @@ global.new_materials = [
     { id: 'summon_cleric_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
     { id: 'summon_plague_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
     { id: 'summon_bard_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
+    { id: 'summon_dragon_warrior_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
+
 ];
 
 StartupEvents.registry('item', event => {

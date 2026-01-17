@@ -140,5 +140,57 @@ ServerEvents.commandRegistry(event => {
                         return 1;
                     })
             )
+            // 抑郁状态
+            .then(
+                Commands.literal('depression')
+                    .then(
+                        Commands.literal('toggle')
+                            .executes(context => {
+                                const player = context.source.player;
+                                if (!player) {
+                                    context.source.sendFailure(Text.translate('error.command.player_only'));
+                                    return 0;
+                                }
+
+                                const current = player.persistentData.contains('depression') ?
+                                    player.persistentData.getInt('depression') : 0;
+
+                                const newState = current === 0 ? 1 : 0;
+                                player.persistentData.putInt('depression', newState);
+                                // 发送切换成功的消息
+                                player.tell(
+                                    Text.translate('message.depression.toggle', [
+                                        newState === 1 ?
+                                            Text.translate('message.state.enabled').color('dark_purple') :
+                                            Text.translate('message.state.disabled').color('green')
+                                    ]).color('green')
+                                );
+                                return 1;
+                            })
+                    )
+                    .then(
+                        Commands.literal('status')
+                            .executes(context => {
+                                const player = context.source.player;
+                                if (!player) {
+                                    context.source.sendFailure(Text.translate('error.command.player_only'));
+                                    return 0;
+                                }
+
+                                const depressionState = player.persistentData.contains('depression') ?
+                                    player.persistentData.getInt('depression') : 0;
+
+                                player.tell([
+                                    Text.translate('message.depression.status', [
+                                        depressionState === 1 ?
+                                            Text.translate('message.state.enabled').color('dark_purple') :
+                                            Text.translate('message.state.disabled').color('green')
+                                    ]).color('green'),
+                                    Text.translate('message.depression.usage').color('yellow')
+                                ]);
+                                return 1;
+                            })
+                    )
+            )
     );
 });

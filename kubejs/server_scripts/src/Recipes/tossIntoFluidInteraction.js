@@ -14,6 +14,9 @@ EntityEvents.spawned('minecraft:item', event => {
     if (event.entity.item.id == 'ftboceanmobs:sludge_ball')
         attemptSetBlock(30, event.entity, 'minecraft:water', 'ftboceanmobs:abyssal_water')
 
+    if (event.entity.item.id == 'kubejs:necroplasm')
+        attemptSetBlock(30, event.entity, 'minecraft:lava', 'allthemodium:soul_lava')
+
     // 通过将物品扔进液体来将其转化为另一种物品
     // 即使玩家连续快速丢弃整组物品也能正常工作
     if (event.entity.item.id == 'kubejs:raw_netherite_ingot')

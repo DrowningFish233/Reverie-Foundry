@@ -41,7 +41,9 @@ PlayerEvents.tick(event => {
         let foodLevel = player.getFoodLevel()
         // 理智恢复/流失逻辑
         if (foodLevel >= 16 && healthRatio > 0.75) {
-            modifyDrainRate(player, DRAIN_STAGE.FLAT, 1); //+理智
+            if (pData.getInt("depression") != 1) {
+                modifyDrainRate(player, DRAIN_STAGE.FLAT, 1);
+            }
         }
 
         // 生命值低时减少理智（无论是否侵蚀）

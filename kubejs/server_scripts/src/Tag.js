@@ -237,6 +237,12 @@ ServerEvents.tags('item', event => {
     event.remove('c:plates', 'alltheores:enderium_plate')
     event.add('quad:fuel/hanging_sign', 'kubejs:coal_dust')
     event.add('quad:immune/fire',
+        'kubejs:soul_of_night',
+        'kubejs:soul_of_light',
+        'kubejs:ruinous_soul',
+        'kubejs:ashes_of_calamity',
+        'kubejs:glimmering_golden_amber',
+        'kubejs:necroplasm',
         'kubejs:raw_netherite_ingot',
         'kubejs:scrap_clump',
         'kubejs:netherite_wire',

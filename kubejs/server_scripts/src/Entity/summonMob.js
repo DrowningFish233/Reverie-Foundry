@@ -140,5 +140,9 @@ EntityEvents.spawned('minecraft:item', event => {
         case 'kubejs:summon_bard_pet':
             summonMob(10, entity, 'alshanex_familiars:bard_pet', 'alshanex_familiars:angel_cast')
             break;
+
+        case 'kubejs:summon_dragon_warrior_pet':
+            summonMob(10, entity, 'alshanex_familiars:dragon_warrior_pet', 'alshanex_familiars:angel_cast')
+            break;
     }
 })

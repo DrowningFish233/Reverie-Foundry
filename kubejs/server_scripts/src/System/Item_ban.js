@@ -40,6 +40,7 @@ let bannedItems = [
 
 // 材料替换配置(前:需要替换的材料.后:替换为的材料)
 const materialMap = {
+    'hazennstuff:spider_fang': 'alshanex_familiars:spider_fang',
     'alltheores:zinc_ingot': 'create:zinc_ingot',
     'alltheores:brass_ingot': 'create:brass_ingot',
     'alltheores:brass_nugget': 'create:brass_nugget',

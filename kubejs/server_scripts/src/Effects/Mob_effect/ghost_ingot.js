@@ -7,6 +7,7 @@ function sanity_up(event, player) {
     lucid_effect(event, player);
 }
 
+
 function ghost_ingot(event, player) {
     if (player.hasEffect('kubejs:ghost_ingot')) {
         modifyDrainRate(player, DRAIN_STAGE.FLAT, -1);

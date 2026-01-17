@@ -106,4 +106,5 @@ ServerEvents.recipes(event => {
             '3x minecraft:red_dye'
         ]
     )
+
 })

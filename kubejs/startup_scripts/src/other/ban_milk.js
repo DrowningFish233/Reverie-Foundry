@@ -68,6 +68,7 @@ const protectedEffects = [
 ];
 
 NativeEvents.onEvent($MobEffectEvent$Remove, event => {
+
     try {
         global.handleEffectRemoval(event);
     } catch (e) {
@@ -76,16 +77,13 @@ NativeEvents.onEvent($MobEffectEvent$Remove, event => {
 });
 
 global.handleEffectRemoval = event => {
-    if (!event || !event.entity || !event.effectInstance || !event.effectInstance.effect) {
-        return;
-    }
+    if (!event || !event.entity || !event.effectInstance || !event.effectInstance.effect) return;
 
     const { entity, effectInstance, cure } = event;
 
     if (!entity.isPlayer()) return;
 
     if (!cure || cure == null) return;
-
     const effectId = effectInstance.effect.getRegisteredName();
 
     if (protectedEffects.includes(effectId)) {
