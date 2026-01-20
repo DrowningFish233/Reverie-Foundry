@@ -120,19 +120,19 @@ EntityEvents.checkSpawn(event => {
     /*
     if (highestStageDifficulty) {
         if (blacklisted) {
-            console.log(`[FISH233] 黑名单生物 ${entity.type} - 仅阶段难度: ${highestStageDifficulty}`);
+            console.log(`[Reverie Foundry] 黑名单生物 ${entity.type} - 仅阶段难度: ${highestStageDifficulty}`);
             console.log(`          生命: x${finalMultipliers.health}, 攻击: x${finalMultipliers.attack}, 护甲: x${finalMultipliers.armor}`);
         } else {
-            console.log(`[FISH233] 实体ID：${entity.type}难度等级：${worldDifficulty} × ${highestStageDifficulty} = ` +
+            console.log(`[Reverie Foundry] 实体ID：${entity.type}难度等级：${worldDifficulty} × ${highestStageDifficulty} = ` +
                 `生命: x${finalMultipliers.health.toFixed(1)}, ` +
                 `攻击: x${finalMultipliers.attack.toFixed(1)}, ` +
                 `护甲: x${finalMultipliers.armor.toFixed(1)}`);
         }
     } else {
         if (blacklisted) {
-            console.log(`[FISH233] 黑名单生物 ${entity.type} - 无阶段难度，跳过加成`);
+            console.log(`[Reverie Foundry] 黑名单生物 ${entity.type} - 无阶段难度，跳过加成`);
         } else {
-            console.log(`[FISH233] 实体ID：${entity.type}难度等级：${worldDifficulty} 仅世界难度 - ` +
+            console.log(`[Reverie Foundry] 实体ID：${entity.type}难度等级：${worldDifficulty} 仅世界难度 - ` +
                 `生命: x${finalMultipliers.health}, 攻击: x${finalMultipliers.attack}`);
         }
     }

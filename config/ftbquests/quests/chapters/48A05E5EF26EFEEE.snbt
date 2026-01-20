@@ -21,6 +21,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["1A58667FA2440598"]
 			icon: {
 				id: "kubejs:atalphaite"
 			}
@@ -243,6 +244,21 @@
 			}]
 			x: 1.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "54207C49530C50BC"
+			rewards: [{
+				id: "056101AD6A6CD7BA"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "008CE044C39CDBA7"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -6.0d
 		}
 	]
 }

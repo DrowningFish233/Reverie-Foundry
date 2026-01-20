@@ -134,6 +134,51 @@ const trinkets = {
             { type: 'buff', textKey: "tooltip.melting_eyeball.effect.4" },
         ]
     },
+    'kubejs:mana_regeneration_band': {
+        descriptionKey: "tooltip.mana_regeneration_band.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.mana_regeneration_band.effect" },
+            { type: 'buff', textKey: "tooltip.mana_regeneration_band.effect.1" },
+            { type: 'buff', textKey: "tooltip.mana_regeneration_band.effect.2" },
+        ]
+    },
+    'kubejs:arcane_flower': {
+        descriptionKey: "tooltip.arcane_flower.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.arcane_flower.effect" },
+            { type: 'buff', textKey: "tooltip.arcane_flower.effect.1" },
+            { type: 'buff', textKey: "tooltip.arcane_flower.effect.2" },
+        ]
+    },
+    'kubejs:band_of_starpower': {
+        descriptionKey: "tooltip.band_of_starpower.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.band_of_starpower.effect" },
+        ]
+    },
+    'kubejs:magic_cuffs': {
+        descriptionKey: "tooltip.magic_cuffs.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.magic_cuffs.effect" },
+            { type: 'buff', textKey: "tooltip.magic_cuffs.effect.1" },
+        ]
+    },
+    'kubejs:magnet_flower': {
+        descriptionKey: "tooltip.magnet_flower.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.magnet_flower.effect" },
+            { type: 'buff', textKey: "tooltip.magnet_flower.effect.1" },
+            { type: 'buff', textKey: "tooltip.magnet_flower.effect.2" },
+        ]
+    },
+    'kubejs:mana_cloak': {
+        descriptionKey: "tooltip.mana_cloak.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.mana_cloak.effect" },
+            { type: 'buff', textKey: "tooltip.mana_cloak.effect.2" },
+            { type: 'special', textKey: "tooltip.mana_cloak.cooldown" },
+        ]
+    },
 };
 
 ItemEvents.modifyTooltips(event => {

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:warden",
+    "minecraft:elder_guardian",
+    "#c:bosses",
+    "iceandfire:fire_dragon",
+    "iceandfire:ice_dragon",
+    "iceandfire:lightning_dragon"
+  ]
+}

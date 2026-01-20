@@ -1,0 +1,114 @@
+{
+	autofocus_id: "7964EFBEAA0F5D57"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ftb"
+	group: ""
+	icon: {
+		components: {
+			"patchouli:book": "patchouli:rf_book"
+		}
+		id: "patchouli:guide_book"
+	}
+	id: "7CEAFF10D33DEDBC"
+	images: [{
+		height: 3.0d
+		image: "eternal_starlight:item/seeking_eye"
+		rotation: 0.0d
+		width: 3.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7964EFBEAA0F5D57"
+			rewards: [{
+				id: "60135BE7CA778D47"
+				item: {
+					components: {
+						"patchouli:book": "patchouli:rf_book"
+					}
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00F4B3FFF5644B7A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7964EFBEAA0F5D57"]
+			id: "0BB5CE1550F46002"
+			rewards: [{
+				id: "5EBF8667C54EAC34"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6C3ED5ACD37CDCC6"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0BB5CE1550F46002"
+				"7964EFBEAA0F5D57"
+			]
+			id: "784CD820CEC6F25B"
+			rewards: [{
+				id: "4DC89859210CFC7C"
+				item: {
+					count: 1
+					id: "minecraft:golden_apple"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "061EADF2EDD58507"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["784CD820CEC6F25B"]
+			hide_until_deps_complete: true
+			id: "084E0C839D91AEDC"
+			rewards: [{
+				auto: "no_toast"
+				command: "/learnSpell learn_all"
+				exclude_from_claim_all: true
+				icon: {
+					components: {
+						"irons_spellbooks:spell_container": {
+							data: [ ]
+							maxSpells: 8
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+					id: "irons_spellbooks:gold_spell_book"
+				}
+				id: "174E427410F45CF1"
+				permission_level: 4
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
+			tasks: [{
+				id: "5F633C276DD0D3A8"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+	]
+}

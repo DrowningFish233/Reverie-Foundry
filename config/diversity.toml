@@ -41,7 +41,7 @@
 "Sleep doesn't skip weather" = "RAIN_ONLY"			# [DISABLE, RAIN_ONLY, ALL_WEATHER]
 "Sneak through sweet berry" = true
 "Torch burns target" = true
-"Usable suspicious block" = true
+"Usable suspicious block" = false
 "Wet sponge dry in warm biome" = true
 "XP crops" = false
 

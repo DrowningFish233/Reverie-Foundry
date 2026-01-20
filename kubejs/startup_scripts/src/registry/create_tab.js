@@ -20,82 +20,130 @@ StartupEvents.modifyCreativeTab("kubejs:tab_3", (event) => {
 
 
 StartupEvents.registry("creative_mode_tab", event => {
-    let tab = event.create("kubejs:tab_2").icon(() => 'kubejs:purple_haze')
-    tab.displayName = Text.translatable("item_group.kubejs.alcohol")
-    tab.content(showRestrictedItems => [
-        "kubejs:lightingball",
-        "kubejs:iceball",
-        "kubejs:grape_beer",
-        "kubejs:fireball",
-        "kubejs:evergreen_gin",
-        "kubejs:everclear",
-        "kubejs:cinnamon_roll",
-        "kubejs:caribbean_rum",
-        "kubejs:bloody_mary",
-        "kubejs:star_beam_rye",
-        "kubejs:screwdriver",
-        "kubejs:rum",
-        "kubejs:red_wine",
-        "kubejs:purple_haze",
-        "kubejs:old_fashioned",
-        "kubejs:moscow_mule",
-        "kubejs:moonshine",
-        "kubejs:margarita",
-        "kubejs:white_wine",
-        "kubejs:whiskey",
-        "kubejs:vodka",
-        "kubejs:tequila_sunrise",
-        "kubejs:tequila",
-        "kubejs:hangover_tea"
-    ])
+    let tab = event.create("kubejs:tab_2")
+        .icon(() => 'kubejs:purple_haze')
+        .displayName(Text.translatable("item_group.kubejs.alcohol"))
+        .content(() => ['kubejs:purple_haze']);
 });
 
+StartupEvents.modifyCreativeTab('kubejs:tab_2', event => {
+    event.remove('kubejs:purple_haze')
+    const itemsInOrder = [
+        "kubejs:purple_haze",
+        "kubejs:evergreen_gin",
+        "kubejs:star_beam_rye",
+
+        "kubejs:vodka",
+        "kubejs:whiskey",
+        "kubejs:rum",
+        "kubejs:tequila",
+        "kubejs:moonshine",
+        "kubejs:everclear",
+
+        "kubejs:red_wine",
+        "kubejs:white_wine",
+
+        "kubejs:grape_beer",
+
+        "kubejs:bloody_mary",
+        "kubejs:caribbean_rum",
+        "kubejs:cinnamon_roll",
+        "kubejs:fireball",
+        "kubejs:lightingball",
+        "kubejs:iceball",
+        "kubejs:margarita",
+        "kubejs:moscow_mule",
+        "kubejs:screwdriver",
+        "kubejs:tequila_sunrise",
+        "kubejs:old_fashioned",
+
+        "kubejs:hangover_tea"
+    ];
+
+    itemsInOrder.forEach(item => {
+        event.add(item);
+    });
+});
+
+
 StartupEvents.registry("creative_mode_tab", event => {
-    let tab = event.create("kubejs:tab_3").icon(() => 'kubejs:fragment_of_the_universe')
-    tab.displayName = Text.translatable("item_group.kubejs.other")
-    tab.content(showRestrictedItems => [
-        "kubejs:bad_apple",
-        "kubejs:red_skull",
+    let tab = event.create("kubejs:tab_3")
+        .icon(() => 'kubejs:fragment_of_the_universe')
+        .displayName(Text.translatable("item_group.kubejs.other"))
+        .content(() => ['kubejs:bad_apple']);
+});
+StartupEvents.modifyCreativeTab('kubejs:tab_3', event => {
+    event.remove('kubejs:bad_apple')
+
+    // 按顺序排列的物品列表
+    const itemsInOrder = [
         "create:chromatic_compound",
         "create:shadow_steel",
         "create:refined_radiance",
-        "kubejs:papyrus_scarab",
-        "kubejs:fluid_sac",
-        "kubejs:biomass_liquid",
+
         "kubejs:blue_star",
         "kubejs:bluestar",
-        "kubejs:cooked_manflesh",
+        "kubejs:fragment_of_the_universe",
         "kubejs:draedon_heart",
+        "kubejs:heart_of_darkness",
+        "kubejs:low_heart_of_darkness",
+        "kubejs:low_hydra_heart",
+        "kubejs:raw_manflesh",
+        "kubejs:cooked_manflesh",
+        "kubejs:foul_flesh",
+        "kubejs:soul",
+        "kubejs:sin",
+
+        "kubejs:bad_apple",
+        "kubejs:red_skull",
+        "kubejs:red_shoes",
+        "kubejs:papyrus_scarab",
+        "kubejs:scroll_of_friendship",
+        "kubejs:necromantic_scroll",
+        "kubejs:totem_of_undying",
+        "kubejs:exploding_chocolate_bar",
+        "kubejs:melting_eyeball",
+        "kubejs:mimicream",
+
         "kubejs:emergency_sanity_elixir_a",
         "kubejs:emergency_sanity_elixir_b",
         "kubejs:emergency_sanity_elixir_y",
-        "kubejs:explosion",
-        "kubejs:foul_flesh",
-        "kubejs:fragment_of_the_universe",
-        "kubejs:heart_of_darkness",
-        "kubejs:lava_bible",
-        "kubejs:low_heart_of_darkness",
-        "kubejs:low_hydra_heart",
-        "kubejs:mana_flower",
-        "kubejs:mimicream",
-        "kubejs:miracle_fruit",
         "kubejs:omega_healing_potion",
-        "kubejs:raw_manflesh",
-        "kubejs:red_shoes",
-        "kubejs:sanity_curios",
-        "kubejs:scroll_of_friendship",
-        "kubejs:sin",
-        "kubejs:soul",
         "kubejs:supreme_healing_potion",
         "kubejs:supreme_mana_potion",
-        "kubejs:totem_of_undying",
-        "kubejs:melting_eyeball",
-        "kubejs:necromantic_scroll",
-        "kubejs:exploding_chocolate_bar"
+        "kubejs:miracle_fruit",
+        "kubejs:fluid_sac",
+        "kubejs:biomass_liquid",
+        "kubejs:lava_bible",
 
-    ])
+        "kubejs:starfury",
+        "kubejs:crowbar",
+        "kubejs:narrator",
+
+        "kubejs:spell_resistance_helmet",
+        "kubejs:spell_resistance_chestplate",
+        "kubejs:spell_resistance_leggings",
+        "kubejs:spell_resistance_boots",
+
+        "kubejs:azure_dawnbreaker_helmet",
+        "kubejs:azure_dawnbreaker_chestplate",
+        "kubejs:azure_dawnbreaker_leggings",
+        "kubejs:azure_dawnbreaker_boots",
+
+        "kubejs:mana_flower",
+        "kubejs:mana_regeneration_band",
+        "kubejs:arcane_flower",
+        "kubejs:mana_cloak",
+        "kubejs:band_of_starpower",
+        "kubejs:magnet_flower",
+        "kubejs:magic_cuffs",
+        "kubejs:sanity_curios"
+    ];
+
+    itemsInOrder.forEach(item => {
+        event.add(item);
+    });
 });
-
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
     event.remove("kubejs:red_skull");
     event.remove("kubejs:bad_apple");
@@ -135,7 +183,6 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
     event.remove("kubejs:scroll_of_friendship");
     event.remove("kubejs:heart_of_darkness");
     event.remove("kubejs:lava_bible");
-    event.remove("kubejs:mana_potion");
     event.remove("kubejs:totem_of_undying");
     event.remove("kubejs:red_shoes");
     event.remove("kubejs:fragment_of_the_universe");
@@ -166,7 +213,24 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
     event.remove("kubejs:drowning_fish");
     event.remove("kubejs:material_patchouli_generator");
     event.remove("kubejs:trait_fish");
-
+    event.remove("kubejs:starfury");
+    event.remove("kubejs:spell_resistance_helmet");
+    event.remove("kubejs:spell_resistance_chestplate");
+    event.remove("kubejs:spell_resistance_leggings");
+    event.remove("kubejs:spell_resistance_boots");
+    event.remove("kubejs:azure_dawnbreaker_helmet");
+    event.remove("kubejs:azure_dawnbreaker_chestplate");
+    event.remove("kubejs:azure_dawnbreaker_leggings");
+    event.remove("kubejs:azure_dawnbreaker_boots");
+    event.remove("kubejs:mana_flower");
+    event.remove("kubejs:mana_regeneration_band");
+    event.remove("kubejs:arcane_flower");
+    event.remove("kubejs:mana_cloak");
+    event.remove("kubejs:band_of_starpower");
+    event.remove("kubejs:magnet_flower");
+    event.remove("kubejs:magic_cuffs");
+    event.remove("kubejs:crowbar");
+    event.remove("kubejs:narrator");
 });
 
 StartupEvents.modifyCreativeTab("minecraft:op_blocks", (event) => {

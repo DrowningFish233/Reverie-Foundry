@@ -41,7 +41,7 @@ function getOriginalModTranslation(traitId, modName) {
                 }
             }
         } catch (e) {
-            console.log(`读取翻译文件失败 ${langPath}:`, e.message);
+            console.log(`[Reverie Foundry] 读取翻译文件失败 ${langPath}:`, e.message);
         }
     }
 
@@ -52,7 +52,7 @@ function getOriginalModTranslation(traitId, modName) {
  * 扫描 SilentGear 和 SilentGems 的原版词缀并生成帕秋莉手册条目
  */
 function generateSilentGearGemsTraitEntries() {
-    console.log('开始扫描 SilentGear/SilentGems 原版词缀');
+    console.log('[Reverie Foundry] 开始扫描 SilentGear/SilentGems 原版词缀');
 
     // 原版模组数据路径
     let modTraitsPaths = [
@@ -75,9 +75,9 @@ function generateSilentGearGemsTraitEntries() {
     let translations = {};
     try {
         translations = JsonIO.read(langPath) || {};
-        console.log('正在读取帕秋莉翻译文件');
+        console.log('[Reverie Foundry] 正在读取帕秋莉翻译文件');
     } catch (e) {
-        console.log('帕秋莉翻译文件不存在，将创建新文件');
+        console.log('[Reverie Foundry] 帕秋莉翻译文件不存在，将创建新文件');
     }
 
     let generatedCount = 0;
@@ -89,10 +89,10 @@ function generateSilentGearGemsTraitEntries() {
 
     // 扫描每个模组的词缀
     for (let mod of modTraitsPaths) {
-        console.log(`扫描模组: ${mod.mod} 路径: ${mod.path}`);
+        console.log(`[Reverie Foundry] 扫描模组: ${mod.mod} 路径: ${mod.path}`);
 
         if (!FilesJS.exists(mod.path)) {
-            console.log(`  词缀文件夹不存在: ${mod.path}`);
+            console.log(`[Reverie Foundry]  词缀文件夹不存在: ${mod.path}`);
             continue;
         }
 
@@ -101,12 +101,12 @@ function generateSilentGearGemsTraitEntries() {
         try {
             allFiles = FilesJS.listFiles(mod.path);
         } catch (e) {
-            console.log(`  读取词缀文件夹失败: ${mod.path}`);
+            console.log(`[Reverie Foundry]  读取词缀文件夹失败: ${mod.path}`);
             continue;
         }
 
         if (allFiles.length === 0) {
-            console.log(`  文件夹为空: ${mod.path}`);
+            console.log(`[Reverie Foundry]  文件夹为空: ${mod.path}`);
             continue;
         }
 
@@ -217,7 +217,7 @@ function generateSilentGearGemsTraitEntries() {
                 //console.log(`  已生成条目: ${mod.mod}_${traitId}`);
 
             } catch (e) {
-                console.log(`处理词缀文件失败: ${filePath}`, e);
+                console.log(`[Reverie Foundry] 处理词缀文件失败: ${filePath}`, e);
                 skippedCount++;
             }
         }
@@ -226,15 +226,15 @@ function generateSilentGearGemsTraitEntries() {
     // 写入翻译文件
     try {
         JsonIO.write(langPath, translations);
-        console.log(`帕秋莉翻译文件已更新: ${langPath}`);
+        console.log(`[Reverie Foundry] 帕秋莉翻译文件已更新: ${langPath}`);
     } catch (error) {
-        console.log(`写入帕秋莉翻译文件失败: ${error}`);
+        console.log(`[Reverie Foundry] 写入帕秋莉翻译文件失败: ${error}`);
     }
 
     // 统计信息
-    console.log('原版模组词缀生成完成');
-    console.log(`已生成条目: ${generatedCount} 个`);
-    console.log(`已跳过文件: ${skippedCount} 个`);
+    console.log('[Reverie Foundry] 原版模组词缀生成完成');
+    console.log(`[Reverie Foundry] 已生成条目: ${generatedCount} 个`);
+    console.log(`[Reverie Foundry] 已跳过文件: ${skippedCount} 个`);
 
     return {
         generated: generatedCount,

@@ -44,15 +44,6 @@
 		{
 			dependency: "66EA89C1E75509EB"
 			height: 5.0d
-			image: "kubejs:textures/gui/red4.png"
-			rotation: 0.0d
-			width: 5.0d
-			x: -0.5d
-			y: 0.0d
-		}
-		{
-			dependency: "66EA89C1E75509EB"
-			height: 5.0d
 			image: "kubejs:textures/gui/yellow1.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -76,7 +67,7 @@
 			rotation: 0.0d
 			width: 5.0d
 			x: -0.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependency: "66EA89C1E75509EB"
@@ -85,7 +76,7 @@
 			rotation: 0.0d
 			width: 5.0d
 			x: -0.5d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependency: "66EA89C1E75509EB"
@@ -156,6 +147,17 @@
 					id: "08D44DB184D9838B"
 					table_id: 8769696413750133854L
 					type: "choice"
+				}
+				{
+					command: "/rf give randomenchanted @p"
+					icon: {
+						id: "minecraft:writable_book"
+					}
+					id: "20D4846E3293C5AF"
+					permission_level: 4
+					silent: true
+					team_reward: false
+					type: "command"
 				}
 			]
 			tasks: [{
@@ -257,21 +259,6 @@
 			icon: {
 				id: "minecraft:small_amethyst_bud"
 			}
-			id: "01A177C5961D5AA7"
-			tasks: [{
-				id: "3F1777BEE4A29C52"
-				type: "checkmark"
-			}]
-			x: -2.5d
-			y: -2.0d
-		}
-		{
-			can_repeat: true
-			dependencies: ["66EA89C1E75509EB"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "minecraft:small_amethyst_bud"
-			}
 			id: "110C8BBFDBFBA375"
 			rewards: [
 				{
@@ -308,7 +295,7 @@
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
@@ -318,12 +305,23 @@
 				id: "minecraft:small_amethyst_bud"
 			}
 			id: "29833D624EE0F60A"
+			rewards: [{
+				auto: "enabled"
+				command: "/rf depression toggle"
+				icon: {
+					id: "minecraft:ender_eye"
+				}
+				id: "7CC7F792128C3592"
+				permission_level: 4
+				silent: true
+				type: "command"
+			}]
 			tasks: [{
 				id: "021398C940FCDA12"
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			can_repeat: true
@@ -349,7 +347,7 @@
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			can_repeat: true
@@ -382,12 +380,22 @@
 			y: -2.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["66EA89C1E75509EB"]
+			disable_toast: true
 			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:zombie_head"
 			}
 			id: "56CB359C8D5426A3"
+			rewards: [{
+				auto: "disabled"
+				exclude_from_claim_all: true
+				id: "66F7257F63391C43"
+				table_id: 6178956261800163341L
+				team_reward: false
+				type: "choice"
+			}]
 			tasks: [{
 				id: "735FCCA157A46245"
 				type: "checkmark"
@@ -396,6 +404,7 @@
 			y: -7.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["66EA89C1E75509EB"]
 			hide_until_deps_complete: true
 			icon: {
@@ -406,6 +415,9 @@
 				auto: "enabled"
 				command: "/kubejs stages clear @p"
 				exclude_from_claim_all: true
+				icon: {
+					id: "minecraft:enchanted_golden_apple"
+				}
 				id: "667762DC69B2AD5E"
 				ignore_reward_blocking: true
 				permission_level: 4

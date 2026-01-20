@@ -1,3 +1,4 @@
+
 PlayerEvents.tick(event => {
     const player = event.player;
     if (!player) return;
@@ -12,6 +13,7 @@ PlayerEvents.tick(event => {
         handleSanityAndDepravity(player, pData, sanityValue, depravityValue);
         handleSinMechanics(event, player, pData, sanityValue);
     }
+
     if (player.hasEffect("kubejs:withdrawal")) {
         if (tick % 92 == 0) {
             event.level[$playersound]

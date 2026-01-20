@@ -1,9 +1,9 @@
 const curiosEffects = new Map([
-    ['kubejs:bleed_curios', (player, event) => {
-        player.potionEffects.add("kubejs:bleed", 20 * 5, 0);
-    }],
     ['kubejs:blue_star', (player, event) => {
         player.potionEffects.add("minecraft:speed", 20 * 5, 1);
+    }],
+    ['kubejs:mana_regeneration_band', (player, event) => {
+        player.heal(0.2)
     }],
     ['kubejs:totem_of_undying', (player, event) => {
         player.potionEffects.add("minecraft:health_boost", 20 * 5, 4);

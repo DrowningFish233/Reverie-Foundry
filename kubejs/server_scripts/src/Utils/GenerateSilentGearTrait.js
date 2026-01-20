@@ -542,7 +542,7 @@ function GenerateSilentGearTrait(traitId, event, boolean, handler) {
         var filePath = `kubejs/data/kubejs/silentgear_traits/auto/${this.id}.json`
         JsonIO.write(filePath, this.config)
 
-        console.log(`特性已生成到: ${filePath}`)
+        console.log(`[Reverie Foundry] 特性已生成到: ${filePath}`)
     }
 
     // 如果立即构建，调用处理器
@@ -655,7 +655,7 @@ ItemEvents.firstLeftClicked('kubejs:drowning_fish', event => {
         );
 
     event.player.tell(message);
-    console.log("所有特性已生成完成！");
-    console.log(`文件已生成至：${folderPath}`);
+    console.log("[Reverie Foundry] 所有特性已生成完成！");
+    console.log(`[Reverie Foundry] 文件已生成至：${folderPath}`);
 
 });

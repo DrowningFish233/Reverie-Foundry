@@ -7,10 +7,10 @@ PlayerEvents.loggedIn(event => {
     let player_sanity = pData.getInt("sanity") || 0;
     event.server.scheduleInTicks(5, () => {
         $CooldownManager.cleanupPlayer(player);
-        console.log("[进入世界]已对冷却进行清理!");
+        console.log("[Reverie Foundry] [进入世界]已对冷却进行清理!");
         /*
         FilesJS.watchDirectory('kubejs/data/kubejs/silentgear_materials', (changedPath) => {
-            console.log('文件已更改:', changedPath);
+            console.log('[Reverie Foundry]文件已更改:', changedPath);
             generatePatchouliEntries();
         });
         */

@@ -65,7 +65,7 @@ function shouldKeepEntity(entity) {
     for (let pattern of CLEANUP_CONFIG.blacklist) {
         if (matchesWildcard(pattern, type)) {
             if (CLEANUP_CONFIG.debug) {
-                console.log(`[黑名单] 强制清理实体: ${type}`);
+                console.log(`[Reverie Foundry][黑名单] 强制清理实体: ${type}`);
             }
             return false; // 明确不保留
         }

@@ -5,6 +5,8 @@ mixin:
   bestVarLong: true
   # Enable new encryption optimizations on the client side
   clientEncrypt: true
+  # Optimized RconClient implementation
+  rconClient: false
 fix:
   issues128:
     # Fix Traffic Statistics

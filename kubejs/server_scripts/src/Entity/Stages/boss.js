@@ -18,7 +18,7 @@ const BOSS_MOBS = [
     ["astage/boss/ancient_remnant", "cataclysm:ancient_remnant", "first_kill_skeletron"],
     ["astage/boss/ignis", "cataclysm:ignis", "first_kill_skeletron"],
     ["astage/boss/netherite_monstrosity", "cataclysm:netherite_monstrosity", "first_kill_skeletron"],
-    ["astage/boss/maledictus", "cataclys18m:maledictus", "first_kill_skeletron"],
+    ["astage/boss/maledictus", "cataclysm:maledictus", "first_kill_skeletron"],
     ["astage/boss/hippocamtus", "cataclysm:hippocamtus", "first_kill_skeletron"],
     //末地戈伯后
     ["astage/boss/ender_dragon", "minecraft:ender_dragon", "first_kill_fire_boss"],
@@ -27,8 +27,6 @@ const BOSS_MOBS = [
     ["astage/boss/rift_weaver", "ftboceanmobs:rift_weaver", "first_kill_fire_boss"],
     //最终
     ["astage/boss/dark_doppelganger", "darkdoppelganger:dark_doppelganger", "first_kill_ender_guardian"],
-
-
 ];
 
 BOSS_MOBS.forEach(([id, mob, stage]) => {

@@ -1,18 +1,18 @@
 {
-	"name": "patchouli.gui.kubejs.a_gold_plate.name",
-	"icon": "alltheores:gold_plate",
+	"name": "patchouli.gui.kubejs.c_gold_plate.name",
+	"icon": "create:golden_sheet",
 	"category": "patchouli:kubejs_plate",
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
 			"item": {
-				"item": "alltheores:gold_plate"
+				"item": "create:golden_sheet"
 			},
-			"text": "patchouli.gui.kubejs.a_gold_plate.text"
+			"text": "patchouli.gui.kubejs.c_gold_plate.text"
 		},
 		{
 			"type": "patchouli:text",
-			"text": "patchouli.gui.kubejs.a_gold_plate"
+			"text": "patchouli.gui.kubejs.c_gold_plate"
 		}
 	]
 }

@@ -11,6 +11,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'irons_spellbooks:dragonskin_spell_book' })
     event.remove({ output: 'irons_spellbooks:druidic_spell_book' })
     event.remove({ output: 'irons_spellbooks:inscription_table' })
+    event.remove({ output: 'apothic_enchanting:occult_ender_lead' })
     event.remove({ output: 'endrem:exotic_eye' })
     event.remove({ output: 'silentgear:metal_press' })
     event.remove({ input: '#alltheores:ore_hammers' })

@@ -1,0 +1,20 @@
+{
+  "anvil_cost": 1000,
+  "description": {
+    "translate": "enchantment.apothic_spawners.capturing"
+  },
+  "effects": {},
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1000,
+    "per_level_above_first": 1000
+  },
+  "primary_items": [],
+  "slots": [],
+  "supported_items": [],
+  "weight": 1
+}

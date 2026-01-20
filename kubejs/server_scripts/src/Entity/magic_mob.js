@@ -129,7 +129,7 @@ function setupSpellCastingForEntity(entityType) {
                 try {
                     handleSpellCasting(mob, entityType)
                 } catch (error) {
-                    console.log(`Error in spell casting for ${entityType}: ${error}`)
+                    console.log(`[Reverie Foundry] Error in spell casting for ${entityType}: ${error}`)
                 }
             }
         )

@@ -67,7 +67,7 @@ function getDisplayNameFromKubejsLang(materialId) {
             }
         }
     } catch (e) {
-        console.log(`读取本地化文件失败: ${e.message}`);
+        console.log(`[Reverie Foundry]读取本地化文件失败: ${e.message}`);
     }
 
     return null;
@@ -149,7 +149,7 @@ function createPatchouliEntry(materialId, icon, category) {
  * 自动把材料内容转换为帕秋莉手册待翻译内容
  */
 function generatePatchouliEntries() {
-    console.log('开始扫描并生成帕秋莉手册条目');
+    console.log('[Reverie Foundry]开始扫描并生成帕秋莉手册条目');
 
     let materialsBasePath = 'kubejs/data/kubejs/silentgear_materials';
     let patchouliEnPath = 'patchouli_books/rf_book/en_us/entries';
@@ -173,9 +173,9 @@ function generatePatchouliEntries() {
     let translations = {};
     try {
         translations = JsonIO.read(langPath) || {};
-        console.log('正在读取帕秋莉翻译文件');
+        console.log('[Reverie Foundry]正在读取帕秋莉翻译文件');
     } catch (e) {
-        console.log('帕秋莉翻译文件不存在，将创建新文件');
+        console.log('[Reverie Foundry]帕秋莉翻译文件不存在，将创建新文件');
     }
 
     let generatedCount = 0;
@@ -271,7 +271,7 @@ function generatePatchouliEntries() {
                 //console.log(`已生成条目: ${materialId}`);
 
             } catch (e) {
-                console.log(`处理文件失败: ${filePath}`, e);
+                console.log(`[Reverie Foundry]处理文件失败: ${filePath}`, e);
                 skippedCount++;
             }
         }
@@ -280,16 +280,16 @@ function generatePatchouliEntries() {
     // 写入翻译文件
     try {
         JsonIO.write(langPath, translations);
-        console.log(`帕秋莉翻译文件已更新: ${langPath}`);
+        console.log(`[Reverie Foundry]帕秋莉翻译文件已更新: ${langPath}`);
     } catch (error) {
-        console.log(`写入帕秋莉翻译文件失败: ${error}`);
+        console.log(`[Reverie Foundry]写入帕秋莉翻译文件失败: ${error}`);
     }
 
     // 统计信息
-    console.log('生成完成');
-    console.log(`已生成条目: ${generatedCount} 个`);
-    console.log(`从本地化文件获取名称: ${langUsedCount} 个`);
-    console.log(`已跳过文件: ${skippedCount} 个`);
+    console.log('[Reverie Foundry] 生成完成');
+    console.log(`[Reverie Foundry] 已生成条目: ${generatedCount} 个`);
+    console.log(`[Reverie Foundry] 从本地化文件获取名称: ${langUsedCount} 个`);
+    console.log(`[Reverie Foundry] 已跳过文件: ${skippedCount} 个`);
 
     return {
         generated: generatedCount,

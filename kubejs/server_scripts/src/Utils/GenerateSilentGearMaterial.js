@@ -383,7 +383,7 @@ function GenerateSilentGearMaterial(materialId, event, boolean, handler) {
         var filePath = `kubejs/data/kubejs/silentgear_materials/auto/${this.id}.json`
         JsonIO.write(filePath, this.config)
 
-        console.log(`材料已生成到: ${filePath}`)
+        console.log(`[Reverie Foundry] 材料已生成到: ${filePath}`)
     }
 
     if (this.boolean && this.handler) {
@@ -498,7 +498,7 @@ ItemEvents.firstRightClicked('kubejs:drowning_fish', event => {
         );
 
     event.player.tell(message);
-    console.log("所有材料已生成完成！");
-    console.log(`文件已生成至：${folderPath}`);
+    console.log("[Reverie Foundry] 所有材料已生成完成！");
+    console.log(`[Reverie Foundry] 文件已生成至：${folderPath}`);
 
 });

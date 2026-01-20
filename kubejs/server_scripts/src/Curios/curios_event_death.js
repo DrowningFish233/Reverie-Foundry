@@ -9,18 +9,24 @@ EntityEvents.death(event => {
         for (let slot = 0; slot < curios.getSlots(); slot++) {
             let item = curios.getStackInSlot(slot);
             if (curios_death_event[item.id]) {
-                curios_death_event[item.id](event, curios, slot, item);
+                curios_death_event[item.id](event, curios, slot, item, player);
             }
         }
     });
 });
 
 const curios_death_event = {
+    /*
     'kubejs:bleed_curios': function (event, curios, slot, item) {
         if (!entity_curios_Boss.some(ctx => ctx == event.entity.getType())) {
             return;
         }
         curios.setStackInSlot(slot, Item.of('kubejs:none_curios'));
+    },
+    */
+    'kubejs:magnet_flower': function (event, curios, slot, item, player) {
+        getPlayerMagicData(player).addMana(10)
+        getPlayerMagicData(player).addMana(-1)
     }
 };
 

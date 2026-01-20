@@ -65,4 +65,4 @@ general = {disable_mod = false, auto_start = false, space_modules = true, shadow
 	name_color = 43775
 	value_color = 16777045
 	enabled = true
-	lines = {targeted_block = true, id_block = true, block_states = true, block_tags = true, nothing = true, targeted_fluid = true, id_fluid = true, fluid_states = true, fluid_tags = true, nothing2 = true, targeted_entity = true}
+	lines = {targeted_block = true, id_block = true, block_states = true, block_tags = false, nothing = true, targeted_fluid = true, id_fluid = true, fluid_states = true, fluid_tags = false, nothing2 = true, targeted_entity = true}

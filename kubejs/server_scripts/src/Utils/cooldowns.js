@@ -93,8 +93,8 @@ const $CooldownManager = {
             "acril_ingot_COOLDOWN_KEY",
             "garnet_guiding_bolt",
             "exp_to_death_cd",
-            "echo_ingot_COOLDOWN_KEY"
-            // 可以继续添加其他冷却键名
+            "echo_ingot_COOLDOWN_KEY",
+            "mana_cloak_COOLDOWN_KEY"
         ];
 
         // 清理冷却数据

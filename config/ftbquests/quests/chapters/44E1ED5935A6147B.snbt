@@ -1,0 +1,999 @@
+{
+	autofocus_id: "162B974C78D8FB42"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "44E1ED5935A6147B"
+	group: "7F00D0D8C7C916A0"
+	hide_quest_until_deps_complete: true
+	id: "44E1ED5935A6147B"
+	images: [
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: -25.0d
+			y: -3.0d
+		}
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 26.0d
+			y: -3.0d
+		}
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 0.5d
+			y: -28.5d
+		}
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 26.0d
+			y: -28.5d
+		}
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: -25.0d
+			y: -28.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0BA8FDE1647AA593"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 5
+				id: "4C61254E5F80BE52"
+				item: {
+					count: 1
+					id: "minecraft:golden_carrot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "13B37FFF4E9065DB"
+				optional_task: true
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 1
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			id: "0A1FF9CCFB4FEA6C"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 5
+				id: "487475E1D2A988C9"
+				item: {
+					count: 1
+					id: "minecraft:golden_carrot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A77A2E511F3DB1F"
+				optional_task: true
+				stat: "minecraft:player_kills"
+				type: "stat"
+				value: 1
+			}]
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5EA666E0258C8365"]
+			id: "7D2FD37CB2502689"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "69FE773FFAC8B3FB"
+					table_id: 7296587374335486902L
+					type: "choice"
+				}
+				{
+					id: "0B1878E3EB3AC4FD"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			tasks: [{
+				id: "7E301EE04B55CCD2"
+				stat: "minecraft:damage_taken"
+				type: "stat"
+				value: 100000
+			}]
+			x: 4.0d
+			y: -13.5d
+		}
+		{
+			id: "162B974C78D8FB42"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "05D3198B1B1AA89C"
+				item: {
+					count: 1
+					id: "minecraft:emerald_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "67282B81EE816626"
+				stat: "thief:caught_at_light_thefts_in_village"
+				type: "stat"
+				value: 3
+			}]
+			x: 1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["162B974C78D8FB42"]
+			id: "0342F51828C72B82"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 3
+				id: "107FF2DE8683345B"
+				item: {
+					count: 1
+					id: "minecraft:emerald_block"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "17DC6B62F25A876F"
+				stat: "thief:caught_at_medium_thefts_in_village"
+				type: "stat"
+				value: 3
+			}]
+			x: 1.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0342F51828C72B82"]
+			id: "063DC4EF4AA35185"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					count: 5
+					id: "2CDDC3D55BE055B2"
+					item: {
+						count: 1
+						id: "minecraft:emerald_block"
+					}
+					type: "item"
+				}
+				{
+					id: "38AE6285FD54E9CB"
+					item: {
+						count: 1
+						id: "irons_spellbooks:emerald_stoneplate_ring"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "10BCE85C9E1DBE6A"
+				stat: "thief:caught_at_heavy_thefts_in_village"
+				type: "stat"
+				value: 3
+			}]
+			x: 1.0d
+			y: -13.5d
+		}
+		{
+			id: "13C542FCBB189AEA"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 4
+				id: "6E216D9E75079FF8"
+				item: {
+					components: {
+						"minecraft:potion_contents": {
+							potion: "minecraft:strong_swiftness"
+						}
+					}
+					count: 1
+					id: "minecraft:potion"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1440232356993C8D"
+				stat: "minecraft:sprint_one_cm"
+				type: "stat"
+				value: 10000
+			}]
+			x: 7.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["13C542FCBB189AEA"]
+			id: "18CD31A8B3040F77"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "1DC86AE75F9952ED"
+					item: {
+						components: {
+							"minecraft:potion_contents": {
+								potion: "minecraft:strong_swiftness"
+							}
+						}
+						count: 1
+						id: "minecraft:potion"
+					}
+					type: "item"
+				}
+				{
+					id: "33A4D8D7D74FAEAA"
+					item: {
+						components: {
+							"confluence_magic_lib:nbt": { }
+						}
+						count: 1
+						id: "terra_curio:hermes_boots"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "21FB255C8E2452D8"
+				stat: "minecraft:sprint_one_cm"
+				type: "stat"
+				value: 100000
+			}]
+			x: 7.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["18CD31A8B3040F77"]
+			id: "4AFE778B9A79DA33"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "483761891221AE4C"
+				item: {
+					components: {
+						"confluence_magic_lib:nbt": { }
+					}
+					count: 1
+					id: "terra_curio:ambhipian_boots"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D098C621A2ABAAD"
+				stat: "minecraft:sprint_one_cm"
+				type: "stat"
+				value: 1000000
+			}]
+			x: 7.0d
+			y: -13.5d
+		}
+		{
+			id: "11E9AE8529E6FBF2"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 32
+				id: "705CF0D29264E975"
+				item: {
+					count: 1
+					id: "minecraft:emerald"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "778BD0670A86B452"
+				stat: "minecraft:raid_win"
+				type: "stat"
+				value: 1
+			}]
+			x: 10.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["11E9AE8529E6FBF2"]
+			id: "66D8D31B50D06630"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 64
+				id: "79EFF613BC440B56"
+				item: {
+					count: 1
+					id: "minecraft:emerald"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00040CF0C3149A85"
+				stat: "minecraft:raid_win"
+				type: "stat"
+				value: 3
+			}]
+			x: 10.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["66D8D31B50D06630"]
+			id: "1D08BC5C6C98F4D7"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 256
+				id: "39F4B9C42ED96A86"
+				item: {
+					count: 1
+					id: "minecraft:emerald"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "25F5582895D9FEDB"
+				stat: "minecraft:raid_win"
+				type: "stat"
+				value: 5
+			}]
+			x: 10.0d
+			y: -13.5d
+		}
+		{
+			id: "14D4101B90CF5417"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "064EB7170333EA64"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+			tasks: [{
+				id: "646FFF0939E0C603"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 72000
+			}]
+			x: 16.0d
+			y: -7.5d
+		}
+		{
+			id: "2075CDEF8E217AEA"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1123A9093D4F4311"
+					table_id: 3380168053176366874L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "38CB3914524A3923"
+					table_id: 3380168053176366874L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "0BF36CE8A7DE806F"
+				stat: "champions:champion_mobs_killed"
+				type: "stat"
+				value: 1
+			}]
+			x: 13.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2075CDEF8E217AEA"]
+			id: "1E5FC0856DAA4E01"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2DCD5907E520A83A"
+					table_id: 3380168053176366874L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "48A90B1A76746A9F"
+					table_id: 3380168053176366874L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "55DFDDF9B65C081E"
+					table_id: 3380168053176366874L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6DFCAFC7C40D8D04"
+					table_id: 3380168053176366874L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "764C95BBB537C782"
+				stat: "champions:champion_mobs_killed"
+				type: "stat"
+				value: 100
+			}]
+			x: 13.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1E5FC0856DAA4E01"]
+			id: "42F6170490C96218"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "65781B848B06928D"
+				type: "xp_levels"
+				xp_levels: 100
+			}]
+			tasks: [{
+				id: "06436B76600732CE"
+				stat: "champions:champion_mobs_killed"
+				type: "stat"
+				value: 1000
+			}]
+			x: 13.0d
+			y: -13.5d
+		}
+		{
+			id: "7EB97CBE6483FCF7"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0CCB3BEEE2A2E857"
+				item: {
+					count: 1
+					id: "minecraft:phantom_membrane"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3AC8BD39F6CB9AEB"
+				stat: "minecraft:time_since_rest"
+				type: "stat"
+				value: 36000
+			}]
+			x: 19.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7EB97CBE6483FCF7"]
+			id: "633B88042B030B5E"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 32
+				id: "6A8AF076F45B51DC"
+				item: {
+					count: 1
+					id: "minecraft:phantom_membrane"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "46FFAF169FCC585F"
+				stat: "minecraft:time_since_rest"
+				type: "stat"
+				value: 72000
+			}]
+			x: 19.0d
+			y: -13.5d
+		}
+		{
+			id: "7306BEC7A3E98304"
+			invisible: true
+			rewards: [{
+				id: "09F77AAA7030985C"
+				item: {
+					count: 1
+					id: "allthemodium:allthemodium_apple"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F3B930711F7B310"
+				stat: "minecraft:time_since_death"
+				type: "stat"
+				value: 36000
+			}]
+			x: -16.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7306BEC7A3E98304"]
+			id: "41555B67D70627EB"
+			invisible: true
+			rewards: [
+				{
+					id: "5AD767D2D58DA236"
+					item: {
+						count: 1
+						id: "kubejs:heart_of_darkness"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3EA1B1B8A0F5D66F"
+					item: {
+						count: 1
+						id: "minecraft:enchanted_golden_apple"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "31708184FDFCB29E"
+				stat: "minecraft:time_since_death"
+				type: "stat"
+				value: 144000
+			}]
+			x: -16.5d
+			y: -13.5d
+		}
+		{
+			id: "0FB734FE90642C9F"
+			invisible: true
+			rewards: [{
+				id: "5139E1A9F1F3505E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "1D76339CCCFBFA2F"
+				stat: "minecraft:enchant_item"
+				type: "stat"
+				value: 1
+			}]
+			x: -7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0FB734FE90642C9F"]
+			id: "180E4385AFA285EC"
+			invisible: true
+			rewards: [{
+				id: "587CD0BE8647C516"
+				type: "xp"
+				xp: 200
+			}]
+			tasks: [{
+				id: "5B3757BF686C6B9A"
+				stat: "minecraft:enchant_item"
+				type: "stat"
+				value: 10
+			}]
+			x: -7.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["180E4385AFA285EC"]
+			id: "7B2EE05D7AAFD40E"
+			invisible: true
+			rewards: [
+				{
+					id: "0A9A74C05A95EC77"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "1D463C0FA014F1C7"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			tasks: [{
+				id: "75BD8E33F92A1E66"
+				stat: "minecraft:enchant_item"
+				type: "stat"
+				value: 100
+			}]
+			x: -7.5d
+			y: -13.5d
+		}
+		{
+			id: "2E4663AB84467ED4"
+			invisible: true
+			rewards: [{
+				id: "198A7C552E66A62E"
+				item: {
+					count: 1
+					id: "terra_curio:tally_counter"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3ABB75497C067489"
+				stat: "minecraft:damage_dealt"
+				type: "stat"
+				value: 1000
+			}]
+			x: -10.5d
+			y: -7.5d
+		}
+		{
+			id: "57045442B4763EC9"
+			invisible: true
+			rewards: [
+				{
+					id: "6E9AE8C0FF4F2FB3"
+					item: {
+						count: 1
+						id: "apothic_enchanting:prismatic_web"
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "6995A2D5DEA8081F"
+					item: {
+						count: 1
+						id: "minecraft:prismarine_shard"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5ACE3B75D7BC2CF4"
+					item: {
+						count: 1
+						id: "minecraft:prismarine"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2D478A7B48D5F2E1"
+				stat: "minecraft:swim_one_cm"
+				type: "stat"
+				value: 100
+			}]
+			x: -13.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["57045442B4763EC9"]
+			id: "57D76B1B33C57F9F"
+			invisible: true
+			rewards: [
+				{
+					count: 4
+					id: "48856BF49A3A638A"
+					item: {
+						count: 1
+						id: "apothic_enchanting:prismatic_web"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "38186542D3EB25A7"
+					item: {
+						count: 1
+						id: "minecraft:prismarine_crystals"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "106C787592BBA645"
+					item: {
+						count: 1
+						id: "minecraft:prismarine_shard"
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "65961E2926931315"
+					item: {
+						count: 1
+						id: "minecraft:prismarine"
+					}
+					type: "item"
+				}
+				{
+					id: "4E7A495084ACC178"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			tasks: [{
+				id: "167B3ECE4F46D85F"
+				stat: "minecraft:swim_one_cm"
+				type: "stat"
+				value: 10000
+			}]
+			x: -13.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["2E4663AB84467ED4"]
+			id: "2D3696ABFDF5F460"
+			invisible: true
+			rewards: [{
+				count: 16
+				id: "5CC5C647DE495190"
+				item: {
+					count: 1
+					id: "kubejs:exploding_chocolate_bar"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F90B7E4368179AA"
+				stat: "minecraft:damage_dealt"
+				type: "stat"
+				value: 10000
+			}]
+			x: -10.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["2D3696ABFDF5F460"]
+			id: "218EF6EB1EC8E6AE"
+			invisible: true
+			rewards: [{
+				id: "4F41A5E22A01BF01"
+				item: {
+					count: 1
+					id: "kubejs:bad_apple"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "0B00A397C43D8408"
+				stat: "minecraft:damage_dealt"
+				type: "stat"
+				value: 100000
+			}]
+			x: -10.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["0BA8FDE1647AA593"]
+			id: "24C387A38C376961"
+			invisible: true
+			rewards: [{
+				count: 3
+				id: "4164687DFDAFC717"
+				item: {
+					count: 1
+					id: "minecraft:totem_of_undying"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "51AA3EC71F2350FB"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 10
+			}]
+			x: -4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["24C387A38C376961"]
+			id: "17695E30CD9EB522"
+			invisible: true
+			rewards: [
+				{
+					id: "4C42EA777AD50EB2"
+					item: {
+						count: 1
+						id: "friendsandfoes:totem_of_freezing"
+					}
+					type: "item"
+				}
+				{
+					id: "2461AF01B8BEF459"
+					item: {
+						count: 1
+						id: "friendsandfoes:totem_of_illusion"
+					}
+					type: "item"
+				}
+				{
+					id: "12459E37FC990B58"
+					item: {
+						count: 1
+						id: "minecraft:totem_of_undying"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "38F6C0E5102574E6"
+				stat: "minecraft:deaths"
+				type: "stat"
+				value: 100
+			}]
+			x: -4.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["0A1FF9CCFB4FEA6C"]
+			id: "1C22E01E9591DC36"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					count: 10
+					id: "15DC25FCDF818FE4"
+					item: {
+						count: 1
+						id: "minecraft:golden_carrot"
+					}
+					type: "item"
+				}
+				{
+					id: "5A2F04F948CE7044"
+					item: {
+						count: 1
+						id: "kubejs:randomweapon"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2F97429DD4F82D1B"
+				optional_task: true
+				stat: "minecraft:player_kills"
+				type: "stat"
+				value: 10
+			}]
+			x: -2.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1C22E01E9591DC36"]
+			id: "7C7A1613FB9C97E8"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					count: 32
+					id: "56C9AB9467DFE8AC"
+					item: {
+						count: 1
+						id: "minecraft:golden_carrot"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "78F04BD7E88533B4"
+					item: {
+						count: 1
+						id: "kubejs:randomweapon"
+					}
+					type: "item"
+				}
+				{
+					id: "48AA196263C9A3BB"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			tasks: [{
+				id: "2DF8233971E23D51"
+				optional_task: true
+				stat: "minecraft:player_kills"
+				type: "stat"
+				value: 100
+			}]
+			x: -2.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["7AE585BCAB17340A"]
+			id: "5EA666E0258C8365"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					id: "32B22A3F7C8F50FC"
+					item: {
+						count: 1
+						id: "silentgear:shield_blueprint"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2518E3DB39E83E07"
+					table_id: 7296587374335486902L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "2F15B5FE7F0792AE"
+				stat: "minecraft:damage_taken"
+				type: "stat"
+				value: 10000
+			}]
+			x: 4.0d
+			y: -10.5d
+		}
+		{
+			id: "7AE585BCAB17340A"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "53568092943C4FFD"
+				item: {
+					count: 1
+					id: "terra_curio:cobalt_shield"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "66B0F98AA5ECC0D1"
+				stat: "minecraft:damage_taken"
+				type: "stat"
+				value: 1000
+			}]
+			x: 4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["14D4101B90CF5417"]
+			id: "05F6670AAFE979C5"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "1CED910F00C13602"
+				type: "xp_levels"
+				xp_levels: 50
+			}]
+			tasks: [{
+				id: "6AEB682A722900A0"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 144000
+			}]
+			x: 16.0d
+			y: -13.5d
+		}
+	]
+}

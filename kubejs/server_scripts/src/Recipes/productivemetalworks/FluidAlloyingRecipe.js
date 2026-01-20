@@ -340,4 +340,18 @@ ServerEvents.recipes(event => {
             6
         )
     );
+
+    register(
+        new FluidAlloyingRecipe(
+            [
+                createFluid("minecraft:water", 5),
+                createFluid("kubejs:blood_orb", 5),
+            ],
+            {
+                amount: 10,
+                id: "irons_spellbooks:blood"
+            },
+            6
+        )
+    );
 });

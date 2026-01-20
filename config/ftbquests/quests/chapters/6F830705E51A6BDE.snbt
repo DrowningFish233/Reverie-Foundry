@@ -24,6 +24,7 @@
 					type: "choice"
 				}
 				{
+					auto: "enabled"
 					id: "7288A9CC1A7ADD0A"
 					item: {
 						components: {
@@ -144,8 +145,8 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
 			id: "0840A780542BF10B"
@@ -153,8 +154,640 @@
 				id: "7CCEF302E660A068"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 4.0d
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["2DD51904F4629516"]
+			id: "330C44884F7FF5A2"
+			rewards: [{
+				id: "48FCF6CA675ED2DE"
+				item: {
+					components: {
+						"patchouli:book": "productivemetalworks:guide"
+					}
+					count: 1
+					id: "patchouli:guide_book"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4297DDBDD7B98C85"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_controllers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2DD51904F4629516"]
+			id: "0AD556BD2B2A47D2"
+			rewards: [{
+				count: 4
+				id: "06F808D9916E4E25"
+				item: {
+					count: 1
+					id: "productivemetalworks:black_foundry_drain"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "34AE1A4F7B79CDEE"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_drains)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["330C44884F7FF5A2"]
+			id: "7A3C6671435E2BA9"
+			rewards: [{
+				count: 2
+				id: "7FFE060BEC05C9B8"
+				item: {
+					count: 1
+					id: "productivemetalworks:black_foundry_tank"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2AB642EE8FD15F3A"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_tanks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1A58667FA2440598"]
+			id: "2DD51904F4629516"
+			rewards: [{
+				count: 16
+				id: "71FD3B147AEA6A8C"
+				item: {
+					count: 1
+					id: "productivemetalworks:black_fire_bricks"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EE54064FF25F094"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:fire_bricks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2DD51904F4629516"]
+			id: "4A4B782308B84A50"
+			rewards: [{
+				count: 8
+				id: "137465B425E4B8E0"
+				item: {
+					count: 1
+					id: "productivemetalworks:black_foundry_window"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "104407FC50682D93"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_windows)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["330C44884F7FF5A2"]
+			id: "4B6AD3BEF9352961"
+			rewards: [{
+				count: 2
+				id: "5FB61D955ABCB0DA"
+				item: {
+					count: 1
+					id: "productivemetalworks:black_foundry_capacitor"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B9FE5D428C26C37"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_capacitors)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A3C6671435E2BA9"]
+			hide_dependent_lines: true
+			id: "3DEBEF47CB42C180"
+			rewards: [{
+				count: 4
+				id: "27CE96C29F1D1BD1"
+				item: {
+					count: 1
+					id: "productivemetalworks:liquid_heating_coil"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "73796044E6D4472E"
+				item: { count: 1, id: "productivemetalworks:liquid_heating_coil" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4B6AD3BEF9352961"]
+			id: "46318C4037942B1E"
+			rewards: [{
+				count: 4
+				id: "783B8E99488FF988"
+				item: {
+					count: 1
+					id: "productivemetalworks:powered_heating_coil"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "02EB486B4EADAE97"
+				item: { count: 1, id: "productivemetalworks:powered_heating_coil" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["46318C4037942B1E"]
+			id: "79B12E63C90B3C61"
+			rewards: [{
+				count: 4
+				id: "2D3C004A28AD6259"
+				item: {
+					count: 1
+					id: "productivemetalworks:high_powered_heating_coil"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FCB8A877E73CCE7"
+				item: { count: 1, id: "productivemetalworks:high_powered_heating_coil" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["330C44884F7FF5A2"]
+			id: "2037EF7CC87E7974"
+			rewards: [{
+				id: "33EE777E35FE1C23"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			tasks: [{
+				id: "55B2D8ABBF78AAA5"
+				item: { count: 1, id: "productivemetalworks:foundry_tap" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7E11D3149C613671"]
+			id: "701467707AD4CCE8"
+			tasks: [{
+				id: "20DF8B1BE6705AFE"
+				item: { count: 1, id: "productivemetalworks:gem_cast" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7E11D3149C613671"]
+			id: "2C5C9488AA4912AD"
+			tasks: [{
+				id: "3E7CAB7FA7292305"
+				item: { count: 1, id: "productivemetalworks:gear_cast" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7E11D3149C613671"]
+			id: "6C0395DDA06A6B98"
+			tasks: [{
+				id: "25A5EE952C8FF029"
+				item: { count: 1, id: "productivemetalworks:plate_cast" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7E11D3149C613671"]
+			id: "4015BC05F1AAD9EB"
+			tasks: [{
+				id: "55744BB678436478"
+				item: { count: 1, id: "productivemetalworks:rod_cast" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7E11D3149C613671"]
+			id: "6F5E956AAA173600"
+			tasks: [{
+				id: "2055A93D27FB8781"
+				item: { count: 1, id: "productivemetalworks:ingot_cast" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7E11D3149C613671"]
+			id: "62F882E969E15846"
+			tasks: [{
+				id: "2F8F4D4813F092D7"
+				item: { count: 1, id: "productivemetalworks:nugget_cast" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2037EF7CC87E7974"]
+			id: "1739A8FBB4773234"
+			tasks: [{
+				id: "225B17DDFDEFBCA6"
+				item: { count: 1, id: "productivemetalworks:casting_basin" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2037EF7CC87E7974"]
+			hide_dependent_lines: true
+			id: "7E11D3149C613671"
+			tasks: [{
+				id: "3BEE44D17669B179"
+				item: { count: 1, id: "productivemetalworks:casting_table" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3DEBEF47CB42C180"]
+			id: "3FD839536F2A224B"
+			tasks: [
+				{
+					disable_toast: true
+					fluid: {
+						amount: 1000
+						id: "eternal_starlight:ether"
+					}
+					id: "6B0FE97AF89761C7"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "0E6662C2E723B71E"
+					type: "checkmark"
+				}
+			]
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3DEBEF47CB42C180"]
+			id: "67F1B7217A46DF7E"
+			tasks: [
+				{
+					disable_toast: true
+					fluid: {
+						amount: 1000
+						id: "allthemodium:soul_lava"
+					}
+					id: "7D35A964DD47D59B"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "67A8A0FF953C5802"
+					type: "checkmark"
+				}
+			]
+			x: -12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3DEBEF47CB42C180"]
+			id: "77CA1E58A49F362C"
+			tasks: [
+				{
+					disable_toast: true
+					fluid: {
+						amount: 1000
+						id: "minecraft:lava"
+					}
+					id: "7C5F359D8EF84047"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "4E2EB0950B854BEE"
+					type: "checkmark"
+				}
+			]
+			x: -13.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3DEBEF47CB42C180"]
+			id: "0ED82FFAE99D2480"
+			tasks: [
+				{
+					disable_toast: true
+					fluid: {
+						amount: 1000
+						id: "kubejs:gobber2_foo"
+					}
+					id: "32364BF3F6C66F2A"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "070EC456CE03EABE"
+					type: "checkmark"
+				}
+			]
+			x: -13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3DEBEF47CB42C180"]
+			id: "609ED89F7E454DCA"
+			tasks: [
+				{
+					disable_toast: true
+					fluid: {
+						amount: 1000
+						id: "kubejs:gobber2_foo_nether"
+					}
+					id: "29880BF93EE8CD61"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "6E37A78A24013057"
+					type: "checkmark"
+				}
+			]
+			x: -13.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3DEBEF47CB42C180"]
+			id: "4923304658C6BF41"
+			tasks: [
+				{
+					disable_toast: true
+					fluid: {
+						amount: 1000
+						id: "kubejs:gobber2_foo_end"
+					}
+					id: "2268E92C27C908CC"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "085298BE6D8F3A4A"
+					type: "checkmark"
+				}
+			]
+			x: -12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1A58667FA2440598"]
+			dependency_requirement: "one_started"
+			id: "1C3C513FE9686B55"
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				id: "0EBC68786D9B4CF3"
+				team_reward: false
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			tasks: [{
+				count: 12L
+				id: "1CE591BED0249B67"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:foods)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1A58667FA2440598"]
+			id: "7BACE6601BC4DFED"
+			tasks: [{
+				id: "23914B857D9F0C4A"
+				item: { count: 1, id: "betteremeralds:wallet" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			id: "63243E9D3837E394"
+			invisible: true
+			tasks: [{
+				icon: {
+					id: "minecraft:emerald"
+				}
+				id: "17D165E1F90F67DA"
+				observe_type: 5
+				timer: 10L
+				to_observe: "deathtaxes:scavenger"
+				type: "observation"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			id: "1CF5470D6EC71F0C"
+			invisible: true
+			tasks: [{
+				entity: "deathtaxes:scavenger"
+				id: "523CF30E94BAE0ED"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1A58667FA2440598"]
+			hide_dependency_lines: true
+			id: "50E57652755EC341"
+			tasks: [{
+				id: "5B817A01DAC6755E"
+				item: { count: 1, id: "minecraft:enchanting_table" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["50E57652755EC341"]
+			id: "6806A98E4CD7F885"
+			tasks: [{
+				id: "472193F96DE1F2D8"
+				item: { count: 1, id: "apothic_enchanting:library" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50E57652755EC341"]
+			id: "39F72CD10646574F"
+			tasks: [{
+				id: "3CBB932AAD6CC7EA"
+				item: { components: { "ftbfiltersystem:filter": "or(item(apothic_enchanting:helmet_tome)item(apothic_enchanting:chestplate_tome)item(apothic_enchanting:leggings_tome)item(apothic_enchanting:boots_tome)item(apothic_enchanting:weapon_tome)item(apothic_enchanting:bow_tome)item(apothic_enchanting:pickaxe_tome)item(apothic_enchanting:fishing_tome)item(apothic_enchanting:other_tome))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50E57652755EC341"]
+			id: "553B4B865F0C526B"
+			tasks: [{
+				id: "72525728E711E6C8"
+				item: { count: 1, id: "apothic_enchanting:prismatic_web" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			id: "737AC021C2A2CF1D"
+			tasks: [{
+				id: "7DBD26DB081FEF00"
+				item: { count: 1, id: "apothic_enchanting:scrap_tome" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["737AC021C2A2CF1D"]
+			id: "00A5A64046D3B0EF"
+			tasks: [{
+				id: "73C6E570FAF1C170"
+				item: { count: 1, id: "apothic_enchanting:improved_scrap_tome" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00A5A64046D3B0EF"]
+			id: "7FF37718528D1FB5"
+			tasks: [{
+				id: "4A63AB3C6AB61525"
+				item: { count: 1, id: "apothic_enchanting:extraction_tome" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			id: "5AEF01E9FF0A0727"
+			tasks: [{
+				id: "5A09DD4711CF623F"
+				item: { count: 1, id: "apothic_enchanting:flimsy_ender_lead" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5AEF01E9FF0A0727"]
+			id: "65823964A5871AED"
+			tasks: [{
+				id: "6CB5A3A6C1D7CFBF"
+				item: { count: 1, id: "apothic_enchanting:ender_lead" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["65823964A5871AED"]
+			id: "66F8BBB3BC24A7FF"
+			tasks: [{
+				id: "3A8E41FC12594252"
+				item: { count: 1, id: "apothic_enchanting:occult_ender_lead" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["50E57652755EC341"]
+			id: "22AFF77169DC5A28"
+			tasks: [{
+				id: "039FE05CAF91D22E"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(apothic_enchanting:infused_shelves))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["50E57652755EC341"]
+			id: "486FF12887B452B7"
+			tasks: [{
+				id: "62D344C0C900820E"
+				item: { count: 1, id: "apothic_enchanting:filtering_shelf" }
+				type: "item"
+			}]
+			x: 17.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["50E57652755EC341"]
+			id: "3BD86FD3D62946C6"
+			tasks: [{
+				id: "714747D6C3FBBCE2"
+				item: { components: { "ftbfiltersystem:filter": "or(item(apothic_enchanting:hellshelf)item(apothic_enchanting:infused_hellshelf)item(apothic_enchanting:blazing_hellshelf)item(apothic_enchanting:glowing_hellshelf)item(apothic_enchanting:seashelf)item(apothic_enchanting:infused_seashelf)item(apothic_enchanting:crystal_seashelf)item(apothic_enchanting:heart_seashelf)item(apothic_enchanting:dormant_deepshelf)item(apothic_enchanting:deepshelf)item(apothic_enchanting:echoing_deepshelf)item(apothic_enchanting:soul_touched_deepshelf)item(apothic_enchanting:echoing_sculkshelf)item(apothic_enchanting:soul_touched_sculkshelf)item(apothic_enchanting:endshelf)item(apothic_enchanting:pearl_endshelf)item(apothic_enchanting:draconic_endshelf)item(apothic_enchanting:beeshelf)item(apothic_enchanting:melonshelf)item(apothic_enchanting:stoneshelf)item(apothic_enchanting:sightshelf)item(apothic_enchanting:sightshelf_t2)item(apothic_enchanting:filtering_shelf)item(apothic_enchanting:treasure_shelf)item(apothic_enchanting:geode_shelf))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: -3.5d
+		}
+		{
+			id: "4F5EEA7BC57F0B37"
+			tasks: [{
+				id: "77F96B0B65C67FFF"
+				item: { count: 1, id: "minecraft:spawner" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.5d
 		}
 	]
 }

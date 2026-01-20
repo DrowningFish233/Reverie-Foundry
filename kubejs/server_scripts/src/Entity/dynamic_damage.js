@@ -69,6 +69,7 @@ function dynamic_damage(event) {
         /*
                 // 调试日志
                 console.log(
+                [Reverie Foundry]
                     `动态减伤：等级${amplifier}，${isInfinite ? "无限" : duration + "刻"}，` +
                     `时间贡献${(timeBasedReduction * 100).toFixed(1)}%，` +
                     `等级贡献${(levelBonus * 100).toFixed(1)}%，` +

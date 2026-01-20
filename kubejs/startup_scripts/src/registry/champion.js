@@ -414,5 +414,88 @@ StartupEvents.registry("champions:affix", event => {
                 return true;
             })
         })
+    //受火者
+    event.create('finale')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("offense")
+            // 必须设置类别：cc、defense、offense
+            //offense攻击
+            //defense防御
+            //cc控制
+            setting
+        })
+        .behavior(behavior => {
+            behavior.onAttack((champion, player, damageSource, amount) => {
+                const entity = champion.getLivingEntity();
+                const entityID = entity.getType();
 
+                const isFireBoss = entityID === "irons_spellbooks:fire_boss";
+
+                if (!isFireBoss) return false;
+                if (!player || !player.isPlayer()) return false;
+
+                const maxHealth = entity.getMaxHealth();
+                const currentHealth = entity.getHealth();
+                const healthPercent = currentHealth / maxHealth * 100;
+
+                const isPhaseTwo = healthPercent < 35;
+
+                // 根据阶段选择效果类型
+                const effectType = isPhaseTwo ? 'kubejs:soul_fire' : 'kubejs:fire';
+
+                // 检查玩家是否已有该效果
+                if (player.hasEffect(effectType)) {
+                    const currentEffect = player.getEffect(effectType);
+                    const currentAmplifier = currentEffect.getAmplifier();
+                    const currentDuration = currentEffect.getDuration();
+
+                    const newAmplifier = currentAmplifier + 5;
+
+                    player.potionEffects.add(effectType, currentDuration, newAmplifier);
+                    if (Math.random() < 0.3) {
+                        player.potionEffects.add('kubejs:bleed', 20 * 60, newAmplifier);
+                    }
+                } else {
+                    player.potionEffects.add(effectType, 20 * 5, 0);
+                    if (Math.random() < 0.3) {
+                        player.potionEffects.add('kubejs:bleed', 20 * 60, 0);
+                    }
+                }
+                return true;
+            });
+
+            // 服务器更新行为
+            behavior.onServerUpdate(champion => {
+                const entity = champion.getLivingEntity();
+                const entityID = entity.getType();
+
+                if (entityID !== "irons_spellbooks:fire_boss") return;
+
+                const maxHealth = entity.getMaxHealth();
+                const currentHealth = entity.getHealth();
+                const healthPercent = currentHealth / maxHealth * 100;
+
+                // 血量低于40%时
+                if (healthPercent < 40) {
+                    if (entity.tickCount % 100 === 0) {
+                        entity.level.getEntities(
+                            entity,
+                            entity.getBoundingBox().inflate(6)
+                        ).forEach(e => {
+                            if (e && e.isLiving() && e.isPlayer()) {
+                                e.potionEffects.add('kubejs:maximum_health_reduction', 20 * 10, 7);
+
+                                if (Math.random() < 0.15) {
+                                    e.potionEffects.add('irons_spellbooks:guided', 20 * 3, 0);
+                                    entity.potionEffects.add('kubejs:hurt', 20 * 5, 1);
+                                    entity.heal(entity.getMaxHealth() / 100)
+                                }
+                            }
+                        });
+                    }
+                }
+            });
+        });
 });

@@ -114,6 +114,16 @@ ISSEvents.spellOnCast(event => {
     // 魔力减免效果列表
     const manaReductions = [
         {
+            id: "magnet_flower",
+            condition: () => getCuriosItem(event.entity, "kubejs:magnet_flower"),
+            reduction: 0.08
+        },
+        {
+            id: "arcane_flower",
+            condition: () => getCuriosItem(event.entity, "kubejs:arcane_flower"),
+            reduction: 0.08
+        },
+        {
             id: "star_beam_rye",
             condition: () => event.entity.hasEffect("kubejs:star_beam_rye"),
             reduction: 0.1

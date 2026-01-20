@@ -1,0 +1,55 @@
+{
+	id: "2EE8C4EF7AB3771A"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{
+			count: 4
+			id: "15794A362BD59FA0"
+			item: {
+				count: 1
+				id: "kubejs:soul_of_night"
+			}
+		}
+		{
+			count: 4
+			id: "063F76DED321479F"
+			item: {
+				count: 1
+				id: "kubejs:soul_of_light"
+			}
+		}
+		{
+			count: 4
+			id: "359C883D544D2901"
+			item: {
+				count: 1
+				id: "malum:grim_talc"
+			}
+		}
+		{
+			count: 4
+			id: "06D8FDAE64D3083D"
+			item: {
+				count: 1
+				id: "malum:rotting_essence"
+			}
+		}
+		{
+			count: 4
+			id: "7170E6F86D6B527B"
+			item: {
+				count: 1
+				id: "malum:astral_weave"
+			}
+		}
+		{
+			count: 4
+			id: "1C5C74272FA7F237"
+			item: {
+				count: 1
+				id: "malum:warp_flux"
+			}
+		}
+	]
+}

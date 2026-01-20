@@ -1,8 +1,13 @@
 {
-	default_hide_dependency_lines: false
+	autofocus_id: "3FD3535AE922834F"
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "588092B8BFBF7018"
-	group: ""
+	group: "2F1F238400B8A177"
+	hide_quest_until_deps_visible: true
+	icon: {
+		id: "kubejs:bad_apple"
+	}
 	id: "588092B8BFBF7018"
 	images: [
 		{
@@ -11,8 +16,8 @@
 			order: 254
 			rotation: 0.0d
 			width: 3.0d
-			x: -3.5d
-			y: 1.5d
+			x: -3.434240662035819d
+			y: 10.017860254387102d
 		}
 		{
 			height: 5.0d
@@ -20,8 +25,8 @@
 			order: 255
 			rotation: 0.0d
 			width: 6.0d
-			x: -3.440476190476197d
-			y: 5.595238095238095d
+			x: -3.410286230081965d
+			y: 14.174279715621083d
 		}
 		{
 			height: 30.0d
@@ -31,19 +36,450 @@
 			x: -3.0d
 			y: 5.0d
 		}
-	]
-	order_index: 2
-	quest_links: [ ]
-	quests: [{
-		icon: {
-			id: "productivelib:upgrade_simulator"
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: -28.5d
+			y: 5.0d
 		}
-		id: "156C1BF5B0ED7E84"
-		tasks: [{
-			id: "3B98C17B9E9550C9"
-			type: "checkmark"
-		}]
-		x: -3.5d
-		y: 5.5d
-	}]
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 22.5d
+			y: 5.0d
+		}
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: -3.0d
+			y: 30.5d
+		}
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: -28.5d
+			y: 30.5d
+		}
+		{
+			height: 30.0d
+			image: "kubejs:textures/gui/sms0.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 22.5d
+			y: 30.5d
+		}
+	]
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"12C9785ECF565304"
+				"2227DDA9A63E5685"
+				"25CE20F4B934CF78"
+				"1A8CEE0746A74FC4"
+				"143A6CDB76F7A3DC"
+				"40C75417213642DC"
+				"3FD3535AE922834F"
+			]
+			dependency_requirement: "one_started"
+			hide_text_until_complete: true
+			id: "131FF32C0FF28CA8"
+			progression_mode: "flexible"
+			tasks: [{
+				disable_toast: true
+				entity: "irons_spellbooks:dead_king"
+				icon: {
+					components: {
+						"!ftbquests:icon": { }
+						"ftbquests:entity_face": "irons_spellbooks:dead_king"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "4A57DE7852FFED1C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 28.5d
+		}
+		{
+			dependencies: [
+				"39AB32E04D04B64F"
+				"7AF858E2ECF74FAD"
+				"5A8B7CD00226572C"
+				"1D7C2FBD7B33CA7A"
+				"4939B8B2FE7A3B5D"
+				"131FF32C0FF28CA8"
+			]
+			dependency_requirement: "one_started"
+			id: "53C821423589F530"
+			tasks: [{
+				disable_toast: true
+				entity: "terra_entity:skeletron"
+				id: "0B170AC7AEF748B9"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"47CF8DC4847AD311"
+				"53C821423589F530"
+				"58CA43B9AA0530E2"
+				"55A1FBEF21D0FE68"
+				"35AEBBC251933E78"
+				"4E826A5530F49919"
+				"67A539CCFEDE8EBC"
+			]
+			id: "7A4449338F885205"
+			tasks: [{
+				disable_toast: true
+				entity: "irons_spellbooks:fire_boss"
+				icon: {
+					id: "irons_spellbooks:pyrium_ingot"
+				}
+				id: "531B6F4D246836D4"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 19.0d
+		}
+		{
+			dependencies: ["3FD3535AE922834F"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "12C9785ECF565304"
+			optional: true
+			tasks: [{
+				entity: "terra_entity:eye_of_cthulhu"
+				id: "02C993C42C44DC9E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.5d
+			y: 30.5d
+		}
+		{
+			dependencies: ["3FD3535AE922834F"]
+			id: "25CE20F4B934CF78"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "terra_entity:king_slime"
+				id: "2CF41C7DAE5F6606"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.5d
+			y: 30.5d
+		}
+		{
+			dependencies: ["3FD3535AE922834F"]
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "2227DDA9A63E5685"
+			optional: true
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "0E3F151A040D03BF"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: 30.5d
+		}
+		{
+			dependencies: ["131FF32C0FF28CA8"]
+			id: "39AB32E04D04B64F"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "terra_entity:eater_of_worlds"
+				id: "741B133B567E2417"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.0d
+			y: 26.5d
+		}
+		{
+			dependencies: ["131FF32C0FF28CA8"]
+			id: "7AF858E2ECF74FAD"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "terra_entity:brain_of_cthulhu"
+				id: "23AEB7BEB1B6A9D9"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["131FF32C0FF28CA8"]
+			id: "1D7C2FBD7B33CA7A"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "terra_entity:queen_bee"
+				id: "2187C6948A8F50A7"
+				type: "kill"
+				value: 1L
+			}]
+			x: -8.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["131FF32C0FF28CA8"]
+			icon: {
+				id: "bosses_of_mass_destruction:soul_star"
+			}
+			id: "5A8B7CD00226572C"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "bosses_of_mass_destruction:lich"
+				id: "5D34135259A3C5B5"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: 26.5d
+		}
+		{
+			dependencies: ["3FD3535AE922834F"]
+			id: "143A6CDB76F7A3DC"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "bosses_of_mass_destruction:void_blossom"
+				icon: {
+					id: "bosses_of_mass_destruction:crystal_fruit"
+				}
+				id: "2285772B9DAEABE6"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 30.5d
+		}
+		{
+			dependencies: ["53C821423589F530"]
+			id: "58CA43B9AA0530E2"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:ignis"
+				id: "3F28F98CB0F0849E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["53C821423589F530"]
+			id: "67A539CCFEDE8EBC"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:the_harbinger"
+				id: "28AF6A0006D433A1"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["53C821423589F530"]
+			id: "55A1FBEF21D0FE68"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:the_leviathan"
+				id: "37001BD2568E3BE9"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["53C821423589F530"]
+			id: "47CF8DC4847AD311"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:ancient_remnant"
+				id: "6A36C80A784D8A47"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["53C821423589F530"]
+			id: "35AEBBC251933E78"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:maledictus"
+				id: "0A88C9288E2691F2"
+				type: "kill"
+				value: 1L
+			}]
+			x: -8.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["53C821423589F530"]
+			id: "4E826A5530F49919"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:scylla"
+				id: "48D7E655A268FEA4"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 21.5d
+		}
+		{
+			dependencies: ["3FD3535AE922834F"]
+			id: "40C75417213642DC"
+			optional: true
+			tasks: [{
+				entity: "eternal_starlight:starlight_golem"
+				id: "50EA70B4EF59E814"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 30.5d
+		}
+		{
+			dependencies: ["3FD3535AE922834F"]
+			id: "1A8CEE0746A74FC4"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "eternal_starlight:lunar_monstrosity"
+				id: "1597C529AD6602B2"
+				type: "kill"
+				value: 1L
+			}]
+			x: -8.5d
+			y: 30.5d
+		}
+		{
+			dependencies: ["7A4449338F885205"]
+			id: "082F47A08B859C62"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "cataclysm:ender_guardian"
+				id: "37D2255D0B91F7A1"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["7A4449338F885205"]
+			id: "68954EBEC12D958D"
+			optional: true
+			tasks: [{
+				disable_toast: true
+				entity: "bosses_of_mass_destruction:obsidilith"
+				id: "030CDE781121FD5D"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.5d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"7A4449338F885205"
+				"359B24E94B66AFA3"
+				"082F47A08B859C62"
+				"68954EBEC12D958D"
+			]
+			id: "332CE7AF2598E3F1"
+			tasks: [{
+				disable_toast: true
+				entity: "darkdoppelganger:dark_doppelganger"
+				id: "1183215ABA9D897C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["131FF32C0FF28CA8"]
+			id: "4939B8B2FE7A3B5D"
+			optional: true
+			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
+				id: "044E77370D2F22F9"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["7A4449338F885205"]
+			id: "359B24E94B66AFA3"
+			optional: true
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "1C5E839D2F02B58F"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.5d
+			y: 17.0d
+		}
+		{
+			icon: {
+				id: "alshanex_familiars:archmage_trinket"
+			}
+			id: "3FD3535AE922834F"
+			rewards: [{
+				id: "5B574D540F3E5468"
+				item: {
+					count: 1
+					id: "kubejs:bad_apple"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "28F0C1066808D8E9"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 32.5d
+		}
+	]
 }

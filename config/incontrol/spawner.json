@@ -150,7 +150,7 @@
             "terra_entity:fire_imp"
         ],
         "persecond": 1,
-        "attempts": 6,
+        "attempts": 3,
         "amount": {
             "minimum": 1,
             "maximum": 1
@@ -161,7 +161,7 @@
             "maxdist": 96,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 4,
+            "maxthis": 2,
             "and": {
                 "biome": [
                     "biomesoplenty:erupting_inferno",

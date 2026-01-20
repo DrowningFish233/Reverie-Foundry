@@ -72,6 +72,7 @@ $CurioCapBuilder.prototype = {
         this._handlers.canUnequip = callback
         return this
     },
+
     /**
      * 用于添加属性
      * @param {$Attribute$$Type} attribute
@@ -153,31 +154,31 @@ NativeEvents.onEvent(
 
 //正式注册
 StartupEvents.registry('item', event => {
-    new $ItemBuilderWrapper(
-        event.create("blue_star")
-            .texture('kubejs:item/curios/blue_star')
-            .tag("curios:ego")
-            .unstackable()
-            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    event.create("blue_star")
+        .texture('kubejs:item/curios/blue_star')
+        .tag("curios:ego")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    /*
+    .attachCurioCap(
+        new $CurioCapBuilder()
+            .onEquip(entity => {
+                if (entity instanceof $Player) {
+                    entity.abilities.mayfly = true
+                    entity.onUpdateAbilities()
+                }
+            })
+            .onUnequip(entity => {
+                if (entity instanceof $Player) {
+                    if (entity.isCreative()) return
+                    entity.abilities.mayfly = false
+                    entity.abilities.flying = false
+                    entity.onUpdateAbilities()
+                }
+            })
+            .addAttribute("generic.luck", "add_value", 1, "kubejs:blue_star.luckadd")
     )
-        .attachCurioCap(
-            new $CurioCapBuilder()
-                .onEquip(entity => {
-                    if (entity instanceof $Player) {
-                        entity.abilities.mayfly = true
-                        entity.onUpdateAbilities()
-                    }
-                })
-                .onUnequip(entity => {
-                    if (entity instanceof $Player) {
-                        if (entity.isCreative()) return
-                        entity.abilities.mayfly = false
-                        entity.abilities.flying = false
-                        entity.onUpdateAbilities()
-                    }
-                })
-                .addAttribute("generic.luck", "add_value", 1, "kubejs:blue_star.luckadd")
-        )
+    */
     event.create("red_skull")
         .texture('kubejs:item/curios/red_skull')
         .tag("curios:head")
@@ -249,5 +250,62 @@ StartupEvents.registry('item', event => {
         .tag("curios:necklace")
         .unstackable()
         .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    new $ItemBuilderWrapper(
+        event.create("mana_regeneration_band")
+            .texture('kubejs:item/curios/mana_regeneration_band')
+            .tag("curios:accessory")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("irons_spellbooks:mana_regen", "add_multiplied_base", 0.2, "kubejs:mana_regeneration_band.mana_regen")
+                .addAttribute("irons_spellbooks:max_mana", "add_value", 50, "kubejs:mana_regeneration_band.max_mana")
+        )
+    new $ItemBuilderWrapper(
+        event.create("arcane_flower")
+            .texture('kubejs:item/curios/arcane_flower')
+            .tag("curios:accessory")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("terra_curio:player.aggro", "add_value", -400, "kubejs:arcane_flower.aggro")
+                .addAttribute("irons_spellbooks:max_mana", "add_value", 100, "kubejs:arcane_flower.max_mana")
+        )
+    event.create("mana_cloak")
+        .texture('kubejs:item/curios/mana_cloak')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    new $ItemBuilderWrapper(
+        event.create("band_of_starpower")
+            .texture('kubejs:item/curios/band_of_starpower')
+            .tag("curios:accessory")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("irons_spellbooks:max_mana", "add_value", 50, "kubejs:band_of_starpower.max_mana")
+        )
+    new $ItemBuilderWrapper(
+        event.create("magnet_flower")
+            .texture('kubejs:item/curios/magnet_flower')
+            .tag("curios:accessory")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("terra_curio:player.pickup_range", "add_multiplied_base", 0.4, "kubejs:magnet_flower.pickup_range")
+        )
+    event.create("magic_cuffs")
+        .texture('kubejs:item/curios/magic_cuffs')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
 });
 

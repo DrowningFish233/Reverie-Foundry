@@ -55,6 +55,9 @@
   "champions": {
     "enable_affix_compact": true
   },
+  "apothic_spawners": {
+    "spawner": true
+  },
   "jade_access": {
     "held_item": true,
     "sign": true,
@@ -93,12 +96,6 @@
   },
   "apothic_enchanting": {
     "ench": true
-  },
-  "naraka": {
-    "soul_smithing_block": true,
-    "entity_data": true,
-    "nectarium_core": true,
-    "soul_stabilizer": true
   },
   "productivemetalworks": {
     "casting": true

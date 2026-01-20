@@ -40,7 +40,14 @@
                 "name": "iron/铁"
             },
             "magic_armor": 8.0,
-            "rarity": 70.0
+            "rarity": 70.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:ancient"
+                }
+            ]
         }
     }
 }

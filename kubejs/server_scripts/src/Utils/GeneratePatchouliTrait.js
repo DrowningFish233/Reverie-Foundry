@@ -43,7 +43,7 @@ function getTraitDisplayNameFromKubejsLang(traitId) {
             //别tm在搞出别的前缀了
         }
     } catch (e) {
-        console.log(`读取词缀本地化文件失败: ${e.message}`);
+        console.log(`[Reverie Foundry] 读取词缀本地化文件失败: ${e.message}`);
     }
 
     return null;
@@ -119,7 +119,7 @@ function getTraitDescription(traitId, traitData) {
                 }
             }
         } catch (e) {
-            console.log(`读取词缀描述本地化失败: ${e.message}`);
+            console.log(`[Reverie Foundry] 读取词缀描述本地化失败: ${e.message}`);
         }
 
         // 如果本地化中没有，从翻译键中提取
@@ -179,7 +179,7 @@ function getTraitApplicableGearTypes(traitData) {
             gearTypes.push(gearType);
         }
     } catch (e) {
-        console.log(`解析适用装备类型失败: ${e.message}`);
+        console.log(`[Reverie Foundry] 解析适用装备类型失败: ${e.message}`);
         return "适用于所有装备类型";
     }
 
@@ -249,7 +249,7 @@ function createPatchouliTraitEntry(traitId, icon, nameKey) {
  * 自动把装备词缀内容转换为帕秋莉手册待翻译内容
  */
 function generatePatchouliTraitEntries() {
-    console.log('开始扫描并生成装备词缀帕秋莉手册条目');
+    console.log('[Reverie Foundry] 开始扫描并生成装备词缀帕秋莉手册条目');
 
     let traitsBasePath = 'kubejs/data/kubejs/silentgear_traits';
     let patchouliEnPath = 'patchouli_books/rf_book/en_us/entries';
@@ -329,7 +329,7 @@ function generatePatchouliTraitEntries() {
             let traitData = JSON.parse(fileContent);
 
             if (!traitData || !traitData.name) {
-                console.log(`跳过无效文件: ${fileName}`);
+                console.log(`[Reverie Foundry] 跳过无效文件: ${fileName}`);
                 skippedCount++;
                 continue;
             }
@@ -393,7 +393,7 @@ function generatePatchouliTraitEntries() {
             generatedCount++;
 
         } catch (e) {
-            console.log(`处理词缀文件失败: ${filePath}`, e);
+            console.log(`[Reverie Foundry] 处理词缀文件失败: ${filePath}`, e);
             skippedCount++;
         }
     }
@@ -401,9 +401,9 @@ function generatePatchouliTraitEntries() {
     // 写入翻译文件
     try {
         JsonIO.write(langPath, translations);
-        console.log(`帕秋莉翻译文件已更新: ${langPath}`);
+        console.log(`[Reverie Foundry] 帕秋莉翻译文件已更新: ${langPath}`);
     } catch (error) {
-        console.log(`写入帕秋莉翻译文件失败: ${error}`);
+        console.log(`[Reverie Foundry] 写入帕秋莉翻译文件失败: ${error}`);
     }
 
     // 统计信息

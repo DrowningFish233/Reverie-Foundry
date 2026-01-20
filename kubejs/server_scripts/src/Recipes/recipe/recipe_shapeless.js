@@ -84,6 +84,13 @@ ServerEvents.recipes(event => {
         ]
     )
     event.shapeless(
+        Item.of('apothic_enchanting:occult_ender_lead', 1),
+        [
+            'apothic_enchanting:ender_lead',
+            '4x kubejs:ashes_of_calamity'
+        ]
+    )
+    event.shapeless(
         Item.of('minecraft:wither_skeleton_skull', 1),
         [
             'minecraft:skeleton_skull',

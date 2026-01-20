@@ -80,6 +80,7 @@
 #Individual Spell Configuration
 [Spells]
 
+	#irons_spellbooks:fire
 	[Spells."irons_spellbooks:fire_breath"]
 		Enabled = true
 		School = "irons_spellbooks:fire"
@@ -676,17 +677,6 @@
 		CooldownInSeconds = 60.0
 		AllowCrafting = true
 
-	[Spells."hazennstuff:chaotic_teleport"]
-		Enabled = true
-		School = "irons_spellbooks:ender"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 2.0
-		AllowCrafting = true
-
 	[Spells."irons_spellbooks:summon_swords"]
 		Enabled = true
 		School = "irons_spellbooks:ender"
@@ -1030,95 +1020,6 @@
 		CooldownInSeconds = 25.0
 		AllowCrafting = true
 
-	#familiarslib:sound
-	[Spells."alshanex_familiars:birds_spell"]
-		Enabled = true
-		School = "familiarslib:sound"
-		MaxLevel = 4
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "EPIC"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 80.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:music_bolt"]
-		Enabled = true
-		School = "familiarslib:sound"
-		MaxLevel = 10
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "COMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 8.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:sonata"]
-		Enabled = true
-		School = "familiarslib:sound"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "EPIC"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 40.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:explosion_melody"]
-		Enabled = true
-		School = "familiarslib:sound"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "RARE"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 20.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:default_note"]
-		Enabled = true
-		School = "familiarslib:sound"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "RARE"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 30.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:lullaby"]
-		Enabled = true
-		School = "familiarslib:sound"
-		MaxLevel = 1
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "LEGENDARY"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 40.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:guardian_angel"]
-		Enabled = true
-		School = "familiarslib:sound"
-		MaxLevel = 4
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "LEGENDARY"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 90.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:harp_symphony"]
-		Enabled = true
-		School = "familiarslib:sound"
-		MaxLevel = 3
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "EPIC"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 15.0
-		AllowCrafting = true
-
 	#irons_spellbooks:holy
 	[Spells."irons_spellbooks:healing_circle"]
 		Enabled = true
@@ -1328,17 +1229,6 @@
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 5.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:summon_shadows"]
-		Enabled = true
-		School = "irons_spellbooks:blood"
-		MaxLevel = 6
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 150.0
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:acupuncture"]
@@ -2015,280 +1905,13 @@
 		CooldownInSeconds = 30.0
 		AllowCrafting = true
 
-	[Spells."hazennstuff:spectral_axe"]
+	[Spells."kubejs:plunder_spell"]
 		Enabled = true
-		School = "irons_spellbooks:evocation"
-		MaxLevel = 8
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "RARE"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 3.0
-		AllowCrafting = true
-
-	#hazennstuff:radiance
-	[Spells."hazennstuff:syringe_barrage"]
-		Enabled = true
-		School = "hazennstuff:radiance"
-		MaxLevel = 10
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "COMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 2.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:call_forth_terraprisma"]
-		Enabled = true
-		School = "hazennstuff:radiance"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "EPIC"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 150.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:terraprismic_barrage"]
-		Enabled = true
-		School = "hazennstuff:radiance"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "RARE"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 2.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:stellar_collapse"]
-		Enabled = true
-		School = "hazennstuff:radiance"
-		MaxLevel = 10
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 16.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:shooting_star"]
-		Enabled = true
-		School = "hazennstuff:radiance"
-		MaxLevel = 10
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "COMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 2.0
-		AllowCrafting = true
-
-	#hazennstuff:shadow
-	[Spells."hazennstuff:nights_edge_strike"]
-		Enabled = true
-		School = "hazennstuff:shadow"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "COMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 15.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:golden_shower"]
-		Enabled = true
-		School = "irons_spellbooks:holy"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "RARE"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 3.0
-		AllowCrafting = true
-
-	#irons_spellbooks:fire
-	[Spells."hazennstuff:brimstone_hellblast"]
-		Enabled = true
-		School = "irons_spellbooks:fire"
-		MaxLevel = 5
+		School = "kubejs:dream"
+		MaxLevel = 4
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 25.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:fiery_dagger"]
-		Enabled = true
-		School = "irons_spellbooks:fire"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "LEGENDARY"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 8.0
-		AllowCrafting = false
-
-	[Spells."hazennstuff:scorching_slash"]
-		Enabled = true
-		School = "irons_spellbooks:fire"
-		MaxLevel = 3
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "LEGENDARY"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 15.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:cinderous_step"]
-		Enabled = true
-		School = "irons_spellbooks:fire"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 12.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:shard_sword"]
-		Enabled = true
-		School = "irons_spellbooks:nature"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "COMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 15.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:counterspell_spider_lily"]
-		Enabled = true
-		School = "irons_spellbooks:nature"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "COMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 4.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:death_sentence"]
-		Enabled = true
-		School = "irons_spellbooks:nature"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "COMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 15.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:thorn_chakram"]
-		Enabled = true
-		School = "irons_spellbooks:nature"
-		MaxLevel = 10
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "COMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 1.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:crystal_volley"]
-		Enabled = true
-		School = "irons_spellbooks:ice"
-		MaxLevel = 10
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 16.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:ice_arrow"]
-		Enabled = true
-		School = "irons_spellbooks:ice"
-		MaxLevel = 10
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "RARE"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 8.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:soul_seekers"]
-		Enabled = true
-		School = "irons_spellbooks:eldritch"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "LEGENDARY"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 15.0
-		AllowCrafting = true
-
-	[Spells."hazennstuff:energy_burst"]
-		Enabled = true
-		School = "irons_spellbooks:lightning"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "RARE"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 6.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:fire_fist"]
-		Enabled = true
-		School = "irons_spellbooks:fire"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "RARE"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 20.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:end_mayhem"]
-		Enabled = true
-		School = "irons_spellbooks:ender"
-		MaxLevel = 8
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "RARE"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 120.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:ice_chamber"]
-		Enabled = true
-		School = "irons_spellbooks:ice"
-		MaxLevel = 5
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "EPIC"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 15.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:ice_age"]
-		Enabled = true
-		School = "irons_spellbooks:ice"
-		MaxLevel = 10
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "COMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 20.0
-		AllowCrafting = true
-
-	[Spells."alshanex_familiars:megido"]
-		Enabled = true
-		School = "irons_spellbooks:lightning"
-		MaxLevel = 10
-		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
-		MinRarity = "UNCOMMON"
-		ManaCostMultiplier = 1.0
-		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 20.0
+		CooldownInSeconds = 80.0
 		AllowCrafting = true

@@ -86,13 +86,13 @@ ItemEvents.firstRightClicked('kubejs:randomweapon', event => {
                 event.item.count--;
             } else {
                 event.item.count--;
-                console.log(`未能生成有效装备 (最大尝试次数: ${maxAttempts})`);
+                console.log(`[Reverie Foundry]未能生成有效装备 (最大尝试次数: ${maxAttempts})`);
             }
             return;
         }
         return;
     } catch (error) {
-        console.log('创建随机武器时出错:', error);
+        console.log('[Reverie Foundry]创建随机武器时出错:', error);
     }
 });
 
@@ -144,7 +144,7 @@ function fixGearProperties(itemStack) {
 
         return true;
     } catch (e) {
-        console.log('修复装备属性时出错:', e);
+        console.log('[Reverie Foundry]修复装备属性时出错:', e);
         return false;
     }
 }
@@ -178,7 +178,7 @@ function validateGear(itemStack) {
 
         return true;
     } catch (e) {
-        console.log('验证武器时出错:', e);
+        console.log('[Reverie Foundry]验证武器时出错:', e);
         return false;
     }
 }
@@ -192,7 +192,7 @@ function getRarityValue(itemStack) {
 
         return rarity;
     } catch (e) {
-        console.log('获取稀有度数值时出错:', e);
+        console.log('[Reverie Foundry]获取稀有度数值时出错:', e);
         return 10;
     }
 }

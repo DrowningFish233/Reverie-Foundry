@@ -498,4 +498,51 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 }
             }
         })
+    event.create('kubejs:plunder_spell')
+        .setCastTime(20)  // 施法时间(ticks)
+        .setCooldownSeconds(80)  // 冷却时间(秒)
+        .setBaseManaCost(100)  // 基础魔力消耗
+        .setManaCostPerLevel(100)  // 每级额外消耗
+        .setCastType('long')                    // 施法类型："continuous"（持续）、"long"（长施法）、"instant"（瞬发）或"none"（无）        
+        .setSchool('kubejs:dream')  // 所属学派
+        .setMaxLevel(4)
+        .setMinRarity('LEGENDARY')
+        .canBeCraftedBy(player => true)  // 制作条件
+        .onClientCast(ctx => { })                   // 仅客户端执行的施法逻辑（用于粒子效果/音效）
+        .onPreCast(ctx => { })                      // 施法前触发
+        .onPreClientCast(ctx => { })                // 客户端施法前触发
+        .setAllowLooting(true)                     // 是否允许通过战利品（怪物/宝箱）获取此法术
+        .needsLearning(true)                      // 是否需要学习
+        .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
+        .setUniqueInfo((spellLevel, caster) => {   // 自定义法术描述
+            return [
+                Component.translate('spell.kubejs.plunder.duration')
+                    .append(Component.green(` ${spellLevel * 3 + 3}`))
+                    .append(Component.translate('spell.kubejs.seconds')),
+                Component.translate('spell.kubejs.plunder.effect')
+                    .append(Component.green(` 等级 ${spellLevel}`))
+            ]
+        })
+        .onCast(ctx => {  // 施法时触发
+            let player = ctx.entity
+            let spellLevel = ctx.getSpellLevel()
+            const { level } = ctx
+            // 条件检查
+            if (!ctx.entity.isPlayer()) return
+            // 效果实现：
+            let durationTicks = 20 * (spellLevel * 4 + 6);
+            level.spawnParticles(
+                'irons_spellbooks:unstable_ender',  // arg0: 粒子类型
+                true,                        // arg1: 是否强制显示
+                player.x,                    // arg2: 粒子生成位置的X坐标
+                player.y + 1,                // arg3: 粒子生成位置的Y坐标
+                player.z,                    // arg4: 粒子生成位置的Z坐标
+                0.5,                         // arg5: X方向的偏移量/扩散范围
+                0.5,                         // arg6: Y方向的偏移量/扩散范围
+                0.5,                         // arg7: Z方向的偏移量/扩散范围
+                20,                          // arg8: 生成的粒子数量（整数）
+                0.1                          // arg9: 粒子速度
+            )
+            player.potionEffects.add("kubejs:plunder", durationTicks, spellLevel);
+        })
 })

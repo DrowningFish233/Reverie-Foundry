@@ -9,7 +9,7 @@
         ],
         "gear_type_blacklist": [],
         "ingredient": {
-            "item": "alltheores:gold_plate"
+            "item": "create:golden_sheet"
         },
         "part_substitutes": {}
     },
@@ -17,7 +17,7 @@
         "color": "#faf25e",
         "main_texture_type": "HIGH_CONTRAST",
         "name": {
-            "translate": "material.silentgear.alltheores:gold_plate"
+            "translate": "material.silentgear.create:golden_sheet"
         },
         "name_prefix": ""
     },

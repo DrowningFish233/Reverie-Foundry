@@ -182,6 +182,12 @@
       },
       "pass": 3
     },
+    "alshanex_familiars:monocle_overlay": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "eternal_starlight:carved_lunaris_cactus_fruit_blur": {
       "enabled": {
         "value": "OFF"

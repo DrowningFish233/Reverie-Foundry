@@ -3,7 +3,7 @@
 # Default: 3
 # Range: 1 ~ 20
 effect_fade_time = 3
-#Fire resistance provides better vision in lava, no longer shows the flame overlay.
+#Fire resistance provides better vision in lava and a graceful fading effect when the effect ends.
 #Default Value: true
 better_fire_resistance_vision = true
 #Control rendering of mob effect particles on the player.
@@ -22,3 +22,8 @@ no_night_vision_flashing = true
 #Should the effect particles setting affect all entities in the level, not just your player.
 #Default Value: false
 reduce_effect_particles_for_all_entities = true
+#The height of the flame overlay with one being the vanilla height, and zero fully hiding the overlay.
+#Default Value: 0.4
+# Default: 0.4
+# Range: 0.0 ~ 1.0
+flame_overlay_height = 0.4

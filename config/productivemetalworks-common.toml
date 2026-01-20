@@ -1,7 +1,7 @@
 #Max internal volume of the foundry multiblock
 # Default: 1024
 # Range: > 1
-foundryMaxVolume = 200
+foundryMaxVolume = 1024
 #Max circumference of the foundry multiblock
 # Default: 200
 # Range: > 1
@@ -9,7 +9,7 @@ foundryMaxCircumference = 200
 #Max height of the foundry multiblock
 # Default: 20
 # Range: > 1
-foundryMaxHeight = 20
+foundryMaxHeight = 40
 #Number of mb per block volume
 # Default: 1000
 # Range: > 1
