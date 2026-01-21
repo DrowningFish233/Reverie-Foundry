@@ -95,6 +95,11 @@
 			hide_text_until_complete: true
 			id: "131FF32C0FF28CA8"
 			progression_mode: "flexible"
+			rewards: [{
+				id: "2C79AFEBA058CD00"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "irons_spellbooks:dead_king"
@@ -123,6 +128,11 @@
 			]
 			dependency_requirement: "one_started"
 			id: "53C821423589F530"
+			rewards: [{
+				id: "35EC8E693E1EB16D"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "terra_entity:skeletron"
@@ -144,6 +154,11 @@
 				"67A539CCFEDE8EBC"
 			]
 			id: "7A4449338F885205"
+			rewards: [{
+				id: "4B4596936A8DCB66"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "irons_spellbooks:fire_boss"
@@ -163,6 +178,11 @@
 			hide_dependency_lines: true
 			id: "12C9785ECF565304"
 			optional: true
+			rewards: [{
+				id: "5143B0A047F8B1AC"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			tasks: [{
 				entity: "terra_entity:eye_of_cthulhu"
 				id: "02C993C42C44DC9E"
@@ -176,6 +196,11 @@
 			dependencies: ["3FD3535AE922834F"]
 			id: "25CE20F4B934CF78"
 			optional: true
+			rewards: [{
+				id: "19E451D68B28C0D9"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "terra_entity:king_slime"
@@ -193,6 +218,11 @@
 			}
 			id: "2227DDA9A63E5685"
 			optional: true
+			rewards: [{
+				id: "51D15BF23A6FEE1D"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			tasks: [{
 				entity: "minecraft:wither"
 				id: "0E3F151A040D03BF"
@@ -206,6 +236,11 @@
 			dependencies: ["131FF32C0FF28CA8"]
 			id: "39AB32E04D04B64F"
 			optional: true
+			rewards: [{
+				id: "7D85F7C13781A212"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "terra_entity:eater_of_worlds"
@@ -220,6 +255,11 @@
 			dependencies: ["131FF32C0FF28CA8"]
 			id: "7AF858E2ECF74FAD"
 			optional: true
+			rewards: [{
+				id: "5A923A737F1EF992"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "terra_entity:brain_of_cthulhu"
@@ -234,6 +274,11 @@
 			dependencies: ["131FF32C0FF28CA8"]
 			id: "1D7C2FBD7B33CA7A"
 			optional: true
+			rewards: [{
+				id: "03338715BE5CF1C7"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "terra_entity:queen_bee"
@@ -251,6 +296,11 @@
 			}
 			id: "5A8B7CD00226572C"
 			optional: true
+			rewards: [{
+				id: "39678C5A5B1324E6"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "bosses_of_mass_destruction:lich"
@@ -265,6 +315,11 @@
 			dependencies: ["3FD3535AE922834F"]
 			id: "143A6CDB76F7A3DC"
 			optional: true
+			rewards: [{
+				id: "41204DD53BCAB2B1"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "bosses_of_mass_destruction:void_blossom"
@@ -282,6 +337,11 @@
 			dependencies: ["53C821423589F530"]
 			id: "58CA43B9AA0530E2"
 			optional: true
+			rewards: [{
+				id: "0AC6DAFE9D97F1FF"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "cataclysm:ignis"
@@ -296,6 +356,11 @@
 			dependencies: ["53C821423589F530"]
 			id: "67A539CCFEDE8EBC"
 			optional: true
+			rewards: [{
+				id: "4E813062566334DD"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "cataclysm:the_harbinger"
@@ -310,6 +375,11 @@
 			dependencies: ["53C821423589F530"]
 			id: "55A1FBEF21D0FE68"
 			optional: true
+			rewards: [{
+				id: "0182620DCC45CC23"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "cataclysm:the_leviathan"
@@ -324,6 +394,11 @@
 			dependencies: ["53C821423589F530"]
 			id: "47CF8DC4847AD311"
 			optional: true
+			rewards: [{
+				id: "5F1063BD082C589D"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "cataclysm:ancient_remnant"
@@ -338,6 +413,11 @@
 			dependencies: ["53C821423589F530"]
 			id: "35AEBBC251933E78"
 			optional: true
+			rewards: [{
+				id: "0421645950804D85"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "cataclysm:maledictus"
@@ -352,6 +432,11 @@
 			dependencies: ["53C821423589F530"]
 			id: "4E826A5530F49919"
 			optional: true
+			rewards: [{
+				id: "49A186D7F196AC5E"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "cataclysm:scylla"
@@ -366,6 +451,11 @@
 			dependencies: ["3FD3535AE922834F"]
 			id: "40C75417213642DC"
 			optional: true
+			rewards: [{
+				id: "0FF624406EAB90C2"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			tasks: [{
 				entity: "eternal_starlight:starlight_golem"
 				id: "50EA70B4EF59E814"
@@ -379,6 +469,11 @@
 			dependencies: ["3FD3535AE922834F"]
 			id: "1A8CEE0746A74FC4"
 			optional: true
+			rewards: [{
+				id: "097F0178A31D0882"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "eternal_starlight:lunar_monstrosity"
@@ -393,6 +488,11 @@
 			dependencies: ["7A4449338F885205"]
 			id: "082F47A08B859C62"
 			optional: true
+			rewards: [{
+				id: "4C67059D621DA704"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "cataclysm:ender_guardian"
@@ -407,6 +507,11 @@
 			dependencies: ["7A4449338F885205"]
 			id: "68954EBEC12D958D"
 			optional: true
+			rewards: [{
+				id: "1131A0028E63A150"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "bosses_of_mass_destruction:obsidilith"
@@ -425,6 +530,11 @@
 				"68954EBEC12D958D"
 			]
 			id: "332CE7AF2598E3F1"
+			rewards: [{
+				id: "175C7082BFFD219F"
+				type: "xp_levels"
+				xp_levels: 100
+			}]
 			tasks: [{
 				disable_toast: true
 				entity: "darkdoppelganger:dark_doppelganger"
@@ -439,6 +549,11 @@
 			dependencies: ["131FF32C0FF28CA8"]
 			id: "4939B8B2FE7A3B5D"
 			optional: true
+			rewards: [{
+				id: "3538D510A95616DF"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
 			tasks: [{
 				entity: "bosses_of_mass_destruction:gauntlet"
 				id: "044E77370D2F22F9"
@@ -452,6 +567,11 @@
 			dependencies: ["7A4449338F885205"]
 			id: "359B24E94B66AFA3"
 			optional: true
+			rewards: [{
+				id: "3633E5E43C3D3EE9"
+				type: "xp_levels"
+				xp_levels: 30
+			}]
 			tasks: [{
 				entity: "minecraft:ender_dragon"
 				id: "1C5E839D2F02B58F"
@@ -480,6 +600,617 @@
 			}]
 			x: -3.5d
 			y: 32.5d
+		}
+		{
+			can_repeat: true
+			disable_recipe_mod: false
+			id: "5378D02C832E3260"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0158B77098F42ECF"
+				table_id: 1463736026640428304L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "0FF5EB378FBC3D7E"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>=14)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 36.5d
+		}
+		{
+			can_repeat: true
+			id: "66481C79877E0ED7"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					auto: "enabled"
+					id: "1FCC35094DFF4A28"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "4E723F6D20896924"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "151957B80214D5B0"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "367290502B9F85B2"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "6B1EB0DD9A272ADA"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "77737A14C0C377C9"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "67DEBECBA531E0FA"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "09FD0E5DEBBDBE5A"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "2ACDD263A473B853"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "50F02EF5CA63FBD7"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "615A3115BB49565F"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>12)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 39.0d
+		}
+		{
+			can_repeat: true
+			id: "6038063D7681AFB5"
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "14D7E2C3DE96AE18"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D1BEFFA534B6530"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5238F90490D43383"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C6C73C6CBDEF6A0"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A0E012DD42431E8"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6DC39F05B36D9618"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E9796C8813F5FC6"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58177D68CEDD3FA2"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "144AF3202264066E"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6974FE7269D12FE8"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6D2D88A96C9693AB"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "41C4024E912459E7"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E5A30F8087A86BE"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E133957E5718215"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20009F0C3685C195"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "710516F893262984"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "27862DF2BE74B1D8"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2CF480C43FBC1989"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B3FF12CB4F47065"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5BA23BC58B8CEDAB"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7806D32D2399D3F1"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FD28E56462B9053"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32DD7C8A00F65B9C"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7BDC424603C75386"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "63778FA7E9894BE4"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D04B320F4D744A7"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7892BA7617D56434"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "119268747A3288D4"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1BD716FDD69AC4EE"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B9BD8B9326ECD5A"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6925A90EDF29C0F8"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "39C83138B63F058C"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "5B0CA142332889F5"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>=14)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 41.5d
+		}
+		{
+			can_repeat: true
+			disable_recipe_mod: false
+			id: "7501056B288C71E1"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "053850D63945C9B0"
+				table_id: 3811123985345715214L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "7032206EEBFC489D"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>8)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 36.5d
+		}
+		{
+			can_repeat: true
+			id: "309D32324902DF18"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6B0FADF117A41AD8"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5421E6DDA7B5F33C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E5C7912765E54F7"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0EB2F2C39ECC7E6A"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "552A858307C2DB08"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4BA635216DA130EE"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3083B4A1C9137F7B"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4BEA5A924E691F93"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19E69696C2E988B1"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4552DD4873BFF274"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "02081D27FED67724"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>8)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 39.0d
+		}
+		{
+			can_repeat: true
+			id: "4996E5CD9E56D25E"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E632A7451A83EFE"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B7E885F006B54E5"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "667261AA085B3058"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E3D60614D467F46"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1CC76F296386FF2E"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15E76A15BFCA789C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2530EBBF12F4C1A2"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12FDBD3DF137119A"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7CCE908B2D50C4EB"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3181266A37D4D381"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "607C61CD87D0A22A"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00C10CFAFB885667"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0F535B979565FB90"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5295AD5F1177E026"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3815C4E9B05A36F0"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5E5D9F41434AC71A"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09EADB5D14CFF38F"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D54B2F9109E034F"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F21A130B5B2085E"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "465B2C176A359BA5"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "11DE64459ACEB46C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "328ADEDB1BF83128"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B50FC746B183BF0"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4392F7151F58E719"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "02332A44306413EB"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09A1C96475D6FF11"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34CC76F86F7031BA"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D417D437196AD0C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C6D9003DBDC2C26"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "084DCC1997F2EA20"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6671636C2E08DDB3"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B2A43E449CD942C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "35A3054C9A7DE78E"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>8)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 41.5d
 		}
 	]
 }

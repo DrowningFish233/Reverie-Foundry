@@ -1,0 +1,36 @@
+{
+	id: "34E3D5128D809C0E"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			count: 16
+			id: "7CEE577D191A662B"
+			item: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+		}
+		{
+			count: 12
+			id: "6E816EB85DEBDD9E"
+			item: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+		}
+		{
+			count: 8
+			id: "5B25D1BB2B7F39FB"
+			item: {
+				count: 1
+				id: "minecraft:emerald"
+			}
+		}
+		{
+			id: "6329E2DA07E94D21"
+			type: "xp"
+			xp: 10
+		}
+	]
+}

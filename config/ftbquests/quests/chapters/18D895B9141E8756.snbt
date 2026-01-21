@@ -405,8 +405,8 @@
 		{
 			id: "35957B7E0ACF4060"
 			tasks: [{
-				id: "6D9FB28D3230DAAD"
-				item: { count: 1, id: "create:sturdy_sheet" }
+				id: "16653C571A505AAC"
+				item: { count: 1, id: "create:super_glue" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -480,14 +480,54 @@
 			y: -8.0d
 		}
 		{
-			id: "4B1C3B0D4C231591"
+			id: "746B034A029684EA"
+			tasks: [
+				{
+					id: "66E297B1B83A4B5F"
+					item: { count: 1, id: "create:attribute_filter" }
+					type: "item"
+				}
+				{
+					id: "71D845F14C4B91EB"
+					item: { count: 1, id: "create:filter" }
+					type: "item"
+				}
+				{
+					id: "4CF87A646C0ED9EC"
+					item: { count: 1, id: "create:package_filter" }
+					type: "item"
+				}
+			]
+			x: -18.0d
+			y: -8.5d
+		}
+		{
+			id: "23B6D00570354BE3"
 			tasks: [{
-				id: "13295DF04A92FEA3"
-				item: { count: 1, id: "minecraft:birch_slab" }
+				id: "3BAA6B1E059DB8D6"
+				type: "checkmark"
+			}]
+			x: -19.0d
+			y: -4.5d
+		}
+		{
+			id: "02CBB1D9A926F86B"
+			tasks: [{
+				id: "6A9A6CEB809ECF1D"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:table_cloths)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			id: "5D095029A0B8B414"
+			tasks: [{
+				id: "316298B9E876209C"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 4.5d
 		}
 	]
 }

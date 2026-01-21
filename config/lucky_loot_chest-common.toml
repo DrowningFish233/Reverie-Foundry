@@ -4,7 +4,7 @@
 	# Range: 1 ~ 1024
 	maxAddLootItems = 10
 	#Loot chests are forbidden to double items with a maximum stack quantity of 1，This will reduce the problem of loot being repelled by a large number of non-stackable items
-	notOneItem = false
+	notOneItem = true
 	#Each Luck value affects how many items are added to the loot table
 	# Default: 1
 	# Range: 1 ~ 1024
