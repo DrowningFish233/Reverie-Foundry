@@ -30,7 +30,7 @@ SECOND_PANEL_X = 0
 # Default: 0
 # Range: -Infinity ~ Infinity
 SECOND_PANEL_Y = 0
-# Default inner overlay style for tooltips. Options: glint, solid (monochrome), gradient.
+# Default inner overlay style for tooltips. Options: glint, static (monochrome), gradient.
 # 
 # Default: gradient
 DEFAULT_INNER_OVERLAY_TYPE = "gradient"

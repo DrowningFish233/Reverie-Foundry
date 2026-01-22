@@ -1,10 +1,10 @@
 {
   "modpackMode": false,
   "fullScreen": "WINDOWED",
-  "fpsDisplayMode": "OFF",
+  "fpsDisplayMode": "SIMPLE",
   "fpsDisplayAlign": "LEFT",
   "fpsDisplayVAlign": "TOP",
-  "fpsDisplaySystemMode": "OFF",
+  "fpsDisplaySystemMode": "GPU_ONLY",
   "fpsDisplayMargin": 12,
   "fpsDisplayVMargin": 12,
   "fpsDisplayShadow": false,

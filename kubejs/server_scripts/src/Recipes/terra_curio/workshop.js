@@ -93,6 +93,50 @@ ServerEvents.recipes(event => {
             .addIngredient('kubejs:band_of_starpower')
     );
 
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:arcane_flower')
+            .addIngredient('terra_curio:putrid_scent')
+            .addIngredient('kubejs:mana_flower')
+    );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:magnet_flower')
+            .addIngredient('terra_curio:treasure_magnet')
+            .addIngredient('kubejs:mana_flower')
+    );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:mana_cloak')
+            .addIngredient('terra_curio:star_cloak')
+            .addIngredient('kubejs:mana_flower')
+    );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:magic_cuffs')
+            .addIngredient('irons_spellbooks:cinder_essence')
+            .addIngredient('minecraft:iron_ingot')
+            .addIngredient('kubejs:blood_orb')
+            .addIngredient('irons_spellbooks:arcane_essence')
+            .addIngredient('irons_spellbooks:arcane_essence')
+    );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:magic_cuffs')
+            .addIngredient('irons_spellbooks:cinder_essence')
+            .addIngredient('minecraft:iron_ingot')
+            .addIngredient('hazennstuff:shadow_scale')
+            .addIngredient('irons_spellbooks:arcane_essence')
+            .addIngredient('irons_spellbooks:arcane_essence')
+    );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:band_of_starpower')
+            .addIngredient('terra_curio:band_of_regeneration')
+            .addIngredient('irons_spellbooks:arcane_essence')
+            .addIngredient('irons_spellbooks:arcane_essence')
+            .addIngredient('irons_spellbooks:arcane_essence')
+
+    );
     /*
     registerTerraCurioRecipe(
         new TerraCurioWorkshopRecipeJSON('terra_curio:custom_item')

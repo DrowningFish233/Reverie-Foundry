@@ -402,7 +402,7 @@
         },
         {
           "type": "item",
-          "name": "kubejs:unholy_essence",
+          "name": "create:experience_nugget",
           "weight": 25,
           "conditions": [
             {

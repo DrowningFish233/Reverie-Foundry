@@ -4,6 +4,27 @@
     "size": "small",
     "rewards": [
         {
+            "type": "gateways:stack_list",
+            "stacks": [
+                {
+                    "id": "minecraft:heart_of_the_sea",
+                    "count": 8
+                },
+                {
+                    "id": "minecraft:heart_of_the_sea",
+                    "count": 8
+                },
+                {
+                    "id": "terra_curio:tsunami_in_a_bottle",
+                    "count": 1
+                },
+                {
+                    "id": "aquaculture:neptunium_ingot",
+                    "count": 1
+                }
+            ]
+        },
+        {
             "type": "gateways:entity_loot",
             "entity": "ftboceanmobs:tentacled_horror",
             "rolls": 75
@@ -82,7 +103,7 @@
             "entities": [
                 {
                     "type": "gateways:standard",
-                    "count": 5,
+                    "count": 2,
                     "entity": "ftboceanmobs:rift_minotaur"
                 }
             ],
@@ -132,7 +153,7 @@
             "entities": [
                 {
                     "type": "gateways:standard",
-                    "count": 6,
+                    "count": 2,
                     "entity": "ftboceanmobs:abyssal_winged"
                 }
             ],
@@ -183,16 +204,11 @@
                 {
                     "type": "gateways:standard",
                     "count": 1,
-                    "entity": "ftboceanmobs:tentacled_horror",
-                    "nbt": {
-                        "CustomName": "{\"text\":\"深渊恐魔\",\"color\":\"dark_purple\"}",
-                        "CustomNameVisible": true,
-                        "PersistenceRequired": 1
-                    }
+                    "entity": "ftboceanmobs:tentacled_horror"
                 },
                 {
                     "type": "gateways:standard",
-                    "count": 3,
+                    "count": 1,
                     "entity": "ftboceanmobs:rift_demon"
                 }
             ],

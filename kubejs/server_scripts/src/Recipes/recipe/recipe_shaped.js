@@ -830,4 +830,139 @@ ServerEvents.recipes(event => {
             C: 'minecraft:apple'
         }
     )
+
+    event.shaped(
+        Item.of('kubejs:azure_dawnbreaker_helmet', 1),
+        [
+            'CCC',
+            'CBC',
+            '   '
+        ],
+        {
+            B: 'hazennstuff:archery_rune',
+            C: 'minecraft:diamond'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:azure_dawnbreaker_chestplate', 1),
+        [
+            'CBC',
+            'CCC',
+            'CCC'
+        ],
+        {
+            B: 'hazennstuff:archery_rune',
+            C: 'minecraft:diamond'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:azure_dawnbreaker_leggings', 1),
+        [
+            'CCC',
+            'CBC',
+            'C C'
+        ],
+        {
+            B: 'hazennstuff:archery_rune',
+            C: 'minecraft:diamond'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:azure_dawnbreaker_boots', 1),
+        [
+            '   ',
+            'CBC',
+            'C C'
+        ],
+        {
+            B: 'hazennstuff:archery_rune',
+            C: 'minecraft:diamond'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:spell_resistance_helmet', 1),
+        [
+            'CAC',
+            'CBC',
+            '   '
+        ],
+        {
+            A: 'minecraft:netherite_scrap',
+            B: 'irons_spellbooks:protection_rune',
+            C: 'minecraft:diamond'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:spell_resistance_chestplate', 1),
+        [
+            'CAC',
+            'CBC',
+            'CCC'
+        ],
+        {
+            A: 'minecraft:netherite_scrap',
+            B: 'irons_spellbooks:protection_rune',
+            C: 'minecraft:diamond'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:spell_resistance_leggings', 1),
+        [
+            'CAC',
+            'CBC',
+            'C C'
+        ],
+        {
+            A: 'minecraft:netherite_scrap',
+            B: 'irons_spellbooks:protection_rune',
+            C: 'minecraft:diamond'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:spell_resistance_boots', 1),
+        [
+            '   ',
+            'CBC',
+            'CAC'
+        ],
+        {
+            A: 'minecraft:netherite_scrap',
+            B: 'irons_spellbooks:protection_rune',
+            C: 'minecraft:diamond'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:crowbar', 1),
+        [
+            'AA ',
+            ' B ',
+            ' CA'
+        ],
+        {
+            A: 'minecraft:netherite_ingot',
+            B: 'ftboceanmobs:sludge_ball',
+            C: 'minecraft:red_dye'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:unholy_essence', 2),
+        [
+            'AAA',
+            ' B ',
+            'AAA'
+        ],
+        {
+            A: 'irons_spellbooks:arcane_essence',
+            B: 'cataclysm:burning_ashes'
+        }
+    )
 })
