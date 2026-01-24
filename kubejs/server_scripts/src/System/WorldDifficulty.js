@@ -1,7 +1,8 @@
 // priority: 10
 // 检查生物是否在黑名单中
 function isBlacklisted(entity) {
-    return DIFFICULTY_BLACKLIST.includes(entity.type);
+    let entityTypeStr = entity.getType().toString();
+    return DIFFICULTY_BLACKLIST.includes(entityTypeStr);
 }
 
 // 计算合并后的难度倍数
@@ -120,19 +121,19 @@ EntityEvents.checkSpawn(event => {
     /*
     if (highestStageDifficulty) {
         if (blacklisted) {
-            console.log(`[Reverie Foundry] 黑名单生物 ${entity.type} - 仅阶段难度: ${highestStageDifficulty}`);
+            console.log(`[Reverie Foundry] 黑名单生物 ${entity.getType()} - 仅阶段难度: ${highestStageDifficulty}`);
             console.log(`          生命: x${finalMultipliers.health}, 攻击: x${finalMultipliers.attack}, 护甲: x${finalMultipliers.armor}`);
         } else {
-            console.log(`[Reverie Foundry] 实体ID：${entity.type}难度等级：${worldDifficulty} × ${highestStageDifficulty} = ` +
+            console.log(`[Reverie Foundry] 实体ID：${entity.getType()}难度等级：${worldDifficulty} × ${highestStageDifficulty} = ` +
                 `生命: x${finalMultipliers.health.toFixed(1)}, ` +
                 `攻击: x${finalMultipliers.attack.toFixed(1)}, ` +
                 `护甲: x${finalMultipliers.armor.toFixed(1)}`);
         }
     } else {
         if (blacklisted) {
-            console.log(`[Reverie Foundry] 黑名单生物 ${entity.type} - 无阶段难度，跳过加成`);
+            console.log(`[Reverie Foundry] 黑名单生物 ${entity.getType()} - 无阶段难度，跳过加成`);
         } else {
-            console.log(`[Reverie Foundry] 实体ID：${entity.type}难度等级：${worldDifficulty} 仅世界难度 - ` +
+            console.log(`[Reverie Foundry] 实体ID：${entity.getType()}难度等级：${worldDifficulty} 仅世界难度 - ` +
                 `生命: x${finalMultipliers.health}, 攻击: x${finalMultipliers.attack}`);
         }
     }

@@ -186,11 +186,6 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.sin.sanity_reduce', 'pink_dye')
         ]
     },
-    'irons_restrictions:unfinished_manuscript': {
-        lines: [
-            TooltipUtils.simpleText('tooltip.unfinished_manuscript', 'red'),
-        ]
-    },
     'kubejs:raw_netherite_ingot': {
         lines: [
             TooltipUtils.simpleText('tooltip.raw_netherite_ingot', 'yellow'),
@@ -459,16 +454,16 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.end_stone_rubble_shield.title', 'yellow'),
         ]
     },
-    'irons_restrictions:manuscript': {
-        lines: [
-            TooltipUtils.simpleText('tooltip.irons_restrictions.manuscript', 'yellow'),
-            TooltipUtils.simpleText('tooltip.irons_restrictions.manuscript.2', 'gold'),
-        ]
-    },
     'create:refined_radiance': {
         lines: [
             TooltipUtils.simpleText('tooltip.common.refined_radiance', 'blue'),
             TooltipUtils.simpleText('tooltip.common.refined_radiance.2', 'blue'),
+        ]
+    },
+    'minecraft:brick': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.common.brick', 'yellow'),
+            TooltipUtils.simpleText('tooltip.common.brick.2', 'yellow'),
         ]
     }
 };

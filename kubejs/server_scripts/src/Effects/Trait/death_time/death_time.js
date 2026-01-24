@@ -59,7 +59,12 @@ function gift_Heaven(event, player) {
     if (!validItems.includes(originalItem.id)) return;
 
     let displayItem = originalItem.copy()
-    $Minecraft.getInstance().gameRenderer.displayItemActivation(displayItem)
+
+    player.sendData("gift_Heaven", {
+        gift_Heaven: true,
+        itemId: originalItem.id
+    });
+
     originalItem.shrink(1)
     if (originalItem.count <= 0) {
         player.setMainHandItem(Item.of('minecraft:air'))

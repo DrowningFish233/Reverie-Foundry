@@ -40,7 +40,7 @@ const curiosEffects = new Map([
                                 ]).color('yellow')
                             );
                             event.level[$playersound]
-                                (null, player.x, player.y, player.z, "kubejs:full_adrenaline", "players", 1.0, 1.0)
+                                (null, player.x, player.y, player.z, "kubejs:full_adrenaline", "players", 0.6, 0.6)
                         }
                     }
                 }

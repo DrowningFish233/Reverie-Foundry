@@ -1,3 +1,4 @@
+// priority: 0
 /*
 // 流体转换配置
 const fluidConversions = [

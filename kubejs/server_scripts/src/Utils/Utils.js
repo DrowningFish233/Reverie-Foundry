@@ -977,8 +977,8 @@ function summonMob(interval, entity, mobId, sound) {
                     pos.z,
                     sound,
                     "players",
-                    1.0,
-                    1.0
+                    0.6,
+                    0.6
                 );
             }
 
@@ -1044,8 +1044,8 @@ function summonMobWithDimensions(interval, entity, mobId, sound, allowedDimensio
                     pos.z,
                     sound,
                     "players",
-                    1.0,
-                    1.0
+                    0.6,
+                    0.6
                 );
             }
 
@@ -1087,7 +1087,154 @@ function playRandomFailSound(level, pos) {
         pos.z,
         failSound,
         "players",
-        1.0,
-        1.0
+        0.6,
+        0.6
     )
+}
+
+function getRandomScrollId() {
+    const spellsData = {
+        "spells": [
+            { "id": "irons_spellbooks:fire_breath", "maxLevel": 10 },
+            { "id": "irons_spellbooks:magma_bomb", "maxLevel": 8 },
+            { "id": "irons_spellbooks:blaze_storm", "maxLevel": 10 },
+            { "id": "irons_spellbooks:firebolt", "maxLevel": 10 },
+            { "id": "irons_spellbooks:flaming_barrage", "maxLevel": 5 },
+            { "id": "irons_spellbooks:flaming_strike", "maxLevel": 5 },
+            { "id": "gametechbcs_spellbooks:meteor_storm", "maxLevel": 6 },
+            { "id": "irons_spellbooks:fireball", "maxLevel": 5 },
+            { "id": "irons_spellbooks:heat_surge", "maxLevel": 8 },
+            { "id": "irons_spellbooks:wall_of_fire", "maxLevel": 5 },
+            { "id": "irons_spellbooks:scorch", "maxLevel": 10 },
+            { "id": "irons_spellbooks:fire_arrow", "maxLevel": 10 },
+            { "id": "irons_spellbooks:burning_dash", "maxLevel": 10 },
+            { "id": "gametechbcs_spellbooks:flames_reborn", "maxLevel": 3 },
+            { "id": "irons_spellbooks:raise_hell", "maxLevel": 5 },
+
+            { "id": "irons_spellbooks:poison_arrow", "maxLevel": 10 },
+            { "id": "irons_spellbooks:touch_dig", "maxLevel": 3 },
+            { "id": "irons_spellbooks:root", "maxLevel": 10 },
+            { "id": "gametechbcs_spellbooks:acid_rain", "maxLevel": 3 },
+            { "id": "irons_spellbooks:blight", "maxLevel": 8 },
+            { "id": "irons_spellbooks:acid_orb", "maxLevel": 10 },
+            { "id": "irons_spellbooks:poison_breath", "maxLevel": 10 },
+            { "id": "gametechbcs_spellbooks:ensnare", "maxLevel": 5 },
+            { "id": "irons_spellbooks:earthquake", "maxLevel": 10 },
+            { "id": "irons_spellbooks:poison_splash", "maxLevel": 10 },
+            { "id": "irons_spellbooks:oakskin", "maxLevel": 8 },
+            { "id": "irons_spellbooks:spider_aspect", "maxLevel": 8 },
+            { "id": "irons_spellbooks:firefly_swarm", "maxLevel": 10 },
+            { "id": "irons_spellbooks:stomp", "maxLevel": 5 },
+            { "id": "irons_spellbooks:gluttony", "maxLevel": 5 },
+
+            { "id": "irons_spellbooks:gust", "maxLevel": 10 },
+            { "id": "irons_spellbooks:invisibility", "maxLevel": 6 },
+            { "id": "irons_spellbooks:summon_vex", "maxLevel": 5 },
+            { "id": "irons_spellbooks:wololo", "maxLevel": 1 },
+            { "id": "irons_spellbooks:spectral_hammer", "maxLevel": 5 },
+            { "id": "gametechbcs_spellbooks:lingering_strain", "maxLevel": 3 },
+            { "id": "irons_spellbooks:arrow_volley", "maxLevel": 6 },
+            { "id": "irons_spellbooks:fang_ward", "maxLevel": 8 },
+            { "id": "irons_spellbooks:fang_strike", "maxLevel": 10 },
+            { "id": "irons_spellbooks:chain_creeper", "maxLevel": 6 },
+            { "id": "irons_spellbooks:lob_creeper", "maxLevel": 10 },
+            { "id": "gametechbcs_spellbooks:ashen_breath", "maxLevel": 10 },
+            { "id": "irons_spellbooks:shield", "maxLevel": 10 },
+            { "id": "irons_spellbooks:summon_horse", "maxLevel": 5 },
+            { "id": "irons_spellbooks:slow", "maxLevel": 4 },
+            { "id": "irons_spellbooks:firecracker", "maxLevel": 10 },
+            { "id": "irons_spellbooks:throw", "maxLevel": 5 },
+
+            { "id": "gametechbcs_spellbooks:astral_sense", "maxLevel": 3 },
+            { "id": "irons_spellbooks:evasion", "maxLevel": 5 },
+            { "id": "irons_spellbooks:recall", "maxLevel": 1 },
+            { "id": "irons_spellbooks:magic_arrow", "maxLevel": 10 },
+            { "id": "irons_spellbooks:teleport", "maxLevel": 5 },
+            { "id": "gametechbcs_spellbooks:displacement", "maxLevel": 3 },
+            { "id": "irons_spellbooks:echoing_strikes", "maxLevel": 5 },
+            { "id": "irons_spellbooks:summon_swords", "maxLevel": 5 },
+            { "id": "irons_spellbooks:portal", "maxLevel": 3 },
+            { "id": "irons_spellbooks:black_hole", "maxLevel": 6 },
+            { "id": "irons_spellbooks:magic_missile", "maxLevel": 10 },
+            { "id": "irons_spellbooks:summon_ender_chest", "maxLevel": 1 },
+            { "id": "irons_spellbooks:dragon_breath", "maxLevel": 10 },
+            { "id": "irons_spellbooks:counterspell", "maxLevel": 1 },
+            { "id": "irons_spellbooks:starfall", "maxLevel": 10 },
+            { "id": "irons_spellbooks:shadow_slash", "maxLevel": 5 },
+
+            { "id": "irons_spellbooks:frostbite", "maxLevel": 5 },
+            { "id": "gametechbcs_spellbooks:shatterpoint", "maxLevel": 5 },
+            { "id": "irons_spellbooks:ray_of_frost", "maxLevel": 5 },
+            { "id": "irons_spellbooks:cone_of_cold", "maxLevel": 10 },
+            { "id": "irons_spellbooks:frostwave", "maxLevel": 8 },
+            { "id": "irons_spellbooks:summon_polar_bear", "maxLevel": 10 },
+            { "id": "irons_spellbooks:icicle", "maxLevel": 10 },
+            { "id": "irons_spellbooks:ice_tomb", "maxLevel": 8 },
+            { "id": "irons_spellbooks:ice_spikes", "maxLevel": 10 },
+            { "id": "irons_spellbooks:ice_block", "maxLevel": 6 },
+            { "id": "irons_spellbooks:frost_step", "maxLevel": 8 },
+            { "id": "irons_spellbooks:snowball", "maxLevel": 5 },
+
+            { "id": "irons_spellbooks:healing_circle", "maxLevel": 10 },
+            { "id": "irons_spellbooks:blessing_of_life", "maxLevel": 10 },
+            { "id": "irons_spellbooks:cleanse", "maxLevel": 1 },
+            { "id": "irons_spellbooks:sunbeam", "maxLevel": 10 },
+            { "id": "irons_spellbooks:heal", "maxLevel": 8 },
+            { "id": "irons_spellbooks:wisp", "maxLevel": 10 },
+            { "id": "irons_spellbooks:divine_smite", "maxLevel": 5 },
+            { "id": "irons_spellbooks:greater_heal", "maxLevel": 1 },
+            { "id": "gametechbcs_spellbooks:nullflare", "maxLevel": 5 },
+            { "id": "irons_spellbooks:angel_wing", "maxLevel": 5 },
+            { "id": "irons_spellbooks:fortify", "maxLevel": 10 },
+            { "id": "gametechbcs_spellbooks:banish", "maxLevel": 3 },
+            { "id": "irons_spellbooks:guiding_bolt", "maxLevel": 10 },
+            { "id": "irons_spellbooks:haste", "maxLevel": 4 },
+            { "id": "irons_spellbooks:cloud_of_regeneration", "maxLevel": 5 },
+
+            { "id": "gametechbcs_spellbooks:crimson_downpour", "maxLevel": 3 },
+            { "id": "irons_spellbooks:raise_dead", "maxLevel": 6 },
+            { "id": "irons_spellbooks:blood_slash", "maxLevel": 5 },
+            { "id": "irons_spellbooks:blood_step", "maxLevel": 5 },
+            { "id": "irons_spellbooks:acupuncture", "maxLevel": 10 },
+            { "id": "irons_spellbooks:blood_needles", "maxLevel": 10 },
+            { "id": "irons_spellbooks:sacrifice", "maxLevel": 5 },
+            { "id": "irons_spellbooks:devour", "maxLevel": 10 },
+            { "id": "gametechbcs_spellbooks:call_forth_the_dead_king", "maxLevel": 1 },
+            { "id": "irons_spellbooks:ray_of_siphoning", "maxLevel": 10 },
+            { "id": "irons_spellbooks:heartstop", "maxLevel": 10 },
+            { "id": "irons_spellbooks:wither_skull", "maxLevel": 10 },
+
+            { "id": "irons_spellbooks:ascension", "maxLevel": 10 },
+            { "id": "irons_spellbooks:shockwave", "maxLevel": 8 },
+            { "id": "irons_spellbooks:electrocute", "maxLevel": 10 },
+            { "id": "irons_spellbooks:lightning_bolt", "maxLevel": 10 },
+            { "id": "irons_spellbooks:ball_lightning", "maxLevel": 10 },
+            { "id": "irons_spellbooks:chain_lightning", "maxLevel": 10 },
+            { "id": "irons_spellbooks:thunder_step", "maxLevel": 5 },
+            { "id": "irons_spellbooks:thunderstorm", "maxLevel": 8 },
+            { "id": "irons_spellbooks:lightning_lance", "maxLevel": 10 },
+            { "id": "irons_spellbooks:charge", "maxLevel": 3 },
+            { "id": "irons_spellbooks:volt_strike", "maxLevel": 10 },
+
+            { "id": "kubejs:gold_body", "maxLevel": 8 },
+            { "id": "kubejs:one_six_seven_four", "maxLevel": 5 },
+            { "id": "kubejs:rune_of_deflection", "maxLevel": 4 },
+            { "id": "kubejs:clear_cooldown", "maxLevel": 3 },
+            { "id": "kubejs:fire_arrow", "maxLevel": 5 },
+            { "id": "kubejs:explosion", "maxLevel": 3 },
+            { "id": "kubejs:eternal_life_spell", "maxLevel": 3 },
+            { "id": "kubejs:demon_conch", "maxLevel": 8 },
+            { "id": "kubejs:phantom_pain", "maxLevel": 5 },
+            { "id": "kubejs:plunder_spell", "maxLevel": 4 }
+        ]
+    };
+
+    const randomSpellIndex = Math.floor(Math.random() * spellsData.spells.length);
+    const randomSpell = spellsData.spells[randomSpellIndex];
+
+    const randomLevel = Math.floor(Math.random() * randomSpell.maxLevel) + 1;
+
+    const scrollId = `irons_spellbooks:scroll[irons_spellbooks:spell_container={data:[{id:"${randomSpell.id}",index:0,level:${randomLevel},locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}]`;
+
+    return scrollId;
 }

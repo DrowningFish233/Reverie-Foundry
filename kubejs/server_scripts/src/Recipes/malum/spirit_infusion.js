@@ -428,7 +428,6 @@ ServerEvents.recipes(event => {
             .addExtraInput('kubejs:soul_of_light', 4)
             .addExtraInput('minecraft:note_block', 2)
             .addExtraInput('alshanex_familiars:sound_rune', 4)
-            .addExtraInput('irons_restrictions:fragment', 2)
     );
 
     registerCustomRecipe(
@@ -893,5 +892,12 @@ ServerEvents.recipes(event => {
             .addExtraInput('minecraft:ender_pearl', 4)
             .addExtraInput('irons_spellbooks:ender_rune', 1)
             .addExtraInput('irons_spellbooks:arcane_essence', 8)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('#kubejs:ingots/fw_ingots', 'malum:cthonic_gold_fragment')
+            .addSpirit("earthen", 1)
+            .addExtraInput('malum:cthonic_gold_fragment', 1)
+            .setOutputCount(2)
     );
 });

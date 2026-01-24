@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "betteremeralds:world_loot_pot",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:decorated_pot",
+              "Properties": {
+                "cracked": "false",
+                "facing": "north",
+                "waterlogged": "false"
+              }
+            }
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:stone",
+                  "minecraft:deepslate",
+                  "minecraft:andesite",
+                  "minecraft:granite",
+                  "minecraft:diorite",
+                  "minecraft:clay"
+                ],
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 46,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

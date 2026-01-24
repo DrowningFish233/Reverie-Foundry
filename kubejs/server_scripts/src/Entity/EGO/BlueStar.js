@@ -34,5 +34,5 @@ function handleBlueStarEffect(event) {
     });
 
     event.level[$playersound]
-        (null, player.x, player.y, player.z, "kubejs:bluestar_in", "players", 1.0, 1.0)
+        (null, player.x, player.y, player.z, "kubejs:bluestar_in", "players", 0.6, 0.6)
 }

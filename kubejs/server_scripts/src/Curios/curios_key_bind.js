@@ -30,7 +30,7 @@ NetworkEvents.dataReceived("key.test_3", (event) => {
             0.1                          // arg9: 粒子速度
         )
         event.level[$playersound]
-            (null, player.x, player.y, player.z, "kubejs:use_adrenaline", "players", 1.0, 1.0)
+            (null, player.x, player.y, player.z, "kubejs:use_adrenaline", "players", 0.6, 0.6)
     }
 });
 

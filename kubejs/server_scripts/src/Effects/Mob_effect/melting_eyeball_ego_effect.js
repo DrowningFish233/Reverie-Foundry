@@ -34,7 +34,7 @@ function melting_eyeball_ego_attack(event) {
             }
             attacker.removeEffect("kubejs:melting_eyeball_ego_effect")
             event.level[$playersound]
-                (null, attacker.x, attacker.y, attacker.z, "kubejs:tremor_burst_1", "players", 1.0, 1.0)
+                (null, attacker.x, attacker.y, attacker.z, "kubejs:tremor_burst_1", "players", 0.6, 0.6)
             updateplayersanity(attacker, Psanity - 25);
         }
     } return

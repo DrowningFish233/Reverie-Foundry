@@ -42,13 +42,6 @@ ServerEvents.recipes(event => {
         ]
     )
     event.shapeless(
-        Item.of('irons_restrictions:fragment', 1),
-        [
-            '4x irons_spellbooks:arcane_essence',
-            'iceandfire:manuscript'
-        ]
-    )
-    event.shapeless(
         Item.of('kubejs:yttrium_ingot', 1),
         [
             'alltheores:sulfur',
@@ -113,5 +106,13 @@ ServerEvents.recipes(event => {
             '3x minecraft:red_dye'
         ]
     )
-
+    event.shapeless(
+        Item.of('kubejs:tungsten_ingot', 1),
+        [
+            'minecraft:lime_dye',
+            'minecraft:white_dye',
+            'minecraft:iron_ingot',
+            'alltheores:steel_nugget'
+        ]
+    )
 })

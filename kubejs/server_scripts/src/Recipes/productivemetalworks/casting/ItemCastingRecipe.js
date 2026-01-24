@@ -5,7 +5,7 @@
  * @param {number} fluidAmount - 流体量
  * @param {string} result - 输出物品ID
  * @param {number} resultCount - 输出数量
- * @param {boolean} consumeCast - 是否消耗铸造型具
+ * @param {boolean} consumeCast 
  */
 function ItemCastingRecipe(cast, fluid, fluidAmount, result, resultCount, consumeCast) {
   this.type = "productivemetalworks:item_casting";
@@ -151,5 +151,6 @@ ServerEvents.recipes(event => {
   register(new ItemCastingRecipe("minecraft:coal", "kubejs:gobber2_foo", 90, "gobber2:gobber2_foo", 1, true));
   register(new ItemCastingRecipe("minecraft:coal", "kubejs:gobber2_foo_nether", 90, "gobber2:gobber2_foo_nether", 1, true));
   register(new ItemCastingRecipe("minecraft:coal", "kubejs:gobber2_foo_end", 90, "gobber2:gobber2_foo_end", 1, true));
+  register(new ItemCastingRecipe("minecraft:string", "productivemetalworks:molten_steel", 90, 'productivemetalworks:gear_cast', 1, false));
 
 });

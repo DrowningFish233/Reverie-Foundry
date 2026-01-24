@@ -359,20 +359,7 @@ ServerEvents.recipes(event => {
             C: 'eternal_starlight:glacite_shard'
         }
     )
-    event.shaped(
-        Item.of('kubejs:tungsten_ingot', 1),
-        [
-            'CAC',
-            'DBD',
-            'ACA'
-        ],
-        {
-            A: 'minecraft:lime_dye',
-            B: 'minecraft:iron_ingot',
-            C: 'minecraft:white_dye',
-            D: 'alltheores:steel_nugget'
-        }
-    )
+
     event.shaped(
         Item.of('kubejs:echo_ingot', 1),
         [
@@ -511,19 +498,6 @@ ServerEvents.recipes(event => {
         {
             A: 'kubejs:soul_of_night',
             C: 'kubejs:cosmos_aurora_ingot'
-        }
-    )
-
-    event.shaped(
-        Item.of('kubejs:scroll_of_friendship', 1),
-        [
-            ' A ',
-            'ACA',
-            ' A '
-        ],
-        {
-            C: 'irons_restrictions:fragment',
-            A: 'create:experience_nugget'
         }
     )
 
@@ -963,6 +937,34 @@ ServerEvents.recipes(event => {
         {
             A: 'irons_spellbooks:arcane_essence',
             B: 'cataclysm:burning_ashes'
+        }
+    )
+
+    event.shaped(
+        Item.of('silentgems:garnet_teleporter', 1),
+        [
+            'CAC',
+            'ABA',
+            ' D '
+        ],
+        {
+            A: 'kubejs:garnet',
+            B: 'silentgems:chaos_essence_block',
+            C: 'minecraft:gold_ingot',
+            D: '#c:ender_pearls'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:scroll_of_friendship', 1),
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],
+        {
+            A: 'create:experience_nugget',
+            B: 'minecraft:paper'
         }
     )
 })

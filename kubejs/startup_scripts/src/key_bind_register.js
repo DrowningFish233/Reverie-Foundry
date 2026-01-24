@@ -1,3 +1,4 @@
+// priority: 0
 const $RegisterKeyMappingsEvent = Java.loadClass("net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent");
 const $keyMapping = Java.loadClass("net.minecraft.client.KeyMapping");
 

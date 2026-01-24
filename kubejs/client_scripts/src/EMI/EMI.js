@@ -210,11 +210,6 @@ RecipeViewerEvents.addInformation('item', event => {
         '为什么会有人想吃这个啊喂!',
     ]);
 
-    event.add('irons_restrictions:unfinished_manuscript', [
-        '主要通过制作与冒险获得,也可通过挖掘刷怪笼概率获取 (爆率真的很低!)',
-        '试图通过奥术布匹来修复残缺的术法知识，可惜这种方法并不会百分百成功'
-    ]);
-
     event.add('allthemodium:allthemodium_ingot', [
         'ATM锭可以前往下界，找到下界荒地的狱墟末影人',
         '诡异森林的诡森末影人',

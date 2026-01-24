@@ -1,3 +1,4 @@
+// priority: 0
 /**
  * @typedef {import("dev.latvian.mods.kubejs.item.ItemBuilder").$ItemBuilder$$Type} $ItemBuilder$$Type
  * @typedef {import("net.minecraft.world.item.ItemStack").$ItemStack$$Type} $ItemStack$$Type

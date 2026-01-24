@@ -83,6 +83,9 @@ function allthe_event(event) {
  * 其他药水效果处理
  */
 function other_effect(event) {
+    use_adrenaline_effect(event);
+    load_protection_attack(event);
+    load_protection(event);
     elemental_mix(event);
     lightning_electrified(event);
     plunder_effect(event);

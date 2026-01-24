@@ -1,3 +1,4 @@
+// priority: 0
 NativeEvents.onEvent($MobEffectEvent$Added, event => {
     const effectInstance = event.getEffectInstance();
     const entity = event.getEntity()

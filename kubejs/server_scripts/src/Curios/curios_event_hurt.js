@@ -47,7 +47,7 @@ const curios_event_hurt = {
                 let sound_adrenaline = pData.getInt("adrenaline");
                 if (sound_adrenaline >= 25) {
                     event.level[$playersound]
-                        (null, player.x, player.y, player.z, "kubejs:no_adrenaline", "players", 1.0, 1.0)
+                        (null, player.x, player.y, player.z, "kubejs:no_adrenaline", "players", 0.6, 0.6)
                 }
                 player.setStatusMessage(
                     Text.join([

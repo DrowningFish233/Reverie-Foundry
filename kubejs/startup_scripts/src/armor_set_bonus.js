@@ -1,3 +1,4 @@
+// priority: 0
 const $LivingEquipmentChangeEvent = Java.loadClass("net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent")
 
 /**

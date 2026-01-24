@@ -14,7 +14,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'apothic_enchanting:occult_ender_lead' })
     event.remove({ output: 'endrem:exotic_eye' })
     event.remove({ output: 'silentgear:metal_press' })
+    event.remove({ output: 'silentgems:garnet_teleporter' })
     event.remove({ input: '#alltheores:ore_hammers' })
+    event.remove({ output: 'productivemetalworks:gear_cast' })
     event.remove({ mod: 'productivelib' })
     event.smelting('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)
     event.smoking('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)
@@ -31,5 +33,4 @@ ServerEvents.recipes(event => {
         'farmersdelight:wheat_dough',
         '#c:dough'
     )
-
 })

@@ -1,0 +1,458 @@
+/**
+ * 统一化配方
+ */
+function OreUnificationBuilder() {
+    this.ores = [];
+    this.settings = {
+        removeNuggets: true,
+        removeBlocks: true,
+        addShapeless: true,
+        addBlockRecipe: true
+    };
+    this.tag = '';
+    this.event = null;
+    // 自定义粒和块ID映射
+    this.customNuggets = {};
+    this.customBlocks = {};
+    // 跳过处理的金属列表
+    this.skipNuggets = [];  // 跳过粒合成的金属
+    this.skipBlocks = [];   // 跳过块合成的金属
+    this.skipAll = [];      // 完全跳过处理的金属
+}
+
+OreUnificationBuilder.prototype = {
+    /**
+     * 添加一个金属锭到当前层级
+     * @param {string} ingot - 金属锭ID
+     */
+    addIngot: function (ingot) {
+        this.ores.push(ingot);
+        return this;
+    },
+
+    /**
+     * 批量添加多个金属锭
+     * @param {string[]} ingots - 金属锭ID数组
+     */
+    addIngots: function (ingots) {
+        for (let i = 0; i < ingots.length; i++) {
+            this.ores.push(ingots[i]);
+        }
+        return this;
+    },
+
+    /**
+     * 设置标签
+     * @param {string} tag - KubeJS标签
+     */
+    setTag: function (tag) {
+        this.tag = tag;
+        return this;
+    },
+
+    /**
+     * 设置是否移除粒合成
+     * @param {boolean} remove - 是否移除
+     */
+    setRemoveNuggets: function (remove) {
+        this.settings.removeNuggets = remove;
+        return this;
+    },
+
+    /**
+     * 设置是否移除块合成
+     * @param {boolean} remove - 是否移除
+     */
+    setRemoveBlocks: function (remove) {
+        this.settings.removeBlocks = remove;
+        return this;
+    },
+
+    /**
+     * 设置是否添加无合成表
+     * @param {boolean} add - 是否添加
+     */
+    setAddShapeless: function (add) {
+        this.settings.addShapeless = add;
+        return this;
+    },
+
+    /**
+     * 设置是否添加块合成
+     * @param {boolean} add - 是否添加
+     */
+    setAddBlockRecipe: function (add) {
+        this.settings.addBlockRecipe = add;
+        return this;
+    },
+
+    /**
+     * 为指定金属锭设置自定义粒ID
+     * @param {string} ingot - 金属锭ID
+     * @param {string} nugget - 粒ID
+     */
+    setNugget: function (ingot, nugget) {
+        this.customNuggets[ingot] = nugget;
+        return this;
+    },
+
+    /**
+     * 为指定金属锭设置自定义块ID
+     * @param {string} ingot - 金属锭ID
+     * @param {string} block - 块ID
+     */
+    setBlock: function (ingot, block) {
+        this.customBlocks[ingot] = block;
+        return this;
+    },
+
+    /**
+     * 批量设置自定义粒ID
+     * @param {Object} nuggets - {ingot: nugget} 映射
+     */
+    setNuggets: function (nuggets) {
+        for (const ingot in nuggets) {
+            this.customNuggets[ingot] = nuggets[ingot];
+        }
+        return this;
+    },
+
+    /**
+     * 批量设置自定义块ID
+     * @param {Object} blocks - {ingot: block} 映射
+     */
+    setBlocks: function (blocks) {
+        for (const ingot in blocks) {
+            this.customBlocks[ingot] = blocks[ingot];
+        }
+        return this;
+    },
+
+    /**
+     * 跳过指定金属的粒处理
+     * @param {string} ingot - 金属锭ID
+     */
+    skipNugget: function (ingot) {
+        this.skipNuggets.push(ingot);
+        return this;
+    },
+
+    /**
+     * 跳过指定金属的块处理
+     * @param {string} ingot - 金属锭ID
+     */
+    skipBlock: function (ingot) {
+        this.skipBlocks.push(ingot);
+        return this;
+    },
+
+    /**
+     * 跳过指定金属的所有处理（只做标签替换）
+     * @param {string} ingot - 金属锭ID
+     */
+    skipAllProcessing: function (ingot) {
+        this.skipAll.push(ingot);
+        return this;
+    },
+
+    /**
+     * 批量跳过粒处理
+     * @param {string[]} ingots - 金属锭ID数组
+     */
+    skipNuggetsList: function (ingots) {
+        for (let i = 0; i < ingots.length; i++) {
+            this.skipNuggets.push(ingots[i]);
+        }
+        return this;
+    },
+
+    /**
+     * 批量跳过块处理
+     * @param {string[]} ingots - 金属锭ID数组
+     */
+    skipBlocksList: function (ingots) {
+        for (let i = 0; i < ingots.length; i++) {
+            this.skipBlocks.push(ingots[i]);
+        }
+        return this;
+    },
+
+    /**
+     * 批量跳过所有处理
+     * @param {string[]} ingots - 金属锭ID数组
+     */
+    skipAllProcessingList: function (ingots) {
+        for (let i = 0; i < ingots.length; i++) {
+            this.skipAll.push(ingots[i]);
+        }
+        return this;
+    },
+
+    /**
+     * 内部方法：检查是否跳过某功能
+     */
+    _shouldSkip: function (ingot, functionName) {
+        if (this.skipAll.includes(ingot)) {
+            return true;  // 完全跳过
+        }
+
+        if (functionName === 'nugget' && this.skipNuggets.includes(ingot)) {
+            return true;  // 跳过粒处理
+        }
+
+        if (functionName === 'block' && this.skipBlocks.includes(ingot)) {
+            return true;  // 跳过块处理
+        }
+
+        return false;
+    },
+
+    /**
+     * 内部方法：获取粒ID
+     */
+    _getNuggetId: function (ingot) {
+        // 优先使用自定义粒ID
+        if (this.customNuggets[ingot]) {
+            return this.customNuggets[ingot];
+        }
+        // 否则生成默认粒ID
+        const parts = ingot.split(':');
+        const mod = parts[0];
+        const item = parts[1];
+        const baseItem = item.replace('_ingot', '');
+        return `${mod}:${baseItem}_nugget`;
+    },
+
+    /**
+     * 内部方法：获取块ID
+     */
+    _getBlockId: function (ingot) {
+        // 优先使用自定义块ID
+        if (this.customBlocks[ingot]) {
+            return this.customBlocks[ingot];
+        }
+        // 否则生成默认块ID
+        const parts = ingot.split(':');
+        const mod = parts[0];
+        const item = parts[1];
+        const baseItem = item.replace('_ingot', '');
+        return `${mod}:${baseItem}_block`;
+    },
+
+    /**
+     * 内部方法：处理单个金属
+     */
+    _processSingleMetal: function (ingot) {
+        // 将金属锭替换为标签（这个永远执行）
+        this.event.replaceInput(
+            { input: ingot },
+            ingot,
+            this.tag
+        );
+
+        // 检查是否完全跳过处理
+        if (this._shouldSkip(ingot, 'all')) {
+            return;  // 只做了标签替换，其他什么都不做
+        }
+
+        // 处理粒相关
+        if (!this._shouldSkip(ingot, 'nugget')) {
+            const nuggetId = this._getNuggetId(ingot);
+
+            // 移除原有粒合成
+            if (this.settings.removeNuggets) {
+                this.event.remove({ output: nuggetId });
+            }
+
+            // 添加新粒合成
+            if (this.settings.addShapeless) {
+                this.event.shapeless(
+                    Item.of(nuggetId, 9),
+                    [ingot]
+                );
+            }
+        }
+
+        // 处理块相关
+        if (!this._shouldSkip(ingot, 'block')) {
+            const blockId = this._getBlockId(ingot);
+
+            // 移除原有块合成
+            if (this.settings.removeBlocks) {
+                this.event.remove({ output: blockId });
+            }
+
+            // 添加新块合成
+            if (this.settings.addShapeless) {
+                this.event.shapeless(
+                    Item.of(ingot, 9),
+                    [blockId]
+                );
+            }
+
+            if (this.settings.addBlockRecipe) {
+                this.event.shaped(
+                    Item.of(blockId),
+                    ['III', 'III', 'III'],
+                    { I: ingot }
+                );
+            }
+        }
+    },
+
+    /**
+     * 批量替换同级金属
+     */
+    _unifyTier: function () {
+        for (let i = 0; i < this.ores.length; i++) {
+            const ore = this.ores[i];
+            this.event.replaceInput(
+                { input: ore },
+                ore,
+                this.tag
+            );
+        }
+    },
+
+    /**
+     * 注册配方
+     * @param {Object} event - ServerEvents.recipes的event对象
+     */
+    register: function (event) {
+        this.event = event;
+
+        // 批量替换同级金属
+        this._unifyTier();
+
+        // 处理每个金属的合成表
+        for (let i = 0; i < this.ores.length; i++) {
+            this._processSingleMetal(this.ores[i]);
+        }
+
+        return this;
+    }
+};
+
+
+
+ServerEvents.recipes(event => {
+    new OreUnificationBuilder()
+        .setTag('#kubejs:ingots/tier_1')
+        .addIngots(['minecraft:iron_ingot', 'alltheores:lead_ingot'])
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:ingots/tier_0')
+        .addIngots(['minecraft:copper_ingot', 'alltheores:tin_ingot'])
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .setNugget('minecraft:copper_ingot', 'create:copper_nugget')
+        /*
+        .setNuggets({
+            'alltheores:tin_ingot': 'alltheores:tin_nugget'
+        })
+        */
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:ingots/tier_2')
+        .addIngots(['kubejs:tungsten_ingot', 'iceandfire:silver_ingot'])
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .skipNugget('kubejs:tungsten_ingot')
+        .skipBlock('kubejs:tungsten_ingot')
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:ingots/tier_3')
+        .addIngots(['minecraft:gold_ingot', 'alltheores:platinum_ingot'])
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:gem/tier_0')
+        .addIngots(['iceandfire:sapphire_gem', 'minecraft:emerald'])
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .skipNuggetsList(['iceandfire:sapphire_gem', 'minecraft:emerald'])
+        .setBlock('iceandfire:sapphire_gem', 'iceandfire:sapphire_block')
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:gem/tier_1')
+        .addIngots(['kubejs:ruby', 'minecraft:diamond'])
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .skipNuggetsList(['kubejs:ruby', 'minecraft:diamond'])
+        .setBlock('kubejs:ruby', 'alltheores:ruby_block')
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:gem/tier_2')
+        .addIngots(['minecraft:amethyst_shard', 'kubejs:topaz'])
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .skipBlock('minecraft:amethyst_shard')
+        .skipNuggetsList(['kubejs:topaz', 'minecraft:amethyst_shard'])
+        .setBlock('kubejs:topaz', 'silentgems:topaz_block')
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:gem/tier_3')
+        .addIngots(['minecraft:redstone', 'alltheores:cinnabar'])
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .skipNuggetsList(['minecraft:redstone', 'alltheores:cinnabar'])
+        .register(event);
+});
+
+ServerEvents.tags('item', event => {
+    event.add('kubejs:ingots/tier_0',
+        'minecraft:copper_ingot',
+        'alltheores:tin_ingot'
+    )
+    event.add('kubejs:ingots/tier_1',
+        'alltheores:lead_ingot',
+        'minecraft:iron_ingot'
+    )
+
+    event.add('kubejs:ingots/tier_2',
+        'kubejs:tungsten_ingot',
+        'iceandfire:silver_ingot'
+    )
+    event.add('kubejs:ingots/tier_3',
+        'minecraft:gold_ingot',
+        'alltheores:platinum_ingot'
+    )
+
+    event.add('kubejs:gem/tier_0',
+        'iceandfire:sapphire_gem',
+        'minecraft:emerald'
+    )
+    event.add('kubejs:gem/tier_1',
+        'kubejs:ruby',
+        'minecraft:diamond'
+    )
+
+    event.add('kubejs:gem/tier_2',
+        'minecraft:amethyst_shard',
+        'kubejs:topaz'
+    )
+
+    event.add('kubejs:gem/tier_3',
+        'minecraft:redstone',
+        'alltheores:cinnabar'
+    )
+});

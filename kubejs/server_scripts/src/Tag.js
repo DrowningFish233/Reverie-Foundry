@@ -3,6 +3,26 @@ ServerEvents.tags('item', event => {
     event.add('c:ingots/cobalt',
         'kubejs:cobalt_ingot'
     )
+    event.add('kubejs:ingots/fw_ingots',
+        'alltheores:steel_ingot',
+        'alltheores:invar_ingot',
+        'alltheores:electrum_ingot',
+        'alltheores:bronze_ingot',
+        'alltheores:enderium_ingot',
+        'alltheores:lumium_ingot',
+        'alltheores:signalum_ingot',
+        'alltheores:constantan_ingot',
+        'alltheores:sulfur',
+        'alltheores:iridium_ingot',
+        'alltheores:uranium_ingot',
+        'alltheores:tin_ingot',
+        'alltheores:silver_ingot',
+        'alltheores:platinum_ingot',
+        'alltheores:osmium_ingot',
+        'alltheores:nickel_ingot',
+        'alltheores:lead_ingot',
+        'alltheores:aluminum_ingot'
+    )
     event.add('kubejs:level_1',
         'terra_curio:aglet',
         'terra_curio:hermes_boots',
@@ -281,7 +301,7 @@ ServerEvents.tags('item', event => {
         'fruitsdelight:blueberry',
         'minecraft:golden_carrot'
     )
-
+    event.add('c:gems/garnet', 'kubejs:garnet')
     event.add('farmersdelight:enchantable/knife', 'silentgear:knife')
     event.add('c:tools/knife', 'silentgear:knife')
     event.add('farmersdelight:tools/knives', 'silentgear:knife')

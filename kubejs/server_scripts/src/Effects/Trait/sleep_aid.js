@@ -1,3 +1,4 @@
+// priority: 0
 NativeEvents.onEvent($PlayerWakeUpEvent, event => {
     let player = event.entity;
     if (player instanceof $ServerPlayer && !event.updateLevel()) {

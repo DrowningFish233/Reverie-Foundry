@@ -16,7 +16,7 @@ PlayerEvents.loggedIn(event => {
         */
         loggedInplayersanity(player);
         updateplayersanity(player, player_sanity);
-
+        player.potionEffects.add('kubejs:load_protection', 20 * 10, 0)
     });
 });
 

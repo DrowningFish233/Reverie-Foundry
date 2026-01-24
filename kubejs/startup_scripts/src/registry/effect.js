@@ -1224,12 +1224,12 @@ event.create('purple_haze_attack')
     event.create('elemental_mix')
         .harmful()
     event.create('spell_power_increase')
-        .beneficial()
         .color(0xFFFF00)
         .modifyAttribute('irons_spellbooks:spell_power',
             '4a8a687f-ba07-411e-a58f-90ab6154a4c1',
             0.1,
             "add_multiplied_base"
         )
-
-}); 
+    event.create('load_protection')
+        .beneficial()
+});

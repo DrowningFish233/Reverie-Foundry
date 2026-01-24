@@ -1,3 +1,4 @@
+// priority: 0
 // 药水效果自然消失事件
 NativeEvents.onEvent($MobEffectEvent$Expired, event => {
     const effectInstance = event.getEffectInstance();

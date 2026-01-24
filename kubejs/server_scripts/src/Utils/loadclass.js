@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 9999
 function require(/**@type {String}*/classpath) {
     let javaclass = classpath.split('/').slice(1)
     let classname = javaclass.pop()//获取类名
@@ -41,7 +41,6 @@ const $HitResult = Java.loadClass('net.minecraft.world.phys.HitResult')
 const $Mth = Java.loadClass('net.minecraft.util.Mth')
 const $LivingEntity = Java.loadClass("net.minecraft.world.entity.LivingEntity")
 const $EntityUtils = Java.loadClass("xyz.faewulf.lib.util.entity.EntityUtils")
-const $Minecraft = Java.loadClass("net.minecraft.client.Minecraft")
 const $PotionRegistry = Java.loadClass('io.redspace.ironsspellbooks.registries.PotionRegistry')
 const $PotionItem = Java.loadClass('net.minecraft.world.item.PotionItem')
 const $DataComponents = Java.loadClass('net.minecraft.core.component.DataComponents')

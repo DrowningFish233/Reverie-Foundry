@@ -15,7 +15,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .onPreCast(ctx => { })                      // 施法前触发
         .onPreClientCast(ctx => { })                // 客户端施法前触发
         .setAllowLooting(true)                     // 是否允许通过战利品（怪物/宝箱）获取此法术
-        .needsLearning(true)                      // 是否需要学习
+        .needsLearning(false)                      // 是否需要学习
         .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
         .setUniqueInfo((spellLevel, caster) => {   // 自定义法术描述
             return [
@@ -60,7 +60,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .onPreCast(ctx => { })                      // 施法前触发
         .onPreClientCast(ctx => { })                // 客户端施法前触发
         .setAllowLooting(true)                     // 是否允许通过战利品（怪物/宝箱）获取此法术
-        .needsLearning(true)                      // 是否需要学习
+        .needsLearning(false)                      // 是否需要学习
         .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
         .setUniqueInfo((spellLevel, caster) => {   // 自定义法术描述
             return [
@@ -104,7 +104,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .onPreCast(ctx => { })                      // 施法前触发
         .onPreClientCast(ctx => { })                // 客户端施法前触发
         .setAllowLooting(true)                     // 是否允许通过战利品（怪物/宝箱）获取此法术
-        .needsLearning(true)                      // 是否需要学习
+        .needsLearning(false)                      // 是否需要学习
         .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
         .setUniqueInfo((spellLevel, caster) => {   // 自定义法术描述
             return [
@@ -147,7 +147,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .onPreCast(ctx => { })                      // 施法前触发
         .onPreClientCast(ctx => { })                // 客户端施法前触发
         .setAllowLooting(true)                     // 是否允许通过战利品（怪物/宝箱）获取此法术
-        .needsLearning(true)                      // 是否需要学习
+        .needsLearning(false)                      // 是否需要学习
         .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
         .setUniqueInfo((spellLevel, caster) => {   // 自定义法术描述
             return [
@@ -311,7 +311,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .onPreCast(ctx => { })                      // 施法前触发
         .onPreClientCast(ctx => { })                // 客户端施法前触发
         .setAllowLooting(true)                     // 是否允许通过战利品（怪物/宝箱）获取此法术
-        .needsLearning(true)                      // 是否需要学习
+        .needsLearning(false)                      // 是否需要学习
         .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
         .setUniqueInfo((spellLevel, caster) => {   // 自定义法术描述
             return [
@@ -354,7 +354,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .onPreCast(ctx => { })                      // 施法前触发
         .onPreClientCast(ctx => { })                // 客户端施法前触发
         .setAllowLooting(true)                     // 是否允许通过战利品（怪物/宝箱）获取此法术
-        .needsLearning(true)                      // 是否需要学习
+        .needsLearning(false)                      // 是否需要学习
         .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
         .setUniqueInfo((spellLevel, caster) => {   // 自定义法术描述
             return [
@@ -429,7 +429,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .onPreCast(ctx => { })                      // 施法前触发
         .onPreClientCast(ctx => { })                /* 客户端施法前触发*/
         .setAllowLooting(true)                     /*是否允许通过战利品（怪物/宝箱）获取此法术*/
-        .needsLearning(true)                      // 是否需要学习
+        .needsLearning(false)                      // 是否需要学习
         .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
         .setUniqueInfo((spellLevel, caster) => {
             return [
@@ -512,7 +512,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .onPreCast(ctx => { })                      // 施法前触发
         .onPreClientCast(ctx => { })                // 客户端施法前触发
         .setAllowLooting(true)                     // 是否允许通过战利品（怪物/宝箱）获取此法术
-        .needsLearning(true)                      // 是否需要学习
+        .needsLearning(false)                      // 是否需要学习
         .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
         .setUniqueInfo((spellLevel, caster) => {   // 自定义法术描述
             return [

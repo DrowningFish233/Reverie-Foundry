@@ -1,3 +1,5 @@
+
+// priority: 0
 const protectedEffects = [
     "kubejs:bleed",
     "kubejs:custom_effect",

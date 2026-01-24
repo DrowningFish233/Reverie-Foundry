@@ -62,10 +62,10 @@ ServerEvents.recipes(event => {
     function registerCustomRecipe(recipeModel) {
         event.custom(recipeModel);
     }
-
+    const SpiritRepairRecipe = new SpiritRepairRecipeJSON()
     // 精魂修复配方
     registerCustomRecipe(
-        new SpiritRepairRecipeJSON()
+        SpiritRepairRecipe
             .setRepairMaterial("minecraft:iron_ingot", 2)
             .addSpirit("infernal", 2)
             .addSpirit("earthen", 8)

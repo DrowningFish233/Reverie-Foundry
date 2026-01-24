@@ -47,40 +47,51 @@ const itemSet0 = [
     { id: () => getRandomEnchantedBookId(), count: 1 }]
 
 const itemSet1 = [
-    { command: "drunkard", oneUse: true },
-    { id: `minecraft:bundle[bundle_contents=[{count:1,id:"kubejs:bloody_mary"},{count:1,id:"kubejs:star_beam_rye"},{count:1,id:"kubejs:lightingball"},{count:1,id:"kubejs:everclear"},{count:1,id:"kubejs:evergreen_gin"},{count:1,id:"kubejs:rum"},{count:1,id:"kubejs:caribbean_rum"},{count:1,id:"kubejs:screwdriver"},{count:1,id:"kubejs:white_wine"},{count:1,id:"kubejs:fireball"},{count:1,id:"kubejs:cinnamon_roll"},{count:1,id:"kubejs:moscow_mule"},{count:1,id:"kubejs:purple_haze"},{count:1,id:"kubejs:margarita"},{count:1,id:"kubejs:red_wine"},{count:1,id:"kubejs:tequila"}]]` },
-    { id: "kubejs:hangover_tea", count: 6 }
-];
+    { command: "randomscrollid", oneUse: true },
+    { id: () => getRandomScrollId(), count: 1 }]
 
 const itemSet2 = [
+    { command: "drunkard", oneUse: true },
+    { id: `minecraft:bundle[bundle_contents=[{count:1,id:"kubejs:bloody_mary"},{count:1,id:"kubejs:star_beam_rye"},{count:1,id:"kubejs:lightingball"},{count:1,id:"kubejs:everclear"},{count:1,id:"kubejs:evergreen_gin"},{count:1,id:"kubejs:rum"},{count:1,id:"kubejs:caribbean_rum"},{count:1,id:"kubejs:screwdriver"},{count:1,id:"kubejs:white_wine"},{count:1,id:"kubejs:fireball"},{count:1,id:"kubejs:cinnamon_roll"},{count:1,id:"kubejs:moscow_mule"},{count:1,id:"kubejs:purple_haze"},{count:1,id:"kubejs:margarita"},{count:1,id:"kubejs:red_wine"},{count:1,id:"kubejs:tequila"}]]` },
+    { id: "kubejs:hangover_tea", count: 6 },
+    { id: () => getRandomScrollId(), count: 1 },
+
+];
+
+const itemSet3 = [
     { command: "traveler", oneUse: true },
     { id: "sophisticatedbackpacks:copper_backpack", count: 1 },
     { id: () => getRandomEnchantedBookId(), count: 1 },
     { id: () => getRandomEnchantedBookId(), count: 1 },
     { id: () => getRandomEnchantedBookId(), count: 1 },
+    { id: () => getRandomScrollId(), count: 1 },
     { id: "kubejs:exploding_chocolate_bar", count: 5 }
 ];
 
-const itemSet3 = [
+const itemSet4 = [
     { command: "sorcerer", oneUse: true },
     { id: "sophisticatedbackpacks:backpack", count: 1 },
-    { id: 'irons_restrictions:unfinished_manuscript', count: 6 },
-    { id: 'irons_restrictions:uncommon_upgrade', count: 1 },
-    { id: 'irons_restrictions:rare_upgrade', count: 1 }
+    { id: "irons_spellbooks:iron_spell_book", count: 1 },
+    { id: "irons_spellbooks:graybeard_staff", count: 1 },
+    { id: () => getRandomScrollId(), count: 1 },
+    { id: () => getRandomScrollId(), count: 1 },
+    { id: () => getRandomScrollId(), count: 1 },
 ];
 
-const itemSet4 = [
+const itemSet5 = [
     { command: "warrior", oneUse: true },
     { id: "sophisticatedbackpacks:backpack", count: 1 },
     { id: 'gobber2:gobber2_gooey_bread', count: 8 },
     { id: 'minecraft:iron_sword', count: 1 },
     { id: 'enderscape:end_stone_rubble_shield', count: 1 },
-    { id: 'kubejs:everclear', count: 1 }
+    { id: 'kubejs:everclear', count: 1 },
+    { id: () => getRandomScrollId(), count: 1 },
+
 ];
 
 
 // 存储所有奖励设置
-const allItemSets = [itemSet0, itemSet1, itemSet2, itemSet3, itemSet4];
+const allItemSets = [itemSet0, itemSet1, itemSet2, itemSet3, itemSet4, itemSet5];
 
 // 命令跟踪的全局子类别
 const commandSubcategory = 'itemCommands';

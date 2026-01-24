@@ -1,4 +1,4 @@
-
+// priority: 0
 const attackBonuses = {
     'kubejs:crowbar': 15,
     'allthemodium:allthemodium_sword': -5,
