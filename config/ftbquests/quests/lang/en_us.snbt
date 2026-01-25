@@ -151,8 +151,6 @@
 	quest.0840A780542BF10B.quest_desc: ["At least it's not too early anymore"]
 	quest.0840A780542BF10B.quest_subtitle: "The modpack is still slightly earlier than the expected full version"
 	quest.0840A780542BF10B.title: "Work-in-Progress Notice"
-	quest.084E0C839D91AEDC.quest_subtitle: "Are you really going to do this?"
-	quest.084E0C839D91AEDC.title: "Cheat Function"
 	quest.0919F71D241AFD81.quest_desc: [
 		"&6Pleasure Target Authority&r"
 		""
@@ -167,13 +165,6 @@
 	quest.0919F71D241AFD81.quest_subtitle: "World's Happiest"
 	quest.0919F71D241AFD81.title: "Pleasure Target Authority"
 	quest.0973A81F39964B58.quest_subtitle: "Familiar Summoning Ritual"
-	quest.09B874FF837E5C80.quest_desc: [
-		"&7Indeed, the higher the tier of a spell, the more constraints and costs must be paid to wield it."
-		""
-		"These 'spell upgrades'... come at just the right time; they may help me glimpse the gateway to higher-tier magic..."
-	]
-	quest.09B874FF837E5C80.quest_subtitle: "High-level Mage"
-	quest.09B874FF837E5C80.title: "Spell Upgrades"
 	quest.09BD7CB2DEA2CD89.quest_subtitle: "Customized Experience"
 	quest.09E68D57095A5F1D.quest_desc: [
 		"&7Standardized weapons are limited by uniform specifications, making it difficult to fully utilize materials' characteristics."
@@ -557,12 +548,6 @@
 	quest.159E4C31CF4AB181.title: "Unforgiving Abyssal Maw Oath"
 	quest.15DDBCE29F4CEB4B.quest_subtitle: "Synthesis material, primarily used in crafting some advanced machinery and intelligent components."
 	quest.162B974C78D8FB42.quest_subtitle: "First Signs"
-	quest.166A08FB452DBCF9.quest_desc: [
-		"&7These manuscripts condense the insights of generations of sages, but unfortunately, the content is vast and disordered. Acquiring knowledge is like panning for gold, and among it are many erroneous annotations."
-		""
-		"Fortunately... there is indeed worthwhile wisdom preserved within."
-	]
-	quest.166A08FB452DBCF9.quest_subtitle: "Miscellaneous Knowledge"
 	quest.16FD71D5EBCE3C6A.quest_desc: [
 		"&6Train Controls&r"
 		""
@@ -723,8 +708,6 @@
 		"&7May still be Soul Stone's precursor, but possibly related otherwise... Its physical manifestation properties identical to Soul Stone. Differing properties entirely due to material's interaction target."
 	]
 	quest.1CBEB689E8C2B677.quest_subtitle: "Blank Slate, Perhaps the Precursor"
-	quest.1CF5470D6EC71F0C.quest_desc: ["Kill an evil person who stole your corpse"]
-	quest.1CF5470D6EC71F0C.quest_subtitle: "Was it really a misclick?"
 	quest.1D08BC5C6C98F4D7.quest_subtitle: "Legendary Hero Who Triggered 5 Raids?!?"
 	quest.1D3C94736A0C19AA.quest_desc: ["Manage all configured auto-crafting schemes in your storage network, allowing item access and scheduling anytime."]
 	quest.1D3C94736A0C19AA.quest_subtitle: "Assembly Line Work"
@@ -1408,13 +1391,6 @@
 		"&8This part of the manuscript has a rough sketch of two docked interfaces, annotated: They hate jolts but love to dance.&r"
 	]
 	quest.364547BCDEFB8DDE.quest_subtitle: "An interface used to exchange items, allowing containers on contraptions to interact with the outside world."
-	quest.365CB8C1A73A9AAC.quest_desc: [
-		"&7The path to studying magic is indeed long and lonely. Without detailed tomes and manuscripts as a foundation, perhaps only weapons already engraved with profound runes can directly channel magic."
-		""
-		"I must find more documents and copies—only these can help me comprehend more arcane spells."
-	]
-	quest.365CB8C1A73A9AAC.quest_subtitle: "Bitter but Sweet"
-	quest.365CB8C1A73A9AAC.title: "Knowledge Manuscripts"
 	quest.36713AC6F99D301E.quest_desc: [
 		"&7Sometimes, substances also infused with &6soul's energy&r&7, though substance itself lacks soul."
 		""
@@ -2435,8 +2411,6 @@
 	]
 	quest.631BFAA4FFA96698.quest_desc: ["Can directly retrieve items from network to edit patterns"]
 	quest.631BFAA4FFA96698.quest_subtitle: "Make Patterns"
-	quest.63243E9D3837E394.quest_subtitle: "Either a thief or a scoundrel, doesn't look like a good person at all"
-	quest.63243E9D3837E394.title: "Scavenger"
 	quest.633B88042B030B5E.quest_subtitle: "The long night... hardest to endure~"
 	quest.63423F9C2A3931E5.quest_subtitle: "One Tree at a Time"
 	quest.634CBFD54B22E624.quest_desc: [

@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "stageProgress": [
+    {
+      "stageIndex": 0.0,
+      "stageName": "first_kill_dead_king",
+      "killRequirements": [
+        {
+          "entity": "irons_spellbooks:dead_king",
+          "requiredCount": 1.0,
+          "currentCount": 1.0,
+          "completed": true
+        }
+      ],
+      "completed": true
+    },
+    {
+      "stageIndex": 2.0,
+      "stageName": "first_kill_fire_boss",
+      "killRequirements": [
+        {
+          "entity": "irons_spellbooks:fire_boss",
+          "requiredCount": 1.0,
+          "currentCount": 1.0,
+          "completed": true
+        }
+      ],
+      "completed": true
+    },
+    {
+      "stageIndex": 1.0,
+      "stageName": "terra_entity:skeletron",
+      "killRequirements": [
+        {
+          "entity": "terra_entity:skeletron",
+          "requiredCount": 1.0,
+          "currentCount": 0.0,
+          "completed": false
+        }
+      ],
+      "completed": false
+    }
+  ],
+  "globalKills": {
+    "irons_spellbooks:dead_king": 1.0,
+    "irons_spellbooks:fire_boss": 1.0
+  },
+  "unlockedStages": [
+    0.0,
+    1.0,
+    2.0
+  ],
+  "lastUpdated": "2026-01-25T06:40:51.347Z"
+}

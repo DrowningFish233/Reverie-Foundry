@@ -4,15 +4,15 @@
     "terra_entity:base_bones": [
       {
         "attribute": "minecraft:generic.movement_speed",
-        "amount": 1.0
+        "amount": 0.8
       },
       {
         "attribute": "minecraft:generic.attack_damage",
-        "amount": 1.0
+        "amount": 0.8
       },
       {
         "attribute": "minecraft:generic.max_health",
-        "amount": 1.0
+        "amount": 0.8
       }
     ]
   }

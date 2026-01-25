@@ -610,34 +610,6 @@
 			y: 3.5d
 		}
 		{
-			id: "63243E9D3837E394"
-			invisible: true
-			tasks: [{
-				icon: {
-					id: "minecraft:emerald"
-				}
-				id: "17D165E1F90F67DA"
-				observe_type: 5
-				timer: 10L
-				to_observe: "deathtaxes:scavenger"
-				type: "observation"
-			}]
-			x: 1.0d
-			y: 6.5d
-		}
-		{
-			id: "1CF5470D6EC71F0C"
-			invisible: true
-			tasks: [{
-				entity: "deathtaxes:scavenger"
-				id: "523CF30E94BAE0ED"
-				type: "kill"
-				value: 1L
-			}]
-			x: 3.0d
-			y: 6.5d
-		}
-		{
 			dependencies: ["1A58667FA2440598"]
 			hide_dependency_lines: true
 			id: "50E57652755EC341"
@@ -647,7 +619,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -658,7 +630,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -669,7 +641,7 @@
 				type: "item"
 			}]
 			x: 17.0d
-			y: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -680,7 +652,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -2.0d
+			y: -6.0d
 		}
 		{
 			id: "737AC021C2A2CF1D"
@@ -690,7 +662,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["737AC021C2A2CF1D"]
@@ -701,7 +673,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["00A5A64046D3B0EF"]
@@ -712,7 +684,7 @@
 				type: "item"
 			}]
 			x: 8.5d
-			y: -3.5d
+			y: -7.5d
 		}
 		{
 			id: "5AEF01E9FF0A0727"
@@ -722,7 +694,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5AEF01E9FF0A0727"]
@@ -733,7 +705,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["65823964A5871AED"]
@@ -744,7 +716,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -755,7 +727,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -766,7 +738,7 @@
 				type: "item"
 			}]
 			x: 17.0d
-			y: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -777,7 +749,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: -3.5d
+			y: -7.5d
 		}
 		{
 			id: "4F5EEA7BC57F0B37"
@@ -787,7 +759,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 1.5d
+			y: -2.5d
 		}
 	]
 }

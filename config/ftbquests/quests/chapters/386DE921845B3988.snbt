@@ -34,10 +34,10 @@
 					type: "item"
 				}
 				{
-					id: "24D111424871B153"
+					id: "17D7E47DF3497372"
 					item: {
 						count: 1
-						id: "refinedstorage:grid"
+						id: "refinedstorage:crafting_grid"
 					}
 					type: "item"
 				}
@@ -63,6 +63,24 @@
 					item: {
 						count: 1
 						id: "refinedstorage:cable"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EEC2B0C93BCF7FF"
+					item: {
+						count: 1
+						id: "refinedstorage:1k_storage_part"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "090C5125B06E07DE"
+					item: {
+						count: 1
+						id: "refinedstorage:64b_fluid_storage_part"
 					}
 					type: "item"
 				}
@@ -127,6 +145,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "5DCDDC5AF5AA0CD4"
+					item: {
+						count: 1
+						id: "refinedstorage:4k_storage_disk"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "437DB5222DBC2F39"
@@ -162,6 +188,14 @@
 			dependencies: ["3D65B82D6967E302"]
 			id: "6BF48D5C9D1B191A"
 			optional: true
+			rewards: [{
+				id: "0D5D73380AFF42FC"
+				item: {
+					count: 1
+					id: "refinedstorage:64k_storage_disk"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "00A5E1A87832BC62"
 				item: { components: { "ftbfiltersystem:filter": "or(item(refinedstorage:portable_grid)item(refinedstorage:creative_portable_grid))" }, count: 1, id: "ftbfiltersystem:smart_filter" }

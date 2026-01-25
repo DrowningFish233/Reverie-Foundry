@@ -108,7 +108,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["66EA89C1E75509EB"]
+			dependencies: ["01891B78BD11035B"]
 			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:small_amethyst_bud"
@@ -116,6 +116,7 @@
 			id: "1FBA0FE6A13F8E70"
 			rewards: [
 				{
+					auto: "no_toast"
 					count: 8
 					id: "606AE07743E98ECB"
 					item: {
@@ -125,6 +126,7 @@
 					type: "item"
 				}
 				{
+					auto: "no_toast"
 					count: 32
 					id: "2633D2ADCE0C1F10"
 					item: {
@@ -134,6 +136,7 @@
 					type: "item"
 				}
 				{
+					auto: "no_toast"
 					count: 16
 					id: "72CED5C9502101EB"
 					item: {
@@ -143,12 +146,14 @@
 					type: "item"
 				}
 				{
+					auto: "no_toast"
 					exclude_from_claim_all: true
 					id: "08D44DB184D9838B"
 					table_id: 8769696413750133854L
 					type: "choice"
 				}
 				{
+					auto: "no_toast"
 					command: "/rf give randomenchanted @p"
 					icon: {
 						id: "minecraft:writable_book"
@@ -164,8 +169,8 @@
 				id: "386951FF6BD39CF1"
 				type: "checkmark"
 			}]
-			x: -10.5d
-			y: -4.0d
+			x: -12.5d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
@@ -431,6 +436,123 @@
 			}]
 			x: 2.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["66EA89C1E75509EB"]
+			id: "61AD6CC3CE0AC9F4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6868DD13E03B7C97"
+				table_id: 2486001279399555208L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "2A2F3B895F40F65B"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["01891B78BD11035B"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "5A8ACB926DFAB615"
+			rewards: [
+				{
+					auto: "no_toast"
+					id: "641E221E302FFDCD"
+					table_id: 8769696413750133854L
+					type: "random"
+				}
+				{
+					auto: "no_toast"
+					id: "3B99C6ED81B9DA15"
+					item: {
+						count: 1
+						id: "minecraft:enchanted_golden_apple"
+					}
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					count: 32
+					id: "63D57AD188C1401C"
+					item: {
+						count: 1
+						id: "minecraft:oak_log"
+					}
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					count: 16
+					id: "58AED932EE3261D0"
+					item: {
+						count: 1
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					command: "/rf give randomscrollid"
+					disable_reward_screen_blur: true
+					icon: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [{
+									id: "cataclysm_spellbooks:piercing_bone"
+									index: 0
+									level: 8
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+						id: "irons_spellbooks:scroll"
+					}
+					id: "599B06FAED12C9AD"
+					ignore_reward_blocking: true
+					silent: true
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					count: 8
+					id: "165D96602EC260ED"
+					item: {
+						count: 1
+						id: "minecraft:golden_apple"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6E334042869DC33A"
+				type: "checkmark"
+			}]
+			x: -12.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["66EA89C1E75509EB"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:small_amethyst_bud"
+			}
+			id: "01891B78BD11035B"
+			max_completable_dependents: 1
+			tasks: [{
+				id: "17C489799E4E8BE8"
+				type: "checkmark"
+			}]
+			x: -10.5d
+			y: -4.0d
 		}
 	]
 }

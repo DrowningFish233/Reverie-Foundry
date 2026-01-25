@@ -686,7 +686,7 @@
 				id: "2D478A7B48D5F2E1"
 				stat: "minecraft:swim_one_cm"
 				type: "stat"
-				value: 100
+				value: 5000
 			}]
 			x: -13.5d
 			y: -7.5d
@@ -742,7 +742,7 @@
 				id: "167B3ECE4F46D85F"
 				stat: "minecraft:swim_one_cm"
 				type: "stat"
-				value: 10000
+				value: 50000
 			}]
 			x: -13.5d
 			y: -13.5d

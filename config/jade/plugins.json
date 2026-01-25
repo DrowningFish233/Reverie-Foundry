@@ -103,6 +103,9 @@
   "waystones": {
     "waystone": true
   },
+  "gravestone": {
+    "grave": true
+  },
   "astages": {
     "block_component_provider": true
   }

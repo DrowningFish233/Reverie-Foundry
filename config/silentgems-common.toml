@@ -9,3 +9,11 @@
 	# Default: 15
 	# Range: 0 ~ 15
 	pottedLight = 15
+
+[features]
+	#Rabbits will periodically drop cups of coffee
+	rabbitsProduceCoffee = true
+	#The time (in ticks) it takes rabbits to produce a cup of coffee
+	# Default: 12000
+	# Range: 1200 ~ 1728000
+	rabbitCoffeeDelay = 12000

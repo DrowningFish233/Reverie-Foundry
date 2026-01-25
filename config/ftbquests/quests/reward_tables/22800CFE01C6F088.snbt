@@ -1,0 +1,29 @@
+{
+	id: "22800CFE01C6F088"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{
+			auto: "no_toast"
+			command: "/gamerule keepInventory true"
+			icon: {
+				id: "cataclysm:meat_shredder"
+			}
+			id: "5FAE827FECB3B03D"
+			permission_level: 4
+			type: "command"
+		}
+		{
+			auto: "no_toast"
+			command: "/gamerule keepInventory false"
+			disable_reward_screen_blur: true
+			icon: {
+				id: "minecraft:bone"
+			}
+			id: "428CD61F9842D150"
+			ignore_reward_blocking: true
+			permission_level: 4
+			type: "command"
+		}
+	]
+}

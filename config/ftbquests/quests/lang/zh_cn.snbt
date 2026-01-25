@@ -7,6 +7,7 @@
 	chapter.44E1ED5935A6147B.title: "&3荣耀？"
 	chapter.48A05E5EF26EFEEE.title: "&d必看须知"
 	chapter.588092B8BFBF7018.title: "&d悬赏"
+	chapter.5A72070BE5639DEE.title: "实用工具"
 	chapter.6F830705E51A6BDE.title: "&3锻梦之旅"
 	chapter.75D59DE79FD7569A.title: "&d追加的苦难"
 	chapter.7CEAFF10D33DEDBC.title: "&dFTB 任务"
@@ -40,6 +41,7 @@
 	]
 	quest.017488D14BA19FAA.quest_subtitle: "多看手册！那里面是材料大全"
 	quest.017488D14BA19FAA.title: "&e有什么需要了解的机制或者内容记得多看任务和手册！！！"
+	quest.01891B78BD11035B.quest_subtitle: "二者择一"
 	quest.01DFC41A894B42AC.quest_subtitle: "空军"
 	quest.020D29D1D3100306.quest_subtitle: "奥术材料"
 	quest.02AFD33E635B23E1.quest_desc: [
@@ -147,8 +149,6 @@
 	quest.0840A780542BF10B.quest_desc: ["总算不是很早了"]
 	quest.0840A780542BF10B.quest_subtitle: "整合包目前距期望的完整版还略早"
 	quest.0840A780542BF10B.title: "半成品通知"
-	quest.084E0C839D91AEDC.quest_subtitle: "你真的要这么做吗"
-	quest.084E0C839D91AEDC.title: "作弊功能"
 	quest.0919F71D241AFD81.quest_desc: [
 		"&6欢愉目标权能&r"
 		""
@@ -162,14 +162,18 @@
 	]
 	quest.0919F71D241AFD81.quest_subtitle: "世间最幸福"
 	quest.0919F71D241AFD81.title: "欢愉目标权能"
-	quest.0973A81F39964B58.quest_subtitle: "魔宠召唤仪式"
-	quest.09B874FF837E5C80.quest_desc: [
-		"&7诚然，法术的位阶越高，驱使它所受的桎梏与需偿付的代价便愈发沉重。"
+	quest.092C65BDEC1E30A4.quest_desc: [
+		"&6幻化台&r"
 		""
-		"这些“法术升级”……来得正是时候，它们或能助我窥见更高阶术法的门径..."
+		"&7担心武器过于丑陋？&r"
+		"&7担心逼格不够大？&r"
+		""
+		"&7幻化台，您的第一选择！无论是&a扮猪吃虎&r&7还是&a扮虎吃猪&r&7！皆由你选择！&r"
+		""
+		"&7第一个槽位放置需要被幻化的&e武器&r&7，第二个槽位放置需要幻化成什么模样，随后消耗紫水晶能量来幻化您的武器！&r&7&r"
 	]
-	quest.09B874FF837E5C80.quest_subtitle: "高位法师"
-	quest.09B874FF837E5C80.title: "法术升级"
+	quest.092C65BDEC1E30A4.quest_subtitle: "变换莫测"
+	quest.0973A81F39964B58.quest_subtitle: "魔宠召唤仪式"
 	quest.09BD7CB2DEA2CD89.quest_subtitle: "定制体验"
 	quest.09E68D57095A5F1D.quest_desc: [
 		"&7制式武器受统一规格所限，难以充分发挥材料的特性。"
@@ -266,6 +270,7 @@
 		"&d解锁：魔法矿物"
 	]
 	quest.0BCF6B18963AB88F.quest_subtitle: "亡者力量"
+	quest.0BCF6B18963AB88F.title: "震怒的死者之王"
 	quest.0C2F2186BE39605E.quest_desc: [
 		"&6猎人营地&r"
 		"&7猎人群居生活，因此他们在主要狩猎地点沿线建造了营地，主要分布在猎物丰富的&b森林&r&7地带。这些营地也可以通过从起源之岛获得的&e卷起的地图&r&7找到。&r"
@@ -548,12 +553,6 @@
 	quest.159E4C31CF4AB181.title: "无恕渊喉誓约"
 	quest.15DDBCE29F4CEB4B.quest_subtitle: "合成材料，主要用作与制作部分高级机械以及智能元件。"
 	quest.162B974C78D8FB42.quest_subtitle: "初见端倪"
-	quest.166A08FB452DBCF9.quest_desc: [
-		"&7这些手稿凝聚了数代先贤的洞察，只可惜内容庞杂无序，获取知识如同沙里淘金，其间更混杂着不少谬误的批注。"
-		""
-		"所幸……其中确实留存着值得借鉴的真知灼见。"
-	]
-	quest.166A08FB452DBCF9.quest_subtitle: "驳杂的知识"
 	quest.16FD71D5EBCE3C6A.quest_desc: [
 		"&6列车驾驶台&r"
 		""
@@ -709,8 +708,6 @@
 		"&7它或许仍是灵魂石的前身，但两者有可能以其他方式互相关联……它的物理外显性质与灵魂石一致。相异的性质完全是由石材交互对象的不同所致。"
 	]
 	quest.1CBEB689E8C2B677.quest_subtitle: "空白的板石，也许即是前身"
-	quest.1CF5470D6EC71F0C.quest_desc: ["击杀一名偷走你尸体的邪恶人员"]
-	quest.1CF5470D6EC71F0C.quest_subtitle: "真的是手误吗？"
 	quest.1D08BC5C6C98F4D7.quest_subtitle: "触发了5次袭击的传奇大英雄？！？"
 	quest.1D3C94736A0C19AA.quest_desc: ["管理你存储网络中所有已配置的自动合成方案，随时进行物品的存取与调度。"]
 	quest.1D3C94736A0C19AA.quest_subtitle: "流水作业"
@@ -833,6 +830,9 @@
 		"&7奥术和邪术确实对立，也确实可以用它们制造对立增强件。然而，在奥术向邪术之终结如洪流般的涌动中，产生的只会是混沌，结果则是……腐蚀万物的爆炸，及其带来的腐枯。这则条目谨作警告，不作推荐。&r"
 	]
 	quest.214D64602702D242.quest_subtitle: "一则警示故事"
+	quest.215AB6260ED8DAAD.quest_desc: ["&7搏一搏？&r"]
+	quest.215AB6260ED8DAAD.quest_subtitle: "随机等级+随机附魔"
+	quest.215AB6260ED8DAAD.title: "随机附魔书售卖"
 	quest.2190DB8F13415C43.quest_desc: [
 		"&6促焰投具"
 		"&7&c演进之火&r&7极为强烈，它会为自身的演进与蔓延摧毁路上的一切事物。因此必然存在以其为基础的毁灭性武器，事实上也真的存在。"
@@ -1367,13 +1367,6 @@
 		"&8手稿的此处有一幅潦草的草图，画着两个对接的接口，旁边标注：它们讨厌颠簸，但热爱舞蹈。&r"
 	]
 	quest.364547BCDEFB8DDE.quest_subtitle: "一种可用来交换物品的接口，允许让动态结构上的容器与外界交互。"
-	quest.365CB8C1A73A9AAC.quest_desc: [
-		"&7研习魔法的道路确实漫长而孤寂。若无详尽的典籍与手稿作为凭依，恐怕唯有那些已镌刻着深奥符文的兵刃，方能直接引导魔力。"
-		""
-		"我必须寻得更多的文献与抄本—唯有这些，才能帮助我理解更多的玄妙法术。"
-	]
-	quest.365CB8C1A73A9AAC.quest_subtitle: "甘之若饴"
-	quest.365CB8C1A73A9AAC.title: "知识手稿"
 	quest.36713AC6F99D301E.quest_desc: [
 		"&7有时，物质也会被充入&6灵魂的能量&r&7，虽然物质本身没有灵魂。"
 		""
@@ -2200,6 +2193,13 @@
 	quest.56B761C2894F3C2E.title: "精魂存储"
 	quest.56CB359C8D5426A3.quest_subtitle: "踏入此门者，当舍去一切希望"
 	quest.57045442B4763EC9.quest_subtitle: "游泳健将"
+	quest.5731A86EC589BF22.quest_desc: [
+		"你是否厌倦了一个个搭建方块？"
+		"不要担心！建筑手杖能够一次性搭建多个方块！！！"
+		""
+		"不论是精通设计的建筑师还是简单建造的需求，都非常值得使用！"
+	]
+	quest.5731A86EC589BF22.quest_subtitle: "工匠技艺"
 	quest.57D76B1B33C57F9F.quest_desc: ["虽然你都游这么久应该也不缺这些了，但是我还是送给你这些，因为我不知道送什么了...送点水特产吧"]
 	quest.57D76B1B33C57F9F.quest_subtitle: "那我问你，我为什么不坐船"
 	quest.58CA43B9AA0530E2.quest_subtitle: "阶段2"
@@ -2212,12 +2212,16 @@
 	]
 	quest.58DE58D4F8290C1C.quest_subtitle: "新奇的力量"
 	quest.58DE58D4F8290C1C.title: "魔法卷轴"
+	quest.58FD71F9C065E1AC.quest_desc: ["&7搏一搏？&r"]
+	quest.58FD71F9C065E1AC.quest_subtitle: "随机法术+随机等级"
 	quest.593ABE7FAC454B34.quest_desc: [
 		"&6病痛祓除符文&r"
 		""
 		"&7病痛祓除符文促使形体催化、转化和改变物质，以期加快处理和消解&c负面效果&r&7的速度，而以超越寻常的速度战胜它们。&r"
 	]
 	quest.593ABE7FAC454B34.quest_subtitle: "促进处理的脉动"
+	quest.5A8ACB926DFAB615.quest_subtitle: "你将得到一份新手礼包"
+	quest.5A8ACB926DFAB615.title: "&a“于初始掩饰苦难的蜜糖？！”"
 	quest.5A8B7CD00226572C.quest_subtitle: "阶段1"
 	quest.5AEF01E9FF0A0727.quest_desc: [
 		"&b拴绳的升级版"
@@ -2333,6 +2337,7 @@
 	]
 	quest.60C42244ED37BA5F.quest_subtitle: "魔法造物"
 	quest.61A037D46536F93D.quest_subtitle: "奥术材料"
+	quest.61AD6CC3CE0AC9F4.quest_subtitle: "全局选项"
 	quest.629600F80E05353F.quest_desc: [
 		"&7当权限管理器被添加至存储网络，默认所有玩家都不能访问。"
 		""
@@ -2360,8 +2365,6 @@
 	]
 	quest.631BFAA4FFA96698.quest_desc: ["可以直接从网络中取出物品进行编辑模板"]
 	quest.631BFAA4FFA96698.quest_subtitle: "制作模板"
-	quest.63243E9D3837E394.quest_subtitle: "非奸即盗，一看就不像什么好人"
-	quest.63243E9D3837E394.title: "拾荒者"
 	quest.633B88042B030B5E.quest_subtitle: "漫漫长夜...最难熬~"
 	quest.63423F9C2A3931E5.quest_subtitle: "一次一棵"
 	quest.634CBFD54B22E624.quest_desc: [
@@ -3183,19 +3186,24 @@
 		"&7- 默认使用 &6ChironGoRoundTC .ttf &r字体"
 	]
 	quest.7FFEDC8A8DA45A2F.quest_subtitle: "整合包字体不喜欢！"
+	reward.0039A626D8431A26.title: "忘记所有学习的法术"
 	reward.0116627ECA2E3471.title: "切换易碎灵魂启用状态"
 	reward.0271EB97C3EE0E0B.title: "关闭 放逐之人效果"
 	reward.0587A8A6F15D12D2.title: "战士"
 	reward.08D44DB184D9838B.title: "第二次机会"
 	reward.174E427410F45CF1.title: "一键学习所有法术"
 	reward.20D4846E3293C5AF.title: " 随机附魔书"
+	reward.298ABAAF0B2A3AF1.title: "震怒的死者之王"
 	reward.2B36732E586C7836.title: "酒鬼"
 	reward.2C437A71A95E6CCC.title: "不可名状的怪力与暴戾"
+	reward.428CD61F9842D150.title: "死亡不掉落关"
 	reward.4394C6936870E39C.title: "切换温迪戈状态"
 	reward.462D52E228A4BD62.title: "不可名状的怪力与暴戾"
 	reward.497C56F71A3C4297.title: "永夜"
 	reward.4E3EDC65B6FED37D.title: "法师"
 	reward.4ED830C463206C6C.title: "N3"
+	reward.599B06FAED12C9AD.title: "随机法术卷轴"
+	reward.5FAE827FECB3B03D.title: "死亡不掉落开"
 	reward.614956D135BA7286.title: "N5"
 	reward.644449F246F10339.title: "N2"
 	reward.667762DC69B2AD5E.title: "清理难度设置"
@@ -3208,6 +3216,7 @@
 	reward.7D68FC48AF26A5C1.title: "启用 放逐之人效果"
 	reward.7D8C106B8D90BF8D.title: "战士"
 	reward_table.14503C2938D82D10.title: "高价回收"
+	reward_table.22800CFE01C6F088.title: "死亡不掉落"
 	reward_table.2EE8C4EF7AB3771A.title: "隐秘收割"
 	reward_table.34E3D5128D809C0E.title: "正餐回收"
 	reward_table.55C00FFB8B46380D.title: "难度选择"
@@ -3237,6 +3246,7 @@
 	task.13B37FFF4E9065DB.title: "诶你怎么似了"
 	task.14F00C7BD0F376AF.title: "弩 模板"
 	task.1515843B90E779DE.title: "任意 疾风设备"
+	task.17C489799E4E8BE8.title: "选择奖励"
 	task.17D165E1F90F67DA.title: "拾荒者"
 	task.17FD4724C406FFAA.title: "匕首 模板"
 	task.1B1EAA42882C0ED0.title: "剪刀 模板"
@@ -3250,6 +3260,7 @@
 	task.27FCF177F9DBA089.title: "魔宠列表"
 	task.28F0C1066808D8E9.title: "猎杀"
 	task.2953AA70E267ADF7.title: "按键设置"
+	task.2A2F3B895F40F65B.title: "死亡不掉落"
 	task.2AB642EE8FD15F3A.title: "任意 储罐"
 	task.2D2AAB7B62B6E1EC.title: "关于村民"
 	task.2D51A4DF6E0A68BB.title: "无线访问点"
@@ -3269,6 +3280,7 @@
 	task.39642AB20E758993.title: "蓝图"
 	task.398A49ECF96C541F.title: "物品存储"
 	task.3A6DD67986C67095.title: "护腿 模板"
+	task.3A8109644A12D03B.title: "建筑棒"
 	task.3BAA6B1E059DB8D6.title: "锅炉"
 	task.3BBEAE77629AD44D.title: "&6护甲板&r"
 	task.3CBB932AAD6CC7EA.title: "任意 宝典"
@@ -3276,6 +3288,7 @@
 	task.3F63C56803BA4F6F.title: "勘探锤 模板"
 	task.3F853F214743B9E6.title: "Any #alshanex_familiars:familiar_trinkets"
 	task.40B3453CF78E2E79.title: "往日的繁荣"
+	task.4236042D0BB376A4.title: "随机法术卷轴售卖"
 	task.4295715DEB0B8AC0.title: "魔力花"
 	task.4297DDBDD7B98C85.title: "任意 冶炼控制器"
 	task.42E1F7D1048AB5D0.title: "地下墓穴"
@@ -3285,6 +3298,7 @@
 	task.4589838CDC8B4082.title: "靴子 模板"
 	task.45BDFA326BB0A8FD.title: "优化"
 	task.46012C86914DC29F.title: "强制加载资源包问题"
+	task.46F749B8F9278545.title: "后悔药"
 	task.4841C69FA35E0AB5.title: "清理难度设置"
 	task.485CC6934B88F320.title: "砍刀 模板"
 	task.48BCB8F83B6E7D33.title: "应急理智溶液"
@@ -3322,6 +3336,7 @@
 	task.6B95F9E065D18CC8.title: "斧 模板"
 	task.6C3ED5ACD37CDCC6.title: "点击继续"
 	task.6C74D4BF477D8F99.title: "树叶美观度"
+	task.6E334042869DC33A.title: "你将得到一份新手礼包"
 	task.6E37A78A24013057.title: "下界戈伯燃料"
 	task.6EE54064FF25F094.title: "任意 耐火砖"
 	task.6EEBB3F381DA8C3B.title: "任意 信波装置"

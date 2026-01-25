@@ -4,7 +4,7 @@
             "terra_entity:decayeder",
             "terra_entity:corrupt_slime"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 5,
         "amount": {
             "minimum": 2,
@@ -28,7 +28,7 @@
     },
     {
         "mob": "terra_entity:crimson_kemera",
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 8,
         "amount": {
             "minimum": 1,
@@ -57,7 +57,7 @@
             "terra_entity:blood_crawler",
             "terra_entity:face_monster"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 8,
         "amount": {
             "minimum": 1,
@@ -78,10 +78,9 @@
     {
         "mob": [
             "terra_entity:snatcher",
-            "terra_entity:man_eater",
             "terra_entity:hornet"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 8,
         "amount": {
             "minimum": 1,
@@ -103,7 +102,7 @@
         "mob": [
             "terra_entity:nymph"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 6,
         "amount": {
             "minimum": 1,
@@ -125,7 +124,7 @@
         "mob": [
             "cataclysm:amethyst_crab"
         ],
-        "persecond": 1,
+        "persecond": 0.8,
         "attempts": 6,
         "amount": {
             "minimum": 1,
@@ -149,7 +148,7 @@
             "terra_entity:demon",
             "terra_entity:fire_imp"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 3,
         "amount": {
             "minimum": 1,
@@ -175,7 +174,7 @@
             "terra_entity:lava_slime",
             "terra_entity:hell_bat"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 6,
         "amount": {
             "minimum": 1,
@@ -199,7 +198,7 @@
             "terra_entity:bunny",
             "terra_entity:jewel_bunny"
         ],
-        "persecond": 1,
+        "persecond": 0.8,
         "attempts": 6,
         "amount": {
             "minimum": 1,
@@ -225,7 +224,7 @@
             "terra_entity:spore_zombie",
             "terra_entity:hat_spore_zombie"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 2,
         "amount": {
             "minimum": 1,
@@ -248,7 +247,7 @@
             "creeperoverhaul:mushroom_creeper",
             "endermanoverhaul:mushroom_fields_enderman"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 3,
         "amount": {
             "minimum": 1,
@@ -271,7 +270,7 @@
             "terra_entity:antlion_swarmer",
             "terra_entity:giant_antlion"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 2,
         "amount": {
             "minimum": 1,
@@ -295,7 +294,7 @@
             "endermanoverhaul:snowy_enderman",
             "creeperoverhaul:snowy_creeper"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 2,
         "amount": {
             "minimum": 1,
@@ -326,7 +325,7 @@
         "mob": [
             "endermanoverhaul:warped_forest_enderman"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 2,
         "amount": {
             "minimum": 2,
@@ -350,7 +349,7 @@
         "mob": [
             "endermanoverhaul:warped_forest_enderman"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 3,
         "amount": {
             "minimum": 2,
@@ -374,7 +373,7 @@
         "mob": [
             "endermanoverhaul:crimson_forest_enderman"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 3,
         "amount": {
             "minimum": 2,
@@ -398,7 +397,7 @@
         "mob": [
             "endermanoverhaul:flower_fields_enderman"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 4,
         "amount": {
             "minimum": 2,
@@ -423,7 +422,7 @@
             "minecraft:wither_skeleton",
             "endermanoverhaul:nether_wastes_enderman"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 4,
         "amount": {
             "minimum": 2,
@@ -447,7 +446,7 @@
         "mob": [
             "endermanoverhaul:nether_wastes_enderman"
         ],
-        "persecond": 1,
+        "persecond": 0.4,
         "attempts": 4,
         "amount": {
             "minimum": 2,

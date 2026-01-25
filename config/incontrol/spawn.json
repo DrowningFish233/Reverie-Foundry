@@ -5,6 +5,10 @@
         "result": "deny"
     },
     {
+        "mob": "terra_entity:man_eater",
+        "result": "deny"
+    },
+    {
         "mob": "terra_entity:guide",
         "result": "deny"
     },

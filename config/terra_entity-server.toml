@@ -7,7 +7,7 @@ boss_attributes_multiplier_health = 0.4
 #Multiplier for boss attributes damage.
 # Default: 1.0
 # Range: 0.0625 ~ 10.0
-boss_attributes_multiplier_damage = 0.5
+boss_attributes_multiplier_damage = 0.4
 #Should the boss have no physics? Only for some bosses.
 boss_no_physics = true
 #Should the boss leave on day? Only for some bosses.
@@ -22,7 +22,7 @@ monster_attributes_multiplier_health = 0.8
 #Multiplier for monster attributes damage.
 # Default: 1.0
 # Range: 0.0625 ~ 100.0
-monster_attributes_multiplier_damage = 0.5
+monster_attributes_multiplier_damage = 0.4
 #Should monsters spawn without light?
 spawn_without_light = false
 #Chance to spawn slime on zombie head.
@@ -32,6 +32,6 @@ chance_to_spawn_slime_on_zombie_head = 0.01
 #Chance to spawn a monster.
 # Default: 1.0
 # Range: 0.0 ~ 1.0
-enemy_spawn_chance = 0.7
+enemy_spawn_chance = 0.5
 #Should the chance to spawn a monster apply to all monsters?
 enemy_spawn_chance_apply_all = false

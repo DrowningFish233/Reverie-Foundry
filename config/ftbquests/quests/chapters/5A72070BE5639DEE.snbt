@@ -1,0 +1,95 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5A72070BE5639DEE"
+	group: "2F1F238400B8A177"
+	id: "5A72070BE5639DEE"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5731A86EC589BF22"
+			tasks: [{
+				id: "3A8109644A12D03B"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(constructionstick:construction_sticks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			id: "092C65BDEC1E30A4"
+			rewards: [{
+				count: 16
+				id: "2E0B7DDC286737F3"
+				item: {
+					count: 1
+					id: "minecraft:amethyst_shard"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D3D65B0C7952380"
+				item: { count: 1, id: "transmog:transmogrification_table" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "083877BA307014F0"
+			tasks: [{
+				id: "00D0F74AD6D77A0E"
+				item: { count: 1, id: "constructionstick:template_angel" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "28857417261F2A6D"
+			tasks: [{
+				id: "1195A729BCA616DE"
+				item: { count: 1, id: "constructionstick:template_replacement" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "562806C63C1C8825"
+			tasks: [{
+				id: "5D4ECA9A3733D23B"
+				item: { count: 1, id: "constructionstick:template_destruction" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "6DCEE288B18B4C0C"
+			tasks: [{
+				id: "36682A9AAFC95404"
+				item: { count: 1, id: "constructionstick:template_unbreakable" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "75301DBE2A2A7531"
+			tasks: [{
+				id: "599DF59B13686577"
+				item: { count: 1, id: "constructionstick:template_battery" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+	]
+}

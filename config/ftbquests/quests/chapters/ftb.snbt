@@ -78,37 +78,5 @@
 			x: 0.0d
 			y: -5.5d
 		}
-		{
-			dependencies: ["784CD820CEC6F25B"]
-			hide_until_deps_complete: true
-			id: "084E0C839D91AEDC"
-			rewards: [{
-				auto: "no_toast"
-				command: "/learnSpell learn_all"
-				exclude_from_claim_all: true
-				icon: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							data: [ ]
-							maxSpells: 8
-							mustEquip: 1b
-							spellWheel: 1b
-						}
-					}
-					id: "irons_spellbooks:gold_spell_book"
-				}
-				id: "174E427410F45CF1"
-				permission_level: 4
-				silent: true
-				team_reward: false
-				type: "command"
-			}]
-			tasks: [{
-				id: "5F633C276DD0D3A8"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 2.5d
-		}
 	]
 }

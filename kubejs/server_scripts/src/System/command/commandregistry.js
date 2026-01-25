@@ -1,3 +1,5 @@
+// priority: 0
+//base
 ServerEvents.commandRegistry(event => {
     const { commands: Commands } = event;
 
@@ -188,6 +190,121 @@ ServerEvents.commandRegistry(event => {
                                     ]).color('green'),
                                     Text.translate('message.depression.usage').color('yellow')
                                 ]);
+                                return 1;
+                            })
+                    )
+            )
+    );
+});
+
+
+//orestage
+ServerEvents.commandRegistry(event => {
+    const { commands: Commands, arguments: Arguments } = event;
+
+    event.register(
+        Commands.literal('rf')
+            .requires(source => source.hasPermission(2))
+            .then(
+                Commands.literal('orestage')
+                    .executes(context => {
+                        var sender = context.getSource();
+                        var highestStage = ReverieFoundry.getHighestUnlockedStage();
+                        var stageName = ReverieFoundry.getCurrentStageName();
+
+                        var message = Text.translate('reveriefoundry.status.header')
+                            .append(Text.translate('reveriefoundry.status.current_stage', stageName, (highestStage + 1), ReverieFoundry.stages.length))
+                            .append(Text.translate('reveriefoundry.status.unlocked_stages', (highestStage + 1)))
+                            .append(Text.translate('reveriefoundry.status.config_path', ORE_STAGE_CONFIG_PATH))
+                            .append(Text.translate('reveriefoundry.status.open_config')
+                                .clickOpenFile(ORE_STAGE_CONFIG_PATH))
+                            .append(Text.translate('reveriefoundry.status.separator'));
+
+                        // 显示所有阶段状态
+                        for (var i = 0; i < ReverieFoundry.stages.length; i++) {
+                            var stageInfo = ReverieFoundry.getStageInfo(i);
+                            var statusKey = stageInfo.unlocked ? 'reveriefoundry.status.unlocked' : 'reveriefoundry.status.locked';
+                            message = message.append(Text.translate('reveriefoundry.status.stage_display', (i + 1), stageInfo.name)
+                                .append(Text.translate(statusKey)));
+                        }
+
+                        sender.sendSuccess(message, false);
+                        return 1;
+                    })
+                    .then(
+                        Commands.literal('reset')
+                            .executes(context => {
+                                var sender = context.getSource();
+                                ReverieFoundry.reset();
+                                sender.sendSuccess(Text.translate('reveriefoundry.reset.success'), true);
+                                return 1;
+                            })
+                    )
+                    .then(
+                        Commands.literal('reload')
+                            .executes(context => {
+                                var sender = context.getSource();
+                                ReverieFoundry.loadConfig();
+                                sender.sendSuccess(Text.translate('reveriefoundry.reload.success'), true);
+                                return 1;
+                            })
+                    )
+                    .then(
+                        Commands.literal('validate')
+                            .executes(context => {
+                                var sender = context.getSource();
+                                var validCount = 0;
+                                var totalCount = ReverieFoundry.stages.length;
+
+                                for (var i = 0; i < ReverieFoundry.stages.length; i++) {
+                                    if (ReverieFoundry.validateStageConfig(i)) {
+                                        validCount++;
+                                    }
+                                }
+
+                                var statusKey = validCount === totalCount ? 'reveriefoundry.validate.all_valid' : 'reveriefoundry.validate.partial_valid';
+                                sender.sendSuccess(
+                                    Text.translate('reveriefoundry.validate.header')
+                                        .append(Text.translate('reveriefoundry.validate.valid_stages', validCount, totalCount))
+                                        .append(Text.translate('reveriefoundry.validate.status'))
+                                        .append(Text.translate(statusKey))
+                                        .append(Text.translate('reveriefoundry.validate.cleanup')),
+                                    true
+                                );
+
+                                // 执行清理并保存
+                                ReverieFoundry.cleanupInvalidConfig();
+                                ReverieFoundry.saveConfig();
+
+                                return 1;
+                            })
+                    )
+                    .then(
+                        Commands.literal('info')
+                            .executes(context => {
+                                var sender = context.getSource();
+
+                                var message = Text.translate('reveriefoundry.info.header');
+
+                                for (var i = 0; i < ReverieFoundry.stages.length; i++) {
+                                    var stageInfo = ReverieFoundry.getStageInfo(i);
+                                    message = message.append(Text.translate('reveriefoundry.info.stage_header', (i + 1), stageInfo.name));
+                                    message = message.append(Text.translate(stageInfo.unlocked ? 'reveriefoundry.info.unlocked' : 'reveriefoundry.info.locked'));
+
+                                    if (stageInfo.progress && stageInfo.progress.killRequirements) {
+                                        for (var j = 0; j < stageInfo.progress.killRequirements.length; j++) {
+                                            var killReq = stageInfo.progress.killRequirements[j];
+                                            var statusKey = killReq.completed ? 'reveriefoundry.info.completed' : 'reveriefoundry.info.not_completed';
+                                            message = message.append(Text.translate('reveriefoundry.info.kill_requirement',
+                                                killReq.entity,
+                                                killReq.currentCount,
+                                                killReq.requiredCount)
+                                                .append(Text.translate(statusKey)));
+                                        }
+                                    }
+                                }
+
+                                sender.sendSuccess(message, false);
                                 return 1;
                             })
                     )

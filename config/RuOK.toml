@@ -1,3 +1,4 @@
+onCull = true
 MaxEntityEntities = 128
 qualityModes = "NORMAL"
 RenderWeather = "NORMAL"
@@ -8,7 +9,7 @@ whiteListedEntities = ["terra_entity:hornet", "terra_entity:man_eater", "terra_e
 BlackTagListEntity = []
 WhiteTagListEntity = []
 isAlwaysShowItemCount = false
-startTime = 39.452
+startTime = 39.71
 Hud = false
 HudRXTX = false
 HudFPS = false
@@ -25,58 +26,21 @@ WhiteListedParticle = []
 BlackListedParticle = []
 GuiEasyRamMode = false
 GuiDisplayRamUsage = false
+GuiX = 0
+GuiY = 0
 UseAui = false
+DeBug = false
 TextBackground = false
 TextureAnimatedSprites = true
 SoundDevicesMonitor = false
 SetParticleMaxAge = true
 ParticleMaxAge = 2
-GuiViewMode = "EMPTY"
+GuiViewMode = "TECHNICAL"
 MinDistance = 4
 EntityDistance = 64
+TickPerformance = false
 ParticlePerformance = true
+EntityViewDebug = false
 ParticleCountLimit = 16384
 BlockBreakParticle = true
 AsyncCompute = true
-SoftCull = true
-DynamicEntityBudget = true
-BlackBlockEntities = []
-WhiteBlockEntities = []
-MaxBlockEntityCount = 96
-BlockEntityDistance = 192
-onCull = true
-VisibleCulling = true
-EntityRenderPerformance = false
-CullMode = "COMPATIBILITY"
-ParticleFastCollision = false
-ParticleLazyBrightness = true
-
-[[HudTextConfig]]
-key = "ruok.options.hud.fps.info"
-x = 4
-y = 4
-
-[[HudTextConfig]]
-key = "ruok.options.hud.system.info"
-x = 4
-y = 17
-
-[[HudTextConfig]]
-key = "ruok.options.hud.playerpos.info"
-x = 4
-y = 30
-
-[[HudTextConfig]]
-key = "ruok.options.hud.server.info"
-x = 4
-y = 43
-
-[[HudTextConfig]]
-key = "ruok.options.hud.cameratarget.info"
-x = 4
-y = 56
-
-[[HudTextConfig]]
-key = "ruok.options.hud.rtxt.info"
-x = 4
-y = 69

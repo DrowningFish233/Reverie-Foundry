@@ -77,7 +77,7 @@
 			y: 30.5d
 		}
 	]
-	order_index: 0
+	order_index: 1
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -582,26 +582,6 @@
 			y: 17.0d
 		}
 		{
-			icon: {
-				id: "alshanex_familiars:archmage_trinket"
-			}
-			id: "3FD3535AE922834F"
-			rewards: [{
-				id: "5B574D540F3E5468"
-				item: {
-					count: 1
-					id: "kubejs:bad_apple"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "28F0C1066808D8E9"
-				type: "checkmark"
-			}]
-			x: -3.5d
-			y: 32.5d
-		}
-		{
 			can_repeat: true
 			disable_recipe_mod: false
 			id: "5378D02C832E3260"
@@ -619,7 +599,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 36.5d
+			y: 37.0d
 		}
 		{
 			can_repeat: true
@@ -904,7 +884,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 41.5d
+			y: 41.0d
 		}
 		{
 			can_repeat: true
@@ -924,7 +904,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 36.5d
+			y: 37.0d
 		}
 		{
 			can_repeat: true
@@ -1210,7 +1190,86 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 41.5d
+			y: 41.0d
+		}
+		{
+			icon: {
+				id: "alshanex_familiars:archmage_trinket"
+			}
+			id: "3FD3535AE922834F"
+			rewards: [{
+				id: "5B574D540F3E5468"
+				item: {
+					count: 1
+					id: "kubejs:bad_apple"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "28F0C1066808D8E9"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 33.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "215AB6260ED8DAAD"
+			rewards: [{
+				auto: "no_toast"
+				command: "/rf give randomenchanted"
+				disable_reward_screen_blur: true
+				id: "2FA7EFCA7BF0E8B0"
+				ignore_reward_blocking: true
+				permission_level: 4
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "1A241EBE54370B6C"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 37.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [{
+							id: "irons_spellbooks:blaze_storm"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+				id: "irons_spellbooks:scroll"
+			}
+			id: "58FD71F9C065E1AC"
+			rewards: [{
+				auto: "no_toast"
+				command: "/rf give randomscrollid"
+				disable_reward_screen_blur: true
+				id: "79F3944BD5EEA0A1"
+				ignore_reward_blocking: true
+				permission_level: 4
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				id: "4236042D0BB376A4"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 39.0d
 		}
 	]
 }

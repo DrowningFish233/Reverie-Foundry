@@ -1,3 +1,4 @@
+// priority: 0
 const commandMap = {
     "tp": {
         "disabled": false, // 是否禁用该命令（true=禁用，false=不禁用）

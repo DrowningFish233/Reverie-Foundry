@@ -5,28 +5,29 @@
 	filename: "1A98B27BB1D8BF2D"
 	group: "17FDF36D1B965C72"
 	id: "1A98B27BB1D8BF2D"
-	images: [{
-		height: 4.0d
-		image: "irons_spellbooks:item/chronicle_old"
-		rotation: 0.0d
-		width: 4.0d
-		x: 0.0d
-		y: 1.0d
-	}]
+	images: [
+		{
+			height: 4.0d
+			image: "irons_spellbooks:item/chronicle_old"
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			height: 2.0d
+			image: "gametechbcs_spellbooks:textures/gui/spell_icons/call_forth_the_dead_king.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: -12.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
 			id: "60C42244ED37BA5F"
-			rewards: [{
-				count: 4
-				id: "6A2D32AE8C303B37"
-				item: {
-					count: 1
-					id: "irons_restrictions:fragment"
-				}
-				type: "item"
-			}]
 			tasks: [{
 				id: "2E67FAD790EF983F"
 				type: "checkmark"
@@ -55,65 +56,6 @@
 			}]
 			x: -5.0d
 			y: -5.0d
-		}
-		{
-			dependencies: ["60C42244ED37BA5F"]
-			id: "365CB8C1A73A9AAC"
-			rewards: [{
-				count: 8
-				id: "3A9AA8E616F0A38C"
-				item: {
-					count: 1
-					id: "irons_spellbooks:arcane_essence"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "61E28A897E5CCF57"
-				item: { components: { "ftbfiltersystem:filter": "or(item(irons_restrictions:manuscript)item(irons_spellbooks:eldritch_manuscript))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["60C42244ED37BA5F"]
-			id: "09B874FF837E5C80"
-			rewards: [{
-				count: 8
-				id: "0943FAFE58A635B5"
-				item: {
-					count: 1
-					id: "irons_spellbooks:arcane_essence"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "24414CD8C86B97F5"
-				item: { components: { "ftbfiltersystem:filter": "or(item(irons_restrictions:common_upgrade)item(irons_restrictions:uncommon_upgrade)item(irons_restrictions:rare_upgrade)item(irons_restrictions:epic_upgrade)item(irons_restrictions:legendary_upgrade))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["60C42244ED37BA5F"]
-			id: "166A08FB452DBCF9"
-			rewards: [{
-				id: "4E6A5E1DAAACCAFB"
-				item: {
-					count: 1
-					id: "irons_restrictions:unfinished_manuscript"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "4B0D559CB9259B9F"
-				item: { count: 1, id: "irons_restrictions:unfinished_manuscript" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["60C42244ED37BA5F"]
@@ -174,6 +116,27 @@
 			id: "0BCF6B18963AB88F"
 			optional: true
 			progression_mode: "flexible"
+			rewards: [{
+				id: "298ABAAF0B2A3AF1"
+				item: {
+					components: {
+						"irons_spellbooks:spell_container": {
+							data: [{
+								id: "gametechbcs_spellbooks:call_forth_the_dead_king"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+					count: 1
+					id: "irons_spellbooks:scroll"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				entity: "irons_spellbooks:dead_king"
 				id: "7E93491B4DD82458"
@@ -760,7 +723,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["11C363982673E669"]
