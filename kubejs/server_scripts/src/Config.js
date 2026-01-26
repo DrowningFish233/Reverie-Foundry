@@ -2,9 +2,6 @@
 /**
  * 矿石阶段限制配置
  */
-/**
- * 矿石阶段限制配置
- */
 ReverieFoundry
     .setDebug(false)
     .registerStage(
@@ -18,7 +15,7 @@ ReverieFoundry
             .hideOre('hazennstuff:solar_core', 'minecraft:netherrack')
     )
     .registerStage(
-        new OreStageSystem("terra_entity:skeletron")
+        new OreStageSystem("first_kill_skeletron")
             .requireKill("terra_entity:skeletron", 1)
             .hideOre('gobber2:gobber2_globette_nether', 'minecraft:netherrack')
     )

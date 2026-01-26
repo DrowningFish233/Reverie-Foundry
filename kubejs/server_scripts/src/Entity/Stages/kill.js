@@ -36,7 +36,7 @@ EntityEvents.death(event => {
     const player = event.source.player;
     if (!player) return;
 
-    const entityType = event.entity.type;
+    const entityType = event.entity.getType();
 
     // 遍历所有定义的Boss阶段
     BOSS_STAGES.forEach(bossStage => {

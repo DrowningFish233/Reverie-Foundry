@@ -130,6 +130,7 @@ StartupEvents.modifyCreativeTab('kubejs:tab_3', event => {
         "kubejs:azure_dawnbreaker_leggings",
         "kubejs:azure_dawnbreaker_boots",
 
+        "kubejs:dps_meter_update",
         "kubejs:mana_flower",
         "kubejs:mana_regeneration_band",
         "kubejs:arcane_flower",
@@ -157,6 +158,7 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
     event.remove("kubejs:sanity_curios");
     event.remove("kubejs:supreme_mana_potion");
     event.remove("kubejs:explosion");
+    event.remove("kubejs:brick");
     event.remove("kubejs:mimicream");
     event.remove("kubejs:sin");
     event.remove("kubejs:blue_star");
@@ -164,7 +166,7 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
     event.remove("kubejs:fragment_of_the_universe");
     event.remove("kubejs:red_shoes");
     event.remove("kubejs:totem_of_undying");
-    event.remove("kubejs:mana_potion");
+    event.remove("kubejs:dps_meter_update");
     event.remove("kubejs:lava_bible");
     event.remove("kubejs:heart_of_darkness");
     event.remove("kubejs:bluestar");

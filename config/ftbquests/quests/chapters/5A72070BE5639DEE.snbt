@@ -33,7 +33,7 @@
 				item: { count: 1, id: "transmog:transmogrification_table" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
@@ -90,6 +90,18 @@
 			}]
 			x: -4.0d
 			y: -0.5d
+		}
+		{
+			icon: {
+				id: "minecraft:command_block"
+			}
+			id: "078C80DB81D1640E"
+			tasks: [{
+				id: "1C6E3A73FEC6CA64"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 4.0d
 		}
 	]
 }

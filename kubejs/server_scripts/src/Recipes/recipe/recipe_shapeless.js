@@ -115,4 +115,16 @@ ServerEvents.recipes(event => {
             'alltheores:steel_nugget'
         ]
     )
+    event.shapeless(
+        Item.of('alltheores:fluorite', 1),
+        [
+            '9x alltheores:fluorite_dust'
+        ]
+    )
+    event.shapeless(
+        Item.of('alltheores:fluorite_dust', 9),
+        [
+            'alltheores:fluorite'
+        ]
+    )
 })

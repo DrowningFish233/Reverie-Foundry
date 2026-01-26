@@ -4,7 +4,7 @@ EntityEvents.death(event => {
     if (!player) return;
 
     const pData = player.persistentData;
-    const entityType = event.entity.type;
+    const entityType = event.entity.getType();
 
     // 检查是否是最终BOSS
     if (entityType === FINAL_BOSS) {

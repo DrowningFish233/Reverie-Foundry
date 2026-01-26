@@ -1,4 +1,5 @@
 {
+	autofocus_id: "1A58667FA2440598"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "6F830705E51A6BDE"
@@ -11,6 +12,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["54207C49530C50BC"]
 			disable_toast: true
 			hide_text_until_complete: true
 			id: "1A58667FA2440598"
@@ -145,7 +147,7 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.0d
 			y: 5.0d
 		}
 		{
@@ -154,8 +156,8 @@
 				id: "7CCEF302E660A068"
 				type: "checkmark"
 			}]
-			x: 2.0d
-			y: 9.0d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2DD51904F4629516"]
@@ -176,7 +178,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_controllers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -12.0d
 			y: 3.5d
 		}
 		{
@@ -196,7 +198,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_drains)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -9.5d
+			x: -13.5d
 			y: 5.0d
 		}
 		{
@@ -216,7 +218,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_tanks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -9.5d
+			x: -13.5d
 			y: 0.5d
 		}
 		{
@@ -236,7 +238,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:fire_bricks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -12.0d
 			y: 5.0d
 		}
 		{
@@ -256,7 +258,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_windows)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -12.0d
 			y: 6.5d
 		}
 		{
@@ -276,7 +278,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(productivemetalworks:foundry_capacitors)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -10.5d
 			y: 0.5d
 		}
 		{
@@ -297,7 +299,7 @@
 				item: { count: 1, id: "productivemetalworks:liquid_heating_coil" }
 				type: "item"
 			}]
-			x: -9.5d
+			x: -13.5d
 			y: -2.0d
 		}
 		{
@@ -317,7 +319,7 @@
 				item: { count: 1, id: "productivemetalworks:powered_heating_coil" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -10.5d
 			y: -2.0d
 		}
 		{
@@ -337,7 +339,7 @@
 				item: { count: 1, id: "productivemetalworks:high_powered_heating_coil" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -8.0d
 			y: -2.0d
 		}
 		{
@@ -353,7 +355,7 @@
 				item: { count: 1, id: "productivemetalworks:foundry_tap" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -12.0d
 			y: -4.0d
 		}
 		{
@@ -364,7 +366,7 @@
 				item: { count: 1, id: "productivemetalworks:gem_cast" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -6.5d
 			y: -4.5d
 		}
 		{
@@ -375,7 +377,7 @@
 				item: { count: 1, id: "productivemetalworks:gear_cast" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -8.0d
 			y: -6.0d
 		}
 		{
@@ -386,7 +388,7 @@
 				item: { count: 1, id: "productivemetalworks:plate_cast" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -6.5d
 			y: -6.0d
 		}
 		{
@@ -397,7 +399,7 @@
 				item: { count: 1, id: "productivemetalworks:rod_cast" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -8.0d
 			y: -4.5d
 		}
 		{
@@ -408,7 +410,7 @@
 				item: { count: 1, id: "productivemetalworks:ingot_cast" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -6.5d
 			y: -7.5d
 		}
 		{
@@ -419,7 +421,7 @@
 				item: { count: 1, id: "productivemetalworks:nugget_cast" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -8.0d
 			y: -7.5d
 		}
 		{
@@ -430,7 +432,7 @@
 				item: { count: 1, id: "productivemetalworks:casting_basin" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -13.0d
 			y: -6.0d
 		}
 		{
@@ -442,7 +444,7 @@
 				item: { count: 1, id: "productivemetalworks:casting_table" }
 				type: "item"
 			}]
-			x: -7.0d
+			x: -11.0d
 			y: -6.0d
 		}
 		{
@@ -464,7 +466,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.0d
+			x: -16.0d
 			y: -2.0d
 		}
 		{
@@ -486,7 +488,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.0d
+			x: -16.0d
 			y: -3.5d
 		}
 		{
@@ -508,7 +510,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -13.5d
+			x: -17.5d
 			y: -3.5d
 		}
 		{
@@ -530,7 +532,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -13.5d
+			x: -17.5d
 			y: -2.0d
 		}
 		{
@@ -552,7 +554,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -13.5d
+			x: -17.5d
 			y: -0.5d
 		}
 		{
@@ -574,7 +576,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -12.0d
+			x: -16.0d
 			y: -0.5d
 		}
 		{
@@ -607,7 +609,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1A58667FA2440598"]
@@ -618,8 +620,8 @@
 				item: { count: 1, id: "minecraft:enchanting_table" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: -4.5d
+			x: 10.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -629,8 +631,8 @@
 				item: { count: 1, id: "apothic_enchanting:library" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: -6.0d
+			x: 10.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -640,8 +642,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(apothic_enchanting:helmet_tome)item(apothic_enchanting:chestplate_tome)item(apothic_enchanting:leggings_tome)item(apothic_enchanting:boots_tome)item(apothic_enchanting:weapon_tome)item(apothic_enchanting:bow_tome)item(apothic_enchanting:pickaxe_tome)item(apothic_enchanting:fishing_tome)item(apothic_enchanting:other_tome))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: -6.0d
+			x: 14.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -651,8 +653,8 @@
 				item: { count: 1, id: "apothic_enchanting:prismatic_web" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: -6.0d
+			x: 12.5d
+			y: -9.5d
 		}
 		{
 			id: "737AC021C2A2CF1D"
@@ -661,8 +663,8 @@
 				item: { count: 1, id: "apothic_enchanting:scrap_tome" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -4.5d
+			x: 6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["737AC021C2A2CF1D"]
@@ -672,8 +674,8 @@
 				item: { count: 1, id: "apothic_enchanting:improved_scrap_tome" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -6.0d
+			x: 6.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["00A5A64046D3B0EF"]
@@ -683,8 +685,8 @@
 				item: { count: 1, id: "apothic_enchanting:extraction_tome" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -7.5d
+			x: 6.0d
+			y: -11.0d
 		}
 		{
 			id: "5AEF01E9FF0A0727"
@@ -693,8 +695,8 @@
 				item: { count: 1, id: "apothic_enchanting:flimsy_ender_lead" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -4.5d
+			x: 7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["5AEF01E9FF0A0727"]
@@ -704,8 +706,8 @@
 				item: { count: 1, id: "apothic_enchanting:ender_lead" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -6.0d
+			x: 7.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["65823964A5871AED"]
@@ -715,8 +717,8 @@
 				item: { count: 1, id: "apothic_enchanting:occult_ender_lead" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -7.5d
+			x: 7.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -726,8 +728,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item_tag(apothic_enchanting:infused_shelves))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: -7.5d
+			x: 12.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -737,8 +739,8 @@
 				item: { count: 1, id: "apothic_enchanting:filtering_shelf" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: -7.5d
+			x: 14.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["50E57652755EC341"]
@@ -748,8 +750,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(apothic_enchanting:hellshelf)item(apothic_enchanting:infused_hellshelf)item(apothic_enchanting:blazing_hellshelf)item(apothic_enchanting:glowing_hellshelf)item(apothic_enchanting:seashelf)item(apothic_enchanting:infused_seashelf)item(apothic_enchanting:crystal_seashelf)item(apothic_enchanting:heart_seashelf)item(apothic_enchanting:dormant_deepshelf)item(apothic_enchanting:deepshelf)item(apothic_enchanting:echoing_deepshelf)item(apothic_enchanting:soul_touched_deepshelf)item(apothic_enchanting:echoing_sculkshelf)item(apothic_enchanting:soul_touched_sculkshelf)item(apothic_enchanting:endshelf)item(apothic_enchanting:pearl_endshelf)item(apothic_enchanting:draconic_endshelf)item(apothic_enchanting:beeshelf)item(apothic_enchanting:melonshelf)item(apothic_enchanting:stoneshelf)item(apothic_enchanting:sightshelf)item(apothic_enchanting:sightshelf_t2)item(apothic_enchanting:filtering_shelf)item(apothic_enchanting:treasure_shelf)item(apothic_enchanting:geode_shelf))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 12.5d
-			y: -7.5d
+			x: 10.0d
+			y: -11.0d
 		}
 		{
 			id: "4F5EEA7BC57F0B37"
@@ -758,8 +760,243 @@
 				item: { count: 1, id: "minecraft:spawner" }
 				type: "item"
 			}]
+			x: 14.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1A58667FA2440598"]
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "25C5815C5583AA74"
+			tasks: [{
+				id: "5485E40AEB12B374"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["25C5815C5583AA74"]
+			hide_dependent_lines: true
+			icon: {
+				id: "kubejs:sin"
+			}
+			id: "53634A7FA785B1D3"
+			tasks: [{
+				id: "70D73BEBDA8C57DA"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["53634A7FA785B1D3"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/mob_effect/envy.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "64AC4146C392E8A6"
+			tasks: [{
+				id: "10BF267F8066A12F"
+				type: "checkmark"
+			}]
 			x: 12.5d
-			y: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["53634A7FA785B1D3"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/mob_effect/gluttony.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3611F55056F7105F"
+			tasks: [{
+				id: "701FCD06D0D3DFFA"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["53634A7FA785B1D3"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/mob_effect/greed.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "03639EDED6577831"
+			tasks: [{
+				id: "4667A9C70E0D123A"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["53634A7FA785B1D3"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/mob_effect/lust.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "7F2C0291CE6F6B66"
+			tasks: [{
+				id: "7DEE14D33D0D0501"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["53634A7FA785B1D3"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/mob_effect/pride.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "571979CF7DC3291C"
+			tasks: [{
+				id: "5C397467699FADA8"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["53634A7FA785B1D3"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/mob_effect/wrath.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "52FB65193EF182F4"
+			tasks: [{
+				id: "05A1CAAC6DC12A04"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["53634A7FA785B1D3"]
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/mob_effect/sloth.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "660EAD8BBC2734CA"
+			tasks: [{
+				id: "7386DE9D7537E468"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			icon: {
+				id: "minecraft:zombie_head"
+			}
+			id: "54207C49530C50BC"
+			rewards: [{
+				id: "056101AD6A6CD7BA"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "008CE044C39CDBA7"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1A58667FA2440598"]
+			icon: {
+				components: {
+					"!ftbquests:icon": { }
+					"ftbquests:entity_face": "irons_spellbooks:dead_king"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "779B259771323E1B"
+			tasks: [{
+				entity: "irons_spellbooks:dead_king"
+				id: "1DA6E01C737B03C4"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.0d
+			y: -7.5d
+		}
+		{
+			id: "38092862F38315D2"
+			tasks: [{
+				id: "3B9E3B42BCE2F382"
+				item: { count: 1, id: "kubejs:eye_of_ancient_city_located" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "086482C52023DB55"
+			tasks: [{
+				id: "2364CC012C9DA592"
+				item: { count: 1, id: "kubejs:eye_of_dragon_cave_located" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			id: "5EEB1A77BA0D052D"
+			tasks: [{
+				id: "7269B2BA5D2572A7"
+				item: { count: 1, id: "kubejs:eye_of_weeping_well_located" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "7497D60722110201"
+			tasks: [{
+				id: "102AC5EEA0F1C170"
+				item: { count: 1, id: "tiered:armorers_hammer" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			id: "485ED016AD34F6B8"
+			tasks: [{
+				id: "38BFAAF968D91BA1"
+				item: { count: 1, id: "tiered:toolsmiths_hammer" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			id: "716AB1B88D8812DF"
+			tasks: [{
+				id: "2B28CE5FA523A935"
+				item: { count: 1, id: "tiered:weaponsmiths_hammer" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
 		}
 	]
 }

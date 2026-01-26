@@ -967,4 +967,98 @@ ServerEvents.recipes(event => {
             B: 'minecraft:paper'
         }
     )
+
+    event.shaped(
+        Item.of('tiered:armorers_hammer', 1),
+        [
+            'CBA',
+            ' AB',
+            'A  '
+        ],
+        {
+            A: 'minecraft:stick',
+            B: 'minecraft:iron_ingot',
+            C: 'minecraft:emerald'
+        }
+    )
+
+    event.shaped(
+        Item.of('tiered:toolsmiths_hammer', 1),
+        [
+            ' BC',
+            ' AB',
+            'A  '
+        ],
+        {
+            A: 'minecraft:stick',
+            B: 'minecraft:iron_ingot',
+            C: 'minecraft:emerald'
+        }
+    )
+
+    event.shaped(
+        Item.of('tiered:weaponsmiths_hammer', 1),
+        [
+            ' BA',
+            ' AB',
+            'A C'
+        ],
+        {
+            A: 'minecraft:stick',
+            B: 'minecraft:iron_ingot',
+            C: 'minecraft:emerald'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:eye_of_weeping_well_located', 1),
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],
+        {
+            A: 'malum:refined_soulstone',
+            B: 'minecraft:ender_eye'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:eye_of_ancient_city_located', 1),
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],
+        {
+            A: 'irons_spellbooks:frozen_bone',
+            B: 'minecraft:ender_eye'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:eye_of_dragon_cave_located', 1),
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],
+        {
+            A: '#c:bones/dragon',
+            B: 'minecraft:ender_eye'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:dps_meter_update', 1),
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],
+        {
+            A: 'minecraft:gold_ingot',
+            B: 'terra_curio:dps_meter'
+        }
+    )
 })

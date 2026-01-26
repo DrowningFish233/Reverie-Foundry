@@ -3,6 +3,12 @@
   "verifiers": [
     {
       "tag": "c:tools/bow"
+    },
+    {
+      "tag": "gobber2:bows"
+    },
+    {
+      "tag": "c:tools/crossbow"
     }
   ],
   "tiers": [

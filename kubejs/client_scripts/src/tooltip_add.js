@@ -470,6 +470,9 @@ const itemTooltips = {
 
 // 通用提示
 const commonTooltips = {
+    'kubejs:eye_of_ancient_city_located': TooltipUtils.simpleText('tooltip.common.eye_of_ancient_city_located', 'yellow'),
+    'kubejs:eye_of_weeping_well_located': TooltipUtils.simpleText('tooltip.common.eye_of_weeping_well_located', 'yellow'),
+    'kubejs:eye_of_dragon_cave_located': TooltipUtils.simpleText('tooltip.common.eye_of_dragon_cave_located', 'yellow'),
     'kubejs:bad_apple': TooltipUtils.simpleText('tooltip.common.bad_apple', 'pink_dye'),
     'kubejs:randomweapon': TooltipUtils.simpleText('tooltip.common.randomweapon', 'yellow'),
     'kubejs:summon_gauntlet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),

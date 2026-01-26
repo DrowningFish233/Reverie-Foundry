@@ -223,7 +223,7 @@ function targetedSinErosion(event, player, targetSin, intensity) {
     }[targetSin];
 
     player.setStatusMessage(
-        Text.translate(`sin.${targetSin.toLowerCase()}.prefix`)
+        Text.translate(`message.sin.${targetSin.toLowerCase()}.prefix`)
             .color(sinColor)
     );
 }

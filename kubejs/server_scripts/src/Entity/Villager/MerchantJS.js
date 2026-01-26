@@ -1,5 +1,5 @@
 ItemEvents.entityInteracted(event => {
-    if (event.getTarget().type === "enderscape:driftlet") {
+    if (event.getTarget().getType() === "enderscape:driftlet") {
         event.player.swing()
 
         let offer0 = MerchantJSUtils.createMerchantOffer({
@@ -65,7 +65,7 @@ ItemEvents.entityInteracted(event => {
 
 
 ItemEvents.entityInteracted(event => {
-    if (event.getTarget().type === "endermanoverhaul:flower_fields_enderman") {
+    if (event.getTarget().getType() === "endermanoverhaul:flower_fields_enderman") {
         event.player.swing()
 
         let offer0 = MerchantJSUtils.createMerchantOffer({
@@ -141,7 +141,7 @@ ItemEvents.entityInteracted(event => {
 
 // 蘑菇末影人交易
 ItemEvents.entityInteracted(event => {
-    if (event.getTarget().type === "endermanoverhaul:mushroom_fields_enderman") {
+    if (event.getTarget().getType() === "endermanoverhaul:mushroom_fields_enderman") {
         event.player.swing()
 
         let offer0 = MerchantJSUtils.createMerchantOffer({
@@ -217,10 +217,68 @@ ItemEvents.entityInteracted(event => {
     }
 });
 
+// 狱墟末影人交易
+ItemEvents.entityInteracted(event => {
+    if (event.getTarget().getType() === "endermanoverhaul:nether_wastes_enderman") {
+        event.player.swing()
+
+        let offer0 = MerchantJSUtils.createMerchantOffer({
+            buy: Item.of("kubejs:necroplasm", 8).toNBT(),
+            buyB: Item.of("minecraft:netherite_upgrade_smithing_template", 1).toNBT(),
+            sell: Item.of("allthemodium:allthemodium_upgrade_smithing_template", 1).toNBT(),
+            uses: 0,
+            maxUses: 50,
+            xp: 5,
+            priceMultiplier: 0,
+            demand: 0
+        });
+
+
+        let offer1 = MerchantJSUtils.createMerchantOffer({
+            buy: Item.of("kubejs:necroplasm", 8).toNBT(),
+            buyB: Item.of("minecraft:netherite_ingot", 1).toNBT(),
+            sell: Item.of("allthemodium:raw_allthemodium").toNBT(),
+            maxUses: 50,
+            xp: 5,
+            priceMultiplier: 0,
+            demand: 0
+        });
+
+
+        let offer2 = MerchantJSUtils.createMerchantOffer({
+            buy: Item.of("allthemodium:allthemodium_upgrade_smithing_template", 1).toNBT(),
+            buyB: Item.of("minecraft:netherite_upgrade_smithing_template", 1).toNBT(),
+            sell: Item.of("allthemodium:allthemodium_upgrade_smithing_template", 2).toNBT(),
+            uses: 0,
+            maxUses: 50,
+            xp: 5,
+            priceMultiplier: 0,
+            demand: 0
+        });
+
+        let offer3 = MerchantJSUtils.createMerchantOffer({
+            buy: Item.of("kubejs:necroplasm", 22).toNBT(),
+            buyB: Item.of("allthemodium:allthemodium_upgrade_smithing_template", 1).toNBT(),
+            sell: Item.of("allthemodium:allthemodium_upgrade_smithing_template", 2).toNBT(),
+            uses: 0,
+            maxUses: 50,
+            xp: 5,
+            priceMultiplier: 0,
+            demand: 0
+        });
+
+        // 打开自定义交易，需传入玩家、界面标题和交易列表。
+        MerchantJSUtils.openMerchant(
+            event.player,
+            Component.translatable("entity.endermanoverhaul.nether_wastes_enderman"),
+            [offer0, offer1, offer2, offer3],
+        );
+    }
+});
 
 // 绯红末影人交易
 ItemEvents.entityInteracted(event => {
-    if (event.getTarget().type === "endermanoverhaul:crimson_forest_enderman") {
+    if (event.getTarget().getType() === "endermanoverhaul:crimson_forest_enderman") {
         event.player.swing()
 
         let offer0 = MerchantJSUtils.createMerchantOffer({
@@ -279,7 +337,7 @@ ItemEvents.entityInteracted(event => {
 
 // 诡异末影人交易
 ItemEvents.entityInteracted(event => {
-    if (event.getTarget().type === "endermanoverhaul:warped_forest_enderman") {
+    if (event.getTarget().getType() === "endermanoverhaul:warped_forest_enderman") {
         event.player.swing()
 
 
@@ -340,7 +398,7 @@ ItemEvents.entityInteracted(event => {
 
 // 猪灵
 ItemEvents.entityInteracted(event => {
-    if (event.getTarget().type === "minecraft:piglin") {
+    if (event.getTarget().getType() === "minecraft:piglin") {
         event.player.swing()
 
         let offer0 = MerchantJSUtils.createMerchantOffer({
@@ -400,7 +458,7 @@ ItemEvents.entityInteracted(event => {
 
 // 大漂游者交易
 ItemEvents.entityInteracted(event => {
-    if (event.getTarget().type === "enderscape:drifter") {
+    if (event.getTarget().getType() === "enderscape:drifter") {
         event.player.swing()
 
         let offer0 = MerchantJSUtils.createMerchantOffer({

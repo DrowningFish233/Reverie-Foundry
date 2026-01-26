@@ -117,7 +117,7 @@ function executeEntityCleanup(world, centerPos) {
         if (shouldKeepEntity(entity)) continue;
         entity.discard();
         cleanedCount++;
-        if (CLEANUP_CONFIG.debug) console.log(`[清理] 已移除实体: ${entity.type}`);
+        if (CLEANUP_CONFIG.debug) console.log(`[清理] 已移除实体: ${entity.getType()}`);
     }
 
     return cleanedCount;

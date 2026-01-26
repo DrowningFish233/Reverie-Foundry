@@ -15,7 +15,7 @@ EntityEvents.spawned(event => {
         'cataclysm_spellbooks:summoned_aptrgangr'
     ];
 
-    if (!validEntities.some(c => c == event.entity.type)) return;
+    if (!validEntities.some(c => c == event.entity.getType())) return;
     // 检查是否已经增强过
     if (event.entity.persistentData.Multy) return;
     // 立即尝试获取召唤者

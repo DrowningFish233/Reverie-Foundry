@@ -121,6 +121,5 @@ function gobberhurt(event) {
 
     if (damageBonus > 0) {
         new_damage(event, STAGE.MULTIPLY, 1 + damageBonus);
-        entity.tell(damageBonus)
     }
 }

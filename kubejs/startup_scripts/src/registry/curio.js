@@ -307,6 +307,10 @@ StartupEvents.registry('item', event => {
         .tag("curios:accessory")
         .unstackable()
         .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
-
+    event.create("dps_meter_update")
+        .texture('kubejs:item/curios/dps_meter_update')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
 });
 

@@ -10,7 +10,7 @@ fireBrickColors.forEach(color => {
     })
 })
 
-const foundryTypes = ['drain', 'tank', 'controller', 'capacitor']
+const foundryTypes = ['drain', 'tank', 'capacitor']
 const foundryColors = ['white', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'pink', 'black', 'orange', 'magenta', 'light_blue', 'yellow', 'lime']
 
 foundryColors.forEach(color => {

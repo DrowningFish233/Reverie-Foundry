@@ -187,22 +187,22 @@ const systemEnabledByDefault = false;
 
 // 位阶消息键值映射
 const RANK_MESSAGE_KEYS = {
-    "Malchut": { prefix: "sephirah.malchut.prefix", message: "sephirah.malchut.message" },
-    "Yesod": { prefix: "sephirah.yesod.prefix", message: "sephirah.yesod.message" },
-    "Hod": { prefix: "sephirah.hod.prefix", message: "sephirah.hod.message" },
-    "Netzach": { prefix: "sephirah.netzach.prefix", message: "sephirah.netzach.message" },
-    "Tiphereth": { prefix: "sephirah.tiphereth.prefix", message: "sephirah.tiphereth.message" },
-    "Geburah": { prefix: "sephirah.geburah.prefix", message: "sephirah.geburah.message" },
-    "Chesed": { prefix: "sephirah.chesed.prefix", message: "sephirah.chesed.message" },
-    "Binah": { prefix: "sephirah.binah.prefix", message: "sephirah.binah.message" },
-    "Cochma": { prefix: "sephirah.cochma.prefix", message: "sephirah.cochma.message" },
-    "Kether": { prefix: "sephirah.kether.prefix", message: "sephirah.kether.message" }
+    "Malchut": { prefix: "message.sephirah.malchut.prefix", message: "message.sephirah.malchut.message" },
+    "Yesod": { prefix: "message.sephirah.yesod.prefix", message: "message.sephirah.yesod.message" },
+    "Hod": { prefix: "message.sephirah.hod.prefix", message: "message.sephirah.hod.message" },
+    "Netzach": { prefix: "message.sephirah.netzach.prefix", message: "message.sephirah.netzach.message" },
+    "Tiphereth": { prefix: "message.sephirah.tiphereth.prefix", message: "message.sephirah.tiphereth.message" },
+    "Geburah": { prefix: "message.sephirah.geburah.prefix", message: "message.sephirah.geburah.message" },
+    "Chesed": { prefix: "message.sephirah.chesed.prefix", message: "message.sephirah.chesed.message" },
+    "Binah": { prefix: "message.sephirah.binah.prefix", message: "message.sephirah.binah.message" },
+    "Cochma": { prefix: "message.sephirah.cochma.prefix", message: "message.sephirah.cochma.message" },
+    "Kether": { prefix: "message.sephirah.kether.prefix", message: "message.sephirah.kether.message" }
 };
 
 // 降级消息
 const DEMOTION_MESSAGE = {
-    prefix: "sephirah.demotion.prefix",
-    message: "sephirah.demotion.message"
+    prefix: "message.sephirah.demotion.prefix",
+    message: "message.sephirah.demotion.message"
 };
 /*
 // 法术学派映射表

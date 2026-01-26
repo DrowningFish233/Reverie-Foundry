@@ -21,7 +21,7 @@ OreStageSystem.prototype = {
         this.requiredKills.push({
             entity: entityId,
             count: count,
-            achieved: false  // 标记是否已完成该击杀条件
+            achieved: false  // 是否已完成该击杀条件
         });
         return this;
     },
@@ -40,7 +40,7 @@ OreStageSystem.prototype = {
     },
 
     /**
-     * 设置阶段索引（内部使用）
+     * 设置阶段索引
      * @param {number} index - 阶段索引
      */
     setStageIndex: function (index) {
@@ -49,17 +49,18 @@ OreStageSystem.prototype = {
     }
 };
 
-// 配置文件路径
-var ORE_STAGE_CONFIG_PATH = "config/reverie_foundry/ores_stage.json";
-
 // 主系统管理器
 var ReverieFoundry = {
     stages: [],
-    configData: null,
+    server: null,
+    data: null,
     debugMode: true,
 
+    // 持久化数据的key
+    DATA_KEY: "reverie_foundry_data",
+
     /**
-     * 注册一个阶段
+     * 注册阶段
      * @param {OreStageSystem} stage - 阶段配置
      */
     registerStage: function (stage) {
@@ -69,6 +70,15 @@ var ReverieFoundry = {
         if (this.debugMode) {
             console.log("[Reverie Foundry] 注册阶段: " + stage.stageName + " (索引: " + stage.stageIndex + ")");
         }
+        return this;
+    },
+
+    /**
+     * 设置服务器实例（必须在初始化前调用）
+     * @param {Internal.Server} server - 服务器实例
+     */
+    setServer: function (server) {
+        this.server = server;
         return this;
     },
 
@@ -85,15 +95,35 @@ var ReverieFoundry = {
     },
 
     /**
-     * 确保配置目录存在
+     * 获取持久化数据字符串
      */
-    ensureConfigDirectory: function () {
-        var configDir = "config/reverie_foundry";
-        if (!FilesJS.exists(configDir)) {
-            FilesJS.createDirectory(configDir);
-            if (this.debugMode) {
-                console.log("[Reverie Foundry] 创建配置目录: " + configDir);
-            }
+    getPersistentDataString: function () {
+        if (!this.server) {
+            console.error("[Reverie Foundry] 错误：未设置服务器实例");
+            return null;
+        }
+
+        return this.server.persistentData.contains(this.DATA_KEY)
+            ? this.server.persistentData.getString(this.DATA_KEY)
+            : null;
+    },
+
+    /**
+     * 保存数据到持久化存储
+     */
+    savePersistentData: function () {
+        if (!this.server) {
+            console.error("[Reverie Foundry] 错误：未设置服务器实例");
+            return this;
+        }
+
+        // 将数据转换为JSON字符串存储
+        var jsonString = JSON.stringify(this.data);
+        this.server.persistentData.putString(this.DATA_KEY, jsonString);
+        // 注意：KubeJS的persistentData会在putString后自动保存，不需要手动调用save()
+
+        if (this.debugMode) {
+            console.log("[Reverie Foundry] 数据已保存到持久化存储");
         }
         return this;
     },
@@ -122,9 +152,9 @@ var ReverieFoundry = {
 
         // 检查阶段名称是否匹配
         var configStage = null;
-        for (var i = 0; i < this.configData.stageProgress.length; i++) {
-            if (this.configData.stageProgress[i].stageIndex === stageIndex) {
-                configStage = this.configData.stageProgress[i];
+        for (var i = 0; i < this.data.stageProgress.length; i++) {
+            if (this.data.stageProgress[i].stageIndex === stageIndex) {
+                configStage = this.data.stageProgress[i];
                 break;
             }
         }
@@ -185,7 +215,7 @@ var ReverieFoundry = {
      * 清理无效的阶段配置
      */
     cleanupInvalidConfig: function () {
-        if (!this.configData || !this.configData.stageProgress) {
+        if (!this.data || !this.data.stageProgress) {
             return this;
         }
 
@@ -194,15 +224,15 @@ var ReverieFoundry = {
         var changed = false;
 
         // 清理阶段进度
-        for (var i = 0; i < this.configData.stageProgress.length; i++) {
-            var stageProgress = this.configData.stageProgress[i];
+        for (var i = 0; i < this.data.stageProgress.length; i++) {
+            var stageProgress = this.data.stageProgress[i];
             var stageIndex = stageProgress.stageIndex;
 
             if (this.validateStageConfig(stageIndex)) {
                 validStages.push(stageProgress);
 
-                // 如果这个阶段在解锁列表中，保留它
-                if (this.configData.unlockedStages.includes(stageIndex)) {
+                // 如果这个阶段在解锁列表中则保留
+                if (this.data.unlockedStages.includes(stageIndex)) {
                     validUnlockedStages.push(stageIndex);
                 }
             } else {
@@ -215,8 +245,8 @@ var ReverieFoundry = {
 
         // 清理全局击杀计数，只保留有效实体的计数
         var validGlobalKills = {};
-        for (var entityId in this.configData.globalKills) {
-            if (this.configData.globalKills.hasOwnProperty(entityId)) {
+        for (var entityId in this.data.globalKills) {
+            if (this.data.globalKills.hasOwnProperty(entityId)) {
                 // 检查这个实体是否在任何有效阶段中需要
                 var entityNeeded = false;
                 for (var i = 0; i < this.stages.length; i++) {
@@ -231,7 +261,7 @@ var ReverieFoundry = {
                 }
 
                 if (entityNeeded) {
-                    validGlobalKills[entityId] = this.configData.globalKills[entityId];
+                    validGlobalKills[entityId] = this.data.globalKills[entityId];
                 } else {
                     changed = true;
                     if (this.debugMode) {
@@ -243,8 +273,8 @@ var ReverieFoundry = {
 
         // 清理解锁阶段，只保留有效的
         var cleanedUnlockedStages = [];
-        for (var i = 0; i < this.configData.unlockedStages.length; i++) {
-            var stageIndex = this.configData.unlockedStages[i];
+        for (var i = 0; i < this.data.unlockedStages.length; i++) {
+            var stageIndex = this.data.unlockedStages[i];
             if (stageIndex >= 0 && stageIndex < this.stages.length) {
                 cleanedUnlockedStages.push(stageIndex);
             } else {
@@ -256,9 +286,9 @@ var ReverieFoundry = {
         }
 
         if (changed) {
-            this.configData.stageProgress = validStages;
-            this.configData.globalKills = validGlobalKills;
-            this.configData.unlockedStages = cleanedUnlockedStages;
+            this.data.stageProgress = validStages;
+            this.data.globalKills = validGlobalKills;
+            this.data.unlockedStages = cleanedUnlockedStages;
 
             if (this.debugMode) {
                 console.log("[Reverie Foundry] 已清理无效配置数据");
@@ -272,62 +302,61 @@ var ReverieFoundry = {
      * 修复配置数据结构
      */
     repairConfigStructure: function () {
-        if (!this.configData) {
+        if (!this.data) {
             return this;
         }
 
         var changed = false;
 
         // 确保必要字段存在
-        if (!this.configData.version) {
-            this.configData.version = "1.0.0";
+        if (!this.data.version) {
+            this.data.version = "1.0.0";
             changed = true;
         }
 
-        if (!this.configData.stageProgress) {
-            this.configData.stageProgress = [];
+        if (!this.data.stageProgress) {
+            this.data.stageProgress = [];
             changed = true;
         }
 
-        if (!this.configData.globalKills) {
-            this.configData.globalKills = {};
+        if (!this.data.globalKills) {
+            this.data.globalKills = {};
             changed = true;
         }
 
-        if (!this.configData.unlockedStages) {
-            this.configData.unlockedStages = [];
+        if (!this.data.unlockedStages) {
+            this.data.unlockedStages = [];
             changed = true;
         }
 
         // 修复阶段进度数组
-        if (!Array.isArray(this.configData.stageProgress)) {
-            this.configData.stageProgress = [];
+        if (!Array.isArray(this.data.stageProgress)) {
+            this.data.stageProgress = [];
             changed = true;
         }
 
         // 修复全局击杀对象
-        if (typeof this.configData.globalKills !== 'object' || this.configData.globalKills === null) {
-            this.configData.globalKills = {};
+        if (typeof this.data.globalKills !== 'object' || this.data.globalKills === null) {
+            this.data.globalKills = {};
             changed = true;
         }
 
         // 修复解锁阶段数组
-        if (!Array.isArray(this.configData.unlockedStages)) {
-            this.configData.unlockedStages = [];
+        if (!Array.isArray(this.data.unlockedStages)) {
+            this.data.unlockedStages = [];
             changed = true;
         }
 
-        // 确保unlockedStages中的索引是有效的
         var validUnlockedStages = [];
-        for (var i = 0; i < this.configData.unlockedStages.length; i++) {
-            var stageIndex = this.configData.unlockedStages[i];
+        for (var i = 0; i < this.data.unlockedStages.length; i++) {
+            var stageIndex = this.data.unlockedStages[i];
             if (typeof stageIndex === 'number' && stageIndex >= 0 && stageIndex < this.stages.length) {
                 validUnlockedStages.push(stageIndex);
             } else {
                 changed = true;
             }
         }
-        this.configData.unlockedStages = validUnlockedStages;
+        this.data.unlockedStages = validUnlockedStages;
 
         if (changed && this.debugMode) {
             console.log("[Reverie Foundry] 已修复配置数据结构");
@@ -340,12 +369,12 @@ var ReverieFoundry = {
      * 创建默认配置
      */
     createDefaultConfig: function () {
-        this.configData = {
+        this.data = {
             version: "1.0.0",
             stageProgress: [],
             globalKills: {},
             unlockedStages: [],
-            lastUpdated: new Date().toISOString()
+            lastUpdated: Date.now()
         };
 
         // 为每个注册的阶段创建进度记录
@@ -368,7 +397,7 @@ var ReverieFoundry = {
                 });
             }
 
-            this.configData.stageProgress.push(stageProgress);
+            this.data.stageProgress.push(stageProgress);
         }
 
         if (this.debugMode) {
@@ -379,165 +408,48 @@ var ReverieFoundry = {
     },
 
     /**
-     * 加载配置文件并进行安全验证
+     * 加载持久化数据并进行安全验证
      */
     loadConfig: function () {
-        this.ensureConfigDirectory();
-
-        // 默认配置
-        var defaultConfig = {
-            version: "1.0.0",
-            stageProgress: [],
-            globalKills: {},
-            unlockedStages: [],
-            lastUpdated: new Date().toISOString()
-        };
+        if (!this.server) {
+            console.error("[Reverie Foundry] 错误：未设置服务器实例");
+            return this;
+        }
 
         try {
-            if (FilesJS.exists(ORE_STAGE_CONFIG_PATH)) {
-                var fileContent = FilesJS.readFile(ORE_STAGE_CONFIG_PATH);
+            // 尝试从持久化数据加载
+            var dataString = this.getPersistentDataString();
 
-                // 检查文件是否为空
-                if (!fileContent || fileContent.trim() === '') {
-                    if (this.debugMode) {
-                        console.log("[Reverie Foundry] 配置文件为空，创建默认配置");
-                    }
-                    this.createDefaultConfig();
-                    this.saveConfig();
-                    return this;
-                }
-
-                var loadedData = JSON.parse(fileContent);
-
-                // 转换旧格式到新格式
-                if (loadedData.currentStage !== undefined) {
-                    // 旧格式，进行转换
-                    this.configData = this.convertOldFormat(loadedData);
-                    this.saveConfig(); // 保存为新格式
-
-                    if (this.debugMode) {
-                        console.log("[Reverie Foundry] 已转换旧格式配置到新格式");
-                    }
-                } else {
-                    // 新格式
-                    this.configData = loadedData;
-
-                    // 修复数据结构
-                    this.repairConfigStructure();
-
-                    // 清理无效配置
-                    this.cleanupInvalidConfig();
-                }
+            if (dataString && dataString.trim() !== '') {
+                // 解析数据
+                this.data = JSON.parse(dataString);
+                // 修复数据结构
+                this.repairConfigStructure();
+                // 清理无效配置
+                this.cleanupInvalidConfig();
 
                 if (this.debugMode) {
-                    console.log("[Reverie Foundry] 已加载配置文件");
-                    console.log("[Reverie Foundry] 已解锁阶段: " + this.configData.unlockedStages.join(", "));
-                    console.log("[Reverie Foundry] 全局击杀: ", this.configData.globalKills);
+                    console.log("[Reverie Foundry] 已从持久化数据加载");
+                    console.log("[Reverie Foundry] 已解锁阶段: " + this.data.unlockedStages.join(", "));
+                    console.log("[Reverie Foundry] 全局击杀: ", this.data.globalKills);
                 }
             } else {
-                // 文件不存在，创建默认配置
+                // 没有数据或数据为空，创建默认配置
                 if (this.debugMode) {
-                    console.log("[Reverie Foundry] 配置文件不存在，创建默认配置");
+                    console.log("[Reverie Foundry] 持久化数据不存在或为空，创建默认配置");
                 }
                 this.createDefaultConfig();
-                this.saveConfig();
+                this.savePersistentData();
             }
         } catch (e) {
-            console.log("[Reverie Foundry] 加载配置文件失败: " + e.message);
+            console.error("[Reverie Foundry] 加载持久化数据失败: " + e.message);
+            console.log("[Reverie Foundry] 将创建默认配置");
 
-            // 创建备份（如果可能）
-            try {
-                if (FilesJS.exists(ORE_STAGE_CONFIG_PATH)) {
-                    var backupPath = ORE_STAGE_CONFIG_PATH + ".backup_" + Date.now();
-                    FilesJS.copy(ORE_STAGE_CONFIG_PATH, backupPath);
-                    console.log("[Reverie Foundry] 已创建损坏配置的备份: " + backupPath);
-                }
-            } catch (backupError) {
-                console.log("[Reverie Foundry] 创建备份失败: " + backupError.message);
-            }
-
-            // 使用默认配置
+            // 创建默认配置
             this.createDefaultConfig();
-            this.saveConfig();
+            this.savePersistentData();
         }
 
-        return this;
-    },
-
-    /**
-     * 转换旧格式到新格式
-     * @param {Object} oldData - 旧格式数据
-     */
-    convertOldFormat: function (oldData) {
-        var newData = {
-            version: "1.0.0",
-            stageProgress: [],
-            globalKills: oldData.killCounts || {},
-            unlockedStages: [],
-            lastUpdated: oldData.lastUpdated || new Date().toISOString()
-        };
-
-        // 如果旧格式中有currentStage，将其转换为已解锁阶段
-        if (oldData.currentStage >= 0) {
-            for (var i = 0; i <= oldData.currentStage; i++) {
-                newData.unlockedStages.push(i);
-            }
-        }
-
-        // 初始化阶段进度
-        for (var stageIndex = 0; stageIndex < this.stages.length; stageIndex++) {
-            var stage = this.stages[stageIndex];
-            if (!stage) continue;
-
-            var stageProgress = {
-                stageIndex: stageIndex,
-                stageName: stage.stageName,
-                killRequirements: [],
-                completed: newData.unlockedStages.includes(stageIndex)
-            };
-
-            // 复制击杀要求
-            for (var j = 0; j < stage.requiredKills.length; j++) {
-                var killReq = stage.requiredKills[j];
-                var currentKills = newData.globalKills[killReq.entity] || 0;
-
-                stageProgress.killRequirements.push({
-                    entity: killReq.entity,
-                    requiredCount: killReq.count,
-                    currentCount: currentKills,
-                    completed: currentKills >= killReq.count
-                });
-            }
-
-            newData.stageProgress.push(stageProgress);
-        }
-
-        return newData;
-    },
-
-    /**
-     * 保存配置文件
-     */
-    saveConfig: function () {
-        try {
-            if (!this.configData) {
-                this.loadConfig();
-            }
-
-            // 更新最后修改时间
-            this.configData.lastUpdated = new Date().toISOString();
-
-            // 写入文件
-            var jsonContent = JSON.stringify(this.configData, null, 2);
-            FilesJS.writeFile(ORE_STAGE_CONFIG_PATH, jsonContent);
-
-            if (this.debugMode) {
-                console.log("[Reverie Foundry] 配置文件已保存");
-                console.log("[Reverie Foundry] 配置文件内容: ", this.configData);
-            }
-        } catch (e) {
-            console.log("[Reverie Foundry] 保存配置文件失败: " + e.message);
-        }
         return this;
     },
 
@@ -545,17 +457,17 @@ var ReverieFoundry = {
      * 获取当前最高解锁阶段
      */
     getHighestUnlockedStage: function () {
-        if (!this.configData) this.loadConfig();
+        if (!this.data) this.loadConfig();
 
-        if (this.configData.unlockedStages.length === 0) {
+        if (this.data.unlockedStages.length === 0) {
             return -1;
         }
 
         // 获取最大的解锁阶段索引
         var maxStage = -1;
-        for (var i = 0; i < this.configData.unlockedStages.length; i++) {
-            if (this.configData.unlockedStages[i] > maxStage) {
-                maxStage = this.configData.unlockedStages[i];
+        for (var i = 0; i < this.data.unlockedStages.length; i++) {
+            if (this.data.unlockedStages[i] > maxStage) {
+                maxStage = this.data.unlockedStages[i];
             }
         }
         return maxStage;
@@ -566,8 +478,8 @@ var ReverieFoundry = {
      * @param {number} stageIndex - 阶段索引
      */
     isStageUnlocked: function (stageIndex) {
-        if (!this.configData) this.loadConfig();
-        return this.configData.unlockedStages.includes(stageIndex);
+        if (!this.data) this.loadConfig();
+        return this.data.unlockedStages.includes(stageIndex);
     },
 
     /**
@@ -575,12 +487,12 @@ var ReverieFoundry = {
      * @param {number} stageIndex - 阶段索引
      */
     getStageProgress: function (stageIndex) {
-        if (!this.configData) this.loadConfig();
+        if (!this.data) this.loadConfig();
 
         // 查找或创建阶段进度
-        for (var i = 0; i < this.configData.stageProgress.length; i++) {
-            if (this.configData.stageProgress[i].stageIndex === stageIndex) {
-                return this.configData.stageProgress[i];
+        for (var i = 0; i < this.data.stageProgress.length; i++) {
+            if (this.data.stageProgress[i].stageIndex === stageIndex) {
+                return this.data.stageProgress[i];
             }
         }
 
@@ -598,7 +510,7 @@ var ReverieFoundry = {
         // 初始化击杀要求
         for (var j = 0; j < stage.requiredKills.length; j++) {
             var killReq = stage.requiredKills[j];
-            var currentKills = this.configData.globalKills[killReq.entity] || 0;
+            var currentKills = this.data.globalKills[killReq.entity] || 0;
 
             stageProgress.killRequirements.push({
                 entity: killReq.entity,
@@ -608,7 +520,7 @@ var ReverieFoundry = {
             });
         }
 
-        this.configData.stageProgress.push(stageProgress);
+        this.data.stageProgress.push(stageProgress);
         return stageProgress;
     },
 
@@ -648,7 +560,7 @@ var ReverieFoundry = {
      * 更新阶段进度
      */
     updateStageProgress: function () {
-        if (!this.configData) this.loadConfig();
+        if (!this.data) this.loadConfig();
 
         var changed = false;
         var highestStage = this.getHighestUnlockedStage();
@@ -669,8 +581,8 @@ var ReverieFoundry = {
 
             if (stageProgress.completed) {
                 // 如果已经完成但未标记为解锁，解锁它
-                if (!this.configData.unlockedStages.includes(i)) {
-                    this.configData.unlockedStages.push(i);
+                if (!this.data.unlockedStages.includes(i)) {
+                    this.data.unlockedStages.push(i);
                     changed = true;
                     this.onStageUnlocked(i);
                 }
@@ -681,7 +593,7 @@ var ReverieFoundry = {
             var allRequirementsMet = true;
             for (var j = 0; j < stage.requiredKills.length; j++) {
                 var killReq = stage.requiredKills[j];
-                var currentKills = this.configData.globalKills[killReq.entity] || 0;
+                var currentKills = this.data.globalKills[killReq.entity] || 0;
 
                 if (this.debugMode) {
                     console.log("[Reverie Foundry] 检查阶段" + i + ": 需要" + killReq.entity + " x " + killReq.count + ", 当前: " + currentKills);
@@ -700,13 +612,13 @@ var ReverieFoundry = {
                 // 同步更新击杀要求的completed状态
                 for (var k = 0; k < stageProgress.killRequirements.length; k++) {
                     var killRequirement = stageProgress.killRequirements[k];
-                    var currentKills = this.configData.globalKills[killRequirement.entity] || 0;
+                    var currentKills = this.data.globalKills[killRequirement.entity] || 0;
                     killRequirement.currentCount = currentKills;
                     killRequirement.completed = (currentKills >= killRequirement.requiredCount);
                 }
 
                 // 解锁阶段
-                this.configData.unlockedStages.push(i);
+                this.data.unlockedStages.push(i);
                 changed = true;
                 this.onStageUnlocked(i);
 
@@ -723,7 +635,7 @@ var ReverieFoundry = {
         }
 
         if (changed) {
-            this.saveConfig();
+            this.savePersistentData();
         }
         return this;
     },
@@ -737,7 +649,7 @@ var ReverieFoundry = {
 
         for (var i = 0; i < stageProgress.killRequirements.length; i++) {
             var killRequirement = stageProgress.killRequirements[i];
-            var currentKills = this.configData.globalKills[killRequirement.entity] || 0;
+            var currentKills = this.data.globalKills[killRequirement.entity] || 0;
 
             // 更新当前计数
             killRequirement.currentCount = currentKills;
@@ -774,7 +686,7 @@ var ReverieFoundry = {
      * @param {string} entityId - 实体ID
      */
     addKill: function (entityId) {
-        if (!this.configData) this.loadConfig();
+        if (!this.data) this.loadConfig();
 
         // 检查是否有未完成的阶段需要这个实体
         var highestStage = this.getHighestUnlockedStage();
@@ -805,7 +717,7 @@ var ReverieFoundry = {
         }
 
         // 获取当前计数
-        var currentCount = this.configData.globalKills[entityId] || 0;
+        var currentCount = this.data.globalKills[entityId] || 0;
 
         if (this.debugMode) {
             console.log("[Reverie Foundry] 增加击杀前: " + entityId + " = " + currentCount);
@@ -813,15 +725,15 @@ var ReverieFoundry = {
 
         // 更新计数
         var newCount = currentCount + 1;
-        this.configData.globalKills[entityId] = newCount;
+        this.data.globalKills[entityId] = newCount;
 
         // 同步所有阶段进度中的计数
-        for (var i = 0; i < this.configData.stageProgress.length; i++) {
-            this.syncStageProgressCounts(this.configData.stageProgress[i]);
+        for (var i = 0; i < this.data.stageProgress.length; i++) {
+            this.syncStageProgressCounts(this.data.stageProgress[i]);
         }
 
         // 保存配置
-        this.saveConfig();
+        this.savePersistentData();
 
         // 更新阶段进度
         this.updateStageProgress();
@@ -868,14 +780,14 @@ var ReverieFoundry = {
      * 重置所有数据
      */
     reset: function () {
-        this.configData = {
+        this.data = {
             version: "1.0.0",
             stageProgress: [],
             globalKills: {},
             unlockedStages: [],
-            lastUpdated: new Date().toISOString()
+            lastUpdated: Date.now()
         };
-        this.saveConfig();
+        this.savePersistentData();
 
         if (this.debugMode) {
             console.log("[Reverie Foundry] 所有数据已重置");
@@ -885,14 +797,24 @@ var ReverieFoundry = {
 
     /**
      * 初始化系统
+     * @param {Internal.Server} server - 服务器实例
      */
-    initialize: function () {
+    initialize: function (server) {
+        if (server) {
+            this.setServer(server);
+        }
+
+        if (!this.server) {
+            console.error("[Reverie Foundry] 错误：无法初始化，缺少服务器实例");
+            return this;
+        }
+
         this.loadConfig();
 
         for (var i = 0; i < this.stages.length; i++) {
             this.getStageProgress(i);
         }
-        this.saveConfig();
+        this.savePersistentData();
 
         if (this.debugMode) {
             console.log("[Reverie Foundry] 矿石阶段系统已初始化");
@@ -903,31 +825,40 @@ var ReverieFoundry = {
     }
 };
 
-
+// 事件处理器
 ServerEvents.loaded(function (event) {
     if (ReverieFoundry.debugMode) {
         console.log("[Reverie Foundry] 服务器已加载，正在初始化系统...");
     }
-    ReverieFoundry.initialize();
+    ReverieFoundry.setServer(event.server).initialize();
 });
 
-EntityEvents.death(function (event) {
-    var entity = event.getEntity();
-    var entityId = entity.getType();
+EntityEvents.death(event => {
+    let entity = event.getEntity();
+    let entityId = entity.getType();
+    let server = event.getServer();
+
+    if (!ReverieFoundry.server) {
+        ReverieFoundry.setServer(server);
+    }
 
     // 增加击杀计数
     ReverieFoundry.addKill(entityId);
 });
 
-EntityEvents.spawned('minecraft:item', function (event) {
+EntityEvents.spawned('minecraft:item', event => {
     let itemEntity = event.getEntity();
     let itemStack = itemEntity.getItem();
     let itemId = itemStack.id;
+    let server = event.getServer();
+
+    if (!ReverieFoundry.server) {
+        ReverieFoundry.setServer(server);
+    }
 
     let oreConfig = ReverieFoundry.checkOreShouldBeHidden(itemId);
 
     if (oreConfig) {
-
         let oldStack = itemEntity.getItem();
         let newItem = Item.of(oreConfig.replacement, oldStack.count);
         itemEntity.setItem(newItem);

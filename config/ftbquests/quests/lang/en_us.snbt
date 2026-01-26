@@ -7,13 +7,14 @@
 	chapter.44E1ED5935A6147B.title: "&3Glory?"
 	chapter.48A05E5EF26EFEEE.title: "&dImportant Notice"
 	chapter.588092B8BFBF7018.title: "&dBounties"
+	chapter.5A72070BE5639DEE.title: "Utility Tools"
 	chapter.6F830705E51A6BDE.title: "&3The Journey of Dream Forging"
 	chapter.75D59DE79FD7569A.title: "&dAdditional Tribulations"
 	chapter.7CEAFF10D33DEDBC.title: "&dFTB Quests"
 	chapter_group.17FDF36D1B965C72.title: "&eScattered Notes (Side Quest)"
 	chapter_group.2F1F238400B8A177.title: "Miscellaneous Talks"
 	chapter_group.7F00D0D8C7C916A0.title: "&bThe Dream of Nothingness (Main Quest)"
-	file.0000000000000001.title: "Reverie Foundry v0.2-Beta"
+	file.0000000000000001.title: "Reverie Foundry v0.2.2-Alpha"
 	quest.00A5A64046D3B0EF.quest_desc: [
 		"&6Compared to the Disassembly Tome, this advanced version better maintains enchantment stability and can completely strip and preserve all enchantments from equipment.&r"
 		""
@@ -40,6 +41,8 @@
 	]
 	quest.017488D14BA19FAA.quest_subtitle: "Read the Manual More! It Contains the Complete Material List"
 	quest.017488D14BA19FAA.title: "&eIf There's Any Mechanism or Content You Need to Understand, Remember to Check Quests and the Manual More!!!"
+	quest.01891B78BD11035B.quest_subtitle: "dilemma"
+	quest.01891B78BD11035B.title: "&a\"Honey Sugar Masking Suffering at the Beginning\""
 	quest.01DFC41A894B42AC.quest_subtitle: "Air Force"
 	quest.020D29D1D3100306.quest_subtitle: "Arcane Materials"
 	quest.02AFD33E635B23E1.quest_desc: [
@@ -88,6 +91,19 @@
 	quest.02CBB1D9A926F86B.quest_subtitle: "Trade Mat/Desktop"
 	quest.02CBB1D9A926F86B.title: "Shop"
 	quest.0342F51828C72B82.quest_subtitle: "Recidivist"
+	quest.03639EDED6577831.quest_desc: [
+		"&#FFD700Greed - Corrosion&r&7"
+		"&7No special multiplier correction under normal conditions.&r"
+		"&#00FFAA[Every 10 seconds]&r&7 If you have the &#FFAA00Greed&r&7 effect, increase its level by 1 (max level 3).&r"
+		"&#00FFAA[Upon being attacked]&r&7 If you have the &#FFAA00Greed&r&7 effect, reset its level to 1.&r"
+		"&7"
+		"&#00FFAA[Per level of Greed effect]&r&7 Provides the following bonuses:&r"
+		"&7- Mob drop chance for special items +5%&r"
+		"&7- Looting, Luck of the Sea, and other enchantment effect levels +2&r"
+		"&7- Experience orb and item pickup range +2 blocks&r"
+		"&7- Mining and kill experience gain +35%&r"
+		"&7- Chance for spell scrolls not to consume +15%&r"
+	]
 	quest.046E980EB69A1209.quest_desc: [
 		"&6Miniature Totem&r"
 		"&7Can be bound to a familiar, and a familiar can only be bound to one totem at a time. When that familiar dies and you have no mana to resurrect it, the bound totem will be consumed to &arevive&r&7 the familiar, and the totem will also be consumed.&r"
@@ -138,6 +154,54 @@
 		"If display abnormalities occur, please delete resourcepack_load_order.json along with it"
 	]
 	quest.075AC794CF9E3665.quest_subtitle: "PAXI"
+	quest.078C80DB81D1640E.quest_desc: [
+		"&6Modpack Command Quick Reference&r"
+		"&7The modpack provides many custom commands.&r"
+		""
+		"&6Wendigo&r"
+		"&7&e/rf wendigosystem toggle&r&7 - Toggle Wendigo effects&r"
+		"&7&e/rf wendigosystem status&r&7 - View status&r"
+		""
+		"&6Ore Stages&r"
+		"&7&e/rf orestage&r&7 - View current stage status&r"
+		"&7&e/rf orestage reset&r&7 - &cReset all data (Use with caution)&r&7"
+		"&7&e/rf orestage reload&r&7 - Reload configuration files&r"
+		"&7&e/rf orestage validate&r&7 - Validate config and auto-fix&r"
+		"&7&e/rf orestage info&r&7 - View detailed progress info&r"
+		"&7&e/rf orestage kills&r&7 - View kill statistics&r"
+		""
+		"&6Utility Functions&r"
+		"&7&e/rf entityclean&r&7 - Clean up nearby miscellaneous entities; defaults to clearing some drops, arrows, etc. (configurable)&r"
+		""
+		"{@pagebreak}"
+		"&6Added Tribulations&r"
+		""
+		"&6Status Management&r"
+		"&7&e/rf deathsystem toggle&r&7 - Enable/Disable death penalty system&r"
+		"&7&e/rf deathsystem status&r&7 - View death statistics and current status&r"
+		""
+		"&6Data Reset&r"
+		"&7&e/rf deathsystem reset&r&7 - &cReset death count and restore max health on next respawn&r"
+		""
+		"&7&e/rf depression toggle&r&7 - Toggle Depression (Added Tribulation)&r"
+		"&7&e/rf depression status&r&7 - View Depression (Added Tribulation)&r"
+		""
+		"&6Item Granting&r"
+		"&7&e/rf give randomenchanted&r&7 - Claim a random enchanted book&r"
+		"&7&e/rf give randomscrollid&r&7 - Claim a random scroll&r"
+		"&7&e/rf give drunkard&r&7 - Claim the &bDrunkard Set&r&7 (various alcoholic drinks)&r"
+		"&7&e/rf give traveler&r&7 - Claim the &bTraveler Set&r&7 (backpack + enchanted book)&r"
+		"&7&e/rf give sorcerer&r&7 - Claim the &bSorcerer Set&r&7 (spellcasting equipment)&r"
+		"&7&e/rf give warrior&r&7 - Claim the &bWarrior Set&r&7 (combat equipment)&r"
+		""
+		"&6Admin Functions&r"
+		"&7&e/rf give setname playername&r&7 - Give another player a set&r"
+		"&7&e/rf give setname playername clear&r&7 - &cReset a player's claim limit&r"
+		""
+		"&7&e/wits View current structure"
+	]
+	quest.078C80DB81D1640E.quest_subtitle: "I understand"
+	quest.078C80DB81D1640E.title: "Useful Commands"
 	quest.07C86BA6CAFFD6C8.quest_subtitle: "View the enhancement effects your current familiars have acquired"
 	quest.07ED04B3B071C4F7.quest_subtitle: "Arcane Materials"
 	quest.07F1B2594FCCAF01.quest_desc: [
@@ -151,6 +215,7 @@
 	quest.0840A780542BF10B.quest_desc: ["At least it's not too early anymore"]
 	quest.0840A780542BF10B.quest_subtitle: "The modpack is still slightly earlier than the expected full version"
 	quest.0840A780542BF10B.title: "Work-in-Progress Notice"
+	quest.086482C52023DB55.quest_subtitle: "A utility tool for finding the underground dragon nest nearest to you."
 	quest.0919F71D241AFD81.quest_desc: [
 		"&6Pleasure Target Authority&r"
 		""
@@ -164,6 +229,17 @@
 	]
 	quest.0919F71D241AFD81.quest_subtitle: "World's Happiest"
 	quest.0919F71D241AFD81.title: "Pleasure Target Authority"
+	quest.092C65BDEC1E30A4.quest_desc: [
+		"&6Transmogrification Altar&r"
+		""
+		"&7Worried your weapon looks too ugly?&r"
+		"&7Worried it lacks style?&r"
+		""
+		"&7The Transmogrification Altar is your premier choice! Whether you want to &apretend to be weak to eat the tiger&r&7 or &apretend to be a tiger to eat the pig&r&7! The choice is yours!&r"
+		""
+		"&7Place the &eweapon&r&7 to be transmogrified in the first slot, and place the item you want it to look like in the second slot. Then consume Amethyst Energy to transmogrify your weapon!&r&7&r"
+	]
+	quest.092C65BDEC1E30A4.quest_subtitle: "Ever-changing"
 	quest.0973A81F39964B58.quest_subtitle: "Familiar Summoning Ritual"
 	quest.09BD7CB2DEA2CD89.quest_subtitle: "Customized Experience"
 	quest.09E68D57095A5F1D.quest_desc: [
@@ -261,6 +337,7 @@
 		"&dUnlock: Magical Minerals"
 	]
 	quest.0BCF6B18963AB88F.quest_subtitle: "Power of the Dead"
+	quest.0BCF6B18963AB88F.title: "The Enraged King of the Dead"
 	quest.0C2F2186BE39605E.quest_desc: [
 		"&6Hunter Camp&r"
 		"&7Hunters live in groups, so they build camps along their main hunting routes, primarily in &bforest&r&7 biomes rich in prey. These camps can also be found using the &eScroll Map&r&7 obtained from the Origin Island.&r"
@@ -419,11 +496,11 @@
 	quest.12C9785ECF565304.quest_subtitle: "Stage 0"
 	quest.131FF32C0FF28CA8.quest_desc: [
 		""
-		"Defeat it Gather boiling death authority into a scepter That deactivated heart Yet a specimen of extracted time's endpoint... Defeat it Will liberate the world's magic minerals"
+		"Defeat it to condense its boiling death authority into a scepter. That inactive heart is a specimen of extracted time's end... Defeating it will liberate the magical minerals of the entire world."
 		""
-		"&7Perhaps there exists a method? To seize its scepter without defeating it"
+		"&7Perhaps there exists a method? To seize its scepter without having to defeat it."
 	]
-	quest.131FF32C0FF28CA8.quest_subtitle: "Stage 0, Unlocks Stage 1 After Kill"
+	quest.131FF32C0FF28CA8.quest_subtitle: "Stage 0, unlocks Stage 1 after kill"
 	quest.13AFD3688361872A.quest_desc: [
 		"# &aGame Modification Content &r"
 		""
@@ -592,6 +669,7 @@
 	quest.182289427E06D427.quest_subtitle: "Auto-clicker's Good Partner"
 	quest.182321BDA643635C.quest_desc: ["Storage network access efficiency now struggles to meet my demands; I need to seek faster data read/write solutions."]
 	quest.182321BDA643635C.quest_subtitle: "Faster, Better, Stronger!"
+	quest.18AC27B34367E1DD.quest_desc: ["When performing a sneak action, blocks can be instantly mined (This is a bug, but I think keeping it would make the game more interesting)."]
 	quest.18AC27B34367E1DD.quest_subtitle: "Tunnel Digger"
 	quest.18C5ACA6F816EDCB.quest_desc: [
 		"&6Miniature Shield&r"
@@ -830,6 +908,9 @@
 		"&7Arcane and occult indeed opposed, indeed can create opposition enhancements. However, in torrential flow of arcane toward occult's termination, only chaos produced, result... corruption-spreading explosion, and resulting rot. This entry serves warning, not recommendation.&r"
 	]
 	quest.214D64602702D242.quest_subtitle: "A Cautionary Tale"
+	quest.215AB6260ED8DAAD.quest_desc: ["&7Try your luck?&r"]
+	quest.215AB6260ED8DAAD.quest_subtitle: "Random Tier + Random Enchantment"
+	quest.215AB6260ED8DAAD.title: "Random Enchanted Book Sales"
 	quest.2190DB8F13415C43.quest_desc: [
 		"&6Flame-Promoting Launcher"
 		"&7&cEvolution Fire&r&7 extremely intense, destroys everything in path for own evolution and spread. Thus inevitably weapons based on it exist, indeed do."
@@ -1188,8 +1269,8 @@
 	quest.2F38AC908EC156D9.title: "Destroying Preservation Contempt Oath"
 	quest.2F9F57C42D9ECB48.quest_subtitle: "Arcane Materials"
 	quest.2FE49A9C24350211.quest_subtitle: "Big Fork"
-	quest.309D32324902DF18.quest_subtitle: "Food Value >8"
-	quest.309D32324902DF18.title: "Main Meal Recovery ×10"
+	quest.309D32324902DF18.quest_subtitle: "Food Value > 8"
+	quest.309D32324902DF18.title: "Meal Recycling x10"
 	quest.31259F6B81819141.quest_subtitle: "Can deal greater damage to enemies"
 	quest.313E8F6035C2E842.quest_desc: [
 		"&7Rune Tree is peculiar combination of magic and nature, quite common. Quite &6beautiful&r&7, but I value its &apracticality&r&7 more. Rune Tree saturated with &bmagic&r&7, thus can serve as &darcane&r&7 foundational material."
@@ -1373,6 +1454,25 @@
 		"&bOf course, you can also massacre in places where other villagers can't see"
 	]
 	quest.360AE4AB3B482FAC.quest_subtitle: "Reputation Value"
+	quest.3611F55056F7105F.quest_desc: [
+		"&#00AA00Gluttony - Corrosion&r&7"
+		"&7When carrying the \"Gluttony\" effect, it is considered as applying &#00AA00Gluttony Nutrition&r&7 stacks.&r"
+		"&#00FFAA[After consuming food]&r&7 Gain &#00AA00Gluttony Nutrition&r&7 stacks equal to the nutritional value of that food.&r"
+		"&#00FFAA[Every 1.5 seconds]&r&7 &#00AA00Gluttony Nutrition&r&7 stacks decrease by 1 (minimum -20 stacks).&r"
+		"&7"
+		"&#00FFAA[Gluttony Nutrition > 40]&r&7 Grants yourself &#FFAA00Gluttony&r&7 (level equal to (Gluttony Nutrition - 50) / 2, lasting 2 seconds), &#FFAA00Regeneration I&r&7 (lasting 2 seconds), and &#FFAA00Mana Gluttony V&r&7 (lasting 4 seconds).&r"
+		"&#00FFAA[Gluttony Nutrition > 30]&r&7 Grants yourself &#FFAA00Regeneration I&r&7 (lasting 2 seconds) and &#FFAA00Gluttony IV&r&7 (lasting 4 seconds).&r"
+		"&#00FFAA[Gluttony Nutrition > 20]&r&7 Grants yourself &#FFAA00Regeneration I&r&7 (lasting 2 seconds) and &#FFAA00Mana Gluttony III&r&7 (lasting 4 seconds).&r"
+		"&#00FFAA[Gluttony Nutrition > 10]&r&7 Grants yourself &#FFAA00Mana Gluttony II&r&7 (lasting 2 seconds).&r"
+		"&#00FFAA[Gluttony Nutrition > 0]&r&7 Grants yourself &#FFAA00Mana Gluttony I&r&7 (lasting 2 seconds).&r"
+		"&#00FFAA[Gluttony Nutrition > -10]&r&7 Grants yourself &#FF5555Weakness III&r&7 (lasting 2 seconds).&r"
+		"&#00FFAA[Gluttony Nutrition ≥ -20]&r&7 Grants yourself &#FF5555Weakness 255&r&7 (lasting 2 seconds).&r"
+		"&7"
+		"&#00FFAA[When attacking]&r&7 If you have the &#FFAA00Gluttony&r&7 effect, increase the final damage of this attack by (1 + 0.5 × Gluttony level) times.&r"
+		"&7"
+		"&#00FFAA[After consuming food]&r&7 If you are in a \"Gluttony\" state, that food gains a &#FF00005-minute cooldown&r&7.&r"
+	]
+	quest.3611F55056F7105F.title: "Gluttony Corrosion"
 	quest.364547BCDEFB8DDE.quest_desc: [
 		"&6Portable Storage Interface&r"
 		""
@@ -1432,6 +1532,7 @@
 	]
 	quest.3801B9633700F23D.quest_subtitle: "Deceive Fate"
 	quest.3801B9633700F23D.title: "Fate Reconstruction Treaty"
+	quest.38092862F38315D2.quest_subtitle: "A utility tool for finding Ancient Cities."
 	quest.3834AAC7BBB3BDAF.quest_desc: [
 		"&6Vitality Rune&r"
 		""
@@ -1524,8 +1625,6 @@
 	quest.3A5DD56949CF4827.quest_subtitle: "Modpack default key bindings are already configured. You just need to find Key Bindings and click (Reset All Keys)"
 	quest.3BD86FD3D62946C6.quest_subtitle: "Better Bookshelves"
 	quest.3BD86FD3D62946C6.title: "Advanced Bookshelf"
-	quest.3BE884F16DB02E3D.quest_desc: ["Some weapons occasionally have mismatched components that look quite awkward. If they could be removed, they'd probably be more comfortable to use..."]
-	quest.3BE884F16DB02E3D.quest_subtitle: "Not my preferred component, just take it away"
 	quest.3C4F9B874C336EB6.quest_desc: [
 		"# &cBUG Reporting Channels &r"
 		""
@@ -1608,20 +1707,16 @@
 	]
 	quest.3FA1E5E68F50BA85.quest_subtitle: "Real-time Monitoring"
 	quest.3FD3535AE922834F.quest_desc: [
-		"&7Number of BOSSes defeated will increase player's (personal) tier level."
+		"&7The number of BOSSes defeated will increase the player's (personal) Tier Level."
 		""
-		"Consuming "
-		"&bGood"
-		"Apple"
-		"&r"
-		" or killing final BOSS reduces tier by 1 level."
+		"Consuming a \"&bGood Apple&r\" or killing the final BOSS can reduce the Tier by 1 level."
 		""
 		"&bTier affects:"
-		"&7Rarity of Silent Gear items obtained from equipment bags."
+		"&7The rarity of items from Silent Equipment bags."
 		""
-		"&7Monster champion spawn rate and probability of high-tier champions appearing."
+		"&7Monster champion spawn rates and the chance of high-tier champions appearing."
 	]
-	quest.3FD3535AE922834F.quest_subtitle: "&zYou believe yourself ready to face challenges, and most importantly, you feel Lady Luck smiling upon you. Time to begin your own adventure!"
+	quest.3FD3535AE922834F.quest_subtitle: "&zYou believe you are ready for the challenge, and most importantly, you feel Lady Luck is smiling upon you. It's time to begin your own adventure!"
 	quest.3FD839536F2A224B.quest_desc: [
 		"&ePure energy condensed from starlight."
 		"&6Burns at astonishing speed, processing your needed materials extremely quickly."
@@ -1776,8 +1871,8 @@
 	quest.4939B8B2FE7A3B5D.quest_subtitle: "Stage 1"
 	quest.496E4A2F2E407B7E.quest_subtitle: "Can this thing really kill?"
 	quest.49840E89ACF73DAF.quest_subtitle: "Small Spoon"
-	quest.4996E5CD9E56D25E.quest_subtitle: "Food Value >8"
-	quest.4996E5CD9E56D25E.title: "Main Meal Recovery ×32"
+	quest.4996E5CD9E56D25E.quest_subtitle: "Food Value > 8"
+	quest.4996E5CD9E56D25E.title: "Meal Recycling x32"
 	quest.4A1A9E32ABF05FD0.quest_subtitle: "Place marked items or fluids. When working normally, front cannot have any blocks (except fluids)"
 	quest.4A4B782308B84A50.quest_subtitle: "Observation Window"
 	quest.4A7080BE52CC6335.quest_subtitle: "Garden Tool"
@@ -2101,6 +2196,15 @@
 		"&7Being a light source, dyeing dark colors &8reduces its brightness&r&7 rather than changing flame's &acolor&r&7."
 	]
 	quest.51DA4C51263ADA18.quest_subtitle: "Wind's Colors"
+	quest.52FB65193EF182F4.quest_desc: [
+		"&#FF5555Wrath - Corrosion&r&7"
+		"&7When carrying the \"Wrath\" effect, it is considered as applying &#FF5555Stationary Timer&r&7.&r"
+		"&#00FFAA[Every 1 second]&r&7 &#FF5555Stationary Timer&r&7 increases by 1 second.&r"
+		"&#00FFAA[Stationary Timer ≥ 60 seconds]&r&7 Causes you to take damage equal to 10% of max health, and resets &#FF5555Stationary Timer&r&7 to 0.&r"
+		"&#00FFAA[Upon being attacked]&r&7 If you have the &#FFAA00Wrath&r&7 effect, apply &#FF5555Glowing&r&7 (lasting 20 seconds) and &#FF5555Wrath Mark&r&7 (lasting 20 seconds) to the attacker.&r"
+		"&#00FFAA[Upon hitting an attack]&r&7 If you have the &#FFAA00Wrath&r&7 effect and the target has &#FF5555Wrath Mark&r&7, add an extra 2 times the base damage as additional final damage to this attack; after successfully adding, remove the target's &#FF5555Wrath Mark&r&7 and &#FF5555Glowing&r&7 effects.&r"
+		"&#00FFAA[Upon hitting an attack]&r&7 If you are not in a \"Wrath\" state, reset &#FF5555Stationary Timer&r&7 to 0.&r"
+	]
 	quest.533E6E13F1C9E939.quest_desc: [
 		"&6Conveyor Belt&r"
 		""
@@ -2120,7 +2224,9 @@
 		""
 		"&8The margin of the manuscript has a drawing of a winding conveyor belt, with a note: The path is laid. Now, make things move.&r"
 	]
-	quest.536380EE035D7850.quest_subtitle: "拿着任意末地创世的眼睛右键门框上已有的眼睛可以卸下"
+	quest.53634A7FA785B1D3.quest_subtitle: "Sinking Into It"
+	quest.53634A7FA785B1D3.title: "Seven Deadly Sins Corrosion"
+	quest.536380EE035D7850.quest_subtitle: "Right-click an already placed eye on the door frame with any Eye of Ender Genesis to remove it"
 	quest.5372150CD0958B7B.quest_desc: [
 		"&6Crushing Wheel&r"
 		""
@@ -2148,8 +2254,8 @@
 		"&8This part of the manuscript has deep scratches, as if run over by wheel teeth. You can see this manuscript thanks to its owner having implemented a proper shutdown mechanism...&r"
 	]
 	quest.5372150CD0958B7B.quest_subtitle: "A processing component capable of crushing items."
-	quest.5378D02C832E3260.quest_subtitle: "Food Value >=14"
-	quest.5378D02C832E3260.title: "Grand Meal Recovery"
+	quest.5378D02C832E3260.quest_subtitle: "Food Value >= 14"
+	quest.5378D02C832E3260.title: "Feast Recycling"
 	quest.5394037EDC7769D9.quest_desc: [
 		"&6Consecutive Shooting Treaty"
 		"&7You cannot feign perfect accuracy.&r&cMissing shots eliminates all draw speed gains, instead reducing this attribute"
@@ -2157,7 +2263,7 @@
 	]
 	quest.5394037EDC7769D9.quest_subtitle: "Become Arrowhead"
 	quest.5394037EDC7769D9.title: "Consecutive Shooting Treaty"
-	quest.53C821423589F530.quest_subtitle: "Stage 1, Unlocks Stage 2 After Kill"
+	quest.53C821423589F530.quest_subtitle: "Stage 1, unlocks Stage 2 after kill"
 	quest.54207C49530C50BC.quest_desc: [
 		"&6World Difficulty&r"
 		"&7You may have noticed, or maybe not, that world difficulty changes aren't just simple name changes&r"
@@ -2175,6 +2281,8 @@
 	]
 	quest.54207C49530C50BC.quest_subtitle: "Let's dedicate a chapter to difficulty here"
 	quest.543F9E26F7586FFF.quest_subtitle: "Arcane Materials"
+	quest.54DAB6324FA151F2.quest_desc: ["Obtain by throwing the Arcane Compendium into the Weeping Well"]
+	quest.54DAB6324FA151F2.quest_subtitle: "Falling into Darkness"
 	quest.54DCDB42738F0557.quest_desc: [
 		"&6Inverted Heart Authority&r"
 		""
@@ -2241,6 +2349,25 @@
 	quest.56B761C2894F3C2E.title: "Soul Storage"
 	quest.56CB359C8D5426A3.quest_subtitle: "Abandon all hope, ye who enter here"
 	quest.57045442B4763EC9.quest_subtitle: "Swimming Champion"
+	quest.571979CF7DC3291C.quest_desc: [
+		"&#FFD700Contempt - Corrosion&r&7"
+		"&7When carrying the \"Contempt\" effect, it is considered as applying &#FFD700Contempt Count&r&7.&r"
+		"&#00FFAA[Upon hitting an attack]&r&7 If you have the &#FFAA00Contempt&r&7 effect, increase &#FFD700Contempt Count&r&7 by 1 stack (lasting 5 seconds).&r"
+		"&#00FFAA[Contempt Count ≥ 2 stacks]&r&7 Apply 1 level of &#FFD700Armor Break&r&7 to the target (lasting 30 seconds).&r"
+		"&#00FFAA[Contempt Count ≥ 4 stacks]&r&7 Apply 2 levels of &#FFD700Armor Break&r&7 to the target (lasting 30 seconds).&r"
+		"&#00FFAA[Contempt Count ≥ 6 stacks]&r&7 Apply 3 levels of &#FFD700Armor Break&r&7 to the target (lasting 30 seconds).&r"
+		"&#00FFAA[Contempt Count ≥ 8 stacks]&r&7 Apply 4 levels of &#FFD700Armor Break&r&7 to the target (lasting 30 seconds).&r"
+		"&#00FFAA[Contempt Count ≥ 10 stacks]&r&7 Apply 5 levels of &#FFD700Armor Break&r&7 to the target (lasting 30 seconds).&r"
+		"&7"
+		"&#00FFAA[Per stack of Contempt Count]&r&7 Increases your attack damage by 10%, but reduces attack speed by 5% (attack speed reduction max 50%).&r"
+	]
+	quest.5731A86EC589BF22.quest_desc: [
+		"&7Are you tired of placing &bblocks&r&7 one by one?&r"
+		"&7Don't worry! The &bBuilding Wand&r&7 can place multiple blocks at once!!!&r"
+		""
+		"&7Whether you're a &bmaster architect&r&7 with intricate designs or have simple building needs, it's highly recommended!&r"
+	]
+	quest.5731A86EC589BF22.quest_subtitle: "Artisan Skill"
 	quest.57D76B1B33C57F9F.quest_desc: ["Though you've swum so long you probably don't need these, I'll still give them to you, because I don't know what else to give... how about some aquatic specialties?"]
 	quest.57D76B1B33C57F9F.quest_subtitle: "Then let me ask you, why don't I just take a boat?"
 	quest.58CA43B9AA0530E2.quest_subtitle: "Stage 2"
@@ -2253,12 +2380,16 @@
 	]
 	quest.58DE58D4F8290C1C.quest_subtitle: "Novel Power"
 	quest.58DE58D4F8290C1C.title: "Magic Scroll"
+	quest.58FD71F9C065E1AC.quest_desc: ["&7Try your luck?&r"]
+	quest.58FD71F9C065E1AC.quest_subtitle: "Random Spell + Random Tier"
 	quest.593ABE7FAC454B34.quest_desc: [
 		"&6Ailment Expulsion Rune&r"
 		""
 		"&7Ailment Expulsion Rune urges form to catalyze, transform, and change substances, aiming to accelerate processing and dispelling speed of &cnegative effects&r&7, overcoming them at beyond normal speed.&r"
 	]
 	quest.593ABE7FAC454B34.quest_subtitle: "Pulse Promoting Processing"
+	quest.5A8ACB926DFAB615.quest_subtitle: "You will receive a beginner's gift pack"
+	quest.5A8ACB926DFAB615.title: "&a\"Honey Sugar Masking Suffering at the Beginning\""
 	quest.5A8B7CD00226572C.quest_subtitle: "Stage 1"
 	quest.5AEF01E9FF0A0727.quest_desc: [
 		"&bUpgraded version of Lead"
@@ -2338,6 +2469,7 @@
 	]
 	quest.5E69573B6AA70AFA.quest_subtitle: "Double Down"
 	quest.5E69992403F40955.quest_subtitle: "Familiar Summoning Ritual"
+	quest.5EEB1A77BA0D052D.quest_subtitle: "A utility tool for locating Weeping Wells."
 	quest.5F1C1AA992472C3D.quest_desc: [
 		"&6Heretical Rune&r"
 		""
@@ -2351,8 +2483,8 @@
 	]
 	quest.5FFB29607E15D805.quest_subtitle: "Defy Limitations"
 	quest.5FFB29607E15D805.title: "Defiance Treaty"
-	quest.6038063D7681AFB5.quest_subtitle: "Food Value >=14"
-	quest.6038063D7681AFB5.title: "Grand Meal Recovery ×32"
+	quest.6038063D7681AFB5.quest_subtitle: "Food Value >= 14"
+	quest.6038063D7681AFB5.title: "Feast Recycling x32"
 	quest.609ED89F7E454DCA.quest_desc: [
 		"&eThe energy inside is exceptionally volatile."
 		"&6Speed doubled, high temperature surging, a performance leap."
@@ -2384,6 +2516,7 @@
 	]
 	quest.60C42244ED37BA5F.quest_subtitle: "Magical Creations"
 	quest.61A037D46536F93D.quest_subtitle: "Arcane Materials"
+	quest.61AD6CC3CE0AC9F4.quest_subtitle: "Global Options"
 	quest.629600F80E05353F.quest_desc: [
 		"&7When Security Manager added to storage network, default all players cannot access."
 		""
@@ -2427,6 +2560,14 @@
 		"&8It's smart enough to know when to stop.&r"
 	]
 	quest.646E435B163FDF29.quest_subtitle: "Arcane Materials"
+	quest.64AC4146C392E8A6.quest_desc: [
+		"&#CC88FFEnvy - Corrosion&r&7"
+		"&7When carrying the \"Envy\" effect, it is considered as applying &#CC88FFEnvy Count&r&7.&r"
+		"&#00FFAA[Upon hitting an attack]&r&7 If you have the &#FFAA00Envy&r&7 effect, transfer all status effects from the target to yourself (single effect transfer up to 200 ticks). After successful transfer, increase &#CC88FFEnvy Count&r&7 by a number of stacks equal to the number of transferred effects.&r"
+		"&#00FFAA[Every 2 seconds]&r&7 &#CC88FFEnvy Count&r&7 stacks decrease by 1 (minimum 0 stacks).&r"
+		"&7"
+		"&#00FFAA[When dealing damage]&r&7 If you have the &#FFAA00Envy&r&7 effect, increase this damage by (&#CC88FFEnvy Count&r&7 × 3%) times, up to a maximum of 2 times.&r"
+	]
 	quest.651B146F0F9BEA1D.quest_desc: [
 		"&6Mechanical Press&r"
 		""
@@ -2505,8 +2646,16 @@
 		"&7Activating harmonic crystals cast in star-core depths, Stellar Component unconditionally stabilizes fundamental framework of &eTuning Process&r&7, making its strength permanently enhanced."
 	]
 	quest.65B599AA9888FBF2.quest_subtitle: "Stellar Blessing"
-	quest.66481C79877E0ED7.quest_subtitle: "Food Value >=14"
-	quest.66481C79877E0ED7.title: "Grand Meal Recovery ×10"
+	quest.660EAD8BBC2734CA.quest_desc: [
+		" &#FFAA00Sloth - Corrosion&r&7"
+		"&7Normal attack multiplier is &#00AA000.8 times&r&7, and you have &#00AA0035% damage reduction&r&7.&r"
+		"&#00FFAA[Upon taking damage]&r&7 If you have the &#FFAA00Sloth&r&7 effect, accumulate the damage taken. When accumulated damage reaches (10 + 5 × Sloth level) points, enter the &#FFAA00\"Wake-up Anger\"&r&7 state (lasting 100 seconds), attack multiplier increases to &#00AA001.0~10.0 times&r&7, and reset accumulated damage.&r"
+		"&#00FFAA[When tossing a coin]&r&7 If you are in the &#FFAA00\"Wake-up Anger\"&r&7 state, make the probability of the lowest value (1) the same as the probability of any other value.&r"
+		"&#00FFAA[Upon hitting an attack]&r&7 If you are in the &#FFAA00\"Wake-up Anger\"&r&7 state, remove the &#FFAA00\"Wake-up Anger\"&r&7 state, and grant yourself &#FF5555Blindness III&r&7, &#FF5555Darkness III&r&7, &#FF5555Bad Omen III&r&7, &#FF5555Slowness III&r&7 (lasting 10 seconds) and &#FFAA00Resistance IV&r&7 (lasting 9 seconds).&r"
+	]
+	quest.660EAD8BBC2734CA.quest_subtitle: "Sloth Corrosion"
+	quest.66481C79877E0ED7.quest_subtitle: "Food Value >= 14"
+	quest.66481C79877E0ED7.title: "Feast Recycling x10"
 	quest.664DF00DAF0D957A.quest_desc: [
 		"&6Flame Comfort Rune&r"
 		""
@@ -2824,7 +2973,7 @@
 	]
 	quest.74F6BCC9482F2FD6.quest_subtitle: "Double Return"
 	quest.74F6BCC9482F2FD6.title: "Reflection Treaty"
-	quest.7501056B288C71E1.quest_subtitle: "Food Value >8"
+	quest.7501056B288C71E1.quest_subtitle: "Food Value > 8"
 	quest.750FC99EE02F979D.quest_desc: [
 		"&7To compensate for limitations of single material performance, I developed Sewing Machine."
 		""
@@ -2903,6 +3052,17 @@
 		"&7&cNonexistence&r&7 producing &aexistence&r&7 is manifestation of &8Shadow Arcane Energy&r&7 existence. Perhaps &creally&r&7 alive... but its life defined by void, not material existence. Extending further, perhaps more complex life in void?"
 	]
 	quest.7779D406142005D6.quest_subtitle: "Clues to Soul's Essence"
+	quest.779B259771323E1B.quest_desc: [
+		"&7Defeating the King of the Dead will unlock the following ores:&r"
+		"&7"
+		"&#67B1E5Gobber&r&7"
+		"&#C9C8E1Zenarite&r&7"
+		"&#757369Runic Fragments&r&7"
+		"&#7EE344Chlorophyte Ore&r&7"
+		"&#770808Fearstone&r&7"
+		"&#DD660ASolar Core&r"
+	]
+	quest.779B259771323E1B.quest_subtitle: "The Mansion is About to Collapse"
 	quest.77A67AF0D408E4DC.quest_desc: [
 		"&6Cauldron Enhancement"
 		"&7&bSoul Cauldron&r&7 possesses deep potential, but most unrealized. Various &dCores&r&7 made from &6Alchemical Mineral Dust&r&7 can activate its potential, I call this process "
@@ -3010,7 +3170,7 @@
 		"Although materials need to be placed for combustion, as the grade of input materials increases, released heat also significantly increases, still having irreplaceable roles in specific processes."
 	]
 	quest.7A3C6671435E2BA9.quest_subtitle: "Thermal Smelting"
-	quest.7A4449338F885205.quest_subtitle: "Stage 2, Unlocks Stage 3 After Kill"
+	quest.7A4449338F885205.quest_subtitle: "Stage 2, unlocks Stage 3 after kill"
 	quest.7A63B4E0381D9BA4.quest_desc: [
 		"&6Patience Reward Treaty"
 		"&7Long pain worse than short pain.&r&cBuffered damage becomes magic damage, strength increased by one-fifth when released"
@@ -3150,6 +3310,16 @@
 		"&7Unyielding Rune stabilizes wearer's posture, negating all &cknockback&r&7.&r"
 	]
 	quest.7EF077D05E3E3B7E.quest_subtitle: "Withstand Unbearable Things"
+	quest.7F2C0291CE6F6B66.quest_desc: [
+		"&#FF66CCLust - Corrosion&r&7"
+		"&7Normal attack multiplier is &#00AA001.0 times&r&7. When attacking a target with &#FF66CC\"Rose\"&r&7, attack multiplier increases to &#00AA001.1 times&r&7; when attacking a target with &#CC0000\"Bloodstained Rose\"&r&7, attack multiplier increases to &#00AA001.2 times&r&7.&r"
+		""
+		"&#00FFAA[Upon hitting an attack]&r&7 If the target does not have &#FF66CC\"Rose\"&r&7 or &#CC0000\"Bloodstained Rose\"&r&7, grant it 1 stack of &#FF66CC\"Rose\"&r&7. If the target already has a Bleeding effect, instead grant 1 stack of &#CC0000\"Bloodstained Rose\"&r&7."
+		""
+		"&#00FFAA[Upon hitting an attack]&r&7 If the target has 5 stacks of &#FF66CC\"Rose\"&r&7, consume all stacks, and grant yourself 1 stack of &#FFAA00Damage Boost&r&7."
+		""
+		"&#00FFAA[Upon hitting an attack]&r&7 If the target has 10 stacks of &#CC0000\"Bloodstained Rose\"&r&7, consume all stacks, grant yourself 3 stacks of &#FFAA00Damage Boost&r&7, and deal 1 instance of bleeding damage to the target based on its current bleeding level."
+	]
 	quest.7F53C2C16D225E49.quest_subtitle: "Can break blocks or fluids in front, while also absorbing front drops"
 	quest.7F578E1D8C765465.quest_desc: [
 		"&7Soul Rituals mostly have similarities. Simple rituals manifest effects by seeking &dRitual Sites&r&7, while more complex rituals—seeking to influence world without specific target—manifest effects through solidified &dRitual Sites&r&7."
@@ -3275,19 +3445,24 @@
 		"&7- Default uses &6ChironGoRoundTC .ttf &r font"
 	]
 	quest.7FFEDC8A8DA45A2F.quest_subtitle: "Don't like the modpack font!"
+	reward.0039A626D8431A26.title: "Forget All Learned Spells"
 	reward.0116627ECA2E3471.title: "Toggle Fragile Soul Status"
 	reward.0271EB97C3EE0E0B.title: "Deactivate Exile Effect"
 	reward.0587A8A6F15D12D2.title: "Warrior"
 	reward.08D44DB184D9838B.title: "Second Chance"
 	reward.174E427410F45CF1.title: "Learn All Spells Instantly"
 	reward.20D4846E3293C5AF.title: "Random Enchantment Book"
+	reward.298ABAAF0B2A3AF1.title: "The Enraged King of the Dead"
 	reward.2B36732E586C7836.title: "Drunkard"
 	reward.2C437A71A95E6CCC.title: "Unspeakable Brutality and Ferocity"
+	reward.428CD61F9842D150.title: "Keep Inventory Off"
 	reward.4394C6936870E39C.title: "Toggle Wendigo Status"
 	reward.462D52E228A4BD62.title: "Unspeakable Brutality and Ferocity"
 	reward.497C56F71A3C4297.title: "Eternal Night"
 	reward.4E3EDC65B6FED37D.title: "Mage"
 	reward.4ED830C463206C6C.title: "N3"
+	reward.599B06FAED12C9AD.title: "Random Spell Scroll"
+	reward.5FAE827FECB3B03D.title: "Keep Inventory On"
 	reward.614956D135BA7286.title: "N5"
 	reward.644449F246F10339.title: "N2"
 	reward.667762DC69B2AD5E.title: "Clear Difficulty Settings"
@@ -3300,6 +3475,7 @@
 	reward.7D68FC48AF26A5C1.title: "Activate Exile Effect"
 	reward.7D8C106B8D90BF8D.title: "Warrior"
 	reward_table.14503C2938D82D10.title: "High-Price Recovery"
+	reward_table.22800CFE01C6F088.title: "Keep Inventory on Death"
 	reward_table.2EE8C4EF7AB3771A.title: "Covert Harvest"
 	reward_table.34E3D5128D809C0E.title: "Meal Recovery"
 	reward_table.55C00FFB8B46380D.title: "Difficulty Selection"
@@ -3311,7 +3487,7 @@
 	task.00BEC102EBB8C607.title: "Slingshot Pattern"
 	task.00F4B3FFF5644B7A.title: "Click to Continue"
 	task.010977A0B683361F.title: "Scythe Pattern"
-	task.02081D27FED67724.title: "Main Meal Recovery"
+	task.02081D27FED67724.title: "Meal Recycling"
 	task.039FE05CAF91D22E.title: "Infused Bookshelf"
 	task.061EADF2EDD58507.title: "Click to Continue"
 	task.064BC8413AD5B904.title: "Storage Block"
@@ -3322,19 +3498,21 @@
 	task.0A1A90A2685174D7.title: "Tips: How to Use"
 	task.0B6D03278DF87C34.title: "Mattock Pattern"
 	task.0E6662C2E723B71E.title: "Aether"
-	task.0FF5EB378FBC3D7E.title: "Grand Meal Recovery"
+	task.0FF5EB378FBC3D7E.title: "Feast Recycling"
 	task.104407FC50682D93.title: "Any Clear Glass"
 	task.107CD75BA2850AF5.title: "Chestplate Pattern"
 	task.1241D4845D2FA0FE.title: "Any Scroll"
 	task.13B37FFF4E9065DB.title: "Hey, why'd you die?"
 	task.14F00C7BD0F376AF.title: "Crossbow Pattern"
 	task.1515843B90E779DE.title: "Any Gale Device"
+	task.17C489799E4E8BE8.title: "Choose Reward"
 	task.17D165E1F90F67DA.title: "Scavenger"
 	task.17FD4724C406FFAA.title: "Dagger Pattern"
 	task.1B1EAA42882C0ED0.title: "Shears Pattern"
 	task.1B2684D7ECCEF198.title: "Helmet Pattern"
 	task.1B3D8C6E12F08794.title: "Any Wood"
 	task.1C06992A966B5537.title: "Arrow Pattern"
+	task.1C6E3A73FEC6CA64.title: "Command Registration"
 	task.1CE591BED0249B67.title: "Any Food"
 	task.201E6C48702846AC.title: "Bracelet Pattern"
 	task.218622C67393A564.title: "Fluid Storage Block"
@@ -3342,6 +3520,7 @@
 	task.27FCF177F9DBA089.title: "Familiar List"
 	task.28F0C1066808D8E9.title: "Hunt"
 	task.2953AA70E267ADF7.title: "Key Bindings"
+	task.2A2F3B895F40F65B.title: "Keep Inventory on Death"
 	task.2AB642EE8FD15F3A.title: "Any Tank"
 	task.2D2AAB7B62B6E1EC.title: "About Villagers"
 	task.2D51A4DF6E0A68BB.title: "Wireless Access Point"
@@ -3352,7 +3531,7 @@
 	task.34105E8DECEA3772.title: "Void Well"
 	task.34AE1A4F7B79CDEE.title: "Any Drain Outlet"
 	task.358BFE80F8E286BB.title: "To restrict those who don't read, this content can only be completed after world open time reaches requirement"
-	task.35A3054C9A7DE78E.title: "Main Meal Recovery"
+	task.35A3054C9A7DE78E.title: "Meal Recycling"
 	task.362ED444485E05A1.title: "Any Totem Base"
 	task.36C977BD4D881D5A.title: "Any Spellbook"
 	task.3763E0FE3154E4C4.title: "Bow Pattern"
@@ -3361,6 +3540,7 @@
 	task.39642AB20E758993.title: "Blueprint"
 	task.398A49ECF96C541F.title: "Item Storage"
 	task.3A6DD67986C67095.title: "Leggings Pattern"
+	task.3A8109644A12D03B.title: "Building Wand"
 	task.3BAA6B1E059DB8D6.title: "Boiler"
 	task.3BBEAE77629AD44D.title: "&6Armor Plate&r"
 	task.3CBB932AAD6CC7EA.title: "Any Tome"
@@ -3368,6 +3548,7 @@
 	task.3F63C56803BA4F6F.title: "Prospector Hammer Pattern"
 	task.3F853F214743B9E6.title: "Any #alshanex_familiars:familiar_trinkets"
 	task.40B3453CF78E2E79.title: "Past Prosperity"
+	task.4236042D0BB376A4.title: "Random Spell Scroll Sales"
 	task.4295715DEB0B8AC0.title: "Mana Flower"
 	task.4297DDBDD7B98C85.title: "Any Smelting Controller"
 	task.42E1F7D1048AB5D0.title: "Catacombs"
@@ -3395,7 +3576,7 @@
 	task.5938A9133F755A32.title: "Shield Pattern"
 	task.5A0F513FCD1F0C69.title: "Don't Lose This Book... Very Important!"
 	task.5B09D0B2903B224E.title: "Knife Pattern"
-	task.5B0CA142332889F5.title: "Grand Meal Recovery"
+	task.5B0CA142332889F5.title: "Feast Recycling"
 	task.5B9FE5D428C26C37.title: "Any Electric Furnace"
 	task.5CDEA67077218678.title: "Hammer Pattern"
 	task.5DAEF315B3683621.title: "Any Soul"
@@ -3404,7 +3585,7 @@
 	task.5F3EC831C3E53770.title: "Katana Pattern"
 	task.5F633C276DD0D3A8.title: "Learn All Spells at Once"
 	task.5FA1BFAEA3774823.title: "Any Obelisk"
-	task.615A3115BB49565F.title: "Grand Meal Recovery"
+	task.615A3115BB49565F.title: "Feast Recycling"
 	task.61E28A897E5CCF57.title: "Any Manuscript"
 	task.62700C9E1399D758.title: "Any Familiar Owner Accessory"
 	task.6478174E99B96FA8.title: "Repeater"
@@ -3414,10 +3595,12 @@
 	task.6B95F9E065D18CC8.title: "Axe Pattern"
 	task.6C3ED5ACD37CDCC6.title: "Click to Continue"
 	task.6C74D4BF477D8F99.title: "Foliage Aesthetics"
+	task.6E334042869DC33A.title: "You will receive a starter kit"
 	task.6E37A78A24013057.title: "Nether Gobber Fuel"
 	task.6EE54064FF25F094.title: "Any Firebrick"
 	task.6EEBB3F381DA8C3B.title: "Any Signal Device"
-	task.7032206EEBFC489D.title: "Main Meal Recovery"
+	task.7032206EEBFC489D.title: "Meal Recycling"
+	task.70D73BEBDA8C57DA.title: "Seven Deadly Sins Corrosion"
 	task.714747D6C3FBBCE2.title: "Any Advanced Bookshelf"
 	task.72BBA8FCDD81B6AA.title: "Trident Pattern"
 	task.735FCCA157A46245.title: "Difficulty Settings"

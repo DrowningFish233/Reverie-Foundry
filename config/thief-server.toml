@@ -1,7 +1,7 @@
 [crime]
 	# Breaking protected blocks (#thief:break_protected/<level>) in protected structure (#thief:protected) is considered a crime.
 	# Default: true
-	breaking_protected_blocks = true
+	breaking_protected_blocks = false
 	# Interacting with protected blocks (#thief:interact_protected/<level>) in protected structure (#thief:protected) is considered a crime.
 	# Default: true
 	interacting_with_protected_blocks = true
@@ -24,21 +24,21 @@
 	# Max distance (in blocks) at which an entity can notice a crime.
 	# Default: 32
 	# Range: 1 ~ 64
-	max_notice_distance = 12
+	max_notice_distance = 8
 	# Distance (in blocks) at which an entity always notices a crime, even through blocks. This value is halved when entity is sleeping.
 	# Default: 6
 	# Range: 0 ~ 64
-	always_notice_distance = 6
+	always_notice_distance = 4
 
 [punishment]
 	# Minimum reputation level needed for a villager to trade with the player. Anything lower will prevent the trade.
 	# Default: DISTRUSTED
 	#Allowed Values: HATED, UNWELCOME, DISTRUSTED, NEUTRAL, ACCEPTED, RESPECTED, HONORED
-	trade_reputation_threshold = "DISTRUSTED"
+	trade_reputation_threshold = "HATED"
 	# Minimum crime severity at which guards (#thief:guards) will attack the player, if not already attacking something else. Set to NONE to disable.
 	# Default: MEDIUM
 	#Allowed Values: NONE, LIGHT, MEDIUM, HEAVY
-	guard_attack_threshold = "MEDIUM"
+	guard_attack_threshold = "HEAVY"
 
 	[punishment.reputation]
 		# [LIGHT] Value added to 'Major Negative' reputation gossip.
@@ -89,7 +89,7 @@
 	# Default: 2
 	# Default: 2
 	# Range: 0 ~ 20
-	major_positive_increase = 3
+	major_positive_increase = 4
 	# 'Minor Positive' reputation increase with nearby villagers when raid is defeated.
 	# Default: 25
 	# Default: 25

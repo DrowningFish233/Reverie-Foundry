@@ -14,7 +14,7 @@
 	chapter_group.17FDF36D1B965C72.title: "&e散落的手记 （支线）"
 	chapter_group.2F1F238400B8A177.title: "杂谈"
 	chapter_group.7F00D0D8C7C916A0.title: "&b虚无之梦 （主线）"
-	file.0000000000000001.title: "遐想铸造厂v0.2-Beta"
+	file.0000000000000001.title: "遐想铸造厂v0.2.2-Alpha"
 	quest.00A5A64046D3B0EF.quest_desc: [
 		"&6相比拆解宝典，这本高级版本能更好地维持附魔的稳定性，可将装备上的所有附魔完整剥离并保存。&r"
 		""
@@ -42,6 +42,7 @@
 	quest.017488D14BA19FAA.quest_subtitle: "多看手册！那里面是材料大全"
 	quest.017488D14BA19FAA.title: "&e有什么需要了解的机制或者内容记得多看任务和手册！！！"
 	quest.01891B78BD11035B.quest_subtitle: "二者择一"
+	quest.01891B78BD11035B.title: "&a\"Honey Sugar Masking Suffering at the Beginning\""
 	quest.01DFC41A894B42AC.quest_subtitle: "空军"
 	quest.020D29D1D3100306.quest_subtitle: "奥术材料"
 	quest.02AFD33E635B23E1.quest_desc: [
@@ -90,6 +91,19 @@
 	quest.02CBB1D9A926F86B.quest_subtitle: "桌布/桌面"
 	quest.02CBB1D9A926F86B.title: "商店"
 	quest.0342F51828C72B82.quest_subtitle: "屡教不改"
+	quest.03639EDED6577831.quest_desc: [
+		"&#FFD700贪婪-侵蚀&r&7"
+		"&7常态无特殊倍率修正。&r"
+		"&#00FFAA[每10秒]&r&7 若自身拥有 &#FFAA00贪婪&r&7 效果，则使其等级提升 1 级（最高 3 级）。&r"
+		"&#00FFAA[受到攻击后]&r&7 若自身拥有 &#FFAA00贪婪&r&7 效果，则使其等级重置为 1 级。&r"
+		"&7"
+		"&#00FFAA[每级贪婪效果]&r&7 提供以下加成：&r"
+		"&7- 生物掉落特殊物品概率 +5%&r"
+		"&7- 抢夺、海之眷顾等附魔效果等级 +2&r"
+		"&7- 经验球与掉落物吸取距离 +2 格&r"
+		"&7- 挖掘与击杀经验获取 +35%&r"
+		"&7- 法术卷轴不消耗概率 +15%&r"
+	]
 	quest.046E980EB69A1209.quest_desc: [
 		"&6微型图腾&r"
 		"&7可以与一个魔宠绑定，且一个魔宠同一时间只能绑定一个图腾。当该魔宠死亡且你没有魔力复活它时，绑定的图腾将被消耗，使该魔宠&a复活&r&7，图腾也随之消耗。&r"
@@ -136,6 +150,54 @@
 		"若发生显示异常,请连resourcepack_load_order.json一同删除"
 	]
 	quest.075AC794CF9E3665.quest_subtitle: "PAXI"
+	quest.078C80DB81D1640E.quest_desc: [
+		"&6整合包命令速查&r"
+		"&7整合包提供了许多自定义命令。&r"
+		""
+		"&6温迪戈&r"
+		"&7&e/rf wendigosystem toggle&r&7 - 开关温迪戈效果&r"
+		"&7&e/rf wendigosystem status&r&7 - 查看状态&r"
+		""
+		"&6矿石阶段&r"
+		"&7&e/rf orestage&r&7 - 查看当前阶段状态&r"
+		"&7&e/rf orestage reset&r&7 - &c重置所有数据（慎用）&r&7"
+		"&7&e/rf orestage reload&r&7 - 重载配置文件&r"
+		"&7&e/rf orestage validate&r&7 - 验证配置并自动修复&r"
+		"&7&e/rf orestage info&r&7 - 查看详细进度信息&r"
+		"&7&e/rf orestage kills&r&7 - 查看击杀统计&r"
+		""
+		"&6实用功能&r"
+		"&7&e/rf entityclean&r&7 - 清理周围驳杂实体，默认只清理部分掉落物，弓箭等实体（可配置）&r"
+		""
+		"{@pagebreak}"
+		"&6追加的苦难&r"
+		""
+		"&6状态管理&r"
+		"&7&e/rf deathsystem toggle&r&7 - 开启/关闭死亡惩罚系统&r"
+		"&7&e/rf deathsystem status&r&7 - 查看死亡统计和当前状态&r"
+		""
+		"&6数据重置&r"
+		"&7&e/rf deathsystem reset&r&7 - &c重置死亡计数并在下次重生时恢复最大生命值&r"
+		""
+		"&7&e/rf depression toggle&r&7 - 开关抑郁症（追加的苦难）&r"
+		"&7&e/rf depression status&r&7 - 查看抑郁症（追加的苦难）&r"
+		""
+		"&6物品给予&r"
+		"&7&e/rf give randomenchanted&r&7 - 领取随机附魔书&r"
+		"&7&e/rf give randomscrollid&r&7 - 领取随机卷轴&r"
+		"&7&e/rf give drunkard&r&7 - 领取&b酒鬼套装&r&7（各种酒水）&r"
+		"&7&e/rf give traveler&r&7 - 领取&b旅者套装&r&7（背包+附魔书）&r"
+		"&7&e/rf give sorcerer&r&7 - 领取&b法师套装&r&7（法术装备）&r"
+		"&7&e/rf give warrior&r&7 - 领取&b战士套装&r&7（战斗装备）&r"
+		""
+		"&6管理员功能&r"
+		"&7&e/rf give 套装名 玩家名&r&7 - 给予其他玩家套装&r"
+		"&7&e/rf give 套装名 玩家名 clear&r&7 - &c重置玩家的领取限制&r"
+		""
+		"&7&e/wits 查看当前所处结构"
+	]
+	quest.078C80DB81D1640E.quest_subtitle: "我知道了"
+	quest.078C80DB81D1640E.title: "实用命令"
 	quest.07C86BA6CAFFD6C8.quest_subtitle: "查看你现有的魔宠已获得的强化效果"
 	quest.07ED04B3B071C4F7.quest_subtitle: "奥术材料"
 	quest.07F1B2594FCCAF01.quest_desc: [
@@ -149,6 +211,7 @@
 	quest.0840A780542BF10B.quest_desc: ["总算不是很早了"]
 	quest.0840A780542BF10B.quest_subtitle: "整合包目前距期望的完整版还略早"
 	quest.0840A780542BF10B.title: "半成品通知"
+	quest.086482C52023DB55.quest_subtitle: "寻找离你最近的地下龙巢的实用工具"
 	quest.0919F71D241AFD81.quest_desc: [
 		"&6欢愉目标权能&r"
 		""
@@ -597,6 +660,7 @@
 	quest.182289427E06D427.quest_subtitle: "连点器的好伙伴"
 	quest.182321BDA643635C.quest_desc: ["如今存储网络的访问效率已难以满足我的需求，我需要寻求更快的数据读写方案。"]
 	quest.182321BDA643635C.quest_subtitle: "更快，更好，更强！"
+	quest.18AC27B34367E1DD.quest_desc: ["进行下蹲操作时可秒挖方块（这是一个bug，但是我觉得保留这个bug会更加有趣）"]
 	quest.18AC27B34367E1DD.quest_subtitle: "隧道挖掘者"
 	quest.18C5ACA6F816EDCB.quest_desc: [
 		"&6微型盾牌&r"
@@ -986,17 +1050,22 @@
 	quest.24F8461D0711F786.quest_subtitle: "逃离追寻之物"
 	quest.257E95B5ED03904D.quest_subtitle: "比锄头好"
 	quest.25C5815C5583AA74.quest_desc: [
-		"&b理智值 范围 [ -45 ~ 45 ]"
+		"&a理智 范围：&#00FFAA-45&r&7 至 &#00FFAA45&r"
 		""
-		"&9当理智值低于 -45 后，若继续受到理智伤害，将积累 沉沦值。"
+		"&7理智值会影响攻击倍率。"
+		"&7攻击倍率随理智值变化，在 &#FF55550.8倍&r&7 至 &#00AA001.2倍&r&7 之间浮动。"
 		""
-		"&9理智值恢复时，优先抵消沉沦值，沉沦值清空后才开始提升理智。"
+		"&#00FFAA[沉沦]&r&7"
+		"&7当自身理智值低于 &#FF5555-45点&r&7 时，受到理智伤害将开始积累 &#FFAA00沉沦值&r&7。"
+		"&7理智值恢复时，优先抵消 &#FFAA00沉沦值&r&7，清空后才会提升理智值。"
 		""
-		"&9受到伤害时，沉沦值会提供额外的易伤倍率（最高 5 倍），每次受伤后沉沦值减少 5%。"
+		"&#00FFAA[沉沦易伤]&r&7"
+		"&7受到伤害时，&#FFAA00沉沦值&r&7 会提供额外易伤效果（最高 &#FF55555倍&r&7 易伤）。"
+		"&7受到伤害后，&#FFAA00沉沦值&r&7 减少 &#FF55555%&r。"
 		""
-		"&b死亡将清空所有沉沦值，并将理智值归零。"
-		""
-		"&6理智值影响攻击倍率，在 0.8~1.2 之间浮动：理智越高倍率越高，反之亦然。"
+		"&#00FFAA[沉沦清算]&r&7"
+		"&7自身退场时，清空所有 &#FFAA00沉沦值&r&7，并将理智值归零。"
+		"&8“沉沦的债务终于偿清。狂热退去，数字归零。这是……最后的安宁。"
 	]
 	quest.25C5815C5583AA74.quest_subtitle: "保持清醒?"
 	quest.25C5815C5583AA74.title: "理智值"
@@ -1151,7 +1220,11 @@
 		"&7邪恶和神圣是对立的力量，为什么不两者结合呢？&e坩埚&r&7加装共情驱动器后，&8邪恶精魂&r&7会记住&e促符&r&7受到的损伤。而在&e修补弥散器&r&7进行修复后，&b神圣精魂&r&7便会‘原谅’这种损伤，进一步修复促符，并使得后续三次&6聚焦循环&r&7的所有属性获得提升。&r"
 	]
 	quest.2D7AB1B4FC01C3F8.quest_subtitle: "接纳恨意"
-	quest.2DD51904F4629516.quest_desc: ["需要从黑色开始做起..."]
+	quest.2DD51904F4629516.quest_desc: [
+		"需要从黑色开始做起..."
+		""
+		"该模组的砖块都具有方向性，如果想搭建的好看还需多多注意"
+	]
 	quest.2DD51904F4629516.quest_subtitle: "锻炉基石"
 	quest.2DE251239B528464.quest_desc: [
 		"&6奥能聚块的制作"
@@ -1349,6 +1422,25 @@
 		"&b当然,你也可以在其他村民看不见的地方进行屠杀"
 	]
 	quest.360AE4AB3B482FAC.quest_subtitle: "声望值"
+	quest.3611F55056F7105F.quest_desc: [
+		"&#00AA00暴食-侵蚀&r&7"
+		"&7携带「暴食」效果时，视为施加 &#00AA00暴食营养&r&7 层数。&r"
+		"&#00FFAA[食用食物后]&r&7 获得等同于该食物营养值的 &#00AA00暴食营养&r&7 层数。&r"
+		"&#00FFAA[每1.5秒]&r&7 &#00AA00暴食营养&r&7 层数减少 1 层（最低 -20 层）。&r"
+		"&7"
+		"&#00FFAA[暴食营养 > 40]&r&7 使自身获得 &#FFAA00暴食&r&7（等级为 （暴食营养 - 50）/ 2，持续 2 秒）、&#FFAA00生命恢复 I&r&7（持续 2 秒）与 &#FFAA00魔力暴食V&r&7（持续 4 秒）。&r"
+		"&#00FFAA[暴食营养 > 30]&r&7 使自身获得 &#FFAA00生命恢复 I&r&7（持续 2 秒）与 &#FFAA00暴食IV&r&7（持续 4 秒）。&r"
+		"&#00FFAA[暴食营养 > 20]&r&7 使自身获得 &#FFAA00生命恢复 I&r&7（持续 2 秒）与 &#FFAA00魔力暴食III&r&7（持续 4 秒）。&r"
+		"&#00FFAA[暴食营养 > 10]&r&7 使自身获得 &#FFAA00魔力暴食II&r&7（持续 2 秒）。&r"
+		"&#00FFAA[暴食营养 > 0]&r&7 使自身获得 &#FFAA00魔力暴食I&r&7（持续 2 秒）。&r"
+		"&#00FFAA[暴食营养 > -10]&r&7 使自身获得 &#FF5555虚弱 III&r&7（持续 2 秒）。&r"
+		"&#00FFAA[暴食营养 ≥ -20]&r&7 使自身获得 &#FF5555虚弱 255&r&7（持续 2 秒）。&r"
+		"&7"
+		"&#00FFAA[攻击时]&r&7 若自身拥有 &#FFAA00暴食&r&7 效果，则使本次攻击的最终伤害提升（1 + 0.5 × 暴食等级）倍。&r"
+		"&7"
+		"&#00FFAA[食用食物后]&r&7 若自身处于「暴食」状态，则使该食物获得 &#FF00005 分钟的冷却时间&r&7。&r"
+	]
+	quest.3611F55056F7105F.title: "暴食侵蚀"
 	quest.364547BCDEFB8DDE.quest_desc: [
 		"&6移动式存储接口&r"
 		""
@@ -1403,6 +1495,7 @@
 	]
 	quest.3801B9633700F23D.quest_subtitle: "欺骗命运"
 	quest.3801B9633700F23D.title: "命运重构条约"
+	quest.38092862F38315D2.quest_subtitle: "寻找古代城市的实用工具"
 	quest.3834AAC7BBB3BDAF.quest_desc: [
 		"&6活力符文&r"
 		""
@@ -1481,8 +1574,6 @@
 	quest.3A5DD56949CF4827.quest_subtitle: "整合包默认按键已经配置好了，你只需要找到按键绑定，并点击（重置所有按键）即可"
 	quest.3BD86FD3D62946C6.quest_subtitle: "更好的书架"
 	quest.3BD86FD3D62946C6.title: "进阶书架"
-	quest.3BE884F16DB02E3D.quest_desc: ["有些武器上偶尔会带有不相称的部件，看起来颇为别扭。若能将其移除，想必会更加趁手……"]
-	quest.3BE884F16DB02E3D.quest_subtitle: "不是我喜欢的部件，直接拿走"
 	quest.3C4F9B874C336EB6.quest_desc: [
 		"# &cBUG反馈渠道 &r"
 		""
@@ -1930,9 +2021,10 @@
 	]
 	quest.4E826A5530F49919.quest_subtitle: "阶段2"
 	quest.4F5EEA7BC57F0B37.quest_desc: [
-		"可使用精准采集，消耗150耐久拆下刷怪笼"
+		"&7可使用&b精准采集&r&7，消耗&c150耐久&r&7拆下刷怪笼&r"
 		""
-		"若不使用精准采集，则会掉落随机战利品，如黄金，钻石，法术手稿等"
+		"&7若不使用精准采集，则会掉落随机战利品，如&b黄金&r&7，&b钻石&r&7，&b法术手稿&r&7等&r"
+		"&7刷怪笼会在使用过一段时间后&c自毁&r&7"
 	]
 	quest.4F5EEA7BC57F0B37.quest_subtitle: "培育温床"
 	quest.5007BB2101ED1D9C.quest_subtitle: "魔宠召唤仪式"
@@ -2058,6 +2150,15 @@
 		"&7它是种光源，因此染上深色会&8降低其明度&r&7，而非改变火焰的&a颜色&r&7。"
 	]
 	quest.51DA4C51263ADA18.quest_subtitle: "风之色彩"
+	quest.52FB65193EF182F4.quest_desc: [
+		"&#FF5555暴怒-侵蚀&r&7"
+		"&7携带「暴怒」效果时，视为施加 &#FF5555静止计时&r&7。&r"
+		"&#00FFAA[每1秒]&r&7 &#FF5555静止计时&r&7 增加 1 秒。&r"
+		"&#00FFAA[静止计时 ≥ 60秒]&r&7 使自身受到等同于最大生命值 10% 的伤害，并将 &#FF5555静止计时&r&7 重置为 0。&r"
+		"&#00FFAA[受到攻击时]&r&7 若自身拥有 &#FFAA00暴怒&r&7 效果，则对攻击者施加 &#FF5555发光&r&7（持续 20 秒）与 &#FF5555暴怒标记&r&7（持续 20 秒）。&r"
+		"&#00FFAA[攻击命中时]&r&7 若自身拥有 &#FFAA00暴怒&r&7 效果且目标带有 &#FF5555暴怒标记&r&7，则使本次攻击的最终伤害额外附加 2 倍于基础伤害的额外伤害；附加成功后，移除目标的 &#FF5555暴怒标记&r&7 与 &#FF5555发光&r&7 效果。&r"
+		"&#00FFAA[攻击命中时]&r&7 若自身不处于「暴怒」状态，则 &#FF5555静止计时&r&7 重置为 0。&r"
+	]
 	quest.533E6E13F1C9E939.quest_desc: [
 		"&6传送带&r"
 		""
@@ -2077,6 +2178,8 @@
 		""
 		"&8手稿的空白处画着一条蜿蜒的传送带，旁边写着：路已铺好，现在，让东西动起来吧。&r"
 	]
+	quest.53634A7FA785B1D3.quest_subtitle: "沉沦其中"
+	quest.53634A7FA785B1D3.title: "Seven Deadly Sins Corrosion"
 	quest.536380EE035D7850.quest_subtitle: "拿着任意末地创世的眼睛右键门框上已有的眼睛可以卸下"
 	quest.5372150CD0958B7B.quest_desc: [
 		"&6粉碎轮&r"
@@ -2130,8 +2233,10 @@
 		"{image:kubejs:textures/gui/difficuity_kjs.png width:180 height:50 align:center fit:true}"
 		"&d所以...亲...打不过就不要开高难了...&r"
 	]
-	quest.54207C49530C50BC.quest_subtitle: "这边难度开一章来讲"
+	quest.54207C49530C50BC.quest_subtitle: "必看须知没人看.png"
 	quest.543F9E26F7586FFF.quest_subtitle: "奥术材料"
+	quest.54DAB6324FA151F2.quest_desc: ["把奥术全典丢入哭泣之井中获得"]
+	quest.54DAB6324FA151F2.quest_subtitle: "堕入黑暗"
 	quest.54DCDB42738F0557.quest_desc: [
 		"&6逆反之心权能&r"
 		""
@@ -2193,11 +2298,23 @@
 	quest.56B761C2894F3C2E.title: "精魂存储"
 	quest.56CB359C8D5426A3.quest_subtitle: "踏入此门者，当舍去一切希望"
 	quest.57045442B4763EC9.quest_subtitle: "游泳健将"
+	quest.571979CF7DC3291C.quest_desc: [
+		"&#FFD700蔑视-侵蚀&r&7"
+		"&7携带「蔑视」效果时，视为施加 &#FFD700蔑视计数&r&7。&r"
+		"&#00FFAA[攻击命中时]&r&7 若自身拥有 &#FFAA00蔑视&r&7 效果，则使 &#FFD700蔑视计数&r&7 增加 1 层（持续 5 秒）。&r"
+		"&#00FFAA[蔑视计数 ≥ 2层]&r&7 对目标施加 1 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
+		"&#00FFAA[蔑视计数 ≥ 4层]&r&7 对目标施加 2 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
+		"&#00FFAA[蔑视计数 ≥ 6层]&r&7 对目标施加 3 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
+		"&#00FFAA[蔑视计数 ≥ 8层]&r&7 对目标施加 4 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
+		"&#00FFAA[蔑视计数 ≥ 10层]&r&7 对目标施加 5 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
+		"&7"
+		"&#00FFAA[每层蔑视计数]&r&7 使自身的攻击伤害提升 10%，但攻击速度降低 5%（攻速降低最多 50%）。&r"
+	]
 	quest.5731A86EC589BF22.quest_desc: [
-		"你是否厌倦了一个个搭建方块？"
-		"不要担心！建筑手杖能够一次性搭建多个方块！！！"
+		"&7你是否厌倦了一个个搭建&b方块&r&7？&r"
+		"&7不要担心！&b建筑手杖&r&7能够一次性搭建多个方块！！！&r"
 		""
-		"不论是精通设计的建筑师还是简单建造的需求，都非常值得使用！"
+		"&7不论是精通设计的&b建筑师&r&7还是简单建造的需求，都非常值得使用！&r"
 	]
 	quest.5731A86EC589BF22.quest_subtitle: "工匠技艺"
 	quest.57D76B1B33C57F9F.quest_desc: ["虽然你都游这么久应该也不缺这些了，但是我还是送给你这些，因为我不知道送什么了...送点水特产吧"]
@@ -2291,6 +2408,7 @@
 	]
 	quest.5E69573B6AA70AFA.quest_subtitle: "双倍下注"
 	quest.5E69992403F40955.quest_subtitle: "魔宠召唤仪式"
+	quest.5EEB1A77BA0D052D.quest_subtitle: "寻找哭泣之井的实用工具"
 	quest.5F1C1AA992472C3D.quest_desc: [
 		"&6异端符文&r"
 		""
@@ -2381,6 +2499,14 @@
 		"&8它很聪明，知道何时该停手。&r"
 	]
 	quest.646E435B163FDF29.quest_subtitle: "奥术材料"
+	quest.64AC4146C392E8A6.quest_desc: [
+		"&#CC88FF嫉妒-侵蚀&r&7"
+		"&7携带「嫉妒」效果时，视为施加 &#CC88FF嫉妒计数&r&7。&r"
+		"&#00FFAA[攻击命中时]&r&7 若自身拥有 &#FFAA00嫉妒&r&7 效果，则转移目标身上所有状态效果至自身（单个效果最多转移 200 刻）。转移成功后，使 &#CC88FF嫉妒计数&r&7 增加等同于转移效果数量的层数。&r"
+		"&#00FFAA[每2秒]&r&7 &#CC88FF嫉妒计数&r&7 层数减少 1 层（最低 0 层）。&r"
+		"&7"
+		"&#00FFAA[造成伤害时]&r&7 若自身拥有 &#FFAA00嫉妒&r&7 效果，则使本次伤害提升（&#CC88FF嫉妒计数&r&7 × 3%）倍，最高提升至 2 倍。&r"
+	]
 	quest.651B146F0F9BEA1D.quest_desc: [
 		"&6动力冲压机&r"
 		""
@@ -2459,6 +2585,14 @@
 		"&7引动星核深处凝铸的谐波晶体，星辰机件无条件稳固&e调谐过程&r&7的基础框架，使其强度恒久提升。"
 	]
 	quest.65B599AA9888FBF2.quest_subtitle: "星空祝福"
+	quest.660EAD8BBC2734CA.quest_desc: [
+		" &#FFAA00懒惰-侵蚀&r&7"
+		"&7常态攻击倍率为 &#00AA000.8 倍&r&7，且拥有 &#00AA0035% 免伤&r&7。&r"
+		"&#00FFAA[受到伤害时]&r&7 若自身拥有 &#FFAA00懒惰&r&7 效果，则累计受到的伤害值。累计伤害达到 (10 + 5 × 懒惰等级) 点时，使自身进入 &#FFAA00「起床气」&r&7 状态（持续 100 秒），攻击倍率提升至 &#00AA001.0~10.0 倍&r&7，并重置累计伤害。&r"
+		"&#00FFAA[投掷硬币时]&r&7 若自身处于 &#FFAA00「起床气」&r&7 状态，则使出现最低值（1）的概率与出现其余任一数值的概率相同。&r"
+		"&#00FFAA[攻击命中时]&r&7 若自身处于 &#FFAA00「起床气」&r&7 状态，则移除 &#FFAA00「起床气」&r&7 状态，并使自身获得 &#FF5555失明 III&r&7、&#FF5555黑暗 III&r&7、&#FF5555霉运 III&r&7、&#FF5555缓慢 III&r&7（持续 10 秒）以及 &#FFAA00抗性提升 IV&r&7（持续 9 秒）。&r"
+	]
+	quest.660EAD8BBC2734CA.quest_subtitle: "懒惰侵蚀"
 	quest.66481C79877E0ED7.quest_subtitle: "食物价值>=14"
 	quest.66481C79877E0ED7.title: "大餐回收 x10"
 	quest.664DF00DAF0D957A.quest_desc: [
@@ -2839,6 +2973,17 @@
 		"&7&c不存在&r&7中产生了&a存在&r&7，就是&8幽影奥术能量&r&7存在的表现。它或许&c真的&r&7活着……但它的生命由虚无定义，而非物质的存在。再推而广之，虚空中或许还有更为复杂的生命？"
 	]
 	quest.7779D406142005D6.quest_subtitle: "灵魂本质的线索"
+	quest.779B259771323E1B.quest_desc: [
+		"&7击败死者之王将解锁以下矿物：&r"
+		"&7"
+		"&#67B1E5戈伯&r&7"
+		"&#C9C8E1泽纳莱特&r&7"
+		"&#757369符文碎屑&r&7"
+		"&#7EE344叶绿矿&r&7"
+		"&#770808惧石&r&7"
+		"&#DD660A烈阳核心&r"
+	]
+	quest.779B259771323E1B.quest_subtitle: "大厦将倾"
 	quest.77A67AF0D408E4DC.quest_desc: [
 		"&6坩埚增强"
 		"&7&b精魂坩埚&r&7具有深厚的潜能，但大部分都没能发挥出来。&6炼金矿尘&r&7制成的各种&d核心&r&7就能激发出它的潜能，我将这种过程称作“&6增强&r&7”。"
@@ -3061,6 +3206,16 @@
 		"&7不屈符文能稳固佩戴者的姿态，抵消全部&c击退&r&7。&r"
 	]
 	quest.7EF077D05E3E3B7E.quest_subtitle: "抵挡难当之物"
+	quest.7F2C0291CE6F6B66.quest_desc: [
+		"&#FF66CC色欲-侵蚀&r&7"
+		"&7常态攻击倍率为 &#00AA001.0 倍&r&7。攻击拥有 &#FF66CC「玫瑰」&r&7 的目标时，攻击倍率提升至 &#00AA001.1 倍&r&7；攻击拥有 &#CC0000「染血的玫瑰」&r&7 的目标时，攻击倍率提升至 &#00AA001.2 倍&r&7。&r"
+		""
+		"&#00FFAA[攻击命中时]&r&7 若目标未拥有 &#FF66CC「玫瑰」&r&7 或 &#CC0000「染血的玫瑰」&r&7，则为其赋予 1 层 &#FF66CC「玫瑰」&r&7。若目标已拥有流血效果，则改为赋予 1 层 &#CC0000「染血的玫瑰」&r&7。&r"
+		""
+		"&#00FFAA[攻击命中时]&r&7 若目标拥有 5 层 &#FF66CC「玫瑰」&r&7，则消耗全部层数，使自身获得 1 层 &#FFAA00伤害强化&r&7。&r"
+		""
+		"&#00FFAA[攻击命中时]&r&7 若目标拥有 10 层 &#CC0000「染血的玫瑰」&r&7，则消耗全部层数，使自身获得 3 层 &#FFAA00伤害强化&r&7，并对目标造成 1 次基于其当前流血等级的流血伤害。&r"
+	]
 	quest.7F53C2C16D225E49.quest_subtitle: "能够破坏前方的方块或流体，同时也能吸收前方的掉落物"
 	quest.7F578E1D8C765465.quest_desc: [
 		"&7精魂仪式大多都有相同点。简单仪式通过寻索&d仪式位点&r&7展现效果，而更复杂的仪式——追求影响世界而无具体目标的仪式——的效果则通过固形&d仪式位点&r&7展现。"
@@ -3253,6 +3408,7 @@
 	task.1B2684D7ECCEF198.title: "头盔 模板"
 	task.1B3D8C6E12F08794.title: "任意 木头"
 	task.1C06992A966B5537.title: "箭 模板"
+	task.1C6E3A73FEC6CA64.title: "命令注册"
 	task.1CE591BED0249B67.title: "任意 食物"
 	task.201E6C48702846AC.title: "手镯 模板"
 	task.218622C67393A564.title: "流体存储方块"
@@ -3341,6 +3497,7 @@
 	task.6EE54064FF25F094.title: "任意 耐火砖"
 	task.6EEBB3F381DA8C3B.title: "任意 信波装置"
 	task.7032206EEBFC489D.title: "正餐回收"
+	task.70D73BEBDA8C57DA.title: "七罪侵蚀"
 	task.714747D6C3FBBCE2.title: "任意 进阶书架"
 	task.72BBA8FCDD81B6AA.title: "三叉戟 模板"
 	task.735FCCA157A46245.title: "难度设置"

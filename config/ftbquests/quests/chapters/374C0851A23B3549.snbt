@@ -543,17 +543,6 @@
 		}
 		{
 			dependencies: ["09E68D57095A5F1D"]
-			id: "3BE884F16DB02E3D"
-			tasks: [{
-				id: "1AB38ED9714E1FEF"
-				item: { count: 1, id: "silentgear:mod_kit" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 9.5d
-		}
-		{
-			dependencies: ["09E68D57095A5F1D"]
 			id: "73689A06F7BF9EB3"
 			tasks: [{
 				id: "100376EF51AF0B8D"
@@ -561,7 +550,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 11.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["09E68D57095A5F1D"]

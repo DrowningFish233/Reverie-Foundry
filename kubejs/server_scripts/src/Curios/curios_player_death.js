@@ -17,7 +17,7 @@ EntityEvents.death(event => {
 
 const curios_player_death = {
     'kubejs:none_curios': function (event, curios, slot, item) {
-        if (!kubejs_player.some(ctx => ctx == event.entity.type)) {
+        if (!kubejs_player.some(ctx => ctx == event.entity.getType())) {
             return;
         }
         curios.setStackInSlot(slot, Item.of('minecraft:air'));

@@ -20,7 +20,7 @@
 		#Hyper Charge is what the buffed mobs spawned by invasions have, turning this off will disabled these buffed mobs from spawning (This also disables Hyper invasions).
 		hyperCharge = true
 		#This determines whether players will be unable to sleep during all invasions.
-		forceInvasionSleeplessness = true
+		forceInvasionSleeplessness = false
 		#This determines whether invasion mobs should have an xp boost per kill.
 		useXPMultiplier = true
 		#Determines if invasion mobs should die when the invasions are over.

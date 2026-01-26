@@ -11,7 +11,7 @@
       "type": "apothic_attributes:crit_chance",
       "modifier": {
         "id": "tiered:kubejs_curios_10a",
-        "operation": "add_multiplied_base",
+        "operation": "add_value",
         "amount": -0.01
       },
       "optional_curio_slots": [
