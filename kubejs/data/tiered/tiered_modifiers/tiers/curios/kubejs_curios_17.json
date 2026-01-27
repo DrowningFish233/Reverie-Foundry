@@ -23,7 +23,8 @@
         "belt",
         "necklace",
         "spellbook",
-        "ego"
+        "ego",
+        "familiar_trinket"
       ]
     }
   ]

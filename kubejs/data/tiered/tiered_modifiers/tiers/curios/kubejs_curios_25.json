@@ -10,7 +10,7 @@
         {
             "type": "minecraft:generic.attack_damage",
             "modifier": {
-                "id": "tiered:kubejs_curios_24a",
+                "id": "tiered:kubejs_curios_25a",
                 "operation": "add_multiplied_base",
                 "amount": 0.04
             },
