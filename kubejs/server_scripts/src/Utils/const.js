@@ -25,6 +25,43 @@ const alcoholEffects = [
     "kubejs:tequila_sunrise",
     "kubejs:tequila"
 ];
+const GearsEffect = {
+    "creed_of_the_blight_eater": "食枯徒信条",
+    "oath_of_the_overburdened_mind": "重负意识誓约",
+    "oath_of_the_overeager_fist": "鲁莽重拳誓约",
+    "oath_of_the_overkeen_eye": "犀利锐眼誓约",
+    "oath_of_the_undiscerned_maw": "无恕渊喉誓约",
+    "oath_of_unsighted_resistance": "虚形抗性誓约",
+    "oath_of_unmakers_disdain": "毁存鄙夷誓约",
+    "pact_of_combustion": "燃焰条约",
+    "pact_of_contentedness": "完满条约",
+    "pact_of_defiance": "违抗条约",
+    "pact_of_patience_repaid": "耐心回报条约",
+    "pact_of_self_care": "自我养护条约",
+    "pact_of_reciprocation": "反照条约",
+    "pact_of_rune_exploitation": "符文竭耗条约",
+    "pact_of_the_arcanaphage": "噬魔条约",
+    "pact_of_the_berserker": "狂战士条约",
+    "pact_of_the_blastweaver": "爆炸编织者条约",
+    "pact_of_the_cloudskipper": "云跃者条约",
+    "pact_of_the_continuing_shot": "接续射击条约",
+    "pact_of_the_fortress": "垒塞条约",
+    "pact_of_the_high_priest": "祭司长条约",
+    "pact_of_the_lifeweaver": "织命者条约",
+    "pact_of_the_lone_druid": "孤身德鲁伊条约",
+    "pact_of_the_parasite": "寄生条约",
+    "pact_of_the_profane_ascetic": "腐烂苦修条约",
+    "pact_of_the_profane_glutton": "腐烂暴食条约",
+    "pact_of_the_prospector": "勘探工条约",
+    "pact_of_the_reaper": "收割者条约",
+    "pact_of_the_shattering_addict": "破念瘾君条约",
+    "pact_of_the_shield": "坚盾条约",
+    "pact_of_the_skybreaker": "裂天者条约",
+    "pact_of_the_warlock": "恶巫条约",
+    "pact_of_the_windswept": "风拂条约",
+    "pact_of_tidal_affinity": "潮汐亲和条约",
+    "pact_of_wyrd_reconstruction": "命运重构条约"
+}
 const sanity = "sanity"
 const depravity = "depravity"
 const Maxsanity = "Maxsanity"

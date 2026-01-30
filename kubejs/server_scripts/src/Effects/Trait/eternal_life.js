@@ -30,5 +30,6 @@ function eternal_life(event) {
         retaliationDamage = Math.min(retaliationDamage, maxBossDamage);
     }
 
-    actual.attack($DamageSource("generic"), retaliationDamage);
+    attackEntity(actual, 'generic', retaliationDamage, true)
+
 }

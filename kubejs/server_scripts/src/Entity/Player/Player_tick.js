@@ -61,6 +61,10 @@ PlayerEvents.tick(event => {
         let drainRate = getSanityDrainRate(player);
         updateplayersanity(player, sanityValue + drainRate);
     }
+    if (tick % 1201 == 0) {
+        checkAndRemoveExcessGeas(player)
+    }
+
 });
 
 
@@ -229,3 +233,4 @@ PlayerEvents.tick(event => {
         }
     });
 });
+

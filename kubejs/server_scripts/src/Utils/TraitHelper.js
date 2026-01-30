@@ -193,35 +193,6 @@ function fu_hasTraitAnywhere(player, traitId) {
 }
 
 
-/**
- * 通用特质等级获取函数 - 获取玩家在所有位置的特质最高等级
- * @param {Player} player 玩家对象
- * @param {string} traitId 特质ID
- * @return {number} 玩家在所有位置的特质最高等级（自动包含升变词缀效果）
- */
-function fu_getHighestTraitLevelAnywhere(player, traitId) {
-    // 参数验证
-    if (!player || !traitId || typeof traitId !== 'string') {
-        return 0;
-    }
-
-    // 如果是检测升变词缀本身，直接返回原始等级
-    if (traitId === "kubejs:promotion") {
-        return getOriginalTraitLevel(player, traitId);
-    }
-
-    const originalLevel = getOriginalTraitLevel(player, traitId);
-
-    if (originalLevel > 0) {
-        const hasPromotion = getOriginalTraitLevel(player, "kubejs:promotion") > 0;
-
-        if (hasPromotion) {
-            return originalLevel + 1;
-        }
-    }
-
-    return originalLevel;
-}
 
 /**
  * 获取原始特质等级（不含升变效果）
@@ -259,7 +230,10 @@ function getOriginalTraitLevel(player, traitId) {
  */
 function fu_hasTraitMainHand(player, traitId) {
     const mainHandItem = player.getMainHandItem();
-    return fu_hasTrait(mainHandItem, traitId);
+    if (fu_isGear(mainHandItem)) {
+        return fu_hasTrait(mainHandItem, traitId);
+    }
+    return false;
 }
 
 /**
@@ -270,6 +244,9 @@ function fu_hasTraitMainHand(player, traitId) {
  */
 function fu_getTraitLevelMainHand(player, traitId) {
     const mainHandItem = player.getMainHandItem();
+    if (fu_isGear(mainHandItem)) {
+        return fu_hasTrait(mainHandItem, traitId);
+    }
     return fu_getTraitLevel(mainHandItem, traitId);
 }
 
@@ -324,7 +301,7 @@ function fu_getUniqueTraitsCount(player) {
  * @param {Player} player 玩家对象
  * @param {string} traitId 特质ID
  * @return {number} 玩家在所有位置的特质最高等级
- * @deprecated 已废弃，请使用新函数
+ */
 function fu_getHighestTraitLevelAnywhere(player, traitId) {
     // 参数验证
     if (!player || !traitId || typeof traitId !== 'string') {
@@ -352,5 +329,35 @@ function fu_getHighestTraitLevelAnywhere(player, traitId) {
     }
 
     return maxLevel;
+}
+
+/**
+ * 通用特质等级获取函数 - 获取玩家在所有位置的特质最高等级
+ * @param {Player} player 玩家对象
+ * @param {string} traitId 特质ID
+ * @return {number} 玩家在所有位置的特质最高等级（自动包含升变词缀效果）
+ * @deprecated 已废弃，已经在Hotai中加入检测以修复最大兼容性
+function fu_getHighestTraitLevelAnywhere(player, traitId) {
+    // 参数验证
+    if (!player || !traitId || typeof traitId !== 'string') {
+        return 0;
+    }
+
+    // 如果是检测升变词缀本身，直接返回原始等级
+    if (traitId === "kubejs:promotion") {
+        return getOriginalTraitLevel(player, traitId);
+    }
+
+    const originalLevel = getOriginalTraitLevel(player, traitId);
+
+    if (originalLevel > 0) {
+        const hasPromotion = getOriginalTraitLevel(player, "kubejs:promotion") > 0;
+
+        if (hasPromotion) {
+            return originalLevel + 1;
+        }
+    }
+
+    return originalLevel;
 }
  */

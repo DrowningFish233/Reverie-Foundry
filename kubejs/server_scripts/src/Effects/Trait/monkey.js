@@ -12,5 +12,6 @@ function monkey(event) {
     if (!attacker.onClimbable()) return
     const newdamage = event.damage / 2
     entity.invulnerableTime = 0
-    entity.attack($DamageSource("arrow"), newdamage);
+    attackEntity(entity, 'arrow', newdamage, true)
+
 }

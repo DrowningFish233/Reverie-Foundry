@@ -30,7 +30,7 @@ function handleBlueStarEffect(event) {
     let damage = healthPercentage >= 0.5 ? baseDamage : baseDamage * 2;
 
     nearbyEntities.forEach(entity => {
-        entity.attack($DamageSource("magic"), damage);
+        attackEntity(entity, 'magic', damage, true)
     });
 
     event.level[$playersound]

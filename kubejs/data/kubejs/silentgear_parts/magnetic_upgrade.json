@@ -1,0 +1,33 @@
+{
+  "type": "silentgear:upgrade",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgear:magnetic_upgrade"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.silentgear.magnetic_upgrade"
+    },
+    "name_prefix": ""
+  },
+  "gear_type": "silentgear:all",
+  "part_type": "silentgear:misc_upgrade",
+  "properties": {
+    "traits": [
+      {
+        "conditions": [],
+        "level": 5,
+        "trait": "silentgear:magnetic"
+      }
+    ]
+  },
+  "upgrade_gear_types": {
+    "match_parents": true,
+    "types": [
+      "silentgear:all"
+    ]
+  }
+}

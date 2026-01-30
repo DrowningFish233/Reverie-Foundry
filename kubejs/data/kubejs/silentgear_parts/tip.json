@@ -1,0 +1,19 @@
+{
+  "type": "silentgear:core",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgear:tip"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.silentgear.tip"
+    },
+    "name_prefix": ""
+  },
+  "gear_type": "silentgear:all",
+  "part_type": "silentgear:tip",
+  "properties": {}
+}

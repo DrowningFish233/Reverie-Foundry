@@ -24,8 +24,7 @@ function dragonsteel_fire_ingot(event) {
     }
 
     if (currentArmor <= 0 && (entity.isOnFire() || entity.isInLava())) {
-        entity.attack($DamageSource("magic"), 20);
-
+        attackEntity(entity, 'magic', 20, true)
         entity.setRemainingFireTicks(0)
 
     }

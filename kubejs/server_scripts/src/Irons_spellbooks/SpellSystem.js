@@ -3,7 +3,7 @@ ISSEvents.spellOnCast(event => {
     if (event.spellId == "hazennstuff:chaotic_teleport") {
         const player = event.entity
         if (player.hasEffect("kubejs:chaotic_teleport")) {
-            player.attack($DamageSource("kubejs:rod_of_discord"), player.getMaxHealth() / 6);
+            attackEntity(player, 'kubejs:rod_of_discord', player.getMaxHealth() / 6, true)
         }
         player.potionEffects.add("kubejs:chaotic_teleport", 20 * 30, 0);
     }

@@ -47,8 +47,16 @@
       "magic_armor": 2.0,
       "magic_damage": 1.0,
       "ranged_damage": 1.6,
+      "spell_resist": 0.05,
+      "healing_received": 0.02,
       "rarity": 55.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:eternal_starlight"
+        }
+      ]
     }
   }
 }

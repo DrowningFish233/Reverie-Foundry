@@ -10,6 +10,7 @@ function bismuthgems(event) {
     let NewLevel = traitLevel * 4
     let currentArmor = entity.getArmorValue()
     if (currentArmor < NewLevel) {
-        entity.attack($DamageSource("generic"), 10);
+        attackEntity(entity, 'generic', 10, true)
+
     }
 }

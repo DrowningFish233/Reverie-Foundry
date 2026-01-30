@@ -29,7 +29,7 @@ function boom_effects(event) {
     // 对附近实体造成爆炸伤害
     for (let nearbyEntity of nearbyEntities) {
         if (nearbyEntity.isLiving() && nearbyEntity !== entity) {
-            nearbyEntity.attack($DamageSource("explosion"), boom_attack);
+            attackEntity(nearbyEntity, 'explosion', boom_attack, true)
         }
     }
 }

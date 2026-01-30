@@ -71,7 +71,7 @@ global.new_materials = [
     { id: 'summon_dragon_warrior_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
     { id: 'eye_of_ancient_city_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_ancient_city_located" },
     { id: 'eye_of_dragon_cave_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_dragon_cave_located" },
-    { id: 'eye_of_weeping_well_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_weeping_well_located" },
+    { id: 'eye_of_weeping_well_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_weeping_well_located" }
 
 ];
 
@@ -79,7 +79,6 @@ StartupEvents.registry('item', event => {
     for (let item of global.new_materials) {
         let itemEvent = event.create(item.id)
             .maxStackSize(item.maxStackSize);
-
         // 如果有稀有度设置
         if (item.rarity) {
             itemEvent.rarity(item.rarity);

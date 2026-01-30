@@ -10,5 +10,6 @@ function starinium_ingot(event) {
     const traitLevel = fu_getHighestTraitLevelAnywhere(player, "kubejs:starinium_ingot");
     const damage = traitLevel * 3
 
-    player.attack($DamageSource("kubejs:bleed"), damage)
+    attackEntity(player, 'kubejs:bleed', damage, true)
+
 }

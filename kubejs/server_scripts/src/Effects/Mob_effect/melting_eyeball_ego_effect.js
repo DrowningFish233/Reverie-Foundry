@@ -30,7 +30,7 @@ function melting_eyeball_ego_attack(event) {
 
             let Psanity = pData.getInt(sanity)
             if (Psanity <= -45) {
-                attacker.attack($DamageSource("out_of_world"), attacker.getMaxHealth() / 2);
+                attackEntity(attacker, 'out_of_world', attacker.getMaxHealth() / 2)
             }
             attacker.removeEffect("kubejs:melting_eyeball_ego_effect")
             event.level[$playersound]

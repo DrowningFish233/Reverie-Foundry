@@ -1238,3 +1238,118 @@ function getRandomScrollId() {
 
     return scrollId;
 }
+
+
+/**
+ * 获取食物的饱食度
+ * @param {Internal.ItemStack} item - 物品堆栈
+ * @param {Internal.Player} player - 玩家对象（用于上下文判断）
+ * @returns {number} 食物的营养值（饱食度）
+ */
+function getFoodNutrition(item, player) {
+    const foodProperties = item.getItem().getFoodProperties(item, player);
+    return foodProperties ? foodProperties.nutrition() : 0;
+}
+
+/**
+ * 获取食物的饱和度
+ * @param {Internal.ItemStack} item - 物品堆栈
+ * @param {Internal.Player} player - 玩家对象
+ * @returns {number} 食物的饱和度值
+ */
+function getFoodSaturation(item, player) {
+    const foodProperties = item.getItem().getFoodProperties(item, player);
+    return foodProperties ? foodProperties.saturation() : 0;
+}
+
+/**
+ * 获取食物的完整属性信息
+ * @param {Internal.ItemStack} item - 物品堆栈
+ * @param {Internal.Player} player - 玩家对象
+ * @returns {Object|null} 包含食物属性的对象，如果不是食物则返回 null
+ */
+function getFoodInfo(item, player) {
+    const foodProperties = item.getItem().getFoodProperties(item, player);
+    if (!foodProperties) return null;
+
+    return {
+        nutrition: foodProperties.nutrition(),
+        saturation: foodProperties.saturation(),
+    };
+}
+
+/**
+ * 攻击实体
+ * @param {$LivingEntity_} target - 目标实体
+ * @param {string} damageSourceId - 伤害类型
+ * @param {number} amount - 伤害值
+ * @param {boolean} ignoreInvulnerable - 是否忽略无敌帧
+ */
+function attackEntity(target, damageSourceId, amount, ignoreInvulnerable) {
+    if (!target || amount <= 0) return;
+    if (ignoreInvulnerable) {
+        const originalTime = target.invulnerableTime;
+        target.invulnerableTime = 0;
+        target.attack($DamageSource(damageSourceId), amount);
+        if (originalTime > 0) {
+            target.invulnerableTime = Math.max(originalTime, 10);
+        }
+    } else {
+        target.attack($DamageSource(damageSourceId), amount);
+    }
+}
+
+
+// 射线检测函数
+function RayCasting(start, end, aabb) {
+    const dirX = end.x - start.x;
+    const dirY = end.y - start.y;
+    const dirZ = end.z - start.z;
+
+    const invDirX = 1.0 / dirX;
+    const invDirY = 1.0 / dirY;
+    const invDirZ = 1.0 / dirZ;
+
+    // 计算射线参数t在每轴上的进出点
+    let tMin, tMax;
+
+    if (invDirX >= 0) {
+        tMin = (aabb.minX - start.x) * invDirX;
+        tMax = (aabb.maxX - start.x) * invDirX;
+    } else {
+        tMin = (aabb.maxX - start.x) * invDirX;
+        tMax = (aabb.minX - start.x) * invDirX;
+    }
+
+    let tyMin, tyMax;
+    if (invDirY >= 0) {
+        tyMin = (aabb.minY - start.y) * invDirY;
+        tyMax = (aabb.maxY - start.y) * invDirY;
+    } else {
+        tyMin = (aabb.maxY - start.y) * invDirY;
+        tyMax = (aabb.minY - start.y) * invDirY;
+    }
+
+    if (tMin > tyMax || tyMin > tMax) return false;
+
+    // 更新tMin/tMax
+    if (tyMin > tMin) tMin = tyMin;
+    if (tyMax < tMax) tMax = tyMax;
+
+    let tzMin, tzMax;
+    if (invDirZ >= 0) {
+        tzMin = (aabb.minZ - start.z) * invDirZ;
+        tzMax = (aabb.maxZ - start.z) * invDirZ;
+    } else {
+        tzMin = (aabb.maxZ - start.z) * invDirZ;
+        tzMax = (aabb.minZ - start.z) * invDirZ;
+    }
+
+    if (tMin > tzMax || tzMin > tMax) return false;
+
+    // 更新tMin/tMax
+    if (tzMin > tMin) tMin = tzMin;
+    if (tzMax < tMax) tMax = tzMax;
+
+    return tMax >= 0 && tMin <= 1 && tMin <= tMax;
+}

@@ -20,6 +20,7 @@ function thermal_springstone_ingot(event) {
 
     if ((attacker.isOnFire() || attacker.isInLava())) {
         let fireDamage = originalDamage / 3;
-        entity.attack($DamageSource("fireball"), fireDamage);
+        attackEntity(entity, 'fireball', fireDamage, true)
+
     }
 }

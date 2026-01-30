@@ -1,0 +1,41 @@
+{
+  "type": "silentgear:core",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgear:hammer_head"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.silentgear.hammer_head"
+    },
+    "name_prefix": ""
+  },
+  "gear_type": "silentgear:hammer",
+  "part_type": "silentgear:main",
+  "properties": {
+    "attack_damage": {
+      "operation": "ADD",
+      "value": 4.0
+    },
+    "attack_speed": {
+      "operation": "ADD",
+      "value": 0.8
+    },
+    "durability": {
+      "operation": "MULTIPLY_BASE",
+      "value": 1.0
+    },
+    "enchantment_value": {
+      "operation": "MULTIPLY_BASE",
+      "value": -0.5
+    },
+    "harvest_speed": {
+      "operation": "MULTIPLY_BASE",
+      "value": -0.5
+    },
+    "repair_efficiency": 1.5
+  }
+}

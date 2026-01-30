@@ -1,0 +1,21 @@
+{
+  "type": "silentgear:core",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [
+      "silentgear:elytra"
+    ],
+    "ingredient": {
+      "item": "silentgear:coating"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.silentgear.coating"
+    },
+    "name_prefix": ""
+  },
+  "gear_type": "silentgear:all",
+  "part_type": "silentgear:coating",
+  "properties": {}
+}

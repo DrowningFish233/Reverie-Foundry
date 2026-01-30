@@ -453,9 +453,13 @@ ServerEvents.recipes(event => {
     registerCustomRecipe(
         new SpiritInfusionRecipeJSON('#silentgems:glowroses', 'kubejs:ultranium_gem')
             .addSpirit("umbral", 6)
-            .addExtraInput('kubejs:ashes_of_calamity', 6)
-            .addExtraInput('hazennstuff:deus_essence', 1)
-            .addExtraInput('#c:gems', 16)
+            .addExtraInput('kubejs:ashes_of_calamity', 4)
+            .addExtraInput('hazennstuff:deus_essence', 2)
+            .addExtraInput('kubejs:necroplasm', 12)
+            .addExtraInput('malum:fused_consciousness', 1)
+            .addExtraInput('malum:mnemonic_fragment', 16)
+            .addExtraInput('malum:null_slate', 6)
+            .addExtraInput('#c:gems', 12)
             .addExtraInput('#silentgear:starlight_charger_catalysts', 4)
     );
 

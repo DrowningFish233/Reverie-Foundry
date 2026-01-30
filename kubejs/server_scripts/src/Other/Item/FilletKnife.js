@@ -22,7 +22,8 @@ ItemEvents.firstRightClicked(event => {
     const maxHealth = player.getMaxHealth()
     const damageAmount = maxHealth * 0.2;
     event.player.swing()
-    player.attack($DamageSource("out_of_world"), damageAmount);
+    attackEntity(player, 'out_of_world', damageAmount, true)
+
     const randomAmount = Math.floor(Math.random() * (knifeConfig.max - knifeConfig.min + 1)) + knifeConfig.min;
     player.give(Item.of('kubejs:raw_manflesh', randomAmount));
 

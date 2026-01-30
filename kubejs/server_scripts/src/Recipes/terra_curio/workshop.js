@@ -113,19 +113,15 @@ ServerEvents.recipes(event => {
 
     registerTerraCurioRecipe(
         new TerraCurioWorkshopRecipeJSON('kubejs:magic_cuffs')
-            .addIngredient('irons_spellbooks:cinder_essence')
-            .addIngredient('minecraft:iron_ingot')
+            .addIngredient('terra_curio:shackle')
             .addIngredient('kubejs:blood_orb')
-            .addIngredient('irons_spellbooks:arcane_essence')
             .addIngredient('irons_spellbooks:arcane_essence')
     );
 
     registerTerraCurioRecipe(
         new TerraCurioWorkshopRecipeJSON('kubejs:magic_cuffs')
-            .addIngredient('irons_spellbooks:cinder_essence')
-            .addIngredient('minecraft:iron_ingot')
+            .addIngredient('terra_curio:shackle')
             .addIngredient('hazennstuff:shadow_scale')
-            .addIngredient('irons_spellbooks:arcane_essence')
             .addIngredient('irons_spellbooks:arcane_essence')
     );
 

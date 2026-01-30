@@ -69,7 +69,7 @@ function new_damage(event, stage, value) {
  * 总效果类层
  */
 function allthe_event(event) {
-    paralysis_effect(event);    //麻痹效果
+    paralysis_combined_effect(event);    //麻痹效果
     all_dynamic_damage(event)   //动态减伤!
     other_effect(event);    //其他药水效果处理
     depravityDamage(event);     //沉沦受伤机制
@@ -78,11 +78,15 @@ function allthe_event(event) {
     spell_type(event);  //法术效果处理
     affix_event(event); //词缀效果
     death_time(event);  //濒死处理
+    spearMomentumDamage(event); // 矛类增伤
+
 }
 /**
  * 其他药水效果处理
  */
 function other_effect(event) {
+
+    fear_effect(event);
     use_adrenaline_effect(event);
     load_protection_attack(event);
     load_protection(event);
@@ -133,6 +137,7 @@ function allthe_sin_event(event) {
  * 词缀效果
  */
 function affix_event(event) {
+    dreadsteel_ingot_effect(event);
     plague_effects(event);
     radiance_effects(event);
     ponder_up_effects(event);

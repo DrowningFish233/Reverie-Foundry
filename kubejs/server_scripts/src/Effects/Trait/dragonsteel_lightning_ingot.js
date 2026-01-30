@@ -18,7 +18,7 @@ function dragonsteel_lightning_ingot(event) {
 
     if (newHurtLevel >= 3) {
         entity.removeEffect("kubejs:dragonsteel_lightning_ingot_attack");
-        entity.attack($DamageSource("magic"), 20);
+        attackEntity(entity, 'magic', 20, true)
     } else {
         entity.potionEffects.add("kubejs:dragonsteel_lightning_ingot_attack", 20 * 5, newHurtLevel);
     }
@@ -41,7 +41,8 @@ function dragonsteel_lightning_ingot(event) {
         for (let fireTarget of nearbyEntities) {
             if (fireTarget.isLiving() && !fireTarget.hasEffect("kubejs:dragonsteel_lightning_ingot_attack")) {
                 fireTarget.potionEffects.add("kubejs:dragonsteel_lightning_ingot_attack", 20 * 5, 1);
-                fireTarget.attack($DamageSource("magic"), 10);
+                attackEntity(fireTarget, 'magic', 10, true)
+
             }
         }
     }

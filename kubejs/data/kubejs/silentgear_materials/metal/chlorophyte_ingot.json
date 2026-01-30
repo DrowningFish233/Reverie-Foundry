@@ -1,0 +1,62 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"metal",
+			"intermediate"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "hazennstuff:chlorophyte_ingot"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#118C0A",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:chlorophyte_ingot"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:main": {
+			"armor": 22,
+			"armor_toughness": 8,
+			"armor/helmet": 4,
+			"armor/chestplate": 8,
+			"armor/leggings": 6,
+			"armor/boots": 4,
+			"armor_durability": 100,
+			"attack_damage": 7,
+			"attack_speed": 1,
+			"charging_value": 1,
+			"draw_speed": 2,
+			"durability": 800,
+			"ranged_damage": 2,
+			"projectile_accuracy": 2,
+			"projectile_speed": 3,
+			"enchantment_value": 4,
+			"harvest_speed": 4,
+			"harvest_tier": {
+				"name": "diamond/钻石",
+				"level_hint": "3",
+				"incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools"
+			},
+			"spell_power": 0.1,
+			"spell_resist": 0.1,
+			"mana_regen": 0.1,
+			"healing_received": 0.1,
+			"rarity": 120,
+			"traits": [
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "silentgear:soft"
+				}
+			]
+		}
+	}
+}

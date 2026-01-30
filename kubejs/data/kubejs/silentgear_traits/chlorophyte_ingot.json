@@ -1,0 +1,46 @@
+{
+	"conditions": [],
+	"description": {
+		"translate": "trait.kubejs.chlorophyte_ingot.desc"
+	},
+	"effects": [
+		{
+			"type": "silentgear:attribute",
+			"attribute_modifiers": {
+				"all/any": [
+					{
+						"attribute": "apothic_attributes:arrow_damage",
+						"operation": "add_multiplied_base",
+						"values": [
+							0.15,
+							0.3,
+							0.45
+						]
+					},
+					{
+						"attribute": "apothic_attributes:arrow_velocity",
+						"operation": "add_multiplied_base",
+						"values": [
+							0.15,
+							0.3,
+							0.45
+						]
+					},
+					{
+						"attribute": "irons_spellbooks:nature_spell_power",
+						"operation": "add_multiplied_base",
+						"values": [
+							0.1,
+							0.2,
+							0.3
+						]
+					}
+				]
+			}
+		}
+	],
+	"max_level": 3,
+	"name": {
+		"translate": "trait.kubejs.chlorophyte_ingot"
+	}
+}

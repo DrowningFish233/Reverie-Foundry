@@ -29,7 +29,6 @@ function six_life_death(event) {
         attacker.setHealth(attackerCurrentHealth - healthCost);
 
         let additionalDamage = healthCost * 5;
-        entity.attack($DamageSource("out_of_world"), additionalDamage);
-
+        attackEntity(entity, 'out_of_world', additionalDamage, true)
     }
 }

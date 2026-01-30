@@ -1,0 +1,19 @@
+{
+  "type": "silentgear:core",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgear:rod"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.silentgear.rod"
+    },
+    "name_prefix": ""
+  },
+  "gear_type": "silentgear:tool",
+  "part_type": "silentgear:rod",
+  "properties": {}
+}

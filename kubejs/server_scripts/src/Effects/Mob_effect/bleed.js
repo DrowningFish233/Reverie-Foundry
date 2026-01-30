@@ -17,7 +17,7 @@ function handleBleed(event) {
     const Time = bleedEffect.getDuration();
     const newLevel = Math.floor(currentLevel / 3); // 保留层数
 
-    attacker.attack($DamageSource("kubejs:bleed"), currentLevel * 2);
+    attackEntity(attacker, 'kubejs:bleed', currentLevel * 2)
     if (attacker.hasEffect("kubejs:bloodlust")) return
     attacker.removeEffect("kubejs:bleed");
     if (newLevel > 0) {

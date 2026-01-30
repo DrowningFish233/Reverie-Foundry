@@ -1,0 +1,74 @@
+{
+  "anvil_cost": 5,
+  "description": {
+    "translate": "enchantment.majospellenchantment.power_is_power_enchant"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.25,
+          "per_level_above_first": 0.0
+        },
+        "attribute": "irons_spellbooks:max_mana",
+        "id": "majospellenchantment:power_power_mana_loss",
+        "operation": "add_multiplied_total"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.5,
+          "per_level_above_first": 0.0
+        },
+        "attribute": "irons_spellbooks:spell_power",
+        "id": "majospellenchantment:power_power_spell_power_loss",
+        "operation": "add_multiplied_total"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 5.0,
+          "per_level_above_first": 0.0
+        },
+        "attribute": "minecraft:generic.attack_damage",
+        "id": "majospellenchantment:power_power_attack_damage",
+        "operation": "add_value"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 2.0,
+          "per_level_above_first": 0.0
+        },
+        "attribute": "minecraft:generic.armor",
+        "id": "majospellenchantment:power_power_armor",
+        "operation": "add_value"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.5,
+          "per_level_above_first": 0.0
+        },
+        "attribute": "minecraft:generic.attack_speed",
+        "id": "majospellenchantment:power_power_attack_speed",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 80,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "#irons_spellbooks:staff",
+  "weight": 1
+}

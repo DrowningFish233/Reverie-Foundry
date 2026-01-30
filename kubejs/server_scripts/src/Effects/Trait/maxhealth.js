@@ -12,6 +12,7 @@ function maxhealth(event) {
     if (entity.health === entity_maxhealth) {
         const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:strip");
         const extraDamage = traitLevel + 5;
-        entity.attack($DamageSource("generic"), extraDamage);
+        attackEntity(entity, 'generic', extraDamage, true)
+
     }
 }

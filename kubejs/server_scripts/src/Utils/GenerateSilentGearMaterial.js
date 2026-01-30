@@ -2,7 +2,7 @@
  * 寂静装备材料生成器
  * @param {string} materialId 材料ID
  * @param {Object} event 事件对象
- * @param {boolean} boolean 是否立即构建 (后续还是加一个build比较好)
+ * @param {boolean} boolean 是否立即构建
  * @param {Function} handler 配置处理器
  */
 function GenerateSilentGearMaterial(materialId, event, boolean, handler) {
@@ -42,6 +42,7 @@ function GenerateSilentGearMaterial(materialId, event, boolean, handler) {
         },
         properties: {}
     }
+
 
     /**
      * 设置是否可回收
@@ -168,202 +169,119 @@ function GenerateSilentGearMaterial(materialId, event, boolean, handler) {
         return this
     }
 
+
     /**
-       * 添加主要部件属性 (main)
-       * @param {Object} stats - 属性对象，包含：
-       *   - additive: boolean - 是否为附加属性
-       *   - armor: number - 护甲值
-       * 
-       *   - armor/helmet: number - 头盔护甲值
-       *   - armor/chestplate: number - 胸甲护甲值
-       *   - armor/leggings: number - 护腿护甲值
-       *   - armor/boots: number - 靴子护甲值
-       *   - armor_durability: number - 护甲耐久
-       *   - armor_toughness: number - 护甲韧性
-       * 
-       *   - attack_damage: number - 攻击伤害
-       *   - attack_speed: number - 攻击速度
-       *   - attack_speed/axe: number - 斧头攻击速度
-       *   - attack_speed/hoe: number - 锄头攻击速度
-       *   - charging_value: number - 充能值
-       *   - draw_speed: number - 拉弓速度
-       *   - durability: number - 耐久度
-       *   - enchantment_value: number - 附魔能力
-       *   - harvest_speed: number - 挖掘速度
-       *   - harvest_tier: Object - 挖掘等级 {name, level_hint, incorrect_blocks_for_tool}
-       *   - magic_armor: number - 魔法护甲
-       *   - magic_damage: number - 魔法伤害
-       *   - projectile_accuracy: number - 投射物精度
-       *   - projectile_speed: number - 投射物速度
-       *   - ranged_damage: number - 远程伤害
-       *   - rarity: number - 稀有度
-       *   - repair_value: number - 修复值
-       * @param {Array} traits - 特性数组
-       * @returns {GenerateSilentGearMaterial} 返回自身用于链式调用
-       */
-    this.addMainPart = function (stats, traits) {
-        this.config.properties['silentgear:main'] = this._buildPartProperties(stats, traits)
+     * 添加主要部件属性
+     * @param {Function} configFunc 配置函数
+     * @returns {GenerateSilentGearMaterial}
+     */
+    this.addMain = function (configFunc) {
+        this._addPart('silentgear:main', configFunc)
         return this
     }
 
     /**
      * 添加手柄部件属性
-     * @param {Object} stats 属性对象
-     * @param {Array} traits 特性数组
+     * @param {Function} configFunc 配置函数
      * @returns {GenerateSilentGearMaterial}
      */
-    this.addRodPart = function (stats, traits) {
-        this.config.properties['silentgear:rod'] = this._buildPartProperties(stats, traits)
+    this.addRod = function (configFunc) {
+        this._addPart('silentgear:rod', configFunc)
         return this
     }
 
     /**
      * 添加尖端部件属性
-     * @param {Object} stats 属性对象
-     * @param {Array} traits 特性数组
+     * @param {Function} configFunc 配置函数
      * @returns {GenerateSilentGearMaterial}
      */
-    this.addTipPart = function (stats, traits) {
-        this.config.properties['silentgear:tip'] = this._buildPartProperties(stats, traits)
+    this.addTip = function (configFunc) {
+        this._addPart('silentgear:tip', configFunc)
         return this
     }
 
     /**
      * 添加涂层部件属性
-     * @param {Object} stats 属性对象
-     * @param {Array} traits 特性数组
+     * @param {Function} configFunc 配置函数
      * @returns {GenerateSilentGearMaterial}
      */
-    this.addCoatingPart = function (stats, traits) {
-        this.config.properties['silentgear:coating'] = this._buildPartProperties(stats, traits)
+    this.addCoating = function (configFunc) {
+        this._addPart('silentgear:coating', configFunc)
         return this
     }
 
     /**
      * 添加握柄部件属性
-     * @param {Object} stats 属性对象
-     * @param {Array} traits 特性数组
+     * @param {Function} configFunc 配置函数
      * @returns {GenerateSilentGearMaterial}
      */
-    this.addGripPart = function (stats, traits) {
-        this.config.properties['silentgear:grip'] = this._buildPartProperties(stats, traits)
+    this.addGrip = function (configFunc) {
+        this._addPart('silentgear:grip', configFunc)
         return this
     }
 
     /**
      * 添加线部件属性
-     * @param {Object} stats 属性对象
-     * @param {Array} traits 特性数组
+     * @param {Function} configFunc 配置函数
      * @returns {GenerateSilentGearMaterial}
      */
-    this.addCordPart = function (stats, traits) {
-        this.config.properties['silentgear:cord'] = this._buildPartProperties(stats, traits)
+    this.addCord = function (configFunc) {
+        this._addPart('silentgear:cord', configFunc)
         return this
     }
 
     /**
-     * 添加衬里部件属性
-     * @param {Object} stats 属性对象
-     * @param {Array} traits 特性数组
+     * 添加内衬部件属性
+     * @param {Function} configFunc 配置函数
      * @returns {GenerateSilentGearMaterial}
      */
-    this.addLiningPart = function (stats, traits) {
-        this.config.properties['silentgear:lining'] = this._buildPartProperties(stats, traits)
+    this.addLining = function (configFunc) {
+        this._addPart('silentgear:lining', configFunc)
         return this
     }
 
     /**
      * 添加绑定结部件属性
-     * @param {Object} stats 属性对象
-     * @param {Array} traits 特性数组
+     * @param {Function} configFunc 配置函数
      * @returns {GenerateSilentGearMaterial}
      */
-    this.addBindingPart = function (stats, traits) {
-        this.config.properties['silentgear:binding'] = this._buildPartProperties(stats, traits)
+    this.addBinding = function (configFunc) {
+        this._addPart('silentgear:binding', configFunc)
         return this
     }
 
     /**
-     * 添加镶嵌部件属性
-     * @param {Object} stats 属性对象
-     * @param {Array} traits 特性数组
+     * 添加宝石基座部件属性
+     * @param {Function} configFunc 配置函数
      * @returns {GenerateSilentGearMaterial}
      */
-    this.addSettingPart = function (stats, traits) {
-        this.config.properties['silentgear:setting'] = this._buildPartProperties(stats, traits)
+    this.addSetting = function (configFunc) {
+        this._addPart('silentgear:setting', configFunc)
         return this
     }
 
-    // 构建部件属性
-    this._buildPartProperties = function (stats, traits) {
-        var properties = {}
-
-        if (stats) {
-            Object.keys(stats).forEach(function (key) {
-                // 特殊处理 harvest_tier，如果它存在则直接使用
-                if (key === 'harvest_tier' && stats[key] && typeof stats[key] === 'object') {
-                    properties.harvest_tier = stats[key]
-                } else {
-                    properties[key] = stats[key]
-                }
-            })
-        }
-
-        if (traits && traits.length > 0) {
-            properties.traits = traits.map(function (trait) {
-                return {
-                    conditions: trait.conditions || [],
-                    level: trait.level || 1,
-                    trait: trait.name
-                }
-            })
-        }
-
-        return Object.keys(properties).length > 0 ? properties : {}
-    }
-
     /**
-     * 创建挖掘等级配置
-     * @param {string} tierName 等级名称
-     * @param {string} levelHint 等级提示
-     * @param {string} incorrectBlocks 不可挖掘的方块
-     * @returns {Object}
+     * 添加部件属性的核心方法
+     * @private
      */
-    this.setHarvestTier = function (tierName, levelHint, incorrectBlocks) {
-        return {
-            name: tierName,
-            level_hint: levelHint,
-            incorrect_blocks_for_tool: incorrectBlocks
-        }
-    }
+    this._addPart = function (partType, configFunc) {
+        // 创建部件属性构建器
+        var partBuilder = new PartBuilder(partType)
 
-    /**
-     * 创建特性
-     * @param {string} name 特性名称
-     * @param {number} level 特性等级
-     * @param {Array} conditions 触发条件
-     * @returns {Object}
-     */
-    this.createTrait = function (name, level, conditions) {
-        return {
-            name: name,
-            level: level || 1,
-            conditions: conditions || []
+        // 执行配置函数
+        if (typeof configFunc === 'function') {
+            configFunc(partBuilder)
         }
-    }
 
-    /**
-     * 创建触发条件
-     * @param {string} type 条件类型
-     * @param {Object} data 条件数据
-     * @returns {Object}
-     */
-    this.createCondition = function (type, data) {
-        var condition = { type: type }
-        Object.keys(data).forEach(function (key) {
-            condition[key] = data[key]
-        })
-        return condition
+        // 获取构建的属性
+        var partProperties = partBuilder.getProperties()
+
+        // 添加到配置中
+        if (Object.keys(partProperties).length > 0) {
+            this.config.properties[partType] = partProperties
+        }
+
+        return this
     }
 
     /**
@@ -393,6 +311,353 @@ function GenerateSilentGearMaterial(materialId, event, boolean, handler) {
     return this
 }
 
+/**
+ * 部件属性构建器
+ * @constructor
+ * @param {string} partType
+ */
+function PartBuilder(partType) {
+    this.stats = {}
+    this.traits = []
+    this.partType = partType
+
+    /**
+     * 设置护甲值
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.armor = function (value) {
+        this.stats.armor = value
+        return this
+    }
+
+    /**
+     * 设置头盔护甲值
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.armorHelmet = function (value) {
+        this.stats['armor/helmet'] = value
+        return this
+    }
+
+    /**
+     * 设置胸甲护甲值
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.armorChestplate = function (value) {
+        this.stats['armor/chestplate'] = value
+        return this
+    }
+
+    /**
+     * 设置护腿护甲值
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.armorLeggings = function (value) {
+        this.stats['armor/leggings'] = value
+        return this
+    }
+
+    /**
+     * 设置靴子护甲值
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.armorBoots = function (value) {
+        this.stats['armor/boots'] = value
+        return this
+    }
+
+    /**
+     * 设置护甲韧性
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.armorToughness = function (value) {
+        this.stats.armor_toughness = value
+        return this
+    }
+
+    /**
+     * 设置护甲耐久
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.armorDurability = function (value) {
+        this.stats.armor_durability = value
+        return this
+    }
+
+    /**
+     * 设置攻击伤害
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.attackDamage = function (value) {
+        this.stats.attack_damage = value
+        return this
+    }
+
+    /**
+     * 设置攻击速度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.attackSpeed = function (value) {
+        this.stats.attack_speed = value
+        return this
+    }
+
+    /**
+     * 设置斧头攻击速度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.attackSpeedAxe = function (value) {
+        this.stats['attack_speed/axe'] = value
+        return this
+    }
+
+    /**
+     * 设置锄头攻击速度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.attackSpeedHoe = function (value) {
+        this.stats['attack_speed/hoe'] = value
+        return this
+    }
+
+    /**
+     * 设置充能值
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.chargingValue = function (value) {
+        this.stats.charging_value = value
+        return this
+    }
+
+    /**
+     * 设置拉弓速度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.drawSpeed = function (value) {
+        this.stats.draw_speed = value
+        return this
+    }
+
+    /**
+     * 设置耐久度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.durability = function (value) {
+        this.stats.durability = value
+        return this
+    }
+
+    /**
+     * 设置附魔能力
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.enchantmentValue = function (value) {
+        this.stats.enchantment_value = value
+        return this
+    }
+
+    /**
+     * 设置挖掘速度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.harvestSpeed = function (value) {
+        this.stats.harvest_speed = value
+        return this
+    }
+
+    /**
+     * 设置挖掘等级
+     * @param {string} tierName 等级名称
+     * @param {string} levelHint 等级提示
+     * @param {string} incorrectBlocks 可挖掘的方块
+     * @returns {PartBuilder}
+     */
+    this.harvestTier = function (tierName, levelHint, incorrectBlocks) {
+        this.stats.harvest_tier = {
+            name: tierName,
+            level_hint: levelHint,
+            incorrect_blocks_for_tool: incorrectBlocks
+        }
+        return this
+    }
+
+    /**
+     * 设置魔法护甲
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.magicArmor = function (value) {
+        this.stats.magic_armor = value
+        return this
+    }
+
+    /**
+     * 设置魔法伤害
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.magicDamage = function (value) {
+        this.stats.magic_damage = value
+        return this
+    }
+
+    /**
+     * 设置投射物精度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.projectileAccuracy = function (value) {
+        this.stats.projectile_accuracy = value
+        return this
+    }
+
+    /**
+     * 设置投射物速度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.projectileSpeed = function (value) {
+        this.stats.projectile_speed = value
+        return this
+    }
+
+    /**
+     * 设置远程伤害
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.rangedDamage = function (value) {
+        this.stats.ranged_damage = value
+        return this
+    }
+
+    /**
+     * 设置稀有度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.rarity = function (value) {
+        this.stats.rarity = value
+        return this
+    }
+
+    /**
+     * 设置修复值
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.repairValue = function (value) {
+        this.stats.repair_value = value
+        return this
+    }
+
+    /**
+     * 设置法术强度
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.spellPower = function (value) {
+        this.stats.spell_power = value
+        return this
+    }
+
+    /**
+     * 设置法术抗性
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.spellResist = function (value) {
+        this.stats.spell_resist = value
+        return this
+    }
+
+    /**
+     * 设置魔力恢复
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.manaRegen = function (value) {
+        this.stats.mana_regen = value
+        return this
+    }
+
+    /**
+     * 设置誓令上限 仅整数
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.geasLimit = function (value) {
+        this.stats.geas_limit = value
+        return this
+    }
+
+    /**
+     * 设置回血倍率
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.healingReceived = function (value) {
+        this.stats.healing_received = value
+        return this
+    }
+
+    /**
+     * 添加特性
+     * @param {string} name 特性名称
+     * @param {number} level 特性等级
+     * @returns {PartBuilder}
+     */
+    this.addTrait = function (name, level) {
+        this.traits.push({
+            name: name,
+            level: level || 1,
+            conditions: []
+        })
+        return this
+    }
+
+    /**
+     * 获取构建的属性
+     * @returns {Object}
+     */
+    this.getProperties = function () {
+        var properties = {}
+
+        // 复制所有stats
+        Object.keys(this.stats).forEach(function (key) {
+            properties[key] = this.stats[key]
+        }.bind(this))
+
+        // 如果有特性，添加到properties中
+        if (this.traits.length > 0) {
+            properties.traits = this.traits.map(function (trait) {
+                return {
+                    conditions: trait.conditions,
+                    level: trait.level,
+                    trait: trait.name
+                }
+            })
+        }
+
+        return properties
+    }
+}
 
 /** 用于生成寂静装备材料 */
 ItemEvents.firstRightClicked('kubejs:drowning_fish', event => {
@@ -400,15 +665,28 @@ ItemEvents.firstRightClicked('kubejs:drowning_fish', event => {
         event.player.tell('§c你需要创造模式或OP权限才能使用此功能');
         return;
     }
+
+    // 检查是否启用生成
+    if (!MaterialConfigs.enabled) {
+        event.player.tell('§c材料生成功能已禁用！请在Configs.js中设置对应enabled为true');
+        console.log('[Reverie Foundry] 材料生成功能已禁用');
+        return;
+    }
+
     event.player.swing()
+
     // 遍历所有材料配置并生成
-    Object.values(MaterialConfigs).forEach(materialConfig => {
-        GenerateSilentGearMaterial(
-            materialConfig.id,
-            event,
-            true,
-            materialConfig.config
-        ).build()
+    Object.entries(MaterialConfigs).forEach(([key, config]) => {
+        if (key === 'enabled') return;
+
+        if (config && config.id && config.config) {
+            GenerateSilentGearMaterial(
+                config.id,
+                event,
+                true,
+                config.config
+            ).build()
+        }
     });
 
     const folderPath = `kubejs/data/kubejs/silentgear_materials/auto/`;
@@ -422,5 +700,4 @@ ItemEvents.firstRightClicked('kubejs:drowning_fish', event => {
     event.player.tell(message);
     console.log("[Reverie Foundry] 所有材料已生成完成！");
     console.log(`[Reverie Foundry] 文件已生成至：${folderPath}`);
-
 });

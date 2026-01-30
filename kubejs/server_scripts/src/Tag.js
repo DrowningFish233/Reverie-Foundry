@@ -427,3 +427,77 @@ ServerEvents.tags('block', event => {
     );
 });
 
+
+
+ServerEvents.tags('item', event => {
+    event.add('kubejs:metal_shining',
+        // 金属光泽效果
+    )
+
+    event.add('kubejs:rim_light',
+        // 边缘光效果
+    )
+
+    event.add('kubejs:ripples',
+        // 涟漪效果
+    )
+
+    event.add('kubejs:sonar',
+        // 声纳效果
+    )
+
+    event.add('kubejs:stars',
+        // 星星效果
+    )
+
+    event.add('kubejs:cinder',
+        'powerful_dummy:dummy_stand'
+
+        // 灰烬效果
+    )
+
+    event.add('kubejs:echo',
+        'transmog:void_fragment',
+        'transmog:transmogrification_table'
+        // 回声效果
+    )
+
+    event.add('kubejs:galaxy',
+        // 银河效果
+    )
+
+    event.add('kubejs:nebula',
+        // 星云效果
+    )
+
+    event.add('kubejs:spiral',
+        // 螺旋效果
+    )
+
+    event.add('kubejs:white_dust',
+
+        // 白色星光效果
+    )
+
+    event.add('kubejs:magic_orbs',
+        // 魔法球效果
+    )
+
+    // 等级边框
+    event.add('kubejs:level_1',
+        // 等级1
+    )
+
+    event.add('kubejs:level_2',
+        'kubejs:dps_meter_update'
+        // 等级2
+    )
+
+    event.add('kubejs:level_3',
+        // 等级3
+    )
+
+    event.add('kubejs:level_4',
+        // 等级4
+    )
+})

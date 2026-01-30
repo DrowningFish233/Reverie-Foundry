@@ -56,4 +56,9 @@ const $GearGenerator = Java.loadClass('net.silentchaos512.gear.util.GearGenerato
 const $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries');
 const $GearData = Java.loadClass('net.silentchaos512.gear.util.GearData');
 const $GearProperties = Java.loadClass('net.silentchaos512.gear.setup.gear.GearProperties');
+const $GeasEffectHandler = Java.loadClass('com.sammy.malum.core.handlers.GeasEffectHandler');
+const $GeasEffectType = Java.loadClass('com.sammy.malum.core.systems.geas.GeasEffectType');
+const $GeasEffect = Java.loadClass('com.sammy.malum.core.systems.geas.GeasEffect');
+const $Holder = Java.loadClass('net.minecraft.core.Holder');
+const $MalumGeasEffectTypes = Java.loadClass('com.sammy.malum.registry.common.magic.MalumGeasEffectTypes');
 

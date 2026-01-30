@@ -139,3 +139,23 @@ EntityEvents.checkSpawn(event => {
     }
     */
 });
+
+
+
+/*
+EntityEvents.checkSpawn(event => {
+    const entity = event.entity;
+    if (!entity || !entity.isLiving() || !entity.isMonster()) return;
+
+    const defianceType = getGeasTypeById('pact_of_defiance');
+
+    if (defianceType) {
+        const success = fu_addGeasEffect(entity, defianceType);
+        if (success) {
+            const geasName = GearsEffect['pact_of_defiance'] || '违抗条约';
+            console.log(`为 ${entity.type} 添加了 ${geasName}`);
+        }
+    }
+});
+
+*/

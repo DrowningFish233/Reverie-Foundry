@@ -56,7 +56,7 @@ function lust_effect(event) {
         if (isBloodTarget) {
             const bloodEffect = target.getEffect("kubejs:bleed");
             const bloodDamage = bloodEffect ? bloodEffect.getAmplifier() + 1 : 1;
-            target.attack($DamageSource("out_of_world"), bloodDamage);
+            attackEntity(target, 'out_of_world', bloodDamage, true)
         }
     }
 }

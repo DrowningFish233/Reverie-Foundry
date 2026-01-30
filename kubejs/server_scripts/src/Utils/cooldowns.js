@@ -94,7 +94,8 @@ const $CooldownManager = {
             "garnet_guiding_bolt",
             "exp_to_death_cd",
             "echo_ingot_COOLDOWN_KEY",
-            "mana_cloak_COOLDOWN_KEY"
+            "mana_cloak_COOLDOWN_KEY",
+            "spearCharge"
         ];
 
         // 清理冷却数据

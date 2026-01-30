@@ -1,0 +1,31 @@
+{
+  "type": "silentgear:core",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgear:elytra_wings"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.silentgear.elytra_wings"
+    },
+    "name_prefix": ""
+  },
+  "gear_type": "silentgear:elytra",
+  "part_type": "silentgear:main",
+  "properties": {
+    "armor": [
+      {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.65
+      },
+      {
+        "operation": "ADD",
+        "value": -3.5
+      }
+    ],
+    "repair_efficiency": 1.0
+  }
+}

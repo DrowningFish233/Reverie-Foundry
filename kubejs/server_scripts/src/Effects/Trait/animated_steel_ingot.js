@@ -19,7 +19,7 @@ function animated_steel_ingot(event) {
     const sharpnessLevel = weapon.getEnchantmentLevel("minecraft:sharpness");
     if (sharpnessLevel > 0) {
         const extraDamage = 0.5 * sharpnessLevel + 0.5;
-        entity.attack($DamageSource("generic"), extraDamage);
+        attackEntity(entity, 'generic', extraDamage, true)
     }
     if (Math.floor(Math.random() * 100) < repairChance) {
         const repairedAmount = 1 + Math.floor(Math.random() * 3);

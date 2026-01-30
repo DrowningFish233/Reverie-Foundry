@@ -34,4 +34,3 @@ ItemEvents.firstLeftClicked('stick', event => {
 })
  */
 
-

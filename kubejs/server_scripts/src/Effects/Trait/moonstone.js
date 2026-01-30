@@ -17,6 +17,6 @@ function moonstone(event) {
         new_damage(event, STAGE.ADDITIVE, 1 - (traitLevel * 0.1));
     }
     else {
-        entity.attack($DamageSource("magic"), extraMagicDamage);
+        attackEntity(entity, 'magic', extraMagicDamage, true)
     }
 }

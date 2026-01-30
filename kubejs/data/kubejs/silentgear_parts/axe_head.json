@@ -1,0 +1,29 @@
+{
+  "type": "silentgear:core",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgear:axe_head"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.silentgear.axe_head"
+    },
+    "name_prefix": ""
+  },
+  "gear_type": "silentgear:axe",
+  "part_type": "silentgear:main",
+  "properties": {
+    "attack_damage": {
+      "operation": "ADD",
+      "value": 5.0
+    },
+    "attack_speed": {
+      "operation": "ADD",
+      "value": 1.0
+    },
+    "repair_efficiency": 1.0
+  }
+}

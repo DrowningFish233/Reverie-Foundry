@@ -561,16 +561,30 @@ ItemEvents.firstLeftClicked('kubejs:drowning_fish', event => {
         event.player.tell('§c你需要创造模式或OP权限才能使用此功能');
         return;
     }
+
+    // 检查是否启用生成
+    if (!TraitConfigs.enabled) {
+        event.player.tell('§c特性生成功能已禁用！请在Configs.js中设置enabled为true');
+        console.log('[Reverie Foundry] 特性生成功能已禁用');
+        return;
+    }
+
     event.player.swing()
+
     // 遍历所有特性并生成
-    Object.values(TraitConfigs).forEach(traitConfig => {
-        GenerateSilentGearTrait(
-            traitConfig.id,
-            event,
-            true,
-            traitConfig.config
-        ).build()
+    Object.entries(TraitConfigs).forEach(([key, config]) => {
+        if (key === 'enabled') return;
+
+        if (config && config.id && config.config) {
+            GenerateSilentGearTrait(
+                config.id,
+                event,
+                true,
+                config.config
+            ).build()
+        }
     });
+
     const folderPath = `kubejs/data/kubejs/silentgear_traits/auto/`;
 
     const message = Text.translate("message.silentgear_traits.down")
@@ -582,5 +596,4 @@ ItemEvents.firstLeftClicked('kubejs:drowning_fish', event => {
     event.player.tell(message);
     console.log("[Reverie Foundry] 所有特性已生成完成！");
     console.log(`[Reverie Foundry] 文件已生成至：${folderPath}`);
-
 });

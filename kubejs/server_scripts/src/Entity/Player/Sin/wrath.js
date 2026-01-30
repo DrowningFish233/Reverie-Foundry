@@ -20,7 +20,7 @@ function handleWrathEffect(event) {
     idleTimer += 20;
     player.persistentData.putInt("idleTimer", idleTimer);
     if (idleTimer >= IDLE_TIME) {
-        player.attack($DamageSource("kubejs:wrath"), DAMAGE_AMOUNT_2);
+        attackEntity(player, 'kubejs:wrath', DAMAGE_AMOUNT_2, true)
         player.persistentData.putInt("idleTimer", 0);
     }
 }

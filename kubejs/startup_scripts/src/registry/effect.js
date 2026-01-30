@@ -1232,4 +1232,21 @@ event.create('purple_haze_attack')
         )
     event.create('load_protection')
         .beneficial()
+    event.create('fear')
+        .harmful()
+        .modifyAttribute('minecraft:generic.attack_speed',
+            '0a3c813f-cc82-4be5-8f0c-64576582a5d4',
+            0.05,
+            "add_multiplied_base"
+        )
+        .modifyAttribute('minecraft:generic.movement_speed',
+            'e0b44df6-22ca-4b4a-ad54-53b734556f98',
+            0.05,
+            "add_multiplied_base"
+        )
+        .modifyAttribute('apothic_attributes:projectile_damage',
+            '029c2ff3-b0d5-40c1-946f-30940bc68d8e',
+            -0.2,
+            "add_multiplied_base"
+        )
 });

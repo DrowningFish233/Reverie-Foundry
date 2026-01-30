@@ -57,6 +57,7 @@ ServerEvents.recipes(event => {
     { rod: "kubejs:brass_rod", fluid: "kubejs:brass" },
     { rod: "kubejs:bronze_rod", fluid: "kubejs:bronze" },
     { rod: "kubejs:tin_rod", fluid: "kubejs:tin" },
+    { rod: "kubejs:abiding_alloy_rod", fluid: "kubejs:abiding_alloy" },
 
 
   ];

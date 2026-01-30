@@ -16,7 +16,7 @@ function achroous_ingot(event) {
     const damageChance = traitLevel * 0.1;
 
     if (Math.random() < damageChance) {
-        attacker.attack($DamageSource("magic"), 5);
+        attackEntity(attacker, 'magic', 5, true)
     }
 }
 

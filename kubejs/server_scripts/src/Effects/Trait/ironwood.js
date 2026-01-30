@@ -16,12 +16,12 @@ function irons_spellbooks_root(event) {
             const remainingHealth = currentHealth - damageAmount;
 
             if (remainingHealth <= 0) {
-                player.attack($DamageSource("out_of_world"), damageAmount);
+                attackEntity(player, 'out_of_world', damageAmount, true)
                 return;
             }
             else {
-                player.attack($DamageSource("out_of_world"), damageAmount);
                 let traitLevel = fu_getHighestTraitLevelAnywhere(player, "kubejs:ironwood_ingot");
+                attackEntity(player, 'out_of_world', damageAmount, true)
                 overLimitSpellCast($ResourceLocation('irons_spellbooks', 'root'), traitLevel - 1, player, false);
             }
         }

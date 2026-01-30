@@ -1,0 +1,41 @@
+{
+  "type": "silentgear:upgrade",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "silentgear:road_maker_upgrade"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.silentgear.road_maker_upgrade"
+    },
+    "name_prefix": ""
+  },
+  "gear_type": "silentgear:all",
+  "part_type": "silentgear:misc_upgrade",
+  "properties": {
+    "durability": {
+      "operation": "MULTIPLY_BASE",
+      "value": 0.1
+    },
+    "rarity": {
+      "operation": "ADD",
+      "value": 10.0
+    },
+    "traits": [
+      {
+        "conditions": [],
+        "level": 1,
+        "trait": "silentgear:road_maker"
+      }
+    ]
+  },
+  "upgrade_gear_types": {
+    "match_parents": false,
+    "types": [
+      "silentgear:excavator"
+    ]
+  }
+}

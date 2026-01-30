@@ -24,7 +24,7 @@
   "properties": {
     "silentgear:main": {
       "armor_durability": 35.0,
-      "attack_damage": 9.0,
+      "attack_damage": 12.0,
       "attack_speed": 0.1,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,

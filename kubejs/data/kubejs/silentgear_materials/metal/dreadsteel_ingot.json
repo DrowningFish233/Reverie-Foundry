@@ -1,0 +1,68 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"metal",
+			"intermediate"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "hazennstuff:dreadsteel_ingot"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#911111",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:dreadsteel_ingot"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:main": {
+			"armor": 28,
+			"armor_toughness": 8,
+			"armor/helmet": 5,
+			"armor/chestplate": 10,
+			"armor/leggings": 8,
+			"armor/boots": 5,
+			"armor_durability": 100,
+			"attack_damage": 10,
+			"attack_speed": 2.3,
+			"charging_value": 1.2,
+			"draw_speed": 0,
+			"durability": 800,
+			"ranged_damage": 0,
+			"projectile_accuracy": 0,
+			"projectile_speed": 0,
+			"enchantment_value": 7,
+			"harvest_speed": 4,
+			"harvest_tier": {
+				"name": "diamond/钻石",
+				"level_hint": "3",
+				"incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools"
+			},
+			"spell_power": 0,
+			"spell_resist": 0.1,
+			"mana_regen": 0,
+			"healing_received": 0.15,
+			"rarity": 120,
+			"geas_limit": 0.25,
+			"traits": [
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:dreadsteel_ingot"
+				},
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:strip"
+				}
+			]
+		}
+	}
+}

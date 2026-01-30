@@ -18,7 +18,7 @@ function handleEffectAdded(effectId, entity, isPlayer) {
                     let Effect = entity.getEffect("kubejs:fire");
                     let Damage = Effect.getAmplifier() + 1
                     let Time = Effect.getDuration()
-                    entity.attack($DamageSource('lava'), Damage)
+                    attackEntity(entity, 'lava', Damage, true)
                     entity.removeEffect('kubejs:fire')
                     entity.potionEffects.add("kubejs:soul_fire", Time, Damage - 1);
                 }
@@ -27,7 +27,7 @@ function handleEffectAdded(effectId, entity, isPlayer) {
                     let Effect = entity.getEffect("kubejs:fire");
                     let Damage = Effect.getAmplifier() + 1
                     let Time = Effect.getDuration()
-                    entity.attack($DamageSource('lava'), Damage)
+                    attackEntity(entity, 'lava', Damage, true)
                     entity.removeEffect('kubejs:fire')
                     entity.potionEffects.add("kubejs:soul_fire", Time, Damage - 1);
                 }

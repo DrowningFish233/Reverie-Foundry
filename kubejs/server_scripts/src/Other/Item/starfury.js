@@ -11,6 +11,7 @@ ItemEvents.rightClicked('kubejs:starfury', event => {
             target.x,
             target.y,
             target.z,
+            80,
             80
         )
         // 获取并设置流星尺寸

@@ -25,20 +25,20 @@ function handleEffectExpired(effectId, entity, isPlayer) {
         case "kubejs:bleed":
             if (isPlayer) {
                 let Amplifier = entity.getEffect("kubejs:bleed").getAmplifier()
-                entity.attack($DamageSource("out_of_world"), Amplifier)
+                attackEntity(entity, 'out_of_world', Amplifier, true)
             } else {
                 let Amplifier = entity.getEffect("kubejs:bleed").getAmplifier()
-                entity.attack($DamageSource("out_of_world"), Amplifier)
+                attackEntity(entity, 'out_of_world', Amplifier, true)
             }
             break;
 
         case "kubejs:fire":
             if (isPlayer) {
                 let Amplifier = entity.getEffect("kubejs:fire").getAmplifier()
-                entity.attack($DamageSource("lava"), Amplifier)
+                attackEntity(entity, 'lava', Amplifier, true)
             } else {
                 let Amplifier = entity.getEffect("kubejs:fire").getAmplifier()
-                entity.attack($DamageSource("lava"), Amplifier)
+                attackEntity(entity, 'lava', Amplifier, true)
             }
             break;
 
@@ -50,11 +50,12 @@ function handleEffectExpired(effectId, entity, isPlayer) {
                 entity.setFoodLevel(Math.max(FoodLevel - Amplifier, 0));
                 entity.setSaturation(Math.max(Saturation - Amplifier, 0))
                 if (FoodLevel < 2) {
-                    entity.attack($DamageSource("generic"), Amplifier)
+                    attackEntity(entity, 'generic', Amplifier, true)
+
                 }
             } else {
                 let Amplifier = entity.getEffect("kubejs:tooth_of_hunger").getAmplifier()
-                entity.attack($DamageSource("generic"), Amplifier)
+                attackEntity(entity, 'generic', Amplifier, true)
             }
             break;
 

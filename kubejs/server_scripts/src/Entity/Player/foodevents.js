@@ -7,14 +7,12 @@ ItemEvents.foodEaten(event => {
     for (let [key, handler] of Object.entries(FoodEatenevents)) {
         handler(event, player, magicData);
     }
-
-
 });
 
 /**
  * 理智通用效果处理
  */
-const SanityHelper = {
+const $SanityHelper = {
     // 获取当前理智值
     getSanity: (player) => player.persistentData.getInt("sanity") || 0,
 
@@ -23,7 +21,7 @@ const SanityHelper = {
 
     //理智值更新
     updateSanity: (player, delta) => {
-        const current = SanityHelper.getSanity(player);
+        const current = $SanityHelper.getSanity(player);
         return updateplayersanity(player, current + delta);
     },
 
@@ -40,23 +38,23 @@ const SanityHelper = {
 /**
  * 温迪戈食用事件处理
  */
-const WendigoHelper = {
+const $WendigoHelper = {
     // 检查温迪戈状态
     isActive: (player) => player.persistentData.getInt("wendigo") > 0,
 
     // 处理食用人肉逻辑
     handleManFlesh: (player, sanityChange, nauseaChance, nauseaTime, vomitLevel) => {
-        const isWendigo = WendigoHelper.isActive(player);
+        const isWendigo = $WendigoHelper.isActive(player);
         const actualChange = isWendigo ? Math.abs(sanityChange) : -Math.abs(sanityChange);
 
-        const newSanity = SanityHelper.updateSanity(player, actualChange);
+        const newSanity = $SanityHelper.updateSanity(player, actualChange);
 
         if (!isWendigo && Math.random() < nauseaChance) {
             player.potionEffects.add('minecraft:nausea', 20 * nauseaTime, 0);
             player.potionEffects.add('kubejs:vomit', 30, vomitLevel);
         }
 
-        SanityHelper.checkSanityThreshold(player, newSanity);
+        $SanityHelper.checkSanityThreshold(player, newSanity);
         return newSanity;
     }
 };
@@ -64,7 +62,7 @@ const WendigoHelper = {
 /**
  * 暴食食用效果处理
  */
-const CooldownHelper = {
+const $CooldownHelper = {
     // 暴食冷却
     gluttonyCooldown: (event, player) => {
         const isGLUTTONY = player.persistentData.getInt(sins.GLUTTONY) || 0;
@@ -78,6 +76,7 @@ const CooldownHelper = {
         event.player.addItemCooldown(event.item, 20 * seconds);
     }
 };
+
 
 /**
  * 食物事件处理逻辑
@@ -95,35 +94,41 @@ FoodEatenevents.unregister = function (name) {
 };
 
 FoodEatenevents.register("food", function (event, player, magicData) {
-    if (!event.item.hasTag('c:foods')) return;
+    const nutrition = getFoodNutrition(event.item, player);
+    const Saturation = getFoodSaturation(event.item, player);
+    $CooldownHelper.gluttonyCooldown(event, player);
 
-    CooldownHelper.gluttonyCooldown(event, player);
-
-    if (player.getFoodLevel() === 20) {
-        const newSanity = SanityHelper.updateSanity(player, 2);
-        SanityHelper.checkSanityThreshold(player, newSanity);
+    if (nutrition >= 12) {
+        // 12饱食度以上食物增加8理智
+        const newSanity = $SanityHelper.updateSanity(player, 8);
+        $SanityHelper.checkSanityThreshold(player, newSanity);
+    } else if (nutrition >= 8) {
+        // 8饱食度以上食物增加4理智
+        const newSanity = $SanityHelper.updateSanity(player, 4);
+        $SanityHelper.checkSanityThreshold(player, newSanity);
     }
+
 });
 
 FoodEatenevents.register("raw_manflesh", function (event, player, magicData) {
     if (!event.item.hasTag('kubejs:foods/manflesh/raw_manflesh')) return;
 
-    WendigoHelper.handleManFlesh(player, 1, 0.2, 5, 0);
-    CooldownHelper.gluttonyCooldown(event, player);
+    $WendigoHelper.handleManFlesh(player, 1, 0.2, 5, 0);
+    $CooldownHelper.gluttonyCooldown(event, player);
 });
 
 FoodEatenevents.register("cooked_manflesh", function (event, player, magicData) {
     if (!event.item.hasTag('kubejs:foods/manflesh/cooked_manflesh')) return;
 
-    WendigoHelper.handleManFlesh(player, 2, 0.4, 5, 1);
-    CooldownHelper.gluttonyCooldown(event, player);
+    $WendigoHelper.handleManFlesh(player, 2, 0.4, 5, 1);
+    $CooldownHelper.gluttonyCooldown(event, player);
 });
 
 FoodEatenevents.register("manflesh", function (event, player, magicData) {
     if (!event.item.hasTag('kubejs:foods/manflesh')) return;
 
-    WendigoHelper.handleManFlesh(player, 2, 0.4, 5, 1);
-    CooldownHelper.gluttonyCooldown(event, player);
+    $WendigoHelper.handleManFlesh(player, 2, 0.4, 5, 1);
+    $CooldownHelper.gluttonyCooldown(event, player);
 });
 
 FoodEatenevents.register("emergency_sanity_elixir_a", function (event, player, magicData) {
@@ -131,7 +136,7 @@ FoodEatenevents.register("emergency_sanity_elixir_a", function (event, player, m
     const pData = player.persistentData;
     let addiction_up = pData.getInt('addiction') ?? 0;
     pData.putInt('addiction', addiction_up + 1);
-    SanityHelper.updateSanity(player, 10);
+    $SanityHelper.updateSanity(player, 10);
 });
 
 FoodEatenevents.register("emergency_sanity_elixir_b", function (event, player, magicData) {
@@ -139,7 +144,7 @@ FoodEatenevents.register("emergency_sanity_elixir_b", function (event, player, m
     const pData = player.persistentData;
     let addiction_up = pData.getInt('addiction') ?? 0;
     pData.putInt('addiction', addiction_up + 2);
-    SanityHelper.updateSanity(player, 25);
+    $SanityHelper.updateSanity(player, 25);
 });
 
 FoodEatenevents.register("emergency_sanity_elixir_y", function (event, player, magicData) {
@@ -147,12 +152,12 @@ FoodEatenevents.register("emergency_sanity_elixir_y", function (event, player, m
     const pData = player.persistentData;
     let addiction_up = pData.getInt('addiction') ?? 0;
     pData.putInt('addiction', addiction_up + 4);
-    SanityHelper.updateSanity(player, 45);
+    $SanityHelper.updateSanity(player, 45);
 });
 
 FoodEatenevents.register("foul_flesh", function (event, player, magicData) {
     if (!(event.item.getId() == "kubejs:foul_flesh")) return;
-    SanityHelper.updateSanity(player, -15);
+    $SanityHelper.updateSanity(player, -15);
 });
 
 FoodEatenevents.register("bad_apple", function (event, player, magicData) {
@@ -189,7 +194,7 @@ FoodEatenevents.register("bad_apple", function (event, player, magicData) {
 
     const sanityRandom = Math.random();
     const sanityChange = sanityRandom < 0.5 ? 30 : -30;
-    SanityHelper.updateSanity(player, sanityChange);
+    $SanityHelper.updateSanity(player, sanityChange);
 
     const manaRandom = Math.random();
     const manaChange = manaRandom < 0.5 ? 1000 : -1000;
@@ -276,7 +281,7 @@ FoodEatenevents.register("miracle_fruit", function (event, player, magicData) {
     if (!(event.item.getId() == "kubejs:miracle_fruit")) return;
     // 其他正面效果
     event.server.runCommandSilent(`stigma remove ${player.username}`);
-    SanityHelper.updateSanity(player, 25);
+    $SanityHelper.updateSanity(player, 25);
     player.heal(15);
     player.potionEffects.add('minecraft:regeneration', 20 * 30, 1);
     player.potionEffects.add('minecraft:absorption', 20 * 120, 1);

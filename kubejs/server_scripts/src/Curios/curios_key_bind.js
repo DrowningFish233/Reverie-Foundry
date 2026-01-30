@@ -50,7 +50,7 @@ NetworkEvents.dataReceived("key.test_5", (event) => {
             const maxHealth = player.getMaxHealth();
             const damageAmount = maxHealth * 0.3;
             player.potionEffects.add("kubejs:bloodlust_attack", 20 * 16, 0);
-            player.attack($DamageSource("minecraft:generic"), player.getMaxHealth() - damageAmount);
+            attackEntity(player, "minecraft:generic", player.getMaxHealth() - damageAmount, true)
         }
     }
 });

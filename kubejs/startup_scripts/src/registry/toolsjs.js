@@ -43,3 +43,4 @@ StartupEvents.registry('item', event => {
             tier.setUses(800)
         })
 });
+

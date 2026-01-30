@@ -5,17 +5,17 @@ function pride(event) {
     if (!attacker || !attacker.isLiving() || !attacker.hasEffect("kubejs:pride")) {
         return;
     }
-    let attackEffect = attacker.potionEffects;
 
     let prideEffect = attacker.getEffect("kubejs:pride_2");
     if (!prideEffect) {
-        attackEffect.add("kubejs:pride_2", 100, 0);
+        attacker.potionEffects.add("kubejs:pride_2", 100, 0);
         return;
     }
 
     let currentLevel = prideEffect.getAmplifier();
     let newLevel = currentLevel + 1;
-    attackEffect.add("kubejs:pride_2", 100, newLevel);
+    newLevel = Math.min(newLevel, 30);
+    attacker.potionEffects.add("kubejs:pride_2", 100, newLevel);
 
     let sunderLevel = -1;
     if (newLevel >= 10) {

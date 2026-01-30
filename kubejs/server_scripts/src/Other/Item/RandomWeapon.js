@@ -46,10 +46,10 @@ ItemEvents.firstRightClicked('kubejs:randomweapon', event => {
         if (!item) return;
 
         if (item instanceof $GearItem) {
-            // 尝试创建武器，最多重试30次
+            // 尝试创建武器，最多重试10次
             let randomGear = null;
             let attempts = 0;
-            let maxAttempts = 30;
+            let maxAttempts = 10;
 
             while (attempts < maxAttempts) {
                 attempts++;
@@ -57,21 +57,14 @@ ItemEvents.firstRightClicked('kubejs:randomweapon', event => {
                 randomGear = $GearGenerator.create(item);
 
                 if (randomGear && !randomGear.isEmpty() && validateGear(randomGear)) {
-                    // 尝试修复0值属性问题
-                    if (fixGearProperties(randomGear)) {
-                        // 获取稀有度数值
-                        let rarityValue = getRarityValue(randomGear);
+                    // 获取稀有度数值
+                    let rarityValue = getRarityValue(randomGear);
 
-                        let isAllowed = RarityCheck(player, rarityValue);
+                    let isAllowed = RarityCheck(player, rarityValue);
 
-                        if (isAllowed) {
-                            break;
-                        } else {
-                            randomGear = null;
-                            continue;
-                        }
+                    if (isAllowed) {
+                        break;
                     } else {
-                        // 修复失败，继续尝试
                         randomGear = null;
                         continue;
                     }
@@ -95,59 +88,6 @@ ItemEvents.firstRightClicked('kubejs:randomweapon', event => {
         console.log('[Reverie Foundry]创建随机武器时出错:', error);
     }
 });
-
-function fixGearProperties(itemStack) {
-    try {
-        if (!$GearHelper.isGear(itemStack)) {
-            return false;
-        }
-
-        let properties = $GearData.getProperties(itemStack);
-        if (!properties) {
-            return false;
-        }
-
-        let hasValidProperties = true;
-
-        let harvestSpeed = properties.getNumber($GearProperties.HARVEST_SPEED.get());
-        if (harvestSpeed <= 0) {
-            return false;
-        }
-
-        let maxDamage = itemStack.getMaxDamage();
-        if (maxDamage <= 0) {
-            return false;
-        }
-
-        let attackSpeed = properties.getNumber($GearProperties.ATTACK_SPEED.get());
-        if (attackSpeed <= 0) {
-            return false;
-        }
-
-        let attackDamage = properties.getNumber($GearProperties.ATTACK_DAMAGE.get());
-        if (attackDamage < 0) {
-            return false;
-        }
-
-        let toolComponent = itemStack.get($DataComponents.TOOL);
-        if (toolComponent) {
-            let rules = toolComponent.rules();
-            for (let rule of rules) {
-                if (rule.speed().isPresent()) {
-                    let speed = rule.speed().get();
-                    if (speed <= 0) {
-                        return false;
-                    }
-                }
-            }
-        }
-
-        return true;
-    } catch (e) {
-        console.log('[Reverie Foundry]修复装备属性时出错:', e);
-        return false;
-    }
-}
 
 // 验证武器是否有效
 function validateGear(itemStack) {

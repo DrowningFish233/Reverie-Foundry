@@ -13,6 +13,9 @@ function fu_getGearItem(gear) {
  * @returns {boolean} 如果是 Gear 物品则返回 true
  */
 function fu_isGear(stack) {
+    if (!stack || stack.isEmpty()) {
+        return false;
+    }
     return $GearHelper.isGear(stack);
 }
 
@@ -22,6 +25,9 @@ function fu_isGear(stack) {
  * @returns {boolean} 如果是有效的 Gear 物品则返回 true
  */
 function fu_isValidGear(stack) {
+    if (!stack || stack.isEmpty()) {
+        return false;
+    }
     return $GearHelper.isValidGear(stack);
 }
 
@@ -95,10 +101,10 @@ function fu_getRepairModifier(gear) {
  * @param {Internal.ItemStack} stack 物品
  * @param {number} amount 伤害量
  * @param {Internal.LivingEntity} entity 持有者
- * @param {Internal.InteractionHand} hand 持有手
+ * @param {Internal.InteractionHand} hand 持有手 MAIN_HAND | OFF_HAND
  */
 function fu_attemptDamageByHand(stack, amount, entity, hand) {
-    $GearHelper.attemptDamage(stack, amount, entity, hand);
+    $GearHelper["attemptDamage(net.minecraft.world.item.ItemStack,int,net.minecraft.world.entity.LivingEntity,net.minecraft.world.InteractionHand)"](stack, amount, entity, hand);
 }
 
 /**
@@ -109,7 +115,7 @@ function fu_attemptDamageByHand(stack, amount, entity, hand) {
  * @param {Internal.EquipmentSlot} slot 装备槽位
  */
 function fu_attemptDamageBySlot(stack, amount, entity, slot) {
-    $GearHelper.attemptDamage(stack, amount, entity, slot);
+    $GearHelper["attemptDamage(net.minecraft.world.item.ItemStack,int,net.minecraft.world.entity.LivingEntity,net.minecraft.world.entity.EquipmentSlot)"](stack, amount, entity, slot);
 }
 
 /**
@@ -332,54 +338,6 @@ function fu_getRarity(stack) {
 }
 
 /**
- * 创建示例 Gear 物品（基于等级）
- * @param {string} gearItemId Gear 物品的 ID
- * @param {number} tier 等级
- * @returns {Internal.ItemStack} 示例物品
- */
-function fu_createSampleItemByTier(gearItemId, tier) {
-    const item = Item.of(gearItemId);
-    if (item instanceof $GearItem) {
-        return $GearHelper.createSampleItem(item, tier);
-    }
-    return $ItemStack.EMPTY;
-}
-
-/**
- * 创建示例 Gear 物品（基于主要材料）
- * @param {string} gearItemId Gear 物品的 ID
- * @param {string} materialId 主要材料的 ID
- * @returns {Internal.ItemStack} 示例物品
- */
-function fu_createSampleItemByMaterial(gearItemId, materialId) {
-    const item = Item.of(gearItemId);
-    if (item instanceof $GearItem) {
-        const material = $SgRegistries.MATERIAL.get($ResourceLocation.tryParse(materialId));
-        if (material) {
-            const dataResource = $DataResource.material(material.getId());
-            return $GearHelper.createSampleItem(item, dataResource);
-        }
-    }
-    return $ItemStack.EMPTY;
-}
-
-/**
- * 从配方获取示例部件
- * @param {string} gearTypeId Gear 类型 ID
- * @param {Array<Ingredient>} ingredients 配方成分
- * @returns {Array<PartInstance>} 部件实例数组
- */
-function fu_getExamplePartsFromRecipe(gearTypeId, ingredients) {
-    const gearType = $SgRegistries.GEAR_TYPES.get($ResourceLocation.tryParse(gearTypeId));
-    if (gearType) {
-        const javaList = new $java.util.ArrayList();
-        ingredients.forEach(ingredient => javaList.add(ingredient));
-        return Array.from($GearHelper.getExamplePartsFromRecipe(gearType, javaList));
-    }
-    return [];
-}
-
-/**
  * 获取 Gear 物品的完整名称
  * @param {Internal.ItemStack} gear Gear 物品
  * @returns {Internal.Component|null} 物品名称组件或 null
@@ -390,4 +348,60 @@ function fu_getItemName(gear) {
         return $GearHelper.getItemName(gear, constructionData);
     }
     return null;
+}
+
+/**
+ * 获取 Gear 物品的耐久度条宽度
+ * @param {Internal.ItemStack} stack 物品
+ * @returns {number} 耐久度条宽度（0-13）
+ */
+function fu_getBarWidth(stack) {
+    return $GearHelper.getBarWidth(stack);
+}
+
+/**
+ * 获取 Gear 物品的耐久度条颜色
+ * @param {Internal.ItemStack} stack 物品
+ * @returns {number} 颜色值
+ */
+function fu_getBarColor(stack) {
+    return $GearHelper.getBarColor(stack);
+}
+
+/**
+ * 添加属性修饰符到 Gear 物品
+ * @param {Internal.ItemStack} stack 物品
+ * @param {Internal.ItemAttributeModifiers.Builder} builder 属性构建器
+ */
+function fu_addAttributeModifiers(stack, builder) {
+    $GearHelper.addAttributeModifiers(stack, builder);
+}
+
+/**
+ * 添加属性修饰符到 Gear 物品（可选是否添加标准主手修饰符）
+ * @param {Internal.ItemStack} stack 物品
+ * @param {Internal.ItemAttributeModifiers.Builder} builder 属性构建器
+ * @param {boolean} addStandardMainHandMods 是否添加标准主手修饰符
+ */
+function fu_addAttributeModifiersFull(stack, builder, addStandardMainHandMods) {
+    $GearHelper.addAttributeModifiers(stack, builder, addStandardMainHandMods);
+}
+
+/**
+ * 为创意模式标签填充 Gear 物品
+ * @param {Internal.GearItem} item Gear 物品类型
+ * @param {Internal.CreativeModeTab} group 创意模式标签
+ * @param {Array<Internal.ItemStack>} items 物品列表
+ */
+function fu_fillItemGroup(item, group, items) {
+    $GearHelper.fillItemGroup(item, group, items);
+}
+
+/**
+ * 创建物品能力集合
+ * @param {ItemAbility} actions 物品能力
+ * @returns {Set<ItemAbility>} 能力集合
+ */
+function fu_makeItemAbilitySet(actions) {
+    return $GearHelper.makeItemAbilitySet(actions);
 }
