@@ -58,6 +58,32 @@ function GenerateSilentGearMaterial(materialId, event, boolean, handler) {
      * 设置材料分类
      * @param {string[]} categories 分类数组
      * @returns {GenerateSilentGearMaterial}
+     * 
+     * 可用分类对照表：
+     * - bone: 骨
+     * - stone: 砖
+     * - other: 其他
+     * - soul: 灵魂
+     * - fabric: 布料
+     * - medium: 中级+
+     * - ballistic_plate: 防护插板
+     * - metal_fiber: 金属纤维
+     * - advanced: 高级
+     * - any: 任意
+     * - basic: 基础
+     * - cloth: 布料
+     * - dust: 粉尘
+     * - endgame: 终极
+     * - fiber: 纤维
+     * - gem: 宝石
+     * - intangible: 未定义
+     * - intermediate: 中级
+     * - metal: 金属
+     * - organic: 有机
+     * - rock: 岩石
+     * - sheet: 板
+     * - slime: 史莱姆
+     * - wood: 木材
      */
     this.setCategories = function (categories) {
         this.config.crafting.categories = categories
@@ -231,7 +257,7 @@ function GenerateSilentGearMaterial(materialId, event, boolean, handler) {
     }
 
     /**
-     * 添加内衬部件属性
+     * 添加内衬（插板）部件属性
      * @param {Function} configFunc 配置函数
      * @returns {GenerateSilentGearMaterial}
      */
@@ -322,13 +348,49 @@ function PartBuilder(partType) {
     this.partType = partType
 
     /**
+     * 设置数值型属性（直接设置数值）
+     * @param {string} key 属性键
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this._setNumberStat = function (key, value) {
+        this.stats[key] = value
+        return this
+    }
+
+    /**
+     * 设置运算型属性（带operation字段）
+     * @param {string} key 属性键
+     * @param {Object} config 配置对象
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} config.operation 运算类型
+     * @param {number} config.value 数值
+     * @returns {PartBuilder}
+     */
+    this._setOperationStat = function (key, config) {
+        this.stats[key] = {
+            operation: config.operation,
+            value: config.value
+        }
+        return this
+    }
+
+    /**
      * 设置护甲值
      * @param {number} value
      * @returns {PartBuilder}
      */
     this.armor = function (value) {
-        this.stats.armor = value
-        return this
+        return this._setNumberStat('armor', value)
+    }
+
+    /**
+     * 设置运算型护甲值
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.armorWithOperation = function (operation, value) {
+        return this._setOperationStat('armor', { operation: operation, value: value })
     }
 
     /**
@@ -337,8 +399,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.armorHelmet = function (value) {
-        this.stats['armor/helmet'] = value
-        return this
+        return this._setNumberStat('armor/helmet', value)
+    }
+
+    /**
+     * 设置运算型头盔护甲值
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.armorHelmetWithOperation = function (operation, value) {
+        return this._setOperationStat('armor/helmet', { operation: operation, value: value })
     }
 
     /**
@@ -347,8 +418,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.armorChestplate = function (value) {
-        this.stats['armor/chestplate'] = value
-        return this
+        return this._setNumberStat('armor/chestplate', value)
+    }
+
+    /**
+     * 设置运算型胸甲护甲值
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.armorChestplateWithOperation = function (operation, value) {
+        return this._setOperationStat('armor/chestplate', { operation: operation, value: value })
     }
 
     /**
@@ -357,8 +437,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.armorLeggings = function (value) {
-        this.stats['armor/leggings'] = value
-        return this
+        return this._setNumberStat('armor/leggings', value)
+    }
+
+    /**
+     * 设置运算型护腿护甲值
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.armorLeggingsWithOperation = function (operation, value) {
+        return this._setOperationStat('armor/leggings', { operation: operation, value: value })
     }
 
     /**
@@ -367,8 +456,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.armorBoots = function (value) {
-        this.stats['armor/boots'] = value
-        return this
+        return this._setNumberStat('armor/boots', value)
+    }
+
+    /**
+     * 设置运算型靴子护甲值
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.armorBootsWithOperation = function (operation, value) {
+        return this._setOperationStat('armor/boots', { operation: operation, value: value })
     }
 
     /**
@@ -377,8 +475,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.armorToughness = function (value) {
-        this.stats.armor_toughness = value
-        return this
+        return this._setNumberStat('armor_toughness', value)
+    }
+
+    /**
+     * 设置运算型护甲韧性
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.armorToughnessWithOperation = function (operation, value) {
+        return this._setOperationStat('armor_toughness', { operation: operation, value: value })
     }
 
     /**
@@ -387,8 +494,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.armorDurability = function (value) {
-        this.stats.armor_durability = value
-        return this
+        return this._setNumberStat('armor_durability', value)
+    }
+
+    /**
+     * 设置运算型护甲耐久
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.armorDurabilityWithOperation = function (operation, value) {
+        return this._setOperationStat('armor_durability', { operation: operation, value: value })
     }
 
     /**
@@ -397,8 +513,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.attackDamage = function (value) {
-        this.stats.attack_damage = value
-        return this
+        return this._setNumberStat('attack_damage', value)
+    }
+
+    /**
+     * 设置运算型攻击伤害
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.attackDamageWithOperation = function (operation, value) {
+        return this._setOperationStat('attack_damage', { operation: operation, value: value })
     }
 
     /**
@@ -407,8 +532,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.attackSpeed = function (value) {
-        this.stats.attack_speed = value
-        return this
+        return this._setNumberStat('attack_speed', value)
+    }
+
+    /**
+     * 设置运算型攻击速度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.attackSpeedWithOperation = function (operation, value) {
+        return this._setOperationStat('attack_speed', { operation: operation, value: value })
     }
 
     /**
@@ -417,8 +551,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.attackSpeedAxe = function (value) {
-        this.stats['attack_speed/axe'] = value
-        return this
+        return this._setNumberStat('attack_speed/axe', value)
+    }
+
+    /**
+     * 设置运算型斧头攻击速度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.attackSpeedAxeWithOperation = function (operation, value) {
+        return this._setOperationStat('attack_speed/axe', { operation: operation, value: value })
     }
 
     /**
@@ -427,8 +570,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.attackSpeedHoe = function (value) {
-        this.stats['attack_speed/hoe'] = value
-        return this
+        return this._setNumberStat('attack_speed/hoe', value)
+    }
+
+    /**
+     * 设置运算型锄头攻击速度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.attackSpeedHoeWithOperation = function (operation, value) {
+        return this._setOperationStat('attack_speed/hoe', { operation: operation, value: value })
     }
 
     /**
@@ -437,8 +589,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.chargingValue = function (value) {
-        this.stats.charging_value = value
-        return this
+        return this._setNumberStat('charging_value', value)
+    }
+
+    /**
+     * 设置运算型充能值
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.chargingValueWithOperation = function (operation, value) {
+        return this._setOperationStat('charging_value', { operation: operation, value: value })
     }
 
     /**
@@ -447,8 +608,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.drawSpeed = function (value) {
-        this.stats.draw_speed = value
-        return this
+        return this._setNumberStat('draw_speed', value)
+    }
+
+    /**
+     * 设置运算型拉弓速度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.drawSpeedWithOperation = function (operation, value) {
+        return this._setOperationStat('draw_speed', { operation: operation, value: value })
     }
 
     /**
@@ -457,8 +627,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.durability = function (value) {
-        this.stats.durability = value
-        return this
+        return this._setNumberStat('durability', value)
+    }
+
+    /**
+     * 设置运算型耐久度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.durabilityWithOperation = function (operation, value) {
+        return this._setOperationStat('durability', { operation: operation, value: value })
     }
 
     /**
@@ -467,8 +646,36 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.enchantmentValue = function (value) {
-        this.stats.enchantment_value = value
-        return this
+        return this._setNumberStat('enchantment_value', value)
+    }
+
+    /**
+     * 设置运算型附魔能力
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.enchantmentValueWithOperation = function (operation, value) {
+        return this._setOperationStat('enchantment_value', { operation: operation, value: value })
+    }
+
+    /**
+     * 设置击退抗性
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.knockback_resistance = function (value) {
+        return this._setNumberStat('knockback_resistance', value)
+    }
+
+    /**
+     * 设置运算型击退抗性
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.knockback_resistanceWithOperation = function (operation, value) {
+        return this._setOperationStat('knockback_resistance', { operation: operation, value: value })
     }
 
     /**
@@ -477,8 +684,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.harvestSpeed = function (value) {
-        this.stats.harvest_speed = value
-        return this
+        return this._setNumberStat('harvest_speed', value)
+    }
+
+    /**
+     * 设置运算型挖掘速度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.harvestSpeedWithOperation = function (operation, value) {
+        return this._setOperationStat('harvest_speed', { operation: operation, value: value })
     }
 
     /**
@@ -503,8 +719,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.magicArmor = function (value) {
-        this.stats.magic_armor = value
-        return this
+        return this._setNumberStat('magic_armor', value)
+    }
+
+    /**
+     * 设置运算型魔法护甲
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.magicArmorWithOperation = function (operation, value) {
+        return this._setOperationStat('magic_armor', { operation: operation, value: value })
     }
 
     /**
@@ -513,8 +738,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.magicDamage = function (value) {
-        this.stats.magic_damage = value
-        return this
+        return this._setNumberStat('magic_damage', value)
+    }
+
+    /**
+     * 设置运算型魔法伤害
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.magicDamageWithOperation = function (operation, value) {
+        return this._setOperationStat('magic_damage', { operation: operation, value: value })
     }
 
     /**
@@ -523,8 +757,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.projectileAccuracy = function (value) {
-        this.stats.projectile_accuracy = value
-        return this
+        return this._setNumberStat('projectile_accuracy', value)
+    }
+
+    /**
+     * 设置运算型投射物精度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.projectileAccuracyWithOperation = function (operation, value) {
+        return this._setOperationStat('projectile_accuracy', { operation: operation, value: value })
     }
 
     /**
@@ -533,8 +776,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.projectileSpeed = function (value) {
-        this.stats.projectile_speed = value
-        return this
+        return this._setNumberStat('projectile_speed', value)
+    }
+
+    /**
+     * 设置运算型投射物速度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.projectileSpeedWithOperation = function (operation, value) {
+        return this._setOperationStat('projectile_speed', { operation: operation, value: value })
     }
 
     /**
@@ -543,8 +795,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.rangedDamage = function (value) {
-        this.stats.ranged_damage = value
-        return this
+        return this._setNumberStat('ranged_damage', value)
+    }
+
+    /**
+     * 设置运算型远程伤害
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.rangedDamageWithOperation = function (operation, value) {
+        return this._setOperationStat('ranged_damage', { operation: operation, value: value })
     }
 
     /**
@@ -553,8 +814,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.rarity = function (value) {
-        this.stats.rarity = value
-        return this
+        return this._setNumberStat('rarity', value)
+    }
+
+    /**
+     * 设置运算型稀有度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.rarityWithOperation = function (operation, value) {
+        return this._setOperationStat('rarity', { operation: operation, value: value })
     }
 
     /**
@@ -563,8 +833,37 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.repairValue = function (value) {
-        this.stats.repair_value = value
-        return this
+        return this._setNumberStat('repair_value', value)
+    }
+
+    /**
+     * 设置运算型修复值
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.repairValueWithOperation = function (operation, value) {
+        return this._setOperationStat('repair_value', { operation: operation, value: value })
+    }
+
+
+    /**
+     * 设置修复值
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.repairEfficiency = function (value) {
+        return this._setNumberStat('repair_efficiency', value)
+    }
+
+    /**
+     * 设置运算型修复值
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.repairEfficiencyWithOperation = function (operation, value) {
+        return this._setOperationStat('repair_efficiency', { operation: operation, value: value })
     }
 
     /**
@@ -573,8 +872,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.spellPower = function (value) {
-        this.stats.spell_power = value
-        return this
+        return this._setNumberStat('spell_power', value)
+    }
+
+    /**
+     * 设置运算型法术强度
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.spellPowerWithOperation = function (operation, value) {
+        return this._setOperationStat('spell_power', { operation: operation, value: value })
     }
 
     /**
@@ -583,8 +891,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.spellResist = function (value) {
-        this.stats.spell_resist = value
-        return this
+        return this._setNumberStat('spell_resist', value)
+    }
+
+    /**
+     * 设置运算型法术抗性
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.spellResistWithOperation = function (operation, value) {
+        return this._setOperationStat('spell_resist', { operation: operation, value: value })
     }
 
     /**
@@ -593,18 +910,36 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.manaRegen = function (value) {
-        this.stats.mana_regen = value
-        return this
+        return this._setNumberStat('mana_regen', value)
     }
 
     /**
-     * 设置誓令上限 仅整数
+     * 设置运算型魔力恢复
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.manaRegenWithOperation = function (operation, value) {
+        return this._setOperationStat('mana_regen', { operation: operation, value: value })
+    }
+
+    /**
+     * 设置誓令上限 
      * @param {number} value
      * @returns {PartBuilder}
      */
     this.geasLimit = function (value) {
-        this.stats.geas_limit = value
-        return this
+        return this._setNumberStat('geas_limit', value)
+    }
+
+    /**
+     * 设置运算型誓令上限
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.geasLimitWithOperation = function (operation, value) {
+        return this._setOperationStat('geas_limit', { operation: operation, value: value })
     }
 
     /**
@@ -613,8 +948,17 @@ function PartBuilder(partType) {
      * @returns {PartBuilder}
      */
     this.healingReceived = function (value) {
-        this.stats.healing_received = value
-        return this
+        return this._setNumberStat('healing_received', value)
+    }
+
+    /**
+     * 设置运算型回血倍率
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.healingReceivedWithOperation = function (operation, value) {
+        return this._setOperationStat('healing_received', { operation: operation, value: value })
     }
 
     /**

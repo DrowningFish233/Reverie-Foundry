@@ -28,16 +28,15 @@ ItemEvents.firstRightClicked(event => {
     player.give(Item.of('kubejs:raw_manflesh', randomAmount));
 
     event.level[$playersound]
-        (null, player.x, player.y, player.z, "minecraft:entity.villager.hurt", "players", 0.6, 0.6)
+        (null, player.x, player.y, player.z, "minecraft:entity.villager.hurt", "players", 0.6, 1)
 
     player.potionEffects.add('minecraft:blindness', 60, 0);
     player.potionEffects.add('minecraft:nausea', 100, 0);
     if (player.hasEffect("kubejs:bleed")) {
         let bEffect = player.getEffect("kubejs:bleed");
-        let cLevel = bEffect.getAmplifier() + 1;
         let sanity = player.persistentData.getInt("sanity") || 0
         updateplayersanity(player, sanity - 5);
-        player.potionEffects.add('kubejs:bleed', 400, cLevel);
+        player.potionEffects.add('kubejs:bleed', 400, 0);
     } else {
         player.potionEffects.add('kubejs:bleed', 400, 0);
     }

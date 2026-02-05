@@ -18,3 +18,10 @@ $DataComponent.register("add_enchantment_count",
         .persistent(true)
         .networked(true)
 )
+
+$DataComponent.register("demonite_ingot_blocks",
+    $DataComponent.builder()
+        .type("DOUBLE")
+        .persistent(true)
+        .networked(true)
+)

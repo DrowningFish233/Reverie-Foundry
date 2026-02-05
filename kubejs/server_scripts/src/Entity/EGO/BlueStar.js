@@ -33,6 +33,8 @@ function handleBlueStarEffect(event) {
         attackEntity(entity, 'magic', damage, true)
     });
 
+    const randomPitch = 0.6 + Math.random() * 0.6;
+
     event.level[$playersound]
-        (null, player.x, player.y, player.z, "kubejs:bluestar_in", "players", 0.6, 0.6)
+        (null, player.x, player.y, player.z, "kubejs:bluestar_in", "players", 0.6, randomPitch)
 }

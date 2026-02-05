@@ -14,7 +14,6 @@ function dragonsteel_lightning_ingot(event) {
     const newHurtLevel = attackLevel + 1;
     const bleedEffect = entity.getEffect("kubejs:bleed");
     const bleedLevel = bleedEffect ? bleedEffect.getAmplifier() : 0;
-    const newbleedLevel = bleedLevel + 1;
 
     if (newHurtLevel >= 3) {
         entity.removeEffect("kubejs:dragonsteel_lightning_ingot_attack");
@@ -23,7 +22,8 @@ function dragonsteel_lightning_ingot(event) {
         entity.potionEffects.add("kubejs:dragonsteel_lightning_ingot_attack", 20 * 5, newHurtLevel);
     }
 
-    entity.potionEffects.add("kubejs:bleed", 20 * 10, newbleedLevel);
+    entity.potionEffects.add("kubejs:bleed", 20 * 5, 0);
+
     if (bleedLevel >= 9) {
         entity.removeEffect("kubejs:bleed");
         entity.potionEffects.add("kubejs:bleed", 20 * 8, bleedLevel - 8);

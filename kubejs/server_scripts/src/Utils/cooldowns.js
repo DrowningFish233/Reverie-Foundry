@@ -95,7 +95,9 @@ const $CooldownManager = {
             "exp_to_death_cd",
             "echo_ingot_COOLDOWN_KEY",
             "mana_cloak_COOLDOWN_KEY",
-            "spearCharge"
+            "spearCharge",
+            "tenacious_vine_COOLDOWN_KEY",
+            "hallowed_ingot_COOLDOWN_KEY"
         ];
 
         // 清理冷却数据

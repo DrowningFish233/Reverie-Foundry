@@ -28,7 +28,7 @@ function aethersent_ingot(event) {
     )
     let meteors = level.getEntitiesOfClass($MeteorClass, target.getBoundingBox().inflate(80))
     meteors.forEach(meteor => {
-        if (meteor.getOwner() == entity) { // 只修改玩家召唤的流星
+        if (meteor.getOwner() == entity) {
             meteor.setSize(traitLevel)
         }
     })

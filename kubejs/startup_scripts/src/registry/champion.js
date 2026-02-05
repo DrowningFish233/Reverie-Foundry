@@ -455,7 +455,7 @@ StartupEvents.registry("champions:affix", event => {
 
                     player.potionEffects.add(effectType, currentDuration, newAmplifier);
                     if (Math.random() < 0.3) {
-                        player.potionEffects.add('kubejs:bleed', 20 * 60, newAmplifier);
+                        player.potionEffects.add('kubejs:bleed', 20 * 60, 0);
                     }
                 } else {
                     player.potionEffects.add(effectType, 20 * 5, 0);

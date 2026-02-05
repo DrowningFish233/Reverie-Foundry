@@ -438,7 +438,11 @@
 			y: -6.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["66EA89C1E75509EB"]
+			icon: {
+				id: "kubejs:randomweapon"
+			}
 			id: "61AD6CC3CE0AC9F4"
 			rewards: [{
 				exclude_from_claim_all: true

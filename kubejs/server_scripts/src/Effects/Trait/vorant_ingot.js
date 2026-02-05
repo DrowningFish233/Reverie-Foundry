@@ -41,7 +41,7 @@ EntityEvents.death(event => {
     if (item.getId() == "minecraft:air") return;
 
     if (!fu_hasTraitMainHand(player, "kubejs:vorant_ingot")) return;
-    const traitLevel = fu_getTraitLevelMainHand(player, "kubejs:vorant_ingot");
+    let traitLevel = fu_getTraitLevelMainHand(player, "kubejs:vorant_ingot");
 
     let MobKill = getDataValue(item, "vorant_ingot_mobkill") || 0
     let PlayerKill = getDataValue(item, "vorant_ingot_playerkill") || 0
@@ -55,7 +55,7 @@ EntityEvents.death(event => {
 
     } else {
         MobKill++
-        player.heal(traitLevel)
+        player.heal(2)
         setDataValue(item, "vorant_ingot_mobkill", MobKill)
     }
 })

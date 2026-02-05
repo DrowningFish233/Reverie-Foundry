@@ -15,7 +15,8 @@ function dragonsteel_fire_ingot(event) {
     const bleedLevel = bleedEffect ? bleedEffect.getAmplifier() : 0;
 
     entity.potionEffects.add("kubejs:dragonsteel_armor_break", 20 * 30, armorBreakLevel);
-    entity.potionEffects.add("kubejs:bleed", 20 * 10, armorBreakLevel);
+
+    entity.potionEffects.add("kubejs:bleed", 20 * 5, 0);
 
     let currentArmor = entity.getArmorValue()
 
@@ -28,6 +29,7 @@ function dragonsteel_fire_ingot(event) {
         entity.setRemainingFireTicks(0)
 
     }
+
     if (bleedLevel >= 9) {
         entity.removeEffect("kubejs:bleed");
         entity.potionEffects.add("kubejs:bleed", 20 * 8, bleedLevel - 8);

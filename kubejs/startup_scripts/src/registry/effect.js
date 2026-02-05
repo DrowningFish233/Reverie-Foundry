@@ -1249,4 +1249,14 @@ event.create('purple_haze_attack')
             -0.2,
             "add_multiplied_base"
         )
+    event.create('growth')
+        .harmful()
+        .modifyAttribute('irons_spellbooks:spell_resist',
+            '5ba2ca77-9f64-4eef-b77e-df64acdee32a',
+            -0.05,
+            "add_multiplied_base"
+        )
+    event.create('holy_protection')
+        .beneficial()
+
 });

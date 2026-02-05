@@ -13,7 +13,7 @@ function echo_ingot(event) {
     if (!fu_hasTraitAnywhere(attacker, "kubejs:echo_ingot")) return;
     let Trait_Level = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:echo_ingot")
 
-    $AddEffect(entity, "kubejs:bleed", Trait_Level * 2 - 1, true)
+    $AddEffect(entity, "kubejs:bleed", Trait_Level, true)
     $AddEffect(entity, "kubejs:paralysis", Trait_Level - 1, false, 200)
     $AddEffect(entity, "minecraft:slowness", Trait_Level - 1, true)
 

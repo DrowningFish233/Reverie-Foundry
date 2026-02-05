@@ -20,12 +20,13 @@ function dragonsteel_ice_ingot(event) {
         entity.potionEffects.add("kubejs:dragonsteel_ice_ingot_attack", 200, newHurtLevel);
     }
 
-    entity.potionEffects.add("kubejs:bleed", 20 * 10, newHurtLevel);
+    entity.potionEffects.add("kubejs:bleed", 20 * 5, 0);
 
     if (entity.hasEffect("kubejs:dragonsteel_ice_ingot_ice")) {
         entity.removeEffect("kubejs:dragonsteel_ice_ingot_ice");
         attackEntity(entity, 'freeze', 20, true)
     }
+
     if (bleedLevel >= 9) {
         entity.removeEffect("kubejs:bleed");
         entity.potionEffects.add("kubejs:bleed", 20 * 8, bleedLevel - 8);

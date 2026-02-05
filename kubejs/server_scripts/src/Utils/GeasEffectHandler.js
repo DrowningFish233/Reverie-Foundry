@@ -175,12 +175,10 @@ function getGeasTypeById(geasId) {
 //检测并移除超额誓令
 function checkAndRemoveExcessGeas(player) {
     if (!player) return;
-
     const attribute = player.getAttribute('malum:geas_limit');
     if (!attribute) return;
 
-    const limit = Math.ceil(attribute.value);
-
+    const limit = Math.ceil(attribute.getValue());
     const geasData = fu_getGeasData(player);
 
     if (!geasData) return;

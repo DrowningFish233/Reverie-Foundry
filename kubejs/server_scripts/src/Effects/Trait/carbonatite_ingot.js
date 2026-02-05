@@ -2,13 +2,12 @@ ItemEvents.firstRightClicked((event) => {
     const player = event.player;
     if (!player || !player.crouching || !fu_hasTraitAnywhere(player, "kubejs:carbonatite_ingot")) return;
 
-    const { item } = event;
+    const { item, level } = event;
     // 检查物品是否可损耗耐久
     if (!item.isDamageableItem()) return;
     const trait_level = fu_getHighestTraitLevelAnywhere(player, "kubejs:carbonatite_ingot")
     let enchantment_count = getDataValue(item, "add_enchantment_count") || 0;
     if (enchantment_count >= trait_level * 6) return
-    const { level } = event
 
     // 可随机附魔列表
     const ENCHANTMENT_POOL = [
@@ -144,7 +143,7 @@ ItemEvents.firstRightClicked((event) => {
     // 检查耐久是否足够
     if (currentDamage + durabilityCost > maxDurability) {
         player.tell(
-            Text.translate('error.enchant.durability').color('red')  // 硬编码红色
+            Text.translate('error.enchant.durability').color('red')
         );
         return;
     } else {

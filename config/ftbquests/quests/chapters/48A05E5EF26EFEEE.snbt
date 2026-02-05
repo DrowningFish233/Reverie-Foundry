@@ -197,6 +197,42 @@
 					}
 					type: "item"
 				}
+				{
+					id: "35164544C2D418CF"
+					item: {
+						components: {
+							"eccentrictome:tome_data": {
+								books: {
+									irons_spellbooks: [{
+										components: {
+											"patchouli:book": "irons_spellbooks:iss_guide_book"
+										}
+										count: 1
+										id: "patchouli:guide_book"
+									}]
+									patchouli: [{
+										components: {
+											"patchouli:book": "patchouli:rf_book"
+										}
+										count: 1
+										id: "patchouli:guide_book"
+									}]
+									productivemetalworks: [{
+										components: {
+											"patchouli:book": "productivemetalworks:guide"
+										}
+										count: 1
+										id: "patchouli:guide_book"
+									}]
+								}
+								tome_id: "c367ceb7-7cd8-47bf-955e-ffa296a74275"
+							}
+						}
+						count: 1
+						id: "eccentrictome:tome"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "5A0F513FCD1F0C69"
@@ -230,7 +266,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item_tag(kubejs:foods/emergency_sanity_elixir_a)item_tag(kubejs:foods/emergency_sanity_elixir_b)item_tag(kubejs:foods/emergency_sanity_elixir_y))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: -0.5d
 			y: 2.5d
 		}
 	]

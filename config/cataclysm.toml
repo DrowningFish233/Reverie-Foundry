@@ -406,7 +406,7 @@
 	#Harbinger's DamageCap
 	# Default: 22.0
 	# Range: 0.0 ~ 1000000.0
-	"The Harbinger DamageCap" = 1000.0
+	"The Harbinger DamageCap" = 2000.0
 	#Harbinger's lasers can light a fire in MobGriefing
 	"The Harbinger Light A Fire" = true
 	#The Harbinger's charge attack Hp Damage
@@ -524,7 +524,7 @@
 	#Ancient Remnant's DamageCap
 	# Default: 21.0
 	# Range: 0.0 ~ 1000000.0
-	AncientRemnantCap = 1000
+	AncientRemnantCap = 2000
 	#Ancient Remnant's block breaking ignore the MobGriefing
 	AncientRemnantBlockBreaking = true
 	#Remnant's Charge Hp Damage
@@ -788,7 +788,7 @@
 	#Scylla's DamageCap
 	# Default: 22.0
 	# Range: 0.0 ~ 1000000.0
-	"Scylla DamageCap" = 1000.0
+	"Scylla DamageCap" = 2000.0
 	#Scylla's DamageTime
 	# Default: 25
 	# Range: 0 ~ 100

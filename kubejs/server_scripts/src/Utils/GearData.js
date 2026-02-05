@@ -168,14 +168,6 @@ function fu_writeConstructionParts(gear, parts) {
     $GearData.writeConstructionParts(gear, parts);
 }
 
-/**
- * 检查装备是否为示例装备（展示用）
- * @param {Internal.ItemStack} gear 装备物品堆栈
- * @returns {boolean} 是否为示例装备
- */
-function fu_isExampleGear(gear) {
-    return $GearData.isExampleGear(gear);
-}
 
 /**
  * 获取装备的损坏次数

@@ -252,7 +252,6 @@ ServerEvents.tags('item', event => {
         'alltheores:netherite_dust',
         'alltheores:netherite_rod',
         'silentgear:bronze_ingot'])
-
     event.remove('c:plates/enderium', 'alltheores:enderium_plate')
     event.remove('c:plates', 'alltheores:enderium_plate')
     event.add('quad:fuel/hanging_sign', 'kubejs:coal_dust')
@@ -413,6 +412,14 @@ ServerEvents.tags('item', event => {
         'hazennstuff:shadow_scale',
         'kubejs:blood_orb'
     )
+
+    event.add(
+        'kubejs:runewood_sapling',
+        'malum:azure_runewood_sapling',
+        'malum:runewood_sapling'
+    )
+
+
 })
 
 ServerEvents.tags('block', event => {
@@ -425,6 +432,7 @@ ServerEvents.tags('block', event => {
         'silentgear:blackstone_crimson_iron_ore',
         'eternal_starlight_vo:voidstone_iron_ore'
     );
+
 });
 
 

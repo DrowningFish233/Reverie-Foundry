@@ -343,7 +343,7 @@
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 25.0
-		AllowCrafting = false
+		AllowCrafting = true
 
 	#irons_spellbooks:nature
 	[Spells."irons_spellbooks:poison_arrow"]
@@ -358,7 +358,7 @@
 		AllowCrafting = true
 
 	[Spells."gametechbcs_spellbooks:aerial_collapse"]
-		Enabled = true
+		Enabled = false
 		School = "irons_spellbooks:nature"
 		MaxLevel = 5
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
@@ -366,7 +366,7 @@
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 45.0
-		AllowCrafting = true
+		AllowCrafting = false
 
 	[Spells."cataclysm_spellbooks:conjure_amethyst_crab"]
 		Enabled = true
@@ -590,7 +590,7 @@
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:pilfer"]
-		Enabled = true
+		Enabled = false
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 3
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
@@ -598,7 +598,7 @@
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 100.0
-		AllowCrafting = true
+		AllowCrafting = false
 
 	[Spells."irons_spellbooks:invisibility"]
 		Enabled = true
@@ -1541,7 +1541,7 @@
 		AllowCrafting = true
 
 	[Spells."irons_spellbooks:cloud_of_regeneration"]
-		Enabled = false
+		Enabled = true
 		School = "irons_spellbooks:holy"
 		MaxLevel = 5
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY

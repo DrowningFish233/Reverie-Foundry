@@ -1,5 +1,5 @@
 //priority: 100
-
+// 导入Java类
 /**
  * 随机移除一个负面效果
  */
@@ -978,7 +978,7 @@ function summonMob(interval, entity, mobId, sound) {
                     sound,
                     "players",
                     0.6,
-                    0.6
+                    0.8
                 );
             }
 
@@ -1045,7 +1045,7 @@ function summonMobWithDimensions(interval, entity, mobId, sound, allowedDimensio
                     sound,
                     "players",
                     0.6,
-                    0.6
+                    0.8
                 );
             }
 
@@ -1062,6 +1062,113 @@ function summonMobWithDimensions(interval, entity, mobId, sound, allowedDimensio
 }
 
 
+/**
+ * 在特定结构内召唤生物函数
+ * @param {integer} interval 执行前的等待时间（单位：Tick）
+ * @param {ItemEntity} entity 被抛出的物品实体
+ * @param {string} mobId 要召唤的生物ID
+ * @param {string} sound 播放的音效
+ * @param {string|string[]} requiredStructures 需要的结构ID或ID数组
+ */
+function summonMobInStructure(interval, entity, mobId, sound, requiredStructures) {
+    entity.setPickUpDelay(interval * 2);
+
+    entity.server.scheduleInTicks(interval, () => {
+        if (!entity || !entity.isAlive()) return;
+
+        let { level } = entity;
+        let pos = entity.position();
+
+        try {
+            if (!isInRequiredStructure(level, pos, requiredStructures)) {
+                playRandomFailSound(level, pos);
+                entity.discard();
+                return;
+            }
+
+            let mob = $TEUtils.spawnEntity(mobId, level, pos);
+
+            if (!mob) return;
+
+            if (sound) {
+                level[$playersound](
+                    null,
+                    pos.x,
+                    pos.y,
+                    pos.z,
+                    sound,
+                    "players",
+                    0.6,
+                    0.8
+                );
+            }
+
+            entity.item.count--;
+
+            if (entity.item.count <= 0) {
+                entity.discard();
+            }
+
+        } catch (error) {
+            console.error(`召唤生物时出错: ${error}`);
+        }
+    });
+}
+
+/**
+ * 检查位置是否在指定结构内
+ * @param {Level} level 世界
+ * @param {Vec3d} position 要检查的位置
+ * @param {string|string[]} requiredStructures 需要的结构ID或ID数组
+ * @returns {boolean} 是否在指定结构内
+ */
+function isInRequiredStructure(level, position, requiredStructures) {
+    let structures = Array.isArray(requiredStructures) ? requiredStructures : [requiredStructures];
+
+    try {
+        let chunkX = Math.floor(position.x / 16);
+        let chunkZ = Math.floor(position.z / 16);
+        let chunkPos = $ChunkPos(chunkX, chunkZ);
+
+        let structureStarts = level.structureManager().startsForStructure(chunkPos, () => true);
+
+        if (structureStarts) {
+            for (let structureStart of structureStarts) {
+                try {
+                    // 获取结构ID
+                    let structure = structureStart.getStructure();
+                    let structureRegistry = Registry.of("worldgen/structure");
+
+                    if (structureRegistry && structure) {
+                        let structureKey = structureRegistry.getKey(structure);
+
+                        if (structureKey) {
+                            let structureId = structureKey.location();
+                            let structureIdStr = structureId.toString();
+
+                            // 检查位置是否在结构边界内
+                            let boundingBox = structureStart.getBoundingBox();
+                            if (boundingBox) {
+                                let isInside = boundingBox.isInside(position.x, position.y, position.z);
+                                let isRequired = structures.includes(structureIdStr);
+
+                                if (isInside && isRequired) {
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+                } catch (e) {
+                }
+            }
+        }
+
+    } catch (error) {
+        console.error(`结构检查出错: ${error}`);
+    }
+
+    return false;
+}
 /**
  * 播放随机失败音效
  * @param {Level} level 世界
@@ -1088,7 +1195,7 @@ function playRandomFailSound(level, pos) {
         failSound,
         "players",
         0.6,
-        0.6
+        0.8
     )
 }
 
@@ -1234,7 +1341,8 @@ function getRandomScrollId() {
 
     const randomLevel = Math.floor(Math.random() * randomSpell.maxLevel) + 1;
 
-    const scrollId = `irons_spellbooks:scroll[irons_spellbooks:spell_container={data:[{id:"${randomSpell.id}",index:0,level:${randomLevel},locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}]`;
+    const scrollId = `irons_spellbooks: scroll[irons_spellbooks: spell_container = { data: [{ id: "${randomSpell.id}", index: 0, level: ${randomLevel}, locked: 1b}], maxSpells: 1, mustEquip: 0b, spellWheel: 0b
+    }]`;
 
     return scrollId;
 }
@@ -1352,4 +1460,81 @@ function RayCasting(start, end, aabb) {
     if (tzMax < tMax) tMax = tzMax;
 
     return tMax >= 0 && tMin <= 1 && tMin <= tMax;
+}
+
+/**
+ * 
+ * @param {integer} interval 执行前的等待时间（单位：Tick）
+ * @param {ItemEntity} entity 被抛出的物品实体
+ * @param {ItemStack} mainHand 主手物品（可选）
+ * @param {ItemStack} helmet 头盔（可选）
+ * @param {ItemStack} chestplate 胸甲（可选）
+ * @param {ItemStack} leggings 护腿（可选）
+ * @param {ItemStack} boots 靴子（可选）
+ * @param {string} sound 播放的音效（可选）
+ */
+function summonDarkDoppelganger(interval, entity, mainHand, helmet, chestplate, leggings, boots, sound) {
+    if (!entity || !entity.isAlive()) return;
+
+    entity.setPickUpDelay(interval * 2);
+
+    entity.server.scheduleInTicks(interval, () => {
+        if (!entity || !entity.isAlive()) return;
+
+        let level = entity.level;
+
+        try {
+            let nearestPlayer = level.getNearestPlayer(entity, 32.0);
+            if (!nearestPlayer) {
+                entity.discard();
+                return;
+            }
+
+            let player = nearestPlayer;
+            let spawnPos = entity.position();
+
+            let boss = null;
+
+            if (mainHand || helmet || chestplate || leggings || boots) {
+                boss = $ShadowOrbItem.summonDoppelgangerWithCustomEquipment(
+                    level,
+                    spawnPos,
+                    player,
+                    mainHand || ItemStack.EMPTY,
+                    helmet || ItemStack.EMPTY,
+                    chestplate || ItemStack.EMPTY,
+                    leggings || ItemStack.EMPTY,
+                    boots || ItemStack.EMPTY
+                );
+            } else {
+                boss = $ShadowOrbItem.summonDoppelgangerAt(level, spawnPos, player);
+            }
+
+            if (boss) {
+                if (sound) {
+                    level[$playersound](
+                        null,
+                        spawnPos.x,
+                        spawnPos.y,
+                        spawnPos.z,
+                        sound,
+                        "hostile",
+                        1.0,
+                        1.0
+                    );
+                }
+
+                entity.item.count--;
+
+                if (entity.item.count <= 0) {
+                    entity.discard();
+                }
+            } else {
+                entity.discard();
+            }
+
+        } catch (error) {
+            entity.discard();
+        }
+    });
 }

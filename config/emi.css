@@ -19,7 +19,7 @@
 	/**
 	 * Where EMI should pull stacks from to populate the index.
 	 */
-	index-source: creative;
+	index-source: creative-plus-registered;
 
 	/**
 	 * Which sidebar should be searched using the search bar.

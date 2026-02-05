@@ -1,0 +1,917 @@
+{
+	autofocus_id: "6CA6DCCDEB5167BD"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6610553945D768F8"
+	group: "17FDF36D1B965C72"
+	id: "6610553945D768F8"
+	images: [
+		{
+			height: 10.0d
+			image: "eternal_starlight:item/soulit_spectator"
+			rotation: 0.0d
+			width: 10.0d
+			x: -0.2721754475659921d
+			y: -4.266834556046902d
+		}
+		{
+			height: 1.0d
+			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: -8.5d
+		}
+		{
+			height: 1.0d
+			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.0d
+			y: -8.5d
+		}
+		{
+			height: 1.0d
+			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 17.0d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			height: 1.0d
+			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.5d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: -0.5d
+		}
+	]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0F430864AB53FB98"
+			tasks: [{
+				disable_toast: true
+				id: "426C3EFB9DFFAB2F"
+				structure: "#eternal_starlight:portal_ruins"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0488F007314D455B"]
+			id: "6CA6DCCDEB5167BD"
+			tasks: [{
+				dimension: "eternal_starlight:starlight"
+				id: "61777AB0D759E7DC"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6CA6DCCDEB5167BD"
+				"6D0D20A34E2B3703"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				id: "eternal_starlight:raw_aethersent"
+			}
+			id: "64E40E59C864874C"
+			tasks: [{
+				count: 3L
+				id: "138D62A2E4622A92"
+				item: { count: 1, id: "eternal_starlight:raw_aethersent" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			id: "6D0D20A34E2B3703"
+			optional: true
+			tasks: [{
+				id: "08B133B0C60F17E9"
+				item: { count: 1, id: "eternal_starlight:aetherstrike_rocket" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			id: "6C33A7DFF72E3C76"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:aethersent_golem_spawn_egg"
+				}
+				id: "6344C03C91E6B173"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:aethersent_golem"
+				type: "observation"
+			}]
+			x: -14.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0F430864AB53FB98"]
+			id: "0488F007314D455B"
+			tasks: [{
+				id: "7D341B8A55735A53"
+				item: { count: 1, id: "eternal_starlight:orb_of_prophecy" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"6CA6DCCDEB5167BD"
+				"756DE36F8CEBB947"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:red_starlight_crystal_cluster"
+			}
+			id: "4C4D49730F599ADA"
+			tasks: [{
+				biome: "eternal_starlight:crystallized_desert"
+				id: "2B01F37304FF3E58"
+				type: "biome"
+			}]
+			x: 9.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependent_lines: true
+			id: "756DE36F8CEBB947"
+			tasks: [{
+				id: "38A99B8EA19DE61C"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"756DE36F8CEBB947"
+				"6CA6DCCDEB5167BD"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:northland_sapling"
+			}
+			id: "45A31DEFA09A002A"
+			tasks: [{
+				biome: "eternal_starlight:starlight_permafrost_forest"
+				id: "1ABF9FD071BE2823"
+				type: "biome"
+			}]
+			x: 10.83333333333335d
+			y: -4.7916666666666785d
+		}
+		{
+			dependencies: [
+				"756DE36F8CEBB947"
+				"6CA6DCCDEB5167BD"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:lunar_sapling"
+			}
+			id: "7F11174C00472167"
+			tasks: [{
+				biome: "eternal_starlight:starlight_forest"
+				id: "3ECE9ECFBEE9669A"
+				type: "biome"
+			}]
+			x: 10.83333333333335d
+			y: -3.2916666666666785d
+		}
+		{
+			dependencies: [
+				"6CA6DCCDEB5167BD"
+				"756DE36F8CEBB947"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:green_fantagrass"
+			}
+			id: "0DDD36DA6EAB60C4"
+			tasks: [{
+				biome: "eternal_starlight:dark_swamp"
+				id: "541C714880C77990"
+				type: "biome"
+			}]
+			x: 12.83333333333335d
+			y: -4.7916666666666785d
+		}
+		{
+			dependencies: [
+				"6CA6DCCDEB5167BD"
+				"756DE36F8CEBB947"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:scarlet_sapling"
+			}
+			id: "6456C4ED798E5EBD"
+			tasks: [{
+				biome: "eternal_starlight:scarlet_forest"
+				id: "20A5AD8DA1D10512"
+				type: "biome"
+			}]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6CA6DCCDEB5167BD"
+				"756DE36F8CEBB947"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:torreya_sapling"
+			}
+			id: "0401FD00A60774F8"
+			tasks: [{
+				biome: "eternal_starlight:torreya_forest"
+				id: "4400330B1B108994"
+				type: "biome"
+			}]
+			x: 12.83333333333335d
+			y: -3.2916666666666785d
+		}
+		{
+			dependencies: [
+				"756DE36F8CEBB947"
+				"6CA6DCCDEB5167BD"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:tentacles_coral_fan"
+			}
+			id: "6B03AFED832B87A7"
+			tasks: [{
+				biome: "eternal_starlight:starlit_sea"
+				id: "0866900249099E6B"
+				type: "biome"
+			}]
+			x: 14.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"756DE36F8CEBB947"
+				"6CA6DCCDEB5167BD"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:red_velvetumoss_flower"
+			}
+			id: "530E224CB690AC4D"
+			ignore_reward_blocking: true
+			tasks: [{
+				biome: "eternal_starlight:the_abyss"
+				id: "502C40F72ED589FA"
+				type: "biome"
+			}]
+			x: 15.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"756DE36F8CEBB947"
+				"6CA6DCCDEB5167BD"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:sea_rosa"
+			}
+			id: "07E7C74E2EA9FB8E"
+			tasks: [{
+				biome: "eternal_starlight:spiral_kelp_forest"
+				id: "1C823E6090BC2BE7"
+				type: "biome"
+			}]
+			x: 15.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"756DE36F8CEBB947"
+				"6CA6DCCDEB5167BD"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:jinglestem_sapling"
+			}
+			id: "219B219DA2F8C114"
+			tasks: [{
+				biome: "eternal_starlight:lush_shallow_sea"
+				id: "0F21620FF7BEA369"
+				type: "biome"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6CA6DCCDEB5167BD"
+				"756DE36F8CEBB947"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:glowing_parasol_grass"
+			}
+			id: "6324F101E1CFA4CA"
+			tasks: [{
+				biome: "eternal_starlight:shimmer_river"
+				id: "4A045EE758A35796"
+				type: "biome"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"756DE36F8CEBB947"
+				"6CA6DCCDEB5167BD"
+			]
+			hide_dependency_lines: true
+			id: "0AC4291DE561460A"
+			tasks: [{
+				biome: "eternal_starlight:ether_river"
+				id: "0246DFC155709687"
+				type: "biome"
+			}]
+			x: 14.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1350642D5141B3BF"]
+			id: "5E513FFD985CDDF9"
+			tasks: [{
+				id: "5E5DD27474B1DEB0"
+				structure: "eternal_starlight:golem_forge"
+				type: "structure"
+			}]
+			x: -3.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			id: "1350642D5141B3BF"
+			tasks: [{
+				id: "56260A8E96A4E35A"
+				item: { count: 1, id: "eternal_starlight:seeking_eye" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["1350642D5141B3BF"]
+			id: "3FFA3C2B5E1FC24A"
+			tasks: [{
+				id: "2E255C927BFB10B2"
+				structure: "eternal_starlight:cursed_garden"
+				type: "structure"
+			}]
+			x: 3.5d
+			y: -15.5d
+		}
+		{
+			dependencies: [
+				"3FFA3C2B5E1FC24A"
+				"55566ED56D9E8281"
+			]
+			id: "3B7226A9387FD816"
+			tasks: [{
+				entity: "eternal_starlight:lunar_monstrosity"
+				id: "7EE695D2C366FCFA"
+				type: "kill"
+				value: 1L
+			}]
+			x: 1.5d
+			y: -18.0d
+		}
+		{
+			dependencies: [
+				"5E513FFD985CDDF9"
+				"3FD324391F9D0115"
+			]
+			id: "1DC249D36D54E164"
+			tasks: [{
+				entity: "eternal_starlight:starlight_golem"
+				id: "0FB3E0E22CAB9CBD"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.5d
+			y: -18.0d
+		}
+		{
+			dependencies: ["31B0A26B1374A322"]
+			id: "1CE41ACD131E060B"
+			tasks: [{
+				id: "2487E848F2E44B43"
+				item: { count: 1, id: "eternal_starlight:starfire" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:starfire_bird_spawn_egg"
+			}
+			id: "31B0A26B1374A322"
+			tasks: [{
+				id: "1906DFA309A71A0F"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:starfire_bird"
+				type: "observation"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["28F42F3025DEB18C"]
+			id: "00A163FF140033A4"
+			tasks: [{
+				id: "3ACBA125B109D566"
+				item: { count: 1, id: "eternal_starlight:shivering_gel" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:crystallized_moth_spawn_egg"
+			}
+			id: "28F42F3025DEB18C"
+			tasks: [{
+				id: "4CD3EEE828C30EEA"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:crystallized_moth"
+				type: "observation"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3FFA3C2B5E1FC24A"]
+			id: "55566ED56D9E8281"
+			tasks: [{
+				id: "6A644FA7B4FBAA2B"
+				item: { count: 1, id: "kubejs:summon_lunar_monstrosity" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["5E513FFD985CDDF9"]
+			id: "3FD324391F9D0115"
+			tasks: [{
+				id: "0F99ED21B06D612E"
+				item: { count: 1, id: "kubejs:summon_starlight_golem" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:shadow_snail_spawn_egg"
+			}
+			id: "6ABFDDD6E155A37F"
+			tasks: [{
+				id: "17ECA47BA56B5E26"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:shadow_snail"
+				type: "observation"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6ABFDDD6E155A37F"]
+			id: "714645D7B7F4C7BA"
+			tasks: [{
+				id: "15CFC3BEE3E2D8AA"
+				item: { count: 1, id: "eternal_starlight:shadow_snail_shell" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:rookfish_spawn_egg"
+			}
+			id: "7CEF4D8E514066A7"
+			tasks: [{
+				id: "7E1E0B70A8B3F7DE"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:rookfish"
+				type: "observation"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7CEF4D8E514066A7"]
+			id: "3D71CE179BBC6433"
+			tasks: [{
+				id: "29FF6FD0375A9AC4"
+				item: { count: 1, id: "eternal_starlight:rookfish_air_sac" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["44FF46EF1BE66093"]
+			id: "6D895DFB1144DF16"
+			tasks: [{
+				id: "3E1F111ADD777D77"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(eternal_starlight:yeti_fur)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:yeti_spawn_egg"
+			}
+			id: "44FF46EF1BE66093"
+			tasks: [{
+				id: "506EE35DB815425F"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:yeti"
+				type: "observation"
+			}]
+			x: -6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:aurora_deer_spawn_egg"
+			}
+			id: "0C1EFCAED337180F"
+			tasks: [{
+				id: "1214E8000DCE4CD6"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:aurora_deer"
+				type: "observation"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C1EFCAED337180F"]
+			id: "732853B6E9D536CC"
+			tasks: [{
+				id: "03B533B825524B57"
+				item: { count: 1, id: "eternal_starlight:aurora_deer_antler" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:luminofish_spawn_egg"
+			}
+			id: "67D8839DF18183B2"
+			tasks: [{
+				id: "3D2940FF48074FA2"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:luminofish"
+				type: "observation"
+			}]
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67D8839DF18183B2"]
+			id: "633471475BE20F2E"
+			tasks: [{
+				id: "1F6B5DDB184E2510"
+				item: { count: 1, id: "kubejs:luminofish_ink_sac" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:luminaris_spawn_egg"
+			}
+			id: "008A75CC21BEA1D0"
+			tasks: [{
+				id: "0B7A28C66D9152FD"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:luminaris"
+				type: "observation"
+			}]
+			x: -17.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:twilight_gaze_spawn_egg"
+			}
+			id: "4EF6614B03841586"
+			tasks: [{
+				id: "6180C96CF2DAB83E"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:twilight_gaze"
+				type: "observation"
+			}]
+			x: -14.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:grimstone_golem_spawn_egg"
+			}
+			id: "2E49C6ACDB5A84E2"
+			tasks: [{
+				id: "4E1D22C84C2D50D2"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:grimstone_golem"
+				type: "observation"
+			}]
+			x: -17.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:gleech_spawn_egg"
+			}
+			id: "558E23816B266EF8"
+			tasks: [{
+				id: "027B425B8BE425F2"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:gleech"
+				type: "observation"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["558E23816B266EF8"]
+			id: "0143EFA894C010C8"
+			tasks: [{
+				id: "2576EED09337F00C"
+				item: { count: 1, id: "eternal_starlight:gleech_egg" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:lonestar_skeleton_spawn_egg"
+			}
+			id: "46B09EB249B0D6E0"
+			tasks: [{
+				id: "4BAB05B54EF4A00D"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:lonestar_skeleton"
+				type: "observation"
+			}]
+			x: -14.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:nightfall_spider_spawn_egg"
+			}
+			id: "7B098F5DB49DB51F"
+			tasks: [{
+				id: "4BA5672320F9A09D"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:nightfall_spider"
+				type: "observation"
+			}]
+			x: -10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7B098F5DB49DB51F"]
+			id: "32B202D997E05DBA"
+			tasks: [{
+				id: "28D490E4884AA6CA"
+				item: { count: 1, id: "eternal_starlight:nightfall_spider_eye" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["085ED7F06792B829"]
+			id: "7531C8B1078E657B"
+			tasks: [{
+				id: "0D8660A1FAE914E7"
+				item: { count: 1, id: "eternal_starlight:frozen_tube" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:freeze_spawn_egg"
+			}
+			id: "085ED7F06792B829"
+			tasks: [{
+				id: "7CC10755F92DA022"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:freeze"
+				type: "observation"
+			}]
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:tangled_spawn_egg"
+			}
+			id: "2808547613BD84C8"
+			tasks: [{
+				id: "49EC0603797B78CD"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:tangled"
+				type: "observation"
+			}]
+			x: -16.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:creteor_spawn_egg"
+			}
+			id: "2218345B2D47B183"
+			tasks: [{
+				id: "57AF6099DA42A830"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:creteor"
+				type: "observation"
+			}]
+			x: -10.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2218345B2D47B183"]
+			id: "457D6769C8E5E638"
+			tasks: [{
+				id: "5A090D750247731A"
+				item: { count: 1, id: "eternal_starlight:creteor_hide" }
+				type: "item"
+			}]
+			x: -12.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:thirst_walker_spawn_egg"
+			}
+			id: "6A8313927B15ECEE"
+			tasks: [{
+				id: "5365C59DF8B1087B"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:thirst_walker"
+				type: "observation"
+			}]
+			x: -6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6A8313927B15ECEE"]
+			id: "4E154F6CBE09CA32"
+			tasks: [{
+				id: "602FBB82C1300E0B"
+				item: { count: 1, id: "eternal_starlight:tooth_of_hunger" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:stranghoul_spawn_egg"
+			}
+			id: "1B819E833413B729"
+			tasks: [{
+				id: "674755812C305070"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:stranghoul"
+				type: "observation"
+			}]
+			x: -16.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6CA6DCCDEB5167BD"]
+			hide_dependency_lines: true
+			icon: {
+				id: "eternal_starlight:zombified_ratlin_spawn_egg"
+			}
+			id: "0218EB7431BC6CBD"
+			tasks: [{
+				id: "1F52013968314596"
+				observe_type: 5
+				timer: 0L
+				to_observe: "eternal_starlight:zombified_ratlin"
+				type: "observation"
+			}]
+			x: -14.5d
+			y: -5.5d
+		}
+	]
+}

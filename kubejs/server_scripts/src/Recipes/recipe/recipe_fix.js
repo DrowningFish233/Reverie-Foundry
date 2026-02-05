@@ -7,7 +7,8 @@ function OreUnificationBuilder() {
         removeNuggets: true,
         removeBlocks: true,
         addShapeless: true,
-        addBlockRecipe: true
+        addBlockRecipe: true,
+        addBlockCasting: false
     };
     this.tag = '';
     this.event = null;
@@ -18,9 +19,49 @@ function OreUnificationBuilder() {
     this.skipNuggets = [];  // 跳过粒合成的金属
     this.skipBlocks = [];   // 跳过块合成的金属
     this.skipAll = [];      // 完全跳过处理的金属
+    this.castingRecipes = {};
 }
 
 OreUnificationBuilder.prototype = {
+    /**
+     * 设置是否添加块铸造配方
+     * @param {boolean} add - 是否添加
+     */
+    setAddBlockCasting: function (add) {
+        this.settings.addBlockCasting = add;
+        return this;
+    },
+
+    /**
+        * 为指定金属锭添加块铸造配方（使用流体ID）
+        * @param {string} ingot - 金属锭ID
+        * @param {string} fluidId - 流体ID（如："productivemetalworks:molten_gold"）
+        * @param {number} amount - 流体量（默认为810）
+        */
+    addBlockCastingById: function (ingot, fluidId, amount) {
+        this.castingRecipes[ingot] = {
+            fluidId: fluidId,
+            amount: amount
+        };
+        return this;
+    },
+
+    /**
+     * 为指定金属锭添加块铸造配方（使用流体标签）
+     * @param {string} ingot - 金属锭ID
+     * @param {string} fluidTag - 流体标签（如："c:molten_gold"）
+     * @param {number} amount - 流体量（默认为810）
+     */
+    addBlockCastingByTag: function (ingot, fluidTag, amount) {
+        this.castingRecipes[ingot] = {
+            fluidTag: fluidTag,
+            amount: amount
+        };
+        return this;
+    },
+
+
+
     /**
      * 添加一个金属锭到当前层级
      * @param {string} ingot - 金属锭ID
@@ -240,10 +281,50 @@ OreUnificationBuilder.prototype = {
     },
 
     /**
-     * 内部方法：处理单个金属
-     */
+        * 内部方法：添加块铸造配方
+        */
+    _addBlockCastingRecipe: function (ingot) {
+        if (!this.settings.addBlockCasting ||
+            this._shouldSkip(ingot, 'block') ||
+            !this.castingRecipes[ingot]) {
+            return;
+        }
+
+        const blockId = this._getBlockId(ingot);
+        const recipe = this.castingRecipes[ingot];
+
+        // 构建流体配置
+        const fluidConfig = {
+            amount: recipe.amount
+        };
+
+        // 根据是否有fluidId或fluidTag设置流体
+        if (recipe.fluidId) {
+            fluidConfig.fluid = recipe.fluidId;
+        } else if (recipe.fluidTag) {
+            fluidConfig.tag = recipe.fluidTag;
+        } else {
+            console.log(`没有为 ${ingot} 设置流体ID或标签`);
+            return;
+        }
+
+        // 添加块铸造配方
+        this.event.custom({
+            type: 'productivemetalworks:block_casting',
+            cast: [],
+            consume_cast: false,
+            fluid: fluidConfig,
+            result: {
+                count: 1,
+                id: blockId
+            }
+        });
+    },
+    /**
+    * 内部方法：处理单个金属
+    */
     _processSingleMetal: function (ingot) {
-        // 将金属锭替换为标签（这个永远执行）
+        // 将金属锭替换为标签
         this.event.replaceInput(
             { input: ingot },
             ingot,
@@ -297,9 +378,11 @@ OreUnificationBuilder.prototype = {
                     { I: ingot }
                 );
             }
+
+            // 添加块铸造配方
+            this._addBlockCastingRecipe(ingot);
         }
     },
-
     /**
      * 批量替换同级金属
      */
@@ -334,89 +417,6 @@ OreUnificationBuilder.prototype = {
 };
 
 
-
-ServerEvents.recipes(event => {
-    new OreUnificationBuilder()
-        .setTag('#kubejs:ingots/tier_1')
-        .addIngots(['minecraft:iron_ingot', 'alltheores:lead_ingot'])
-        .setRemoveNuggets(true)
-        .setRemoveBlocks(true)
-        .setAddShapeless(true)
-
-        .register(event);
-
-    new OreUnificationBuilder()
-        .setTag('#kubejs:ingots/tier_0')
-        .addIngots(['minecraft:copper_ingot', 'alltheores:tin_ingot'])
-        .setRemoveNuggets(true)
-        .setRemoveBlocks(true)
-        .setAddShapeless(true)
-        .setNugget('minecraft:copper_ingot', 'create:copper_nugget')
-        /*
-        .setNuggets({
-            'alltheores:tin_ingot': 'alltheores:tin_nugget'
-        })
-        */
-        .register(event);
-
-    new OreUnificationBuilder()
-        .setTag('#kubejs:ingots/tier_2')
-        .addIngots(['kubejs:tungsten_ingot', 'iceandfire:silver_ingot'])
-        .setRemoveNuggets(true)
-        .setRemoveBlocks(true)
-        .setAddShapeless(true)
-        .skipNugget('kubejs:tungsten_ingot')
-        .skipBlock('kubejs:tungsten_ingot')
-        .register(event);
-
-    new OreUnificationBuilder()
-        .setTag('#kubejs:ingots/tier_3')
-        .addIngots(['minecraft:gold_ingot', 'alltheores:platinum_ingot'])
-        .setRemoveNuggets(true)
-        .setRemoveBlocks(true)
-        .setAddShapeless(true)
-        .register(event);
-
-    new OreUnificationBuilder()
-        .setTag('#kubejs:gem/tier_0')
-        .addIngots(['iceandfire:sapphire_gem', 'minecraft:emerald'])
-        .setRemoveNuggets(true)
-        .setRemoveBlocks(true)
-        .setAddShapeless(true)
-        .skipNuggetsList(['iceandfire:sapphire_gem', 'minecraft:emerald'])
-        .setBlock('iceandfire:sapphire_gem', 'iceandfire:sapphire_block')
-        .register(event);
-
-    new OreUnificationBuilder()
-        .setTag('#kubejs:gem/tier_1')
-        .addIngots(['kubejs:ruby', 'minecraft:diamond'])
-        .setRemoveNuggets(true)
-        .setRemoveBlocks(true)
-        .setAddShapeless(true)
-        .skipNuggetsList(['kubejs:ruby', 'minecraft:diamond'])
-        .setBlock('kubejs:ruby', 'alltheores:ruby_block')
-        .register(event);
-
-    new OreUnificationBuilder()
-        .setTag('#kubejs:gem/tier_2')
-        .addIngots(['minecraft:amethyst_shard', 'kubejs:topaz'])
-        .setRemoveNuggets(true)
-        .setRemoveBlocks(true)
-        .setAddShapeless(true)
-        .skipBlock('minecraft:amethyst_shard')
-        .skipNuggetsList(['kubejs:topaz', 'minecraft:amethyst_shard'])
-        .setBlock('kubejs:topaz', 'silentgems:topaz_block')
-        .register(event);
-
-    new OreUnificationBuilder()
-        .setTag('#kubejs:gem/tier_3')
-        .addIngots(['minecraft:redstone', 'alltheores:cinnabar'])
-        .setRemoveNuggets(true)
-        .setRemoveBlocks(true)
-        .setAddShapeless(true)
-        .skipNuggetsList(['minecraft:redstone', 'alltheores:cinnabar'])
-        .register(event);
-});
 
 ServerEvents.tags('item', event => {
     event.add('kubejs:ingots/tier_0',
@@ -455,4 +455,109 @@ ServerEvents.tags('item', event => {
         'minecraft:redstone',
         'alltheores:cinnabar'
     )
+});
+
+
+ServerEvents.recipes(event => {
+    new OreUnificationBuilder()
+        .setTag('#kubejs:ingots/tier_1')
+        .addIngots(['minecraft:iron_ingot', 'alltheores:lead_ingot'])
+        .setAddBlockCasting(true)
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .addBlockCastingByTag('minecraft:iron_ingot', 'c:molten_iron', 810)
+        .addBlockCastingByTag('alltheores:lead_ingot', 'c:molten_lead', 810)
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:ingots/tier_0')
+        .addIngots(['minecraft:copper_ingot', 'alltheores:tin_ingot'])
+        .setAddBlockCasting(true)
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .addBlockCastingByTag('minecraft:copper_ingot', 'c:molten_copper', 810)
+        .addBlockCastingByTag('alltheores:tin_ingot', 'c:molten_tin', 810)
+        .setNugget('minecraft:copper_ingot', 'create:copper_nugget')
+        /*
+        .setNuggets({
+            'alltheores:tin_ingot': 'alltheores:tin_nugget'
+        })
+        */
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:ingots/tier_2')
+        .addIngots(['kubejs:tungsten_ingot', 'iceandfire:silver_ingot'])
+        .setAddBlockCasting(true)
+
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .addBlockCastingByTag('iceandfire:silver_ingot', 'c:molten_silver', 810)
+        .skipNugget('kubejs:tungsten_ingot')
+        .skipBlock('kubejs:tungsten_ingot')
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:ingots/tier_3')
+        .addIngots(['minecraft:gold_ingot', 'alltheores:platinum_ingot'])
+        .setAddBlockCasting(true)
+
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .addBlockCastingByTag('minecraft:gold_ingot', 'c:molten_gold', 810)
+        .addBlockCastingByTag('alltheores:platinum_ingot', 'c:molten_platinum', 810)
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:gem/tier_0')
+        .addIngots(['iceandfire:sapphire_gem', 'minecraft:emerald'])
+        .setAddBlockCasting(true)
+
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .skipNuggetsList(['iceandfire:sapphire_gem', 'minecraft:emerald'])
+        .setBlock('iceandfire:sapphire_gem', 'iceandfire:sapphire_block')
+        .addBlockCastingById('minecraft:emerald', 'productivemetalworks:molten_emerald', 810)
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:gem/tier_1')
+        .addIngots(['kubejs:ruby', 'minecraft:diamond'])
+        .setAddBlockCasting(true)
+
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .skipNuggetsList(['kubejs:ruby', 'minecraft:diamond'])
+        .addBlockCastingById('minecraft:diamond', 'productivemetalworks:molten_diamond', 810)
+        .setBlock('kubejs:ruby', 'alltheores:ruby_block')
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:gem/tier_2')
+        .addIngots(['minecraft:amethyst_shard', 'kubejs:topaz'])
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .skipBlock('minecraft:amethyst_shard')
+        .skipNuggetsList(['kubejs:topaz', 'minecraft:amethyst_shard'])
+        .setBlock('kubejs:topaz', 'silentgems:topaz_block')
+        .register(event);
+
+    new OreUnificationBuilder()
+        .setTag('#kubejs:gem/tier_3')
+        .addIngots(['minecraft:redstone', 'alltheores:cinnabar'])
+        .setAddBlockCasting(true)
+
+        .setRemoveNuggets(true)
+        .setRemoveBlocks(true)
+        .setAddShapeless(true)
+        .skipNuggetsList(['minecraft:redstone', 'alltheores:cinnabar'])
+        .addBlockCastingById('minecraft:redstone', 'productivemetalworks:molten_redstone', 900)
+        .register(event);
 });

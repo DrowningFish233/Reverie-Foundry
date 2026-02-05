@@ -24,6 +24,7 @@
     }
   ],
   "tiers": [
+    "tiered:swords/kubejs_sword_0",
     "tiered:swords/kubejs_sword_2",
     "tiered:swords/kubejs_sword_3",
     "tiered:swords/kubejs_sword_16"

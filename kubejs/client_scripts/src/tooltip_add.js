@@ -477,6 +477,8 @@ const commonTooltips = {
     'kubejs:randomweapon': TooltipUtils.simpleText('tooltip.common.randomweapon', 'yellow'),
     'kubejs:summon_gauntlet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_lich': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'kubejs:summon_lunar_monstrosity': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'kubejs:summon_starlight_golem': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_obsidilith': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_void_blossom': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_fire_boss': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),

@@ -267,7 +267,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -3.5d
+			x: -1.0d
 			y: 26.5d
 		}
 		{
@@ -308,7 +308,7 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -1.0d
+			x: -3.5d
 			y: 26.5d
 		}
 		{
@@ -1222,6 +1222,9 @@
 				auto: "no_toast"
 				command: "/rf give randomenchanted"
 				disable_reward_screen_blur: true
+				icon: {
+					id: "minecraft:writable_book"
+				}
 				id: "2FA7EFCA7BF0E8B0"
 				ignore_reward_blocking: true
 				permission_level: 4
@@ -1258,6 +1261,22 @@
 				auto: "no_toast"
 				command: "/rf give randomscrollid"
 				disable_reward_screen_blur: true
+				icon: {
+					components: {
+						"irons_spellbooks:spell_container": {
+							data: [{
+								id: "cataclysm_spellbooks:incineration"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+					id: "irons_spellbooks:scroll"
+				}
 				id: "79F3944BD5EEA0A1"
 				ignore_reward_blocking: true
 				permission_level: 4

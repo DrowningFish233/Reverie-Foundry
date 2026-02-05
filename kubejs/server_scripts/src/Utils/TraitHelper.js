@@ -230,10 +230,7 @@ function getOriginalTraitLevel(player, traitId) {
  */
 function fu_hasTraitMainHand(player, traitId) {
     const mainHandItem = player.getMainHandItem();
-    if (fu_isGear(mainHandItem)) {
-        return fu_hasTrait(mainHandItem, traitId);
-    }
-    return false;
+    return fu_hasTrait(mainHandItem, traitId);
 }
 
 /**
@@ -245,9 +242,9 @@ function fu_hasTraitMainHand(player, traitId) {
 function fu_getTraitLevelMainHand(player, traitId) {
     const mainHandItem = player.getMainHandItem();
     if (fu_isGear(mainHandItem)) {
-        return fu_hasTrait(mainHandItem, traitId);
+        return fu_getTraitLevel(mainHandItem, traitId);
     }
-    return fu_getTraitLevel(mainHandItem, traitId);
+    return fu_hasTrait(mainHandItem, traitId) ? 1 : 0;
 }
 
 /**

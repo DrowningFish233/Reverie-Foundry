@@ -85,6 +85,14 @@ EntityEvents.spawned('minecraft:item', event => {
             summonMob(10, entity, 'cataclysm:the_harbinger', 'kubejs:boss_summon')
             break;
 
+        case 'kubejs:summon_starlight_golem':
+            summonMobInStructure(10, entity, "eternal_starlight:starlight_golem", "kubejs:boss_summon", "eternal_starlight:golem_forge");
+            break;
+
+        case 'kubejs:summon_lunar_monstrosity':
+            summonMobInStructure(10, entity, "eternal_starlight:lunar_monstrosity", "kubejs:boss_summon", "eternal_starlight:cursed_garden");
+            break;
+
         case 'kubejs:summon_ender_guardian':
             summonMobWithDimensions(10, entity, 'cataclysm:ender_guardian', 'kubejs:boss_summon', 'minecraft:the_end')
             break;
@@ -143,6 +151,10 @@ EntityEvents.spawned('minecraft:item', event => {
 
         case 'kubejs:summon_dragon_warrior_pet':
             summonMob(10, entity, 'alshanex_familiars:dragon_warrior_pet', 'alshanex_familiars:angel_cast')
+            break;
+
+        case 'darkdoppelganger:shadow_orb':
+            summonDarkDoppelganger(10, entity, null, null, null, null, null, 'alshanex_familiars:angel_cast')
             break;
     }
 })

@@ -55,6 +55,8 @@ global.new_materials = [
     { id: 'summon_the_harbinger', maxStackSize: 1, texture: "kubejs:item/misc/summon_boss" },
     { id: 'summon_ender_guardian', maxStackSize: 1, texture: "kubejs:item/misc/summon_boss" },
     { id: 'summon_netherite_monstrosity', maxStackSize: 1, texture: "kubejs:item/misc/summon_boss" },
+    { id: 'summon_starlight_golem', maxStackSize: 1, texture: "kubejs:item/misc/summon_boss" },
+    { id: 'summon_lunar_monstrosity', maxStackSize: 1, texture: "kubejs:item/misc/summon_boss" },
     { id: 'randomweapon', maxStackSize: 1 },
     { id: 'summon_frostling_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
     { id: 'summon_mage_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
@@ -71,7 +73,8 @@ global.new_materials = [
     { id: 'summon_dragon_warrior_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
     { id: 'eye_of_ancient_city_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_ancient_city_located" },
     { id: 'eye_of_dragon_cave_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_dragon_cave_located" },
-    { id: 'eye_of_weeping_well_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_weeping_well_located" }
+    { id: 'eye_of_weeping_well_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_weeping_well_located" },
+    { id: 'luminofish_ink_sac', maxStackSize: 32, texture: "kubejs:item/misc/luminofish_ink_sac" }
 
 ];
 

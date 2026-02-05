@@ -1,4 +1,4 @@
-//////
+// priority: 0
 // 矿石限制 - 石头
 const ORES = [
     ["astages/ore/zenalite_stone", "hazennstuff:zenalite_stone_ore", "first_kill_dead_king"],
@@ -12,7 +12,6 @@ const ORES = [
     ["astages/ore/first_kill_dead_king", "gobber2:gobber2_ore", "first_kill_dead_king"],
 
 ];
-
 
 ORES.forEach(([id, ore, stage]) => {
     AStages.addRestrictionForOre(id, stage, ore, Blocks.STONE.defaultBlockState());
@@ -53,3 +52,30 @@ const END_ORES = [
 END_ORES.forEach(([id, ore, stage]) => {
     AStages.addRestrictionForOre(id, stage, ore, Blocks.END_STONE.defaultBlockState());
 });
+
+
+/**
+ * 矿石阶段限制配置
+ */
+ReverieFoundry
+    .setDebug(false)
+    .registerStage(
+        new OreStageSystem("first_kill_dead_king")
+            .requireKill("irons_spellbooks:dead_king", 1)
+            .hideOre('gobber2:gobber2_globette', 'minecraft:cobbled_deepslate')
+            .hideOre('hazennstuff:raw_zenalite', 'minecraft:cobblestone')
+            .hideOre('hazennstuff:runestone_fragments', 'minecraft:cobblestone')
+            .hideOre('hazennstuff:chlorophyte_chunk', 'minecraft:cobblestone')
+            .hideOre('hazennstuff:dreadstone', 'minecraft:cobbled_deepslate')
+            .hideOre('hazennstuff:solar_core', 'minecraft:netherrack')
+    )
+    .registerStage(
+        new OreStageSystem("first_kill_skeletron")
+            .requireKill("terra_entity:skeletron", 1)
+            .hideOre('gobber2:gobber2_globette_nether', 'minecraft:netherrack')
+    )
+    .registerStage(
+        new OreStageSystem("first_kill_fire_boss")
+            .requireKill("irons_spellbooks:fire_boss", 1)
+            .hideOre('gobber2:gobber2_globette_end', 'minecraft:end_stone')
+    );

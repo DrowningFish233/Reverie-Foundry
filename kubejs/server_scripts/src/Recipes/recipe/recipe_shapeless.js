@@ -127,4 +127,12 @@ ServerEvents.recipes(event => {
             'alltheores:fluorite'
         ]
     )
+    event.shapeless(
+        Item.of('irons_spellbooks:common_ink', 2),
+        [
+            'kubejs:luminofish_ink_sac',
+            '2x irons_spellbooks:arcane_essence',
+            'minecraft:glass_bottle'
+        ]
+    )
 })

@@ -1,0 +1,96 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"organic",
+			"basic",
+			"cloth"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "eternal_starlight:light_gray_yeti_fur"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#D3D3D3",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:light_gray_yeti_fur"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:main": {
+			"armor": 6,
+			"armor/helmet": 1.5,
+			"armor/chestplate": 2,
+			"armor/leggings": 1.5,
+			"armor/boots": 1,
+			"armor_durability": 4,
+			"magic_armor": 4,
+			"charging_value": 0.7,
+			"durability": 0,
+			"enchantment_value": 7,
+			"rarity": 10,
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "silentgear:snow_walker"
+				},
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:eternal_starlight"
+				}
+			]
+		},
+		"silentgear:grip": {
+			"repair_efficiency": {
+				"operation": "ADD",
+				"value": 0.25
+			},
+			"harvest_speed": {
+				"operation": "ADD",
+				"value": 0.15
+			},
+			"attack_speed": {
+				"operation": "ADD",
+				"value": 0.35
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "silentgear:flexible"
+				},
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:eternal_starlight"
+				}
+			]
+		},
+		"silentgear:lining": {
+			"knockback_resistance": {
+				"operation": "ADD",
+				"value": 0.25
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "silentgear:flexible"
+				},
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:eternal_starlight"
+				}
+			]
+		}
+	}
+}

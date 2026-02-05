@@ -3,7 +3,7 @@
  */
 function pearl(event) {
     const player = event.entity;
-    if (!player?.player || !fu_hasTraitAnywhere(player, "kubejs:pearl")) return;
+    if (!player.isPlayer() || !fu_hasTraitAnywhere(player, "kubejs:pearl")) return;
 
     const traitLevel = fu_getHighestTraitLevelAnywhere(player, "kubejs:pearl");
     player.removeEffect("kubejs:pearl");

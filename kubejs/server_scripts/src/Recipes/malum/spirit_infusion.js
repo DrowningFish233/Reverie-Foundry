@@ -904,4 +904,26 @@ ServerEvents.recipes(event => {
             .addExtraInput('malum:cthonic_gold_fragment', 1)
             .setOutputCount(2)
     );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('#kubejs:runewood_sapling', 'malum:soulwood_sapling')
+            .addSpirit("umbral", 1)
+            .addExtraInput('iceandfire:ectoplasm', 4)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('eternal_starlight:raw_aethersent', 'kubejs:summon_starlight_golem')
+            .addSpirit("arcane", 4)
+            .addSpirit("earthen", 4)
+            .addExtraInput('eternal_starlight:oxidized_golem_steel_ingot', 3)
+            .addExtraInput('#c:ingots/silver', 4)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('eternal_starlight:raw_aethersent', 'kubejs:summon_lunar_monstrosity')
+            .addSpirit("arcane", 4)
+            .addSpirit("earthen", 4)
+            .addExtraInput('#minecraft:flowers', 3)
+            .addExtraInput('minecraft:soul_sand', 3)
+    );
 });

@@ -1,0 +1,72 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"basic",
+			"organic"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "eternal_starlight:shadow_snail_shell"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#4c5d8c",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:shadow_snail_shell"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:main": {
+			"armor": 10,
+			"armor/helmet": 2.5,
+			"armor/chestplate": 3,
+			"armor/leggings": 2.5,
+			"armor/boots": 2,
+			"armor_durability": 20,
+			"magic_armor": 4,
+			"durability": 0,
+			"enchantment_value": 5,
+			"rarity": 7,
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:shadow_snail_shell"
+				},
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:eternal_starlight"
+				}
+			]
+		},
+		"silentgear:lining": {
+			"knockback_resistance": {
+				"operation": "ADD",
+				"value": 0.55
+			},
+			"armor_toughness": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:shadow_snail_shell"
+				},
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:eternal_starlight"
+				}
+			]
+		}
+	}
+}

@@ -51,6 +51,8 @@ function tenacious_vine_effect(event) {
     let player = event.player
     if (!player) return;
     if (player.hasEffect("kubejs:tenacious_vine") && player.isPlayer()) {
+        let COOLDOWN_KEY = "tenacious_vine_COOLDOWN_KEY"
+        if ($CooldownManager.hasCooldown(player, COOLDOWN_KEY)) return
         let level = player.level
         let target = findTarget(player)
         if (target && !level.isClientSide()) {
@@ -60,6 +62,7 @@ function tenacious_vine_effect(event) {
                     player.position(),
                     30, 30, 0.15, 0.24, 4, 5
                 ).send(level)
+                $CooldownManager.setCooldown(player, COOLDOWN_KEY, 20)
             }
 
             let yRotRad = player.yRot * Math.PI / 180
