@@ -926,4 +926,13 @@ ServerEvents.recipes(event => {
             .addExtraInput('#minecraft:flowers', 3)
             .addExtraInput('minecraft:soul_sand', 3)
     );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:ruinous_soul', 'darkdoppelganger:shadow_orb')
+            .setInputCount(3)
+            .addSpirit("umbral", 12)
+            .addExtraInput('minecraft:dragon_breath', 4)
+            .addExtraInput('minecraft:nether_star', 1)
+            .addExtraInput('hazennstuff:deus_essence', 1)
+    );
 });

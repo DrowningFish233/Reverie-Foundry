@@ -214,6 +214,29 @@ function addPatchouliPrefix(key) {
 }
 
 /**
+ * 检查词缀翻译键是否已存在
+ */
+function isTraitTranslationKeyExists(translations, nameKey) {
+    const patchedNameKey = addPatchouliPrefix(nameKey);
+    const patchedDescKey = addPatchouliPrefix(`${nameKey}.desc`);
+    const patchedApplicableKey = addPatchouliPrefix(`${nameKey}.applicable`);
+    const patchedApplicableTextKey = addPatchouliPrefix(`${nameKey}.applicable_text`);
+
+    return translations[patchedNameKey] !== undefined &&
+        translations[patchedDescKey] !== undefined &&
+        translations[patchedApplicableKey] !== undefined &&
+        translations[patchedApplicableTextKey] !== undefined;
+}
+
+/**
+ * 检查词缀条目文件是否已存在
+ */
+function isTraitEntryFileExists(traitId) {
+    let entryPath = `patchouli_books/rf_book/en_us/entries/kubejs_affix/${traitId}.json`;
+    return FilesJS.exists(entryPath);
+}
+
+/**
  * 生成装备词缀的帕秋莉条目数据
  */
 function createPatchouliTraitEntry(traitId, icon, nameKey) {
@@ -259,21 +282,23 @@ function generatePatchouliTraitEntries() {
     let translations = {};
     try {
         translations = JsonIO.read(langPath) || {};
-        //console.log('正在读取帕秋莉翻译文件');
+        console.log('[Reverie Foundry] 正在读取帕秋莉翻译文件');
     } catch (e) {
-        //console.log('帕秋莉翻译文件不存在，将创建新文件');
+        console.log('[Reverie Foundry] 帕秋莉翻译文件不存在，将创建新文件');
     }
 
     let generatedCount = 0;
     let skippedCount = 0;
     let langUsedCount = 0;
+    let existingCount = 0; // 新增：统计已存在的条目数量
 
     // 检查词缀文件夹是否存在
     if (!FilesJS.exists(traitsBasePath)) {
-        //console.log(`词缀文件夹不存在: ${traitsBasePath}`);
+        console.log(`[Reverie Foundry] 词缀文件夹不存在: ${traitsBasePath}`);
         return {
             generated: 0,
             langUsed: 0,
+            existing: 0,
             skipped: 0,
             error: "词缀文件夹不存在"
         };
@@ -284,20 +309,22 @@ function generatePatchouliTraitEntries() {
     try {
         allFiles = FilesJS.listFiles(traitsBasePath);
     } catch (e) {
-        //console.log(`读取词缀文件夹失败: ${traitsBasePath}`);
+        console.log(`[Reverie Foundry] 读取词缀文件夹失败: ${traitsBasePath}`);
         return {
             generated: 0,
             langUsed: 0,
+            existing: 0,
             skipped: 0,
             error: "读取文件夹失败"
         };
     }
 
     if (allFiles.length === 0) {
-        //console.log(`词缀文件夹为空: ${traitsBasePath}`);
+        console.log(`[Reverie Foundry] 词缀文件夹为空: ${traitsBasePath}`);
         return {
             generated: 0,
             langUsed: 0,
+            existing: 0,
             skipped: 0,
             error: "文件夹为空"
         };
@@ -309,7 +336,7 @@ function generatePatchouliTraitEntries() {
         return fileName.endsWith('.json');
     });
 
-    //console.log(`找到 ${jsonFiles.length} 个装备词缀文件`);
+    console.log(`[Reverie Foundry] 找到 ${jsonFiles.length} 个装备词缀文件`);
 
     // 确保英文目标文件夹存在
     let enTargetFolder = `${patchouliEnPath}/kubejs_affix`;
@@ -341,6 +368,20 @@ function generatePatchouliTraitEntries() {
 
             //console.log(`  原始名称键: ${nameKey}`);
             //console.log(`  原始描述键: ${descKey}`);
+
+            // 检查翻译键是否已存在
+            if (isTraitTranslationKeyExists(translations, nameKey)) {
+                console.log(`[Reverie Foundry] 词缀翻译键已存在，跳过: ${traitId}`);
+                existingCount++;
+                continue;
+            }
+
+            // 检查条目文件是否已存在
+            if (isTraitEntryFileExists(traitId)) {
+                console.log(`[Reverie Foundry] 词缀条目文件已存在，跳过: ${traitId}`);
+                existingCount++;
+                continue;
+            }
 
             // 获取显示名称（优先使用本地化文件）
             let langResult = getTraitDisplayNameFromKubejsLang(traitId);
@@ -398,23 +439,29 @@ function generatePatchouliTraitEntries() {
         }
     }
 
-    // 写入翻译文件
-    try {
-        JsonIO.write(langPath, translations);
-        console.log(`[Reverie Foundry] 帕秋莉翻译文件已更新: ${langPath}`);
-    } catch (error) {
-        console.log(`[Reverie Foundry] 写入帕秋莉翻译文件失败: ${error}`);
+    // 写入翻译文件（只有有新内容时才写入）
+    if (generatedCount > 0) {
+        try {
+            JsonIO.write(langPath, translations);
+            console.log(`[Reverie Foundry] 帕秋莉翻译文件已更新: ${langPath}`);
+        } catch (error) {
+            console.log(`[Reverie Foundry] 写入帕秋莉翻译文件失败: ${error}`);
+        }
+    } else if (existingCount > 0) {
+        console.log(`[Reverie Foundry] 所有词缀翻译键已存在，无需更新翻译文件`);
     }
 
     // 统计信息
-    //console.log('装备词缀生成完成');
-    //console.log(`已生成条目: ${generatedCount} 个`);
-    //console.log(`从本地化文件获取名称: ${langUsedCount} 个`);
-    //console.log(`已跳过文件: ${skippedCount} 个`);
+    console.log('[Reverie Foundry] 装备词缀生成完成');
+    console.log(`[Reverie Foundry] 已生成条目: ${generatedCount} 个`);
+    console.log(`[Reverie Foundry] 从本地化文件获取名称: ${langUsedCount} 个`);
+    console.log(`[Reverie Foundry] 已存在条目: ${existingCount} 个`);
+    console.log(`[Reverie Foundry] 已跳过文件: ${skippedCount} 个`);
 
     return {
         generated: generatedCount,
         langUsed: langUsedCount,
+        existing: existingCount,
         skipped: skippedCount
     };
 }
@@ -437,6 +484,7 @@ ItemEvents.firstLeftClicked('kubejs:material_patchouli_generator', event => {
     let message = Text.of('§a装备词缀帕秋莉手册条目生成完成！\n\n')
         .append(Text.of(`§7已生成: §e${result.generated} §7个词缀条目\n`))
         .append(Text.of(`§7从本地化文件获取名称: §e${result.langUsed} §7个\n`))
+        .append(Text.of(`§7已存在: §e${result.existing} §7个条目\n`))
         .append(Text.of(`§7已跳过: §e${result.skipped} §7个文件\n\n`))
         .append(Text.of('§7点击打开词缀文件夹: '))
         .append(Text.of('§n§b[打开词缀文件夹]§r\n')

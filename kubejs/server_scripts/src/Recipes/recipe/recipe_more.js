@@ -14,6 +14,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'apothic_enchanting:occult_ender_lead' })
     event.remove({ output: 'endrem:exotic_eye' })
     event.remove({ output: 'silentgear:metal_press' })
+    event.remove({ output: 'darkdoppelganger:shadow_orb' })
     event.remove({ output: 'silentgems:garnet_teleporter' })
     event.remove({ input: '#alltheores:ore_hammers' })
     event.remove({ output: 'productivemetalworks:gear_cast' })

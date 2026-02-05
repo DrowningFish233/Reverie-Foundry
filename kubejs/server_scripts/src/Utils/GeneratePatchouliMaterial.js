@@ -56,14 +56,22 @@ function getDisplayNameFromKubejsLang(materialId) {
             let langContent = FilesJS.readFile(langFilePath);
             let langData = JSON.parse(langContent);
 
-            let key1 = `item.kubejs.${materialId}`;
-            if (langData[key1]) {
-                return langData[key1];
+            // 首先尝试读取 item.kubejs.{materialId}
+            let itemKey = `item.kubejs.${materialId}`;
+            if (langData[itemKey]) {
+                return langData[itemKey];
             }
 
-            let key2 = `material.silentgear.${materialId}`;
-            if (langData[key2]) {
-                return langData[key2];
+            // 然后尝试读取 material.silentgear.kubejs:{materialId} (带modid的格式)
+            let silentgearKeyWithModId = `material.silentgear.kubejs:${materialId}`;
+            if (langData[silentgearKeyWithModId]) {
+                return langData[silentgearKeyWithModId];
+            }
+
+            // 最后尝试读取 material.silentgear.{materialId} (不带modid的格式)
+            let silentgearKey = `material.silentgear.${materialId}`;
+            if (langData[silentgearKey]) {
+                return langData[silentgearKey];
             }
         }
     } catch (e) {
@@ -146,6 +154,27 @@ function createPatchouliEntry(materialId, icon, category) {
 }
 
 /**
+ * 检查翻译键是否已存在
+ */
+function isTranslationKeyExists(translations, materialId) {
+    const nameKey = `patchouli.gui.kubejs.${materialId}.name`;
+    const textKey = `patchouli.gui.kubejs.${materialId}.text`;
+    const contentKey = `patchouli.gui.kubejs.${materialId}`;
+
+    return translations[nameKey] !== undefined &&
+        translations[textKey] !== undefined &&
+        translations[contentKey] !== undefined;
+}
+
+/**
+ * 检查条目文件是否已存在
+ */
+function isEntryFileExists(patchouliCategory, materialId) {
+    let entryPath = `patchouli_books/rf_book/en_us/entries/${patchouliCategory}/${materialId}.json`;
+    return FilesJS.exists(entryPath);
+}
+
+/**
  * 自动把材料内容转换为帕秋莉手册待翻译内容
  */
 function generatePatchouliEntries() {
@@ -166,7 +195,8 @@ function generatePatchouliEntries() {
         'arrow_feather': 'kubejs_arrow_feather',
         'organic': 'kubejs_other',
         'other': 'kubejs_other',
-        'auto': 'kubejs_other'
+        'auto': 'kubejs_other',
+        'wool': 'kubejs_lining'
     };
 
     // 读取现有翻译
@@ -181,6 +211,7 @@ function generatePatchouliEntries() {
     let generatedCount = 0;
     let skippedCount = 0;
     let langUsedCount = 0;
+    let existingCount = 0; // 新增：统计已存在的条目数量
 
     // 遍历每个分类文件夹
     for (let [materialCategory, patchouliCategory] of Object.entries(categoryMap)) {
@@ -228,6 +259,20 @@ function generatePatchouliEntries() {
                 let materialId = fileName.replace('.json', '');
 
                 //console.log(`  处理材料: ${materialId}`);
+
+                // 检查翻译键是否已存在
+                if (isTranslationKeyExists(translations, materialId)) {
+                    //console.log(`    翻译键已存在，跳过: ${materialId}`);
+                    existingCount++;
+                    continue;
+                }
+
+                // 检查条目文件是否已存在
+                if (isEntryFileExists(patchouliCategory, materialId)) {
+                    //console.log(`    条目文件已存在，跳过: ${materialId}`);
+                    existingCount++;
+                    continue;
+                }
 
                 // 读取材料文件内容
                 let fileContent = FilesJS.readFile(filePath);
@@ -277,23 +322,29 @@ function generatePatchouliEntries() {
         }
     }
 
-    // 写入翻译文件
-    try {
-        JsonIO.write(langPath, translations);
-        console.log(`[Reverie Foundry]帕秋莉翻译文件已更新: ${langPath}`);
-    } catch (error) {
-        console.log(`[Reverie Foundry]写入帕秋莉翻译文件失败: ${error}`);
+    // 写入翻译文件（只有有新内容时才写入）
+    if (generatedCount > 0) {
+        try {
+            JsonIO.write(langPath, translations);
+            console.log(`[Reverie Foundry]帕秋莉翻译文件已更新: ${langPath}`);
+        } catch (error) {
+            console.log(`[Reverie Foundry]写入帕秋莉翻译文件失败: ${error}`);
+        }
+    } else if (existingCount > 0) {
+        console.log(`[Reverie Foundry]所有翻译键已存在，无需更新翻译文件`);
     }
 
     // 统计信息
     console.log('[Reverie Foundry] 生成完成');
     console.log(`[Reverie Foundry] 已生成条目: ${generatedCount} 个`);
     console.log(`[Reverie Foundry] 从本地化文件获取名称: ${langUsedCount} 个`);
+    console.log(`[Reverie Foundry] 已存在条目: ${existingCount} 个`);
     console.log(`[Reverie Foundry] 已跳过文件: ${skippedCount} 个`);
 
     return {
         generated: generatedCount,
         langUsed: langUsedCount,
+        existing: existingCount,
         skipped: skippedCount
     };
 }
@@ -313,6 +364,7 @@ ItemEvents.firstRightClicked('kubejs:material_patchouli_generator', event => {
     let message = Text.of('§a帕秋莉手册条目生成完成！\n\n')
         .append(Text.of(`§7已生成: §e${result.generated} §7个条目\n`))
         .append(Text.of(`§7从本地化文件获取名称: §e${result.langUsed} §7个\n`))
+        .append(Text.of(`§7已存在: §e${result.existing} §7个条目\n`))
         .append(Text.of(`§7已跳过: §e${result.skipped} §7个文件\n\n`))
         .append(Text.of('§7点击打开材料文件夹: '))
         .append(Text.of('§n§b[打开材料文件夹]§r\n')
@@ -322,10 +374,4 @@ ItemEvents.firstRightClicked('kubejs:material_patchouli_generator', event => {
             .clickOpenFile('patchouli_books/rf_book/en_us/entries/'));
 
     event.player.tell(message);
-
-    // debug
-    //console.log('帕秋莉条目生成位置: patchouli_books/rf_book/en_us/entries/');
-    //console.log('翻译文件位置: kubejs/assets/kubejs_patchouli_books/lang/zh_cn.json');
-    //console.log('本地化文件位置: kubejs/assets/kubejs/lang/zh_cn.json');
-    //console.log('扫描的材料文件夹: kubejs/data/kubejs/silentgear_materials/');
 });
