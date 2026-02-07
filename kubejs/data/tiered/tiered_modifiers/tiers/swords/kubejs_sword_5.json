@@ -30,6 +30,17 @@
       ]
     },
     {
+      "type": "minecraft:player.entity_interaction_range",
+      "modifier": {
+        "id": "tiered:kubejs_sword_5b",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": 0.10
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
       "type": "generic.attack_knockback",
       "modifier": {
         "id": "tiered:kubejs_sword_5c",

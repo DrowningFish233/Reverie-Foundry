@@ -8,7 +8,7 @@
   },
   "attributes": [
     {
-      "type": "generic.armor_toughness",
+      "type": "minecraft:generic.armor",
       "modifier": {
         "id": "tiered:kubejs_armor_3",
         "operation": "ADD_VALUE",

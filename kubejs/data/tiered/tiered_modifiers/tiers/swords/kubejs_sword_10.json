@@ -17,6 +17,17 @@
       "optional_equipment_slots": [
         "MAINHAND"
       ]
+    },
+    {
+      "type": "minecraft:player.entity_interaction_range",
+      "modifier": {
+        "id": "tiered:kubejs_sword_10d",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": -0.18
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
     }
   ]
 }

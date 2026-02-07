@@ -10,9 +10,20 @@
     {
       "type": "minecraft:player.block_interaction_range",
       "modifier": {
-        "id": "tiered:kubejs_sword_1d",
+        "id": "tiered:kubejs_sword_15a",
         "operation": "ADD_MULTIPLIED_BASE",
-        "amount": 0.12
+        "amount": 0.18
+      },
+      "optional_equipment_slots": [
+        "MAINHAND"
+      ]
+    },
+    {
+      "type": "minecraft:player.entity_interaction_range",
+      "modifier": {
+        "id": "tiered:kubejs_sword_15b",
+        "operation": "ADD_MULTIPLIED_BASE",
+        "amount": 0.18
       },
       "optional_equipment_slots": [
         "MAINHAND"
