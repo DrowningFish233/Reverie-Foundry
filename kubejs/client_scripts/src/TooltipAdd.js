@@ -493,7 +493,9 @@ const commonTooltips = {
     'kubejs:summon_ender_guardian': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_netherite_monstrosity': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_frostling_pet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    /*
     'kubejs:summon_dragon_warrior_pet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    */
     'kubejs:summon_mage_pet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_archmage_pet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_summoner_pet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),

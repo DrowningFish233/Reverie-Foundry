@@ -453,14 +453,13 @@ ServerEvents.recipes(event => {
     registerCustomRecipe(
         new SpiritInfusionRecipeJSON('#silentgems:glowroses', 'kubejs:ultranium_gem')
             .addSpirit("umbral", 6)
-            .addExtraInput('kubejs:ashes_of_calamity', 4)
-            .addExtraInput('hazennstuff:deus_essence', 2)
-            .addExtraInput('kubejs:necroplasm', 12)
+            .addExtraInput('kubejs:ashes_of_calamity', 2)
+            .addExtraInput('kubejs:necroplasm', 6)
             .addExtraInput('malum:fused_consciousness', 1)
-            .addExtraInput('malum:mnemonic_fragment', 16)
-            .addExtraInput('malum:null_slate', 6)
-            .addExtraInput('#c:gems', 12)
-            .addExtraInput('#silentgear:starlight_charger_catalysts', 4)
+            .addExtraInput('malum:mnemonic_fragment', 4)
+            .addExtraInput('malum:null_slate', 4)
+            .addExtraInput('#c:gems', 6)
+            .addExtraInput('#silentgear:starlight_charger_catalysts', 2)
     );
 
     registerCustomRecipe(
@@ -889,6 +888,7 @@ ServerEvents.recipes(event => {
             .addExtraInput('irons_spellbooks:arcane_essence', 8)
     );
 
+    /*
     //召唤仪式-魔宠
     registerCustomRecipe(
         new SpiritInfusionRecipeJSON('alshanex_familiars:dragon_warrior_shard', 'kubejs:summon_dragon_warrior_pet')
@@ -897,7 +897,7 @@ ServerEvents.recipes(event => {
             .addExtraInput('irons_spellbooks:ender_rune', 1)
             .addExtraInput('irons_spellbooks:arcane_essence', 8)
     );
-
+    */
     registerCustomRecipe(
         new SpiritInfusionRecipeJSON('#kubejs:ingots/fw_ingots', 'malum:cthonic_gold_fragment')
             .addSpirit("earthen", 1)

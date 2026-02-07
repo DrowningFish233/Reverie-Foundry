@@ -1332,7 +1332,49 @@ function getRandomScrollId() {
             { "id": "kubejs:eternal_life_spell", "maxLevel": 3 },
             { "id": "kubejs:demon_conch", "maxLevel": 8 },
             { "id": "kubejs:phantom_pain", "maxLevel": 5 },
-            { "id": "kubejs:plunder_spell", "maxLevel": 4 }
+            { "id": "kubejs:plunder_spell", "maxLevel": 4 },
+            { "id": "irons_spellbooks:telekinesis", "maxLevel": 5 },
+            { "id": "gametechbcs_spellbooks:blackout", "maxLevel": 3 },
+            { "id": "irons_spellbooks:planar_sight", "maxLevel": 3 },
+            { "id": "irons_spellbooks:eldritch_blast", "maxLevel": 5 },
+            { "id": "irons_spellbooks:abyssal_shroud", "maxLevel": 3 },
+            { "id": "irons_spellbooks:sonic_boom", "maxLevel": 3 },
+            { "id": "irons_spellbooks:sculk_tentacles", "maxLevel": 4 },
+            { "id": "gametechbcs_spellbooks:psychic_bolt", "maxLevel": 3 },
+            { "id": "irons_spellbooks:pocket_dimension", "maxLevel": 1 },
+            { "id": "gametechbcs_spellbooks:reversal", "maxLevel": 3 },
+            { "id": "gametechbcs_spellbooks:spectral_blink", "maxLevel": 3 },
+            { "id": "cataclysm_spellbooks:depth_charge", "maxLevel": 3 },
+            { "id": "cataclysm_spellbooks:void_beam", "maxLevel": 3 },
+            { "id": "cataclysm_spellbooks:abyssal_predator", "maxLevel": 3 },
+            { "id": "cataclysm_spellbooks:tidal_grab", "maxLevel": 5 },
+            { "id": "cataclysm_spellbooks:dimensional_rift", "maxLevel": 6 },
+            { "id": "cataclysm_spellbooks:abyssal_slash", "maxLevel": 8 },
+            { "id": "cataclysm_spellbooks:abyssal_blast", "maxLevel": 3 },
+            { "id": "cataclysm_spellbooks:summon_koboleton", "maxLevel": 5 },
+            { "id": "cataclysm_spellbooks:conjure_koboldiator", "maxLevel": 1 },
+            { "id": "cataclysm_spellbooks:conjure_thralls", "maxLevel": 10 },
+            { "id": "cataclysm_spellbooks:malevolent_battlefield", "maxLevel": 10 },
+            { "id": "cataclysm_spellbooks:cursed_rush", "maxLevel": 3 },
+            { "id": "cataclysm_spellbooks:void_rune", "maxLevel": 10 },
+            { "id": "cataclysm_spellbooks:gravity_storm", "maxLevel": 3 },
+            { "id": "cataclysm_spellbooks:gravitation_pull", "maxLevel": 5 },
+            { "id": "cataclysm_spellbooks:void_bulwark", "maxLevel": 5 },
+            { "id": "cataclysm_spellbooks:conjure_amethyst_crab", "maxLevel": 1 },
+            { "id": "cataclysm_spellbooks:desert_winds", "maxLevel": 10 },
+            { "id": "cataclysm_spellbooks:amethyst_puncture", "maxLevel": 5 },
+            { "id": "cataclysm_spellbooks:sandstorm", "maxLevel": 3 },
+            { "id": "cataclysm_spellbooks:monolith_crash", "maxLevel": 8 },
+            { "id": "cataclysm_spellbooks:infernal_strike", "maxLevel": 8 },
+            { "id": "cataclysm_spellbooks:tectonic_tremble", "maxLevel": 1 },
+            { "id": "cataclysm_spellbooks:ashen_breath", "maxLevel": 5 },
+            { "id": "cataclysm_spellbooks:conjure_ignited_reinforcement", "maxLevel": 3 },
+            { "id": "cataclysm_spellbooks:abyss_fireball", "maxLevel": 8 },
+            { "id": "cataclysm_spellbooks:bone_storm", "maxLevel": 5 },
+            { "id": "cataclysm_spellbooks:piercing_bone", "maxLevel": 8 },
+            { "id": "cataclysm_spellbooks:hellish_blade", "maxLevel": 5 },
+            { "id": "cataclysm_spellbooks:incineration", "maxLevel": 5 },
+
         ]
     };
 
@@ -1341,8 +1383,7 @@ function getRandomScrollId() {
 
     const randomLevel = Math.floor(Math.random() * randomSpell.maxLevel) + 1;
 
-    const scrollId = `irons_spellbooks: scroll[irons_spellbooks: spell_container = { data: [{ id: "${randomSpell.id}", index: 0, level: ${randomLevel}, locked: 1b}], maxSpells: 1, mustEquip: 0b, spellWheel: 0b
-    }]`;
+    const scrollId = `irons_spellbooks:scroll[irons_spellbooks:spell_container={data:[{id:"${randomSpell.id}",index:0,level:${randomLevel},locked:1b}],maxSpells:1,mustEquip:0b,spellWheel:0b}]`;
 
     return scrollId;
 }

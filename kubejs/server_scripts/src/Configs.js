@@ -7,29 +7,18 @@
 const MaterialConfigs = {
     enabled: true, // 设为false可禁用生成
     auto_ingot: {
-        id: "kubejs:hallowed_ingot",
+        id: "kubejs:shivering_gel",
         config: (mat) => {
-            mat.setCategories(["medium", "metal"])
-                .setIngredientItem("hazennstuff:hallowed_ingot")
-                .setDisplayColor("#f5c730")
-                .setName("material.silentgear.kubejs:hallowed_ingot")
-                .addMain((/** @type {PartBuilder} */part) => {
-                    part.armor(28.0)
-                        .armorHelmet(5.0)
-                        .armorChestplate(10.0)
-                        .armorLeggings(8.0)
-                        .armorBoots(5.0)
-                        .armorToughness(8)
-                        .armorDurability(75.0)
-                        .attackDamage(8)
-                        .attackSpeed(1.1)
-                        .magicArmor(10)
-                        .spellResist(0.1)
-                        .durability(0.0)
-                        .enchantmentValue(20.0)
-                        .healingReceived(0.05)
-                        .rarity(110.0)
-                        .addTrait("kubejs:hallowed_ingot", 1)
+            mat.setCategories(["organic", "other"])
+                .setIngredientItem("eternal_starlight:shivering_gel")
+                .setDisplayColor("#2e2470")
+                .setName("material.silentgear.kubejs:shivering_gel")
+                .addCoating((/** @type {PartBuilder} */part) => {
+                    part.durabilityWithOperation("MULTIPLY_BASE", 0.2)
+                        .magicArmorWithOperation("MULTIPLY_BASE", -0.05)
+                        .spellResistWithOperation("MULTIPLY_BASE", -0.05)
+                        .rarityWithOperation("ADD", 12)
+                        .addTrait("kubejs:shivering_gel", 1)
                 })
         }
     }
@@ -47,10 +36,14 @@ const TraitConfigs = {
     enabled: true, // 设为false可禁用生成
 
     auto_trait: {
-        id: "kubejs:hallowed_ingot",
+        id: "kubejs:shivering_gel",
         config: (trait) => {
             trait.setMaxLevel(1)
                 .addConditions([])
+                .addCancelEffects([
+                    "kubejs:tremor"
+                ])
+
         }
     }
 }

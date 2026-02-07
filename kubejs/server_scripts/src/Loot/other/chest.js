@@ -59,7 +59,9 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("alshanex_familiars:frostling_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:illusionist_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:lightning_mage_shard").withWeight(60).setCount([0, 1]));
-            pool.addEntry(LootEntry.of("alshanex_familiars:dragon_warrior_shard").withWeight(60).setCount([0, 1]));
+            /*
+            pool.addEntry(LootEntry.of("alshanex_familiars:dragon_warrior_shard").withWeight(5).setCount([0, 1]));
+            */
             pool.addEntry(LootEntry.of("alshanex_familiars:scorcher_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:archmage_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:summoner_shard").withWeight(60).setCount([0, 1]));
@@ -112,7 +114,9 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("alshanex_familiars:frostling_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:illusionist_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:lightning_mage_shard").withWeight(5).setCount([0, 1]));
+            /*
             pool.addEntry(LootEntry.of("alshanex_familiars:dragon_warrior_shard").withWeight(5).setCount([0, 1]));
+            */
             pool.addEntry(LootEntry.of("alshanex_familiars:scorcher_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:archmage_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:summoner_shard").withWeight(5).setCount([0, 1]));
@@ -177,7 +181,9 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("alshanex_familiars:frostling_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:illusionist_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:lightning_mage_shard").withWeight(60).setCount([0, 1]));
-            pool.addEntry(LootEntry.of("alshanex_familiars:dragon_warrior_shard").withWeight(60).setCount([0, 1]));
+            /*
+            pool.addEntry(LootEntry.of("alshanex_familiars:dragon_warrior_shard").withWeight(5).setCount([0, 1]));
+            */
             pool.addEntry(LootEntry.of("alshanex_familiars:scorcher_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:archmage_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:summoner_shard").withWeight(60).setCount([0, 1]));
@@ -246,7 +252,9 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("alshanex_familiars:frostling_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:illusionist_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:lightning_mage_shard").withWeight(5).setCount([0, 1]));
+            /*
             pool.addEntry(LootEntry.of("alshanex_familiars:dragon_warrior_shard").withWeight(5).setCount([0, 1]));
+            */
             pool.addEntry(LootEntry.of("alshanex_familiars:scorcher_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:archmage_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:summoner_shard").withWeight(5).setCount([0, 1]));
@@ -313,7 +321,9 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("alshanex_familiars:frostling_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:illusionist_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:lightning_mage_shard").withWeight(60).setCount([0, 1]));
-            pool.addEntry(LootEntry.of("alshanex_familiars:dragon_warrior_shard").withWeight(60).setCount([0, 1]));
+            /*
+            pool.addEntry(LootEntry.of("alshanex_familiars:dragon_warrior_shard").withWeight(5).setCount([0, 1]));
+            */
             pool.addEntry(LootEntry.of("alshanex_familiars:scorcher_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:archmage_shard").withWeight(60).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:summoner_shard").withWeight(60).setCount([0, 1]));
@@ -381,7 +391,10 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("alshanex_familiars:frostling_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:illusionist_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:lightning_mage_shard").withWeight(5).setCount([0, 1]));
+
+            /*
             pool.addEntry(LootEntry.of("alshanex_familiars:dragon_warrior_shard").withWeight(5).setCount([0, 1]));
+            */
             pool.addEntry(LootEntry.of("alshanex_familiars:scorcher_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:archmage_shard").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("alshanex_familiars:summoner_shard").withWeight(5).setCount([0, 1]));

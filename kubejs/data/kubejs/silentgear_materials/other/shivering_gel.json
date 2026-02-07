@@ -1,0 +1,51 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"organic",
+			"other"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "eternal_starlight:shivering_gel"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#2e2470",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:shivering_gel"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:coating": {
+			"durability": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.2
+			},
+			"magic_armor": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.05
+			},
+			"spell_resist": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.05
+			},
+			"rarity": {
+				"operation": "ADD",
+				"value": 12
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:shivering_gel"
+				}
+			]
+		}
+	}
+}

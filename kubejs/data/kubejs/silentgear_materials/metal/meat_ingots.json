@@ -62,8 +62,8 @@
         },
         {
           "conditions": [],
-          "level": 3,
-          "trait": "silentgear:venom"
+          "level": 1,
+          "trait": "kubejs:meat_ingots"
         },
         {
           "conditions": [],

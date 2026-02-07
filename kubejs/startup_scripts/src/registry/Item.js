@@ -70,7 +70,9 @@ global.new_materials = [
     { id: 'summon_cleric_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
     { id: 'summon_plague_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
     { id: 'summon_bard_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
+    /*
     { id: 'summon_dragon_warrior_pet', maxStackSize: 1, texture: "kubejs:item/misc/summon_pet" },
+     */
     { id: 'eye_of_ancient_city_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_ancient_city_located" },
     { id: 'eye_of_dragon_cave_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_dragon_cave_located" },
     { id: 'eye_of_weeping_well_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_weeping_well_located" },

@@ -151,17 +151,7 @@ function fu_getTraits(gear) {
     return $TraitHelper.getTraits(gear);
 }
 
-/**
- * 更新特质效果
- *
- * @param world 世界
- * @param player 玩家（可为空）
- * @param gear 装备物品
- * @param isEquipped 是否已装备
- */
-function fu_tickTraits(world, player, gear, isEquipped) {
-    $TraitHelper.tickTraits(world, player, gear, isEquipped);
-}
+
 
 /**
  * 通用特质检测函数 - 检查玩家是否在任意位置持有指定特质

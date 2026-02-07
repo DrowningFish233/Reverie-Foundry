@@ -79,6 +79,7 @@ function allthe_event(event) {
     affix_event(event); //词缀效果
     death_time(event);  //濒死处理
     spearMomentumDamage(event); // 矛类增伤
+    EntityFixMain(event);
 
 }
 /**
@@ -137,6 +138,7 @@ function allthe_sin_event(event) {
  * 词缀效果
  */
 function affix_event(event) {
+    luminofish_ink_sac(event);
     hallowed_ingot_attack(event);
     shadow_snail_shell(event);
     shadow_snail_shell_attack(event);
@@ -165,7 +167,6 @@ function affix_event(event) {
     witherbone(event);
     wither_howitzer_attack(event);
     fiery_tears_attack(event);
-    malignant_pewter_ingot(event);
     mithril_ingot(event);
     ignitium_ingot(event);
     ancient_metal_ingot(event);

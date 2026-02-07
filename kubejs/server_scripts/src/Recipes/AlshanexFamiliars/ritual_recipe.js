@@ -200,13 +200,14 @@ ServerEvents.recipes(event => {
             .setParticle('minecraft:end_rod')
     );
 
-
-    registerCustomRecipe(
-        new RitualRecipeJSON('alshanex_familiars:pet_soul', 'alshanex_familiars:dragon_warrior_shard')
-            .addSimpleInput('minecraft:ender_pearl', 6, true)
-            .addSimpleInput('malum:void_salts', 4, true)
-            .addSimpleInput('irons_spellbooks:ender_rune', 1, true)
-            .addSimpleInput('irons_spellbooks:arcane_essence', 5, true)
-            .setParticle('minecraft:end_rod')
-    );
+    /*
+        registerCustomRecipe(
+            new RitualRecipeJSON('alshanex_familiars:pet_soul', 'alshanex_familiars:dragon_warrior_shard')
+                .addSimpleInput('minecraft:ender_pearl', 6, true)
+                .addSimpleInput('malum:void_salts', 4, true)
+                .addSimpleInput('irons_spellbooks:ender_rune', 1, true)
+                .addSimpleInput('irons_spellbooks:arcane_essence', 5, true)
+                .setParticle('minecraft:end_rod')
+        );
+    */
 });
