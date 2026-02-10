@@ -1,5 +1,11 @@
 ServerEvents.recipes(event => {
     event.shapeless(
+        Item.of('hazennstuff:deus_essence', 1),
+        [
+            'minecraft:nether_star'
+        ]
+    )
+    event.shapeless(
         Item.of('kubejs:magic_fluorite', 1),
         [
             'malum:refined_brilliance',

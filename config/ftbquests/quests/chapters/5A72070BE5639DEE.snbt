@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "5A72070BE5639DEE"
 	group: "2F1F238400B8A177"
+	icon: {
+		id: "transmog:transmogrification_table"
+	}
 	id: "5A72070BE5639DEE"
 	order_index: 0
 	quest_links: [ ]
@@ -14,8 +17,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(constructionstick:construction_sticks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.0d
+			x: -2.0d
+			y: -3.5d
 		}
 		{
 			id: "092C65BDEC1E30A4"
@@ -33,8 +36,8 @@
 				item: { count: 1, id: "transmog:transmogrification_table" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.5d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -44,8 +47,8 @@
 				item: { count: 1, id: "constructionstick:template_angel" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.0d
+			x: -2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -55,8 +58,8 @@
 				item: { count: 1, id: "constructionstick:template_replacement" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -4.0d
+			x: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -66,7 +69,7 @@
 				item: { count: 1, id: "constructionstick:template_destruction" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
@@ -77,8 +80,8 @@
 				item: { count: 1, id: "constructionstick:template_unbreakable" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -89,7 +92,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -5.0d
+			y: -4.5d
 		}
 		{
 			icon: {
@@ -101,7 +104,7 @@
 				type: "checkmark"
 			}]
 			x: 4.5d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			id: "38092862F38315D2"
@@ -110,8 +113,8 @@
 				item: { count: 1, id: "kubejs:eye_of_ancient_city_located" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.5d
+			x: 2.5d
+			y: -2.5d
 		}
 		{
 			id: "086482C52023DB55"
@@ -120,8 +123,8 @@
 				item: { count: 1, id: "kubejs:eye_of_dragon_cave_located" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -3.0d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			id: "5EEB1A77BA0D052D"
@@ -130,8 +133,8 @@
 				item: { count: 1, id: "kubejs:eye_of_weeping_well_located" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
 			id: "7497D60722110201"
@@ -141,7 +144,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			id: "485ED016AD34F6B8"
@@ -150,8 +153,8 @@
 				item: { count: 1, id: "tiered:toolsmiths_hammer" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.0d
+			x: 3.5d
+			y: -7.5d
 		}
 		{
 			id: "716AB1B88D8812DF"
@@ -160,8 +163,50 @@
 				item: { count: 1, id: "tiered:weaponsmiths_hammer" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -1.5d
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			id: "5AEF01E9FF0A0727"
+			tasks: [{
+				id: "5A09DD4711CF623F"
+				item: { count: 1, id: "apothic_enchanting:flimsy_ender_lead" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5AEF01E9FF0A0727"]
+			id: "65823964A5871AED"
+			tasks: [{
+				id: "6CB5A3A6C1D7CFBF"
+				item: { count: 1, id: "apothic_enchanting:ender_lead" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["65823964A5871AED"]
+			id: "66F8BBB3BC24A7FF"
+			tasks: [{
+				id: "3A8E41FC12594252"
+				item: { count: 1, id: "apothic_enchanting:occult_ender_lead" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			id: "4F5EEA7BC57F0B37"
+			tasks: [{
+				id: "77F96B0B65C67FFF"
+				item: { count: 1, id: "minecraft:spawner" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
 		}
 	]
 }

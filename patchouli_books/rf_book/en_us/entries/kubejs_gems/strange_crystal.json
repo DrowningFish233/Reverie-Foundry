@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.strange_crystal.name",
+	"icon": "malum:strange_crystal",
+	"category": "patchouli:kubejs_gems",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "malum:strange_crystal"
+			},
+			"text": "patchouli.gui.kubejs.strange_crystal.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.strange_crystal"
+		}
+	]
+}

@@ -4,6 +4,9 @@
 	default_quest_shape: ""
 	filename: "6610553945D768F8"
 	group: "17FDF36D1B965C72"
+	icon: {
+		id: "eternal_starlight:raw_aethersent"
+	}
 	id: "6610553945D768F8"
 	images: [
 		{
@@ -411,6 +414,7 @@
 				"3FFA3C2B5E1FC24A"
 				"55566ED56D9E8281"
 			]
+			dependency_requirement: "one_completed"
 			id: "3B7226A9387FD816"
 			tasks: [{
 				entity: "eternal_starlight:lunar_monstrosity"
@@ -426,6 +430,7 @@
 				"5E513FFD985CDDF9"
 				"3FD324391F9D0115"
 			]
+			dependency_requirement: "one_completed"
 			id: "1DC249D36D54E164"
 			tasks: [{
 				entity: "eternal_starlight:starlight_golem"

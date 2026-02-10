@@ -1,0 +1,30 @@
+{
+	"conditions": [],
+	"description": {
+		"translate": "trait.kubejs.blood_spell_power.desc"
+	},
+	"effects": [
+		{
+			"type": "silentgear:attribute",
+			"attribute_modifiers": {
+				"all/any": [
+					{
+						"attribute": "irons_spellbooks:blood_spell_power",
+						"operation": "add_multiplied_base",
+						"values": [
+							0.05,
+							0.1,
+							0.15,
+							0.2,
+							0.25
+						]
+					}
+				]
+			}
+		}
+	],
+	"max_level": 5,
+	"name": {
+		"translate": "trait.kubejs.blood_spell_power"
+	}
+}

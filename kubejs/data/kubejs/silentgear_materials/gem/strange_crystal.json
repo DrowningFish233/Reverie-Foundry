@@ -1,0 +1,43 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"soul",
+			"medium"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "malum:strange_crystal"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#f8ace2",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:strange_crystal"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:setting": {
+			"armor": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"rarity": {
+				"operation": "ADD",
+				"value": 30
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 3,
+					"trait": "kubejs:strange_crystal"
+				}
+			]
+		}
+	}
+}

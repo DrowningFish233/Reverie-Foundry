@@ -1152,7 +1152,7 @@ event.create('purple_haze_attack')
         .harmful()
         .modifyAttribute('irons_spellbooks:lightning_magic_resist',
             '267b83cf-6d6e-425b-8374-5db5c2ac5482',
-            0.02,
+            -0.02,
             "add_multiplied_base"
         );
 

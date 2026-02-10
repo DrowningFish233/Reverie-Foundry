@@ -4,6 +4,9 @@
 	default_quest_shape: ""
 	filename: "75D59DE79FD7569A"
 	group: ""
+	icon: {
+		id: "cataclysm:altar_of_amethyst"
+	}
 	id: "75D59DE79FD7569A"
 	images: [
 		{

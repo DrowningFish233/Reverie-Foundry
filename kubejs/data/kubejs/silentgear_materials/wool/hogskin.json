@@ -1,0 +1,108 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"fabric",
+			"medium"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "irons_spellbooks:hogskin"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#efb898",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:hogskin"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:grip": {
+			"attack_speed": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.05
+			},
+			"attack_damage": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
+			"durability": {
+				"operation": "ADD",
+				"value": 500
+			},
+			"draw_speed": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.25
+			},
+			"projectile_speed": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.25
+			},
+			"ranged_damage": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.25
+			},
+			"knockback_resistance": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.3
+			},
+			"rarity": {
+				"operation": "ADD",
+				"value": 15
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:arrow"
+				}
+			]
+		},
+		"silentgear:lining": {
+			"armor": {
+				"operation": "ADD",
+				"value": 1.5
+			},
+			"armor_toughness": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"enchantment_value": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.2
+			},
+			"spell_resist": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.15
+			},
+			"charging_value": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
+			"knockback_resistance": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.05
+			},
+			"mana_regen": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
+			"spell_power": {
+				"operation": "ADD",
+				"value": 0.02
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:arrow"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.luminofish_ink_sac.name",
+	"icon": "kubejs:luminofish_ink_sac",
+	"category": "patchouli:kubejs_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "kubejs:luminofish_ink_sac"
+			},
+			"text": "patchouli.gui.kubejs.luminofish_ink_sac.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.luminofish_ink_sac"
+		}
+	]
+}

@@ -97,7 +97,8 @@ const $CooldownManager = {
             "mana_cloak_COOLDOWN_KEY",
             "spearCharge",
             "tenacious_vine_COOLDOWN_KEY",
-            "hallowed_ingot_COOLDOWN_KEY"
+            "hallowed_ingot_COOLDOWN_KEY",
+            "strange_crystal_COOLDOWN_KEY"
         ];
 
         // 清理冷却数据

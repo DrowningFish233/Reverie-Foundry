@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.silentgear.hasty",
+	"icon": "alshanex_familiars:summoner_trinket",
+	"category": "patchouli:kubejs_champion",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.kubejs.kubejs_champion.hasty.name",
+			"text": "patchouli.gui.kubejs.kubejs_champion.hasty"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.silentgear.hasty.applicable",
+			"text": "patchouli.gui.trait.silentgear.hasty.applicable_text"
+		}
+	]
+}

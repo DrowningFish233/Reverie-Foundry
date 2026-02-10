@@ -312,5 +312,16 @@ StartupEvents.registry('item', event => {
         .tag("curios:accessory")
         .unstackable()
         .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    new $ItemBuilderWrapper(
+        event.create("angler_earring")
+            .texture('kubejs:item/curios/angler_earring')
+            .tag("curios:accessory")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("minecraft:generic.luck", "add_value", 3, "kubejs:angler_earring.luck")
+        )
 });
 

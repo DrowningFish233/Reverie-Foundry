@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.silentgear.enkindling",
+	"icon": "alshanex_familiars:summoner_trinket",
+	"category": "patchouli:kubejs_champion",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.kubejs.kubejs_champion.enkindling.name",
+			"text": "patchouli.gui.kubejs.kubejs_champion.enkindling"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.silentgear.enkindling.applicable",
+			"text": "patchouli.gui.trait.silentgear.enkindling.applicable_text"
+		}
+	]
+}

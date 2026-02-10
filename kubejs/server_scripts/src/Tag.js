@@ -218,6 +218,7 @@ ServerEvents.tags('item', event => {
             'terra_curio:goblin_tech',
             'terra_curio:hive_pack',
             'terra_curio:angler_earring',
+            'kubejs:angler_earring',
             'terra_curio:magic_mirror',
             'terra_curio:rek_3000',
             'terra_curio:base_point',

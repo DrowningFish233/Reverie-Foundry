@@ -231,7 +231,7 @@
 				id: "1440232356993C8D"
 				stat: "minecraft:sprint_one_cm"
 				type: "stat"
-				value: 10000
+				value: 20000
 			}]
 			x: 7.0d
 			y: -7.5d
@@ -272,7 +272,7 @@
 				id: "21FB255C8E2452D8"
 				stat: "minecraft:sprint_one_cm"
 				type: "stat"
-				value: 100000
+				value: 200000
 			}]
 			x: 7.0d
 			y: -10.5d
@@ -297,7 +297,7 @@
 				id: "0D098C621A2ABAAD"
 				stat: "minecraft:sprint_one_cm"
 				type: "stat"
-				value: 1000000
+				value: 2000000
 			}]
 			x: 7.0d
 			y: -13.5d

@@ -7,3 +7,13 @@ ItemEvents.modifyTooltips(event => {
         tooltip.add(Text.translate("tooltip.kubejs.darkdoppelganger.summon_scroll.desc.2"))
     })
 })
+
+ItemEvents.modifyTooltips(event => {
+    event.modify('silentgear:mod_kit', tooltip => {
+        tooltip.clear()
+        tooltip.add(Text.translate("item.silentgear.mod_kit"))
+        tooltip.add(Text.translate("tooltip.kubejs.silentgear.mod_kit.desc"))
+        tooltip.add(Text.translate("tooltip.kubejs.silentgear.mod_kit.desc.2"))
+        tooltip.add(Text.translate("tooltip.kubejs.silentgear.mod_kit.desc.3"))
+    })
+})

@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.hogskin.name",
+	"icon": "irons_spellbooks:hogskin",
+	"category": "patchouli:kubejs_lining",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "irons_spellbooks:hogskin"
+			},
+			"text": "patchouli.gui.kubejs.hogskin.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.hogskin"
+		}
+	]
+}

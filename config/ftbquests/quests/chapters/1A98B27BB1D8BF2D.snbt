@@ -4,6 +4,17 @@
 	default_quest_shape: ""
 	filename: "1A98B27BB1D8BF2D"
 	group: "17FDF36D1B965C72"
+	icon: {
+		components: {
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 8
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "irons_spellbooks:rotten_spell_book"
+	}
 	id: "1A98B27BB1D8BF2D"
 	images: [
 		{
@@ -662,20 +673,6 @@
 			}]
 			x: 16.0d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"7655A85408A81AA1"
-				"4DBB3CA0C3949A66"
-			]
-			id: "5007BB2101ED1D9C"
-			tasks: [{
-				id: "3858630FE3934D09"
-				item: { count: 1, id: "kubejs:summon_dragon_warrior_pet" }
-				type: "item"
-			}]
-			x: 14.0d
-			y: 1.5d
 		}
 		{
 			dependencies: ["11C363982673E669"]

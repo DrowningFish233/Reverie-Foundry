@@ -1,11 +1,11 @@
 {
     "conditions": [],
     "description": {
-        "translate": "trait.silentgear.fiery_tears.desc"
+        "translate": "trait.kubejs.fiery_tears.desc"
     },
     "effects": [],
     "max_level": 1,
     "name": {
-        "translate": "trait.silentgear.fiery_tears"
+        "translate": "trait.kubejs.fiery_tears"
     }
 }

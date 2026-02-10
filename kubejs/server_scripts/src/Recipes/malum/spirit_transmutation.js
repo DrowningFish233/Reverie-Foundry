@@ -48,4 +48,11 @@ ServerEvents.recipes(event => {
             .setOutput("minecraft:white_wool", 1)
     );
 
+
+    registerCustomRecipe(
+        new UnchainedTransmutationRecipeJSON()
+            .setGroup("strange_crystal")
+            .setInput("minecraft:amethyst_cluster")
+            .setOutput("malum:strange_crystal", 1)
+    );
 });

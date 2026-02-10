@@ -186,7 +186,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setMaxLevel(5)
         .setMinRarity('rare')
         .canBeCraftedBy(player => true)
-        .needsLearning(true)
+        .needsLearning(false)
         .setUniqueInfo((spellLevel) => {
             const volleyCount = spellLevel; // 显示连发次数
             return [

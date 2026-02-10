@@ -3,20 +3,30 @@
         "terra_curio:ice_skates": {
             "terra_curio:ice_speed": {}
         },
+        "terra_curio:magma_stone": {
+            "terra_curio:fire_attack": {}
+        },
+        "terra_curio:eye_of_the_golem": {
+            "terra_curio:attributes": {
+                "apothic_attributes:crit_chance": [
+                    {
+                        "id": "terra_curio:eye_of_the_golem",
+                        "amount": 0.1,
+                        "operation": "add_value"
+                    }
+                ]
+            }
+        },
         "terra_curio:angler_earring": {
             "terra_curio:attributes": {
                 "minecraft:generic.luck": [
                     {
                         "id": "terra_curio:angler_earring",
-                        "amount": 4.0,
+                        "amount": 3.0,
                         "operation": "add_value"
                     }
                 ]
-            },
-            "terra_curio:components": []
-        },
-        "terra_curio:magma_stone": {
-            "terra_curio:fire_attack": {}
+            }
         },
         "terra_curio:destroyer_emblem": {
             "terra_curio:attributes": {

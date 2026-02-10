@@ -62,4 +62,7 @@ const $GeasEffectType = Java.loadClass('com.sammy.malum.core.systems.geas.GeasEf
 const $GeasEffect = Java.loadClass('com.sammy.malum.core.systems.geas.GeasEffect');
 const $Holder = Java.loadClass('net.minecraft.core.Holder');
 const $MalumGeasEffectTypes = Java.loadClass('com.sammy.malum.registry.common.magic.MalumGeasEffectTypes');
-
+const $ModKitItem = Java.loadClass('net.silentchaos512.gear.item.ModKitItem')
+const $SoulHarvestHandler = Java.loadClass('com.sammy.malum.core.handlers.SoulHarvestHandler');
+const $EntitySpiritDropData = Java.loadClass('com.sammy.malum.core.systems.spirit.EntitySpiritDropData');
+const $MalumAttachmentTypes = Java.loadClass('com.sammy.malum.registry.common.MalumAttachmentTypes');

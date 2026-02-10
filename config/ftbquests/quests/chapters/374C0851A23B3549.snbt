@@ -4,6 +4,9 @@
 	default_quest_shape: ""
 	filename: "374C0851A23B3549"
 	group: "17FDF36D1B965C72"
+	icon: {
+		id: "silentgear:blueprint_book"
+	}
 	id: "374C0851A23B3549"
 	images: [
 		{
@@ -27,6 +30,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["2DD51904F4629516"]
 			icon: {
 				id: "iceandfire:silver_sword"
 			}
@@ -582,6 +586,17 @@
 			}]
 			x: 7.5d
 			y: 9.5d
+		}
+		{
+			dependencies: ["09E68D57095A5F1D"]
+			id: "46C1B03029F1C41D"
+			tasks: [{
+				id: "3CB96BCEC7C38C17"
+				item: { count: 1, id: "silentgear:mod_kit" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: 7.5d
 		}
 	]
 }

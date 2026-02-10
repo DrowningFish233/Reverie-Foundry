@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.dragonskin.name",
+	"icon": "irons_spellbooks:dragonskin",
+	"category": "patchouli:kubejs_lining",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "irons_spellbooks:dragonskin"
+			},
+			"text": "patchouli.gui.kubejs.dragonskin.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.dragonskin"
+		}
+	]
+}

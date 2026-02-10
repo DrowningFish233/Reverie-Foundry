@@ -1232,8 +1232,11 @@
 				type: "command"
 			}]
 			tasks: [{
-				id: "1A241EBE54370B6C"
-				type: "checkmark"
+				consume_items: true
+				count: 16L
+				id: "3016A5EB93CB9D79"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
 			}]
 			x: 1.0d
 			y: 37.0d
@@ -1284,11 +1287,14 @@
 				type: "command"
 			}]
 			tasks: [{
-				id: "4236042D0BB376A4"
-				type: "checkmark"
+				consume_items: true
+				count: 16L
+				id: "35CEA2AFFA094090"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
 			}]
-			x: 1.0d
-			y: 39.0d
+			x: -8.0d
+			y: 37.0d
 		}
 	]
 }

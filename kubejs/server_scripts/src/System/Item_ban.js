@@ -40,6 +40,7 @@ let bannedItems = [
 
 // 材料替换配置(前:需要替换的材料.后:替换为的材料)
 const materialMap = {
+    'terra_curio:angler_earring': 'kubejs:angler_earring',
     'alltheores:silver_ingot': 'iceandfire:silver_ingot',
     'terra_curio:flying_carpet': 'minecraft:diamond_block',
     'hazennstuff:spider_fang': 'alshanex_familiars:spider_fang',

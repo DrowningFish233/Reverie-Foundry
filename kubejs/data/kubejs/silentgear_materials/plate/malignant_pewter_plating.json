@@ -35,7 +35,17 @@
                 "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
-            "traits": []
+            "geas_limit": {
+                "operation": "ADD",
+                "value": 0.5
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:strikesoul"
+                }
+            ]
         }
     }
 }

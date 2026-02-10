@@ -128,9 +128,7 @@ ServerEvents.recipes(event => {
     registerTerraCurioRecipe(
         new TerraCurioWorkshopRecipeJSON('kubejs:band_of_starpower')
             .addIngredient('terra_curio:band_of_regeneration')
-            .addIngredient('irons_spellbooks:arcane_essence')
-            .addIngredient('irons_spellbooks:arcane_essence')
-            .addIngredient('irons_spellbooks:arcane_essence')
+            .addIngredient('irons_spellbooks:arcane_ingot')
 
     );
     /*

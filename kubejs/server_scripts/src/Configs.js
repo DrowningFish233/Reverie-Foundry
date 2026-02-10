@@ -6,24 +6,21 @@
 /** @type {Object.<string, {id: string, config: (mat: GenerateSilentGearMaterial) => void}>} */
 const MaterialConfigs = {
     enabled: true, // 设为false可禁用生成
-    auto_ingot: {
-        id: "kubejs:shivering_gel",
+    auto_ingot1: {
+        id: "kubejs:strange_crystal",
         config: (mat) => {
-            mat.setCategories(["organic", "other"])
-                .setIngredientItem("eternal_starlight:shivering_gel")
-                .setDisplayColor("#2e2470")
-                .setName("material.silentgear.kubejs:shivering_gel")
-                .addCoating((/** @type {PartBuilder} */part) => {
-                    part.durabilityWithOperation("MULTIPLY_BASE", 0.2)
-                        .magicArmorWithOperation("MULTIPLY_BASE", -0.05)
-                        .spellResistWithOperation("MULTIPLY_BASE", -0.05)
-                        .rarityWithOperation("ADD", 12)
-                        .addTrait("kubejs:shivering_gel", 1)
+            mat.setCategories(["fabric", "endgame"])
+                .setIngredientItem("malum:strange_crystal")
+                .setDisplayColor("#f8ace2")
+                .setName("material.silentgear.kubejs:strange_crystal")
+                .addSetting((/** @type {PartBuilder} */part) => {
+                    part.armorWithOperation("ADD", 1)
+                        .rarityWithOperation("ADD", 30)
+                        .addTrait("kubejs:strange_crystal", 3)
                 })
         }
     }
 };
-
 
 
 /**
@@ -36,14 +33,10 @@ const TraitConfigs = {
     enabled: true, // 设为false可禁用生成
 
     auto_trait: {
-        id: "kubejs:shivering_gel",
+        id: "kubejs:strange_crystal",
         config: (trait) => {
-            trait.setMaxLevel(1)
+            trait.setMaxLevel(5)
                 .addConditions([])
-                .addCancelEffects([
-                    "kubejs:tremor"
-                ])
-
         }
     }
 }

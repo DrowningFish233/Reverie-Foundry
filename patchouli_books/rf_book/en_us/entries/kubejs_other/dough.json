@@ -1,12 +1,12 @@
 {
 	"name": "patchouli.gui.kubejs.dough.name",
-	"icon": "farmersdelight:wheat_dough",
+	"icon": "minecraft:iron_ingot",
 	"category": "patchouli:kubejs_other",
 	"pages": [
 		{
 			"type": "patchouli:spotlight",
 			"item": {
-				"item": "farmersdelight:wheat_dough"
+				"item": "minecraft:iron_ingot"
 			},
 			"text": "patchouli.gui.kubejs.dough.text"
 		},

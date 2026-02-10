@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.silentgear.molten",
+	"icon": "alshanex_familiars:summoner_trinket",
+	"category": "patchouli:kubejs_champion",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.kubejs.kubejs_champion.molten.name",
+			"text": "patchouli.gui.kubejs.kubejs_champion.molten"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.silentgear.molten.applicable",
+			"text": "patchouli.gui.trait.silentgear.molten.applicable_text"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+enable_bloom = true
+# Default: 5
+# Range: 2 ~ 10
+bloom_mip_level = 5
+# Default: 1.0
+# Range: 0.0 ~ 10.0
+bloom_threshold = 1.0
+# Default: 0.7
+# Range: 0.0 ~ 1.0
+bloom_intensity = 0.7
+enable_bloom_with_iris_shader = true
+iris_shader_compatible_mode = true

@@ -23,13 +23,13 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 25.0,
+      "armor": 22.0,
       "armor/boots": 5.0,
-      "armor/chestplate": 10.0,
+      "armor/chestplate": 7.0,
       "armor/helmet": 5.0,
       "armor/leggings": 5.0,
       "armor_durability": 50.0,
-      "armor_toughness": 12.0,
+      "armor_toughness": 10.0,
       "attack_damage": 5.0,
       "attack_speed": 0.1,
       "attack_reach": 0.0,
@@ -39,9 +39,9 @@
       "enchantment_value": 22.0,
       "harvest_speed": 12.0,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "silentgear:incorrect_for_allthemodium_tools",
-        "level_hint": "5",
-        "name": "allthemodium"
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools",
+        "level_hint": "3",
+        "name": "diamond"
       },
       "knockback_resistance": 0.4,
       "magic_armor": 28.0,

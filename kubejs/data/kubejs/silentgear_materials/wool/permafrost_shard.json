@@ -1,0 +1,39 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"gem",
+			"medium"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "irons_spellbooks:permafrost_shard"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#58bacb",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:permafrost_shard"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:setting": {
+			"attack_speed": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.15
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:frozen_bone"
+				}
+			]
+		}
+	}
+}

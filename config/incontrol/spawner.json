@@ -148,7 +148,7 @@
             "terra_entity:demon",
             "terra_entity:fire_imp"
         ],
-        "persecond": 0.4,
+        "persecond": 0.25,
         "attempts": 3,
         "amount": {
             "minimum": 1,

@@ -26,7 +26,7 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "terra_curio:angler_earring",
+                    "name": "kubejs:angler_earring",
                     "conditions": [
                         {
                             "condition": "minecraft:random_chance",

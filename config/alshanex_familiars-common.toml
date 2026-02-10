@@ -1,5 +1,5 @@
 #Whether to log the dirt block on common setup
-logDirtBlock = true
+logDirtBlock = false
 #A magic number
 # Default: 42
 # Range: > 0

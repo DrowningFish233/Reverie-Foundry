@@ -21,7 +21,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["1A58667FA2440598"]
 			icon: {
 				id: "kubejs:atalphaite"
 			}
@@ -53,29 +52,8 @@
 				id: "6C74D4BF477D8F99"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["017488D14BA19FAA"]
-			icon: {
-				id: "waystones:waystone"
-			}
-			id: "235321663034A6FB"
-			rewards: [{
-				id: "4396AB110ECB4C9D"
-				item: {
-					count: 1
-					id: "waystones:waystone"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "4E672C9A0EFF1047"
-				type: "checkmark"
-			}]
-			x: 1.5d
-			y: 0.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -90,8 +68,8 @@
 				id: "46012C86914DC29F"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 0.5d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -122,8 +100,8 @@
 				id: "308969B113784A45"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -4.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -139,7 +117,7 @@
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -154,8 +132,8 @@
 				id: "5E61C66706DB394E"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -1.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -170,33 +148,21 @@
 				id: "2953AA70E267ADF7"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			x: -3.5d
 			y: -1.5d
 		}
 		{
-			can_repeat: true
+			can_repeat: false
+			dependencies: ["54207C49530C50BC"]
+			icon: {
+				components: {
+					"patchouli:book": "patchouli:rf_book"
+				}
+				id: "patchouli:guide_book"
+			}
 			id: "0594FF6909227B41"
 			ignore_reward_blocking: true
 			rewards: [
-				{
-					id: "090E54040286E6F8"
-					item: {
-						count: 1
-						id: "malum:encyclopedia_arcana"
-					}
-					type: "item"
-				}
-				{
-					id: "6BE657EE31C6BB8D"
-					item: {
-						components: {
-							"patchouli:book": "patchouli:rf_book"
-						}
-						count: 1
-						id: "patchouli:guide_book"
-					}
-					type: "item"
-				}
 				{
 					id: "35164544C2D418CF"
 					item: {
@@ -233,41 +199,102 @@
 					}
 					type: "item"
 				}
+				{
+					id: "4B447671547659CD"
+					item: {
+						components: {
+							"patchouli:book": "patchouli:rf_book"
+						}
+						count: 1
+						id: "patchouli:guide_book"
+					}
+					type: "item"
+				}
+				{
+					id: "1144E0123317C23B"
+					item: {
+						count: 1
+						id: "malum:encyclopedia_arcana"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "5A0F513FCD1F0C69"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 4.5d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["54207C49530C50BC"]
+			icon: {
+				id: "iceandfire:pixie_jar_0"
+			}
 			id: "13AFD3688361872A"
 			tasks: [{
 				id: "4CB25FFD3173ADD6"
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: 4.5d
+			y: 2.5d
 		}
 		{
+			dependencies: ["54207C49530C50BC"]
+			icon: {
+				id: "minecraft:emerald"
+			}
 			id: "360AE4AB3B482FAC"
 			tasks: [{
 				id: "2D2AAB7B62B6E1EC"
 				type: "checkmark"
 			}]
-			x: 1.5d
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0594FF6909227B41"
+				"13AFD3688361872A"
+				"360AE4AB3B482FAC"
+			]
+			icon: {
+				id: "kubejs:gold_crown"
+			}
+			id: "70F085FC6F1CAAF2"
+			rewards: [{
+				count: 3
+				id: "7D56F997D118FD34"
+				item: {
+					count: 1
+					id: "minecraft:sweet_berries"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C47273D1E3C7081"
+				type: "checkmark"
+			}]
+			x: -0.5d
 			y: 4.5d
 		}
 		{
-			id: "2BC4F19D1B343BF2"
+			dependencies: ["017488D14BA19FAA"]
+			icon: {
+				id: "minecraft:zombie_head"
+			}
+			id: "54207C49530C50BC"
+			rewards: [{
+				id: "056101AD6A6CD7BA"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
-				id: "48BCB8F83B6E7D33"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(kubejs:foods/emergency_sanity_elixir_a)item_tag(kubejs:foods/emergency_sanity_elixir_b)item_tag(kubejs:foods/emergency_sanity_elixir_y))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
+				id: "008CE044C39CDBA7"
+				type: "checkmark"
 			}]
 			x: -0.5d
-			y: 2.5d
+			y: 0.5d
 		}
 	]
 }

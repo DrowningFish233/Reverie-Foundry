@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.kubejs.demonite_ingot",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.trait.kubejs.demonite_ingot",
+			"text": "patchouli.gui.trait.kubejs.demonite_ingot.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.kubejs.demonite_ingot.applicable",
+			"text": "patchouli.gui.trait.kubejs.demonite_ingot.applicable_text"
+		}
+	]
+}

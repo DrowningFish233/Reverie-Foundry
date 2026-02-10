@@ -4,6 +4,7 @@ LootJS.lootTables(event => {
     let roostTable = event.getLootTable("betteremeralds:world_loot_pot");
     if (roostTable) {
         roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('silentgear:bort').withWeight(30).setCount([1, 2]))
             pool.addEntry(LootEntry.of('minecraft:glow_berries').withWeight(30).setCount([1, 3]));
             pool.addEntry(LootEntry.of('minecraft:bread').withWeight(30).setCount([1, 3]));
             pool.addEntry(LootEntry.of('irons_spellbooks:arcane_essence').withWeight(30).setCount([1, 3]));
@@ -603,12 +604,15 @@ LootJS.modifiers(event => {
 
 const terra_curioChests = [
     "minecraft:chests/desert_pyramid",
+    "minecraft:chests/village/village_fisher",
+    "terra_cuiro:with/chests/village/village_fisher"
 ]
 LootJS.modifiers(event => {
-    allDungeonChests.forEach(table => {
+    terra_curioChests.forEach(table => {
         event
             .addTableModifier(table)
             .replaceLoot(Item.of("terra_curio:flying_carpet"), "minecraft:diamond_block", true)
+            .replaceLoot(Item.of("terra_curio:angler_earring"), "kubejs:angler_earring", true)
 
     });
 })

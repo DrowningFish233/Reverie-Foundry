@@ -1,0 +1,80 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"fabric",
+			"medium"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "irons_spellbooks:magic_cloth"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#7bd4e7",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:magic_cloth"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:grip": {
+			"attack_speed": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.15
+			},
+			"attack_damage": {
+				"operation": "ADD",
+				"value": 2
+			},
+			"durability": {
+				"operation": "ADD",
+				"value": 300
+			},
+			"rarity": {
+				"operation": "ADD",
+				"value": 8
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 3,
+					"trait": "kubejs:arcane_ingot"
+				}
+			]
+		},
+		"silentgear:lining": {
+			"armor_toughness": {
+				"operation": "ADD",
+				"value": 2
+			},
+			"charging_value": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
+			"knockback_resistance": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.05
+			},
+			"mana_regen": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
+			"spell_power": {
+				"operation": "ADD",
+				"value": 0.02
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 3,
+					"trait": "kubejs:arcane_ingot"
+				}
+			]
+		}
+	}
+}

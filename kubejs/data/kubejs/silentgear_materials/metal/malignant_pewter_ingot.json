@@ -48,6 +48,11 @@
                 {
                     "conditions": [],
                     "level": 1,
+                    "trait": "kubejs:strikesoul"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
                     "trait": "kubejs:malignant_pewter_ingot"
                 },
                 {

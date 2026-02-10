@@ -44,6 +44,7 @@
         "level_hint": "3",
         "name": "diamond/钻石"
       },
+      "spell_power": 0.05,
       "magic_armor": 12.0,
       "magic_damage": 2.0,
       "ranged_damage": 0.0,

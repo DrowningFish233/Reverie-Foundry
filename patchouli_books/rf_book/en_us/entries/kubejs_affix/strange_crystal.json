@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.kubejs.strange_crystal",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.trait.kubejs.strange_crystal",
+			"text": "patchouli.gui.trait.kubejs.strange_crystal.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.kubejs.strange_crystal.applicable",
+			"text": "patchouli.gui.trait.kubejs.strange_crystal.applicable_text"
+		}
+	]
+}

@@ -241,6 +241,9 @@ const DEMOTION_MESSAGE = {
     prefix: "message.sephirah.demotion.prefix",
     message: "message.sephirah.demotion.message"
 };
+
+// 缓存可移除类型
+let REMOVABLE_TYPES_CACHE = null
 /*
 // 法术学派映射表
 // 我为什么要写他？？

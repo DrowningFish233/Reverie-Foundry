@@ -50,10 +50,10 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -6.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["27B6C00949F92CCF"]
+			dependencies: ["5CF40BE797380E84"]
 			id: "6FDF4D8E43BF594B"
 			rewards: [{
 				id: "620BA25E41530844"
@@ -66,14 +66,13 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(malum:spirits)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.5d
+			x: -1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
-				"313E8F6035C2E842"
-				"36713AC6F99D301E"
-				"27B6C00949F92CCF"
+				"6FDF4D8E43BF594B"
+				"6AC481C1ADA516D4"
 			]
 			dependency_requirement: "one_started"
 			icon: {
@@ -110,10 +109,10 @@
 				}
 			]
 			x: -0.5d
-			y: -8.0d
+			y: -7.0d
 		}
 		{
-			dependencies: ["54DAB6324FA151F2"]
+			dependencies: ["03D7343C57EF0A14"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "37AB4AF2D44BDEB1"
@@ -130,10 +129,10 @@
 				type: "structure"
 			}]
 			x: -0.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["27B6C00949F92CCF"]
+			dependencies: ["37AB4AF2D44BDEB1"]
 			hide_dependency_lines: true
 			id: "54DAB6324FA151F2"
 			invisible: true
@@ -143,7 +142,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -195,8 +194,8 @@
 				item: { count: 1, id: "malum:raw_brilliance" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.5d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["27B6C00949F92CCF"]
@@ -215,8 +214,8 @@
 				item: { count: 1, id: "malum:natural_quartz" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["27B6C00949F92CCF"]
@@ -235,8 +234,8 @@
 				item: { count: 1, id: "malum:cthonic_gold" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.5d
+			x: -4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["27B6C00949F92CCF"]
@@ -255,8 +254,8 @@
 				item: { count: 1, id: "malum:blazing_quartz" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: -4.5d
+			x: 3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["27B6C00949F92CCF"]
@@ -276,7 +275,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5CF40BE797380E84"]
@@ -302,11 +301,11 @@
 				id: "5DBF144A9A88D545"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: -9.5d
+			x: 0.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["2B4635BB16624A15"]
+			dependencies: ["02754C209AD4C9F5"]
 			id: "66B362ABCF6C2B8D"
 			rewards: [{
 				count: 16
@@ -323,22 +322,22 @@
 				item: { count: 1, id: "malum:tainted_rock" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -9.0d
+			x: 2.0d
+			y: -8.5d
 		}
 		{
-			dependencies: ["2B4635BB16624A15"]
+			dependencies: ["02754C209AD4C9F5"]
 			id: "789A0AD70CA77553"
 			tasks: [{
 				id: "0CD42219AEAF9213"
 				item: { count: 1, id: "malum:hallowed_gold_ingot" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: -9.0d
+			x: -3.0d
+			y: -8.5d
 		}
 		{
-			dependencies: ["2B4635BB16624A15"]
+			dependencies: ["02754C209AD4C9F5"]
 			id: "5C10F3B6A94BA227"
 			rewards: [{
 				id: "16043D22AA3334EC"
@@ -350,11 +349,11 @@
 				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
 				type: "item"
 			}]
-			x: -9.5d
-			y: -7.0d
+			x: -2.5d
+			y: -9.5d
 		}
 		{
-			dependencies: ["2B4635BB16624A15"]
+			dependencies: ["02754C209AD4C9F5"]
 			id: "0B0C47F37FDE6435"
 			rewards: [{
 				id: "6215DE73310214D2"
@@ -366,8 +365,8 @@
 				item: { count: 1, id: "malum:soulwoven_silk" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -7.0d
+			x: 1.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["2B4635BB16624A15"]
@@ -377,34 +376,22 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(malum:runewood_obelisk)item(malum:brilliant_obelisk))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: -10.5d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["2B4635BB16624A15"]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			id: "56B761C2894F3C2E"
 			tasks: [{
 				id: "5CCF3F4696DC4FA4"
 				item: { count: 1, id: "malum:spirit_jar" }
 				type: "item"
 			}]
-			x: -9.0d
-			y: -10.5d
+			x: 1.5d
+			y: -6.5d
 		}
 		{
-			dependencies: ["2B4635BB16624A15"]
-			id: "51DA4C51263ADA18"
-			tasks: [{
-				id: "5CB51F1549C8C8B6"
-				item: { count: 1, id: "malum:ether" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["2B4635BB16624A15"]
 			hide_dependency_lines: true
 			id: "3A5D807E30DF3E8C"
 			tasks: [{
@@ -412,11 +399,10 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(malum:wavecharger)item(malum:wavebanker)item(malum:wavemaker)item(malum:wavebreaker))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -10.5d
+			x: -1.5d
+			y: -18.5d
 		}
 		{
-			dependencies: ["6FDF4D8E43BF594B"]
 			hide_dependency_lines: true
 			id: "731473A765D3B6B6"
 			tasks: [{
@@ -424,25 +410,35 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(malum:gust_igniter)item(malum:wind_tunnel))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -12.0d
+			x: -3.0d
+			y: -18.5d
 		}
 		{
-			dependencies: ["27B6C00949F92CCF"]
+			dependencies: ["7CF77F3C6D4073BD"]
 			hide_dependent_lines: true
+			icon: {
+				id: "malum:soulbinding_brazier"
+			}
 			id: "43DDDB9D9BA35A28"
 			rewards: [{
 				id: "5DFB2CADB91C7E05"
 				type: "xp_levels"
 				xp_levels: 10
 			}]
-			tasks: [{
-				id: "379C611431FFA287"
-				item: { count: 1, id: "malum:soulbinding_brazier" }
-				type: "item"
-			}]
-			x: -0.5d
-			y: -13.0d
+			tasks: [
+				{
+					id: "379C611431FFA287"
+					item: { count: 1, id: "malum:soulbinding_brazier" }
+					type: "item"
+				}
+				{
+					id: "5EDB84D95462A617"
+					item: { count: 1, id: "malum:ether" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -15.5d
 		}
 		{
 			dependencies: [
@@ -476,11 +472,11 @@
 				item: { count: 1, id: "malum:paracausal_flame" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -14.5d
+			x: 8.0d
+			y: -17.0d
 		}
 		{
-			dependencies: ["6FDF4D8E43BF594B"]
+			dependencies: ["7CF77F3C6D4073BD"]
 			hide_dependent_lines: true
 			id: "339C3EB0CB099097"
 			tasks: [{
@@ -488,22 +484,22 @@
 				item: { count: 1, id: "malum:runic_workbench" }
 				type: "item"
 			}]
-			x: -16.0d
-			y: -12.0d
+			x: -9.0d
+			y: -15.5d
 		}
 		{
-			dependencies: ["6FDF4D8E43BF594B"]
+			dependencies: ["7CF77F3C6D4073BD"]
 			id: "20EF8A85CD3EFF3A"
 			tasks: [{
 				id: "7D804A10CC7998A6"
 				item: { count: 1, id: "malum:spirit_crucible" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: -12.0d
+			x: -1.5d
+			y: -15.5d
 		}
 		{
-			dependencies: ["27B6C00949F92CCF"]
+			dependencies: ["7CF77F3C6D4073BD"]
 			id: "6AF6ADCEE5546549"
 			rewards: [{
 				id: "050D95108F5E175D"
@@ -515,8 +511,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(malum:runewood_totem_base)item(malum:soulwood_totem_base)item(malum:waveform_runewood_totem_base)item(malum:waveform_soulwood_totem_base))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -17.0d
+			x: 0.5d
+			y: -15.5d
 		}
 		{
 			dependencies: ["6AF6ADCEE5546549"]
@@ -531,8 +527,8 @@
 				item: { count: 1, id: "malum:totemic_staff" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -20.0d
+			x: 0.5d
+			y: -18.5d
 		}
 		{
 			dependencies: ["6AF6ADCEE5546549"]
@@ -551,8 +547,8 @@
 				item: { count: 1, id: "malum:scarstone" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -22.0d
+			x: 3.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["6AF6ADCEE5546549"]
@@ -572,7 +568,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -22.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["6AF6ADCEE5546549"]
@@ -591,8 +587,8 @@
 				item: { count: 1, id: "malum:soulwood_sapling" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -23.5d
+			x: 0.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["6AF6ADCEE5546549"]
@@ -607,8 +603,8 @@
 				item: { count: 1, id: "malum:arcana_pylon" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: -23.5d
+			x: 2.0d
+			y: -18.5d
 		}
 		{
 			dependencies: ["6AF6ADCEE5546549"]
@@ -623,8 +619,8 @@
 				item: { count: 1, id: "malum:rite_anchor" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -23.5d
+			x: 3.5d
+			y: -18.5d
 		}
 		{
 			dependencies: ["20EF8A85CD3EFF3A"]
@@ -634,8 +630,8 @@
 				item: { count: 1, id: "malum:spirit_catalyzer" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: -9.5d
+			x: -3.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["20EF8A85CD3EFF3A"]
@@ -645,8 +641,8 @@
 				item: { count: 1, id: "malum:repair_pylon" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: -14.5d
+			x: -1.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["20EF8A85CD3EFF3A"]
@@ -656,11 +652,10 @@
 				item: { count: 1, id: "malum:tuning_fork" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -12.0d
+			x: -4.5d
+			y: -17.0d
 		}
 		{
-			dependencies: ["6FDF4D8E43BF594B"]
 			hide_dependency_lines: true
 			id: "2DE251239B528464"
 			tasks: [{
@@ -668,8 +663,8 @@
 				item: { count: 1, id: "malum:lamplighters_tongs" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: -12.0d
+			x: -4.5d
+			y: -18.5d
 		}
 		{
 			dependencies: ["37AB4AF2D44BDEB1"]
@@ -731,10 +726,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"37AB4AF2D44BDEB1"
-				"2B4635BB16624A15"
-			]
+			dependencies: ["37AB4AF2D44BDEB1"]
 			id: "7B470F04445F5D8B"
 			tasks: [{
 				id: "35AB82909839567C"
@@ -763,8 +755,8 @@
 				item: { count: 1, id: "malum:rune_of_vitality" }
 				type: "item"
 			}]
-			x: -15.238095238095248d
-			y: -14.095238095238088d
+			x: -8.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -774,8 +766,8 @@
 				item: { count: 1, id: "malum:rune_of_culling" }
 				type: "item"
 			}]
-			x: -13.738095238095248d
-			y: -14.095238095238088d
+			x: -6.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -785,8 +777,8 @@
 				item: { count: 1, id: "malum:rune_of_reinforcement" }
 				type: "item"
 			}]
-			x: -16.738095238095248d
-			y: -14.095238095238088d
+			x: -10.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -796,8 +788,8 @@
 				item: { count: 1, id: "malum:rune_of_volatile_distortion" }
 				type: "item"
 			}]
-			x: -16.738095238095248d
-			y: -15.595238095238088d
+			x: -10.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -807,8 +799,8 @@
 				item: { count: 1, id: "malum:rune_of_dexterity" }
 				type: "item"
 			}]
-			x: -15.238095238095248d
-			y: -15.595238095238088d
+			x: -8.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -818,8 +810,8 @@
 				item: { count: 1, id: "malum:rune_of_ailment_cleansing" }
 				type: "item"
 			}]
-			x: -13.738095238095248d
-			y: -15.595238095238088d
+			x: -6.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -829,8 +821,8 @@
 				item: { count: 1, id: "malum:rune_of_protection" }
 				type: "item"
 			}]
-			x: -18.238095238095248d
-			y: -15.595238095238088d
+			x: -11.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -840,8 +832,8 @@
 				item: { count: 1, id: "malum:rune_of_scorching" }
 				type: "item"
 			}]
-			x: -18.238095238095248d
-			y: -14.095238095238088d
+			x: -11.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -851,8 +843,8 @@
 				item: { count: 1, id: "malum:rune_of_howling_gale" }
 				type: "item"
 			}]
-			x: -18.238095238095248d
-			y: -17.595238095238088d
+			x: -11.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -862,8 +854,8 @@
 				item: { count: 1, id: "malum:rune_of_flowing_grasp" }
 				type: "item"
 			}]
-			x: -16.738095238095248d
-			y: -17.595238095238088d
+			x: -10.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -873,8 +865,8 @@
 				item: { count: 1, id: "malum:rune_of_stone_ward" }
 				type: "item"
 			}]
-			x: -15.238095238095248d
-			y: -17.595238095238088d
+			x: -8.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -884,8 +876,8 @@
 				item: { count: 1, id: "malum:rune_of_burning_fervor" }
 				type: "item"
 			}]
-			x: -13.738095238095248d
-			y: -17.595238095238088d
+			x: -6.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -895,8 +887,8 @@
 				item: { count: 1, id: "malum:rune_of_sky_tether" }
 				type: "item"
 			}]
-			x: -18.238095238095248d
-			y: -19.095238095238088d
+			x: -11.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -906,8 +898,8 @@
 				item: { count: 1, id: "malum:rune_of_good_tides" }
 				type: "item"
 			}]
-			x: -16.738095238095248d
-			y: -19.095238095238088d
+			x: -10.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -917,8 +909,8 @@
 				item: { count: 1, id: "malum:rune_of_oaken_might" }
 				type: "item"
 			}]
-			x: -15.238095238095248d
-			y: -19.095238095238088d
+			x: -8.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -928,8 +920,8 @@
 				item: { count: 1, id: "malum:rune_of_fiery_embrace" }
 				type: "item"
 			}]
-			x: -13.738095238095248d
-			y: -19.095238095238088d
+			x: -6.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -939,8 +931,8 @@
 				item: { count: 1, id: "malum:rune_of_bolstering" }
 				type: "item"
 			}]
-			x: -18.238095238095248d
-			y: -21.095238095238088d
+			x: -11.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -950,8 +942,8 @@
 				item: { count: 1, id: "malum:rune_of_radial_empowerment" }
 				type: "item"
 			}]
-			x: -16.738095238095248d
-			y: -21.095238095238088d
+			x: -10.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -961,8 +953,8 @@
 				item: { count: 1, id: "malum:rune_of_spell_mastery" }
 				type: "item"
 			}]
-			x: -15.238095238095248d
-			y: -21.095238095238088d
+			x: -8.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -972,8 +964,8 @@
 				item: { count: 1, id: "malum:rune_of_heresy" }
 				type: "item"
 			}]
-			x: -13.738095238095248d
-			y: -21.095238095238088d
+			x: -6.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -983,8 +975,8 @@
 				item: { count: 1, id: "malum:rune_of_unnatural_stamina" }
 				type: "item"
 			}]
-			x: -18.238095238095248d
-			y: -22.595238095238088d
+			x: -11.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -994,8 +986,8 @@
 				item: { count: 1, id: "malum:rune_of_twinned_duration" }
 				type: "item"
 			}]
-			x: -16.738095238095248d
-			y: -22.595238095238088d
+			x: -10.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -1005,8 +997,8 @@
 				item: { count: 1, id: "malum:rune_of_indomitability" }
 				type: "item"
 			}]
-			x: -15.238095238095248d
-			y: -22.595238095238088d
+			x: -8.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
@@ -1016,52 +1008,19 @@
 				item: { count: 1, id: "malum:rune_of_igneous_solace" }
 				type: "item"
 			}]
-			x: -13.738095238095248d
-			y: -22.595238095238088d
+			x: -6.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["339C3EB0CB099097"]
 			id: "4213B825EDC1B32D"
 			tasks: [{
-				id: "4E14F76A1CBD0F8F"
-				item: { count: 1, id: "malum:runic_brooch" }
+				id: "2BF2DB6EC9E778D8"
+				item: { components: { "ftbfiltersystem:filter": "or(item(malum:runic_brooch)item(malum:elaborate_brooch)item(malum:glass_brooch)item(malum:gluttonous_brooch))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -16.0d
-			y: -8.5d
-		}
-		{
-			dependencies: ["339C3EB0CB099097"]
-			id: "1F9695B95D863E7B"
-			tasks: [{
-				id: "00FD0BF4D2D84BE0"
-				item: { count: 1, id: "malum:elaborate_brooch" }
-				type: "item"
-			}]
-			x: -17.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["339C3EB0CB099097"]
-			id: "4CA23D8F901BB6BD"
-			tasks: [{
-				id: "0E395AB3C757D7BC"
-				item: { count: 1, id: "malum:glass_brooch" }
-				type: "item"
-			}]
-			x: -14.5d
-			y: -8.5d
-		}
-		{
-			dependencies: ["339C3EB0CB099097"]
-			id: "1E2987FBFD03DFEA"
-			tasks: [{
-				id: "09A796B5A1214D43"
-				item: { count: 1, id: "malum:gluttonous_brooch" }
-				type: "item"
-			}]
-			x: -16.0d
-			y: -7.0d
+			x: -9.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1071,8 +1030,8 @@
 				item: { count: 1, id: "malum:accelerating_inlay" }
 				type: "item"
 			}]
-			x: 17.5d
-			y: -16.5d
+			x: -1.5d
+			y: -22.0d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1082,8 +1041,8 @@
 				item: { count: 1, id: "malum:prismatic_focus_lens" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -16.5d
+			x: 0.5d
+			y: -22.0d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1093,8 +1052,8 @@
 				item: { count: 1, id: "malum:blazing_diode" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: -16.5d
+			x: -3.5d
+			y: -22.0d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1104,8 +1063,8 @@
 				item: { count: 1, id: "malum:intricate_assembly" }
 				type: "item"
 			}]
-			x: 20.5d
-			y: -16.5d
+			x: 2.5d
+			y: -22.0d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1115,8 +1074,8 @@
 				item: { count: 1, id: "malum:sympathy_drive" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: -18.0d
+			x: -0.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1126,8 +1085,8 @@
 				item: { count: 1, id: "malum:suspicious_device" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: -18.0d
+			x: 3.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1137,8 +1096,8 @@
 				item: { count: 1, id: "malum:resonance_tuner" }
 				type: "item"
 			}]
-			x: 17.5d
-			y: -18.0d
+			x: -2.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1148,8 +1107,8 @@
 				item: { count: 1, id: "malum:caustic_catalyst" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -18.0d
+			x: -4.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1159,8 +1118,8 @@
 				item: { count: 1, id: "malum:stellar_mechanism" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: -19.5d
+			x: -3.5d
+			y: -25.0d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1170,8 +1129,8 @@
 				item: { count: 1, id: "malum:warping_engine" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: -19.5d
+			x: 2.5d
+			y: -25.0d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1181,8 +1140,8 @@
 				item: { count: 1, id: "malum:shielding_apparatus" }
 				type: "item"
 			}]
-			x: 17.5d
-			y: -19.5d
+			x: -1.5d
+			y: -25.0d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1192,8 +1151,8 @@
 				item: { count: 1, id: "malum:impurity_stabilizer" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -19.5d
+			x: 0.5d
+			y: -25.0d
 		}
 		{
 			dependencies: ["350A83A36269F87B"]
@@ -1203,11 +1162,11 @@
 				item: { count: 1, id: "malum:mending_diffuser" }
 				type: "item"
 			}]
-			x: 20.5d
-			y: -18.0d
+			x: 1.5d
+			y: -23.5d
 		}
 		{
-			dependencies: ["2B4635BB16624A15"]
+			dependencies: ["20EF8A85CD3EFF3A"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "350A83A36269F87B"
@@ -1216,8 +1175,8 @@
 				item: { count: 1, id: "malum:alchemical_calx" }
 				type: "item"
 			}]
-			x: 14.5d
-			y: -16.5d
+			x: -0.5d
+			y: -20.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1227,8 +1186,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_defiance", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -2.7619047619047805d
-			y: -25.523809523809504d
+			x: 5.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1238,8 +1197,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_parasite", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -1.2619047619047805d
-			y: -25.523809523809504d
+			x: 7.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1249,8 +1208,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_lifeweaver", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 0.23809523809521949d
-			y: -25.523809523809504d
+			x: 9.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1260,8 +1219,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_warlock", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 1.7380952380952195d
-			y: -25.523809523809504d
+			x: 10.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1271,8 +1230,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_reaper", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -2.7619047619047805d
-			y: -27.023809523809504d
+			x: 5.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1282,8 +1241,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_berserker", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -1.2619047619047805d
-			y: -27.023809523809504d
+			x: 7.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1293,8 +1252,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_fortress", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 0.23809523809521949d
-			y: -27.023809523809504d
+			x: 9.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1304,8 +1263,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_shield", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 1.7380952380952195d
-			y: -27.023809523809504d
+			x: 10.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1315,8 +1274,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_reciprocation", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -2.7619047619047805d
-			y: -28.523809523809504d
+			x: 5.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1326,8 +1285,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_shattering_addict", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -1.2619047619047805d
-			y: -28.523809523809504d
+			x: 7.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1337,8 +1296,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_arcanaphage", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 0.23809523809521949d
-			y: -28.523809523809504d
+			x: 9.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1348,8 +1307,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_rune_exploitation", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 1.7380952380952195d
-			y: -28.523809523809504d
+			x: 10.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1359,8 +1318,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_self_care", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -2.7619047619047805d
-			y: -30.023809523809504d
+			x: 5.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1370,8 +1329,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_high_priest", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -1.2619047619047805d
-			y: -30.023809523809504d
+			x: 7.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1381,8 +1340,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_tidal_affinity", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 0.23809523809521949d
-			y: -30.023809523809504d
+			x: 9.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1392,8 +1351,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_patience_repaid", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 1.7380952380952195d
-			y: -30.023809523809504d
+			x: 10.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1403,8 +1362,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_windswept", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -2.7619047619047805d
-			y: -31.523809523809504d
+			x: 5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1414,8 +1373,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_continuing_shot", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -1.2619047619047805d
-			y: -31.523809523809504d
+			x: 7.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1425,8 +1384,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_cloudskipper", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 0.23809523809521949d
-			y: -31.523809523809504d
+			x: 9.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1436,8 +1395,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_skybreaker", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 1.7380952380952195d
-			y: -31.523809523809504d
+			x: 10.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1447,8 +1406,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_contentedness", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -2.7619047619047805d
-			y: -33.023809523809504d
+			x: 5.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1458,8 +1417,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_lone_druid", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -1.2619047619047805d
-			y: -33.023809523809504d
+			x: 7.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1469,8 +1428,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_profane_ascetic", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 0.23809523809521949d
-			y: -33.023809523809504d
+			x: 9.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1480,8 +1439,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_profane_glutton", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 1.7380952380952195d
-			y: -33.023809523809504d
+			x: 10.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1491,8 +1450,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_combustion", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -2.7619047619047805d
-			y: -34.523809523809504d
+			x: 5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1502,8 +1461,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_prospector", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -1.2619047619047805d
-			y: -34.523809523809504d
+			x: 7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1513,8 +1472,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_the_blastweaver", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 0.23809523809521949d
-			y: -34.523809523809504d
+			x: 9.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1524,8 +1483,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:pact_of_wyrd_reconstruction", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 1.7380952380952195d
-			y: -34.523809523809504d
+			x: 10.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1535,8 +1494,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:oath_of_the_overkeen_eye", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -2.7619047619047805d
-			y: -36.023809523809504d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1546,8 +1505,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:oath_of_the_overburdened_mind", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -1.2619047619047805d
-			y: -36.023809523809504d
+			x: 7.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1557,8 +1516,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:oath_of_the_overeager_fist", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 0.23809523809521949d
-			y: -36.023809523809504d
+			x: 9.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1568,8 +1527,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:oath_of_unmakers_disdain", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 1.7380952380952195d
-			y: -36.023809523809504d
+			x: 10.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1579,8 +1538,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:oath_of_unsighted_resistance", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -2.7619047619047805d
-			y: -37.523809523809504d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1590,8 +1549,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:oath_of_the_undiscerned_maw", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: -1.2619047619047805d
-			y: -37.523809523809504d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1601,8 +1560,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:authority_of_the_inverted_heart", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 0.23809523809521949d
-			y: -37.523809523809504d
+			x: 9.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["43DDDB9D9BA35A28"]
@@ -1612,8 +1571,8 @@
 				item: { components: { "malum:geas_effect": { geasEffectType: "malum:authority_of_the_gleeful_target", isCreative: 1b } }, count: 1, id: "malum:geas" }
 				type: "item"
 			}]
-			x: 1.7380952380952195d
-			y: -37.523809523809504d
+			x: 10.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["37AB4AF2D44BDEB1"]
@@ -1632,6 +1591,66 @@
 			]
 			x: -0.5d
 			y: 13.0d
+		}
+		{
+			dependencies: ["2B4635BB16624A15"]
+			icon: {
+				id: "malum:runewood_log"
+			}
+			id: "02754C209AD4C9F5"
+			tasks: [{
+				id: "4DF3914AEC09E8AB"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["02754C209AD4C9F5"]
+			icon: {
+				id: "malum:exposed_runewood_log"
+			}
+			id: "7CF77F3C6D4073BD"
+			rewards: [{
+				id: "229C210D22723EA0"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				consume_items: false
+				id: "1A2383645D01EB6D"
+				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"27B6C00949F92CCF"
+				"2B4635BB16624A15"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:crying_obsidian"
+			}
+			id: "03D7343C57EF0A14"
+			rewards: [{
+				count: 16
+				id: "642C8B2AAFD3EC83"
+				item: {
+					count: 1
+					id: "malum:refined_soulstone"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "18CECA20EB3B7D0F"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 2.0d
 		}
 	]
 }

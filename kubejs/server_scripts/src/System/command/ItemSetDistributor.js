@@ -61,12 +61,13 @@ const itemSet2 = [
 
 const itemSet3 = [
     { command: "traveler", oneUse: true },
-    { id: "sophisticatedbackpacks:copper_backpack", count: 1 },
+    { id: "sophisticatedbackpacks:gold_backpack", count: 1 },
+    { id: "kubejs:exploding_chocolate_bar", count: 5 },
+    { id: "terra_curio:hermes_boots", count: 1 },
     { id: () => getRandomEnchantedBookId(), count: 1 },
     { id: () => getRandomEnchantedBookId(), count: 1 },
     { id: () => getRandomEnchantedBookId(), count: 1 },
-    { id: () => getRandomScrollId(), count: 1 },
-    { id: "kubejs:exploding_chocolate_bar", count: 5 }
+    { id: () => getRandomScrollId(), count: 1 }
 ];
 
 const itemSet4 = [

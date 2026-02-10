@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.kubejs.shadow_snail_shell",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.trait.kubejs.shadow_snail_shell",
+			"text": "patchouli.gui.trait.kubejs.shadow_snail_shell.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.kubejs.shadow_snail_shell.applicable",
+			"text": "patchouli.gui.trait.kubejs.shadow_snail_shell.applicable_text"
+		}
+	]
+}

@@ -41,7 +41,9 @@
     "kubejs:repeat/spider_fang"
   ],
   "ignored_tags": [],
-  "ignored_items": [],
+  "ignored_items": [
+    "eternal_starlight_vo:*"
+  ],
   "ignored_recipe_types": [
     "cucumber:shaped_tag"
   ],

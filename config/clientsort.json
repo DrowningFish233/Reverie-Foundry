@@ -9,6 +9,7 @@
     "hotbarScope": "HOTBAR",
     "extraSlotScope": "EXTRA",
     "bundlesUseLeftClick": false,
+    "transferReverseOrder": true,
     "alwaysMatchByType": false,
     "typeMatchTags": [
       "enchantable/weapon",
@@ -32,9 +33,10 @@
     "soundVolume": 0.2,
     "allowSoundOverlap": true,
     "isolateKeybinds": true,
-    "showButtons": false,
-    "showButtonTooltips": false,
+    "showButtons": true,
+    "showButtonTooltips": true,
     "anchorButtonsLeft": false,
+    "buttonsHorizontal": false,
     "firstButtonOp": "SORT",
     "secondButtonOp": "STACK_FILL",
     "thirdButtonOp": "MATCH_TRANSFER",
@@ -46,6 +48,7 @@
     "classPolicies": {
       "com.simibubi.create.content.equipment.toolbox.ToolboxMenu": {
         "className": "com.simibubi.create.content.equipment.toolbox.ToolboxMenu",
+        "offsetFromSlot": false,
         "sortPolicy": "NONE",
         "stackFillPolicy": "NONE",
         "matchTransferPolicy": "NONE",
@@ -59,6 +62,7 @@
           "x": -4,
           "y": 0
         },
+        "offsetFromSlot": false,
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
         "matchTransferPolicy": "NONE",
@@ -72,6 +76,7 @@
           "x": -4,
           "y": 0
         },
+        "offsetFromSlot": false,
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
         "matchTransferPolicy": "NONE",
@@ -85,6 +90,7 @@
           "x": -4,
           "y": 0
         },
+        "offsetFromSlot": false,
         "sortPolicy": "KEYBIND",
         "stackFillPolicy": "KEYBIND",
         "matchTransferPolicy": "NONE",
@@ -98,6 +104,7 @@
           "x": -4,
           "y": 0
         },
+        "offsetFromSlot": false,
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
         "matchTransferPolicy": "NONE",
@@ -111,6 +118,7 @@
           "x": -4,
           "y": 0
         },
+        "offsetFromSlot": false,
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
         "matchTransferPolicy": "NONE",
@@ -124,6 +132,7 @@
           "x": -4,
           "y": 0
         },
+        "offsetFromSlot": false,
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
         "matchTransferPolicy": "NONE",
@@ -137,6 +146,7 @@
           "x": -4,
           "y": 0
         },
+        "offsetFromSlot": false,
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
         "matchTransferPolicy": "NONE",

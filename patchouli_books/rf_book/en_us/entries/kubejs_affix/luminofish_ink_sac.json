@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.kubejs.luminofish_ink_sac",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.trait.kubejs.luminofish_ink_sac",
+			"text": "patchouli.gui.trait.kubejs.luminofish_ink_sac.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.kubejs.luminofish_ink_sac.applicable",
+			"text": "patchouli.gui.trait.kubejs.luminofish_ink_sac.applicable_text"
+		}
+	]
+}

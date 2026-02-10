@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'silentgems:garnet_teleporter' })
     event.remove({ input: '#alltheores:ore_hammers' })
     event.remove({ output: 'productivemetalworks:gear_cast' })
+    event.remove({ id: 'hazennstuff:crafting/materials/deus_essence_from_nether_star' })
     event.remove({ mod: 'productivelib' })
     event.smelting('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)
     event.smoking('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)

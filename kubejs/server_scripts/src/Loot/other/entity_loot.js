@@ -167,6 +167,32 @@ LootJS.modifiers(event => {
 
     event.addEntityModifier([
         "terra_entity:brain_of_cthulhu"
+    ]).addLoot(LootEntry.of('terra_curio:brain_of_confusion')
+        .apply(item => {
+            item.setCount({ min: 1, max: 1 })
+        })
+    );
+
+    event.addEntityModifier([
+        "terra_entity:skeletron"
+    ]).addLoot(LootEntry.of('terra_curio:bone_glove')
+        .apply(item => {
+            item.setCount({ min: 1, max: 1 })
+        })
+    );
+
+
+    event.addEntityModifier([
+        "terra_entity:queen_bee"
+    ]).addLoot(LootEntry.of('terra_curio:hive_pack')
+        .apply(item => {
+            item.setCount({ min: 1, max: 1 })
+        })
+    );
+
+
+    event.addEntityModifier([
+        "terra_entity:brain_of_cthulhu"
     ]).addLoot(LootEntry.of('kubejs:melting_eyeball')
         .apply(item => {
             item.setCount({ min: 0, max: 1 });
@@ -175,9 +201,17 @@ LootJS.modifiers(event => {
 
     event.addEntityModifier([
         "terra_entity:eye_of_cthulhu"
-    ]).addLoot(LootEntry.of('kubejs:xeproda_ingot')
+    ]).addLoot(LootEntry.of('terra_curio:shield_of_cthulhu')
         .apply(item => {
-            item.setCount({ min: 2, max: 4 });
+            item.setCount({ min: 1, max: 1 })
+        })
+    );
+
+    event.addEntityModifier([
+        "terra_entity:eater_of_worlds"
+    ]).addLoot(LootEntry.of('terra_curio:worm_scarf')
+        .apply(item => {
+            item.setCount({ min: 1, max: 1 })
         })
     );
 
@@ -231,6 +265,16 @@ LootJS.modifiers(event => {
                 item.setCount({ min: 1, max: 1 })
             })
         )
+
+    event.addEntityModifier([
+        "terra_entity:king_slime"
+    ]).addLoot(LootEntry.of('terra_curio:royal_gel')
+        .apply(item => {
+            item.setCount({ min: 1, max: 1 })
+        })
+    )
+
+
     event.addEntityModifier([
         "irons_spellbooks:dead_king"
     ]).addLoot(LootEntry.of('kubejs:necroplasm')

@@ -48,6 +48,11 @@
                 },
                 {
                     "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:strikesoul"
+                },
+                {
+                    "conditions": [],
                     "level": 3,
                     "trait": "silentgear:soft"
                 }
@@ -93,6 +98,11 @@
                 {
                     "conditions": [],
                     "level": 1,
+                    "trait": "kubejs:strikesoul"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
                     "trait": "kubejs:hallowed_gold_ingot"
                 },
                 {
@@ -113,6 +123,11 @@
                 "value": 3.0
             },
             "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:strikesoul"
+                },
                 {
                     "conditions": [],
                     "level": 4,
@@ -151,6 +166,11 @@
                 "value": 30.0
             },
             "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:strikesoul"
+                },
                 {
                     "conditions": [],
                     "level": 1,

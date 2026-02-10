@@ -128,9 +128,9 @@ function activateRandomSin(event, player) {
             // 构建消息
             player.setStatusMessage(
                 Text.join(
-                    Text.translate(`sin.${sinLower}.prefix`).color(color),
+                    Text.translate(`message.sin.${sinLower}.prefix`).color(color),
                     " ",
-                    Text.translate(`sin.${sinLower}.message.${messageIndex}`).color(color)
+                    Text.translate(`message.sin.${sinLower}.message.${messageIndex}`).color(color)
                 )
             );
         }

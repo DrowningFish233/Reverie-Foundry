@@ -42,6 +42,7 @@
             },
             "magic_armor": 24.0,
             "projectile_speed": 5.0,
+            "spell_power": 0.08,
             "rarity": 100.0,
             "traits": [
                 {

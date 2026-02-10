@@ -405,3 +405,116 @@ function fu_fillItemGroup(item, group, items) {
 function fu_makeItemAbilitySet(actions) {
     return $GearHelper.makeItemAbilitySet(actions);
 }
+
+
+/**
+ * 从注册表获取所有可移除部件类型
+ */
+function getRemovableTypesFromRegistry() {
+    if (REMOVABLE_TYPES_CACHE !== null) return REMOVABLE_TYPES_CACHE
+
+    let registry = $SgRegistries.PART_TYPE
+    let types = []
+
+    for (let partType of registry) {
+        if (partType.isRemovable()) {
+            let key = registry.getKey(partType).toString()
+            types.push({
+                key: key,
+                type: partType,
+                displayName: partType.getDisplayName().getString()
+            })
+        }
+    }
+
+    types.sort((a, b) => a.displayName.localeCompare(b.displayName))
+
+    REMOVABLE_TYPES_CACHE = types
+
+    return types
+}
+
+/**
+ * 获取当前选中的部件类型信息
+ */
+function getCurrentPartTypeInfo(item) {
+    if (!item || !(item.getItem() instanceof $ModKitItem)) {
+        return { success: false, error: "不是 ModKitItem" }
+    }
+
+    try {
+        let currentType = $ModKitItem.getSelectedType(item)
+        let registry = $SgRegistries.PART_TYPE
+        let currentKey = registry.getKey(currentType).toString()
+        let displayName = currentType.getDisplayName().getString()
+
+        return {
+            success: true,
+            type: currentType,
+            key: currentKey,
+            displayName: displayName,
+            isRemovable: currentType.isRemovable(),
+            isNone: currentKey === "silentgear:none"
+        }
+    } catch (e) {
+        return { success: false, error: e.message }
+    }
+}
+
+/**
+ * 切换到指定方向的部件类型
+ */
+function cyclePartType(item, player, direction) {
+    if (!item || !(item.getItem() instanceof $ModKitItem)) {
+        return { success: false, message: "不是 ModKitItem" }
+    }
+
+    let removableTypes = getRemovableTypesFromRegistry()
+
+    if (removableTypes.length === 0) {
+        return { success: false, message: "没有可移除的部件类型" }
+    }
+
+    let currentInfo = getCurrentPartTypeInfo(item)
+    if (!currentInfo.success) {
+        return { success: false, message: "获取当前类型失败: " + currentInfo.error }
+    }
+    // 查找当前索引
+    let currentIndex = -1
+    for (let i = 0; i < removableTypes.length; i++) {
+        if (removableTypes[i].key === currentInfo.key) {
+            currentIndex = i
+            break
+        }
+    }
+
+    if (currentInfo.isNone || currentIndex === -1) {
+        currentIndex = -1
+    }
+
+    // 计算下一个索引
+    let nextIndex
+    if (direction === "PREVIOUS") {
+        // 上一个
+        nextIndex = currentIndex === -1 ? removableTypes.length - 1 :
+            (currentIndex - 1 + removableTypes.length) % removableTypes.length
+    } else {
+        // 下一个
+        nextIndex = currentIndex === -1 ? 0 :
+            (currentIndex + 1) % removableTypes.length
+    }
+
+    let nextTypeInfo = removableTypes[nextIndex]
+
+    try {
+        $ModKitItem.setSelectedTypeKJS(item, nextTypeInfo.type)
+        return {
+            success: true,
+            direction: direction === "PREVIOUS" ? "上一个" : "下一个",
+            displayName: nextTypeInfo.displayName,
+            key: nextTypeInfo.key
+        }
+    } catch (e) {
+        return { success: false, message: "设置失败: " + e.message }
+    }
+}

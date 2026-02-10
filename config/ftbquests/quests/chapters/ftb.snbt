@@ -78,5 +78,17 @@
 			x: 0.0d
 			y: -5.5d
 		}
+		{
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "7874BB44F0FADAEB"
+			tasks: [{
+				id: "6747EAFEAC056B39"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
 	]
 }

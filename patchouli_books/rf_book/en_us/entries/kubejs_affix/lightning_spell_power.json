@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.kubejs.lightning_spell_power",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.trait.kubejs.lightning_spell_power",
+			"text": "patchouli.gui.trait.kubejs.lightning_spell_power.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.kubejs.lightning_spell_power.applicable",
+			"text": "patchouli.gui.trait.kubejs.lightning_spell_power.applicable_text"
+		}
+	]
+}
