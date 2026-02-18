@@ -1,0 +1,60 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"medium",
+			"organic"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "iceandfire:deathworm_chitin_red"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#c25e38",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:deathworm_chitin_red"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:main": {
+			"armor": 17,
+			"armor/helmet": 3,
+			"armor/chestplate": 7,
+			"armor/leggings": 5,
+			"armor/boots": 2,
+			"armor_durability": 70,
+			"attack_speed": 2.3,
+			"attack_damage": 4,
+			"durability": 500,
+			"ranged_damage": 1.2,
+			"draw_speed": 1.2,
+			"spell_resist": 0.02,
+			"traits": [
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:pest_emperor"
+				}
+			]
+		},
+		"silentgear:lining": {
+			"armor_toughness": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:pest_emperor"
+				}
+			]
+		}
+	}
+}

@@ -210,14 +210,6 @@
 					}
 					type: "item"
 				}
-				{
-					id: "1144E0123317C23B"
-					item: {
-						count: 1
-						id: "malum:encyclopedia_arcana"
-					}
-					type: "item"
-				}
 			]
 			tasks: [{
 				id: "5A0F513FCD1F0C69"

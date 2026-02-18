@@ -154,7 +154,7 @@ EntityEvents.spawned('minecraft:item', event => {
             break;
 
         case 'darkdoppelganger:shadow_orb':
-            summonDarkDoppelganger(10, entity, null, null, null, null, null, 'alshanex_familiars:angel_cast')
+            summonDarkDoppelganger(10, entity, null, null, null, null, null, 'kubejs:final_boss_summon')
             break;
     }
 })

@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.kubejs.ice_dragon_blood",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.trait.kubejs.ice_dragon_blood",
+			"text": "patchouli.gui.trait.kubejs.ice_dragon_blood.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.kubejs.ice_dragon_blood.applicable",
+			"text": "patchouli.gui.trait.kubejs.ice_dragon_blood.applicable_text"
+		}
+	]
+}

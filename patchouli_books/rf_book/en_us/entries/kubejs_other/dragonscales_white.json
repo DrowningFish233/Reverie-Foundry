@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.dragonscales_white.name",
+	"icon": "iceandfire:dragonscales_white",
+	"category": "patchouli:kubejs_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "iceandfire:dragonscales_white"
+			},
+			"text": "patchouli.gui.kubejs.dragonscales_white.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.dragonscales_white"
+		}
+	]
+}

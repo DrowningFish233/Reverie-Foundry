@@ -15,6 +15,9 @@
     },
     {
       "tag": "curios:ego"
+    },
+    {
+      "tag": "curios:bracelet"
     }
   ],
   "tiers": [
@@ -29,6 +32,7 @@
     "tiered:curios/kubejs_curios_15",
     "tiered:curios/kubejs_curios_18",
     "tiered:curios/kubejs_curios_22",
-    "tiered:curios/kubejs_curios_23"
+    "tiered:curios/kubejs_curios_23",
+    "tiered:curios/kubejs_curios_24"
   ]
 }

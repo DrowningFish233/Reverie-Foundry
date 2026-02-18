@@ -20,6 +20,57 @@ function removeRandomNegativeEffect(player) {
 
     }
 }
+
+//释放月刺
+function createThorn(level, owner, x, y, z, yRot, maxDiff, delay, AttackMode) {
+    let startPos = $BlockPos.containing(x, y, z)
+    let successful = false
+    let finalY = y
+
+    if (level.getBlockState(startPos).isAir()) {
+        let result = level.clip(new $ClipContext(
+            startPos.getCenter(),
+            startPos.getCenter().add(0, -maxDiff, 0),
+            $ClipContext.Block.COLLIDER,
+            $ClipContext.Fluid.NONE,
+            owner
+        ))
+        if (result.getType() != $HitResult.Type.MISS) {
+            finalY = result.getLocation().y
+            successful = true
+        }
+    } else {
+        let currentDiff = 0
+        while (!level.getBlockState(startPos).isAir() && currentDiff < maxDiff) {
+            startPos = startPos.above()
+            currentDiff++
+        }
+        if (level.getBlockState(startPos).isAir()) {
+            let result = level.clip(new $ClipContext(
+                startPos.getCenter(),
+                startPos.getCenter().add(0, -maxDiff, 0),
+                $ClipContext.Block.COLLIDER,
+                $ClipContext.Fluid.NONE,
+                owner
+            ))
+            if (result.getType() != $HitResult.Type.MISS) {
+                finalY = result.getLocation().y
+                successful = true
+            }
+        }
+    }
+
+    if (successful) {
+        let thorn = new $LunarThorn($ESEntities.LUNAR_THORN.get(), level)
+        thorn.setPos(x, finalY, z)
+        thorn.setOwner(owner)
+        thorn.setSpawnedTicks(-delay)
+        thorn.setAttackMode(AttackMode)
+        level.addFreshEntity(thorn)
+    }
+}
+
+
 /**
  * 药水效果施加逻辑(在现有的药水效果上施加等级)
  * @param {Entity} player 玩家实体
@@ -1202,7 +1253,6 @@ function playRandomFailSound(level, pos) {
 function getRandomScrollId() {
     const spellsData = {
         "spells": [
-            // 火系 (Fire) - 所有Enabled=true的法术
             { "id": "irons_spellbooks:fire_breath", "maxLevel": 10 },
             { "id": "cataclysm_spellbooks:infernal_strike", "maxLevel": 8 },
             { "id": "irons_spellbooks:magma_bomb", "maxLevel": 8 },
@@ -1228,7 +1278,6 @@ function getRandomScrollId() {
             { "id": "cataclysm_spellbooks:incineration", "maxLevel": 5 },
             { "id": "irons_spellbooks:raise_hell", "maxLevel": 5 },
 
-            // 自然系 (Nature) - 所有Enabled=true的法术
             { "id": "irons_spellbooks:poison_arrow", "maxLevel": 10 },
             { "id": "cataclysm_spellbooks:conjure_amethyst_crab", "maxLevel": 1 },
             { "id": "irons_spellbooks:touch_dig", "maxLevel": 3 },
@@ -1250,7 +1299,6 @@ function getRandomScrollId() {
             { "id": "irons_spellbooks:stomp", "maxLevel": 5 },
             { "id": "irons_spellbooks:gluttony", "maxLevel": 5 },
 
-            // 召唤系 (Evocation) - 所有Enabled=true的法术
             { "id": "irons_spellbooks:gust", "maxLevel": 10 },
             { "id": "irons_spellbooks:invisibility", "maxLevel": 6 },
             { "id": "irons_spellbooks:summon_vex", "maxLevel": 5 },
@@ -1269,7 +1317,6 @@ function getRandomScrollId() {
             { "id": "irons_spellbooks:slow", "maxLevel": 4 },
             { "id": "irons_spellbooks:firecracker", "maxLevel": 10 },
 
-            // 末影系 (Ender) - 所有Enabled=true的法术
             { "id": "irons_spellbooks:shadow_slash", "maxLevel": 5 },
             { "id": "gametechbcs_spellbooks:astral_sense", "maxLevel": 3 },
             { "id": "irons_spellbooks:evasion", "maxLevel": 5 },
@@ -1291,7 +1338,6 @@ function getRandomScrollId() {
             { "id": "irons_spellbooks:starfall", "maxLevel": 10 },
             { "id": "cataclysm_spellbooks:void_bulwark", "maxLevel": 5 },
 
-            // 冰系 (Ice) - 所有Enabled=true的法术
             { "id": "irons_spellbooks:frostbite", "maxLevel": 5 },
             { "id": "gametechbcs_spellbooks:shatterpoint", "maxLevel": 5 },
             { "id": "irons_spellbooks:ray_of_frost", "maxLevel": 5 },
@@ -1308,7 +1354,6 @@ function getRandomScrollId() {
             { "id": "irons_spellbooks:frost_step", "maxLevel": 8 },
             { "id": "irons_spellbooks:snowball", "maxLevel": 5 },
 
-            // 神圣系 (Holy) - 所有Enabled=true的法术
             { "id": "irons_spellbooks:healing_circle", "maxLevel": 10 },
             { "id": "irons_spellbooks:blessing_of_life", "maxLevel": 10 },
             { "id": "cataclysm_spellbooks:summon_koboleton", "maxLevel": 5 },
@@ -1327,7 +1372,6 @@ function getRandomScrollId() {
             { "id": "irons_spellbooks:haste", "maxLevel": 4 },
             { "id": "irons_spellbooks:cloud_of_regeneration", "maxLevel": 5 },
 
-            // 血系 (Blood) - 所有Enabled=true的法术
             { "id": "gametechbcs_spellbooks:crimson_downpour", "maxLevel": 3 },
             { "id": "irons_spellbooks:raise_dead", "maxLevel": 6 },
             { "id": "irons_spellbooks:blood_slash", "maxLevel": 5 },
@@ -1341,7 +1385,6 @@ function getRandomScrollId() {
             { "id": "irons_spellbooks:heartstop", "maxLevel": 5 },
             { "id": "irons_spellbooks:wither_skull", "maxLevel": 10 },
 
-            // 雷电系 (Lightning) - 所有Enabled=true的法术
             { "id": "irons_spellbooks:ascension", "maxLevel": 10 },
             { "id": "irons_spellbooks:shockwave", "maxLevel": 8 },
             { "id": "irons_spellbooks:electrocute", "maxLevel": 10 },
@@ -1354,7 +1397,6 @@ function getRandomScrollId() {
             { "id": "irons_spellbooks:lightning_lance", "maxLevel": 10 },
             { "id": "irons_spellbooks:charge", "maxLevel": 3 },
 
-            // 古神系 (Eldritch) - 所有Enabled=true的法术
             { "id": "irons_spellbooks:telekinesis", "maxLevel": 5 },
             { "id": "gametechbcs_spellbooks:blackout", "maxLevel": 3 },
             { "id": "irons_spellbooks:planar_sight", "maxLevel": 3 },
@@ -1367,7 +1409,6 @@ function getRandomScrollId() {
             { "id": "gametechbcs_spellbooks:reversal", "maxLevel": 3 },
             { "id": "gametechbcs_spellbooks:spectral_blink", "maxLevel": 3 },
 
-            // 深渊系 (Abyssal) - 所有Enabled=true的法术
             { "id": "cataclysm_spellbooks:depth_charge", "maxLevel": 3 },
             { "id": "cataclysm_spellbooks:void_beam", "maxLevel": 3 },
             { "id": "cataclysm_spellbooks:abyssal_predator", "maxLevel": 3 },
@@ -1376,7 +1417,6 @@ function getRandomScrollId() {
             { "id": "cataclysm_spellbooks:abyssal_slash", "maxLevel": 8 },
             { "id": "cataclysm_spellbooks:abyssal_blast", "maxLevel": 3 },
 
-            // KubeJS梦境系 (Dream) - 所有Enabled=true的法术
             { "id": "kubejs:gold_body", "maxLevel": 8 },
             { "id": "kubejs:one_six_seven_four", "maxLevel": 5 },
             { "id": "kubejs:rune_of_deflection", "maxLevel": 4 },
@@ -1388,7 +1428,6 @@ function getRandomScrollId() {
             { "id": "kubejs:phantom_pain", "maxLevel": 5 },
             { "id": "kubejs:plunder_spell", "maxLevel": 4 },
 
-            // Alshenex Familiars - 所有Enabled=true的法术
             { "id": "alshanex_familiars:fire_fist", "maxLevel": 5 },
             { "id": "alshanex_familiars:end_mayhem", "maxLevel": 8 },
             { "id": "alshanex_familiars:ice_chamber", "maxLevel": 5 },
@@ -1402,7 +1441,24 @@ function getRandomScrollId() {
             { "id": "alshanex_familiars:guardian_angel", "maxLevel": 4 },
             { "id": "alshanex_familiars:harp_symphony", "maxLevel": 3 },
             { "id": "alshanex_familiars:summon_shadows", "maxLevel": 6 },
-            { "id": "alshanex_familiars:megido", "maxLevel": 10 }
+            { "id": "alshanex_familiars:megido", "maxLevel": 10 },
+
+            { "id": "hazennstuff:spectral_axe", "maxLevel": 8 },
+            { "id": "hazennstuff:syringe_barrage", "maxLevel": 10 },
+            { "id": "hazennstuff:nights_edge_strike", "maxLevel": 5 },
+            { "id": "hazennstuff:chaotic_teleport", "maxLevel": 5 },
+            { "id": "hazennstuff:golden_shower", "maxLevel": 5 },
+            { "id": "hazennstuff:brimstone_hellblast", "maxLevel": 5 },
+            { "id": "hazennstuff:scorching_slash", "maxLevel": 3 },
+            { "id": "hazennstuff:cinderous_step", "maxLevel": 5 },
+            { "id": "hazennstuff:shard_sword", "maxLevel": 5 },
+            { "id": "hazennstuff:counterspell_spider_lily", "maxLevel": 5 },
+            { "id": "hazennstuff:death_sentence", "maxLevel": 5 },
+            { "id": "hazennstuff:thorn_chakram", "maxLevel": 10 },
+            { "id": "hazennstuff:crystal_volley", "maxLevel": 10 },
+            { "id": "hazennstuff:ice_arrow", "maxLevel": 10 },
+            { "id": "hazennstuff:soul_seekers", "maxLevel": 5 },
+            { "id": "hazennstuff:energy_burst", "maxLevel": 5 }
         ]
     };
 
@@ -1415,7 +1471,6 @@ function getRandomScrollId() {
 
     return scrollId;
 }
-
 
 /**
  * 获取食物的饱食度
@@ -1606,4 +1661,100 @@ function summonDarkDoppelganger(interval, entity, mainHand, helmet, chestplate, 
             entity.discard();
         }
     });
+}
+
+
+//用于伪造event获得补全用：
+/**
+ * 物品左键点击事件
+ * @param {$ItemClickedKubeEvent_} event - 物品左键点击事件
+ */
+function RFLeftClick(event) { }
+
+/**
+ * 物品右键点击事件
+ * @param {$ItemClickedKubeEvent_} event - 物品右键点击事件
+ */
+function RFRightClick(event) { }
+
+/**
+ * 实体死亡事件
+ * @param {$LivingEntityDeathKubeEvent_} event - 实体死亡事件
+ */
+function RFDeath(event) { }
+
+/**
+ * @param {$SimplePlayerKubeEvent_} event
+ */
+function RFTick(event) { }
+
+/**
+ * @param {$BeforeLivingEntityHurtKubeEvent_} event
+ */
+function RFBeforeHurt(event) { }
+
+/**
+ * @param {$AfterLivingEntityHurtKubeEvent_} event
+ */
+function RFAfterHurt(event) { }
+
+/**
+ * 方块破坏事件
+ * @param {$BlockBrokenKubeEvent_} event - 方块破坏事件
+ */
+function RFBlockBroken(event) { }
+
+//如果持有两种效果中的任意一种，则阻止执行
+function is_Magical_Girl(event, player) {
+    if (!player) return
+    if (fu_hasTraitAnywhere(player, "kubejs:lacrima") && fu_hasTraitAnywhere(player, "kubejs:fiery_tears")) {
+        return true;
+    }
+    return false;
+}
+
+function spawnParticles_witch(entity, player) {
+    let entityX = entity.x
+    let entityY = entity.y
+    let entityZ = entity.z
+
+    let height = Math.random() * 2
+    let offsetX = (Math.random() - 0.5) * 1.2
+    let offsetZ = (Math.random() - 0.5) * 1.2
+
+    player.level.spawnParticles(
+        'minecraft:witch',      // 粒子类型
+        true,                      // 是否强制显示
+        entity.x,                  // 中心X坐标
+        entity.y + 1,              // 中心Y坐标
+        entity.z,                  // 中心Z坐标
+        0.5,                       // X方向扩散范围
+        1.0,                       // Y方向扩散范围
+        0.5,                       // Z方向扩散范围
+        20,                        // 粒子数量
+        0.15                       // 粒子速度
+    )
+}
+
+function sweep_attack(entity, player) {
+    let entityX = entity.x
+    let entityY = entity.y
+    let entityZ = entity.z
+
+    let height = Math.random() * 2
+    let offsetX = (Math.random() - 0.5) * 1.2
+    let offsetZ = (Math.random() - 0.5) * 1.2
+
+    player.level.spawnParticles(
+        'minecraft:sweep_attack',      // 粒子类型
+        true,                      // 是否强制显示
+        entity.x,                  // 中心X坐标
+        entity.y + 1,              // 中心Y坐标（向上偏移1格，因为height范围是0-2）
+        entity.z,                  // 中心Z坐标
+        0.5,                       // X方向扩散范围（对应 offsetX 的 ±0.75）
+        1.0,                       // Y方向扩散范围（对应 height 的 0-2）
+        0.5,                       // Z方向扩散范围（对应 offsetZ 的 ±0.75）
+        20,                        // 粒子数量（40次循环 × 每次2个粒子）
+        0.15                       // 粒子速度
+    )
 }

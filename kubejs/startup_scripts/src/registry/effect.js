@@ -546,7 +546,7 @@ StartupEvents.registry('mob_effect', event => {
     event.create('blazing_magic')
         .color(0x000000)
         .beneficial()
-        .modifyAttribute('irons_spellbooks:spell_power',
+        .modifyAttribute('irons_spellbooks:mana_regen',
             '7d0ac0b5-0fee-4016-935d-eaa1f697f4ff',
             0.04,
             "add_multiplied_total"
@@ -1258,5 +1258,37 @@ event.create('purple_haze_attack')
         )
     event.create('holy_protection')
         .beneficial()
-
+    event.create('glacial_state')
+        .harmful()
+        .effectTick((entity, lvl) => {
+            if (!entity || entity.level.isClientSide()) return
+            if (entity.server.tickCount % 20 == 0) {
+                let speed = entity.getTotalMovementSpeed()
+                if (speed >= 0.11) return
+                entity.attack($DamageSource("generic"), lvl * speed * 10);
+            }
+        })
+    event.create('pest_defense')
+        .beneficial()
+    event.create('pest_infesting')
+        .beneficial()
+        .modifyAttribute('minecraft:generic.max_health',
+            '54b80e96-7175-4512-badc-0405f26dee13',
+            -0.01,
+            "add_multiplied_total"
+        )
+        .effectTick((entity, lvl) => {
+            if (!entity || entity.level.isClientSide()) return
+            if (entity.server.tickCount % 200 == 0) {
+                entity.attack($DamageSource("kubejs:pest"), lvl * 3);
+                let effect = entity.getEffect('kubejs:pest_infesting');
+                let newDuration = effect.getDuration() / 2
+                if (newDuration > 0) {
+                    entity.removeEffect('kubejs:pest_infesting');
+                    entity.potionEffects.add('kubejs:pest_infesting', newDuration, lvl)
+                } else {
+                    entity.removeEffect('kubejs:pest_infesting');
+                }
+            }
+        })
 });

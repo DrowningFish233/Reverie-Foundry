@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.dragonscales_copper.name",
+	"icon": "iceandfire:dragonscales_copper",
+	"category": "patchouli:kubejs_other",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "iceandfire:dragonscales_copper"
+			},
+			"text": "patchouli.gui.kubejs.dragonscales_copper.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.dragonscales_copper"
+		}
+	]
+}

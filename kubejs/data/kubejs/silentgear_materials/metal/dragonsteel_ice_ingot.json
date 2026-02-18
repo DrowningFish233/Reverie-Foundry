@@ -56,6 +56,11 @@
           "conditions": [],
           "level": 5,
           "trait": "kubejs:dragonskill"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "kubejs:dragonprotection"
         }
       ]
     }

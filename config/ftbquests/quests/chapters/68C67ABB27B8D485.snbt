@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "68C67ABB27B8D485"
+	group: "7F00D0D8C7C916A0"
+	hide_quest_until_deps_complete: true
+	icon: {
+		id: "malum:paracausal_flame"
+	}
+	id: "68C67ABB27B8D485"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["7E57D8FC5D757153"]
+		id: "015EB916702B3797"
+		tasks: [{
+			id: "0007A6CEACA05EEC"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

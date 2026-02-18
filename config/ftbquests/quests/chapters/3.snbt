@@ -1,0 +1,659 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3"
+	group: "7F00D0D8C7C916A0"
+	icon: {
+		id: "irons_spellbooks:blood_vial"
+	}
+	id: "1A98337926B134EB"
+	images: [{
+		height: 2.0d
+		image: "gametechbcs_spellbooks:textures/gui/spell_icons/call_forth_the_dead_king.png"
+		rotation: 0.0d
+		width: 2.0d
+		x: 0.0d
+		y: -12.0d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6B847A24B0B7CC0E"]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "tiered:toolsmiths_hammer"
+			}
+			id: "71B24EEAADB29F3A"
+			rewards: [{
+				count: 32
+				id: "7760A3C60399A07A"
+				item: {
+					count: 1
+					id: "minecraft:emerald"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "064EAF4F0071143A"
+				item: { components: { "ftbfiltersystem:filter": "or(item(tiered:armorers_hammer)item(tiered:toolsmiths_hammer)item(tiered:weaponsmiths_hammer))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71B24EEAADB29F3A"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "376EE9781C85F70E"
+			rewards: [{
+				id: "2DF5C1114AAB45B3"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "1C3F0D05EF0E579B"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["71B24EEAADB29F3A"]
+			hide_details_until_startable: false
+			hide_text_until_complete: true
+			hide_until_deps_complete: false
+			hide_until_deps_visible: false
+			icon: {
+				id: "kubejs:limpid_spirit"
+			}
+			id: "04120B4A249AF41A"
+			rewards: [
+				{
+					id: "41C69F9E832839F0"
+					item: {
+						count: 1
+						id: "malum:encyclopedia_arcana"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D265A03B726A0DD"
+					item: {
+						count: 1
+						id: "malum:refined_soulstone"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "25276BA90DD12467"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04120B4A249AF41A"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "409F4DBFD0F05A3B"
+			rewards: [{
+				id: "206809B903463A47"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0AF727CB579792E5"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["71B24EEAADB29F3A"]
+			id: "32590328D9FB113D"
+			rewards: [{
+				id: "6383660CD9A7D50D"
+				item: {
+					count: 1
+					id: "terra_curio:shiny_red_balloon"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "172D913FEA43F897"
+				item: { count: 1, id: "terra_curio:workshop" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04120B4A249AF41A"]
+			icon: {
+				id: "extradelight:tea"
+			}
+			id: "1CDBC70DB8D56271"
+			rewards: [{
+				count: 16
+				id: "5ACBBFACDD0F9079"
+				item: {
+					count: 1
+					id: "extradelight:jerky"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2276A0855A81739A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["71B24EEAADB29F3A"]
+			icon: {
+				id: "refinedstorage:64k_storage_block"
+			}
+			id: "011A29CE5289F47C"
+			rewards: [{
+				count: 16
+				id: "5FF0CA0B497B4BB1"
+				item: {
+					count: 1
+					id: "create:andesite_alloy"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "311E3C0498DE3ED9"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CDBC70DB8D56271"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "31798154952775F5"
+			rewards: [{
+				id: "3351210E176F4123"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "4F60E1F819BBC067"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1CDBC70DB8D56271"]
+			id: "72387868BC05D119"
+			rewards: [{
+				id: "367E0998480A11E5"
+				item: {
+					components: {
+						"minecraft:potion_contents": {
+							potion: "minecraft:long_fire_resistance"
+						}
+					}
+					count: 1
+					id: "minecraft:potion"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: {
+					id: "endrem:nether_eye"
+				}
+				id: "661A96A3B20665DE"
+				type: "dimension"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["72387868BC05D119"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "67E10AA6F43353E2"
+			rewards: [{
+				id: "2DA75110852071EF"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "13BE9B290F7E4D4E"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0F430864AB53FB98"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "3D3CC5601B817E4D"
+			rewards: [{
+				id: "38B9A8588043ED9A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6141FDB1188470B3"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0F430864AB53FB98"]
+			hide_text_until_complete: true
+			id: "727B996FAE26B0BB"
+			rewards: [{
+				count: 64
+				id: "73C42BC65934B3B7"
+				item: {
+					count: 1
+					id: "minecraft:wheat_seeds"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "748965B66A8C5E30"
+				item: { count: 1, id: "eternal_starlight:orb_of_prophecy" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["727B996FAE26B0BB"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "2B1C9E929C54873E"
+			rewards: [{
+				id: "75C175B383BFC1A7"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "7E842FF6C4E736C0"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1CDBC70DB8D56271"]
+			hide_text_until_complete: true
+			icon: {
+				id: "eternal_starlight:seeking_eye"
+			}
+			id: "0F430864AB53FB98"
+			rewards: [{
+				count: 3
+				id: "16070A34129EB112"
+				item: {
+					count: 1
+					id: "minecraft:golden_apple"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				disable_toast: true
+				id: "426C3EFB9DFFAB2F"
+				structure: "#eternal_starlight:portal_ruins"
+				type: "structure"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["72387868BC05D119"]
+			id: "3220FA89E7935BC3"
+			rewards: [{
+				id: "30C1B7B76AFAE9B7"
+				item: {
+					components: {
+						"minecraft:potion_contents": {
+							potion: "minecraft:long_fire_resistance"
+						}
+					}
+					count: 1
+					id: "minecraft:potion"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				icon: {
+					id: "minecraft:nether_bricks"
+				}
+				id: "2E5C0ED989A1F7E3"
+				structure: "minecraft:fortress"
+				type: "structure"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"3220FA89E7935BC3"
+				"727B996FAE26B0BB"
+			]
+			dependency_requirement: "one_completed"
+			id: "3F65163CBB21A321"
+			rewards: [
+				{
+					id: "4F4BB6619CDD5214"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "6C14DCA1E8EF1B5B"
+					item: {
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: {
+									"minecraft:smite": 5
+								}
+							}
+						}
+						count: 1
+						id: "minecraft:enchanted_book"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3BC0F2EB3C32944D"
+				item: { count: 1, id: "irons_spellbooks:wayward_compass" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3220FA89E7935BC3"]
+			id: "1675C48578D2D979"
+			rewards: [{
+				count: 8
+				id: "78CCBB61930AAEC5"
+				item: {
+					count: 1
+					id: "malum:grim_talc"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A85682A391634F7"
+				item: { count: 1, id: "minecraft:wither_skeleton_skull" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["72387868BC05D119"]
+			id: "4276FE7E4037AC05"
+			rewards: [
+				{
+					count: 4
+					id: "0F137FA7D4B9EE2D"
+					item: {
+						count: 1
+						id: "irons_spellbooks:cinder_essence"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "650689C96487C92C"
+					item: {
+						count: 1
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: {
+					id: "irons_spellbooks:armor_pile"
+				}
+				id: "497AB5357C7176F2"
+				structure: "irons_spellbooks:ancient_battleground"
+				type: "structure"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4276FE7E4037AC05"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "28DADF8AEF3ED946"
+			rewards: [{
+				id: "4BA8946D952EBC45"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "2BC958F6797C3F87"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3F65163CBB21A321"]
+			icon: {
+				id: "minecraft:cracked_stone_bricks"
+			}
+			id: "3A08D5D6D65FF6F2"
+			progression_mode: "flexible"
+			tasks: [{
+				id: "42E1F7D1048AB5D0"
+				structure: "irons_spellbooks:catacombs"
+				type: "structure"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["58BCF9F1BE8BAA5E"]
+			dependency_requirement: "one_completed"
+			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [{
+							id: "irons_spellbooks:acupuncture"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+				id: "irons_spellbooks:scroll"
+			}
+			id: "0BCF6B18963AB88F"
+			optional: true
+			progression_mode: "flexible"
+			rewards: [{
+				id: "298ABAAF0B2A3AF1"
+				item: {
+					components: {
+						"irons_spellbooks:spell_container": {
+							data: [{
+								id: "gametechbcs_spellbooks:call_forth_the_dead_king"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+					count: 1
+					id: "irons_spellbooks:scroll"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "34F4011526475F7B"
+				item: { count: 1, id: "irons_spellbooks:blood_staff" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["3F65163CBB21A321"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "4D73E8E5F27EE986"
+			rewards: [{
+				id: "5FC4A26E368F7C87"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "63234A766C567E00"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3A08D5D6D65FF6F2"]
+			id: "58BCF9F1BE8BAA5E"
+			rewards: [
+				{
+					id: "4023686A38FEEC10"
+					item: {
+						count: 1
+						id: "irons_spellbooks:legendary_ink"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1DE475CB20B10A55"
+					table_id: 3565011195027141848L
+					type: "random"
+				}
+				{
+					count: 16
+					id: "2C5AE8713D22E02F"
+					item: {
+						count: 1
+						id: "irons_spellbooks:blank_rune"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				entity: "irons_spellbooks:dead_king"
+				icon: {
+					id: "minecraft:skeleton_skull"
+				}
+				id: "6DEE460850123B11"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["58BCF9F1BE8BAA5E"]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "338D68165E0EA626"
+			rewards: [{
+				id: "3C87A52BC0260741"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "137C3EB186FD1877"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["58BCF9F1BE8BAA5E"]
+			icon: {
+				id: "minecraft:target"
+			}
+			id: "7E57D8FC5D757153"
+			shape: "diamond"
+			tasks: [{
+				id: "3C5FCCB3BEF43592"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["1675C48578D2D979"]
+			id: "15F15A1FF0EDD7E3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01AE8BECBA7B805F"
+				table_id: 3382524138367628086L
+				type: "choice"
+			}]
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: {
+					id: "minecraft:nether_star"
+				}
+				id: "134BFF78A7F20CA9"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.0d
+			y: -8.0d
+		}
+	]
+}

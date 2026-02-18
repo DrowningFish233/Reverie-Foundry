@@ -2,12 +2,10 @@
 PlayerEvents.tick(event => {
     const player = event.player;
     if (!player) return;
-
     const pData = player.persistentData;
     const tick = player.tickCount;
     const sanityValue = pData.getInt("sanity") || 0;
     const depravityValue = pData.getInt("depravity") || 0;
-    const witherHowitzerValue = pData.getInt("wither_howitzer") || 0;
 
     if (tick % 44 == 0) {
         handleSanityAndDepravity(player, pData, sanityValue, depravityValue);
@@ -24,16 +22,7 @@ PlayerEvents.tick(event => {
     if (tick % 51 == 0 && pData.getInt("depravityDamageMultiplier") == 1) {
         pData.putInt("depravityDamageMultiplier", 0);
     }
-    if (fu_hasTraitAnywhere(player, "kubejs:wither_howitzer") && tick % 400 === 0 && witherHowitzerValue < 8) {
-        pData.putInt("wither_howitzer", witherHowitzerValue + 1);
-        player.setStatusMessage(
-            Text.join(
-                Text.translate('message.wither_howitzer.charge').color('gold'),
-                " ",
-                Text.of(`${witherHowitzerValue + 1}/8`).color('yellow')
-            )
-        );
-    }
+
     if (tick % 202 == 0) {
         checkAlcoholEffects(player)
     }

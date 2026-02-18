@@ -56,6 +56,11 @@
           "conditions": [],
           "level": 1,
           "trait": "kubejs:dragonsteel_lightning_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "kubejs:dragonprotection"
         }
       ]
     }

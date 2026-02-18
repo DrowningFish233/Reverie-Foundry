@@ -6,17 +6,63 @@
 /** @type {Object.<string, {id: string, config: (mat: GenerateSilentGearMaterial) => void}>} */
 const MaterialConfigs = {
     enabled: true, // 设为false可禁用生成
-    auto_ingot1: {
-        id: "kubejs:strange_crystal",
+    auto_ingot: {
+        id: "kubejs:lightning_dragon_blood",
         config: (mat) => {
-            mat.setCategories(["fabric", "endgame"])
-                .setIngredientItem("malum:strange_crystal")
-                .setDisplayColor("#f8ace2")
-                .setName("material.silentgear.kubejs:strange_crystal")
-                .addSetting((/** @type {PartBuilder} */part) => {
-                    part.armorWithOperation("ADD", 1)
-                        .rarityWithOperation("ADD", 30)
-                        .addTrait("kubejs:strange_crystal", 3)
+            mat.setCategories(["medium", "organic"])
+                .setIngredientItem("iceandfire:lightning_dragon_blood")
+                .setDisplayColor("#721ec7")
+                .setName("material.silentgear.kubejs:dragon_blood")
+                .addCoating((/** @type {PartBuilder} */part) => {
+                    part.armorWithOperation("ADD", 4)
+                        .armorHelmetWithOperation("ADD", 1)
+                        .armorChestplateWithOperation("ADD", 1)
+                        .armorLeggingsWithOperation("ADD", 1)
+                        .armorBootsWithOperation("ADD", 1)
+                        .armorDurabilityWithOperation("MULTIPLY_BASE", 0.1)
+                        .attackDamageWithOperation("ADD", 3)
+                        .addTrait("kubejs:dragonskill", 1)
+                        .addTrait("kubejs:lightning_dragon_blood", 1)
+                })
+        }
+    },
+    auto_ingot2: {
+        id: "kubejs:fire_dragon_blood",
+        config: (mat) => {
+            mat.setCategories(["medium", "organic"])
+                .setIngredientItem("iceandfire:fire_dragon_blood")
+                .setDisplayColor("#a62800")
+                .setName("material.silentgear.kubejs:dragon_blood")
+                .addCoating((/** @type {PartBuilder} */part) => {
+                    part.armorWithOperation("ADD", 4)
+                        .armorHelmetWithOperation("ADD", 1)
+                        .armorChestplateWithOperation("ADD", 1)
+                        .armorLeggingsWithOperation("ADD", 1)
+                        .armorBootsWithOperation("ADD", 1)
+                        .armorDurabilityWithOperation("MULTIPLY_BASE", 0.1)
+                        .attackDamageWithOperation("ADD", 3)
+                        .addTrait("kubejs:dragonskill", 1)
+                        .addTrait("kubejs:fire_dragon_blood", 1)
+                })
+        }
+    },
+    auto_ingot3: {
+        id: "kubejs:ice_dragon_blood",
+        config: (mat) => {
+            mat.setCategories(["medium", "organic"])
+                .setIngredientItem("iceandfire:ice_dragon_blood")
+                .setDisplayColor("#2b91cc")
+                .setName("material.silentgear.kubejs:dragon_blood")
+                .addCoating((/** @type {PartBuilder} */part) => {
+                    part.armorWithOperation("ADD", 4)
+                        .armorHelmetWithOperation("ADD", 1)
+                        .armorChestplateWithOperation("ADD", 1)
+                        .armorLeggingsWithOperation("ADD", 1)
+                        .armorBootsWithOperation("ADD", 1)
+                        .armorDurabilityWithOperation("MULTIPLY_BASE", 0.1)
+                        .attackDamageWithOperation("ADD", 3)
+                        .addTrait("kubejs:dragonskill", 1)
+                        .addTrait("kubejs:ice_dragon_blood", 1)
                 })
         }
     }
@@ -33,9 +79,23 @@ const TraitConfigs = {
     enabled: true, // 设为false可禁用生成
 
     auto_trait: {
-        id: "kubejs:strange_crystal",
+        id: "kubejs:lightning_dragon_blood",
         config: (trait) => {
-            trait.setMaxLevel(5)
+            trait.setMaxLevel(3)
+                .addConditions([])
+        }
+    },
+    auto_trait2: {
+        id: "kubejs:ice_dragon_blood",
+        config: (trait) => {
+            trait.setMaxLevel(3)
+                .addConditions([])
+        }
+    },
+    auto_trait3: {
+        id: "kubejs:fire_dragon_blood",
+        config: (trait) => {
+            trait.setMaxLevel(3)
                 .addConditions([])
         }
     }

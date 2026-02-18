@@ -66,22 +66,12 @@
 			y: -0.5d
 		}
 	]
-	order_index: 5
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			id: "0F430864AB53FB98"
-			tasks: [{
-				disable_toast: true
-				id: "426C3EFB9DFFAB2F"
-				structure: "#eternal_starlight:portal_ruins"
-				type: "structure"
-			}]
-			x: 0.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["0488F007314D455B"]
+			dependencies: ["727B996FAE26B0BB"]
+			hide_until_deps_complete: true
 			id: "6CA6DCCDEB5167BD"
 			tasks: [{
 				dimension: "eternal_starlight:starlight"
@@ -107,8 +97,8 @@
 				item: { count: 1, id: "eternal_starlight:raw_aethersent" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.5d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6CA6DCCDEB5167BD"]
@@ -119,8 +109,8 @@
 				item: { count: 1, id: "eternal_starlight:aetherstrike_rocket" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 5.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6CA6DCCDEB5167BD"]
@@ -138,17 +128,6 @@
 			}]
 			x: -14.5d
 			y: -7.0d
-		}
-		{
-			dependencies: ["0F430864AB53FB98"]
-			id: "0488F007314D455B"
-			tasks: [{
-				id: "7D341B8A55735A53"
-				item: { count: 1, id: "eternal_starlight:orb_of_prophecy" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 10.5d
 		}
 		{
 			dependencies: [

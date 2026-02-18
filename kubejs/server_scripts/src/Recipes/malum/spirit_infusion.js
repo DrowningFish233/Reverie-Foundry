@@ -935,4 +935,37 @@ ServerEvents.recipes(event => {
             .addExtraInput('minecraft:nether_star', 1)
             .addExtraInput('hazennstuff:deus_essence', 1)
     );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('minecraft:netherite_scrap', 'kubejs:alexandrite')
+            .addSpirit("earthen", 3)
+            .addExtraInput('iceandfire:sapphire_gem', 2)
+            .addExtraInput('minecraft:amethyst_shard', 2)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:raw_netherite_ingot', 'allthemodium:allthemodium_ingot')
+            .addSpirit("eldritch", 3)
+            .addSpirit("infernal", 3)
+            .addExtraInput('kubejs:necroplasm', 4)
+            .addExtraInput('kubejs:soul_of_light', 4)
+            .addExtraInput('kubejs:soul_of_night', 4)
+            .addExtraInput('minecraft:netherite_scrap', 2)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('allthemodium:allthemodium_ingot', 'allthemodium:vibranium_ingot')
+            .addSpirit("eldritch", 3)
+            .addSpirit("infernal", 3)
+            .addExtraInput('kubejs:ashes_of_calamity', 4)
+            .addExtraInput('silentgems:chaos_essence', 3)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('allthemodium:vibranium_ingot', 'allthemodium:unobtainium_ingot')
+            .addSpirit("eldritch", 3)
+            .addSpirit("infernal", 3)
+            .addExtraInput('kubejs:ruinous_soul', 4)
+            .addExtraInput('alltheores:fluorite_block', 2)
+    );
 });

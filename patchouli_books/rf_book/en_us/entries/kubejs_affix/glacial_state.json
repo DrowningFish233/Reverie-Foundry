@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.kubejs.glacial_state",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.trait.kubejs.glacial_state",
+			"text": "patchouli.gui.trait.kubejs.glacial_state.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.kubejs.glacial_state.applicable",
+			"text": "patchouli.gui.trait.kubejs.glacial_state.applicable_text"
+		}
+	]
+}

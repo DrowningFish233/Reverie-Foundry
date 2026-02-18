@@ -59,4 +59,27 @@ LootJS.modifiers(event => {
                     ItemFilter.hasEnchantment("minecraft:silk_touch")
                 ))
         );
+
+    event.addBlockModifier([
+        'silentgems:chaos_ore',
+        'silentgems:deepslate_chaos_ore'
+    ])
+        .addLoot(
+            LootEntry.of('kubejs:soul_of_light')
+                .randomChance(0.05)
+                .matchTool(ItemFilter.not(
+                    ItemFilter.hasEnchantment("minecraft:silk_touch")
+                ))
+        );
+    event.addBlockModifier([
+        'silentgems:chaos_ore',
+        'silentgems:deepslate_chaos_ore'
+    ])
+        .addLoot(
+            LootEntry.of('kubejs:soul_of_night')
+                .randomChance(0.05)
+                .matchTool(ItemFilter.not(
+                    ItemFilter.hasEnchantment("minecraft:silk_touch")
+                ))
+        );
 });

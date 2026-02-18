@@ -2,7 +2,9 @@
  * 击碎灵魂
  */
 EntityEvents.afterHurt(event => {
-    if (!event.entity.isLiving() || !event.source.actual.isPlayer()) return
+    let actual = event.source.actual
+    if (!actual) return
+    if (!event.entity.isLiving() || !actual.isLiving() || !actual.isPlayer()) return
     if (!fu_hasTraitAnywhere(event.source.actual, "kubejs:strange_crystal")) return
 
     const BLACKLIST = [

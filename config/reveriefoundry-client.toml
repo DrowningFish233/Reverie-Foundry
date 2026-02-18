@@ -1,0 +1,78 @@
+#JEI Layout Configuration
+[jei_layout]
+
+	#Icon Settings
+	[jei_layout.icon]
+		#Size of the icon in pixels
+		# Default: 18
+		# Range: 8 ~ 32
+		iconSize = 18
+		#X position of the icon
+		# Default: 1
+		# Range: -10 ~ 50
+		iconX = 1
+		#Y position of the icon
+		# Default: 1
+		# Range: -10 ~ 50
+		iconY = 1
+		#X position where text starts
+		# Default: 23
+		# Range: 0 ~ 100
+		textStartX = 23
+
+	#Text Settings
+	[jei_layout.text]
+		#Top padding for text
+		# Default: 5
+		# Range: 0 ~ 50
+		topPadding = 5
+		#Height of each text line
+		# Default: 9
+		# Range: 5 ~ 30
+		lineHeight = 9
+		#Indentation for nested text
+		# Default: 10
+		# Range: 0 ~ 50
+		indent = 10
+		#Height of title text
+		# Default: 12
+		# Range: 5 ~ 30
+		titleHeight = 12
+		#Spacing between sections
+		# Default: 4
+		# Range: 0 ~ 20
+		sectionSpacing = 4
+
+	#Scroll Area Settings
+	[jei_layout.scroll_area]
+		#X position of the scroll area
+		# Default: 0
+		# Range: -20 ~ 50
+		scrollAreaX = 0
+		#Y position of the scroll area
+		# Default: 3
+		# Range: -20 ~ 50
+		scrollAreaY = 3
+		#Width of the scroll area
+		# Default: 164
+		# Range: 50 ~ 500
+		scrollAreaWidth = 164
+		#Height of the scroll area
+		# Default: 180
+		# Range: 50 ~ 500
+		scrollAreaHeight = 180
+
+	#Text Limits
+	[jei_layout.limits]
+		#Maximum number of parts per line
+		# Default: 3
+		# Range: 1 ~ 10
+		maxPartsPerLine = 3
+		#Maximum width of trait line before wrapping
+		# Default: 35
+		# Range: 10 ~ 100
+		maxTraitLineWidth = 35
+		#Maximum width of tooltip before wrapping
+		# Default: 35
+		# Range: 10 ~ 100
+		tooltipWidth = 35

@@ -17,6 +17,51 @@
                 ]
             }
         },
+        "terra_curio:sniper_scope": {
+            "terra_curio:rifle_scope": {},
+            "terra_curio:attributes": {
+                "apothic_attributes:crit_chance": [
+                    {
+                        "id": "terra_curio:sniper_scope",
+                        "amount": 0.1,
+                        "operation": "add_multiplied_base"
+                    }
+                ],
+                "apothic_attributes:arrow_damage": [
+                    {
+                        "id": "terra_curio:sniper_scope",
+                        "amount": 0.1,
+                        "operation": "add_multiplied_total"
+                    }
+                ]
+            }
+        },
+        "terra_curio:recon_scope": {
+            "terra_curio:rifle_scope": {},
+            "terra_curio:attributes": {
+                "apothic_attributes:crit_chance": [
+                    {
+                        "id": "terra_curio:recon_scope",
+                        "amount": 0.1,
+                        "operation": "add_multiplied_base"
+                    }
+                ],
+                "apothic_attributes:arrow_damage": [
+                    {
+                        "id": "terra_curio:recon_scope",
+                        "amount": 0.1,
+                        "operation": "add_multiplied_total"
+                    }
+                ],
+                "terra_curio:player.aggro": [
+                    {
+                        "id": "terra_curio:recon_scope",
+                        "amount": -400,
+                        "operation": "add_value"
+                    }
+                ]
+            }
+        },
         "terra_curio:angler_earring": {
             "terra_curio:attributes": {
                 "minecraft:generic.luck": [

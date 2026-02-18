@@ -1,0 +1,2 @@
+#Use IrisFlw's custom checkerboard texture instead of the default Create one. It is highly recommended to turn it on, as Create's own checkerboard maps are completely opaque in some shaderpacks.
+replaceCheckerboardTexture = true

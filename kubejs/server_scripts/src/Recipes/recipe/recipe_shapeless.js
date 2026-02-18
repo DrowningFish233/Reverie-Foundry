@@ -141,4 +141,12 @@ ServerEvents.recipes(event => {
             'minecraft:glass_bottle'
         ]
     )
+
+    event.shapeless(
+        Item.of('minecraft:raw_iron', 1),
+        [
+            'minecraft:raw_copper',
+            'silentgems:chaos_essence'
+        ]
+    )
 })

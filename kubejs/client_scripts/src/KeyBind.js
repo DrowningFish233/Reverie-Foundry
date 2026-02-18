@@ -5,7 +5,8 @@ const keysToCheck = [
     "key.test_3",
     "key.test_4",
     "key.test_5",
-    "key.test_6"
+    "key.test_6",
+    "key.test_7"
 
 ];
 /***

@@ -1062,5 +1062,85 @@ ServerEvents.recipes(event => {
         }
     )
 
+    event.shaped(
+        Item.of('allthemodium:allthemodium_upgrade_smithing_template', 1),
+        [
+            'BCB',
+            'BAB',
+            'BBB'
+        ],
+        {
+            A: 'minecraft:netherite_upgrade_smithing_template',
+            B: 'kubejs:necroplasm',
+            C: 'kubejs:soul_of_night'
+        }
+    )
 
+    event.shaped(
+        Item.of('allthemodium:vibranium_upgrade_smithing_template', 1),
+        [
+            'BCB',
+            'BAB',
+            'BBB'
+        ],
+        {
+            A: 'allthemodium:allthemodium_upgrade_smithing_template',
+            B: 'kubejs:ashes_of_calamity',
+            C: 'kubejs:soul_of_night'
+        }
+    )
+
+    event.shaped(
+        Item.of('allthemodium:unobtainium_upgrade_smithing_template', 1),
+        [
+            'BCB',
+            'BAB',
+            'BBB'
+        ],
+        {
+            A: 'allthemodium:vibranium_upgrade_smithing_template',
+            B: 'kubejs:ruinous_soul',
+            C: 'kubejs:soul_of_night'
+        }
+    )
+
+    event.shaped(
+        Item.of('minecraft:netherite_upgrade_smithing_template', 1),
+        [
+            'BCB',
+            'BAB',
+            'BBB'
+        ],
+        {
+            A: 'minecraft:diamond',
+            B: 'minecraft:netherite_scrap',
+            C: 'kubejs:soul_of_night'
+        }
+    )
+
+    event.shaped(
+        Item.of('alshanex_familiars:crystal_berry', 1),
+        [
+            ' B ',
+            'BAB',
+            ' B '
+        ],
+        {
+            B: 'minecraft:prismarine_crystals',
+            A: '#c:foods/berry'
+        }
+    )
+
+    event.shaped(
+        Item.of('hazennstuff:runestone_fragments', 2),
+        [
+            ' B ',
+            'BAB',
+            ' B '
+        ],
+        {
+            B: 'silentgems:chaos_essence',
+            A: 'hazennstuff:runestone_fragments'
+        }
+    )
 })

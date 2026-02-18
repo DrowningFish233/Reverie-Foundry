@@ -1,6 +1,106 @@
 StartupEvents.registry("champions:affix", event => {
-    event.create('fire_aura')
+    event.create('malum_pact_of_the_lone_druid')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("defense")
+            // 必须设置类别：cc、defense、offense
+            //offense攻击
+            //defense防御
+            //cc控制
+        })
+        .behavior(behavior => {
+            behavior.onSpawn((champion) => {
+                const entity = champion.getLivingEntity();
+                entity.persistentData.putBoolean("malum_pact_of_the_lone_druid", true);
+            })
+        })
+    event.create('malum_pact_of_the_shield')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("defense")
+            // 必须设置类别：cc、defense、offense
+            //offense攻击
+            //defense防御
+            //cc控制
+        })
+        .behavior(behavior => {
+            behavior.onSpawn((champion) => {
+                const entity = champion.getLivingEntity();
+                entity.persistentData.putBoolean("malum_pact_of_the_shield", true);
+            })
+        })
 
+    event.create('malum_pact_of_patience_repaid')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("defense")
+            // 必须设置类别：cc、defense、offense
+            //offense攻击
+            //defense防御
+            //cc控制
+        })
+        .behavior(behavior => {
+            behavior.onSpawn((champion) => {
+                const entity = champion.getLivingEntity();
+                entity.persistentData.putBoolean("malum_pact_of_patience_repaid", true)
+            })
+        })
+
+    event.create('malum_pact_of_the_high_priest')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("defense")
+            // 必须设置类别：cc、defense、offense
+            //offense攻击
+            //defense防御
+            //cc控制
+        })
+        .behavior(behavior => {
+            behavior.onSpawn((champion) => {
+                const entity = champion.getLivingEntity();
+                entity.persistentData.putBoolean("malum_pact_of_the_high_priest", true)
+            })
+        })
+
+    event.create('malum_pact_of_the_berserker')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("defense")
+            // 必须设置类别：cc、defense、offense
+            //offense攻击
+            //defense防御
+            //cc控制
+        })
+        .behavior(behavior => {
+            behavior.onSpawn((champion) => {
+                const entity = champion.getLivingEntity();
+                entity.persistentData.putBoolean("malum_pact_of_the_berserker", true)
+            })
+        })
+
+    event.create('malum_pact_of_the_warlock')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("defense")
+            // 必须设置类别：cc、defense、offense
+            //offense攻击
+            //defense防御
+            //cc控制
+        })
+        .behavior(behavior => {
+            behavior.onSpawn((champion) => {
+                const entity = champion.getLivingEntity();
+                entity.persistentData.putBoolean("malum_pact_of_the_warlock", true)
+            })
+        })
+
+    event.create('fire_aura')
         .settings(setting => {
             setting.withDefault()
                 .setPrefix("affix.")
@@ -486,7 +586,6 @@ StartupEvents.registry("champions:affix", event => {
                         ).forEach(e => {
                             if (e && e.isLiving() && e.isPlayer()) {
                                 e.potionEffects.add('kubejs:maximum_health_reduction', 20 * 10, 7);
-
                                 if (Math.random() < 0.15) {
                                     e.potionEffects.add('irons_spellbooks:guided', 20 * 3, 0);
                                     entity.potionEffects.add('kubejs:hurt', 20 * 5, 1);
@@ -498,4 +597,4 @@ StartupEvents.registry("champions:affix", event => {
                 }
             });
         });
-});
+})

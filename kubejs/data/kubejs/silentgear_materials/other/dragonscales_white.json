@@ -1,0 +1,126 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"medium",
+			"organic"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "iceandfire:dragonscales_white"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#d0dada",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:dragonscales"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:main": {
+			"armor": 26,
+			"armor/helmet": 5,
+			"armor/chestplate": 9,
+			"armor/leggings": 7,
+			"armor/boots": 5,
+			"armor_toughness": 8,
+			"armor_durability": 100,
+			"durability": 1000,
+			"harvest_speed": 0.9,
+			"ranged_damage": 0.5,
+			"repair_value": 1,
+			"attack_damage": 8,
+			"attack_speed": 1.6,
+			"spell_resist": 0.1,
+			"traits": [
+				{
+					"conditions": [],
+					"level": 3,
+					"trait": "kubejs:dragonskill"
+				},
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:dragonprotection"
+				}
+			]
+		},
+		"silentgear:lining": {
+			"armor": {
+				"operation": "ADD",
+				"value": 2
+			},
+			"armor_toughness": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"durability": {
+				"operation": "MULTIPLY_TOTAL",
+				"value": 0.25
+			},
+			"knockback_resistance": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.25
+			},
+			"spell_resist": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.05
+			},
+			"mana_regen": {
+				"operation": "ADD",
+				"value": 0.05
+			},
+			"rarity": {
+				"operation": "ADD",
+				"value": 35
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 3,
+					"trait": "kubejs:dragonskill"
+				},
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:dragonprotection"
+				}
+			]
+		},
+		"silentgear:coating": {
+			"attack_damage": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.2
+			},
+			"attack_speed": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"durability": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.2
+			},
+			"projectile_accuracy": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.2
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 3,
+					"trait": "kubejs:dragonskill"
+				},
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:dragonprotection"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"conditions": [],
+	"description": {
+		"translate": "trait.kubejs.fire_dragon_blood.desc"
+	},
+	"effects": [],
+	"max_level": 3,
+	"name": {
+		"translate": "trait.kubejs.fire_dragon_blood"
+	}
+}

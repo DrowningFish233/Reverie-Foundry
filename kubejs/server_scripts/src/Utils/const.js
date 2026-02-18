@@ -236,6 +236,16 @@ const RANK_MESSAGE_KEYS = {
     "Kether": { prefix: "message.sephirah.kether.prefix", message: "message.sephirah.kether.message" }
 };
 
+
+let pactToGeasMap = {
+    'malum_pact_of_the_lone_druid': 'pact_of_defiance',
+    'malum_pact_of_the_shield': 'pact_of_the_shield',
+    'malum_pact_of_patience_repaid': 'pact_of_patience_repaid',
+    'malum_pact_of_the_high_priest': 'pact_of_the_high_priest',
+    'malum_pact_of_the_berserker': 'pact_of_the_berserker',
+    'malum_pact_of_the_warlock': 'pact_of_the_warlock'
+};
+
 // 降级消息
 const DEMOTION_MESSAGE = {
     prefix: "message.sephirah.demotion.prefix",

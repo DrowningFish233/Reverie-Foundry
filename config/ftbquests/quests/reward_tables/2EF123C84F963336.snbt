@@ -1,0 +1,10 @@
+{
+	id: "2EF123C84F963336"
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{ id: "72ADEE3F54A26111", item: { count: 1, id: "terra_curio:ranger_emblem" } }
+		{ id: "0D0355EB3BA29930", item: { count: 1, id: "terra_curio:warrior_emblem" } }
+		{ id: "09528A185CED1340", item: { count: 1, id: "terra_curio:sorcerer_emblem" } }
+	]
+}

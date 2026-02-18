@@ -1,0 +1,68 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"medium",
+			"organic"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "iceandfire:ice_dragon_blood"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#2b91cc",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:dragon_blood"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:coating": {
+			"armor": {
+				"operation": "ADD",
+				"value": 4
+			},
+			"armor/helmet": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"armor/chestplate": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"armor/leggings": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"armor/boots": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"armor_durability": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
+			"attack_damage": {
+				"operation": "ADD",
+				"value": 3
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:dragonskill"
+				},
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:ice_dragon_blood"
+				}
+			]
+		}
+	}
+}

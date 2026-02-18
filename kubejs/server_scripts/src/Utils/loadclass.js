@@ -48,6 +48,7 @@ const $DataComponents = Java.loadClass('net.minecraft.core.component.DataCompone
 const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
 const $MobEffectEvent$Expired = Java.loadClass("net.neoforged.neoforge.event.entity.living.MobEffectEvent$Expired");
 const $MobEffectEvent$Added = Java.loadClass("net.neoforged.neoforge.event.entity.living.MobEffectEvent$Added");
+const $MobEffectEvent$Applicable = Java.loadClass("net.neoforged.neoforge.event.entity.living.MobEffectEvent$Applicable");
 const $LivingDamageEvent$Pre = Java.loadClass("net.neoforged.neoforge.event.entity.living.LivingDamageEvent$Pre");
 const $GearSickleItem = Java.loadClass("net.silentchaos512.gear.item.gear.GearSickleItem");
 const $MysteriousItemConversionCategory = Java.loadClass("com.simibubi.create.compat.jei.category.MysteriousItemConversionCategory")

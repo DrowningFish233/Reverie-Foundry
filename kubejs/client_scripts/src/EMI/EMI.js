@@ -210,24 +210,6 @@ RecipeViewerEvents.addInformation('item', event => {
         '为什么会有人想吃这个啊喂!',
     ]);
 
-    event.add('allthemodium:allthemodium_ingot', [
-        'ATM锭可以前往下界，找到下界荒地的狱墟末影人',
-        '诡异森林的诡森末影人',
-        '绯红森林的绯红末影人',
-        '右键向它们交易获得对应材料',
-        '如果想要直视末影人而不激怒他们，请制作群系兜帽'
-    ]);
-
-    event.add('allthemodium:vibranium_ingot', [
-        '振金锭可以前往下界，找到猪灵',
-        '右键向它们交易获得对应材料'
-    ]);
-
-    event.add('allthemodium:unobtainium_ingot', [
-        '难得素可以前往末地，寻找漂游者',
-        '右键向它们交易获得对应材料'
-    ]);
-
     event.add('malum:warp_flux', [
         '对末影人类型的生物触发隐秘收割获得'
     ]);

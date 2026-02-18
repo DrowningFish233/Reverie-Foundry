@@ -76,7 +76,8 @@ global.new_materials = [
     { id: 'eye_of_ancient_city_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_ancient_city_located" },
     { id: 'eye_of_dragon_cave_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_dragon_cave_located" },
     { id: 'eye_of_weeping_well_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_weeping_well_located" },
-    { id: 'luminofish_ink_sac', maxStackSize: 32, texture: "kubejs:item/misc/luminofish_ink_sac" }
+    { id: 'luminofish_ink_sac', maxStackSize: 32, texture: "kubejs:item/misc/luminofish_ink_sac" },
+    { id: 'holosphere', maxStackSize: 1, texture: "kubejs:item/debug/holosphere" }
 
 ];
 

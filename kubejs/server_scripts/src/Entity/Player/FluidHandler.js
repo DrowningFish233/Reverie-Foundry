@@ -1,6 +1,6 @@
 PlayerEvents.tick(event => {
     const player = event.player;
-    if (!player || player.tickCount % 10 !== 0) return;
+    if (!player || player.tickCount % 11 !== 0) return;
 
     if (isNaN(player.health)) player.setHealth(0);
 
@@ -24,7 +24,7 @@ PlayerEvents.tick(event => {
 
 PlayerEvents.tick(event => {
     const player = event.player;
-    if (!player || player.tickCount % 10 !== 0) return;
+    if (!player || player.tickCount % 11 !== 0) return;
     if (isNaN(player.health)) player.setHealth(0);
     let lavaLike = [
         "kubejs:abiding_alloy",
@@ -123,4 +123,27 @@ PlayerEvents.tick(event => {
         player.setRemainingFireTicks(fireSecond);
         player.attack(player.damageSources().lava(), directDamage);
     }
+});
+
+
+PlayerEvents.tick(event => {
+    const player = event.player;
+    if (!player || player.tickCount % 20 !== 0) return;
+
+    let other_fluid = [
+        "minecraft:water",
+    ];
+    let waterTicks = player.persistentData.getInt('waterTicks') || 0;
+    if (isPlayerInFluid(player, other_fluid)) {
+        if (!fu_hasTraitAnywhere(player, 'kubejs:sea_serpent_scales')) return;
+        let traitLevel = fu_getHighestTraitLevelAnywhere(player, 'kubejs:sea_serpent_scales')
+        waterTicks = Math.min(waterTicks + 1, 30);
+
+        let amplifierLevel = Math.floor(waterTicks / traitLevel + 1);
+
+        player.potionEffects.add("kubejs:damage_amplification", 60, amplifierLevel);
+    } else {
+        waterTicks = 0;
+    }
+    player.persistentData.putInt('waterTicks', waterTicks);
 });

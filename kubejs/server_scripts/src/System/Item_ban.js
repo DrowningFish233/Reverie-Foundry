@@ -144,3 +144,27 @@ PlayerEvents.inventoryChanged(event => {
         ]);
     }
 });
+
+
+// 物品变化监听
+PlayerEvents.inventoryChanged(event => {
+    const player = event.player;
+    const changedItem = event.item;
+    const inventory = player.inventory.items;
+    const mimicream_blacklist = [
+        "kubejs:mark"
+    ]
+    // 处理禁用物品
+    if (mimicream_blacklist.includes(changedItem.id)) {
+        event.server.tell([
+            Text.translate("message.mark.ban").bold(),
+        ]);
+        // 移除物品
+        for (let i = 0; i < inventory.length; i++) {
+            if (inventory[i]?.id === changedItem.id) {
+                inventory[i].count = 0;
+            }
+        }
+        return;
+    }
+});

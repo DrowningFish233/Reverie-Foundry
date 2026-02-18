@@ -1,15 +1,17 @@
 #Server Settings
 [server]
 	#List of items that are not allowed to be put in backpacks - e.g. "minecraft:shulker_box"
-	disallowedItems = []
+	disallowedItems = ["terra_entity:skeletron_spawn_egg", "terra_entity:king_slime_spawn_egg", "terra_entity:cthulhu_eye_spawn_egg", "terra_entity:eater_of_world_spawn_egg", "terra_entity:queen_bee_spawn_egg", "terra_entity:brain_of_cthulhu_spawn_egg", "kubejs:summon_amethyst_crab", "kubejs:summon_gauntlet", "kubejs:summon_lich", "kubejs:summon_obsidilith", "kubejs:summon_void_blossom", "kubejs:summon_fire_boss", "kubejs:summon_dead_king", "kubejs:summon_ignis", "kubejs:summon_the_leviathan", "kubejs:summon_ancient_remnant", "kubejs:summon_maledictus", "kubejs:summon_scylla", "kubejs:summon_the_harbinger", "kubejs:summon_starlight_golem", "kubejs:summon_lunar_monstrosity", "kubejs:summon_ender_guardian", "kubejs:summon_netherite_monstrosity", "kubejs:summon_frostling_pet", "kubejs:summon_mage_pet", "kubejs:summon_archmage_pet", "kubejs:summon_summoner_pet", "kubejs:summon_necromancer_pet", "kubejs:summon_hunter_pet", "kubejs:summon_druid_pet", "kubejs:summon_illusionist_pet", "kubejs:summon_scorcher_pet", "kubejs:summon_cleric_pet", "kubejs:summon_plague_pet", "kubejs:summon_bard_pet", "kubejs:summon_dragon_warrior_pet", "darkdoppelganger:shadow_orb"]
 	#Determines if container items (those that override canFitInsideContainerItems to false) are able to fit in backpacks
 	containerItemsDisallowed = false
 	#List of blocks that inventory interaction upgrades can't interact with - e.g. "minecraft:shulker_box"
 	noInteractionBlocks = []
 	#List of blocks that are not allowed to connect to backpacks - e.g. "refinedstorage:external_storage"
 	noConnectionBlocks = []
+	#If true, disallows all blocks from connecting to backpacks
+	allBlockConnectionsDisallowed = false
 	#Maximum number of upgrades of type per backpack in format of "UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
-	maxUpgradesPerStorage = ["jukebox_upgrade|1", "furnace_upgrades|1", "stack_upgrades|3"]
+	maxUpgradesPerStorage = ["stack_upgrades|3", "jukebox_upgrades|1", "furnace_upgrades|1"]
 	#Turns on/off item fluid handler of backpack in its item form. There are some dupe bugs caused by default fluid handling implementation that manifest when backpack is drained / filled in its item form in another mod's tank and the only way to prevent them is disallowing drain/fill in item form altogether
 	itemFluidHandlerEnabled = true
 	#Determines whether player can right click on backpack that another player is wearing to open it. If off will turn off that capability for everyone and remove related settings from backpack.
@@ -20,8 +22,6 @@
 	tickDedupeLogicDisabled = false
 	#Determines if backpacks can be placed in container items (those that check for return value of canFitInsideContainerItems)
 	canBePlacedInContainerItems = false
-	#If true, disallows all blocks from connecting to backpacks
-	allBlockConnectionsDisallowed = false
 
 	#Leather Backpack Settings
 	[server.leatherBackpack]
@@ -483,6 +483,31 @@
 		# Range: 1 ~ 20
 		maxXpPointsPerMending = 5
 
+	#Advanced Jukebox Upgrade Settings
+	[server.advancedJukeboxUpgrade]
+		#Number of slots for discs in jukebox upgrade
+		# Default: 12
+		# Range: 1 ~ 16
+		numberOfSlots = 12
+		#Number of lots displayed in a row
+		# Default: 4
+		# Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Alchemy Upgrade Settings
+	[server.alchemyUpgrade]
+		#Number of Alchemy Upgrade's filter slots
+		# Default: 4
+		# Range: 1 ~ 20
+		filterSlots = 4
+
+	#Advanced Alchemy Upgrade Settings
+	[server.advancedAlchemyUpgrade]
+		#Number of Advanced Alchemy Upgrade's filter slots
+		# Default: 8
+		# Range: 1 ~ 20
+		filterSlots = 8
+
 	#Settings for Spawning Entities with Backpack
 	[server.entityBackpackAdditions]
 		#Chance of an entity spawning with Backpack
@@ -563,28 +588,3 @@
 		onlyWornBackpackTriggersUpgrades = false
 		#Effect that is applied to player when they have too many backpacks. Can be any effect including modded ones like overencumbered effect some mods have.
 		nerfEffect = "minecraft:slowness"
-
-	#Advanced Jukebox Upgrade Settings
-	[server.advancedJukeboxUpgrade]
-		#Number of slots for discs in jukebox upgrade
-		# Default: 12
-		# Range: 1 ~ 16
-		numberOfSlots = 12
-		#Number of lots displayed in a row
-		# Default: 4
-		# Range: 1 ~ 6
-		slotsInRow = 4
-
-	#Alchemy Upgrade Settings
-	[server.alchemyUpgrade]
-		#Number of Alchemy Upgrade's filter slots
-		# Default: 4
-		# Range: 1 ~ 20
-		filterSlots = 4
-
-	#Advanced Alchemy Upgrade Settings
-	[server.advancedAlchemyUpgrade]
-		#Number of Advanced Alchemy Upgrade's filter slots
-		# Default: 8
-		# Range: 1 ~ 20
-		filterSlots = 8

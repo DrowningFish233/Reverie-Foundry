@@ -306,7 +306,8 @@ LootJS.modifiers(event => {
     );
 
     event.addEntityModifier([
-        "cataclysm:ender_guardian"
+        "cataclysm:ender_guardian",
+        "bosses_of_mass_destruction:obsidilith"
     ]).addLoot(LootEntry.of('kubejs:ruinous_soul')
         .apply(item => {
             item.setCount({ min: 9, max: 24 })

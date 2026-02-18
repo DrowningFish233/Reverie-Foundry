@@ -142,20 +142,29 @@ EntityEvents.checkSpawn(event => {
 
 
 
-/*
+
+
+
 EntityEvents.checkSpawn(event => {
     const entity = event.entity;
     if (!entity || !entity.isLiving() || !entity.isMonster()) return;
 
-    const defianceType = getGeasTypeById('pact_of_defiance');
+    entity.server.scheduleInTicks(2, () => {
+        Object.entries(pactToGeasMap).forEach(([pactKey, geasId]) => {
+            if (entity.persistentData.contains(pactKey)) {
 
-    if (defianceType) {
-        const success = fu_addGeasEffect(entity, defianceType);
-        if (success) {
-            const geasName = GearsEffect['pact_of_defiance'] || '违抗条约';
-            console.log(`为 ${entity.type} 添加了 ${geasName}`);
-        }
-    }
+                let geasType = getGeasTypeById(geasId);
+
+                if (geasType) {
+                    let success = fu_addGeasEffect(entity, geasType);
+                    if (success) {
+                        //let geasName = GearsEffect[geasId] || geasId.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                        // console.log(`为 ${entity.type} 添加了 ${geasName}`);
+                    }
+                } else {
+                    console.log(`警告: 找不到条约类型 ${geasId} 对应的 Geas`);
+                }
+            }
+        })
+    });
 });
-
-*/

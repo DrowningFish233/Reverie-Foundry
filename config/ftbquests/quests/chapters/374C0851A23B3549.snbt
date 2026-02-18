@@ -26,11 +26,14 @@
 			y: 5.0d
 		}
 	]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["2DD51904F4629516"]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
 				id: "iceandfire:silver_sword"
 			}
@@ -455,8 +458,8 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(silentgear:repair_kits)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -11.0d
-			y: 7.5d
+			x: -5.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["09E68D57095A5F1D"]
@@ -584,7 +587,7 @@
 				id: "068525FE9756E31F"
 				type: "checkmark"
 			}]
-			x: 7.5d
+			x: -1.0d
 			y: 9.5d
 		}
 		{
@@ -597,6 +600,147 @@
 			}]
 			x: -13.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "2482C01B41948195"
+			rewards: [{
+				id: "1896B77C92440ECF"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3CCB252209BACFF5"
+				item: { count: 1, id: "kubejs:steel_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["31CD959C475E5714"]
+			icon: {
+				id: "minecraft:dandelion"
+			}
+			id: "4C04EAB3BF7A1201"
+			tasks: [{
+				id: "3AC00DB9D4B5DA3A"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "4EB3AF395EE2F05E"
+			tasks: [{
+				id: "6278C6BB65D05658"
+				item: { count: 1, id: "kubejs:rhodium_ingot" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "4073FA79B270F976"
+			tasks: [{
+				id: "4FA000F4BB8188A7"
+				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "3F95B455EACD5B91"
+			tasks: [{
+				id: "3318B901CCB2638D"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "5883458218829D00"
+			tasks: [{
+				id: "348A7409E27944E9"
+				item: { count: 1, id: "malum:malignant_pewter_ingot" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "20848CB8F54AD783"
+			tasks: [{
+				id: "18B13FAB0AC576C9"
+				item: { count: 1, id: "cataclysm:lacrima" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "61365E0F2831F348"
+			tasks: [{
+				id: "23FB608DB1C7494B"
+				item: { count: 1, id: "eternal_starlight:white_yeti_fur" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "35C26E629284AC1A"
+			tasks: [{
+				id: "02B83F7030180B25"
+				item: { count: 1, id: "irons_spellbooks:hogskin" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "48B59F0341701B48"
+			tasks: [{
+				id: "31F9736F60C938AE"
+				item: { count: 1, id: "irons_spellbooks:mithril_weave" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["31CD959C475E5714"]
+			icon: {
+				id: "minecraft:wither_rose"
+			}
+			id: "305A6FFD7FD5684F"
+			tasks: [{
+				id: "556CD24E3C8380EB"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["4C04EAB3BF7A1201"]
+			id: "7BD9DC7DB2278AA5"
+			tasks: [{
+				id: "14C06E5178FCFD9D"
+				item: { count: 1, id: "kubejs:isovol_ingot" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 11.0d
 		}
 	]
 }

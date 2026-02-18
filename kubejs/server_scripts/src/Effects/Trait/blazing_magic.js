@@ -16,6 +16,8 @@ function blazing_magic(event) {
             if (newAmplifier <= 9) {
                 player.potionEffects.add("kubejs:blazing_magic", 20 * 8, newAmplifier);
             }
+        } else {
+            player.potionEffects.add("kubejs:blazing_magic", 20 * 8, 0);
         }
     }
 }

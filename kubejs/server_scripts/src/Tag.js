@@ -294,6 +294,10 @@ ServerEvents.tags('item', event => {
     event.add('c:gems/ruby', 'kubejs:ruby')
     event.add('c:gems/topaz', 'kubejs:topaz')
 
+    event.remove('curios:sheath', 'hazennstuff:galvanized_sheath')
+    event.add('curios:accessory', 'hazennstuff:galvanized_sheath')
+
+
     event.add('kubejs:blood',
         'irons_spellbooks:blood',
         'biomesoplenty:blood'
@@ -390,6 +394,12 @@ ServerEvents.tags('item', event => {
         'kubejs:repeat/spider_fang',
         'alshanex_familiars:spider_fang',
         'hazennstuff:spider_fang'
+    )
+
+    event.add(
+        'kubejs:bort',
+        'silentgems:chaos_essence',
+        'silentgear:bort'
     )
     event.add(
         'kubejs:coral',

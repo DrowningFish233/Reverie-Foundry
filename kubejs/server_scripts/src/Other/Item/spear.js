@@ -65,7 +65,7 @@ ItemEvents.firstRightClicked('silentgear:spear', event => {
             hasHitTarget = true;
             let baseDamage = attackDamage * 0.5;
 
-            let exactSpeed = player.getSpeed();
+            let exactSpeed = player.getTotalMovementSpeed();
 
             if (exactSpeed <= 0.1) {
                 if (baseDamage > 0) {
@@ -111,7 +111,7 @@ function spearMomentumDamage(event) {
     if (!mainHandItem || mainHandItem.isEmpty()) return;
 
     if (mainHandItem !== "silentgear:spear") return
-    const exactSpeed = attacker.getSpeed();
+    const exactSpeed = attacker.getTotalMovementSpeed();
     if (exactSpeed <= 0.1) return;
 
     const effectiveSpeed = exactSpeed - 0.1;

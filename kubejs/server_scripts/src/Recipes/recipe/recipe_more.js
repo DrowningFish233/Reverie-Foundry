@@ -16,6 +16,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'silentgear:metal_press' })
     event.remove({ output: 'darkdoppelganger:shadow_orb' })
     event.remove({ output: 'silentgems:garnet_teleporter' })
+    event.remove({ output: 'hazennstuff:scroll_sheath' })
     event.remove({ input: '#alltheores:ore_hammers' })
     event.remove({ output: 'productivemetalworks:gear_cast' })
     event.remove({ id: 'hazennstuff:crafting/materials/deus_essence_from_nether_star' })
@@ -34,5 +35,11 @@ ServerEvents.recipes(event => {
         { input: 'farmersdelight:wheat_dough' },
         'farmersdelight:wheat_dough',
         '#c:dough'
+    )
+
+    event.replaceInput(
+        { input: 'silentgear:bort' },
+        'silentgear:bort',
+        '#kubejs:bort'
     )
 })

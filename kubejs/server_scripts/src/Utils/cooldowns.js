@@ -98,7 +98,10 @@ const $CooldownManager = {
             "spearCharge",
             "tenacious_vine_COOLDOWN_KEY",
             "hallowed_ingot_COOLDOWN_KEY",
-            "strange_crystal_COOLDOWN_KEY"
+            "strange_crystal_COOLDOWN_KEY",
+            "lightning_dragon_breath_cooldown",
+            "fire_dragon_breath_cooldown",
+            "ice_dragon_breath_cooldown"
         ];
 
         // 清理冷却数据

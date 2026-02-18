@@ -80,7 +80,12 @@ function getPlayerMagicData(player) {
 }
 
 /**
- * 施法逻辑
+ * 强制玩家施放指定法术
+ * 
+ * @param {ResourceLocation} resourceLocation 法术的资源标识符
+ * @param {number} amplifier 法术的等级
+ * @param {Player} player 施法的实体
+ * @param {boolean} consume 是否消耗法力值
  */
 function overLimitSpellCast(resourceLocation, amplifier, player, consume) {
     $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](resourceLocation).attemptInitiateCast(Item.of('air'), amplifier, player.level, player, $CastSource.NONE, consume, "main_hand")

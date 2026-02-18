@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "appearAnimation": "SCALE",
-  "idleAnimation": "NONE",
+  "idleAnimation": "SWING",
   "appearDelayMs": 200,
   "itemSizePercent": 65,
   "showItemInfo": false,

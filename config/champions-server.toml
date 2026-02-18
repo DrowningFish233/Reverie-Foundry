@@ -86,7 +86,7 @@
 		#The base movement speed bonus
 		# Default: 0.25
 		# Range: 0.0 ~ 1.7976931348623157E308
-		hastyMovementBonus = 0.20
+		hastyMovementBonus = 0.1
 
 	[affixes.infested]
 		#The amount of parasites to spawn per interval

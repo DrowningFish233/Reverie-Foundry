@@ -2,7 +2,7 @@
     "weight": 5,
     "reforge_experience_cost": 4,
     "reforge_durability_cost": 2,
-    "reforge_item": "tiered:weaponsmiths_hammer",
+    "reforge_item": "tiered:toolsmiths_hammer",
     "style": {
         "color": "#FF96FF"
     },
@@ -12,7 +12,7 @@
             "modifier": {
                 "id": "tiered:kubejs_curios_24a",
                 "operation": "add_multiplied_base",
-                "amount": 0.04
+                "amount": -0.04
             },
             "optional_curio_slots": [
                 "back",

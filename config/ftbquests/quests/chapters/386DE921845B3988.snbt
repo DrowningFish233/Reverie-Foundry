@@ -16,7 +16,7 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -45,7 +45,7 @@
 					id: "0CF4F729697D708C"
 					item: {
 						count: 1
-						id: "refinedstorage:4k_storage_block"
+						id: "refinedstorage:16k_storage_block"
 					}
 					type: "item"
 				}
@@ -66,28 +66,12 @@
 					}
 					type: "item"
 				}
-				{
-					count: 4
-					id: "4EEC2B0C93BCF7FF"
-					item: {
-						count: 1
-						id: "refinedstorage:1k_storage_part"
-					}
-					type: "item"
-				}
-				{
-					count: 4
-					id: "090C5125B06E07DE"
-					item: {
-						count: 1
-						id: "refinedstorage:64b_fluid_storage_part"
-					}
-					type: "item"
-				}
 			]
 			tasks: [{
-				id: "398A49ECF96C541F"
-				type: "checkmark"
+				count: 59L
+				id: "2F29023B321D3770"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
 			}]
 			x: 0.0d
 			y: 0.0d

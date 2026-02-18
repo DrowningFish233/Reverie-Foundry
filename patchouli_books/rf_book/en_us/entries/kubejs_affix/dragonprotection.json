@@ -1,0 +1,20 @@
+{
+	"name": "patchouli.gui.trait.kubejs.dragonprotection",
+	"icon": "minecraft:enchanted_book",
+	"category": "patchouli:kubejs_affix",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:enchanted_book"
+			},
+			"title": "patchouli.gui.trait.kubejs.dragonprotection",
+			"text": "patchouli.gui.trait.kubejs.dragonprotection.desc"
+		},
+		{
+			"type": "patchouli:text",
+			"title": "patchouli.gui.trait.kubejs.dragonprotection.applicable",
+			"text": "patchouli.gui.trait.kubejs.dragonprotection.applicable_text"
+		}
+	]
+}

@@ -10,10 +10,14 @@
 		id: "malum:encyclopedia_arcana"
 	}
 	id: "1230BFFD2EFCEA44"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["04120B4A249AF41A"]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			id: "27B6C00949F92CCF"
 			rewards: [{
 				count: 8
@@ -392,6 +396,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["20EF8A85CD3EFF3A"]
 			hide_dependency_lines: true
 			id: "3A5D807E30DF3E8C"
 			tasks: [{
@@ -403,6 +408,7 @@
 			y: -18.5d
 		}
 		{
+			dependencies: ["20EF8A85CD3EFF3A"]
 			hide_dependency_lines: true
 			id: "731473A765D3B6B6"
 			tasks: [{
@@ -416,6 +422,7 @@
 		{
 			dependencies: ["7CF77F3C6D4073BD"]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				id: "malum:soulbinding_brazier"
 			}
@@ -478,6 +485,7 @@
 		{
 			dependencies: ["7CF77F3C6D4073BD"]
 			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			id: "339C3EB0CB099097"
 			tasks: [{
 				id: "2762BF1E8DDC8F88"
@@ -656,6 +664,7 @@
 			y: -17.0d
 		}
 		{
+			dependencies: ["20EF8A85CD3EFF3A"]
 			hide_dependency_lines: true
 			id: "2DE251239B528464"
 			tasks: [{
@@ -1632,6 +1641,7 @@
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
+			hide_until_deps_visible: true
 			icon: {
 				id: "minecraft:crying_obsidian"
 			}

@@ -311,8 +311,8 @@
 	entity = "irons_spellbooks:fire_boss"
 	minTier = 7
 	maxTier = 7
-	presetAffixes = ["kubejs:finale","champions:wounding"]
-	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective"]
+	presetAffixes = ["kubejs:finale"]
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective","champions:wounding"]
 	affixPermission = "BLACKLIST"
 [[entities]]
 	entity = "terra_entity:dungeon_guardian"
