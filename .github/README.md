@@ -4,8 +4,6 @@
 ### 
 <img width="400" height="400" alt="RF" src="https://github.com/user-attachments/assets/5287a83e-1f7f-4b3c-8f44-31e7191db6c5" />
 
-### 
-🟢随着更新的进度，这个数字也会随之增加→ ```85%``` ←        
 ###               
 🟡这个Github上的代码不会经常更新，但是每隔版本更新肯定会更新一次代码！
 ### 
