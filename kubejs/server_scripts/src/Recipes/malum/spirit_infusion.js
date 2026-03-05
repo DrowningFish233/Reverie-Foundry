@@ -888,7 +888,6 @@ ServerEvents.recipes(event => {
             .addExtraInput('irons_spellbooks:arcane_essence', 8)
     );
 
-    /*
     //召唤仪式-魔宠
     registerCustomRecipe(
         new SpiritInfusionRecipeJSON('alshanex_familiars:dragon_warrior_shard', 'kubejs:summon_dragon_warrior_pet')
@@ -897,7 +896,6 @@ ServerEvents.recipes(event => {
             .addExtraInput('irons_spellbooks:ender_rune', 1)
             .addExtraInput('irons_spellbooks:arcane_essence', 8)
     );
-    */
     registerCustomRecipe(
         new SpiritInfusionRecipeJSON('#kubejs:ingots/fw_ingots', 'malum:cthonic_gold_fragment')
             .addSpirit("earthen", 1)

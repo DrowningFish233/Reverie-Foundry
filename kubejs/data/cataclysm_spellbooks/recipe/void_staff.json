@@ -1,0 +1,12 @@
+{
+    "type": "cataclysm:weapon_fusion",
+    "base": {
+        "item": "irons_spellbooks:artificer_cane"
+    },
+    "addition": {
+        "item": "cataclysm:void_core"
+    },
+    "result": {
+        "id": "cataclysm_spellbooks:void_staff"
+    }
+}

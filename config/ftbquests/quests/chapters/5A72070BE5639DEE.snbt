@@ -7,7 +7,7 @@
 		id: "transmog:transmogrification_table"
 	}
 	id: "5A72070BE5639DEE"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -36,8 +36,8 @@
 				item: { count: 1, id: "transmog:transmogrification_table" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 0.0d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -103,8 +103,8 @@
 				id: "1C6E3A73FEC6CA64"
 				type: "checkmark"
 			}]
-			x: 4.5d
-			y: 0.0d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			id: "38092862F38315D2"
@@ -113,8 +113,8 @@
 				item: { count: 1, id: "kubejs:eye_of_ancient_city_located" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 1.0d
+			y: -4.5d
 		}
 		{
 			id: "086482C52023DB55"
@@ -123,58 +123,8 @@
 				item: { count: 1, id: "kubejs:eye_of_dragon_cave_located" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.0d
-		}
-		{
-			id: "5EEB1A77BA0D052D"
-			tasks: [{
-				id: "7269B2BA5D2572A7"
-				item: { count: 1, id: "kubejs:eye_of_weeping_well_located" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: -2.5d
-		}
-		{
-			id: "7497D60722110201"
-			tasks: [{
-				id: "102AC5EEA0F1C170"
-				item: { count: 1, id: "tiered:armorers_hammer" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: -6.0d
-		}
-		{
-			id: "485ED016AD34F6B8"
-			tasks: [{
-				id: "38BFAAF968D91BA1"
-				item: { count: 1, id: "tiered:toolsmiths_hammer" }
-				type: "item"
-			}]
-			x: 3.5d
-			y: -7.5d
-		}
-		{
-			id: "716AB1B88D8812DF"
-			tasks: [{
-				id: "2B28CE5FA523A935"
-				item: { count: 1, id: "tiered:weaponsmiths_hammer" }
-				type: "item"
-			}]
-			x: 2.5d
-			y: -6.0d
-		}
-		{
-			id: "4F5EEA7BC57F0B37"
-			tasks: [{
-				id: "77F96B0B65C67FFF"
-				item: { count: 1, id: "minecraft:spawner" }
-				type: "item"
-			}]
-			x: -2.0d
-			y: 0.5d
+			x: 1.0d
+			y: -5.5d
 		}
 	]
 }

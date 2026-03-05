@@ -141,5 +141,26 @@ ServerEvents.recipes(event => {
             ])
     );
     */
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:avenger_emblem')
+            .addIngredient('terra_curio:ranger_emblem')
+            .addIngredient('terra_curio:warrior_emblem')
+            .addIngredient('kubejs:sorcerer_emblem')
+
+    );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:destroyer_emblem')
+            .addIngredient('terra_curio:eye_of_the_golem')
+            .addIngredient('kubejs:avenger_emblem')
+    );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('terra_curio:sniper_scope')
+            .addIngredient('terra_curio:rifle_scope')
+            .addIngredient('kubejs:destroyer_emblem')
+    );
 });
+
 

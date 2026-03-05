@@ -14,11 +14,11 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["04120B4A249AF41A"]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
 			id: "27B6C00949F92CCF"
+			invisible: true
 			rewards: [{
 				count: 8
 				id: "0DD6BE87F01581CD"
@@ -1656,8 +1656,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "18CECA20EB3B7D0F"
-				type: "checkmark"
+				id: "40A997A4304AD9F5"
+				item: { count: 1, id: "kubejs:eye_of_weeping_well_located" }
+				type: "item"
 			}]
 			x: -0.5d
 			y: 2.0d

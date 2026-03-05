@@ -14,7 +14,7 @@ function fu_getGearProperties(gear, player) {
  * @returns {number} 法术强度值
  */
 function fu_getSpellPower(gear) {
-    return $GearData.getSpellPower(gear);
+    return $RFGearHalper.getSpellPower(gear);
 }
 
 /**
@@ -23,7 +23,7 @@ function fu_getSpellPower(gear) {
  * @returns {number} 法术抗性值
  */
 function fu_getSpellResist(gear) {
-    return $GearData.getSpellResist(gear);
+    return $RFGearHalper.getSpellResist(gear);
 }
 
 /**
@@ -32,7 +32,7 @@ function fu_getSpellResist(gear) {
  * @returns {number} 法力回复值
  */
 function fu_getManaRegen(gear) {
-    return $GearData.getManaRegen(gear);
+    return $RFGearHalper.getManaRegen(gear);
 }
 
 /**

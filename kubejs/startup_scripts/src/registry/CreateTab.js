@@ -138,7 +138,11 @@ StartupEvents.modifyCreativeTab('kubejs:tab_3', event => {
         "kubejs:band_of_starpower",
         "kubejs:magnet_flower",
         "kubejs:magic_cuffs",
-        "kubejs:sanity_curios"
+        "kubejs:sanity_curios",
+        "kubejs:sorcerer_emblem",
+        "kubejs:avenger_emblem",
+        "kubejs:destroyer_emblem",
+        "kubejs:angler_earring"
     ];
 
     itemsInOrder.forEach(item => {
@@ -233,6 +237,10 @@ StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
     event.remove("kubejs:magic_cuffs");
     event.remove("kubejs:crowbar");
     event.remove("kubejs:narrator");
+    event.remove("kubejs:sorcerer_emblem");
+    event.remove("kubejs:avenger_emblem");
+    event.remove("kubejs:destroyer_emblem");
+    event.remove("kubejs:angler_earring");
 });
 
 StartupEvents.modifyCreativeTab("minecraft:op_blocks", (event) => {

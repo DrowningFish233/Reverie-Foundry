@@ -1,0 +1,37 @@
+[directional_indicator]
+	# arrow that shows where incoming damage came from
+	# Enables the directional damage indicator
+	directional_indicator_enable = true
+	# 0-1 (inclusive)
+	directional_indicator_texture = 0
+	# Red (0-255)
+	directional_indicator_red = 206
+	# Green (0-255)
+	directional_indicator_green = 0
+	# Blue (0-255)
+	directional_indicator_blue = 37
+	# Alpha (0-255)
+	directional_indicator_alpha = 255
+	# Distance from the center of the screen that the directional damage indicator appears.
+	directional_indicator_distance = 0
+	# Fade out the damage indicator over time
+	directional_indicator_fade_out = true
+	# Time for damage indicator to show (in ticks)
+	directional_indicator_indicate_time = 25
+
+[damage_text]
+	# floating text that shows the amount of damage done to an entity
+	# Enables damage text
+	damage_text_enable = false
+
+[health_bars]
+	# a text health bar for entities
+	# Enables health bar
+	health_bars_enable = false
+	# Only show health bar for entities the player is directly looking at. If false, shows health bar for all nearby entities
+	health_bars_only_target_health = true
+
+[blood_overlay]
+	# an overlay of red outlining your screen when you take damage
+	# Enables blood overlay
+	blood_overlay_enable = false

@@ -40,6 +40,9 @@ let bannedItems = [
 
 // 材料替换配置(前:需要替换的材料.后:替换为的材料)
 const materialMap = {
+    'terra_curio:destroyer_emblem': 'kubejs:destroyer_emblem',
+    'terra_curio:sorcerer_emblem': 'kubejs:sorcerer_emblem',
+    'terra_curio:avenger_emblem': 'kubejs:avenger_emblem',
     'terra_curio:angler_earring': 'kubejs:angler_earring',
     'alltheores:silver_ingot': 'iceandfire:silver_ingot',
     'terra_curio:flying_carpet': 'minecraft:diamond_block',

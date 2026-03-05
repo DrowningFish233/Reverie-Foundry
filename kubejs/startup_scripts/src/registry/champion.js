@@ -323,13 +323,9 @@ StartupEvents.registry("champions:affix", event => {
                     'minecraft:blindness',
                     'minecraft:hunger'
                 ];
-                // 随机选择一个debuff
                 const selectedDebuff = debuffList[Math.floor(Math.random() * debuffList.length)];
-                // 添加debuff
                 const currentEffect = player.getEffect(selectedDebuff);
                 let newAmplifier = 0;
-                // 如果玩家已经有这个debuff，增加其等级
-                // 否则添加新的debuff
                 if (currentEffect) {
                     newAmplifier = currentEffect.getAmplifier() + 1;
                 }
@@ -554,6 +550,7 @@ StartupEvents.registry("champions:affix", event => {
                     const newAmplifier = currentAmplifier + 5;
 
                     player.potionEffects.add(effectType, currentDuration, newAmplifier);
+                    addBaseStrengthAndSync(player, effectType, newAmplifier)
                     if (Math.random() < 0.3) {
                         player.potionEffects.add('kubejs:bleed', 20 * 60, 0);
                     }

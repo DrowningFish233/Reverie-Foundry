@@ -3,6 +3,7 @@
     "minecraft:starve",
     "kubejs:wrath",
     "kubejs:bleed",
-    "kubejs:rod_of_discord"
+    "kubejs:rod_of_discord",
+    "kubejs:sinking"
   ]
 }

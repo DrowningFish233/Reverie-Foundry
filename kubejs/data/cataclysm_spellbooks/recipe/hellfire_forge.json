@@ -1,0 +1,12 @@
+{
+    "type": "cataclysm:weapon_fusion",
+    "base": {
+        "item": "cataclysm:infernal_forge"
+    },
+    "addition": {
+        "item": "irons_spellbooks:hellrazor"
+    },
+    "result": {
+        "id": "cataclysm_spellbooks:hellfire_forge"
+    }
+}

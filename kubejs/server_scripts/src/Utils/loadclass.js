@@ -67,3 +67,5 @@ const $ModKitItem = Java.loadClass('net.silentchaos512.gear.item.ModKitItem')
 const $SoulHarvestHandler = Java.loadClass('com.sammy.malum.core.handlers.SoulHarvestHandler');
 const $EntitySpiritDropData = Java.loadClass('com.sammy.malum.core.systems.spirit.EntitySpiritDropData');
 const $MalumAttachmentTypes = Java.loadClass('com.sammy.malum.registry.common.MalumAttachmentTypes');
+const $RFGearHalper = Java.loadClass('com.drowningfish233.reveriefoundry.Utils.gear.RFGearHelper');
+const $IExtendedMobEffect = Java.loadClass('com.drowningfish233.reveriefoundry.api.IExtendedMobEffect')

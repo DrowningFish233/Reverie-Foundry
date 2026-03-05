@@ -101,7 +101,10 @@ const $CooldownManager = {
             "strange_crystal_COOLDOWN_KEY",
             "lightning_dragon_breath_cooldown",
             "fire_dragon_breath_cooldown",
-            "ice_dragon_breath_cooldown"
+            "ice_dragon_breath_cooldown",
+            "wrath_grudge_cooldown",
+            "wrath_skill_cooldown",
+            "lust_skill_cooldown"
         ];
 
         // 清理冷却数据

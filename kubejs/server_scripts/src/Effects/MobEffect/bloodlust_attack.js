@@ -26,7 +26,7 @@ function bloodlust_attack(event) {
             const bleedEffect = entity.getEffect("kubejs:bleed");
             if (bleedEffect) {
                 const bleedLevel = bleedEffect.getAmplifier() + 1;
-                const damageBonus = Math.floor(bleedLevel / 5) * 0.05; // 每5层+5%伤害
+                const damageBonus = Math.floor(bleedLevel / 5) * 0.05;
                 new_damage(event, STAGE.MULTIPLY, damageBonus);
             }
             break;

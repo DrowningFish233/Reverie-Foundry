@@ -15,6 +15,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'endrem:exotic_eye' })
     event.remove({ output: 'silentgear:metal_press' })
     event.remove({ output: 'darkdoppelganger:shadow_orb' })
+    event.remove({ output: 'terra_curio:mechanical_glove' })
+    event.remove({ output: 'terra_curio:sniper_scope' })
     event.remove({ output: 'silentgems:garnet_teleporter' })
     event.remove({ output: 'hazennstuff:scroll_sheath' })
     event.remove({ input: '#alltheores:ore_hammers' })
@@ -42,4 +44,24 @@ ServerEvents.recipes(event => {
         'silentgear:bort',
         '#kubejs:bort'
     )
+
+    event.replaceInput(
+        { input: 'terra_curio:avenger_emblem' },
+        'terra_curio:avenger_emblem',
+        'kubejs:avenger_emblem'
+    )
+
+    event.replaceInput(
+        { input: 'terra_curio:destroyer_emblem' },
+        'terra_curio:destroyer_emblem',
+        'kubejs:destroyer_emblem'
+    )
+
+    event.replaceInput(
+        { input: 'terra_curio:sorcerer_emblem' },
+        'terra_curio:sorcerer_emblem',
+        'kubejs:sorcerer_emblem'
+    )
+
+
 })

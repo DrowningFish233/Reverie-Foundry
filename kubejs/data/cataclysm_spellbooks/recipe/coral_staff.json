@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "fcf",
+        " w ",
+        " w "
+    ],
+    "key": {
+        "f": {
+            "tag": "cataclysm_spellbooks:coral_items"
+        },
+        "c": {
+            "item": "cataclysm:crystallized_coral"
+        },
+        "w": {
+            "item": "minecraft:crimson_planks"
+        }
+    },
+    "result": {
+        "id": "cataclysm_spellbooks:coral_staff",
+        "count": 1
+    }
+}

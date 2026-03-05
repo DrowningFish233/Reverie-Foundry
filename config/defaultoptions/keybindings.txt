@@ -108,10 +108,10 @@ key_key.sophisticatedbackpacks.open_backpack:key.keyboard.unknown:
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c:
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown:
 key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown:
-key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown:
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown:
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown:
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_key.ok_zoomer.zoom:key.keyboard.c:
 key_key.ok_zoomer.decrease_zoom:key.keyboard.unknown:
 key_key.ok_zoomer.increase_zoom:key.keyboard.unknown:
@@ -183,5 +183,5 @@ key_key.inventoryhud.togglepot:key.keyboard.unknown:
 key_key.inventoryhud.togglearm:key.keyboard.unknown:
 key_key.inventoryhud.toggleall:key.keyboard.unknown:
 key_key.unionlib.open_union_inventory:key.keyboard.unknown:
-key_key.itemzoomer.toggle_zoom:key.keyboard.p:
+key_key.itemzoomer.toggle_zoom:key.keyboard.z:
 key_key.entityculling.toggle:key.keyboard.unknown:

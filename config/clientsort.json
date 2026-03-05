@@ -36,6 +36,7 @@
     "showButtons": true,
     "showButtonTooltips": true,
     "anchorButtonsLeft": false,
+    "justifyButtonsTopLeft": true,
     "buttonsHorizontal": false,
     "firstButtonOp": "SORT",
     "secondButtonOp": "STACK_FILL",

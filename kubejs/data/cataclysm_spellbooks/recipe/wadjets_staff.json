@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "nan",
+        " b ",
+        " b "
+    ],
+    "key": {
+        "b": {
+            "item": "cataclysm:koboleton_bone"
+        },
+        "a": {
+            "item": "cataclysm:ancient_metal_ingot"
+        },
+        "n": {
+            "item": "cataclysm:ancient_metal_nugget"
+        }
+    },
+    "result": {
+        "id": "cataclysm_spellbooks:fake_wudjets_staff",
+        "count": 1
+    }
+}

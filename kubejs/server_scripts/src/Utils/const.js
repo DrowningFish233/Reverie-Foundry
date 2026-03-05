@@ -65,7 +65,6 @@ const GearsEffect = {
 const sanity = "sanity"
 const depravity = "depravity"
 const Maxsanity = "Maxsanity"
-const idleTimer = "idleTimer"
 const defaultMaxsanity = 45
 const GLUTTONY_nutrition = "GLUTTONY_nutrition"
 const gluttony_strength = "gluttony_strength"
@@ -89,7 +88,7 @@ const key_bind_weapons = [
 ];
 const sins = {
     WRATH: "kubejs:sin_wrath",
-    GREED: "kubejs:sin_greed",
+    GLOOM: "kubejs:sin_gloom",
     SLOTH: "kubejs:sin_sloth",
     PRIDE: "kubejs:sin_pride",
     LUST: "kubejs:sin_lust",

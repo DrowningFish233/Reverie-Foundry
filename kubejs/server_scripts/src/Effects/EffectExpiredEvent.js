@@ -1,12 +1,12 @@
 // priority: 0
 // 药水效果自然消失事件
 NativeEvents.onEvent($MobEffectEvent$Expired, event => {
+
     const effectInstance = event.getEffectInstance();
     const entity = event.entity;
 
     const effectId = convertEffectId(effectInstance.getDescriptionId());
     const isPlayer = entity.getType() == "minecraft:player";
-
     handleEffectExpired(effectId, entity, isPlayer, effectInstance);
 });
 
@@ -22,16 +22,10 @@ function convertEffectId(descriptionId) {
 // 效果消失处理
 function handleEffectExpired(effectId, entity, isPlayer, effectInstance) {
     const Amplifier = effectInstance.getAmplifier();
-
     switch (effectId) {
-        case "kubejs:bleed":
-            attackEntity(entity, 'out_of_world', Amplifier, true);
-            break;
-
         case "kubejs:fire":
             attackEntity(entity, 'lava', Amplifier, true);
             break;
-
         case "kubejs:tooth_of_hunger":
             if (isPlayer) {
                 let FoodLevel = entity.getFoodLevel();

@@ -196,7 +196,7 @@ PlayerEvents.tick(event => {
             { id: "minecraft:hunger", duration: 100, amplifier: 4, ambient: false, showParticles: false }
         ],
         ENVY: [{ id: "kubejs:envy", duration: 80, amplifier: 0, showParticles: true }],
-        GREED: [{ id: "kubejs:greed", duration: 80, amplifier: 0, showParticles: true }],
+        GLOOM: [{ id: "kubejs:gloom", duration: 80, amplifier: 0, showParticles: true }],
         LUST: [{ id: "kubejs:lust", duration: 80, amplifier: 0, showParticles: true }],
         PRIDE: [{ id: "kubejs:pride", duration: 80, amplifier: 0, showParticles: true }],
         SLOTH: [

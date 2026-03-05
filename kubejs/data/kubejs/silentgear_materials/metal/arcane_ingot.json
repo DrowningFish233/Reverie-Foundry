@@ -45,6 +45,7 @@
             "projectile_accuracy": 1.0,
             "ranged_damage": 1.0,
             "spell_power": 0.04,
+            "spell_slots": 3,
             "rarity": 22.0,
             "traits": [
                 {

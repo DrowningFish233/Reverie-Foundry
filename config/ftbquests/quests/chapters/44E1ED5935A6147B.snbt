@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "44E1ED5935A6147B"
 	group: "7F00D0D8C7C916A0"
-	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
 	id: "44E1ED5935A6147B"
 	images: [
 		{
@@ -55,6 +55,14 @@
 			x: -25.0d
 			y: -28.5d
 		}
+		{
+			height: 3.0d
+			image: "eternal_starlight:textures/gui/jei/alloy_furnace/cooling_progress.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: -15.0d
+		}
 	]
 	order_index: 3
 	quest_links: [ ]
@@ -79,36 +87,41 @@
 				type: "stat"
 				value: 1
 			}]
-			x: -4.5d
-			y: -7.5d
+			x: 0.0d
+			y: -20.0d
 		}
 		{
 			id: "0A1FF9CCFB4FEA6C"
 			invisible: true
 			optional: true
 			rewards: [{
-				count: 5
-				id: "487475E1D2A988C9"
+				id: "5F46C12D5F36F95F"
 				item: {
+					components: {
+						"minecraft:stored_enchantments": {
+							levels: {
+								"minecraft:lure": 3
+							}
+						}
+					}
 					count: 1
-					id: "minecraft:golden_carrot"
+					id: "minecraft:enchanted_book"
 				}
 				type: "item"
 			}]
 			tasks: [{
-				id: "4A77A2E511F3DB1F"
-				optional_task: true
-				stat: "minecraft:player_kills"
+				id: "5F891C5558F2D126"
+				stat: "minecraft:fish_caught"
 				type: "stat"
 				value: 1
 			}]
-			x: -2.0d
-			y: -7.5d
+			x: 0.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["5EA666E0258C8365"]
+			hide_until_deps_visible: true
 			id: "7D2FD37CB2502689"
-			invisible: true
 			optional: true
 			rewards: [
 				{
@@ -129,85 +142,8 @@
 				type: "stat"
 				value: 100000
 			}]
-			x: 4.0d
-			y: -13.5d
-		}
-		{
-			id: "162B974C78D8FB42"
-			invisible: true
-			optional: true
-			rewards: [{
-				id: "05D3198B1B1AA89C"
-				item: {
-					count: 1
-					id: "minecraft:emerald_block"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "67282B81EE816626"
-				stat: "thief:caught_at_light_thefts_in_village"
-				type: "stat"
-				value: 3
-			}]
-			x: 1.0d
-			y: -7.5d
-		}
-		{
-			dependencies: ["162B974C78D8FB42"]
-			id: "0342F51828C72B82"
-			invisible: true
-			optional: true
-			rewards: [{
-				count: 3
-				id: "107FF2DE8683345B"
-				item: {
-					count: 1
-					id: "minecraft:emerald_block"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "17DC6B62F25A876F"
-				stat: "thief:caught_at_medium_thefts_in_village"
-				type: "stat"
-				value: 3
-			}]
-			x: 1.0d
-			y: -10.5d
-		}
-		{
-			dependencies: ["0342F51828C72B82"]
-			id: "063DC4EF4AA35185"
-			invisible: true
-			optional: true
-			rewards: [
-				{
-					count: 5
-					id: "2CDDC3D55BE055B2"
-					item: {
-						count: 1
-						id: "minecraft:emerald_block"
-					}
-					type: "item"
-				}
-				{
-					id: "38AE6285FD54E9CB"
-					item: {
-						count: 1
-						id: "irons_spellbooks:emerald_stoneplate_ring"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "10BCE85C9E1DBE6A"
-				stat: "thief:caught_at_heavy_thefts_in_village"
-				type: "stat"
-				value: 3
-			}]
-			x: 1.0d
-			y: -13.5d
+			x: 11.0d
+			y: -13.0d
 		}
 		{
 			id: "13C542FCBB189AEA"
@@ -233,13 +169,13 @@
 				type: "stat"
 				value: 20000
 			}]
-			x: 7.0d
-			y: -7.5d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["13C542FCBB189AEA"]
+			hide_until_deps_visible: true
 			id: "18CD31A8B3040F77"
-			invisible: true
 			optional: true
 			rewards: [
 				{
@@ -274,13 +210,13 @@
 				type: "stat"
 				value: 200000
 			}]
-			x: 7.0d
-			y: -10.5d
+			x: 2.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["18CD31A8B3040F77"]
+			hide_until_deps_visible: true
 			id: "4AFE778B9A79DA33"
-			invisible: true
 			optional: true
 			rewards: [{
 				id: "483761891221AE4C"
@@ -299,8 +235,8 @@
 				type: "stat"
 				value: 2000000
 			}]
-			x: 7.0d
-			y: -13.5d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			id: "11E9AE8529E6FBF2"
@@ -321,13 +257,13 @@
 				type: "stat"
 				value: 1
 			}]
-			x: 10.0d
-			y: -7.5d
+			x: 0.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["11E9AE8529E6FBF2"]
+			hide_until_deps_visible: true
 			id: "66D8D31B50D06630"
-			invisible: true
 			optional: true
 			rewards: [{
 				count: 64
@@ -344,13 +280,13 @@
 				type: "stat"
 				value: 3
 			}]
-			x: 10.0d
-			y: -10.5d
+			x: -2.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["66D8D31B50D06630"]
+			hide_until_deps_visible: true
 			id: "1D08BC5C6C98F4D7"
-			invisible: true
 			optional: true
 			rewards: [{
 				count: 256
@@ -367,8 +303,8 @@
 				type: "stat"
 				value: 5
 			}]
-			x: 10.0d
-			y: -13.5d
+			x: 0.0d
+			y: -8.0d
 		}
 		{
 			id: "14D4101B90CF5417"
@@ -385,8 +321,8 @@
 				type: "stat"
 				value: 72000
 			}]
-			x: 16.0d
-			y: -7.5d
+			x: 3.0d
+			y: -15.0d
 		}
 		{
 			id: "2075CDEF8E217AEA"
@@ -412,13 +348,13 @@
 				type: "stat"
 				value: 1
 			}]
-			x: 13.0d
-			y: -7.5d
+			x: 1.5d
+			y: -16.5d
 		}
 		{
 			dependencies: ["2075CDEF8E217AEA"]
+			hide_until_deps_visible: true
 			id: "1E5FC0856DAA4E01"
-			invisible: true
 			optional: true
 			rewards: [
 				{
@@ -452,13 +388,13 @@
 				type: "stat"
 				value: 100
 			}]
-			x: 13.0d
-			y: -10.5d
+			x: 4.5d
+			y: -19.5d
 		}
 		{
 			dependencies: ["1E5FC0856DAA4E01"]
+			hide_until_deps_visible: true
 			id: "42F6170490C96218"
-			invisible: true
 			optional: true
 			rewards: [{
 				id: "65781B848B06928D"
@@ -471,8 +407,8 @@
 				type: "stat"
 				value: 1000
 			}]
-			x: 13.0d
-			y: -13.5d
+			x: 2.0d
+			y: -26.0d
 		}
 		{
 			id: "7EB97CBE6483FCF7"
@@ -493,13 +429,13 @@
 				type: "stat"
 				value: 36000
 			}]
-			x: 19.0d
-			y: -7.5d
+			x: 5.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["7EB97CBE6483FCF7"]
+			hide_until_deps_visible: true
 			id: "633B88042B030B5E"
-			invisible: true
 			optional: true
 			rewards: [{
 				count: 32
@@ -516,8 +452,8 @@
 				type: "stat"
 				value: 72000
 			}]
-			x: 19.0d
-			y: -13.5d
+			x: 7.0d
+			y: -17.0d
 		}
 		{
 			id: "7306BEC7A3E98304"
@@ -536,13 +472,13 @@
 				type: "stat"
 				value: 36000
 			}]
-			x: -16.5d
-			y: -7.5d
+			x: -5.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["7306BEC7A3E98304"]
+			hide_until_deps_visible: true
 			id: "41555B67D70627EB"
-			invisible: true
 			rewards: [
 				{
 					id: "5AD767D2D58DA236"
@@ -568,8 +504,8 @@
 				type: "stat"
 				value: 144000
 			}]
-			x: -16.5d
-			y: -13.5d
+			x: -7.0d
+			y: -13.0d
 		}
 		{
 			id: "0FB734FE90642C9F"
@@ -585,13 +521,13 @@
 				type: "stat"
 				value: 1
 			}]
-			x: -7.5d
-			y: -7.5d
+			x: -1.5d
+			y: -13.5d
 		}
 		{
 			dependencies: ["0FB734FE90642C9F"]
+			hide_until_deps_visible: true
 			id: "180E4385AFA285EC"
-			invisible: true
 			rewards: [{
 				id: "587CD0BE8647C516"
 				type: "xp"
@@ -603,13 +539,13 @@
 				type: "stat"
 				value: 10
 			}]
-			x: -7.5d
+			x: -4.5d
 			y: -10.5d
 		}
 		{
 			dependencies: ["180E4385AFA285EC"]
+			hide_until_deps_visible: true
 			id: "7B2EE05D7AAFD40E"
-			invisible: true
 			rewards: [
 				{
 					id: "0A9A74C05A95EC77"
@@ -628,8 +564,8 @@
 				type: "stat"
 				value: 100
 			}]
-			x: -7.5d
-			y: -13.5d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
 			id: "2E4663AB84467ED4"
@@ -648,8 +584,8 @@
 				type: "stat"
 				value: 1000
 			}]
-			x: -10.5d
-			y: -7.5d
+			x: -1.5d
+			y: -16.5d
 		}
 		{
 			id: "57045442B4763EC9"
@@ -688,13 +624,13 @@
 				type: "stat"
 				value: 5000
 			}]
-			x: -13.5d
-			y: -7.5d
+			x: -3.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["57045442B4763EC9"]
+			hide_until_deps_visible: true
 			id: "57D76B1B33C57F9F"
-			invisible: true
 			rewards: [
 				{
 					count: 4
@@ -742,23 +678,20 @@
 				id: "167B3ECE4F46D85F"
 				stat: "minecraft:swim_one_cm"
 				type: "stat"
-				value: 50000
+				value: 20000
 			}]
-			x: -13.5d
-			y: -13.5d
+			x: -5.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["2E4663AB84467ED4"]
+			hide_until_deps_visible: true
 			id: "2D3696ABFDF5F460"
-			invisible: true
 			rewards: [{
-				count: 16
-				id: "5CC5C647DE495190"
-				item: {
-					count: 1
-					id: "kubejs:exploding_chocolate_bar"
-				}
-				type: "item"
+				exclude_from_claim_all: true
+				id: "7707D6C7B4843556"
+				table_id: 3382524138367628086L
+				type: "choice"
 			}]
 			tasks: [{
 				id: "4F90B7E4368179AA"
@@ -766,18 +699,18 @@
 				type: "stat"
 				value: 10000
 			}]
-			x: -10.5d
-			y: -10.5d
+			x: -4.5d
+			y: -19.5d
 		}
 		{
 			dependencies: ["2D3696ABFDF5F460"]
+			hide_until_deps_visible: true
 			id: "218EF6EB1EC8E6AE"
-			invisible: true
 			rewards: [{
-				id: "4F41A5E22A01BF01"
+				id: "38556CD4A21110CE"
 				item: {
 					count: 1
-					id: "kubejs:bad_apple"
+					id: "terra_curio:destroyer_emblem"
 				}
 				type: "item"
 			}]
@@ -787,13 +720,13 @@
 				type: "stat"
 				value: 100000
 			}]
-			x: -10.5d
-			y: -13.5d
+			x: -11.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["0BA8FDE1647AA593"]
+			hide_until_deps_visible: true
 			id: "24C387A38C376961"
-			invisible: true
 			rewards: [{
 				count: 3
 				id: "4164687DFDAFC717"
@@ -809,13 +742,13 @@
 				type: "stat"
 				value: 10
 			}]
-			x: -4.5d
-			y: -10.5d
+			x: -2.0d
+			y: -22.0d
 		}
 		{
 			dependencies: ["24C387A38C376961"]
+			hide_until_deps_visible: true
 			id: "17695E30CD9EB522"
-			invisible: true
 			rewards: [
 				{
 					id: "4C42EA777AD50EB2"
@@ -848,87 +781,65 @@
 				type: "stat"
 				value: 100
 			}]
-			x: -4.5d
-			y: -13.5d
+			x: 0.0d
+			y: -24.0d
 		}
 		{
 			dependencies: ["0A1FF9CCFB4FEA6C"]
+			hide_until_deps_visible: true
 			id: "1C22E01E9591DC36"
-			invisible: true
 			optional: true
-			rewards: [
-				{
-					count: 10
-					id: "15DC25FCDF818FE4"
-					item: {
-						count: 1
-						id: "minecraft:golden_carrot"
+			rewards: [{
+				id: "6324AC51418DF1DC"
+				item: {
+					components: {
+						"minecraft:custom_name": "{\"bold\":true,\"color\":\"#D8C37F\",\"italic\":false,\"translate\":\"An expired Pringle\"}"
+						"minecraft:enchantments": {
+							levels: {
+								"minecraft:lure": 10
+							}
+						}
 					}
-					type: "item"
+					count: 1
+					id: "minecraft:rabbit_foot"
 				}
-				{
-					id: "5A2F04F948CE7044"
-					item: {
-						count: 1
-						id: "kubejs:randomweapon"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "2F97429DD4F82D1B"
-				optional_task: true
-				stat: "minecraft:player_kills"
-				type: "stat"
-				value: 10
+				type: "item"
 			}]
-			x: -2.0d
-			y: -10.5d
+			tasks: [{
+				id: "56EAF5E9CDAFBAFF"
+				stat: "minecraft:fish_caught"
+				type: "stat"
+				value: 16
+			}]
+			x: 2.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["1C22E01E9591DC36"]
+			hide_until_deps_visible: true
 			id: "7C7A1613FB9C97E8"
-			invisible: true
 			optional: true
-			rewards: [
-				{
-					count: 32
-					id: "56C9AB9467DFE8AC"
-					item: {
-						count: 1
-						id: "minecraft:golden_carrot"
-					}
-					type: "item"
+			rewards: [{
+				id: "4177ADA764A601BA"
+				item: {
+					count: 1
+					id: "kubejs:angler_earring"
 				}
-				{
-					count: 3
-					id: "78F04BD7E88533B4"
-					item: {
-						count: 1
-						id: "kubejs:randomweapon"
-					}
-					type: "item"
-				}
-				{
-					id: "48AA196263C9A3BB"
-					type: "xp_levels"
-					xp_levels: 30
-				}
-			]
-			tasks: [{
-				id: "2DF8233971E23D51"
-				optional_task: true
-				stat: "minecraft:player_kills"
-				type: "stat"
-				value: 100
+				type: "item"
 			}]
-			x: -2.0d
-			y: -13.5d
+			tasks: [{
+				id: "5E410CF47B0F29B2"
+				stat: "minecraft:fish_caught"
+				type: "stat"
+				value: 64
+			}]
+			x: 0.0d
+			y: -22.0d
 		}
 		{
 			dependencies: ["7AE585BCAB17340A"]
+			hide_until_deps_visible: true
 			id: "5EA666E0258C8365"
-			invisible: true
 			optional: true
 			rewards: [
 				{
@@ -952,7 +863,7 @@
 				type: "stat"
 				value: 10000
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: -10.5d
 		}
 		{
@@ -973,13 +884,13 @@
 				type: "stat"
 				value: 1000
 			}]
-			x: 4.0d
-			y: -7.5d
+			x: 1.5d
+			y: -13.5d
 		}
 		{
 			dependencies: ["14D4101B90CF5417"]
+			hide_until_deps_visible: true
 			id: "05F6670AAFE979C5"
-			invisible: true
 			optional: true
 			rewards: [{
 				id: "1CED910F00C13602"
@@ -990,10 +901,101 @@
 				id: "6AEB682A722900A0"
 				stat: "minecraft:play_time"
 				type: "stat"
-				value: 144000
+				value: 288000
 			}]
-			x: 16.0d
-			y: -13.5d
+			x: 5.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["05F6670AAFE979C5"]
+			hide_until_deps_visible: true
+			id: "502FAEFE4F6CF6B2"
+			rewards: [{
+				id: "05E52706B50C5813"
+				item: {
+					count: 1
+					id: "terra_curio:putrid_scent"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D0464B025BCAA30"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 576000
+			}]
+			x: 7.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["633B88042B030B5E"]
+			hide_until_deps_visible: true
+			id: "5A46895D552BC15F"
+			rewards: [
+				{
+					id: "10EBD733D95F8C10"
+					item: {
+						count: 1
+						id: "terra_curio:moon_stone"
+					}
+					type: "item"
+				}
+				{
+					id: "48CCC3CFEB3BC46E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			tasks: [{
+				id: "572EB335FD620776"
+				stat: "minecraft:time_since_rest"
+				type: "stat"
+				value: 288000
+			}]
+			x: 9.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["57D76B1B33C57F9F"]
+			hide_until_deps_visible: true
+			id: "0CBAF36D63FA8085"
+			rewards: [{
+				id: "42745DD4EDDA15B0"
+				item: {
+					count: 1
+					id: "terra_entity:summon_diamond_sword_staff"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3E33703FD1B48AF6"
+				stat: "minecraft:swim_one_cm"
+				type: "stat"
+				value: 60000
+			}]
+			x: -7.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["41555B67D70627EB"]
+			hide_until_deps_visible: true
+			id: "1618DB9594EF15C3"
+			rewards: [{
+				id: "23F2C125D54FF783"
+				item: {
+					count: 1
+					id: "terra_curio:frozen_turtle_shell"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A70A2F59189642E"
+				stat: "minecraft:time_since_death"
+				type: "stat"
+				value: 288000
+			}]
+			x: -9.0d
+			y: -15.0d
 		}
 	]
 }

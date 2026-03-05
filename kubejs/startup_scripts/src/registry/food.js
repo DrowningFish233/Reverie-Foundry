@@ -23,6 +23,7 @@ StartupEvents.registry("item", event => {
         })
         .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
         .texture('kubejs:item/food/bad_apple')
+        .glow(true)
     event.create('raw_manflesh')
         .food(food => {
             food.nutrition(6)
@@ -452,4 +453,19 @@ StartupEvents.registry("item", event => {
         .texture('kubejs:item/potion/hangover_tea')
         .useAnimation("drink")
         .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
+    event.create('golden_apple')
+        .food(food => {
+            food.nutrition(4)
+                .saturation(1.5)
+                .eatSeconds(1.6)
+                .effect("minecraft:absorption", 120, 3, 1)
+                .effect("minecraft:regeneration", 150, 4, 1)
+                .effect("minecraft:fire_resistance", 6000, 0, 1)
+                .effect("minecraft:resistance", 6000, 0, 1)
+                .alwaysEdible()
+        })
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.EPIC)
+        .texture('kubejs:item/food/golden_apple')
+        .glow(true)
 })

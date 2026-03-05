@@ -1,4 +1,5 @@
 {
+	autofocus_id: "681DDFCA829035FB"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "566973DCC685511A"
@@ -10,12 +11,12 @@
 		id: "ftbquests:custom_icon"
 	}
 	id: "566973DCC685511A"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			icon: {
-				id: "apothic_enchanting:ender_library"
+				id: "apothic_enchanting:infused_breath"
 			}
 			id: "681DDFCA829035FB"
 			rewards: [{
@@ -23,6 +24,8 @@
 				type: "xp"
 				xp: 114
 			}]
+			shape: "circle"
+			size: 1.5d
 			tasks: [{
 				id: "719C398B250CFE55"
 				type: "checkmark"
@@ -538,6 +541,9 @@
 		}
 		{
 			dependencies: ["681DDFCA829035FB"]
+			icon: {
+				id: "minecraft:creeper_spawn_egg"
+			}
 			id: "72C552BE02BA433D"
 			tasks: [{
 				id: "0626EAAE040A2364"
@@ -630,13 +636,14 @@
 		{
 			dependencies: ["72C552BE02BA433D"]
 			id: "41968B5035595DD8"
+			optional: true
 			tasks: [{
 				id: "462D8DF4A500CE62"
 				item: { count: 1, id: "minecraft:spawner" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: 0.0d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5DEF70A03509B309"]
@@ -743,7 +750,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["41968B5035595DD8"]
+			dependencies: ["72C552BE02BA433D"]
 			id: "5DEF70A03509B309"
 			tasks: [{
 				id: "712D5B27F0D68E23"
@@ -833,7 +840,7 @@
 			dependencies: ["5DEF70A03509B309"]
 			id: "71C2AB4CCFAA1C59"
 			tasks: [{
-				id: "492098F2C6CB8D37"
+				id: "1A36C3C53BB6B827"
 				item: { count: 1, id: "minecraft:piston" }
 				type: "item"
 			}]
@@ -848,18 +855,19 @@
 				item: { count: 1, id: "minecraft:prismarine_crystals" }
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["72C552BE02BA433D"]
 			id: "5AEF01E9FF0A0727"
 			tasks: [{
 				id: "5A09DD4711CF623F"
 				item: { count: 1, id: "apothic_enchanting:flimsy_ender_lead" }
 				type: "item"
 			}]
-			x: -12.5d
-			y: 0.0d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5AEF01E9FF0A0727"]
@@ -869,8 +877,8 @@
 				item: { count: 1, id: "apothic_enchanting:ender_lead" }
 				type: "item"
 			}]
-			x: -14.5d
-			y: 0.0d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["65823964A5871AED"]
@@ -880,8 +888,8 @@
 				item: { count: 1, id: "apothic_enchanting:occult_ender_lead" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: 0.0d
+			x: -5.0d
+			y: 4.5d
 		}
 	]
 }

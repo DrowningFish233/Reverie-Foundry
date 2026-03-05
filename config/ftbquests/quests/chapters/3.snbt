@@ -1,4 +1,5 @@
 {
+	autofocus_id: "71B24EEAADB29F3A"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "3"
@@ -7,14 +8,24 @@
 		id: "irons_spellbooks:blood_vial"
 	}
 	id: "1A98337926B134EB"
-	images: [{
-		height: 2.0d
-		image: "gametechbcs_spellbooks:textures/gui/spell_icons/call_forth_the_dead_king.png"
-		rotation: 0.0d
-		width: 2.0d
-		x: 0.0d
-		y: -12.0d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "gametechbcs_spellbooks:textures/gui/spell_icons/call_forth_the_dead_king.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			height: 3.0d
+			image: "refinedstorage:block/controller/cutouts/light_blue"
+			rotation: 0.0d
+			width: 3.0d
+			x: 2.0d
+			y: 0.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -74,6 +85,7 @@
 				id: "kubejs:limpid_spirit"
 			}
 			id: "04120B4A249AF41A"
+			optional: true
 			rewards: [
 				{
 					id: "41C69F9E832839F0"
@@ -155,33 +167,12 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "2276A0855A81739A"
-				type: "checkmark"
+				id: "71E8928349FED5E2"
+				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
+				type: "item"
 			}]
 			x: 0.0d
 			y: -4.0d
-		}
-		{
-			dependencies: ["71B24EEAADB29F3A"]
-			icon: {
-				id: "refinedstorage:64k_storage_block"
-			}
-			id: "011A29CE5289F47C"
-			rewards: [{
-				count: 16
-				id: "5FF0CA0B497B4BB1"
-				item: {
-					count: 1
-					id: "create:andesite_alloy"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "311E3C0498DE3ED9"
-				type: "checkmark"
-			}]
-			x: 2.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["1CDBC70DB8D56271"]
@@ -369,6 +360,7 @@
 				"727B996FAE26B0BB"
 			]
 			dependency_requirement: "one_completed"
+			hide_text_until_complete: true
 			id: "3F65163CBB21A321"
 			rewards: [
 				{
@@ -537,8 +529,8 @@
 				item: { count: 1, id: "irons_spellbooks:blood_staff" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -14.0d
+			x: 2.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["3F65163CBB21A321"]
@@ -622,6 +614,7 @@
 		}
 		{
 			dependencies: ["58BCF9F1BE8BAA5E"]
+			hide_text_until_complete: true
 			icon: {
 				id: "minecraft:target"
 			}
@@ -654,6 +647,254 @@
 			}]
 			x: -6.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["71B24EEAADB29F3A"]
+			icon: {
+				id: "refinedstorage:creative_controller"
+			}
+			id: "0B33B7CF2E127A4F"
+			rewards: [
+				{
+					id: "6D729A555A2E485F"
+					item: {
+						count: 1
+						id: "refinedstorage:controller"
+					}
+					type: "item"
+				}
+				{
+					id: "17D7E47DF3497372"
+					item: {
+						count: 1
+						id: "refinedstorage:crafting_grid"
+					}
+					type: "item"
+				}
+				{
+					id: "0CF4F729697D708C"
+					item: {
+						count: 1
+						id: "refinedstorage:16k_storage_block"
+					}
+					type: "item"
+				}
+				{
+					id: "4664DFBD89698F0C"
+					item: {
+						count: 1
+						id: "createaddition:alternator"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "49662F198993E5FE"
+					item: {
+						count: 1
+						id: "refinedstorage:cable"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6FD7064F3D4D41DB"
+					item: {
+						count: 1
+						id: "create:andesite_alloy"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 59L
+				id: "2F29023B321D3770"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B33B7CF2E127A4F"]
+			id: "7D0410D74877C78A"
+			tasks: [{
+				id: "0A1A90A2685174D7"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0B33B7CF2E127A4F"]
+			id: "3D65B82D6967E302"
+			optional: true
+			rewards: [
+				{
+					id: "2C95187D1DC3993C"
+					item: {
+						count: 1
+						id: "refinedstorage:disk_drive"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "65C9EA366410B5B1"
+					table_id: 8660801776529486197L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0613112C2F3702D1"
+					table_id: 8660801776529486197L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "437DB5222DBC2F39"
+				item: { components: { "ftbfiltersystem:filter": "or(item(refinedstorage:1k_storage_disk)item(refinedstorage:4k_storage_disk)item(refinedstorage:16k_storage_disk)item(refinedstorage:64k_storage_disk)item(refinedstorage:creative_storage_disk))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D65B82D6967E302"]
+			id: "6BF48D5C9D1B191A"
+			optional: true
+			rewards: [{
+				id: "0D5D73380AFF42FC"
+				item: {
+					count: 1
+					id: "refinedstorage:64k_storage_disk"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "00A5E1A87832BC62"
+				item: { components: { "ftbfiltersystem:filter": "or(item(refinedstorage:portable_grid)item(refinedstorage:creative_portable_grid))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D65B82D6967E302"]
+			id: "7494DCB39DEAF4F5"
+			optional: true
+			tasks: [{
+				id: "6CC5C1485FA0E9FB"
+				item: { components: { "refinedstorage:energy": 1000L }, count: 1, id: "refinedstorage:wireless_grid" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7494DCB39DEAF4F5"]
+			id: "35FFD854DFF94776"
+			rewards: [{
+				count: 6
+				id: "62A527A274060E37"
+				item: {
+					count: 1
+					id: "refinedstorage:wireless_transmitter"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D51A4DF6E0A68BB"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(refinedstorage:wireless_transmitters))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["58BCF9F1BE8BAA5E"]
+			icon: {
+				id: "kubejs:summon_dead_king"
+			}
+			id: "17CD8FFD1387207D"
+			tasks: [{
+				id: "170A7A1A4595A53D"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["15F15A1FF0EDD7E3"]
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "1961FD8A838EAA52"
+			rewards: [{
+				id: "417A02DDA7B36318"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "4F1EC56B54A005A8"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5E3276B22F0E8C6D"]
+			id: "73ABE2AF17B6405C"
+			rewards: [{
+				count: 4
+				id: "7537F27ED80279C1"
+				item: {
+					count: 1
+					id: "silentgear:crimson_steel_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6CF341380B47C403"
+				item: { count: 1, id: "silentgear:alloy_forge" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3220FA89E7935BC3"]
+			id: "5E3276B22F0E8C6D"
+			tasks: [{
+				id: "531F34A2EF21E942"
+				item: { count: 1, id: "silentgear:crimson_steel_ingot" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5E3276B22F0E8C6D"]
+			icon: {
+				id: "silentgear:starlight_charger"
+			}
+			id: "2CE9BB7A7B825E19"
+			tasks: [
+				{
+					count: 4L
+					id: "7F82B68E48FEC5F8"
+					item: { count: 1, id: "silentgear:crimson_steel_block" }
+					type: "item"
+				}
+				{
+					id: "746F8DC3DEFF6766"
+					item: { count: 1, id: "silentgear:starlight_charger" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -12.0d
 		}
 	]
 }

@@ -45,6 +45,7 @@
             },
             "magic_armor": 4.0,
             "magic_damage": 1.0,
+            "spell_slots": 4,
             "projectile_accuracy": 1.1,
             "projectile_speed": 0.9,
             "ranged_damage": 2.0,

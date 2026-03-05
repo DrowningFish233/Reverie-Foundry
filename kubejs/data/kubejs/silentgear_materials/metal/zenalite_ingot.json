@@ -44,6 +44,7 @@
             "projectile_speed": 5.0,
             "projectile_accuracy": 0.1,
             "spell_power": 0.15,
+            "spell_slots": 8,
             "rarity": 100.0,
             "traits": [
                 {

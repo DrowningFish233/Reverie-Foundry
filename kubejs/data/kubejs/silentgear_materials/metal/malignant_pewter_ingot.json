@@ -32,6 +32,7 @@
             "attack_damage": 8.0,
             "attack_speed": 0.1,
             "charging_value": 1.1,
+            "spell_slots": 6,
             "durability": 1000.0,
             "enchantment_value": 100.0,
             "harvest_speed": 10.0,

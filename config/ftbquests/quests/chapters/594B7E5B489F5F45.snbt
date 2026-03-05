@@ -1,0 +1,291 @@
+{
+	autofocus_id: "6C8EF5FE6AB70D3B"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "594B7E5B489F5F45"
+	group: "2F1F238400B8A177"
+	icon: {
+		id: "immersive_aircraft:quadrocopter"
+	}
+	id: "594B7E5B489F5F45"
+	images: [{
+		height: 12.0d
+		image: "immersive_aircraft:item/biplane"
+		rotation: 0.0d
+		width: 12.0d
+		x: 0.0d
+		y: -3.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6C8EF5FE6AB70D3B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "46556EBFACE53CA4"
+				table_id: 7597350302823018307L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "38B83190EB7AFBA7"
+				item: { count: 1, id: "immersive_aircraft:engine" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			id: "2248B07BE012F5B4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "69DBC0D310C616B6"
+					table_id: 7597350302823018307L
+					type: "choice"
+				}
+				{
+					id: "6DE23A8A12AA5AA0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "6A4F68E59FD9BC3B"
+				item: { count: 1, id: "immersive_aircraft:airship" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			id: "369E5D74EA1CA624"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1870F6477B48D9C5"
+					table_id: 7597350302823018307L
+					type: "choice"
+				}
+				{
+					id: "150BFFA20806725F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "7A8EED4FEE2EE86F"
+				item: { count: 1, id: "immersive_aircraft:cargo_airship" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			id: "1DDF2D0C0D0D8DDA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2423EC46E1AA2C0A"
+					table_id: 7597350302823018307L
+					type: "choice"
+				}
+				{
+					id: "2D7016B1B0117854"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "4B407093B0862E1B"
+				item: { count: 1, id: "immersive_aircraft:warship" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			id: "4AEAA66A5B802779"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "102DB0DAF5DB0140"
+					table_id: 7597350302823018307L
+					type: "choice"
+				}
+				{
+					id: "1F89FBDD326A351F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "22793F5DD746F31A"
+				item: { count: 1, id: "immersive_aircraft:biplane" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			id: "79244245C1776777"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5C0399F5228C2B80"
+					table_id: 7597350302823018307L
+					type: "choice"
+				}
+				{
+					id: "27A2794F77735893"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "57371C4415597621"
+				item: { count: 1, id: "immersive_aircraft:gyrodyne" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			id: "589CD98F3C3AA8D3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "46901185CA021464"
+					table_id: 7597350302823018307L
+					type: "choice"
+				}
+				{
+					id: "735D254B0DC123E5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "44119A376B8A6FD4"
+				item: { count: 1, id: "immersive_aircraft:quadrocopter" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			id: "41A6E2C475A1E6F5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "07ECA45DBC1AFEDA"
+					table_id: 7597350302823018307L
+					type: "choice"
+				}
+				{
+					id: "485F0BBAA6B29E16"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [{
+				id: "2F53D87A969156F1"
+				item: { count: 1, id: "immersive_aircraft:bamboo_hopper" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6C8EF5FE6AB70D3B"]
+			icon: {
+				id: "immersive_aircraft:hull"
+			}
+			id: "4D2D9898C6477E3B"
+			rewards: [{
+				id: "500F0D3B973D32FA"
+				item: {
+					components: {
+						"minecraft:custom_name": "\"黑曼巴精神\""
+					}
+					count: 1
+					id: "minecraft:totem_of_undying"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "49FE6E789C324194"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			hide_dependency_lines: true
+			icon: {
+				id: "immersive_aircraft:rotary_cannon"
+			}
+			id: "6495C96750D3BA0C"
+			tasks: [{
+				id: "679088C9A7CDA862"
+				item: { components: { "ftbfiltersystem:filter": "or(item(immersive_aircraft:rotary_cannon)item(immersive_aircraft:heavy_crossbow)item(immersive_aircraft:telescope)item(immersive_aircraft:bomb_bay))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			hide_dependency_lines: true
+			icon: {
+				id: "immersive_aircraft:nether_engine"
+			}
+			id: "4C7B1F3BC1ACBD92"
+			tasks: [{
+				id: "76ED940B298D8859"
+				item: { components: { "ftbfiltersystem:filter": "or(item(immersive_aircraft:eco_engine)item(immersive_aircraft:nether_engine)item(immersive_aircraft:steel_boiler))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			hide_dependency_lines: true
+			icon: {
+				id: "immersive_aircraft:enhanced_propeller"
+			}
+			id: "1CD6A8BB98046D3C"
+			tasks: [{
+				id: "449C68F643211A8F"
+				item: { components: { "ftbfiltersystem:filter": "or(item(immersive_aircraft:enhanced_propeller)item(immersive_aircraft:hull_reinforcement)item(immersive_aircraft:improved_landing_gear)item(immersive_aircraft:industrial_gears)item(immersive_aircraft:sturdy_pipes))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D2D9898C6477E3B"]
+			hide_dependency_lines: true
+			icon: {
+				id: "immersive_aircraft:gyroscope"
+			}
+			id: "023E0809115DF9D3"
+			tasks: [{
+				id: "609512F160151EB5"
+				item: { components: { "ftbfiltersystem:filter": "or(item(immersive_aircraft:gyroscope)item(immersive_aircraft:gyroscope_hud)item(immersive_aircraft:gyroscope_dials))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+	]
+}

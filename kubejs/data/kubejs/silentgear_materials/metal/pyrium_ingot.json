@@ -43,6 +43,7 @@
             "knockback_resistance": 0.4,
             "magic_armor": 24.0,
             "spell_power": 0.15,
+            "spell_slots": 9,
             "projectile_speed": 5.0,
             "projectile_accuracy": 0.1,
             "rarity": 100.0,

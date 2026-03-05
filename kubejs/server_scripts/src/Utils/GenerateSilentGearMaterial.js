@@ -904,6 +904,27 @@ function PartBuilder(partType) {
         return this._setOperationStat('spell_resist', { operation: operation, value: value })
     }
 
+
+    /**
+ * 设置法术槽位上限
+ * @param {number} value
+ * @returns {PartBuilder}
+ */
+    this.spellPower = function (value) {
+        return this._setNumberStat('spell_slots', value)
+    }
+
+    /**
+     * 设置运算型法术槽位上限
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.spellPowerWithOperation = function (operation, value) {
+        return this._setOperationStat('spell_slots', { operation: operation, value: value })
+    }
+
+
     /**
      * 设置魔力恢复
      * @param {number} value

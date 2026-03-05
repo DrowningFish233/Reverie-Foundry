@@ -22,28 +22,19 @@ function spell_type_fire(event) {
     // 计算实际持续时间（受法术强度影响）
     const actualDuration = Math.floor(baseDuration * SpellPower);
 
-    entity.potionEffects.add("kubejs:fire", actualDuration, 0);
+    if (!entity.hasEffect("kubejs:fire")) {
+        entity.potionEffects.add("kubejs:fire", actualDuration, 0);
+    }
+    addBaseStrengthAndSync(entity, "kubejs:fire", 1);
 
+    // 如果有肉桂效果，转换为灵魂火焰
     if (actual.hasEffect("kubejs:cinnamon_roll")) {
-        if (entity.hasEffect("kubejs:soul_fire")) {
-            const Effect = entity.getEffect("kubejs:soul_fire");
-            const newLevel = Effect.getAmplifier() + 1;
-            entity.potionEffects.add("kubejs:soul_fire", actualDuration, newLevel);
-        } else {
-            entity.potionEffects.add("kubejs:soul_fire", actualDuration, 0);
-        }
-    } else {
-        if (entity.hasEffect("kubejs:fire")) {
-            const Effect = entity.getEffect("kubejs:fire");
-            const newLevel = Effect.getAmplifier() + 1;
-            entity.potionEffects.add("kubejs:fire", actualDuration, newLevel);
-        } else {
-            entity.potionEffects.add("kubejs:fire", actualDuration, 0);
-        }
+        const strength = getBaseStrength(entity, "kubejs:fire");
+        entity.removeEffect("kubejs:fire");
+        entity.potionEffects.add("kubejs:soul_fire", actualDuration, 0);
+        setBaseStrengthAndSync(entity, "kubejs:soul_fire", strength);
     }
 }
-
-
 /**
  * 目标: 为法术添加属性（当攻击者使用猩红魔法时，给被攻击者施加流血效果）
  */

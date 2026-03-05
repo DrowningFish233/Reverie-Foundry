@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": {
+        "item": "cataclysm:cursium_ingot"
+    },
+    "base": {
+        "item": "irons_spellbooks:netherite_mage_leggings"
+    },
+    "result": {
+        "id": "cataclysm_spellbooks:cursium_mage_skirt"
+    },
+    "template": {
+        "item": "cataclysm:cursium_upgrade_smithing_template"
+    }
+}

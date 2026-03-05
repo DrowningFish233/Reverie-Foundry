@@ -444,6 +444,12 @@ ServerEvents.tags('block', event => {
         'eternal_starlight_vo:voidstone_iron_ore'
     );
 
+    event.add('malum:runewood_logs',
+        'malum:runewood_log',
+        'malum:exposed_runewood_log',
+        'malum:stripped_runewood_log',
+        'malum:revealed_runewood_log'
+    );
 });
 
 

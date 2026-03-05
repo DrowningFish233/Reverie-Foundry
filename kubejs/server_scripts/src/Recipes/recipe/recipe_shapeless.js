@@ -2,7 +2,8 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('hazennstuff:deus_essence', 1),
         [
-            'minecraft:nether_star'
+            'minecraft:nether_star',
+            'kubejs:soul_of_light'
         ]
     )
     event.shapeless(

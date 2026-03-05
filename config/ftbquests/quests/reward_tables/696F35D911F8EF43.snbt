@@ -1,0 +1,13 @@
+{
+	id: "696F35D911F8EF43"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{ id: "360757DC8C35C6EB", item: { count: 1, id: "immersive_aircraft:enhanced_propeller" } }
+		{ id: "3F76067456910A9A", item: { count: 1, id: "immersive_aircraft:industrial_gears" } }
+		{ id: "37C83D76D5134084", item: { count: 1, id: "immersive_aircraft:sturdy_pipes" } }
+		{ id: "4BCF37795AFC6BC6", item: { count: 1, id: "immersive_aircraft:gyroscope" } }
+		{ id: "1F824947C4DC84DF", item: { count: 1, id: "immersive_aircraft:hull_reinforcement" } }
+		{ id: "2974C5379D8BB2D9", item: { count: 1, id: "immersive_aircraft:improved_landing_gear" } }
+	]
+}

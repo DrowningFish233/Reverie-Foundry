@@ -39,6 +39,7 @@
       "durability": 162.0,
       "enchantment_value": 20.0,
       "harvest_speed": 3.0,
+      "spell_slots": 1,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",
         "level_hint": "1",

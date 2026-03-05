@@ -24,17 +24,6 @@
 	quests: [
 		{
 			id: "7964EFBEAA0F5D57"
-			rewards: [{
-				id: "60135BE7CA778D47"
-				item: {
-					components: {
-						"patchouli:book": "patchouli:rf_book"
-					}
-					count: 1
-					id: "patchouli:guide_book"
-				}
-				type: "item"
-			}]
 			tasks: [{
 				id: "00F4B3FFF5644B7A"
 				type: "checkmark"

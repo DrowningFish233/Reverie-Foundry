@@ -1,4 +1,4 @@
-const SINS = ["GLUTTONY", "PRIDE", "WRATH", "ENVY", "LUST", "SLOTH", "GREED"];
+const SINS = ["GLUTTONY", "PRIDE", "WRATH", "ENVY", "LUST", "SLOTH", "GLOOM"];
 let currentSinIndex = 0;
 
 ItemEvents.rightClicked('kubejs:sin', event => {

@@ -143,7 +143,7 @@ StartupEvents.registry('mob_effect', event => {
     event.create('wrath_damage')
         .harmful()
         .color("red")
-    event.create('greed')
+    event.create('gloom')
         .beneficial()
         .color("blue")
         .modifyAttribute('additional_attributes:keep_scroll',
@@ -236,33 +236,48 @@ StartupEvents.registry('mob_effect', event => {
         .effectTick((entity, lvl) => {
             if (!entity || entity.level.isClientSide()) return;
             if (entity.server.tickCount % 100 == 0) {
-                const fireEffect = entity.getEffect("kubejs:fire");
+                if (!entity.hasEffect("kubejs:fire")) return;
 
-                const currentLevel = fireEffect.getAmplifier() + 1;
-                const newLevel = Math.floor(currentLevel / 2);
+                const strength = getBaseStrength(entity, "kubejs:fire");
 
-                entity.attack($DamageSource("lava"), currentLevel * 2);
-                entity.removeEffect("kubejs:fire");
-                if (newLevel > 0) {
-                    entity.potionEffects.add("kubejs:fire", 300, newLevel - 1);
+                entity.attack($DamageSource("lava"), strength);
+
+                const currentLayers = getEffectLayers(entity, "kubejs:fire");
+                const newLayers = currentLayers - 1;
+
+                if (newLayers <= 0) {
+                    entity.removeEffect("kubejs:fire");
+                } else {
+                    const oldEffect = entity.getEffect("kubejs:fire");
+                    entity.removeEffect("kubejs:fire");
+                    entity.potionEffects.add("kubejs:fire", oldEffect.getDuration(), newLayers - 1);
+                    setBaseStrengthAndSync(entity, "kubejs:fire", strength);
                 }
             }
         });
+
     event.create('soul_fire')
         .beneficial()
         .color("red")
         .effectTick((entity, lvl) => {
             if (!entity || entity.level.isClientSide()) return;
             if (entity.server.tickCount % 80 == 0) {
-                const fireEffect = entity.getEffect("kubejs:soul_fire");
+                if (!entity.hasEffect("kubejs:soul_fire")) return;
 
-                const currentLevel = fireEffect.getAmplifier() + 1;
-                const newLevel = Math.floor(currentLevel / 2);
+                const strength = getBaseStrength(entity, "kubejs:soul_fire");
 
-                entity.attack($DamageSource("lava"), currentLevel * 2 * 1.5);
-                entity.removeEffect("kubejs:soul_fire");
-                if (newLevel > 0) {
-                    entity.potionEffects.add("kubejs:soul_fire", 300, newLevel - 1);
+                entity.attack($DamageSource("lava"), strength * 1.5);
+
+                const currentLayers = getEffectLayers(entity, "kubejs:soul_fire");
+                const newLayers = currentLayers - 1;
+
+                if (newLayers <= 0) {
+                    entity.removeEffect("kubejs:soul_fire");
+                } else {
+                    const oldEffect = entity.getEffect("kubejs:soul_fire");
+                    entity.removeEffect("kubejs:soul_fire");
+                    entity.potionEffects.add("kubejs:soul_fire", oldEffect.getDuration(), newLayers - 1);
+                    setBaseStrengthAndSync(entity, "kubejs:soul_fire", strength);
                 }
             }
         });
@@ -1291,4 +1306,15 @@ event.create('purple_haze_attack')
                 }
             }
         })
+
+    event.create('rupture')
+        .harmful()
+    event.create('sinking')
+        .harmful()
+    event.create('charge')
+        .harmful()
+    event.create('enhanced_tattoo')
+        .beneficial()
+    event.create('grudge')
+        .beneficial()
 });

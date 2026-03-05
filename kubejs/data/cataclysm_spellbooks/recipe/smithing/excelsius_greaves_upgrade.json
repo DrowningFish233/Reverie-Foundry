@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": {
+        "item": "cataclysm:witherite_ingot"
+    },
+    "base": {
+        "item": "cataclysm_spellbooks:engineer_boots"
+    },
+    "result": {
+        "id": "cataclysm_spellbooks:excelsius_greaves"
+    },
+    "template": {
+        "item": "minecraft:redstone"
+    }
+}

@@ -48,6 +48,7 @@
 			"spell_power": 0.15,
 			"spell_resist": 0.1,
 			"mana_regen": 0.05,
+			"spell_slots": 5,
 			"healing_received": -0.02,
 			"rarity": 120,
 			"geas_limit": 0.25,

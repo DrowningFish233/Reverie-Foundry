@@ -10,7 +10,6 @@ function loggedInplayersanity(player) {
     //罪孽
     if (!pData.contains(GLUTTONY_nutrition)) pData.putInt(GLUTTONY_nutrition, 0);
     if (!pData.contains(gluttony_strength)) pData.putInt(gluttony_strength, 0);
-    if (!pData.contains(idleTimer)) pData.putInt(idleTimer, 0);
     if (!pData.contains(depravity)) pData.putInt(depravity, 0);
     if (!pData.contains(sloth_cumulative_damage)) pData.putInt(sloth_cumulative_damage, 0);
     //肾上腺素
@@ -112,7 +111,7 @@ function activateRandomSin(event, player) {
         ENVY: 'dark_purple',
         LUST: 'light_purple',
         SLOTH: 'yellow',
-        GREED: 'gold'
+        GLOOM: 'gold'
     };
 
     // 处理每个罪孽类型
@@ -219,7 +218,7 @@ function targetedSinErosion(event, player, targetSin, intensity) {
         "ENVY": "light_purple",
         "LUST": "gold",
         "SLOTH": "yellow",
-        "GREED": "dark_aqua"
+        "GLOOM": "dark_aqua"
     }[targetSin];
 
     player.setStatusMessage(

@@ -1,7 +1,5 @@
 /**
- * 处理流血效果
- */
-/**
+ * 处理流血效果 
  * @param {$BeforeLivingEntityHurtKubeEvent_} event 
  * @returns 
  */
@@ -12,15 +10,18 @@ function handleBleed(event) {
     if (!attacker || !attacker.isLiving() || !attacker.hasEffect("kubejs:bleed")) {
         return;
     }
-    const bleedEffect = attacker.getEffect("kubejs:bleed");
-    const currentLevel = bleedEffect.getAmplifier() + 1;
-    const Time = bleedEffect.getDuration();
-    const newLevel = Math.floor(currentLevel / 3); // 保留层数
 
-    attackEntity(attacker, 'kubejs:bleed', currentLevel * 2)
-    if (attacker.hasEffect("kubejs:bloodlust")) return
-    attacker.removeEffect("kubejs:bleed");
-    if (newLevel > 0) {
-        attacker.potionEffects.add("kubejs:bleed", Time, newLevel - 1);
+    const currentLayers = getEffectLayers(attacker, "kubejs:bleed");
+    attackEntity(attacker, 'kubejs:bleed', currentLayers);
+    if (attacker.hasEffect("kubejs:bloodlust")) return;
+    const newLayers = Math.floor(currentLayers * 2 / 3);
+    if (newLayers <= 0) {
+        attacker.removeEffect("kubejs:bleed");
+    } else {
+        const bleedEffect = attacker.getEffect("kubejs:bleed");
+        const duration = bleedEffect.getDuration();
+        const baseStrength = getBaseStrength(attacker, "kubejs:bleed");
+        attacker.removeEffect("kubejs:bleed");
+        attacker.potionEffects.add("kubejs:bleed", duration, newLayers - 1);
     }
 }

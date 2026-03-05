@@ -1,0 +1,12 @@
+{
+    "type": "cataclysm:weapon_fusion",
+    "base": {
+        "item": "irons_spellbooks:netherite_spell_book"
+    },
+    "addition": {
+        "item": "cataclysm_spellbooks:strange_disc"
+    },
+    "result": {
+        "id": "cataclysm_spellbooks:disc_driver"
+    }
+}

@@ -1,0 +1,32 @@
+{
+	id: "78315954301CB175"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{
+			id: "5CD1AE9DA7021C12"
+			item: {
+				count: 1
+				id: "refinedstorage:1k_storage_disk"
+			}
+			weight: 4.0f
+		}
+		{
+			id: "757D088687A6930C"
+			item: {
+				count: 1
+				id: "refinedstorage:4k_storage_disk"
+			}
+			weight: 3.0f
+		}
+		{
+			id: "11F9B858A5AA9531"
+			item: {
+				count: 1
+				id: "refinedstorage:16k_storage_disk"
+			}
+			weight: 2.0f
+		}
+		{ id: "457B7407EA274698", item: { count: 1, id: "refinedstorage:64k_storage_disk" } }
+	]
+}

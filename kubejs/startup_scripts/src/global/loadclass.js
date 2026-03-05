@@ -20,3 +20,4 @@ const $DataComponents = Java.loadClass('net.minecraft.core.component.DataCompone
 const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
 const $SpellRegistry = Java.loadClass('io.redspace.ironsspellbooks.api.registry.SpellRegistry')
 const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
+const $IExtendedMobEffect = Java.loadClass('com.drowningfish233.reveriefoundry.api.IExtendedMobEffect')

@@ -1070,14 +1070,21 @@ RFTrait('kubejs:combustion_boost', 0)
             let fireEffect = entity.getEffect("kubejs:fire")
             let fireAmplifier = fireEffect.getAmplifier() + 1
             let Duration = fireEffect.getDuration()
-            entity.potionEffects.add("kubejs:fire", Duration, fireAmplifier);
+            let strength = getBaseStrength(entity, "kubejs:fire")
 
+            entity.removeEffect("kubejs:fire")
+            entity.potionEffects.add("kubejs:fire", Duration, 0)
+            setBaseStrengthAndSync(entity, "kubejs:fire", strength)
         }
         if (entity.hasEffect("kubejs:soul_fire")) {
             let Effect = entity.getEffect("kubejs:soul_fire")
             let Amplifier = Effect.getAmplifier() + 1
             let Duration = Effect.getDuration()
-            entity.potionEffects.add("kubejs:soul_fire", Duration, Amplifier);
+            let strength = getBaseStrength(entity, "kubejs:soul_fire")
+
+            entity.removeEffect("kubejs:soul_fire")
+            entity.potionEffects.add("kubejs:soul_fire", Duration, 0)
+            setBaseStrengthAndSync(entity, "kubejs:soul_fire", strength)
         }
     })
     .register();
@@ -1238,7 +1245,8 @@ RFTrait('kubejs:fiery_tears', 0)
             return;
         }
         const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:fiery_tears");
-        entity.potionEffects.add("kubejs:fire", 30 * 20, traitLevel * 10);
+        entity.potionEffects.add("kubejs:fire", 30 * 20, 0);
+        setBaseStrengthAndSync(entity, "kubejs:fire", traitLevel * 10);
     })
     .register();
 
@@ -2591,6 +2599,8 @@ RFTrait('kubejs:deathworm_chitin', 0)
     })
     .register();
 
+
+
 /**
 * 总效果类层
 */
@@ -2642,16 +2652,11 @@ function other_effect(event) {
  * 七罪效果
  */
 function allthe_sin_event(event) {
-    sanityattack(event);
+    sanityAttack(event);
     gluttony(event);
     envy(event);
     envy_damage(event);
-    GREED_hurt(event);
-    lust_effect(event);
-    lust_extra_damage(event);
-    wrathlastAttackTime(event);
-    wrath_onPlayerHurt(event);
-    wrath_effect(event);
+    gloom_hurt(event);
     sloth(event);
     sloth_morning_moodiness(event);
     pride(event);

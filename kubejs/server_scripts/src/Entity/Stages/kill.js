@@ -31,26 +31,34 @@ const BOSS_STAGES = [
     }
 ];
 
-// 阶段限制 - 击杀逻辑
 EntityEvents.death(event => {
-    const player = event.source.player;
-    if (!player) return;
+    const { entity, source, server, level } = event;
 
-    const entityType = event.entity.getType();
+    const killer = source.player;
+    if (!killer) return;
 
-    // 遍历所有定义的Boss阶段
+    const entityType = entity.getType();
+
     BOSS_STAGES.forEach(bossStage => {
-        if (!AStages.playerHasStage(bossStage.stage, player) &&
-            entityType === bossStage.boss) {
+        if (entityType === bossStage.boss) {
 
-            AStages.addStageToPlayer(bossStage.stage, player);
+            let nearbyPlayers = level.getPlayers().filter(player =>
+                player.distanceToSqr(entity) <= 256
+            );
 
-            bossStage.messages.forEach(msg => {
-                event.server.tell(
-                    Text.of("")
-                        .append(Text.translate(msg.text).color(msg.color))
-                );
+            nearbyPlayers.forEach(nearbyPlayer => {
+                if (!AStages.playerHasStage(bossStage.stage, nearbyPlayer)) {
+                    AStages.addStageToPlayer(bossStage.stage, nearbyPlayer);
+                }
             });
+
+            if (nearbyPlayers.length > 0) {
+                bossStage.messages.forEach(msg => {
+                    server.tell(
+                        Text.of("").append(Text.translate(msg.text).color(msg.color))
+                    );
+                });
+            }
         }
     });
 });

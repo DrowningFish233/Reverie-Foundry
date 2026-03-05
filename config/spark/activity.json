@@ -5,6 +5,19 @@
       "name": "Drowning_Fish233",
       "uniqueId": "7566be57-fe2b-4132-a293-53321b661d69"
     },
+    "time": 1771676793261,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Z9LkZJKOmx"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Drowning_Fish233",
+      "uniqueId": "7566be57-fe2b-4132-a293-53321b661d69"
+    },
     "time": 1769754935897,
     "type": "Profiler",
     "data": {
@@ -88,19 +101,6 @@
     "data": {
       "type": "url",
       "value": "https://spark.lucko.me/SeAZoiLLyH"
-    }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "Drowning_Fish233",
-      "uniqueId": "7566be57-fe2b-4132-a293-53321b661d69"
-    },
-    "time": 1767350545217,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/OI3xgGmty2"
     }
   },
   {

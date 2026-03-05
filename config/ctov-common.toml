@@ -26,8 +26,8 @@
 	#CTOV large village spawn chance
 	# Default: 1
 	# Range: > 0
-	generatelargeVillage = 1
+	largeVillageWeight = 1
 	#CTOV Pillager Outpost spawn chance
 	# Default: 1
 	# Range: > 0
-	generatePillagerOutpost = 1
+	PillagerOutpostWeight = 1

@@ -323,5 +323,51 @@ StartupEvents.registry('item', event => {
             new $CurioCapBuilder()
                 .addAttribute("minecraft:generic.luck", "add_value", 3, "kubejs:angler_earring.luck")
         )
+
+
+    new $ItemBuilderWrapper(
+        event.create("sorcerer_emblem")
+            .texture('kubejs:item/curios/sorcerer_emblem')
+            .tag("curios:accessory")
+            .tag("kubejs:level_3")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("irons_spellbooks:spell_power", "add_multiplied_total", 0.15, "kubejs:sorcerer_emblem.spell_power")
+        )
+
+
+    new $ItemBuilderWrapper(
+        event.create("avenger_emblem")
+            .texture('kubejs:item/curios/avenger_emblem')
+            .tag("curios:accessory")
+            .tag("kubejs:level_3")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("irons_spellbooks:spell_power", "add_multiplied_total", 0.12, "kubejs:avenger_emblem.spell_power")
+                .addAttribute("minecraft:generic.attack_damage", "add_multiplied_total", 0.12, "kubejs:avenger_emblem.attack_damage")
+                .addAttribute("terra_curio:generic.ranged_damage", "add_multiplied_total", 0.12, "kubejs:avenger_emblem.ranged_damage")
+        )
+
+    new $ItemBuilderWrapper(
+        event.create("destroyer_emblem")
+            .texture('kubejs:item/curios/destroyer_emblem')
+            .tag("curios:accessory")
+            .tag("kubejs:level_3")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("irons_spellbooks:spell_power", "add_multiplied_total", 0.1, "kubejs:destroyer_emblem.spell_power")
+                .addAttribute("minecraft:generic.attack_damage", "add_multiplied_total", 0.1, "kubejs:destroyer_emblem.attack_damage")
+                .addAttribute("terra_curio:generic.ranged_damage", "add_multiplied_total", 0.1, "kubejs:destroyer_emblem.ranged_damage")
+                .addAttribute("terra_curio:generic.crit_chance", "add_multiplied_total", 0.08, "kubejs:destroyer_emblem.crit_chance")
+        )
 });
 

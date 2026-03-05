@@ -65,6 +65,9 @@
     "entity": true,
     "entity_variant": true
   },
+  "reveriefoundry": {
+    "effect_base_strength": true
+  },
   "ftbquests": {
     "barrier": true
   },
@@ -78,9 +81,6 @@
     "registry_name": "OFF",
     "block_properties": false,
     "mod_name": true
-  },
-  "quality_food": {
-    "quality": true
   },
   "allthemodium": {
     "teleport_pad": true

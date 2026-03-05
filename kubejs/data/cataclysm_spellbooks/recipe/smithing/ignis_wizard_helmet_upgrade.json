@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "addition": {
+        "item": "cataclysm:ignitium_ingot"
+    },
+    "base": {
+        "item": "irons_spellbooks:netherite_mage_helmet"
+    },
+    "result": {
+        "id": "cataclysm_spellbooks:ignis_helmet"
+    },
+    "template": {
+        "item": "cataclysm:ignitium_upgrade_smithing_template"
+    }
+}
