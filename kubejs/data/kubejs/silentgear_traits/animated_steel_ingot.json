@@ -4,7 +4,7 @@
         "translate": "trait.silentgear.animated_steel_ingot.desc"
     },
     "effects": [],
-    "max_level": 1,
+    "max_level": 3,
     "name": {
         "translate": "trait.silentgear.animated_steel_ingot"
     }

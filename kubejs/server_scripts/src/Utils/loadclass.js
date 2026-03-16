@@ -50,7 +50,6 @@ const $MobEffectEvent$Expired = Java.loadClass("net.neoforged.neoforge.event.ent
 const $MobEffectEvent$Added = Java.loadClass("net.neoforged.neoforge.event.entity.living.MobEffectEvent$Added");
 const $MobEffectEvent$Applicable = Java.loadClass("net.neoforged.neoforge.event.entity.living.MobEffectEvent$Applicable");
 const $LivingDamageEvent$Pre = Java.loadClass("net.neoforged.neoforge.event.entity.living.LivingDamageEvent$Pre");
-const $GearSickleItem = Java.loadClass("net.silentchaos512.gear.item.gear.GearSickleItem");
 const $MysteriousItemConversionCategory = Java.loadClass("com.simibubi.create.compat.jei.category.MysteriousItemConversionCategory")
 const $ConversionRecipe = Java.loadClass("com.simibubi.create.compat.jei.ConversionRecipe")
 const $ASUtils = Java.loadClass("net.acetheeldritchking.aces_spell_utils.utils.ASUtils")

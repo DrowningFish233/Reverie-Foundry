@@ -46,15 +46,27 @@
       },
       "magic_armor": 18.0,
       "magic_damage": 4.0,
+      "spell_slots": 4.0,
       "projectile_accuracy": 1.1,
       "projectile_speed": 1.25,
       "ranged_damage": 1.6,
+      "geas_limit": 0.25,
       "rarity": 60.0,
       "traits": [
         {
           "conditions": [],
           "level": 2,
           "trait": "kubejs:starinium_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "kubejs:vorant_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:blood_spell_power"
         }
       ]
     }

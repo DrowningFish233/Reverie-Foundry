@@ -38,6 +38,7 @@
       "durability": 2080.0,
       "enchantment_value": 22.0,
       "harvest_speed": 12.0,
+      "spell_slots": 4,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_allthemodium_tools",
         "level_hint": "5",

@@ -36,10 +36,25 @@ ServerEvents.recipes((event) => {
             C: 'create:brass_ingot',
             D: 'create:zinc_ingot',
             E: 'create:andesite_alloy',
-            F: 'create:precision_mechanism'
+            F: 'kubejs:animated_steel_ingot'
         }
     ).id("recipe_aero_steel_ingot");
 
+
+    event.recipes.createMechanicalCrafting(
+        'kubejs:animated_steel_ingot',
+        [
+            " ECE ",
+            "DCFCD",
+            " ECE "
+        ],
+        {
+            C: 'create:polished_rose_quartz',
+            D: 'create:powdered_obsidian',
+            E: 'create:andesite_alloy',
+            F: 'create:precision_mechanism'
+        }
+    ).id("recipe_aero_steel_ingot");
 
     event.recipes.createSandpaperPolishing(
         [

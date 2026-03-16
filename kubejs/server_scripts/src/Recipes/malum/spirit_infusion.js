@@ -966,4 +966,15 @@ ServerEvents.recipes(event => {
             .addExtraInput('kubejs:ruinous_soul', 4)
             .addExtraInput('alltheores:fluorite_block', 2)
     );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:rhexis_ingot', 'kubejs:starinium_ingot')
+            .addSpirit("umbral", 2)
+            .addExtraInput('kubejs:rhexis_ingot', 1)
+            .addExtraInput('malum:imitation_flesh', 3)
+            .addExtraInput('kubejs:foul_flesh', 4)
+            .addExtraInput('#minecraft:meat', 32)
+    );
+
+
 });

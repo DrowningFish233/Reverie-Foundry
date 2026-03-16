@@ -38,6 +38,9 @@
       "draw_speed": 0.3,
       "durability": 400.0,
       "enchantment_value": 25.0,
+      "spell_slots": 1.0,
+      "spell_power": 0.1,
+      "spell_resist": -0.2,
       "harvest_speed": 4.0,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_wood_tools",
@@ -49,6 +52,11 @@
       "ranged_damage": 1.2,
       "rarity": 55.0,
       "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:plague"
+        },
         {
           "conditions": [],
           "level": 1,

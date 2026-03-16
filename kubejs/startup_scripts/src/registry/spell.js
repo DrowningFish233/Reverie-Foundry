@@ -520,7 +520,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                     .append(Component.green(` ${spellLevel * 3 + 3}`))
                     .append(Component.translate('spell.kubejs.seconds')),
                 Component.translate('spell.kubejs.plunder.effect')
-                    .append(Component.green(` 等级 ${spellLevel}`))
+                    .append(Component.green(`${spellLevel}`))
             ]
         })
         .onCast(ctx => {  // 施法时触发
@@ -544,5 +544,53 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 0.1                          // arg9: 粒子速度
             )
             player.potionEffects.add("kubejs:plunder", durationTicks, spellLevel);
+        })
+
+    event.create('kubejs:replay')
+        .setCastTime(20)  // 施法时间(ticks)
+        .setCooldownSeconds(80)  // 冷却时间(秒)
+        .setBaseManaCost(20)  // 基础魔力消耗
+        .setManaCostPerLevel(100)  // 每级额外消耗
+        .setCastType('long')                    // 施法类型："continuous"（持续）、"long"（长施法）、"instant"（瞬发）或"none"（无）        
+        .setSchool('kubejs:dream')  // 所属学派
+        .setMaxLevel(3)
+        .setMinRarity('LEGENDARY')
+        .canBeCraftedBy(player => true)  // 制作条件
+        .onClientCast(ctx => { })                   // 仅客户端执行的施法逻辑（用于粒子效果/音效）
+        .onPreCast(ctx => { })                      // 施法前触发
+        .onPreClientCast(ctx => { })                // 客户端施法前触发
+        .setAllowLooting(true)                     // 是否允许通过战利品（怪物/宝箱）获取此法术
+        .needsLearning(false)                      // 是否需要学习
+        .canBeCraftedBy(player => true)            // 控制玩家能否合成此法术
+        .setUniqueInfo((spellLevel, caster) => {   // 自定义法术描述
+            return [
+                Component.translate('spell.kubejs.replay.duration')
+                    .append(Component.green(' 60'))
+                    .append(Component.translate('spell.kubejs.seconds')),
+                Component.translate('spell.kubejs.replay.level')
+                    .append(Component.green(` ${spellLevel}`))
+            ]
+        })
+        .onCast(ctx => {
+            let player = ctx.entity
+            let spellLevel = ctx.getSpellLevel()
+            const { level } = ctx
+
+            // 条件检查
+            if (!ctx.entity.isPlayer()) return
+
+            level.spawnParticles(
+                'irons_spellbooks:unstable_ender',  // 粒子类型
+                true,                        // 是否强制显示
+                player.x,                    // X坐标
+                player.y + 1,                // Y坐标
+                player.z,                    // Z坐标
+                0.5,                         // X偏移
+                0.5,                         // Y偏移
+                0.5,                         // Z偏移
+                20,                          // 粒子数量
+                0.1                          // 粒子速度
+            )
+            player.potionEffects.add("kubejs:replay", 1200, spellLevel - 1);
         })
 })

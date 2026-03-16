@@ -1143,4 +1143,47 @@ ServerEvents.recipes(event => {
             A: 'hazennstuff:runestone_fragments'
         }
     )
+
+    event.shaped(
+        Item.of('silentgear:super_mixer', 1),
+        [
+            ' B ',
+            'CDC',
+            'EAE'
+        ],
+        {
+            B: 'kubejs:ashes_of_calamity',
+            A: 'silentgear:tyrian_steel_block',
+            C: 'minecraft:diamond',
+            D: 'minecraft:beacon',
+            E: 'silentgear:tyrian_steel_ingot'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:eye_of_starlight_portal_located', 1),
+        [
+            ' B ',
+            'BAB',
+            ' B '
+        ],
+        {
+            B: 'minecraft:coal',
+            A: 'minecraft:ender_eye'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:magmanite_ingot', 1),
+        [
+            '   ',
+            'CAB',
+            '   '
+        ],
+        {
+            B: 'minecraft:lapis_block',
+            A: 'kubejs:magnetite_ingot',
+            C: 'minecraft:redstone_block'
+        }
+    )
 })

@@ -1,0 +1,18 @@
+{
+	"name": "patchouli.gui.kubejs.echo_shard.name",
+	"icon": "minecraft:echo_shard",
+	"category": "patchouli:kubejs_gems",
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": {
+				"item": "minecraft:echo_shard"
+			},
+			"text": "patchouli.gui.kubejs.echo_shard.text"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "patchouli.gui.kubejs.echo_shard"
+		}
+	]
+}

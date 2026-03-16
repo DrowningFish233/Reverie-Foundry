@@ -270,23 +270,24 @@ ServerEvents.tags('item', event => {
         'kubejs:netherite_rod',
         'kubejs:estalt_ingot')
     event.add('kubejs:dream_focus', 'kubejs:magic_fluorite')
-    event.add('malum:scythe', 'silentgear:sickle')
     event.add('c:ingots/tungsten', 'kubejs:tungsten_ingot')
     event.add('c:tools/scythe', 'silentgear:sickle')
     event.add('c:tools/melee_weapon', 'silentgear:sickle')
     event.add('minecraft:enchantable/vanishing', 'silentgear:sickle')
-    event.add('malum:enchantable/animated', 'silentgear:sickle')
-    event.add('malum:enchantable/haunted', 'silentgear:sickle')
-    event.add('malum:magic_capbale_weapon', 'silentgear:sickle')
-    event.add('malum:enchantable/ascension', 'silentgear:sickle')
-    event.add('malum:enchantable/durability', 'silentgear:sickle')
-    event.add('malum:enchantable/rebound', 'silentgear:sickle')
-    event.add('malum:soulhunters_treasure', 'silentgear:sickle')
-    event.add('malum:soulwoven_pouch_efficient', 'silentgear:sickle')
-    event.add('malum:enchantable/spirit_plunder', 'silentgear:sickle')
-    event.add('malum:magic_capable_weapon', 'silentgear:sickle')
-    event.add('malum:soul_shatter_capable_weapon', 'silentgear:sickle')
-
+    /*
+        event.add('malum:scythe', 'silentgear:sickle')
+        event.add('malum:enchantable/animated', 'silentgear:sickle')
+        event.add('malum:enchantable/haunted', 'silentgear:sickle')
+        event.add('malum:magic_capbale_weapon', 'silentgear:sickle')
+        event.add('malum:enchantable/ascension', 'silentgear:sickle')
+        event.add('malum:enchantable/durability', 'silentgear:sickle')
+        event.add('malum:enchantable/rebound', 'silentgear:sickle')
+        event.add('malum:soulhunters_treasure', 'silentgear:sickle')
+        event.add('malum:soulwoven_pouch_efficient', 'silentgear:sickle')
+        event.add('malum:enchantable/spirit_plunder', 'silentgear:sickle')
+        event.add('malum:magic_capable_weapon', 'silentgear:sickle')
+        event.add('malum:soul_shatter_capable_weapon', 'silentgear:sickle')
+    */
     event.add('c:gems/aquamarine', 'kubejs:aquamarine')
     event.add('c:gems/tanzanite', 'kubejs:tanzanite')
     event.add('c:gems/rose_quartz', 'create:rose_quartz')
@@ -526,3 +527,22 @@ ServerEvents.tags('item', event => {
         // 等级4
     )
 })
+
+ServerEvents.tags('block', event => {
+    event.add('kubejs:no_digging', [
+        'hazennstuff:runestone_slag',
+        'hazennstuff:zenalite_voidstone_ore',
+        'hazennstuff:zenalite_abysslate_ore',
+        'hazennstuff:zenalite_end_stone_ore',
+        'hazennstuff:zenalite_stone_ore',
+        'hazennstuff:dreadstone_ore',
+        'hazennstuff:chlorophyte_ore',
+        'gobber2:gobber2_ore_end',
+        'gobber2:gobber2_ore_nether',
+        'gobber2:gobber2_ore_deepslate',
+        'gobber2:gobber2_ore',
+        'hazennstuff:solar_core_netherrack_ore',
+        'hazennstuff:solar_core_blackstone_ore'
+
+    ]);
+});

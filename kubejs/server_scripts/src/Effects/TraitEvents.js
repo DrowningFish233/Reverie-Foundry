@@ -2026,16 +2026,21 @@ RFTrait('kubejs:six_life_death', 0)
 RFTrait('kubejs:wolf', 0)
     .beforeHurt(event => {
         const player = event.entity;
-        if (player.hasEffect('kubejs:wolf')) {
-            let uuid = player.getUuid()
-            if (uuid && typeof uuid.toString === "function") {
-                uuid = uuid.toString();
+        if (!fu_hasTraitAnywhere(player, "kubejs:wolf")) return;
+        let uuid = player.getUuid()
+        if (uuid && typeof uuid.toString === "function") {
+            uuid = uuid.toString();
+        }
+        const target = event.player;
+        let wolf = target.block.createEntity('minecraft:wolf')
+        wolf.mergeNbt({ Owner: uuid });
+        wolf.spawn()
+        player.server.scheduleInTicks(200, () => {
+            if (wolf && wolf.isAlive()) {
+                wolf.discard();
             }
-            const target = event.player;
-            let wolf = target.block.createEntity('minecraft:wolf')
-            wolf.mergeNbt({ Owner: uuid });
-            wolf.spawn()
-        } return;
+        });
+        return;
     })
     .register();
 
@@ -2466,10 +2471,12 @@ RFTrait('kubejs:emerald', 0)
 
 
 RFTrait('kubejs:celeslar_ingot', 0)
-    .onTick(87, event => {
+    .onTick(67, event => {
         let player = event.player
         if (!fu_hasTraitAnywhere(player, "kubejs:celeslar_ingot")) return
         const trait_level = fu_getHighestTraitLevelAnywhere(player, "kubejs:celeslar_ingot")
+        console.log(trait_level);
+
         // 获取附近所有实体
         const nearbyEntities = player.level.getEntities(
             player,
@@ -2477,14 +2484,14 @@ RFTrait('kubejs:celeslar_ingot', 0)
         );
 
         const livingEntities = nearbyEntities.filter(entity =>
-            entity.isLiving() && entity.isLiving()
+            entity.isLiving() && entity != player
         );
 
         const count = livingEntities.length;
 
         if (count > 0) {
-            const maxAmplifier = trait_level * 3;
-            const amplifier = Math.min(count - 1, maxAmplifier);
+            let maxAmplifier = trait_level * 3;
+            let amplifier = Math.min(count - 1, maxAmplifier);
             player.potionEffects.add("kubejs:damage_amplification", 6 * 20, amplifier);
         } return;
 

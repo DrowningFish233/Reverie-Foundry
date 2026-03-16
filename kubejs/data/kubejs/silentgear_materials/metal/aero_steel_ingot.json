@@ -53,8 +53,23 @@
       "traits": [
         {
           "conditions": [],
-          "level": 2,
-          "trait": "kubejs:eternal_starlight"
+          "level": 4,
+          "trait": "silentgear:renew"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:animated_steel_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:overload"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:set_numbness"
         }
       ]
     }

@@ -1,4 +1,4 @@
-#JEI Layout Configuration
+#Reverie Foundry -JEI Layout Configuration
 [jei_layout]
 
 	#Icon Settings
@@ -23,13 +23,17 @@
 	#Text Settings
 	[jei_layout.text]
 		#Top padding for text
-		# Default: 5
+		# Default: 4
 		# Range: 0 ~ 50
-		topPadding = 5
+		topPadding = 4
 		#Height of each text line
 		# Default: 9
 		# Range: 5 ~ 30
 		lineHeight = 9
+		#Spacing between lines
+		# Default: 2
+		# Range: 0 ~ 20
+		lineSpacing = 2
 		#Indentation for nested text
 		# Default: 10
 		# Range: 0 ~ 50
@@ -62,6 +66,25 @@
 		# Range: 50 ~ 500
 		scrollAreaHeight = 180
 
+	#Slot Layout Settings
+	[jei_layout.slots]
+		#X position of material area
+		# Default: 1
+		# Range: -50 ~ 100
+		materialAreaStartX = 1
+		#Y position of material area
+		# Default: 100
+		# Range: 0 ~ 200
+		materialAreaStartY = 100
+		#Size of slots in pixels
+		# Default: 18
+		# Range: 8 ~ 32
+		slotSize = 18
+		#Number of slots per row
+		# Default: 9
+		# Range: 1 ~ 18
+		slotsPerRow = 9
+
 	#Text Limits
 	[jei_layout.limits]
 		#Maximum number of parts per line
@@ -76,3 +99,41 @@
 		# Default: 35
 		# Range: 10 ~ 100
 		tooltipWidth = 35
+		#Maximum width of text before wrapping
+		# Default: 140
+		# Range: 50 ~ 300
+		textMaxWidth = 140
+
+	#Color Settings
+	[jei_layout.colors]
+		#Gray text color (hex format)
+		textColorGray = "0xFF888888"
+		#Purple text color (hex format)
+		textColorPurple = "0xFFAA00AA"
+		#Black text color (hex format)
+		textColorBlack = "0xFF000000"
+		#Dark gray text color (hex format)
+		textColorDarkGray = "0xFF555555"
+		#Label text color (Minecraft color code)
+		textColorLabel = "§3"
+		#Value text color (Minecraft color code)
+		textColorValue = "§f"
+		#Title text color (Minecraft color code)
+		textColorTitle = "§6§l"
+		#Subtitle text color (Minecraft color code)
+		textColorSubtitle = "§b§n"
+		#Property name text color (Minecraft color code)
+		textColorPropName = "§7"
+
+	#Row Limit Settings
+	[jei_layout.row_limits]
+		#Maximum number of material rows to display (if dynamic calculation is disabled)
+		# Default: 3
+		# Range: 1 ~ 10
+		maxMaterialRows = 3
+		#Fixed maximum number of rows (used when dynamic calculation is disabled)
+		# Default: 3
+		# Range: 1 ~ 10
+		fixedMaxRows = 3
+		#Enable dynamic calculation of rows based on available space (if false, uses fixedMaxRows)
+		enableDynamicRowCalculation = true

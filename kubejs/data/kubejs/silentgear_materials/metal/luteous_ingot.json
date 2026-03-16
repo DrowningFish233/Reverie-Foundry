@@ -39,6 +39,8 @@
       "durability": 2302.0,
       "enchantment_value": 36.0,
       "harvest_speed": 10.0,
+      "spell_power": 0.02,
+      "mana_regen": 0.05,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
         "level_hint": "4",

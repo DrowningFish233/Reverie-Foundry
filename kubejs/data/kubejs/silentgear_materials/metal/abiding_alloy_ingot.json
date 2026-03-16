@@ -48,7 +48,13 @@
       "magic_damage": 6.0,
       "ranged_damage": 3.0,
       "rarity": 80.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:lacrima"
+        }
+      ]
     }
   }
 }

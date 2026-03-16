@@ -45,13 +45,21 @@
       },
       "knockback_resistance": 1.0,
       "magic_armor": 32.0,
-      "magic_damage": 0.0,
+      "spell_slots": 8,
+      "spell_power": 0.15,
+      "spell_resist": 0.2,
+      "magic_damage": 0.1,
       "projectile_accuracy": 1.25,
       "projectile_speed": 2.0,
       "ranged_damage": 7.0,
       "rarity": 200.0,
       "repair_value": 0.0,
       "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:iridescence"
+        },
         {
           "conditions": [],
           "level": 1,
@@ -61,6 +69,11 @@
     },
     "silentgear:setting": {
       "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:iridescence"
+        },
         {
           "conditions": [],
           "level": 1,
@@ -82,6 +95,11 @@
         "value": 2.0
       },
       "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:iridescence"
+        },
         {
           "conditions": [],
           "level": 1,

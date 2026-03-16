@@ -367,7 +367,7 @@ StartupEvents.registry('item', event => {
                 .addAttribute("irons_spellbooks:spell_power", "add_multiplied_total", 0.1, "kubejs:destroyer_emblem.spell_power")
                 .addAttribute("minecraft:generic.attack_damage", "add_multiplied_total", 0.1, "kubejs:destroyer_emblem.attack_damage")
                 .addAttribute("terra_curio:generic.ranged_damage", "add_multiplied_total", 0.1, "kubejs:destroyer_emblem.ranged_damage")
-                .addAttribute("terra_curio:generic.crit_chance", "add_multiplied_total", 0.08, "kubejs:destroyer_emblem.crit_chance")
+                .addAttribute("terra_curio:generic.crit_chance", "add_value", 0.08, "kubejs:destroyer_emblem.crit_chance")
         )
 });
 

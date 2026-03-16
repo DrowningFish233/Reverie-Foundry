@@ -39,6 +39,7 @@
       "durability": 1500.0,
       "enchantment_value": 16.0,
       "harvest_speed": 5.0,
+      "spell_slots": 2.0,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools",
         "level_hint": "3",
@@ -49,6 +50,11 @@
       "ranged_damage": 0.0,
       "rarity": 65.0,
       "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:fire_spell_power"
+        },
         {
           "conditions": [],
           "level": 2,

@@ -1,0 +1,22 @@
+{
+  "type": "usefulluck:luck_modifier",
+  "conditions": [
+    {
+      "condition": "minecraft:table_bonus",
+      "enchantment": "minecraft:fortune",
+      "chances": [
+        0.1,
+        0.2,
+        0.3
+      ]
+    },
+    {
+      "condition": "usefulluck:loot_table_match",
+      "loot_table_id": "^.*?:blocks/.*_ore"
+    }
+  ],
+  "per": 1,
+  "roll": 1,
+  "chance": 0.50,
+  "saturation": 12
+}

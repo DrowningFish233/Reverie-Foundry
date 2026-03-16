@@ -4,34 +4,34 @@
     "name": "b",
     "entries": [
       {
-        "key": "keybind.sophisticatedbackpacks.open_backpack",
-        "title": "打开背包",
+        "key": "key.ftbquests.quests",
+        "title": "打开任务",
         "icon": {
-          "id": "sophisticatedbackpacks:diamond_backpack",
+          "id": "ftbquests:book",
           "count": 1
         }
       },
       {
-        "key": "key.curios.open.desc",
-        "title": "打开/关闭饰品栏",
-        "icon": {
-          "id": "terra_curio:terraspark_boots",
-          "count": 1
-        }
-      },
-      {
-        "key": "key.ftbchunks.map",
-        "title": "打开地图",
+        "key": "gui.xaero_open_map",
+        "title": "打开世界地图",
         "icon": {
           "id": "minecraft:map",
           "count": 1
         }
       },
       {
-        "key": "key.ftbquests.quests",
-        "title": "打开任务",
+        "key": "key.sophisticatedbackpacks.open_backpack",
+        "title": "打开背包",
         "icon": {
-          "id": "ftbquests:book",
+          "id": "sophisticatedbackpacks:backpack",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.ftbchunks.add_waypoint",
+        "title": "快速添加路径点",
+        "icon": {
+          "id": "enderscape:mirror",
           "count": 1
         }
       },
@@ -48,6 +48,14 @@
         "title": "路径点管理",
         "icon": {
           "id": "waystones:waystone",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.curios.open.desc",
+        "title": "打开/关闭饰品栏",
+        "icon": {
+          "id": "terra_curio:terraspark_boots",
           "count": 1
         }
       }

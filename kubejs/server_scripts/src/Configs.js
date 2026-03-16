@@ -7,62 +7,15 @@
 const MaterialConfigs = {
     enabled: true, // 设为false可禁用生成
     auto_ingot: {
-        id: "kubejs:lightning_dragon_blood",
+        id: "kubejs:tooth_of_hunger",
         config: (mat) => {
-            mat.setCategories(["medium", "organic"])
-                .setIngredientItem("iceandfire:lightning_dragon_blood")
-                .setDisplayColor("#721ec7")
-                .setName("material.silentgear.kubejs:dragon_blood")
-                .addCoating((/** @type {PartBuilder} */part) => {
-                    part.armorWithOperation("ADD", 4)
-                        .armorHelmetWithOperation("ADD", 1)
-                        .armorChestplateWithOperation("ADD", 1)
-                        .armorLeggingsWithOperation("ADD", 1)
-                        .armorBootsWithOperation("ADD", 1)
-                        .armorDurabilityWithOperation("MULTIPLY_BASE", 0.1)
-                        .attackDamageWithOperation("ADD", 3)
-                        .addTrait("kubejs:dragonskill", 1)
-                        .addTrait("kubejs:lightning_dragon_blood", 1)
-                })
-        }
-    },
-    auto_ingot2: {
-        id: "kubejs:fire_dragon_blood",
-        config: (mat) => {
-            mat.setCategories(["medium", "organic"])
-                .setIngredientItem("iceandfire:fire_dragon_blood")
-                .setDisplayColor("#a62800")
-                .setName("material.silentgear.kubejs:dragon_blood")
-                .addCoating((/** @type {PartBuilder} */part) => {
-                    part.armorWithOperation("ADD", 4)
-                        .armorHelmetWithOperation("ADD", 1)
-                        .armorChestplateWithOperation("ADD", 1)
-                        .armorLeggingsWithOperation("ADD", 1)
-                        .armorBootsWithOperation("ADD", 1)
-                        .armorDurabilityWithOperation("MULTIPLY_BASE", 0.1)
-                        .attackDamageWithOperation("ADD", 3)
-                        .addTrait("kubejs:dragonskill", 1)
-                        .addTrait("kubejs:fire_dragon_blood", 1)
-                })
-        }
-    },
-    auto_ingot3: {
-        id: "kubejs:ice_dragon_blood",
-        config: (mat) => {
-            mat.setCategories(["medium", "organic"])
-                .setIngredientItem("iceandfire:ice_dragon_blood")
-                .setDisplayColor("#2b91cc")
-                .setName("material.silentgear.kubejs:dragon_blood")
-                .addCoating((/** @type {PartBuilder} */part) => {
-                    part.armorWithOperation("ADD", 4)
-                        .armorHelmetWithOperation("ADD", 1)
-                        .armorChestplateWithOperation("ADD", 1)
-                        .armorLeggingsWithOperation("ADD", 1)
-                        .armorBootsWithOperation("ADD", 1)
-                        .armorDurabilityWithOperation("MULTIPLY_BASE", 0.1)
-                        .attackDamageWithOperation("ADD", 3)
-                        .addTrait("kubejs:dragonskill", 1)
-                        .addTrait("kubejs:ice_dragon_blood", 1)
+            mat.setCategories(["advanced", "organic"])
+                .setIngredientItem("eternal_starlight:tooth_of_hunger")
+                .setDisplayColor("#38292d")
+                .setName("material.silentgear.kubejs:tooth_of_hunger")
+                .addTip((/** @type {PartBuilder} */part) => {
+                    part
+                        .addTrait("kubejs:tooth_of_hunger", 1)
                 })
         }
     }

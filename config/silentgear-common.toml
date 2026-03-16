@@ -54,6 +54,11 @@
 			# Range: 0.0 ~ 10.0
 			missing = 0.0
 
+	#Material book settings
+	[item.material_book]
+		#Give the player a material book when joining the world for the first time
+		spawn_with_material_book = true
+
 #Settings for nerfed items.
 #You can give items reduced durability to encourage use of Silent Gear tools.
 #Changes require a restart!
@@ -201,3 +206,13 @@
 	#Shows a "WIP" (work in progress) label in the tooltip of certain unfinished, but usable blocks and items
 	#Set to false to remove the text from tooltips
 	show_wip_text = false
+
+#Settings for compound materials and compound makers
+[compounds]
+
+	[compounds.crude_mixer]
+		#A multiplier applied to some numerical properties for compounds (crude alloys) made in the crude mixer.
+		#A value less than 1 will reduce property values, a value greater than 1 will increase property values.
+		# Default: 0.8
+		# Range: 0.0 ~ 2.0
+		property_multiplier = 0.8

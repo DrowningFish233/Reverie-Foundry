@@ -46,7 +46,7 @@ function fu_getTraitLevel(gear, trait) {
  * @return 当且仅当装备物品拥有该特质时返回 true
  */
 function fu_hasTrait(gear, trait) {
-    return $TraitHelper.hasTrait(gear, _convertTrait(trait));
+    return $TraitHelper["hasTrait(net.minecraft.world.item.ItemStack,net.silentchaos512.gear.api.util.DataResource)"](gear, _convertTrait(trait));
 }
 
 /**

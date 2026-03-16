@@ -1,14 +1,3 @@
-//混沌传送
-ISSEvents.spellOnCast(event => {
-    if (event.spellId == "hazennstuff:chaotic_teleport") {
-        const player = event.entity
-        if (player.hasEffect("kubejs:chaotic_teleport")) {
-            attackEntity(player, 'kubejs:rod_of_discord', player.getMaxHealth() / 6, true)
-        }
-        player.potionEffects.add("kubejs:chaotic_teleport", 20 * 30, 0);
-    }
-});
-
 
 // 学派属性映射表
 const SCHOOL_ATTRIBUTES = {
@@ -149,5 +138,24 @@ ISSEvents.spellOnCast(event => {
         // 转换为整数
         manaCost = Math.round(manaCost);
         event.setManaCost(manaCost);
+    }
+});
+
+//法术：重放
+ISSEvents.spellOnCast(event => {
+    const player = event.entity
+    if (player.hasEffect("kubejs:replay")) {
+        player.server.scheduleInTicks(20, () => {
+            overLimitSpellCast(event.getSpellId(), event.getSpellLevel(), event.entity, false)
+            let effect = player.getEffect('kubejs:replay')
+            let currentAmplifier = effect.getAmplifier()
+
+            if (currentAmplifier > 0) {
+                player.removeEffect('kubejs:replay')
+                player.potionEffects.add('kubejs:replay', effect.getDuration(), currentAmplifier - 1)
+            } else {
+                player.removeEffect('kubejs:replay')
+            }
+        })
     }
 });

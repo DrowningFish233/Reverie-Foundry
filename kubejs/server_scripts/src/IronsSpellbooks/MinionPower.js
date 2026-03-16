@@ -16,11 +16,8 @@ EntityEvents.spawned(event => {
     ];
 
     if (!validEntities.some(c => c == event.entity.getType())) return;
-    // 检查是否已经增强过
     if (event.entity.persistentData.Multy) return;
-    // 立即尝试获取召唤者
     let summoner = $SummonManager.getOwner(event.entity);
-
     if (summoner && summoner instanceof Player) {
         applyAttributeBoost(event.entity, summoner);
     } else {

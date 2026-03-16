@@ -17,3 +17,10 @@ ItemEvents.modifyTooltips(event => {
         tooltip.add(Text.translate("tooltip.kubejs.silentgear.mod_kit.desc.3"))
     })
 })
+
+ItemEvents.modifyTooltips(event => {
+    event.modify('silentgear:blueprint_book', tooltip => {
+        tooltip.removeLine(2)
+        tooltip.add(Text.translate("tooltip.kubejs.silentgear.blueprint_book.desc"))
+    })
+})

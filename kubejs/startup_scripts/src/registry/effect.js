@@ -1317,4 +1317,6 @@ event.create('purple_haze_attack')
         .beneficial()
     event.create('grudge')
         .beneficial()
+    event.create('replay')
+        .beneficial()
 });

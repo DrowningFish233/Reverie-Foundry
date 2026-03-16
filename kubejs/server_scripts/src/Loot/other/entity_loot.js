@@ -10,6 +10,7 @@ LootJS.modifiers(event => {
         .randomChance(0.5)
         .when(c => c.matchMainHand(ItemFilter.hasEnchantment("minecraft:looting")))
     );
+    /*
     event.addEntityModifier([
         "minecraft:zombie",
         "minecraft:zombie_villager",
@@ -27,7 +28,7 @@ LootJS.modifiers(event => {
         .randomChance(0.5)
         .when(c => c.matchMainHand(ItemFilter.hasEnchantment("minecraft:looting")))
     );
-
+*/
     event.addEntityModifier([
         "minecraft:pillager",
         "minecraft:witch",

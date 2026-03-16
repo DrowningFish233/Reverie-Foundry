@@ -449,6 +449,21 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.alcohol.title', 'yellow'),
         ]
     },
+    'enderscape:kurodite_rubble_shield': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.end_stone_rubble_shield.title', 'yellow'),
+        ]
+    },
+    'enderscape:mirestone_rubble_shield': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.end_stone_rubble_shield.title', 'yellow'),
+        ]
+    },
+    'enderscape:veradite_rubble_shield': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.end_stone_rubble_shield.title', 'yellow'),
+        ]
+    },
     'enderscape:end_stone_rubble_shield': {
         lines: [
             TooltipUtils.simpleText('tooltip.end_stone_rubble_shield.title', 'yellow'),

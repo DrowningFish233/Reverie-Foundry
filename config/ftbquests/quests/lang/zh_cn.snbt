@@ -18,7 +18,7 @@
 	chapter_group.17FDF36D1B965C72.title: "&e散落的手记 （支线）"
 	chapter_group.2F1F238400B8A177.title: "杂谈"
 	chapter_group.7F00D0D8C7C916A0.title: "&b虚无之梦 （主线）"
-	file.0000000000000001.title: "遐想铸造厂v0.4-Beta"
+	file.0000000000000001.title: "遐想铸造厂v0.6-Beta"
 	quest.002106F426003B4F.quest_desc: ["&7增加激活范围，即玩家距离刷怪笼更远时也能激活刷怪笼。每个增加 2 格，上限48格。"]
 	quest.002106F426003B4F.quest_subtitle: "I can see you"
 	quest.00616CF92A5F5FD1.quest_desc: [
@@ -658,6 +658,7 @@
 		"&a提示&r&7：&f♨ &r&7温度决定可处理的材料等级，⚡ 速度影响处理耗时，⏳ 消耗代表燃料的持久度。"
 	]
 	quest.0ED82FFAE99D2480.quest_subtitle: "更好的燃料"
+	quest.0EE6ADB913E3CF80.quest_subtitle: "同时拥有护甲与微量的法术属性值，深受欢迎"
 	quest.0EEA8DDC455E7FCB.quest_desc: [
 		"&7在观察&8腐枯&r&7扩散的过程中（当然，是在可控环境下），我注意到这种形而上学的伤害偶尔能强大到在石头上留下疮疤——因此，我将其命名为“&6疮疤石&r&7”。"
 		"&7"
@@ -922,6 +923,7 @@
 	]
 	quest.159E4C31CF4AB181.quest_subtitle: "吞噬万物"
 	quest.159E4C31CF4AB181.title: "无恕渊喉誓约"
+	quest.15DC053FF5BA0E9B.quest_subtitle: "同时拥有护甲与微量的法术属性值，深受欢迎"
 	quest.15DDBCE29F4CEB4B.quest_subtitle: "合成材料，主要用作与制作部分高级机械以及智能元件。"
 	quest.15F15A1FF0EDD7E3.quest_desc: [
 		"&7很难想象创造出一个生物只是为了击杀它，但这种产生下界之星的特殊转变确实不是人力可以做到的。"
@@ -1005,7 +1007,7 @@
 	quest.182289427E06D427.quest_subtitle: "连点器的好伙伴"
 	quest.182321BDA643635C.quest_desc: ["如今存储网络的访问效率已难以满足我的需求，我需要寻求更快的数据读写方案。"]
 	quest.182321BDA643635C.quest_subtitle: "更快，更好，更强！"
-	quest.18AC27B34367E1DD.quest_desc: ["进行下蹲操作时可秒挖方块（这是一个bug，但是我觉得保留这个bug会更加有趣）"]
+	quest.18AC27B34367E1DD.quest_desc: [""]
 	quest.18AC27B34367E1DD.quest_subtitle: "隧道挖掘者"
 	quest.18C5ACA6F816EDCB.quest_desc: [
 		"&6微型盾牌&r"
@@ -1432,6 +1434,7 @@
 		""
 		"&8这一页的纸张似乎被蒸汽熏得微微卷曲了&r"
 	]
+	quest.244305D501AB31AA.quest_subtitle: "相比普通护甲，他的护甲值等属性更高，代价是失去了法力属性"
 	quest.2443B7C22B13BC1F.quest_desc: [
 		"&7受到神圣金方尖碑的启发，你将你认为无用的经验晶也做成了方尖碑。经验的魔力并没有对注魂仪式影响。而是表现出对另一种魔法力量的强化——附魔。"
 		""
@@ -1498,6 +1501,7 @@
 		"&6晶化浆果&r"
 		"&7由&b嗅探兽&r&7发掘获得。可以喂食给你的魔宠以获得&e记忆碎片&r&7。&r"
 	]
+	quest.2723E285F0AD8412.quest_subtitle: "相比普通护甲，他的护甲值等属性更高，代价是失去了法力属性"
 	quest.27B6C00949F92CCF.quest_desc: [
 		"&7我貌似发现了某种怪异的事物：一种迄今未有记载的魔法形式。若是放弃学习魔法的机会，便不能称自己为魔法师。"
 		""
@@ -1559,6 +1563,7 @@
 		"&7晶化蛾会将其消耗，且有较低概率产出 1 份&#F8CD4B震颤胶质&r&7。&r"
 	]
 	quest.28F42F3025DEB18C.title: "晶化蛾"
+	quest.28FBA3F985201394.quest_subtitle: "相比普通护甲，他的护甲值等属性更高，代价是失去了法力属性"
 	quest.2911813B45667FF4.quest_desc: ["利用巨龙霸道力量的象征，我做出了这个书架，似乎是返璞归真的原因，这个书架只提供超大量的&a位阶&r，以及最重要的，可以把&a位阶&r上限提升到最大值。"]
 	quest.2911813B45667FF4.quest_subtitle: "通往位阶的顶点"
 	quest.2911813B45667FF4.title: "巨龙之咆哮"
@@ -2235,6 +2240,7 @@
 	quest.39980DF0631D9B6C.quest_subtitle: "求美于糟粕"
 	quest.39980DF0631D9B6C.title: "腐烂苦修条约"
 	quest.39AB32E04D04B64F.quest_subtitle: "阶段1"
+	quest.39EB3B61CB5E3E73.quest_subtitle: "虽不如其他的护甲的防御力高，但是对法术相关属性特攻"
 	quest.39F72CD10646574F.quest_desc: ["&7从数百种附魔中寻找特定条目犹如大海捞针。而限定类型的附魔书能显著改善这一点——这类书籍仅对特定类别的附魔具有亲和性，是获取目标附魔的上佳途径。"]
 	quest.39F72CD10646574F.quest_subtitle: "实用附魔"
 	quest.3A08D5D6D65FF6F2.quest_desc: [
@@ -2557,6 +2563,7 @@
 		"&7在能够战胜远古骑士时是一个比较便捷的下界合金获取地点，同时产出的&6灰烬源质&7也是一种重要材料。"
 	]
 	quest.4276FE7E4037AC05.title: "远古战场"
+	quest.429669316E4CF3A9.quest_subtitle: "同时拥有护甲与微量的法术属性值，深受欢迎"
 	quest.42F6170490C96218.quest_subtitle: "再无敌手"
 	quest.42F6170490C96218.title: "击杀冠军生物 x1000"
 	quest.43B69EBAF5DCC756.quest_subtitle: "全能工具"
@@ -3019,7 +3026,7 @@
 		"&7暮眼鱼会在仇恨目标离开自身所在水域后放弃追逐。&r"
 	]
 	quest.4EF6614B03841586.title: "暮眼鱼"
-	quest.501A9D4E77A9D0EA.quest_subtitle: "撕裂灵魂"
+	quest.501A9D4E77A9D0EA.quest_subtitle: "农民好帮手"
 	quest.501AB9740C6C4447.quest_desc: [
 		"&6强心符文&r"
 		""
@@ -3097,6 +3104,7 @@
 		"&7咆哮之风符文的能力与同名仪式类似，会给予佩戴者效力减半的&b咆哮之风&r&7效果，加快&a移动速度&r&7和&a攻击速度&r&7。&r"
 	]
 	quest.5125C8D0790C81BB.quest_subtitle: "疾发脉动"
+	quest.516E307A77B811CC.quest_subtitle: "撕裂灵魂"
 	quest.5177469D5E64C1E3.quest_desc: [
 		"&6砂纸打磨&r"
 		""
@@ -3852,6 +3860,7 @@
 		"&7我曾听过流言称它们会从矿石中掉出来，但&6最可靠的来源是灵魂消散处的小型矿石簇&f&7，灵魂遗留的经验会刻于岩石之上。"
 	]
 	quest.68EF2FB94A761FFD.quest_subtitle: "经验物质"
+	quest.6930993364FD1814.quest_subtitle: "虽不如其他的护甲的防御力高，但是对法术相关属性特攻"
 	quest.6A03DEB0CCE71AF2.quest_desc: [
 		"&6护甲板&r"
 		"&7用于提升魔宠&a护甲值&r&7的消耗品。共有3个等级，每个等级有使用上限"
@@ -3921,6 +3930,7 @@
 		"&7各路法师与村庄警卫之能量圣化为&d光明之魂"
 	]
 	quest.6AC481C1ADA516D4.quest_subtitle: "残漏的魔法"
+	quest.6AE4DE3DC4964CB6.quest_subtitle: "同时拥有护甲与微量的法术属性值，深受欢迎"
 	quest.6AE8CFDBDC8CF939.quest_subtitle: "合成用品"
 	quest.6AF6ADCEE5546549.quest_desc: [
 		"&7在此之前，我仅将精魂魔法限制于提升自身和制造材料。"
@@ -4239,6 +4249,7 @@
 	]
 	quest.72C552BE02BA433D.quest_subtitle: "超级怪物工厂"
 	quest.72C552BE02BA433D.title: "神化——刷怪笼模块"
+	quest.72EADB2FF95D25B3.quest_subtitle: "虽不如其他的护甲的防御力高，但是对法术相关属性特攻"
 	quest.7306BEC7A3E98304.quest_subtitle: "不死族"
 	quest.731473A765D3B6B6.quest_desc: [
 		"&7在各地搜寻&d奥术能量&r&7的踪迹时，最常找到的是&b澄空奥能&r&7。"
@@ -4397,6 +4408,7 @@
 	]
 	quest.768F736B2B18FA1B.quest_subtitle: "百步穿杨"
 	quest.768F736B2B18FA1B.title: "犀利锐眼誓约"
+	quest.76B78E211A0AEC85.quest_subtitle: "相比普通护甲，他的护甲值等属性更高，代价是失去了法力属性"
 	quest.76BD72A25B241E0C.quest_desc: ["&7利用荧石的光亮，我把象征混沌的下界书架进行改良。他在提供额外&4量子化&7的同时，也会给与少量的&5阿卡纳&7。虽然仍然不如海洋书架，但是蚊子腿也是肉对吧"]
 	quest.76BD72A25B241E0C.quest_subtitle: "更为均衡的下界书架"
 	quest.76BD72A25B241E0C.title: "无序扩展"
@@ -4614,6 +4626,7 @@
 	quest.7BACE6601BC4DFED.quest_subtitle: "次元口袋"
 	quest.7BD9DC7DB2278AA5.quest_desc: ["&7需要在古城战利品箱获取，拥有相当高的攻击伤害，但没有特殊词条，适合用于合金制作武器部件。"]
 	quest.7BD9DC7DB2278AA5.quest_subtitle: "朴素的高伤害"
+	quest.7C227ABAEC91DA58.quest_subtitle: "虽不如其他的护甲的防御力高，但是对法术相关属性特攻"
 	quest.7C74D47B9ED97737.quest_desc: [
 		"&7权限管理器是一个可以存储权限卡的方块"
 		""
@@ -4999,6 +5012,7 @@
 	task.02081D27FED67724.title: "正餐回收"
 	task.02C09DDCAF029E1C.title: "场景：村落"
 	task.02E724791B98221B.title: "任意 头颅"
+	task.03566662B2722669.title: "法术书 模板"
 	task.039FE05CAF91D22E.title: "灌注书架"
 	task.05EC35C7459C4EE5.title: "场景：村落"
 	task.061EADF2EDD58507.title: "点击继续"
@@ -5028,6 +5042,7 @@
 	task.13A0D926AD6B0330.title: "量子稳定性"
 	task.13B37FFF4E9065DB.title: "诶你怎么似了"
 	task.13BE9B290F7E4D4E.title: "场景：混乱荒野"
+	task.14D6871739D4DD96.title: "镰刀 模板"
 	task.14F00C7BD0F376AF.title: "弩 模板"
 	task.1515843B90E779DE.title: "任意 疾风设备"
 	task.1516D6057A163CD8.title: "场景：混乱荒野"
@@ -5041,10 +5056,14 @@
 	task.1C06992A966B5537.title: "箭 模板"
 	task.1C3F0D05EF0E579B.title: "场景：村落"
 	task.1C6E3A73FEC6CA64.title: "命令注册"
+	task.1C9206E00C139795.title: "重型护腿 模板"
 	task.1CE591BED0249B67.title: "任意 食物"
+	task.1E1639DB2A1EB27B.title: "法袍靴子 模板"
 	task.201E6C48702846AC.title: "手镯 模板"
+	task.20E752F817977436.title: "重型靴子 模板"
 	task.2168A7B0CEA44A59.title: "量子化"
 	task.218622C67393A564.title: "流体存储方块"
+	task.23B079325E8F6976.title: "重型胸甲 模板"
 	task.24414CD8C86B97F5.title: "任意 升级珠"
 	task.27FCF177F9DBA089.title: "魔宠列表"
 	task.28F0C1066808D8E9.title: "猎杀"
@@ -5083,6 +5102,7 @@
 	task.3BBEAE77629AD44D.title: "&6护甲板&r"
 	task.3CBB932AAD6CC7EA.title: "任意 宝典"
 	task.3D218C514EAC6367.title: "开掘铲 模板"
+	task.3DE2898A1A9A4C07.title: "法袍长袍 模板"
 	task.3E1F111ADD777D77.title: "Any #eternal_starlight:yeti_fur"
 	task.3F63C56803BA4F6F.title: "勘探锤 模板"
 	task.3F853F214743B9E6.title: "Any #alshanex_familiars:familiar_trinkets"
@@ -5128,9 +5148,11 @@
 	task.5B09D0B2903B224E.title: "小刀 模板"
 	task.5B0CA142332889F5.title: "大餐回收"
 	task.5B9FE5D428C26C37.title: "任意 电力熔炉"
+	task.5BA57825F830A63E.title: "法杖 模板"
 	task.5CDEA67077218678.title: "锤 模板"
 	task.5DAEF315B3683621.title: "任意 精魂"
 	task.5DBF144A9A88D545.title: "隐秘收割"
+	task.5E065AD5537737D0.title: "法袍裤裙 模板"
 	task.5E61C66706DB394E.title: "字体设置"
 	task.5F1B94C31D02E67B.title: "场景：中途酒馆"
 	task.5F3EC831C3E53770.title: "武士刀 模板"
@@ -5145,6 +5167,7 @@
 	task.63234A766C567E00.title: "场景：地下墓穴"
 	task.6344C03C91E6B173.title: "观察天赐傀儡"
 	task.6478174E99B96FA8.title: "中继器"
+	task.64A308976F77F050.title: "法袍兜帽 模板"
 	task.661A96A3B20665DE.title: "访问：下界"
 	task.6747EAFEAC056B39.title: "这是一个地点"
 	task.679088C9A7CDA862.title: "任意 飞机武器"
@@ -5176,6 +5199,7 @@
 	task.75D4742A0C012F65.title: "矛 模板"
 	task.76ED940B298D8859.title: "任意 发动机升级"
 	task.774FD55407857713.title: "场景：据点"
+	task.777C45CF49CC817C.title: "重型头盔 模板"
 	task.77B5BE57F5151388.title: "&6魔法精华&r"
 	task.7BD801F485623EC0.title: "钓鱼竿 模板"
 	task.7CCEF302E660A068.title: "须知"

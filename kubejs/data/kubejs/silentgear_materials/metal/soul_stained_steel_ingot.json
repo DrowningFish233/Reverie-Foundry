@@ -23,6 +23,7 @@
     },
     "properties": {
         "silentgear:main": {
+            "geas_limit": 0.25,
             "armor": 20.0,
             "armor/boots": 3.0,
             "armor/chestplate": 8.0,

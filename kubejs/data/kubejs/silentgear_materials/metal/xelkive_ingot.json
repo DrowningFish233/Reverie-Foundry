@@ -38,6 +38,7 @@
       "draw_speed": 0.0,
       "durability": 3000.0,
       "enchantment_value": 18.0,
+      "spell_power": 0.1,
       "harvest_speed": 13.0,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",

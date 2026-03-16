@@ -4,7 +4,7 @@
 
 const BOSS_MOBS = [
     //戈伯后
-    ["astage/boss/eater_of_world", "terra_entity:eater_of_world", "first_kill_dead_king"],
+    ["astage/boss/eater_of_world", "terra_entity:eater_of_worlds", "first_kill_dead_king"],
     ["astage/boss/brain_of_cthulhu", "terra_entity:brain_of_cthulhu", "first_kill_dead_king"],
     ["astage/boss/queen_bee", "terra_entity:queen_bee", "first_kill_dead_king"],
     ["astage/boss/skeletron", "terra_entity:skeletron", "first_kill_dead_king"],

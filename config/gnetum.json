@@ -5,8 +5,12 @@
   "showHudFps": {
     "value": "ON"
   },
+  "downscale": {
+    "value": "OFF"
+  },
   "numberOfPasses": 6,
   "maxFps": 60,
+  "screenMaxFps": 20,
   "mapVanillaElements": {
     "enderscape:debug": {
       "enabled": {
@@ -187,6 +191,12 @@
         "value": "AUTO"
       },
       "pass": 3
+    },
+    "xaeroworldmap:crosshair_message": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
     },
     "eternal_starlight:carved_lunaris_cactus_fruit_blur": {
       "enabled": {

@@ -35,6 +35,7 @@
       "charging_value": 1.3,
       "draw_speed": 0.0,
       "durability": 512.0,
+      "spell_slots": 2.0,
       "enchantment_value": 12.0,
       "harvest_speed": 6.0,
       "harvest_tier": {
@@ -58,7 +59,15 @@
         }
       ]
     },
-    "silentgear:rod": {},
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgems:hearty"
+        }
+      ]
+    },
     "silentgear:setting": {
       "traits": [
         {

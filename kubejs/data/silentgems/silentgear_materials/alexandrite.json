@@ -44,6 +44,7 @@
       },
       "magic_armor": 10.0,
       "ranged_damage": 2.0,
+      "spell_slots": 3.0,
       "rarity": 45.0,
       "traits": [
         {

@@ -46,6 +46,7 @@
       "knockback_resistance": 0.0,
       "magic_armor": 20.0,
       "magic_damage": 0.0,
+      "spell_slots": 4.0,
       "projectile_accuracy": 0.0,
       "projectile_speed": 0.0,
       "ranged_damage": 0.0,

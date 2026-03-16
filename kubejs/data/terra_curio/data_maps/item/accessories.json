@@ -1,11 +1,62 @@
 {
     "values": {
+        "terra_curio:ice_skates": {
+            "terra_curio:ice_speed": {}
+        },
+        "terra_curio:magma_stone": {
+            "terra_curio:fire_attack": {}
+        },
         "terra_curio:eye_of_the_golem": {
             "terra_curio:attributes": {
                 "apothic_attributes:crit_chance": [
                     {
-                        "id": "terra_curio:eye_of_the_golem_crit_chance",
+                        "id": "terra_curio:eye_of_the_golem",
                         "amount": 0.1,
+                        "operation": "add_value"
+                    }
+                ]
+            }
+        },
+        "terra_curio:sniper_scope": {
+            "terra_curio:rifle_scope": {},
+            "terra_curio:attributes": {
+                "apothic_attributes:crit_chance": [
+                    {
+                        "id": "terra_curio:sniper_scope",
+                        "amount": 0.1,
+                        "operation": "add_value"
+                    }
+                ],
+                "apothic_attributes:arrow_damage": [
+                    {
+                        "id": "terra_curio:sniper_scope",
+                        "amount": 0.1,
+                        "operation": "add_value"
+                    }
+                ]
+            }
+        },
+        "terra_curio:recon_scope": {
+            "terra_curio:rifle_scope": {},
+            "terra_curio:attributes": {
+                "apothic_attributes:crit_chance": [
+                    {
+                        "id": "terra_curio:recon_scope",
+                        "amount": 0.1,
+                        "operation": "add_value"
+                    }
+                ],
+                "apothic_attributes:arrow_damage": [
+                    {
+                        "id": "terra_curio:recon_scope",
+                        "amount": 0.1,
+                        "operation": "add_value"
+                    }
+                ],
+                "terra_curio:player.aggro": [
+                    {
+                        "id": "terra_curio:recon_scope",
+                        "amount": -400,
                         "operation": "add_value"
                     }
                 ]
@@ -20,80 +71,34 @@
                         "operation": "add_value"
                     }
                 ]
-            },
-            "terra_curio:components": []
-        },
-        "terra_curio:sniper_scope": {
-            "terra_curio:attributes": {
-                "apothic_attributes:crit_chance": [
-                    {
-                        "id": "terra_curio:sniper_scope_crit_chance",
-                        "amount": 0.1,
-                        "operation": "add_multiplied_base"
-                    }
-                ],
-                "apothic_attributes:arrow_damage": [
-                    {
-                        "id": "terra_curio:sniper_scope_arrow_damage",
-                        "amount": 0.1,
-                        "operation": "add_multiplied_total"
-                    }
-                ]
-            },
-            "terra_curio:rifle_scope": {}
-        },
-        "terra_curio:recon_scope": {
-            "terra_curio:attributes": {
-                "apothic_attributes:crit_chance": [
-                    {
-                        "id": "terra_curio:recon_scope_crit_chance",
-                        "amount": 0.1,
-                        "operation": "add_multiplied_base"
-                    }
-                ],
-                "apothic_attributes:arrow_damage": [
-                    {
-                        "id": "terra_curio:recon_scope_arrow_damage",
-                        "amount": 0.1,
-                        "operation": "add_multiplied_total"
-                    }
-                ],
-                "terra_curio:player.aggro": [
-                    {
-                        "id": "terra_curio:recon_scope_aggro",
-                        "amount": -400,
-                        "operation": "add_value"
-                    }
-                ]
-            },
-            "terra_curio:rifle_scope": {}
+            }
         },
         "terra_curio:destroyer_emblem": {
             "terra_curio:attributes": {
                 "minecraft:generic.attack_damage": [
                     {
-                        "id": "terra_curio:destroyer_emblem_attack_damage",
+                        "id": "terra_curio:destroyer_emblem",
                         "amount": 0.1,
-                        "operation": "add_multiplied_base"
+                        "operation": "add_value"
                     }
                 ],
                 "apothic_attributes:arrow_damage": [
                     {
-                        "id": "terra_curio:destroyer_emblem_arrow_damage",
+                        "id": "terra_curio:destroyer_emblem",
                         "amount": 0.1,
-                        "operation": "add_multiplied_base"
+                        "operation": "add_value"
                     }
                 ],
                 "irons_spellbooks:spell_power": [
                     {
-                        "id": "terra_curio:destroyer_emblem_spell_power",
+                        "id": "terra_curio:destroyer_emblem",
                         "amount": 0.1,
-                        "operation": "add_multiplied_base"
+                        "operation": "add_value"
                     }
                 ],
                 "apothic_attributes:crit_chance": [
                     {
-                        "id": "terra_curio:destroyer_emblem_crit_chance",
+                        "id": "terra_curio:destroyer_emblem",
                         "amount": 0.08,
                         "operation": "add_value"
                     }
@@ -104,9 +109,9 @@
             "terra_curio:attributes": {
                 "irons_spellbooks:spell_power": [
                     {
-                        "id": "terra_curio:sorcerer_emblem_spell_power",
+                        "id": "terra_curio:sorcerer_emblem",
                         "amount": 0.15,
-                        "operation": "add_multiplied_total"
+                        "operation": "add_value"
                     }
                 ]
             }
@@ -115,23 +120,23 @@
             "terra_curio:attributes": {
                 "minecraft:generic.attack_damage": [
                     {
-                        "id": "terra_curio:avenger_emblem_attack_damage",
+                        "id": "terra_curio:avenger_emblem",
                         "amount": 0.12,
-                        "operation": "add_multiplied_base"
+                        "operation": "add_value"
                     }
                 ],
                 "apothic_attributes:arrow_damage": [
                     {
-                        "id": "terra_curio:avenger_emblem_arrow_damage",
+                        "id": "terra_curio:avenger_emblem",
                         "amount": 0.12,
-                        "operation": "add_multiplied_base"
+                        "operation": "add_value"
                     }
                 ],
                 "irons_spellbooks:spell_power": [
                     {
-                        "id": "terra_curio:avenger_emblem_spell_power",
+                        "id": "terra_curio:avenger_emblem",
                         "amount": 0.12,
-                        "operation": "add_multiplied_base"
+                        "operation": "add_value"
                     }
                 ]
             }
@@ -140,8 +145,84 @@
             "terra_curio:attributes": {
                 "minecraft:generic.armor": [
                     {
-                        "id": "terra_curio:shackle_armor",
+                        "id": "terra_curio:shackle",
                         "amount": 2.0,
+                        "operation": "add_value"
+                    }
+                ]
+            }
+        },
+        "terra_curio:base_point": {
+            "terra_curio:fire_immune": {},
+            "terra_curio:ice_speed": {},
+            "terra_curio:may_fly": {
+                "terra_curio:base_point": {
+                    "fly_speed": 1.1,
+                    "fly_ticks": 70,
+                    "could_glide": true,
+                    "horizontal_flight": true
+                }
+            },
+            "terra_curio:fluid_walk": [
+                "terra_curio:water_like_walk",
+                "terra_curio:lava_like_walk"
+            ],
+            "terra_curio:lava_immune_ticks": 200,
+            "terra_curio:lava_hurt_reduce": 0.75,
+            "terra_curio:attributes": {
+                "minecraft:generic.movement_speed": [
+                    {
+                        "id": "terra_curio:base_point",
+                        "amount": 0.16,
+                        "operation": "add_multiplied_total"
+                    }
+                ],
+                "minecraft:generic.fall_damage_multiplier": [
+                    {
+                        "id": "terra_curio:base_point",
+                        "amount": -100.0,
+                        "operation": "add_value"
+                    }
+                ],
+                "minecraft:generic.jump_strength": [
+                    {
+                        "id": "terra_curio:base_point",
+                        "amount": 1.0,
+                        "operation": "add_multiplied_total"
+                    }
+                ],
+                "minecraft:generic.step_height": [
+                    {
+                        "id": "terra_curio:base_point",
+                        "amount": 0.5,
+                        "operation": "add_value"
+                    }
+                ]
+            }
+        },
+        "terra_curio:everlasting": {
+            "terra_curio:frozen_immune": {},
+            "terra_curio:fire_immune": {},
+            "terra_curio:shield_of_cthulhu": {},
+            "terra_curio:effect_immunities": [
+                "minecraft:poison",
+                "minecraft:wither",
+                "minecraft:weakness",
+                "minecraft:hunger",
+                "minecraft:blindness",
+                "minecraft:darkness",
+                "minecraft:slowness",
+                "minecraft:nausea",
+                "minecraft:mining_fatigue",
+                "minecraft:levitation"
+            ],
+            "terra_curio:totem_with_cooldown": 2400,
+            "terra_curio:invulnerable_ticks_multiplier": 2.0,
+            "terra_curio:attributes": {
+                "terra_curio:generic.dodge_chance": [
+                    {
+                        "id": "terra_curio:everlasting",
+                        "amount": 0.1,
                         "operation": "add_value"
                     }
                 ]

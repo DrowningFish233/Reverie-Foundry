@@ -1,0 +1,63 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"advanced",
+			"organic"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "minecraft:echo_shard"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#033e4d",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:echo_shard"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:coating": {
+			"armor": {
+				"operation": "ADD",
+				"value": 5
+			},
+			"armor/helmet": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"armor/chestplate": {
+				"operation": "ADD",
+				"value": 1.5
+			},
+			"armor/leggings": {
+				"operation": "ADD",
+				"value": 1.5
+			},
+			"armor/boots": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"armor_durability": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.15
+			},
+			"attack_damage": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 4,
+					"trait": "kubejs:echo_shard"
+				}
+			]
+		}
+	}
+}

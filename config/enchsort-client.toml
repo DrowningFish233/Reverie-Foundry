@@ -8,7 +8,7 @@ ascending_sort = true
 sneak_display = false
 # Compatible mode (may cause performance losses)
 # Enabling this config will disable [show_max_level] and [highlight_treasure]
-compatible_mode = false
+compatible_mode = true
 # Properly sort the tooltip if enchantment descriptions are present
 # (Only needed if you notice issues)
 handle_description = true
@@ -36,7 +36,7 @@ handle_description = true
 	# Sort the curses independently
 	independent_curse_sort = true
 	# Sort the curses in reverse
-	reverse_curse_sort = false
+	reverse_curse_sort = true
 	# The style to be used for curses
 	# Define the style data in the 'key:value,key:value' format
 	curse_style = "color:dark_red"

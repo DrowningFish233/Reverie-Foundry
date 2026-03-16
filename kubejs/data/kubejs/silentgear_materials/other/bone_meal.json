@@ -1,0 +1,35 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"advanced",
+			"organic"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "minecraft:bone_meal"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#e6e0c5",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.kubejs:bone_meal"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:coating": {
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:wolf"
+				}
+			]
+		}
+	}
+}

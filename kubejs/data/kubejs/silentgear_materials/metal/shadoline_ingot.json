@@ -44,7 +44,14 @@
             "magic_armor": 6.0,
             "magic_damage": 3.5,
             "ranged_damage": 1.0,
-            "rarity": 35.0
+            "rarity": 35.0,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:attack_taunt"
+                }
+            ]
         }
     }
 }

@@ -20,8 +20,7 @@ OreStageSystem.prototype = {
     requireKill: function (entityId, count) {
         this.requiredKills.push({
             entity: entityId,
-            count: count,
-            achieved: false  // 是否已完成该击杀条件
+            count: count
         });
         return this;
     },
@@ -52,12 +51,7 @@ OreStageSystem.prototype = {
 // 主系统管理器
 var ReverieFoundry = {
     stages: [],
-    server: null,
-    data: null,
     debugMode: true,
-
-    // 持久化数据的key
-    DATA_KEY: "reverie_foundry_data",
 
     /**
      * 注册阶段
@@ -74,15 +68,6 @@ var ReverieFoundry = {
     },
 
     /**
-     * 设置服务器实例（必须在初始化前调用）
-     * @param {Internal.Server} server - 服务器实例
-     */
-    setServer: function (server) {
-        this.server = server;
-        return this;
-    },
-
-    /**
      * 启用调试模式
      * @param {boolean} enabled - 是否启用调试模式
      */
@@ -95,478 +80,141 @@ var ReverieFoundry = {
     },
 
     /**
-     * 获取持久化数据字符串
+     * 检查玩家是否已解锁阶段 (使用AStages)
+     * @param {string} stageName - 阶段名称
+     * @param {Internal.Player} player - 玩家对象
      */
-    getPersistentDataString: function () {
-        if (!this.server) {
-            console.error("[Reverie Foundry] 错误：未设置服务器实例");
-            return null;
-        }
-
-        return this.server.persistentData.contains(this.DATA_KEY)
-            ? this.server.persistentData.getString(this.DATA_KEY)
-            : null;
+    playerHasStage: function (stageName, player) {
+        if (!player) return false;
+        return AStages.playerHasStage(stageName, player);
     },
 
     /**
-     * 保存数据到持久化存储
+     * 为玩家添加阶段 (使用AStages)
+     * @param {string} stageName - 阶段名称
+     * @param {Internal.Player} player - 玩家对象
      */
-    savePersistentData: function () {
-        if (!this.server) {
-            console.error("[Reverie Foundry] 错误：未设置服务器实例");
-            return this;
+    addPlayerStage: function (stageName, player) {
+        if (!player) return false;
+
+        if (!this.playerHasStage(stageName, player)) {
+            AStages.addStageToPlayer(stageName, player);
+            if (this.debugMode) {
+                console.log("[Reverie Foundry] 为玩家 " + player.getName().getString() + " 添加阶段: " + stageName);
+            }
+            return true;
         }
+        return false;
+    },
 
-        // 将数据转换为JSON字符串存储
-        var jsonString = JSON.stringify(this.data);
-        this.server.persistentData.putString(this.DATA_KEY, jsonString);
-        // 注意：KubeJS的persistentData会在putString后自动保存，不需要手动调用save()
+    /**
+     * 移除玩家阶段 (使用AStages)
+     * @param {string} stageName - 阶段名称
+     * @param {Internal.Player} player - 玩家对象
+     */
+    removePlayerStage: function (stageName, player) {
+        if (!player) return false;
 
+        if (this.playerHasStage(stageName, player)) {
+            AStages.removeStageFromPlayer(stageName, player);
+            if (this.debugMode) {
+                console.log("[Reverie Foundry] 为玩家 " + player.getName().getString() + " 移除阶段: " + stageName);
+            }
+            return true;
+        }
+        return false;
+    },
+
+    /**
+     * 移除玩家所有阶段 (使用AStages)
+     * @param {Internal.Player} player - 玩家对象
+     */
+    removeAllPlayerStages: function (player) {
+        if (!player) return;
+
+        AStages.removeAllStagesFromPlayer(player);
         if (this.debugMode) {
-            console.log("[Reverie Foundry] 数据已保存到持久化存储");
+            console.log("[Reverie Foundry] 移除玩家 " + player.getName().getString() + " 的所有阶段");
         }
-        return this;
     },
 
     /**
-     * 验证阶段配置是否有效
+     * 检查玩家是否拥有至少一个阶段 (使用AStages)
+     * @param {Array<string>} stages - 阶段名称列表
+     * @param {Internal.Player} player - 玩家对象
+     */
+    playerHasAtLeastOneStage: function (stages, player) {
+        if (!player || !stages || stages.length === 0) return false;
+        return AStages.playerHasAtLeastOneStage(stages, player);
+    },
+
+    /**
+     * 检查玩家是否拥有所有阶段 (使用AStages)
+     * @param {Array<string>} stages - 阶段名称列表
+     * @param {Internal.Player} player - 玩家对象
+     */
+    playerHasAllStages: function (stages, player) {
+        if (!player || !stages || stages.length === 0) return false;
+        return AStages.playerHasAllStages(stages, player);
+    },
+
+    /**
+     * 获取玩家所有阶段 (使用AStages)
+     * @param {Internal.Player} player - 玩家对象
+     */
+    getPlayerStages: function (player) {
+        if (!player) return [];
+        return AStages.getStagesFromPlayer(player);
+    },
+
+    /**
+     * 检查玩家是否已解锁某个阶段索引
      * @param {number} stageIndex - 阶段索引
-     * @returns {boolean} 是否有效
+     * @param {Internal.Player} player - 玩家对象
      */
-    validateStageConfig: function (stageIndex) {
-        // 检查阶段索引是否有效
-        if (stageIndex < 0 || stageIndex >= this.stages.length) {
-            if (this.debugMode) {
-                console.log("[Reverie Foundry] 验证失败: 无效的阶段索引 " + stageIndex);
-            }
-            return false;
-        }
-
-        var stage = this.stages[stageIndex];
-        if (!stage) {
-            if (this.debugMode) {
-                console.log("[Reverie Foundry] 验证失败: 阶段 " + stageIndex + " 不存在");
-            }
-            return false;
-        }
-
-        // 检查阶段名称是否匹配
-        var configStage = null;
-        for (var i = 0; i < this.data.stageProgress.length; i++) {
-            if (this.data.stageProgress[i].stageIndex === stageIndex) {
-                configStage = this.data.stageProgress[i];
-                break;
-            }
-        }
-
-        if (!configStage) {
-            if (this.debugMode) {
-                console.log("[Reverie Foundry] 验证失败: 配置中找不到阶段 " + stageIndex);
-            }
-            return false;
-        }
-
-        if (configStage.stageName !== stage.stageName) {
-            if (this.debugMode) {
-                console.log("[Reverie Foundry] 验证失败: 阶段名称不匹配 - 代码: " + stage.stageName + ", 配置: " + configStage.stageName);
-            }
-            return false;
-        }
-
-        // 检查击杀要求数量是否匹配
-        if (configStage.killRequirements.length !== stage.requiredKills.length) {
-            if (this.debugMode) {
-                console.log("[Reverie Foundry] 验证失败: 击杀要求数量不匹配 - 代码: " + stage.requiredKills.length + ", 配置: " + configStage.killRequirements.length);
-            }
-            return false;
-        }
-
-        // 检查每个击杀要求是否匹配
-        for (var j = 0; j < stage.requiredKills.length; j++) {
-            var codeKillReq = stage.requiredKills[j];
-            var configKillReq = configStage.killRequirements[j];
-
-            if (!configKillReq) {
-                if (this.debugMode) {
-                    console.log("[Reverie Foundry] 验证失败: 配置中缺少击杀要求 " + j);
-                }
-                return false;
-            }
-
-            if (configKillReq.entity !== codeKillReq.entity) {
-                if (this.debugMode) {
-                    console.log("[Reverie Foundry] 验证失败: 实体不匹配 - 代码: " + codeKillReq.entity + ", 配置: " + configKillReq.entity);
-                }
-                return false;
-            }
-
-            if (configKillReq.requiredCount !== codeKillReq.count) {
-                if (this.debugMode) {
-                    console.log("[Reverie Foundry] 验证失败: 所需数量不匹配 - 代码: " + codeKillReq.count + ", 配置: " + configKillReq.requiredCount);
-                }
-                return false;
-            }
-        }
-
-        return true;
+    isStageUnlocked: function (stageIndex, player) {
+        if (!player || stageIndex < 0 || stageIndex >= this.stages.length) return false;
+        return this.playerHasStage(this.stages[stageIndex].stageName, player);
     },
 
     /**
-     * 清理无效的阶段配置
+     * 获取玩家当前最高解锁阶段
+     * @param {Internal.Player} player - 玩家对象
      */
-    cleanupInvalidConfig: function () {
-        if (!this.data || !this.data.stageProgress) {
-            return this;
-        }
+    getHighestUnlockedStage: function (player) {
+        if (!player) return -1;
 
-        var validStages = [];
-        var validUnlockedStages = [];
-        var changed = false;
-
-        // 清理阶段进度
-        for (var i = 0; i < this.data.stageProgress.length; i++) {
-            var stageProgress = this.data.stageProgress[i];
-            var stageIndex = stageProgress.stageIndex;
-
-            if (this.validateStageConfig(stageIndex)) {
-                validStages.push(stageProgress);
-
-                // 如果这个阶段在解锁列表中则保留
-                if (this.data.unlockedStages.includes(stageIndex)) {
-                    validUnlockedStages.push(stageIndex);
-                }
-            } else {
-                changed = true;
-                if (this.debugMode) {
-                    console.log("[Reverie Foundry] 清理无效的阶段配置: " + stageIndex + " (" + stageProgress.stageName + ")");
-                }
+        for (var i = this.stages.length - 1; i >= 0; i--) {
+            if (this.playerHasStage(this.stages[i].stageName, player)) {
+                return i;
             }
         }
-
-        // 清理全局击杀计数，只保留有效实体的计数
-        var validGlobalKills = {};
-        for (var entityId in this.data.globalKills) {
-            if (this.data.globalKills.hasOwnProperty(entityId)) {
-                // 检查这个实体是否在任何有效阶段中需要
-                var entityNeeded = false;
-                for (var i = 0; i < this.stages.length; i++) {
-                    var stage = this.stages[i];
-                    for (var j = 0; j < stage.requiredKills.length; j++) {
-                        if (stage.requiredKills[j].entity === entityId) {
-                            entityNeeded = true;
-                            break;
-                        }
-                    }
-                    if (entityNeeded) break;
-                }
-
-                if (entityNeeded) {
-                    validGlobalKills[entityId] = this.data.globalKills[entityId];
-                } else {
-                    changed = true;
-                    if (this.debugMode) {
-                        console.log("[Reverie Foundry] 清理无效的全局击杀计数: " + entityId);
-                    }
-                }
-            }
-        }
-
-        // 清理解锁阶段，只保留有效的
-        var cleanedUnlockedStages = [];
-        for (var i = 0; i < this.data.unlockedStages.length; i++) {
-            var stageIndex = this.data.unlockedStages[i];
-            if (stageIndex >= 0 && stageIndex < this.stages.length) {
-                cleanedUnlockedStages.push(stageIndex);
-            } else {
-                changed = true;
-                if (this.debugMode) {
-                    console.log("[Reverie Foundry] 清理无效的解锁阶段索引: " + stageIndex);
-                }
-            }
-        }
-
-        if (changed) {
-            this.data.stageProgress = validStages;
-            this.data.globalKills = validGlobalKills;
-            this.data.unlockedStages = cleanedUnlockedStages;
-
-            if (this.debugMode) {
-                console.log("[Reverie Foundry] 已清理无效配置数据");
-            }
-        }
-
-        return this;
+        return -1;
     },
 
     /**
-     * 修复配置数据结构
+     * 获取玩家当前阶段名称
+     * @param {Internal.Player} player - 玩家对象
      */
-    repairConfigStructure: function () {
-        if (!this.data) {
-            return this;
+    getCurrentStageName: function (player) {
+        var highestStage = this.getHighestUnlockedStage(player);
+        if (highestStage >= 0 && highestStage < this.stages.length) {
+            return this.stages[highestStage].stageName;
         }
-
-        var changed = false;
-
-        // 确保必要字段存在
-        if (!this.data.version) {
-            this.data.version = "1.0.0";
-            changed = true;
-        }
-
-        if (!this.data.stageProgress) {
-            this.data.stageProgress = [];
-            changed = true;
-        }
-
-        if (!this.data.globalKills) {
-            this.data.globalKills = {};
-            changed = true;
-        }
-
-        if (!this.data.unlockedStages) {
-            this.data.unlockedStages = [];
-            changed = true;
-        }
-
-        // 修复阶段进度数组
-        if (!Array.isArray(this.data.stageProgress)) {
-            this.data.stageProgress = [];
-            changed = true;
-        }
-
-        // 修复全局击杀对象
-        if (typeof this.data.globalKills !== 'object' || this.data.globalKills === null) {
-            this.data.globalKills = {};
-            changed = true;
-        }
-
-        // 修复解锁阶段数组
-        if (!Array.isArray(this.data.unlockedStages)) {
-            this.data.unlockedStages = [];
-            changed = true;
-        }
-
-        var validUnlockedStages = [];
-        for (var i = 0; i < this.data.unlockedStages.length; i++) {
-            var stageIndex = this.data.unlockedStages[i];
-            if (typeof stageIndex === 'number' && stageIndex >= 0 && stageIndex < this.stages.length) {
-                validUnlockedStages.push(stageIndex);
-            } else {
-                changed = true;
-            }
-        }
-        this.data.unlockedStages = validUnlockedStages;
-
-        if (changed && this.debugMode) {
-            console.log("[Reverie Foundry] 已修复配置数据结构");
-        }
-
-        return this;
+        return "无";
     },
 
     /**
-     * 创建默认配置
+     * 检查玩家进度并更新阶段
+     * @param {Internal.Player} player - 玩家对象
+     * @param {Object} killData - 击杀数据（从玩家持久数据获取）
      */
-    createDefaultConfig: function () {
-        this.data = {
-            version: "1.0.0",
-            stageProgress: [],
-            globalKills: {},
-            unlockedStages: [],
-            lastUpdated: Date.now()
-        };
+    updatePlayerProgress: function (player, killData) {
+        if (!player) return;
 
-        // 为每个注册的阶段创建进度记录
-        for (var i = 0; i < this.stages.length; i++) {
-            var stage = this.stages[i];
-            var stageProgress = {
-                stageIndex: i,
-                stageName: stage.stageName,
-                killRequirements: [],
-                completed: false
-            };
-
-            for (var j = 0; j < stage.requiredKills.length; j++) {
-                var killReq = stage.requiredKills[j];
-                stageProgress.killRequirements.push({
-                    entity: killReq.entity,
-                    requiredCount: killReq.count,
-                    currentCount: 0,
-                    completed: false
-                });
-            }
-
-            this.data.stageProgress.push(stageProgress);
-        }
-
+        var highestStage = this.getHighestUnlockedStage(player);
         if (this.debugMode) {
-            console.log("[Reverie Foundry] 已创建默认配置");
-        }
-
-        return this;
-    },
-
-    /**
-     * 加载持久化数据并进行安全验证
-     */
-    loadConfig: function () {
-        if (!this.server) {
-            console.error("[Reverie Foundry] 错误：未设置服务器实例");
-            return this;
-        }
-
-        try {
-            // 尝试从持久化数据加载
-            var dataString = this.getPersistentDataString();
-
-            if (dataString && dataString.trim() !== '') {
-                // 解析数据
-                this.data = JSON.parse(dataString);
-                // 修复数据结构
-                this.repairConfigStructure();
-                // 清理无效配置
-                this.cleanupInvalidConfig();
-
-                if (this.debugMode) {
-                    console.log("[Reverie Foundry] 已从持久化数据加载");
-                    console.log("[Reverie Foundry] 已解锁阶段: " + this.data.unlockedStages.join(", "));
-                    console.log("[Reverie Foundry] 全局击杀: ", this.data.globalKills);
-                }
-            } else {
-                // 没有数据或数据为空，创建默认配置
-                if (this.debugMode) {
-                    console.log("[Reverie Foundry] 持久化数据不存在或为空，创建默认配置");
-                }
-                this.createDefaultConfig();
-                this.savePersistentData();
-            }
-        } catch (e) {
-            console.error("[Reverie Foundry] 加载持久化数据失败: " + e.message);
-            console.log("[Reverie Foundry] 将创建默认配置");
-
-            // 创建默认配置
-            this.createDefaultConfig();
-            this.savePersistentData();
-        }
-
-        return this;
-    },
-
-    /**
-     * 获取当前最高解锁阶段
-     */
-    getHighestUnlockedStage: function () {
-        if (!this.data) this.loadConfig();
-
-        if (this.data.unlockedStages.length === 0) {
-            return -1;
-        }
-
-        // 获取最大的解锁阶段索引
-        var maxStage = -1;
-        for (var i = 0; i < this.data.unlockedStages.length; i++) {
-            if (this.data.unlockedStages[i] > maxStage) {
-                maxStage = this.data.unlockedStages[i];
-            }
-        }
-        return maxStage;
-    },
-
-    /**
-     * 检查阶段是否已解锁
-     * @param {number} stageIndex - 阶段索引
-     */
-    isStageUnlocked: function (stageIndex) {
-        if (!this.data) this.loadConfig();
-        return this.data.unlockedStages.includes(stageIndex);
-    },
-
-    /**
-     * 获取阶段进度
-     * @param {number} stageIndex - 阶段索引
-     */
-    getStageProgress: function (stageIndex) {
-        if (!this.data) this.loadConfig();
-
-        // 查找或创建阶段进度
-        for (var i = 0; i < this.data.stageProgress.length; i++) {
-            if (this.data.stageProgress[i].stageIndex === stageIndex) {
-                return this.data.stageProgress[i];
-            }
-        }
-
-        // 如果不存在，创建新的进度记录
-        var stage = this.stages[stageIndex];
-        if (!stage) return null;
-
-        var stageProgress = {
-            stageIndex: stageIndex,
-            stageName: stage.stageName,
-            killRequirements: [],
-            completed: false
-        };
-
-        // 初始化击杀要求
-        for (var j = 0; j < stage.requiredKills.length; j++) {
-            var killReq = stage.requiredKills[j];
-            var currentKills = this.data.globalKills[killReq.entity] || 0;
-
-            stageProgress.killRequirements.push({
-                entity: killReq.entity,
-                requiredCount: killReq.count,
-                currentCount: currentKills,
-                completed: currentKills >= killReq.count
-            });
-        }
-
-        this.data.stageProgress.push(stageProgress);
-        return stageProgress;
-    },
-
-    /**
-     * 检查某个矿石是否需要被隐藏
-     * @param {string} oreId - 矿石ID
-     */
-    checkOreShouldBeHidden: function (oreId) {
-        // 检查所有阶段
-        for (var stageIndex = 0; stageIndex < this.stages.length; stageIndex++) {
-            var stage = this.stages[stageIndex];
-            if (!stage) continue;
-
-            // 如果阶段已经解锁，那么这个阶段的矿石就不应该被隐藏
-            if (this.isStageUnlocked(stageIndex)) {
-                if (this.debugMode) {
-                    console.log("[Reverie Foundry] 阶段" + stageIndex + "已解锁，跳过矿石隐藏检查");
-                }
-                continue;
-            }
-
-            // 阶段未解锁，检查是否需要隐藏矿石
-            for (var j = 0; j < stage.hiddenOres.length; j++) {
-                var oreConfig = stage.hiddenOres[j];
-                if (oreId === oreConfig.original) {
-                    if (this.debugMode) {
-                        console.log("[Reverie Foundry] 发现需要隐藏的矿石: " + oreId + " (阶段" + stageIndex + "未解锁)");
-                    }
-                    return oreConfig;
-                }
-            }
-        }
-        return null;
-    },
-
-    /**
-     * 更新阶段进度
-     */
-    updateStageProgress: function () {
-        if (!this.data) this.loadConfig();
-
-        var changed = false;
-        var highestStage = this.getHighestUnlockedStage();
-
-        if (this.debugMode) {
-            console.log("[Reverie Foundry] 开始更新阶段进度，最高解锁阶段: " + highestStage);
+            console.log("[Reverie Foundry] 检查玩家 " + player.getName().getString() + " 进度，当前最高阶段: " + highestStage);
         }
 
         // 从最高阶段+1开始检查
@@ -574,26 +222,11 @@ var ReverieFoundry = {
             var stage = this.stages[i];
             if (!stage) continue;
 
-            var stageProgress = this.getStageProgress(i);
-
-            // 首先同步当前计数
-            this.syncStageProgressCounts(stageProgress);
-
-            if (stageProgress.completed) {
-                // 如果已经完成但未标记为解锁，解锁它
-                if (!this.data.unlockedStages.includes(i)) {
-                    this.data.unlockedStages.push(i);
-                    changed = true;
-                    this.onStageUnlocked(i);
-                }
-                continue;
-            }
-
             // 检查是否满足所有击杀要求
             var allRequirementsMet = true;
             for (var j = 0; j < stage.requiredKills.length; j++) {
                 var killReq = stage.requiredKills[j];
-                var currentKills = this.data.globalKills[killReq.entity] || 0;
+                var currentKills = killData[killReq.entity] || 0;
 
                 if (this.debugMode) {
                     console.log("[Reverie Foundry] 检查阶段" + i + ": 需要" + killReq.entity + " x " + killReq.count + ", 当前: " + currentKills);
@@ -606,24 +239,11 @@ var ReverieFoundry = {
             }
 
             if (allRequirementsMet) {
-                // 标记阶段为完成
-                stageProgress.completed = true;
-
-                // 同步更新击杀要求的completed状态
-                for (var k = 0; k < stageProgress.killRequirements.length; k++) {
-                    var killRequirement = stageProgress.killRequirements[k];
-                    var currentKills = this.data.globalKills[killRequirement.entity] || 0;
-                    killRequirement.currentCount = currentKills;
-                    killRequirement.completed = (currentKills >= killRequirement.requiredCount);
-                }
-
                 // 解锁阶段
-                this.data.unlockedStages.push(i);
-                changed = true;
-                this.onStageUnlocked(i);
+                this.addPlayerStage(stage.stageName, player);
 
                 if (this.debugMode) {
-                    console.log("[Reverie Foundry] 解锁新阶段: " + stage.stageName);
+                    console.log("[Reverie Foundry] 玩家 " + player.getName().getString() + " 解锁新阶段: " + stage.stageName);
                 }
             } else {
                 // 如果这个阶段未完成，后面的阶段也不会解锁
@@ -633,230 +253,208 @@ var ReverieFoundry = {
                 break;
             }
         }
-
-        if (changed) {
-            this.savePersistentData();
-        }
-        return this;
     },
 
     /**
-     * 同步阶段进度中的击杀计数
-     * @param {Object} stageProgress - 阶段进度对象
+     * 获取玩家的击杀数据
+     * @param {Internal.Player} player - 玩家对象
      */
-    syncStageProgressCounts: function (stageProgress) {
-        if (!stageProgress || !stageProgress.killRequirements) return;
+    getPlayerKillData: function (player) {
+        if (!player) return {};
 
-        for (var i = 0; i < stageProgress.killRequirements.length; i++) {
-            var killRequirement = stageProgress.killRequirements[i];
-            var currentKills = this.data.globalKills[killRequirement.entity] || 0;
-
-            // 更新当前计数
-            killRequirement.currentCount = currentKills;
-
-            // 重新计算completed状态
-            killRequirement.completed = (currentKills >= killRequirement.requiredCount);
+        var persistentData = player.persistentData;
+        if (!persistentData.contains("reverie_foundry_kills")) {
+            persistentData.putCompound("reverie_foundry_kills", {});
         }
-
-        // 重新计算整个阶段是否完成
-        var allCompleted = true;
-        for (var i = 0; i < stageProgress.killRequirements.length; i++) {
-            if (!stageProgress.killRequirements[i].completed) {
-                allCompleted = false;
-                break;
-            }
-        }
-        stageProgress.completed = allCompleted;
+        return persistentData.getCompound("reverie_foundry_kills");
     },
 
     /**
-     * 阶段解锁回调
-     * @param {number} stageIndex - 阶段索引
+     * 保存玩家的击杀数据
+     * @param {Internal.Player} player - 玩家对象
+     * @param {Object} killData - 击杀数据
      */
-    onStageUnlocked: function (stageIndex) {
-        var stage = this.stages[stageIndex];
-        if (this.debugMode) {
-            console.log("  [Reverie Foundry] 解锁新阶段: " + stage.stageName);
-        }
-        return this;
+    savePlayerKillData: function (player, killData) {
+        if (!player) return;
+
+        var persistentData = player.persistentData;
+        persistentData.putCompound("reverie_foundry_kills", killData);
     },
 
     /**
-     * 增加击杀计数（仅在必要时）
+     * 增加玩家击杀计数
+     * @param {Internal.Player} player - 玩家对象
      * @param {string} entityId - 实体ID
      */
-    addKill: function (entityId) {
-        if (!this.data) this.loadConfig();
+    addPlayerKill: function (player, entityId) {
+        if (!player) return;
 
-        // 检查是否有未完成的阶段需要这个实体
-        var highestStage = this.getHighestUnlockedStage();
-        var needsTracking = false;
+        var killData = this.getPlayerKillData(player);
+        var currentCount = killData[entityId] || 0;
+        killData[entityId] = currentCount + 1;
 
-        // 检查从最高阶段+1开始的所有阶段
-        for (var i = highestStage + 1; i < this.stages.length; i++) {
-            var stage = this.stages[i];
+        if (this.debugMode) {
+            console.log("[Reverie Foundry] 玩家 " + player.getName().getString() + " 击杀: " + entityId + ", 当前: " + (currentCount + 1));
+        }
+
+        this.savePlayerKillData(player, killData);
+
+        // 检查并更新玩家进度
+        this.updatePlayerProgress(player, killData);
+    },
+
+    /**
+     * 检查某个矿石是否需要被隐藏（基于玩家）
+     * @param {string} oreId - 矿石ID
+     * @param {Internal.Player} player - 玩家对象
+     */
+    checkOreShouldBeHidden: function (oreId, player) {
+        if (!player) return null;
+
+        // 检查所有阶段
+        for (var stageIndex = 0; stageIndex < this.stages.length; stageIndex++) {
+            var stage = this.stages[stageIndex];
             if (!stage) continue;
 
-            // 检查这个阶段是否需要这个实体
-            for (var j = 0; j < stage.requiredKills.length; j++) {
-                if (stage.requiredKills[j].entity === entityId) {
-                    needsTracking = true;
-                    break;
+            // 如果玩家已经解锁这个阶段，那么这个阶段的矿石就不应该被隐藏
+            if (this.isStageUnlocked(stageIndex, player)) {
+                if (this.debugMode) {
+                    console.log("[Reverie Foundry] 玩家 " + player.getName().getString() + " 已解锁阶段" + stageIndex + "，跳过矿石隐藏检查");
+                }
+                continue;
+            }
+
+            // 阶段未解锁，检查是否需要隐藏矿石
+            for (var j = 0; j < stage.hiddenOres.length; j++) {
+                var oreConfig = stage.hiddenOres[j];
+                if (oreId === oreConfig.original) {
+                    if (this.debugMode) {
+                        console.log("[Reverie Foundry] 发现需要为玩家 " + player.getName().getString() + " 隐藏的矿石: " + oreId + " (阶段" + stageIndex + "未解锁)");
+                    }
+                    return oreConfig;
                 }
             }
-
-            if (needsTracking) break;
         }
-
-        if (!needsTracking) {
-            // 没有未完成的阶段需要这个实体，跳过计数
-            if (this.debugMode) {
-                console.log("[Reverie Foundry] 跳过 " + entityId + " 击杀计数（所有相关阶段已完成）");
-            }
-            return this;
-        }
-
-        // 获取当前计数
-        var currentCount = this.data.globalKills[entityId] || 0;
-
-        if (this.debugMode) {
-            console.log("[Reverie Foundry] 增加击杀前: " + entityId + " = " + currentCount);
-        }
-
-        // 更新计数
-        var newCount = currentCount + 1;
-        this.data.globalKills[entityId] = newCount;
-
-        // 同步所有阶段进度中的计数
-        for (var i = 0; i < this.data.stageProgress.length; i++) {
-            this.syncStageProgressCounts(this.data.stageProgress[i]);
-        }
-
-        // 保存配置
-        this.savePersistentData();
-
-        // 更新阶段进度
-        this.updateStageProgress();
-
-        if (this.debugMode) {
-            console.log("[Reverie Foundry] 击杀: " + entityId + ", 当前: " + newCount);
-        }
-        return this;
+        return null;
     },
 
     /**
-     * 获取当前阶段名称
+     * 获取玩家的阶段信息
+     * @param {Internal.Player} player - 玩家对象
      */
-    getCurrentStageName: function () {
-        var highestStage = this.getHighestUnlockedStage();
-        if (highestStage >= 0 && highestStage < this.stages.length) {
-            return this.stages[highestStage].stageName;
-        }
-        return "无";
-    },
+    getPlayerStageInfo: function (player) {
+        if (!player) return null;
 
-    /**
-     * 获取阶段信息
-     * @param {number} stageIndex - 阶段索引
-     */
-    getStageInfo: function (stageIndex) {
-        if (stageIndex < 0 || stageIndex >= this.stages.length) {
-            return null;
-        }
-
-        var stage = this.stages[stageIndex];
-        var progress = this.getStageProgress(stageIndex);
-        var isUnlocked = this.isStageUnlocked(stageIndex);
-
-        return {
-            index: stageIndex,
-            name: stage.stageName,
-            unlocked: isUnlocked,
-            progress: progress
-        };
-    },
-
-    /**
-     * 重置所有数据
-     */
-    reset: function () {
-        this.data = {
-            version: "1.0.0",
-            stageProgress: [],
-            globalKills: {},
-            unlockedStages: [],
-            lastUpdated: Date.now()
-        };
-        this.savePersistentData();
-
-        if (this.debugMode) {
-            console.log("[Reverie Foundry] 所有数据已重置");
-        }
-        return this;
-    },
-
-    /**
-     * 初始化系统
-     * @param {Internal.Server} server - 服务器实例
-     */
-    initialize: function (server) {
-        if (server) {
-            this.setServer(server);
-        }
-
-        if (!this.server) {
-            console.error("[Reverie Foundry] 错误：无法初始化，缺少服务器实例");
-            return this;
-        }
-
-        this.loadConfig();
+        var killData = this.getPlayerKillData(player);
+        var stages = [];
 
         for (var i = 0; i < this.stages.length; i++) {
-            this.getStageProgress(i);
+            var stage = this.stages[i];
+            var isUnlocked = this.isStageUnlocked(i, player);
+
+            var killRequirements = [];
+            for (var j = 0; j < stage.requiredKills.length; j++) {
+                var killReq = stage.requiredKills[j];
+                killRequirements.push({
+                    entity: killReq.entity,
+                    requiredCount: killReq.count,
+                    currentCount: killData[killReq.entity] || 0,
+                    completed: (killData[killReq.entity] || 0) >= killReq.count
+                });
+            }
+
+            stages.push({
+                index: i,
+                name: stage.stageName,
+                unlocked: isUnlocked,
+                killRequirements: killRequirements
+            });
         }
-        this.savePersistentData();
+
+        return {
+            player: player.getName().getString(),
+            currentStage: this.getCurrentStageName(player),
+            highestStage: this.getHighestUnlockedStage(player),
+            allStages: this.getPlayerStages(player),
+            stages: stages
+        };
+    },
+
+    /**
+     * 重置玩家的数据
+     * @param {Internal.Player} player - 玩家对象
+     */
+    resetPlayerData: function (player) {
+        if (!player) return;
+
+        // 清除所有阶段
+        this.removeAllPlayerStages(player);
+
+        // 清除击杀数据
+        var persistentData = player.persistentData;
+        persistentData.putCompound("reverie_foundry_kills", {});
 
         if (this.debugMode) {
-            console.log("[Reverie Foundry] 矿石阶段系统已初始化");
-            console.log("[Reverie Foundry] 已注册阶段数量: " + this.stages.length);
-            console.log("[Reverie Foundry] 当前最高阶段: " + this.getCurrentStageName());
+            console.log("[Reverie Foundry] 已重置玩家 " + player.getName().getString() + " 的数据");
         }
-        return this;
+    },
+
+    /**
+     * 为所有在线玩家检查进度
+     */
+    checkAllOnlinePlayers: function () {
+        var server = Utils.getServer();
+        if (!server) return;
+
+        var players = server.getPlayers();
+        players.forEach(function (player) {
+            var killData = this.getPlayerKillData(player);
+            this.updatePlayerProgress(player, killData);
+        }.bind(this));
     }
 };
-
-// 事件处理器
-ServerEvents.loaded(function (event) {
+ServerEvents.loaded(event => {
     if (ReverieFoundry.debugMode) {
-        console.log("[Reverie Foundry] 服务器已加载，正在初始化系统...");
+        console.log("[Reverie Foundry] 已注册阶段数量: " + ReverieFoundry.stages.length);
     }
-    ReverieFoundry.setServer(event.server).initialize();
 });
 
 EntityEvents.death(event => {
     let entity = event.getEntity();
+    let source = event.getSource();
+    let player = source.getPlayer();
+
+    if (!player) return;
+
     let entityId = entity.getType();
-    let server = event.getServer();
 
-    if (!ReverieFoundry.server) {
-        ReverieFoundry.setServer(server);
-    }
-
-    // 增加击杀计数
-    ReverieFoundry.addKill(entityId);
+    ReverieFoundry.addPlayerKill(player, entityId);
 });
 
 EntityEvents.spawned('minecraft:item', event => {
     let itemEntity = event.getEntity();
     let itemStack = itemEntity.getItem();
     let itemId = itemStack.id;
-    let server = event.getServer();
 
-    if (!ReverieFoundry.server) {
-        ReverieFoundry.setServer(server);
-    }
+    // 尝试获取附近的玩家
+    let nearbyPlayers = itemEntity.level.getPlayers();
+    if (nearbyPlayers.isEmpty()) return;
 
-    let oreConfig = ReverieFoundry.checkOreShouldBeHidden(itemId);
+    // 使用最近的玩家来判断阶段
+    let closestPlayer = null;
+    let closestDistance = 16;
+
+    nearbyPlayers.forEach(function (player) {
+        let distance = player.distanceToSqr(itemEntity);
+        if (distance < closestDistance) {
+            closestDistance = distance;
+            closestPlayer = player;
+        }
+    });
+
+    if (!closestPlayer) return;
+
+    let oreConfig = ReverieFoundry.checkOreShouldBeHidden(itemId, closestPlayer);
 
     if (oreConfig) {
         let oldStack = itemEntity.getItem();
@@ -864,10 +462,10 @@ EntityEvents.spawned('minecraft:item', event => {
         itemEntity.setItem(newItem);
 
         if (ReverieFoundry.debugMode) {
-            console.log("[Reverie Foundry] 隐藏矿石（未达到阶段）: " + oreConfig.original + " -> " + oreConfig.replacement);
+            console.log("[Reverie Foundry] 为玩家 " + closestPlayer.getName().getString() + " 隐藏矿石: " + oreConfig.original + " -> " + oreConfig.replacement);
         }
     } else if (ReverieFoundry.debugMode) {
-        // 不需要隐藏
-        console.log("[Reverie Foundry] 矿石 " + itemId + " 不需要隐藏（已达到阶段或不是目标矿石）");
+        console.log("[Reverie Foundry] 矿石 " + itemId + " 不需要为玩家 " + closestPlayer.getName().getString() + " 隐藏");
     }
 });
+

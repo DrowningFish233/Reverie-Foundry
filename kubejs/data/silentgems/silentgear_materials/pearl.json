@@ -37,6 +37,7 @@
       "durability": 1024.0,
       "enchantment_value": 12.0,
       "harvest_speed": 8.0,
+      "spell_slots": 3.0,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgems:incorrect_for_pearl_tools",
         "level_hint": "3",

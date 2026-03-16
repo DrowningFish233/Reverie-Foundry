@@ -64,4 +64,8 @@ ServerEvents.recipes(event => {
     registerCustomRecipe(
         new VoidFavorRecipeJSON("endrem:corrupted_eye", "endrem:cursed_eye")
     );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('create:chromatic_compound', 'kubejs:void_ingot')
+    );
 });

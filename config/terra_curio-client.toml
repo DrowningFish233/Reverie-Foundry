@@ -2,7 +2,7 @@
 	playSound = true
 	# Default: 1.0
 	# Range: 0.0 ~ 1.0
-	shoesSoundVolume = 1.0
+	shoesSoundVolume = 0.8
 	showParticle = true
 	speedUp = true
 

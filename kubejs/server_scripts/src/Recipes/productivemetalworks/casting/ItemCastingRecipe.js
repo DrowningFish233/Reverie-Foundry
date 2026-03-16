@@ -152,5 +152,6 @@ ServerEvents.recipes(event => {
   register(new ItemCastingRecipe("minecraft:coal", "kubejs:gobber2_foo_nether", 90, "gobber2:gobber2_foo_nether", 1, true));
   register(new ItemCastingRecipe("minecraft:coal", "kubejs:gobber2_foo_end", 90, "gobber2:gobber2_foo_end", 1, true));
   register(new ItemCastingRecipe("minecraft:string", "productivemetalworks:molten_steel", 90, 'productivemetalworks:gear_cast', 1, false));
+  register(new ItemCastingRecipe('minecraft:iron_trapdoor', "productivemetalworks:molten_steel", 360, 'productivemetalworks:plate_cast', 1, false));
 
 });

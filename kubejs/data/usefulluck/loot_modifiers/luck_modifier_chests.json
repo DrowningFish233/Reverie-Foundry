@@ -1,0 +1,38 @@
+{
+  "type": "usefulluck:luck_modifier",
+  "conditions": [
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:all_of",
+        "terms": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "usefulluck:loot_table_match",
+              "loot_table_id": "^.*?:chests/.*"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "usefulluck:loot_table_match",
+              "loot_table_id": "^mvs:.*"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "usefulluck:loot_table_match",
+              "loot_table_id": "^structory[_:].*"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "per": 1,
+  "roll": 1,
+  "chance": 0.6,
+  "saturation": 30
+}

@@ -36,6 +36,7 @@
       "charging_value": 1.1,
       "draw_speed": 0.1,
       "durability": 2080.0,
+      "spell_slots": 6.0,
       "enchantment_value": 22.0,
       "harvest_speed": 12.0,
       "harvest_tier": {
@@ -54,6 +55,11 @@
       "traits": [
         {
           "conditions": [],
+          "level": 1,
+          "trait": "kubejs:multicolor"
+        },
+        {
+          "conditions": [],
           "level": 4,
           "trait": "kubejs:bismuthgems"
         }
@@ -61,6 +67,11 @@
     },
     "silentgear:setting": {
       "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:multicolor"
+        },
         {
           "conditions": [],
           "level": 3,
@@ -82,6 +93,11 @@
         "value": 12.0
       },
       "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:multicolor"
+        },
         {
           "conditions": [],
           "level": 3,

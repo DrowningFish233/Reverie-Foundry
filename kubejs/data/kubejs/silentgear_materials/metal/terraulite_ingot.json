@@ -47,6 +47,7 @@
             },
             "magic_armor": 18.0,
             "magic_damage": 8.0,
+            "geas_limit": 0.25,
             "ranged_damage": 1.5,
             "rarity": 65,
             "traits": [
@@ -54,6 +55,11 @@
                     "conditions": [],
                     "level": 1,
                     "trait": "kubejs:gift_heaven"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:overgrown_bone"
                 },
                 {
                     "conditions": [],

@@ -1723,7 +1723,7 @@ function spawnParticles_witch(entity, player) {
     let offsetZ = (Math.random() - 0.5) * 1.2
 
     player.level.spawnParticles(
-        'minecraft:witch',      // 粒子类型
+        'minecraft:witch',          // 粒子类型
         true,                      // 是否强制显示
         entity.x,                  // 中心X坐标
         entity.y + 1,              // 中心Y坐标

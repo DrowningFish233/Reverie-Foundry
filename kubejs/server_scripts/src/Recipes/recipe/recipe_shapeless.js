@@ -150,4 +150,166 @@ ServerEvents.recipes(event => {
             'silentgems:chaos_essence'
         ]
     )
+
+    event.shapeless(
+        Item.of('reveriefoundry:heavy_boots_blueprint', 1),
+        [
+            '4x silentgear:blueprint_paper',
+            'kubejs:ashes_of_calamity',
+            'minecraft:iron_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_boots_blueprint', 1),
+        [
+            '4x silentgear:blueprint_paper',
+            'kubejs:ashes_of_calamity',
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:heavy_boots_template', 1),
+        [
+            '4x silentgear:template_board',
+            'kubejs:viculeam_ingot',
+            'minecraft:iron_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_boots_template', 1),
+        [
+            '4x silentgear:template_board',
+            'kubejs:viculeam_ingot',
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:heavy_leggings_template', 1),
+        [
+            '6x silentgear:template_board',
+            'kubejs:viculeam_ingot',
+            'minecraft:iron_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_leggings_template', 1),
+        [
+            '6x silentgear:template_board',
+            'kubejs:viculeam_ingot',
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:heavy_leggings_blueprint', 1),
+        [
+            '6x silentgear:blueprint_paper',
+            'kubejs:ashes_of_calamity',
+            'minecraft:iron_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_leggings_blueprint', 1),
+        [
+            '6x silentgear:blueprint_paper',
+            'kubejs:ashes_of_calamity',
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:heavy_chestplate_blueprint', 1),
+        [
+            '7x silentgear:blueprint_paper',
+            'kubejs:ashes_of_calamity',
+            'minecraft:iron_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_chestplate_blueprint', 1),
+        [
+            '7x silentgear:blueprint_paper',
+            'kubejs:ashes_of_calamity',
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+
+
+    event.shapeless(
+        Item.of('reveriefoundry:heavy_chestplate_template', 1),
+        [
+            '7x silentgear:template_board',
+            'kubejs:viculeam_ingot',
+            'minecraft:iron_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_chestplate_template', 1),
+        [
+            '7x silentgear:template_board',
+            'kubejs:viculeam_ingot',
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+
+
+    event.shapeless(
+        Item.of('reveriefoundry:heavy_helmet_blueprint', 1),
+        [
+            '5x silentgear:blueprint_paper',
+            'kubejs:viculeam_ingot',
+            'minecraft:iron_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_helmet_blueprint', 1),
+        [
+            '5x silentgear:blueprint_paper',
+            'kubejs:viculeam_ingot',
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+
+
+    event.shapeless(
+        Item.of('reveriefoundry:heavy_helmet_template', 1),
+        [
+            '5x silentgear:template_board',
+            'kubejs:viculeam_ingot',
+            'minecraft:iron_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_helmet_template', 1),
+        [
+            '5x silentgear:template_board',
+            'kubejs:viculeam_ingot',
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('iceandfire:ambrosia', 1),
+        [
+            '3x iceandfire:pixie_dust',
+            'minecraft:bowl'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('kubejs:golden_apple', 1),
+        [
+            'minecraft:enchanted_golden_apple',
+        ]
+    )
 })

@@ -39,6 +39,7 @@
       "durability": 600.0,
       "enchantment_value": 30.0,
       "harvest_speed": 9.0,
+      "geas_limit": 0.25,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
         "level_hint": "2",
@@ -47,6 +48,7 @@
       "magic_armor": 20.0,
       "magic_damage": 4.0,
       "ranged_damage": 3.5,
+      "spell_slots": 4.0,
       "rarity": 70.0,
       "traits": [
         {

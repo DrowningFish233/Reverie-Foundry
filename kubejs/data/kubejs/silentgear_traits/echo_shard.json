@@ -4,7 +4,7 @@
         "translate": "trait.silentgear.echo_shard.desc"
     },
     "effects": [],
-    "max_level": 1,
+    "max_level": 5,
     "name": {
         "translate": "trait.silentgear.echo_shard"
     }

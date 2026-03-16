@@ -38,6 +38,9 @@
       "draw_speed": -0.1,
       "durability": 2015.0,
       "enchantment_value": 18.0,
+      "spell_slots": 2,
+      "spell_power": -0.1,
+      "spell_resist": 0.2,
       "harvest_speed": 8.0,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",

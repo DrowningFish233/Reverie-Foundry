@@ -48,6 +48,7 @@
       "magic_damage": 3.0,
       "projectile_accuracy": 1.1,
       "projectile_speed": 1.5,
+      "spell_slots": 3.0,
       "ranged_damage": 3.0,
       "rarity": 140.0,
       "repair_value": 0.4,

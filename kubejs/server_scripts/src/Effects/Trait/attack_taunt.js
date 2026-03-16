@@ -1,5 +1,5 @@
 /**
- *  攻击力下降30%，但是攻击有概率对被攻击对象施加嘲讽效果
+ *  攻击力下降20%，但是攻击有概率对被攻击对象施加嘲讽效果
  */
 function attack_taunt(event) {
     const { source, entity } = event;
@@ -8,7 +8,7 @@ function attack_taunt(event) {
     if (!attacker || !attacker.isLiving() || !attacker.hasEffect("kubejs:attack_taunt")) {
         return;
     }
-    new_damage(event, STAGE.MULTIPLY, 0.7);
+    new_damage(event, STAGE.MULTIPLY, 0.8);
     if (Math.random() < 0.3) {
         entity.potionEffects.add("kubejs:taunt", 200, 0);
     }

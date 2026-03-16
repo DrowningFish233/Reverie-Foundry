@@ -47,6 +47,7 @@
       "magic_armor": 8.0,
       "magic_damage": 4.0,
       "ranged_damage": 3.0,
+      "spell_power": 0.1,
       "rarity": 70.0,
       "traits": [
         {

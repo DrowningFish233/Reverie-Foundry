@@ -54,8 +54,13 @@
       "traits": [
         {
           "conditions": [],
+          "level": 3,
+          "trait": "silentgear:aquatic"
+        },
+        {
+          "conditions": [],
           "level": 1,
-          "trait": "kubejs:promotion"
+          "trait": "kubejs:sleep_aid"
         }
       ]
     },
@@ -63,8 +68,13 @@
       "traits": [
         {
           "conditions": [],
+          "level": 2,
+          "trait": "silentgear:aquatic"
+        },
+        {
+          "conditions": [],
           "level": 1,
-          "trait": "kubejs:promotion"
+          "trait": "kubejs:sleep_aid"
         }
       ]
     },
@@ -84,13 +94,13 @@
       "traits": [
         {
           "conditions": [],
-          "level": 1,
-          "trait": "kubejs:promotion"
+          "level": 2,
+          "trait": "silentgear:aquatic"
         },
         {
           "conditions": [],
           "level": 1,
-          "trait": "silentgear:turtle"
+          "trait": "kubejs:sleep_aid"
         }
       ]
     }

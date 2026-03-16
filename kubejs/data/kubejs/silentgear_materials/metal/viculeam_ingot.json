@@ -46,9 +46,15 @@
       },
       "magic_armor": 4.0,
       "magic_damage": 4.0,
+      "spell_slots": 4.0,
       "ranged_damage": 2.2,
       "rarity": 65.0,
       "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:ironwood_ingot"
+        },
         {
           "conditions": [],
           "level": 4,
