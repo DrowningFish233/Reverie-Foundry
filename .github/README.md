@@ -2,7 +2,8 @@
 
 🟢这里是存放<遐想铸造厂>代码的地方
 ### 
-<img width="400" height="400" alt="RF" src="https://github.com/user-attachments/assets/5287a83e-1f7f-4b3c-8f44-31e7191db6c5" />
+<img width="500" height="500" alt="minecraft_title1" src="https://github.com/user-attachments/assets/ec1389c0-f29a-43d0-b4fb-7f717d553e03" />
+
 
 ###               
 🟡这个Github上的代码不会经常更新，但是每隔版本更新肯定会更新一次代码！
