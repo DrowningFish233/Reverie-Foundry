@@ -61,7 +61,6 @@ ReverieFoundry
     .setDebug(false)
     .registerStage(
         new OreStageSystem("first_kill_dead_king")
-            .requireKill("irons_spellbooks:dead_king", 1)
             .hideOre('gobber2:gobber2_globette', 'minecraft:cobbled_deepslate')
             .hideOre('hazennstuff:raw_zenalite', 'minecraft:cobblestone')
             .hideOre('hazennstuff:runestone_fragments', 'minecraft:cobblestone')
@@ -71,11 +70,9 @@ ReverieFoundry
     )
     .registerStage(
         new OreStageSystem("first_kill_skeletron")
-            .requireKill("terra_entity:skeletron", 1)
             .hideOre('gobber2:gobber2_globette_nether', 'minecraft:netherrack')
     )
     .registerStage(
         new OreStageSystem("first_kill_fire_boss")
-            .requireKill("irons_spellbooks:fire_boss", 1)
             .hideOre('gobber2:gobber2_globette_end', 'minecraft:end_stone')
     );

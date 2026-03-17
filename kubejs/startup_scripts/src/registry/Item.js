@@ -30,6 +30,7 @@ global.new_materials = [
     { id: 'the_error', maxStackSize: 64 },
     { id: 'corruption', maxStackSize: 64 },
     { id: 'drowning_fish', maxStackSize: 1, rarity: 'epic' },
+    { id: 'fish', maxStackSize: 1, rarity: 'epic' },
     { id: 'lava_bible', maxStackSize: 4, rarity: 'rare' },
     { id: 'material_patchouli_generator', maxStackSize: 1, rarity: 'epic' },
     { id: 'trait_fish', maxStackSize: 1, rarity: 'epic' },

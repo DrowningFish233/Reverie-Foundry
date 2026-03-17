@@ -4,7 +4,6 @@
 	default_quest_shape: ""
 	filename: "68C67ABB27B8D485"
 	group: "7F00D0D8C7C916A0"
-	hide_quest_until_deps_complete: true
 	icon: {
 		id: "malum:paracausal_flame"
 	}

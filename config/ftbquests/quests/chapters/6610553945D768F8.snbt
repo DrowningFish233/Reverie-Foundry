@@ -14,8 +14,8 @@
 			image: "eternal_starlight:item/soulit_spectator"
 			rotation: 0.0d
 			width: 10.0d
-			x: -0.2721754475659921d
-			y: -4.266834556046902d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			height: 1.0d
@@ -98,7 +98,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6CA6DCCDEB5167BD"]
@@ -110,7 +110,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6CA6DCCDEB5167BD"]
@@ -364,7 +364,7 @@
 				type: "structure"
 			}]
 			x: -3.5d
-			y: -15.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["6CA6DCCDEB5167BD"]
@@ -375,7 +375,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -22.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["1350642D5141B3BF"]
@@ -386,7 +386,7 @@
 				type: "structure"
 			}]
 			x: 3.5d
-			y: -15.5d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -402,7 +402,7 @@
 				value: 1L
 			}]
 			x: 1.5d
-			y: -18.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -418,7 +418,7 @@
 				value: 1L
 			}]
 			x: -1.5d
-			y: -18.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["31B0A26B1374A322"]
@@ -485,7 +485,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -13.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["5E513FFD985CDDF9"]
@@ -496,7 +496,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -13.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["6CA6DCCDEB5167BD"]

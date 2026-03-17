@@ -150,6 +150,7 @@ StartupEvents.modifyCreativeTab('kubejs:tab_3', event => {
     });
 });
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
+    event.remove("kubejs:fish");
     event.remove("kubejs:red_skull");
     event.remove("kubejs:bad_apple");
     event.remove("kubejs:exploding_chocolate_bar");
@@ -247,5 +248,5 @@ StartupEvents.modifyCreativeTab("minecraft:op_blocks", (event) => {
     event.add("kubejs:drowning_fish")
     event.add("kubejs:material_patchouli_generator")
     event.add("kubejs:trait_fish")
-
+    event.add("kubejs:fish")
 });

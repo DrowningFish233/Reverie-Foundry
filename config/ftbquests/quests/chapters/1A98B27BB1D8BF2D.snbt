@@ -767,5 +767,19 @@
 			x: 2.5d
 			y: -10.0d
 		}
+		{
+			dependencies: [
+				"7655A85408A81AA1"
+				"4DBB3CA0C3949A66"
+			]
+			id: "0075A65FF73285F8"
+			tasks: [{
+				id: "54D4DA027856F15D"
+				item: { count: 1, id: "kubejs:summon_dragon_warrior_pet" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
 	]
 }

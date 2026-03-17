@@ -318,12 +318,19 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				disable_toast: true
-				id: "426C3EFB9DFFAB2F"
-				structure: "#eternal_starlight:portal_ruins"
-				type: "structure"
-			}]
+			tasks: [
+				{
+					id: "787CC8D5CD6E3557"
+					item: { count: 1, id: "kubejs:eye_of_starlight_portal_located" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "426C3EFB9DFFAB2F"
+					structure: "#eternal_starlight:portal_ruins"
+					type: "structure"
+				}
+			]
 			x: 2.0d
 			y: -6.0d
 		}
@@ -395,6 +402,7 @@
 		{
 			dependencies: ["3220FA89E7935BC3"]
 			id: "1675C48578D2D979"
+			optional: true
 			rewards: [{
 				count: 8
 				id: "78CCBB61930AAEC5"
@@ -415,6 +423,7 @@
 		{
 			dependencies: ["72387868BC05D119"]
 			id: "4276FE7E4037AC05"
+			optional: true
 			rewards: [
 				{
 					count: 4
@@ -630,6 +639,7 @@
 		{
 			dependencies: ["1675C48578D2D979"]
 			id: "15F15A1FF0EDD7E3"
+			optional: true
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "01AE8BECBA7B805F"

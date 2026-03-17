@@ -19,7 +19,7 @@
 	chapter_group.2F1F238400B8A177.title: "Miscellaneous Discussions"
 	chapter_group.7F00D0D8C7C916A0.title: "&bDream of Void (Main Quests)"
 	eward_table.317976CB2BE234D8.title: "Random Reward"
-	file.0000000000000001.title: "Reverie Foundry v0.5-Alpha"
+	file.0000000000000001.title: "Reverie Foundry v0.6-Beta"
 	quest.002106F426003B4F.quest_desc: ["&7Increases the activation range, allowing the spawner to activate even when the player is farther away. Each upgrade adds 2 blocks, up to a maximum of 48 blocks."]
 	quest.002106F426003B4F.quest_subtitle: "I can see you"
 	quest.00616CF92A5F5FD1.quest_desc: [
@@ -28,6 +28,7 @@
 		"&7Using the initially gathered materials, I set up a crude shack in the lee of the wind. With the four walls enclosed, I finally have a sense of shelter and stability. Almost simultaneously, a clearer impulse rises from within—I need &6fire&7, need &riron&7, and even more, I need a furnace capable of processing metal."
 	]
 	quest.00616CF92A5F5FD1.title: "Establish a Base"
+	quest.0075A65FF73285F8.quest_subtitle: "Familiar Summoning Ritual"
 	quest.008A75CC21BEA1D0.title: "Light Horn Piranha"
 	quest.00A163FF140033A4.quest_desc: [
 		"&6Quivering Jelly&r&7"
@@ -138,6 +139,7 @@
 		"&7- Experience gained from mining and kills +35%&r"
 		"&7- Chance for spell scrolls not to be consumed +15%&r"
 	]
+	quest.03639EDED6577831.quest_subtitle: "WIP，暂用贪婪侵蚀效果"
 	quest.03639EDED6577831.title: "Greed Erosion"
 	quest.03D7343C57EF0A14.quest_desc: [
 		"&7Prolonged contact with spirits seems to have confused my mind a bit; I can even hear strange calling sounds in my ears... No, that's not right."
@@ -638,6 +640,7 @@
 		"&aTip&r&7: &f♨ &r&7Temperature determines the grade of materials that can be processed, ⚡ Speed affects processing time, ⏳ Consumption represents fuel longevity."
 	]
 	quest.0ED82FFAE99D2480.quest_subtitle: "Better Fuel"
+	quest.0EE6ADB913E3CF80.quest_subtitle: "Has both armor and minor spell attributes, very popular"
 	quest.0EEA8DDC455E7FCB.quest_desc: [
 		"&7While observing the spread of &8Withering&r&7 (in a controlled environment, of course), I noticed this metaphysical damage occasionally becomes strong enough to leave scars on stone—thus, I named it \"&6Scarstone&r&7\"."
 		"&7"
@@ -888,6 +891,7 @@
 	]
 	quest.159E4C31CF4AB181.quest_subtitle: "Devouring All Things"
 	quest.159E4C31CF4AB181.title: "Pact of the Unforgiving Void Maw"
+	quest.15DC053FF5BA0E9B.quest_subtitle: "Has both armor and minor spell attributes, very popular"
 	quest.15DDBCE29F4CEB4B.quest_subtitle: "Crafting material, primarily used for making advanced machinery and intelligent components."
 	quest.15F15A1FF0EDD7E3.quest_desc: [
 		"&7It's hard to imagine creating a creature just to kill it, but this special transformation that yields Nether Stars is indeed beyond human capability."
@@ -1390,6 +1394,7 @@
 		""
 		"&8This page of the manuscript appears slightly curled, as if steamed.&r"
 	]
+	quest.244305D501AB31AA.quest_subtitle: "Compared to ordinary armor, it has higher armor value and other attributes, at the cost of losing mana attributes"
 	quest.2443B7C22B13BC1F.quest_desc: [
 		"&7Inspired by the Obelisk of Hallowed Gold, you crafted an obelisk from what you thought were useless Experience Crystals. The magic of experience didn't affect soul-infusion rituals but instead showed an enhancement of another magical force—enchanting."
 		""
@@ -1454,6 +1459,7 @@
 		"&6Crystallized Berry&r"
 		"&7Excavated by &bSniffers&r&7. Can be fed to your familiar to obtain &eMemory Fragments&r&7.&r"
 	]
+	quest.2723E285F0AD8412.quest_subtitle: "Compared to ordinary armor, it has higher armor value and other attributes, at the cost of losing mana attributes"
 	quest.27B6C00949F92CCF.quest_desc: [
 		"&7I seem to have discovered something peculiar: a form of magic hitherto undocumented. To call oneself a magician while passing up the opportunity to learn magic would be a disservice."
 		""
@@ -1515,6 +1521,7 @@
 		"&7The Chrystal Moth will consume it and has a low probability of producing 1 portion of &#F8CD4BQuivering Jelly&r&7.&r"
 	]
 	quest.28F42F3025DEB18C.title: "Chrystal Moth"
+	quest.28FBA3F985201394.quest_subtitle: "Compared to ordinary armor, it has higher armor value and other attributes, at the cost of losing mana attributes"
 	quest.2911813B45667FF4.quest_desc: ["Using a symbol of the dragon's overbearing power, I crafted this bookshelf. Perhaps due to returning to simplicity, it only provides a massive amount of &aQuanta&r, and most importantly, can raise the &aQuanta&r cap to its maximum."]
 	quest.2911813B45667FF4.quest_subtitle: "The Apex of Quanta"
 	quest.2911813B45667FF4.title: "The Dragon's Roar"
@@ -2163,6 +2170,7 @@
 	quest.39980DF0631D9B6C.quest_subtitle: "Seeking Beauty in Dross"
 	quest.39980DF0631D9B6C.title: "Treaty of the Rotten Ascetic"
 	quest.39AB32E04D04B64F.quest_subtitle: "Stage 1"
+	quest.39EB3B61CB5E3E73.quest_subtitle: "Although not as defensive as other armors, it is especially effective against spell-related attributes"
 	quest.39F72CD10646574F.quest_desc: ["Searching for a specific enchantment among hundreds is like finding a needle in a haystack. Enchantment books limited to specific types significantly improve this—these books have affinity only for enchantments of a particular category, making them an excellent way to obtain target enchantments."]
 	quest.39F72CD10646574F.quest_subtitle: "Practical Enchantments"
 	quest.3A08D5D6D65FF6F2.quest_desc: [
@@ -2479,6 +2487,7 @@
 		"&7Once you can handle Ancient Knights, this is a convenient spot to get Netherite. It also produces &6Ash Essence&7, an important material."
 	]
 	quest.4276FE7E4037AC05.title: "Ancient Battlefield"
+	quest.429669316E4CF3A9.quest_subtitle: "Has both armor and minor spell attributes, very popular"
 	quest.42F6170490C96218.quest_subtitle: "No Rivals Left"
 	quest.42F6170490C96218.title: "Slay Champion Mobs x1000"
 	quest.43B69EBAF5DCC756.quest_subtitle: "All-Purpose Tool"
@@ -2937,7 +2946,7 @@
 		"&7Dusk Eye Fish will stop chasing a target if it leaves the water body they are in.&r"
 	]
 	quest.4EF6614B03841586.title: "Dusk Eye Fish"
-	quest.501A9D4E77A9D0EA.quest_subtitle: "Soul Rending"
+	quest.501A9D4E77A9D0EA.quest_subtitle: "Farmer's Good Helper"
 	quest.501AB9740C6C4447.quest_desc: [
 		"&6Heartiness Rune&r"
 		""
@@ -3554,6 +3563,7 @@
 	]
 	quest.6456C4ED798E5EBD.quest_subtitle: "A polluted forest, slowly purifying itself."
 	quest.6456C4ED798E5EBD.title: "Crimson Forest"
+	quest.648E4AF815BE0547.quest_subtitle: "Soul Rending"
 	quest.6495C96750D3BA0C.quest_desc: ["&7Some aircraft models can mount weapons, but generally, aircraft don't really need combat capabilities. Among them, the Bomb Bay offers decent damage output but also has higher consumption."]
 	quest.64AC4146C392E8A6.quest_desc: [
 		"&#CC88FFEnvy - Erosion&r&7"
@@ -3770,6 +3780,7 @@
 		"&7I've heard rumors they drop from ores, but &6the most reliable source is small ore clusters where souls dissipate&f&7, the experience left behind by souls etched onto rock."
 	]
 	quest.68EF2FB94A761FFD.quest_subtitle: "Experience Materialized"
+	quest.6930993364FD1814.quest_subtitle: "Although not as defensive as other armors, it is especially effective against spell-related attributes"
 	quest.6A03DEB0CCE71AF2.quest_desc: [
 		"&6Armor Plates&r"
 		"&7Consumables used to increase a familiar's &aArmor&r&7. There are 3 tiers, each with a usage limit."
@@ -3837,6 +3848,7 @@
 		"&7Various mages' energies sanctify into &dLight Soul&r"
 	]
 	quest.6AC481C1ADA516D4.quest_subtitle: "Leaked Magic"
+	quest.6AE4DE3DC4964CB6.quest_subtitle: "Has both armor and minor spell attributes, very popular"
 	quest.6AE8CFDBDC8CF939.quest_subtitle: "Crafting Supplies"
 	quest.6AF6ADCEE5546549.quest_desc: [
 		"&7Previously, I limited spirit magic to enhancing myself and creating materials."
@@ -4147,6 +4159,7 @@
 	]
 	quest.72C552BE02BA433D.quest_subtitle: "Super Monster Factory"
 	quest.72C552BE02BA433D.title: "Apotheosis – Spawner Module"
+	quest.72EADB2FF95D25B3.quest_subtitle: "Although not as defensive as other armors, it is especially effective against spell-related attributes"
 	quest.7306BEC7A3E98304.quest_subtitle: "The Undead"
 	quest.731473A765D3B6B6.quest_desc: [
 		"&7While searching for traces of &dArcane Energy&r&7 across the land, the most commonly found is &bAzure Sky Arcana&r&7."
@@ -4303,6 +4316,7 @@
 	]
 	quest.768F736B2B18FA1B.quest_subtitle: "Hitting the Bull's-Eye"
 	quest.768F736B2B18FA1B.title: "Pact of the Keen Eye"
+	quest.76B78E211A0AEC85.quest_subtitle: "Compared to ordinary armor, it has higher armor value and other attributes, at the cost of losing mana attributes"
 	quest.76BD72A25B241E0C.quest_desc: ["&7Using the light of Glowstone, I improved the Nether Bookshelf, a symbol of chaos. While providing additional &4Quantization&7, it also grants a small amount of &5Arcana&7. Although still not as good as the Ocean Bookshelf, every little bit helps, right?"]
 	quest.76BD72A25B241E0C.quest_subtitle: "A More Balanced Nether Bookshelf"
 	quest.76BD72A25B241E0C.title: "Chaotic Expansion"
@@ -4513,6 +4527,7 @@
 	quest.7BACE6601BC4DFED.quest_subtitle: " Prevent Loss"
 	quest.7BD9DC7DB2278AA5.quest_desc: ["&7Obtained from Ancient City loot chests. It has quite high attack damage but no special modifiers, making it suitable for use in alloying weapon components."]
 	quest.7BD9DC7DB2278AA5.quest_subtitle: "Simple, High Damage"
+	quest.7C227ABAEC91DA58.quest_subtitle: "Although not as defensive as other armors, it is especially effective against spell-related attributes"
 	quest.7C74D47B9ED97737.quest_desc: [
 		"&7The Security Manager is a block that can store Security Cards."
 		""
@@ -4880,6 +4895,7 @@
 	task.02081D27FED67724.title: "Main Meal Recycle"
 	task.02C09DDCAF029E1C.title: "Scene: Village"
 	task.02E724791B98221B.title: "Any Head"
+	task.03566662B2722669.title: "Spellbook Template"
 	task.039FE05CAF91D22E.title: "灌注书架"
 	task.05EC35C7459C4EE5.title: "Scene: Village"
 	task.061EADF2EDD58507.title: "Click to Continue"
@@ -4922,10 +4938,15 @@
 	task.1C06992A966B5537.title: "Arrow Template"
 	task.1C3F0D05EF0E579B.title: "Scene: Village"
 	task.1C6E3A73FEC6CA64.title: "Command Registration"
+	task.1C9206E00C139795.title: "Heavy Leggings Template"
 	task.1CE591BED0249B67.title: "任意 食物"
+	task.1CE99DF26C34AD77.title: "Soul Scythe Template"
+	task.1E1639DB2A1EB27B.title: "Robe Boots Template"
 	task.201E6C48702846AC.title: "Bracelet Template"
+	task.20E752F817977436.title: "Heavy Boots Template"
 	task.2168A7B0CEA44A59.title: "Quantization"
 	task.218622C67393A564.title: "Fluid Storage Block"
+	task.23B079325E8F6976.title: "Heavy Chestplate Template"
 	task.24414CD8C86B97F5.title: "任意 升级珠"
 	task.27FCF177F9DBA089.title: "Familiar List"
 	task.28F0C1066808D8E9.title: "Hunt"
@@ -4964,6 +4985,7 @@
 	task.3BBEAE77629AD44D.title: "&6Armor Plates&r"
 	task.3CBB932AAD6CC7EA.title: "Any Tome"
 	task.3D218C514EAC6367.title: "Excavator Shovel Template"
+	task.3DE2898A1A9A4C07.title: "Robe Template"
 	task.3E1F111ADD777D77.title: "Any #eternal_starlight:yeti_fur"
 	task.3F63C56803BA4F6F.title: "Prospector's Hammer Template"
 	task.3F853F214743B9E6.title: "Any #alshanex_familiars:familiar_trinkets"
@@ -5009,9 +5031,11 @@
 	task.5B09D0B2903B224E.title: "Knife Template"
 	task.5B0CA142332889F5.title: "Feast Recycle"
 	task.5B9FE5D428C26C37.title: "Any Power Furnace"
+	task.5BA57825F830A63E.title: "Staff Template"
 	task.5CDEA67077218678.title: "Hammer Template"
 	task.5DAEF315B3683621.title: "Any Spirit"
 	task.5DBF144A9A88D545.title: "Hidden Harvest"
+	task.5E065AD5537737D0.title: "Robe Skirt Template"
 	task.5E61C66706DB394E.title: "Font Settings"
 	task.5F1B94C31D02E67B.title: "Scene: Midway Tavern"
 	task.5F3EC831C3E53770.title: "Katana Template"
@@ -5026,6 +5050,7 @@
 	task.63234A766C567E00.title: "Scene: The Catacombs"
 	task.6344C03C91E6B173.title: "Observe Celestial Golem"
 	task.6478174E99B96FA8.title: "Repeater"
+	task.64A308976F77F050.title: "Robe Hood Template"
 	task.661A96A3B20665DE.title: "Visit: Nether"
 	task.6747EAFEAC056B39.title: "This is a Location"
 	task.679088C9A7CDA862.title: "Any Aircraft Weapon"
@@ -5057,6 +5082,7 @@
 	task.75D4742A0C012F65.title: "Spear Template"
 	task.76ED940B298D8859.title: "Any Engine Upgrade"
 	task.774FD55407857713.title: "Scene: Base"
+	task.777C45CF49CC817C.title: "Heavy Helmet Template"
 	task.77B5BE57F5151388.title: "&6Magic Essence&r"
 	task.7BD801F485623EC0.title: "Fishing Rod Template"
 	task.7CCEF302E660A068.title: "须知"
