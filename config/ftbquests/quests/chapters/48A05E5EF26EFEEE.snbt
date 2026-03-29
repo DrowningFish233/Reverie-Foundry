@@ -164,42 +164,6 @@
 			ignore_reward_blocking: true
 			rewards: [
 				{
-					id: "35164544C2D418CF"
-					item: {
-						components: {
-							"eccentrictome:tome_data": {
-								books: {
-									irons_spellbooks: [{
-										components: {
-											"patchouli:book": "irons_spellbooks:iss_guide_book"
-										}
-										count: 1
-										id: "patchouli:guide_book"
-									}]
-									patchouli: [{
-										components: {
-											"patchouli:book": "patchouli:rf_book"
-										}
-										count: 1
-										id: "patchouli:guide_book"
-									}]
-									productivemetalworks: [{
-										components: {
-											"patchouli:book": "productivemetalworks:guide"
-										}
-										count: 1
-										id: "patchouli:guide_book"
-									}]
-								}
-								tome_id: "c367ceb7-7cd8-47bf-955e-ffa296a74275"
-							}
-						}
-						count: 1
-						id: "eccentrictome:tome"
-					}
-					type: "item"
-				}
-				{
 					id: "4B447671547659CD"
 					item: {
 						components: {
@@ -207,6 +171,14 @@
 						}
 						count: 1
 						id: "patchouli:guide_book"
+					}
+					type: "item"
+				}
+				{
+					id: "08BAFA74143ADC54"
+					item: {
+						count: 1
+						id: "silentgear:material_book"
 					}
 					type: "item"
 				}

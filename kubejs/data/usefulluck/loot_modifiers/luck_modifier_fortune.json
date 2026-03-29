@@ -13,6 +13,22 @@
     {
       "condition": "usefulluck:loot_table_match",
       "loot_table_id": "^.*?:blocks/.*_ore"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:match_tool",
+        "predicate": {
+          "enchantments": [
+            {
+              "enchantment": "minecraft:silk_touch",
+              "levels": {
+                "min": 1
+              }
+            }
+          ]
+        }
+      }
     }
   ],
   "per": 1,

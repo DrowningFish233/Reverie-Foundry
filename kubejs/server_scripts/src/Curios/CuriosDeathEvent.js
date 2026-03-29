@@ -16,14 +16,12 @@ EntityEvents.death(event => {
 });
 
 const curios_death_event = {
-    /*
-    'kubejs:bleed_curios': function (event, curios, slot, item) {
-        if (!entity_curios_Boss.some(ctx => ctx == event.entity.getType())) {
+    'kubejs:baptism_of_violet': function (event, curios, slot, item) {
+        if (!FINAL_BOSS == event.entity.getType()) {
             return;
         }
-        curios.setStackInSlot(slot, Item.of('kubejs:none_curios'));
+        curios.setStackInSlot(slot, Item.of('kubejs:paradise_lost'));
     },
-    */
     'kubejs:magnet_flower': function (event, curios, slot, item, player) {
         getPlayerMagicData(player).addMana(10)
         getPlayerMagicData(player).addMana(-1)

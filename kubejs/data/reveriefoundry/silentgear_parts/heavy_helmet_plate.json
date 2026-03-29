@@ -1,0 +1,48 @@
+{
+  "type": "silentgear:core",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "reveriefoundry:heavy_helmet_plate"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.reveriefoundry.heavy_helmet_plate"
+    },
+    "name_prefix": "part.reveriefoundry.heavy_helmet_plate.prefix"
+  },
+  "gear_type": "reveriefoundry:heavy_helmet",
+  "part_type": "silentgear:main",
+  "properties": {
+    "durability": {
+      "operation": "MULTIPLY_BASE",
+      "value": 1.25
+    },
+    "armor": {
+      "operation": "MULTIPLY_BASE",
+      "value": 0.25
+    },
+    "armor_toughness": {
+      "operation": "MULTIPLY_BASE",
+      "value": 0.25
+    },
+    "magic_armor": {
+      "operation": "MULTIPLY_BASE",
+      "value": -0.5
+    },
+    "knockback_resistance": {
+      "operation": "MULTIPLY_BASE",
+      "value": 0.05
+    },
+    "repair_efficiency": 1.0,
+    "traits": [
+      {
+        "conditions": [],
+        "level": 3,
+        "trait": "silentgear:heavy"
+      }
+    ]
+  }
+}

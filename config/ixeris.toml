@@ -23,8 +23,9 @@ logCacheIssues = false
 	#Enable to use buffered raw input for the mouse when supported, which can greatly improve event polling performance and reduce CPU usage.
 	mouse = true
 	#Enable to use buffered raw input for the keyboard when supported, which can offer a small performance boost to event polling performance.
-	#Currently requires buffered raw input for the mouse to be enabled.
 	keyboard = false
+	#When buffered raw input is enabled, this option allows releasing all mouse buttons and keys when the game window loses focus to emulate vanilla behavior.
+	releaseOnLosingFocus = true
 	#Specifies the initial raw input buffer size.
 	minRawInputBufferSize = 32
 	#Specifies the maximum raw input buffer size.

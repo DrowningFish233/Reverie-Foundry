@@ -369,5 +369,20 @@ StartupEvents.registry('item', event => {
                 .addAttribute("terra_curio:generic.ranged_damage", "add_multiplied_total", 0.1, "kubejs:destroyer_emblem.ranged_damage")
                 .addAttribute("terra_curio:generic.crit_chance", "add_value", 0.08, "kubejs:destroyer_emblem.crit_chance")
         )
+
+    new $ItemBuilderWrapper(
+        event.create("violet_baptism")
+            .texture('kubejs:item/curios/violet_baptism')
+            .tag("curios:accessory")
+            .tag("kubejs:level_3")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+
+    event.create("paradise_lost")
+        .texture('kubejs:item/curios/paradise_lost')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
 });
 

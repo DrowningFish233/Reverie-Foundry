@@ -1186,4 +1186,62 @@ ServerEvents.recipes(event => {
             C: 'minecraft:redstone_block'
         }
     )
+
+    event.shaped(
+        Item.of('reveriefoundry:staff_blueprint', 1),
+        [
+            ' AB',
+            ' CA',
+            'C  '
+        ],
+        {
+            B: 'kubejs:necroplasm',
+            A: 'silentgear:blueprint_paper',
+            C: 'minecraft:stick'
+        }
+    )
+
+    event.shaped(
+        Item.of('reveriefoundry:spellbook_blueprint', 1),
+        [
+            'CAC',
+            'CBC',
+            'CAC'
+        ],
+        {
+            A: 'silentgear:blueprint_paper',
+            B: 'kubejs:necroplasm',
+            C: 'minecraft:stick'
+        }
+    )
+
+    event.shaped(
+        Item.of('reveriefoundry:staff_template', 16),
+        [
+            ' AB',
+            ' CA',
+            'C  '
+        ],
+        {
+            B: 'kubejs:necroplasm',
+            A: 'silentgear:template_board',
+            C: 'minecraft:stick'
+        }
+    )
+
+    event.shaped(
+        Item.of('reveriefoundry:spellbook_template', 16),
+        [
+            'CAC',
+            'CBC',
+            'CAC'
+        ],
+        {
+            A: 'silentgear:template_board',
+            B: 'kubejs:necroplasm',
+            C: 'minecraft:stick'
+        }
+    )
+
+
 })

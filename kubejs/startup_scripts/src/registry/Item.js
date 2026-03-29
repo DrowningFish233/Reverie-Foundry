@@ -289,3 +289,10 @@ StartupEvents.registry('item', event => {
 
 });
 
+
+StartupEvents.registry('item', event => {
+    event.create('moonpools')
+        .texture("kubejs:item/gems/moonpools")
+        .rarity('epic')
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER);
+});   

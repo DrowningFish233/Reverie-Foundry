@@ -75,7 +75,7 @@ function createModularUI(menu) {
                             .append($Component.literal(string)["withStyle(net.minecraft.ChatFormatting)"]($ChatFormatting.RED))
                             .append(" ")
                             .append($Component.literal(
-                                new $String["(java.lang.String)"]("%.2f").formatted(number)  // ✅ 指定构造函数
+                                new $String["(java.lang.String)"]("%.2f").formatted(number)
                             )["withStyle(net.minecraft.ChatFormatting)"]($ChatFormatting.YELLOW))
                     )
                 ),

@@ -475,6 +475,14 @@ LootJS.modifiers(event => {
         })
         .randomChance(0.6)
     );
+
+    event.addEntityModifier([
+        "darkdoppelganger:dark_doppelganger"
+    ]).addLoot(LootEntry.of('reveriefoundry:furioso_blueprint')
+        .apply(item => {
+            item.setCount(1);
+        })
+    );
 });
 
 

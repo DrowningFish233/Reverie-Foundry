@@ -18,7 +18,6 @@ const MOBS = [
     //末地末影人击败末影龙解锁
     ["astage/mob/end_islands_enderman", "endermanoverhaul:end_islands_enderman", "first_kill_ender_guardian"],
     ["astage/mob/end_enderman", "endermanoverhaul:end_enderman", "first_kill_ender_guardian"],
-    /*
     ["astage/mob/windswept_hills_enderman", "endermanoverhaul:windswept_hills_enderman", "first_kill_ender_guardian"],
     ["astage/mob/flower_fields_enderman", "endermanoverhaul:flower_fields_enderman", "first_kill_ender_guardian"],
     ["astage/mob/ice_spikes_enderman", "endermanoverhaul:ice_spikes_enderman", "first_kill_ender_guardian"],
@@ -34,12 +33,12 @@ const MOBS = [
     ["astage/mob/soulsand_valley_enderman", "endermanoverhaul:soulsand_valley_enderman", "first_kill_ender_guardian"],
     ["astage/mob/swamp_enderman", "endermanoverhaul:swamp_enderman", "first_kill_ender_guardian"],
     ["astage/mob/savanna_enderman", "endermanoverhaul:warped_forest_enderman", "first_kill_ender_guardian"],
-    */
 ];
 
 MOBS.forEach(([id, mob, stage]) => {
     AStages.addRestrictionForMob(id, stage, mob)
         .setEnableMobSpawning(false)
+        .setReplacing("minecraft:slime")
         .setCanBeRightClicked(false)
         .setCanBeAttacked(false)
 });

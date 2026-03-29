@@ -1,5 +1,4 @@
 // priority: 0
-const $LivingHealEvent = Java.loadClass("net.neoforged.neoforge.event.entity.living.LivingHealEvent");
 
 //猩红法术强度影响受到治疗倍率
 NativeEvents.onEvent($LivingHealEvent, event => {

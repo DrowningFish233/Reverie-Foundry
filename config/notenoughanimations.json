@@ -49,6 +49,7 @@
   "freezeArmsInBed": true,
   "rotationLock": "NONE",
   "limitRotationLockToFP": true,
+  "applyRotationLockToEveryone": false,
   "showLastUsedSword": false,
   "sheathSwords": [
     "minecraft:golden_sword",
@@ -68,7 +69,7 @@
   "tweakElytraAnimation": false,
   "petAnimation": true,
   "fallingAnimation": false,
-  "freezingAnimation": true,
+  "freezingAnimation": false,
   "huggingAnimation": false,
   "narutoRunning": false,
   "disableLegSmoothing": true,
@@ -80,5 +81,20 @@
   "mapHolding": [
     "minecraft:filled_map",
     "antiqueatlas:antique_atlas"
-  ]
+  ],
+  "animateLanterns": true,
+  "lanternItems": [
+    "minecraft:waxed_copper_lantern",
+    "minecraft:waxed_exposed_copper_lantern",
+    "minecraft:soul_lantern",
+    "minecraft:waxed_oxidized_copper_lantern",
+    "minecraft:exposed_copper_lantern",
+    "minecraft:lantern",
+    "minecraft:waxed_weathered_copper_lantern",
+    "minecraft:weathered_copper_lantern",
+    "minecraft:oxidized_copper_lantern",
+    "minecraft:copper_lantern"
+  ],
+  "maxBlockingAngle": 15.0,
+  "maxNormalAngle": 50.0
 }

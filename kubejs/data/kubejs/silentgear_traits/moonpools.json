@@ -1,0 +1,11 @@
+{
+    "conditions": [],
+    "description": {
+        "translate": "trait.silentgear.moonpools.desc"
+    },
+    "effects": [],
+    "max_level": 1,
+    "name": {
+        "translate": "trait.silentgear.moonpools"
+    }
+}

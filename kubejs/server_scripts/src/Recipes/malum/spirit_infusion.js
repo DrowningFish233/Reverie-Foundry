@@ -976,5 +976,10 @@ ServerEvents.recipes(event => {
             .addExtraInput('#minecraft:meat', 32)
     );
 
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:moonstone', 'kubejs:moonpools')
+            .addSpirit("umbral", 2)
+            .addExtraInput('#minecraft:flowers', 1)
+    );
 
 });

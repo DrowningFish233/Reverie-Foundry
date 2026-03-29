@@ -1,5 +1,4 @@
 //自动汉化
-let $I18n = Java.loadClass("net.minecraft.client.resources.language.I18n")
 
 let kubejs_material = JsonIO.read('kubejs/assets/kubejs_material/lang/zh_cn.json') || {}
 let mainLang = JsonIO.read('kubejs/assets/kubejs/lang/zh_cn.json') || {}

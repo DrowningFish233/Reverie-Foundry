@@ -2607,6 +2607,28 @@ RFTrait('kubejs:deathworm_chitin', 0)
     .register();
 
 
+//特性-月见草
+RFTrait('kubejs:moonpools', 0)
+    .onTick(101, event => {
+        let player = event.player
+        if (!player) return
+        if (!isNight(player.getLevel())) return
+        if (!fu_hasTraitAnywhere(player, "kubejs:moonpools")) return;
+        player.heal(2)
+        player.potionEffects.add("kubejs:evening_primrose", 140, 0);
+        if (!fu_hasTraitMainHand(player, "kubejs:moonpools")) return;
+        fu_attemptDamageByHand(player.getMainHandItem(), -3, player, "MAIN_HAND")
+    })
+    .beforeHurt(event => {
+        let player = event.player
+        if (!player) return
+        if (!isNight(player.getLevel())) return
+        if (!player.hasEffect("kubejs:evening_primrose")) return
+        new_damage(event, STAGE.MULTIPLY, 0.75)
+    })
+    .register();
+
+
 
 /**
 * 总效果类层

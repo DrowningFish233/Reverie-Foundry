@@ -1,5 +1,4 @@
 // priority: 0
-const $LivingEquipmentChangeEvent = Java.loadClass("net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent")
 
 /**
  * @typedef {{arms: $Item[], bonus: [mobEffect: Special.MobEffect, amplifier: number?, showParticles: boolean?][]}} $ArmorSetBonus_

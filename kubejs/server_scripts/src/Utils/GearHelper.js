@@ -1,3 +1,4 @@
+// priority: 100
 /**
  * 获取 Gear 物品的实例
  * @param {Internal.ItemStack} gear 物品堆栈
@@ -517,4 +518,5 @@ function cyclePartType(item, player, direction) {
     } catch (e) {
         return { success: false, message: "设置失败: " + e.message }
     }
+
 }

@@ -1,3 +1,4 @@
+//priority: 999
 /**
  * 矿石阶段系统配置
  * @param {string} stageName - 阶段名称

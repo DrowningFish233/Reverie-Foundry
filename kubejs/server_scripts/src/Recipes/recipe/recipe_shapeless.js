@@ -312,4 +312,176 @@ ServerEvents.recipes(event => {
             'minecraft:enchanted_golden_apple',
         ]
     )
+
+    event.shapeless(
+        Item.of('minecraft:slime_ball', 2),
+        [
+            '8x #minecraft:leaves',
+            'minecraft:slime_ball'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:infernal_forge_blueprint', 1),
+        [
+            'cataclysm:infernal_forge',
+            'silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:infernal_forge_template', 16),
+        [
+            'cataclysm:infernal_forge',
+            'silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_spear_blueprint', 1),
+        [
+            'cataclysm:soul_render',
+            'silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_spear_template', 16),
+        [
+            'cataclysm:soul_render',
+            'silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:astrape_blueprint', 1),
+        [
+            'cataclysm:astrape',
+            'silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:astrape_template', 16),
+        [
+            'cataclysm:astrape',
+            'silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:seeking_bow_blueprint', 1),
+        [
+            'cataclysm:wrath_of_the_desert',
+            'silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:seeking_bow_template', 16),
+        [
+            'cataclysm:wrath_of_the_desert',
+            'silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:flamberge_blueprint', 1),
+        [
+            'irons_spellbooks:keeper_flamberge',
+            'silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:flamberge_template', 16),
+        [
+            'irons_spellbooks:keeper_flamberge',
+            'silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:flame_bulwark_blueprint', 1),
+        [
+            'cataclysm:bulwark_of_the_flame',
+            'silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:flame_bulwark_template', 16),
+        [
+            'cataclysm:bulwark_of_the_flame',
+            'silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:meat_shredder_blueprint', 1),
+        [
+            'cataclysm:meat_shredder',
+            'silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:meat_shredder_template', 16),
+        [
+            'cataclysm:meat_shredder',
+            'silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:annihilator_blueprint', 1),
+        [
+            'cataclysm:gauntlet_of_guard',
+            'silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:annihilator_template', 16),
+        [
+            'cataclysm:the_annihilator',
+            'silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:autoloader_crossbow_blueprint', 1),
+        [
+            'irons_spellbooks:autoloader_crossbow',
+            'silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:autoloader_crossbow_template', 16),
+        [
+            'irons_spellbooks:autoloader_crossbow',
+            'silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    )
 })
+
+

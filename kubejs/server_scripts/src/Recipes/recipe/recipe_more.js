@@ -16,7 +16,22 @@ ServerEvents.recipes(event => {
         'reveriefoundry:robe_leggings_blueprint',
         'reveriefoundry:robe_leggings_template',
         'reveriefoundry:robe_boots_blueprint',
-        'reveriefoundry:robe_boots_template'
+        'reveriefoundry:robe_boots_template',
+        'reveriefoundry:flamberge_blueprint',
+        'reveriefoundry:furioso_blueprint',
+        'reveriefoundry:astrape_blueprint',
+        'reveriefoundry:autoloader_crossbow_blueprint',
+        'reveriefoundry:seeking_bow_blueprint',
+        'reveriefoundry:meat_shredder_blueprint',
+        'reveriefoundry:annihilator_blueprint',
+        'reveriefoundry:soul_spear_blueprint',
+        'reveriefoundry:infernal_forge_blueprint',
+        'reveriefoundry:flame_bulwark_blueprint',
+        'reveriefoundry:spellbook_blueprint',
+        'reveriefoundry:staff_blueprint',
+        'reveriefoundry:spellbook_template',
+        'reveriefoundry:staff_template'
+
     ].forEach(item => event.remove({ output: item }))
 
 

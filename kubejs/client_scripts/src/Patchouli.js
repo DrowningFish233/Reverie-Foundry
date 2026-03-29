@@ -1,7 +1,6 @@
 /**
  * 修复书籍不重载
  */
-const $ClientBookRegistry = Java.loadClass('vazkii.patchouli.client.book.ClientBookRegistry')
 
 ClientEvents.loggedIn(event => {
     try {

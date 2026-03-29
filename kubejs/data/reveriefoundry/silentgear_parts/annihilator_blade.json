@@ -1,0 +1,21 @@
+{
+  "type": "silentgear:core",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "reveriefoundry:annihilator_blade"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.reveriefoundry.annihilator_blade"
+    },
+    "name_prefix": "part.reveriefoundry.annihilator_blade.prefix"
+  },
+  "gear_type": "reveriefoundry:annihilator",
+  "part_type": "silentgear:main",
+  "properties": {
+    "repair_efficiency": 1.0
+  }
+}

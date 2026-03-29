@@ -1,3 +1,4 @@
+// priority: 100
 /**
  * 为实体添加誓言效果
  * @param {Internal.LivingEntity} entity 目标实体

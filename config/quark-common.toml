@@ -15,13 +15,6 @@
 	"Allowed Screens" = []
 	#If set to true, the 'Allowed Screens' option will work as a Blacklist rather than a Whitelist. WARNING: Use at your own risk as some mods may not support this.
 	"Use Screen List Blacklist" = false
-	#If 'true' and TerraBlender is present, Quark will add a TerraBlender region. The region will contain vanilla biomes and the Glimmering Weald.
-	"Terrablender Add Region" = true
-	#Quark will set this weight for its TerraBlender region.
-	"Terrablender Region Weight" = 1
-	#If 'true', Quark will modify the `minecraft:overworld` MultiNoiseBiomeSourceParameterList preset, even when Terrablender is installed.
-	#This will have various knock-on effects but might make the Weald more common, or appear closer to modded biomes. Who knows?
-	"Terrablender Modify Vanilla Anyway" = false
 	#Set to false to disable the popup message telling you that you can config quark in the q menu
 	"Enable Onboarding" = false
 	#The amount of slots the chest button system should seek when trying to figure out if a container should be eligible for them.
@@ -1138,7 +1131,7 @@
 		#Chance for logs to spawn on water
 		"On Water Chance" = 0.1
 		"Sparse Biome Rarity" = 12
-		#Tags that define which biomes can have which wood types
+		#Tags that define which biomes can have which wood types. These are all biome tags under the Quark namespace
 		"Biome Tags" = ["has_fallen_acacia=minecraft:acacia_log", "has_fallen_birch=minecraft:birch_log", "has_fallen_cherry=minecraft:cherry_log", "has_fallen_dark_oak=minecraft:dark_oak_log", "has_fallen_jungle=minecraft:jungle_log", "has_fallen_mangrove=minecraft:mangrove_log", "has_fallen_oak=minecraft:oak_log", "has_fallen_spruce=minecraft:spruce_log"]
 
 		[world.fallen_logs.dimensions]
@@ -1529,7 +1522,7 @@
 
 [client]
 	"Auto Walk Keybind" = false
-	"Back Button Keybind" = true
+	"Back Button Keybind" = false
 	"Buckets Show Inhabitants" = true
 	Camera = true
 	"Chest Searching" = true
@@ -1779,7 +1772,7 @@
 [oddities]
 	Backpack = true
 	Crate = true
-	Magnets = true
+	Magnets = false
 	"Matrix Enchanting" = true
 	Pipes = true
 	"Tiny Potato" = true

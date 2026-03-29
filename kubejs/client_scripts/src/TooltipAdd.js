@@ -334,6 +334,12 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.material_patchouli_generator.title.3', 'yellow'),
         ]
     },
+    'kubejs:fish': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.fish.title.1', 'yellow'),
+            TooltipUtils.simpleText('tooltip.drowning_fish.title.3', 'yellow'),
+        ]
+    },
     'kubejs:lightingball': {
         lines: [
             TooltipUtils.simpleText('tooltip.alcohol.title', 'yellow'),
@@ -480,6 +486,13 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.common.brick', 'yellow'),
             TooltipUtils.simpleText('tooltip.common.brick.2', 'yellow'),
         ]
+    },
+    'kubejs:moonpools': {
+        lines: [
+            TooltipUtils.simpleText('message.kubejs.moonpools', 'dark_purple'),
+            TooltipUtils.simpleText('message.kubejs.moonpools.2', 'dark_purple'),
+            TooltipUtils.simpleText('tooltip.rf', 'pink_dye'),
+        ]
     }
 };
 
@@ -534,7 +547,6 @@ const commonTooltips = {
     'create:wrench': TooltipUtils.simpleText('tooltip.common.wrench_compatibility', 'blue'),
     'refinedstorage:wrench': TooltipUtils.simpleText('tooltip.common.wrench_compatibility', 'blue'),
     'irons_spellbooks:mithril_weave': TooltipUtils.simpleText('tooltip.common.mithril_weave', 'yellow'),
-    'eccentrictome:tome': TooltipUtils.simpleText('tooltip.common.tome_usage', 'yellow'),
     'irons_spellbooks:misery': TooltipUtils.simpleText('tooltip.common.misery_quote', 'dark_purple'),
     'kubejs:meat': TooltipUtils.simpleText('tooltip.common.meat_source', 'green'),
     'kubejs:corruption': TooltipUtils.simpleText('tooltip.common.corruption_source', 'green'),

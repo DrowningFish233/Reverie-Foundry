@@ -1,0 +1,25 @@
+{
+  "type": "silentgear:core",
+  "crafting": {
+    "can_salvage": true,
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "reveriefoundry:flamberge_blade"
+    }
+  },
+  "display": {
+    "name": {
+      "translate": "item.reveriefoundry.flamberge_blade"
+    }
+  },
+  "gear_type": "reveriefoundry:flamberge",
+  "part_type": "silentgear:main",
+  "properties": {
+    "repair_efficiency": 1.0,
+    "attack_damage": 6.0,
+    "attack_speed": {
+      "operation": "ADD",
+      "value": 1
+    }
+  }
+}

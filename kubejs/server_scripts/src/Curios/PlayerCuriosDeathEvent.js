@@ -9,18 +9,25 @@ EntityEvents.death(event => {
         for (let slot = 0; slot < curios.getSlots(); slot++) {
             const item = curios.getStackInSlot(slot);
             if (item && curios_player_death[item.id]) {
-                curios_player_death[item.id](event, curios, slot, item);
+                curios_player_death[item.id](player, event, curios, slot, item);
             }
         }
     });
+
 });
 
 const curios_player_death = {
-    'kubejs:none_curios': function (event, curios, slot, item) {
+    'kubejs:none_curios': function (player, event, curios, slot, item) {
         if (!kubejs_player.some(ctx => ctx == event.entity.getType())) {
             return;
         }
         curios.setStackInSlot(slot, Item.of('minecraft:air'));
+    },
+    'kubejs:baptism_of_violet': function (player, event, curios, slot, item) {
+        if (!kubejs_player.some(ctx => ctx == event.entity.getType())) {
+            return;
+        }
+        player.setGameMode($GameType.SPECTATOR);
     }
 };
 

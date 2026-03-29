@@ -1,0 +1,98 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "crafting": {
+    "can_salvage": true,
+    "categories": [
+      "gem",
+      "advanced"
+    ],
+    "gear_type_blacklist": [],
+    "ingredient": {
+      "item": "kubejs:moonpools"
+    },
+    "part_substitutes": {}
+  },
+  "display": {
+    "color": "#6d9ff4",
+    "main_texture_type": "HIGH_CONTRAST",
+    "name": {
+      "translate": "material.silentgear.kubejs:moonpools"
+    },
+    "name_prefix": ""
+  },
+  "properties": {
+    "silentgear:main": {
+      "armor": 29.0,
+      "armor/boots": 6.0,
+      "armor/chestplate": 11.0,
+      "armor/helmet": 6.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 50.0,
+      "armor_toughness": 14.0,
+      "attack_damage": 7.0,
+      "attack_speed": 0.2,
+      "attack_reach": 0.2,
+      "charging_value": 1.3,
+      "draw_speed": 0.2,
+      "durability": 2480.0,
+      "enchantment_value": 26.0,
+      "harvest_speed": 12.0,
+      "harvest_tier": {
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_allthemodium_tools",
+        "level_hint": "5",
+        "name": "allthemodium"
+      },
+      "knockback_resistance": 0.1,
+      "magic_armor": 29.0,
+      "magic_damage": 0.0,
+      "projectile_accuracy": 1.1,
+      "projectile_speed": 1.5,
+      "ranged_damage": 3.0,
+      "rarity": 140.0,
+      "spell_power": 0.05,
+      "repair_value": 0.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:moonpools"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:moonpools"
+        }
+      ]
+    },
+    "silentgear:tip": {
+      "durability": {
+        "operation": "ADD",
+        "value": 416.0
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 4.0
+      },
+      "harvest_speed": {
+        "operation": "ADD",
+        "value": 5.0
+      },
+      "mana_regen": {
+        "operation": "ADD",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:moonpools"
+        }
+      ]
+    }
+  }
+}

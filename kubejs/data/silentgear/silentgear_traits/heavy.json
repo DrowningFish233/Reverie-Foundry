@@ -12,46 +12,7 @@
     {
       "type": "silentgear:attribute",
       "attribute_modifiers": {
-        "armor/chest": [
-          {
-            "attribute": "minecraft:generic.movement_speed",
-            "operation": "add_multiplied_base",
-            "values": [
-              -0.01,
-              -0.02,
-              -0.03,
-              -0.04,
-              -0.05
-            ]
-          }
-        ],
-        "armor/feet": [
-          {
-            "attribute": "minecraft:generic.movement_speed",
-            "operation": "add_multiplied_base",
-            "values": [
-              -0.01,
-              -0.02,
-              -0.03,
-              -0.04,
-              -0.05
-            ]
-          }
-        ],
-        "armor/head": [
-          {
-            "attribute": "minecraft:generic.movement_speed",
-            "operation": "add_multiplied_base",
-            "values": [
-              -0.01,
-              -0.02,
-              -0.03,
-              -0.04,
-              -0.05
-            ]
-          }
-        ],
-        "armor/legs": [
+        "all/any": [
           {
             "attribute": "minecraft:generic.movement_speed",
             "operation": "add_multiplied_base",

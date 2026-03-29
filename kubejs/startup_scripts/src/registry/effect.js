@@ -347,9 +347,11 @@ StartupEvents.registry('mob_effect', event => {
     event.create('heart_of_darkness')
         .beneficial()
         .color("red")
-    event.create('verdun')
-        .beneficial()
-        .color("red")
+    /*
+event.create('verdun')
+    .beneficial()
+    .color("red")
+    */
     event.create('dragonsteel_lightning_ingot_attack')
         .beneficial()
         .color("aqua")
@@ -454,10 +456,6 @@ StartupEvents.registry('mob_effect', event => {
     event.create('gold_body')
         .beneficial()
         .color("gold")
-    event.create('echo_shard')
-        .beneficial()
-        .color("green")
-
     event.create('ponder')
         .color(0x000000)
         .harmful()
@@ -1318,5 +1316,7 @@ event.create('purple_haze_attack')
     event.create('grudge')
         .beneficial()
     event.create('replay')
+        .beneficial()
+    event.create('evening_primrose')
         .beneficial()
 });

@@ -1,3 +1,4 @@
+// priority: 100
 /**
  * 获取装备的属性数据
  * @param {Internal.ItemStack} gear 装备物品堆栈
@@ -41,7 +42,7 @@ function fu_getManaRegen(gear) {
  * @returns {number} 契约限制加成值（保留两位小数）
  */
 function fu_getGeasLimitBonus(gear) {
-    return $GearData.getGeasLimitBonus(gear);
+    return $RFGearHalper.getGeasLimitBonus(gear);
 }
 
 /**
@@ -50,7 +51,7 @@ function fu_getGeasLimitBonus(gear) {
  * @returns {number} 治疗加成倍数
  */
 function fu_getHealingReceivedMultiplier(gear) {
-    return $GearData.getHealingReceivedMultiplier(gear);
+    return $RFGearHalper.getHealingReceivedMultiplier(gear);
 }
 
 /**
