@@ -23,12 +23,12 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 30.0,
+      "armor": 28.0,
       "armor_toughness": 16,
-      "armor/boots": 3.0,
-      "armor/chestplate": 7.0,
-      "armor/helmet": 4.0,
-      "armor/leggings": 6.0,
+      "armor/boots": 5.0,
+      "armor/chestplate": 9.0,
+      "armor/helmet": 6.0,
+      "armor/leggings": 8.0,
       "armor_durability": 40.0,
       "attack_damage": 12.0,
       "attack_speed": -0.2,

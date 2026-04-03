@@ -35,7 +35,7 @@
 			"charging_value": 1,
 			"draw_speed": 2,
 			"durability": 800,
-			"ranged_damage": 2,
+			"ranged_damage": 5,
 			"projectile_accuracy": 2,
 			"projectile_speed": 3,
 			"enchantment_value": 4,

@@ -274,16 +274,48 @@ function RewardBuilder() {
     }
 
     /**
-     * 设置物品奖励
+     * 设置单个物品奖励
      * @param {string} item 物品ID
      * @param {number} count 数量
      * @returns {RewardBuilder}
      */
     this.item = function (item, count) {
         this.reward = {
-            type: "gateways:item",
-            item: item,
-            count: count || 1
+            type: "gateways:stack",
+            stack: {
+                id: item,
+                count: count || 1
+            }
+        }
+        return this
+    }
+
+    /**
+     * 设置多个物品奖励
+     * @param {Array} items 物品数组，格式：[[item, count], [item, count]] 或 [{id: "xxx", count: n}, ...]
+     * @returns {RewardBuilder}
+     */
+    this.itemList = function (items) {
+        var stacks = []
+
+        if (items.length > 0) {
+            if (Array.isArray(items[0])) {
+                // 格式：[[item1, count1], [item2, count2]]
+                for (var i = 0; i < items.length; i++) {
+                    stacks.push({
+                        id: items[i][0],
+                        count: items[i][1]
+                    })
+                }
+            } else {
+                // 格式：[{id: "xxx", count: n}, ...]
+                stacks = items
+            }
+        }
+
+        this.reward = {
+            type: "gateways:stack_list",
+            stacks: stacks
         }
         return this
     }
@@ -292,13 +324,17 @@ function RewardBuilder() {
      * 设置战利品表奖励
      * @param {string} lootTable 战利品表
      * @param {number} rolls 抽取次数
+     * @param {string} desc 描述
      * @returns {RewardBuilder}
      */
-    this.lootTable = function (lootTable, rolls) {
+    this.lootTable = function (lootTable, rolls, desc) {
         this.reward = {
             type: "gateways:loot_table",
             loot_table: lootTable,
             rolls: rolls || 1
+        }
+        if (desc) {
+            this.reward.desc = desc
         }
         return this
     }

@@ -1,0 +1,128 @@
+{
+	"type": "gateways:normal",
+	"size": "small",
+	"color": "#0098BA",
+	"waves": [
+		{
+			"max_wave_time": 400,
+			"setup_time": 100,
+			"entities": [
+				{
+					"type": "gateways:standard",
+					"count": 4,
+					"entity": "iceandfire:dread_thrall"
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:stack",
+					"stack": {
+						"id": "iceandfire:dread_shard",
+						"count": 4
+					}
+				}
+			]
+		},
+		{
+			"max_wave_time": 800,
+			"setup_time": 140,
+			"entities": [
+				{
+					"type": "gateways:standard",
+					"count": 4,
+					"entity": "iceandfire:dread_ghoul"
+				},
+				{
+					"type": "gateways:standard",
+					"count": 4,
+					"entity": "iceandfire:dread_beast"
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:stack",
+					"stack": {
+						"id": "iceandfire:dread_shard",
+						"count": 12
+					}
+				}
+			]
+		},
+		{
+			"max_wave_time": 1600,
+			"setup_time": 160,
+			"entities": [
+				{
+					"type": "gateways:standard",
+					"count": 6,
+					"entity": "iceandfire:dread_scuttler"
+				},
+				{
+					"type": "gateways:standard",
+					"count": 6,
+					"entity": "iceandfire:dread_knight"
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:stack",
+					"stack": {
+						"id": "iceandfire:dread_shard",
+						"count": 12
+					}
+				}
+			]
+		},
+		{
+			"max_wave_time": 3200,
+			"setup_time": 200,
+			"entities": [
+				{
+					"type": "gateways:standard",
+					"count": 4,
+					"entity": "iceandfire:dread_knight"
+				},
+				{
+					"type": "gateways:standard",
+					"count": 4,
+					"entity": "iceandfire:dread_horse"
+				},
+				{
+					"type": "gateways:standard",
+					"count": 3,
+					"entity": "iceandfire:dread_lich"
+				}
+			],
+			"rewards": [
+				{
+					"type": "gateways:stack",
+					"stack": {
+						"id": "kubejs:soul_of_night",
+						"count": 8
+					}
+				}
+			]
+		}
+	],
+	"rewards": [
+		{
+			"type": "gateways:stack_list",
+			"stacks": [
+				{
+					"id": "kubejs:soul_of_night",
+					"count": 16
+				},
+				{
+					"id": "kubejs:biomass_liquid",
+					"count": 4
+				}
+			]
+		},
+		{
+			"type": "gateways:loot_table",
+			"loot_table": "kubejs:chests/easy",
+			"rolls": 10,
+			"desc": "rewards.gateways.loot_table.easy"
+		}
+	]
+}

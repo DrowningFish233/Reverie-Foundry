@@ -110,28 +110,51 @@ const GatewayConfigs = {
         id: "kubejs",
         config: function (gateway) {
             gateway.setSize("small")
-                .setColor("#FFFF84")
-                .addWave(function (/** @type {WaveBuilder} */wave) {
-                    wave.maxWaveTime(800)
+                .setColor("#0098BA")
+                .addWave(function (/** @type {WaveBuilder} */ wave) {
+                    wave.maxWaveTime(400)
                         .setupTime(100)
-                        .addEntity("cataclysm:coralssus", 3)
-                        .addReward(function (/** @type {RewardBuilder} */reward) {
-                            reward.entityLoot("minecraft:blaze", 10)
+                        .addEntity('iceandfire:dread_thrall', 4)
+                        .addReward(function (reward) {
+                            reward.item('iceandfire:dread_shard', 4)
                         })
                 })
-                .addWave(function (/** @type {WaveBuilder} */wave) {
+                .addWave(function (/** @type {WaveBuilder} */ wave) {
                     wave.maxWaveTime(800)
-                        .setupTime(150)
-                        .addEntity("minecraft:blaze", 4)
-                        .addAttributeModifier("minecraft:generic.max_health", "add_multiplied_total", 0.15)
-                        .addAttributeModifier("minecraft:generic.armor", "add_value", 2.0)
-                        .addAttributeModifier("minecraft:generic.attack_damage", "add_multiplied_total", 0.15)
-                        .addReward(function (/** @type {RewardBuilder} */ reward) {
-                            reward.entityLoot("minecraft:blaze", 15)
+                        .setupTime(140)
+                        .addEntity("iceandfire:dread_ghoul", 4)
+                        .addEntity('iceandfire:dread_beast', 4)
+                        .addReward(function (reward) {
+                            reward.item('iceandfire:dread_shard', 12)
                         })
+                })
+                .addWave(function (/** @type {WaveBuilder} */ wave) {
+                    wave.maxWaveTime(1600)
+                        .setupTime(160)
+                        .addEntity('iceandfire:dread_scuttler', 6)
+                        .addEntity('iceandfire:dread_knight', 6)
+                        .addReward(function (reward) {
+                            reward.item('iceandfire:dread_shard', 12)
+                        })
+                })
+                .addWave(function (/** @type {WaveBuilder} */ wave) {
+                    wave.maxWaveTime(3200)
+                        .setupTime(200)
+                        .addEntity('iceandfire:dread_knight', 4)
+                        .addEntity("iceandfire:dread_horse", 4)
+                        .addEntity("iceandfire:dread_lich", 3)
+                        .addReward(function (/** @type {RewardBuilder} */reward) {
+                            reward.item('kubejs:soul_of_night', 8)
+                        })
+                })
+                .addReward(function (/** @type {RewardBuilder} */reward) {
+                    reward.itemList([
+                        ['kubejs:soul_of_night', 16],
+                        ['kubejs:biomass_liquid', 4]
+                    ])
                 })
                 .addReward(function (/** @type {RewardBuilder} */ reward) {
-                    reward.entityLoot("minecraft:blaze", 75)
+                    reward.lootTable('kubejs:chests/easy', 3, 'rf.rewards.gateways.loot_table.easy')
                 })
         }
     }

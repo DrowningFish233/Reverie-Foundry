@@ -101,6 +101,11 @@ EntityEvents.checkSpawn(event => {
         entity.setAttributeBaseValue('minecraft:generic.attack_damage', currentAttack * finalMultipliers.attack);
     }
 
+    if (entity.attributes.hasAttribute('apothic_attributes:arrow_damage')) {
+        let currentAttack = entity.getAttribute('apothic_attributes:arrow_damage').getValue();
+        entity.setAttributeBaseValue('apothic_attributes:arrow_damage', currentAttack * finalMultipliers.attack);
+    }
+
     if (entity.attributes.hasAttribute('minecraft:generic.armor')) {
         let currentArmor = entity.getAttribute('minecraft:generic.armor').getValue();
         entity.setAttributeBaseValue('minecraft:generic.armor', currentArmor * finalMultipliers.armor);
