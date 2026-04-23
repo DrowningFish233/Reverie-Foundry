@@ -10,6 +10,7 @@ autocraftingNotification = true
 autocraftingPreviewStyle = "LIST"
 debug = false
 tenthAnniversaryCape = false
+requireEnergy = true
 
 [cable]
 	# Default: 0
@@ -18,7 +19,7 @@ tenthAnniversaryCape = false
 
 [controller]
 	# Default: 1000
-	# Range: 0 ~ 9223372036854775807
+	# Range: 1 ~ 9223372036854775807
 	energyCapacity = 5000
 
 [diskDrive]
@@ -172,7 +173,7 @@ tenthAnniversaryCape = false
 
 [wirelessGrid]
 	# Default: 1000
-	# Range: 0 ~ 9223372036854775807
+	# Range: 1 ~ 9223372036854775807
 	energyCapacity = 1000
 	# Default: 5
 	# Range: 0 ~ 9223372036854775807
@@ -209,7 +210,7 @@ tenthAnniversaryCape = false
 
 [portableGrid]
 	# Default: 1000
-	# Range: 0 ~ 9223372036854775807
+	# Range: 1 ~ 9223372036854775807
 	energyCapacity = 1000
 	# Default: 5
 	# Range: 0 ~ 9223372036854775807
@@ -268,7 +269,7 @@ tenthAnniversaryCape = false
 
 [wirelessAutocraftingMonitor]
 	# Default: 1000
-	# Range: 0 ~ 9223372036854775807
+	# Range: 1 ~ 9223372036854775807
 	energyCapacity = 1000
 	# Default: 5
 	# Range: 0 ~ 9223372036854775807

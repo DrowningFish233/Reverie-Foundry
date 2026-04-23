@@ -202,3 +202,7 @@
 	lichKingUndeadDurationPerLevel = 800
 	#[Zoophony] If Disabled, it will not take effect.
 	zoophonyEnabled = true
+	#[Mana Mending] Durability Recovered per 100 Mana
+	# Default: 2.0
+	# Range: 0.01 ~ 2.147483647E9
+	manaMendingCoefficient = 2.0

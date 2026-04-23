@@ -19,8 +19,10 @@
 	"Enable Onboarding" = false
 	#The amount of slots the chest button system should seek when trying to figure out if a container should be eligible for them.
 	"Chest Button Slot Target" = 27
-	#Set this to false to not generate the Quark Programmer Art resource pack
+	#Set this to false to not show the Quark Programmer Art resource pack in the resource pack selection screen
 	"Generate Programmer Art" = false
+	#Set this to false to prevent Quark from ever disabling any vanilla data files. This will break certain modules, so only do this if you know what you're doing!
+	"Quark V D O" = true
 
 	[general.chest_button_offsets]
 		"Player X" = 0

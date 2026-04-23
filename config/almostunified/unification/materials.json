@@ -42,7 +42,9 @@
   ],
   "ignored_tags": [],
   "ignored_items": [
-    "eternal_starlight_vo:*"
+    "eternal_starlight_vo:*",
+    "silentgear:crimson_iron_ore",
+    "silentgear:blackstone_crimson_iron_ore"
   ],
   "ignored_recipe_types": [
     "cucumber:shaped_tag"

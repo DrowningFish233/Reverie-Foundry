@@ -6,8 +6,6 @@
 	"Title color" = "RED"
 	#Every how many ticks the updating of the structures in which the player is located is required
 	"Tick Structure Updating" = 1
-	#Show logs related to dev things!
-	"Enable Logs" = true
 	#Show warning when a stage is not associated to any restriction
 	"Enable Warning" = true
 	#Choose if simple restrictions must be read in world/server folder or config folder
@@ -19,3 +17,13 @@
 	"Update file After X Additions" = 5
 	#Enable test-mode used by developers to check if all restrictions work as expected
 	"Enable Test Mode" = false
+
+	["Configs for AStages Mod".Dev]
+		#Show logs related to dev things!
+		"Enable Dev Logs" = false
+		#Show spawn types in logs for every entity type that is generated via FinalizeSpawnEvent
+		"Enable Mob Related Logs" = false
+		#Whitelist spawn types showed in logs if `Enable Spawn Types Logs` is true (if empty, all types will be logged). Allowed values: [NATURAL, CHUNK_GENERATION, SPAWNER, STRUCTURE, BREEDING, MOB_SUMMONED, JOCKEY, EVENT, CONVERSION, REINFORCEMENT, TRIGGERED, BUCKET, SPAWN_EGG, COMMAND, DISPENSER, PATROL, TRIAL_SPAWNER]
+		"Whitelist Spawn Types" = []
+		#Whitelist entity types showed in logs if `Enable Spawn Types Logs` is true (if empty, all types will be logged). (es: 'minecraft:zombie')
+		"Whitelist Entity Types" = []

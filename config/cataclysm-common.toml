@@ -326,7 +326,7 @@
 		#Brontes Storm Damage
 		# Default: 10.0
 		# Range: 0.0 ~ 1000000.0
-		brontes_storm_damage =30.0
+		brontes_storm_damage = 30.0
 		#Brontes Storm Area Damage
 		# Default: 1.0
 		# Range: 0.0 ~ 1000000.0
@@ -426,7 +426,7 @@
 			#Dps Cap
 			# Default: 13.0
 			# Range: 1.0 ~ 1000000.0
-			dps_cap =2000
+			dps_cap = 2000
 			#DPS Limit Time
 			# Default: 20
 			# Range: 1 ~ 100
@@ -496,7 +496,7 @@
 
 	[mobs.netherite_monstrosity]
 		#Lava bomb Magazine
-		# Default: 15
+		# Default: 3
 		# Range: 0 ~ 20
 		lava_bomb_magazine = 15
 		#Lava bomb Amount
