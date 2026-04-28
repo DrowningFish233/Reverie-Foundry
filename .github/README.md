@@ -1,5 +1,5 @@
 # ⭐Reverie Foundry⭐
-
+https://www.curseforge.com/minecraft/modpacks/reverie-foundry
 🟢这里是存放<遐想铸造厂>代码的地方
 ### 
 <img width="500" height="500" alt="minecraft_title1" src="https://github.com/user-attachments/assets/ec1389c0-f29a-43d0-b4fb-7f717d553e03" />
