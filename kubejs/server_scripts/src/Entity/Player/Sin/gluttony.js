@@ -1,14 +1,34 @@
-function gluttony(event) {
-    const { source, entity } = event;
-    let attacker = source.player || source.entity;
+// priority: 10
+// 暴食特质
+FoodEatenevents.register("gluttony", function (event, player, magicData) {
+    let isGLUTTONY = player.persistentData.getInt(sins.GLUTTONY) || 0;
+    if (isGLUTTONY <= 0) return;
 
-    if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !attacker.hasEffect("kubejs:gluttony")) {
-        return;
+    let foodProperties = event.item.getFoodProperties(player);
+    if (!foodProperties) return;
+
+    let nutrition = foodProperties.nutrition() || 0;
+    let saturation = foodProperties.saturation() || 0;
+    let currentHealth = player.getHealth();
+    let maxHealth = player.getMaxHealth();
+    let missingHealth = maxHealth - currentHealth;
+
+    if (currentHealth < maxHealth) {
+        let healAmount = Math.min(missingHealth, nutrition * 2);
+        player.heal(healAmount);
+    }
+    else {
+        $RFUtils.applyRandomBuff(player, 600, 1);
     }
 
-    let existingEffect = attacker.getEffect("kubejs:gluttony");
-    let level = existingEffect ? existingEffect.getAmplifier() + 1 : 0;
+    let nearbyPlayers = player.level.getPlayers();
+    for (let nearbyPlayer of nearbyPlayers) {
+        if (nearbyPlayer !== player && player.distanceToEntity(nearbyPlayer) <= 5) {
+            let newFoodLevel = nearbyPlayer.getFoodLevel() + nutrition;
+            nearbyPlayer.setFoodLevel(Math.min(20, newFoodLevel));
 
-    new_damage(event, STAGE.MULTIPLY, (level * 0.5));
-
-}
+            let newSaturation = nearbyPlayer.getSaturationLevel() + saturation;
+            nearbyPlayer.setSaturationLevel(Math.min(20, newSaturation));
+        }
+    }
+});

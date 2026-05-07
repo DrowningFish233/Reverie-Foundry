@@ -103,8 +103,9 @@ const $CooldownManager = {
             "fire_dragon_breath_cooldown",
             "ice_dragon_breath_cooldown",
             "wrath_grudge_cooldown",
-            "wrath_skill_cooldown",
-            "lust_skill_cooldown"
+            "lust_skill_cooldown",
+            "sloth_damage_cooldown",
+            "envy_steal_cooldown"
         ];
 
         // 清理冷却数据

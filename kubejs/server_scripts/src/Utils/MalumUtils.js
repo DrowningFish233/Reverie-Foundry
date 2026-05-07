@@ -1,3 +1,5 @@
+//priority: 100
+
 /**
  * 掉落灵魂
  * @param {Internal.LivingEntity} target - 要掉落灵魂的目标生物
@@ -185,3 +187,75 @@ function fu_spawnCustomSpirits(target, items, collector, level) {
     spawner.spawnSpirits(level);
 }
 
+
+/**
+ * 判断实体是否拥有灵魂护盾（未耗尽）
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {boolean} true=护盾存在且未耗尽，false=无护盾或已耗尽
+ */
+function hasSoulWard(entity) {
+    return $RFUtils.hasSoulWard(entity);
+}
+
+/**
+ * 获取实体的当前灵魂护盾值
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 当前护盾值，如果没有护盾则返回0
+ */
+function getCurrentSoulWard(entity) {
+    return $RFUtils.getCurrentSoulWard(entity);
+}
+
+/**
+ * 获取实体的灵魂护盾容量（最大值）
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 护盾容量
+ */
+function getSoulWardCapacity(entity) {
+    return $RFUtils.getSoulWardCapacity(entity);
+}
+
+/**
+ * 获取实体的灵魂护盾完整性
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 完整性值
+ */
+function getSoulWardIntegrity(entity) {
+    return $RFUtils.getSoulWardIntegrity(entity);
+}
+
+/**
+ * 获取灵魂护盾的剩余百分比
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 0.0 - 1.0 之间的百分比
+ */
+function getSoulWardPercentage(entity) {
+    return $RFUtils.getSoulWardPercentage(entity);
+}
+
+/**
+ * 判断灵魂护盾是否已满
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {boolean} true=已满，false=未满或无护盾
+ */
+function isSoulWardFull(entity) {
+    return $RFUtils.isSoulWardFull(entity);
+}
+
+/**
+ * 判断灵魂护盾是否处于冷却中
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {boolean} true=冷却中，false=可恢复或无护盾
+ */
+function isSoulWardOnCooldown(entity) {
+    return $RFUtils.isSoulWardOnCooldown(entity);
+}
+
+/**
+ * 获取灵魂护盾冷却剩余时间（刻）
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 剩余冷却刻数
+ */
+function getSoulWardCooldownTicks(entity) {
+    return $RFUtils.getSoulWardCooldownTicks(entity);
+}

@@ -200,19 +200,6 @@
 				id: "4CB25FFD3173ADD6"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["54207C49530C50BC"]
-			icon: {
-				id: "minecraft:emerald"
-			}
-			id: "360AE4AB3B482FAC"
-			tasks: [{
-				id: "2D2AAB7B62B6E1EC"
-				type: "checkmark"
-			}]
 			x: 1.0d
 			y: 2.0d
 		}
@@ -220,7 +207,6 @@
 			dependencies: [
 				"0594FF6909227B41"
 				"13AFD3688361872A"
-				"360AE4AB3B482FAC"
 			]
 			icon: {
 				id: "kubejs:gold_crown"

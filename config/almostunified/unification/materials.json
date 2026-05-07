@@ -9,11 +9,11 @@
     "fruitsdelight",
     "farmersdelight",
     "extradelight",
+    "hazennstuff",
     "silentgear",
     "silentgems",
     "biomesoplenty",
-    "alshanex_familiars",
-    "hazennstuff"
+    "alshanex_familiars"
   ],
   "priority_overrides": {},
   "stone_variants": [
@@ -38,11 +38,13 @@
     "c:storage_blocks/raw_{material}",
     "c:storage_blocks/{material}",
     "c:wires/{material}",
-    "kubejs:repeat/spider_fang"
+    "kubejs:repeat/spider_fang",
+    "kubejs:repeat/nether_star_fragment"
   ],
   "ignored_tags": [],
   "ignored_items": [
     "eternal_starlight_vo:*",
+    "alshanex_familiars:spider_fang",
     "silentgear:crimson_iron_ore",
     "silentgear:blackstone_crimson_iron_ore"
   ],

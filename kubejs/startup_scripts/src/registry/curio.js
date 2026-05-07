@@ -384,5 +384,55 @@ StartupEvents.registry('item', event => {
         .tag("curios:accessory")
         .unstackable()
         .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
+    // 暴怒之印
+    event.create("mark_of_wrath")
+        .texture('kubejs:item/curios/mark_of_wrath')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
+    // 色欲之链
+    event.create("chain_of_lust")
+        .texture('kubejs:item/curios/chain_of_lust')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
+    // 怠惰之坠
+    event.create("pendant_of_sloth")
+        .texture('kubejs:item/curios/pendant_of_sloth')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
+    // 暴食之环
+    event.create("ring_of_gluttony")
+        .texture('kubejs:item/curios/ring_of_gluttony')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
+    // 忧郁之石
+    event.create("stone_of_melancholy")
+        .texture('kubejs:item/curios/stone_of_melancholy')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
+    // 傲慢之冠
+    event.create("crown_of_pride")
+        .texture('kubejs:item/curios/crown_of_pride')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
+    // 嫉妒之瞳
+    event.create("eye_of_envy")
+        .texture('kubejs:item/curios/eye_of_envy')
+        .tag("curios:accessory")
+        .unstackable()
+        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
 });
 

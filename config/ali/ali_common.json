@@ -8,28 +8,24 @@
       "icon": "minecraft:emerald_block"
     }
   ],
-  "configVersion": 1,
+  "configVersion": 2,
   "blockCategories": [
     {
-      "classes": [
-        "net.minecraft.world.level.block.BushBlock"
+      "blocks": [
+        "#minecraft:crops"
       ],
       "key": "ali:plant_loot",
       "icon": "minecraft:diamond_hoe"
     },
     {
-      "classes": [
-        "net.minecraft.world.level.block.Block"
-      ],
+      "blocks": [],
       "key": "ali:block_loot",
       "icon": "minecraft:diamond_pickaxe"
     }
   ],
   "entityCategories": [
     {
-      "classes": [
-        "net.minecraft.world.entity.Entity"
-      ],
+      "entityTypes": [],
       "key": "ali:entity_loot",
       "icon": "minecraft:skeleton_skull"
     }

@@ -138,58 +138,58 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"terra_entity:big_bones": true
-			"minecraft:glow_squid": true
-			"terra_entity:squirrel": true
-			"minecraft:illusioner": true
-			"terra_entity:anger_bones": true
-			"terra_entity:dark_caster": true
-			"terra_entity:devourer": true
-			"terra_entity:cursed_skull": true
-			"minecraft:zombie_villager": true
-			"minecraft:bee": true
-			"aquaculture:smallmouth_bass": false
-			"minecraft:spider": true
-			"aquaculture:gar": false
-			"terra_entity:giant_shelly": true
-			"minecraft:enderman": true
-			"terra_entity:blue_jay": true
-			"minecraft:squid": true
-			"terra_entity:cave_bat": true
-			"terra_entity:demon_eye": true
-			"minecraft:slime": true
-			"terra_entity:green_slime": true
-			"aquaculture:brown_trout": false
 			"aquaculture:perch": false
-			"terra_entity:big_muscle_anger_bones": true
-			"aquaculture:minnow": false
-			"terra_entity:corrupt_slime": true
-			"irons_spellbooks:necromancer": true
-			"aquaculture:bluegill": false
 			"alshanex_familiars:druid_pet": true
-			"minecraft:chicken": true
-			"minecraft:zombie": true
-			"terra_entity:yellow_slime": true
-			"terra_entity:pink_slime": true
-			"terra_entity:blue_slime": true
-			"minecraft:creeper": true
-			"terra_entity:big_anger_bones": true
-			"terra_entity:short_bones": true
-			"minecraft:drowned": true
-			"aquaculture:jellyfish": false
-			"terra_entity:red_slime": true
-			"irons_spellbooks:priest": true
+			"minecraft:slime": true
+			"terra_entity:demon_eye": true
+			"alshanex_familiars:hunter_pet": true
+			"terra_entity:squirrel": true
 			"aquaculture:carp": false
-			"terra_entity:bunny": true
-			"aquaculture:muskellunge": false
-			"minecraft:skeleton": true
-			"terra_entity:purple_slime": true
-			"minecraft:witch": true
+			"terra_entity:black_slime": true
+			"terra_entity:devourer": true
+			"terra_entity:big_muscle_anger_bones": true
+			"terra_entity:cursed_skull": true
+			"terra_entity:short_bones": true
+			"aquaculture:brown_trout": false
+			"terra_entity:giant_shelly": true
+			"minecraft:drowned": true
+			"terra_entity:corrupt_slime": true
+			"minecraft:spider": true
+			"terra_entity:big_bones": true
 			"terra_entity:big_helmet_anger_bones": true
 			"terra_entity:giant_worm": true
-			"terra_entity:black_slime": true
-			"alshanex_familiars:hunter_pet": true
+			"minecraft:bee": true
+			"minecraft:skeleton": true
+			"terra_entity:red_slime": true
+			"terra_entity:big_anger_bones": true
+			"terra_entity:blue_slime": true
+			"aquaculture:minnow": false
+			"minecraft:enderman": true
+			"terra_entity:bunny": true
+			"minecraft:squid": true
+			"irons_spellbooks:priest": true
+			"terra_entity:purple_slime": true
+			"minecraft:zombie_villager": true
+			"aquaculture:jellyfish": false
+			"minecraft:creeper": true
+			"terra_entity:pink_slime": true
+			"aquaculture:bluegill": false
+			"aquaculture:muskellunge": false
+			"minecraft:witch": true
+			"minecraft:glow_squid": true
+			"terra_entity:anger_bones": true
 			"minecraft:bat": true
+			"terra_entity:cave_bat": true
+			"minecraft:illusioner": true
+			"minecraft:zombie": true
+			"irons_spellbooks:necromancer": true
+			"aquaculture:gar": false
+			"aquaculture:smallmouth_bass": false
+			"minecraft:chicken": true
+			"terra_entity:blue_jay": true
+			"terra_entity:dark_caster": true
+			"terra_entity:yellow_slime": true
+			"terra_entity:green_slime": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

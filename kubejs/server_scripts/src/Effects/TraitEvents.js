@@ -2629,6 +2629,26 @@ RFTrait('kubejs:moonpools', 0)
     .register();
 
 
+//特性-月见草
+RFTrait('kubejs:fairies_care', 0)
+    .onTick(150, event => {
+        let player = event.player
+        if (!player) return
+        if (!isNight(player.getLevel())) return
+        if (!fu_hasTraitAnywhere(player, "kubejs:moonpools")) return;
+        player.heal(2)
+        player.potionEffects.add("kubejs:evening_primrose", 140, 0);
+        if (!fu_hasTraitMainHand(player, "kubejs:moonpools")) return;
+        fu_attemptDamageByHand(player.getMainHandItem(), -3, player, "MAIN_HAND")
+    })
+    .beforeHurt(event => {
+        let player = event.player
+        if (!player) return
+        if (!isNight(player.getLevel())) return
+        if (!player.hasEffect("kubejs:evening_primrose")) return
+        new_damage(event, STAGE.MULTIPLY, 0.75)
+    })
+    .register();
 
 /**
 * 总效果类层
@@ -2673,22 +2693,14 @@ function other_effect(event) {
     kubejs_arrow(event);
     chainmail_arrow(event);
     disillusionment(event);
-    sloth_2(event);
     protect(event);
 }
 
 /**
- * 七罪效果
+ * 七罪效果（已废弃）
  */
 function allthe_sin_event(event) {
     sanityAttack(event);
-    gluttony(event);
-    envy(event);
-    envy_damage(event);
-    gloom_hurt(event);
-    sloth(event);
-    sloth_morning_moodiness(event);
-    pride(event);
 }
 
 

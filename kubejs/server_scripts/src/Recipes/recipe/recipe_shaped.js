@@ -306,21 +306,6 @@ ServerEvents.recipes(event => {
     )
     */
     event.shaped(
-        Item.of('refinedstorage:creative_controller', 1),
-        [
-            'EBE',
-            'CAC',
-            'CDC'
-        ],
-        {
-            A: 'refinedstorage:controller',
-            B: 'cataclysm:mech_eye',
-            C: 'silentgear:nether_star_fragment',
-            D: 'kubejs:acril_ingot',
-            E: 'cataclysm:witherite_ingot'
-        }
-    )
-    event.shaped(
         Item.of('kubejs:foul_flesh', 8),
         [
             'AAA',
@@ -588,7 +573,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: '#extradelight:chilling_items',
         }
     )
@@ -601,7 +586,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: 'irons_spellbooks:arcane_essence'
         }
     )
@@ -614,7 +599,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: 'minecraft:prismarine_shard'
         }
     )
@@ -627,7 +612,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: '#c:ingots',
         }
     )
@@ -641,7 +626,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: '#minecraft:fishes',
         }
     )
@@ -654,7 +639,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: 'minecraft:wither_skeleton_skull',
         }
     )
@@ -667,7 +652,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: 'malum:refined_brilliance',
         }
     )
@@ -680,7 +665,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: 'farmersdelight:milk_bottle'
         }
     )
@@ -694,7 +679,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: 'minecraft:emerald'
         }
     )
@@ -707,7 +692,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: 'minecraft:potion'
         }
     )
@@ -734,7 +719,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: 'minecraft:redstone'
         }
     )
@@ -747,7 +732,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: '#c:sandstone/blocks'
         }
     )
@@ -760,7 +745,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: 'minecraft:blaze_powder'
         }
     )
@@ -773,7 +758,7 @@ ServerEvents.recipes(event => {
             'CCC'
         ],
         {
-            B: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
             C: '#kubejs:coral'
         }
     )
@@ -1153,7 +1138,7 @@ ServerEvents.recipes(event => {
         ],
         {
             B: 'kubejs:ashes_of_calamity',
-            A: 'silentgear:tyrian_steel_block',
+            A: 'silentgear:crude_mixer',
             C: 'minecraft:diamond',
             D: 'minecraft:beacon',
             E: 'silentgear:tyrian_steel_ingot'

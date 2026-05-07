@@ -2,11 +2,25 @@
   "logbegone": {
     "phrases": [
       "Disconnecting VANILLA connection attempt",
-      "Channels "
+      "Channels ",
+      "Found a broken recipe",
+      "failed to addRecipe",
+      "Missing element",
+      "has no attributes",
+      "Missing textures in model",
+      "Missing sound for event",
+      "HyperChargeLayer failed to apply",
+      "Reference map"
     ],
     "regex": [
       "Disconnecting VANILLA connection attempt",
-      "Channels "
+      "Channels ",
+      "Found a broken recipe, failed to addRecipe.*",
+      "Missing element ResourceKey\\[.*\\]",
+      "Entity \\w+:\\w+ has no attributes",
+      "Missing textures in model .*",
+      "Missing sound for event: \\S+",
+      "HyperChargeLayer failed to apply to \\S+"
     ]
   }
 }

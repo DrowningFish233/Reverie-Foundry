@@ -508,7 +508,8 @@ function cyclePartType(item, player, direction) {
     let nextTypeInfo = removableTypes[nextIndex]
 
     try {
-        $ModKitItem.setSelectedTypeKJS(item, nextTypeInfo.type)
+        $RFUtils.setModKitSelectedType(item, nextTypeInfo.type);
+
         return {
             success: true,
             direction: direction === "PREVIOUS" ? "上一个" : "下一个",

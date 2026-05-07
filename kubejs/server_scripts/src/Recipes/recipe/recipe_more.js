@@ -36,10 +36,10 @@ ServerEvents.recipes(event => {
 
 
     let singleItems = [
+        'silentgear:nether_star_fragment',
         'iceandfire:ambrosia',
         'productivemetalworks:plate_cast',
         'silentgear:super_mixer',
-        'silentgear:crude_mixer',
         'minecraft:lodestone',
         'irons_spellbooks:iron_spell_book',
         'irons_spellbooks:copper_spell_book',
@@ -63,10 +63,10 @@ ServerEvents.recipes(event => {
     ]
 
     singleItems.forEach(item => event.remove({ output: item }))
-
     event.remove({ output: '#alltheores:ore_hammers' })
     event.remove({ input: '#alltheores:ore_hammers' })
     event.remove({ id: 'hazennstuff:crafting/materials/deus_essence_from_nether_star' })
+    event.remove({ id: 'hazennstuff:crafting/materials/nether_star_fragment' })
     event.remove({ mod: 'productivelib' })
     event.smelting('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)
     event.smoking('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)

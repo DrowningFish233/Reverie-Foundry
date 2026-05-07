@@ -67,7 +67,7 @@ const $CooldownHelper = {
     gluttonyCooldown: (event, player) => {
         const isGLUTTONY = player.persistentData.getInt(sins.GLUTTONY) || 0;
         if (isGLUTTONY > 0) {
-            event.player.addItemCooldown(event.item, 20 * 300);
+            event.player.addItemCooldown(event.item, 20 * 30);
         }
     },
 
@@ -93,21 +93,28 @@ FoodEatenevents.unregister = function (name) {
     delete this[name];
 };
 
+//新版暴食
 FoodEatenevents.register("food", function (event, player, magicData) {
     const nutrition = getFoodNutrition(event.item, player);
     const Saturation = getFoodSaturation(event.item, player);
     $CooldownHelper.gluttonyCooldown(event, player);
 
-    if (nutrition >= 12) {
-        // 12饱食度以上食物增加8理智
-        const newSanity = $SanityHelper.updateSanity(player, 8);
-        $SanityHelper.checkSanityThreshold(player, newSanity);
-    } else if (nutrition >= 8) {
-        // 8饱食度以上食物增加4理智
-        const newSanity = $SanityHelper.updateSanity(player, 4);
-        $SanityHelper.checkSanityThreshold(player, newSanity);
-    }
+    const pData = player.persistentData;
+    const currentSanity = pData.getInt(sanity) || 0;
+    const isEroded = currentSanity === -45;
 
+    // 侵蚀状态下，普通食物不恢复理智
+    if (!isEroded) {
+        if (nutrition >= 14) {
+            // 14饱食度以上食物增加8理智
+            const newSanity = $SanityHelper.updateSanity(player, 8);
+            $SanityHelper.checkSanityThreshold(player, newSanity);
+        } else if (nutrition >= 10) {
+            // 10饱食度以上食物增加4理智
+            const newSanity = $SanityHelper.updateSanity(player, 4);
+            $SanityHelper.checkSanityThreshold(player, newSanity);
+        }
+    }
 });
 
 FoodEatenevents.register("raw_manflesh", function (event, player, magicData) {
@@ -136,7 +143,19 @@ FoodEatenevents.register("emergency_sanity_elixir_a", function (event, player, m
     const pData = player.persistentData;
     let addiction_up = pData.getInt('addiction') ?? 0;
     pData.putInt('addiction', addiction_up + 1);
+
+    const currentSanity = pData.getInt(sanity) || 0;
+    const isEroded = currentSanity === -45;
+
+    // 侵蚀状态下可以恢复理智
     $SanityHelper.updateSanity(player, 10);
+
+    // 如果是从侵蚀状态恢复，清除罪孽
+    if (isEroded && (pData.getInt(sanity) || 0) + 10 > -45) {
+        for (let sin in sins) {
+            pData.putInt(sins[sin], 0);
+        }
+    }
 });
 
 FoodEatenevents.register("emergency_sanity_elixir_b", function (event, player, magicData) {
@@ -144,7 +163,17 @@ FoodEatenevents.register("emergency_sanity_elixir_b", function (event, player, m
     const pData = player.persistentData;
     let addiction_up = pData.getInt('addiction') ?? 0;
     pData.putInt('addiction', addiction_up + 2);
+
+    const currentSanity = pData.getInt(sanity) || 0;
+    const isEroded = currentSanity === -45;
+
     $SanityHelper.updateSanity(player, 25);
+
+    if (isEroded && (pData.getInt(sanity) || 0) + 25 > -45) {
+        for (let sin in sins) {
+            pData.putInt(sins[sin], 0);
+        }
+    }
 });
 
 FoodEatenevents.register("emergency_sanity_elixir_y", function (event, player, magicData) {
@@ -152,8 +181,20 @@ FoodEatenevents.register("emergency_sanity_elixir_y", function (event, player, m
     const pData = player.persistentData;
     let addiction_up = pData.getInt('addiction') ?? 0;
     pData.putInt('addiction', addiction_up + 4);
+
+    const currentSanity = pData.getInt(sanity) || 0;
+    const isEroded = currentSanity === -45;
+
     $SanityHelper.updateSanity(player, 45);
+
+    if (isEroded && (pData.getInt(sanity) || 0) + 45 > -45) {
+        for (let sin in sins) {
+            pData.putInt(sins[sin], 0);
+        }
+    }
 });
+
+
 
 FoodEatenevents.register("foul_flesh", function (event, player, magicData) {
     if (!(event.item.getId() == "kubejs:foul_flesh")) return;

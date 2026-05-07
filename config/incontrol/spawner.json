@@ -16,7 +16,7 @@
             "maxdist": 64,
             "minheight": 15,
             "maxheight": 200,
-            "maxthis": 24,
+            "maxthis": 12,
             "and": {
                 "biome": "biomesoplenty:ominous_woods",
                 "seesky": true
@@ -40,7 +40,7 @@
             "maxdist": 64,
             "minheight": -64,
             "maxheight": 40,
-            "maxthis": 8,
+            "maxthis": 4,
             "and": {
                 "biome": "biomesoplenty:ominous_woods",
                 "seesky": false
@@ -69,7 +69,7 @@
             "maxdist": 64,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 16,
+            "maxthis": 8,
             "and": {
                 "biome": "biomesoplenty:visceral_heap"
             }
@@ -92,7 +92,7 @@
             "maxdist": 64,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 8,
+            "maxthis": 4,
             "and": {
                 "biome": "biomesoplenty:undergrowth"
             }
@@ -186,7 +186,7 @@
             "maxdist": 64,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 8,
+            "maxthis": 4,
             "and": {
                 "biome": "biomesoplenty:erupting_inferno"
             }
@@ -210,7 +210,7 @@
             "maxdist": 64,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 12,
+            "maxthis": 6,
             "and": {
                 "biome": "minecraft:basalt_deltas"
             }
@@ -236,7 +236,7 @@
             "maxdist": 64,
             "minheight": -120,
             "maxheight": 40,
-            "maxthis": 8,
+            "maxthis": 6,
             "and": {
                 "biome": "biomesoplenty:glowing_grotto"
             }
@@ -282,7 +282,7 @@
             "maxdist": 64,
             "minheight": 0,
             "maxheight": 120,
-            "maxthis": 4,
+            "maxthis": 2,
             "and": {
                 "biome": "biomesoplenty:lush_desert"
             }
@@ -306,7 +306,7 @@
             "maxdist": 64,
             "minheight": 0,
             "maxheight": 120,
-            "maxthis": 6,
+            "maxthis": 4,
             "and": {
                 "biome": [
                     "biomesoplenty:snowblossom_grove",
@@ -337,7 +337,7 @@
             "maxdist": 64,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 12,
+            "maxthis": 6,
             "and": {
                 "biome": [
                     "minecraft:warped_forest"
@@ -361,10 +361,34 @@
             "maxdist": 64,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 12,
+            "maxthis": 6,
             "and": {
                 "biome": [
                     "minecraft:crimson_forest"
+                ]
+            }
+        }
+    },
+    {
+        "mob": [
+            "terra_entity:ghost"
+        ],
+        "persecond": 0.2,
+        "attempts": 3,
+        "amount": {
+            "minimum": 2,
+            "maximum": 3
+        },
+        "conditions": {
+            "dimension": "minecraft:the_nether",
+            "mindist": 24,
+            "maxdist": 64,
+            "minheight": 1,
+            "maxheight": 256,
+            "maxthis": 8,
+            "and": {
+                "biome": [
+                    "minecraft:soul_sand_valley"
                 ]
             }
         }
@@ -385,7 +409,7 @@
             "maxdist": 64,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 12,
+            "maxthis": 6,
             "and": {
                 "biome": [
                     "minecraft:flower_forest"
@@ -395,8 +419,7 @@
     },
     {
         "mob": [
-            "minecraft:wither_skeleton",
-            "endermanoverhaul:nether_wastes_enderman"
+            "minecraft:wither_skeleton"
         ],
         "persecond": 0.2,
         "attempts": 3,
@@ -410,7 +433,7 @@
             "maxdist": 64,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 20,
+            "maxthis": 12,
             "and": {
                 "biome": [
                     "biomesoplenty:withered_abyss"
@@ -434,7 +457,7 @@
             "maxdist": 64,
             "minheight": 1,
             "maxheight": 256,
-            "maxthis": 12,
+            "maxthis": 6,
             "and": {
                 "biome": [
                     "minecraft:nether_wastes"

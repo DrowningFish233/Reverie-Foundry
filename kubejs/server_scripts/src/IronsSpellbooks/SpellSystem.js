@@ -121,6 +121,14 @@ ISSEvents.spellOnCast(event => {
             id: "cobalt_ingot",
             condition: () => fu_hasTraitAnywhere(event.entity, "kubejs:cobalt_ingot"),
             reduction: 0.14
+        },
+        {
+            id: "arcane_concentration",
+            condition: () => event.entity.hasEffect("kubejs:arcane_concentration"),
+            reduction: () => {
+                let layers = getEffectLayers(event.entity, 'kubejs:arcane_concentration') || 0;
+                return layers * 0.1;
+            }
         }
     ];
 

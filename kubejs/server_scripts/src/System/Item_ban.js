@@ -40,6 +40,7 @@ let bannedItems = [
 
 // 材料替换配置(前:需要替换的材料.后:替换为的材料)
 const materialMap = {
+    'silentgear:nether_star_fragment': 'hazennstuff:nether_star_fragment',
     'terra_curio:destroyer_emblem': 'kubejs:destroyer_emblem',
     'terra_curio:sorcerer_emblem': 'kubejs:sorcerer_emblem',
     'terra_curio:avenger_emblem': 'kubejs:avenger_emblem',

@@ -4,8 +4,6 @@
 	default_quest_shape: ""
 	filename: "1230BFFD2EFCEA44"
 	group: "17FDF36D1B965C72"
-	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: {
 		id: "malum:encyclopedia_arcana"
 	}
@@ -14,11 +12,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			hide_details_until_startable: true
-			hide_until_deps_complete: true
-			hide_until_deps_visible: true
+			icon_scale: 0.8d
 			id: "27B6C00949F92CCF"
-			invisible: true
 			rewards: [{
 				count: 8
 				id: "0DD6BE87F01581CD"
@@ -28,6 +23,8 @@
 				}
 				type: "item"
 			}]
+			shape: "netheritetier"
+			size: 2.0d
 			tasks: [{
 				id: "41B2935DE3D7CE30"
 				item: { count: 1, id: "malum:encyclopedia_arcana" }
@@ -1661,7 +1658,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.0d
+			y: 2.5d
 		}
 	]
 }

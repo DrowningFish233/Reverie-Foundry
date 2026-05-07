@@ -199,7 +199,7 @@ const STAGE_DIFFICULTY_BONUS = {
 // 最终BOSS
 const FINAL_BOSS = "darkdoppelganger:dark_doppelganger";
 
-// Sephirah 名称映射
+// Sephirah 映射
 const SEPHIRAH_NAMES = [
     { minKills: 3, name: "Malchut" },
     { minKills: 6, name: "Yesod" },

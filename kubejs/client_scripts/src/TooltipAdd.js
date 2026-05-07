@@ -498,6 +498,16 @@ const itemTooltips = {
 
 // 通用提示
 const commonTooltips = {
+    'tiered:armorers_hammer': TooltipUtils.simpleText('tooltip.common.reforged', 'dark_green'),
+    'tiered:toolsmiths_hammer': TooltipUtils.simpleText('tooltip.common.reforged', 'dark_green'),
+    'tiered:weaponsmiths_hammer': TooltipUtils.simpleText('tooltip.common.reforged', 'dark_green'),
+    'kubejs:mark_of_wrath': TooltipUtils.simpleText('tooltip.common.mark_of_wrath', 'red'),
+    'kubejs:chain_of_lust': TooltipUtils.simpleText('tooltip.common.chain_of_lust', 'light_purple'),
+    'kubejs:pendant_of_sloth': TooltipUtils.simpleText('tooltip.common.pendant_of_sloth', 'yellow'),
+    'kubejs:ring_of_gluttony': TooltipUtils.simpleText('tooltip.common.ring_of_gluttony', 'dark_green'),
+    'kubejs:stone_of_melancholy': TooltipUtils.simpleText('tooltip.common.stone_of_melancholy', 'gold'),
+    'kubejs:crown_of_pride': TooltipUtils.simpleText('tooltip.common.crown_of_pride', 'aqua'),
+    'kubejs:eye_of_envy': TooltipUtils.simpleText('tooltip.common.eye_of_envy', 'dark_purple'),
     'kubejs:eye_of_ancient_city_located': TooltipUtils.simpleText('tooltip.common.eye_of_ancient_city_located', 'yellow'),
     'kubejs:eye_of_weeping_well_located': TooltipUtils.simpleText('tooltip.common.eye_of_weeping_well_located', 'yellow'),
     'kubejs:eye_of_dragon_cave_located': TooltipUtils.simpleText('tooltip.common.eye_of_dragon_cave_located', 'yellow'),

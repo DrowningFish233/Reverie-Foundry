@@ -1,0 +1,258 @@
+{
+	autofocus_id: "77437FA5561BE4E6"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5813E8749E15BA9E"
+	group: "7EA4B220C81C7E43"
+	id: "5813E8749E15BA9E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			hide_text_until_complete: true
+			icon: {
+				id: "minecraft:oak_log"
+			}
+			id: "77437FA5561BE4E6"
+			rewards: [
+				{
+					auto: "disabled"
+					exclude_from_claim_all: true
+					id: "3CBC7962F593B460"
+					ignore_reward_blocking: true
+					table_id: 8769696413750133854L
+					type: "choice"
+				}
+				{
+					count: 5
+					id: "174A3C0C01163311"
+					item: {
+						count: 1
+						id: "kubejs:steel_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "42C09D9C760C18EB"
+					item: {
+						components: {
+							"!minecraft:attribute_modifiers": { }
+							"minecraft:item_name": "{\"translate\":\"item.silentgear.saw.nameProper\",\"with\":[{\"translate\":\"material.silentgear.stone\"}]}"
+							"minecraft:tool": {
+								rules: [
+									{
+										blocks: "#silentgear:incorrect_for_stone_tools"
+										correct_for_drops: 0b
+									}
+									{
+										blocks: "#minecraft:mineable/axe"
+										correct_for_drops: 1b
+										speed: 1.0f
+									}
+								]
+							}
+							"silentgear:construction": {
+								broken_count: 0
+								example: 0b
+								parts: [
+									{
+										item: {
+											components: {
+												"silentgear:material_list": [{
+													item: {
+														count: 1
+														id: "minecraft:cobblestone"
+													}
+													material: "silentgear:stone"
+												}]
+											}
+											count: 1
+											id: "silentgear:saw_blade"
+										}
+										part: "silentgear:saw_blade"
+									}
+									{
+										item: {
+											components: {
+												"silentgear:material_list": [{
+													item: {
+														count: 1
+														id: "minecraft:oak_planks"
+													}
+													material: "silentgear:wood"
+												}]
+											}
+											count: 1
+											id: "silentgear:rod"
+										}
+										part: "silentgear:rod"
+									}
+								]
+								repairedCount: 0
+							}
+							"silentgear:model_index": 2
+							"silentgear:model_key": "saw:saw_blade{stone},rod{wood},"
+							"silentgear:properties": {
+								"silentgear:armor_durability": 5.0f
+								"silentgear:attack_damage": 3.0f
+								"silentgear:attack_reach": 0.0f
+								"silentgear:attack_speed": 1.4f
+								"silentgear:block_reach": 0.0f
+								"silentgear:charging_value": 0.5f
+								"silentgear:durability": 262.0f
+								"silentgear:enchantment_value": 2.5f
+								"silentgear:harvest_speed": 1.0f
+								"silentgear:harvest_tier": {
+									incorrect_blocks_for_tool: "silentgear:incorrect_for_stone_tools"
+									level_hint: "1"
+									name: "stone"
+								}
+								"silentgear:healing_received": 0.0f
+								"silentgear:magic_damage": 0.0f
+								"silentgear:rarity": 4.0f
+								"silentgear:repair_efficiency": 1.5f
+								"silentgear:repair_value": 0.0f
+								"silentgear:traits": [
+									{
+										conditions: [{
+											gear_type: "silentgear:tool"
+											type: "silentgear:gear_type"
+										}]
+										level: 1
+										trait: "silentgear:ancient"
+									}
+									{
+										conditions: [ ]
+										level: 2
+										trait: "silentgear:flexible"
+									}
+								]
+							}
+						}
+						count: 1
+						id: "silentgear:saw"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "77988812570A4440"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "6CE2D79DE217EFAC"
+			tasks: [{
+				id: "5D5B00786604F7A2"
+				item: { count: 1, id: "minecraft:iron_ore" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			id: "17E40517810B1BA6"
+			tasks: [{
+				id: "3DFA4F6CA65D45AB"
+				item: { count: 1, id: "minecraft:chest" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			id: "3D2445813DA99398"
+			tasks: [{
+				icon: {
+					components: {
+						"!ftbquests:icon": { }
+						"ftbquests:entity_face": "irons_spellbooks:catacombs_zombie"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "45AB44FAD7068F5E"
+				stat: "minecraft:mob_kills"
+				type: "stat"
+				value: 10
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			id: "28C6DB4D7EFF4DE4"
+			rewards: [{
+				id: "09F015E78FE925F1"
+				item: {
+					count: 1
+					id: "sophisticatedbackpacks:stack_upgrade_tier_1"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5CD06EA68D8D317C"
+				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "minecraft:white_bed"
+			}
+			id: "52ADBCBCC4B37461"
+			tasks: [{
+				id: "5951FC5478614139"
+				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:white_bed)item(minecraft:light_gray_bed)item(minecraft:gray_bed)item(minecraft:black_bed)item(minecraft:brown_bed)item(minecraft:red_bed)item(minecraft:orange_bed)item(minecraft:yellow_bed)item(minecraft:lime_bed)item(minecraft:green_bed)item(minecraft:cyan_bed)item(minecraft:light_blue_bed)item(minecraft:blue_bed)item(minecraft:purple_bed)item(minecraft:magenta_bed)item(minecraft:pink_bed))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "45220A64CA75EEB5"
+			tasks: [{
+				id: "3D96591DB17274D3"
+				item: { count: 1, id: "irons_spellbooks:inscription_table" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			icon: {
+				id: "minecraft:ender_eye"
+			}
+			id: "4298D44640E96E85"
+			rewards: [{
+				id: "23237BEE6C912660"
+				item: {
+					count: 1
+					id: "kubejs:emergency_sanity_elixir_a"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "58B32B5ADE53FAD2"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "65B41EA9BC26309D"
+			tasks: [{
+				id: "37C86AEC8C30709E"
+				item: { count: 1, id: "minecraft:bread" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+	]
+}

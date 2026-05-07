@@ -781,5 +781,27 @@
 			x: 7.5d
 			y: 2.5d
 		}
+		{
+			dependencies: ["60C42244ED37BA5F"]
+			id: "2153488679E4DDF8"
+			tasks: [{
+				id: "4FB9E81B3B852B86"
+				item: { count: 1, id: "reveriefoundry:staff_blueprint" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["60C42244ED37BA5F"]
+			id: "7E9B075F11036F24"
+			tasks: [{
+				id: "482208F2DD46BD20"
+				item: { count: 1, id: "reveriefoundry:spellbook_blueprint" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
 	]
 }

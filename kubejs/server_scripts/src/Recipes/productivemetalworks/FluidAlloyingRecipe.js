@@ -240,8 +240,8 @@ ServerEvents.recipes(event => {
         new FluidAlloyingRecipe(
             [
                 createFluid("productivemetalworks:molten_carbon", 90),
-                createFluidTag("c:molten_iron", 90),
-                createFluid("productivemetalworks:molten_amethyst", 10)
+                createFluidTag("c:molten_iron", 100),
+                createFluid("productivemetalworks:molten_amethyst", 25)
             ],
             {
                 amount: 90,

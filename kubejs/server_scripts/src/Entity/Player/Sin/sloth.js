@@ -1,59 +1,54 @@
 // priority: 10
-// 每刻更新罪孽状态事件
-PlayerEvents.tick(event => {
-    let player = event.player;
-    if (!player) return;
-    if (player.tickCount % 20 != 0) return;
-    let isSLOTH = player.persistentData.getInt(sins.SLOTH) || 0;
-    if (isSLOTH > 0) {
-        player.potionEffects.add("kubejs:sloth", 80, 0, false, false);
-    }
-});
+// 怠惰特质
+RFTrait('kubejs:sloth', 999)
+    // 每20tick施加怠惰效果
+    .onTick(event => {
+        const { entity } = event;
+        if (!entity.isLiving() || !entity.isPlayer()) return;
+        if (entity.tickCount % 20 !== 0) return;
 
-function sloth(event) {
-    const damage = event.getDamage();
-    const player = event.entity;
-    if (player.getType() !== "minecraft:player") {
-        return;
-    }
-    if (!player.hasEffect("kubejs:sloth")) {
-        return;
-    }
-    const effect = player.getEffect("kubejs:sloth");
-    const level = effect.getAmplifier();
-    const threshold = 10 + (level * 5);
-    let allTheDamage = player.persistentData.getInt(sloth_cumulative_damage) || 0;
-    allTheDamage += damage;
-    if (allTheDamage >= threshold) {
-        player.potionEffects.add('minecraft:resistance', 20 * 5, level, false, false);
-        player.potionEffects.add('kubejs:morning_moodiness', 2000, 0, false, false);
-        allTheDamage = 0;
-    }
-    player.persistentData.putInt(sloth_cumulative_damage, allTheDamage);
-}
+        let isSLOTH = entity.persistentData.getInt(sins.SLOTH) || 0;
+        if (isSLOTH > 0) {
+            entity.potionEffects.add("kubejs:sloth", 80, 0, false, false);
+        }
+    })
 
-function sloth_2(event) {
-    let entity = event.getEntity();
-    let value = 0.35;
-    if (entity.hasEffect("kubejs:sloth_2")) {
-        new_damage(event, STAGE.MULTIPLY, value);
-    } return
-}
+    // 受伤时：造成范围伤害，CD1秒
+    .beforeHurt(event => {
+        const { entity } = event;
+        if (!entity.isLiving() || !entity.isPlayer()) return;
+        if (!entity.hasEffect("kubejs:sloth")) return;
 
-function sloth_morning_moodiness(event) {
-    const { source, entity } = event;
-    let attacker = source.player || source.entity;
+        // 检查冷却
+        const cooldownKey = "sloth_damage_cooldown";
+        if ($CooldownManager.hasCooldown(entity, cooldownKey)) return;
 
-    if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !attacker.hasEffect("kubejs:morning_moodiness")) {
-        return;
-    }
+        const armorValue = entity.getAttribute('minecraft:generic.armor')?.value ?? 0;
+        const rangeDamage = armorValue * 0.75;
 
-    attacker.removeEffect("kubejs:morning_moodiness");
-    attacker.potionEffects.add("minecraft:blindness", 200, 2, false, true);
-    attacker.potionEffects.add("minecraft:darkness", 200, 2, false, true);
-    attacker.potionEffects.add("minecraft:unluck", 200, 2, false, true);
-    attacker.potionEffects.add("minecraft:slowness", 200, 2, false, true);
-    attacker.potionEffects.add("minecraft:resistance", 180, 3, false, true);
-    attacker.potionEffects.add("kubejs:morning_moodiness_2", 180, 0, false, false);
+        if (rangeDamage > 0) {
+            let nearbyEntities = entity.level.getEntities(
+                entity,
+                entity.getBoundingBox().inflate(2)
+            ).filter(e =>
+                e.isLiving() &&
+                e.isAlive() &&
+                e !== entity
+            );
 
-}
+            nearbyEntities.forEach(target => {
+                attackEntity(target, 'generic', rangeDamage, true);
+            });
+        }
+
+        $CooldownManager.setCooldown(entity, cooldownKey, 20);
+    })
+
+    .beforeHurt(event => {
+        const { entity } = event;
+        if (!entity.isLiving() || !entity.isPlayer()) return;
+        if (entity.hasEffect("kubejs:sloth_2")) {
+            new_damage(event, STAGE.MULTIPLY, 0.35);
+        }
+    })
+    .register();

@@ -52,7 +52,6 @@ function applyAttributeBoost(entity, summoner) {
     if (damageAttr) {
         damageAttr.setBaseValue(damageAttr.value * multiplier);
     }
-    // 标记为已增强
     entity.persistentData.Multy = 1;
 
 }

@@ -2,6 +2,7 @@
 function require(className) {
     return Java.loadClass(className);
 }
+const $RFUtils = require('com.drowningfish233.reveriefoundry.Utils.RFUtils');
 const $DataComponent = require("net.rain.kubejs_datacomponent.KubeJSDataComponent$DataComponentAPI")
 const $MobEffectEvent$Remove = require("net.neoforged.neoforge.event.entity.living.MobEffectEvent$Remove");
 const ItemAttrEvent = require("net.neoforged.neoforge.event.ItemAttributeModifierEvent");
@@ -9,6 +10,7 @@ const $SpellRarity = require("io.redspace.ironsspellbooks.api.spells.SpellRarity
 const $SchoolType = require("io.redspace.ironsspellbooks.api.spells.SchoolType");
 const $MagicData = require("io.redspace.ironsspellbooks.api.magic.MagicData")
 const $ItemEntity = require("net.minecraft.world.entity.item.ItemEntity");
+const $GearHelper = require('net.silentchaos512.gear.util.GearHelper');
 const $DamageTypes = require('net.minecraft.world.damagesource.DamageTypes')
 const $ModDamageTypes = require('top.theillusivec4.champions.common.registry.ModDamageTypes')
 const $ModRarity = require("org.confluence.lib.common.component.ModRarity");

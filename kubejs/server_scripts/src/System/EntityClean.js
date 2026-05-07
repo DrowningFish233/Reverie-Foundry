@@ -17,11 +17,11 @@ const CLEANUP_CONFIG = {
         "minecraft:item_frame",
         "minecraft:armor_stand",
         "minecraft:painting",
-        "bosses_of_mass_destruction:*",     //祸乱鬼魅
-        "iceandfire:*",     //冰火传说
-        "create:*",         //机械动力
-        "cataclysm:*",      //灾变
-        "endrem:*"          //末地创世
+        "bosses_of_mass_destruction:*",
+        "iceandfire:*",
+        "create:*",
+        "cataclysm:*",
+        "endrem:*"
     ],
     // 新增黑名单（若白名单禁用,则只清理黑名单内内容）
     blacklist: [
@@ -157,7 +157,7 @@ ServerEvents.tick(event => {
         }
     });
 
-    // 发送全局清理通知（如果至少清理了一个实体）
+    // 发送全局清理通知
     if (CLEANUP_CONFIG.notifyPlayers && totalCleaned > 0) {
         event.server.scheduleInTicks(1, (callback) => {
             event.server.runCommandSilent(

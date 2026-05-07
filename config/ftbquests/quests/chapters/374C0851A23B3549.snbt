@@ -30,7 +30,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2DD51904F4629516"]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			hide_until_deps_visible: true
@@ -93,7 +92,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -107,7 +106,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -121,7 +120,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -135,7 +134,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -149,7 +148,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -163,7 +162,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -177,7 +176,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -191,7 +190,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -205,7 +204,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -219,7 +218,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -233,7 +232,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -247,7 +246,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -261,7 +260,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -275,7 +274,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -289,7 +288,7 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -303,7 +302,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: -5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -317,7 +316,7 @@
 				type: "item"
 			}]
 			x: -13.0d
-			y: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -331,7 +330,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -345,7 +344,7 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: -4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -359,7 +358,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -373,7 +372,7 @@
 				type: "item"
 			}]
 			x: -12.5d
-			y: -2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -387,7 +386,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -401,7 +400,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -415,7 +414,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -429,7 +428,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -4.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -443,7 +442,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -5.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -457,7 +456,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -471,7 +470,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -485,7 +484,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -499,7 +498,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -513,7 +512,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -6.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -527,7 +526,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -541,7 +540,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -555,7 +554,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["09E68D57095A5F1D"]
@@ -565,8 +564,8 @@
 				item: { components: { "ftbfiltersystem:filter": "item_tag(silentgear:repair_kits)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 7.0d
+			x: -3.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["09E68D57095A5F1D"]
@@ -586,7 +585,7 @@
 				item: { count: 1, id: "kubejs:randomweapon" }
 				type: "item"
 			}]
-			x: -14.5d
+			x: -16.0d
 			y: 9.5d
 		}
 		{
@@ -598,7 +597,7 @@
 				item: { count: 1, id: "silentgear:starlight_charger" }
 				type: "item"
 			}]
-			x: -11.5d
+			x: -13.0d
 			y: 9.5d
 		}
 		{
@@ -632,7 +631,7 @@
 				item: { count: 1, id: "silentgear:material_grader" }
 				type: "item"
 			}]
-			x: -13.0d
+			x: -14.5d
 			y: 9.5d
 		}
 		{
@@ -655,7 +654,7 @@
 				item: { count: 1, id: "silentgear:stone_anvil" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -13.5d
 			y: 8.0d
 		}
 		{
@@ -667,7 +666,7 @@
 				item: { count: 1, id: "silentgear:salvager" }
 				type: "item"
 			}]
-			x: -14.0d
+			x: -15.5d
 			y: 8.0d
 		}
 		{
@@ -679,7 +678,7 @@
 				item: { count: 1, id: "silentgear:jeweler_tools" }
 				type: "item"
 			}]
-			x: -14.0d
+			x: -15.5d
 			y: 11.0d
 		}
 		{
@@ -704,7 +703,7 @@
 				item: { count: 1, id: "silentgear:mod_kit" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -13.5d
 			y: 11.0d
 		}
 		{
@@ -876,8 +875,8 @@
 				id: "556CD24E3C8380EB"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: 14.0d
+			x: -1.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4C04EAB3BF7A1201"]
@@ -910,7 +909,7 @@
 				id: "339CA94E26A97F21"
 				type: "checkmark"
 			}]
-			x: -7.5d
+			x: -9.0d
 			y: 9.5d
 		}
 		{
@@ -928,7 +927,7 @@
 				id: "741270DD1E5E2948"
 				type: "checkmark"
 			}]
-			x: -9.5d
+			x: -11.0d
 			y: 9.5d
 		}
 		{
@@ -983,7 +982,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -997,7 +996,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -1011,7 +1010,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -1025,7 +1024,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -1039,7 +1038,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -1053,7 +1052,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -1067,7 +1066,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -1081,7 +1080,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -1095,7 +1094,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -1109,7 +1108,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6EFBE085639D2967"]
@@ -1123,7 +1122,221 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:flamberge_blueprint"
+			}
+			id: "11C4380FD58A7FDA"
+			tasks: [{
+				id: "4D216882B37E2284"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:flamberge_blueprint)item(reveriefoundry:flamberge_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:infernal_forge_blueprint"
+			}
+			id: "396C3E0A51A61D92"
+			tasks: [{
+				id: "2535599FB0298A82"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:infernal_forge_blueprint)item(reveriefoundry:infernal_forge_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:soul_spear_blueprint"
+			}
+			id: "02F458E4623EBD67"
+			tasks: [{
+				id: "4C40759DAAA9C3E7"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:soul_spear_blueprint)item(reveriefoundry:soul_spear_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:staff_blueprint"
+			}
+			id: "512E4EF207EDE186"
+			tasks: [{
+				id: "131708AD4D3A2E8E"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:staff_blueprint)item(reveriefoundry:staff_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			id: "6878F17233F3E57C"
+			tasks: [{
+				icon: {
+					id: "reveriefoundry:spellbook_blueprint"
+				}
+				id: "1705E46627ADF4CB"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:spellbook_blueprint)item(reveriefoundry:spellbook_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:flame_bulwark_blueprint"
+			}
+			id: "21FE19A7D8EFA94C"
+			tasks: [{
+				id: "221E5092A09BCA29"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:flame_bulwark_blueprint)item(reveriefoundry:flame_bulwark_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:annihilator_blueprint"
+			}
+			id: "4342761A11C8B0C0"
+			tasks: [{
+				id: "13419554E1773A09"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:annihilator_blueprint)item(reveriefoundry:annihilator_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:meat_shredder_blueprint"
+			}
+			id: "34D446AE0315168C"
+			tasks: [{
+				id: "05D692FEA8B7F8C3"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:meat_shredder_blueprint)item(reveriefoundry:meat_shredder_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:seeking_bow_blueprint"
+			}
+			id: "0D88330EEA17433A"
+			tasks: [{
+				id: "7ABE952A23FCFB5D"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:seeking_bow_blueprint)item(reveriefoundry:seeking_bow_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:autoloader_crossbow_blueprint"
+			}
+			id: "4AB1523AE2CA75D7"
+			tasks: [{
+				id: "25B8CE24D26D2658"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:autoloader_crossbow_blueprint)item(reveriefoundry:autoloader_crossbow_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			icon: {
+				id: "reveriefoundry:astrape_blueprint"
+			}
+			id: "266954CE47E5BBAA"
+			tasks: [{
+				id: "76E1E34F7A83D6F3"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:astrape_blueprint)item(reveriefoundry:astrape_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6EFBE085639D2967"]
+			id: "4C4558B339BA59A5"
+			tasks: [{
+				id: "7E73F2D97C765D46"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:furioso_blueprint)item(reveriefoundry:furioso_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["09E68D57095A5F1D"]
+			id: "5FE4FAAD4501DE1F"
+			tasks: [{
+				id: "45EEA8EDECAF276D"
+				item: { count: 1, id: "silentgear:crude_mixer" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"5FE4FAAD4501DE1F"
+				"770E6D9F52724FCC"
+				"750FC99EE02F979D"
+			]
+			dependency_requirement: "one_completed"
+			id: "582C0861954C8D52"
+			tasks: [{
+				id: "75E81E35D3778884"
+				item: { count: 1, id: "silentgear:super_mixer" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0429A6763D6D23B3"]
+			id: "194FFC9454CBCBA2"
+			tasks: [{
+				id: "2B380F2F0C346C76"
+				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:paint))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["09E68D57095A5F1D"]
+			id: "0429A6763D6D23B3"
+			tasks: [{
+				id: "327EA85E5477B7FC"
+				item: { count: 1, id: "silentgear:paint_mixer" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.5d
 		}
 	]
 }

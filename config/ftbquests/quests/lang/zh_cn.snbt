@@ -1,22 +1,22 @@
 {
-	chapter.02A85F43636B35D7.title: "&3初章：起始"
+	chapter.02A85F43636B35D7.title: "&3主章：千锤百炼"
 	chapter.1230BFFD2EFCEA44.title: "灵灾"
 	chapter.18D895B9141E8756.title: "机械动力"
-	chapter.1A98337926B134EB.title: "&3第一幕：邪祟退散"
 	chapter.1A98B27BB1D8BF2D.title: "铁之魔法"
+	chapter.20EE16E9C1ED5E6D.title: "遗失手稿"
 	chapter.374C0851A23B3549.title: "寂静装备"
 	chapter.44E1ED5935A6147B.title: "&3伟大历程"
 	chapter.48A05E5EF26EFEEE.title: "&d必看须知"
 	chapter.566973DCC685511A.title: "神化"
-	chapter.588092B8BFBF7018.title: "&d悬赏"
+	chapter.5813E8749E15BA9E.title: "主线指引部分（勿领）"
 	chapter.594B7E5B489F5F45.title: "永不坠机"
 	chapter.5A72070BE5639DEE.title: "实用工具"
 	chapter.6610553945D768F8.title: "永恒星光"
-	chapter.68C67ABB27B8D485.title: "&3第二幕：盲目收割"
 	chapter.75D59DE79FD7569A.title: "&d追加的苦难"
 	chapter.7CEAFF10D33DEDBC.title: "&dFTB 任务教学"
 	chapter_group.17FDF36D1B965C72.title: "&e散落的手记 （支线）"
 	chapter_group.2F1F238400B8A177.title: "杂谈"
+	chapter_group.7EA4B220C81C7E43.title: "重铸任务测试栏"
 	chapter_group.7F00D0D8C7C916A0.title: "&b虚无之梦 （主线）"
 	file.0000000000000001.title: "遐想铸造厂"
 	quest.002106F426003B4F.quest_desc: ["&7增加激活范围，即玩家距离刷怪笼更远时也能激活刷怪笼。每个增加 2 格，上限48格。"]
@@ -110,6 +110,8 @@
 	]
 	quest.02BFE6EA90831AED.quest_subtitle: "万钧重担"
 	quest.02BFE6EA90831AED.title: "重负意识誓约"
+	quest.02C5ECCA9010AEA1.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.02C5ECCA9010AEA1.quest_subtitle: "可合成"
 	quest.02CBB1D9A926F86B.quest_desc: [
 		"&6桌布&r"
 		""
@@ -138,19 +140,17 @@
 	quest.02CBB1D9A926F86B.quest_subtitle: "桌布/桌面"
 	quest.02CBB1D9A926F86B.title: "商店"
 	quest.03639EDED6577831.quest_desc: [
-		"&#FFD700贪婪-侵蚀&r&7"
-		"&7常态无特殊倍率修正。&r"
-		"&#00FFAA[每10秒]&r&7 若自身拥有 &#FFAA00贪婪&r&7 效果，则使其等级提升 1 级（最高 3 级）。&r"
-		"&#00FFAA[受到攻击后]&r&7 若自身拥有 &#FFAA00贪婪&r&7 效果，则使其等级重置为 1 级。&r"
-		"&7"
-		"&#00FFAA[每级贪婪效果]&r&7 提供以下加成：&r"
-		"&7- 生物掉落特殊物品概率 +5%&r"
-		"&7- 抢夺、海之眷顾等附魔效果等级 +2&r"
-		"&7- 经验球与掉落物吸取距离 +2 格&r"
-		"&7- 挖掘与击杀经验获取 +35%&r"
-		"&7- 法术卷轴不消耗概率 +15%&r"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"忧郁\",\"color\":\"aqua\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"释放法术时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"每释放1次法术，获得1层\",\"color\":\"gray\"},{\"text\":\"“奥术烙印”\",\"color\":\"aqua\"},{\"text\":\"，最多5层，持续60秒\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"每层提供\",\"color\":\"gray\"},{\"text\":\"施法速度、冷却缩减和法术强度\",\"color\":\"green\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击带有\",\"color\":\"gray\"},{\"text\":\"“奥术烙印”\",\"color\":\"aqua\"},{\"text\":\"的目标时（满5层）：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"造成\",\"color\":\"gray\"},{\"text\":\"额外法术伤害\",\"color\":\"light_purple\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"给目标叠加\",\"color\":\"gray\"},{\"text\":\"“奥术烙印”\",\"color\":\"aqua\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"重置自己的烙印层数\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"带有\",\"color\":\"gray\"},{\"text\":\"“奥术烙印”\",\"color\":\"aqua\"},{\"text\":\"的敌人死亡时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"周围10格内所有玩家\",\"color\":\"gray\"},{\"text\":\"恢复15%最大生命值和200点法力值\",\"color\":\"green\"}]}"
 	]
-	quest.03639EDED6577831.quest_subtitle: "WIP，暂用贪婪侵蚀效果"
 	quest.03639EDED6577831.title: "忧郁侵蚀"
 	quest.03D7343C57EF0A14.quest_desc: [
 		"&7长时间接触精魂似乎让我精神有些混乱，我甚至能听到奇异的呼唤声在耳边响起…不，不对"
@@ -174,16 +174,30 @@
 	quest.0401FD00A60774F8.quest_subtitle: "交错道途"
 	quest.0401FD00A60774F8.title: "榧木森林"
 	quest.04120B4A249AF41A.quest_desc: [
-		"&7村民向你分享了可控魂聚变技术。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"村民向你分享了\",\"color\":\"gray\"},{\"text\":\"可控魂聚变技术\",\"color\":\"gold\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
 		""
-		"&7灵灾，研究灵魂的收割与应用，初次收割灵魂需要使用&6镰刀武器&7，但大部分使用精魂制作而成的材料同样拥有收割灵魂的能力，只需要在武器盔甲甚至饰品中加入少量材料，便能摆脱镰刀的束缚。使用&6法术&7攻击敌怪也可以做到同样的效果。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"灵灾\",\"color\":\"light_purple\"},{\"text\":\"，研究灵魂的收割与应用，初次收割灵魂需要使用\",\"color\":\"gray\"},{\"text\":\"镰刀武器\",\"color\":\"gold\"},{\"text\":\"，但大部分使用精魂制作而成的材料同样拥有收割灵魂的能力，只需要在武器盔甲甚至饰品中加入少量材料，便能摆脱镰刀的束缚。使用\",\"color\":\"gray\"},{\"text\":\"法术\",\"color\":\"aqua\"},{\"text\":\"攻击敌怪也可以做到同样的效果。\",\"color\":\"gray\"}]}"
 		""
-		"已开启章节&5灵灾"
-		"[ { \"text\": \"[点击跳转]\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27B6C00949F92CCF\" } } ]"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"\",\"extra\":[{\"text\":\"[点击跳转]\",\"underlined\":true,\"color\":\"aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"27B6C00949F92CCF\"}}]}]}"
 		""
-		"&7传闻村民也曾研究灵魂，但一场重大事故让他们废止了所有相关研究，这究竟是村性扭曲还是道德的沦丧……"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"传闻村民也曾研究灵魂，但一场重大事故让他们废止了所有相关研究，这究竟是村性扭曲还是道德的沦丧……\",\"color\":\"gray\"}]}"
 	]
 	quest.04120B4A249AF41A.title: "研究灵魂"
+	quest.0429A6763D6D23B3.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"颜料混合器是一台用于合成颜料的工艺方块。通过混合染料、材料或其他颜料，您可以制作出带有\",\"color\":\"gray\"},{\"text\":\"自定义颜色\",\"color\":\"aqua\"},{\"text\":\"的颜料，用于后续给工具和装备的部件染色。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"制作颜料\",\"color\":\"gold\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"将任意数量的以下物品放入颜料混合器的输入槽：\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"输入物品\",\"color\":\"yellow\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"染料\",\"color\":\"light_purple\"},{\"text\":\"：提供该染料的颜色\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"颜料\",\"color\":\"aqua\"},{\"text\":\"：提供该颜料的颜色\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"材料\",\"color\":\"green\"},{\"text\":\"：提供该材料的颜色\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"粘液球\",\"color\":\"green\"},{\"text\":\"：用于增加输出数量\",\"color\":\"gray\"}]}"
+	]
+	quest.0429A6763D6D23B3.quest_subtitle: "用于制作颜料的专用设备"
+	quest.0429A6763D6D23B3.title: "颜料混合器"
 	quest.046E980EB69A1209.quest_desc: [
 		"&6微型图腾&r"
 		"&7可以与一个魔宠绑定，且一个魔宠同一时间只能绑定一个图腾。当该魔宠死亡且你没有魔力复活它时，绑定的图腾将被消耗，使该魔宠&a复活&r&7，图腾也随之消耗。&r"
@@ -196,6 +210,8 @@
 		"&7堆叠升级同样会作用于储罐，使储罐的存储量也相应提高。"
 	]
 	quest.04F1594414B048D0.quest_subtitle: "堆一点，再堆一点，再堆亿点"
+	quest.056130E2CD71DC75.quest_desc: ["[ { \"text\": \"点击跳转至寂静装备\", \"underlined\": true, \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"09E68D57095A5F1D\" } } ]"]
+	quest.056130E2CD71DC75.title: "竟是蓝图"
 	quest.0594FF6909227B41.quest_desc: [
 		"&6所有&r词缀效果均可在&6遐想铸造厂-材料手册&r中查询"
 		""
@@ -249,6 +265,7 @@
 		"&7修补弥散器，以鲜活血肉作为自然生命恢复的通感锚点。在完成一次&6聚焦循环&r&7后，加装有它的坩埚有概率少量修复任意&e促符&r&7。但它无法挽救已经碎裂的促符。&r"
 	]
 	quest.070C94F2F2F2D972.quest_subtitle: "已死的疤痕组织"
+	quest.073C903793B7F71F.title: "发现沉沦之城"
 	quest.075AC794CF9E3665.quest_desc: [
 		"# &e资源包管理 &r"
 		""
@@ -349,6 +366,8 @@
 	]
 	quest.07E7C74E2EA9FB8E.quest_subtitle: "永恒的盛宴"
 	quest.07E7C74E2EA9FB8E.title: "螺旋藻森林"
+	quest.07E84F32AFD0365F.quest_desc: ["&dWIP提醒&r：题外话：正常来说此BOSS后会添加新内容，但是因为产能原因...将在正式版推出后更新新内容，目前也有新内容但是量少"]
+	quest.07E84F32AFD0365F.quest_subtitle: "“然后，我自然会向你展示，什么叫做力量”"
 	quest.07F1B2594FCCAF01.quest_desc: [
 		"&6敏捷符文&r"
 		""
@@ -592,23 +611,25 @@
 	quest.0CCFA64CA88D2D22.quest_subtitle: "多种选择!"
 	quest.0CCFA64CA88D2D22.title: "R键整理"
 	quest.0CFA26B3944AAF49.quest_desc: [
-		"如需提升材料属性，可使用星光充能仪进行强化。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"如需提升材料属性，可使用\",\"color\":\"gray\"},{\"text\":\"星光充能仪\",\"color\":\"aqua\"},{\"text\":\"进行强化。\",\"color\":\"gray\"}]}"
 		""
-		"在露天环境布置一个7×7的区域，中央放置充能仪，四角各立一根两格高的柱子。柱顶放置的方块将决定充能等级："
+		"{\"text\":\"\",\"extra\":[{\"text\":\"在露天环境布置一个7×7的区域，中央放置充能仪，四角各立一根两格高的柱子。柱顶放置的方块将决定充能等级：\",\"color\":\"gray\"}]}"
+		""
 		"{image:kubejs:textures/gui/starlight_charger.png width:180 height:100 align:center}"
 		""
-		"充能后的材料会获得一定程度的属性提升，但提升体现在&e具体数值&r上，例如12攻击伤害可能提升至13，而对于百分比类型的属性基本没有提升。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"充能后的材料会获得一定程度的属性提升，但提升体现在\",\"color\":\"gray\"},{\"text\":\"具体数值\",\"color\":\"yellow\"},{\"text\":\"上，例如12攻击伤害可能提升至13，而对于百分比类型的属性基本没有提升。\",\"color\":\"gray\"}]}"
+		""
 		"{@pagebreak}"
 		""
-		"等级1：绯红钢块，需要烈焰金粉作为催化剂。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"等级1：\",\"color\":\"gray\"},{\"text\":\"绯红钢块\",\"color\":\"red\"},{\"text\":\"，需要\",\"color\":\"gray\"},{\"text\":\"烈焰金粉\",\"color\":\"gold\"},{\"text\":\"作为催化剂。\",\"color\":\"gray\"}]}"
 		""
-		"等级2：蔚蓝琥珀金块，需要蔚蓝银粉作为催化剂。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"等级2：\",\"color\":\"gray\"},{\"text\":\"蔚蓝琥珀金块\",\"color\":\"aqua\"},{\"text\":\"，需要\",\"color\":\"gray\"},{\"text\":\"蔚蓝银粉\",\"color\":\"aqua\"},{\"text\":\"作为催化剂。\",\"color\":\"gray\"}]}"
 		""
-		"等级3：提尔钢块，需要星辉粉作为催化剂。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"等级3：\",\"color\":\"gray\"},{\"text\":\"提尔钢块\",\"color\":\"gold\"},{\"text\":\"，需要\",\"color\":\"gray\"},{\"text\":\"星辉粉\",\"color\":\"yellow\"},{\"text\":\"作为催化剂。\",\"color\":\"gray\"}]}"
 		""
-		"放置完成后，等待约15秒让充能仪识别环境。该设备需要在夜晚露天环境下充能，工作时消耗能量。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"放置完成后，等待约15秒让充能仪识别环境。该设备需要在\",\"color\":\"gray\"},{\"text\":\"夜晚露天环境\",\"color\":\"aqua\"},{\"text\":\"下充能，工作时消耗\",\"color\":\"gray\"},{\"text\":\"能量\",\"color\":\"yellow\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
 		""
-		"高阶充能仪可使用低阶催化剂，但充能等级以催化剂对应的等级为准。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"高阶充能仪可使用低阶催化剂，但充能等级以催化剂对应的等级为准。\",\"color\":\"gray\"}]}"
 	]
 	quest.0CFA26B3944AAF49.quest_subtitle: "&c重要物品"
 	quest.0D0DADF7C531B664.quest_desc: ["&7若是在附魔时缺乏经验，古代知识药水可以解决大部分问题，只需要向粗制药水中加入附魔之瓶，药水就可以大幅增加玩家获取的经验，若是再次向炼成的药水加入附魔之瓶，效果叠加之下会巨幅提升。"]
@@ -710,9 +731,16 @@
 		"&7每个村民的声誉独立，高声誉交易有折扣，低声誉会拒绝交易。"
 	]
 	quest.0FE4EF207A6937B7.title: "抵达村落"
+	quest.0FF85A086C90BE5A.title: "发现苦寒监牢"
 	quest.1031E9949D709475.quest_desc: ["末地书架是利用灌注龙息的魔力制作的更高级的书架，这种书架虽然并没提供太高的数值，但是他所能提供的&a位阶&r上限提升到了90。"]
 	quest.1031E9949D709475.quest_subtitle: "即将到达附魔的终局"
 	quest.1031E9949D709475.title: "末地之力引入"
+	quest.1063B9A89D3EE67C.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"手持\",\"color\":\"gray\"},{\"text\":\"右击\",\"color\":\"yellow\"},{\"text\":\"后会从玩家手中飞出一个\",\"color\":\"gray\"},{\"text\":\"诅咒之眼\",\"color\":\"red\"},{\"text\":\"的复制飞向最近的\",\"color\":\"gray\"},{\"text\":\"苦寒监牢\",\"color\":\"aqua\"},{\"text\":\"，同时玩家手中的诅咒之眼进入\",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\"的冷却。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"飞行功能只在\",\"color\":\"gray\"},{\"text\":\"主世界\",\"color\":\"green\"},{\"text\":\"工作，在\",\"color\":\"gray\"},{\"text\":\"下界、末地\",\"color\":\"red\"},{\"text\":\"以及没有苦寒监牢的世界中不会工作。\",\"color\":\"gray\"}]}"
+	]
+	quest.1063B9A89D3EE67C.quest_subtitle: "苦寒监牢"
 	quest.11047BEDA6023228.quest_desc: [
 		"&6神秘宝珠&r"
 		"&7右键点击可获得&e竖琴&r&7和&e失落旋律&r&7饰品。通过&6岛屿仪式&r&7获得。要能够使用神秘宝珠，你需要完成所有&b元素魔宠&r&7（吟游诗人魔宠除外）的驯服进度。&r"
@@ -1010,8 +1038,10 @@
 	quest.182289427E06D427.quest_subtitle: "连点器的好伙伴"
 	quest.182321BDA643635C.quest_desc: ["如今存储网络的访问效率已难以满足我的需求，我需要寻求更快的数据读写方案。"]
 	quest.182321BDA643635C.quest_subtitle: "更快，更好，更强！"
-	quest.18AC27B34367E1DD.quest_desc: ["进行下蹲操作时可秒挖方块（这是一个bug，但是我觉得保留这个bug会更加有趣）"]
+	quest.18AC27B34367E1DD.quest_desc: [""]
 	quest.18AC27B34367E1DD.quest_subtitle: "隧道挖掘者"
+	quest.18B62DD6017843BC.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.18B62DD6017843BC.quest_subtitle: "可合成"
 	quest.18C5ACA6F816EDCB.quest_desc: [
 		"&6微型盾牌&r"
 		"&7右键对已驯服的魔宠使用，使其获得低概率&a格挡&r&7攻击的能力，每只魔宠限用1个。通过&e缩物器&r&7获得。&r"
@@ -1021,7 +1051,7 @@
 		"&7可同时&a召唤/遣散&r&7最多10个魔宠（合成获得）。&r"
 	]
 	quest.18D4FAD08F8837FD.quest_subtitle: "你打开了潘多拉的魔盒..."
-	quest.19201243CFB2D97B.quest_desc: ["&7这些闪闪发光的钻石确实是意外之喜，至少我还没见过如此大颗的原矿，虽说以前也没有机会亲自挖矿就是了，我妥善地收起了这些宝石。"]
+	quest.19201243CFB2D97B.quest_desc: ["&7这些闪闪发光的宝石确实是意外之喜，至少我还没见过如此大颗的原矿，虽说以前也没有机会亲自挖矿就是了，我妥善地收起了这些宝石。"]
 	quest.19201243CFB2D97B.title: "宝石"
 	quest.192F6B22F5E521FF.quest_desc: [
 		"&7至少有地方睡觉了……"
@@ -1032,6 +1062,19 @@
 		"&7改动可能导致自然生成的幻翼变得罕见，如果需要幻翼的掉落物，请寻找存在幻翼刷怪笼的结构。"
 	]
 	quest.192F6B22F5E521FF.title: "建立据点"
+	quest.194FFC9454CBCBA2.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"基本属性\",\"color\":\"gold\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"颜料\",\"color\":\"aqua\"},{\"text\":\"是一个可以用于给装备部件涂色的物品。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"颜色混合逻辑\",\"color\":\"gold\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"当使用多种颜色的物品混合时，最终颜料的颜色是输入品颜色的\",\"color\":\"gray\"},{\"text\":\"混合色\",\"color\":\"light_purple\"},{\"text\":\"（遵循颜料混合原理，类似于美术中的调色）。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"给装备涂色\",\"color\":\"gold\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"寂静装备可以通过以下三种方式涂色：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"将寂静装备与颜料或染料一起合成\",\"color\":\"gray\"},{\"text\":\"→\",\"color\":\"yellow\"},{\"text\":\"只涂色装备的主部件\",\"color\":\"green\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"将寂静装备与装备调整部件 + 颜料/染料一起合成\",\"color\":\"gray\"},{\"text\":\"→\",\"color\":\"yellow\"},{\"text\":\"装备调整部件指定的部件\",\"color\":\"aqua\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"将部件物品与颜料/染料一起合成\",\"color\":\"gray\"},{\"text\":\"→\",\"color\":\"yellow\"},{\"text\":\"部件被涂色，之后用该部件合成的装备会继承颜色\",\"color\":\"green\"}]}"
+	]
 	quest.1954C7719D379871.quest_desc: [
 		"&6盾御器件&r"
 		""
@@ -1069,11 +1112,7 @@
 		""
 		"&8手稿边缘的笔记：它很灵活，但别指望它违反基础规则。&r"
 	]
-	quest.1A58667FA2440598.quest_desc: [
-		"&o&8记忆如风化的碑文。"
-		"&o&8每一次试图回想，都朦朦胧胧，昏沉而模糊——"
-		"&o&8眩晕之后，仍是混沌。"
-	]
+	quest.1A58667FA2440598.quest_desc: [""]
 	quest.1A58667FA2440598.quest_subtitle: "背起行囊"
 	quest.1A58667FA2440598.title: "原野拓荒"
 	quest.1A8CEE0746A74FC4.quest_subtitle: "阶段0"
@@ -1103,6 +1142,8 @@
 	]
 	quest.1AC360E218A91528.quest_subtitle: "重启即可"
 	quest.1AC360E218A91528.title: "卡住了?"
+	quest.1B66EC1641E0B30A.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.1B66EC1641E0B30A.quest_subtitle: "可合成"
 	quest.1B819E833413B729.title: "诡秘食尸鬼"
 	quest.1BD8D56B55550058.quest_desc: [
 		"&6收割者条约"
@@ -1249,6 +1290,8 @@
 		"&7不过，这并不是旅途的必经之路，成为机械师对我的战斗力几乎没有帮助。这份手稿的原主人甚至无法制造一个故障机器人帮助战斗。能从中得到的好处，更多是锦上添花。&r"
 		""
 		"&7如果有兴趣的话，或许可以尝试钻研。一切的起点，似乎是这种名为&6安山合金&r&7的廉价材料。&r"
+		""
+		"（题外话：在0.8版本及以上，整合包重新加入了ScalableLux mod来优化，与Vanillin mod一起使用时，会导致动态结构出现阴影，如果不喜欢，删除任意一个mod即可）"
 	]
 	quest.1FB3D1FAE9A88C39.quest_subtitle: "不会用也没影响，大概"
 	quest.1FB3D1FAE9A88C39.title: "齿轮之序章"
@@ -1337,6 +1380,8 @@
 		"在终端中，将桶右键可把液体倾倒至终端内部，手持空桶右键可装桶"
 	]
 	quest.219F39116C48B242.quest_subtitle: "流体存储"
+	quest.21A80A164028813C.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.21A80A164028813C.quest_subtitle: "可合成"
 	quest.21DFA7D5BF06FF3A.quest_desc: [
 		"&6真理之镜&r"
 		"&7用于使伪装的&d幻术师&r&7魔宠显形。可通过&6仪式&r&7获得。&r"
@@ -1366,6 +1411,8 @@
 	]
 	quest.2254C590DE6A8100.quest_subtitle: "以牙还牙"
 	quest.2254C590DE6A8100.title: "狂战士条约"
+	quest.22AA04DEF35EE966.quest_subtitle: "谁不想来一顿呢？"
+	quest.22AA04DEF35EE966.title: "一顿美味的大餐"
 	quest.22DBDBE68B6E1B4D.quest_desc: [
 		"&6武器附魔&r"
 		"&7可以将法术卷轴敲在武器上，使玩家在手持该武器时可以释放该法术。注：会顶掉本模组的法术或其他mod的武器右键技能。&r"
@@ -1392,6 +1439,8 @@
 	]
 	quest.233B0326CCA639C7.quest_subtitle: "静滞演进之物"
 	quest.2358AB144E490565.quest_subtitle: "魔宠召唤仪式"
+	quest.2377B4B5C5413B34.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.2377B4B5C5413B34.quest_subtitle: "可合成"
 	quest.23B6D00570354BE3.quest_desc: [
 		"&6锅炉&r"
 		""
@@ -1600,6 +1649,7 @@
 		""
 		"&7一种需经过多道精细工序方能制成的高级内部组件，常用于&e动力臂&7等复杂机械的组装。&r"
 	]
+	quest.2A50D870F054BB1F.quest_subtitle: "为什么你还在这里？"
 	quest.2A8629B66F128293.quest_desc: ["&7不多说了，好听，爱听。"]
 	quest.2A8629B66F128293.quest_subtitle: "自带出场音效"
 	quest.2AF2FF75BEEDF6FF.quest_desc: [
@@ -1683,6 +1733,8 @@
 	]
 	quest.2C34F57D3538E222.quest_subtitle: "拥抱幽匿"
 	quest.2C34F57D3538E222.title: "幽匿能量激发"
+	quest.2C362077624962AE.quest_subtitle: "这些东西不仅看起来很奇怪，而且..."
+	quest.2C362077624962AE.title: "看起来难以下咽"
 	quest.2C5A0FE2059F81B1.quest_desc: ["&7为魔宠而生的工具。缩小的部分物品/盔甲可以称为魔宠可以装备的饰品，而缩小的食物可以给魔宠食用以回复生命值。请注意所有食物的特效与增减益均不会生效，所以请选择饱食度高的食物。"]
 	quest.2C5C9488AA4912AD.quest_subtitle: "用于铸造线材"
 	quest.2CA02120B210EB2D.quest_desc: [
@@ -1758,16 +1810,12 @@
 	]
 	quest.2D7AB1B4FC01C3F8.quest_subtitle: "接纳恨意"
 	quest.2DD51904F4629516.quest_desc: [
-		"需要从黑色开始做起..."
+		"{\"text\":\"\",\"extra\":[{\"text\":\"需要从\",\"color\":\"gray\"},{\"text\":\"黑色\",\"color\":\"dark_gray\"},{\"text\":\"开始做起...\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"做成砖以后可以\",\"color\":\"gray\"},{\"text\":\"染色\",\"color\":\"aqua\"},{\"text\":\"，但请注意\",\"color\":\"gray\"},{\"text\":\"染色的砖无法用于制作控制器等设备\",\"color\":\"red\"},{\"text\":\"，也需要做成设备以后再染色。\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"前期炉子可以做得\",\"color\":\"gray\"},{\"text\":\"小一点\",\"color\":\"yellow\"},{\"text\":\"，方便随时拆卸带走。\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"该模组的砖块都具有\",\"color\":\"gray\"},{\"text\":\"方向性\",\"color\":\"aqua\"},{\"text\":\"，如果想搭建的好看还需多多注意。\",\"color\":\"gray\"}]}"
 		""
-		"&7做成砖以后可以染色，但请注意染色的砖无法用于制作控制器等设备，也需要做成设备以后再染色"
-		""
-		"&7前期炉子可以做得小一点，方便随时拆卸带走。"
-		""
-		"&7该模组的砖块都具有方向性，如果想搭建的好看还需多多注意"
-		""
-		"已开启章节&5寂静装备"
-		"[ { \"text\": \"[点击跳转]\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"09E68D57095A5F1D\" } } ]"
+		"[ { \"text\": \"[点击跳转至寂静装备]\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"09E68D57095A5F1D\" } } ]"
 	]
 	quest.2DD51904F4629516.quest_subtitle: "锻炉基石"
 	quest.2DE251239B528464.quest_desc: [
@@ -1777,6 +1825,13 @@
 		"&7这些奥能聚块是纯净的奥术能量的凝聚体，外部有一小层守护魔法，用以防止外溢。它在魔法中近乎无用，但当作灯来看非常美观。"
 	]
 	quest.2DE251239B528464.quest_subtitle: "装饰工艺"
+	quest.2DE8D48077862833.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"通过合成获得，用于召唤\",\"color\":\"gray\"},{\"text\":\"Boss\",\"color\":\"red\"},{\"text\":\"\",\"color\":\"gray\"},{\"text\":\"提洛斯回响·原初受火者\",\"color\":\"gold\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"手持\",\"color\":\"gray\"},{\"text\":\"右击\",\"color\":\"yellow\"},{\"text\":\"使用，使用后会发出声音、产生特殊粒子，并尝试召唤受火者。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"若附近存在\",\"color\":\"gray\"},{\"text\":\"炽魂符文\",\"color\":\"gold\"},{\"text\":\"，\",\"color\":\"gray\"},{\"text\":\"寻魂烬铃\",\"color\":\"red\"},{\"text\":\"会被消耗，同时召唤受火者；若附近没有炽魂符文，则不会被消耗。\",\"color\":\"gray\"}]}"
+	]
+	quest.2DE8D48077862833.quest_subtitle: "“你应该信任我，将生命奉献给我”"
 	quest.2E1DD9D5C7D1062D.quest_desc: [
 		"&7睁开眼，映入眼帘的是低垂的灰色天空与一望无际的荒凉原野。冷风卷着沙尘，刮过裸露的岩石与稀疏的枯草。"
 		""
@@ -1805,6 +1860,7 @@
 	]
 	quest.2E49C6ACDB5A84E2.quest_subtitle: "物品展石框"
 	quest.2E49C6ACDB5A84E2.title: "阴沉石傀儡"
+	quest.2E830C01A529257D.quest_subtitle: "卫城"
 	quest.2F38AC908EC156D9.quest_desc: [
 		"&6毁存鄙夷誓约&r"
 		""
@@ -1823,8 +1879,14 @@
 	]
 	quest.2F959196FB453034.quest_subtitle: "聆听书架的心跳"
 	quest.2F959196FB453034.title: "坚守者之强化——幽匿能量巅峰"
+	quest.2FBEC3940C05E2E3.quest_desc: ["冒然前进不仅仅会撑爆背包，过强的敌人还会一次次将你打回原处..."]
+	quest.2FBEC3940C05E2E3.quest_subtitle: "是时候该找个地儿休息会儿"
+	quest.2FBEC3940C05E2E3.title: "推荐小憩一会儿"
 	quest.2FE49A9C24350211.quest_subtitle: "大叉子"
+	quest.303BD0ED6A5699E1.quest_subtitle: "所有的美味皆从此刻开始!"
+	quest.303BD0ED6A5699E1.title: "一口锅？"
 	quest.305A6FFD7FD5684F.title: "中期-击败死者之王"
+	quest.307FD783B49CA47C.title: "发现被诅咒的金字塔"
 	quest.309D32324902DF18.quest_subtitle: "食物价值>8"
 	quest.309D32324902DF18.title: "正餐回收 x10"
 	quest.31259F6B81819141.quest_subtitle: "能够给敌人带来更大的伤害"
@@ -1942,9 +2004,9 @@
 	]
 	quest.3220FA89E7935BC3.title: "阴森的要塞"
 	quest.32590328D9FB113D.quest_desc: [
-		"&7饰品可以像泰拉那样合并升级，一些简单的机动饰品可以加快前期的探索速度。极少部分饰品由于其性能过于强大被禁用（飞毯：为什么点我）"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"饰品可以像泰拉那样\",\"color\":\"gray\"},{\"text\":\"合并升级\",\"color\":\"aqua\"},{\"text\":\"，一些简单的\",\"color\":\"gray\"},{\"text\":\"机动饰品\",\"color\":\"yellow\"},{\"text\":\"可以加快前期的探索速度。极少部分饰品由于其性能过于\",\"color\":\"gray\"},{\"text\":\"强大被禁用\",\"color\":\"red\"},{\"text\":\"（飞毯：为什么点我）\",\"color\":\"gray\"}]}"
 		""
-		"&7击败凋零&6有概率&7掉落恶魔之心，使用后可以增加配饰栏位，但有使用次数限制。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"击败\",\"color\":\"gray\"},{\"text\":\"凋零\",\"color\":\"red\"},{\"text\":\"有概率\",\"color\":\"gold\"},{\"text\":\"掉落\",\"color\":\"gray\"},{\"text\":\"恶魔之心\",\"color\":\"light_purple\"},{\"text\":\"，使用后可以增加\",\"color\":\"gray\"},{\"text\":\"配饰栏位\",\"color\":\"aqua\"},{\"text\":\"，但有\",\"color\":\"gray\"},{\"text\":\"使用次数限制\",\"color\":\"red\"}]}"
 	]
 	quest.3280E06AA7147B28.quest_subtitle: "只能带在手臂上"
 	quest.32EC8C6D17383BB2.quest_desc: ["&c量子化（0%~100%）：&r &7波动你的最终附魔等级，会在提高上限的同时降低下限。附魔台默认有15%"]
@@ -1987,6 +2049,11 @@
 		"&1邪术：回响碎片"
 		"&d幻梦：注能星石"
 	]
+	quest.337B2D306A06DD6D.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"手持\",\"color\":\"gray\"},{\"text\":\"右击\",\"color\":\"yellow\"},{\"text\":\"后会从玩家手中飞出一个\",\"color\":\"gray\"},{\"text\":\"沙漠之眼\",\"color\":\"gold\"},{\"text\":\"的复制飞向最近的\",\"color\":\"gray\"},{\"text\":\"被诅咒的金字塔\",\"color\":\"gold\"},{\"text\":\"，同时玩家手中的沙漠之眼进入\",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\"的冷却。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"飞行功能只在\",\"color\":\"gray\"},{\"text\":\"主世界\",\"color\":\"green\"},{\"text\":\"工作，在\",\"color\":\"gray\"},{\"text\":\"下界、末路之地\",\"color\":\"red\"},{\"text\":\"以及没有诅咒金字塔的世界中不会工作。\",\"color\":\"gray\"}]}"
+	]
 	quest.337C34C06A879409.quest_desc: [
 		"这个升级的深暗书架将力量引导至量子化中，可提供大量的&4量子化&r的同时不提供&5阿卡纳&r。"
 		"（重要书架）"
@@ -2028,6 +2095,7 @@
 		"&7法术精通符文会反照仿制的奥术能量，使我能以两倍速度为&e法杖&r&7充能。&r"
 	]
 	quest.34D5717A03B609A1.quest_subtitle: "创造毁灭之物"
+	quest.34F5839A32156AF0.title: "发现卫城"
 	quest.350A83A36269F87B.quest_desc: ["&7最后，我制成了一种实验性底物，称作“&6炼金矿尘&r&7”。其质地在普通情况下接近固态动物油脂，但只需施加少量力，它就会显露出强大的&a可塑性&r&7。这必然是一种有用的&6材料&r&7。"]
 	quest.350A83A36269F87B.quest_subtitle: "黏土二号"
 	quest.3531099CA2E8832A.quest_desc: [
@@ -2120,22 +2188,11 @@
 	]
 	quest.360AE4AB3B482FAC.quest_subtitle: "声望值"
 	quest.3611F55056F7105F.quest_desc: [
-		"&#00AA00暴食-侵蚀&r&7"
-		"&7携带「暴食」效果时，视为施加 &#00AA00暴食营养&r&7 层数。&r"
-		"&#00FFAA[食用食物后]&r&7 获得等同于该食物营养值的 &#00AA00暴食营养&r&7 层数。&r"
-		"&#00FFAA[每1.5秒]&r&7 &#00AA00暴食营养&r&7 层数减少 1 层（最低 -20 层）。&r"
-		"&7"
-		"&#00FFAA[暴食营养 > 40]&r&7 使自身获得 &#FFAA00暴食&r&7（等级为 （暴食营养 - 50）/ 2，持续 2 秒）、&#FFAA00生命恢复 I&r&7（持续 2 秒）与 &#FFAA00魔力暴食V&r&7（持续 4 秒）。&r"
-		"&#00FFAA[暴食营养 > 30]&r&7 使自身获得 &#FFAA00生命恢复 I&r&7（持续 2 秒）与 &#FFAA00暴食IV&r&7（持续 4 秒）。&r"
-		"&#00FFAA[暴食营养 > 20]&r&7 使自身获得 &#FFAA00生命恢复 I&r&7（持续 2 秒）与 &#FFAA00魔力暴食III&r&7（持续 4 秒）。&r"
-		"&#00FFAA[暴食营养 > 10]&r&7 使自身获得 &#FFAA00魔力暴食II&r&7（持续 2 秒）。&r"
-		"&#00FFAA[暴食营养 > 0]&r&7 使自身获得 &#FFAA00魔力暴食I&r&7（持续 2 秒）。&r"
-		"&#00FFAA[暴食营养 > -10]&r&7 使自身获得 &#FF5555虚弱 III&r&7（持续 2 秒）。&r"
-		"&#00FFAA[暴食营养 ≥ -20]&r&7 使自身获得 &#FF5555虚弱 255&r&7（持续 2 秒）。&r"
-		"&7"
-		"&#00FFAA[攻击时]&r&7 若自身拥有 &#FFAA00暴食&r&7 效果，则使本次攻击的最终伤害提升（1 + 0.5 × 暴食等级）倍。&r"
-		"&7"
-		"&#00FFAA[食用食物后]&r&7 若自身处于「暴食」状态，则使该食物获得 &#FF00005 分钟的冷却时间&r&7。&r"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"暴食\",\"color\":\"green\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"吃东西时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"血量不满时：每点饱食度\",\"color\":\"gray\"},{\"text\":\"回复2点生命值\",\"color\":\"green\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"血量满时：获得\",\"color\":\"gray\"},{\"text\":\"随机正面增益效果\",\"color\":\"green\"},{\"text\":\"，持续30秒\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"周围5格内的其他玩家也会\",\"color\":\"gray\"},{\"text\":\"恢复等量的饱食度和饱和度\",\"color\":\"yellow\"}]}"
 	]
 	quest.3611F55056F7105F.title: "暴食侵蚀"
 	quest.364547BCDEFB8DDE.quest_desc: [
@@ -2181,9 +2238,8 @@
 	]
 	quest.376EE9781C85F70E.title: "技术获取"
 	quest.379D5523E1B96E7C.quest_desc: [
-		"&7公开的炼铸配方，要么是成本极端低廉，大家都能摸索出来，要么是极其实用，创作者也愿意将其分享出来。而硬化钢很巧合地兼具了这两种特色，它的熔铸配方简单，相较于常规的钢只需额外融入一些紫水晶，但在性能上的提升却是巨大的，经公开后很快的应用在各个场景。"
-		""
-		"&7我所剩不多的记忆中，硬化钢大概已经是最强的材料了，也不知是忘记了更强的部分，还是我真的只会做硬化钢……"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"公开的炼铸配方，要么是成本极端低廉，大家都能摸索出来，要么是极其实用，创作者也愿意将其分享出来。而\",\"color\":\"gray\"},{\"text\":\"硬化钢\",\"color\":\"aqua\"},{\"text\":\"很巧合地兼具了这两种特色，它的熔铸配方简单，相较于常规的钢只需额外融入一些\",\"color\":\"gray\"},{\"text\":\"紫水晶\",\"color\":\"light_purple\"},{\"text\":\"，但在性能上的提升却是巨大的，经公开后很快的应用在各个场景。\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"我所剩不多的记忆中，硬化钢大概已经是最强的材料了，也不知是忘记了更强的部分，还是我真的只会做硬化钢……\",\"color\":\"gray\"}]}"
 	]
 	quest.379D5523E1B96E7C.title: "开炉炼铁"
 	quest.37AB4AF2D44BDEB1.quest_desc: [
@@ -2212,7 +2268,7 @@
 	]
 	quest.3801B9633700F23D.quest_subtitle: "欺骗命运"
 	quest.3801B9633700F23D.title: "命运重构条约"
-	quest.38092862F38315D2.quest_subtitle: "寻找古代城市的实用工具"
+	quest.38092862F38315D2.quest_subtitle: "寻找离你最近古代城市的实用工具"
 	quest.3834AAC7BBB3BDAF.quest_desc: [
 		"&6活力符文&r"
 		""
@@ -2319,6 +2375,12 @@
 	quest.3A5DD56949CF4827.quest_subtitle: "整合包默认按键已经配置好了，你只需要找到按键绑定，并点击（重置所有按键）即可"
 	quest.3B0E439056FB5B0B.quest_desc: ["&7背包可以加装多种升级，升级槽位数量与背包的等级直接相关，钻石背包有五个升级槽位，而下界合金背包有七个，所以提高背包等级才能加装更多升级。"]
 	quest.3B7226A9387FD816.quest_subtitle: "受诅之花"
+	quest.3BB2417F411ABDDE.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"重要的合成材料\",\"color\":\"gold\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"如果你希望制作一些\",\"color\":\"gray\"},{\"text\":\"BOSS的召唤物\",\"color\":\"red\"},{\"text\":\"，或是一些\",\"color\":\"gray\"},{\"text\":\"新奇的材料\",\"color\":\"aqua\"},{\"text\":\"，那么你绝对会需要它的。\",\"color\":\"gray\"}]}"
+	]
+	quest.3BB2417F411ABDDE.quest_subtitle: "初窥门径"
 	quest.3C4F9B874C336EB6.quest_desc: [
 		"# &cBUG反馈渠道 &r"
 		""
@@ -2422,19 +2484,21 @@
 		"&e左侧是能够被使用的燃料种类&r"
 	]
 	quest.3DEBEF47CB42C180.quest_subtitle: "耗能加热"
+	quest.3F1E59D47DB55A82.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.3F1E59D47DB55A82.quest_subtitle: "可合成"
 	quest.3F4F2D1D8EC995BA.quest_desc: [
 		"&7红石比较器会让刷怪笼可以受到红石控制。"
 		"&7加装此更改后，刷怪笼只会在收到红石信号的情况下开始工作。为自动化怪物工厂提供了更加直接的控制方式。"
 	]
 	quest.3F4F2D1D8EC995BA.quest_subtitle: "红石刷怪笼"
 	quest.3F65163CBB21A321.quest_desc: [
-		"&7我避它锋芒？"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"我避它锋芒？\",\"color\":\"gray\"}]}"
 		""
-		"从守门人处得知了死者之王想要作妖的信息，躲是不可能躲的，爆金币的死者之王才是好死者之王。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"从守门人处得知了\",\"color\":\"gray\"},{\"text\":\"死者之王\",\"color\":\"red\"},{\"text\":\"想要作妖的信息，躲是不可能躲的，爆金币的死者之王才是好死者之王。\",\"color\":\"gray\"}]}"
 		""
-		"&7在挑战死者之王前也可以先尝试击败其他本阶段boss获取材料进一步强化装备。具体boss阶段可在悬赏章节查看。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"在挑战死者之王前也可以先尝试击败其他本阶段boss获取材料进一步强化装备。具体boss阶段可在\",\"color\":\"gray\"},{\"text\":\"悬赏章节\",\"color\":\"aqua\"},{\"text\":\"查看。\",\"color\":\"gray\"}]}"
 		""
-		"&7死者之王虽然多用法术攻击，但由于铁魔法是铁物理，所以也不需要专门准备魔法抗性，常规护甲即可。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"死者之王虽然多用法术攻击，但由于\",\"color\":\"gray\"},{\"text\":\"铁魔法是铁物理\",\"color\":\"yellow\"},{\"text\":\"，所以也不需要专门准备魔法抗性，常规护甲即可。\",\"color\":\"gray\"}]}"
 	]
 	quest.3F65163CBB21A321.title: "备战"
 	quest.3F95B455EACD5B91.quest_desc: [
@@ -2584,6 +2648,11 @@
 	]
 	quest.4276FE7E4037AC05.title: "远古战场"
 	quest.429669316E4CF3A9.quest_subtitle: "同时拥有护甲与微量的法术属性值，深受欢迎"
+	quest.42A270AF2F03EE3B.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"手持\",\"color\":\"gray\"},{\"text\":\"右击\",\"color\":\"yellow\"},{\"text\":\"后会从玩家手中飞出一个\",\"color\":\"gray\"},{\"text\":\"机械之眼\",\"color\":\"aqua\"},{\"text\":\"的复制飞向最近的\",\"color\":\"gray\"},{\"text\":\"远古工厂\",\"color\":\"gold\"},{\"text\":\"，同时玩家手中的机械之眼进入\",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\"的冷却。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"飞行功能只在\",\"color\":\"gray\"},{\"text\":\"主世界\",\"color\":\"green\"},{\"text\":\"工作，在\",\"color\":\"gray\"},{\"text\":\"下界、末路之地\",\"color\":\"red\"},{\"text\":\"以及没有远古工厂的世界中不会工作。\",\"color\":\"gray\"}]}"
+	]
 	quest.42F6170490C96218.quest_subtitle: "再无敌手"
 	quest.42F6170490C96218.title: "击杀冠军生物 x1000"
 	quest.43B69EBAF5DCC756.quest_subtitle: "全能工具"
@@ -2661,6 +2730,13 @@
 		"&7立刻掉落 1~3 个&#F5F5DC白色雪怪皮毛&r&7，这只雪怪也会变为暴露皮肤的秃毛纹理（2~3 分钟后复原，未复原前无法再次剪毛）。&r"
 	]
 	quest.44FF46EF1BE66093.title: "雪怪"
+	quest.45220A64CA75EEB5.title: "感受魔力"
+	quest.455B8465AECDA168.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"手持\",\"color\":\"gray\"},{\"text\":\"右击\",\"color\":\"yellow\"},{\"text\":\"后会从玩家手中飞出一个\",\"color\":\"gray\"},{\"text\":\"烈焰之眼\",\"color\":\"gold\"},{\"text\":\"的复制飞向最近的\",\"color\":\"gray\"},{\"text\":\"烈焰竞技场\",\"color\":\"red\"},{\"text\":\"，同时玩家手中的烈焰之眼进入\",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\"的冷却。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"飞行功能只在\",\"color\":\"gray\"},{\"text\":\"下界\",\"color\":\"red\"},{\"text\":\"工作，在\",\"color\":\"gray\"},{\"text\":\"主世界、末路之地\",\"color\":\"green\"},{\"text\":\"以及没有烈焰竞技场的世界中不会工作。\",\"color\":\"gray\"}]}"
+	]
+	quest.455B8465AECDA168.quest_subtitle: "烈焰竞技场"
 	quest.45A1C2B4E1B4D9BC.quest_desc: [
 		"&6腐烂暴食条约&r"
 		""
@@ -2715,6 +2791,8 @@
 	]
 	quest.46C1263DC7062475.quest_subtitle: "脱离线性时间"
 	quest.46C1B03029F1C41D.quest_desc: ["&7可以拆卸当前装备的某一部件。虽然一般来说你可以直接与新部件合成，把旧部件替换下来，但是也许还是会用到这个工具的。"]
+	quest.4761041D4596C446.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.4761041D4596C446.quest_subtitle: "可合成"
 	quest.47CF8DC4847AD311.quest_subtitle: "阶段2"
 	quest.47D658272D1D7048.quest_desc: [
 		"&7依旧以剑蓝图为例。这种蓝图制作出来的物品称为&2“主要部件”&7。剑蓝图制作出来的物品就是剑刃。使用蓝图制作部件时需要填充相同的材料，例如剑蓝图需要放入两个相同的材料，两个铁锭，两个钻石都可以，具体数量则随蓝图不同而变化。这些材料需要能够制作&2“主要部件”&7才能被做成剑刃。"
@@ -2759,6 +2837,7 @@
 		""
 		"&8它们讨厌颠簸，但热爱共舞&r"
 	]
+	quest.48F1FA137148C82F.title: "发现远古工厂"
 	quest.4923304658C6BF41.quest_desc: [
 		"&e至臻的燃料，似乎把他当作燃料是一种浪费。"
 		"&6集最低消耗、最快速度、最高温度于一身，接近完美。"
@@ -2782,6 +2861,8 @@
 		"&7&e澄空&r&7与&6大地&r&7通常不会相互反应，这种不反应也有其用武之地。谐振调谐器会缓和&e坩埚&r&7中不同力量的交互，以减缓加工速度的方法大幅降低，甚至完全去除&c失稳风险&r&7。&r"
 	]
 	quest.4AC2F5D5FF711C0F.quest_subtitle: "失谐缓和"
+	quest.4ACF299AC1220CE6.quest_subtitle: "宏伟殿堂"
+	quest.4ACF299AC1220CE6.title: "发现城堡"
 	quest.4AEAA66A5B802779.quest_desc: [
 		"&e“快，就是好！”"
 		"&7双翼机基础速度远高于其他机型，加装发动机与螺旋桨升级后更是可以和区块加载速度一争高下，但同样拥有巨大的坠机风险，且坠机会发生&c爆炸&7，这意味着掉落的飞机可能会被爆炸的火焰烧掉，起降时一定要留好跑道，谨慎出行。"
@@ -2817,6 +2898,7 @@
 	quest.4BA0280CD5AC4EB5.quest_subtitle: "更高贵的剪刀...?"
 	quest.4C04EAB3BF7A1201.quest_desc: ["&7在这个阶段推荐是因为能在这个阶段获取，不代表只能在这个阶段用，一部分极其强力材料无论什么时期都会用到。"]
 	quest.4C04EAB3BF7A1201.title: "前期-死者之王前"
+	quest.4C4558B339BA59A5.quest_subtitle: "一码归一码"
 	quest.4C4D49730F599ADA.quest_desc: [
 		"&6晶体沙漠&r"
 		"&7是星光维度的地表生物群系之一。"
@@ -2875,6 +2957,8 @@
 		"&7对于人力驱动的飞机：按住W键提供动力，动力到满值以后就会固定，此时W变为正常的前进操控。飞行期间持续消耗饱食度。"
 	]
 	quest.4D2D9898C6477E3B.quest_subtitle: "至少会踩油门和刹车吧……"
+	quest.4D448B1BA52C6548.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.4D448B1BA52C6548.quest_subtitle: "可合成"
 	quest.4D73E8E5F27EE986.quest_desc: [
 		"&7我站在陵墓入口前。"
 		""
@@ -3116,12 +3200,13 @@
 	]
 	quest.50B7EEE2AA34EAFE.quest_subtitle: "在获取经验修补前？"
 	quest.50E57652755EC341.quest_desc: [
-		"&7附魔台似乎也发生了什么变化，我可以察觉到它比原始版本更加……不稳定。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"附魔台似乎也发生了什么变化，我可以察觉到它比原始版本更加……\",\"color\":\"gray\"},{\"text\":\"不稳定\",\"color\":\"red\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
 		""
-		"&7加入了神化附魔体系，附魔等级可以超过原版限制，绝大多数附魔等级上限+4，少数附魔可能有特殊调整。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"加入了\",\"color\":\"gray\"},{\"text\":\"神化附魔体系\",\"color\":\"gold\"},{\"text\":\"，附魔等级可以超过原版限制，绝大多数附魔\",\"color\":\"gray\"},{\"text\":\"等级上限+4\",\"color\":\"green\"},{\"text\":\"，少数附魔可能有特殊调整。\",\"color\":\"gray\"}]}"
 		""
-		"若是对&5神化&r较陌生可在对应章节查询具体内容。"
-		"[ { \"text\": \"[点击跳转]\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"681DDFCA829035FB\" } } ]"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"若是对\",\"color\":\"gray\"},{\"text\":\"神化\",\"color\":\"light_purple\"},{\"text\":\"较陌生可在对应章节查询具体内容。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"\",\"extra\":[{\"text\":\"[点击跳转]\",\"underlined\":true,\"color\":\"aqua\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"681DDFCA829035FB\"}}]}]}"
 	]
 	quest.50E57652755EC341.quest_subtitle: "我有fomo台"
 	quest.5125C8D0790C81BB.quest_desc: [
@@ -3166,13 +3251,12 @@
 	quest.527B5583A09AF510.quest_subtitle: "更强的量子化增长"
 	quest.527B5583A09AF510.title: "已献祭之头颅"
 	quest.52FB65193EF182F4.quest_desc: [
-		"&#FF5555暴怒-侵蚀&r&7"
-		"&7携带「暴怒」效果时，视为施加 &#FF5555静止计时&r&7。&r"
-		"&#00FFAA[每1秒]&r&7 &#FF5555静止计时&r&7 增加 1 秒。&r"
-		"&#00FFAA[静止计时 ≥ 60秒]&r&7 使自身受到等同于最大生命值 10% 的伤害，并将 &#FF5555静止计时&r&7 重置为 0。&r"
-		"&#00FFAA[受到攻击时]&r&7 若自身拥有 &#FFAA00暴怒&r&7 效果，则对攻击者施加 &#FF5555发光&r&7（持续 20 秒）与 &#FF5555暴怒标记&r&7（持续 20 秒）。&r"
-		"&#00FFAA[攻击命中时]&r&7 若自身拥有 &#FFAA00暴怒&r&7 效果且目标带有 &#FF5555暴怒标记&r&7，则使本次攻击的最终伤害额外附加 2 倍于基础伤害的额外伤害；附加成功后，移除目标的 &#FF5555暴怒标记&r&7 与 &#FF5555发光&r&7 效果。&r"
-		"&#00FFAA[攻击命中时]&r&7 若自身不处于「暴怒」状态，则 &#FF5555静止计时&r&7 重置为 0。&r"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"暴怒\",\"color\":\"red\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"被攻击时：给攻击者挂上10秒的\",\"color\":\"gray\"},{\"text\":\"“复仇”\",\"color\":\"red\"},{\"text\":\"标记，使其发光。\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击带有\",\"color\":\"gray\"},{\"text\":\"“复仇”\",\"color\":\"red\"},{\"text\":\"标记的目标时，\",\"color\":\"gray\"},{\"text\":\"伤害增加15%\",\"color\":\"green\"},{\"text\":\"，并消耗标记。\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"每次攻击获得1层\",\"color\":\"gray\"},{\"text\":\"“强化纹身”\",\"color\":\"yellow\"},{\"text\":\"，最多5层，持续5秒，可叠加\",\"color\":\"gray\"},{\"text\":\"暴击率和攻击速度\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"5秒内不攻击，开始每1秒扣除\",\"color\":\"gray\"},{\"text\":\"最大生命值10%的真实伤害\",\"color\":\"red\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
 	]
 	quest.52FB65193EF182F4.quest_subtitle: "WIP"
 	quest.52FB65193EF182F4.title: "暴怒侵蚀"
@@ -3213,6 +3297,7 @@
 		""
 		"&8手稿的空白处画着一条蜿蜒的传送带，旁边写着：路已铺好，现在，让东西动起来吧。&r"
 	]
+	quest.53634A7FA785B1D3.quest_desc: ["相较而言，在面对一些强力怪物/BOSS的时候，你会需要它们的帮助..."]
 	quest.53634A7FA785B1D3.quest_subtitle: "未必是负面"
 	quest.53634A7FA785B1D3.title: "七罪侵蚀"
 	quest.536380EE035D7850.quest_subtitle: "拿着任意末地创世的眼睛右键门框上已有的眼睛可以卸下"
@@ -3252,6 +3337,8 @@
 	]
 	quest.5394037EDC7769D9.quest_subtitle: "成为箭镞"
 	quest.5394037EDC7769D9.title: "接续射击条约"
+	quest.53A39052B8DFFE3E.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.53A39052B8DFFE3E.quest_subtitle: "可合成"
 	quest.53C821423589F530.quest_desc: [
 		"请注意不要在白天召唤，骷髅王在白天会进入狂暴状态，防御极高并且伤害巨幅提升可以秒杀玩家。"
 		""
@@ -3353,6 +3440,14 @@
 		""
 		"&8将尚在搏动的罪孽，浸入这口沸腾的裁决之釜。待猩红从生命与液面的缝隙间挣扎析出，你便可持瓶接取——那便是罪愠凝成的浓缩否定，一份被萃取剥离的、仍带体温的“生”之反证。&r"
 	]
+	quest.56B3E6FD85D52F60.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"游历此世，常遇那手持\",\"color\":\"gray\"},{\"text\":\"书卷\",\"color\":\"gold\"},{\"text\":\"与\",\"color\":\"gray\"},{\"text\":\"异样短杖\",\"color\":\"light_purple\"},{\"text\":\"之人，施展的\",\"color\":\"gray\"},{\"text\":\"法术\",\"color\":\"aqua\"},{\"text\":\"让我\",\"color\":\"gray\"},{\"text\":\"头痛欲裂\",\"color\":\"red\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"既然敌不过，那便索性也踏上此道罢了。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"点击跳转至铁魔法支线\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"60C42244ED37BA5F\"},\"underlined\":true,\"color\":\"yellow\"}"
+	]
+	quest.56B3E6FD85D52F60.quest_subtitle: "无尽奥秘"
+	quest.56B3E6FD85D52F60.title: "初识魔法"
 	quest.56B761C2894F3C2E.quest_desc: [
 		"&7神圣金的一种简单应用是&6精魂罐&r&7。"
 		""
@@ -3368,16 +3463,14 @@
 	quest.56CB359C8D5426A3.quest_subtitle: "踏入此门者，当舍去一切希望"
 	quest.57045442B4763EC9.quest_subtitle: "游泳健将"
 	quest.571979CF7DC3291C.quest_desc: [
-		"&#FFD700傲慢-侵蚀&r&7"
-		"&7携带「蔑视」效果时，视为施加 &#FFD700蔑视计数&r&7。&r"
-		"&#00FFAA[攻击命中时]&r&7 若自身拥有 &#FFAA00蔑视&r&7 效果，则使 &#FFD700蔑视计数&r&7 增加 1 层（持续 5 秒）。&r"
-		"&#00FFAA[蔑视计数 ≥ 2层]&r&7 对目标施加 1 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
-		"&#00FFAA[蔑视计数 ≥ 4层]&r&7 对目标施加 2 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
-		"&#00FFAA[蔑视计数 ≥ 6层]&r&7 对目标施加 3 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
-		"&#00FFAA[蔑视计数 ≥ 8层]&r&7 对目标施加 4 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
-		"&#00FFAA[蔑视计数 ≥ 10层]&r&7 对目标施加 5 级 &#FFD700破甲&r&7（持续 30 秒）。&r"
-		"&7"
-		"&#00FFAA[每层蔑视计数]&r&7 使自身的攻击伤害提升 10%，但攻击速度降低 5%（攻速降低最多 50%）。&r"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"傲慢\",\"color\":\"gold\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"每秒效果：获得1层\",\"color\":\"gray\"},{\"text\":\"“神性”\",\"color\":\"gold\"},{\"text\":\"，最多10层，每层提供\",\"color\":\"gray\"},{\"text\":\"15%暴击率\",\"color\":\"green\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"根据\",\"color\":\"gray\"},{\"text\":\"“神性”\",\"color\":\"gold\"},{\"text\":\"层数判定是否暴击\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"暴击时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"造成\",\"color\":\"gray\"},{\"text\":\"120%伤害\",\"color\":\"green\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"重置\",\"color\":\"gray\"},{\"text\":\"“神性”\",\"color\":\"gold\"},{\"text\":\"层数\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"获得1层\",\"color\":\"gray\"},{\"text\":\"“神格”\",\"color\":\"gold\"},{\"text\":\"，最多10层，每层提供\",\"color\":\"gray\"},{\"text\":\"5%暴击伤害\",\"color\":\"green\"}]}"
 	]
 	quest.571979CF7DC3291C.title: "傲慢侵蚀"
 	quest.5731A86EC589BF22.quest_desc: [
@@ -3389,6 +3482,8 @@
 	quest.5731A86EC589BF22.quest_subtitle: "工匠技艺"
 	quest.57D76B1B33C57F9F.quest_desc: ["虽然你都游这么久应该也不缺这些了，但是我还是送给你这些，因为我不知道送什么了...送点水特产吧"]
 	quest.57D76B1B33C57F9F.quest_subtitle: "那我问你，我为什么不坐船"
+	quest.582C0861954C8D52.quest_desc: ["可视为所有工作站的结合体，拥有8输入槽位"]
+	quest.582C0861954C8D52.quest_subtitle: "更好的万用设备"
 	quest.5883458218829D00.quest_desc: [
 		"&7魂染钢ProMAX版本，造价高昂，效果强力，始源恶意词条提供大量灵魂护盾与镰刀熟练度。"
 		""
@@ -3402,6 +3497,8 @@
 		"&7适合悬停协助做建筑的机型，非常平稳但是也非常慢。由于飞机本身被认为是静音的，在古城戏弄监守者时也有一战之力。"
 	]
 	quest.58BCF9F1BE8BAA5E.quest_desc: ["&7当它倒下时，体内封存的力量似乎逸散而出……我得去查探一番，看看留下了什么痕迹。"]
+	quest.58C802ED3AA66357.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.58C802ED3AA66357.quest_subtitle: "可合成"
 	quest.58CA43B9AA0530E2.quest_subtitle: "阶段2"
 	quest.58DE58D4F8290C1C.quest_desc: [
 		"&7这件物品是我于旅途中偶然所得"
@@ -3424,6 +3521,8 @@
 	]
 	quest.593ABE7FAC454B34.quest_subtitle: "促进处理的脉动"
 	quest.5A46895D552BC15F.quest_subtitle: "我没精神吗，我精神很好啊"
+	quest.5A59A7F48EA53168.quest_desc: ["[ { \"text\": \"点击前往机动支线\", \"underlined\": true, \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"1FB3D1FAE9A88C39\" } } ]"]
+	quest.5A59A7F48EA53168.title: "飞旋齿轮"
 	quest.5A5CB66A9C32EDDA.quest_desc: ["&7这里不是你所熟知的任何一处地方，但至少你还活着，你还要活着。"]
 	quest.5A5CB66A9C32EDDA.title: "混乱荒野"
 	quest.5A8ACB926DFAB615.quest_subtitle: "你将得到一份新手礼包"
@@ -3445,6 +3544,8 @@
 		"&d无人知晓这根绳索内部的构造原理...就算是末影人也不行。"
 	]
 	quest.5AEF01E9FF0A0727.quest_subtitle: "精灵球"
+	quest.5B38A4F8CD3C9B98.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.5B38A4F8CD3C9B98.quest_subtitle: "可合成"
 	quest.5B941F073DDCD277.quest_subtitle: "食用扭曲类制品将提升理智值而不是降低理智值"
 	quest.5B941F073DDCD277.title: "&a“于腐秽中绽放的甘霖”"
 	quest.5BDB153064430D05.quest_desc: [
@@ -3516,6 +3617,8 @@
 		"&7这座新结构属于&8灵魂沙谷&r&7，一个&c死亡&r&7统治之地。&c死灵法师&r&7自然会被这些地方吸引，所以你一定能在这里找到他们。&r"
 	]
 	quest.5E01EC2AC8CE43F0.title: "&6墓地&r"
+	quest.5E0B8E874FA58643.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.5E0B8E874FA58643.quest_subtitle: "可合成"
 	quest.5E313592ACB65BC2.quest_desc: [
 		"&7戈伯的奇特性质使得它可以承载其他物体所蕴含的能力，将其制作作为勋章和戒指就能吸收其他物体，从而长时间激活对应的效果，具体配方请自行查询。值得注意的是即便是戒指也不需要佩戴，只要激活后放置在末影箱中就能生效。"
 		""
@@ -3524,6 +3627,12 @@
 	quest.5E313592ACB65BC2.title: "戈伯勋章/戒指"
 	quest.5E3276B22F0E8C6D.quest_desc: ["&7在下界可以找到绯红铁的矿石，这是一种常见但属性稍逊色的材料，与烈焰棒结合后可以制作成绯红钢……尽管属性仍然平庸，但它能用于搭建一些特殊的工具。"]
 	quest.5E3B1B0AB352F0F3.quest_subtitle: "魔宠召唤仪式"
+	quest.5E4E12ACE4F534AD.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"手持\",\"color\":\"gray\"},{\"text\":\"右击\",\"color\":\"yellow\"},{\"text\":\"后会从玩家手中飞出一个\",\"color\":\"gray\"},{\"text\":\"深渊之眼\",\"color\":\"blue\"},{\"text\":\"的复制飞向最近的\",\"color\":\"gray\"},{\"text\":\"沉没之城\",\"color\":\"blue\"},{\"text\":\"，同时玩家手中的深渊之眼进入\",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\"的冷却。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"飞行功能只在\",\"color\":\"gray\"},{\"text\":\"主世界\",\"color\":\"green\"},{\"text\":\"工作，在\",\"color\":\"gray\"},{\"text\":\"下界、末路之地\",\"color\":\"red\"},{\"text\":\"以及没有沉没之城的世界中不会工作。\",\"color\":\"gray\"}]}"
+	]
+	quest.5E4E12ACE4F534AD.quest_subtitle: "沉沦之城"
 	quest.5E513FFD985CDDF9.quest_desc: [
 		"&6傀儡锻造厂&r"
 		"&7是&c星光傀儡&r&7镇守的大型地下结构。"
@@ -3556,6 +3665,8 @@
 		""
 		"&7寂静章节许多一阶段推荐的材料仍然可用，在强大的合金系统下衡量材料的词条与数值是必要的，在尽可能多地融入词条时也需要综合考虑护甲值/伤害等属性。"
 	]
+	quest.5FE4FAAD4501DE1F.quest_desc: ["可视为所有工作站的结合体，但是仅拥有4输入槽位"]
+	quest.5FE4FAAD4501DE1F.quest_subtitle: "万用设备"
 	quest.5FFB29607E15D805.quest_desc: [
 		"&6违抗条约"
 		"&7魔法转变了你对死亡的认知：伤害愈加&c痛苦&r&7。&r&c最大生命值降低五分之一"
@@ -3595,11 +3706,9 @@
 	quest.60BBE14FB14FB583.quest_subtitle: "如同母亲怀里的婴孩一般"
 	quest.60BBE14FB14FB583.title: "海洋之拥护"
 	quest.60C42244ED37BA5F.quest_desc: [
-		"&7看来此方世界并非我预想的那般安宁，那些不断涌现的奇异力量，全然超出我过往的认知……"
-		""
-		"或许，该称其为“魔法”？"
-		""
-		"&7所幸行囊中尚存几份卷轴，其中或许记载着能指引前路的线索。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"翻看行囊，所幸尚存几份\",\"color\":\"gray\"},{\"text\":\"古旧卷轴\",\"color\":\"gold\"},{\"text\":\"——原来它们早在我手中，只是从未细看。\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[\"\"]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"这方天地所谓的\",\"color\":\"gray\"},{\"text\":\"“魔法”\",\"color\":\"aqua\"},{\"text\":\"，或许就藏于其间，静候一把钥匙。\",\"color\":\"gray\"}]}"
 	]
 	quest.60C42244ED37BA5F.quest_subtitle: "魔法造物"
 	quest.61365E0F2831F348.quest_desc: [
@@ -3609,6 +3718,7 @@
 	]
 	quest.61365E0F2831F348.quest_subtitle: "快"
 	quest.613D2E97D95993FF.quest_subtitle: "母亲之温柔"
+	quest.613D3C5BA25706B6.title: "一切之始"
 	quest.61AD6CC3CE0AC9F4.quest_subtitle: "全局选项"
 	quest.62214066B0F19784.quest_desc: ["&7讨厌烦人的屠宰场噪音吗？听烦了生物们的哼唧唧吗？这个更改会让刷怪笼产生的生物不再发出声音。减少噪音污染。"]
 	quest.62214066B0F19784.quest_subtitle: "SHUT UP！"
@@ -3665,6 +3775,8 @@
 		""
 		"&8它很聪明，知道何时该停手。&r"
 	]
+	quest.639AC8246CA81675.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.639AC8246CA81675.quest_subtitle: "可合成"
 	quest.6456C4ED798E5EBD.quest_desc: [
 		"&6猩红森林&r"
 		"&7是星光维度的地表群系之一。"
@@ -3680,12 +3792,16 @@
 	quest.648E4AF815BE0547.quest_subtitle: "撕裂灵魂"
 	quest.6495C96750D3BA0C.quest_desc: ["&7一部分机型可以挂载飞机武器，但一般来说飞机不是很需要战斗。其中炸弹舱输出较为可观，消耗也较大。"]
 	quest.64AC4146C392E8A6.quest_desc: [
-		"&#CC88FF嫉妒-侵蚀&r&7"
-		"&7携带「嫉妒」效果时，视为施加 &#CC88FF嫉妒计数&r&7。&r"
-		"&#00FFAA[攻击命中时]&r&7 若自身拥有 &#FFAA00嫉妒&r&7 效果，则转移目标身上所有状态效果至自身（单个效果最多转移 200 刻）。转移成功后，使 &#CC88FF嫉妒计数&r&7 增加等同于转移效果数量的层数。&r"
-		"&#00FFAA[每2秒]&r&7 &#CC88FF嫉妒计数&r&7 层数减少 1 层（最低 0 层）。&r"
-		"&7"
-		"&#00FFAA[造成伤害时]&r&7 若自身拥有 &#FFAA00嫉妒&r&7 效果，则使本次伤害提升（&#CC88FF嫉妒计数&r&7 × 3%）倍，最高提升至 2 倍。&r"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"嫉妒\",\"color\":\"yellow\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"给目标挂上10秒的\",\"color\":\"gray\"},{\"text\":\"“敌意”\",\"color\":\"red\"},{\"text\":\"标记\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"对没有\",\"color\":\"gray\"},{\"text\":\"“敌意”\",\"color\":\"red\"},{\"text\":\"标记的目标，\",\"color\":\"gray\"},{\"text\":\"伤害减少30%\",\"color\":\"red\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击带有\",\"color\":\"gray\"},{\"text\":\"“敌意”\",\"color\":\"red\"},{\"text\":\"标记的目标时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"偷取目标身上1个正面效果\",\"color\":\"yellow\"},{\"text\":\"（每0.5秒最多1次）\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"减少目标\",\"color\":\"gray\"},{\"text\":\"5%最大生命值\",\"color\":\"red\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"偷取者获得\",\"color\":\"gray\"},{\"text\":\"临时生命值\",\"color\":\"green\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"被动：被带有\",\"color\":\"gray\"},{\"text\":\"嫉妒\",\"color\":\"yellow\"},{\"text\":\"效果的人攻击时，如果没有\",\"color\":\"gray\"},{\"text\":\"“敌意”\",\"color\":\"red\"},{\"text\":\"标记，\",\"color\":\"gray\"},{\"text\":\"伤害减少30%\",\"color\":\"red\"}]}"
 	]
 	quest.64AC4146C392E8A6.title: "嫉妒侵蚀"
 	quest.64E40E59C864874C.quest_desc: [
@@ -3785,14 +3901,15 @@
 	]
 	quest.65B599AA9888FBF2.quest_subtitle: "星空祝福"
 	quest.660EAD8BBC2734CA.quest_desc: [
-		" &#FFAA00懒惰-侵蚀&r&7"
-		"&7常态攻击倍率为 &#00AA000.8 倍&r&7，且拥有 &#00AA0035% 免伤&r&7。&r"
-		"&#00FFAA[受到伤害时]&r&7 若自身拥有 &#FFAA00懒惰&r&7 效果，则累计受到的伤害值。累计伤害达到 (10 + 5 × 懒惰等级) 点时，使自身进入 &#FFAA00「起床气」&r&7 状态（持续 100 秒），攻击倍率提升至 &#00AA001.0~10.0 倍&r&7，并重置累计伤害。&r"
-		"&#00FFAA[投掷硬币时]&r&7 若自身处于 &#FFAA00「起床气」&r&7 状态，则使出现最低值（1）的概率与出现其余任一数值的概率相同。&r"
-		"&#00FFAA[攻击命中时]&r&7 若自身处于 &#FFAA00「起床气」&r&7 状态，则移除 &#FFAA00「起床气」&r&7 状态，并使自身获得 &#FF5555失明 III&r&7、&#FF5555黑暗 III&r&7、&#FF5555霉运 III&r&7、&#FF5555缓慢 III&r&7（持续 10 秒）以及 &#FFAA00抗性提升 IV&r&7（持续 9 秒）。&r"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"怠惰\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"受伤时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"受到任何伤害，对周围2格内所有敌人造成基于自身护甲值的\",\"color\":\"gray\"},{\"text\":\"魔法伤害\",\"color\":\"light_purple\"},{\"text\":\"（1秒冷却）\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"同时触发\",\"color\":\"gray\"},{\"text\":\"35%的伤害减免\",\"color\":\"green\"},{\"text\":\"效果\",\"color\":\"gray\"}]}"
 	]
 	quest.660EAD8BBC2734CA.quest_subtitle: "懒惰侵蚀"
 	quest.660EAD8BBC2734CA.title: "懒惰侵蚀"
+	quest.66417960000F082A.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.66417960000F082A.quest_subtitle: "可合成"
 	quest.66481C79877E0ED7.quest_subtitle: "食物价值>=14"
 	quest.66481C79877E0ED7.title: "大餐回收 x10"
 	quest.664DF00DAF0D957A.quest_desc: [
@@ -3862,8 +3979,9 @@
 	]
 	quest.680583B3F5EF1CC2.quest_subtitle: "失稳燃炎"
 	quest.681DDFCA829035FB.quest_desc: [
-		"神化（Apotheosis）是一个大型通用冒险模组，通过修改药水、附魔、刷怪笼、装备等MC原生元素提供更多的冒险和上限的全方位模组。"
-		"在这里，神化化为六根（不是）被分为各大版块。在该整合包，所使用的是神化的附魔模块与刷怪笼模块。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"神化\",\"color\":\"gold\"},{\"text\":\"（Apotheosis）是一个大型通用冒险模组，通过修改\",\"color\":\"gray\"},{\"text\":\"药水、附魔、刷怪笼、装备\",\"color\":\"aqua\"},{\"text\":\"等MC原生元素提供更多的冒险和上限的全方位模组。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"在这里，\",\"color\":\"gray\"},{\"text\":\"神化\",\"color\":\"gold\"},{\"text\":\"化为六根（不是）被分为各大版块。在该整合包，所使用的是\",\"color\":\"gray\"},{\"text\":\"神化\",\"color\":\"gold\"},{\"text\":\"的\",\"color\":\"gray\"},{\"text\":\"附魔模块\",\"color\":\"aqua\"},{\"text\":\"与\",\"color\":\"gray\"},{\"text\":\"刷怪笼模块\",\"color\":\"aqua\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
 	]
 	quest.681DDFCA829035FB.quest_subtitle: "为你加冕虚假的神格"
 	quest.68780331B0515EB6.quest_desc: [
@@ -4014,14 +4132,6 @@
 	quest.6B475F80CCD29781.quest_subtitle: "合成用品"
 	quest.6B5F16B4F3E12902.quest_desc: ["&r&5阿卡那（0%~100%）：&r&7决定“罕见魔咒”的出现概率，当阿卡那达到 100% 时，一些普通的魔咒（例如锋利）将变得罕见。"]
 	quest.6B82BD57F8A68CEE.quest_subtitle: "魔宠召唤仪式"
-	quest.6B847A24B0B7CC0E.quest_desc: [
-		"&0&m“初章完成，玩家行动阶段结束，进入神话阶段。”"
-		"&0&m“玩家抽取遭遇卡，遭遇卡内容：死王复苏。”"
-		"&7“你察觉到某个方向有一股恶意即将苏醒。”"
-		"&7“场景推进，开启&3第一幕：邪祟退散。&r”"
-		"[ { \"text\": \"[点击跳转]\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"71B24EEAADB29F3A\" } } ]"
-	]
-	quest.6B847A24B0B7CC0E.title: "暂歇"
 	quest.6B97738CD8E10A57.quest_desc: [
 		"&6自我养护条约"
 		"&7饥饿即是遗失自我。&r&c低饥饿值时生命值下降速度大幅加快"
@@ -4122,6 +4232,7 @@
 		"&7雪怪默认只有白色纹理且不能像绵羊一样被染色，除白色以外的雪怪皮毛变种均只能人为合成制作。&r"
 	]
 	quest.6D895DFB1144DF16.title: "雪怪皮毛"
+	quest.6DB8BE45F81F4357.title: "发现烈焰竞技场"
 	quest.6E0EE5297B295288.quest_subtitle: "&e所有中立生物都将与你敌对"
 	quest.6E0EE5297B295288.title: "&e\"浊垢之躯再无纯净可言\""
 	quest.6E25E82DBD18D2C8.quest_subtitle: "&c世界将陷入永恒的黑夜"
@@ -4239,7 +4350,11 @@
 		"&7也可以在合成栏内继续合成为黑色染料。&r"
 	]
 	quest.714645D7B7F4C7BA.quest_subtitle: "击杀黯影蜗牛后掉落的材料"
+	quest.71944D592D710B99.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.71944D592D710B99.quest_subtitle: "可合成"
 	quest.71B24EEAADB29F3A.quest_desc: [
+		"使用重铸锤，把想要重铸属性的武器，在铁砧中重新敲打，可重铸属性"
+		""
 		"&7与村民交易可以获得三种重铸锤，当然也可以自己制作，远比交易要便捷。"
 		"&7可以对武器，盔甲，工具和饰品分别进行重铸，近战武器最佳词条多为&6传奇&7，远程武器则为&6虚幻&7，饰品盔甲词条则涵盖不同方面。"
 		""
@@ -4279,6 +4394,8 @@
 		"&7&e依据主要成分&r&7（即摆放位置的&c首位物品&7）与各物品的&e稀有度&r&7进行综合演算。&r"
 	]
 	quest.727E7E58CDD35234.quest_subtitle: "&c重要物品"
+	quest.729E08704E144DC7.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"在\",\"color\":\"gray\"},{\"text\":\"地狱\",\"color\":\"red\"},{\"text\":\"手持\",\"color\":\"gray\"},{\"text\":\"右击\",\"color\":\"yellow\"},{\"text\":\"该物品后，该物品会变为一张\",\"color\":\"gray\"},{\"text\":\"地图\",\"color\":\"aqua\"},{\"text\":\"，指向\",\"color\":\"gray\"},{\"text\":\"城堡结构\",\"color\":\"gold\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.729E08704E144DC7.quest_subtitle: "为什么拿材料糊一糊就能知道城堡的位置"
 	quest.72C552BE02BA433D.quest_desc: [
 		"&7神化刷怪笼模块为玩家带来了更为强大和定制化的刷怪笼和部分怪物农场自动化的便捷实现方案。"
 		""
@@ -4465,6 +4582,9 @@
 		"使用石英时需要把其他的调节物品放置在副手。"
 	]
 	quest.773AC14F2AF8822B.quest_subtitle: "反向调节"
+	quest.77437FA5561BE4E6.quest_desc: [""]
+	quest.77437FA5561BE4E6.quest_subtitle: "从砍倒一棵树开始"
+	quest.77437FA5561BE4E6.title: "开始游玩"
 	quest.7779D406142005D6.quest_desc: [
 		"&6研究：虚空盐"
 		"&7穿过&d哭泣之井&r&7后，&8咒灰&r&7变化为了我称作“&8虚空盐&r&7”的物质。这种暗色的粉末在化学性质上与咒灰相似，但其中并无碳成分，也就不能再称之为“灰”。"
@@ -4553,7 +4673,7 @@
 		""
 		"推荐部位：顶端升级"
 	]
-	quest.78E0C869F2BB2516.quest_subtitle: "绝！对！幸！运！"
+	quest.78E0C869F2BB2516.quest_subtitle: "我！真！幸！运！"
 	quest.791787D97B46619C.quest_desc: [
 		"整合包内有自然罗盘，可用于搜寻特定群系，但并未加装结构罗盘。"
 		""
@@ -4577,6 +4697,13 @@
 	quest.7964EFBEAA0F5D57.quest_desc: ["&7点击 &a√&r&7 来解锁下一个任务"]
 	quest.7964EFBEAA0F5D57.quest_subtitle: "如你所见，这是一个任务"
 	quest.7964EFBEAA0F5D57.title: "指引"
+	quest.799B92FBA8B69A02.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"骷髅王掉落的\",\"color\":\"gray\"},{\"text\":\"山铜锭\",\"color\":\"gold\"},{\"text\":\"十分有用，常见于制作各种\",\"color\":\"gray\"},{\"text\":\"寂静装备\",\"color\":\"aqua\"},{\"text\":\"的装备来源。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"在拥有了山铜锭之后，\",\"color\":\"gray\"},{\"text\":\"你也可以击败一些boss，获取他们的独特武器来制作一些以独特武器为原型的\",\"color\":\"gray\"},{\"text\":\"寂静装备\",\"color\":\"aqua\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
+	]
+	quest.799B92FBA8B69A02.quest_subtitle: "百般武艺"
+	quest.799B92FBA8B69A02.title: "是时候了！"
 	quest.79B12E63C90B3C61.quest_desc: [
 		"可以提供3000摄氏度的温度，需要拥有电力熔炉才能正常工作"
 		""
@@ -4625,24 +4752,29 @@
 	quest.7B2DD9D8E6237F68.quest_subtitle: "微弱量子化增长"
 	quest.7B2DD9D8E6237F68.title: "原始的混沌献祭"
 	quest.7B470F04445F5D8B.quest_desc: [
-		"&7我已能分辨出&c恶念之铅&r&7的组成，更方便了用途的设计。正如&8幽影奥能&r&7的奇异，其与金属制成的合金也有特殊的性质。&e深岩珍金&r&7化为低贱，由此产生恶念之铅，这种&c白镴&r&7则渴求着对外作用。它渴求侵蚀、拆解、消除人类的发展。"
-		"&7"
-		"&7这一性质确有其平凡用处——当作武器进一步损伤盔甲，同时伤害并击碎灵魂；它的神秘学用途也不容小觑。恶念白镴在魔法层面上并非惰性，也不会吸收魔法。而是魔法似乎根本就无法在其周围&c形成&r&7，也象征着对知识的追求的消退。"
-		"&7"
-		"&7这种金属相当坚韧，也相当锋利，但穿戴&c反魔法套装&r&7肯定会产生问题……也会带来全新的能力。我已有用它制作盔甲套装的大致想法，这一套装能运用金属的能力，应当极为强大。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"我已能分辨出\",\"color\":\"gray\"},{\"text\":\"恶念之铅\",\"color\":\"red\"},{\"text\":\"的组成，更方便了用途的设计。正如\",\"color\":\"gray\"},{\"text\":\"幽影奥能\",\"color\":\"dark_gray\"},{\"text\":\"的奇异，其与金属制成的合金也有特殊的性质。\",\"color\":\"gray\"},{\"text\":\"深岩珍金\",\"color\":\"yellow\"},{\"text\":\"化为低贱，由此产生恶念之铅，这种\",\"color\":\"gray\"},{\"text\":\"白镴\",\"color\":\"red\"},{\"text\":\"则渴求着对外作用。它渴求侵蚀、拆解、消除人类的发展。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"这一性质确有其平凡用处——当作武器进一步损伤盔甲，同时伤害并击碎灵魂；它的神秘学用途也不容小觑。恶念白镴在魔法层面上并非惰性，也不会吸收魔法。而是魔法似乎根本就无法在其周围\",\"color\":\"gray\"},{\"text\":\"形成\",\"color\":\"red\"},{\"text\":\"，也象征着对知识的追求的消退。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"这种金属相当坚韧，也相当锋利，但穿戴\",\"color\":\"gray\"},{\"text\":\"反魔法套装\",\"color\":\"red\"},{\"text\":\"肯定会产生问题……也会带来全新的能力。我已有用它制作盔甲套装的大致想法，这一套装能运用金属的能力，应当极为强大。\",\"color\":\"gray\"}]}"
+		""
 		"{@pagebreak}"
-		"&6恶念要塞盔甲"
-		"&7&c恶念白镴&r&7会排斥魔法，因此从魔法师的角度看来，把它穿在身上实在是个奇怪的做法。但是，我&a也是&r&7个魔法师，我造出的要塞盔甲却强大无比。"
-		"&7"
-		"&7恶念白镴衬板下方的盔甲与&6魂染钢盔甲&r&7相反——我的灵魂没有受到保护，而是奥能的流动被这种金属毁坏了。它会将奥能扭曲为向外流动，由此扰乱将要到来的伤害。在穿戴整套要塞盔甲时，我的灵魂最终受到的伤害会减弱至原本的一半。"
-		"&7"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"恶念要塞盔甲\",\"color\":\"gold\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"恶念白镴\",\"color\":\"red\"},{\"text\":\"会排斥魔法，因此从魔法师的角度看来，把它穿在身上实在是个奇怪的做法。但是，我\",\"color\":\"gray\"},{\"text\":\"也是\",\"color\":\"green\"},{\"text\":\"个魔法师，我造出的要塞盔甲却强大无比。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"恶念白镴衬板下方的盔甲与\",\"color\":\"gray\"},{\"text\":\"魂染钢盔甲\",\"color\":\"gold\"},{\"text\":\"相反——我的灵魂没有受到保护，而是奥能的流动被这种金属毁坏了。它会将奥能扭曲为向外流动，由此扰乱将要到来的伤害。在穿戴整套要塞盔甲时，我的灵魂最终受到的伤害会减弱至原本的一半。\",\"color\":\"gray\"}]}"
+		""
 		"{@pagebreak}"
-		"&7这套盔甲影响的不只是飞来的魔法。穿戴者自己的奥能回路也会受其影响。它们原先走向灵魂的轨迹被打乱、被偷窃、被加工扭转。而在奥能的消解之中，能量依然留存。盔甲会对这股能量产生反应，并随之增强。"
-		"&7"
-		"&7此效应中有两个重点。首先，盔甲的魔法吸收过程应当称作“&c恶念转化&r&7”。它是对流向灵魂之奥能的拦截与对所得能量的吸收过程。其次，盔甲会编织偷来的能量，赋予其全新的形态和意图。这一过程的效果应当被命名为“&6恶念庇护&r&7”。"
-		"&7"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"这套盔甲影响的不只是飞来的魔法。穿戴者自己的奥能回路也会受其影响。它们原先走向灵魂的轨迹被打乱、被偷窃、被加工扭转。而在奥能的消解之中，能量依然留存。盔甲会对这股能量产生反应，并随之增强。\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"此效应中有两个重点。首先，盔甲的魔法吸收过程应当称作“\",\"color\":\"gray\"},{\"text\":\"恶念转化\",\"color\":\"red\"},{\"text\":\"”。它是对流向灵魂之奥能的拦截与对所得能量的吸收过程。其次，盔甲会编织偷来的能量，赋予其全新的形态和意图。这一过程的效果应当被命名为“\",\"color\":\"gray\"},{\"text\":\"恶念庇护\",\"color\":\"gold\"},{\"text\":\"”。\",\"color\":\"gray\"}]}"
+		""
 		"{@pagebreak}"
-		"&7恶念庇护实际相当于一面强大的护盾，能直接抵消几乎所有种类的伤害。在盔甲不断吸收魔法的过程中，恶念庇护的容量，乃至恢复速率和恢复增益也会增长，具体因吸收的属性不同而不同。到目前的研究为止，恶念要塞盔甲最强大的能力非其莫属。"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"恶念庇护\",\"color\":\"gold\"},{\"text\":\"实际相当于一面强大的护盾，能直接抵消几乎所有种类的伤害。在盔甲不断吸收魔法的过程中，恶念庇护的容量，乃至恢复速率和恢复增益也会增长，具体因吸收的属性不同而不同。到目前的研究为止，恶念要塞盔甲最强大的能力非其莫属。\",\"color\":\"gray\"}]}"
 	]
 	quest.7B470F04445F5D8B.quest_subtitle: "演进不再"
 	quest.7B6F7BDF000CF379.quest_desc: [
@@ -4664,13 +4796,15 @@
 		""
 		"&7背包右上角设置则可以修改背包的一些具体项目，比如在背包上显示某一格的物品，或是指定某一格只能存放某一种物品，可以让一些需要随身携带的物品无视整理且只能存放在指定位置，便于日常存取。"
 	]
-	quest.7BACE6601BC4DFED.quest_subtitle: "次元口袋"
+	quest.7BACE6601BC4DFED.quest_subtitle: "空间不够了？来试试次元口袋"
 	quest.7BD9DC7DB2278AA5.quest_desc: [
 		"&7需要在古城战利品箱获取，拥有相当高的攻击伤害，但没有特殊词条，适合用于合金制作武器部件。"
 		""
 		"推荐部位：武器"
 	]
 	quest.7BD9DC7DB2278AA5.quest_subtitle: "朴素的高伤害"
+	quest.7BF7E53DAB408397.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
+	quest.7BF7E53DAB408397.quest_subtitle: "可合成"
 	quest.7C227ABAEC91DA58.quest_subtitle: "虽不如其他的护甲的防御力高，但是对法术相关属性特攻"
 	quest.7C74D47B9ED97737.quest_desc: [
 		"&7权限管理器是一个可以存储权限卡的方块"
@@ -4701,6 +4835,9 @@
 	]
 	quest.7C7C7734793AB866.quest_subtitle: "稳定下来"
 	quest.7CACDAC57F697371.quest_subtitle: "嗅矿者"
+	quest.7CB11EBD34BA84FB.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"如果你愿意，甚至可以\",\"color\":\"gray\"},{\"text\":\"击败\",\"color\":\"red\"},{\"text\":\"那些比你\",\"color\":\"gray\"},{\"text\":\"弱小得多\",\"color\":\"green\"},{\"text\":\"的生物...\",\"color\":\"gray\"}]}"]
+	quest.7CB11EBD34BA84FB.quest_subtitle: "总之，在面对BOSS前，先让我们挑几个倒霉蛋练练手"
+	quest.7CB11EBD34BA84FB.title: "练手"
 	quest.7CDF0A87C605E833.quest_subtitle: "魔宠召唤仪式"
 	quest.7CE0C7EC4D46C170.quest_subtitle: "魔宠召唤仪式"
 	quest.7CEF4D8E514066A7.quest_desc: [
@@ -4733,25 +4870,23 @@
 	quest.7CF77F3C6D4073BD.quest_subtitle: "灵感迸发"
 	quest.7CF77F3C6D4073BD.title: "无限可能"
 	quest.7D0410D74877C78A.quest_desc: [
-		"&7要使用精致存储存取物品，需要三个部件：控制器，终端，与存储。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"要使用\",\"color\":\"gray\"},{\"text\":\"精致存储\",\"color\":\"gold\"},{\"text\":\"存取物品，需要三个部件：\",\"color\":\"gray\"},{\"text\":\"控制器，终端，与存储\",\"color\":\"aqua\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
 		""
-		"控制器负责为所有部件供电，任务奖励中的交流发电机紧贴控制器放置就可以为控制器供电，而发电机只需要连接一个大型水车就能运行。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"控制器负责为所有部件供电，任务奖励中的\",\"color\":\"gray\"},{\"text\":\"交流发电机\",\"color\":\"yellow\"},{\"text\":\"紧贴控制器放置就可以为控制器供电，而发电机只需要连接一个\",\"color\":\"gray\"},{\"text\":\"大型水车\",\"color\":\"aqua\"},{\"text\":\"就能运行。\",\"color\":\"gray\"}]}"
 		""
-		"&7终端是你访问存储内容的地方，你可以在这里存入取出，合成终端还附加了合成功能。终端页面左侧有大量附加功能，可以调整物品排列顺序等等。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"终端是你访问存储内容的地方，你可以在这里存入取出，\",\"color\":\"gray\"},{\"text\":\"合成终端\",\"color\":\"yellow\"},{\"text\":\"还附加了合成功能。终端页面左侧有大量附加功能，可以调整物品排列顺序等等。\",\"color\":\"gray\"}]}"
 		""
-		"&7存储影响你能存放多少物品。每1存储量代表可以存放一个物品，所以存放一组圆石就会直接占用64存储量。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"存储影响你能存放多少物品。每1存储量代表可以存放一个物品，所以存放一组圆石就会直接占用64存储量。\",\"color\":\"gray\"}]}"
 		""
-		"在下一页有更加详细的摆放实例。"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"在下一页有更加详细的摆放实例。\",\"color\":\"gray\"}]}"
 		""
 		"{@pagebreak}"
-		"如图，您可以分别将控制器，存储终端，存储方块摆在一起进行链接，同时对控制器进行供电"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"如图，您可以分别将\",\"color\":\"gray\"},{\"text\":\"控制器\",\"color\":\"aqua\"},{\"text\":\"、\",\"color\":\"gray\"},{\"text\":\"存储终端\",\"color\":\"aqua\"},{\"text\":\"、\",\"color\":\"gray\"},{\"text\":\"存储方块\",\"color\":\"aqua\"},{\"text\":\"摆在一起进行\",\"color\":\"gray\"},{\"text\":\"链接\",\"color\":\"green\"},{\"text\":\"，同时对控制器进行\",\"color\":\"gray\"},{\"text\":\"供电\",\"color\":\"yellow\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
 		""
 		"{image:kubejs:textures/gui/refinedstorage1.png width:180 height:100 align:center}"
-		""
-		"此时链接的存储方块的大小和数量决定了你存储物品的数量"
-		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"此时链接的\",\"color\":\"gray\"},{\"text\":\"存储方块\",\"color\":\"aqua\"},{\"text\":\"的\",\"color\":\"gray\"},{\"text\":\"大小\",\"color\":\"yellow\"},{\"text\":\"和\",\"color\":\"gray\"},{\"text\":\"数量\",\"color\":\"yellow\"},{\"text\":\"决定了你存储物品的\",\"color\":\"gray\"},{\"text\":\"数量\",\"color\":\"aqua\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
 		"{@pagebreak}"
-		"您也可以使用线缆将他们链接，此时将计算线缆链接的所有方块"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"您也可以使用\",\"color\":\"gray\"},{\"text\":\"线缆\",\"color\":\"yellow\"},{\"text\":\"将他们链接，此时将计算线缆链接的所有方块。\",\"color\":\"gray\"}]}"
 		""
 		"{image:kubejs:textures/gui/refinedstorage2.png width:180 height:100 align:center}"
 	]
@@ -4769,11 +4904,7 @@
 	quest.7D2FD37CB2502689.quest_subtitle: "传奇肉盾"
 	quest.7D61EDF0B7F33C80.quest_desc: ["具有朝向，玩家放置时将面朝点击的方块面，只有朝向方向的网络会和其他面接入的网络分开"]
 	quest.7D61EDF0B7F33C80.quest_subtitle: "相当于线缆，但可受红石信号控制"
-	quest.7D628BA502AB05E5.quest_desc: [
-		"&7骷髅王需要使用灵灾的精魂祭坛召唤，切记需要在夜晚时召唤，在白天会立即狂暴并拥有秒杀玩家的巨额伤害。"
-		""
-		"未完待续"
-	]
+	quest.7D628BA502AB05E5.quest_desc: ["&7骷髅王需要使用灵灾的精魂祭坛召唤，切记需要在夜晚时召唤，在白天会立即狂暴并拥有秒杀玩家的巨额伤害。"]
 	quest.7D628BA502AB05E5.title: "目标：骷髅王"
 	quest.7D6295CE0F8D8951.quest_desc: [
 		"&6交流发电机&r"
@@ -4818,8 +4949,6 @@
 		"&#757369符文碎屑&r&7于主世界0以上高度生成"
 		""
 		"&7“你的野心愈发膨胀。”"
-		"&7“场景推进，开启&3第二幕：盲目收割。&r”"
-		"[ { \"text\": \"[点击跳转]\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"015EB916702B3797\" } } ]"
 	]
 	quest.7E57D8FC5D757153.title: "暂歇"
 	quest.7E59A0E6979C8FF1.quest_desc: [
@@ -4833,6 +4962,8 @@
 	]
 	quest.7E59A0E6979C8FF1.quest_subtitle: "添柴助火"
 	quest.7E59A0E6979C8FF1.title: "燃焰条约"
+	quest.7EAC2A6DF8B2EB37.quest_subtitle: "不管是恢复状态，还是..."
+	quest.7EAC2A6DF8B2EB37.title: "常备一些吃的"
 	quest.7EB97CBE6483FCF7.quest_desc: ["但是我还是要提醒你，宿管现在只有会在你规律作息时生成...."]
 	quest.7EB97CBE6483FCF7.quest_subtitle: "好好睡"
 	quest.7EF077D05E3E3B7E.quest_desc: [
@@ -4863,14 +4994,15 @@
 	quest.7F11174C00472167.quest_subtitle: "十分の平常"
 	quest.7F11174C00472167.title: "星光森林"
 	quest.7F2C0291CE6F6B66.quest_desc: [
-		"&#FF66CC色欲-侵蚀&r&7"
-		"&7常态攻击倍率为 &#00AA001.0 倍&r&7。攻击拥有 &#FF66CC「玫瑰」&r&7 的目标时，攻击倍率提升至 &#00AA001.1 倍&r&7；攻击拥有 &#CC0000「染血的玫瑰」&r&7 的目标时，攻击倍率提升至 &#00AA001.2 倍&r&7。&r"
-		""
-		"&#00FFAA[攻击命中时]&r&7 若目标未拥有 &#FF66CC「玫瑰」&r&7 或 &#CC0000「染血的玫瑰」&r&7，则为其赋予 1 层 &#FF66CC「玫瑰」&r&7。若目标已拥有流血效果，则改为赋予 1 层 &#CC0000「染血的玫瑰」&r&7。&r"
-		""
-		"&#00FFAA[攻击命中时]&r&7 若目标拥有 5 层 &#FF66CC「玫瑰」&r&7，则消耗全部层数，使自身获得 1 层 &#FFAA00伤害强化&r&7。&r"
-		""
-		"&#00FFAA[攻击命中时]&r&7 若目标拥有 10 层 &#CC0000「染血的玫瑰」&r&7，则消耗全部层数，使自身获得 3 层 &#FFAA00伤害强化&r&7，并对目标造成 1 次基于其当前流血等级的流血伤害。&r"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"色欲\",\"color\":\"light_purple\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击时：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"每次攻击给目标叠加1层\",\"color\":\"gray\"},{\"text\":\"“玫瑰”\",\"color\":\"light_purple\"},{\"text\":\"（每0.5秒最多1次）\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击者自身\",\"color\":\"gray\"},{\"text\":\"额外受到1点伤害\",\"color\":\"red\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"当\",\"color\":\"gray\"},{\"text\":\"“玫瑰”\",\"color\":\"light_purple\"},{\"text\":\"叠满7层时触发效果：\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击者\",\"color\":\"gray\"},{\"text\":\"恢复15%最大生命值\",\"color\":\"green\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"给目标施加\",\"color\":\"gray\"},{\"text\":\"随机减益效果\",\"color\":\"red\"},{\"text\":\"，持续10秒\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"目标身上所有减益效果\",\"color\":\"gray\"},{\"text\":\"层数+1\",\"color\":\"yellow\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"被动：自身\",\"color\":\"gray\"},{\"text\":\"不会因流血伤害而死\",\"color\":\"green\"},{\"text\":\"，流血伤害会保留至少1点生命值。\",\"color\":\"gray\"}]}"
 	]
 	quest.7F2C0291CE6F6B66.quest_subtitle: "WIP"
 	quest.7F2C0291CE6F6B66.title: "色欲侵蚀"
@@ -5060,6 +5192,7 @@
 	task.02E724791B98221B.title: "任意 头颅"
 	task.03566662B2722669.title: "法术书 模板"
 	task.039FE05CAF91D22E.title: "灌注书架"
+	task.05D692FEA8B7F8C3.title: "绞肉机 模板"
 	task.05EC35C7459C4EE5.title: "场景：村落"
 	task.061EADF2EDD58507.title: "点击继续"
 	task.0626EAAE040A2364.title: "我已了解"
@@ -5077,12 +5210,14 @@
 	task.0AF727CB579792E5.title: "场景：村落"
 	task.0B6D03278DF87C34.title: "鹤嘴锄 模板"
 	task.0E6662C2E723B71E.title: "以太"
-	task.0F797DD94CCF8B11.title: "床"
+	task.0F29284CFF46D61E.title: "宝石"
 	task.0FF5EB378FBC3D7E.title: "大餐回收"
 	task.104407FC50682D93.title: "任意 通透玻璃"
 	task.107CD75BA2850AF5.title: "胸甲 模板"
 	task.10F524062F93326B.title: "阿卡那"
 	task.1241D4845D2FA0FE.title: "任意 卷轴"
+	task.131708AD4D3A2E8E.title: "法杖 模板"
+	task.13419554E1773A09.title: "湮灭者 模板"
 	task.134BFF78A7F20CA9.title: "凋灵山庄"
 	task.137C3EB186FD1877.title: "场景：地下墓穴"
 	task.13A0D926AD6B0330.title: "量子稳定性"
@@ -5091,6 +5226,7 @@
 	task.14F00C7BD0F376AF.title: "弩 模板"
 	task.1515843B90E779DE.title: "任意 疾风设备"
 	task.1516D6057A163CD8.title: "场景：混乱荒野"
+	task.1705E46627ADF4CB.title: "法术书 模板"
 	task.17C489799E4E8BE8.title: "选择奖励"
 	task.17D165E1F90F67DA.title: "拾荒者"
 	task.17FD4724C406FFAA.title: "匕首 模板"
@@ -5109,14 +5245,18 @@
 	task.20E752F817977436.title: "重型靴子 模板"
 	task.2168A7B0CEA44A59.title: "量子化"
 	task.218622C67393A564.title: "流体存储方块"
+	task.221E5092A09BCA29.title: "壁垒 模板"
 	task.23B079325E8F6976.title: "重型胸甲 模板"
 	task.24414CD8C86B97F5.title: "任意 升级珠"
+	task.2535599FB0298A82.title: "锻锤 模板"
+	task.25B8CE24D26D2658.title: "自动装填弩 模板"
 	task.27FCF177F9DBA089.title: "魔宠列表"
 	task.28F0C1066808D8E9.title: "猎杀"
 	task.2953AA70E267ADF7.title: "按键设置"
 	task.2A2F3B895F40F65B.title: "死亡不掉落"
 	task.2AB642EE8FD15F3A.title: "任意 储罐"
 	task.2B04D3E934572437.title: "星光森林"
+	task.2B380F2F0C346C76.title: "任意 颜料"
 	task.2BC958F6797C3F87.title: "场景：远古战场"
 	task.2BF2DB6EC9E778D8.title: "任意 胸针"
 	task.2D2AAB7B62B6E1EC.title: "关于村民"
@@ -5164,8 +5304,10 @@
 	task.4523017FBAED20D8.title: "任意 堆叠升级"
 	task.4589838CDC8B4082.title: "靴子 模板"
 	task.45910B0D3AD5DF52.title: "补货升级"
+	task.45AB44FAD7068F5E.title: "击杀10只生物"
 	task.45BDFA326BB0A8FD.title: "优化"
 	task.46012C86914DC29F.title: "强制加载资源包问题"
+	task.46510993DAAB22EE.title: "任意模具"
 	task.46F749B8F9278545.title: "后悔药"
 	task.4841C69FA35E0AB5.title: "清理难度设置"
 	task.485CC6934B88F320.title: "砍刀 模板"
@@ -5173,8 +5315,12 @@
 	task.497AB5357C7176F2.title: "发现：远古战场"
 	task.49FE6E789C324194.title: "飞行员速成指南"
 	task.4A013412C9FB46A1.title: "场景：混乱荒野"
+	task.4A18320EE61D06E5.title: "任意 大餐"
+	task.4A1FC667DA332631.title: "击杀十只生物"
 	task.4B132C18D9C2E7DB.title: "&6生命果实&r"
 	task.4BF8BB7049344BF9.title: "锄 模板"
+	task.4C40759DAAA9C3E7.title: "战戟 模板"
+	task.4D216882B37E2284.title: "焰形剑 模板"
 	task.4E5EDBD8AEB48E9E.title: "Any #malum:scythe"
 	task.4E656DDCE29C8902.title: "项链 模板"
 	task.4E672C9A0EFF1047.title: "禁用传送"
@@ -5199,6 +5345,7 @@
 	task.5DAEF315B3683621.title: "任意 精魂"
 	task.5DBF144A9A88D545.title: "隐秘收割"
 	task.5E065AD5537737D0.title: "法袍裤裙 模板"
+	task.5E52AB8F467D83B7.title: "任意食物"
 	task.5E61C66706DB394E.title: "字体设置"
 	task.5F1B94C31D02E67B.title: "场景：中途酒馆"
 	task.5F3EC831C3E53770.title: "武士刀 模板"
@@ -5237,20 +5384,26 @@
 	task.719C398B250CFE55.title: "关于神化"
 	task.7272CB9544A4E5F0.title: "场景：混乱荒野"
 	task.72BBA8FCDD81B6AA.title: "三叉戟 模板"
+	task.73165000CF6C2D80.title: "任意 木头"
 	task.735FCCA157A46245.title: "难度设置"
 	task.737ECCA212D4D8BA.title: "结构"
+	task.74492EBC433D77A8.title: "yue..."
 	task.748965B66A8C5E30.title: "战胜守门人"
 	task.74F32723CAE1E025.title: "卡飞了!"
 	task.7595151101E4738A.title: "磁铁升级"
 	task.75D4742A0C012F65.title: "矛 模板"
+	task.76E1E34F7A83D6F3.title: "长塑 模板"
 	task.76ED940B298D8859.title: "任意 发动机升级"
 	task.774FD55407857713.title: "场景：据点"
 	task.777C45CF49CC817C.title: "重型头盔 模板"
 	task.77B5BE57F5151388.title: "&6魔法精华&r"
+	task.7ABE952A23FCFB5D.title: "追踪弓 模板"
 	task.7BD801F485623EC0.title: "钓鱼竿 模板"
+	task.7CA1AE616D29882C.title: "探索"
 	task.7CCEF302E660A068.title: "须知"
 	task.7DAC01F814C93117.title: "镐尖斧 模板"
 	task.7E6571DCE7F5F2D6.title: "Any #malum:soulwoven_pouch_efficient"
+	task.7E73F2D97C765D46.title: "Furioso 模板"
 	task.7E842FF6C4E736C0.title: "场景：传送门废墟"
 	task.7FC73AE74EFE0053.title: "模具基板/蓝图"
 }

@@ -24,7 +24,6 @@ EntityJSEvents.addGoalSelectors('bosses_of_mass_destruction:obsidilith', event =
             .setSpells(
                 [
                     Spell.of('irons_spellbooks:black_hole'),
-                    Spell.of('hazennstuff:stellar_collapse'),
                     Spell.of('irons_spellbooks:fang_strike'),
                     Spell.of('irons_spellbooks:lob_creeper'),
                     Spell.of('irons_spellbooks:magic_missile')

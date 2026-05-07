@@ -1262,11 +1262,14 @@ function getRandomScrollId() {
 }
 
 
+function getRandomScrollIdBySchool(schoolId) {
+    return $RFUtils.getRandomScrollIdBySchool(schoolId);
+}
 
 /**
  * 获取食物的饱食度
  * @param {Internal.ItemStack} item - 物品堆栈
- * @param {Internal.Player} player - 玩家对象（用于上下文判断）
+ * @param {Internal.Player} player - 玩家对象
  * @returns {number} 食物的营养值（饱食度）
  */
 function getFoodNutrition(item, player) {
@@ -1491,7 +1494,7 @@ function RFAfterHurt(event) { }
 
 /**
  * 方块破坏事件
- * @param {$BlockBrokenKubeEvent_} event - 方块破坏事件
+ * @param {$BlockBrokenKubeEvent_} event
  */
 function RFBlockBroken(event) { }
 
@@ -1711,3 +1714,4 @@ function reduceEffectLayers(entity, effectId, amount) {
     setEffectLayers(entity, effectId, newLayers);
     return newLayers;
 }
+

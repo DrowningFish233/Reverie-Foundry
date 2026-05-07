@@ -182,3 +182,164 @@ function reduceEffectLayers(entity, effectId, amount) {
     setEffectLayers(entity, effectId, newLayers);
     return newLayers;
 }
+
+
+/**
+ * 获取 Gear 物品的耐久度属性
+ * @param {Internal.ItemStack} gear Gear 物品
+ * @returns {NumberProperty} 耐久度属性
+ */
+function fu_getDurabilityProperty(gear) {
+    return $GearHelper.getDurabilityProperty(gear);
+}
+
+
+/**
+ * 对 Gear 物品造成伤害
+ * @param {Internal.ItemStack} stack 物品
+ * @param {number} amount 伤害量
+ * @param {Internal.LivingEntity} entity 持有者
+ * @param {Internal.InteractionHand} hand 持有手 MAIN_HAND | OFF_HAND
+ */
+function fu_attemptDamageByHand(stack, amount, entity, hand) {
+    $GearHelper["attemptDamage(net.minecraft.world.item.ItemStack,int,net.minecraft.world.entity.LivingEntity,net.minecraft.world.InteractionHand)"](stack, amount, entity, hand);
+}
+
+/**
+ * 对 Gear 物品造成伤害（指定装备槽位）
+ * @param {Internal.ItemStack} stack 物品
+ * @param {number} amount 伤害量
+ * @param {Internal.LivingEntity} entity 持有者
+ * @param {Internal.EquipmentSlot} slot 装备槽位
+ */
+function fu_attemptDamageBySlot(stack, amount, entity, slot) {
+    $GearHelper["attemptDamage(net.minecraft.world.item.ItemStack,int,net.minecraft.world.entity.LivingEntity,net.minecraft.world.entity.EquipmentSlot)"](stack, amount, entity, slot);
+}
+
+/**
+ * 检查物品是否为 Silent Gear 的工具、武器或护甲物品
+ * @param {Internal.ItemStack} stack 要检查的物品
+ * @returns {boolean} 如果是 Gear 物品则返回 true
+ */
+function fu_isGear(stack) {
+    if (!stack || stack.isEmpty()) {
+        return false;
+    }
+    return $GearHelper.isGear(stack);
+}
+
+
+/**
+ * 判断实体是否拥有灵魂护盾（未耗尽）
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {boolean} true=护盾存在且未耗尽，false=无护盾或已耗尽
+ */
+function hasSoulWard(entity) {
+    return $RFUtils.hasSoulWard(entity);
+}
+
+/**
+ * 获取实体的当前灵魂护盾值
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 当前护盾值，如果没有护盾则返回0
+ */
+function getCurrentSoulWard(entity) {
+    return $RFUtils.getCurrentSoulWard(entity);
+}
+
+/**
+ * 获取实体的灵魂护盾容量（最大值）
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 护盾容量
+ */
+function getSoulWardCapacity(entity) {
+    return $RFUtils.getSoulWardCapacity(entity);
+}
+
+/**
+ * 获取实体的灵魂护盾完整性
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 完整性值
+ */
+function getSoulWardIntegrity(entity) {
+    return $RFUtils.getSoulWardIntegrity(entity);
+}
+
+/**
+ * 获取灵魂护盾的剩余百分比
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 0.0 - 1.0 之间的百分比
+ */
+function getSoulWardPercentage(entity) {
+    return $RFUtils.getSoulWardPercentage(entity);
+}
+
+/**
+ * 判断灵魂护盾是否已满
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {boolean} true=已满，false=未满或无护盾
+ */
+function isSoulWardFull(entity) {
+    return $RFUtils.isSoulWardFull(entity);
+}
+
+/**
+ * 判断灵魂护盾是否处于冷却中
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {boolean} true=冷却中，false=可恢复或无护盾
+ */
+function isSoulWardOnCooldown(entity) {
+    return $RFUtils.isSoulWardOnCooldown(entity);
+}
+
+/**
+ * 获取灵魂护盾冷却剩余时间（刻）
+ * @param {LivingEntity} entity - 目标实体
+ * @returns {number} 剩余冷却刻数
+ */
+function getSoulWardCooldownTicks(entity) {
+    return $RFUtils.getSoulWardCooldownTicks(entity);
+}
+
+/**
+ * 攻击实体
+ * @param {$LivingEntity_} target - 目标实体
+ * @param {string} damageSourceId - 伤害类型
+ * @param {number} amount - 伤害值
+ * @param {boolean} ignoreInvulnerable - 是否忽略无敌帧
+ */
+function attackEntity(target, damageSourceId, amount, ignoreInvulnerable) {
+    if (!target || amount <= 0) return;
+    if (ignoreInvulnerable) {
+        const originalTime = target.invulnerableTime;
+        target.invulnerableTime = 0;
+        target.attack($DamageSource(damageSourceId), amount);
+        if (originalTime > 0) {
+            target.invulnerableTime = Math.max(originalTime, 10);
+        }
+    } else {
+        target.attack($DamageSource(damageSourceId), amount);
+    }
+}
+
+
+/**
+ * 随机移除一个负面效果
+ */
+function removeRandomNegativeEffect(player) {
+    const negativeEffects = [];
+
+    player.getActiveEffectsMap().forEach((holder, instance) => {
+        const effect = holder.value();
+        if (!effect.isBeneficial()) {
+            negativeEffects.push(holder);
+        }
+    });
+
+    if (negativeEffects.length > 0) {
+        let randomIndex = Math.floor(Math.random() * negativeEffects.length);
+        let effectToRemove = negativeEffects[randomIndex];
+        player.removeEffect(effectToRemove);
+
+    }
+}

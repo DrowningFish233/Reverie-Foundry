@@ -1,5 +1,5 @@
 #When a boss has no target, should it be cleared?
-boss_clear_when_no_target = true
+boss_clear_when_no_target = false
 #Multiplier for boss attributes health.
 # Default: 1.0
 # Range: 0.0625 ~ 10.0
@@ -18,7 +18,7 @@ enhance_all_monster = false
 #Multiplier for monster attributes health.
 # Default: 1.0
 # Range: 0.0625 ~ 100.0
-monster_attributes_multiplier_health = 0.8
+monster_attributes_multiplier_health = 0.6
 #Multiplier for monster attributes damage.
 # Default: 1.0
 # Range: 0.0625 ~ 100.0
@@ -32,6 +32,6 @@ chance_to_spawn_slime_on_zombie_head = 0.01
 #Chance to spawn a monster.
 # Default: 1.0
 # Range: 0.0 ~ 1.0
-enemy_spawn_chance = 0.5
+enemy_spawn_chance = 0.4
 #Should the chance to spawn a monster apply to all monsters?
 enemy_spawn_chance_apply_all = false

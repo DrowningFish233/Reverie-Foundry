@@ -7,7 +7,7 @@
 		id: "transmog:transmogrification_table"
 	}
 	id: "5A72070BE5639DEE"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,8 +17,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(constructionstick:construction_sticks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -3.5d
+			x: -6.5d
+			y: -2.0d
 		}
 		{
 			id: "092C65BDEC1E30A4"
@@ -36,8 +36,8 @@
 				item: { count: 1, id: "transmog:transmogrification_table" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -47,8 +47,8 @@
 				item: { count: 1, id: "constructionstick:template_angel" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -5.5d
+			x: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -58,8 +58,8 @@
 				item: { count: 1, id: "constructionstick:template_replacement" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.5d
+			x: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -69,7 +69,7 @@
 				item: { count: 1, id: "constructionstick:template_destruction" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: -2.0d
 		}
 		{
@@ -80,8 +80,8 @@
 				item: { count: 1, id: "constructionstick:template_unbreakable" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: -1.866566866105373d
+			y: -2.7779926010488367d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -91,8 +91,8 @@
 				item: { count: 1, id: "constructionstick:template_battery" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.5d
+			x: -3.0d
+			y: -3.5d
 		}
 		{
 			icon: {
@@ -103,8 +103,8 @@
 				id: "1C6E3A73FEC6CA64"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: -6.5d
+			y: -5.0d
 		}
 		{
 			id: "38092862F38315D2"
@@ -113,8 +113,8 @@
 				item: { count: 1, id: "kubejs:eye_of_ancient_city_located" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.5d
+			x: -1.0d
+			y: 2.0d
 		}
 		{
 			id: "086482C52023DB55"
@@ -123,8 +123,723 @@
 				item: { count: 1, id: "kubejs:eye_of_dragon_cave_located" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -5.5d
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [{
+							id: "irons_spellbooks:blaze_storm"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+				id: "irons_spellbooks:scroll"
+			}
+			id: "58FD71F9C065E1AC"
+			rewards: [{
+				auto: "no_toast"
+				command: "/rf give randomscrollid"
+				disable_reward_screen_blur: true
+				icon: {
+					components: {
+						"irons_spellbooks:spell_container": {
+							data: [{
+								id: "cataclysm_spellbooks:incineration"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+					id: "irons_spellbooks:scroll"
+				}
+				id: "79F3944BD5EEA0A1"
+				ignore_reward_blocking: true
+				permission_level: 4
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "35CEA2AFFA094090"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			disable_recipe_mod: false
+			id: "5378D02C832E3260"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0158B77098F42ECF"
+				table_id: 1463736026640428304L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "0FF5EB378FBC3D7E"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>=14)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "66481C79877E0ED7"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					auto: "enabled"
+					id: "1FCC35094DFF4A28"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "4E723F6D20896924"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "151957B80214D5B0"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "367290502B9F85B2"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "6B1EB0DD9A272ADA"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "77737A14C0C377C9"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "67DEBECBA531E0FA"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "09FD0E5DEBBDBE5A"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "2ACDD263A473B853"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					auto: "enabled"
+					id: "50F02EF5CA63FBD7"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "615A3115BB49565F"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>12)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			id: "6038063D7681AFB5"
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "14D7E2C3DE96AE18"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D1BEFFA534B6530"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5238F90490D43383"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C6C73C6CBDEF6A0"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A0E012DD42431E8"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6DC39F05B36D9618"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E9796C8813F5FC6"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58177D68CEDD3FA2"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "144AF3202264066E"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6974FE7269D12FE8"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6D2D88A96C9693AB"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "41C4024E912459E7"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E5A30F8087A86BE"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E133957E5718215"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20009F0C3685C195"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "710516F893262984"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "27862DF2BE74B1D8"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2CF480C43FBC1989"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B3FF12CB4F47065"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5BA23BC58B8CEDAB"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7806D32D2399D3F1"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0FD28E56462B9053"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32DD7C8A00F65B9C"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7BDC424603C75386"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "63778FA7E9894BE4"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0D04B320F4D744A7"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7892BA7617D56434"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "119268747A3288D4"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1BD716FDD69AC4EE"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B9BD8B9326ECD5A"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6925A90EDF29C0F8"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "39C83138B63F058C"
+					table_id: 1463736026640428304L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "5B0CA142332889F5"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>=14)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			id: "4996E5CD9E56D25E"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E632A7451A83EFE"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3B7E885F006B54E5"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "667261AA085B3058"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E3D60614D467F46"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1CC76F296386FF2E"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15E76A15BFCA789C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2530EBBF12F4C1A2"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12FDBD3DF137119A"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7CCE908B2D50C4EB"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3181266A37D4D381"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "607C61CD87D0A22A"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "00C10CFAFB885667"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0F535B979565FB90"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5295AD5F1177E026"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3815C4E9B05A36F0"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5E5D9F41434AC71A"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09EADB5D14CFF38F"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D54B2F9109E034F"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F21A130B5B2085E"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "465B2C176A359BA5"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "11DE64459ACEB46C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "328ADEDB1BF83128"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B50FC746B183BF0"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4392F7151F58E719"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "02332A44306413EB"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "09A1C96475D6FF11"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34CC76F86F7031BA"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D417D437196AD0C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C6D9003DBDC2C26"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "084DCC1997F2EA20"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6671636C2E08DDB3"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B2A43E449CD942C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "35A3054C9A7DE78E"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>8)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			id: "309D32324902DF18"
+			ignore_reward_blocking: true
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6B0FADF117A41AD8"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5421E6DDA7B5F33C"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2E5C7912765E54F7"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0EB2F2C39ECC7E6A"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "552A858307C2DB08"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4BA635216DA130EE"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3083B4A1C9137F7B"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4BEA5A924E691F93"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19E69696C2E988B1"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4552DD4873BFF274"
+					table_id: 3811123985345715214L
+					type: "random"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 10L
+				id: "02081D27FED67724"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>8)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			disable_recipe_mod: false
+			id: "7501056B288C71E1"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "053850D63945C9B0"
+				table_id: 3811123985345715214L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "7032206EEBFC489D"
+				item: { components: { "ftbfiltersystem:filter": "food_value(>8)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "215AB6260ED8DAAD"
+			rewards: [{
+				auto: "no_toast"
+				command: "/rf give randomenchanted"
+				disable_reward_screen_blur: true
+				icon: {
+					id: "minecraft:writable_book"
+				}
+				id: "2FA7EFCA7BF0E8B0"
+				ignore_reward_blocking: true
+				permission_level: 4
+				silent: true
+				type: "command"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 16L
+				id: "3016A5EB93CB9D79"
+				item: { count: 1, id: "minecraft:emerald" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			id: "5EB5BBBCE2AB1245"
+			tasks: [{
+				id: "4FC5ADC7CC0005F5"
+				item: { count: 1, id: "kubejs:eye_of_weeping_well_located" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "11113DE0965217BB"
+			tasks: [{
+				id: "3D9BD02B4327B989"
+				item: { count: 1, id: "kubejs:eye_of_starlight_portal_located" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
 		}
 	]
 }

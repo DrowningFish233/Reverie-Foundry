@@ -431,6 +431,11 @@ ServerEvents.tags('item', event => {
         'malum:runewood_sapling'
     )
 
+    event.add('kubejs:repeat/nether_star_fragment',
+        'silentgear:nether_star_fragment',
+        'hazennstuff:nether_star_fragment'
+    );
+
 
 })
 
@@ -451,6 +456,8 @@ ServerEvents.tags('block', event => {
         'malum:stripped_runewood_log',
         'malum:revealed_runewood_log'
     );
+
+
 });
 
 

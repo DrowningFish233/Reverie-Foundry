@@ -326,7 +326,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:infernal_forge',
             'silentgear:blueprint_paper',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -335,7 +335,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:infernal_forge',
             'silentgear:template_board',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -344,7 +344,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:soul_render',
             'silentgear:blueprint_paper',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -353,7 +353,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:soul_render',
             'silentgear:template_board',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -362,7 +362,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:astrape',
             'silentgear:blueprint_paper',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -371,7 +371,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:astrape',
             'silentgear:template_board',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -380,7 +380,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:wrath_of_the_desert',
             'silentgear:blueprint_paper',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -389,7 +389,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:wrath_of_the_desert',
             'silentgear:template_board',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -398,7 +398,7 @@ ServerEvents.recipes(event => {
         [
             'irons_spellbooks:keeper_flamberge',
             'silentgear:blueprint_paper',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -407,7 +407,7 @@ ServerEvents.recipes(event => {
         [
             'irons_spellbooks:keeper_flamberge',
             'silentgear:template_board',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -416,7 +416,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:bulwark_of_the_flame',
             'silentgear:blueprint_paper',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -425,7 +425,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:bulwark_of_the_flame',
             'silentgear:template_board',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -434,7 +434,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:meat_shredder',
             'silentgear:blueprint_paper',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -443,7 +443,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:meat_shredder',
             'silentgear:template_board',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -452,7 +452,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:gauntlet_of_guard',
             'silentgear:blueprint_paper',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -461,7 +461,7 @@ ServerEvents.recipes(event => {
         [
             'cataclysm:the_annihilator',
             'silentgear:template_board',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -470,7 +470,7 @@ ServerEvents.recipes(event => {
         [
             'irons_spellbooks:autoloader_crossbow',
             'silentgear:blueprint_paper',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
         ]
     )
 
@@ -479,7 +479,15 @@ ServerEvents.recipes(event => {
         [
             'irons_spellbooks:autoloader_crossbow',
             'silentgear:template_board',
-            'kubejs:necroplasm'
+            'kubejs:viculeam_ingot'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:creative_controller', 1),
+        [
+            'cataclysm:mech_eye',
+            'refinedstorage:controller'
         ]
     )
 })

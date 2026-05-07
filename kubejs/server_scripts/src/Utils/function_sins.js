@@ -90,8 +90,10 @@ function updatePlayerSin(player, sin, count) {
     pData.putInt(sin, count);
 }
 
+
 /**
  * 罪孽侵蚀系统
+ * 如果玩家装备了七罪饰品，则固定侵蚀为该饰品对应的罪孽类型
  */
 function activateRandomSin(event, player) {
     if (is_Magical_Girl(event, player)) return;
@@ -99,12 +101,31 @@ function activateRandomSin(event, player) {
     let pData = player.persistentData;
     if (!pData) return;
 
-    const sinKeys = Object.keys(sins);
-    const selectedSin = sinKeys[Math.floor(Math.random() * sinKeys.length)];
+    let accessorySinMap = {
+        "kubejs:mark_of_wrath": "WRATH",      // 暴怒之印
+        "kubejs:chain_of_lust": "LUST",       // 色欲之链
+        "kubejs:pendant_of_sloth": "SLOTH",   // 怠惰之坠
+        "kubejs:ring_of_gluttony": "GLUTTONY",// 暴食之环
+        "kubejs:stone_of_melancholy": "GLOOM",// 忧郁之石
+        "kubejs:crown_of_pride": "PRIDE",     // 傲慢之冠
+        "kubejs:eye_of_envy": "ENVY"          // 嫉妒之瞳
+    };
 
+    let selectedSin = null;
 
-    // 颜色配置
-    const sinColorMap = {
+    for (let [itemId, sin] of Object.entries(accessorySinMap)) {
+        if (getCuriosItem(player, itemId) !== null) {
+            selectedSin = sin;
+            break;
+        }
+    }
+
+    if (selectedSin === null) {
+        let sinKeys = Object.keys(sins);
+        selectedSin = sinKeys[Math.floor(Math.random() * sinKeys.length)];
+    }
+
+    let sinColorMap = {
         GLUTTONY: 'dark_green',
         PRIDE: 'aqua',
         WRATH: 'red',
@@ -115,14 +136,15 @@ function activateRandomSin(event, player) {
     };
 
     // 处理每个罪孽类型
+    let sinKeys = Object.keys(sins);
     sinKeys.forEach(sin => {
-        const isSelected = sin === selectedSin;
+        let isSelected = sin === selectedSin;
         pData.putInt(sins[sin], isSelected ? 1 : 0);
 
         if (isSelected) {
-            const color = sinColorMap[sin];
-            const sinLower = sin.toLowerCase();
-            const messageIndex = Math.floor(Math.random() * 4);
+            let color = sinColorMap[sin];
+            let sinLower = sin.toLowerCase();
+            let messageIndex = Math.floor(Math.random() * 4);
 
             // 构建消息
             player.setStatusMessage(
@@ -159,6 +181,8 @@ function depravityDamage(event) {
         pData.putInt("depravity", Math.max(0, depravityValue - reduction));
     }
 }
+
+
 
 /**
  * 玩家死亡判定事件
@@ -226,3 +250,8 @@ function targetedSinErosion(event, player, targetSin, intensity) {
             .color(sinColor)
     );
 }
+
+EntityEvents.afterHurt(event => {
+
+
+})

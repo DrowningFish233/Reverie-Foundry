@@ -1,4 +1,101 @@
 StartupEvents.registry("champions:affix", event => {
+    event.create('sword_of_palermo')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("offense")
+        })
+        .behavior(behavior => {
+            behavior.onAttack((champion, player, damageSource, amount) => {
+                if (!player) return false;
+
+                let hasShield = hasSoulWard(player);
+                if (!hasShield) return true;
+
+                let bonus = 150;
+                if (player.hasEffect("kubejs:fire")) {
+                    let fireEffect = player.getEffect("kubejs:fire");
+                    if (fireEffect) {
+                        let amplifier = fireEffect.getAmplifier();
+                        let fireBonus = Math.min(amplifier * 15, 300);
+                        bonus += fireBonus;
+                    }
+                }
+
+                let soulWardBonusDamage = amount * (bonus / 100);
+                attackEntity(player, 'generic', soulWardBonusDamage, true);
+
+                return true;
+            });
+        });
+    event.create('duel_climax')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("offense")
+        })
+        .behavior(behavior => {
+            behavior.onAttack((champion, player, damageSource, amount) => {
+                if (!player) return false;
+                let climaxLevel = 0;
+                let currentDuration = 600;
+
+                if (player.hasEffect("kubejs:duel_climax")) {
+                    let effect = player.getEffect("kubejs:duel_climax");
+                    if (effect) {
+                        climaxLevel = effect.getAmplifier() + 1;
+                        currentDuration = effect.getDuration();
+                    }
+                }
+
+                let newLevel = Math.min(climaxLevel + 1, 10);
+
+                player.potionEffects.add("kubejs:duel_climax", currentDuration, newLevel - 1);
+
+                let damageBonus = newLevel * 5;
+                let extraDamage = amount * (damageBonus / 100);
+                if (extraDamage > 0) {
+                    attackEntity(player, 'generic', extraDamage, true);
+                }
+
+                if (newLevel >= 5) {
+                    let monster = champion.getLivingEntity();
+                    if (monster) {
+                        let damageAmpLevel = 0;
+                        if (monster.hasEffect("kubejs:damage_amplification")) {
+                            let current = monster.getEffect("kubejs:damage_amplification");
+                            damageAmpLevel = Math.min(current.getAmplifier() + 1, 4);
+                        }
+                        monster.potionEffects.add("kubejs:damage_amplification", 20 * 30, damageAmpLevel);
+                    }
+                }
+
+                if (newLevel >= 10) {
+                    removeRandomNegativeEffect(player);
+                }
+
+                return true;
+            });
+
+            behavior.onHurt((champion, source, amount, newAmount) => {
+                let attacker = source.getPlayer();
+                if (!attacker || !attacker.isPlayer()) return amount;
+
+
+                let climaxLevel = 0;
+                if (attacker.hasEffect("kubejs:duel_climax")) {
+                    let effect = attacker.getEffect("kubejs:duel_climax");
+                    if (effect) {
+                        climaxLevel = effect.getAmplifier() + 1;
+                    }
+                }
+
+                let damageReduction = climaxLevel * 5;
+                let reducedDamage = amount * (1 - damageReduction / 100);
+
+                return Math.max(0, reducedDamage);
+            });
+        });
     event.create('malum_pact_of_the_lone_druid')
         .settings(setting => {
             setting.withDefault()
@@ -262,7 +359,7 @@ StartupEvents.registry("champions:affix", event => {
                     }
                 }
 
-                return true; // 总是返回布尔值
+                return true;
             });
 
             // 服务器更新行为
@@ -397,20 +494,24 @@ StartupEvents.registry("champions:affix", event => {
                         if (!mainHandItem.isEmpty() && mainHandItem.isDamageableItem()) {
                             let maxDamage = mainHandItem.getMaxDamage();
                             let damageToApply = Math.max(1, Math.min(100, Math.floor(maxDamage * 0.01)));
-                            let currentDamage = mainHandItem.getDamageValue();
-                            let newDamage = currentDamage + damageToApply;
-
-                            if (newDamage >= maxDamage) {
-                                mainHandItem.shrink(1);
+                            if (fu_isGear(mainHandItem)) {
+                                fu_attemptDamageByHand(mainHandItem, damageToApply, causingEntity, "MAIN_HAND");
                             } else {
-                                mainHandItem.setDamageValue(newDamage);
+                                let currentDamage = mainHandItem.getDamageValue();
+                                let newDamage = currentDamage + damageToApply;
+                                if (newDamage >= maxDamage) {
+                                    mainHandItem.shrink(1);
+                                } else {
+                                    mainHandItem.setDamageValue(newDamage);
+                                }
                             }
                         }
                     }
                 }
-                return newAmount;
+                return amount;
             });
         })
+
     event.create('reflective')
         .settings(setting => {
             setting.withDefault()

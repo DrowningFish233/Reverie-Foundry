@@ -13,6 +13,8 @@
 			-22016
 			-5616897
 			-20248
+			-50620
+			-62530
 		]
 	}
 	sidebar: {
@@ -34,7 +36,7 @@
 			}
 			"ftbessentials:trash_can": {
 				enabled: true
-				x: 4
+				x: 3
 				y: 1
 			}
 			"ftblibrary:toggle/night": {
@@ -49,7 +51,7 @@
 			}
 			"ftblibrary:config": {
 				enabled: true
-				x: 5
+				x: 4
 				y: 1
 			}
 			"ftblibrary:toggle/gamemode": {

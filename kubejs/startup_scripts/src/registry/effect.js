@@ -84,10 +84,8 @@ StartupEvents.registry('mob_effect', event => {
         .harmful()
         .color("red")
     event.create('gluttony')
-        .harmful()
         .color("green")
     event.create('sloth')
-        .harmful()
         .color("yellow")
     event.create('morning_moodiness')
         .beneficial()
@@ -109,7 +107,6 @@ StartupEvents.registry('mob_effect', event => {
             'add_multiplied_base'
         );
     event.create('envy')
-        .beneficial()
         .color("purple")
     event.create('wider')
         .beneficial()
@@ -132,45 +129,17 @@ StartupEvents.registry('mob_effect', event => {
 );
 */
     event.create('lust')
-        .beneficial()
         .color("purple")
     event.create('pride')
         .beneficial()
         .color("purple")
     event.create('wrath')
-        .beneficial()
         .color("red")
     event.create('wrath_damage')
         .harmful()
         .color("red")
     event.create('gloom')
-        .beneficial()
         .color("blue")
-        .modifyAttribute('additional_attributes:keep_scroll',
-            'c1d207fb-7eb3-47ad-b669-9e8ddb81ba40',
-            0.15,
-            'add_value'
-        )
-        .modifyAttribute('additional_attributes:looting',
-            'aece9dee-0b04-4916-a6a6-15016746463a',
-            2,
-            'add_value'
-        )
-        .modifyAttribute('additional_attributes:harvest',
-            'be50d492-891b-41e9-a497-12f807b75d42',
-            2,
-            'add_value'
-        )
-        .modifyAttribute('additional_attributes:fishing_lure',
-            '81f8e10e-b8e9-4e27-949c-ba961a234bee',
-            2,
-            'add_value'
-        )
-        .modifyAttribute('apothic_attributes:experience_gained',
-            'fc6a2ef3-4460-4558-9a95-07e491a9d350',
-            0.30,
-            'add_value'
-        )
     event.create('random_movement')
         .harmful()
         .color("red")
@@ -198,7 +167,6 @@ StartupEvents.registry('mob_effect', event => {
         .harmful()
         .color("blue")
     event.create('pride_2')
-        .harmful()
         .color("blue")
         .modifyAttribute('minecraft:generic.attack_speed',
             'a102cdc2-08b4-4a29-833a-2f1e573356ad',
@@ -322,11 +290,8 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .color("red")
     event.create('rose')
-        .beneficial()
         .color("red")
-    event.create('blood_rose')
-        .beneficial()
-        .color("red")
+
     //脑袋尖尖buff ↓
     event.create('spinel')
         .color(0x000000)
@@ -1313,10 +1278,64 @@ event.create('purple_haze_attack')
         .harmful()
     event.create('enhanced_tattoo')
         .beneficial()
+        .modifyAttribute('apothic_attributes:crit_chance',
+            '5adbcd0c-8595-4244-899c-023f64bb1532',
+            0.1,
+            "add_value"
+        )
     event.create('grudge')
         .beneficial()
     event.create('replay')
         .beneficial()
     event.create('evening_primrose')
         .beneficial()
+    event.create('duel_climax')
+        .harmful()
+    event.create('temporary_hit_points')
+        .beneficial()
+        .modifyAttribute('minecraft:generic.max_health',
+            '75ed3650-d28d-4365-b10a-e6d52bb41c97',
+            0.5,
+            "add_value"
+        )
+    event.create('reduce_hit_points')
+        .harmful()
+        .modifyAttribute('minecraft:generic.max_health',
+            '5e1ec6d2-32e3-40bf-9693-f1993c642175',
+            -0.05,
+            "add_multiplied_total"
+        )
+    event.create('enmity')
+        .harmful()
+    event.create('divinity')
+        .modifyAttribute('minecraft:generic.attack_speed',
+            'c3524465-a960-4a16-80a2-d5e665e08c18',
+            -0.1,
+            "add_multiplied_total"
+        )
+    event.create('godhood')
+        .beneficial()
+
+    event.create('arcane_brand')
+        .beneficial()
+        .modifyAttribute('irons_spellbooks:cast_time_reduction',
+            'df412220-1d06-4854-bb55-fb658526db9f',
+            0.05,
+            "add_multiplied_base"
+        )
+        .modifyAttribute('irons_spellbooks:cooldown_reduction',
+            '40f8e5b9-8065-424e-9b10-ea053d47d0e6',
+            0.05,
+            "add_multiplied_base"
+        )
+        .modifyAttribute('irons_spellbooks:spell_power',
+            'c33763c7-0c83-4b38-9ac3-2b467eea5ba4',
+            0.08,
+            "add_multiplied_base"
+        )
+
+    event.create('past_prosperity')
+        .harmful()
+
+
 });
