@@ -1,0 +1,167 @@
+
+{
+	"content": {
+
+        "cod_bucket": {
+            "type": "item",
+            "content": "minecraft:cod_bucket",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000
+        },
+
+        "cooked_cod": {
+            "type": "item",
+            "content": "minecraft:cooked_cod",
+            "amount": {
+                "min": 3,
+                "max": 15
+            },
+            "unitWorth": 165
+        },
+
+        "campfire": {
+            "type": "item",
+            "content": "minecraft:campfire",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 800
+        },
+
+        "cooked_salmon": {
+            "type": "item",
+            "content": "minecraft:cooked_salmon",
+            "amount": {
+                "min": 1,
+                "max": 6
+            },
+            "unitWorth": 165
+        },
+
+        "ench_book_lure": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "minecraft:enchanted_book",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "components": {
+                "minecraft:stored_enchantments": {
+                    "levels": {
+                        "minecraft:lure": 1
+                    }
+                }
+            }
+        },
+
+        "ench_book_luck_sea": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "minecraft:enchanted_book",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "components": {
+                "minecraft:stored_enchantments": {
+                    "levels": {
+                        "minecraft:luck_of_the_sea": 1
+                    }
+                }
+            }
+        },
+
+        "ench_book_unbreaking": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "minecraft:enchanted_book",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500.0,
+            "components": {
+                "minecraft:stored_enchantments": {
+                    "levels": {
+                        "minecraft:unbreaking": 1
+                    }
+                }
+            }
+        },
+
+        "saddle": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "minecraft:saddle",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500
+        },
+
+        "bamboo": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "minecraft:bamboo",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 350.0
+        },
+
+        "naut_shell": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "minecraft:nautilus_shell",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1100.0
+        },
+
+        "name_tag": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "minecraft:name_tag",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4500
+        },
+
+        "sponge": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "minecraft:sponge",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500
+        },
+
+        "heart_sea": {
+            "type": "item",
+            "rarity": "LEGENDARY",
+            "content": "minecraft:heart_of_the_sea",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000.0
+        }
+
+	}
+
+}

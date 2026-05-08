@@ -1,0 +1,110 @@
+
+{
+	"content": {
+
+        "leather_chest": {
+            "type": "item",
+            "content": "minecraft:leather_chestplate",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1200,
+            "forbids": [
+                {
+                    "type": "item",
+                    "content": "minecraft:leather"
+                }
+            ]
+        },
+
+        "leather_legs": {
+            "type": "item",
+            "content": "minecraft:leather_leggings",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1050,
+            "forbids": [
+                {
+                    "type": "item",
+                    "content": "minecraft:leather"
+                }
+            ]
+        },
+
+        "leather_helm": {
+            "type": "item",
+            "content": "minecraft:leather_helmet",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 750,
+            "forbids": [
+                {
+                    "type": "item",
+                    "content": "minecraft:leather"
+                }
+            ]
+        },
+
+        "turtle_helmet": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "minecraft:turtle_helmet",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1250,
+            "forbids": [
+                {
+                    "type": "item",
+                    "content": "minecraft:turtle_scute"
+                }
+            ]
+        },
+
+        "leather_boots": {
+            "type": "item",
+            "content": "minecraft:leather_boots",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "forbids": [
+                {
+                    "type": "item",
+                    "content": "minecraft:leather"
+                }
+            ]
+        },
+
+        "leather_horse_armor": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "minecraft:leather_horse_armor",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000
+        },
+
+        "saddle": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "minecraft:saddle",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 3000
+        }
+
+	}
+
+}

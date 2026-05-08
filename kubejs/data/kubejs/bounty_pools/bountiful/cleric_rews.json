@@ -1,0 +1,179 @@
+
+{
+	"content": {
+
+        "redstone": {
+            "type": "item",
+            "content": "minecraft:redstone",
+            "amount": {
+                "min": 1,
+                "max": 6
+            },
+            "unitWorth": 500
+        },
+
+        "magma_cream": {
+            "type": "item",
+            "content": "minecraft:magma_cream",
+            "amount": {
+                "min": 2,
+                "max": 6
+            },
+            "unitWorth": 450,
+            "forbids": [
+                {
+                    "type": "item",
+                    "content": "minecraft:magma_cream"
+                }
+            ]
+        },
+
+        "lapis": {
+            "type": "item",
+            "content": "minecraft:lapis_lazuli",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 750
+        },
+
+        "potion_heals": {
+            "type": "item",
+            "content": "minecraft:potion",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 550,
+            "components": {
+                "minecraft:potion_contents": {
+                    "potion": "minecraft:healing"
+                }
+            }
+        },
+
+        "potion_fire_resist": {
+            "type": "item",
+            "content": "minecraft:potion",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 600,
+            "components": {
+                "minecraft:potion_contents": {
+                    "potion": "minecraft:fire_resistance"
+                }
+            }
+        },
+
+        "ench_book_unbreaking": {
+            "type": "item",
+            "content": "minecraft:enchanted_book",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1500,
+            "components": {
+                "minecraft:stored_enchantments": {
+                    "levels": {
+                        "minecraft:unbreaking": 1
+                    }
+                }
+            }
+        },
+
+        "glowstone": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "minecraft:glowstone",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000
+        },
+
+        "ghast_tear": {
+            "type": "item",
+            "rarity": "UNCOMMON",
+            "content": "minecraft:ghast_tear",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000
+        },
+
+        "ender_pearl": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "minecraft:ender_pearl",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 4000
+        },
+
+        "potion_luck": {
+            "type": "item",
+            "rarity": "RARE",
+            "content": "minecraft:potion",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 2000,
+            "components": {
+                "minecraft:potion_contents": {
+                    "potion": "minecraft:luck"
+                }
+            }
+        },
+
+        "xp_bottle": {
+            "type": "item",
+			"rarity": "EPIC",
+            "content": "minecraft:experience_bottle",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000.0
+        },
+
+        "ender_pearl_bargain": {
+            "type": "item",
+			"rarity": "LEGENDARY",
+            "content": "minecraft:ender_pearl",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500
+        },
+
+        "ench_book_mending": {
+            "type": "item",
+            "rarity": "LEGENDARY",
+            "content": "minecraft:enchanted_book",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 5500,
+            "components": {
+                "minecraft:stored_enchantments": {
+                    "levels": {
+                        "minecraft:mending": 1
+                    }
+                }
+            }
+        }
+
+	}
+
+}

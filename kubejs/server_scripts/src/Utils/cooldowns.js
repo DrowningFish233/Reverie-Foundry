@@ -105,7 +105,8 @@ const $CooldownManager = {
             "wrath_grudge_cooldown",
             "lust_skill_cooldown",
             "sloth_damage_cooldown",
-            "envy_steal_cooldown"
+            "envy_steal_cooldown",
+            "sanity_damage_cooldown"
         ];
 
         // 清理冷却数据

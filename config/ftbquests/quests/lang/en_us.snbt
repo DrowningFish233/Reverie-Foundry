@@ -3,10 +3,12 @@
 	chapter.1230BFFD2EFCEA44.title: "Spiritual Disaster"
 	chapter.18D895B9141E8756.title: "Create"
 	chapter.1A98B27BB1D8BF2D.title: "Iron's Spell 'n Spellbooks"
+	chapter.20EE16E9C1ED5E6D.title: "Lost Manuscripts"
 	chapter.374C0851A23B3549.title: "Silent Gear"
 	chapter.44E1ED5935A6147B.title: "&3The Grand Journey"
 	chapter.48A05E5EF26EFEEE.title: "&dEssential Reading"
 	chapter.566973DCC685511A.title: "Apotheosis"
+	chapter.5813E8749E15BA9E.title: "Main Quest Guide (Do Not Claim)"
 	chapter.594B7E5B489F5F45.title: "Never Crash"
 	chapter.5A72070BE5639DEE.title: "Utility Tools"
 	chapter.6610553945D768F8.title: "Eternal Starlight"
@@ -16,7 +18,7 @@
 	chapter_group.2F1F238400B8A177.title: "Miscellaneous Discussions"
 	chapter_group.7F00D0D8C7C916A0.title: "&bDream of Void (Main Quests)"
 	eward_table.317976CB2BE234D8.title: "Random Reward"
-	file.0000000000000001.title: "Reverie Foundry v0.6-Beta"
+	file.0000000000000001.title: "Reverie Foundry"
 	quest.002106F426003B4F.quest_desc: ["&7Increases the activation range, allowing the spawner to activate even when the player is farther away. Each upgrade adds 2 blocks, up to a maximum of 48 blocks."]
 	quest.002106F426003B4F.quest_subtitle: "I can see you"
 	quest.00616CF92A5F5FD1.quest_desc: [
@@ -96,6 +98,8 @@
 	]
 	quest.02BFE6EA90831AED.quest_subtitle: "A Weight of Ten Thousand Pounds"
 	quest.02BFE6EA90831AED.title: "Pact of the Burdened Consciousness"
+	quest.02C5ECCA9010AEA1.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.02C5ECCA9010AEA1.quest_subtitle: "Craftable"
 	quest.02CBB1D9A926F86B.quest_desc: [
 		"&6Tablecloth&r"
 		""
@@ -136,7 +140,7 @@
 		"&7- Experience gained from mining and kills +35%&r"
 		"&7- Chance for spell scrolls not to be consumed +15%&r"
 	]
-	quest.03639EDED6577831.quest_subtitle: "WIP，暂用贪婪侵蚀效果"
+	quest.03639EDED6577831.quest_subtitle: "WIP, temporarily using Greed Erosion effect"
 	quest.03639EDED6577831.title: "Greed Erosion"
 	quest.03D7343C57EF0A14.quest_desc: [
 		"&7Prolonged contact with spirits seems to have confused my mind a bit; I can even hear strange calling sounds in my ears... No, that's not right."
@@ -168,6 +172,21 @@
 		"[ { \"text\": \"[Click to Jump]\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"27B6C00949F92CCF\" } } ]"
 	]
 	quest.04120B4A249AF41A.title: "Soul Research"
+	quest.0429A6763D6D23B3.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"The Pigment Mixer is a crafting device used to synthesize pigments. By mixing dyes, materials, or other pigments, you can create pigments with \",\"color\":\"gray\"},{\"text\":\"custom colors\",\"color\":\"aqua\"},{\"text\":\" for later dyeing of tool and equipment parts.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Making Pigments\",\"color\":\"gold\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Place any number of the following items into the Pigment Mixer's input slots:\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Input Items\",\"color\":\"yellow\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Dyes\",\"color\":\"light_purple\"},{\"text\":\": Provide the color of the dye\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Pigments\",\"color\":\"aqua\"},{\"text\":\": Provide the color of the pigment\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Materials\",\"color\":\"green\"},{\"text\":\": Provide the color of the material\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Slime Balls\",\"color\":\"green\"},{\"text\":\": Used to increase output quantity\",\"color\":\"gray\"}]}"
+	]
+	quest.0429A6763D6D23B3.quest_subtitle: "Specialized Equipment for Making Pigments"
+	quest.0429A6763D6D23B3.title: "Pigment Mixer"
 	quest.046E980EB69A1209.quest_desc: [
 		"&6Miniature Totem&r"
 		"&7Can be bound to a familiar, and a familiar can only be bound to one totem at a time. When that familiar dies and you lack the mana to resurrect it, the bound totem will be consumed, causing the familiar to &arevive&r&7, and the totem is consumed.&r"
@@ -180,6 +199,8 @@
 		"&7The Stack Upgrade also works on tanks, increasing their storage capacity accordingly."
 	]
 	quest.04F1594414B048D0.quest_subtitle: "Stack a little, stack a bit more, stack a billion times more"
+	quest.056130E2CD71DC75.quest_desc: ["[ { \"text\": \"Click to jump to Silent Gear\", \"underlined\": true, \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"09E68D57095A5F1D\" } } ]"]
+	quest.056130E2CD71DC75.title: "It's Actually a Blueprint"
 	quest.0594FF6909227B41.quest_desc: [
 		"&6All&r affix effects can be looked up in the &6Reverie Foundry - Material Handbook&r."
 		""
@@ -225,6 +246,7 @@
 		"&7The Repair Diffuser uses fresh flesh and blood as a sympathetic anchor for natural life regeneration. After completing one &6Focus Cycle&r&7, a crucible equipped with it has a chance to slightly repair any &eFocus Token&r&7. However, it cannot save Focus Tokens that have already shattered.&r"
 	]
 	quest.070C94F2F2F2D972.quest_subtitle: "Dead Scar Tissue"
+	quest.073C903793B7F71F.title: "Discover the Sunken City"
 	quest.075AC794CF9E3665.quest_desc: [
 		"# &eResource Pack Management &r"
 		""
@@ -325,6 +347,8 @@
 	]
 	quest.07E7C74E2EA9FB8E.quest_subtitle: "Eternal Feast"
 	quest.07E7C74E2EA9FB8E.title: "Spiral Algae Forest"
+	quest.07E84F32AFD0365F.quest_desc: ["&dWIP reminder&r: Off-topic: Normally, new content would be added after this boss, but due to production capacity... new content will be updated after the official release. There is some new content currently, but it's limited."]
+	quest.07E84F32AFD0365F.quest_subtitle: "\"Then, I shall naturally show you what power truly means.\""
 	quest.07F1B2594FCCAF01.quest_desc: [
 		"&6Agility Rune&r"
 		""
@@ -672,9 +696,16 @@
 	quest.0F731D1ED5DD01BC.title: "Treaty of the Caressing Wind"
 	quest.0FE4EF207A6937B7.quest_desc: ["The small village is quite quaint. Not that I'm taking advantage, but I'll take the chests and you can keep the houses."]
 	quest.0FE4EF207A6937B7.title: "Reach the Village"
+	quest.0FF85A086C90BE5A.title: "Discover the Bitter Cold Prison"
 	quest.1031E9949D709475.quest_desc: ["The End Bookshelf is a more advanced bookshelf crafted using the magic of Infused Dragon's Breath. Although this bookshelf doesn't provide extremely high stats, it raises the &aQuanta&r cap it provides to 90."]
 	quest.1031E9949D709475.quest_subtitle: "Approaching the Endgame of Enchanting"
 	quest.1031E9949D709475.title: "Introducing End Power"
+	quest.1063B9A89D3EE67C.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Hold and \",\"color\":\"gray\"},{\"text\":\"right-click\",\"color\":\"yellow\"},{\"text\":\": a copy of the \",\"color\":\"gray\"},{\"text\":\"Cursed Eye\",\"color\":\"red\"},{\"text\":\" will fly from your hand toward the nearest \",\"color\":\"gray\"},{\"text\":\"Bitter Cold Prison\",\"color\":\"aqua\"},{\"text\":\", and the Cursed Eye in your hand will enter a \",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\" cooldown.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"The flight function only works in the \",\"color\":\"gray\"},{\"text\":\"Overworld\",\"color\":\"green\"},{\"text\":\". It will not work in the \",\"color\":\"gray\"},{\"text\":\"Nether, End\",\"color\":\"red\"},{\"text\":\", or worlds without a Bitter Cold Prison.\",\"color\":\"gray\"}]}"
+	]
+	quest.1063B9A89D3EE67C.quest_subtitle: "Bitter Cold Prison"
 	quest.11047BEDA6023228.quest_desc: [
 		"&6Mystic Orb&r"
 		"&7Right-click to obtain a &eHarp&r&7 and the &eLost Melody&r&7 trinket. Obtained via the &6Island Ritual&r&7. To use the Mystic Orb, you must complete all &belemental familiar&r&7 taming advancements (excluding the Bard familiar).&r"
@@ -817,6 +848,7 @@
 	]
 	quest.13CCBB1FAF6834F4.quest_subtitle: "Obelisks"
 	quest.13CCBB1FAF6834F4.title: "Altar Acceleration"
+	quest.13CDF0A883DC5AE7.title: "Go to the End"
 	quest.13DF171E70CF449D.quest_desc: [
 		"&oWith wind, or water, even the most primitive manpower—in any case, it began to turn."
 		"&r"
@@ -974,6 +1006,8 @@
 	quest.182321BDA643635C.quest_subtitle: "Faster, Better, Stronger!"
 	quest.18AC27B34367E1DD.quest_desc: ["Performs a sneak operation to instantly mine blocks (This is a bug, but I think keeping it makes things more interesting)."]
 	quest.18AC27B34367E1DD.quest_subtitle: "Tunnel Digger"
+	quest.18B62DD6017843BC.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.18B62DD6017843BC.quest_subtitle: "Craftable"
 	quest.18C5ACA6F816EDCB.quest_desc: [
 		"&6Miniature Shield&r"
 		"&7Right-click on a tamed familiar to grant it a low probability to &ablock&r&7 attacks. Limited to 1 per familiar. Obtained via the &eShrinker&r&7.&r"
@@ -993,6 +1027,19 @@
 		"&7This change may make naturally spawned phantoms rare. If phantom drops are needed, look for structures containing phantom spawners."
 	]
 	quest.192F6B22F5E521FF.title: "Establish a Base"
+	quest.194FFC9454CBCBA2.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Basic Properties\",\"color\":\"gold\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Pigments\",\"color\":\"aqua\"},{\"text\":\" are items used to color equipment parts.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Color Mixing Logic\",\"color\":\"gold\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"When mixing items of multiple colors, the final pigment's color is the \",\"color\":\"gray\"},{\"text\":\"blended color\",\"color\":\"light_purple\"},{\"text\":\" of the input items (following pigment mixing principles, similar to artistic color mixing).\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Coloring Equipment\",\"color\":\"gold\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Silent Gear equipment can be colored in three ways:\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Craft the Silent Gear item with a pigment or dye\",\"color\":\"gray\"},{\"text\":\"→\",\"color\":\"yellow\"},{\"text\":\"Colors only the main part of the equipment\",\"color\":\"green\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Craft the Silent Gear item with an equipment adjustment part + pigment/dye\",\"color\":\"gray\"},{\"text\":\"→\",\"color\":\"yellow\"},{\"text\":\"Colors the part specified by the adjustment part\",\"color\":\"aqua\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Craft the part item with a pigment/dye\",\"color\":\"gray\"},{\"text\":\"→\",\"color\":\"yellow\"},{\"text\":\"The part is colored; equipment crafted with this part will inherit the color\",\"color\":\"green\"}]}"
+	]
 	quest.1954C7719D379871.quest_desc: [
 		"&6Shield Apparatus&r"
 		""
@@ -1064,6 +1111,8 @@
 	]
 	quest.1AC360E218A91528.quest_subtitle: "Restarting should fix it."
 	quest.1AC360E218A91528.title: "Stuck?"
+	quest.1B66EC1641E0B30A.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.1B66EC1641E0B30A.quest_subtitle: "Craftable"
 	quest.1B819E833413B729.title: "Mystic Ghoul"
 	quest.1BD8D56B55550058.quest_desc: [
 		"&6Treaty of the Reaper"
@@ -1291,6 +1340,8 @@
 		"In the terminal, right-click with a bucket to pour the fluid into the terminal. Right-click with an empty bucket to fill a bucket."
 	]
 	quest.219F39116C48B242.quest_subtitle: "Fluid Storage"
+	quest.21A80A164028813C.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.21A80A164028813C.quest_subtitle: "Craftable"
 	quest.21DFA7D5BF06FF3A.quest_desc: [
 		"&6Mirror of Truth&r"
 		"&7Used to reveal disguised &dIllusionist&r&7 familiars. Obtainable via &6ritual&r&7.&r"
@@ -1320,6 +1371,8 @@
 	]
 	quest.2254C590DE6A8100.quest_subtitle: "An Eye for an Eye"
 	quest.2254C590DE6A8100.title: "Treaty of the Berserker"
+	quest.22AA04DEF35EE966.quest_subtitle: "Who wouldn't want a meal?"
+	quest.22AA04DEF35EE966.title: "A Delicious Feast"
 	quest.22DBDBE68B6E1B4D.quest_desc: [
 		"&6Weapon Enchanting&r"
 		"&7Spell scrolls can be applied to weapons, allowing the player to cast the spell while wielding that weapon. Note: This will override spells from this mod or right-click abilities from other mods.&r"
@@ -1346,6 +1399,8 @@
 	]
 	quest.233B0326CCA639C7.quest_subtitle: "Stagnating That Which Evolves"
 	quest.2358AB144E490565.quest_subtitle: "Familiar Summoning Ritual"
+	quest.2377B4B5C5413B34.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.2377B4B5C5413B34.quest_subtitle: "Craftable"
 	quest.23B6D00570354BE3.quest_desc: [
 		"&6Boiler&r"
 		""
@@ -1447,7 +1502,7 @@
 		""
 		"&#00FFAA[Despair Settlement]&r&7"
 		"&7When you are knocked out, all &#FFAA00Despair Value&r&7 is cleared, and sanity is reset to zero."
-		"&8\"The debt of despair is finally repaid. The frenzy subsides, the numbers reset. This is... the final peace."
+		"&8\"The debt of despair is finally repaid. The frenzy subsides, the numbers reset. This is... the final peace.\""
 	]
 	quest.25C5815C5583AA74.quest_subtitle: "Stay Sane?"
 	quest.25C5815C5583AA74.title: "Sanity Value"
@@ -1548,6 +1603,7 @@
 		""
 		"&7An advanced internal component requiring multiple precise processes to manufacture, commonly used in assembling complex machinery like the &eMechanical Arm&r.&r"
 	]
+	quest.2A50D870F054BB1F.quest_subtitle: "Why are you still here?"
 	quest.2A8629B66F128293.quest_desc: ["&7Need I say more? It sounds good. Really good."]
 	quest.2A8629B66F128293.quest_subtitle: "Built-in Entrance Sound Effect"
 	quest.2AF2FF75BEEDF6FF.quest_desc: ["Increases the number of mobs spawned by a spawner in a single activation."]
@@ -1624,6 +1680,8 @@
 	]
 	quest.2C34F57D3538E222.quest_subtitle: "Embrace the Sculk"
 	quest.2C34F57D3538E222.title: "Sculk Energy Activation"
+	quest.2C362077624962AE.quest_subtitle: "Not only do these things look strange, but also..."
+	quest.2C362077624962AE.title: "Looks Unappetizing"
 	quest.2C5A0FE2059F81B1.quest_desc: ["&7Tools designed for familiars. Shrunken items/armor can be worn by familiars as accessories, while shrunken food can be fed to familiars to restore health. Please note that all food effects and buffs/debuffs will not take effect, so choose foods with high saturation."]
 	quest.2C5C9488AA4912AD.quest_subtitle: "Used for casting wire"
 	quest.2CA02120B210EB2D.quest_desc: [
@@ -1716,6 +1774,13 @@
 		"&7These Arcane Clusters are condensations of pure Arcane Energy, with a small layer of protective magic to prevent overflow. They are nearly useless in magic, but are quite aesthetic as lamps."
 	]
 	quest.2DE251239B528464.quest_subtitle: "Decorative Crafting"
+	quest.2DE8D48077862833.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Obtained through crafting, used to summon the \",\"color\":\"gray\"},{\"text\":\"Boss\",\"color\":\"red\"},{\"text\":\" \",\"color\":\"gray\"},{\"text\":\"Telos Echo · Primordial Firebearer\",\"color\":\"gold\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Hold and \",\"color\":\"gray\"},{\"text\":\"right-click\",\"color\":\"yellow\"},{\"text\":\" to use. It will emit a sound, create special particles, and attempt to summon the Firebearer.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"If a \",\"color\":\"gray\"},{\"text\":\"Burning Soul Rune\",\"color\":\"gold\"},{\"text\":\" is nearby, the \",\"color\":\"gray\"},{\"text\":\"Soul-Seeking Ember Bell\",\"color\":\"red\"},{\"text\":\" will be consumed, and the Firebearer will be summoned. If no Burning Soul Rune is nearby, it will not be consumed.\",\"color\":\"gray\"}]}"
+	]
+	quest.2DE8D48077862833.quest_subtitle: "\"You should trust me and dedicate your life to me.\""
 	quest.2E1DD9D5C7D1062D.quest_desc: [
 		"&7Opening my eyes, I see a low, gray sky and a desolate, boundless wilderness. Cold wind sweeps sand and dust over exposed rocks and sparse, withered grass."
 		""
@@ -1744,6 +1809,7 @@
 	]
 	quest.2E49C6ACDB5A84E2.quest_subtitle: "Item Display Stone Frame"
 	quest.2E49C6ACDB5A84E2.title: "Gloomstone Golem"
+	quest.2E830C01A529257D.quest_subtitle: "Acropolis"
 	quest.2F38AC908EC156D9.quest_desc: [
 		"&6Pact of the Scornful Destroyer&r"
 		""
@@ -1762,8 +1828,14 @@
 	]
 	quest.2F959196FB453034.quest_subtitle: "Listen to the Bookshelf's Heartbeat"
 	quest.2F959196FB453034.title: "Warden's Enhancement – Sculk Energy Peak"
+	quest.2FBEC3940C05E2E3.quest_desc: ["Rushing forward will not only fill your backpack but also send you back to the start by powerful enemies time and time again..."]
+	quest.2FBEC3940C05E2E3.quest_subtitle: "Time to find a place to rest for a while"
+	quest.2FBEC3940C05E2E3.title: "Recommended to Rest a While"
 	quest.2FE49A9C24350211.quest_subtitle: "Big Fork"
+	quest.303BD0ED6A5699E1.quest_subtitle: "All deliciousness starts from this moment!"
+	quest.303BD0ED6A5699E1.title: "A Pot?"
 	quest.305A6FFD7FD5684F.title: "Mid-game - Defeat the Lord of the Dead"
+	quest.307FD783B49CA47C.title: "Discover the Cursed Pyramid"
 	quest.309D32324902DF18.quest_subtitle: "Food Value > 8"
 	quest.309D32324902DF18.title: "Main Meal Recycle x10"
 	quest.31259F6B81819141.quest_subtitle: "Can inflict greater damage on enemies."
@@ -1904,6 +1976,11 @@
 		"&7After placing an &eSchool Material&r&7, available spells for transcription will be displayed. Some spells may appear as question marks; try using higher-quality ink to transcribe them.&r"
 		"&7The finished scroll will appear here. Note: Only left-clicking to take it will consume the raw materials.&r"
 	]
+	quest.337B2D306A06DD6D.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Hold and \",\"color\":\"gray\"},{\"text\":\"right-click\",\"color\":\"yellow\"},{\"text\":\": a copy of the \",\"color\":\"gray\"},{\"text\":\"Desert Eye\",\"color\":\"gold\"},{\"text\":\" will fly from your hand toward the nearest \",\"color\":\"gray\"},{\"text\":\"Cursed Pyramid\",\"color\":\"gold\"},{\"text\":\", and the Desert Eye in your hand will enter a \",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\" cooldown.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"The flight function only works in the \",\"color\":\"gray\"},{\"text\":\"Overworld\",\"color\":\"green\"},{\"text\":\". It will not work in the \",\"color\":\"gray\"},{\"text\":\"Nether, End\",\"color\":\"red\"},{\"text\":\", or worlds without a Cursed Pyramid.\",\"color\":\"gray\"}]}"
+	]
 	quest.337C34C06A879409.quest_desc: [
 		"This upgraded Deep Dark Bookshelf channels power into Quantization, providing large amounts of &4Quantization&r without offering &5Arcana&r."
 		"(Important Bookshelf)"
@@ -1943,6 +2020,7 @@
 		"&7The Spell Mastery Rune reflects and imitates Arcane Energy, allowing me to charge &eStaves&r&7 at twice the speed.&r"
 	]
 	quest.34D5717A03B609A1.quest_subtitle: "Creating That Which Destroys"
+	quest.34F5839A32156AF0.title: "Discover the Acropolis"
 	quest.350A83A36269F87B.quest_desc: ["&7Finally, I created an experimental substrate called \"&6Alchemical Mineral Dust&r&7\". Its texture is close to solid animal fat under normal circumstances, but with a slight application of force, it reveals strong &aMalleability&r&7. This is undoubtedly a useful &6Material&r&7."]
 	quest.350A83A36269F87B.quest_subtitle: "Clay Number Two"
 	quest.3531099CA2E8832A.quest_desc: [
@@ -2232,6 +2310,12 @@
 	quest.3A5DD56949CF4827.quest_subtitle: "The modpack's default keybinds are already configured. You just need to find the Key Bindings menu and click (Reset All Keys)."
 	quest.3B0E439056FB5B0B.quest_desc: ["&7Backpacks can be equipped with various upgrades. The number of upgrade slots is directly related to the backpack's tier. Diamond backpacks have five upgrade slots, while Netherite backpacks have seven. So, upgrading your backpack tier is necessary to install more upgrades."]
 	quest.3B7226A9387FD816.quest_subtitle: "Cursed Flower"
+	quest.3BB2417F411ABDDE.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Important crafting material\",\"color\":\"gold\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"If you want to craft some \",\"color\":\"gray\"},{\"text\":\"BOSS summoning items\",\"color\":\"red\"},{\"text\":\" or some \",\"color\":\"gray\"},{\"text\":\"novel materials\",\"color\":\"aqua\"},{\"text\":\", you will definitely need this.\",\"color\":\"gray\"}]}"
+	]
+	quest.3BB2417F411ABDDE.quest_subtitle: "First Steps"
 	quest.3C4F9B874C336EB6.quest_desc: [
 		"# &cBUG Reporting Channels &r"
 		""
@@ -2337,6 +2421,8 @@
 		"&eOn the left are the types of fuel that can be used.&r"
 	]
 	quest.3DEBEF47CB42C180.quest_subtitle: "Energy Consumption and Heating"
+	quest.3F1E59D47DB55A82.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.3F1E59D47DB55A82.quest_subtitle: "Craftable"
 	quest.3F4F2D1D8EC995BA.quest_desc: [
 		"Redstone Comparators allow spawners to be controlled by redstone."
 		"With this modification installed, the spawner will only work when receiving a redstone signal. This provides a more direct control method for automated monster farms."
@@ -2485,6 +2571,11 @@
 	]
 	quest.4276FE7E4037AC05.title: "Ancient Battlefield"
 	quest.429669316E4CF3A9.quest_subtitle: "Has both armor and minor spell attributes, very popular"
+	quest.42A270AF2F03EE3B.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Hold and \",\"color\":\"gray\"},{\"text\":\"right-click\",\"color\":\"yellow\"},{\"text\":\": a copy of the \",\"color\":\"gray\"},{\"text\":\"Mechanical Eye\",\"color\":\"aqua\"},{\"text\":\" will fly from your hand toward the nearest \",\"color\":\"gray\"},{\"text\":\"Ancient Factory\",\"color\":\"gold\"},{\"text\":\", and the Mechanical Eye in your hand will enter a \",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\" cooldown.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"The flight function only works in the \",\"color\":\"gray\"},{\"text\":\"Overworld\",\"color\":\"green\"},{\"text\":\". It will not work in the \",\"color\":\"gray\"},{\"text\":\"Nether, End\",\"color\":\"red\"},{\"text\":\", or worlds without an Ancient Factory.\",\"color\":\"gray\"}]}"
+	]
 	quest.42F6170490C96218.quest_subtitle: "No Rivals Left"
 	quest.42F6170490C96218.title: "Slay Champion Mobs x1000"
 	quest.43B69EBAF5DCC756.quest_subtitle: "All-Purpose Tool"
@@ -2562,6 +2653,13 @@
 		"&7Immediately drops 1~3 &#F5F5DCWhite Yeti Fur&r&7, and the Yeti's texture changes to a bald, exposed skin texture (recovers after 2~3 minutes, cannot be sheared again before recovery).&r"
 	]
 	quest.44FF46EF1BE66093.title: "Yeti"
+	quest.45220A64CA75EEB5.title: "Feel the Magic"
+	quest.455B8465AECDA168.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Hold and \",\"color\":\"gray\"},{\"text\":\"right-click\",\"color\":\"yellow\"},{\"text\":\": a copy of the \",\"color\":\"gray\"},{\"text\":\"Blazing Eye\",\"color\":\"gold\"},{\"text\":\" will fly from your hand toward the nearest \",\"color\":\"gray\"},{\"text\":\"Blazing Arena\",\"color\":\"red\"},{\"text\":\", and the Blazing Eye in your hand will enter a \",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\" cooldown.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"The flight function only works in the \",\"color\":\"gray\"},{\"text\":\"Nether\",\"color\":\"red\"},{\"text\":\". It will not work in the \",\"color\":\"gray\"},{\"text\":\"Overworld, End\",\"color\":\"green\"},{\"text\":\", or worlds without a Blazing Arena.\",\"color\":\"gray\"}]}"
+	]
+	quest.455B8465AECDA168.quest_subtitle: "Blazing Arena"
 	quest.45A1C2B4E1B4D9BC.quest_desc: [
 		"&6Treaty of the Rotten Glutton&r"
 		""
@@ -2613,7 +2711,9 @@
 		"&7Furthermore, chain activation of Twisting Engines grants stackable &aBonuses&r&7 to all other attributes. But as is probably obvious, this operation significantly increases &cFuel Consumption&r&7. Finally, it also slightly increases the burden of the standard &eTuning Process&r&7.&r"
 	]
 	quest.46C1263DC7062475.quest_subtitle: "Detached from Linear Time"
-	quest.46C1B03029F1C41D.quest_desc: ["&7Allows you to拆卸 a specific part from your current equipment. Although you can generally directly craft with a new part to replace the old one, you might still find this tool useful."]
+	quest.46C1B03029F1C41D.quest_desc: ["&7Allows you to disassemble a specific part from your current equipment. Although you can generally directly craft with a new part to replace the old one, you might still find this tool useful."]
+	quest.4761041D4596C446.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.4761041D4596C446.quest_subtitle: "Craftable"
 	quest.47CF8DC4847AD311.quest_subtitle: "Stage 2"
 	quest.47D658272D1D7048.quest_desc: [
 		"&7Still using the Sword Blueprint as an example. Items crafted with this blueprint are called &2\"Primary Components\"&7. The item crafted from the Sword Blueprint is the Sword Blade. When crafting components using blueprints, you need to fill them with matching materials. For example, the Sword Blueprint requires two of the same material—two Iron Ingots, two Diamonds, etc. The specific quantity varies depending on the blueprint. These materials need to be capable of forming &2\"Primary Components\"&7 to be made into a Sword Blade."
@@ -2622,7 +2722,7 @@
 		""
 		"&7The previously mentioned &eTip Upgrade, Binding, Coating, Grip&7 and other parts also need to be crafted using blueprints. They are not Primary Components—even without these parts, the item can still be used. Later, you can install them by crafting the item together with these parts. They provide additional bonuses to weapons and armor."
 		""
-		"&7If you're dissatisfied with a certain part and have a better material to replace it, simply craft the item with the new part in a crafting grid to replace the old one. The old part will be剥离 and will not disappear."
+		"&7If you're dissatisfied with a certain part and have a better material to replace it, simply craft the item with the new part in a crafting grid to replace the old one. The old part will be stripped and will not disappear."
 	]
 	quest.47D658272D1D7048.title: "Modular Assembly Explained"
 	quest.48A06F2501866438.quest_desc: [
@@ -2656,6 +2756,7 @@
 		""
 		"&8They hate bumps but love to dance.&r"
 	]
+	quest.48F1FA137148C82F.title: "Discover the Ancient Factory"
 	quest.4923304658C6BF41.quest_desc: [
 		"&eThe ultimate fuel. It seems wasteful to use it as such."
 		"&6Combines the lowest consumption, fastest speed, and highest temperature, nearing perfection."
@@ -2679,6 +2780,8 @@
 		"&7&eAzure Sky&r&7 and &6Earthen&r&7 typically do not react with each other, and this non-reaction also has its uses. The Resonance Tuner moderates the interaction of different forces within the &eCrucible&r&7, significantly reducing or even completely removing &cDestabilization Risk&r&7 at the cost of slowing processing speed.&r"
 	]
 	quest.4AC2F5D5FF711C0F.quest_subtitle: "Dissonance Mitigation"
+	quest.4ACF299AC1220CE6.quest_subtitle: "Grand Hall"
+	quest.4ACF299AC1220CE6.title: "Discover the Castle"
 	quest.4AEAA66A5B802779.quest_desc: [
 		"&e\"Fast is good!\""
 		"&7The Biplane's base speed is much higher than other aircraft types. With Engine and Propeller upgrades installed, it can even compete with chunk loading speed. However, it also carries an enormous crash risk, and crashes result in &cexplosions&7—meaning dropped aircraft might be burned by the explosion flames. Always ensure you have a proper runway for takeoff and landing, and travel cautiously."
@@ -2710,6 +2813,7 @@
 	quest.4BA0280CD5AC4EB5.quest_subtitle: "A Nobler Scissor...?"
 	quest.4C04EAB3BF7A1201.quest_desc: ["&7Recommended at this stage because it can be obtained here, but that doesn't mean it's only usable here. Some extremely powerful materials will be useful no matter what stage you're in."]
 	quest.4C04EAB3BF7A1201.title: "Early Game - Pre-Necromancer King"
+	quest.4C4558B339BA59A5.quest_subtitle: "One thing is another"
 	quest.4C4D49730F599ADA.quest_desc: [
 		"&6Crystalline Desert&r"
 		"&7Is a surface biome in the Starlight Dimension."
@@ -2768,6 +2872,8 @@
 		"&7For human-powered aircraft: Hold W to provide power. Once power reaches maximum, it stabilizes, and W then functions as normal forward control. Continuously consumes saturation during flight."
 	]
 	quest.4D2D9898C6477E3B.quest_subtitle: "At least you know how to hit the gas and brakes... right?"
+	quest.4D448B1BA52C6548.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.4D448B1BA52C6548.quest_subtitle: "Craftable"
 	quest.4D73E8E5F27EE986.quest_desc: [
 		"&7I stand before the mausoleum entrance."
 		""
@@ -3109,6 +3215,7 @@
 		""
 		"&8The manuscript's margin has a sketch of a winding conveyor belt, with a note: The road is laid. Now, make things move.&r"
 	]
+	quest.53634A7FA785B1D3.quest_desc: ["In comparison, when facing some powerful monsters/BOSSes, you will need their help..."]
 	quest.53634A7FA785B1D3.quest_subtitle: "Not Necessarily Negative"
 	quest.53634A7FA785B1D3.title: "Seven Sins Erosion"
 	quest.536380EE035D7850.quest_subtitle: "拿着任意末地创世的眼睛右键门框上已有的眼睛可以卸下"
@@ -3148,6 +3255,8 @@
 	]
 	quest.5394037EDC7769D9.quest_subtitle: "Becoming the Arrowhead"
 	quest.5394037EDC7769D9.title: "Treaty of Sustained Volley"
+	quest.53A39052B8DFFE3E.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.53A39052B8DFFE3E.quest_subtitle: "Craftable"
 	quest.53C821423589F530.quest_desc: [
 		"Please do not summon during the day. The Skeleton King enters a berserk state during the day, with extremely high defense and massively increased damage that can oneshot players."
 		""
@@ -3249,6 +3358,14 @@
 		""
 		"&8Immerse the still-beating sin into this boiling cauldron of judgment. Wait for the crimson to struggle and precipitate from the gap between life and the liquid's surface, then you may hold a bottle to receive it—that is the concentrated negation condensed from sin's resentment, an extracted and stripped proof of ‘life’ still bearing warmth.&r"
 	]
+	quest.56B3E6FD85D52F60.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Traveling this world, I often encounter those who wield \",\"color\":\"gray\"},{\"text\":\"tomes\",\"color\":\"gold\"},{\"text\":\" and \",\"color\":\"gray\"},{\"text\":\"strange wands\",\"color\":\"light_purple\"},{\"text\":\", casting \",\"color\":\"gray\"},{\"text\":\"spells\",\"color\":\"aqua\"},{\"text\":\" that give me a \",\"color\":\"gray\"},{\"text\":\"splitting headache\",\"color\":\"red\"},{\"text\":\".\",\"color\":\"gray\"}]}"
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Since I can't beat them, I might as well walk this path myself.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"Click to jump to Iron Magic Side Quest\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"60C42244ED37BA5F\"},\"underlined\":true,\"color\":\"yellow\"}"
+	]
+	quest.56B3E6FD85D52F60.quest_subtitle: "Infinite Mysteries"
+	quest.56B3E6FD85D52F60.title: "Introduction to Magic"
 	quest.56B761C2894F3C2E.quest_desc: [
 		"&6Spirit Jars"
 		"&7A simple application of Hallowed Gold is the &6Spirit Jar&r&7."
@@ -3286,6 +3403,8 @@
 	quest.5731A86EC589BF22.quest_subtitle: "Artisan's Craft"
 	quest.57D76B1B33C57F9F.quest_desc: ["Even though you've swum so long you probably don't lack these, I'm still giving them to you because I don't know what else to give... Some aquatic specialties, I guess."]
 	quest.57D76B1B33C57F9F.quest_subtitle: "Then tell me, why didn't I just take a boat?"
+	quest.582C0861954C8D52.quest_desc: ["Can be considered a combination of all workstations, with 8 input slots"]
+	quest.582C0861954C8D52.quest_subtitle: "Better All-Purpose Device"
 	quest.5883458218829D00.quest_desc: ["&7The Pro Max version of Soul-Steeped Steel. High cost, powerful effect. The Primordial Malice modifier provides a large amount of soul shield and scythe proficiency."]
 	quest.5883458218829D00.quest_subtitle: "Stack the Thickest Armor"
 	quest.589CD98F3C3AA8D3.quest_desc: [
@@ -3295,6 +3414,8 @@
 		"&7Suitable for hovering and assisting with building projects—very stable but also very slow. Since the aircraft is considered silent, it can also hold its own when messing with Wardens in ancient cities."
 	]
 	quest.58BCF9F1BE8BAA5E.quest_desc: ["&7When it falls again, the power sealed within seems to dissipate... I must investigate and see what traces are left."]
+	quest.58C802ED3AA66357.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.58C802ED3AA66357.quest_subtitle: "Craftable"
 	quest.58CA43B9AA0530E2.quest_subtitle: "Stage 2"
 	quest.58DE58D4F8290C1C.quest_desc: [
 		"&7This item was obtained by chance during my travels."
@@ -3317,6 +3438,8 @@
 	]
 	quest.593ABE7FAC454B34.quest_subtitle: "Pulse That Promotes Processing"
 	quest.5A46895D552BC15F.quest_subtitle: "Am I not feeling energetic? I feel perfectly fine though"
+	quest.5A59A7F48EA53168.quest_desc: ["[ { \"text\": \"Click to go to the Gear side quest\", \"underlined\": true, \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"1FB3D1FAE9A88C39\" } } ]"]
+	quest.5A59A7F48EA53168.title: "Spinning Gears"
 	quest.5A5CB66A9C32EDDA.quest_desc: ["&7This is not any place you know, but at least you're alive, and you must stay alive."]
 	quest.5A5CB66A9C32EDDA.title: "Chaotic Wasteland"
 	quest.5A8ACB926DFAB615.quest_subtitle: "You will receive a starter kit."
@@ -3338,6 +3461,8 @@
 		"&dNo one knows the internal mechanics of this rope... not even Endermen."
 	]
 	quest.5AEF01E9FF0A0727.quest_subtitle: "Poké Ball"
+	quest.5B38A4F8CD3C9B98.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.5B38A4F8CD3C9B98.quest_subtitle: "Craftable"
 	quest.5B941F073DDCD277.quest_subtitle: "Consuming Twisted-type products will increase sanity instead of decreasing it."
 	quest.5B941F073DDCD277.title: "&a\"Sweet Dew Blooming from Filth\""
 	quest.5BDB153064430D05.quest_desc: [
@@ -3405,6 +3530,8 @@
 		"&7This new structure belongs to the &8Soul Sand Valley&r&7, a realm where &cDeath&r&7 reigns. &cNecromancers&r&7 are naturally drawn to such places, so you are sure to find them here.&r"
 	]
 	quest.5E01EC2AC8CE43F0.title: "&6Graveyard&r"
+	quest.5E0B8E874FA58643.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.5E0B8E874FA58643.quest_subtitle: "Craftable"
 	quest.5E313592ACB65BC2.quest_desc: [
 		"&7Gobber's unique properties allow it to carry the abilities contained in other objects. Crafting it into medals and rings enables absorption of other objects, thereby activating the corresponding effects for extended periods. Please check JEI for specific recipes. It's worth noting that even rings do not need to be worn; once activated and placed in an Ender Chest, they remain effective."
 		""
@@ -3413,6 +3540,12 @@
 	quest.5E313592ACB65BC2.title: "Gobber Medals/Rings"
 	quest.5E3276B22F0E8C6D.quest_desc: ["&7Crimson Iron ore can be found in the Nether. It's a common material with somewhat mediocre stats. When combined with Blaze Rods, it can be crafted into Crimson Steel... although its stats remain unremarkable, it can be used to construct some special tools."]
 	quest.5E3B1B0AB352F0F3.quest_subtitle: "Familiar Summoning Ritual"
+	quest.5E4E12ACE4F534AD.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"Hold and \",\"color\":\"gray\"},{\"text\":\"right-click\",\"color\":\"yellow\"},{\"text\":\": a copy of the \",\"color\":\"gray\"},{\"text\":\"Abyssal Eye\",\"color\":\"blue\"},{\"text\":\" will fly from your hand toward the nearest \",\"color\":\"gray\"},{\"text\":\"Sunken City\",\"color\":\"blue\"},{\"text\":\", and the Abyssal Eye in your hand will enter a \",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\" cooldown.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"The flight function only works in the \",\"color\":\"gray\"},{\"text\":\"Overworld\",\"color\":\"green\"},{\"text\":\". It will not work in the \",\"color\":\"gray\"},{\"text\":\"Nether, End\",\"color\":\"red\"},{\"text\":\", or worlds without a Sunken City.\",\"color\":\"gray\"}]}"
+	]
+	quest.5E4E12ACE4F534AD.quest_subtitle: "Sunken City"
 	quest.5E513FFD985CDDF9.quest_desc: [
 		"&6Golem Forge&r"
 		"&7Is a large underground structure guarded by the &cStarlight Golem&r&7."
@@ -3443,6 +3576,8 @@
 		""
 		"&7Many of the tier 1 materials recommended in the Silent Gear chapter are still usable. Balancing material modifiers and values under the powerful alloy system is necessary. While incorporating as many modifiers as possible, you also need to comprehensively consider armor values/damage and other attributes."
 	]
+	quest.5FE4FAAD4501DE1F.quest_desc: ["Can be considered a combination of all workstations, but only has 4 input slots"]
+	quest.5FE4FAAD4501DE1F.quest_subtitle: "All-Purpose Device"
 	quest.5FFB29607E15D805.quest_desc: [
 		"&6Treaty of Defiance"
 		"&7Magic has transformed your perception of death: damage becomes more &cPainful&r&7.&r&cMaximum health reduced by one-fifth"
@@ -3492,6 +3627,7 @@
 	quest.61365E0F2831F348.quest_desc: ["&7Obtained by entering the Starlight Dimension and seeking out the Frozen Magic Forest. Can be used as a handle material, providing a good bonus for low attack speed weapons."]
 	quest.61365E0F2831F348.quest_subtitle: "Swift"
 	quest.613D2E97D95993FF.quest_subtitle: "Mother's Tenderness"
+	quest.613D3C5BA25706B6.title: "The Beginning of Everything"
 	quest.61AD6CC3CE0AC9F4.quest_subtitle: "Global Options"
 	quest.62214066B0F19784.quest_desc: ["Tired of the annoying noises from your slaughterhouse? Sick of hearing the creatures' squeaking? This modification makes mobs spawned by the spawner silent. Reduces noise pollution."]
 	quest.62214066B0F19784.quest_subtitle: "SHUT UP!"
@@ -3548,6 +3684,8 @@
 		""
 		"&8It's smart enough to know when to stop.&r"
 	]
+	quest.639AC8246CA81675.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.639AC8246CA81675.quest_subtitle: "Craftable"
 	quest.6456C4ED798E5EBD.quest_desc: [
 		"&6Crimson Forest&r"
 		"&7Is a surface biome in the Starlight Dimension."
@@ -3676,6 +3814,8 @@
 	]
 	quest.660EAD8BBC2734CA.quest_subtitle: "Sloth Erosion"
 	quest.660EAD8BBC2734CA.title: "Sloth Erosion"
+	quest.66417960000F082A.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.66417960000F082A.quest_subtitle: "Craftable"
 	quest.66481C79877E0ED7.quest_subtitle: "Food Value >= 14"
 	quest.66481C79877E0ED7.title: "Feast Recycle x10"
 	quest.664DF00DAF0D957A.quest_desc: [
@@ -3991,6 +4131,7 @@
 		"&7Yetis only have a white texture by default and cannot be dyed like sheep. Variants of Yeti Fur other than white can only be crafted manually.&r"
 	]
 	quest.6D895DFB1144DF16.title: "Yeti Fur"
+	quest.6DB8BE45F81F4357.title: "Discover the Blazing Arena"
 	quest.6E0EE5297B295288.quest_subtitle: "&eAll neutral creatures will become hostile to you."
 	quest.6E0EE5297B295288.title: "&e\"No Purity Remains in the Filthy Body\""
 	quest.6E25E82DBD18D2C8.quest_subtitle: "&cThe world will be plunged into eternal night."
@@ -4102,6 +4243,8 @@
 		"&7Can also be further crafted into Black Dye in a crafting grid.&r"
 	]
 	quest.714645D7B7F4C7BA.quest_subtitle: "Material dropped after killing an Umbral Snail."
+	quest.71944D592D710B99.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.71944D592D710B99.quest_subtitle: "Craftable"
 	quest.71B24EEAADB29F3A.quest_desc: [
 		"&7Trading with villagers can get you three types of Reforging Hammers. You can also craft them yourself, which is much more convenient than trading."
 		"&7You can reforge weapons, armor, tools, and accessories separately. The best modifier for weapons is mostly &6Legendary&7, while accessory and armor modifiers cover different aspects."
@@ -4140,6 +4283,8 @@
 		"&7&eCalculated based on the main component&r&7 (the first item in the placement order) and the &erarity&r&7 of each item.&r"
 	]
 	quest.727E7E58CDD35234.quest_subtitle: "&cImportant Item"
+	quest.729E08704E144DC7.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"In the \",\"color\":\"gray\"},{\"text\":\"Nether\",\"color\":\"red\"},{\"text\":\", hold and \",\"color\":\"gray\"},{\"text\":\"right-click\",\"color\":\"yellow\"},{\"text\":\" this item. It will become a \",\"color\":\"gray\"},{\"text\":\"map\",\"color\":\"aqua\"},{\"text\":\" pointing to the \",\"color\":\"gray\"},{\"text\":\"Castle structure\",\"color\":\"gold\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.729E08704E144DC7.quest_subtitle: "Why does smearing materials reveal the castle's location?"
 	quest.72C552BE02BA433D.quest_desc: [
 		"The Apotheosis Spawner Module brings players more powerful and customizable spawners, as well as convenient implementation solutions for部分 monster farm automation."
 		"The spawner's attributes are numerous but very concise and easy to understand, so I won't go into detail here. Please refer to subsequent tasks for specific aspects."
@@ -4310,11 +4455,11 @@
 	quest.770E6D9F52724FCC.quest_desc: [
 		"&7By fusing multiple materials of the same type together, you can create Composite Materials. Their properties are quite complex, requiring experimentation and research to find suitable combinations."
 		""
-		"&7First, Composite Materials inherit all the modifiers from their components. This means you can use them to stack大量 modifiers to craft trinkets. Trinkets only care about modifiers—other negative effects are basically negligible, and stacking a巨量 of modifiers can greatly enhance trinket performance."
+		"&7First, Composite Materials inherit all the modifiers from their components. This means you can use them to stack a large number of modifiers to craft trinkets. Trinkets only care about modifiers—other negative effects are basically negligible, and stacking a huge number of modifiers can greatly enhance trinket performance."
 		""
 		"&7Second, if you want the Composite Material's attack damage to be as high as possible, you need to include high-damage materials in the crafting process, such as Obsidian Ingots obtained from ancient city exploration."
 		""
-		"&7Finally, there are specific rules regarding which parts Composite Materials can be used to craft. For example, if you want to use Composite Material to craft a Coating, then all原材料 used to create the Composite Material must themselves be capable of crafting a Coating. The resulting Composite Material will then also be capable of crafting a Coating, and its properties will be綜合 calculated. If any原材料 cannot be used to craft a Coating, then the resulting Composite Material also cannot be used to craft a Coating. The same applies to other parts."
+		"&7Finally, there are specific rules regarding which parts Composite Materials can be used to craft. For example, if you want to use Composite Material to craft a Coating, then all raw materials used to create the Composite Material must themselves be capable of crafting a Coating. The resulting Composite Material will then also be capable of crafting a Coating, and its properties will be comprehensively calculated. If any raw material cannot be used to craft a Coating, then the resulting Composite Material also cannot be used to craft a Coating. The same applies to other parts."
 	]
 	quest.770E6D9F52724FCC.title: "Composite Materials"
 	quest.773AC14F2AF8822B.quest_desc: [
@@ -4322,6 +4467,9 @@
 		"When using Quartz, you need to hold the other adjustment item in your off-hand."
 	]
 	quest.773AC14F2AF8822B.quest_subtitle: "Reverse Adjustment"
+	quest.77437FA5561BE4E6.quest_desc: [""]
+	quest.77437FA5561BE4E6.quest_subtitle: "Start by chopping down a tree"
+	quest.77437FA5561BE4E6.title: "Start Playing"
 	quest.7779D406142005D6.quest_desc: [
 		"&6Research: Void Salt"
 		"&7After passing through the &dWeeping Well&r&7, &8Cursed Ash&r&7 changed into a substance I call \"&8Void Salt&r&7\". This dark powder is chemically similar to Cursed Ash, but lacks carbon components, so it can no longer be called \"ash\"."
@@ -4430,6 +4578,13 @@
 	quest.7964EFBEAA0F5D57.quest_desc: ["&7Click the &a√&r&7 to unlock the next quest."]
 	quest.7964EFBEAA0F5D57.quest_subtitle: "As you can see, this is a quest."
 	quest.7964EFBEAA0F5D57.title: "Guidance"
+	quest.799B92FBA8B69A02.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"The \",\"color\":\"gray\"},{\"text\":\"Orichalcum Ingot\",\"color\":\"gold\"},{\"text\":\" dropped by the Skeleton King is very useful, commonly seen as a source of equipment for crafting various \",\"color\":\"gray\"},{\"text\":\"Silent Gear\",\"color\":\"aqua\"},{\"text\":\" items.\",\"color\":\"gray\"}]}"
+		""
+		"{\"text\":\"\",\"extra\":[{\"text\":\"After obtaining Orichalcum Ingots, \",\"color\":\"gray\"},{\"text\":\"you can also defeat some bosses to get their unique weapons and use them to craft \",\"color\":\"gray\"},{\"text\":\"Silent Gear\",\"color\":\"aqua\"},{\"text\":\" items based on those unique weapons.\",\"color\":\"gray\"}]}"
+	]
+	quest.799B92FBA8B69A02.quest_subtitle: "All Kinds of Skills"
+	quest.799B92FBA8B69A02.title: "It's Time!"
 	quest.79B12E63C90B3C61.quest_desc: [
 		"Can provide a temperature of 3000 degrees Celsius. Requires a Power Furnace to function normally."
 		""
@@ -4514,6 +4669,8 @@
 	quest.7BACE6601BC4DFED.quest_subtitle: " Prevent Loss"
 	quest.7BD9DC7DB2278AA5.quest_desc: ["&7Obtained from Ancient City loot chests. It has quite high attack damage but no special modifiers, making it suitable for use in alloying weapon components."]
 	quest.7BD9DC7DB2278AA5.quest_subtitle: "Simple, High Damage"
+	quest.7BF7E53DAB408397.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
+	quest.7BF7E53DAB408397.quest_subtitle: "Craftable"
 	quest.7C227ABAEC91DA58.quest_subtitle: "Although not as defensive as other armors, it is especially effective against spell-related attributes"
 	quest.7C74D47B9ED97737.quest_desc: [
 		"&7The Security Manager is a block that can store Security Cards."
@@ -4544,6 +4701,9 @@
 	]
 	quest.7C7C7734793AB866.quest_subtitle: "Stabilizing"
 	quest.7CACDAC57F697371.quest_subtitle: "Ore Sniffer"
+	quest.7CB11EBD34BA84FB.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"If you want, you can even \",\"color\":\"gray\"},{\"text\":\"defeat\",\"color\":\"red\"},{\"text\":\" creatures that are \",\"color\":\"gray\"},{\"text\":\"much weaker\",\"color\":\"green\"},{\"text\":\" than you...\",\"color\":\"gray\"}]}"]
+	quest.7CB11EBD34BA84FB.quest_subtitle: "Anyway, before facing the BOSS, let's pick a few unlucky ones to practice on"
+	quest.7CB11EBD34BA84FB.title: "Practice"
 	quest.7CDF0A87C605E833.quest_subtitle: "Familiar Summoning Ritual"
 	quest.7CE0C7EC4D46C170.quest_subtitle: "Familiar Summoning Ritual"
 	quest.7CEF4D8E514066A7.quest_desc: [
@@ -4661,6 +4821,8 @@
 	]
 	quest.7E59A0E6979C8FF1.quest_subtitle: "Adding Fuel to the Fire"
 	quest.7E59A0E6979C8FF1.title: "Treaty of Blazing Flame"
+	quest.7EAC2A6DF8B2EB37.quest_subtitle: "Whether to recover, or..."
+	quest.7EAC2A6DF8B2EB37.title: "Always Keep Some Food"
 	quest.7EB97CBE6483FCF7.quest_desc: ["But I still have to remind you, Phantoms now only spawn when you keep a regular sleep schedule...."]
 	quest.7EB97CBE6483FCF7.quest_subtitle: "Sleep Tight"
 	quest.7EF077D05E3E3B7E.quest_desc: [
@@ -4884,6 +5046,7 @@
 	task.02E724791B98221B.title: "Any Head"
 	task.03566662B2722669.title: "Spellbook Template"
 	task.039FE05CAF91D22E.title: "灌注书架"
+	task.05D692FEA8B7F8C3.title: "Grinder Template"
 	task.05EC35C7459C4EE5.title: "Scene: Village"
 	task.061EADF2EDD58507.title: "Click to Continue"
 	task.0626EAAE040A2364.title: "I Understand"
@@ -4901,11 +5064,14 @@
 	task.0AF727CB579792E5.title: "Scene: Village"
 	task.0B6D03278DF87C34.title: "Mattock Template"
 	task.0E6662C2E723B71E.title: "Aether"
+	task.0F29284CFF46D61E.title: "Gems"
 	task.0FF5EB378FBC3D7E.title: "Feast Recycle"
 	task.104407FC50682D93.title: "Any Clear Glass"
 	task.107CD75BA2850AF5.title: "Chestplate Template"
 	task.10F524062F93326B.title: "Arcana"
 	task.1241D4845D2FA0FE.title: "Any Scroll"
+	task.131708AD4D3A2E8E.title: "Staff Template"
+	task.13419554E1773A09.title: "Annihilator Template"
 	task.134BFF78A7F20CA9.title: "Wither Mansion"
 	task.137C3EB186FD1877.title: "Scene: The Catacombs"
 	task.13A0D926AD6B0330.title: "Quantum Stability"
@@ -4914,6 +5080,7 @@
 	task.14F00C7BD0F376AF.title: "Crossbow Template"
 	task.1515843B90E779DE.title: "Any Gale Device"
 	task.1516D6057A163CD8.title: "Scene: Chaotic Wasteland"
+	task.1705E46627ADF4CB.title: "Spellbook Template"
 	task.17C489799E4E8BE8.title: "Choose Reward"
 	task.17D165E1F90F67DA.title: "拾荒者"
 	task.17FD4724C406FFAA.title: "Dagger Template"
@@ -4932,14 +5099,18 @@
 	task.20E752F817977436.title: "Heavy Boots Template"
 	task.2168A7B0CEA44A59.title: "Quantization"
 	task.218622C67393A564.title: "Fluid Storage Block"
+	task.221E5092A09BCA29.title: "Bulwark Template"
 	task.23B079325E8F6976.title: "Heavy Chestplate Template"
 	task.24414CD8C86B97F5.title: "任意 升级珠"
+	task.2535599FB0298A82.title: "Forge Hammer Template"
+	task.25B8CE24D26D2658.title: "Auto-Crossbow Template"
 	task.27FCF177F9DBA089.title: "Familiar List"
 	task.28F0C1066808D8E9.title: "Hunt"
 	task.2953AA70E267ADF7.title: "Key Bindings"
 	task.2A2F3B895F40F65B.title: "Keep Inventory"
 	task.2AB642EE8FD15F3A.title: "Any Tank"
 	task.2B04D3E934572437.title: "星光森林"
+	task.2B380F2F0C346C76.title: "Any Pigment"
 	task.2BC958F6797C3F87.title: "Scene: Ancient Battlefield"
 	task.2BF2DB6EC9E778D8.title: "Any Brooch"
 	task.2D2AAB7B62B6E1EC.title: "About Villagers"
@@ -4987,8 +5158,10 @@
 	task.4523017FBAED20D8.title: "Any Stack Upgrade"
 	task.4589838CDC8B4082.title: "Boots Template"
 	task.45910B0D3AD5DF52.title: "Restock Upgrade"
+	task.45AB44FAD7068F5E.title: "Kill 10 Creatures"
 	task.45BDFA326BB0A8FD.title: "Optimization"
 	task.46012C86914DC29F.title: "Forced Resource Pack Loading Issue"
+	task.46510993DAAB22EE.title: "任意模具"
 	task.46F749B8F9278545.title: "后悔药"
 	task.4841C69FA35E0AB5.title: "Clear Difficulty Settings"
 	task.485CC6934B88F320.title: "Machete Template"
@@ -4996,8 +5169,12 @@
 	task.497AB5357C7176F2.title: "Discovery: Ancient Battlefield"
 	task.49FE6E789C324194.title: "Pilot Crash Course"
 	task.4A013412C9FB46A1.title: "Scene: Chaotic Wasteland"
+	task.4A18320EE61D06E5.title: "Any Feast"
+	task.4A1FC667DA332631.title: "Kill Ten Creatures"
 	task.4B132C18D9C2E7DB.title: "&6Life Fruits&r"
 	task.4BF8BB7049344BF9.title: "Hoe Template"
+	task.4C40759DAAA9C3E7.title: "Halberd Template"
+	task.4D216882B37E2284.title: "Flamberge Template"
 	task.4E5EDBD8AEB48E9E.title: "Any #malum:scythe"
 	task.4E656DDCE29C8902.title: "Necklace Template"
 	task.4E672C9A0EFF1047.title: "禁用传送"
@@ -5022,6 +5199,7 @@
 	task.5DAEF315B3683621.title: "Any Spirit"
 	task.5DBF144A9A88D545.title: "Hidden Harvest"
 	task.5E065AD5537737D0.title: "Robe Skirt Template"
+	task.5E52AB8F467D83B7.title: "Any Food"
 	task.5E61C66706DB394E.title: "Font Settings"
 	task.5F1B94C31D02E67B.title: "Scene: Midway Tavern"
 	task.5F3EC831C3E53770.title: "Katana Template"
@@ -5060,20 +5238,26 @@
 	task.719C398B250CFE55.title: "About Apotheosis"
 	task.7272CB9544A4E5F0.title: "Scene: Chaotic Wasteland"
 	task.72BBA8FCDD81B6AA.title: "Trident Template"
+	task.73165000CF6C2D80.title: "任意 木头"
 	task.735FCCA157A46245.title: "Difficulty Settings"
 	task.737ECCA212D4D8BA.title: "结构"
+	task.74492EBC433D77A8.title: "yue..."
 	task.748965B66A8C5E30.title: "Defeat the Gatekeeper"
 	task.74F32723CAE1E025.title: "卡飞了!"
 	task.7595151101E4738A.title: "Magnet Upgrade"
 	task.75D4742A0C012F65.title: "Spear Template"
+	task.76E1E34F7A83D6F3.title: "Longblade Template"
 	task.76ED940B298D8859.title: "Any Engine Upgrade"
 	task.774FD55407857713.title: "Scene: Base"
 	task.777C45CF49CC817C.title: "Heavy Helmet Template"
 	task.77B5BE57F5151388.title: "&6Magic Essence&r"
+	task.7ABE952A23FCFB5D.title: "Seeker Bow Template"
 	task.7BD801F485623EC0.title: "Fishing Rod Template"
+	task.7CA1AE616D29882C.title: "探索"
 	task.7CCEF302E660A068.title: "须知"
 	task.7DAC01F814C93117.title: "Pickaxe Head/Axe Template"
 	task.7E6571DCE7F5F2D6.title: "Any #malum:soulwoven_pouch_efficient"
+	task.7E73F2D97C765D46.title: "Furioso Template"
 	task.7E842FF6C4E736C0.title: "Scene: Portal Ruins"
 	task.7FC73AE74EFE0053.title: "Mold Base / Blueprint"
 }

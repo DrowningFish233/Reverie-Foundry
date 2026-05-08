@@ -1,0 +1,143 @@
+{
+	"content": {
+
+		"primary_currency": {
+			"type": "item",
+			"content": "minecraft:emerald",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1000,
+			"weightMult": 1.3
+		},
+
+		"primary_currency_rare_bargain": {
+			"type": "item",
+			"content": "minecraft:emerald",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 800,
+			"weightMult": 0.2
+		},
+
+		"decree": {
+			"type": "item",
+			"rarity": "UNCOMMON",
+			"content": "bountiful:decree",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+			"unitWorth": 800,
+			"weightMult": 0.35
+		},
+
+		"spyglass": {
+			"type": "item",
+			"content": "minecraft:spyglass",
+			"rarity": "RARE",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+			"unitWorth": 2500.0
+		},
+
+		"totem_undying": {
+			"type": "item",
+			"content": "minecraft:totem_of_undying",
+			"rarity": "LEGENDARY",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+			"unitWorth": 4000
+		},
+
+		"arrow": {
+			"type": "item",
+			"content": "minecraft:arrow",
+			"amount": {
+				"min": 3,
+				"max": 9
+			},
+			"unitWorth": 100,
+			"weightMult": 0.4
+		},
+
+		"glow_ink": {
+			"type": "item",
+			"content": "minecraft:glow_ink_sac",
+			"rarity": "EPIC",
+			"weightMult": 0.3,
+			"amount": {
+				"min": 1,
+				"max": 3
+			},
+			"unitWorth": 500
+		},
+
+		"prismarine_crystals": {
+			"type": "item",
+			"content": "minecraft:prismarine_crystals",
+			"rarity": "EPIC",
+			"weightMult": 0.15,
+			"amount": {
+				"min": 1,
+				"max": 6
+			},
+			"unitWorth": 2000
+		},
+
+		"minecart": {
+			"type": "item",
+			"content": "minecraft:tnt_minecart",
+			"rarity": "EPIC",
+			"weightMult": 0.15,
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+			"unitWorth": 6000
+		},
+
+		"axolotl_bucket": {
+			"type": "item",
+			"content": "minecraft:axolotl_bucket",
+			"rarity": "LEGENDARY",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+			"unitWorth": 4000
+		},
+
+		"rare_key": {
+			"type": "minecraft:item",
+			"rarity": "EPIC",
+			"content": "minecraft:trial_key",
+			"unitWorth": 4000.0,
+			"amount": {
+				"min": 1,
+				"max": 1
+			}
+		},
+		"legend_key": {
+			"type": "minecraft:item",
+			"rarity": "LEGENDARY",
+			"content": "minecraft:ominous_trial_key",
+			"unitWorth": 9001.0,
+			"amount": {
+				"min": 1,
+				"max": 1
+			}
+		}
+
+
+	}
+
+
+}

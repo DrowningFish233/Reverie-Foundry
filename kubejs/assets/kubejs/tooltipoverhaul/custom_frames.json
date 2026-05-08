@@ -1,0 +1,371 @@
+{
+  "frames": [
+    {
+      "tags": [
+        "kubejs:metal_shining"
+      ],
+      "specialEffect": "metal_shining"
+    },
+    {
+      "tags": [
+        "kubejs:rim_light"
+      ],
+      "specialEffect": "rim_light"
+    },
+    {
+      "tags": [
+        "kubejs:ripples"
+      ],
+      "specialEffect": "ripples"
+    },
+    {
+      "tags": [
+        "kubejs:sonar"
+      ],
+      "specialEffect": "sonar"
+    },
+    {
+      "tags": [
+        "kubejs:stars"
+      ],
+      "specialEffect": "stars"
+    },
+    {
+      "tags": [
+        "kubejs:cinder"
+      ],
+      "specialEffect": "cinder"
+    },
+    {
+      "namespace": "endermanoverhaul",
+      "specialEffect": "rim_light"
+    },
+    {
+      "texture": "kubejs:textures/overlay/farmersdelight.png",
+      "namespace": "farmersdelight",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#5f403a",
+        "#3d2a26",
+        "#5f403a"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/farmersdelight.png",
+      "namespace": "fruitsdelight",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#5f403a",
+        "#3d2a26",
+        "#5f403a"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/farmersdelight.png",
+      "namespace": "extradelight",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#5f403a",
+        "#3d2a26",
+        "#5f403a"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/irons_spellbooks.png",
+      "namespace": "irons_spellbooks",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#edb620",
+        "#c79229",
+        "#1f2542"
+      ],
+      "specialEffect": "nebula"
+    },
+    {
+      "texture": "kubejs:textures/overlay/irons_spellbooks.png",
+      "namespace": "gametechbcs_spellbooks",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#edb620",
+        "#c79229",
+        "#1f2542"
+      ],
+      "specialEffect": "spiral"
+    },
+    {
+      "texture": "kubejs:textures/overlay/irons_spellbooks.png",
+      "namespace": "alshanex_familiars",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#edb620",
+        "#c79229",
+        "#1f2542"
+      ],
+      "specialEffect": "nebula"
+    },
+    {
+      "texture": "kubejs:textures/overlay/iceandfire.png",
+      "namespace": "iceandfire",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#5d565d",
+        "#4d474d",
+        "#5d565d"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/level_1.png",
+      "tags": [
+        "kubejs:level_1"
+      ],
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#f7d75d",
+        "#e0b84c",
+        "#eca641"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/level_2.png",
+      "tags": [
+        "kubejs:level_2"
+      ],
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#a9e055",
+        "#83d44d",
+        "#5dc365"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/level_3.png",
+      "tags": [
+        "kubejs:level_3"
+      ],
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#76d0fb",
+        "#5fb9ea",
+        "#489fe1"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/level_4.png",
+      "tags": [
+        "kubejs:level_4"
+      ],
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#e76399",
+        "#e05591",
+        "#d5488e"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/irons_spellbooks.png",
+      "namespace": "allthewizardgear",
+      "specialEffect": "cinder",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#edb620",
+        "#c79229",
+        "#1f2542"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/bosses_of_mass_destruction.png",
+      "namespace": "bosses_of_mass_destruction",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#57596b",
+        "#3b3c49",
+        "#57596b"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/gateways.png",
+      "namespace": "gateways",
+      "specialEffect": "stars",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#a277d7",
+        "#9674cc",
+        "#8a71c2"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/eternal_starlight.png",
+      "namespace": "eternal_starlight",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#4b448c",
+        "#7a5c8a",
+        "#5f403a"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/eternal_starlight.png",
+      "namespace": "eternal_starlight_vo",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#4b448c",
+        "#7a5c8a",
+        "#5f403a"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/apothic_enchanting.png",
+      "namespace": "apothic_enchanting",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#a591b6",
+        "#897699",
+        "#a591b6"
+      ]
+    },
+    {
+      "items": [
+        "kubejs:lightingball",
+        "kubejs:iceball",
+        "kubejs:grape_beer",
+        "kubejs:fireball",
+        "kubejs:evergreen_gin",
+        "kubejs:everclear",
+        "kubejs:cinnamon_roll",
+        "kubejs:caribbean_rum",
+        "kubejs:bloody_mary",
+        "kubejs:star_beam_rye",
+        "kubejs:screwdriver",
+        "kubejs:rum",
+        "kubejs:red_wine",
+        "kubejs:purple_haze",
+        "kubejs:old_fashioned",
+        "kubejs:moscow_mule",
+        "kubejs:moonshine",
+        "kubejs:margarita",
+        "kubejs:white_wine",
+        "kubejs:whiskey",
+        "kubejs:vodka",
+        "kubejs:tequila_sunrise",
+        "kubejs:tequila",
+        "kubejs:hangover_tea"
+      ],
+      "specialEffect": "spiral"
+    },
+    {
+      "tags": [
+        "curios:ego"
+      ],
+      "specialEffect": "echo"
+    },
+    {
+      "tags": [
+        "kubejs:echo"
+      ],
+      "specialEffect": "echo"
+    },
+    {
+      "tags": [
+        "kubejs:galaxy"
+      ],
+      "specialEffect": "galaxy"
+    },
+    {
+      "tags": [
+        "kubejs:nebula"
+      ],
+      "specialEffect": "nebula"
+    },
+    {
+      "tags": [
+        "kubejs:spiral"
+      ],
+      "specialEffect": "spiral"
+    },
+    {
+      "tags": [
+        "kubejs:white_dust"
+      ],
+      "specialEffect": "white_dust"
+    },
+    {
+      "tags": [
+        "kubejs:magic_orbs"
+      ],
+      "specialEffect": "magic_orbs"
+    },
+    {
+      "namespace": "skyarena",
+      "specialEffect": "white_dust"
+    },
+    {
+      "tags": [
+        "malum:spirits"
+      ],
+      "specialEffect": "spiral"
+    },
+    {
+      "tags": [
+        "malum:scythe"
+      ],
+      "specialEffect": "spiral"
+    },
+    {
+      "namespace": "malum",
+      "specialEffect": "nebula"
+    },
+    {
+      "items": [
+        "kubejs:soul_of_night",
+        "kubejs:soul_of_light"
+      ],
+      "specialEffect": "white_dust"
+    },
+    {
+      "items": [
+        "darkdoppelganger:shadow_orb",
+        "darkdoppelganger:summon_scroll"
+      ],
+      "specialEffect": "galaxy"
+    },
+    {
+      "items": [
+        "kubejs:necroplasm",
+        "kubejs:ashes_of_calamity",
+        "kubejs:ruinous_soul"
+      ],
+      "specialEffect": "magic_orbs"
+    },
+    {
+      "texture": "kubejs:textures/overlay/moonpools.png",
+      "items": [
+        "kubejs:moonpools"
+      ],
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#3d7d3e",
+        "#255b26",
+        "#0d390e"
+      ],
+      "specialEffect": "galaxy"
+    }
+  ]
+}

@@ -134,6 +134,6 @@
 		#Fixed maximum number of rows (used when dynamic calculation is disabled)
 		# Default: 3
 		# Range: 1 ~ 10
-		fixedMaxRows = 3
+		fixedMaxRows = 5
 		#Enable dynamic calculation of rows based on available space (if false, uses fixedMaxRows)
 		enableDynamicRowCalculation = true

@@ -252,6 +252,29 @@ function targetedSinErosion(event, player, targetSin, intensity) {
 }
 
 EntityEvents.afterHurt(event => {
+    let player = event.player;
+    if (!player) return;
 
+    const COOLDOWN_KEY = "sanity_damage_cooldown";
+    if ($CooldownManager.hasCooldown(player, COOLDOWN_KEY)) return;
 
-})
+    let damage = event.damage;
+    let MaxHealth = player.getMaxHealth();
+
+    let damagePercentage = damage / MaxHealth;
+
+    let sanityDeduction = 0;
+
+    if (damagePercentage >= 0.5) {
+        sanityDeduction = 10;
+    } else if (damagePercentage >= 0.3) {
+        sanityDeduction = 5;
+    }
+
+    if (sanityDeduction > 0) {
+        let pData = player.persistentData;
+        let currentSanity = pData.getInt("sanity") ?? 0;
+        updateplayersanity(player, currentSanity - sanityDeduction);
+        $CooldownManager.setCooldown(player, COOLDOWN_KEY, 20);
+    }
+});

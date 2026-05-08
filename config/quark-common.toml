@@ -1648,6 +1648,8 @@
 	#Allows placing variant blocks automatically via a selector menu triggered from a keybind
 	"Variant Selector" = false
 	"Villager Rerolling Rework" = false
+	#Big Stone Clusters for Granite, Diorite, and Andesite, like Quark pre-1.18
+	"Vanilla Stone Clusters" = false
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
@@ -1773,6 +1775,96 @@
 		"Reroll On Any Restock" = false
 		#If enabled, villagers will be able to reroll any trade that has been used AT ALL since the last restock.
 		"Reroll Even If Not Out Of Stock" = false
+
+	#Big Stone Clusters for Granite, Diorite, and Andesite, like Quark pre-1.18
+	[experimental.vanilla_stone_clusters]
+
+		[experimental.vanilla_stone_clusters.granite]
+			Enabled = true
+			#Allowed values: [0,)
+			Rarity = 4
+			"Min Y Level" = 20
+			"Max Y Level" = 80
+			#Allowed values: [0,)
+			"Horizontal Size" = 14
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Horizontal Variation" = 9
+			#Allowed values: [0,)
+			"Vertical Variation" = 9
+
+			[experimental.vanilla_stone_clusters.granite.dimensions]
+				"Is Blacklist" = false
+				Dimensions = ["minecraft:overworld"]
+
+				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
+				[experimental.vanilla_stone_clusters.granite.biomes.tags]
+					"Biome Tags" = ["minecraft:is_mountain"]
+					"Is Blacklist" = false
+
+				#Biome names this should spawn in. Must match both this and 'types' to spawn.
+				[experimental.vanilla_stone_clusters.granite.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
+
+		[experimental.vanilla_stone_clusters.diorite]
+			Enabled = true
+			#Allowed values: [0,)
+			Rarity = 4
+			"Min Y Level" = 20
+			"Max Y Level" = 80
+			#Allowed values: [0,)
+			"Horizontal Size" = 14
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Horizontal Variation" = 9
+			#Allowed values: [0,)
+			"Vertical Variation" = 9
+
+			[experimental.vanilla_stone_clusters.diorite.dimensions]
+				"Is Blacklist" = false
+				Dimensions = ["minecraft:overworld"]
+
+				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
+				[experimental.vanilla_stone_clusters.diorite.biomes.tags]
+					"Biome Tags" = ["c:is_savanna", "c:is_jungle", "c:is_mushroom"]
+					"Is Blacklist" = false
+
+				#Biome names this should spawn in. Must match both this and 'types' to spawn.
+				[experimental.vanilla_stone_clusters.diorite.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
+
+		[experimental.vanilla_stone_clusters.andesite]
+			Enabled = true
+			#Allowed values: [0,)
+			Rarity = 4
+			"Min Y Level" = 20
+			"Max Y Level" = 80
+			#Allowed values: [0,)
+			"Horizontal Size" = 14
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Horizontal Variation" = 9
+			#Allowed values: [0,)
+			"Vertical Variation" = 9
+
+			[experimental.vanilla_stone_clusters.andesite.dimensions]
+				"Is Blacklist" = false
+				Dimensions = ["minecraft:overworld"]
+
+				#Biome tags for which this should spawn in. Must match both this and 'biomes' to spawn.
+				[experimental.vanilla_stone_clusters.andesite.biomes.tags]
+					"Biome Tags" = ["minecraft:is_forest"]
+					"Is Blacklist" = false
+
+				#Biome names this should spawn in. Must match both this and 'types' to spawn.
+				[experimental.vanilla_stone_clusters.andesite.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 [oddities]
 	Backpack = true

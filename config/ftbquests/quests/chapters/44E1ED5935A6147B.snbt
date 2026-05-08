@@ -707,10 +707,10 @@
 			hide_until_deps_visible: true
 			id: "218EF6EB1EC8E6AE"
 			rewards: [{
-				id: "38556CD4A21110CE"
+				id: "493A24667A1CDCD6"
 				item: {
 					count: 1
-					id: "terra_curio:destroyer_emblem"
+					id: "kubejs:destroyer_emblem"
 				}
 				type: "item"
 			}]

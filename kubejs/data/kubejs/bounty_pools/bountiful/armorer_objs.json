@@ -1,0 +1,78 @@
+
+{
+	"content": {
+
+        "lava_bucket": {
+            "type": "item",
+            "content": "minecraft:lava_bucket",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1800
+        },
+
+        "leather_helm": {
+            "type": "item",
+            "content": "minecraft:leather_helmet",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000
+        },
+
+        "leather_chest": {
+            "type": "item",
+            "content": "minecraft:leather_chestplate",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 1600
+        },
+
+        "leather_legs": {
+            "type": "item",
+            "content": "minecraft:leather_leggings",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1400
+        },
+
+        "leather_boots": {
+            "type": "item",
+            "content": "minecraft:leather_boots",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 800
+        },
+
+        "blast_furnace": {
+            "type": "item",
+            "content": "minecraft:blast_furnace",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 5000
+        },
+
+        "lava_bucket_2": {
+            "type": "item",
+            "content": "minecraft:lava_bucket",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000
+        }
+
+	}
+
+
+}

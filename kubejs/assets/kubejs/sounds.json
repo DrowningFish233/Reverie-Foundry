@@ -1,0 +1,67 @@
+{
+    "bluestar_in": {
+        "sounds": [
+            "kubejs:bluestar_in"
+        ]
+    },
+    "bluestar_bgm": {
+        "sounds": [
+            "kubejs:bluestar_bgm"
+        ]
+    },
+    "bluestar_start": {
+        "sounds": [
+            "kubejs:bluestar_start"
+        ]
+    },
+    "full_adrenaline": {
+        "sounds": [
+            "kubejs:full_adrenaline"
+        ]
+    },
+    "no_adrenaline": {
+        "sounds": [
+            "kubejs:no_adrenaline"
+        ]
+    },
+    "use_adrenaline": {
+        "sounds": [
+            "kubejs:use_adrenaline"
+        ]
+    },
+    "spell_launch": {
+        "sounds": [
+            "kubejs:spell_launch"
+        ]
+    },
+    "spell_boom": {
+        "sounds": [
+            "kubejs:spell_boom"
+        ]
+    },
+    "withdrawal": {
+        "sounds": [
+            "kubejs:withdrawal"
+        ]
+    },
+    "tremor_burst_1": {
+        "sounds": [
+            "kubejs:tremor_burst_1"
+        ]
+    },
+    "tremor_burst_2": {
+        "sounds": [
+            "kubejs:tremor_burst_2"
+        ]
+    },
+    "boss_summon": {
+        "sounds": [
+            "kubejs:boss_summon"
+        ]
+    },
+    "final_boss_summon": {
+        "sounds": [
+            "kubejs:final_boss_summon"
+        ]
+    }
+}

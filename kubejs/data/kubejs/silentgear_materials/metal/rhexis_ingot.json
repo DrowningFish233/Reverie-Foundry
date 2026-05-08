@@ -54,13 +54,13 @@
       "traits": [
         {
           "conditions": [],
-          "level": 2,
-          "trait": "kubejs:meat_ingots"
+          "level": 1,
+          "trait": "kubejs:vorant_ingot"
         },
         {
           "conditions": [],
-          "level": 1,
-          "trait": "kubejs:vorant_ingot"
+          "level": 2,
+          "trait": "kubejs:meat_ingots"
         },
         {
           "conditions": [],

@@ -1,0 +1,7 @@
+{
+  "parent": "kubejs:block/template_campfire",
+  "textures": {
+    "fire": "kubejs:block/campfire_fire",
+    "lit_log": "kubejs:block/campfire_log_lit"
+  }
+}

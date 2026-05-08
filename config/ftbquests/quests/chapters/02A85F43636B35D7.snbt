@@ -3207,6 +3207,7 @@
 			y: -43.5d
 		}
 		{
+			dependencies: ["13CDF0A883DC5AE7"]
 			id: "1DBA0BF33C43D227"
 			tasks: [{
 				entity: "minecraft:ender_dragon"
