@@ -250,7 +250,7 @@ RFTrait('kubejs:achroous_ingot', 0)
     .register();
 
 
-
+/*
 //'kubejs:luminofish_ink_sac' 毒爆术
 RFTrait('kubejs:luminofish_ink_sac', 0)
     .beforeHurt(event => {
@@ -259,19 +259,23 @@ RFTrait('kubejs:luminofish_ink_sac', 0)
         if (!attacker || !attacker.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:luminofish_ink_sac")) {
             return;
         }
-        if (!entity.hasEffect("minecraft:poison")) return;
+        if (!entity.hasEffect("minecraft:poison")) return
+        const poisonEffect = entity.getEffect("minecraft:poison");
+        if (!poisonEffect) return;
+
         const traitLevel = fu_getTraitLevel(attacker, "kubejs:luminofish_ink_sac") + 1;
         const poisonCost = traitLevel * 2;
-        const poisonEffect = entity.getEffect("minecraft:poison");
-        const currentAmplifier = poisonEffect.getAmplifier();
+        const currentAmplifier = entity.getAmplifier();
         const currentDuration = poisonEffect.getDuration();
 
         if (currentAmplifier + 1 < poisonCost) return;
+
         const baseDamage = poisonCost * 1.5;
         const levelBonus = traitLevel * 1.5;
         const totalDamage = baseDamage + levelBonus;
 
         attackEntity(entity, "minecraft:magic", totalDamage, true)
+
         if (currentAmplifier + 1 > poisonCost) {
             const newAmplifier = currentAmplifier - poisonCost;
             entity.removeEffect("minecraft:poison");
@@ -279,10 +283,10 @@ RFTrait('kubejs:luminofish_ink_sac', 0)
         } else {
             entity.removeEffect("minecraft:poison");
         }
-
     })
     .register();
 
+*/
 
 //'hazennstuff:hallowed_ingot' 神圣庇护
 RFTrait('kubejs:hallowed_ingot', 0)
@@ -311,8 +315,7 @@ RFTrait('kubejs:acril_ingot', 0)
         let currentMana = magicData.getMana()
 
         if (currentMana >= 20) {
-            let Effect = player.getEffect("kubejs:acril_ingot")
-            let amplifier = Effect.getAmplifier() + 1
+            let amplifier = fu_getHighestTraitLevelAnywhere(player, "kubejs:acril_ingot")
 
             overLimitSpellCast($ResourceLocation('irons_spellbooks', 'chain_lightning'), amplifier, player, false)
             magicData.addMana(-20)
@@ -2166,9 +2169,9 @@ RFTrait('kubejs:exalted_beauty_gem', 0)
 
 
 /**
- * 每5级经验值+1伤害，等级上限900级
+ * 每30级经验值+1伤害，等级上限900级
  */
-RFTrait('kubejs:exalted_beauty_gem', 0)
+RFTrait('kubejs:citrine', 0)
     .beforeHurt(event => {
         const { source, entity } = event;
         const attacker = source.player || source.actual;
@@ -2176,7 +2179,7 @@ RFTrait('kubejs:exalted_beauty_gem', 0)
             return;
         }
         const playerXpLevel = Math.min(attacker.xpLevel, 900);
-        const attackBonus = Math.floor(playerXpLevel / 5);
+        const attackBonus = Math.floor(playerXpLevel / 30);
         if (attackBonus > 0) {
             new_damage(event, STAGE.FLAT, attackBonus);
         }
@@ -2185,8 +2188,8 @@ RFTrait('kubejs:exalted_beauty_gem', 0)
 
 
 /**
- * 内蕴
- * 每5级经验值+1伤害，等级上限900级
+ * 晶华
+ * 每5级经验值+1%伤害，等级上限900级
  */
 RFTrait('kubejs:intrinsic', 0)
     .beforeHurt(event => {
@@ -2196,9 +2199,9 @@ RFTrait('kubejs:intrinsic', 0)
             return;
         }
         const exp_level = Math.min(attacker.xpLevel, 900);
-        const bonusAttack = Math.floor(exp_level / 5);
-        if (bonusAttack > 0) {
-            new_damage(event, STAGE.ADDITIVE, bonusAttack);
+        const bonusPercent = Math.floor(exp_level / 5);
+        if (bonusPercent > 0) {
+            new_damage(event, STAGE.ADDITIVE, bonusPercent);
         }
     })
     .register();
@@ -2208,7 +2211,7 @@ RFTrait('kubejs:intrinsic', 0)
  * 对燃起来的怪物增伤效果
  * 当玩家有fluxing效果时，对任何燃烧的实体造成额外伤害
  */
-RFTrait('kubejs:intrinsic', 0)
+RFTrait('kubejs:fluxing', 0)
     .beforeHurt(event => {
         const { source, entity } = event;
         const attacker = source.player || source.actual;
@@ -2647,6 +2650,20 @@ RFTrait('kubejs:fairies_care', 0)
         if (!isNight(player.getLevel())) return
         if (!player.hasEffect("kubejs:evening_primrose")) return
         new_damage(event, STAGE.MULTIPLY, 0.75)
+    })
+    .register();
+
+
+
+RFTrait('kubejs:ultimine_test', 0)
+    .blockBroken(event => {
+        const { player, block } = event;
+        if (fu_hasTraitMainHand(player, "kubejs:ultimine_test")) return;
+        if (player.crouching) return;
+
+        const blockId = block.getId().toString();
+        const pos = block.getPos();
+        executeUltimine(player, pos, blockId);
     })
     .register();
 

@@ -1,0 +1,40 @@
+{
+	"conditions": [],
+	"description": {
+		"translate": "trait.kubejs.unchecked_growth.desc"
+	},
+	"effects": [
+		{
+			"type": "silentgear:attribute",
+			"attribute_modifiers": {
+				"all/any": [
+					{
+						"attribute": "minecraft:generic.max_health",
+						"operation": "add_multiplied_base",
+						"values": [
+							0.1
+						]
+					},
+					{
+						"attribute": "minecraft:generic.movement_speed",
+						"operation": "add_multiplied_base",
+						"values": [
+							-0.05
+						]
+					},
+					{
+						"attribute": "terra_curio:player.aggro",
+						"operation": "add_value",
+						"values": [
+							100.0
+						]
+					}
+				]
+			}
+		}
+	],
+	"max_level": 1,
+	"name": {
+		"translate": "trait.kubejs.unchecked_growth"
+	}
+}

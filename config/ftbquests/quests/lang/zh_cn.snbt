@@ -8,7 +8,6 @@
 	chapter.44E1ED5935A6147B.title: "&3伟大历程"
 	chapter.48A05E5EF26EFEEE.title: "&d必看须知"
 	chapter.566973DCC685511A.title: "神化"
-	chapter.5813E8749E15BA9E.title: "主线指引部分（勿领）"
 	chapter.594B7E5B489F5F45.title: "永不坠机"
 	chapter.5A72070BE5639DEE.title: "实用工具"
 	chapter.6610553945D768F8.title: "永恒星光"
@@ -16,7 +15,6 @@
 	chapter.7CEAFF10D33DEDBC.title: "&dFTB 任务教学"
 	chapter_group.17FDF36D1B965C72.title: "&e散落的手记 （支线）"
 	chapter_group.2F1F238400B8A177.title: "杂谈"
-	chapter_group.7EA4B220C81C7E43.title: "重铸任务测试栏"
 	chapter_group.7F00D0D8C7C916A0.title: "&b虚无之梦 （主线）"
 	file.0000000000000001.title: "遐想铸造厂"
 	quest.002106F426003B4F.quest_desc: ["&7增加激活范围，即玩家距离刷怪笼更远时也能激活刷怪笼。每个增加 2 格，上限48格。"]
@@ -673,6 +671,7 @@
 	]
 	quest.0DDD36DA6EAB60C4.quest_subtitle: "黑暗粘腻"
 	quest.0DDD36DA6EAB60C4.title: "黑暗沼泽"
+	quest.0DEE720101A5B8C3.quest_desc: ["唉唉唉唉唉唉唉唉唉唉唉唉唉唉唉唉唉唉"]
 	quest.0ED82FFAE99D2480.quest_desc: [
 		"&e廉价的化工产物。"
 		"&6比岩浆更优秀的常规选择。"
@@ -937,6 +936,8 @@
 		"&7用于合成&c剧毒试剂&r&7并治疗&c瘟疫医生&r&7魔宠。由&c洞穴蜘蛛&r&7掉落。&r"
 	]
 	quest.14F646FF9C81DCA0.quest_subtitle: "剧毒"
+	quest.153B8C23F5FF23C5.quest_desc: ["将无线访问点的传输距离提升至无限格，并且可以跨维度传输"]
+	quest.153B8C23F5FF23C5.quest_subtitle: "维度传输"
 	quest.15420045F7ABF5AD.quest_desc: [
 		"通过&b灌注&r升级，下界书架获得了更加强大的魔力，可以提供更高的&a位阶&r和&4量子化&r。"
 		"&l（推荐书架）&r"
@@ -1799,6 +1800,8 @@
 	]
 	quest.2D0DFDD4C050FFA3.quest_subtitle: "古城再现"
 	quest.2D0DFDD4C050FFA3.title: "来自深暗的赠礼"
+	quest.2D3028037A6530D4.quest_desc: ["面对不想制作发电装置的窘境，你可以制作创造系列物品来解决"]
+	quest.2D3028037A6530D4.quest_subtitle: "无尽能源"
 	quest.2D740B904DAEAB78.quest_desc: [
 		"&6魔宠的床&r"
 		"&7魔宠的床是一种方块，魔宠可以使用它来&a睡觉&r&7和&a恢复生命值&r&7。魔宠在需要治疗时会搜寻附近的床。&r"
@@ -1884,6 +1887,7 @@
 	quest.2FBEC3940C05E2E3.quest_subtitle: "是时候该找个地儿休息会儿"
 	quest.2FBEC3940C05E2E3.title: "推荐小憩一会儿"
 	quest.2FE49A9C24350211.quest_subtitle: "大叉子"
+	quest.30039833D92481A3.quest_subtitle: "无尽存储2.0"
 	quest.303BD0ED6A5699E1.quest_subtitle: "所有的美味皆从此刻开始!"
 	quest.303BD0ED6A5699E1.title: "一口锅？"
 	quest.305A6FFD7FD5684F.title: "中期-击败死者之王"
@@ -2485,6 +2489,7 @@
 		"&e左侧是能够被使用的燃料种类&r"
 	]
 	quest.3DEBEF47CB42C180.quest_subtitle: "耗能加热"
+	quest.3DFF41190EEED602.quest_subtitle: "无尽存储"
 	quest.3F1E59D47DB55A82.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
 	quest.3F1E59D47DB55A82.quest_subtitle: "可合成"
 	quest.3F4F2D1D8EC995BA.quest_desc: [
@@ -2805,6 +2810,8 @@
 		"如果你对某个部位不满意，有更好的材料可以替换掉它了，只需要在合成栏合成就可以将新部件替换上去，而旧部件会被剥离，也不会消失。"
 	]
 	quest.47D658272D1D7048.title: "拼好剑详解"
+	quest.4846CE562BCEFAD5.quest_desc: ["将无线访问点的传输距离提升至无限格"]
+	quest.4846CE562BCEFAD5.quest_subtitle: "信号基站"
 	quest.48A06F2501866438.quest_desc: [
 		"&7这个书架是下界书架的极端强化版本，利用烈焰粉和火焰弹蕴含的混沌和烈焰之力，这个书架完成了升魔，变为更加强大之存在，他能提供比下界书架更为强悍的&a位阶&7上限和&4量子化&7。"
 		"&7但这种力量过于狂暴，以至于想要吞噬其所知的一切，将世界拖入那永恒的混沌之中。这个书架甚至会阻止你了解从附魔台中预先窥探到的结果，总之小心使用。"
@@ -2853,6 +2860,7 @@
 	quest.49840E89ACF73DAF.quest_subtitle: "小勺子"
 	quest.4996E5CD9E56D25E.quest_subtitle: "食物价值>8"
 	quest.4996E5CD9E56D25E.title: "正餐回收 x32"
+	quest.49D6FBB86F5D925D.quest_desc: ["啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"]
 	quest.4A1A9E32ABF05FD0.quest_subtitle: "摆放标记的物品或流体。正常工作时前方不能有任何方块（除了流体）"
 	quest.4A4B782308B84A50.quest_subtitle: "观察窗"
 	quest.4A7080BE52CC6335.quest_subtitle: "花园工具"
@@ -5233,6 +5241,7 @@
 	task.17FD4724C406FFAA.title: "匕首 模板"
 	task.1A88FDBE9D283208.title: "场景：据点"
 	task.1B1EAA42882C0ED0.title: "剪刀 模板"
+	task.1B222983F0D7548E.title: "创造控制器"
 	task.1B2684D7ECCEF198.title: "头盔 模板"
 	task.1B3D8C6E12F08794.title: "任意 木头"
 	task.1C06992A966B5537.title: "箭 模板"

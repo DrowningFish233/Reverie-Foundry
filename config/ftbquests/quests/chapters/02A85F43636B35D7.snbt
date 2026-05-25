@@ -3218,5 +3218,60 @@
 			x: 0.0d
 			y: -46.5d
 		}
+		{
+			dependencies: ["0B33B7CF2E127A4F"]
+			id: "2D3028037A6530D4"
+			tasks: [{
+				id: "1B222983F0D7548E"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(refinedstorage:creative_controllers))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4846CE562BCEFAD5"]
+			id: "153B8C23F5FF23C5"
+			tasks: [{
+				id: "7320D46F0AE8BFB2"
+				item: { count: 1, id: "rsinfinitybooster:dimension_card" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["35FFD854DFF94776"]
+			id: "4846CE562BCEFAD5"
+			tasks: [{
+				id: "52F7BC5B87A797BF"
+				item: { count: 1, id: "rsinfinitybooster:infinity_card" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3D65B82D6967E302"]
+			id: "3DFF41190EEED602"
+			tasks: [{
+				id: "3B1CAC4F12ADBDBA"
+				item: { count: 1, id: "refinedstorage:creative_storage_disk" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7494DCB39DEAF4F5"]
+			id: "30039833D92481A3"
+			tasks: [{
+				id: "77EADCC023A47AB3"
+				item: { count: 1, id: "refinedstorage:creative_wireless_grid" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
 	]
 }

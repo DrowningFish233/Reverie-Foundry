@@ -152,9 +152,13 @@ ISSEvents.spellOnCast(event => {
 //法术：重放
 ISSEvents.spellOnCast(event => {
     const player = event.entity
+    const spellId = event.getSpellId()
+
+    if (spellId === "kubejs:replay") return
+
     if (player.hasEffect("kubejs:replay")) {
         player.server.scheduleInTicks(20, () => {
-            overLimitSpellCast(event.getSpellId(), event.getSpellLevel(), event.entity, false)
+            overLimitSpellCast(spellId, event.getSpellLevel(), event.entity, false)
             let effect = player.getEffect('kubejs:replay')
             let currentAmplifier = effect.getAmplifier()
 

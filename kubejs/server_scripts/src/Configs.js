@@ -1,52 +1,4 @@
 // priority: 100
-/*
-gobber: {
-    id: "kubejs:gobber",
-    config: (trait) => {
-        trait.setMaxLevel(1)
-            .addConditions([
-                trait.createOrCondition([
-                    trait.createGearTypeCondition("silentgear:armor"),
-                    trait.createGearTypeCondition("silentgear:tool"),
-                    trait.createGearTypeCondition("silentgear:curio")
-                ])
-            ])
-            .addAttribute([
-                trait.createAttributeValue(
-                    "minecraft:player.entity_interaction_range",
-                    "add_value",
-                    [1.0]
-                ),
-                trait.createAttributeValue(
-                    "minecraft:player.block_interaction_range",
-                    "add_value",
-                    [1.0]
-                )
-            ])
-    }
-},
-*/
-/*
-plague: {
-    id: "kubejs:dragonskill",
-    config: (trait) => {
-        trait.setMaxLevel(3)
-            .addConditions([
-                trait.createOrCondition([
-                    trait.createGearTypeCondition("silentgear:armor"),
-                    trait.createGearTypeCondition("silentgear:tool"),
-                    trait.createGearTypeCondition("silentgear:curio")
-                ])
-            ])
-            .addExtraDamage(
-                "kubejs:dragons",
-                "tagged",
-                10
-            )
-    }
-}
-*/
-
 /**
  * 自动生成寂静装备材料
  */
@@ -55,15 +7,24 @@ plague: {
 const MaterialConfigs = {
     enabled: true, // 设为false可禁用生成
     auto_ingot: {
-        id: "kubejs:tooth_of_hunger",
+        id: "kubejs:perennial_ingot",
         config: (mat) => {
-            mat.setCategories(["advanced", "organic"])
-                .setIngredientItem("eternal_starlight:tooth_of_hunger")
-                .setDisplayColor("#38292d")
-                .setName("material.silentgear.kubejs:tooth_of_hunger")
-                .addTip((/** @type {PartBuilder} */part) => {
+            mat.setCategories(["advanced", "organic", "metal"])
+                .setIngredientItem("kubejs:perennial_ingot")
+                .setDisplayColor("#2d8f38")
+                .setName("material.silentgear.kubejs:perennial_ingot")
+                .addMain((/** @type {PartBuilder} */part) => {
                     part
-                        .addTrait("kubejs:tooth_of_hunger", 1)
+                        .armor(25)
+                        .armorHelmet(5)
+                        .armorChestplate(8)
+                        .armorLeggings(7)
+                        .armorBoots(5)
+                        .armorDurability(15)
+                        .attackDamage(5)
+                        .attackSpeed(1)
+                        .durability(100)
+                        .addTrait("kubejs:unchecked_growth", 1)
                 })
         }
     }
@@ -80,24 +41,26 @@ const TraitConfigs = {
     enabled: true, // 设为false可禁用生成
 
     auto_trait: {
-        id: "kubejs:lightning_dragon_blood",
+        id: "kubejs:unchecked_growth",
         config: (trait) => {
-            trait.setMaxLevel(3)
-                .addConditions([])
-        }
-    },
-    auto_trait2: {
-        id: "kubejs:ice_dragon_blood",
-        config: (trait) => {
-            trait.setMaxLevel(3)
-                .addConditions([])
-        }
-    },
-    auto_trait3: {
-        id: "kubejs:fire_dragon_blood",
-        config: (trait) => {
-            trait.setMaxLevel(3)
-                .addConditions([])
+            trait.setMaxLevel(1)
+            trait.addAttribute([
+                trait.createAttributeValue(
+                    "minecraft:generic.max_health",
+                    "add_multiplied_total",
+                    [0.5]
+                ),
+                trait.createAttributeValue(
+                    "minecraft:generic.movement_speed",
+                    "add_multiplied_total",
+                    [-0.25]
+                ),
+                trait.createAttributeValue(
+                    "terra_curio:player.aggro",
+                    "add_value",
+                    [600]
+                )
+            ])
         }
     }
 }
@@ -159,3 +122,52 @@ const GatewayConfigs = {
         }
     }
 }
+
+/*
+gobber: {
+    id: "kubejs:gobber",
+    config: (trait) => {
+        trait.setMaxLevel(1)
+            .addConditions([
+                trait.createOrCondition([
+                    trait.createGearTypeCondition("silentgear:armor"),
+                    trait.createGearTypeCondition("silentgear:tool"),
+                    trait.createGearTypeCondition("silentgear:curio")
+                ])
+            ])
+            .addAttribute([
+                trait.createAttributeValue(
+                    "minecraft:player.entity_interaction_range",
+                    "add_value",
+                    [1.0]
+                ),
+                trait.createAttributeValue(
+                    "minecraft:player.block_interaction_range",
+                    "add_value",
+                    [1.0]
+                )
+            ])
+    }
+},
+*/
+/*
+plague: {
+    id: "kubejs:dragonskill",
+    config: (trait) => {
+        trait.setMaxLevel(3)
+            .addConditions([
+                trait.createOrCondition([
+                    trait.createGearTypeCondition("silentgear:armor"),
+                    trait.createGearTypeCondition("silentgear:tool"),
+                    trait.createGearTypeCondition("silentgear:curio")
+                ])
+            ])
+            .addExtraDamage(
+                "kubejs:dragons",
+                "tagged",
+                10
+            )
+    }
+}
+*/
+

@@ -77,7 +77,12 @@ global.new_materials = [
     { id: 'eye_of_weeping_well_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_weeping_well_located" },
     { id: 'luminofish_ink_sac', maxStackSize: 32, texture: "kubejs:item/misc/luminofish_ink_sac" },
     { id: 'holosphere', maxStackSize: 1, texture: "kubejs:item/debug/holosphere" },
-    { id: 'eye_of_starlight_portal_located', maxStackSize: 1, texture: "kubejs:item/misc/eye_of_starlight_portal" }
+    { id: 'eye_of_starlight_portal_located', maxStackSize: 1, texture: "kubejs:item/misc/eye_of_starlight_portal" },
+    { id: 'scoria_ingot', maxStackSize: 64, rarity: 'uncommon', texture: "kubejs:item/ingots/scoria_ingot" },
+    { id: 'frigid_ingot', maxStackSize: 64, rarity: 'uncommon', texture: "kubejs:item/ingots/frigid_ingot" },
+    { id: 'perennial_ingot', maxStackSize: 64, rarity: 'rare', texture: "kubejs:item/ingots/perennial_ingot" },
+    { id: 'uelibloom_ingot', maxStackSize: 64, rarity: 'rare', texture: "kubejs:item/ingots/uelibloom_ingot" },
+    { id: 'life_alloy', maxStackSize: 64, rarity: 'epic', texture: "kubejs:item/ingots/life_alloy" }
 
 ];
 

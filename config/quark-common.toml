@@ -412,9 +412,9 @@
 		# - <level> being the Cartographer villager level required for the map to be unlockable
 		# - <min_price> being the cheapest (in Emeralds) the map can be
 		# - <max_price> being the most expensive (in Emeralds) the map can be
-		# - <color> being a hex color (without the #) for the map to display. You can generate one here - https://htmlcolorcodes.com/
+		# - <color> being an ARGB hex color (without the #) for the map to display. You can generate one here - https://argb-int-calculator.netlify.app/
 		#Here's an example of a map to locate Ice Mountains:
-		#minecraft:ice_mountains,2,8,14,FF7FE4FF
+		#minecraft:snowy_slopes,2,8,14,FF7FE4FF
 		Customs = []
 		#Set to false to make it so the default quark Pathfinder Map Built-In don't get added, and only the custom ones do
 		"Apply Default Trades" = true
@@ -755,9 +755,11 @@
 		"Smelt Raw Ore Blocks" = true
 
 [world]
+	#(Ashen Trees)
 	"Ancient Wood" = true
 	"Azalea Wood" = true
 	"Big Stone Clusters" = true
+	#(Trumpet Trees)
 	"Blossom Trees" = true
 	"Cherry Grove Water Petals" = true
 	"Chorus Vegetation" = true
@@ -772,6 +774,7 @@
 	Permafrost = true
 	"Spiral Spires" = true
 
+	#(Ashen Trees)
 	[world.ancient_wood]
 		"Ancient Fruit Gives Exp" = true
 		#Allowed values: [1,)
@@ -945,6 +948,7 @@
 					Biomes = ["minecraft:end_highlands"]
 					"Is Blacklist" = false
 
+	#(Trumpet Trees)
 	[world.blossom_trees]
 		"Drop Leaf Particles" = true
 
@@ -1537,7 +1541,7 @@
 	"Long Range Pick Block" = true
 	"Microcrafting Helper" = false
 	"Soul Candles" = true
-	"Usage Ticker" = true
+	"Usage Ticker" = false
 	"Uses For Curses" = true
 	"Variant Animal Textures" = true
 	"Wool Shuts Up Minecarts" = true
@@ -1647,7 +1651,7 @@
 	"Spawner Replacer" = false
 	#Allows placing variant blocks automatically via a selector menu triggered from a keybind
 	"Variant Selector" = false
-	"Villager Rerolling Rework" = false
+	"Villager Rerolling Rework" = true
 	#Big Stone Clusters for Granite, Diorite, and Andesite, like Quark pre-1.18
 	"Vanilla Stone Clusters" = false
 

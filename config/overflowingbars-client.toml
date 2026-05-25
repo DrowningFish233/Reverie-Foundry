@@ -73,7 +73,7 @@
 
 [row_count]
 	#Color of row count, use any chat formatting color value.
-	#Default Value: §f
+	#Default Value: WHITE
 	#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
 	row_count_color = "WHITE"
 	#Only include completely filled rows for the row count.

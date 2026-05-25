@@ -487,7 +487,127 @@ ServerEvents.recipes(event => {
         Item.of('refinedstorage:creative_controller', 1),
         [
             'cataclysm:mech_eye',
-            'refinedstorage:controller'
+            '#refinedstorage:controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:yellow_creative_controller', 1),
+        [
+            'minecraft:yellow_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:lime_creative_controller', 1),
+        [
+            'minecraft:lime_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:pink_creative_controller', 1),
+        [
+            'minecraft:pink_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:gray_creative_controller', 1),
+        [
+            'minecraft:gray_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:light_gray_creative_controller', 1),
+        [
+            'minecraft:light_gray_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:cyan_creative_controller', 1),
+        [
+            'minecraft:cyan_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:purple_creative_controller', 1),
+        [
+            'minecraft:purple_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:blue_creative_controller', 1),
+        [
+            'minecraft:blue_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:brown_creative_controller', 1),
+        [
+            'minecraft:brown_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:green_creative_controller', 1),
+        [
+            'minecraft:green_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:red_creative_controller', 1),
+        [
+            'minecraft:red_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:black_creative_controller', 1),
+        [
+            'minecraft:black_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:white_creative_controller', 1),
+        [
+            'minecraft:white_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:orange_creative_controller', 1),
+        [
+            'minecraft:orange_dye',
+            '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('refinedstorage:magenta_creative_controller', 1),
+        [
+            'minecraft:magenta_dye',
+            '#refinedstorage:creative_controllers'
         ]
     )
 })

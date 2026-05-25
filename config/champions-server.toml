@@ -143,7 +143,7 @@
 	[affixes.plagued]
 		#The effect that will be spread
 		#Format:[effect];[power];[duration(secs)]
-		plaguedEffect = "minecraft:long_weakness;15;0"
+		plaguedEffect = "minecraft:weakness;15;0"
 		#The range of the plagued effect
 		# Default: 5
 		# Range: 1 ~ 100

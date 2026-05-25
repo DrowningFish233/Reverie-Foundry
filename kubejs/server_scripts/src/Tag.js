@@ -536,7 +536,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('block', event => {
-    event.add('kubejs:no_digging', [
+    event.add('reveriefoundry:no_digging', [
         'hazennstuff:runestone_slag',
         'hazennstuff:zenalite_voidstone_ore',
         'hazennstuff:zenalite_abysslate_ore',
@@ -550,6 +550,21 @@ ServerEvents.tags('block', event => {
         'gobber2:gobber2_ore',
         'hazennstuff:solar_core_netherrack_ore',
         'hazennstuff:solar_core_blackstone_ore'
+    ]);
 
+    event.add('reveriefoundry:stageores', [
+        'hazennstuff:runestone_slag',
+        'hazennstuff:zenalite_voidstone_ore',
+        'hazennstuff:zenalite_abysslate_ore',
+        'hazennstuff:zenalite_end_stone_ore',
+        'hazennstuff:zenalite_stone_ore',
+        'hazennstuff:dreadstone_ore',
+        'hazennstuff:chlorophyte_ore',
+        'gobber2:gobber2_ore_end',
+        'gobber2:gobber2_ore_nether',
+        'gobber2:gobber2_ore_deepslate',
+        'gobber2:gobber2_ore',
+        'hazennstuff:solar_core_netherrack_ore',
+        'hazennstuff:solar_core_blackstone_ore'
     ]);
 });

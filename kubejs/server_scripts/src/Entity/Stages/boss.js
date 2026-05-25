@@ -21,7 +21,6 @@ const BOSS_MOBS = [
     ["astage/boss/maledictus", "cataclysm:maledictus", "first_kill_skeletron"],
     ["astage/boss/hippocamtus", "cataclysm:hippocamtus", "first_kill_skeletron"],
     //末地戈伯后
-    ["astage/boss/ender_dragon", "minecraft:ender_dragon", "first_kill_fire_boss"],
     ["astage/boss/obsidilith", "bosses_of_mass_destruction:obsidilith", "first_kill_fire_boss"],
     ["astage/boss/ender_guardian", "cataclysm:ender_guardian", "first_kill_fire_boss"],
     ["astage/boss/rift_weaver", "ftboceanmobs:rift_weaver", "first_kill_fire_boss"],

@@ -2,7 +2,7 @@
 enabled = true
 #Specifies the value for log4j2.asyncLoggerRingBufferSize (0 = use mod default, -1 = use log4j2 default)
 ringBufferSize = 0
-#Specifies the value for log4j2.asyncLoggerRingBufferSize (leave empty for default)
+#Specifies the value for log4j2.asyncLoggerWaitStrategy (leave empty for default)
 waitStrategy = ""
 #Specifies the value for log4j2.asyncLoggerSynchronizeEnqueueWhenQueueFull (leave empty for default)
 synchronizeEnqueueWhenQueueFull = ""

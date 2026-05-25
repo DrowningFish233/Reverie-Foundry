@@ -2,7 +2,7 @@
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
-    "harvest_tool.show_unbreakable": false,
+    "harvest_tool.show_unbreakable": true,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
     "energy_storage.style": "PROGRESS_BAR",
@@ -55,6 +55,16 @@
   "champions": {
     "enable_affix_compact": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "apothic_spawners": {
     "spawner": true
   },
@@ -64,9 +74,6 @@
     "block": true,
     "entity": true,
     "entity_variant": true
-  },
-  "reveriefoundry": {
-    "effect_base_strength": true
   },
   "ftbquests": {
     "barrier": true
@@ -96,6 +103,12 @@
   },
   "apothic_enchanting": {
     "ench": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
   },
   "productivemetalworks": {
     "casting": true

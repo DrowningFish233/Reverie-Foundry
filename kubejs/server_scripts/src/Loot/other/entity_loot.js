@@ -40,6 +40,13 @@ LootJS.modifiers(event => {
     );
 
     event.addEntityModifier([
+        "eternal_starlight:nightfall_spider"
+    ]
+    ).addLoot(LootEntry.of("hazennstuff:nightmare_fuel")
+        .randomChance(0.4)
+    );
+
+    event.addEntityModifier([
         "minecraft:villager"
     ]).addLoot(LootEntry.of("kubejs:raw_manflesh")
         .randomChance(0.4)

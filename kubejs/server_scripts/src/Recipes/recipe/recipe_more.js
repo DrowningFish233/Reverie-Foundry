@@ -1,6 +1,14 @@
 ServerEvents.recipes(event => {
     //唉，自己写的mod还得自己remove掉配方重写，怎么汇逝
     [
+        'refinedstorage:4k_storage_part',
+        'refinedstorage:256b_fluid_storage_part',
+        'rsinfinitybooster:dimension_card',
+        'rsinfinitybooster:infinity_card',
+        'refinedstorage:1024b_fluid_storage_part',
+        'refinedstorage:4096b_fluid_storage_part',
+        'refinedstorage:64k_storage_part',
+        'refinedstorage:16k_storage_part',
         'reveriefoundry:heavy_helmet_blueprint',
         'reveriefoundry:heavy_helmet_template',
         'reveriefoundry:heavy_chestplate_blueprint',
@@ -36,6 +44,12 @@ ServerEvents.recipes(event => {
 
 
     let singleItems = [
+        'extradelight:iron_spoon',
+        'extradelight:stone_spoon',
+        'extradelight:wooden_spoon',
+        'extradelight:gold_spoon',
+        'extradelight:diamond_spoon',
+        'extradelight:netherite_spoon',
         'silentgear:nether_star_fragment',
         'iceandfire:ambrosia',
         'productivemetalworks:plate_cast',
@@ -107,6 +121,5 @@ ServerEvents.recipes(event => {
         'terra_curio:sorcerer_emblem',
         'kubejs:sorcerer_emblem'
     )
-
 
 })

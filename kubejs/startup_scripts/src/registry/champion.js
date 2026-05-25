@@ -430,7 +430,7 @@ StartupEvents.registry("champions:affix", event => {
                 return true;
             })
             behavior.onHeal((champion, amount) => {
-                const entity = champion.getLivingEntity(); // 先获取实际的实体对象
+                const entity = champion.getLivingEntity();
                 if (!entity) return false;
 
                 const buffList = [
@@ -466,7 +466,7 @@ StartupEvents.registry("champions:affix", event => {
                     let itemStack = getCuriosItem(player, 'cataclysm:sticky_gloves');
                     if (itemStack !== null) return true;
                     let item = player.mainHandItem;
-                    const EnchantmentLevel = item.getEnchantmentLevel("minecraft:looting");
+                    const EnchantmentLevel = item.getEnchantmentLevel("minecraft:binding_curse");
                     if (EnchantmentLevel == 0) {
                         let level = player.getLevel();
                         let dropedItem = new $ItemEntity(level, player.x, player.y, player.z, item);
@@ -495,7 +495,11 @@ StartupEvents.registry("champions:affix", event => {
                             let maxDamage = mainHandItem.getMaxDamage();
                             let damageToApply = Math.max(1, Math.min(100, Math.floor(maxDamage * 0.01)));
                             if (fu_isGear(mainHandItem)) {
-                                fu_attemptDamageByHand(mainHandItem, damageToApply, causingEntity, "MAIN_HAND");
+                                let currentDamage = mainHandItem.getDamageValue();
+                                let remainingDurability = maxDamage - currentDamage;
+                                if (remainingDurability > damageToApply && remainingDurability > maxDamage * 0.05) {
+                                    fu_attemptDamageByHand(mainHandItem, damageToApply, causingEntity, "MAIN_HAND");
+                                }
                             } else {
                                 let currentDamage = mainHandItem.getDamageValue();
                                 let newDamage = currentDamage + damageToApply;

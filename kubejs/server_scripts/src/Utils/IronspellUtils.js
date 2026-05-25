@@ -26,9 +26,7 @@ function applyCrossSchoolLevelBonus(event) {
     // 前置条件检查
     if (!fu_hasTraitAnywhere(player, "kubejs:mithril_ingot")) return;
 
-    const spell = event.getSpell();
-    const school = spell.getSchoolType().getId();
-
+    const school = event.getSchoolType().getId();
     if (!school) return;
 
     // 获取所有法术流派数量

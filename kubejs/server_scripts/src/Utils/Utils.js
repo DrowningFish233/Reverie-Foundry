@@ -1715,3 +1715,70 @@ function reduceEffectLayers(entity, effectId, amount) {
     return newLayers;
 }
 
+
+
+function getNeighbors(pos) {
+    const neighbors = [];
+    for (let dx = -1; dx <= 1; dx++) {
+        for (let dy = -1; dy <= 1; dy++) {
+            for (let dz = -1; dz <= 1; dz++) {
+                if (dx === 0 && dy === 0 && dz === 0) continue;
+                neighbors.push({
+                    x: pos.x + dx,
+                    y: pos.y + dy,
+                    z: pos.z + dz
+                });
+            }
+        }
+    }
+    return neighbors;
+}
+
+function executeUltimine(player, startPos, sourceBlockId) {
+    const level = player.level;
+    const tool = player.getMainHandItem();
+
+    if (tool.isEmpty()) return;
+
+    const startBlock = level.getBlock(startPos.getX(), startPos.getY(), startPos.getZ());
+    if (!startBlock.hasTag('c:ores')) {
+        return;
+    }
+
+    let maxBlocks = 64;
+    let brokenCount = 0;
+    let toCheck = [];
+    let checked = new Set();
+
+    let startNeighbors = getNeighbors({
+        x: startPos.getX(),
+        y: startPos.getY(),
+        z: startPos.getZ()
+    });
+
+    startNeighbors.forEach(neighbor => toCheck.push(neighbor));
+
+    while (toCheck.length > 0 && brokenCount < maxBlocks) {
+        let pos = toCheck.shift();
+        let posKey = `${pos.x},${pos.y},${pos.z}`;
+
+        if (checked.has(posKey)) continue;
+        checked.add(posKey);
+
+        let blockState = level.getBlock(pos.x, pos.y, pos.z);
+        if (blockState.hasTag('c:ores') && blockState.getId().toString() === sourceBlockId) {
+            let success = level.destroyBlock(new BlockPos(pos.x, pos.y, pos.z), true, player, 0);
+            if (success) {
+                brokenCount++;
+
+                let neighbors = getNeighbors(pos);
+                neighbors.forEach(neighbor => {
+                    let neighborKey = `${neighbor.x},${neighbor.y},${neighbor.z}`;
+                    if (!checked.has(neighborKey)) {
+                        toCheck.push(neighbor);
+                    }
+                });
+            }
+        }
+    }
+}

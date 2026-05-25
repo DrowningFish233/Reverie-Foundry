@@ -1229,4 +1229,316 @@ ServerEvents.recipes(event => {
     )
 
 
+    event.shaped(
+        Item.of('reveriefoundry:spellbook_template', 1),
+        [
+            'CAC',
+            'CBC',
+            'CAC'
+        ],
+        {
+            A: 'silentgear:template_board',
+            B: 'kubejs:necroplasm',
+            C: 'minecraft:stick'
+        }
+    )
+
+    // 铁勺
+    event.shaped(
+        Item.of('extradelight:iron_spoon', 1),
+        [
+            'A  ',
+            ' B ',
+            '  B'
+        ],
+        {
+            A: 'minecraft:iron_ingot',
+            B: 'minecraft:stick'
+        }
+    )
+
+    // 石勺
+    event.shaped(
+        Item.of('extradelight:stone_spoon', 1),
+        [
+            'A  ',
+            ' B ',
+            '  B'
+        ],
+        {
+            A: 'minecraft:cobblestone',
+            B: 'minecraft:stick'
+        }
+    )
+
+    // 木勺
+    event.shaped(
+        Item.of('extradelight:wooden_spoon', 1),
+        [
+            'A  ',
+            ' B ',
+            '  B'
+        ],
+        {
+            A: 'minecraft:oak_planks',
+            B: 'minecraft:stick'
+        }
+    )
+
+    // 金勺
+    event.shaped(
+        Item.of('extradelight:gold_spoon', 1),
+        [
+            'A  ',
+            ' B ',
+            '  B'
+        ],
+        {
+            A: 'minecraft:gold_ingot',
+            B: 'minecraft:stick'
+        }
+    )
+
+    // 钻石勺
+    event.shaped(
+        Item.of('extradelight:diamond_spoon', 1),
+        [
+            'A  ',
+            ' B ',
+            '  B'
+        ],
+        {
+            A: 'minecraft:diamond',
+            B: 'minecraft:stick'
+        }
+    )
+
+    // 下界合金勺
+    event.shaped(
+        Item.of('extradelight:netherite_spoon', 1),
+        [
+            'A  ',
+            ' B ',
+            '  B'
+        ],
+        {
+            A: 'minecraft:netherite_ingot',
+            B: 'minecraft:stick'
+        }
+    )
+
+
+    // RS配方优化
+    //创造磁盘
+    event.shaped(
+        Item.of('refinedstorage:creative_storage_disk', 1),
+        [
+            '   ',
+            'ABA',
+            '   '
+        ],
+        {
+            A: 'refinedstorage:64k_storage_disk',
+            B: 'kubejs:ashes_of_calamity'
+        }
+    )
+
+    event.shaped(
+        Item.of('refinedstorage:creative_fluid_storage_disk', 1),
+        [
+            '   ',
+            'ABA',
+            '   '
+        ],
+        {
+            A: 'refinedstorage:4096b_fluid_storage_disk',
+            B: 'kubejs:ashes_of_calamity'
+        }
+    )
+
+    //便携终端
+    event.shaped(
+        Item.of('refinedstorage:creative_portable_grid', 1),
+        [
+            '   ',
+            'BAB',
+            '   '
+        ],
+        {
+            A: 'refinedstorage:portable_grid',
+            B: 'kubejs:ashes_of_calamity'
+        }
+    )
+
+
+    event.shaped(
+        Item.of('refinedstorage:creative_wireless_grid', 1),
+        [
+            '   ',
+            'BAB',
+            '   '
+        ],
+        {
+            A: 'refinedstorage:wireless_grid',
+            B: 'kubejs:ashes_of_calamity'
+        }
+    )
+
+    event.shaped(
+        Item.of('refinedstorage:creative_storage_block', 1),
+        [
+            '   ',
+            'ABA',
+            '   '
+        ],
+        {
+            A: 'refinedstorage:64k_storage_block',
+            B: 'kubejs:ashes_of_calamity'
+        }
+    )
+
+    event.shaped(
+        Item.of('refinedstorage:creative_fluid_storage_block', 1),
+        [
+            '   ',
+            'ABA',
+            '   '
+        ],
+        {
+            A: 'refinedstorage:4096b_fluid_storage_block',
+            B: 'kubejs:ashes_of_calamity'
+        }
+    )
+
+    event.shaped(
+        Item.of('refinedstorage:creative_wireless_autocrafting_monitor', 1),
+        [
+            '   ',
+            'BAB',
+            '   '
+        ],
+        {
+            A: 'refinedstorage:wireless_autocrafting_monitor',
+            B: 'kubejs:ashes_of_calamity'
+        }
+    )
+
+    event.shaped(
+        Item.of('rsinfinitybooster:dimension_card', 1),
+        [
+            'BAB',
+            'ACA',
+            'BAB'
+        ],
+        {
+            A: 'minecraft:ender_eye',
+            B: 'kubejs:ashes_of_calamity',
+            C: 'rsinfinitybooster:infinity_card'
+        }
+    )
+
+    event.shaped(
+        Item.of('rsinfinitybooster:infinity_card', 1),
+        [
+            'BAB',
+            'ACA',
+            'BAB'
+        ],
+        {
+            A: 'minecraft:ender_eye',
+            B: 'kubejs:necroplasm',
+            C: 'refinedstorage:upgrade'
+        }
+    )
+
+    event.shaped(
+        Item.of('refinedstorage:4k_storage_part', 1),
+        [
+            'BAB',
+            'DCD',
+            'BDB'
+        ],
+        {
+            A: 'refinedstorage:quartz_enriched_iron',
+            B: 'refinedstorage:basic_processor',
+            C: 'refinedstorage:1k_storage_part',
+            D: 'minecraft:redstone'
+        }
+    )
+
+    event.shaped(
+        Item.of('refinedstorage:256b_fluid_storage_part', 1),
+        [
+            'BAB',
+            'DCD',
+            'BDB'
+        ],
+        {
+            A: 'refinedstorage:quartz_enriched_iron',
+            B: 'refinedstorage:basic_processor',
+            C: 'refinedstorage:64b_fluid_storage_part',
+            D: 'minecraft:redstone'
+        }
+    )
+
+    event.shaped(
+        Item.of('refinedstorage:16k_storage_part', 1),
+        [
+            'BAB',
+            'DCD',
+            'BDB'
+        ],
+        {
+            A: 'refinedstorage:quartz_enriched_iron',
+            B: 'refinedstorage:improved_processor',
+            C: 'refinedstorage:4k_storage_part',
+            D: 'minecraft:redstone'
+        }
+    )
+
+
+    event.shaped(
+        Item.of('refinedstorage:1024b_fluid_storage_part', 1),
+        [
+            'BAB',
+            'DCD',
+            'BDB'
+        ],
+        {
+            A: 'refinedstorage:quartz_enriched_iron',
+            B: 'refinedstorage:improved_processor',
+            C: 'refinedstorage:256b_fluid_storage_part',
+            D: 'minecraft:redstone'
+        }
+    )
+
+    event.shaped(
+        Item.of('refinedstorage:64k_storage_part', 1),
+        [
+            'BAB',
+            'DCD',
+            'BDB'
+        ],
+        {
+            A: 'refinedstorage:quartz_enriched_iron',
+            B: 'refinedstorage:advanced_processor',
+            C: 'refinedstorage:16k_storage_part',
+            D: 'minecraft:redstone'
+        }
+    )
+
+    event.shaped(
+        Item.of('refinedstorage:4096b_fluid_storage_part', 1),
+        [
+            'BAB',
+            'DCD',
+            'BDB'
+        ],
+        {
+            A: 'refinedstorage:quartz_enriched_iron',
+            B: 'refinedstorage:advanced_processor',
+            C: 'refinedstorage:1024b_fluid_storage_part',
+            D: 'minecraft:redstone'
+        }
+    )
 })
