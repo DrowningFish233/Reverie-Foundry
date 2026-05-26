@@ -1334,8 +1334,16 @@ event.create('purple_haze_attack')
             "add_multiplied_base"
         )
 
-    event.create('past_prosperity')
+    event.create('arcane_erosion')
         .harmful()
 
-
+    event.create('past_prosperity')
+        .harmful()
+        .modifyAttribute('minecraft:generic.attack_damage',
+            'fb16e33f-0967-4f95-b7c3-4bde5780c73d',
+            -0.03,
+            "add_multiplied_base"
+        )
+    event.create('panic')
+        .harmful()
 });

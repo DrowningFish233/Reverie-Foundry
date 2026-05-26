@@ -253,3 +253,4 @@ const DEMOTION_MESSAGE = {
 
 // 缓存
 let REMOVABLE_TYPES_CACHE = null
+const panicEffect = "kubejs:panic";

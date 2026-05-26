@@ -9,11 +9,16 @@ RFTrait('kubejs:envy', 999)
         if (!attacker.hasEffect("kubejs:envy")) return;
         if (!entity || !entity.isLiving()) return;
 
+        // 检查是否装备了嫉妒之眼
+        const hasEyeOfEnvy = getCuriosItem(attacker, 'kubejs:eye_of_envy') !== null;
+
         let isEnmityTarget = entity.hasEffect("kubejs:enmity");
 
         if (!isEnmityTarget) {
-            new_damage(event, STAGE.MULTIPLY, 0.7);
+            const damageMultiplier = hasEyeOfEnvy ? 0.7 : 0.5;
+            new_damage(event, STAGE.MULTIPLY, damageMultiplier);
             entity.potionEffects.add('kubejs:enmity', 200, 0);
+            return;
         }
 
         if (isEnmityTarget) {
@@ -33,15 +38,16 @@ RFTrait('kubejs:envy', 999)
                     entity.removeEffect(buffId);
                     attacker.potionEffects.add(buffId, duration, amplifier);
 
-                    let maxHealth = entity.getMaxHealth();
-                    let stealAmount = maxHealth * 0.05;
+                    if (hasEyeOfEnvy) {
+                        let maxHealth = entity.getMaxHealth();
+                        let stealAmount = maxHealth * 0.05;
+                        attackEntity(entity, 'generic', stealAmount, true);
 
-                    attackEntity(entity, 'generic', stealAmount, true);
-
-                    if (attacker.hasEffect('kubejs:temporary_hit_points')) {
-                        addEffectLayers(attacker, 'kubejs:temporary_hit_points', 2);
-                    } else {
-                        attacker.potionEffects.add('kubejs:temporary_hit_points', 600, 1);
+                        if (attacker.hasEffect('kubejs:temporary_hit_points')) {
+                            addEffectLayers(attacker, 'kubejs:temporary_hit_points', 2);
+                        } else {
+                            attacker.potionEffects.add('kubejs:temporary_hit_points', 600, 1);
+                        }
                     }
 
                     $CooldownManager.setCooldown(attacker, stealCooldownKey, 10);
@@ -62,10 +68,13 @@ RFTrait('kubejs:envy', 999)
         let hasEnvy = attacker.hasEffect("kubejs:envy");
         if (!hasEnvy) return;
 
-        let hasEnmity = entity.hasEffect("kubejs:enmity");
+        // 检查是否装备了嫉妒之眼
+        const hasEyeOfEnvy = getCuriosItem(attacker, 'kubejs:eye_of_envy') !== null;
+        let isEnmityTarget = entity.hasEffect("kubejs:enmity");
 
-        if (!hasEnmity) {
-            new_damage(event, STAGE.MULTIPLY, 0.7);
+        if (!isEnmityTarget) {
+            const damageMultiplier = hasEyeOfEnvy ? 0.7 : 0.5;
+            new_damage(event, STAGE.MULTIPLY, damageMultiplier);
         }
     })
 

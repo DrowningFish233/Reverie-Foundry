@@ -179,6 +179,70 @@ const trinkets = {
             { type: 'special', textKey: "tooltip.mana_cloak.cooldown" },
         ]
     },
+
+    'kubejs:mark_of_wrath': {
+        descriptionKey: "tooltip.common.mark_of_wrath.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.common.mark_of_wrath.effect" },
+            { type: 'buff', textKey: "tooltip.common.mark_of_wrath.effect.2" },
+            { type: 'buff', textKey: "tooltip.common.mark_of_wrath.effect.3" },
+        ]
+    },
+
+    'kubejs:chain_of_lust': {
+        descriptionKey: "tooltip.common.chain_of_lust.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.common.chain_of_lust.effect" },
+            { type: 'buff', textKey: "tooltip.common.chain_of_lust.effect.2" },
+            { type: 'buff', textKey: "tooltip.common.chain_of_lust.effect.3" },
+        ]
+    },
+
+    'kubejs:pendant_of_sloth': {
+        descriptionKey: "tooltip.common.pendant_of_sloth.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.common.pendant_of_sloth.effect" },
+            { type: 'buff', textKey: "tooltip.common.pendant_of_sloth.effect.2" },
+            { type: 'buff', textKey: "tooltip.common.pendant_of_sloth.effect.3" },
+        ]
+    },
+
+    'kubejs:ring_of_gluttony': {
+        descriptionKey: "tooltip.common.ring_of_gluttony.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.common.ring_of_gluttony.effect" },
+            { type: 'buff', textKey: "tooltip.common.ring_of_gluttony.effect.2" },
+            { type: 'buff', textKey: "tooltip.common.ring_of_gluttony.effect.3" },
+        ]
+    },
+
+    'kubejs:stone_of_melancholy': {
+        descriptionKey: "tooltip.common.stone_of_melancholy.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.common.stone_of_melancholy.effect" },
+            { type: 'buff', textKey: "tooltip.common.stone_of_melancholy.effect.2" },
+            { type: 'buff', textKey: "tooltip.common.stone_of_melancholy.effect.3" },
+        ]
+    },
+
+    'kubejs:crown_of_pride': {
+        descriptionKey: "tooltip.common.crown_of_pride.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.common.crown_of_pride.effect" },
+            { type: 'buff', textKey: "tooltip.common.crown_of_pride.effect.2" },
+            { type: 'buff', textKey: "tooltip.common.crown_of_pride.effect.3" },
+            { type: 'buff', textKey: "tooltip.common.crown_of_pride.effect.4" },
+        ]
+    },
+
+    'kubejs:eye_of_envy': {
+        descriptionKey: "tooltip.common.eye_of_envy.description",
+        effects: [
+            { type: 'buff', textKey: "tooltip.common.eye_of_envy.effect" },
+            { type: 'buff', textKey: "tooltip.common.eye_of_envy.effect.2" },
+            { type: 'buff', textKey: "tooltip.common.eye_of_envy.effect.3" },
+        ]
+    },
 };
 
 ItemEvents.modifyTooltips(event => {

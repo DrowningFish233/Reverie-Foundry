@@ -102,7 +102,7 @@ function spell_type_lightning(event) {
 }
 
 /**
- * 目标: 为法术添加属性（当攻击者使用雷霆魔法时，给攻击者施加魔力防御降低效果）
+ * 目标: 为法术添加属性（当攻击者使用自然魔法时，给攻击者施加魔力防御降低效果）
  */
 function spell_type_nature(event) {
     const entity = event.entity;
@@ -110,7 +110,7 @@ function spell_type_nature(event) {
 
     if (event.source.getType() !== 'nature_magic') return;
 
-    let SpellPower = actual.getAttribute('irons_spellbooks:nature__spell_power')?.value ?? 1;
+    let SpellPower = actual.getAttribute('irons_spellbooks:nature_spell_power')?.value ?? 1;
 
     const baseDuration = 500;
     // 计算实际持续时间（受法术强度影响）

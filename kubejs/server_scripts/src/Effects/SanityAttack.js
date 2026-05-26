@@ -16,12 +16,18 @@ function sanityAttack(event) {
 
     // 应用伤害
     new_damage(event, STAGE.MULTIPLY, Math.round(multiplier * 100) / 100);
+
 }
 
 /**
  * 获取伤害倍率(越往上优先级越高)
  */
 function getDamageMultiplier(attacker, pData, sanity) {
+    //进入恐慌
+    if (attacker.hasEffect("kubejs:panic")) {
+        return 0.4 + Math.random() * 0.4;
+    }
+
     // 起床气效果
     if (attacker.hasEffect("kubejs:morning_moodiness")) {
         return Math.random() < 0.5 ? 1.0 : 1 + Math.random() * 9;

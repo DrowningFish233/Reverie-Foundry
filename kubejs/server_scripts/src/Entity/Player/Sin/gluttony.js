@@ -4,6 +4,9 @@ FoodEatenevents.register("gluttony", function (event, player, magicData) {
     let isGLUTTONY = player.persistentData.getInt(sins.GLUTTONY) || 0;
     if (isGLUTTONY <= 0) return;
 
+    // 检查是否装备了暴食之戒
+    const hasRingOfGluttony = getCuriosItem(player, 'kubejs:ring_of_gluttony') !== null;
+
     let foodProperties = event.item.getFoodProperties(player);
     if (!foodProperties) return;
 
@@ -14,21 +17,26 @@ FoodEatenevents.register("gluttony", function (event, player, magicData) {
     let missingHealth = maxHealth - currentHealth;
 
     if (currentHealth < maxHealth) {
-        let healAmount = Math.min(missingHealth, nutrition * 2);
+        let healAmount = hasRingOfGluttony ? nutrition * 2 : nutrition * 1;
+        healAmount = Math.min(missingHealth, healAmount);
         player.heal(healAmount);
     }
     else {
-        $RFUtils.applyRandomBuff(player, 600, 1);
+        const duration = hasRingOfGluttony ? 600 : 300;
+        $RFUtils.applyRandomBuff(player, duration, 1);
     }
 
-    let nearbyPlayers = player.level.getPlayers();
-    for (let nearbyPlayer of nearbyPlayers) {
-        if (nearbyPlayer !== player && player.distanceToEntity(nearbyPlayer) <= 5) {
-            let newFoodLevel = nearbyPlayer.getFoodLevel() + nutrition;
-            nearbyPlayer.setFoodLevel(Math.min(20, newFoodLevel));
+    // 范围分享
+    if (hasRingOfGluttony) {
+        let nearbyPlayers = player.level.getPlayers();
+        for (let nearbyPlayer of nearbyPlayers) {
+            if (nearbyPlayer !== player && player.distanceToEntity(nearbyPlayer) <= 5) {
+                let newFoodLevel = nearbyPlayer.getFoodLevel() + nutrition;
+                nearbyPlayer.setFoodLevel(Math.min(20, newFoodLevel));
 
-            let newSaturation = nearbyPlayer.getSaturationLevel() + saturation;
-            nearbyPlayer.setSaturationLevel(Math.min(20, newSaturation));
+                let newSaturation = nearbyPlayer.getSaturationLevel() + saturation;
+                nearbyPlayer.setSaturationLevel(Math.min(20, newSaturation));
+            }
         }
     }
 });

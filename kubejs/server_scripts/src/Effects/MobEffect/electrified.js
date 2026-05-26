@@ -4,7 +4,6 @@
  */
 function lightning_electrified(event) {
     const entity = event.entity;
-    const attacker = event.source.actual;
     const damageType = event.source.getType();
 
     // 只处理闪电类型的伤害
@@ -14,10 +13,9 @@ function lightning_electrified(event) {
         const electrifiedEffect = entity.getEffect("kubejs:electrified");
         const currentLevel = electrifiedEffect.getAmplifier();
 
-        const damageMultiplier = currentLevel * 0.02;
-
-        const cappedMultiplier = Math.min(damageMultiplier, 1.5);
-
-        new_damage(event, STAGE.ADDITIVE, cappedMultiplier);
+        const damageBonus = currentLevel * 0.02;
+        const cappedBonus = Math.min(damageBonus, 1.5);
+        //忘传基础值了
+        new_damage(event, STAGE.ADDITIVE, 1 + cappedBonus);
     }
 }

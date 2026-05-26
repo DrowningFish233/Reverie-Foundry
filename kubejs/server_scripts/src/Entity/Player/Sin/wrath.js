@@ -25,15 +25,22 @@ RFTrait('kubejs:wrath', 999)
         if (entity.hasEffect('kubejs:wrath_damage')) {
             entity.removeEffect('kubejs:wrath_damage');
             entity.removeEffect('minecraft:glowing');
-            new_damage(event, STAGE.MULTIPLY, 1.15);
 
-            const currentLayers = getEffectLayers(attacker, 'kubejs:enhanced_tattoo');
-            if (currentLayers < 5) {
-                if (attacker.hasEffect('kubejs:enhanced_tattoo')) {
-                    addEffectLayers(attacker, 'kubejs:enhanced_tattoo', 1);
-                } else {
-                    attacker.potionEffects.add('kubejs:enhanced_tattoo', 300, 0);
+            const hasMarkOfWrath = getCuriosItem(attacker, 'kubejs:mark_of_wrath') !== null;
+
+            if (hasMarkOfWrath) {
+                new_damage(event, STAGE.MULTIPLY, 1.2);
+
+                const currentLayers = getEffectLayers(attacker, 'kubejs:enhanced_tattoo');
+                if (currentLayers < 5) {
+                    if (attacker.hasEffect('kubejs:enhanced_tattoo')) {
+                        addEffectLayers(attacker, 'kubejs:enhanced_tattoo', 1);
+                    } else {
+                        attacker.potionEffects.add('kubejs:enhanced_tattoo', 300, 0);
+                    }
                 }
+            } else {
+                new_damage(event, STAGE.MULTIPLY, 1.10);
             }
         }
     })

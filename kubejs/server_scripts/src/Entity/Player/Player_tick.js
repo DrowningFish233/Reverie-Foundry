@@ -66,11 +66,24 @@ function handleSanityAndDepravity(player, pData, sanityValue, depravityValue) {
 
 function handleSinMechanics(event, player, pData, sanityValue) {
     const hasActiveSin = checkForActiveSins(pData);
+    const hasAccessorySin = getEquippedSinAccessory(player);
+
+    if (player.hasEffect("kubejs:panic")) return;
 
     if (sanityValue === -45) {
         if (!hasActiveSin) {
             if (is_Magical_Girl(event, player)) return;
-            activateRandomSin(event, player);
+
+            if (hasAccessorySin) {
+                activateRandomSin(event, player);
+            } else {
+                const shouldErode = Math.random() < 0.25;
+                if (shouldErode) {
+                    activateRandomSin(event, player);
+                } else {
+                    applyPanicEffect(player);
+                }
+            }
         }
     } else if (hasActiveSin) {
         resetAllSins(pData);
@@ -187,6 +200,13 @@ PlayerEvents.tick(event => {
 
     // 跳过魔法少女或理智值不为-45的情况
     if (is_Magical_Girl(event, player) || sanityValue !== -45) return;
+
+    if (player.hasEffect("kubejs:panic")) {
+        player.potionEffects.add("kubejs:panic", 80, 0, false, false);
+        player.potionEffects.add("kubejs:hurt", 80, 0, false, false);
+        player.potionEffects.add("minecraft:slowness", 80, 1, false, false);
+        return;
+    }
 
     // 定义原罪效果
     const SIN_EFFECTS = {

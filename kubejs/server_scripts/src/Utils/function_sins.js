@@ -278,3 +278,40 @@ EntityEvents.afterHurt(event => {
         $CooldownManager.setCooldown(player, COOLDOWN_KEY, 20);
     }
 });
+
+/**
+ * 获取玩家装备的七罪饰品对应的罪孽类型
+ */
+function getEquippedSinAccessory(player) {
+    const accessorySinMap = {
+        "kubejs:mark_of_wrath": "WRATH",
+        "kubejs:chain_of_lust": "LUST",
+        "kubejs:pendant_of_sloth": "SLOTH",
+        "kubejs:ring_of_gluttony": "GLUTTONY",
+        "kubejs:stone_of_melancholy": "GLOOM",
+        "kubejs:crown_of_pride": "PRIDE",
+        "kubejs:eye_of_envy": "ENVY"
+    };
+
+    for (let [itemId, sin] of Object.entries(accessorySinMap)) {
+        if (getCuriosItem(player, itemId) !== null) {
+            return sin;
+        }
+    }
+    return null;
+}
+
+
+/**
+ * 施加恐慌效果
+ */
+function applyPanicEffect(player) {
+    player.potionEffects.add("kubejs:panic", 400, 0);
+
+    player.potionEffects.add("kubejs:hurt", 400, 0);
+    player.potionEffects.add("minecraft:slowness", 400, 1);
+
+    player.setStatusMessage(
+        Text.translate("message.sin.panic").color("dark_red")
+    );
+}

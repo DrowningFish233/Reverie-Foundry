@@ -19,17 +19,20 @@ RFTrait('kubejs:sloth', 999)
         if (!entity.isLiving() || !entity.isPlayer()) return;
         if (!entity.hasEffect("kubejs:sloth")) return;
 
+        const hasPendantOfSloth = getCuriosItem(entity, 'kubejs:pendant_of_sloth') !== null;
+
         // 检查冷却
         const cooldownKey = "sloth_damage_cooldown";
         if ($CooldownManager.hasCooldown(entity, cooldownKey)) return;
 
         const armorValue = entity.getAttribute('minecraft:generic.armor')?.value ?? 0;
-        const rangeDamage = armorValue * 0.75;
+        const rangeDamage = hasPendantOfSloth ? armorValue * 0.75 : armorValue * 0.5;
 
         if (rangeDamage > 0) {
+            const range = hasPendantOfSloth ? 2 : 1;
             let nearbyEntities = entity.level.getEntities(
                 entity,
-                entity.getBoundingBox().inflate(2)
+                entity.getBoundingBox().inflate(range)
             ).filter(e =>
                 e.isLiving() &&
                 e.isAlive() &&
@@ -48,7 +51,9 @@ RFTrait('kubejs:sloth', 999)
         const { entity } = event;
         if (!entity.isLiving() || !entity.isPlayer()) return;
         if (entity.hasEffect("kubejs:sloth_2")) {
-            new_damage(event, STAGE.MULTIPLY, 0.35);
+            const hasPendantOfSloth = getCuriosItem(entity, 'kubejs:pendant_of_sloth') !== null;
+            const damageReduction = hasPendantOfSloth ? 0.35 : 0.6;
+            new_damage(event, STAGE.MULTIPLY, damageReduction);
         }
     })
     .register();
