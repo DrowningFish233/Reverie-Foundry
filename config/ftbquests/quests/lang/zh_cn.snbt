@@ -4,18 +4,19 @@
 	chapter.18D895B9141E8756.title: "机械动力"
 	chapter.1A98B27BB1D8BF2D.title: "铁之魔法"
 	chapter.20EE16E9C1ED5E6D.title: "遗失手稿"
+	chapter.21E6476472D3F44D.title: "&6✨️材料推荐（未完成）"
 	chapter.374C0851A23B3549.title: "寂静装备"
 	chapter.44E1ED5935A6147B.title: "&3伟大历程"
-	chapter.48A05E5EF26EFEEE.title: "&d必看须知"
+	chapter.48A05E5EF26EFEEE.title: "&d👀必看须知 （新）"
 	chapter.566973DCC685511A.title: "神化"
 	chapter.594B7E5B489F5F45.title: "永不坠机"
 	chapter.5A72070BE5639DEE.title: "实用工具"
 	chapter.6610553945D768F8.title: "永恒星光"
-	chapter.75D59DE79FD7569A.title: "&d追加的苦难"
-	chapter.7CEAFF10D33DEDBC.title: "&dFTB 任务教学"
-	chapter_group.17FDF36D1B965C72.title: "&e散落的手记 （支线）"
-	chapter_group.2F1F238400B8A177.title: "杂谈"
-	chapter_group.7F00D0D8C7C916A0.title: "&b虚无之梦 （主线）"
+	chapter.75D59DE79FD7569A.title: "&d🌠追加的苦难"
+	chapter.7CEAFF10D33DEDBC.title: "&d 🧠FTB 任务教学"
+	chapter_group.17FDF36D1B965C72.title: "&e🏅散落的手记 （支线）"
+	chapter_group.2F1F238400B8A177.title: "🏅杂项"
+	chapter_group.7F00D0D8C7C916A0.title: "&b🏆️虚无之梦 （主线）"
 	file.0000000000000001.title: "遐想铸造厂"
 	quest.002106F426003B4F.quest_desc: ["&7增加激活范围，即玩家距离刷怪笼更远时也能激活刷怪笼。每个增加 2 格，上限48格。"]
 	quest.002106F426003B4F.quest_subtitle: "I can see you"
@@ -44,6 +45,7 @@
 	]
 	quest.00A5A64046D3B0EF.quest_subtitle: "回收利用，再利用！"
 	quest.00C7BD5A5443E2F4.quest_subtitle: "标准的伐\"木\"工具"
+	quest.0108AD0A0C6B606D.quest_subtitle: "这武器有力气"
 	quest.015EB916702B3797.quest_desc: [
 		"&#67B1E5戈伯&r&7可用于制作特殊增益类物品，也是优秀的武器材料，词条提供了乘区增伤。"
 		""
@@ -71,14 +73,26 @@
 	quest.0166F102DF348A30.quest_subtitle: "收割废墟"
 	quest.0166F102DF348A30.title: "爆炸编织者条约"
 	quest.017488D14BA19FAA.quest_desc: [
-		"&f另:"
-		"&r&7因为产能问题，部分材料可能还没有兼容，请期待新版本后续更新支持~&r"
+		"&7本整合包支持在&r&eEMI&r&7中搜索词条名称来查找所有拥有此词条的材料。&r"
+		""
+		"&7本整合包大部分材料都已添加了阶段等级显示，可直接于&r&eEMI&r&7中搜索&r&a“阶段x”&r&7来查看&r&ax&r&7阶段的材料。&r"
+		""
+		"&7阶段由材料数值影响，&r&c不代表你只有在第x阶段才能获得下一阶段的物品。&r"
+		""
+		"部分任务线将在1.0重置！"
 	]
-	quest.017488D14BA19FAA.quest_subtitle: "多看手册！那里面是材料大全"
-	quest.017488D14BA19FAA.title: "&e有什么需要了解的机制或者内容记得多看任务和手册！！！"
+	quest.017488D14BA19FAA.quest_subtitle: "整合包对寂静装备进行了诸多优化和魔改"
+	quest.017488D14BA19FAA.title: "善用EMI"
+	quest.017E000317AA737C.title: "飞剑"
 	quest.01891B78BD11035B.quest_subtitle: "二者择一"
 	quest.01891B78BD11035B.title: "&a“于初始掩饰苦难的蜜糖？！”"
-	quest.01DFC41A894B42AC.quest_subtitle: "空军"
+	quest.01DFC41A894B42AC.quest_subtitle: "看什么看，没见过空军吗"
+	quest.01F90096B5781A59.quest_desc: [
+		"&b&l模具基板&r&7可用于制造各类武器部件的基底，虽不如可重复使用的&6&l蓝图&r&7便利，但胜在&a造价低廉&r&7、&a操作简便&r&7。"
+		""
+		"&7模板需要&3&l模板基板&r&7。模板基板需要&d刀&r&7或&d匕首&r&7以及&6石砧&r&7来制作。将&2原木&r&7放在&6石砧&r&7上，然后用&d刀&r&7右键点击。&7有时其他模组的&d刀&r&7也可能有效。你可能还没有&6&l刀蓝图&r&7，所以需要先合成一把&c&l粗制小刀&r&7。"
+	]
+	quest.01F90096B5781A59.quest_subtitle: "基础设备"
 	quest.01FCAFCAA454BC91.quest_desc: [
 		"&7蜡烛自古以来就与神秘学有关。而在神化附魔中，蜡烛则会提供1.25%的&5阿卡纳&7属性。虽然很少，但是多个在一起的蜡烛会提供更多的&5阿卡纳&7之力。"
 		""
@@ -150,6 +164,7 @@
 		"{\"text\":\"\",\"extra\":[{\"text\":\"周围10格内所有玩家\",\"color\":\"gray\"},{\"text\":\"恢复15%最大生命值和200点法力值\",\"color\":\"green\"}]}"
 	]
 	quest.03639EDED6577831.title: "忧郁侵蚀"
+	quest.038444481D165CED.title: "装备选择"
 	quest.03D7343C57EF0A14.quest_desc: [
 		"&7长时间接触精魂似乎让我精神有些混乱，我甚至能听到奇异的呼唤声在耳边响起…不，不对"
 		""
@@ -200,7 +215,9 @@
 		"&6微型图腾&r"
 		"&7可以与一个魔宠绑定，且一个魔宠同一时间只能绑定一个图腾。当该魔宠死亡且你没有魔力复活它时，绑定的图腾将被消耗，使该魔宠&a复活&r&7，图腾也随之消耗。&r"
 	]
+	quest.0490EDB36F1CF908.quest_desc: ["理论上你也可以在阶段I就从装备袋之中开出来这个"]
 	quest.0490EDB36F1CF908.quest_subtitle: "天空即为极限"
+	quest.04D12E5A5BAC565F.quest_subtitle: "\"高级货\""
 	quest.04DD58980F332FEE.quest_subtitle: "生存者必备"
 	quest.04F1594414B048D0.quest_desc: [
 		"&7增加背包单格内堆叠物品的数量，每个背包最多可以装三个堆叠升级，互乘之下可以获得极其惊人的堆叠上限。"
@@ -211,16 +228,18 @@
 	quest.056130E2CD71DC75.quest_desc: ["[ { \"text\": \"点击跳转至寂静装备\", \"underlined\": true, \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"09E68D57095A5F1D\" } } ]"]
 	quest.056130E2CD71DC75.title: "竟是蓝图"
 	quest.0594FF6909227B41.quest_desc: [
-		"&6所有&r词缀效果均可在&6遐想铸造厂-材料手册&r中查询"
-		""
-		"词缀分为两大类，一类为&6寂静装备-词缀部分&r，另一类为&6特有机制-词缀部分&r"
-		"寂静装备自带的词缀效果在前一类中介绍，而整合包自制的词缀在后一类中，以做区分"
+		"&6所有&r材料属性均可在&6材料宝典&r中查询，词条效果可于EMI中搜索查看"
 		""
 		"&7鳕鱼并不怎么会写任务...有的地方写的不好请见谅..."
 		""
 		"没事我帮鳕鱼写，啊原来我也写不好啊，真是不好意思。"
+		""
+		"&8以下文案已过时："
+		"&8词缀分为两大类，一类为寂静装备-词缀部分，另一类为特有机制-词缀部分"
+		"&8寂静装备自带的词缀效果在前一类中介绍，而整合包自制的词缀在后一类中，以做区分"
 	]
-	quest.0594FF6909227B41.quest_subtitle: "特别是遐想铸造厂-材料手册...许多机制与内容都写在里面了"
+	quest.0594FF6909227B41.quest_subtitle: "如要查看属性排行，需在材料宝典中查看"
+	quest.0594FF6909227B41.title: "材料可在EMI中搜索：寂静装备材料查看所有材料"
 	quest.059D21A5F949C15C.quest_desc: [
 		"&2玩家可以将附魔书存入其中转化为对应附魔经验，附魔经验可用于拆分或合并附魔书。"
 		""
@@ -238,6 +257,7 @@
 	]
 	quest.059D21A5F949C15C.quest_subtitle: "正于此地，愿你找到想要的书"
 	quest.059D21A5F949C15C.title: "全新的魔力存储方式"
+	quest.059FEF132D3FF800.quest_subtitle: "我的刀盾"
 	quest.05A4F69164ABBCCA.quest_subtitle: "经典的远距离杀伤武器"
 	quest.05EA527792F0F44E.quest_desc: [
 		"&6镰刃威能符文&r"
@@ -364,7 +384,7 @@
 	]
 	quest.07E7C74E2EA9FB8E.quest_subtitle: "永恒的盛宴"
 	quest.07E7C74E2EA9FB8E.title: "螺旋藻森林"
-	quest.07E84F32AFD0365F.quest_desc: ["&dWIP提醒&r：题外话：正常来说此BOSS后会添加新内容，但是因为产能原因...将在正式版推出后更新新内容，目前也有新内容但是量少"]
+	quest.07E84F32AFD0365F.quest_desc: [""]
 	quest.07E84F32AFD0365F.quest_subtitle: "“然后，我自然会向你展示，什么叫做力量”"
 	quest.07F1B2594FCCAF01.quest_desc: [
 		"&6敏捷符文&r"
@@ -412,15 +432,16 @@
 	quest.0973A81F39964B58.quest_subtitle: "魔宠召唤仪式"
 	quest.09BD7CB2DEA2CD89.quest_subtitle: "定制体验"
 	quest.09E68D57095A5F1D.quest_desc: [
-		"&7想要锻造自己的盔甲/武器/工具，首先需要制作蓝图。按住ctrl可以查看某一蓝图制作的物品可以安装哪些部件。"
+		"&7想要锻造自己的&6盔甲&7/&6武器&7/&6工具&7，首先需要制作&b&l蓝图&r&7。按住&2&lCTRL&r&7可以查看某一蓝图制作的物品可以安装哪些部件。"
 		""
-		"&7以剑为例，普通铁剑只有两个部件，剑刃和手柄，所以它只能打出6点的高额（？）伤害。但是查看剑蓝图就能发现，由蓝图制作的剑刃还能安装&e顶端升级、绑定结、覆层、握把&7整整四个部件，显然能带来巨量提升。"
+		"&7以&f剑&7为例，普通铁剑只有两个部件：&7剑刃和手柄&7，所以它只能打出&c6点&7的高额（？）伤害。但是查看&b&l剑蓝图&r&7就能发现，由蓝图制作的剑刃还能安装&d顶端升级&7、&d绑定结&7、&d覆层&7、&d握把&7整整&a四个部件&7，显然能带来巨量提升。"
 		""
-		"&7不同材料能制作的部位不同，有些能制作主要部件，有些则只能制作顶端升级等等。按住ctrl即可查看某一材料能制作什么部件。"
+		"&7不同材料能制作的部位不同，有些能制作&6主要部件&7，有些则只能制作&e顶端升级&7等等。按住&2&lCTRL&r&7即可查看某一材料能制作什么部件。"
 		""
-		"具体如何使用蓝图在“拼好剑详解”讲解。灵活使用U键查询配方也可以查看部件组装信息。"
+		"&7具体如何使用蓝图在&3“拼好剑详解”&7中讲解。灵活使用&b&lU键&r&7查询配方也可以查看部件组装信息。"
 	]
-	quest.09E68D57095A5F1D.title: "一切的开始"
+	quest.09E68D57095A5F1D.quest_subtitle: "邦邦卡邦"
+	quest.09E68D57095A5F1D.title: "锻造教程"
 	quest.0A12067C6B752CAC.quest_desc: ["&7借助最为神秘的海洋之心，海洋书架完成了蜕变，她的力量更为澎湃，但又未曾变的激烈。这个书架提供的&a位阶&7和&5阿卡纳&7是其前身的两三倍有余。不过海洋之心之力终究是柔和的，他并没有带来额外的&a位阶&7上限。毕竟凡事并不是十全十美，能做到如此已是不易。"]
 	quest.0A12067C6B752CAC.quest_subtitle: "神秘簇拥"
 	quest.0A12067C6B752CAC.title: "心之拥护"
@@ -521,6 +542,33 @@
 		"&e请注意，不要使用Extra Delight模组的铜质漏斗向储罐运输流体，会直接导致流体丢失损失物品。"
 	]
 	quest.0AD556BD2B2A47D2.quest_subtitle: "导出液体？导入液体？"
+	quest.0ADEACC84320DCC0.quest_desc: [
+		"&7精锻系统是 &6Silent Gear &7装备的&5进阶强化机制&7，通过装备的&b实战磨损&7来提升其&a品质&7。每次&c装备损坏&7都会积累&e经验&7，达到一定次数后&d精锻等级&7提升，为装备带来&3随机的属性加成&7。&r"
+		""
+		"&7&l核心机制：&r"
+		"&7精锻等级最高可达 &6V级&r"
+		"&7每次精锻等级提升需要积累&e特定的损坏次数&r"
+		"&7当对装备进行任何修改会导致精锻等级降低 &c2级&r"
+		"{@pagebreak}"
+		"&7每个词条独立生成，未进行&6精锻强度修正&7时加成值在 &a-25% &7到 &c+25% &7之间随机"
+		""
+		"&7同一属性可在&b不同等级&7重复出现，效果会&e叠加计算&7"
+		"&7同一等级内&c不会&7出现重复属性"
+		"&7装备最多可拥有 &d5种不同属性 &7的词条"
+		""
+		"&6精锻概率修正值&7"
+		"&7某些特殊材料可以为装备提供&b“精锻修正值”&7，影响精锻时的加成范围："
+		"&a正面修正值越高&7：出现正面加成的概率越高，加成上限越高"
+		"&c负面修正值越高&7：出现负面加成的概率越高，加成下限越低"
+		"&7修正值范围：&e-50 ~ +50"
+		""
+		"&6精锻强度修正值&7"
+		"&7某些特殊材料可以为装备提供&b“精锻修正值”&7，影响精锻时的加成范围："
+		"&a正面修正值越高&7：精锻出正面词条时可出现的上限越高"
+		"&c反面修正值越高&7：精锻出反面词条时可出现的上限越高"
+		"&7修正值范围：&e-50 ~ +50"
+	]
+	quest.0ADEACC84320DCC0.quest_subtitle: "打磨装备"
 	quest.0B0C47F37FDE6435.quest_desc: [
 		"&7魂织绸缎是一种轻盈而坚韧的材料，其中满是&6灵魂&r&7之类的东西。和形体一样，它天生就能阻断&d奥术能量&r&7。尽管其他材料也有此功效，&6魂织绸缎&r&7更易加工，起码比&8石头&r&7要好多了。"
 		""
@@ -532,7 +580,7 @@
 	quest.0B33B7CF2E127A4F.quest_desc: [
 		"&7旅途中常有大量物品需要收纳，用箱子存储虽然容量可观，但在某些场合却显得不够便利……"
 		""
-		"“走过路过不要错过，59你买不了吃亏，你买不了上当，女生自用99新存储组件一套，现在立刻下单还附赠16K存储方块一枚。你可千万不要小看这存储组件，平时放在包里一点点大，遇电变大变高，存存矿，存存垃圾，存存食物，非常方便啊。心动不如行动，快来抢购吧。”"
+		"“走过路过不要错过，你买不了吃亏，你买不了上当，女生自用99新存储组件一套，现在立刻下单还附赠16K存储方块一枚。你可千万不要小看这存储组件，平时放在包里一点点大，遇电变大变高，存存矿，存存垃圾，存存食物，非常方便啊。心动不如行动，快来抢购吧。”"
 	]
 	quest.0B33B7CF2E127A4F.quest_subtitle: "方便快捷"
 	quest.0B33B7CF2E127A4F.title: "AAA香霖堂旧物批发"
@@ -764,6 +812,7 @@
 		"&7可以将卷轴抄写至法术书，抄入的卷轴会消耗魔力释放，可以重复使用。"
 	]
 	quest.11C363982673E669.quest_subtitle: "攥录法术"
+	quest.11C4380FD58A7FDA.quest_subtitle: "有攻有防"
 	quest.11DCB93F9E3E9564.quest_desc: ["&7使刷怪笼刷出的生物没有任何行为（无AI）。"]
 	quest.11DCB93F9E3E9564.quest_subtitle: "批量脑白质切除"
 	quest.11E9AE8529E6FBF2.quest_subtitle: "村庄英雄"
@@ -974,6 +1023,7 @@
 	quest.1633AD29D81FB414.quest_subtitle: "神秘之水晶"
 	quest.1633AD29D81FB414.title: "自然的魔力稳定器"
 	quest.1675C48578D2D979.quest_desc: ["&7凋灵骷髅头与骷髅头均增加了合成配方，在想要击杀凋零但没有头颅时可以直接制作，不需要追着凋灵骷髅一直砍……"]
+	quest.1684A811A37D8C86.quest_subtitle: "击杀死者之王前"
 	quest.16FD71D5EBCE3C6A.quest_desc: [
 		"&6列车驾驶台&r"
 		""
@@ -1114,7 +1164,7 @@
 		""
 		"&8手稿边缘的笔记：它很灵活，但别指望它违反基础规则。&r"
 	]
-	quest.1A58667FA2440598.quest_desc: [""]
+	quest.1A58667FA2440598.quest_desc: ["后续任务线会重置...但是肯定不是这个时候"]
 	quest.1A58667FA2440598.quest_subtitle: "背起行囊"
 	quest.1A58667FA2440598.title: "原野拓荒"
 	quest.1A8CEE0746A74FC4.quest_subtitle: "阶段0"
@@ -1136,14 +1186,6 @@
 		"&7灼烈符文促使意识将其光辉与周遭事物分享，但后果如何不在考虑范围内；能将佩戴者造成的&e火焰伤害&r&7翻倍。&r"
 	]
 	quest.1AB5165BCAD5820E.quest_subtitle: "促进燃烧的脉动"
-	quest.1AC360E218A91528.quest_desc: [
-		"&a因为极端优化，启动游戏时概率发生崩溃，如不想发生此类情况，且能接受关闭部分优化项："
-		"&r"
-		"关闭："
-		"&7ImmediatelyFast （对于 1.18 到 1.21.4；禁用 ImmediatelyFast 的 hud_batching、font_atlas_resizing 和 fast_text_lookup，否则有概率引发崩溃；&r"
-	]
-	quest.1AC360E218A91528.quest_subtitle: "重启即可"
-	quest.1AC360E218A91528.title: "卡住了?"
 	quest.1B66EC1641E0B30A.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
 	quest.1B66EC1641E0B30A.quest_subtitle: "可合成"
 	quest.1B819E833413B729.title: "诡秘食尸鬼"
@@ -1203,6 +1245,7 @@
 	quest.1D3C94736A0C19AA.quest_desc: ["管理你存储网络中所有已配置的自动合成方案，随时进行物品的存取与调度。"]
 	quest.1D3C94736A0C19AA.quest_subtitle: "流水作业"
 	quest.1D7C2FBD7B33CA7A.quest_subtitle: "阶段1"
+	quest.1DBA0BF33C43D227.quest_desc: ["&dWIP提醒&r：题外话：正常来说此BOSS后会添加新内容，但是因为产能原因...将在正式版推出后更新新内容，目前也有新内容但是量少"]
 	quest.1DC249D36D54E164.quest_subtitle: "精妙造物"
 	quest.1DDF2D0C0D0D8DDA.quest_desc: ["&7飞行堡垒，可以在空中缓慢飞行并使用机载武器向下扫射，由于体型巨大，速度缓慢，机载武器也并不出色，在此也仅作介绍，并不推荐实际使用。"]
 	quest.1E1304B2BD351410.quest_desc: ["&7经典组合，历久弥新。储罐配合经验泵可以存储经验值，这样即便死亡也不会丢失经验。罐能存储的经验量会随背包堆叠数量变动，加装足够多的堆叠升级就可以储存巨量经验以备不时之需。"]
@@ -1225,6 +1268,19 @@
 		"&6记忆碎片&r"
 		"&7魔宠被遗忘的过去之残留，它们会指引你前往魔宠视为&b家园&r&7的地方。&r"
 	]
+	quest.1EC459CAACF854F3.quest_desc: [
+		"&c&l注意："
+		"&e可能会因为缺乏维护而导致属性过时，&a鳕鱼会尽量维护这个界面的！"
+		""
+		"&6&l提示："
+		"&7- &f整合包对 &eJEI &f（虽然是 &eEMI&f）做了调整与兼容，你可以在 &bEMI &f中搜索材料拥有的&d词条&f，来查找所有拥有此词条的物品。"
+		""
+		"&7- &f对材料按 &e&lU &f（默认键）可查看材料的 &eJEI &f界面。"
+		""
+		"&7- &f对材料武器按 &e&lShift + Ctrl &f可直接查看武器上的&d词条特性&f。"
+	]
+	quest.1EC459CAACF854F3.quest_subtitle: "于此观看所有推荐的材料的属性与数值"
+	quest.1EC459CAACF854F3.title: "材料推荐"
 	quest.1F113AE0032F16AA.quest_desc: ["&7自动拾取启动，有时可以拯救掉落物，毕竟真的吸得很快，也可以尝试吸附可能在附近但是找不到的掉落物。"]
 	quest.1F113AE0032F16AA.quest_subtitle: "不好意思哈，自动拾取忘关了"
 	quest.1F38C534465F33BC.quest_desc: [
@@ -1388,7 +1444,7 @@
 		"&6真理之镜&r"
 		"&7用于使伪装的&d幻术师&r&7魔宠显形。可通过&6仪式&r&7获得。&r"
 	]
-	quest.21F608E19AD6FDF6.quest_desc: ["&7目前仅可对部分基础材料进行回收再利用。以现有技术，尚无法拆解结构更复杂的材料。或许未来能习得更高深的拆解技艺。"]
+	quest.21F608E19AD6FDF6.quest_desc: ["&7可对&6部分基础材料&7进行回收再利用，可以将用剩下的&b合金&7丢入其中，会尝试进行拆解来&a随机返还&7原材料，若&6原料满足&7，则将材料&e全部返还&7。"]
 	quest.21F608E19AD6FDF6.quest_subtitle: "回收利用"
 	quest.221645B2BE16D7E1.quest_desc: [
 		"&6勘探工条约&r"
@@ -1422,6 +1478,8 @@
 		"&6法袍附魔&r"
 		"&7玩家也可以将部分模组添加的法袍（如&c瘟疫术士大衣&r&7、&c血腥教徒法袍&r&7等）通过类似的方式注入法术。玩家穿着注入了法术的法袍时，可以释放注入的法术。不过，&e流浪法师法袍&r&7和&e惊悚南瓜法袍&r&7无法进行此操作。&r"
 	]
+	quest.23149F55628A27CE.quest_desc: ["5*5*5挖掘范围，你就用吧，现在是大淘金时代！"]
+	quest.23149F55628A27CE.quest_subtitle: "真正的范围挖掘"
 	quest.2331CCFEF5A9EEE5.quest_desc: [
 		"&6孤身德鲁伊条约&r"
 		""
@@ -1651,6 +1709,7 @@
 		""
 		"&7一种需经过多道精细工序方能制成的高级内部组件，常用于&e动力臂&7等复杂机械的组装。&r"
 	]
+	quest.2A13C5752A65E4B7.quest_subtitle: "你真的要在阶段1把他憋出来吗"
 	quest.2A50D870F054BB1F.quest_subtitle: "为什么你还在这里？"
 	quest.2A8629B66F128293.quest_desc: ["&7不多说了，好听，爱听。"]
 	quest.2A8629B66F128293.quest_subtitle: "自带出场音效"
@@ -1890,7 +1949,6 @@
 	quest.30039833D92481A3.quest_subtitle: "无尽存储2.0"
 	quest.303BD0ED6A5699E1.quest_subtitle: "所有的美味皆从此刻开始!"
 	quest.303BD0ED6A5699E1.title: "一口锅？"
-	quest.305A6FFD7FD5684F.title: "中期-击败死者之王"
 	quest.307FD783B49CA47C.title: "发现被诅咒的金字塔"
 	quest.309D32324902DF18.quest_subtitle: "食物价值>8"
 	quest.309D32324902DF18.title: "正餐回收 x10"
@@ -1998,9 +2056,8 @@
 	]
 	quest.31B0A26B1374A322.quest_subtitle: "圆滚滚"
 	quest.31B0A26B1374A322.title: "星火鸟"
-	quest.31CD959C475E5714.quest_desc: ["此处推荐仅代表当前版本，且不保证全面，随游戏内容更新推进随时可能变化，仅供参考。"]
-	quest.321B703A9E877386.quest_subtitle: "&e部分词条将无效化，但是新增一些极端词条(WIP)"
-	quest.321B703A9E877386.title: "&e\"静听深渊中亵渎的低语\"(WIP)"
+	quest.31CD959C475E5714.quest_desc: ["此处推荐仅代表旧版本，且不保证全面，随游戏内容更新推进随时可能变化，仅供参考。"]
+	quest.31CD959C475E5714.quest_subtitle: "过时的艺术..."
 	quest.3220FA89E7935BC3.quest_desc: [
 		"&7只是平常的下界要塞。"
 		"&7要塞的战利品箱增加了一些新物品，值得搜刮一番，其他能产出下界要塞战利品的结构自然也随之飞升，价值相应提高。"
@@ -2089,6 +2146,10 @@
 	]
 	quest.339C3EB0CB099097.quest_subtitle: "会心之针"
 	quest.339C3EB0CB099097.title: "符文工艺"
+	quest.340B5B4BFE9F1195.quest_subtitle: "如果被罪孽所吞噬，就会成为代表罪孽的模样"
+	quest.340B5B4BFE9F1195.title: "七罪圣物"
+	quest.346013B6D966C7F2.quest_desc: ["百花齐放！"]
+	quest.346013B6D966C7F2.quest_subtitle: "通常在击败骷髅王后才能解锁该阶段的蓝图"
 	quest.3462310EEE3AC2DF.quest_desc: ["会试图把容器中的物品输入"]
 	quest.3462310EEE3AC2DF.quest_subtitle: "向RS网络输入物品或流体"
 	quest.34AFC6414A805C2D.quest_desc: ["恢复方法:食用金苹果，附魔金苹果，GoodApple"]
@@ -2299,6 +2360,8 @@
 		"&7防御符文促使形体坚守自身，令佩戴者的&a护甲值&r&7提升大约五分之一。&r"
 	]
 	quest.3890E1D60D9F389F.quest_subtitle: "促进坚守的脉动"
+	quest.38F479D74D519A6E.quest_desc: ["&7如果要大量使用，可能需要造一把&b实用的小刀&7..."]
+	quest.38F479D74D519A6E.quest_subtitle: "简易工具"
 	quest.39980DF0631D9B6C.quest_desc: [
 		"&6腐烂苦修条约&r"
 		""
@@ -2379,6 +2442,7 @@
 	]
 	quest.3A5DD56949CF4827.quest_subtitle: "整合包默认按键已经配置好了，你只需要找到按键绑定，并点击（重置所有按键）即可"
 	quest.3B0E439056FB5B0B.quest_desc: ["&7背包可以加装多种升级，升级槽位数量与背包的等级直接相关，钻石背包有五个升级槽位，而下界合金背包有七个，所以提高背包等级才能加装更多升级。"]
+	quest.3B0E439056FB5B0B.quest_subtitle: "升级你的背包！"
 	quest.3B7226A9387FD816.quest_subtitle: "受诅之花"
 	quest.3BB2417F411ABDDE.quest_desc: [
 		"{\"text\":\"\",\"extra\":[{\"text\":\"重要的合成材料\",\"color\":\"gold\"}]}"
@@ -2386,6 +2450,7 @@
 		"{\"text\":\"\",\"extra\":[{\"text\":\"如果你希望制作一些\",\"color\":\"gray\"},{\"text\":\"BOSS的召唤物\",\"color\":\"red\"},{\"text\":\"，或是一些\",\"color\":\"gray\"},{\"text\":\"新奇的材料\",\"color\":\"aqua\"},{\"text\":\"，那么你绝对会需要它的。\",\"color\":\"gray\"}]}"
 	]
 	quest.3BB2417F411ABDDE.quest_subtitle: "初窥门径"
+	quest.3BBDB096C8442119.quest_subtitle: "我是火！"
 	quest.3C4F9B874C336EB6.quest_desc: [
 		"# &cBUG反馈渠道 &r"
 		""
@@ -2433,8 +2498,6 @@
 		"&7将魔宠具现化到世界中的核心材料。此物品通过在&6起源之岛&r&7上用空瓶捕捉&8失落灵魂&r&7获得。瓶装的灵魂可以重新释放回野外。&r"
 	]
 	quest.3CDB29B0059175A8.quest_subtitle: "迷失的灵魂"
-	quest.3D29D3316A8362E6.quest_desc: ["&7一般用于敲粉，你需要有一把锤子才能这么做，把要敲的材料放置在石砧上，然后用锤子敲它，就能制作粉末，这些粉末一般有特殊的用途，等你要用到的时候就会知道。"]
-	quest.3D29D3316A8362E6.quest_subtitle: "原始工艺"
 	quest.3D3CC5601B817E4D.quest_desc: [
 		"&7我在荒原上走了很久，直到眼前出现一道不该存在于这里的裂隙——空气像被撕开又勉强缝合的旧伤疤，边缘泛着细微的白光。"
 		""
@@ -2492,6 +2555,7 @@
 	quest.3DFF41190EEED602.quest_subtitle: "无尽存储"
 	quest.3F1E59D47DB55A82.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
 	quest.3F1E59D47DB55A82.quest_subtitle: "可合成"
+	quest.3F36E58182CFD1EA.quest_subtitle: "滋滋"
 	quest.3F4F2D1D8EC995BA.quest_desc: [
 		"&7红石比较器会让刷怪笼可以受到红石控制。"
 		"&7加装此更改后，刷怪笼只会在收到红石信号的情况下开始工作。为自动化怪物工厂提供了更加直接的控制方式。"
@@ -3145,6 +3209,7 @@
 		"&7暮眼鱼会在仇恨目标离开自身所在水域后放弃追逐。&r"
 	]
 	quest.4EF6614B03841586.title: "暮眼鱼"
+	quest.501A9D4E77A9D0EA.quest_desc: ["不能有人把他当灵魂镰刀了吧"]
 	quest.501A9D4E77A9D0EA.quest_subtitle: "农民伯伯的好帮手"
 	quest.501AB9740C6C4447.quest_desc: [
 		"&6强心符文&r"
@@ -3468,7 +3533,33 @@
 	]
 	quest.56B761C2894F3C2E.quest_subtitle: "奥术档案馆"
 	quest.56B761C2894F3C2E.title: "精魂存储"
-	quest.56CB359C8D5426A3.quest_desc: ["请注意这里是设置难度，N1并不是初始难度，想消除难度设置请使用下面的&6清理难度设置&r"]
+	quest.56CB359C8D5426A3.quest_desc: [
+		"&7请注意这里是设置难度，&cN1&7并不是初始难度，想消除难度设置请使用下面的&6清理难度设置&r"
+		""
+		"&7. 基础游戏难度（世界难度）"
+		""
+		"&6经典&7：属性倍率 &a1.0 &7倍"
+		"&6专家&7：属性倍率 &a1.2 &7倍"
+		"&6大师&7：属性倍率 &a1.5 &7倍 + 额外 &b10 &7格追踪范围"
+		""
+		"&6N1&7：生命/护甲/韧性 &a2&7倍，攻击 &a1.2&7倍"
+		""
+		"&6N2&7：生命/护甲/韧性 &a3&7倍，攻击 &a1.4&7倍"
+		""
+		"&6N3&7：生命/护甲/韧性 &a4&7倍，攻击 &a1.6&7倍"
+		""
+		"&6N4&7：生命/护甲/韧性 &a5&7倍，攻击 &a1.8&7倍"
+		""
+		"&6N5&7：生命/护甲/韧性 &a6&7倍，攻击 &a2&7倍"
+		""
+		"&7最终属性 = &6游戏难度倍率 &7× &6玩家阶段倍率&7"
+		""
+		"&c该规则仅对怪物生效&7"
+		""
+		"&7以玩家为中心&b129格&7范围内检测难度"
+		""
+		"&7取&6最高阶段难度&7的玩家作为基准"
+	]
 	quest.56CB359C8D5426A3.quest_subtitle: "踏入此门者，当舍去一切希望"
 	quest.57045442B4763EC9.quest_subtitle: "游泳健将"
 	quest.571979CF7DC3291C.quest_desc: [
@@ -3522,6 +3613,8 @@
 	quest.58DE58D4F8290C1C.title: "魔法卷轴"
 	quest.58FD71F9C065E1AC.quest_desc: ["&7搏一搏？&r"]
 	quest.58FD71F9C065E1AC.quest_subtitle: "随机法术+随机等级"
+	quest.5914AF3C360016D7.quest_desc: ["或许很强，谁知道呢"]
+	quest.5914AF3C360016D7.quest_subtitle: "毕业模板"
 	quest.591B10BC5FA20823.quest_desc: ["&7可用于寻找定位古城的眼睛。尽管深暗之域的生成存在一定规律，有深暗之域也不一定会有古城，定位手段便应运而生。古城结构相较于原版变化较大，更加开阔战利品更加丰厚，但幽匿尖啸体也可能隐藏在某些阴暗的角落，还需小心。"]
 	quest.593ABE7FAC454B34.quest_desc: [
 		"&6病痛祓除符文&r"
@@ -3613,6 +3706,7 @@
 	quest.5CF40BE797380E84.quest_subtitle: "收获"
 	quest.5CF40BE797380E84.title: "任意 镰刀"
 	quest.5D095029A0B8B414.quest_subtitle: "mcmod.cn"
+	quest.5DA66C973C8C8C39.quest_subtitle: "通常在击杀死者之王后才能解锁该阶段的蓝图"
 	quest.5DEF70A03509B309.quest_desc: [
 		"&7在神化，你的刷怪笼是高度自定义的，你可以根据需求自行调节他。&7调节分为两个方面：刷怪目标调整和刷怪笼属性调整。"
 		""
@@ -3669,6 +3763,15 @@
 		"&7异端符文会拆解魔法，以此&c静默&r&7敌人，与侵蚀权杖类似。这种效果会削弱它们的&e精魂魔法&r&7，效果本身也可叠加至完全压制对手的&c魔法能力&r&7。&r"
 	]
 	quest.5F1C1AA992472C3D.quest_subtitle: "毁灭创造之物"
+	quest.5F1DF9EB50535CA1.quest_desc: [
+		"&f为了制作你的第一把&b寂静武器&f！你需要先获得&e蓝图&f或是&e模板&f。&r"
+		""
+		"&7在还没大量获取蓝图的时候，你需要一个&3石砧&7来制作模板。&r"
+		""
+		"&7一般用于敲粉，你需要有一把&b锤子&7才能这么做。把要敲的材料放置在&6石砧&7上，然后用&b锤子&7敲它，就能制作&a粉末&7。这些&a粉末&7一般有特殊的用途，等你要用到的时候就会知道。"
+	]
+	quest.5F1DF9EB50535CA1.quest_subtitle: "准备工作"
+	quest.5F1DF9EB50535CA1.title: "一切的开始"
 	quest.5F253340FE9F4FCF.quest_desc: [
 		"&7解锁了诸多新材料，也是时候给装备更新换代了，尝试更多合金组合，根据需求挑选材料。"
 		""
@@ -3720,6 +3823,7 @@
 		"{\"text\":\"\",\"extra\":[{\"text\":\"这方天地所谓的\",\"color\":\"gray\"},{\"text\":\"“魔法”\",\"color\":\"aqua\"},{\"text\":\"，或许就藏于其间，静候一把钥匙。\",\"color\":\"gray\"}]}"
 	]
 	quest.60C42244ED37BA5F.quest_subtitle: "魔法造物"
+	quest.60CCCAA11DDEA68F.quest_subtitle: "努努力应该能憋出来的...吧？"
 	quest.61365E0F2831F348.quest_desc: [
 		"&7需要进入星光维度寻找冰封魔法森林获取，可以作为握柄材料，对低攻速武器加成不错。"
 		""
@@ -4247,18 +4351,6 @@
 	quest.6E25E82DBD18D2C8.quest_subtitle: "&c世界将陷入永恒的黑夜"
 	quest.6E25E82DBD18D2C8.title: "&c\"长夜无光下永恒的旅途\""
 	quest.6E995B7F0867CE19.quest_subtitle: "魔宠召唤仪式"
-	quest.6EFBE085639D2967.quest_desc: [
-		"&7&e模具基板&r&7可用于制造各类武器部件的基底，虽不如可重复使用的&e蓝图&7便利，但胜在造价低廉、操作简便。&r"
-		""
-		"&7与模板基板相比，&e蓝图&7是一种更为先进的部件制作工具。由于能够反复使用而无需消耗，这类工具深受各地工匠的青睐，但需要蓝色染料和纸制作，材料稍显麻烦。"
-		""
-		"&e蓝图簿&7可以存储巨量蓝图，并且能作为蓝图使用，打开后可以切换至任意一张存储在里面的蓝图。没存蓝图的时候不能用……"
-		"{@pagebreak}"
-		"&7&e模板&r&7类似于蓝图，但只能使用一次。&e蓝图&r&7可以无限次使用。如果你还没有纸或蓝色染料来合成蓝图纸，模板是个不错的选择。&r"
-		""
-		"&7模板需要&e模板基板&r&7。模板基板需要&e刀&r&7或&e匕首&r&7以及&e石砧&r&7来制作。将原木放在石砧上，然后用刀右键点击。有时其他模组的刀也可能有效。你可能还没有刀蓝图，所以需要先合成一把&c粗制小刀&r&7。&r"
-	]
-	quest.6EFBE085639D2967.title: "模具基板/空白蓝图"
 	quest.6F1B0D7041FBCD4B.quest_desc: [
 		"&6巨岩之护符文&r"
 		""
@@ -4576,13 +4668,13 @@
 	quest.76BD72A25B241E0C.quest_subtitle: "更为均衡的下界书架"
 	quest.76BD72A25B241E0C.title: "无序扩展"
 	quest.770E6D9F52724FCC.quest_desc: [
-		"&7将多种同类型的材料融合在一起，可以制作复合材料，它的性质相当复杂，需要多尝试多研究寻找合适的搭配。"
+		"&7将多种同类型的材料融合在一起，可以制作&d复合材料&7，它的性质相当&b复杂&7，需要多尝试多研究寻找合适的&a搭配&7。"
 		""
-		"&7首先，复合材料可以继承生前拥有的所有词条，这意味着你可以利用它大量堆叠词条来制作饰品，饰品是只看词条的，其他负面影响基本可以忽略不计，而巨量词条的堆叠可以极大提升饰品的性能。"
+		"&7首先，复合材料可以继承生前拥有的所有&6词条&7，这意味着你可以利用它大量&d堆叠词条&7来制作&5饰品&7。&5饰品&7是只看&6词条&7的，其他负面影响基本可以忽略不计，而&d巨量词条&7的堆叠可以极大提升&5饰品&7的性能。"
 		""
-		"&7其次，如果想要复合材料攻击伤害尽可能高， 就需要在合成时加入高伤害的材料，例如古城搜寻得到的黑曜石锭。"
+		"&7其次，如果想要复合材料攻击伤害&c尽可能高&7，就需要在合成时加入&c高伤害&7的材料，例如古城搜寻得到的&6黑曜石锭&7。"
 		""
-		"&7最后，复合材料能制作的部件是有讲究的，例如你想要使用复合材料制作覆层，那么合成复合材料的原材料必须全部都能制作覆层，这样产出的复合材料也能制作覆层，且属性也会综合计算。只要有任意一个原材料不能用于制作覆层，那么产出的复合材料也无法制作覆层。其他部位也同理。"
+		"&7最后，复合材料能制作的&b部件&7是有讲究的。例如你想要使用复合材料制作&b覆层&7，那么合成复合材料的原材料必须&e全部&7都能制作&b覆层&7，这样产出的复合材料也能制作&b覆层&7，且属性也会综合计算。只要有&c任意一个&7原材料不能用于制作&b覆层&7，那么产出的复合材料也无法制作&b覆层&7。其他&b部位&7也同理。"
 	]
 	quest.770E6D9F52724FCC.title: "复合材料"
 	quest.773AC14F2AF8822B.quest_desc: [
@@ -4814,6 +4906,7 @@
 	quest.7BD9DC7DB2278AA5.quest_subtitle: "朴素的高伤害"
 	quest.7BF7E53DAB408397.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"我知道你可能看见这个mod的\",\"color\":\"gray\"},{\"text\":\"眼睛\",\"color\":\"red\"},{\"text\":\"头大，但是现在他们全部可以被\",\"color\":\"gray\"},{\"text\":\"合成\",\"color\":\"green\"},{\"text\":\"。\",\"color\":\"gray\"}]}"]
 	quest.7BF7E53DAB408397.quest_subtitle: "可合成"
+	quest.7C09F05734B44F6A.quest_subtitle: "哈~基~马~路~哟~"
 	quest.7C227ABAEC91DA58.quest_subtitle: "虽不如其他的护甲的防御力高，但是对法术相关属性特攻"
 	quest.7C74D47B9ED97737.quest_desc: [
 		"&7权限管理器是一个可以存储权限卡的方块"
@@ -4844,7 +4937,13 @@
 	]
 	quest.7C7C7734793AB866.quest_subtitle: "稳定下来"
 	quest.7CACDAC57F697371.quest_subtitle: "嗅矿者"
-	quest.7CB11EBD34BA84FB.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"如果你愿意，甚至可以\",\"color\":\"gray\"},{\"text\":\"击败\",\"color\":\"red\"},{\"text\":\"那些比你\",\"color\":\"gray\"},{\"text\":\"弱小得多\",\"color\":\"green\"},{\"text\":\"的生物...\",\"color\":\"gray\"}]}"]
+	quest.7CB11EBD34BA84FB.quest_desc: [
+		"{\"text\":\"\",\"extra\":[{\"text\":\"如果你愿意，甚至可以\",\"color\":\"gray\"},{\"text\":\"击败\",\"color\":\"red\"},{\"text\":\"那些比你\",\"color\":\"gray\"},{\"text\":\"弱小得多\",\"color\":\"green\"},{\"text\":\"的生物...\",\"color\":\"gray\"}]}"
+		""
+		"&7当然，要小心的是，随着你击杀&cBOSS&7的数量，你的&6位阶&7也会随之增长..."
+		""
+		"&a食用&6Good Apple&a可以降低&c1阶&6位阶&7（前提是你有）"
+	]
 	quest.7CB11EBD34BA84FB.quest_subtitle: "总之，在面对BOSS前，先让我们挑几个倒霉蛋练练手"
 	quest.7CB11EBD34BA84FB.title: "练手"
 	quest.7CDF0A87C605E833.quest_subtitle: "魔宠召唤仪式"
@@ -5200,7 +5299,9 @@
 	task.02C09DDCAF029E1C.title: "场景：村落"
 	task.02E724791B98221B.title: "任意 头颅"
 	task.03566662B2722669.title: "法术书 模板"
+	task.036A59E301E473EE.title: "飞剑"
 	task.039FE05CAF91D22E.title: "灌注书架"
+	task.056D9A1558C41C1B.title: "至臻"
 	task.05D692FEA8B7F8C3.title: "绞肉机 模板"
 	task.05EC35C7459C4EE5.title: "场景：村落"
 	task.061EADF2EDD58507.title: "点击继续"
@@ -5208,9 +5309,12 @@
 	task.064BC8413AD5B904.title: "存储方块"
 	task.064EAF4F0071143A.title: "重铸锤"
 	task.068525FE9756E31F.title: "材料推荐"
+	task.06C226A9D7261053.title: "裂界锚刃 模板"
 	task.070EC456CE03EABE.title: "戈伯燃料"
+	task.082C8F3596B9ECF6.title: "虚空突击尖炮"
 	task.085298BE6D8F3A4A.title: "末地戈伯燃料"
 	task.08D8DC923400C928.title: "战锤 模板"
+	task.09262BC2BB31C726.title: "诅咒之弓 模板"
 	task.095F2DF6B87270F4.title: "场景：村落"
 	task.09795E1349B15464.title: "锯 模板"
 	task.0A1A90A2685174D7.title: "Tips ：如何使用"
@@ -5225,7 +5329,6 @@
 	task.107CD75BA2850AF5.title: "胸甲 模板"
 	task.10F524062F93326B.title: "阿卡那"
 	task.1241D4845D2FA0FE.title: "任意 卷轴"
-	task.131708AD4D3A2E8E.title: "法杖 模板"
 	task.13419554E1773A09.title: "湮灭者 模板"
 	task.134BFF78A7F20CA9.title: "凋灵山庄"
 	task.137C3EB186FD1877.title: "场景：地下墓穴"
@@ -5235,7 +5338,7 @@
 	task.14F00C7BD0F376AF.title: "弩 模板"
 	task.1515843B90E779DE.title: "任意 疾风设备"
 	task.1516D6057A163CD8.title: "场景：混乱荒野"
-	task.1705E46627ADF4CB.title: "法术书 模板"
+	task.1796DE6EC8508FE0.title: "巨剑"
 	task.17C489799E4E8BE8.title: "选择奖励"
 	task.17D165E1F90F67DA.title: "拾荒者"
 	task.17FD4724C406FFAA.title: "匕首 模板"
@@ -5251,6 +5354,7 @@
 	task.1CE591BED0249B67.title: "任意 食物"
 	task.1CE99DF26C34AD77.title: "灵魂镰刀 模板"
 	task.1E1639DB2A1EB27B.title: "法袍靴子 模板"
+	task.1EC51CF20249F8E2.title: "七罪圣物"
 	task.201E6C48702846AC.title: "手镯 模板"
 	task.20E752F817977436.title: "重型靴子 模板"
 	task.2168A7B0CEA44A59.title: "量子化"
@@ -5272,8 +5376,10 @@
 	task.2D2AAB7B62B6E1EC.title: "关于村民"
 	task.2D51A4DF6E0A68BB.title: "无线访问点"
 	task.2DE152DADBD1AF23.title: "守门人"
+	task.2DE829FF51CE080F.title: "裂界锚刃 模板"
 	task.2E5C0ED989A1F7E3.title: "发现：下界堡垒"
 	task.2E67FAD790EF983F.title: "无尽奥秘"
+	task.2EA26F22192ECD45.title: "阶段II"
 	task.2EDE23B58CA58D2A.title: "&6魔法精华&r"
 	task.308969B113784A45.title: "咕哇！是bug！"
 	task.30E9B4F107737CFF.title: "位阶"
@@ -5296,10 +5402,12 @@
 	task.3A8109644A12D03B.title: "建筑棒"
 	task.3BAA6B1E059DB8D6.title: "锅炉"
 	task.3BBEAE77629AD44D.title: "&6护甲板&r"
+	task.3BDD82F5E5C05984.title: "武器选择"
 	task.3CBB932AAD6CC7EA.title: "任意 宝典"
 	task.3D218C514EAC6367.title: "开掘铲 模板"
 	task.3DE2898A1A9A4C07.title: "法袍长袍 模板"
 	task.3E1F111ADD777D77.title: "Any #eternal_starlight:yeti_fur"
+	task.3ED2718D6CB139B6.title: "阶段III"
 	task.3F63C56803BA4F6F.title: "勘探锤 模板"
 	task.3F853F214743B9E6.title: "Any #alshanex_familiars:familiar_trinkets"
 	task.40B3453CF78E2E79.title: "往日的繁荣"
@@ -5311,7 +5419,9 @@
 	task.441EFDF6459ACCB4.title: "锹 模板"
 	task.44677F03D2145DD9.title: "鞘翅 模板"
 	task.449C68F643211A8F.title: "任意 常规升级"
+	task.44D26AC68A5ADCDE.title: "焚灭者"
 	task.4523017FBAED20D8.title: "任意 堆叠升级"
+	task.4570A76582E48E53.title: "远古之矛"
 	task.4589838CDC8B4082.title: "靴子 模板"
 	task.45910B0D3AD5DF52.title: "补货升级"
 	task.45AB44FAD7068F5E.title: "击杀10只生物"
@@ -5330,6 +5440,7 @@
 	task.4B132C18D9C2E7DB.title: "&6生命果实&r"
 	task.4BF8BB7049344BF9.title: "锄 模板"
 	task.4C40759DAAA9C3E7.title: "战戟 模板"
+	task.4CF4B175C8CDB92F.title: "引雷针"
 	task.4D216882B37E2284.title: "焰形剑 模板"
 	task.4E5EDBD8AEB48E9E.title: "Any #malum:scythe"
 	task.4E656DDCE29C8902.title: "项链 模板"
@@ -5369,6 +5480,7 @@
 	task.62700C9E1399D758.title: "任意 魔宠主人饰品"
 	task.63234A766C567E00.title: "场景：地下墓穴"
 	task.6344C03C91E6B173.title: "观察天赐傀儡"
+	task.6431B800F3788F91.title: "机制：精锻"
 	task.6478174E99B96FA8.title: "中继器"
 	task.64A308976F77F050.title: "法袍兜帽 模板"
 	task.661A96A3B20665DE.title: "访问：下界"
@@ -5387,6 +5499,7 @@
 	task.6E37A78A24013057.title: "下界戈伯燃料"
 	task.6EE54064FF25F094.title: "任意 耐火砖"
 	task.6EEBB3F381DA8C3B.title: "任意 信波装置"
+	task.6F84E90B71AF0334.title: "雷霆之锚"
 	task.7032206EEBFC489D.title: "正餐回收"
 	task.70D73BEBDA8C57DA.title: "七罪侵蚀"
 	task.712D5B27F0D68E23.title: "如何更改刷怪笼？"
@@ -5394,6 +5507,7 @@
 	task.719C398B250CFE55.title: "关于神化"
 	task.7272CB9544A4E5F0.title: "场景：混乱荒野"
 	task.72BBA8FCDD81B6AA.title: "三叉戟 模板"
+	task.72CBAB38AA1B3AA1.title: "阶段一"
 	task.73165000CF6C2D80.title: "任意 木头"
 	task.735FCCA157A46245.title: "难度设置"
 	task.737ECCA212D4D8BA.title: "结构"
@@ -5411,9 +5525,9 @@
 	task.7BD801F485623EC0.title: "钓鱼竿 模板"
 	task.7CA1AE616D29882C.title: "探索"
 	task.7CCEF302E660A068.title: "须知"
+	task.7D4E51A5C3188A6E.title: "天杀星刀 模板"
 	task.7DAC01F814C93117.title: "镐尖斧 模板"
 	task.7E6571DCE7F5F2D6.title: "Any #malum:soulwoven_pouch_efficient"
 	task.7E73F2D97C765D46.title: "Furioso 模板"
 	task.7E842FF6C4E736C0.title: "场景：传送门废墟"
-	task.7FC73AE74EFE0053.title: "模具基板/蓝图"
 }

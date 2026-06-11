@@ -5,10 +5,7 @@
 	filename: "566973DCC685511A"
 	group: "17FDF36D1B965C72"
 	icon: {
-		components: {
-			"ftbquests:icon": "apothic_enchanting:items/infused_breath"
-		}
-		id: "ftbquests:custom_icon"
+		id: "apothic_enchanting:infused_breath"
 	}
 	id: "566973DCC685511A"
 	order_index: 5

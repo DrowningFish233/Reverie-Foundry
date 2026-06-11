@@ -120,6 +120,7 @@
 					id: "eternal_starlight:aethersent_golem_spawn_egg"
 				}
 				id: "6344C03C91E6B173"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:aethersent_golem"
@@ -439,6 +440,7 @@
 			id: "31B0A26B1374A322"
 			tasks: [{
 				id: "1906DFA309A71A0F"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:starfire_bird"
@@ -467,6 +469,7 @@
 			id: "28F42F3025DEB18C"
 			tasks: [{
 				id: "4CD3EEE828C30EEA"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:crystallized_moth"
@@ -506,6 +509,7 @@
 			id: "6ABFDDD6E155A37F"
 			tasks: [{
 				id: "17ECA47BA56B5E26"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:shadow_snail"
@@ -534,6 +538,7 @@
 			id: "7CEF4D8E514066A7"
 			tasks: [{
 				id: "7E1E0B70A8B3F7DE"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:rookfish"
@@ -573,6 +578,7 @@
 			id: "44FF46EF1BE66093"
 			tasks: [{
 				id: "506EE35DB815425F"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:yeti"
@@ -590,6 +596,7 @@
 			id: "0C1EFCAED337180F"
 			tasks: [{
 				id: "1214E8000DCE4CD6"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:aurora_deer"
@@ -618,6 +625,7 @@
 			id: "67D8839DF18183B2"
 			tasks: [{
 				id: "3D2940FF48074FA2"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:luminofish"
@@ -646,6 +654,7 @@
 			id: "008A75CC21BEA1D0"
 			tasks: [{
 				id: "0B7A28C66D9152FD"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:luminaris"
@@ -663,6 +672,7 @@
 			id: "4EF6614B03841586"
 			tasks: [{
 				id: "6180C96CF2DAB83E"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:twilight_gaze"
@@ -680,6 +690,7 @@
 			id: "2E49C6ACDB5A84E2"
 			tasks: [{
 				id: "4E1D22C84C2D50D2"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:grimstone_golem"
@@ -697,6 +708,7 @@
 			id: "558E23816B266EF8"
 			tasks: [{
 				id: "027B425B8BE425F2"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:gleech"
@@ -725,6 +737,7 @@
 			id: "46B09EB249B0D6E0"
 			tasks: [{
 				id: "4BAB05B54EF4A00D"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:lonestar_skeleton"
@@ -742,6 +755,7 @@
 			id: "7B098F5DB49DB51F"
 			tasks: [{
 				id: "4BA5672320F9A09D"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:nightfall_spider"
@@ -781,6 +795,7 @@
 			id: "085ED7F06792B829"
 			tasks: [{
 				id: "7CC10755F92DA022"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:freeze"
@@ -798,6 +813,7 @@
 			id: "2808547613BD84C8"
 			tasks: [{
 				id: "49EC0603797B78CD"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:tangled"
@@ -815,6 +831,7 @@
 			id: "2218345B2D47B183"
 			tasks: [{
 				id: "57AF6099DA42A830"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:creteor"
@@ -843,6 +860,7 @@
 			id: "6A8313927B15ECEE"
 			tasks: [{
 				id: "5365C59DF8B1087B"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:thirst_walker"
@@ -871,6 +889,7 @@
 			id: "1B819E833413B729"
 			tasks: [{
 				id: "674755812C305070"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:stranghoul"
@@ -888,6 +907,7 @@
 			id: "0218EB7431BC6CBD"
 			tasks: [{
 				id: "1F52013968314596"
+				observation_type: "entity_type"
 				observe_type: 5
 				timer: 0L
 				to_observe: "eternal_starlight:zombified_ratlin"

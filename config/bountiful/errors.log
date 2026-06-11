@@ -1,0 +1,19 @@
+WRN: Pool 'chef_rews' has been loaded, but is not attached to any existing data! This is probably a configuration error.
+* If you intended to add this data to an existing Pool, please use an existing Pool name instead of 'chef_rews'.
+* Did you mean to use the pool name 'fletcher_rews' instead of 'chef_rews'?
+* Otherwise, please add 'chef_rews' to a Decree.
+* NOTE: This data will not show up in game until one of the above fixes is made.
+WRN: Pool 'carpenter_objs' has been loaded, but is not attached to any existing data! This is probably a configuration error.
+* If you intended to add this data to an existing Pool, please use an existing Pool name instead of 'carpenter_objs'.
+* Did you mean to use the pool name 'butcher_objs' instead of 'carpenter_objs'?
+* Otherwise, please add 'carpenter_objs' to a Decree.
+* NOTE: This data will not show up in game until one of the above fixes is made.
+WRN: Pool 'carpenter_rews' has been loaded, but is not attached to any existing data! This is probably a configuration error.
+* If you intended to add this data to an existing Pool, please use an existing Pool name instead of 'carpenter_rews'.
+* Otherwise, please add 'carpenter_rews' to a Decree.
+* NOTE: This data will not show up in game until one of the above fixes is made.
+WRN: Pool 'chef_objs' has been loaded, but is not attached to any existing data! This is probably a configuration error.
+* If you intended to add this data to an existing Pool, please use an existing Pool name instead of 'chef_objs'.
+* Did you mean to use the pool name 'fletcher_objs' instead of 'chef_objs'?
+* Otherwise, please add 'chef_objs' to a Decree.
+* NOTE: This data will not show up in game until one of the above fixes is made.

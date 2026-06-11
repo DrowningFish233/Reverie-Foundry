@@ -44,6 +44,8 @@
                 "level_hint": "3",
                 "name": "diamond/钻石"
             },
+            "forge_positive_chance": -5,
+            "forge_power": 10,
             "magic_armor": 4.0,
             "magic_damage": 1.0,
             "spell_slots": 4,

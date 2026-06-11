@@ -1782,3 +1782,14 @@ function executeUltimine(player, startPos, sourceBlockId) {
         }
     }
 }
+
+function handleSocketChange(event, player, itemId) {
+    let newItem = event.getNewItem();
+    let oldItem = event.getOldItem();
+    if (oldItem.getId() == itemId) {
+        $SocketStateAPI.disable(player, itemId);
+    }
+    if (newItem.getId() == itemId) {
+        $SocketStateAPI.enable(player, itemId);
+    }
+}

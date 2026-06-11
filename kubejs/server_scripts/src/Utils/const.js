@@ -187,12 +187,12 @@ const GAME_DIFFICULTY_LEVELS = {
 // 玩家阶段难度加成
 const STAGE_DIFFICULTY_BONUS = {
     'difficult_0': { health: 1, attack: 1, armor: 1, toughness: 1, level: 0 },
-    'difficult_1': { health: 2, attack: 2, armor: 2, toughness: 2, level: 1 },
-    'difficult_2': { health: 3, attack: 3, armor: 3, toughness: 3, level: 2 },
-    'difficult_3': { health: 4, attack: 4, armor: 4, toughness: 4, level: 3 },
-    'difficult_4': { health: 5, attack: 5, armor: 5, toughness: 5, level: 4 },
-    'difficult_5': { health: 6, attack: 6, armor: 6, toughness: 6, level: 5 },
-    'difficult_6': { health: 8, attack: 8, armor: 8, toughness: 8, level: 6 }
+    'difficult_1': { health: 2, attack: 1.2, armor: 2, toughness: 2, level: 1 },
+    'difficult_2': { health: 3, attack: 1.4, armor: 3, toughness: 3, level: 2 },
+    'difficult_3': { health: 4, attack: 1.6, armor: 4, toughness: 4, level: 3 },
+    'difficult_4': { health: 5, attack: 1.8, armor: 5, toughness: 5, level: 4 },
+    'difficult_5': { health: 6, attack: 2, armor: 6, toughness: 6, level: 5 },
+    'difficult_6': { health: 8, attack: 3, armor: 8, toughness: 8, level: 6 }
 };
 
 

@@ -24,12 +24,22 @@ function TerraCurioWorkshopRecipeJSON(result) {
 TerraCurioWorkshopRecipeJSON.prototype = {
     /**
      * 添加一个原料
-     * @param {string|Object} item - 物品ID或对象
+     * @param {string|Object} item - 物品ID、标签
      */
     addIngredient: function (item) {
-        this.ingredients.push({
-            item: typeof item === 'string' ? item : (item.item || item.id)
-        });
+        if (typeof item === 'string') {
+            if (item.startsWith('#')) {
+                this.ingredients.push({
+                    tag: item.substring(1)
+                });
+            } else {
+                this.ingredients.push({
+                    item: item
+                });
+            }
+        } else {
+            this.ingredients.push(item);
+        }
         return this;
     },
 
@@ -39,10 +49,7 @@ TerraCurioWorkshopRecipeJSON.prototype = {
      */
     addIngredients: function (items) {
         for (var i = 0; i < items.length; i++) {
-            var item = items[i];
-            this.ingredients.push({
-                item: typeof item === 'string' ? item : (item.item || item.id)
-            });
+            this.addIngredient(items[i]);
         }
         return this;
     },
@@ -54,10 +61,7 @@ TerraCurioWorkshopRecipeJSON.prototype = {
     setIngredients: function (ingredients) {
         this.ingredients = [];
         for (var i = 0; i < ingredients.length; i++) {
-            var item = ingredients[i];
-            this.ingredients.push({
-                item: typeof item === 'string' ? item : (item.item || item.id)
-            });
+            this.addIngredient(ingredients[i]);
         }
         return this;
     },
@@ -160,6 +164,20 @@ ServerEvents.recipes(event => {
         new TerraCurioWorkshopRecipeJSON('terra_curio:sniper_scope')
             .addIngredient('terra_curio:rifle_scope')
             .addIngredient('kubejs:destroyer_emblem')
+    );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:necromantic_scroll')
+            .addIngredient('minecraft:paper')
+            .addIngredient('#kubejs:soul_item')
+            .addIngredient('#c:ingots/silver')
+    );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('kubejs:papyrus_scarab')
+            .addIngredient('kubejs:necromantic_scroll')
+            .addIngredient('#kubejs:soul_item')
+            .addIngredient('kubejs:necroplasm')
     );
 });
 

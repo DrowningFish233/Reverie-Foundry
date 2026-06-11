@@ -40,6 +40,8 @@
         "level_hint": "6",
         "name": "vibranium/振金"
       },
+      "forge_positive_chance": 20,
+      "forge_power": 20,
       "knockback_resistance": 0.4,
       "magic_armor": 8.0,
       "projectile_speed": 5.0,

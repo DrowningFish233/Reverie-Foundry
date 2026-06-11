@@ -1,14 +1,12 @@
 // priority: 999
-function require(className) {
-    return Java.loadClass(className);
-}
-const $ClientBookRegistry = require('vazkii.patchouli.client.book.ClientBookRegistry')
-const $I18n = require('net.minecraft.client.resources.language.I18n');
-const $Minecraft = require('net.minecraft.client.Minecraft');
-const $Component = require('net.minecraft.network.chat.Component');
-const $ResourceLocation = require('net.minecraft.resources.ResourceLocation');
-const $FluidStack = require('net.neoforged.neoforge.fluids.FluidStack');
-const $Fluids = require('net.minecraft.world.level.material.Fluids');
-const $ItemStack = require('net.minecraft.world.item.ItemStack');
-const $NonNullList = require('net.minecraft.core.NonNullList');
-const $ItemStackHandler = require('net.neoforged.neoforge.items.ItemStackHandler');
+
+const $ClientBookRegistry = Java.loadClass('vazkii.patchouli.client.book.ClientBookRegistry')
+const $I18n = Java.loadClass('net.minecraft.client.resources.language.I18n');
+const $Minecraft = Java.loadClass('net.minecraft.client.Minecraft');
+const $Component = Java.loadClass('net.minecraft.network.chat.Component');
+const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation');
+const $FluidStack = Java.loadClass('net.neoforged.neoforge.fluids.FluidStack');
+const $Fluids = Java.loadClass('net.minecraft.world.level.material.Fluids');
+const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack');
+const $NonNullList = Java.loadClass('net.minecraft.core.NonNullList');
+const $ItemStackHandler = Java.loadClass('net.neoforged.neoforge.items.ItemStackHandler');

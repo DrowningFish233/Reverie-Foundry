@@ -474,6 +474,8 @@ LootJS.modifiers(event => {
         .randomChance(0.75)
     );
 
+
+
     event.addEntityModifier([
         "eternal_starlight:luminofish"
     ]).addLoot(LootEntry.of('kubejs:luminofish_ink_sac')
@@ -490,7 +492,11 @@ LootJS.modifiers(event => {
             item.setCount(1);
         })
     );
+
+
 });
+
+
 
 
 LootJS.lootTables(event => {
@@ -578,3 +584,41 @@ LootJS.lootTables(event => {
         });
     }
 })
+
+
+LootJS.modifiers(event => {
+    event.addEntityModifier([
+        "cataclysm:ignis",
+        "cataclysm:the_leviathan",
+        "cataclysm:ancient_remnant",
+        "cataclysm:maledictus",
+        "cataclysm:scylla",
+        "cataclysm:the_harbinger",
+        "cataclysm:ender_guardian",
+        "cataclysm:netherite_monstrosity",
+        "minecraft:wither",
+        "minecraft:ender_dragon",
+        "bosses_of_mass_destruction:gauntlet",
+        "bosses_of_mass_destruction:lich",
+        "bosses_of_mass_destruction:obsidilith",
+        "bosses_of_mass_destruction:void_blossom",
+        "irons_spellbooks:fire_boss",
+        "terra_entity:dungeon_guardian",
+        "terra_entity:skeletron",
+        "terra_entity:king_slime",
+        "terra_entity:eye_of_cthulhu",
+        "terra_entity:brain_of_cthulhu",
+        "terra_entity:queen_bee",
+        "irons_spellbooks:dead_king"
+    ]).addLoot(
+        LootEntry.alternative(
+            LootEntry.of("kubejs:mark_of_wrath").when(c => c.randomChance(0.1429)),
+            LootEntry.of("kubejs:chain_of_lust").when(c => c.randomChance(0.1429)),
+            LootEntry.of("kubejs:pendant_of_sloth").when(c => c.randomChance(0.1429)),
+            LootEntry.of("kubejs:ring_of_gluttony").when(c => c.randomChance(0.1429)),
+            LootEntry.of("kubejs:stone_of_melancholy").when(c => c.randomChance(0.1429)),
+            LootEntry.of("kubejs:crown_of_pride").when(c => c.randomChance(0.1429)),
+            LootEntry.of("kubejs:eye_of_envy").when(c => c.randomChance(0.1429))
+        )
+    );
+});

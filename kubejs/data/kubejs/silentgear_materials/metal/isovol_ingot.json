@@ -48,7 +48,13 @@
       "magic_damage": 4.0,
       "ranged_damage": 4.0,
       "rarity": 70.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:family_sacrifice"
+        }
+      ]
     }
   }
 }

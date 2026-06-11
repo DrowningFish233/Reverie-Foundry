@@ -47,21 +47,12 @@
 		{
 			dependency: "66EA89C1E75509EB"
 			height: 5.0d
-			image: "kubejs:textures/gui/yellow1.png"
-			rotation: 0.0d
-			width: 5.0d
-			x: -4.5d
-			y: -4.0d
-		}
-		{
-			dependency: "66EA89C1E75509EB"
-			height: 5.0d
 			image: "kubejs:textures/gui/yellow2.png"
 			order: 100
 			rotation: 0.0d
 			width: 5.0d
 			x: -4.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependency: "66EA89C1E75509EB"
@@ -173,22 +164,7 @@
 				type: "checkmark"
 			}]
 			x: -12.5d
-			y: -2.0d
-		}
-		{
-			can_repeat: true
-			dependencies: ["66EA89C1E75509EB"]
-			hide_until_deps_complete: true
-			icon: {
-				id: "minecraft:small_amethyst_bud"
-			}
-			id: "321B703A9E877386"
-			tasks: [{
-				id: "0F94A88142CE9ECF"
-				type: "checkmark"
-			}]
-			x: -6.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			can_repeat: true
@@ -212,7 +188,7 @@
 				type: "checkmark"
 			}]
 			x: -6.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			can_repeat: true
@@ -544,7 +520,7 @@
 				type: "checkmark"
 			}]
 			x: -12.5d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["66EA89C1E75509EB"]

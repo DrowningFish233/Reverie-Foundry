@@ -46,6 +46,9 @@
             "ranged_damage": 1.0,
             "spell_power": 0.04,
             "spell_slots": 3,
+            "max_mana": 10,
+            "forge_positive_chance": 5,
+            "forge_power": 5,
             "rarity": 22.0,
             "traits": [
                 {

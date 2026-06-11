@@ -78,6 +78,8 @@
                 "level_hint": "1",
                 "name": "gold"
             },
+            "forge_positive_chance": 10,
+            "forge_power": -5,
             "magic_armor": 9.0,
             "magic_damage": 5.0,
             "spell_slots": 2,

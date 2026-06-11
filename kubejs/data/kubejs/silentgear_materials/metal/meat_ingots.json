@@ -43,6 +43,8 @@
         "level_hint": "1",
         "name": "stone/石"
       },
+      "forge_positive_chance": -100,
+      "forge_power": 100,
       "magic_armor": 8.0,
       "magic_damage": 2.0,
       "projectile_accuracy": 1.1,

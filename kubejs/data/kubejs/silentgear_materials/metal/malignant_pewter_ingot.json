@@ -42,6 +42,9 @@
                 "level_hint": "5",
                 "name": "allthemodium/ATM"
             },
+            "forge_positive_chance": 20,
+            "forge_power": -10,
+            "magic_damage": 12.0,
             "magic_armor": 30.0,
             "projectile_speed": 5.0,
             "projectile_accuracy": 0.1,

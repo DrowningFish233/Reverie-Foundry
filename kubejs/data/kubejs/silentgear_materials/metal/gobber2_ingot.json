@@ -40,6 +40,8 @@
                 "level_hint": "5",
                 "name": "allthemodium/ATM"
             },
+            "forge_positive_chance": 10,
+            "forge_power": 10,
             "knockback_resistance": 0.4,
             "projectile_speed": 6.0,
             "projectile_accuracy": -0.2,

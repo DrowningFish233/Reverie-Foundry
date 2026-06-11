@@ -825,6 +825,7 @@ event.create('verdun')
             -0.15,
             "add_multiplied_base"
         )
+
     event.create('rum')
         .beneficial()
         .color("red")
@@ -1126,6 +1127,21 @@ event.create('purple_haze_attack')
         );
     event.create('tequila_sunrise')
         .beneficial()
+        .modifyAttribute('minecraft:generic.attack_knockback',
+            '6596497a-20ed-4493-8b88-8fe8227424cf',
+            0.2,
+            "add_multiplied_base"
+        );
+        .modifyAttribute('minecraft:generic.armor',
+            '56aee3de-2a53-4b91-8b4e-3b9088c43449',
+            10,
+            "add_value"
+        );
+        .modifyAttribute('malum:healing_received',
+            'dc417ed5-0ba8-4b20-ae61-98c1f346ccb2',
+            -0.2,
+            "add_multiplied_base"
+        );
     event.create('electrified')
         .harmful()
         .modifyAttribute('irons_spellbooks:lightning_magic_resist',

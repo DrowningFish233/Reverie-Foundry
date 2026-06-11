@@ -37,6 +37,8 @@
             "draw_speed": -0.2,
             "durability": 800.0,
             "enchantment_value": 5.0,
+            "forge_positive_chance": 5,
+            "forge_power": 5,
             "harvest_speed": 4.0,
             "harvest_tier": {
                 "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",

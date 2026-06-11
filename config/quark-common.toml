@@ -123,7 +123,7 @@
 	"Variant Bookshelves" = false
 	"Variant Chests" = false
 	"Variant Furnaces" = false
-	"Variant Ladders" = true
+	"Variant Ladders" = false
 	"Vertical Planks" = true
 	"Vertical Slabs" = true
 	"Wooden Posts" = true
@@ -513,18 +513,18 @@
 	"Enhanced Ladders" = true
 	"Glass Shard" = true
 	"Gold Tools Have Fortune" = true
-	"Grab Chickens" = true
+	"Grab Chickens" = false
 	"Hoe Harvesting" = true
 	"Horses Swim" = true
 	"Improved Sponges" = true
 	"Lock Rotation" = true
 	"Magma Keeps Concrete Powder" = true
 	"Map Washing" = true
-	"More Banner Layers" = true
-	"More Note Block Sounds" = true
+	"More Banner Layers" = false
+	"More Note Block Sounds" = false
 	"More Villagers" = true
 	"No Durability On Cosmetics" = true
-	"Pat The Dogs" = true
+	"Pat The Dogs" = false
 	"Petals On Water" = true
 	"Pig Litters" = true
 	"Poison Potato Usage" = true
@@ -1343,7 +1343,7 @@
 	Forgotten = true
 	Foxhound = true
 	Shiba = true
-	Stonelings = true
+	Stonelings = false
 	Toretoise = true
 	Wraith = true
 
@@ -1534,10 +1534,10 @@
 	"Back Button Keybind" = false
 	"Buckets Show Inhabitants" = true
 	Camera = true
-	"Chest Searching" = true
+	"Chest Searching" = false
 	"Elytra Indicator" = true
-	"Greener Grass" = true
-	"Improved Tooltips" = true
+	"Greener Grass" = false
+	"Improved Tooltips" = false
 	"Long Range Pick Block" = true
 	"Microcrafting Helper" = false
 	"Soul Candles" = true

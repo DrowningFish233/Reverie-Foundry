@@ -45,6 +45,7 @@
         "level_hint": "3",
         "name": "diamond/钻石"
       },
+      "max_mana": 5.0,
       "magic_armor": 12.0,
       "magic_damage": 4.0,
       "ranged_damage": 1.0,

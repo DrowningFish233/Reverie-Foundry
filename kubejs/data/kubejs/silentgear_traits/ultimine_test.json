@@ -1,0 +1,11 @@
+{
+    "conditions": [],
+    "description": {
+        "translate": "trait.kubejs.ultimine_test.desc"
+    },
+    "effects": [],
+    "max_level": 1,
+    "name": {
+        "translate": "trait.kubejs.ultimine_test"
+    }
+}

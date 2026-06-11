@@ -23,6 +23,18 @@
 	},
 	"properties": {
 		"silentgear:grip": {
+			"forge_power": {
+				"operation": "ADD",
+				"value": 5
+			},
+			"max_mana": {
+				"operation": "ADD",
+				"value": 25
+			},
+			"forge_positive_chance": {
+				"operation": "ADD",
+				"value": 5
+			},
 			"attack_speed": {
 				"operation": "MULTIPLY_BASE",
 				"value": 0.05

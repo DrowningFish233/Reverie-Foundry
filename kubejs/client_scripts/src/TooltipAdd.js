@@ -1,4 +1,4 @@
-// 定义工具函数
+// priority: 100
 const TooltipUtils = {
     // 颜色常量
     colors: {

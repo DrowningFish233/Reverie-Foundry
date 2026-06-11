@@ -45,6 +45,8 @@
         "level_hint": "2",
         "name": "iron/铁"
       },
+      "forge_positive_chance": -100,
+      "forge_power": 100,
       "magic_armor": 12.0,
       "magic_damage": 3.0,
       "projectile_accuracy": 1.1,

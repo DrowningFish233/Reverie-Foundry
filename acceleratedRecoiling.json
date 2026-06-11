@@ -1,0 +1,9 @@
+{
+  "enableEntityCollision": true,
+  "enableEntityGetterOptimization": true,
+  "maxCollision": 16,
+  "gridSize": 1,
+  "densityWindow": 4,
+  "densityThreshold": 12,
+  "maxThreads": 1
+}

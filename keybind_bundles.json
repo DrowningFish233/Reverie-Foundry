@@ -4,10 +4,10 @@
     "name": "b",
     "entries": [
       {
-        "key": "key.ftbquests.quests",
-        "title": "打开任务",
+        "key": "gui.xaero_new_waypoint",
+        "title": "新建路径点",
         "icon": {
-          "id": "ftbquests:book",
+          "id": "waystones:waystone",
           "count": 1
         }
       },
@@ -28,14 +28,6 @@
         }
       },
       {
-        "key": "key.ftbchunks.add_waypoint",
-        "title": "快速添加路径点",
-        "icon": {
-          "id": "enderscape:mirror",
-          "count": 1
-        }
-      },
-      {
         "key": "key.refinedstorage.open_wireless_grid",
         "title": "打开无线终端",
         "icon": {
@@ -44,18 +36,26 @@
         }
       },
       {
-        "key": "key.ftbchunks.waypoint_manager",
-        "title": "路径点管理",
-        "icon": {
-          "id": "waystones:waystone",
-          "count": 1
-        }
-      },
-      {
         "key": "key.curios.open.desc",
         "title": "打开/关闭饰品栏",
         "icon": {
           "id": "terra_curio:terraspark_boots",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.ftbquests.quests",
+        "title": "打开任务",
+        "icon": {
+          "id": "ftbquests:book",
+          "count": 1
+        }
+      },
+      {
+        "key": "gui.xaero_waypoints_key",
+        "title": "打开路径点界面",
+        "icon": {
+          "id": "enderscape:mirror",
           "count": 1
         }
       }

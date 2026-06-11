@@ -74,6 +74,7 @@
 			dependencies: [
 				"6FDF4D8E43BF594B"
 				"6AC481C1ADA516D4"
+				"27B6C00949F92CCF"
 			]
 			dependency_requirement: "one_started"
 			icon: {

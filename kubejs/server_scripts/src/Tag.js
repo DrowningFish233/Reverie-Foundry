@@ -1,5 +1,18 @@
 // priority: 500
 ServerEvents.tags('item', event => {
+
+    event.add('kubejs:soul_item',
+        'quark:soul_bead',
+        'iceandfire:ectoplasm',
+        'eternal_starlight:soul_dew',
+        'minecraft:ghast_tear',
+        'bosses_of_mass_destruction:soul_star'
+    )
+    event.add('reveriefoundry:socket_fragments',
+        'malum:imitation_flesh',
+        'malum:imitation_heart'
+    )
+
     event.add('c:ingots/cobalt',
         'kubejs:cobalt_ingot'
     )

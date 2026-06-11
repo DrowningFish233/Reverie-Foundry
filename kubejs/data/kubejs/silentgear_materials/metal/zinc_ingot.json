@@ -45,6 +45,7 @@
         "level_hint": "1",
         "name": "stone/石"
       },
+      "max_mana": 5.0,
       "magic_armor": 6.0,
       "magic_damage": 3.0,
       "ranged_damage": 0.0,

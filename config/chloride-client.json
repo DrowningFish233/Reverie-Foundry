@@ -1,6 +1,7 @@
 {
   "modpackMode": false,
   "fullScreen": "WINDOWED",
+  "disableBorderlessOptimizations": false,
   "fpsDisplayMode": "SIMPLE",
   "fpsDisplayAlign": "LEFT",
   "fpsDisplayVAlign": "TOP",
@@ -52,6 +53,7 @@
   "tileEntityCullingDistanceX": 4096,
   "tileEntityCullingDistanceY": 32,
   "entityDistanceCulling": true,
+  "entityLimit": 512,
   "entityCullingDistanceX": 4096,
   "entityCullingDistanceY": 32,
   "monsterDistanceCulling": true,

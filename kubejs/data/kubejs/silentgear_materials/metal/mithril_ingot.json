@@ -45,6 +45,9 @@
             "projectile_speed": 5.0,
             "spell_power": 0.08,
             "rarity": 100.0,
+            "forge_positive_chance": 10,
+            "forge_power": 10,
+            "max_mana": 25,
             "traits": [
                 {
                     "conditions": [],

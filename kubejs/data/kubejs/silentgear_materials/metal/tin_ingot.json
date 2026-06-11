@@ -45,6 +45,7 @@
         "level_hint": "0",
         "name": "wood/木"
       },
+      "max_mana": 5.0,
       "magic_armor": 3.0,
       "magic_damage": 2.0,
       "ranged_damage": 0.7,

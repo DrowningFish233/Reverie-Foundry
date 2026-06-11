@@ -41,6 +41,8 @@
         "level_hint": "7",
         "name": "unobtainium/难得素"
       },
+      "forge_positive_chance": 25,
+      "forge_power": 25,
       "knockback_resistance": 1.0,
       "magic_armor": 32.0,
       "projectile_speed": 10.0,

@@ -339,7 +339,7 @@
 	#- DISABLED: Accelerations of UI driven by FTB Library will be disabled.
 	#- ENABLED: Accelerations of UI driven by FTB Library will be enabled.
 	#Allowed Values: DISABLED, ENABLED
-	ftb_feature_status = "DISABLED"
+	ftb_feature_status = "ENABLED"
 	#- DISABLED: Accelerations of UI driven by Sophisticated Core will be disabled.
 	#- ENABLED: Accelerations of UI driven by Sophisticated Core will be enabled.
 	#Allowed Values: DISABLED, ENABLED

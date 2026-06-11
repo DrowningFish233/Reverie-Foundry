@@ -2494,9 +2494,10 @@
 			shape: "diamondtier"
 			size: 1.5d
 			tasks: [{
-				id: "5D75D1334DB4BD78"
-				item: { count: 1, id: "minecraft:skeleton_skull" }
-				type: "item"
+				entity: "terra_entity:skeletron"
+				id: "17B18CAC24C4EA78"
+				type: "kill"
+				value: 1L
 			}]
 			x: 0.0d
 			y: -29.25d
@@ -2531,6 +2532,14 @@
 			dependencies: ["3FD3535AE922834F"]
 			icon_scale: 0.8d
 			id: "7CB11EBD34BA84FB"
+			rewards: [{
+				id: "690F827B978B7DC9"
+				item: {
+					count: 1
+					id: "kubejs:bad_apple"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				icon: {
 					components: {
@@ -3272,6 +3281,17 @@
 			}]
 			x: -8.5d
 			y: -6.0d
+		}
+		{
+			dependencies: ["53634A7FA785B1D3"]
+			id: "340B5B4BFE9F1195"
+			tasks: [{
+				id: "1EC51CF20249F8E2"
+				item: { components: { "ftbfiltersystem:filter": "or(item(kubejs:mark_of_wrath)item(kubejs:chain_of_lust)item(kubejs:pendant_of_sloth)item(kubejs:ring_of_gluttony)item(kubejs:stone_of_melancholy)item(kubejs:crown_of_pride)item(kubejs:eye_of_envy))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 10.0d
 		}
 	]
 }

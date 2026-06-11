@@ -48,7 +48,7 @@
       "magic_damage": 0.0,
       "projectile_accuracy": 1.1,
       "projectile_speed": 1.5,
-      "ranged_damage": 5.0,
+      "ranged_damage": 1.15,
       "rarity": 140.0,
       "repair_value": 0.0,
       "traits": [

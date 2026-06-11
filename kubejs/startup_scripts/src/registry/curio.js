@@ -241,16 +241,31 @@ StartupEvents.registry('item', event => {
         .tag("curios:ego")
         .unstackable()
         .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
-    event.create("papyrus_scarab")
-        .texture('kubejs:item/curios/papyrus_scarab')
-        .tag("curios:necklace")
-        .unstackable()
-        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
-    event.create("necromantic_scroll")
-        .texture('kubejs:item/curios/necromantic_scroll')
-        .tag("curios:necklace")
-        .unstackable()
-        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+
+    new $ItemBuilderWrapper(
+        event.create("papyrus_scarab")
+            .texture('kubejs:item/curios/papyrus_scarab')
+            .tag("curios:necklace")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("terra_entity:player.minion_capacity", "add_value", 2, "kubejs:papyrus_scarab.minion_capacity")
+        )
+
+    new $ItemBuilderWrapper(
+        event.create("necromantic_scroll")
+            .texture('kubejs:item/curios/necromantic_scroll')
+            .tag("curios:necklace")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("terra_entity:player.minion_capacity", "add_value", 1, "kubejs:papyrus_scarab.minion_capacity")
+        )
+
     new $ItemBuilderWrapper(
         event.create("mana_regeneration_band")
             .texture('kubejs:item/curios/mana_regeneration_band')
@@ -302,11 +317,18 @@ StartupEvents.registry('item', event => {
             new $CurioCapBuilder()
                 .addAttribute("terra_curio:player.pickup_range", "add_multiplied_base", 0.4, "kubejs:magnet_flower.pickup_range")
         )
-    event.create("magic_cuffs")
-        .texture('kubejs:item/curios/magic_cuffs')
-        .tag("curios:accessory")
-        .unstackable()
-        .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    new $ItemBuilderWrapper(
+        event.create("magic_cuffs")
+            .texture('kubejs:item/curios/magic_cuffs')
+            .tag("curios:accessory")
+            .unstackable()
+            .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
+    )
+        .attachCurioCap(
+            new $CurioCapBuilder()
+                .addAttribute("irons_spellbooks:max_mana", "add_value", 50, "kubejs:magic_cuffs.max_mana")
+        )
+
     event.create("dps_meter_update")
         .texture('kubejs:item/curios/dps_meter_update')
         .tag("curios:accessory")

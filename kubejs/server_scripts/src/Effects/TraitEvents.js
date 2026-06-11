@@ -977,6 +977,7 @@ RFTrait('kubejs:comet_trait', 0)
     })
     .register();
 
+
 // ??
 RFTrait('kubejs:starfire', 0)
     .beforeHurt(event => {
@@ -2658,7 +2659,7 @@ RFTrait('kubejs:fairies_care', 0)
 RFTrait('kubejs:ultimine_test', 0)
     .blockBroken(event => {
         const { player, block } = event;
-        if (fu_hasTraitMainHand(player, "kubejs:ultimine_test")) return;
+        if (!fu_hasTraitMainHand(player, "kubejs:ultimine_test")) return;
         if (player.crouching) return;
 
         const blockId = block.getId().toString();
@@ -2666,6 +2667,25 @@ RFTrait('kubejs:ultimine_test', 0)
         executeUltimine(player, pos, blockId);
     })
     .register();
+
+
+// 引力锚点
+RFTrait('kubejs:gravity_anchor', 0)
+    .beforeHurt(event => {
+        const { source, entity } = event;
+        const attacker = source.player || source.actual;
+        if (event.source.getType() !== 'arrow') return;
+
+        if (!attacker || !attacker.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:gravity_anchor")) {
+            return;
+        }
+
+        entity.potionEffects.add("reveriefoundry:gravity_anchor", 600, 0);
+    })
+    .register();
+
+
+
 
 /**
 * 总效果类层

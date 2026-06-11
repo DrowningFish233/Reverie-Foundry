@@ -35,6 +35,8 @@
             "attack_speed/hoe": 0.0,
             "charging_value": 0.7,
             "draw_speed": 0.1,
+            "forge_positive_chance": 5,
+            "forge_power": 5,
             "durability": 250.0,
             "enchantment_value": 14.0,
             "harvest_speed": 6.0,

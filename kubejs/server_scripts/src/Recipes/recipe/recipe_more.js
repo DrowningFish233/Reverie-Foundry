@@ -1,6 +1,10 @@
 ServerEvents.recipes(event => {
     //唉，自己写的mod还得自己remove掉配方重写，怎么汇逝
     [
+        'reveriefoundry:summon_sword_template',
+        'reveriefoundry:summon_sword_blueprint',
+        'reveriefoundry:tiansha_star_blade_blueprint',
+        'reveriefoundry:tiansha_star_blade_template',
         'refinedstorage:4k_storage_part',
         'refinedstorage:256b_fluid_storage_part',
         'rsinfinitybooster:dimension_card',

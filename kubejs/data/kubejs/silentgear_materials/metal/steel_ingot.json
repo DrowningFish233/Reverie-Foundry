@@ -23,32 +23,37 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 22.0,
+      "armor": 20.0,
       "armor_toughness": 6,
       "armor/boots": 3.0,
-      "armor/chestplate": 8.0,
+      "armor/chestplate": 7.0,
       "armor/helmet": 4.0,
-      "armor/leggings": 7.0,
-      "armor_durability": 25.0,
-      "attack_damage": 7.0,
+      "armor/leggings": 6.0,
+      "armor_durability": 23.0,
+      "attack_damage": 6.0,
       "attack_speed": -0.1,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,
       "charging_value": 0.5,
       "draw_speed": -0.3,
-      "durability": 600.0,
+      "durability": 550.0,
       "enchantment_value": 8.0,
       "harvest_speed": 10.0,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "silentgear:incorrect_for_hardensteel_tools",
-        "level_hint": "2.5",
-        "name": "hardensteel"
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
+        "level_hint": "2",
+        "name": "iron"
       },
       "magic_armor": 2.0,
       "magic_damage": 1.0,
-      "ranged_damage": 2.4,
+      "ranged_damage": 1.6,
       "rarity": 45.0,
       "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:ultimine_test"
+        },
         {
           "conditions": [],
           "level": 3,

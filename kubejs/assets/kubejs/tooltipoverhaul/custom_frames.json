@@ -366,6 +366,28 @@
         "#0d390e"
       ],
       "specialEffect": "galaxy"
+    },
+    {
+      "texture": "kubejs:textures/overlay/silentgear.png",
+      "namespace": "silentgear",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#5685fa",
+        "#4c4fb5",
+        "#421970"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/silentgear.png",
+      "namespace": "reveriefoundry",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#5685fa",
+        "#4c4fb5",
+        "#421970"
+      ]
     }
   ]
 }

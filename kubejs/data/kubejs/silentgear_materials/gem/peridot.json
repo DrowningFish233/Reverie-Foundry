@@ -43,7 +43,7 @@
                 "name": "peridot"
             },
             "magic_armor": 9.0,
-            "ranged_damage": 2.0,
+            "ranged_damage": 1.5,
             "rarity": 30.0,
             "traits": [
                 {

@@ -52,11 +52,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_diamond", 60),
-                createFluidTag("c:molten_gold", 30)
+                createFluidTag("c:molten_diamond", 6),
+                createFluidTag("c:molten_gold", 3)
             ],
             {
-                amount: 90,
+                amount: 9,
                 id: "kubejs:enlighted_gold"
             },
             6
@@ -66,11 +66,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_aluminum", 45),
-                createFluidTag("c:molten_iron", 45)
+                createFluidTag("c:molten_aluminum", 5),
+                createFluidTag("c:molten_iron", 5)
             ],
             {
-                amount: 90,
+                amount: 10,
                 id: "kubejs:aluminum"
             },
             6
@@ -80,11 +80,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_copper", 45),
-                createFluidTag("c:molten_gold", 45)
+                createFluidTag("c:molten_copper", 15),
+                createFluidTag("c:molten_gold", 15)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:scepbo"
             },
             6
@@ -94,11 +94,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_aluminum", 45),
-                createFluidTag("c:molten_silver", 45)
+                createFluidTag("c:molten_aluminum", 15),
+                createFluidTag("c:molten_silver", 15)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:frigidite"
             },
             6
@@ -108,12 +108,12 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("kubejs:golden_apple", 40),
-                createFluidTag("c:molten_iron", 40),
-                createFluidTag("c:molten_diamond", 10)
+                createFluid("kubejs:golden_apple", 15),
+                createFluidTag("c:molten_iron", 15),
+                createFluidTag("c:molten_diamond", 4)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:terraulite"
             },
             6
@@ -123,11 +123,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_gold", 45),
-                createFluidTag("c:molten_copper", 45)
+                createFluidTag("c:molten_gold", 15),
+                createFluidTag("c:molten_copper", 15)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:scepbo"
             },
             6
@@ -137,11 +137,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_silver", 45),
-                createFluidTag("c:molten_nickel", 45)
+                createFluidTag("c:molten_silver", 15),
+                createFluidTag("c:molten_nickel", 15)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:silver"
             },
             6
@@ -151,11 +151,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_steel", 45),
-                createFluid("productivemetalworks:molten_quartz", 45)
+                createFluidTag("c:molten_steel", 15),
+                createFluid("productivemetalworks:molten_quartz", 15)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:silicon"
             },
             6
@@ -165,11 +165,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("productivemetalworks:molten_redstone", 45),
-                createFluidTag("c:molten_copper", 45)
+                createFluid("productivemetalworks:molten_redstone", 15),
+                createFluidTag("c:molten_copper", 15)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:palladium"
             },
             6
@@ -179,27 +179,26 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("productivemetalworks:molten_quartz", 30),
-                createFluidTag("c:molten_iron", 30),
-                createFluidTag("c:molten_aluminum", 30)
+                createFluid("productivemetalworks:molten_quartz", 10),
+                createFluidTag("c:molten_iron", 10),
+                createFluidTag("c:molten_aluminum", 10)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:palladium"
             },
             6
         )
     );
 
-
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("productivemetalworks:molten_slime", 45),
-                createFluidTag("c:molten_uranium", 45)
+                createFluid("productivemetalworks:molten_slime", 5),
+                createFluidTag("c:molten_uranium", 5)
             ],
             {
-                amount: 90,
+                amount: 10,
                 id: "kubejs:uranium"
             },
             6
@@ -209,12 +208,12 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("productivemetalworks:molten_blaze", 30),
-                createFluid("productivemetalworks:molten_lapis", 30),
-                createFluidTag("c:molten_uranium", 30)
+                createFluid("productivemetalworks:molten_blaze", 10),
+                createFluid("productivemetalworks:molten_lapis", 10),
+                createFluidTag("c:molten_uranium", 10)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:thorium"
             },
             6
@@ -224,12 +223,12 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_copper", 90),
-                createFluidTag("c:molten_lead", 90),
-                createFluid("productivemetalworks:molten_amethyst", 10)
+                createFluidTag("c:molten_copper", 10),
+                createFluidTag("c:molten_lead", 10),
+                createFluid("productivemetalworks:molten_amethyst", 5)
             ],
             {
-                amount: 90,
+                amount: 20,
                 id: "kubejs:lead"
             },
             8
@@ -239,12 +238,12 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("productivemetalworks:molten_carbon", 90),
-                createFluidTag("c:molten_iron", 100),
-                createFluid("productivemetalworks:molten_amethyst", 25)
+                createFluid("productivemetalworks:molten_carbon", 10),
+                createFluidTag("c:molten_iron", 10),
+                createFluid("productivemetalworks:molten_amethyst", 2)
             ],
             {
-                amount: 90,
+                amount: 10,
                 id: "kubejs:steel"
             },
             8
@@ -254,13 +253,27 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("productivemetalworks:molten_lapis", 30),
-                createFluid("productivemetalworks:molten_redstone", 30),
-                createFluidTag("c:molten_iron", 30)
+                createFluid("productivemetalworks:molten_steel", 10),
+                createFluid("productivemetalworks:molten_amethyst", 4)
+            ],
+            {
+                amount: 10,
+                id: "kubejs:steel"
+            },
+            8
+        )
+    );
+
+    register(
+        new FluidAlloyingRecipe(
+            [
+                createFluid("productivemetalworks:molten_lapis", 10),
+                createFluid("productivemetalworks:molten_redstone", 10),
+                createFluidTag("c:molten_iron", 10)
 
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:magnetite"
             },
             6
@@ -270,13 +283,13 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("minecraft:water", 20),
-                createFluid("kubejs:fluorite", 30),
-                createFluidTag("c:molten_nickel", 30),
-                createFluidTag("c:molten_uranium", 10)
+                createFluid("minecraft:water", 10),
+                createFluid("kubejs:fluorite", 15),
+                createFluidTag("c:molten_nickel", 15),
+                createFluidTag("c:molten_uranium", 5)
             ],
             {
-                amount: 90,
+                amount: 45,
                 id: "kubejs:rhodium"
             },
             6
@@ -286,12 +299,12 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("minecraft:water", 20),
-                createFluid("kubejs:fluorite", 40),
-                createFluidTag("c:molten_zinc", 30)
+                createFluid("minecraft:water", 10),
+                createFluid("kubejs:fluorite", 20),
+                createFluidTag("c:molten_zinc", 15)
             ],
             {
-                amount: 90,
+                amount: 45,
                 id: "kubejs:scandium"
             },
             6
@@ -301,11 +314,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_bronze", 45),
-                createFluidTag("c:molten_tin", 45)
+                createFluidTag("c:molten_bronze", 15),
+                createFluidTag("c:molten_tin", 15)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:strontium"
             },
             6
@@ -315,26 +328,27 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("kubejs:blood_orb", 40),
-                createFluidTag("c:molten_steel", 30),
-                createFluidTag("kubejs:blood", 20)
+                createFluid("kubejs:blood_orb", 20),
+                createFluidTag("c:molten_steel", 15),
+                createFluidTag("kubejs:blood", 10)
             ],
             {
-                amount: 90,
+                amount: 45,
                 id: "kubejs:vibranite"
             },
             6
         )
     );
+
     register(
         new FluidAlloyingRecipe(
             [
-                createFluid("productivemetalworks:molten_netherite", 30),
-                createFluid("kubejs:mithril", 30),
-                createFluid("kubejs:soul_stained_steel", 30)
+                createFluid("productivemetalworks:molten_netherite", 10),
+                createFluid("kubejs:mithril", 10),
+                createFluid("kubejs:soul_stained_steel", 10)
             ],
             {
-                amount: 90,
+                amount: 30,
                 id: "kubejs:ultimate"
             },
             6

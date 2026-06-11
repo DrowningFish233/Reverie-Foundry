@@ -61,6 +61,6 @@ function new_damage(event, stage, value) {
             data[3] *= value;     // 独立乘区
             break;
     }
-    /** (基础伤害 × (1 + 加算) × 独立乘区) + 固定加成 */
+    /** (基础伤害 × (1 + 基础乘区) × 独立乘区) + 固定加成 */
     event.setDamage((data[0] * (1 + data[2]) * data[3]) + data[1])
 }

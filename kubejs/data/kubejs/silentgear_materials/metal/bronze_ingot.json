@@ -45,6 +45,7 @@
         "level_hint": "2",
         "name": "iron/铁"
       },
+      "max_mana": 5.0,
       "magic_armor": 8.0,
       "magic_damage": 2.0,
       "ranged_damage": 2.0,

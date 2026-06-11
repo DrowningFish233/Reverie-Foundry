@@ -470,18 +470,56 @@ ServerEvents.recipes(event => {
         [
             'irons_spellbooks:autoloader_crossbow',
             'silentgear:blueprint_paper',
-            'kubejs:viculeam_ingot'
+            'kubejs:necroplasm'
         ]
     )
 
     event.shapeless(
-        Item.of('reveriefoundry:autoloader_crossbow_template', 16),
+        Item.of('reveriefoundry:autoloader_crossbow_template', 4),
         [
             'irons_spellbooks:autoloader_crossbow',
             'silentgear:template_board',
-            'kubejs:viculeam_ingot'
+            'kubejs:necroplasm'
         ]
     )
+
+    event.shapeless(
+        Item.of('reveriefoundry:tiansha_star_blade_blueprint', 1),
+        [
+            'silentgear:katana_blueprint',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:tiansha_star_blade_template', 1),
+        [
+            'silentgear:katana_template',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:necroplasm'
+        ]
+    )
+
+
+    event.shapeless(
+        Item.of('reveriefoundry:summon_sword_blueprint', 1),
+        [
+            'silentgear:sword_blueprint',
+            '#reveriefoundry:summon_sword',
+            'kubejs:necroplasm'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('reveriefoundry:summon_sword_template', 1),
+        [
+            'silentgear:sword_template',
+            '#reveriefoundry:summon_sword',
+            'kubejs:necroplasm'
+        ]
+    )
+
 
     event.shapeless(
         Item.of('refinedstorage:creative_controller', 1),
@@ -608,6 +646,54 @@ ServerEvents.recipes(event => {
         [
             'minecraft:magenta_dye',
             '#refinedstorage:creative_controllers'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('terra_entity:summon_wooden_sword_staff', 1),
+        [
+            'kubejs:necroplasm',
+            'minecraft:wooden_sword'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('terra_entity:summon_stone_sword_staff', 1),
+        [
+            'kubejs:necroplasm',
+            'minecraft:stone_sword'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('terra_entity:summon_iron_sword_staff', 1),
+        [
+            'kubejs:necroplasm',
+            'minecraft:iron_sword'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('terra_entity:summon_golden_sword_staff', 1),
+        [
+            'kubejs:necroplasm',
+            'minecraft:golden_sword'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('terra_entity:summon_diamond_sword_staff', 1),
+        [
+            'kubejs:necroplasm',
+            'minecraft:diamond_sword'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('terra_entity:summon_netherite_sword_staff', 1),
+        [
+            'kubejs:necroplasm',
+            'minecraft:netherite_sword'
         ]
     )
 })

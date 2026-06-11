@@ -1,0 +1,26 @@
+{
+    "conditions": [],
+    "description": {
+        "translate": "trait.kubejs.minion_capacity.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:attribute",
+            "attribute_modifiers": {
+                "all/any": [
+                    {
+                        "attribute": "terra_entity:player.minion_capacity",
+                        "operation": "add_value",
+                        "values": [
+                            0.5
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "max_level": 1,
+    "name": {
+        "translate": "trait.kubejs.minion_capacity"
+    }
+}

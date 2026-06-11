@@ -1102,14 +1102,6 @@
 		"&7The Scorching Rune urges the consciousness to share its radiance with surrounding things, but the consequences are not considered; it doubles the &eFire Damage&r&7 dealt by the wearer.&r"
 	]
 	quest.1AB5165BCAD5820E.quest_subtitle: "Pulse That Promotes Burning"
-	quest.1AC360E218A91528.quest_desc: [
-		"&aDue to extreme optimization, crashes may occur randomly when launching the game. If you wish to avoid this and can accept disabling some optimization features:"
-		"&r"
-		"Disable："
-		"&7ImmediatelyFast （for versions 1.18 to 1.21.4; disable ImmediatelyFast's hud_batching, font_atlas_resizing, and fast_text_lookup, as they may cause crashes; &r"
-	]
-	quest.1AC360E218A91528.quest_subtitle: "Restarting should fix it."
-	quest.1AC360E218A91528.title: "Stuck?"
 	quest.1B66EC1641E0B30A.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know you might find this mod's many \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" overwhelming, but now all of them can be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
 	quest.1B66EC1641E0B30A.quest_subtitle: "Craftable"
 	quest.1B819E833413B729.title: "Mystic Ghoul"
@@ -1833,7 +1825,6 @@
 	quest.2FE49A9C24350211.quest_subtitle: "Big Fork"
 	quest.303BD0ED6A5699E1.quest_subtitle: "All deliciousness starts from this moment!"
 	quest.303BD0ED6A5699E1.title: "A Pot?"
-	quest.305A6FFD7FD5684F.title: "Mid-game - Defeat the Lord of the Dead"
 	quest.307FD783B49CA47C.title: "Discover the Cursed Pyramid"
 	quest.309D32324902DF18.quest_subtitle: "Food Value > 8"
 	quest.309D32324902DF18.title: "Main Meal Recycle x10"
@@ -1942,8 +1933,6 @@
 	quest.31B0A26B1374A322.quest_subtitle: "Round and Chubby"
 	quest.31B0A26B1374A322.title: "Starfire Bird"
 	quest.31CD959C475E5714.quest_desc: ["The recommendations here are only for the current version and are not guaranteed to be comprehensive. They may change at any time as game content updates progress. For reference only."]
-	quest.321B703A9E877386.quest_subtitle: "&eSome entries will be invalidated, but new extreme entries are added (WIP)."
-	quest.321B703A9E877386.title: "&e\"Listen to the Blasphemous Whispers from the Abyss\" (WIP)"
 	quest.3220FA89E7935BC3.quest_desc: [
 		"&7Just an ordinary Nether Fortress."
 		"&7The loot chests in the fortress have some new items worth scavenging. Other structures that yield Nether Fortress loot have similarly been enhanced, increasing their value."
@@ -2362,8 +2351,6 @@
 		"&7The core material for manifesting a familiar into the world. This item is obtained by capturing &8Lost Souls&r&7 with an empty bottle on the &6Origin Isle&r&7. Bottled souls can be released back into the wild.&r"
 	]
 	quest.3CDB29B0059175A8.quest_subtitle: "Lost Souls"
-	quest.3D29D3316A8362E6.quest_desc: ["&7Generally used for pulverizing. You need a hammer to do this. Place the material you want to pulverize on a Stone Anvil, then strike it with a hammer to produce powder. These powders generally have special uses—you'll know when you need them."]
-	quest.3D29D3316A8362E6.quest_subtitle: "Primitive Crafting"
 	quest.3D3CC5601B817E4D.quest_desc: [
 		"&7I walked across the wasteland for a long time until I saw a rift that shouldn't exist—air torn and poorly stitched like an old scar, edges shimmering faintly white."
 		""
@@ -4136,14 +4123,6 @@
 	quest.6E25E82DBD18D2C8.quest_subtitle: "&cThe world will be plunged into eternal night."
 	quest.6E25E82DBD18D2C8.title: "&c\"Eternal Journey Under the Lightless Long Night\""
 	quest.6E995B7F0867CE19.quest_subtitle: "Familiar Summoning Ritual"
-	quest.6EFBE085639D2967.quest_desc: [
-		"&7&eTemplate Substrates&r&7 can be used to create bases for various weapon components. While not as convenient as reusable blueprints, they are cheaper and easier to use.&r"
-		"{@pagebreak}"
-		"&7&eTemplates&r&7 are similar to blueprints but can only be used once. &eBlueprints&r&7 can be used infinitely. If you don't yet have paper or blue dye to craft blueprint paper, templates are a good alternative.&r"
-		""
-		"&7Templates require &eTemplate Plates&r&7. Template Plates require a &eKnife&r&7 or &eDagger&r&7 and a &eStone Anvil&r&7 to craft. Place a log on the stone anvil and right-click with a knife. Sometimes knives from other mods may also work. You might not have a knife blueprint yet, so first craft a &cCrude Knife&r&7.&r"
-	]
-	quest.6EFBE085639D2967.title: "Mold Base / Blank Blueprint"
 	quest.6F1B0D7041FBCD4B.quest_desc: [
 		"&6Mountain's Bulwark Rune&r"
 		""
@@ -5069,7 +5048,6 @@
 	task.107CD75BA2850AF5.title: "Chestplate Template"
 	task.10F524062F93326B.title: "Arcana"
 	task.1241D4845D2FA0FE.title: "Any Scroll"
-	task.131708AD4D3A2E8E.title: "Staff Template"
 	task.13419554E1773A09.title: "Annihilator Template"
 	task.134BFF78A7F20CA9.title: "Wither Mansion"
 	task.137C3EB186FD1877.title: "Scene: The Catacombs"
@@ -5079,7 +5057,6 @@
 	task.14F00C7BD0F376AF.title: "Crossbow Template"
 	task.1515843B90E779DE.title: "Any Gale Device"
 	task.1516D6057A163CD8.title: "Scene: Chaotic Wasteland"
-	task.1705E46627ADF4CB.title: "Spellbook Template"
 	task.17C489799E4E8BE8.title: "Choose Reward"
 	task.17D165E1F90F67DA.title: "拾荒者"
 	task.17FD4724C406FFAA.title: "Dagger Template"
@@ -5258,5 +5235,4 @@
 	task.7E6571DCE7F5F2D6.title: "Any #malum:soulwoven_pouch_efficient"
 	task.7E73F2D97C765D46.title: "Furioso Template"
 	task.7E842FF6C4E736C0.title: "Scene: Portal Ruins"
-	task.7FC73AE74EFE0053.title: "Mold Base / Blueprint"
 }

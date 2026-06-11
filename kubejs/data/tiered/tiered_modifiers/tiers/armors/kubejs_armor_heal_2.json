@@ -1,0 +1,25 @@
+{
+  "weight": 5,
+  "reforge_experience_cost": 2,
+  "reforge_durability_cost": 2,
+  "reforge_item": "tiered:armorers_hammer",
+  "style": {
+    "color": "#FF96FF"
+  },
+  "attributes": [
+    {
+      "type": "reveriefoundry:life_regen_amount",
+      "modifier": {
+        "id": "tiered:life_regen_amount_2",
+        "operation": "ADD_VALUE",
+        "amount": 2
+      },
+      "optional_equipment_slots": [
+        "FEET",
+        "LEGS",
+        "CHEST",
+        "HEAD"
+      ]
+    }
+  ]
+}

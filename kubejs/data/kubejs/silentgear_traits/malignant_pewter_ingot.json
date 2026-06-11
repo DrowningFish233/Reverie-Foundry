@@ -12,35 +12,42 @@
                         "attribute": "malum:scythe_proficiency",
                         "operation": "add_multiplied_base",
                         "values": [
-                            0.35
+                            0.2
                         ]
                     },
                     {
                         "attribute": "malum:soul_ward_capacity",
                         "operation": "add_value",
                         "values": [
-                            20.0
+                            10.0
                         ]
                     },
                     {
                         "attribute": "malum:soul_ward_recovery_rate",
                         "operation": "add_multiplied_base",
                         "values": [
-                            0.25
+                            0.2
                         ]
                     },
                     {
                         "attribute": "malum:soul_ward_integrity",
                         "operation": "add_multiplied_base",
                         "values": [
-                            0.20
+                            0.2
                         ]
                     },
                     {
                         "attribute": "malum:arcane_resonance",
                         "operation": "add_multiplied_base",
                         "values": [
-                            0.25
+                            0.15
+                        ]
+                    },
+                    {
+                        "attribute": "minecraft:generic.max_health",
+                        "operation": "add_value",
+                        "values": [
+                            -3
                         ]
                     }
                 ]
