@@ -1,6 +1,17 @@
 ServerEvents.recipes(event => {
     //唉，自己写的mod还得自己remove掉配方重写，怎么汇逝
-    [
+    const items = [
+        'silentgems:iron_potato',
+        'hazennstuff:absolute',
+        'hazennstuff:singularity',
+        'hazennstuff:radiance',
+        'hazennstuff:abomination',
+        'hazennstuff:strengthened',
+        'reveriefoundry:pump_charge_shotgun_blueprint',
+        'irons_spellbooks:amethyst_rapier',
+        'productivelib:upgrade_time',
+        'productivelib:upgrade_time_2',
+        'productivelib:upgrade_stability',
         'reveriefoundry:summon_sword_template',
         'reveriefoundry:summon_sword_blueprint',
         'reveriefoundry:tiansha_star_blade_blueprint',
@@ -43,8 +54,10 @@ ServerEvents.recipes(event => {
         'reveriefoundry:staff_blueprint',
         'reveriefoundry:spellbook_template',
         'reveriefoundry:staff_template'
-
-    ].forEach(item => event.remove({ output: item }))
+    ]
+    items.forEach(item => {
+        event.remove({ output: item });
+    });
 
 
     let singleItems = [

@@ -10,7 +10,7 @@
   "dead_forest_enabled": true,
   "dryland_enabled": true,
   "dune_beach_enabled": true,
-  "end_corruption_enabled": true,
+  "end_corruption_enabled": false,
   "end_reef_enabled": true,
   "end_wilds_enabled": true,
   "erupting_inferno_enabled": true,

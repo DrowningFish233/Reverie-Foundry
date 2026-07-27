@@ -27,11 +27,11 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 13.0,
-      "armor/boots": 2.0,
-      "armor/chestplate": 5.0,
-      "armor/helmet": 2.0,
-      "armor/leggings": 4.0,
+      "armor": 22.0,
+      "armor/boots": 4.0,
+      "armor/chestplate": 8.5,
+      "armor/helmet": 4.0,
+      "armor/leggings": 5.5,
       "armor_durability": 17.0,
       "attack_damage": 5.0,
       "attack_speed": 0.0,
@@ -77,7 +77,7 @@
     },
     "silentgear:rod": {
       "durability": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": -0.2
       },
       "harvest_speed": {

@@ -22,14 +22,14 @@
     },
     "properties": {
         "silentgear:main": {
-            "armor": 32.0,
-            "armor/boots": 6.0,
-            "armor/chestplate": 14.0,
-            "armor/helmet": 6.0,
+            "armor": 24.0,
+            "armor/boots": 5.0,
+            "armor/chestplate": 8.0,
+            "armor/helmet": 5.0,
             "armor/leggings": 6.0,
             "armor_durability": 60.0,
             "armor_toughness": 10.0,
-            "attack_damage": 8.0,
+            "attack_damage": 15.0,
             "attack_speed": 0.0,
             "charging_value": 0.9,
             "durability": 1900.0,
@@ -40,7 +40,7 @@
                 "level_hint": "5",
                 "name": "allthemodium/ATM"
             },
-            "forge_positive_chance": 10,
+            "forge_positive_chance": 15,
             "forge_power": 10,
             "knockback_resistance": 0.4,
             "projectile_speed": 6.0,

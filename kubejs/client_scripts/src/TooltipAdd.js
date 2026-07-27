@@ -206,6 +206,11 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.bluestar.quote', 'blue')
         ]
     },
+    'netherexp:cerebrage': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.kubejs.food.cerebrage', 'blue')
+        ]
+    },
     'kubejs:emergency_sanity_elixir_a': {
         lines: [
             TooltipUtils.simpleText('tooltip.emergency_sanity_elixir_a1', 'red'),
@@ -255,6 +260,7 @@ const itemTooltips = {
             ]
         }
     },
+    /*
     'enderscape:mirror': {
         shiftInfo: {
             default: [
@@ -283,6 +289,7 @@ const itemTooltips = {
             ]
         }
     },
+    8?
     'kubejs:exploding_chocolate_bar': {
         lines: [
             TooltipUtils.simpleText('tooltip.exploding_chocolate_bar.title', 'red'),
@@ -319,6 +326,13 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.drowning_fish.title.3', 'yellow'),
             TooltipUtils.simpleText('tooltip.drowning_fish.title.4', 'yellow'),
             TooltipUtils.simpleText('tooltip.drowning_fish.title.5', 'yellow'),
+        ]
+    },
+    'kubejs:mimicream': {
+        lines: [
+            TooltipUtils.simpleText('tooltip.mimicream.title.1', 'yellow'),
+            TooltipUtils.simpleText('tooltip.mimicream.title.2', 'yellow'),
+            TooltipUtils.simpleText('tooltip.mimicream.title.3', 'red'),
         ]
     },
     'kubejs:material_patchouli_generator': {
@@ -455,6 +469,7 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.alcohol.title', 'yellow'),
         ]
     },
+    /*
     'enderscape:kurodite_rubble_shield': {
         lines: [
             TooltipUtils.simpleText('tooltip.end_stone_rubble_shield.title', 'yellow'),
@@ -475,6 +490,7 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.end_stone_rubble_shield.title', 'yellow'),
         ]
     },
+    */
     'create:refined_radiance': {
         lines: [
             TooltipUtils.simpleText('tooltip.common.refined_radiance', 'blue'),
@@ -493,11 +509,24 @@ const itemTooltips = {
             TooltipUtils.simpleText('message.kubejs.moonpools.2', 'dark_purple'),
             TooltipUtils.simpleText('tooltip.rf', 'pink_dye'),
         ]
+    },
+    'kubejs:remove_armor': {
+        lines: [
+            TooltipUtils.simpleText('message.kubejs.remove_armor', 'dark_gray'),
+            TooltipUtils.simpleText('message.kubejs.remove_armor.2', 'blue'),
+        ]
     }
 };
 
 // 通用提示
 const commonTooltips = {
+    'kubejs:dimensional_ripper': TooltipUtils.simpleText('tooltip.common.dimensional_ripper', 'dark_green'),
+    'kubejs:dimensional_stabilizer': TooltipUtils.simpleText('tooltip.common.dimensional_stabilizer', 'dark_green'),
+    'kubejs:rift_probe': TooltipUtils.simpleText('tooltip.common.rift_probe', 'dark_green'),
+
+    'kubejs:core_suppression_unit_form_one': TooltipUtils.simpleText('tooltip.common.core_suppression_unit_form_one', 'dark_green'),
+    'kubejs:core_suppression_unit_form_two': TooltipUtils.simpleText('tooltip.common.core_suppression_unit_form_two', 'dark_green'),
+    'kubejs:core_suppression_unit_form_three': TooltipUtils.simpleText('tooltip.common.core_suppression_unit_form_three', 'dark_green'),
     'tiered:armorers_hammer': TooltipUtils.simpleText('tooltip.common.reforged', 'dark_green'),
     'tiered:toolsmiths_hammer': TooltipUtils.simpleText('tooltip.common.reforged', 'dark_green'),
     'tiered:weaponsmiths_hammer': TooltipUtils.simpleText('tooltip.common.reforged', 'dark_green'),
@@ -509,20 +538,20 @@ const commonTooltips = {
     'kubejs:randomweapon': TooltipUtils.simpleText('tooltip.common.randomweapon', 'yellow'),
     'kubejs:summon_gauntlet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_lich': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
-    'kubejs:summon_lunar_monstrosity': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
-    'kubejs:summon_starlight_golem': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'kubejs:summon_lunar_monstrosity': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg_structure', 'yellow'),
+    'kubejs:summon_starlight_golem': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg_structure', 'yellow'),
     'kubejs:summon_obsidilith': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_void_blossom': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_fire_boss': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_dead_king': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_amethyst_crab': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
-    'kubejs:summon_ignis': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'kubejs:summon_ignis': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg_nether', 'yellow'),
     'kubejs:summon_the_leviathan': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_ancient_remnant': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_maledictus': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_scylla': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_the_harbinger': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
-    'kubejs:summon_ender_guardian': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
+    'kubejs:summon_ender_guardian': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg_end', 'yellow'),
     'kubejs:summon_netherite_monstrosity': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_frostling_pet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),
     'kubejs:summon_dragon_warrior_pet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),

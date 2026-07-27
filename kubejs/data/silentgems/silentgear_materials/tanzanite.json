@@ -49,6 +49,11 @@
       "traits": [
         {
           "conditions": [],
+          "level": 1,
+          "trait": "kubejs:ultimine_test"
+        },
+        {
+          "conditions": [],
           "level": 2,
           "trait": "silentgear:light"
         }
@@ -56,6 +61,11 @@
     },
     "silentgear:rod": {
       "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:ultimine_test"
+        },
         {
           "conditions": [],
           "level": 2,
@@ -70,6 +80,11 @@
     },
     "silentgear:setting": {
       "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:ultimine_test"
+        },
         {
           "conditions": [],
           "level": 4,

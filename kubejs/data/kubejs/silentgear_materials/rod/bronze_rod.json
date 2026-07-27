@@ -24,7 +24,7 @@
         "silentgear:rod": {
             "attack_damage": {
                 "operation": "ADD",
-                "value": 3
+                "value": 1
             },
             "attack_speed": {
                 "operation": "MULTIPLY_BASE",

@@ -24,7 +24,7 @@
         "silentgear:binding": {},
         "silentgear:cord": {
             "ranged_damage": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.35
             },
             "draw_speed": {
@@ -32,7 +32,7 @@
                 "value": -1
             },
             "projectile_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.6
             },
             "traits": [

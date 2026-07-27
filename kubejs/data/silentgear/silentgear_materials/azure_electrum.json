@@ -87,7 +87,7 @@
         "value": 3.0
       },
       "projectile_speed": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 1.5
       },
       "traits": [

@@ -10,7 +10,7 @@ enabledOnOtherPlatforms = true
 aggressiveCaching = false
 #Enable to use a more flexible threading model, which improves performance while obeying threading requirements of the underlying operating system.
 flexibleThreading = true
-#Enable to disallow delaying of any GLFW call. Might reduce performance considerably.
+#Enable to disallow delaying of any GLFW/SDL call. Might reduce performance considerably.
 fullyBlockingMode = false
 #Specifies the priority of the event polling thread. Valid values are 0~10, where 0 = auto decide.
 eventPollingThreadPriority = 0

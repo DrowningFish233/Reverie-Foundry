@@ -28,11 +28,11 @@
   "properties": {
     "silentgear:coating": {
       "armor_durability": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": -0.1
       },
       "durability": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": -0.1
       },
       "rarity": {

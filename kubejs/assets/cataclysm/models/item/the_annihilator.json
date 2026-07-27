@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"textures": {
+	  "layer0": "cataclysm:item/the_annihilator_gui"
+	},
+	"base": {
+	  "parent": "cataclysm:item/the_annihilator_hendheld"
+	},
+	"perspectives": {
+	  "gui": {
+		"parent": "cataclysm:item/the_annihilator_gui"
+	  },
+	  "fixed": {
+		"parent": "cataclysm:item/the_annihilator_gui"
+	  }
+	}
+  }

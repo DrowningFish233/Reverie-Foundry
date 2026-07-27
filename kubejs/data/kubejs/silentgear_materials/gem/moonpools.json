@@ -76,7 +76,7 @@
       },
       "attack_damage": {
         "operation": "ADD",
-        "value": 4.0
+        "value": 6.0
       },
       "harvest_speed": {
         "operation": "ADD",

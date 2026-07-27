@@ -12,8 +12,10 @@
     "hazennstuff",
     "silentgear",
     "silentgems",
-    "biomesoplenty",
-    "alshanex_familiars"
+    "alshanex_familiars",
+    "biomeswevegone",
+    "terra_curio",
+    "treasure2"
   ],
   "priority_overrides": {},
   "stone_variants": [
@@ -39,11 +41,12 @@
     "c:storage_blocks/{material}",
     "c:wires/{material}",
     "kubejs:repeat/spider_fang",
-    "kubejs:repeat/nether_star_fragment"
+    "kubejs:repeat/nether_star_fragment",
+    "kubejs:repeat/angler_earring"
   ],
   "ignored_tags": [],
   "ignored_items": [
-    "eternal_starlight_vo:*",
+    "eternal_starlight_vo:.*",
     "alshanex_familiars:spider_fang",
     "silentgear:crimson_iron_ore",
     "silentgear:blackstone_crimson_iron_ore"

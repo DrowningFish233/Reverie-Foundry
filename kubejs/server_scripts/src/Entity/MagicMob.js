@@ -36,28 +36,6 @@ EntityJSEvents.addGoalSelectors('bosses_of_mass_destruction:obsidilith', event =
             )
     })
 })
-//下界铁掌
-EntityJSEvents.addGoalSelectors('bosses_of_mass_destruction:gauntlet', event => {
-    event.arbitraryGoal(1, (e) => {
-        return new WizardAttackGoal(e, 1, 80)
-            .setIsFlying()
-            .setSpellQuality(0.8, 1.2)
-            .setSpells(
-                [
-                    Spell.of('irons_spellbooks:burning_dash'),
-                    Spell.of('irons_spellbooks:scorch'),
-                    Spell.of('irons_spellbooks:fire_arrow'),
-                    Spell.of('irons_spellbooks:heat_surge'),
-                    Spell.of('irons_spellbooks:raise_hell'),
-                    Spell.of('irons_spellbooks:blaze_storm'),
-                    Spell.of('irons_spellbooks:fire_breath')
-                ], // 攻击
-                [],// 防御
-                [], // 移动
-                []// 支援
-            )
-    })
-})
 
 //月藤巨物
 EntityJSEvents.addGoalSelectors('eternal_starlight:lunar_monstrosity', event => {

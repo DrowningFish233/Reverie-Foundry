@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:green_enchanted_trapdoor"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "axe_dig"
+  },
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "biomeswevegone:green_enchanted_planks"
+      }
+    }
+  ]
+}

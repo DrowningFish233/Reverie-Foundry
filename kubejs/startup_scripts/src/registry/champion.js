@@ -222,6 +222,34 @@ StartupEvents.registry("champions:affix", event => {
                 }
             })
         })
+
+    event.create('protective')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("defense")
+        })
+        .behavior(behavior => {
+            behavior.onServerUpdate(champion => {
+                const entity = champion.getLivingEntity();
+                if (!entity) return;
+
+                if (entity.tickCount % 100 !== 0) return;
+
+                const entityId = entity.getType();
+                const specialBosses = [
+                    "darkdoppelganger:dark_doppelganger",
+                    "bosses_of_mass_destruction:obsidilith",
+                    "cataclysm:ender_guardian"
+                ];
+
+                const isSpecialChampion = specialBosses.includes(entityId);
+                const amplifier = isSpecialChampion ? 1 : 0;
+
+                entity.potionEffects.add('minecraft:resistance', 20 * 2, amplifier);
+            });
+        })
+
     event.create('sanity')
         .settings(setting => {
             setting.withDefault()
@@ -348,13 +376,13 @@ StartupEvents.registry("champions:affix", event => {
                         let tremorEffect = player.getEffect("kubejs:tremor");
                         let tremorLevel = tremorEffect.getAmplifier();
                         let newTremorLevel = tremorLevel - 1;
-                        entity.potionEffects.add("kubejs:hurt", 20 * 8, 0);
-                        entity.potionEffects.add("minecraft:slowness", 20 * 8, 0);
-                        entity.removeEffect("kubejs:tremor");
+                        player.potionEffects.add("kubejs:hurt", 20 * 8, 0);
+                        player.potionEffects.add("minecraft:slowness", 20 * 8, 0);
+                        player.removeEffect("kubejs:tremor");
                         if (newTremorLevel < 1) {
-                            entity.removeEffect("kubejs:tremor");
+                            player.removeEffect("kubejs:tremor");
                         } else {
-                            entity.potionEffects.add("kubejs:tremor", tremorEffect.getDuration(), newTremorLevel);
+                            player.potionEffects.add("kubejs:tremor", tremorEffect.getDuration(), newTremorLevel);
                         }
                     }
                 }
@@ -422,21 +450,20 @@ StartupEvents.registry("champions:affix", event => {
                 ];
                 const selectedDebuff = debuffList[Math.floor(Math.random() * debuffList.length)];
                 const currentEffect = player.getEffect(selectedDebuff);
+                const MAX_AMPLIFIER = 5;
                 let newAmplifier = 0;
                 if (currentEffect) {
-                    newAmplifier = currentEffect.getAmplifier() + 1;
+                    newAmplifier = Math.min(currentEffect.getAmplifier() + 1, MAX_AMPLIFIER);
                 }
                 player.potionEffects.add(selectedDebuff, 20 * 5, newAmplifier);
                 return true;
             })
             behavior.onHeal((champion, amount) => {
                 const entity = champion.getLivingEntity();
-                if (!entity) return false;
+                if (!entity) return 1;
 
                 const buffList = [
                     'minecraft:strength',
-                    'minecraft:regeneration',
-                    'minecraft:resistance',
                     'minecraft:fire_resistance',
                     'minecraft:speed',
                     'minecraft:jump_boost',
@@ -445,9 +472,10 @@ StartupEvents.registry("champions:affix", event => {
                 ];
                 const selectedBuff = buffList[Math.floor(Math.random() * buffList.length)];
                 const currentEffect = entity.getEffect(selectedBuff);
+                const MAX_AMPLIFIER = 3;
                 let newAmplifier = 0;
                 if (currentEffect) {
-                    newAmplifier = currentEffect.getAmplifier() + 1;
+                    newAmplifier = Math.min(currentEffect.getAmplifier() + 1, MAX_AMPLIFIER);
                 }
                 entity.potionEffects.add(selectedBuff, 20 * 5, newAmplifier);
                 return 2;

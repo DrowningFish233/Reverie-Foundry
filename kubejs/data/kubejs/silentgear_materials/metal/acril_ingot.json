@@ -45,7 +45,7 @@
         "name": "diamond/钻石"
       },
       "magic_armor": 12.0,
-      "magic_damage": 2.0,
+      "magic_damage": 6.0,
       "ranged_damage": 0.0,
       "rarity": 65.0,
       "traits": [

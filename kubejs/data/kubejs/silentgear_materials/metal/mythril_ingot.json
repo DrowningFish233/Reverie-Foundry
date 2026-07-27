@@ -26,8 +26,8 @@
       "armor": 20.0,
       "armor_toughness": 8,
       "armor/boots": 3.0,
-      "armor/chestplate": 7.0,
-      "armor/helmet": 4.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 3.0,
       "armor/leggings": 6.0,
       "armor_durability": 30.0,
       "attack_damage": 3.0,
@@ -44,8 +44,8 @@
         "level_hint": "2",
         "name": "iron/铁"
       },
-      "magic_armor": 15.0,
-      "magic_damage": 5.0,
+      "magic_armor": 29.0,
+      "magic_damage": 18.0,
       "ranged_damage": 2.0,
       "rarity": 55.0,
       "traits": [

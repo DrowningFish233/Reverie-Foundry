@@ -22,6 +22,7 @@ const curios_death_event = {
         }
         curios.setStackInSlot(slot, Item.of('kubejs:paradise_lost'));
     },
+
     'kubejs:magnet_flower': function (event, curios, slot, item, player) {
         getPlayerMagicData(player).addMana(10)
         getPlayerMagicData(player).addMana(-1)

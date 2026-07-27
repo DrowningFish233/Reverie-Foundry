@@ -23,14 +23,14 @@
     },
     "properties": {
         "silentgear:main": {
-            "armor": 14.0,
+            "armor": 28.0,
             "armor_toughness": 8,
-            "armor/boots": 2.5,
-            "armor/chestplate": 5.5,
-            "armor/helmet": 2.5,
-            "armor/leggings": 4.0,
+            "armor/boots": 6.0,
+            "armor/chestplate": 10.0,
+            "armor/helmet": 6.0,
+            "armor/leggings": 6.0,
             "armor_durability": 12.0,
-            "attack_damage": 3.0,
+            "attack_damage": 0.0,
             "attack_speed": 0.35,
             "attack_speed/axe": -0.1,
             "attack_speed/hoe": 0.1,
@@ -70,6 +70,15 @@
                     "conditions": [],
                     "level": 3,
                     "trait": "silentgear:malleable"
+                }
+            ]
+        },
+        "silentgear:setting": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:gift_heaven"
                 }
             ]
         }

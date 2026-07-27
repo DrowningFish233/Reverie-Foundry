@@ -1,0 +1,191 @@
+###############################
+# Keys and Locks properties
+###############################
+[keysAndLocks]
+	# Enable/Disable whether a Key can break when attempting to unlock a Lock.
+	enableKeyBreaks = true
+	# Enable/Disable whether a Lock item is dropped when unlocked by Key item.
+	enableLockDrops = true
+	# The maximum uses for a given pilferers lock pick.
+	# Default: 10
+	# Range: 1 ~ 32000
+	pilferersLockPickMaxUses = 10
+	# The success probability of a pilferers lock pick on a COMMON lock.
+	# Default: 48.0
+	# Range: 1.0 ~ 100.0
+	pilferersLockPickCommonSuccessProbability = 48.0
+	# The success probability of a pilferers lock pick on an UNCOMMON lock.
+	# Default: 32.0
+	# Range: 1.0 ~ 100.0
+	pilferersLockPickUncommonSuccessProbability = 32.0
+	# The maximum uses for a given thiefs lock pick.
+	# Default: 10
+	# Range: 1 ~ 32000
+	thiefsLockPickMaxUses = 10
+	# The success probability of a thiefs lock pick on a COMMON lock.
+	# Default: 60.0
+	# Range: 1.0 ~ 100.0
+	thiefsLockPickCommonSuccessProbability = 60.0
+	# The success probability of a thiefs lock pick on an UNCOMMON lock.
+	# Default: 45.0
+	# Range: 1.0 ~ 100.0
+	thiefsLockPickUncommonSuccessProbability = 45.0
+	# The success probability of a thiefs lock pick on an SCARCE lock.
+	# Default: 30.0
+	# Range: 1.0 ~ 100.0
+	thiefsLockPickScarceSuccessProbability = 30.0
+	# The maximum uses for a given wooden key.
+	# Default: 20
+	# Range: 1 ~ 32000
+	woodKeyMaxUses = 20
+	# The maximum uses for a given stone key.
+	# Default: 10
+	# Range: 1 ~ 32000
+	stoneKeyMaxUses = 10
+	# The maximum uses for a given ember key.
+	# Default: 15
+	# Range: 1 ~ 32000
+	emberKeyMaxUses = 15
+	# The maximum uses for a given leaf key.
+	# Default: 15
+	# Range: 1 ~ 32000
+	leafKeyMaxUses = 15
+	# The maximum uses for a given lightning key.
+	# Default: 10
+	# Range: 1 ~ 32000
+	lightningKeyMaxUses = 10
+	# The maximum uses for a given iron key.
+	# Default: 10
+	# Range: 1 ~ 32000
+	ironKeyMaxUses = 10
+	# The maximum uses for a given gold key.
+	# Default: 15
+	# Range: 1 ~ 32000
+	goldKeyMaxUses = 15
+	# The maximum uses for a given metallurgists key.
+	# Default: 25
+	# Range: 1 ~ 32000
+	metallurgistsKeyMaxUses = 25
+	# The maximum uses for a given diamond key.
+	# Default: 20
+	# Range: 1 ~ 32000
+	diamondKeyMaxUses = 20
+	# The maximum uses for a given emerald key.
+	# Default: 10
+	# Range: 1 ~ 32000
+	emeraldKeyMaxUses = 10
+	# The maximum uses for a given topaz key.
+	# Default: 7
+	# Range: 1 ~ 32000
+	topazKeyMaxUses = 7
+	# The maximum uses for a given onyx key.
+	# Default: 7
+	# Range: 1 ~ 32000
+	onyxKeyMaxUses = 7
+	# The maximum uses for a given ruby key.
+	# Default: 5
+	# Range: 1 ~ 32000
+	rubyKeyMaxUses = 5
+	# The maximum uses for a given sapphire key.
+	# Default: 5
+	# Range: 1 ~ 32000
+	sapphireKeyMaxUses = 5
+	# The maximum uses for a given skeleton key.
+	# Default: 5
+	# Range: 1 ~ 32000
+	skeletonKeyMaxUses = 5
+	# The maximum uses for a given jewelled key.
+	# Default: 5
+	# Range: 1 ~ 32000
+	jewelledKeyMaxUses = 5
+	# The maximum uses for a given spider key.
+	# Default: 5
+	# Range: 1 ~ 32000
+	spiderKeyMaxUses = 5
+	# The maximum uses for a given wither key.
+	# Default: 5
+	# Range: 1 ~ 32000
+	witherKeyMaxUses = 5
+
+###############################
+# Treasure Loot and Valuables properties
+###############################
+[wealth]
+	# Enable/Disable global loot modifiers that injects Treasure2 loot into vanilla loot tables.
+	enableVanillaLootModifiers = true
+
+###############################
+# Effects and GUI Elements
+###############################
+[effects]
+	# Enable/disable whether 'undiscovered' chests (ie spawned and not found) will display effects such as light source, particles, or glow.
+	# Note: due to changes in Forge, this config option will NOT affect the light that undiscovered chests produce in 1.19.2+.
+	enableUndiscoveredEffects = true
+
+###############################
+# Gravestones and Markers properties
+###############################
+[markers]
+	# Enable/disable whether gravestone markers can spawn mobs (ex. Bound Soul).
+	enableSpawner = true
+	# The probability that a gravestone will spawn a mob.
+	# Currently gravestones can spawn Bound Souls.
+	# Default: 15
+	# Range: 1 ~ 100
+	spawnerProbability = 15
+
+###############################
+# Wither Tree properties
+###############################
+[witherTrees]
+	# Enable/disable poison fog around wither trees.
+	enablePoisonFog = true
+	# Enable/disable wither fog around wither trees.
+	enableWitherFog = true
+
+###############################
+# Wells properties
+###############################
+[wells]
+	# The number of blocks in radius around player to scan for tossed/dropped wishables items.
+	#  Ex. if player is at (0, 0, 0), then scan range would be (-1, 0, -1) -> (1, 0, 1).
+	# Default: 4
+	# Range: 1 ~ 10
+	scanForItemRadius = 4
+	# The number of blocks in radius around wishable item to scan for a well.
+	#  Ex. if item is at (0, 0, 0), then scan range would be (-1, 0, -1) -> (1, 0, 1).
+	# Default: 1
+	# Range: 1 ~ 10
+	scanForWellRadius = 1
+	# The number of blocks in radius around a wishable item (hortizontally) that are scanned to discover a well.
+	#  Ex. if item is at (0, 0, 0), then scan range would be (-1, 0, -1) -> (1, 0, 1).
+	# Default: 2
+	# Range: 1 ~ 8
+	scanMinBlockCount = 2
+	# The probability that a well will generate a Clover.
+	# Default: 5.0
+	# Range: 0.0 ~ 100.0
+	cloverProbability = 5.0
+
+###############################
+# Mob properties
+###############################
+[mobs]
+	# Enable/disable whether mimics can spawn.
+	enableMimics = true
+	# The probability that a mimic will spawn instead of a chest.
+	#  Not all chests have a mimic counterpart.
+	# Default: 12
+	# Range: 0 ~ 100
+	probability = 12
+
+###############################
+# Map properties
+###############################
+[maps]
+	# Enable/disable whether a chest can contain a treasure map to another chest.
+	enableMaps = true
+	# The probability that a chest will contain a treasure map to another chest.
+	# Default: 20.0
+	# Range: 0.0 ~ 100.0
+	probability = 20.0

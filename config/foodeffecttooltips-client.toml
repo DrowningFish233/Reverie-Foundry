@@ -1,9 +1,14 @@
 ["food effects tooltip"]
 	#Show suspicious stew food effects tooltips
 	showSuspiciousStewTooltips = false
-	#Use Lists as Whitelists instead.
-	whitelistInstead = false
 	#Blacklisted Item.
 	blacklistItems = ["minecraft:rabbit_stew"]
 	#Blacklisted Mod IDs.
 	blacklistModsIDs = ["modid"]
+	#Whitelisted Item.
+	whitelistItems = ["modid:testitem"]
+	#Whitelisted Item.
+	whitelistModsIDs = ["modid"]
+	#Default tooltip behavior for unlisted items
+	#Allowed Values: SHOW, HIDE
+	defaultTooltipBehavior = "SHOW"

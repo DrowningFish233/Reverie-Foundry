@@ -26,13 +26,9 @@
         "silentgear:grip": {
             "attack_speed": {
                 "operation": "ADD",
-                "value": 0.2
+                "value": 0.35
             },
             "harvest_speed": {
-                "operation": "MULTIPLY_BASE",
-                "value": 0.2
-            },
-            "repair_efficiency": {
                 "operation": "MULTIPLY_BASE",
                 "value": 0.15
             },
@@ -65,16 +61,11 @@
         },
         "silentgear:main": {
             "armor": 11.0,
-            "armor/boots": 2.0,
-            "armor/chestplate": 4.0,
-            "armor/helmet": 2.0,
-            "armor/leggings": 3.0,
-            "armor_durability": 5.0,
-            "charging_value": 0.8,
-            "durability": 0.2,
-            "enchantment_value": 15.0,
+            "armor/boots": 1.5,
+            "armor/chestplate": 4.5,
+            "armor/helmet": 2.5,
+            "armor/leggings": 2.5,
             "magic_armor": 10.0,
-            "rarity": 15.0,
             "traits": [
                 {
                     "conditions": [

@@ -1,19 +1,19 @@
 [region]
 	# Default: 4
 	# Range: > 0
-	terra_ferax_weight = 4
+	terra_ferax_weight = 6
 	# Default: 4
 	# Range: > 0
-	terra_solaris_weight = 4
+	terra_solaris_weight = 6
 	# Default: 4
 	# Range: > 0
-	terra_flava_weight = 4
+	terra_flava_weight = 6
 	# Default: 4
 	# Range: > 0
-	terra_laeta_weight = 4
+	terra_laeta_weight = 6
 	# Default: 4
 	# Range: > 0
-	terra_mater_weight = 4
+	terra_mater_weight = 6
 
 [misc]
 	calcite_generator = true

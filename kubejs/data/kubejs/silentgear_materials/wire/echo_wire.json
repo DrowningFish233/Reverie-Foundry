@@ -24,11 +24,11 @@
         "silentgear:binding": {},
         "silentgear:cord": {
             "ranged_damage": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
             "draw_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.2
             },
             "traits": [

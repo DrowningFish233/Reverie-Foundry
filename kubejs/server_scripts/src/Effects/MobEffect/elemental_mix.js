@@ -30,6 +30,6 @@ function elemental_mix(event) {
 
         const cappedMultiplier = Math.min(damageMultiplier, 1.5);
 
-        new_damage(event, STAGE.ADDITIVE, cappedMultiplier);
+        new_damage(event, STAGE.ADDITIVE, 1 + bonusPercent);
     }
 }

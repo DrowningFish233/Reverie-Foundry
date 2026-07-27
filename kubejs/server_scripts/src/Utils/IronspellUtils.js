@@ -20,7 +20,8 @@ function splitSpellId(spellId) {
  * 规则：各个法术流派的法术强度会对玩家的法术施法等级提供加成
  * 总法术强度(irons_spellbooks:spell_power)会影响所有法术，需要平均分配到各流派
  */
-function applyCrossSchoolLevelBonus(event) {
+function applyCrossSchoolLevelBonus(event, isReplay) {
+    if (isReplay) return;
     const player = event.player;
 
     // 前置条件检查
@@ -88,6 +89,8 @@ function getPlayerMagicData(player) {
 function overLimitSpellCast(resourceLocation, amplifier, player, consume) {
     $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](resourceLocation).attemptInitiateCast(Item.of('air'), amplifier, player.level, player, $CastSource.NONE, consume, "main_hand")
 }
+
+
 
 // 获取当前施放的法术ID
 function getSpellId(event) {

@@ -72,6 +72,8 @@ StartupEvents.registry("creative_mode_tab", event => {
         .displayName(Text.translatable("item_group.kubejs.other"))
         .content(() => ['kubejs:bad_apple']);
 });
+
+
 StartupEvents.modifyCreativeTab('kubejs:tab_3', event => {
     event.remove('kubejs:bad_apple')
 
@@ -142,7 +144,33 @@ StartupEvents.modifyCreativeTab('kubejs:tab_3', event => {
         "kubejs:sorcerer_emblem",
         "kubejs:avenger_emblem",
         "kubejs:destroyer_emblem",
-        "kubejs:angler_earring"
+        "kubejs:angler_earring",
+
+        "kubejs:pendant_of_sloth",
+        "kubejs:chain_of_lust",
+        "kubejs:eye_of_envy",
+        "kubejs:crown_of_pride",
+        "kubejs:stone_of_melancholy",
+        "kubejs:mark_of_wrath",
+        "kubejs:ring_of_gluttony",
+        "kubejs:violet_baptism",
+        "kubejs:paradise_lost",
+
+        "kubejs:randomweapon",
+        "kubejs:eye_of_ancient_city_located",
+        "kubejs:eye_of_dragon_cave_located",
+        "kubejs:eye_of_weeping_well_located",
+        "kubejs:eye_of_starlight_portal_located",
+        "kubejs:catalyst_t4",
+        "kubejs:catalyst_t5",
+        "kubejs:sulfuric_vial",
+        "kubejs:broken_sulfuric_vial",
+        "kubejs:core_suppression_unit_form_one",
+        "kubejs:core_suppression_unit_form_two",
+        "kubejs:core_suppression_unit_form_three",
+        "kubejs:remove_armor",
+        "kubejs:dragon_upgrade_smithing_template",
+        "kubejs:golden_apple"
     ];
 
     itemsInOrder.forEach(item => {
@@ -150,6 +178,30 @@ StartupEvents.modifyCreativeTab('kubejs:tab_3', event => {
     });
 });
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
+    event.remove("kubejs:randomweapon");
+    event.remove("kubejs:eye_of_ancient_city_located");
+    event.remove("kubejs:eye_of_dragon_cave_located");
+    event.remove("kubejs:eye_of_weeping_well_located");
+    event.remove("kubejs:eye_of_starlight_portal_located");
+    event.remove("kubejs:catalyst_t4");
+    event.remove("kubejs:catalyst_t5");
+    event.remove("kubejs:sulfuric_vial");
+    event.remove("kubejs:broken_sulfuric_vial");
+    event.remove("kubejs:core_suppression_unit_form_one");
+    event.remove("kubejs:core_suppression_unit_form_two");
+    event.remove("kubejs:core_suppression_unit_form_three");
+    event.remove("kubejs:remove_armor");
+    event.remove("kubejs:pendant_of_sloth");
+    event.remove("kubejs:chain_of_lust");
+    event.remove("kubejs:dragon_upgrade_smithing_template");
+    event.remove("kubejs:golden_apple");
+    event.remove("kubejs:eye_of_envy");
+    event.remove("kubejs:crown_of_pride");
+    event.remove("kubejs:stone_of_melancholy");
+    event.remove("kubejs:mark_of_wrath");
+    event.remove("kubejs:ring_of_gluttony");
+    event.remove("kubejs:violet_baptism");
+    event.remove("kubejs:paradise_lost");
     event.remove("kubejs:fish");
     event.remove("kubejs:red_skull");
     event.remove("kubejs:bad_apple");

@@ -23,7 +23,7 @@
     "properties": {
         "silentgear:rod": {
             "repair_efficiency": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.15
             },
             "attack_speed": {
@@ -31,7 +31,7 @@
                 "value": 0.2
             },
             "draw_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.2
             },
             "traits": [

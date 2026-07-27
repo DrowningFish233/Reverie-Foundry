@@ -10,11 +10,19 @@ function isNight(level) {
  * 随机移除一个负面效果
  */
 function removeRandomNegativeEffect(player) {
-    const negativeEffects = [];
+    let BLACKLIST = [
+        "malum:wyrd_exhaustion",
+        "cataclysm:ghost_sickness"
+    ];
+
+    let negativeEffects = [];
 
     player.getActiveEffectsMap().forEach((holder, instance) => {
-        const effect = holder.value();
-        if (!effect.isBeneficial()) {
+        let effect = holder.value();
+
+        let effectId = holder.getKey().location().toString();
+
+        if (!effect.isBeneficial() && !BLACKLIST.includes(effectId)) {
             negativeEffects.push(holder);
         }
     });
@@ -23,8 +31,9 @@ function removeRandomNegativeEffect(player) {
         let randomIndex = Math.floor(Math.random() * negativeEffects.length);
         let effectToRemove = negativeEffects[randomIndex];
         player.removeEffect(effectToRemove);
-
+        return true;
     }
+    return false;
 }
 
 //释放月刺
@@ -228,6 +237,7 @@ function showsanity(event, player) {
         let depravity = player.persistentData.getInt("depravity");
         let playerName = getplayerName(player.toString());
 
+        // 构建颜色部分（保持你的原始写法）
         const coloredParts = {
             player: Text.of(playerName).color('aqua'),
             sanityLabel: Text.translate('message.sanity.sanity').color('green'),
@@ -236,15 +246,35 @@ function showsanity(event, player) {
             depravityValue: Text.of(depravity).color('red')
         };
 
-        player.setStatusMessage(
-            Text.translate('message.sanity.display', [
-                coloredParts.player,
-                coloredParts.sanityLabel,
-                coloredParts.sanityValue,
-                coloredParts.depravityLabel,
-                coloredParts.depravityValue
-            ])
-        );
+        if (typeof EmbersText !== 'undefined' && EmbersText.markup) {
+            let fullMessage =
+                `<color color=aqua>${getplayerName(player.toString())}</color>` +
+                ` | ` +
+                `<color color=green>${Text.translate('message.sanity.sanity').getString()} ${sanity}/${maxSanity}</color>` +
+                ` | ` +
+                `<color color=red>${Text.translate('message.sanity.depravity').getString()} ${depravity}</color>`;
+
+            fullMessage = `<shake amplitude=0.8 frequency=1.5>${fullMessage}</shake>`;
+
+            let message = EmbersText.markup(60, fullMessage)
+                .anchor('MIDDLE')
+                .scale(1.2)
+                .fadeInTicks(3)
+                .fadeOutTicks(5)
+                .shadow(true);
+
+            EmbersText.send(player, message);
+        } else {
+            player.setStatusMessage(
+                Text.translate('message.sanity.display', [
+                    coloredParts.player,
+                    coloredParts.sanityLabel,
+                    coloredParts.sanityValue,
+                    coloredParts.depravityLabel,
+                    coloredParts.depravityValue
+                ])
+            );
+        }
     }
 }
 
@@ -573,12 +603,6 @@ function getRandomEnchantedBookId() {
                 "forcedLevelCap": -1
             },
             {
-                "id": "enderscape:lightspeed",
-                "maxLevel": 7,
-                "maxLootLevel": 3,
-                "forcedLevelCap": -1
-            },
-            {
                 "id": "dungeons_arise:lolths_curse",
                 "maxLevel": 1,
                 "maxLootLevel": 1,
@@ -765,12 +789,6 @@ function getRandomEnchantedBookId() {
                 "forcedLevelCap": -1
             },
             {
-                "id": "enderscape:rebound",
-                "maxLevel": 1,
-                "maxLootLevel": 1,
-                "forcedLevelCap": -1
-            },
-            {
                 "id": "malum:rebound",
                 "maxLevel": 7,
                 "maxLootLevel": 3,
@@ -912,12 +930,6 @@ function getRandomEnchantedBookId() {
                 "id": "eternal_starlight:tracing",
                 "maxLevel": 6,
                 "maxLootLevel": 2,
-                "forcedLevelCap": -1
-            },
-            {
-                "id": "enderscape:transdimensional",
-                "maxLevel": 1,
-                "maxLootLevel": 1,
                 "forcedLevelCap": -1
             },
             {
@@ -1380,6 +1392,33 @@ function RayCasting(start, end, aabb) {
     return tMax >= 0 && tMin <= 1 && tMin <= tMax;
 }
 
+
+function getRandomWeapon() {
+    const WEAPONS = [
+        'hazennstuff:obsidian_claymore',
+        'hazennstuff:vampire_knives',
+        'hazennstuff:bountiful_harvest',
+        'hazennstuff:skyscorcher',
+        'hazennstuff:war_flaming_lance',
+        'hazennstuff:ravens_bane',
+        'hazennstuff:draconic_splitter',
+        'hazennstuff:firebrand',
+        'hazennstuff:fireblossom_rapier',
+        'hazennstuff:legionnaire_warlock_axe',
+        'hazennstuff:dawnmaker',
+        'hazennstuff:excalibur',
+        'hazennstuff:hammer_of_justice',
+        'hazennstuff:malice',
+        'hazennstuff:provocation_dormant',
+        'hazennstuff:coralite_cane',
+        'hazennstuff:insania_aeternus',
+        'hazennstuff:true_nights_edge'
+    ];
+
+    let randomIndex = Math.floor(Math.random() * WEAPONS.length);
+    return Item.of(WEAPONS[randomIndex]);
+}
+
 /**
  * 
  * @param {integer} interval 执行前的等待时间（单位：Tick）
@@ -1411,22 +1450,16 @@ function summonDarkDoppelganger(interval, entity, mainHand, helmet, chestplate, 
             let player = nearestPlayer;
             let spawnPos = entity.position();
 
-            let boss = null;
-
-            if (mainHand || helmet || chestplate || leggings || boots) {
-                boss = $ShadowOrbItem.summonDoppelgangerWithCustomEquipment(
-                    level,
-                    spawnPos,
-                    player,
-                    mainHand || ItemStack.EMPTY,
-                    helmet || ItemStack.EMPTY,
-                    chestplate || ItemStack.EMPTY,
-                    leggings || ItemStack.EMPTY,
-                    boots || ItemStack.EMPTY
-                );
-            } else {
-                boss = $ShadowOrbItem.summonDoppelgangerAt(level, spawnPos, player);
-            }
+            let boss = $ShadowOrbItem.summonDoppelgangerWithCustomEquipment(
+                level,
+                spawnPos,
+                player,
+                mainHand || getRandomWeapon(),
+                helmet || Item.of('allthewizardgear:unobtainium_mage_helmet'),
+                chestplate || Item.of('allthewizardgear:unobtainium_mage_chestplate'),
+                leggings || Item.of('allthewizardgear:unobtainium_mage_leggings'),
+                boots || Item.of('allthewizardgear:unobtainium_mage_boots')
+            );
 
             if (boss) {
                 if (sound) {
@@ -1456,7 +1489,6 @@ function summonDarkDoppelganger(interval, entity, mainHand, helmet, chestplate, 
         }
     });
 }
-
 
 //用于伪造event获得补全用：
 /**
@@ -1792,4 +1824,74 @@ function handleSocketChange(event, player, itemId) {
     if (newItem.getId() == itemId) {
         $SocketStateAPI.enable(player, itemId);
     }
+}
+
+/**
+ * 修复/扣除物品耐久（正数修复，负数扣除）
+ * @param {Internal.ItemStack} stack 物品
+ * @param {number} amount 修复量（正数修复，负数扣除）
+ * @param {Internal.Player} [player] 可选，持有物品的玩家，传入则扣除耐久时触发破损回调
+ * @param {string} [slotName] 可选，槽位名称（"mainhand"、"offhand"、"head"、"chest"、"legs"、"feet"），默认 "mainhand"
+ */
+function fu_repairDurability(stack, amount, player, slotName) {
+    if (!stack || stack.isEmpty() || amount === 0) return;
+
+    if (amount < 0 && player && player.isPlayer()) {
+        let damageAmount = Math.abs(amount);
+        let currentDamage = stack.getDamageValue();
+        let maxDamage = stack.getMaxDamage();
+        let newDamage = currentDamage + damageAmount;
+
+        if (fu_isGear(stack)) {
+            fu_setDamage(stack, newDamage, (s, d) => s.setDamageValue(d));
+        } else {
+            stack.setDamageValue(newDamage);
+        }
+
+        if (newDamage >= maxDamage - 1) {
+            let slot = slotName || "mainhand";
+            triggerGearBroken(stack, player, slot);
+        }
+        return;
+    }
+
+    if (fu_isGear(stack)) {
+        let currentDamage = stack.getDamageValue();
+        let newDamage = Math.max(0, currentDamage - amount);
+        fu_setDamage(stack, newDamage, (s, d) => s.setDamageValue(d));
+    } else {
+        let newDamage = Math.max(0, stack.getDamageValue() - amount);
+        stack.setDamageValue(newDamage);
+    }
+}
+
+/**
+ * 手动触发 Silent Gear 的 onBroken 回调
+ * @param {Internal.ItemStack} stack 武器
+ * @param {Internal.Player} player 玩家
+ * @param {string} slotName 槽位名称："mainhand"、"offhand"、"head"、"chest"、"legs"、"feet"
+ */
+function triggerGearBroken(stack, player, slotName) {
+    let slot;
+    switch (slotName) {
+        case "offhand":
+            slot = $EquipmentSlot.OFFHAND;
+            break;
+        case "head":
+            slot = $EquipmentSlot.HEAD;
+            break;
+        case "chest":
+            slot = $EquipmentSlot.CHEST;
+            break;
+        case "legs":
+            slot = $EquipmentSlot.LEGS;
+            break;
+        case "feet":
+            slot = $EquipmentSlot.FEET;
+            break;
+        default:
+            slot = $EquipmentSlot.MAINHAND;
+    }
+
+    $GearHelper.onBroken(stack, player, slot);
 }

@@ -79,16 +79,13 @@ const itemSet4 = [
     { id: () => getRandomScrollId(), count: 1 },
     { id: () => getRandomScrollId(), count: 1 },
 ];
-
 const itemSet5 = [
     { command: "warrior", oneUse: true },
     { id: "sophisticatedbackpacks:backpack", count: 1 },
     { id: 'gobber2:gobber2_gooey_bread', count: 8 },
-    { id: 'minecraft:iron_sword', count: 1 },
-    { id: 'enderscape:end_stone_rubble_shield', count: 1 },
+    { id: 'darkerdepths:stiletto', count: 1 },
     { id: 'kubejs:everclear', count: 1 },
     { id: () => getRandomScrollId(), count: 1 },
-
 ];
 
 

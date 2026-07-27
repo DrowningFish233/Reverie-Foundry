@@ -2,10 +2,10 @@
   "modpackMode": false,
   "fullScreen": "WINDOWED",
   "disableBorderlessOptimizations": false,
-  "fpsDisplayMode": "SIMPLE",
+  "fpsDisplayMode": "ADVANCED",
   "fpsDisplayAlign": "LEFT",
   "fpsDisplayVAlign": "TOP",
-  "fpsDisplaySystemMode": "GPU_ONLY",
+  "fpsDisplaySystemMode": "OFF",
   "fpsDisplayMargin": 12,
   "fpsDisplayVMargin": 12,
   "fpsDisplayShadow": false,
@@ -38,17 +38,15 @@
   "darknessFullMoonBright": 0.25,
   "hideJREMI": false,
   "hideJREMIHint": false,
-  "fontShadows": false,
-  "leavesCulling": "ALL",
+  "fontShadows": true,
+  "leavesCulling": "OFF",
   "fastChests": false,
   "fastBeds": false,
   "rainParticles": true,
   "rainDropParticles": true,
   "crackingBlockParticles": true,
   "destroyedBlockParticles": true,
-  "disabledParticles": [
-    "minecraft:entity_effect"
-  ],
+  "disabledParticles": [],
   "tileEntityDistanceCulling": true,
   "tileEntityCullingDistanceX": 4096,
   "tileEntityCullingDistanceY": 32,
@@ -56,15 +54,14 @@
   "entityLimit": 512,
   "entityCullingDistanceX": 4096,
   "entityCullingDistanceY": 32,
-  "monsterDistanceCulling": true,
-  "monsterCullingDistanceX": 4096,
-  "monsterCullingDistanceY": 32,
+  "monsterDistanceCulling": false,
+  "monsterCullingDistanceX": 16384,
+  "monsterCullingDistanceY": 64,
   "entityWhitelist": [
     "minecraft:ghast",
     "minecraft:ender_dragon",
     "iceandfire:all",
-    "create:all",
-    "terra_entity:all"
+    "create:all"
   ],
   "monsterWhitelist": [],
   "tileEntityWhitelist": [
@@ -72,6 +69,6 @@
   ],
   "borderlessAttachModeF11": "ATTACH",
   "fastLanguageReload": true,
-  "enableZoom": false,
+  "enableZoom": true,
   "maxZoom": 50.0
 }

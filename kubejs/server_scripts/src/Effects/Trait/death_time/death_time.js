@@ -23,58 +23,115 @@ function fight_to_death(event, player) {
 }
 
 function gift_Heaven(event, player) {
-    let originalItem = player.getMainHandItem()
-    let hasTraitInHand = fu_hasTrait(originalItem, "kubejs:gift_heaven");
-    let hasTraitInArmor = fu_hasTraitArmor(player, "kubejs:gift_heaven");
+    let equippedItem = null;
+    let slotToClear = -1;
+    let isCurio = false;
+    let curioIdentifier = '';
+    let curioIndex = -1;
 
-    if (!hasTraitInHand && !hasTraitInArmor) return;
+    let equipSlots = [0, 40, 36, 37, 38, 39];
+    let inventory = player.getInventory();
 
-    // 检查物品ID是否为指定的Silent Gear武器
-    let validItems = [
-        'silentgear:sword',
-        'silentgear:hammer',
-        'silentgear:excavator',
-        'silentgear:saw',
-        'silentgear:prospector_hammer',
-        'silentgear:hoe',
-        'silentgear:mattock',
-        'silentgear:sickle',
-        'silentgear:shears',
-        'silentgear:fishing_rod',
-        'silentgear:machete',
-        'silentgear:katana',
-        'silentgear:paxel',
-        'silentgear:trident',
-        'silentgear:knife',
-        'silentgear:dagger',
-        'silentgear:mace',
-        'silentgear:bow',
-        'silentgear:slingshot',
-        'silentgear:shovel',
-        'silentgear:pickaxe',
-        'silentgear:axe',
-        'silentgear:shield'
-    ];
+    let curiosInventory = $CuriosApi.getCuriosInventory(player);
 
-    if (!validItems.includes(originalItem.id)) return;
+    if (curiosInventory.isPresent()) {
+        let inv = curiosInventory.get();
+        let equippedCurios = inv.getEquippedCurios();
 
-    let displayItem = originalItem.copy()
+        if (equippedCurios) {
+            let size = equippedCurios.getSlots();
+
+            for (let i = 0; i < size; i++) {
+                let item = equippedCurios.getStackInSlot(i);
+                if (item && !item.isEmpty()) {
+                    let hasTrait = fu_hasTrait(item, "kubejs:gift_heaven");
+                    let isGear = fu_isGear(item);
+
+                    if (hasTrait && isGear) {
+                        equippedItem = item;
+                        isCurio = true;
+                        curioIndex = i;
+                        let curiosMap = inv.getCurios();
+                        for (let [identifier, handler] of Object.entries(curiosMap)) {
+                            if (handler && handler.getSlots() > i) {
+                                let stackInSlot = handler.getStackInSlot(i);
+                                if (stackInSlot && stackInSlot.equals(item, true)) {
+                                    curioIdentifier = identifier;
+                                    break;
+                                }
+                            }
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    if (!equippedItem) {
+        if (fu_hasTraitEitherHand(player, "kubejs:gift_heaven")) {
+            let mainHand = player.getMainHandItem();
+            if (fu_hasTrait(mainHand, "kubejs:gift_heaven") && fu_isGear(mainHand)) {
+                equippedItem = mainHand;
+                slotToClear = 0;
+            } else {
+                let offHand = player.getOffhandItem();
+                if (fu_hasTrait(offHand, "kubejs:gift_heaven") && fu_isGear(offHand)) {
+                    equippedItem = offHand;
+                    slotToClear = 40;
+                }
+            }
+        }
+    }
+
+    if (!equippedItem) {
+        if (fu_hasTraitArmor(player, "kubejs:gift_heaven")) {
+            let armorSlots = [39, 38, 37, 36];
+            for (let i of armorSlots) {
+                let item = inventory.extractItem(i, 1, true);
+                if (item && !item.isEmpty()) {
+                    if (fu_hasTrait(item, "kubejs:gift_heaven") && fu_isGear(item)) {
+                        equippedItem = item;
+                        slotToClear = i;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    if (!equippedItem) return;
 
     player.sendData("gift_Heaven", {
         gift_Heaven: true,
-        itemId: originalItem.id
+        itemId: equippedItem.id
     });
 
-    originalItem.shrink(1)
-    if (originalItem.count <= 0) {
-        player.setMainHandItem(Item.of('minecraft:air'))
+    if (isCurio) {
+        if (curioIdentifier) {
+            let curiosInventory = $CuriosApi.getCuriosInventory(player);
+            if (curiosInventory.isPresent()) {
+                let inv = curiosInventory.get();
+                inv.setEquippedCurio(curioIdentifier, curioIndex, Item.of('minecraft:air'));
+            }
+        } else {
+            let curiosInventory = $CuriosApi.getCuriosInventory(player);
+            if (curiosInventory.isPresent()) {
+                let inv = curiosInventory.get();
+                let equippedCurios = inv.getEquippedCurios();
+                if (equippedCurios) {
+                    equippedCurios.setStackInSlot(curioIndex, Item.of('minecraft:air'));
+                }
+            }
+        }
+    } else {
+        inventory.extractItem(slotToClear, 1, false);
     }
-    player.setHealth(2)
-    player.heal(6)
+
+    player.setHealth(2);
+    player.heal(6);
+
     event.cancel();
 }
-
-
 
 function gold_body(event, player, currentHealth) {
     if (!player.hasEffect('kubejs:gold_body')) return;
@@ -100,18 +157,12 @@ function one_six_seven_four(event, player) {
 
 
 function exp_to_death(event, player) {
-    const COOLDOWN_KEY = "exp_to_death_cd"
+    if (!fu_hasTraitAnywhere(player, "kubejs:exp_to_death")) return;
 
-    if (!fu_hasTraitAnywhere(player, "kubejs:exp_to_death")) {
-        return
-    }
-
-    if ($CooldownManager.hasCooldown(player, COOLDOWN_KEY)) return
-
-    let xplevel = player.getXpLevel()
-    player.setXpLevel(0)
-    player.setXp(0)
-    player.potionEffects.add("minecraft:absorption", xplevel, (xplevel / 5) * 20)
-
-    $CooldownManager.setCooldown(player, COOLDOWN_KEY, 12000)
+    trySkill(player, "exp_to_death", 600, () => {
+        let xplevel = player.getXpLevel()
+        player.setXpLevel(0)
+        player.setXp(0)
+        player.potionEffects.add("minecraft:absorption", xplevel, (xplevel / 5) * 20)
+    })
 }

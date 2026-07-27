@@ -3,11 +3,11 @@
 	#Health of the Dark Doppelganger
 	# Default: 600.0
 	# Range: 1.0 ~ 100000.0
-	health = 600.0
+	health = 20000.0
 	#Attack Damage of the Dark Doppelganger
 	# Default: 10.0
 	# Range: 0.1 ~ 1000.0
-	attack_damage = 20.0
+	attack_damage = 40.0
 	#Movement Speed of the Dark Doppelganger
 	# Default: 0.2
 	# Range: 0.01 ~ 2.0
@@ -19,7 +19,7 @@
 	#Armor of the Dark Doppelganger
 	# Default: 10.0
 	# Range: 0.0 ~ 100.0
-	armor = 20.0
+	armor = 30.0
 	#Follow Range of the Dark Doppelganger
 	# Default: 64.0
 	# Range: 1.0 ~ 256.0
@@ -30,7 +30,7 @@
 	#Examples:
 	#minecraft:netherite_helmet
 	#irons_spellbooks:*
-	banned_armor = ["minecraft:netherite_helmet"]
+	banned_armor = ["minecraft:netherite_helmet","silentgear:*","reveriefoundry:*"]
 	#Scales all Iron's Spellbooks spell power attributes copied from the summoner. 1.0 = no change.
 	# Default: 1.0
 	# Range: 0.0 ~ 100.0
@@ -44,19 +44,19 @@
 
 	[dark_doppelganger.phase2]
 		spells_a = ["irons_spellbooks:magic_arrow", "irons_spellbooks:poison_arrow", "irons_spellbooks:magma_bomb"]
-		spells_b = ["irons_spellbooks:heat_surge", "irons_spellbooks:flaming_strike","hazennstuff:ionic_slash"]
+		spells_b = ["irons_spellbooks:heat_surge", "irons_spellbooks:flaming_strike"]
 		spells_c = ["irons_spellbooks:frost_step"]
 		spells_d = ["irons_spellbooks:root", "irons_spellbooks:thunderstorm"]
 
 	[dark_doppelganger.phase3]
 		spells_a = ["irons_spellbooks:lightning_lance", "irons_spellbooks:stomp"]
-		spells_b = ["irons_spellbooks:shockwave", "irons_spellbooks:ascension","hazennstuff:ionic_slash"]
+		spells_b = ["irons_spellbooks:shockwave", "irons_spellbooks:ascension"]
 		spells_c = ["irons_spellbooks:blood_step"]
 		spells_d = ["irons_spellbooks:evasion", "irons_spellbooks:echoing_strikes"]
 
 	[dark_doppelganger.final]
 		spells_a = ["irons_spellbooks:eldritch_blast", "irons_spellbooks:sonic_boom", "irons_spellbooks:abyssal_shroud", "irons_spellbooks:ray_of_frost", "irons_spellbooks:sculk_tentacles"]
-		spells_b = ["irons_spellbooks:ascension", "irons_spellbooks:abyssal_shroud","hazennstuff:ionic_slash"]
+		spells_b = ["irons_spellbooks:ascension", "irons_spellbooks:abyssal_shroud"]
 		spells_c = ["irons_spellbooks:blood_step"]
 		spells_d = ["irons_spellbooks:abyssal_shroud", "irons_spellbooks:echoing_strikes", "irons_spellbooks:root", "irons_spellbooks:blight"]
 
@@ -65,11 +65,11 @@
 	#Base max health for minions
 	# Default: 40.0
 	# Range: 1.0 ~ 1000.0
-	health = 40.0
+	health = 100.0
 	#Base attack damage for minions
 	# Default: 6.0
 	# Range: 0.1 ~ 100.0
-	attack_damage = 6.0
+	attack_damage = 8.0
 	#Base movement speed for minions
 	# Default: 0.28
 	# Range: 0.01 ~ 2.0
@@ -77,7 +77,7 @@
 	#Base armor for minions
 	# Default: 4.0
 	# Range: 0.0 ~ 100.0
-	armor = 4.0
+	armor = 20.0
 	#Spell used for the minion barrage goal. Must be a valid spell id.
 	#Example: irons_spellbooks:devour
 	barrage_spell = "irons_spellbooks:devour"

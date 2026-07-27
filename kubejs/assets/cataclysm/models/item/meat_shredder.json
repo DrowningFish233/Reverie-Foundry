@@ -1,0 +1,24 @@
+ {
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+
+  "base": {
+    "parent": "cataclysm:item/meat_shredder_handheld"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "cataclysm:item/meat_shredder_gui"
+    },
+    "fixed": {
+      "parent": "cataclysm:item/meat_shredder_gui"
+    }
+  },
+
+  "overrides": [
+    {
+      "predicate": { "using": 1 },
+      "model": "cataclysm:item/meat_shredder_using"
+    }
+  ]
+}

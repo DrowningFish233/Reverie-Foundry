@@ -24,7 +24,11 @@
         "title": "打开背包",
         "icon": {
           "id": "sophisticatedbackpacks:backpack",
-          "count": 1
+          "count": 1,
+          "components": {
+            "sophisticatedcore:number_of_inventory_slots": 27,
+            "sophisticatedcore:number_of_upgrade_slots": 1
+          }
         }
       },
       {
@@ -55,7 +59,7 @@
         "key": "gui.xaero_waypoints_key",
         "title": "打开路径点界面",
         "icon": {
-          "id": "enderscape:mirror",
+          "id": "waystones:return_scroll",
           "count": 1
         }
       }

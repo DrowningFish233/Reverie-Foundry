@@ -49,6 +49,11 @@
         {
           "conditions": [],
           "level": 1,
+          "trait": "silentgear:lucky"
+        },
+        {
+          "conditions": [],
+          "level": 1,
           "trait": "silentgear:lustrous"
         },
         {
@@ -58,7 +63,23 @@
         }
       ]
     },
-    "silentgear:rod": {},
-    "silentgear:setting": {}
+    "silentgear:rod": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:lucky"
+        }
+      ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:ultimine_test"
+        }
+      ]
+    }
   }
 }

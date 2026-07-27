@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"textures": {
+	  "layer0": "cataclysm:item/wrath_of_the_desert_gui"
+	},
+	"base": {
+	  "parent": "cataclysm:item/wrath_of_the_desert_hendheld"
+	},
+	"perspectives": {
+	  "gui": {
+		"parent": "cataclysm:item/wrath_of_the_desert_gui"
+	  },
+	  "fixed": {
+		"parent": "cataclysm:item/wrath_of_the_desert_gui"
+	  }
+	}
+  }

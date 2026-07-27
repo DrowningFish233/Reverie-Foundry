@@ -27,14 +27,14 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 18.0,
-      "armor/boots": 2.0,
-      "armor/chestplate": 8.0,
-      "armor/helmet": 2.0,
-      "armor/leggings": 6.0,
+      "armor": 22.0,
+      "armor/boots": 3.5,
+      "armor/chestplate": 9.0,
+      "armor/helmet": 4.0,
+      "armor/leggings": 5.5,
       "armor_durability": 21.0,
-      "armor_toughness": 2.0,
-      "attack_damage": 4.0,
+      "armor_toughness": 6.0,
+      "attack_damage": 5.0,
       "attack_speed": 0.0,
       "charging_value": 1.2,
       "draw_speed": 0.0,
@@ -65,12 +65,12 @@
     },
     "silentgear:rod": {
       "durability": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": -0.1
       },
       "rarity": 70.0,
       "repair_efficiency": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.1
       },
       "traits": [

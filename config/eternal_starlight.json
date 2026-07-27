@@ -166,17 +166,17 @@
       "canSpawn": true
     },
     "theGatekeeper": {
-      "maxHealth": 175.0,
-      "armor": 15.0,
-      "attackDamage": 5.0,
+      "maxHealth": 275.0,
+      "armor": 25.0,
+      "attackDamage": 10.0,
       "followRange": 200.0,
       "canSpawn": true,
       "canAlwaysHurtWhenFighting": false
     },
     "starlightGolem": {
-      "maxHealth": 220.0,
-      "armor": 0.0,
-      "attackDamageScale": 1.0,
+      "maxHealth": 350.0,
+      "armor": 12.0,
+      "attackDamageScale": 1.4,
       "followRange": 200.0,
       "canSpawn": true
     },
@@ -188,16 +188,16 @@
       "canSpawn": true
     },
     "permafrost": {
-      "maxHealth": 120.0,
+      "maxHealth": 150.0,
       "armor": 10.0,
       "attackDamageScale": 1.0,
       "followRange": 200.0,
       "canSpawn": true
     },
     "lunarMonstrosity": {
-      "maxHealth": 200.0,
-      "armor": 12.0,
-      "attackDamageScale": 1.0,
+      "maxHealth": 300.0,
+      "armor": 10.0,
+      "attackDamageScale": 1.1,
       "followRange": 200.0,
       "canSpawn": true
     },

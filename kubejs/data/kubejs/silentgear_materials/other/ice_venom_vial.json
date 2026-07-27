@@ -29,9 +29,12 @@
 			},
 			"attack_damage": {
 				"operation": "ADD",
-				"value": 1
+				"value": 2
 			},
-			"spell_power": 0.05,
+			"spell_power": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
 			"traits": [
 				{
 					"conditions": [],

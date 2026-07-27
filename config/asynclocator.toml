@@ -7,6 +7,17 @@ biomeSearchRadius = 6400
 #When a merchant's treasure map offer ends up not finding a feature location,
 #remove the offer instead of marking it out of stock.
 removeMerchantInvalidMapOffer = false
+#Maximum locate searches that may execute concurrently.
+#The default value is recommended for most servers. Higher values can improve throughput,
+#but may increase CPU, disk, chunk-generation, and main-thread completion load.
+# Default: 2
+# Range: 1 ~ 256
+maxConcurrentLocates = 2
+#Maximum locate searches that may wait for execution capacity.
+#Requests above the active plus queued limit fail immediately instead of consuming unbounded resources.
+# Default: 128
+# Range: 0 ~ 10000
+maxQueuedLocates = 128
 
 ["Feature Toggles"]
 	#If true, enables asynchronous locating of structures for dolphin treasures.

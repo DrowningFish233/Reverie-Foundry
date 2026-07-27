@@ -27,11 +27,11 @@
                 "value": 0.2
             },
             "attack_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.5
             },
             "harvest_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.5
             },
             "magic_damage": {
@@ -39,11 +39,11 @@
                 "value": 0.2
             },
             "enchantment_value": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.2
             },
             "rarity": {

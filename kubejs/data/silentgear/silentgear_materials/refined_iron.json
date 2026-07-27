@@ -66,11 +66,11 @@
     },
     "silentgear:rod": {
       "durability": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.15
       },
       "ranged_damage": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.1
       },
       "rarity": 25.0,

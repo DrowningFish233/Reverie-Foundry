@@ -30,7 +30,7 @@
       "armor/leggings": 5.0,
       "armor_durability": 50.0,
       "armor_toughness": 12.0,
-      "attack_damage": 5.0,
+      "attack_damage": 1.0,
       "attack_speed": 0.0,
       "attack_reach": 0.0,
       "charging_value": 1.8,
@@ -78,7 +78,7 @@
         "value": 2.0
       },
       "charging_value": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.1
       },
       "traits": [

@@ -28,11 +28,11 @@
   "properties": {
     "silentgear:coating": {
       "armor_durability": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": -0.05
       },
       "durability": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": -0.05
       },
       "rarity": {
@@ -103,7 +103,7 @@
     },
     "silentgear:rod": {
       "harvest_speed": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.1
       },
       "traits": [
@@ -152,7 +152,7 @@
         },
         {
           "conditions": [],
-          "level": 4,
+          "level": 2,
           "trait": "silentgear:fiery"
         }
       ]

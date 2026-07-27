@@ -26,12 +26,16 @@
                 "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
+            "attack_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.1
+            },
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
             "harvest_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.1
             },
             "rarity": {

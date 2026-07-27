@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"textures": {
+	  "layer0": "cataclysm:item/ceraunus_gui"
+	},
+	"base": {
+	  "parent": "cataclysm:item/ceraunus_hendheld"
+	},
+	"perspectives": {
+	  "gui": {
+		"parent": "cataclysm:item/ceraunus_gui"
+	  },
+	  "fixed": {
+		"parent": "cataclysm:item/ceraunus_gui"
+	  }
+	}
+  }

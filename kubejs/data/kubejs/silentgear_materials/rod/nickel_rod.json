@@ -23,19 +23,19 @@
     "properties": {
         "silentgear:rod": {
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.3
             },
             "enchantment_value": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.05
             },
             "ranged_damage": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.15
             },
             "draw_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.15
             },
             "traits": [

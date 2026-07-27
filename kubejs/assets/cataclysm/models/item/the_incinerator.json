@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "textures": {
+    "layer0": "cataclysm:item/the_incinerator_gui"
+  },
+  "base": {
+    "parent": "cataclysm:item/the_incinerator_handheld"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "cataclysm:item/the_incinerator_gui"
+    },
+    "fixed": {
+      "parent": "cataclysm:item/the_incinerator_gui"
+    }
+  }
+}

@@ -48,6 +48,11 @@
       "traits": [
         {
           "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lucky"
+        },
+        {
+          "conditions": [],
           "level": 4,
           "trait": "silentgems:freeze_resistant"
         },
@@ -62,6 +67,11 @@
       "traits": [
         {
           "conditions": [],
+          "level": 2,
+          "trait": "silentgear:lucky"
+        },
+        {
+          "conditions": [],
           "level": 3,
           "trait": "silentgear:brittle"
         },
@@ -74,6 +84,11 @@
     },
     "silentgear:setting": {
       "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:lucky"
+        },
         {
           "conditions": [],
           "level": 3,

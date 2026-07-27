@@ -9,6 +9,7 @@
 	}
 	id: "594B7E5B489F5F45"
 	images: [{
+		alpha: 150
 		height: 12.0d
 		image: "immersive_aircraft:item/biplane"
 		rotation: 0.0d

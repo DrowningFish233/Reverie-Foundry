@@ -91,8 +91,8 @@ const curios_event_hurt = {
         if (itemStack !== null) {
             let player = event.player;
             if (player) {
-                let COOLDOWN_KEY = "mana_cloak_COOLDOWN_KEY"
-                if ($CooldownManager.hasCooldown(player, COOLDOWN_KEY)) return
+                if (!trySkill(player, "mana_cloak", 7, false, () => { })) return;
+
                 let level = player.level
                 let target = findTarget(player)
                 if (target) {
@@ -105,17 +105,15 @@ const curios_event_hurt = {
                         target.z,
                         80
                     )
-                    // 获取并设置流星尺寸
                     let meteors = level.getEntitiesOfClass($MeteorClass, player.getBoundingBox().inflate(80))
                     meteors.forEach(meteor => {
-                        if (meteor.getOwner() == player) { // 只修改玩家召唤的流星
+                        if (meteor.getOwner() == player) {
                             meteor.setSize(3)
                         }
                     })
                 }
                 getPlayerMagicData(player).addMana(50);
                 getPlayerMagicData(player).addMana(-1);
-                $CooldownManager.setCooldown(player, COOLDOWN_KEY, 140)
             }
         }
     }

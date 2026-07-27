@@ -23,15 +23,15 @@
     "properties": {
         "silentgear:rod": {
             "repair_efficiency": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.15
             },
             "attack_damage": {
                 "operation": "ADD",
-                "value": 2.5
+                "value": 1.5
             },
             "ranged_damage": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
             "enchantment_value": {

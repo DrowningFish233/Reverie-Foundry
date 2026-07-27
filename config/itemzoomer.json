@@ -1,9 +1,10 @@
 {
-  "enabled": true,
+  "enabled": false,
   "appearAnimation": "SCALE",
   "idleAnimation": "SWING",
   "appearDelayMs": 200,
   "itemSizePercent": 65,
   "showItemInfo": false,
-  "infoDelaySeconds": 2
+  "infoDelaySeconds": 2,
+  "favoritesOverlap": "HIDE"
 }

@@ -23,11 +23,11 @@
     "properties": {
         "silentgear:rod": {
             "attack_damage": {
-                "operation": "MULTIPLY_TOTAL",
-                "value": -0.35
+                "operation": "MULTIPLY_BASE",
+                "value": -0.2
             },
             "attack_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.4
             },
             "ranged_damage": {
@@ -51,7 +51,7 @@
                 "value": -0.1
             },
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.85
             },
             "rarity": {

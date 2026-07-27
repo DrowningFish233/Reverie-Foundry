@@ -445,7 +445,7 @@
         {
           "type": "minecraft:item",
           "name": "kubejs:isovol_ingot",
-          "weight": 3,
+          "weight": 7,
           "functions": [
             {
               "add": false,

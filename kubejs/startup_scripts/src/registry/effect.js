@@ -1131,12 +1131,12 @@ event.create('purple_haze_attack')
             '6596497a-20ed-4493-8b88-8fe8227424cf',
             0.2,
             "add_multiplied_base"
-        );
+        )
         .modifyAttribute('minecraft:generic.armor',
             '56aee3de-2a53-4b91-8b4e-3b9088c43449',
             10,
             "add_value"
-        );
+        )
         .modifyAttribute('malum:healing_received',
             'dc417ed5-0ba8-4b20-ae61-98c1f346ccb2',
             -0.2,
@@ -1257,9 +1257,20 @@ event.create('purple_haze_attack')
         .effectTick((entity, lvl) => {
             if (!entity || entity.level.isClientSide()) return
             if (entity.server.tickCount % 20 == 0) {
-                let speed = entity.getTotalMovementSpeed()
-                if (speed >= 0.11) return
-                entity.attack($DamageSource("generic"), lvl * speed * 10);
+                const frostBurn = entity.getEffect("terra_entity:frost_burn")
+                if (!frostBurn) return
+
+                const amplifier = frostBurn.getAmplifier() + 1
+                const damage = amplifier * 2
+
+                entity.attack($DamageSource("generic"), damage)
+
+                const newAmplifier = Math.max(0, Math.floor(amplifier / 2) - 1)
+                if (newAmplifier >= 0) {
+                    entity.setEffect("terra_entity:frost_burn", newAmplifier, frostBurn.getDuration())
+                } else {
+                    entity.removeEffect("terra_entity:frost_burn")
+                }
             }
         })
     event.create('pest_defense')

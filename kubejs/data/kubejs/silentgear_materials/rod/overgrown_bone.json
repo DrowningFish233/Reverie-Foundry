@@ -30,8 +30,12 @@
                 "operation": "MULTIPLY_BASE",
                 "value": 0.05
             },
+            "attack_reach": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.5
+            },
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.35
             },
             "traits": [

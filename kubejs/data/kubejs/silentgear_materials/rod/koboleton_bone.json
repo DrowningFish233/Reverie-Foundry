@@ -23,12 +23,12 @@
     "properties": {
         "silentgear:rod": {
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.45
             },
             "attack_damage": {
                 "operation": "MULTIPLY_BASE",
-                "value": -0.15
+                "value": 0.05
             },
             "harvest_speed": {
                 "operation": "MULTIPLY_BASE",

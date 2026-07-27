@@ -31,7 +31,7 @@
       "armor/leggings": 5.0,
       "armor_durability": 22.0,
       "attack_damage": 4.5,
-      "attack_speed": 0.15,
+      "attack_speed": -0.1,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,
       "charging_value": 1.0,
@@ -45,7 +45,7 @@
         "name": "diamond/钻石"
       },
       "magic_armor": 8.0,
-      "magic_damage": 3.0,
+      "magic_damage": 6.0,
       "ranged_damage": 0.5,
       "rarity": 45.0,
       "traits": [

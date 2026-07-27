@@ -44,7 +44,7 @@ function applyAttributeBoost(entity, summoner) {
     if (healthAttr) {
         let originalHealth = healthAttr.value;
         healthAttr.setBaseValue(originalHealth * multiplier);
-        entity.setHealth(healthAttr.value); // 同时设置当前生命值
+        entity.setHealth(healthAttr.value);
     }
 
     // 增强攻击伤害
@@ -52,6 +52,7 @@ function applyAttributeBoost(entity, summoner) {
     if (damageAttr) {
         damageAttr.setBaseValue(damageAttr.value * multiplier);
     }
+
     entity.persistentData.Multy = 1;
 
 }

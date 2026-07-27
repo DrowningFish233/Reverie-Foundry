@@ -27,7 +27,7 @@
                 "value": 0.05
             },
             "attack_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "ADD",
                 "value": -0.1
             },
             "harvest_speed": {
@@ -35,6 +35,10 @@
                 "value": -0.05
             },
             "projectile_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.5
+            },
+            "projectile_accuracy": {
                 "operation": "MULTIPLY_BASE",
                 "value": -0.5
             },

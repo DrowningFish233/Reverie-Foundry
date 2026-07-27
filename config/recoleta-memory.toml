@@ -1,0 +1,61 @@
+#Recoleta - memory reduction settings
+[memory]
+	#Maximum particles kept alive per render-style. Vanilla = 16384.
+	# Default: 4096
+	# Range: 256 ~ 16384
+	particlePerTypeCap = 4096
+	#Periodically trim long-lived collections during low-tick periods.
+	enableSlackTrimmer = true
+	#Evict soft caches when heap occupancy crosses pressureRatio.
+	enablePressureEviction = true
+	#Heap-occupancy ratio above which soft caches are forcefully evicted.
+	# Default: 0.85
+	# Range: 0.5 ~ 0.99
+	pressureRatio = 0.85
+	#Maximum stale Reference entries drained per tick from internal queues.
+	# Default: 64
+	# Range: 1 ~ 4096
+	referenceDrainBudgetPerTick = 64
+	#Soft cap on the young generation of GenerationalPool instances.
+	# Default: 256
+	# Range: 16 ~ 65536
+	youngPoolCapacity = 256
+	#Soft cap on the old generation of GenerationalPool instances.
+	# Default: 64
+	# Range: 4 ~ 65536
+	oldPoolCapacity = 64
+	#Use PackedAabb long keys for WalkNodeEvaluator collision cache.
+	enablePackedAabbPathCache = true
+	#Replace allocation-heavy spawn-distance checks with scalar math.
+	enableSpawnerDistanceAllocationPatch = true
+	#Right-size CompoundTag backing maps for common small-NBT workloads.
+	enableCompoundTagSmallMaps = true
+	#Right-size the block-entity list inside ClientboundLevelChunkPacketData.
+	enableChunkPacketRightSize = true
+	#Cache ResourceLocation.toString() output through a bounded SoftLruCache.
+	enableResourceLocationToStringCache = true
+	#Maximum entries kept in the ResourceLocation.toString() cache.
+	# Default: 4096
+	# Range: 256 ~ 65536
+	resourceLocationToStringCacheSize = 4096
+	#Canonicalise LiteralContents instances inside Component.literal(text).
+	enableLiteralContentsCache = true
+	#Maximum entries kept in the LiteralContents cache.
+	# Default: 1024
+	# Range: 64 ~ 16384
+	literalContentsCacheSize = 1024
+	#Right-size staging HashMaps in datapack reload listeners.
+	enableReloadListenerRightSize = true
+	#Initial capacity for the reload-listener staging HashMap.
+	# Default: 512
+	# Range: 16 ~ 16384
+	reloadListenerStagingCapacity = 512
+	#Initial capacity for ModelBakery's staging maps.
+	# Default: 8192
+	# Range: 256 ~ 65536
+	modelBakeryStagingCapacity = 8192
+	#Canonicalise Style instances attached to MutableComponent.
+	enableStyleIntern = true
+	#Canonicalise DataComponentPatch instances during item deserialisation so
+	#stacks with identical component overrides share one backing map (copy-on-write).
+	enableComponentPatchIntern = true

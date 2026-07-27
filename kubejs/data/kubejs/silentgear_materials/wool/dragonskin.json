@@ -53,7 +53,7 @@
 				"value": 0.5
 			},
 			"ranged_damage": {
-				"operation": "MULTIPLY_TOTAL",
+				"operation": "MULTIPLY_BASE",
 				"value": 0.5
 			},
 			"magic_armor": {
@@ -115,7 +115,7 @@
 				"value": 0.1
 			},
 			"ranged_damage": {
-				"operation": "MULTIPLY_TOTAL",
+				"operation": "MULTIPLY_BASE",
 				"value": 0.1
 			},
 			"traits": [

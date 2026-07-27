@@ -72,6 +72,11 @@
       "traits": [
         {
           "conditions": [],
+          "level": 3,
+          "trait": "silentgear:lucky"
+        },
+        {
+          "conditions": [],
           "level": 4,
           "trait": "silentgems:neptunes_blessing"
         }

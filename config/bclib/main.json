@@ -1,0 +1,7 @@
+{
+  "create_version": "21.0.22",
+  "patches": {
+    "apply_patches": true
+  },
+  "modify_version": "21.0.22"
+}

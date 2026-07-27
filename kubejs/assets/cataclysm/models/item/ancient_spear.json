@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"textures": {
+	  "layer0": "cataclysm:item/ancient_spear_gui"
+	},
+	"base": {
+	  "parent": "cataclysm:item/ancient_spear_hendheld"
+	},
+	"perspectives": {
+	  "gui": {
+		"parent": "cataclysm:item/ancient_spear_gui"
+	  },
+	  "fixed": {
+		"parent": "cataclysm:item/ancient_spear_gui"
+	  }
+	}
+  }

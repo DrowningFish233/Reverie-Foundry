@@ -22,15 +22,15 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 20.0,
-      "armor/boots": 4.0,
-      "armor/chestplate": 8.0,
-      "armor/helmet": 4.0,
-      "armor/leggings": 4.0,
+      "armor": 30.0,
+      "armor/boots": 5.0,
+      "armor/chestplate": 12.0,
+      "armor/helmet": 5.0,
+      "armor/leggings": 8.0,
       "armor_durability": 54.0,
-      "armor_toughness": 8.0,
-      "attack_damage": 4.5,
-      "attack_speed": 0.0,
+      "armor_toughness": 12.0,
+      "attack_damage": 15.0,
+      "attack_speed": 0.2,
       "attack_reach": 3.0,
       "charging_value": 1.0,
       "durability": 1769.0,
@@ -41,9 +41,12 @@
         "level_hint": "4",
         "name": "netherite/下界合金"
       },
-      "magic_armor": 20.0,
+      "magic_armor": 34.0,
       "projectile_speed": 3.0,
       "rarity": 70.0,
+      "knockback_resistance": 0.2,
+      "spell_power": 0.2,
+      "max_mana": 34,
       "traits": [
         {
           "conditions": [],

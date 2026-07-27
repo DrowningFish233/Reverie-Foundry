@@ -23,23 +23,29 @@
     "properties": {
         "silentgear:rod": {
             "enchantment_value": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
             "harvest_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.2
             },
-            "attack_damage": {
-                "operation": "MULTIPLY_TOTAL",
-                "value": -0.05
-            },
+            "attack_damage": [
+                {
+                    "operation": "ADD",
+                    "value": 5.0
+                },
+                {
+                    "operation": "MULTIPLY_BASE",
+                    "value": -0.05
+                }
+            ],
             "attack_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.05
             },
             "magic_damage": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
             "armor": {

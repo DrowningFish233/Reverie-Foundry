@@ -23,10 +23,6 @@
 	},
 	"properties": {
 		"silentgear:coating": {
-			"spell_resist": {
-				"operation": "MULTIPLY_BASE",
-				"value": 0.05
-			},
 			"magic_armor": {
 				"operation": "MULTIPLY_BASE",
 				"value": 0.05

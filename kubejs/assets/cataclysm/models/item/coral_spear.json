@@ -1,0 +1,18 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "neoforge:separate_transforms",
+    "textures": {
+      "layer0": "cataclysm:item/coral_spear_gui"
+    },
+    "base": {
+      "parent": "cataclysm:item/coral_spear_hendheld"
+    },
+    "perspectives": {
+      "gui": {
+        "parent": "cataclysm:item/coral_spear_gui"
+      },
+      "fixed": {
+        "parent": "cataclysm:item/coral_spear_gui"
+      }
+    }
+  }

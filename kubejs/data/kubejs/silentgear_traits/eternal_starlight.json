@@ -1,7 +1,7 @@
 {
     "conditions": [],
     "description": {
-        "translate": "trait.silentgear.eternal_starlight.desc"
+        "translate": "trait.kubejs.eternal_starlight.desc"
     },
     "effects": [
         {
@@ -50,6 +50,6 @@
     ],
     "max_level": 5,
     "name": {
-        "translate": "trait.silentgear.eternal_starlight"
+        "translate": "trait.kubejs.eternal_starlight"
     }
 }

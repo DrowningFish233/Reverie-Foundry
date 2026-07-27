@@ -31,7 +31,7 @@
       "armor/leggings": 5.0,
       "armor_durability": 25.0,
       "attack_damage": 3.0,
-      "attack_speed": 0.2,
+      "attack_speed": -0.5,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,
       "charging_value": 1.0,
@@ -44,7 +44,7 @@
         "name": "iron/铁"
       },
       "magic_armor": 8.0,
-      "magic_damage": 3.0,
+      "magic_damage": 0.0,
       "projectile_speed": 1.2,
       "ranged_damage": 1.5,
       "rarity": 40.0,

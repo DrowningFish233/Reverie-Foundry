@@ -5,7 +5,7 @@ FoodEatenevents.register("gluttony", function (event, player, magicData) {
     if (isGLUTTONY <= 0) return;
 
     // 检查是否装备了暴食之戒
-    const hasRingOfGluttony = getCuriosItem(player, 'kubejs:ring_of_gluttony') !== null;
+    let hasRingOfGluttony = getCuriosItem(player, 'kubejs:ring_of_gluttony') !== null;
 
     let foodProperties = event.item.getFoodProperties(player);
     if (!foodProperties) return;
@@ -22,7 +22,7 @@ FoodEatenevents.register("gluttony", function (event, player, magicData) {
         player.heal(healAmount);
     }
     else {
-        const duration = hasRingOfGluttony ? 600 : 300;
+        let duration = hasRingOfGluttony ? 600 : 300;
         $RFUtils.applyRandomBuff(player, duration, 1);
     }
 

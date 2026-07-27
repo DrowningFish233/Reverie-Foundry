@@ -327,11 +327,19 @@ function attackEntity(target, damageSourceId, amount, ignoreInvulnerable) {
  * 随机移除一个负面效果
  */
 function removeRandomNegativeEffect(player) {
-    const negativeEffects = [];
+    let BLACKLIST = [
+        "malum:wyrd_exhaustion",
+        "cataclysm:ghost_sickness"
+    ];
+
+    let negativeEffects = [];
 
     player.getActiveEffectsMap().forEach((holder, instance) => {
-        const effect = holder.value();
-        if (!effect.isBeneficial()) {
+        let effect = holder.value();
+
+        let effectId = holder.getKey().location().toString();
+
+        if (!effect.isBeneficial() && !BLACKLIST.includes(effectId)) {
             negativeEffects.push(holder);
         }
     });
@@ -340,6 +348,7 @@ function removeRandomNegativeEffect(player) {
         let randomIndex = Math.floor(Math.random() * negativeEffects.length);
         let effectToRemove = negativeEffects[randomIndex];
         player.removeEffect(effectToRemove);
-
+        return true;
     }
+    return false;
 }

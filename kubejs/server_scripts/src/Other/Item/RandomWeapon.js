@@ -76,8 +76,11 @@ ItemEvents.firstRightClicked('kubejs:randomweapon', event => {
             if (randomGear && !randomGear.isEmpty()) {
                 // 给予玩家
                 let success = player.give(randomGear);
+                let gearName = randomGear.getDisplayName().getString();
+                player.tell(Text.translate('message.reverie_foundry.gear_obtained', gearName));
                 event.item.count--;
             } else {
+                player.tell(Text.translate('message.reverie_foundry.gear_failed'))
                 event.item.count--;
                 console.log(`[Reverie Foundry]未能生成有效装备 (最大尝试次数: ${maxAttempts})`);
             }

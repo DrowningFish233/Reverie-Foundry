@@ -77,7 +77,7 @@
 		"silentgear:lining": {
 			"knockback_resistance": {
 				"operation": "ADD",
-				"value": 0.25
+				"value": 0.5
 			},
 			"traits": [
 				{

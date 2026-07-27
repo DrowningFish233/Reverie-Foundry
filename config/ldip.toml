@@ -2,7 +2,7 @@
 	DisplayDamageParticlesEvenWhenDamageIsLow = false
 	# Default: 100
 	# Range: > 0
-	MaximumNumberOfDamageIndicatorParticle = 70
+	MaximumNumberOfDamageIndicatorParticle = 10
 	# Default: 1.0
 	# Range: 0.0 ~ 1.7976931348623157E308
 	DamageIndicatorParticleMultiplier = 1.0

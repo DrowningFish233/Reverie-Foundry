@@ -8,7 +8,11 @@
       ],
       "gradientType": "custom",
       "borderType": "static",
-      "gradientColors": ["#C551C3", "#C551C3", "#C551C3"],
+      "gradientColors": [
+        "#C551C3",
+        "#C551C3",
+        "#C551C3"
+      ],
       "specialEffect": "metal_shining"
     },
     {
@@ -76,9 +80,7 @@
         "minecraft:netherite_chestplate",
         "minecraft:netherite_leggings",
         "minecraft:netherite_boots",
-
         "minecraft:emerald",
-
         "minecraft:diamond",
         "minecraft:diamond_sword",
         "minecraft:diamond_shovel",
@@ -91,7 +93,6 @@
         "minecraft:diamond_boots",
         "minecraft:diamond_horse_armor",
         "minecraft:saddle",
-
         "minecraft:trident",
         "minecraft:shield",
         "minecraft:turtle_helmet",
@@ -100,12 +101,15 @@
         "minecraft:ender_pearl",
         "minecraft:eye_of_ender",
         "minecraft:blaze_rod",
-
         "minecraft:netherite_scrap"
       ],
       "gradientType": "custom",
       "borderType": "gradient",
-      "gradientColors": ["#A9A9A9", "#999999", "#8F8F8F"]
+      "gradientColors": [
+        "#A9A9A9",
+        "#999999",
+        "#8F8F8F"
+      ]
     },
     {
       "items": [
@@ -117,7 +121,9 @@
         "celestisynth:aquaflora",
         "celestisynth:rainfall_serenity"
       ],
-      "disableScrolling": true
+      "innerFrameCornerType": "bracket",
+      "backgroundCornerType": "notch",
+      "showRating": true
     },
     {
       "texture": "tooltipoverhaul:textures/overlay/cataclysm_frame.png",
@@ -128,8 +134,21 @@
       ],
       "gradientType": "custom",
       "borderType": "static",
-      "gradientColors": ["#3D3A5E", "#3D3A5E", "#3D3A5E"],
+      "gradientColors": [
+        "#3D3A5E",
+        "#3D3A5E",
+        "#3D3A5E"
+      ],
       "specialEffect": "metal_shining"
+    },
+    {
+      "items": [],
+      "namespace": "illagerinvasion",
+      "name": "illagerinvasion",
+      "tooltipAppearAnimation": "pop",
+      "specialEffect": "fireflies",
+      "innerFrameCornerType": "rounded",
+      "borderType": "auto_gradient"
     }
   ]
 }

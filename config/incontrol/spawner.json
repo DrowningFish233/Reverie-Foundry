@@ -1,149 +1,6 @@
 [
     {
         "mob": [
-            "terra_entity:decayeder",
-            "terra_entity:corrupt_slime"
-        ],
-        "persecond": 0.2,
-        "attempts": 4,
-        "amount": {
-            "minimum": 2,
-            "maximum": 5
-        },
-        "conditions": {
-            "dimension": "minecraft:overworld",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 15,
-            "maxheight": 200,
-            "maxthis": 12,
-            "and": {
-                "biome": "biomesoplenty:ominous_woods",
-                "seesky": true
-            },
-            "not": {
-                "structuretags": "minecraft:village"
-            }
-        }
-    },
-    {
-        "mob": "terra_entity:crimson_kemera",
-        "persecond": 0.2,
-        "attempts": 4,
-        "amount": {
-            "minimum": 1,
-            "maximum": 2
-        },
-        "conditions": {
-            "dimension": "minecraft:overworld",
-            "mindist": 30,
-            "maxdist": 64,
-            "minheight": -64,
-            "maxheight": 40,
-            "maxthis": 4,
-            "and": {
-                "biome": "biomesoplenty:ominous_woods",
-                "seesky": false
-            },
-            "not": {
-                "structuretags": "minecraft:village"
-            }
-        }
-    },
-    {
-        "mob": [
-            "terra_entity:crimson_kemera",
-            "terra_entity:bloody_spore",
-            "terra_entity:blood_crawler",
-            "terra_entity:face_monster"
-        ],
-        "persecond": 0.2,
-        "attempts": 4,
-        "amount": {
-            "minimum": 1,
-            "maximum": 2
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 8,
-            "and": {
-                "biome": "biomesoplenty:visceral_heap"
-            }
-        }
-    },
-    {
-        "mob": [
-            "terra_entity:snatcher",
-            "terra_entity:hornet"
-        ],
-        "persecond": 0.2,
-        "attempts": 4,
-        "amount": {
-            "minimum": 1,
-            "maximum": 2
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 4,
-            "and": {
-                "biome": "biomesoplenty:undergrowth"
-            }
-        }
-    },
-    {
-        "mob": [
-            "terra_entity:nymph"
-        ],
-        "persecond": 0.2,
-        "attempts": 4,
-        "amount": {
-            "minimum": 1,
-            "maximum": 1
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 1,
-            "and": {
-                "biome": "biomesoplenty:crystalline_chasm"
-            }
-        }
-    },
-    {
-        "mob": [
-            "cataclysm:amethyst_crab"
-        ],
-        "persecond": 0.8,
-        "attempts": 4,
-        "amount": {
-            "minimum": 1,
-            "maximum": 1
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 1,
-            "and": {
-                "biome": "biomesoplenty:crystalline_chasm"
-            }
-        }
-    },
-    {
-        "mob": [
             "terra_entity:voodoo_demon",
             "terra_entity:demon",
             "terra_entity:fire_imp"
@@ -163,32 +20,8 @@
             "maxthis": 2,
             "and": {
                 "biome": [
-                    "biomesoplenty:erupting_inferno",
                     "minecraft:nether_wastes"
                 ]
-            }
-        }
-    },
-    {
-        "mob": [
-            "terra_entity:lava_slime",
-            "terra_entity:hell_bat"
-        ],
-        "persecond": 0.2,
-        "attempts": 4,
-        "amount": {
-            "minimum": 1,
-            "maximum": 1
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 4,
-            "and": {
-                "biome": "biomesoplenty:erupting_inferno"
             }
         }
     },
@@ -212,79 +45,9 @@
             "maxheight": 256,
             "maxthis": 6,
             "and": {
-                "biome": "minecraft:basalt_deltas"
-            }
-        }
-    },
-    {
-        "mob": [
-            "terra_entity:spore_skeleton",
-            "terra_entity:cave_bat",
-            "terra_entity:spore_bat",
-            "terra_entity:spore_zombie",
-            "terra_entity:hat_spore_zombie"
-        ],
-        "persecond": 0.2,
-        "attempts": 2,
-        "amount": {
-            "minimum": 1,
-            "maximum": 2
-        },
-        "conditions": {
-            "dimension": "minecraft:overworld",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": -120,
-            "maxheight": 40,
-            "maxthis": 6,
-            "and": {
-                "biome": "biomesoplenty:glowing_grotto"
-            }
-        }
-    },
-    {
-        "mob": [
-            "creeperoverhaul:mushroom_creeper",
-            "endermanoverhaul:mushroom_fields_enderman"
-        ],
-        "persecond": 0.2,
-        "attempts": 3,
-        "amount": {
-            "minimum": 1,
-            "maximum": 1
-        },
-        "conditions": {
-            "dimension": "minecraft:overworld",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": -120,
-            "maxheight": 40,
-            "maxthis": 2,
-            "and": {
-                "biome": "biomesoplenty:glowing_grotto"
-            }
-        }
-    },
-    {
-        "mob": [
-            "terra_entity:antlion_swarmer",
-            "terra_entity:giant_antlion"
-        ],
-        "persecond": 0.2,
-        "attempts": 2,
-        "amount": {
-            "minimum": 1,
-            "maximum": 1
-        },
-        "conditions": {
-            "dimension": "minecraft:overworld",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 0,
-            "maxheight": 120,
-            "maxthis": 2,
-            "and": {
-                "biome": "biomesoplenty:lush_desert"
+                "biome": [
+                    "minecraft:basalt_deltas"
+                ]
             }
         }
     },
@@ -309,14 +72,10 @@
             "maxthis": 4,
             "and": {
                 "biome": [
-                    "biomesoplenty:snowblossom_grove",
-                    "biomesoplenty:auroral_garden",
                     "natures_spirit:snowy_fir_forest",
                     "minecraft:snowy_taiga",
                     "minecraft:snowy_beach",
-                    "minecraft:snowy_slopes",
-                    "biomesoplenty:snowy_coniferous_forest",
-                    "biomesoplenty:snowy_fir_clearing"
+                    "minecraft:snowy_slopes"
                 ]
             }
         }
@@ -413,30 +172,6 @@
             "and": {
                 "biome": [
                     "minecraft:flower_forest"
-                ]
-            }
-        }
-    },
-    {
-        "mob": [
-            "minecraft:wither_skeleton"
-        ],
-        "persecond": 0.2,
-        "attempts": 3,
-        "amount": {
-            "minimum": 2,
-            "maximum": 3
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 12,
-            "and": {
-                "biome": [
-                    "biomesoplenty:withered_abyss"
                 ]
             }
         }

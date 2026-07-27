@@ -56,21 +56,16 @@
           "conditions": [],
           "level": 2,
           "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "kubejs:radiance"
         }
       ]
     },
     "silentgear:rod": {
       "draw_speed": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.1
       },
       "harvest_speed": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.1
       },
       "rarity": 40.0,
@@ -79,11 +74,6 @@
           "conditions": [],
           "level": 2,
           "trait": "silentgear:malleable"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "kubejs:radiance"
         }
       ]
     }

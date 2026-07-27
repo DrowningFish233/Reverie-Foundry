@@ -23,11 +23,11 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 18.0,
+      "armor": 28.0,
       "armor_toughness": 4,
-      "armor/boots": 2.0,
-      "armor/chestplate": 7.0,
-      "armor/helmet": 3.0,
+      "armor/boots": 6.0,
+      "armor/chestplate": 10.0,
+      "armor/helmet": 6.0,
       "armor/leggings": 6.0,
       "armor_durability": 10.0,
       "attack_damage": 4.0,
@@ -44,6 +44,7 @@
         "level_hint": "2",
         "name": "iron/铁"
       },
+      "knockback_resistance": 1.0,
       "magic_armor": 2.0,
       "magic_damage": 1.0,
       "projectile_accuracy": 0.0,

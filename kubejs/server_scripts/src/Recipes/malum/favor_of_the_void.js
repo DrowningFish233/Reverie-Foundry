@@ -50,10 +50,6 @@ ServerEvents.recipes(event => {
     );
 
     registerCustomRecipe(
-        new VoidFavorRecipeJSON("biomesoplenty:rose_quartz_block", "create:rose_quartz")
-    );
-
-    registerCustomRecipe(
         new VoidFavorRecipeJSON("kubejs:limpid_spirit", "malum:umbral_spirit")
     );
 
@@ -67,5 +63,12 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(
         new VoidFavorRecipeJSON('create:chromatic_compound', 'kubejs:void_ingot')
+    );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('minecraft:pumpkin', 'netherexp:sorrowsquash')
+    );
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('minecraft:beetroot_seeds', 'netherexp:cerebrage_seeds')
     );
 });

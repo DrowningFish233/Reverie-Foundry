@@ -1,0 +1,8 @@
+﻿{
+  "sodiumleafculling.options.leaf_culling.name": "树叶剔除模式",
+  "sodiumleafculling.options.leaf_culling.tooltip": "启用后，位于其他树叶后方的树叶将被剔除以提高性能。空心模式将积极剔除面，而实心模式将启用快速实心方块渲染，用于显示位于其他树叶后方的树叶。",
+  "options.leaf_culling.none": "无",
+  "options.leaf_culling.hollow": "空心",
+  "options.leaf_culling.solid": "实心",
+  "options.leaf_culling.solid_aggressive": "实心（激进）"
+}

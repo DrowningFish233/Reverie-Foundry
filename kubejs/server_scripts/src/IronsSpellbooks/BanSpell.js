@@ -1,6 +1,7 @@
 ISSEvents.spellPreCast(event => {
     if (!event.entity.isPlayer()) return
     let blacklist = [
+        "irons_spellbooks:echoing_strikes",
         "hazennstuff:call_forth_terraprisma",
         "hazennstuff:reign_of_tyros"
     ];

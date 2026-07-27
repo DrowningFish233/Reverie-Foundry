@@ -1,8 +1,12 @@
 // priority: 10
 // 检查生物是否在黑名单中
 function isBlacklisted(entity) {
-    let entityTypeStr = entity.getType().toString();
-    return DIFFICULTY_BLACKLIST.includes(entityTypeStr);
+    return DIFFICULTY_BLACKLIST.includes(entity.getType().toString());
+}
+
+// 检查是否需要额外加倍率
+function needsExtraBuff(entity) {
+    return EXTRA_BUFF_ENTITIES.includes(entity.getType().toString());
 }
 
 // 计算合并后的难度倍数
@@ -53,96 +57,148 @@ function getPlayerHighestStageDifficulty(player) {
 }
 
 EntityEvents.checkSpawn(event => {
+    const DEBUG_MODE = false;
+
     let entity = event.entity;
     if (!entity) return;
-
-    let player = entity.getLevel().getNearestPlayer(entity, 129);
-    if (!player) return;
-
     if (!entity.isLiving() || !entity.isMonster()) return;
 
-    // 检查是否在黑名单中
+    let player = entity.getLevel().getNearestPlayer(entity, 129);
+    if (!player) {
+        if (DEBUG_MODE) console.log(`[Debug] ${entity.getType()} - 没有找到附近玩家，跳过`);
+        return;
+    }
+
     let blacklisted = isBlacklisted(entity);
-
-    // 获取世界难度
+    let extraBuff = needsExtraBuff(entity);
     let worldDifficulty = event.getLevel().getDifficulty();
-
-    // 获取玩家最高阶段难度
     let highestStageDifficulty = getPlayerHighestStageDifficulty(player);
 
-    if (!highestStageDifficulty && blacklisted) return;
+    if (DEBUG_MODE) {
+        let initialHealth = 0;
+        if (entity.attributes.hasAttribute('minecraft:generic.max_health')) {
+            let attr = entity.getAttribute('minecraft:generic.max_health');
+            if (attr) initialHealth = attr.getValue();
+        }
+        console.log(`[Debug] === 开始处理 ${entity.getType()} ===`);
+        console.log(`[Debug] 玩家: ${player.getName().getString()}, 世界难度: ${worldDifficulty}, 阶段: ${highestStageDifficulty}`);
+        console.log(`[Debug] 黑名单: ${blacklisted}, 额外加成: ${extraBuff}`);
+        console.log(`[Debug] 初始血量: ${initialHealth}`);
+    }
 
-    // 计算最终倍数
+    if (!highestStageDifficulty && blacklisted) {
+        if (DEBUG_MODE) console.log(`[Debug] ${entity.getType()} - 黑名单且无阶段，跳过`);
+        return;
+    }
+
     let finalMultipliers;
     if (highestStageDifficulty) {
         finalMultipliers = calculateCombinedMultipliers(worldDifficulty, highestStageDifficulty, blacklisted);
+        if (DEBUG_MODE) console.log(`[Debug] 使用综合倍率: 世界${worldDifficulty} × 阶段${highestStageDifficulty}`);
     } else {
-        // 黑名单生物没有阶段难度时不应用任何加成
-        if (blacklisted) return;
+        if (blacklisted) {
+            if (DEBUG_MODE) console.log(`[Debug] ${entity.getType()} - 黑名单无阶段，跳过`);
+            return;
+        }
         finalMultipliers = GAME_DIFFICULTY_LEVELS[worldDifficulty];
+        if (DEBUG_MODE) console.log(`[Debug] 仅使用世界难度倍率: ${worldDifficulty}`);
     }
 
-    let difficultyMark = worldDifficulty + (highestStageDifficulty ? "_" + highestStageDifficulty : "");
-    let markKey = 'applied_difficulty_' + difficultyMark;
+    if (DEBUG_MODE) {
+        console.log(`[Debug] 计算出的倍率 - 生命: ${finalMultipliers.health}, 攻击: ${finalMultipliers.attack}, 护甲: ${finalMultipliers.armor}`);
+    }
 
-    if (entity.persistentData.contains(markKey)) return;
+    let markKey = 'applied_difficulty_' + worldDifficulty + (highestStageDifficulty ? "_" + highestStageDifficulty : "");
+    if (entity.persistentData.contains(markKey)) {
+        if (DEBUG_MODE) console.log(`[Debug] ${entity.getType()} - 已标记 ${markKey}，跳过重复应用`);
+        return;
+    }
 
+    if (DEBUG_MODE) console.log(`[Debug] 标记键: ${markKey}`);
     entity.persistentData.putString(markKey, 'true');
 
     // 应用属性增强
     if (entity.attributes.hasAttribute('minecraft:generic.max_health')) {
-        let currentMaxHealth = entity.getAttribute('minecraft:generic.max_health').getValue();
-        entity.setAttributeBaseValue('minecraft:generic.max_health', currentMaxHealth * finalMultipliers.health);
-        entity.setHealth(entity.getMaxHealth());
+        let attr = entity.getAttribute('minecraft:generic.max_health');
+        if (attr) {
+            let currentMaxHealth = attr.getValue();
+            let multiplier = finalMultipliers.health;
+            if (extraBuff) multiplier = multiplier * 2;
+            let newHealth = currentMaxHealth * multiplier;
+            if (DEBUG_MODE) console.log(`[Debug] 血量: ${currentMaxHealth} × ${multiplier} = ${newHealth} (extraBuff: ${extraBuff})`);
+            entity.setAttributeBaseValue('minecraft:generic.max_health', newHealth);
+            entity.setHealth(entity.getMaxHealth());
+        }
     }
 
     if (entity.attributes.hasAttribute('minecraft:generic.attack_damage')) {
-        let currentAttack = entity.getAttribute('minecraft:generic.attack_damage').getValue();
-        entity.setAttributeBaseValue('minecraft:generic.attack_damage', currentAttack * finalMultipliers.attack);
+        let attr = entity.getAttribute('minecraft:generic.attack_damage');
+        if (attr) {
+            let currentAttack = attr.getValue();
+            let multiplier = finalMultipliers.attack;
+            if (extraBuff) multiplier = multiplier * 2;
+            let newAttack = currentAttack * multiplier;
+            if (DEBUG_MODE) console.log(`[Debug] 攻击: ${currentAttack} × ${multiplier} = ${newAttack}`);
+            entity.setAttributeBaseValue('minecraft:generic.attack_damage', newAttack);
+        }
     }
 
     if (entity.attributes.hasAttribute('apothic_attributes:arrow_damage')) {
-        let currentAttack = entity.getAttribute('apothic_attributes:arrow_damage').getValue();
-        entity.setAttributeBaseValue('apothic_attributes:arrow_damage', currentAttack * finalMultipliers.attack);
+        let attr = entity.getAttribute('apothic_attributes:arrow_damage');
+        if (attr) {
+            let currentAttack = attr.getValue();
+            let multiplier = finalMultipliers.attack;
+            if (extraBuff) multiplier = multiplier * 2;
+            let newAttack = currentAttack * multiplier;
+            if (DEBUG_MODE) console.log(`[Debug] 弓箭伤害: ${currentAttack} × ${multiplier} = ${newAttack}`);
+            entity.setAttributeBaseValue('apothic_attributes:arrow_damage', newAttack);
+        }
     }
 
     if (entity.attributes.hasAttribute('minecraft:generic.armor')) {
-        let currentArmor = entity.getAttribute('minecraft:generic.armor').getValue();
-        entity.setAttributeBaseValue('minecraft:generic.armor', currentArmor * finalMultipliers.armor);
+        let attr = entity.getAttribute('minecraft:generic.armor');
+        if (attr) {
+            let currentArmor = attr.getValue();
+            let multiplier = finalMultipliers.armor;
+            if (extraBuff) multiplier = multiplier * 2;
+            let newArmor = currentArmor * multiplier;
+            if (DEBUG_MODE) console.log(`[Debug] 护甲: ${currentArmor} × ${multiplier} = ${newArmor}`);
+            entity.setAttributeBaseValue('minecraft:generic.armor', newArmor);
+        }
     }
 
     if (entity.attributes.hasAttribute('minecraft:generic.armor_toughness')) {
-        let currentToughness = entity.getAttribute('minecraft:generic.armor_toughness').getValue();
-        entity.setAttributeBaseValue('minecraft:generic.armor_toughness', currentToughness * finalMultipliers.toughness);
+        let attr = entity.getAttribute('minecraft:generic.armor_toughness');
+        if (attr) {
+            let currentToughness = attr.getValue();
+            let multiplier = finalMultipliers.toughness;
+            if (extraBuff) multiplier = multiplier * 2;
+            let newToughness = currentToughness * multiplier;
+            if (DEBUG_MODE) console.log(`[Debug] 韧性: ${currentToughness} × ${multiplier} = ${newToughness}`);
+            entity.setAttributeBaseValue('minecraft:generic.armor_toughness', newToughness);
+        }
     }
 
     // 黑名单生物不受追踪范围加成
     if (!blacklisted && worldDifficulty == "HARD" && entity.attributes.hasAttribute('minecraft:generic.follow_range')) {
-        let currentRange = entity.getAttribute('minecraft:generic.follow_range').getValue();
-        entity.setAttributeBaseValue('minecraft:generic.follow_range', currentRange + finalMultipliers.follow_range);
+        let attr = entity.getAttribute('minecraft:generic.follow_range');
+        if (attr) {
+            let currentRange = attr.getValue();
+            let newRange = currentRange + finalMultipliers.follow_range;
+            if (DEBUG_MODE) console.log(`[Debug] 追踪范围: ${currentRange} + ${finalMultipliers.follow_range} = ${newRange}`);
+            entity.setAttributeBaseValue('minecraft:generic.follow_range', newRange);
+        }
     }
 
-    // debug日志
-    /*
-    if (highestStageDifficulty) {
-        if (blacklisted) {
-            console.log(`[Reverie Foundry] 黑名单生物 ${entity.getType()} - 仅阶段难度: ${highestStageDifficulty}`);
-            console.log(`          生命: x${finalMultipliers.health}, 攻击: x${finalMultipliers.attack}, 护甲: x${finalMultipliers.armor}`);
-        } else {
-            console.log(`[Reverie Foundry] 实体ID：${entity.getType()}难度等级：${worldDifficulty} × ${highestStageDifficulty} = ` +
-                `生命: x${finalMultipliers.health.toFixed(1)}, ` +
-                `攻击: x${finalMultipliers.attack.toFixed(1)}, ` +
-                `护甲: x${finalMultipliers.armor.toFixed(1)}`);
+    if (DEBUG_MODE) {
+        let finalHealth = 0;
+        if (entity.attributes.hasAttribute('minecraft:generic.max_health')) {
+            let attr = entity.getAttribute('minecraft:generic.max_health');
+            if (attr) finalHealth = attr.getValue();
         }
-    } else {
-        if (blacklisted) {
-            console.log(`[Reverie Foundry] 黑名单生物 ${entity.getType()} - 无阶段难度，跳过加成`);
-        } else {
-            console.log(`[Reverie Foundry] 实体ID：${entity.getType()}难度等级：${worldDifficulty} 仅世界难度 - ` +
-                `生命: x${finalMultipliers.health}, 攻击: x${finalMultipliers.attack}`);
-        }
+        console.log(`[Debug] === 处理完成，最终血量: ${finalHealth} ===`);
+        //debug用ai写太伟大了
     }
-    */
 });
 
 
@@ -157,17 +213,9 @@ EntityEvents.checkSpawn(event => {
     entity.server.scheduleInTicks(2, () => {
         Object.entries(pactToGeasMap).forEach(([pactKey, geasId]) => {
             if (entity.persistentData.contains(pactKey)) {
-
-                let geasType = getGeasTypeById(geasId);
-
-                if (geasType) {
-                    let success = fu_addGeasEffect(entity, geasType);
-                    if (success) {
-                        //let geasName = GearsEffect[geasId] || geasId.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                        // console.log(`为 ${entity.type} 添加了 ${geasName}`);
-                    }
-                } else {
-                    console.log(`警告: 找不到条约类型 ${geasId} 对应的 Geas`);
+                let success = fu_addGeasEffect(entity, geasId);
+                if (!success) {
+                    console.log(`警告: 无法添加誓令效果 ${geasId}（条约类型: ${pactKey}）`);
                 }
             }
         })

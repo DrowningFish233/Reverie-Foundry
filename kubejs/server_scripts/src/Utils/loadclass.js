@@ -1,5 +1,8 @@
-// priority: 9999
+// priority: 999999
 
+const $RFPureSufferingUtils = Java.loadClass("com.drowningfish233.reveriefoundry.Utils.RFPureSufferingUtils");
+const $EndGatewaySpawner = Java.loadClass("com.drowningfish233.reveriefoundry.compat.Gateway.EndGatewaySpawner");
+const $CooldownManager = Java.loadClass('com.drowningfish233.reveriefoundry.core.CooldownManager');
 const $SocketSlotChangedEvent = Java.loadClass("com.drowningfish233.reveriefoundry.handler.SocketSlotChangedEvent")
 const $SocketStateAPI = Java.loadClass("com.drowningfish233.reveriefoundry.api.SocketStateAPI");
 const $RFGearUtils = Java.loadClass("com.drowningfish233.reveriefoundry.Utils.RFGearUtils");
@@ -13,6 +16,7 @@ const $BlockEvent$NeighborNotifyEvent = Java.loadClass('net.neoforged.neoforge.e
 const $SgRegistries = Java.loadClass('net.silentchaos512.gear.setup.SgRegistries');
 const $SilentGear = Java.loadClass('net.silentchaos512.gear.SilentGear');
 const $GearHelper = Java.loadClass('net.silentchaos512.gear.util.GearHelper');
+const $EquipmentSlot = Java.loadClass("net.minecraft.world.entity.EquipmentSlot");
 const $DataResource = Java.loadClass('net.silentchaos512.gear.api.util.DataResource');
 const $TraitHelper = Java.loadClass('net.silentchaos512.gear.util.TraitHelper');
 const $SpellRegistry = Java.loadClass('io.redspace.ironsspellbooks.api.registry.SpellRegistry');

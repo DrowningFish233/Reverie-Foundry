@@ -12,14 +12,15 @@
 						"attribute": "irons_spellbooks:lightning_spell_power",
 						"operation": "add_multiplied_base",
 						"values": [
-							0.1
+							0.1,
+							0.2
 						]
 					}
 				]
 			}
 		}
 	],
-	"max_level": 5,
+	"max_level": 2,
 	"name": {
 		"translate": "trait.kubejs.cosmos_aurora_ingot"
 	}

@@ -1,6 +1,6 @@
 	[graphics.particle]
 		#Should particles render on the delayed buffer? This means they will properly render after clouds & water do, but could cause issues with mods like sodium.
-		buffer_particles = true
+		buffer_particles = false
 		#Should screen particles be visible?
 		screen_particles = true
 

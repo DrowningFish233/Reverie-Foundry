@@ -1,0 +1,71 @@
+{
+	id: "2AD3B2BB3A96D953"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{
+			count: 4
+			id: "61C8300B43C2B01B"
+			item: {
+				count: 1
+				id: "malum:earthen_spirit"
+			}
+		}
+		{
+			count: 4
+			id: "0437EED4DF2D8C7D"
+			item: {
+				count: 1
+				id: "malum:infernal_spirit"
+			}
+		}
+		{
+			count: 4
+			id: "4A3F374B1280DE19"
+			item: {
+				count: 1
+				id: "malum:sacred_spirit"
+			}
+		}
+		{
+			count: 4
+			id: "66C71FF0B490A07E"
+			item: {
+				count: 1
+				id: "malum:wicked_spirit"
+			}
+		}
+		{
+			count: 4
+			id: "41E919F79B08B3AC"
+			item: {
+				count: 1
+				id: "malum:arcane_spirit"
+			}
+		}
+		{
+			count: 4
+			id: "48DB1637A475DD5B"
+			item: {
+				count: 1
+				id: "malum:eldritch_spirit"
+			}
+		}
+		{
+			count: 4
+			id: "171BDABCEAA9A53B"
+			item: {
+				count: 1
+				id: "malum:aerial_spirit"
+			}
+		}
+		{
+			count: 4
+			id: "422838AA8C757556"
+			item: {
+				count: 1
+				id: "malum:aqueous_spirit"
+			}
+		}
+	]
+}

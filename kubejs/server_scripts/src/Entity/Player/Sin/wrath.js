@@ -2,8 +2,8 @@
 // 暴怒效果
 RFTrait('kubejs:wrath', 999)
     .beforeHurt(event => {
-        const { source, entity } = event;
-        const attacker = source.actual;
+        let { source, entity } = event;
+        let attacker = source.actual;
 
         if (!entity.isLiving() || !entity.isPlayer()) return;
         if (!entity.hasEffect("kubejs:wrath")) return;
@@ -14,8 +14,8 @@ RFTrait('kubejs:wrath', 999)
     })
 
     .beforeHurt(event => {
-        const { source, entity } = event;
-        const attacker = source.player || source.actual;
+        let { source, entity } = event;
+        let attacker = source.player || source.actual;
 
         if (!attacker || !attacker.isLiving()) return;
         if (!attacker.hasEffect("kubejs:wrath")) return;
@@ -26,12 +26,11 @@ RFTrait('kubejs:wrath', 999)
             entity.removeEffect('kubejs:wrath_damage');
             entity.removeEffect('minecraft:glowing');
 
-            const hasMarkOfWrath = getCuriosItem(attacker, 'kubejs:mark_of_wrath') !== null;
+            let hasMarkOfWrath = getCuriosItem(attacker, 'kubejs:mark_of_wrath') !== null;
 
             if (hasMarkOfWrath) {
                 new_damage(event, STAGE.MULTIPLY, 1.2);
-
-                const currentLayers = getEffectLayers(attacker, 'kubejs:enhanced_tattoo');
+                let currentLayers = getEffectLayers(attacker, 'kubejs:enhanced_tattoo');
                 if (currentLayers < 5) {
                     if (attacker.hasEffect('kubejs:enhanced_tattoo')) {
                         addEffectLayers(attacker, 'kubejs:enhanced_tattoo', 1);
@@ -45,19 +44,17 @@ RFTrait('kubejs:wrath', 999)
         }
     })
 
-    .onTick(event => {
-        const { entity } = event;
+    .onTick(20, event => {
+        let { entity } = event;
         if (!entity.isLiving() || !entity.isPlayer()) return;
         if (!entity.hasEffect("kubejs:wrath")) return;
-
-        if (entity.tickCount % 20 !== 0) return;
 
         let idleTimer = entity.persistentData.getInt("wrath_idle_timer") || 0;
         idleTimer += 20;
         entity.persistentData.putInt("wrath_idle_timer", idleTimer);
 
         if (idleTimer >= 100) {
-            const damage = entity.getMaxHealth() / 10;
+            let damage = entity.getMaxHealth() / 10;
             attackEntity(entity, 'kubejs:wrath', damage, true);
             entity.persistentData.putInt("wrath_idle_timer", 80);
         }

@@ -5,7 +5,7 @@ EntityEvents.afterHurt(event => {
     let actual = event.source.actual
     if (!actual) return
     if (!event.entity.isLiving() || !actual.isLiving() || !actual.isPlayer()) return
-    if (!fu_hasTraitAnywhere(event.source.actual, "kubejs:strange_crystal")) return
+    if (!fu_hasTraitAnywhere(actual, "kubejs:strange_crystal")) return
 
     const BLACKLIST = [
         "cataclysm:ignis",
@@ -43,14 +43,12 @@ EntityEvents.afterHurt(event => {
         return
     }
 
-    let COOLDOWN_KEY = "strange_crystal_COOLDOWN_KEY"
-    if ($CooldownManager.hasCooldown(event.source.actual, COOLDOWN_KEY)) return
+    trySkill(actual, "strange_crystal", 60, () => {
+        const trait_level = fu_getHighestTraitLevelAnywhere(actual, "kubejs:strange_crystal")
+        const dropChance = trait_level * 0.1
 
-    const trait_level = fu_getHighestTraitLevelAnywhere(event.source.actual, "kubejs:strange_crystal")
-    const dropChance = trait_level * 0.1
-
-    if (Math.random() < dropChance) {
-        fu_dropSpirits(event.entity, event.source.actual)
-        $CooldownManager.setCooldown(event.source.actual, COOLDOWN_KEY, 60)
-    }
+        if (Math.random() < dropChance) {
+            fu_dropSpirits(event.entity, actual)
+        }
+    })
 })

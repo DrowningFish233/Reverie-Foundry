@@ -17,8 +17,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(constructionstick:construction_sticks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: -2.0d
+			x: -10.0d
+			y: -1.0d
 		}
 		{
 			id: "092C65BDEC1E30A4"
@@ -47,8 +47,8 @@
 				item: { count: 1, id: "constructionstick:template_angel" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -3.5d
+			x: -8.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -58,8 +58,8 @@
 				item: { count: 1, id: "constructionstick:template_replacement" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: -8.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -69,8 +69,8 @@
 				item: { count: 1, id: "constructionstick:template_destruction" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -2.0d
+			x: -8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -80,8 +80,8 @@
 				item: { count: 1, id: "constructionstick:template_unbreakable" }
 				type: "item"
 			}]
-			x: -1.866566866105373d
-			y: -2.7779926010488367d
+			x: -8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -91,8 +91,8 @@
 				item: { count: 1, id: "constructionstick:template_battery" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.5d
+			x: -8.5d
+			y: -3.0d
 		}
 		{
 			icon: {
@@ -113,8 +113,8 @@
 				item: { count: 1, id: "kubejs:eye_of_ancient_city_located" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.0d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
 			id: "086482C52023DB55"
@@ -123,8 +123,8 @@
 				item: { count: 1, id: "kubejs:eye_of_dragon_cave_located" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 0.0d
+			x: -3.0d
+			y: 1.0d
 		}
 		{
 			can_repeat: true
@@ -179,7 +179,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			can_repeat: true
@@ -198,8 +198,8 @@
 				item: { components: { "ftbfiltersystem:filter": "food_value(>=14)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.0d
+			x: -6.5d
+			y: 1.0d
 		}
 		{
 			can_repeat: true
@@ -275,8 +275,8 @@
 				item: { components: { "ftbfiltersystem:filter": "food_value(>12)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 1.0d
+			x: -6.5d
+			y: 2.0d
 		}
 		{
 			can_repeat: true
@@ -483,8 +483,8 @@
 				item: { components: { "ftbfiltersystem:filter": "food_value(>=14)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.0d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
 			can_repeat: true
@@ -692,8 +692,8 @@
 				item: { components: { "ftbfiltersystem:filter": "food_value(>8)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.0d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			can_repeat: true
@@ -769,8 +769,8 @@
 				item: { components: { "ftbfiltersystem:filter": "food_value(>8)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.0d
+			x: -5.0d
+			y: 2.0d
 		}
 		{
 			can_repeat: true
@@ -789,8 +789,8 @@
 				item: { components: { "ftbfiltersystem:filter": "food_value(>8)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -5.0d
+			y: 1.0d
 		}
 		{
 			can_repeat: true
@@ -818,8 +818,8 @@
 				item: { count: 1, id: "minecraft:emerald" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 2.0d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			id: "5EB5BBBCE2AB1245"
@@ -828,8 +828,8 @@
 				item: { count: 1, id: "kubejs:eye_of_weeping_well_located" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.0d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			id: "11113DE0965217BB"
@@ -838,8 +838,40 @@
 				item: { count: 1, id: "kubejs:eye_of_starlight_portal_located" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			id: "22E5438A416558FF"
+			tasks: [{
+				id: "190271D15CA9A4C6"
+				item: { count: 1, id: "kubejs:core_suppression_unit_form_one" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["22E5438A416558FF"]
+			id: "6BE9E4190B1E6A4C"
+			tasks: [{
+				id: "1E5D8282E04843DC"
+				item: { count: 1, id: "kubejs:core_suppression_unit_form_two" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6BE9E4190B1E6A4C"]
+			id: "24024A47877C3B54"
+			tasks: [{
+				id: "55277A6D12081B2E"
+				item: { count: 1, id: "kubejs:core_suppression_unit_form_three" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
 		}
 	]
 }

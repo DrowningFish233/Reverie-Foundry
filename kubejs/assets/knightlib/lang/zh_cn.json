@@ -1,0 +1,18 @@
+{
+  "item.knightlib.great_essence": "大精华",
+  "item.knightlib.small_essence": "小精华",
+  "item.knightlib.empty_grail": "空圣杯",
+  "item.knightlib.filled_grail": "满盈圣杯",
+  "item.knightlib.homunculus": "人造人",
+  "block.knightlib.great_chalice": "大圣杯",
+
+  "tooltip.item.knightlib.great_essence": "§8§o纵使君王也终将化作燃料。",
+  "tooltip.item.knightlib.small_essence": "§8§o一命呜呼的生命无法改变任何事情。",
+  "tooltip.item.knightlib.homunculus": "§8§o一个畸形的奇迹，被炼金术的代价所束缚。",
+  "tooltip.item.knightlib.empty_grail": "§8§o用精华填满它。",
+  "tooltip.item.knightlib.filled_grail": "§8§o饮此杯中物，同死神共舞",
+  "tooltip.item.knightlib.great_chalice": "§8§o你从未听闻的名字在耳畔低语...却又似曾相识。",
+
+  "jei.knightlib.great_chalice_grail_interaction.title": "大圣杯",
+  "jei.knightlib.great_chalice_fill_interaction.title": "装填大圣杯"
+}

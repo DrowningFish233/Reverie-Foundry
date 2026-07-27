@@ -1,0 +1,106 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "57B4DF1E5B70F0C0"
+	group: "2F1F238400B8A177"
+	icon: {
+		id: "kubejs:drowning_fish"
+	}
+	id: "57B4DF1E5B70F0C0"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["59FF1DA682FCF7E2"]
+			id: "6C9DC507DF212214"
+			tasks: [
+				{
+					id: "5BB7A13ED5302F39"
+					item: { count: 1, id: "kubejs:drowning_fish" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "01588106D762B903"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["59FF1DA682FCF7E2"]
+			id: "37E8E57C588A9106"
+			tasks: [
+				{
+					id: "38DAB54177E1F012"
+					item: { count: 1, id: "kubejs:fish" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6F9E06B3D413D5F4"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			id: "59FF1DA682FCF7E2"
+			tasks: [{
+				id: "56F5746669D573A6"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["59FF1DA682FCF7E2"]
+			id: "2A22A59F1926D57A"
+			tasks: [{
+				id: "43978B7747B3B209"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2A22A59F1926D57A"]
+			id: "78FE7E1CD8810721"
+			tasks: [
+				{
+					id: "065EDEAE03A5333B"
+					item: { count: 1, id: "kubejs:material_patchouli_generator" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "121F8DDD1AAF77F7"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2A22A59F1926D57A"]
+			id: "20AB2C2F60CDFE1C"
+			tasks: [
+				{
+					id: "5D14818CCFAAA73E"
+					item: { count: 1, id: "kubejs:trait_fish" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "43E63D1E7402B28E"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: -2.0d
+		}
+	]
+}

@@ -4,7 +4,6 @@
   "crafting": {
     "can_salvage": true,
     "categories": [
-      "metal",
       "intermediate"
     ],
     "gear_type_blacklist": [],

@@ -1,0 +1,18 @@
+{
+  "item.knightlib.great_essence": "Great Essence",
+  "item.knightlib.small_essence": "Small Essence",
+  "item.knightlib.empty_grail": "Empty Grail",
+  "item.knightlib.filled_grail": "Filled Grail",
+  "item.knightlib.homunculus": "Homunculus",
+  "block.knightlib.great_chalice": "Great Chalice",
+
+  "tooltip.item.knightlib.great_essence": "§8§oEven kings become fuel in the end.",
+  "tooltip.item.knightlib.small_essence": "§8§oThe last sigh of a life that changed nothing.",
+  "tooltip.item.knightlib.homunculus": "§8§oA malformed miracle, bound by alchemy’s price.",
+  "tooltip.item.knightlib.empty_grail": "§8§oFill it with essence.",
+  "tooltip.item.knightlib.filled_grail": "§8§oTo drink from it is to dance with death itself.",
+  "tooltip.item.knightlib.great_chalice": "§8§oWhispers names you've never heard... yet somehow remember.",
+
+  "jei.knightlib.great_chalice_grail_interaction.title": "Great Chalice",
+  "jei.knightlib.great_chalice_fill_interaction.title": "Great Chalice Fill"
+}

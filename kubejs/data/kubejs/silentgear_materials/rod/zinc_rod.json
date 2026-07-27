@@ -27,8 +27,8 @@
                 "value": 0.05
             },
             "attack_damage": {
-                "operation": "ADD",
-                "value": 2
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
             },
             "ranged_damage": {
                 "operation": "MULTIPLY_BASE",

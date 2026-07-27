@@ -30,7 +30,7 @@
       "armor/helmet": 2.0,
       "armor/leggings": 4.0,
       "armor_durability": 15.0,
-      "attack_damage": 2.0,
+      "attack_damage": 3.0,
       "attack_speed": 0.1,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,
@@ -47,7 +47,7 @@
       },
       "max_mana": 5.0,
       "magic_armor": 10.0,
-      "magic_damage": 3.0,
+      "magic_damage": 4.0,
       "ranged_damage": 0.5,
       "rarity": 45.0,
       "traits": [

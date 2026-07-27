@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "textures": {
+    "layer0": "cataclysm:item/laser_gatling_gui"
+  },
+  "base": {
+    "parent": "cataclysm:item/laser_gatling_hendheld"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "cataclysm:item/laser_gatling_gui"
+    },
+    "fixed": {
+      "parent": "cataclysm:item/laser_gatling_gui"
+    }
+  }
+}

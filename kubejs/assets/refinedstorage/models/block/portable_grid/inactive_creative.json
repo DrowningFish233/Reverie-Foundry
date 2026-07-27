@@ -1,0 +1,7 @@
+{
+  "parent": "refinedstorage:block/portable_grid/base_creative",
+  "textures": {
+    "1": "refinedstorage:block/portable_grid/inactive_creative",
+    "particle": "refinedstorage:block/portable_grid/inactive_creative"
+  }
+}

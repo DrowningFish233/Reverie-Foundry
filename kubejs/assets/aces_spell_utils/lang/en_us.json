@@ -1,0 +1,78 @@
+{
+  "itemGroup.aces_spell_utils": "Ace's Spell Utils",
+  "creative_tab.aces_spell_utils.items": "Ace's Spell Utils Example Items",
+
+  "school.aces_spell_utils.ritual": "Occult",
+
+  "rarity.aces_spell_utils_rarity_accursed.name": "Accursed",
+  "rarity.aces_spell_utils_rarity_aquatic.name": "Aquatic",
+  "rarity.aces_spell_utils_rarity_sculk.name": "Sculk",
+  "rarity.aces_spell_utils_rarity_cosmic.name": "Cosmic",
+  "rarity.aces_spell_utils_rarity_glacial.name": "Glacial",
+  "rarity.aces_spell_utils_rarity_verdant.name": "Verdant",
+  "rarity.aces_spell_utils_rarity_forbidden.name": "Forbidden",
+  "rarity.aces_spell_utils_rarity_arid.name": "Arid",
+
+  "aces_spell_utils.configuration.title": "Ace's Spell Utils Configs",
+  "aces_spell_utils.configuration.section.aces_spell_utils.common.toml": "Ace's Spell Utils Configs",
+  "aces_spell_utils.configuration.section.aces_spell_utils.common.toml.title": "Ace's Spell Utils Configs",
+
+  "curios.identifier.sheath": "Blade Sheath",
+  "curios.modifiers.sheath": "Blade Sheath",
+  "curios.modifiers.null": "Empty modifier",
+
+  "attribute.aces_spell_utils.mana_steal": "Mana Steal",
+  "attribute.aces_spell_utils.mana_rend": "Mana Rend",
+  "attribute.aces_spell_utils.goliath_slayer": "Goliath Slayer",
+  "attribute.aces_spell_utils.spell_res_penetration": "Spell Resistance Penetration",
+  "attribute.aces_spell_utils.hunger_steal": "Hunger Steal",
+  "attribute.aces_spell_utils.evasive": "Evasive",
+  "attribute.aces_spell_utils.magic_damage_crit_chance": "Spell Crit Chance",
+  "attribute.aces_spell_utils.magic_damage_crit_damage": "Spell Crit Damage",
+  "attribute.aces_spell_utils.magic_projectile_crit_chance": "Spell Projectile Crit Chance",
+  "attribute.aces_spell_utils.magic_projectile_crit_damage": "Spell Projectile Crit Damage",
+  "attribute.aces_spell_utils.magic_projectile_damage": "Spell Projectile Damage",
+  "attribute.aces_spell_utils.life_recovery": "Life Recovery",
+
+  "attribute.aces_spell_utils.ritual_magic_resist": "Occult Magic Resist",
+  "attribute.aces_spell_utils.ritual_spell_power": "Occult Spell Power",
+  "attribute.aces_spell_utils.hydro_magic_resist": "Hydro Magic Resist",
+  "attribute.aces_spell_utils.hydro_spell_power": "Hydro Spell Power",
+  "attribute.aces_spell_utils.technomancy_magic_resist": "Technomancy Magic Resist",
+  "attribute.aces_spell_utils.technomancy_spell_power": "Technomancy Spell Power",
+
+  "ui.aces_spell_utils.refinement": "%d Refinement",
+
+  "tooltip.aces_spell_utils.active_ability": "Active Ability (%s cooldown):",
+  "item.aces_spell_utils.more_details1": "Press [SHIFT] for passive ability",
+  "item.aces_spell_utils.more_details2": "Press [ALT] for active ability",
+  "item.aces_spell_utils.heavy_gun_info": "This is a heavy gun; can only right-click cast when in mainhand",
+  "item.aces_spell_utils.light_gun_info": "This is a light gun; can also right-click cast in offhand",
+
+  "item.aces_spell_utils.example_sheath": "Silver Sheath",
+  "item.aces_spell_utils.example_sheath.desc": "On hit, summon a comet from above the entity's head",
+  "item.aces_spell_utils.example_staff": "Silver Staff",
+  "item.aces_spell_utils.example_imbue_staff": "Forsaken Staff",
+  "item.aces_spell_utils.example_curio": "Skull Pendant",
+  "item.aces_spell_utils.example_curio.desc": "A pendant that radiates with death",
+  "item.aces_spell_utils.example_imbue_curio": "Burning Core",
+  "item.aces_spell_utils.example_imbue_curio.desc": "A strange object, hot to the touch",
+  "item.aces_spell_utils.example_passive_ability_spellbook": "Cosmonomicon",
+  "item.aces_spell_utils.example_passive_ability_spellbook.desc": "On hit, summon a comet from above the entity's head",
+  "item.aces_spell_utils.example_loot_bag": "Echo of Tyros Loot Bag",
+  "item.aces_spell_utils.example_loot_bag.desc": "Contains loot from Echo of Tyros, First Flamebearer",
+
+  "item.aces_spell_utils.example_gun": "Boltripper Plasma-Rifle",
+  "item.aces_spell_utils.example_gun.desc": "Passive Boltripper",
+  "item.aces_spell_utils.example_gun.desc2": "Active Boltripper",
+
+  "item.aces_spell_utils.example_ap_sword": "Night Edge",
+  "item.aces_spell_utils.example_ap_sword.desc": "Passive Night Edge",
+  "item.aces_spell_utils.example_ap_sword.desc2": "Active Night Edge",
+
+  "item.aces_spell_utils.example_ap_magic_sword": "Darkpulse",
+  "item.aces_spell_utils.example_ap_magic_sword.desc": "Passive Darkpulse",
+  "item.aces_spell_utils.example_ap_magic_sword.desc2": "Active Darkpulse",
+
+  "entity.aces_spell_utils.test_boss": "Test Boss"
+}

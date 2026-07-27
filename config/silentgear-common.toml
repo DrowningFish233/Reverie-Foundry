@@ -81,7 +81,7 @@
 	#If set to false all conversion recipes (type 'silentgear:conversion') will be disabled
 	#An example of a conversion recipe is placing a vanilla stone pickaxe into a crafting grid to make a Silent Gear stone pickaxe
 	#Note: This also affects conversion recipes added by data packs and other mods
-	allow_conversion_recipes = false
+	allow_conversion_recipes = true
 	#Displays a message in chat, notifying the player that an item broke and hinting that it can be repaired
 	send_broken_message = true
 	#How frequently gear will recalculate properties as damaged

@@ -1,0 +1,9 @@
+{
+	id: "57C9A0983101D7E3"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{ id: "65D0580A5309A76A", item: { count: 1, id: "minecraft:black_bed" } }
+		{ id: "30FF9C45B3AA51E8", item: { count: 1, id: "comforts:sleeping_bag_black" } }
+	]
+}

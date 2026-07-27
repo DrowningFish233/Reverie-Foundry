@@ -1,0 +1,13 @@
+{
+  "entities": [
+    "player"
+  ],
+  "slots": [
+    "head",
+    "necklace",
+    "waist",
+    "talisman",
+    "hands",
+    "feet"
+  ]
+}

@@ -71,7 +71,7 @@
     },
     "silentgear:tip": {
       "durability": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": -0.25
       },
       "harvest_tier": {

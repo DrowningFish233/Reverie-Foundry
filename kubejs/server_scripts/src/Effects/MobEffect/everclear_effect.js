@@ -9,5 +9,5 @@ function everclear_effect(event) {
         return;
     }
 
-    new_damage(event, STAGE.ADDITIVE, 0.25);
+    new_damage(event, STAGE.ADDITIVE, 1.25);
 }

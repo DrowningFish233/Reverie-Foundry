@@ -146,14 +146,30 @@ function activateRandomSin(event, player) {
             let sinLower = sin.toLowerCase();
             let messageIndex = Math.floor(Math.random() * 4);
 
-            // 构建消息
-            player.setStatusMessage(
-                Text.join(
-                    Text.translate(`message.sin.${sinLower}.prefix`).color(color),
-                    " ",
-                    Text.translate(`message.sin.${sinLower}.message.${messageIndex}`).color(color)
-                )
-            );
+            let prefixText = Text.translate(`message.sin.${sinLower}.prefix`).getString();
+            let messageText = Text.translate(`message.sin.${sinLower}.message.${messageIndex}`).getString();
+
+            if (typeof EmbersText !== 'undefined' && EmbersText.markup) {
+                let fullMessage = `<color color=${color}><shake amplitude=0.8 frequency=1.5>${prefixText} ${messageText}</shake></color>`;
+
+                let message = EmbersText.markup(100, fullMessage)
+                    .anchor('MIDDLE')
+                    .scale(1.2)
+                    .fadeInTicks(5)
+                    .fadeOutTicks(10)
+                    .shadow(true)
+                    .background(false)
+
+                EmbersText.send(player, message);
+            } else {
+                player.setStatusMessage(
+                    Text.join(
+                        Text.translate(`message.sin.${sinLower}.prefix`).color(color),
+                        " ",
+                        Text.translate(`message.sin.${sinLower}.message.${messageIndex}`).color(color)
+                    )
+                );
+            }
         }
     });
 }
@@ -255,14 +271,9 @@ EntityEvents.afterHurt(event => {
     let player = event.player;
     if (!player) return;
 
-    const COOLDOWN_KEY = "sanity_damage_cooldown";
-    if ($CooldownManager.hasCooldown(player, COOLDOWN_KEY)) return;
-
     let damage = event.damage;
     let MaxHealth = player.getMaxHealth();
-
     let damagePercentage = damage / MaxHealth;
-
     let sanityDeduction = 0;
 
     if (damagePercentage >= 0.5) {
@@ -272,10 +283,11 @@ EntityEvents.afterHurt(event => {
     }
 
     if (sanityDeduction > 0) {
-        let pData = player.persistentData;
-        let currentSanity = pData.getInt("sanity") ?? 0;
-        updateplayersanity(player, currentSanity - sanityDeduction);
-        $CooldownManager.setCooldown(player, COOLDOWN_KEY, 20);
+        trySkill(player, "sanity_damage", 20, () => {
+            let pData = player.persistentData;
+            let currentSanity = pData.getInt("sanity") ?? 0;
+            updateplayersanity(player, currentSanity - sanityDeduction);
+        })
     }
 });
 
@@ -307,11 +319,25 @@ function getEquippedSinAccessory(player) {
  */
 function applyPanicEffect(player) {
     player.potionEffects.add("kubejs:panic", 400, 0);
-
     player.potionEffects.add("kubejs:hurt", 400, 0);
     player.potionEffects.add("minecraft:slowness", 400, 1);
 
-    player.setStatusMessage(
-        Text.translate("message.sin.panic").color("dark_red")
-    );
+    if (typeof EmbersText !== 'undefined' && EmbersText.markup) {
+        let panicText = Text.translate("message.sin.panic").getString();
+
+        let fullMessage = `<color color=dark_red><turbulence amplitude=1.5 frequency=2.0>${panicText}</turbulence></color>`;
+
+        let message = EmbersText.markup(100, fullMessage)
+            .anchor('MIDDLE')
+            .scale(1.3)
+            .fadeInTicks(5)
+            .fadeOutTicks(10)
+            .shadow(true);
+
+        EmbersText.send(player, message);
+    } else {
+        player.setStatusMessage(
+            Text.translate("message.sin.panic").color("dark_red")
+        );
+    }
 }

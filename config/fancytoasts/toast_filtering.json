@@ -1,5 +1,5 @@
 {
-  "fancyAdvancementToastsEnabled": true,
+  "fancyAdvancementToastsEnabled": false,
   "fancyQuestToastsEnabled": true,
   "advancementToastsEnabled": true,
   "recipeToastsEnabled": true,

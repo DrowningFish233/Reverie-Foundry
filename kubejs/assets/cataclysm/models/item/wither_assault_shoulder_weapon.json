@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"textures": {
+	  "layer0": "cataclysm:item/wither_assault_shoulder_weapon_gui"
+	},
+	"base": {
+	  "parent": "cataclysm:item/wither_assault_shoulder_weapon_hendheld"
+	},
+	"perspectives": {
+	  "gui": {
+		"parent": "cataclysm:item/wither_assault_shoulder_weapon_gui"
+	  },
+	  "fixed": {
+		"parent": "cataclysm:item/wither_assault_shoulder_weapon_gui"
+	  }
+	}
+  }

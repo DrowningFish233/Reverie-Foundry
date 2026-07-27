@@ -48,7 +48,7 @@
         "name": "wood/木"
       },
       "magic_armor": 15.0,
-      "magic_damage": 6.0,
+      "magic_damage": 10.0,
       "ranged_damage": 1.2,
       "rarity": 55.0,
       "traits": [

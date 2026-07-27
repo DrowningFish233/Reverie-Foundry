@@ -23,12 +23,12 @@
     "properties": {
         "silentgear:rod": {
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.1
             },
             "attack_damage": {
                 "operation": "ADD",
-                "value": 5
+                "value": 1
             },
             "enchantment_value": {
                 "operation": "MULTIPLY_BASE",

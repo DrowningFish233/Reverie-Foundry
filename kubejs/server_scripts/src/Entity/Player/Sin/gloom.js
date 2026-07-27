@@ -7,9 +7,9 @@ ISSEvents.spellOnCast(event => {
     if (isGLOOM <= 0) return;
 
     // 检查是否装备了忧郁之石
-    const hasStoneOfMelancholy = getCuriosItem(entity, 'kubejs:stone_of_melancholy') !== null;
+    let hasStoneOfMelancholy = getCuriosItem(entity, 'kubejs:stone_of_melancholy') !== null;
 
-    const maxLayers = hasStoneOfMelancholy ? 5 : 4;
+    let maxLayers = hasStoneOfMelancholy ? 5 : 4;
 
     let arcaneLayers = getEffectLayers(entity, 'kubejs:arcane_brand') || 0;
     let newLayers = Math.min(maxLayers, arcaneLayers + 1);
@@ -23,8 +23,8 @@ ISSEvents.spellOnCast(event => {
 // 法术凝聚满层效果
 RFTrait('kubejs:arcane_brand', 999)
     .beforeHurt(event => {
-        const { source, entity } = event;
-        const attacker = source.player || source.actual;
+        let { source, entity } = event;
+        let attacker = source.player || source.actual;
 
         if (!attacker || !attacker.isPlayer()) return;
 
@@ -32,15 +32,15 @@ RFTrait('kubejs:arcane_brand', 999)
         if (isGLOOM <= 0) return;
 
         // 检查是否装备了忧郁之石
-        const hasStoneOfMelancholy = getCuriosItem(attacker, 'kubejs:stone_of_melancholy') !== null;
+        let hasStoneOfMelancholy = getCuriosItem(attacker, 'kubejs:stone_of_melancholy') !== null;
 
         if (!hasStoneOfMelancholy) return;
 
         let arcaneLayers = getEffectLayers(attacker, 'kubejs:arcane_brand') || 0;
 
         if (arcaneLayers >= 5) {
-            const spellPower = attacker.getAttributeValue("irons_spellbooks:spell_power");
-            const damage = 20 + spellPower * 0.5;
+            let spellPower = attacker.getAttributeValue("irons_spellbooks:spell_power");
+            let damage = 20 + spellPower * 0.5;
             attackEntity(entity, 'magic', damage, true);
 
             if (entity.hasEffect('kubejs:arcane_erosion')) {
@@ -56,13 +56,13 @@ RFTrait('kubejs:arcane_brand', 999)
 
 // 奥术侵蚀死亡效果
 EntityEvents.death(event => {
-    const entity = event.entity;
+    let entity = event.entity;
     if (!entity || !entity.isLiving()) return;
     if (!entity.hasEffect('kubejs:arcane_erosion')) return;
 
-    const nearbyPlayers = entity.level.getPlayers();
+    let nearbyPlayers = entity.level.getPlayers();
     nearbyPlayers.forEach(player => {
-        const hasStoneOfMelancholy = getCuriosItem(player, 'kubejs:stone_of_melancholy') !== null;
+        let hasStoneOfMelancholy = getCuriosItem(player, 'kubejs:stone_of_melancholy') !== null;
         if (!hasStoneOfMelancholy) return;
 
         if (player.distanceToEntity(entity) <= 10) {

@@ -71,11 +71,11 @@
     },
     "silentgear:rod": {
       "durability": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.3
       },
       "harvest_speed": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.1
       },
       "rarity": 45.0,

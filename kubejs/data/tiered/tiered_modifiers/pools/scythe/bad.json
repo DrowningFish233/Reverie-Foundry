@@ -3,6 +3,9 @@
   "verifiers": [
     {
       "tag": "malum:scythe"
+    },
+    {
+      "tag": "kubejs:tools/scythe"
     }
   ],
   "tiers": [

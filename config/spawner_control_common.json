@@ -17,7 +17,6 @@
   "lootDropChance": 0.65,
   "lootDropList": [
     "kubejs:corruption=3",
-    "enderscape:flanger_berry=2",
     "kubejs:blood_orb=3",
     "minecraft:bone=2",
     "minecraft:gold_ingot=2",

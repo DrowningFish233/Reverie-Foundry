@@ -5,6 +5,11 @@
       "speed": 1.0,
       "temperature": 3000
     },
+    "productivemetalworks:molten_uranium": {
+      "consumption": 0.4,
+      "speed": 0.7,
+      "temperature": 1000
+    },
     "minecraft:lava": {
       "consumption": 0.2,
       "speed": 0.5,

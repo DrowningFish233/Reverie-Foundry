@@ -28,14 +28,14 @@
             },
             "attack_damage": {
                 "operation": "ADD",
-                "value": 6
+                "value": -0.5
             },
             "harvest_speed": {
                 "operation": "MULTIPLY_BASE",
                 "value": 0.5
             },
             "repair_efficiency": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.4
             },
             "traits": [

@@ -71,7 +71,10 @@
 	quests: [
 		{
 			hide_until_deps_complete: true
+			icon_scale: 0.7d
 			id: "6CA6DCCDEB5167BD"
+			shape: "diamond"
+			size: 3.0d
 			tasks: [{
 				dimension: "eternal_starlight:starlight"
 				id: "61777AB0D759E7DC"

@@ -24,7 +24,7 @@
     "properties": {
         "silentgear:lining": {
             "armor": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "ADD",
                 "value": 0.1
             },
             "traits": []

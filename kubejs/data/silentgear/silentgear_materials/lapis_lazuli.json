@@ -23,13 +23,13 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 15.0,
-      "armor/boots": 2.0,
-      "armor/chestplate": 6.0,
-      "armor/helmet": 2.0,
-      "armor/leggings": 5.0,
+      "armor": 14.0,
+      "armor/boots": 2.5,
+      "armor/chestplate": 5.5,
+      "armor/helmet": 2.5,
+      "armor/leggings": 3.5,
       "armor_durability": 13.0,
-      "attack_damage": 2.0,
+      "attack_damage": 1.5,
       "attack_speed": 0.0,
       "charging_value": 1.3,
       "draw_speed": -0.1,
@@ -57,7 +57,7 @@
               "ratio": 0.75
             }
           ],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:lucky"
         }
       ]
@@ -68,7 +68,7 @@
         "value": 0.3
       },
       "harvest_speed": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": -0.1
       },
       "harvest_tier": {
@@ -98,7 +98,7 @@
               "ratio": 0.75
             }
           ],
-          "level": 3,
+          "level": 2,
           "trait": "silentgear:lucky"
         }
       ]

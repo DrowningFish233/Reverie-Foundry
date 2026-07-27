@@ -4,14 +4,25 @@
 function hurtEffect(event) {
     const { entity, source } = event;
 
-    // 检查受伤者是否拥有易伤效果
-    if (!entity.isLiving() || !entity.hasEffect("kubejs:hurt")) {
-        return;
+    if (!entity.isLiving()) return;
+
+    let hasVulnerability = false;
+    let totalLevel = 0;
+
+    if (entity.hasEffect("kubejs:panic")) {
+        let panicEffect = entity.getEffect("kubejs:panic");
+        totalLevel += panicEffect.getAmplifier() + 1;
+        hasVulnerability = true;
     }
 
-    // 获取当前易伤效果
-    let hurtEffect = entity.getEffect("kubejs:hurt");
-    let hurtLevel = hurtEffect.getAmplifier();
+    if (entity.hasEffect("kubejs:hurt")) {
+        let hurtEffect = entity.getEffect("kubejs:hurt");
+        totalLevel += hurtEffect.getAmplifier() + 1;
+        hasVulnerability = true;
+    }
 
-    new_damage(event, STAGE.ADDITIVE, hurtLevel * 0.5);
+    if (hasVulnerability) {
+        let multiplier = 1 + totalLevel * 0.5;
+        new_damage(event, STAGE.MULTIPLY, multiplier);
+    }
 }

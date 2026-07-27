@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"textures": {
+	  "layer0": "cataclysm:item/tidal_claws_gui"
+	},
+	"base": {
+	  "parent": "cataclysm:item/tidal_claws_hendheld"
+	},
+	"perspectives": {
+	  "gui": {
+		"parent": "cataclysm:item/tidal_claws_gui"
+	  },
+	  "fixed": {
+		"parent": "cataclysm:item/tidal_claws_gui"
+	  }
+	}
+  }

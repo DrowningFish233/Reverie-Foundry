@@ -23,15 +23,15 @@
 	},
 	"properties": {
 		"silentgear:main": {
-			"armor": 28,
+			"armor": 28.0,
 			"armor/helmet": 5,
 			"armor/chestplate": 10,
 			"armor/leggings": 8,
 			"armor/boots": 5,
 			"armor_toughness": 8,
 			"armor_durability": 75,
-			"attack_damage": 8,
-			"attack_speed": 1.1,
+			"attack_damage": 25.0,
+			"attack_speed": 0.1,
 			"magic_armor": 10,
 			"spell_resist": 0.1,
 			"durability": 100,

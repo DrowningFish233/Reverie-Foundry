@@ -30,7 +30,7 @@
             "armor/helmet": 2.0,
             "armor/leggings": 3.0,
             "armor_durability": 10.0,
-            "attack_damage": 2.5,
+            "attack_damage": 1.5,
             "attack_speed": 0.3,
             "attack_speed/axe": -0.15,
             "attack_speed/hoe": -0.1,

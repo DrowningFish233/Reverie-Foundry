@@ -1,0 +1,41 @@
+{
+  "conditions": [],
+  "description": {
+    "translate": "trait.silentgear.reach.desc"
+  },
+  "effects": [
+    {
+      "type": "silentgear:attribute",
+      "attribute_modifiers": {
+        "all/any": [
+          {
+            "attribute": "minecraft:player.block_interaction_range",
+            "operation": "add_value",
+            "values": [
+              0.5,
+              1.0,
+              1.5,
+              2.0,
+              3.0
+            ]
+          },
+          {
+            "attribute": "minecraft:player.entity_interaction_range",
+            "operation": "add_value",
+            "values": [
+              0.5,
+              0.5,
+              1.0,
+              1.0,
+              1.5
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "max_level": 5,
+  "name": {
+    "translate": "trait.silentgear.reach"
+  }
+}

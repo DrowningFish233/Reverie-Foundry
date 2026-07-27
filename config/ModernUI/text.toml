@@ -100,7 +100,7 @@
 	#NEAREST. We prefer computeDeviceFontSize and allowSDFTextIn2D, then setting this to
 	#false can improve performance. If either of the above two is false or Shaders are active,
 	#then setting this to true can improve readability.
-	linearSamplingA8Atlas = false
+	linearSamplingA8Atlas = true
 	#Control the horizontal offset for bitmap fonts, in GUI scaled pixels.
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0

@@ -79,9 +79,9 @@
       "borderType": "gradient",
       "gradientType": "custom",
       "gradientColors": [
-        "#edb620",
-        "#c79229",
-        "#1f2542"
+        "#fcdc89",
+        "#f5ca79",
+        "#ffb868"
       ],
       "specialEffect": "nebula"
     },
@@ -91,9 +91,9 @@
       "borderType": "gradient",
       "gradientType": "custom",
       "gradientColors": [
-        "#edb620",
-        "#c79229",
-        "#1f2542"
+        "#fcdc89",
+        "#f5ca79",
+        "#ffb868"
       ],
       "specialEffect": "spiral"
     },
@@ -103,9 +103,9 @@
       "borderType": "gradient",
       "gradientType": "custom",
       "gradientColors": [
-        "#edb620",
-        "#c79229",
-        "#1f2542"
+        "#fcdc89",
+        "#f5ca79",
+        "#ffb868"
       ],
       "specialEffect": "nebula"
     },
@@ -113,11 +113,12 @@
       "texture": "kubejs:textures/overlay/iceandfire.png",
       "namespace": "iceandfire",
       "borderType": "gradient",
+      "specialEffect": "metal_shining",
       "gradientType": "custom",
       "gradientColors": [
-        "#5d565d",
-        "#4d474d",
-        "#5d565d"
+        "#f46c60",
+        "#a05c8f",
+        "#4568be"
       ]
     },
     {
@@ -174,14 +175,26 @@
     },
     {
       "texture": "kubejs:textures/overlay/irons_spellbooks.png",
+      "namespace": "hazennstuff",
+      "specialEffect": "cinder",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#fcdc89",
+        "#f5ca79",
+        "#ffb868"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/irons_spellbooks.png",
       "namespace": "allthewizardgear",
       "specialEffect": "cinder",
       "borderType": "gradient",
       "gradientType": "custom",
       "gradientColors": [
-        "#edb620",
-        "#c79229",
-        "#1f2542"
+        "#fcdc89",
+        "#f5ca79",
+        "#ffb868"
       ]
     },
     {
@@ -317,19 +330,9 @@
     },
     {
       "tags": [
-        "malum:spirits"
-      ],
-      "specialEffect": "spiral"
-    },
-    {
-      "tags": [
         "malum:scythe"
       ],
       "specialEffect": "spiral"
-    },
-    {
-      "namespace": "malum",
-      "specialEffect": "nebula"
     },
     {
       "items": [
@@ -388,6 +391,49 @@
         "#4c4fb5",
         "#421970"
       ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/create.png",
+      "namespace": "create",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#fcdc89",
+        "#c6a566",
+        "#916e44"
+      ]
+    },
+    {
+      "texture": "kubejs:textures/overlay/malum.png",
+      "namespace": "malum",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#716cd0",
+        "#5e479b",
+        "#4c2367"
+      ],
+      "specialEffect": "nebula"
+    },
+    {
+      "texture": "kubejs:textures/overlay/malum.png",
+      "tags": [
+        "malum:spirits"
+      ],
+      "specialEffect": "spiral",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#716cd0",
+        "#5e479b",
+        "#4c2367"
+      ]
+    },
+    {
+      "namespace": "illagerinvasion",
+      "name": "illagerinvasion",
+      "specialEffect": "fireflies",
+      "innerFrameCornerType": "rounded",
+      "borderType": "auto_gradient"
     }
   ]
 }

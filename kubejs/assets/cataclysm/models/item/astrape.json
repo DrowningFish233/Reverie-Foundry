@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/handheld",
+	"loader": "neoforge:separate_transforms",
+	"textures": {
+	  "layer0": "cataclysm:item/astrape_gui"
+	},
+	"base": {
+	  "parent": "cataclysm:item/astrape_hendheld"
+	},
+	"perspectives": {
+	  "gui": {
+		"parent": "cataclysm:item/astrape_gui"
+	  },
+	  "fixed": {
+		"parent": "cataclysm:item/astrape_gui"
+	  }
+	}
+  }

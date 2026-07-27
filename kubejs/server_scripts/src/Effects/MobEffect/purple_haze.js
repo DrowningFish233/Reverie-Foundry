@@ -9,7 +9,7 @@ function purple_haze_effect(event) {
         return;
     }
 
-    new_damage(event, STAGE.ADDITIVE, 0.08);
+    new_damage(event, STAGE.ADDITIVE, 1.08);
 }
 
 /**

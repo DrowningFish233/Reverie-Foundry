@@ -1,0 +1,23 @@
+{
+	id: "6D98C0AFA5143C45"
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{
+			count: 2
+			id: "00E50F1678DE1765"
+			item: {
+				count: 1
+				id: "malum:runewood_sapling"
+			}
+		}
+		{
+			count: 2
+			id: "538BD7A20D4AA181"
+			item: {
+				count: 1
+				id: "malum:azure_runewood_sapling"
+			}
+		}
+	]
+}

@@ -17,12 +17,14 @@ EntityEvents.death(event => {
 });
 
 const curios_player_death = {
+    /*
     'kubejs:none_curios': function (player, event, curios, slot, item) {
         if (!kubejs_player.some(ctx => ctx == event.entity.getType())) {
             return;
         }
         curios.setStackInSlot(slot, Item.of('minecraft:air'));
     },
+    */
     'kubejs:baptism_of_violet': function (player, event, curios, slot, item) {
         if (!kubejs_player.some(ctx => ctx == event.entity.getType())) {
             return;

@@ -1,0 +1,9 @@
+{
+  "order": 6,
+  "size": 1,
+  "icon": "curios:slot/empty_cosmetic_slot",
+  "add_cosmetic": false,
+  "operation": "SET",
+  "render_toggle": true,
+  "drop_rule": "DEFAULT"
+}

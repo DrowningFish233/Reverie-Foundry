@@ -24,10 +24,10 @@
         "silentgear:rod": {
             "attack_damage": {
                 "operation": "ADD",
-                "value": 2
+                "value": 1.5
             },
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.35
             },
             "traits": [

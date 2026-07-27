@@ -23,14 +23,14 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 30.0,
+      "armor": 34.0,
       "armor_toughness": 20.0,
-      "armor/boots": 5.0,
-      "armor/chestplate": 11.0,
-      "armor/helmet": 6.0,
-      "armor/leggings": 8.0,
+      "armor/boots": 8.0,
+      "armor/chestplate": 12.0,
+      "armor/helmet": 8.0,
+      "armor/leggings": 6.0,
       "armor_durability": 50.0,
-      "attack_damage": 16.0,
+      "attack_damage": 28.0,
       "attack_speed": 0.2,
       "charging_value": 1.3,
       "durability": 4000.0,
@@ -45,7 +45,7 @@
       "magic_damage": 5.0,
       "projectile_accuracy": 1.2,
       "ranged_damage": 3.0,
-      "rarity": 85.0,
+      "rarity": 185.0,
       "traits": [
         {
           "conditions": [],

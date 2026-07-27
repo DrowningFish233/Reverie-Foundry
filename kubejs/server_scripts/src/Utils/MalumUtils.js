@@ -4,7 +4,7 @@
  * @returns {Internal.GeasEffectType}
  */
 function fu_getGeasType(id) {
-    return $RFMalumUtils.getGeasType(id);
+    return $RFMalumUtils.getGeasTypeById(id);
 }
 
 /**
@@ -16,14 +16,14 @@ function fu_getAllGeasTypes() {
 }
 
 /**
- * 添加誓令效果（无限制）
+ * 添加誓令效果
  * @param {Internal.LivingEntity} entity - 目标实体
  * @param {string} geasId - 誓令ID
  * @returns {boolean}
  */
 function fu_addGeasEffect(entity, geasId) {
     if (!entity || !geasId) return false;
-    return $RFMalumUtils.addGeasEffect(entity, geasId);
+    return $RFMalumUtils.addGeasEffectById(entity, geasId);
 }
 
 /**
@@ -34,7 +34,7 @@ function fu_addGeasEffect(entity, geasId) {
  */
 function fu_tryAddGeasEffect(entity, geasId) {
     if (!entity || !geasId) return false;
-    return $RFMalumUtils.tryAddGeasEffect(entity, geasId);
+    return $RFMalumUtils.tryAddGeasEffectById(entity, geasId);
 }
 
 /**
@@ -45,7 +45,7 @@ function fu_tryAddGeasEffect(entity, geasId) {
  */
 function fu_removeGeasEffect(entity, geasId) {
     if (!entity || !geasId) return false;
-    return $RFMalumUtils.removeGeasEffect(entity, geasId);
+    return $RFMalumUtils.removeGeasEffectById(entity, geasId);
 }
 
 /**
@@ -56,7 +56,7 @@ function fu_removeGeasEffect(entity, geasId) {
  */
 function fu_hasGeasEffect(entity, geasId) {
     if (!entity || !geasId) return false;
-    return $RFMalumUtils.hasGeasEffect(entity, geasId);
+    return $RFMalumUtils.hasGeasEffectById(entity, geasId);
 }
 
 /**
@@ -66,7 +66,7 @@ function fu_hasGeasEffect(entity, geasId) {
  */
 function fu_getGeasItemStacks(entity) {
     if (!entity) return [];
-    return $RFMalumUtils.getGeasItemStacks(entity) || [];
+    return $RFMalumUtils.getEquippedGeasItemStacks(entity) || [];
 }
 
 /**
@@ -76,7 +76,7 @@ function fu_getGeasItemStacks(entity) {
  */
 function fu_getGeasEffects(entity) {
     if (!entity) return [];
-    return $RFMalumUtils.getGeasEffects(entity) || [];
+    return $RFMalumUtils.getEquippedGeasEffects(entity) || [];
 }
 
 /**
@@ -86,7 +86,7 @@ function fu_getGeasEffects(entity) {
  */
 function fu_getGeasData(entity) {
     if (!entity) return null;
-    return $RFMalumUtils.getGeasData(entity);
+    return $RFMalumUtils.getGeasSoulData(entity);
 }
 
 /**
@@ -115,54 +115,56 @@ function fu_hasStoredGeasEffect(stack) {
  */
 function fu_syncGeasData(entity) {
     if (entity) {
-        $RFMalumUtils.syncGeasData(entity);
+        $RFMalumUtils.syncGeasSoulData(entity);
     }
 }
 
 /**
- * 获取誓令效果的名称（第一版独有，补充实现）
+ * 获取誓令效果的名称
  * @param {Internal.GeasEffect} geasEffect 誓言效果实例
  * @returns {string} 效果名称
  */
 function fu_getGeasEffectName(geasEffect) {
     if (!geasEffect) return "未知";
     try {
-        return geasEffect.getDisplayName().getString();
+        const langKey = $RFMalumUtils.getGeasTypeLangKey(geasEffect.type);
+        if (langKey) {
+            return langKey.substring(langKey.lastIndexOf('.') + 1);
+        }
+        return "未知";
     } catch (e) {
         return "未知";
     }
 }
 
 /**
- * 获取誓令效果的等级（第一版独有，补充实现）
+ * 获取誓令效果的等级
  * @param {Internal.GeasEffect} geasEffect 誓言效果实例
  * @returns {number} 效果等级
  */
 function fu_getGeasEffectLevel(geasEffect) {
-    if (!geasEffect) return 0;
-    try {
-        return geasEffect.getAmplifier() + 1;
-    } catch (e) {
-        return 1;
-    }
+    // Malum 的 GeasEffect 没有 amplifier 概念，固定返回 1
+    return 1;
 }
 
 /**
- * 检查誓令效果是否有效（第一版独有，补充实现）
+ * 检查誓令效果是否有效
  * @param {Internal.GeasEffect} geasEffect 誓言效果实例
  * @returns {boolean} 是否有效
  */
 function fu_isGeasEffectValid(geasEffect) {
     if (!geasEffect) return false;
     try {
-        return !geasEffect.isInvalid() && geasEffect.isActive();
+        // GeasEffect 没有 isInvalid 和 isActive 方法
+        // 简单判断 type 是否存在
+        return geasEffect.type !== undefined && geasEffect.type !== null;
     } catch (e) {
         return false;
     }
 }
 
 /**
- * 从装备的物品获取誓令效果（第一版独有，补充实现）
+ * 从装备的物品获取誓令效果
  * @param {Internal.LivingEntity} entity 目标实体
  * @param {Internal.ItemStack} stack 物品堆栈
  * @returns {Internal.GeasEffect|null}
@@ -173,21 +175,19 @@ function fu_getEquippedGeasEffectFromStack(entity, stack) {
 }
 
 /**
- * 根据ID获取誓令类型（通过registry，第一版保留）
+ * 根据ID获取誓令类型
  * @param {string} geasId - 誓令ID
  * @returns {Internal.GeasEffectType|null}
  */
 function getGeasTypeById(geasId) {
+    if (!geasId) return null;
     try {
-        let geasRegistry = $MalumGeasEffectTypes.GEAS_TYPES_REGISTRY;
-        let geasResource = new $ResourceLocation('malum', geasId);
-        return geasRegistry.get(geasResource);
+        return $RFMalumUtils.getGeasTypeById(geasId);
     } catch (e) {
-        console.log('获取誓令类型失败: ' + e);
+        console.warn('获取誓令类型失败: ' + geasId + ', 错误: ' + e);
         return null;
     }
 }
-
 
 /**
  * 检测并移除超额誓令
@@ -196,28 +196,29 @@ function getGeasTypeById(geasId) {
 function checkAndRemoveExcessGeas(player) {
     if (!player) return;
 
-    const attribute = player.getAttribute('malum:geas_limit');
-    if (!attribute) return;
+    const limit = $RFMalumUtils.getGeasLimit(player);
+    if (limit <= 0) return;
 
-    const limit = Math.ceil(attribute.getValue());
     const currentEffects = fu_getGeasEffects(player);
     const currentCount = currentEffects.length;
 
     if (currentCount > limit) {
         const toRemove = currentCount - limit;
-        for (let i = 0; i < toRemove; i++) {
-            const effectIndex = currentEffects.length - 1 - i;
-            if (effectIndex >= 0) {
-                const effectToRemove = currentEffects[effectIndex];
-                const effectId = effectToRemove.type.getRegistryName().getPath();
-                fu_removeGeasEffect(player, effectId);
+        for (let i = currentEffects.length - 1; i >= currentEffects.length - toRemove; i--) {
+            const effectToRemove = currentEffects[i];
+            if (effectToRemove && effectToRemove.type) {
+                $RFMalumUtils.removeGeasEffectByEffect(player, effectToRemove);
             }
         }
     }
 }
 
 NativeEvents.onEvent("net.neoforged.neoforge.event.entity.living.LivingEquipmentChangeEvent", event => {
-    checkAndRemoveExcessGeas(event.entity);
+    event.entity.server.scheduleInTicks(5, () => {
+        if (event.entity && event.entity.isAlive()) {
+            checkAndRemoveExcessGeas(event.entity);
+        }
+    });
 });
 
 
@@ -337,7 +338,6 @@ function fu_restoreSoulWard(entity) {
     $RFMalumUtils.restoreSoulWard(entity);
 }
 
-
 /**
  * 强制暴露生物的灵魂
  * @param {Internal.LivingEntity} entity
@@ -450,7 +450,7 @@ function fu_createSpiritSpawner(target) {
  * @returns {Internal.SoulHarvestHandler$SpiritSpawner}
  */
 function fu_spawnerSetCollector(spawner, collector) {
-    return $RFMalumUtils.spawnerSetCollector(spawner, collector);
+    return $RFMalumUtils.setSpiritSpawnerCollector(spawner, collector);
 }
 
 /**
@@ -460,7 +460,7 @@ function fu_spawnerSetCollector(spawner, collector) {
  * @returns {Internal.SoulHarvestHandler$SpiritSpawner}
  */
 function fu_spawnerSetCustomItems(spawner, items) {
-    return $RFMalumUtils.spawnerSetCustomItems(spawner, items);
+    return $RFMalumUtils.setSpiritSpawnerCustomItems(spawner, items);
 }
 
 /**
@@ -470,7 +470,7 @@ function fu_spawnerSetCustomItems(spawner, items) {
  * @returns {Internal.SoulHarvestHandler$SpiritSpawner}
  */
 function fu_spawnerSetCustomItemStacks(spawner, itemStacks) {
-    return $RFMalumUtils.spawnerSetCustomItemStacks(spawner, itemStacks);
+    return $RFMalumUtils.setSpiritSpawnerCustomItemStacks(spawner, itemStacks);
 }
 
 /**
@@ -479,7 +479,7 @@ function fu_spawnerSetCustomItemStacks(spawner, itemStacks) {
  * @returns {List<Internal.ItemStack>}
  */
 function fu_spawnerGetDrops(spawner) {
-    return $RFMalumUtils.spawnerGetDrops(spawner);
+    return $RFMalumUtils.getSpiritSpawnerDrops(spawner);
 }
 
 /**
@@ -488,7 +488,7 @@ function fu_spawnerGetDrops(spawner) {
  * @param {Internal.Level} level
  */
 function fu_spawnerSpawn(spawner, level) {
-    $RFMalumUtils.spawnerSpawn(spawner, level);
+    $RFMalumUtils.spawnSpiritsFromSpawner(spawner, level);
 }
 
 /**
@@ -509,9 +509,8 @@ function fu_spawnSpiritsImmediate(target, collector, level) {
  * @param {Internal.Level} level
  */
 function fu_spawnCustomSpirits(target, items, collector, level) {
-    $RFMalumUtils.spawnCustomSpirits(target, items, collector, level);
+    $RFMalumUtils.spawnCustomSpiritsImmediate(target, items, collector, level);
 }
-
 
 /**
  * 获取实体的黑暗触碰数据
@@ -590,7 +589,6 @@ function fu_handlePrimordialSoupContact(entity) {
 function fu_updateDarknessTouch(entity) {
     $RFMalumUtils.updateDarknessTouch(entity);
 }
-
 
 /**
  * 尝试在世界中自然生成怪异晶体

@@ -1,0 +1,17 @@
+    {
+        "type": "emi:world_interaction",
+        "left": {
+            "type": "item",
+            "id": "ftboceanmobs:sludge_ball"
+        },
+        "right": {
+            "type": "fluid",
+            "id": "minecraft:water",
+            "amount": 1000
+        },
+        "output": {
+            "type": "fluid",
+            "id": "ftboceanmobs:abyssal_water",
+            "amount": 1000
+        }
+    }

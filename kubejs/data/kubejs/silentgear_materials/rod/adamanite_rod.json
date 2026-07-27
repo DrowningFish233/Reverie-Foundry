@@ -22,9 +22,17 @@
     },
     "properties": {
         "silentgear:rod": {
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.25
+            },
             "attack_speed": {
                 "operation": "MULTIPLY_BASE",
                 "value": -0.1
+            },
+            "attack_reach": {
+                "operation": "ADD",
+                "value": 0.25
             },
             "enchantment_value": {
                 "operation": "MULTIPLY_BASE",

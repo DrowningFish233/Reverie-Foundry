@@ -3,7 +3,7 @@ boss_clear_when_no_target = false
 #Multiplier for boss attributes health.
 # Default: 1.0
 # Range: 0.0625 ~ 10.0
-boss_attributes_multiplier_health = 0.4
+boss_attributes_multiplier_health = 0.45
 #Multiplier for boss attributes damage.
 # Default: 1.0
 # Range: 0.0625 ~ 10.0
@@ -32,6 +32,6 @@ chance_to_spawn_slime_on_zombie_head = 0.01
 #Chance to spawn a monster.
 # Default: 1.0
 # Range: 0.0 ~ 1.0
-enemy_spawn_chance = 0.4
+enemy_spawn_chance = 0.25
 #Should the chance to spawn a monster apply to all monsters?
 enemy_spawn_chance_apply_all = false

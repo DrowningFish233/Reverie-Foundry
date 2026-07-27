@@ -29,7 +29,7 @@
 			"armor/leggings": 5,
 			"armor/boots": 2,
 			"armor_durability": 70,
-			"attack_speed": 2.3,
+			"attack_speed": 0.5,
 			"attack_damage": 4,
 			"durability": 500,
 			"ranged_damage": 1.2,

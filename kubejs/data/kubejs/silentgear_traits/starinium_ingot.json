@@ -1,7 +1,7 @@
 {
     "conditions": [],
     "description": {
-        "translate": "trait.silentgear.starinium_ingot.desc"
+        "translate": "trait.kubejs.starinium_ingot.desc"
     },
     "effects": [
         {
@@ -24,6 +24,6 @@
     ],
     "max_level": 4,
     "name": {
-        "translate": "trait.silentgear.starinium_ingot"
+        "translate": "trait.kubejs.starinium_ingot"
     }
 }

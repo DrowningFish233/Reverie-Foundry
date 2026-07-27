@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+	  "layer0" : "cataclysm:item/wrath_of_desert_hand"
+	}
+  }

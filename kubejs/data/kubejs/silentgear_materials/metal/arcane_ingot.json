@@ -24,10 +24,10 @@
     "properties": {
         "silentgear:main": {
             "armor": 15.0,
-            "armor/boots": 2.0,
-            "armor/chestplate": 7.0,
-            "armor/helmet": 3.0,
-            "armor/leggings": 3.0,
+            "armor/boots": 2.5,
+            "armor/chestplate": 6.0,
+            "armor/helmet": 2.5,
+            "armor/leggings": 4.0,
             "armor_durability": 15.0,
             "attack_damage": 2.0,
             "attack_speed": 0.0,
@@ -44,7 +44,7 @@
             "magic_armor": 8.0,
             "projectile_accuracy": 1.0,
             "ranged_damage": 1.0,
-            "spell_power": 0.04,
+            "spell_power": 0.05,
             "spell_slots": 3,
             "max_mana": 10,
             "forge_positive_chance": 5,

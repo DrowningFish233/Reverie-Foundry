@@ -10,10 +10,10 @@
 	id: "48A05E5EF26EFEEE"
 	images: [{
 		alpha: 200
-		height: 3.0d
+		height: 4.0d
 		image: "eternal_starlight:item/seeking_eye"
 		rotation: 0.0d
-		width: 3.0d
+		width: 4.0d
 		x: -0.5d
 		y: -1.5d
 	}]
@@ -24,7 +24,9 @@
 			icon: {
 				id: "kubejs:atalphaite"
 			}
+			icon_scale: 0.8d
 			id: "017488D14BA19FAA"
+			size: 2.0d
 			tasks: [
 				{
 					id: "358BFE80F8E286BB"
@@ -163,6 +165,14 @@
 					item: {
 						count: 1
 						id: "silentgear:material_book"
+					}
+					type: "item"
+				}
+				{
+					id: "1F1736E8FF5B0966"
+					item: {
+						count: 1
+						id: "reveriefoundry:trait_book"
 					}
 					type: "item"
 				}

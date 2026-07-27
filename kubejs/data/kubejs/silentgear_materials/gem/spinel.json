@@ -30,7 +30,7 @@
       "armor/leggings": 4.0,
       "armor_durability": 34.0,
       "armor_toughness": 4.0,
-      "attack_damage": 2.0,
+      "attack_damage": 0.5,
       "attack_speed": 0.0,
       "attack_reach": 0.0,
       "charging_value": 1.3,
@@ -70,7 +70,7 @@
     },
     "silentgear:tip": {
       "harvest_speed": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 1.2
       },
       "traits": [

@@ -22,6 +22,10 @@
     },
     "properties": {
         "silentgear:rod": {
+            "rarity": {
+                "operation": "ADD",
+                "value": 0
+            },
             "repair_efficiency": {
                 "operation": "MULTIPLY_BASE",
                 "value": 0.1
@@ -29,10 +33,6 @@
             "enchantment_value": {
                 "operation": "ADD",
                 "value": 3
-            },
-            "rarity": {
-                "operation": "MULTIPLY_TOTAL",
-                "value": 0.05
             },
             "draw_speed": {
                 "operation": "MULTIPLY_BASE",

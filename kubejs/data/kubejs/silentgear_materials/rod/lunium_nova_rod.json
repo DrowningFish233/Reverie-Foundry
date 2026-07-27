@@ -22,16 +22,20 @@
     },
     "properties": {
         "silentgear:rod": {
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            },
             "magic_damage": {
                 "operation": "MULTIPLY_BASE",
                 "value": 0.3
             },
             "charging_value": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.2
             },
             "enchantment_value": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 1.0
             },
             "rarity": {

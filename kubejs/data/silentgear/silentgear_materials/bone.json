@@ -61,8 +61,8 @@
     },
     "silentgear:rod": {
       "attack_damage": {
-        "operation": "MULTIPLY_TOTAL",
-        "value": 0.2
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
       },
       "traits": [
         {

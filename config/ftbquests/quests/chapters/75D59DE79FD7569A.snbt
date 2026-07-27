@@ -395,20 +395,34 @@
 				id: "minecraft:player_head"
 			}
 			id: "142C80D05D6B1FDC"
-			rewards: [{
-				auto: "enabled"
-				command: "/kubejs stages clear @p"
-				exclude_from_claim_all: true
-				icon: {
-					id: "minecraft:enchanted_golden_apple"
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/kubejs stages clear @p"
+					exclude_from_claim_all: true
+					icon: {
+						id: "minecraft:enchanted_golden_apple"
+					}
+					id: "667762DC69B2AD5E"
+					ignore_reward_blocking: true
+					permission_level: 4
+					silent: true
+					team_reward: false
+					type: "command"
 				}
-				id: "667762DC69B2AD5E"
-				ignore_reward_blocking: true
-				permission_level: 4
-				silent: true
-				team_reward: false
-				type: "command"
-			}]
+				{
+					auto: "no_toast"
+					command: "/kubejs stages add @p difficult_0"
+					icon: {
+						id: "minecraft:enchanted_golden_apple"
+					}
+					id: "24D0E080B0406AF6"
+					ignore_reward_blocking: true
+					permission_level: 4
+					silent: true
+					type: "command"
+				}
+			]
 			tasks: [{
 				id: "4841C69FA35E0AB5"
 				type: "checkmark"

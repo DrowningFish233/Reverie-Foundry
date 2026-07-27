@@ -13,10 +13,31 @@ function ItemCastingRecipe(cast, fluid, fluidAmount, result, resultCount, consum
     "item": cast
   };
   this.consume_cast = consumeCast || false;
-  this.fluid = {
-    "amount": fluidAmount,
-    "fluid": fluid
-  };
+
+  if (typeof fluid === 'string') {
+    if (fluid.startsWith('#')) {
+      this.fluid = {
+        "amount": fluidAmount,
+        "tag": fluid.substring(1)
+      };
+    } else {
+      this.fluid = {
+        "amount": fluidAmount,
+        "fluid": fluid
+      };
+    }
+  } else if (typeof fluid === 'object' && fluid.tag) {
+    this.fluid = {
+      "amount": fluidAmount,
+      "tag": fluid.tag
+    };
+  } else {
+    this.fluid = {
+      "amount": fluidAmount,
+      "fluid": fluid
+    };
+  }
+
   this.result = {
     "count": resultCount || 1,
     "id": result
@@ -153,5 +174,8 @@ ServerEvents.recipes(event => {
   register(new ItemCastingRecipe("minecraft:coal", "kubejs:gobber2_foo_end", 90, "gobber2:gobber2_foo_end", 1, true));
   register(new ItemCastingRecipe("minecraft:string", "productivemetalworks:molten_steel", 90, 'productivemetalworks:gear_cast', 1, false));
   register(new ItemCastingRecipe('minecraft:iron_trapdoor', "productivemetalworks:molten_steel", 360, 'productivemetalworks:plate_cast', 1, false));
+  register(new ItemCastingRecipe('minecraft:quartz', "#c:molten_gold", 90, 'productivelib:upgrade_base', 1, true));
+  register(new ItemCastingRecipe('productivelib:upgrade_time', "productivemetalworks:molten_ender", 90, 'productivelib:upgrade_time_2', 1, true));
+  register(new ItemCastingRecipe('productivelib:upgrade_base', "#c:molten_iron", 90, 'productivelib:upgrade_stability', 1, true));
 
 });

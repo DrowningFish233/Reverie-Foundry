@@ -1,4 +1,4 @@
-#Reverie Foundry -JEI Layout Configuration
+#Reverie Foundry - JEI Layout Configuration
 [jei_layout]
 
 	#Icon Settings
@@ -137,3 +137,42 @@
 		fixedMaxRows = 5
 		#Enable dynamic calculation of rows based on available space (if false, uses fixedMaxRows)
 		enableDynamicRowCalculation = true
+
+#Sodium Leaf Culling Settings
+[leaf_culling]
+	#Controls how aggressively leaf blocks are culled to improve performance.
+	#NONE: No additional culling
+	#HOLLOW: Culls leaves facing other leaves (2-layer check)
+	#SOLID: Only renders leaves on the surface of leaf clusters
+	#SOLID_AGGRESSIVE: Same as SOLID but ignores vertical faces
+	#Allowed Values: NONE, HOLLOW, SOLID, SOLID_AGGRESSIVE
+	leafCullingQuality = "SOLID"
+
+#Loot Finder Settings - Client side configuration
+[loot_locator]
+	#Enable Loot Finder functionality
+	enabled = true
+	#Horizontal search radius in blocks for finding loot containers
+	# Default: 64
+	# Range: 16 ~ 256
+	searchRadiusXZ = 64
+	#Vertical search radius in blocks for finding loot containers
+	# Default: 32
+	# Range: 8 ~ 128
+	searchRadiusY = 32
+	#Duration of the glow effect in seconds when using the item
+	# Default: 10
+	# Range: 1 ~ 60
+	glowDuration = 10
+	#Cooldown time in seconds before the item can be used again
+	# Default: 5
+	# Range: 0 ~ 30
+	glowCooldown = 5
+	#How often (in ticks) the item searches for nearby loot containers. 20 ticks = 1 second
+	# Default: 20
+	# Range: 5 ~ 100
+	searchFrequency = 20
+	#How long (in ticks) to cache search results to improve performance
+	# Default: 100
+	# Range: 20 ~ 300
+	searchCacheDuration = 100

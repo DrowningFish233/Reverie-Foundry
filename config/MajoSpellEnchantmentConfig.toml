@@ -157,7 +157,7 @@
 	#[Pax Sepulchri/Gentle Graveyard Keeper] If Disabled, it will not take effect.
 	gentleGraveyardKeeperEnabled = true
 	#[Cor Inferni/Nether Heart] If Disabled, it will not take effect.
-	netherHeartEnabled = true
+	netherHeartEnabled = false
 	#[Melodia Gelu et Flammae] If Disabled, it will not take effect.
 	iceFireSongEnabled = true
 	#[Melodia Gelu et Flammae] Damage = Original Damage * (1.0 + enchantmentLevel * iceFireSongExtraDamageRatioPerLevel)

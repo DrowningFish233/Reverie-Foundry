@@ -21,6 +21,9 @@
     },
     {
       "tag": "c:tools/melee_weapon"
+    },
+    {
+      "tag": "kubejs:tools/weapon"
     }
   ],
   "tiers": [

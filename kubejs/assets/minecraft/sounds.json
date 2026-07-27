@@ -1,0 +1,106 @@
+{
+    "music.game": {
+        "category": "music",
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/game/vind1",
+                "stream": true
+            },
+            {
+                "name": "music/game/vind2",
+                "stream": true
+            },
+            {
+                "name": "music/game/vind3",
+                "stream": true
+            },
+            {
+                "name": "music/game/vind4",
+                "stream": true
+            },
+            {
+                "name": "music/game/vind5",
+                "stream": true
+            },
+            {
+                "name": "music/game/vind6",
+                "stream": true
+            },
+            {
+                "name": "music/game/vind7",
+                "stream": true
+            },
+            {
+                "name": "music/game/vind8",
+                "stream": true
+            }
+        ]
+    },
+    "music.menu": {
+        "category": "music",
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/menu/menu1",
+                "stream": true
+            },
+            {
+                "name": "music/menu/menu2",
+                "stream": true
+            },
+            {
+                "name": "music/menu/menu3",
+                "stream": true
+            },
+            {
+                "name": "music/menu/menu4",
+                "stream": true
+            }
+        ]
+    },
+    "music.end": {
+        "category": "music",
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/game/end/boss",
+                "stream": true
+            }
+        ]
+    },
+    "music.nether": {
+        "category": "music",
+        "replace": true,
+        "sounds": [
+            {
+                "name": "music/game/nether/nvind1",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nvind2",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nvind3",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nvind4",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nvind5",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nvind6",
+                "stream": true
+            },
+            {
+                "name": "music/game/nether/nvind7",
+                "stream": true
+            }
+        ]
+    }
+}

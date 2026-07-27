@@ -18,9 +18,6 @@ const SCHOOL_ATTRIBUTES = {
 };
 
 
-ISSEvents.spellOnCast(event => {
-    applyCrossSchoolLevelBonus(event);
-})
 
 //法术事件总线
 ISSEvents.spellPostCast(event => {
@@ -85,10 +82,14 @@ ISSEvents.spellPostCast(event => {
     }
 });
 
-// 监听法术施放事件
+// 监听法术施放事件（等级+2）
 ISSEvents.spellOnCast(event => {
-    if (!event.entity == "minecraft:player") return
-    if (!fu_hasTraitAnywhere(event.entity, "kubejs:spell_level_up")) return
+    let player = event.entity
+    let playerId = player.getUuid().toString()
+
+    if (!player == "minecraft:player") return
+    if (!fu_hasTraitAnywhere(player, "kubejs:spell_level_up")) return
+
     event.setSpellLevel(event.originalSpellLevel + 2)
     event.setManaCost(event.manaCost + 50)
 })
@@ -149,25 +150,52 @@ ISSEvents.spellOnCast(event => {
     }
 });
 
-//法术：重放
+
+
+// 专门给重放用的施法函数
+function replaySpellCast(resourceLocation, amplifier, player, consume) {
+    $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](resourceLocation)
+        .attemptInitiateCast(Item.of('air'), amplifier, player.level, player, $CastSource.NONE, consume, "main_hand");
+}
+
+// 跨学派加成检测
 ISSEvents.spellOnCast(event => {
-    const player = event.entity
-    const spellId = event.getSpellId()
+    applyCrossSchoolLevelBonus(event, false)
+})
+
+
+// 等级+2的检测
+ISSEvents.spellOnCast(event => {
+    let player = event.entity
+    let playerId = player.getUuid().toString()
+
+    if (!player == "minecraft:player") return
+    if (!fu_hasTraitAnywhere(player, "kubejs:spell_level_up")) return
+
+    event.setSpellLevel(event.originalSpellLevel + 2)
+    event.setManaCost(event.manaCost + 50)
+})
+
+// 重放逻辑
+ISSEvents.spellOnCast(event => {
+    let player = event.entity
+    let spellId = event.getSpellId()
+    let playerId = player.getUuid().toString()
 
     if (spellId === "kubejs:replay") return
 
     if (player.hasEffect("kubejs:replay")) {
-        player.server.scheduleInTicks(20, () => {
-            overLimitSpellCast(spellId, event.getSpellLevel(), event.entity, false)
-            let effect = player.getEffect('kubejs:replay')
-            let currentAmplifier = effect.getAmplifier()
+        let effect = player.getEffect('kubejs:replay')
+        let currentAmplifier = effect.getAmplifier()
+        let duration = effect.getDuration()
 
-            if (currentAmplifier > 0) {
-                player.removeEffect('kubejs:replay')
-                player.potionEffects.add('kubejs:replay', effect.getDuration(), currentAmplifier - 1)
-            } else {
-                player.removeEffect('kubejs:replay')
+        player.removeEffect('kubejs:replay')
+
+        player.server.scheduleInTicks(20, () => {
+            replaySpellCast(spellId, event.originalSpellLevel, event.entity, false)
+            if (currentAmplifier > 1) {
+                player.potionEffects.add('kubejs:replay', duration, currentAmplifier - 1)
             }
         })
     }
-});
+})

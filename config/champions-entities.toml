@@ -489,3 +489,10 @@
 	presetAffixes = []
 	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective","kubejs:finale","champions:wounding"]
 	affixPermission = "BLACKLIST"
+[[entities]]
+	entity = "darkdoppelganger:dark_doppelganger"
+	minTier = 7
+	maxTier = 7
+	presetAffixes = []
+	affixList = ["champions:magnetic", "champions:shielding", "champions:adaptable","champions:plagued","champions:infested","champions:reflective","kubejs:finale","champions:wounding"]
+	affixPermission = "BLACKLIST"

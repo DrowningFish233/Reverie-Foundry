@@ -22,6 +22,18 @@
     },
     "properties": {
         "silentgear:rod": {
+            "harvest_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
+            },
+            "attack_damage": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "attack_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.05
+            },
             "repair_efficiency": {
                 "operation": "MULTIPLY_BASE",
                 "value": 0.1
@@ -33,18 +45,6 @@
             "rarity": {
                 "operation": "ADD",
                 "value": 2
-            },
-            "attack_damage": {
-                "operation": "ADD",
-                "value": 2.5
-            },
-            "attack_speed": {
-                "operation": "MULTIPLY_BASE",
-                "value": 0.05
-            },
-            "harvest_speed": {
-                "operation": "MULTIPLY_BASE",
-                "value": 0.05
             },
             "traits": [
                 {

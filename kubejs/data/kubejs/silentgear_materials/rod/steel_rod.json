@@ -22,8 +22,16 @@
     },
     "properties": {
         "silentgear:rod": {
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.25
+            },
+            "attack_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.2
+            },
             "draw_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.25
             },
             "armor": {

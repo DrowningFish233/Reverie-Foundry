@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "aces_spell_utils:item/scroll_hydro"
+  }
+}

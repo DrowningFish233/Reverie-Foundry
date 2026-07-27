@@ -1,0 +1,14 @@
+{
+	"options.difficulty": "难度",
+	"options.difficulty.easy.info": "原汁原味的原版简单难度，这会不会太简单了(小声)",
+	"options.difficulty.normal.info": "对标原版普通难度：敌对生物会生成，饥饿条会消耗，怪物属性1.2倍，更具攻击性",
+	"options.difficulty.hard.info": "对标原版困难难度：敌对生物会生成，饥饿条会消耗，怪物属性1.5倍，跟随范围扩大，怪物更疯狂",
+	"gameMode.hardcore": "§4传奇模式!",
+	"options.difficulty.hardcore": "§4传奇！",
+	"selectWorld.gameMode.hardcore": "§4传奇模式！",
+	"selectWorld.gameMode.hardcore.info": "生存模式锁定为 “大师” 难度。死亡后无法重生",
+	"selectWorld.gameMode.hardcore.line1": "与生存模式相同，难度锁定为最高",
+	"selectWorld.gameMode.hardcore.line2": "难度，且只有一次生命(你不会在极限模式下作弊的...对吧？)",
+	"options.difficulty.online": "服务器难度",
+	"options.difficulty.peaceful": "旅行"
+}

@@ -60,7 +60,6 @@ ItemEvents.firstRightClicked((event) => {
         "minecraft:knockback",
         "apothic_enchanting:knowledge_of_the_ages",
         "apothic_enchanting:life_mending",
-        "enderscape:lightspeed",
         "dungeons_arise:lolths_curse",
         "minecraft:looting",
         "minecraft:loyalty",
@@ -92,7 +91,6 @@ ItemEvents.firstRightClicked((event) => {
         "minecraft:punch",
         "dungeons_arise:purification",
         "minecraft:quick_charge",
-        "enderscape:rebound",
         "malum:rebound",
         "apothic_enchanting:rebounding",
         "majospellenchantment:red_lotus_enchant",
@@ -117,7 +115,6 @@ ItemEvents.firstRightClicked((event) => {
         "apothic_enchanting:tempting",
         "minecraft:thorns",
         "eternal_starlight:tracing",
-        "enderscape:transdimensional",
         "minecraft:unbreaking",
         "minecraft:vanishing_curse",
         "majospellenchantment:vlad_tepes_enchant",
@@ -148,21 +145,20 @@ ItemEvents.firstRightClicked((event) => {
         return;
     } else {
         level.spawnParticles(
-            'apothic_enchanting:enchant_water',  // arg0: 粒子类型
-            true,                        // arg1: 是否强制显示
-            player.x,                    // arg2: 粒子生成位置的X坐标
-            player.y + 1,                // arg3: 粒子生成位置的Y坐标
-            player.z,                    // arg4: 粒子生成位置的Z坐标
-            0.5,                         // arg5: X方向的偏移量/扩散范围
-            0.5,                         // arg6: Y方向的偏移量/扩散范围
-            0.5,                         // arg7: Z方向的偏移量/扩散范围
-            20,                          // arg8: 生成的粒子数量（整数）
-            0.1                          // arg9: 粒子速度
+            'apothic_enchanting:enchant_water',
+            true,
+            player.x,
+            player.y + 1,
+            player.z,
+            0.5,
+            0.5,
+            0.5,
+            20,
+            0.1
         )
     }
 
-    // 扣除耐久
-    item.setDamageValue(currentDamage + durabilityCost);
+    fu_repairDurability(item, -durabilityCost, player, "mainhand");
     event.player.swing()
 
     // 应用新附魔
@@ -174,10 +170,8 @@ ItemEvents.firstRightClicked((event) => {
     setDataValue(item, "add_enchantment_count", enchantment_count)
 
     // 显示提示信息
-    // 解析魔咒的namespace和path
     const [namespace, enchantmentName] = randomEnchantment.split(':');
 
-    // 根据不同的namespace使用不同的翻译key
     let translationKey;
     if (namespace === "minecraft") {
         translationKey = "enchantment.minecraft." + enchantmentName;
@@ -195,7 +189,6 @@ ItemEvents.firstRightClicked((event) => {
         Text.of(" " + newLevel).color('green')
     );
     player.setStatusMessage(message);
-
 
     // 更新自定义数据
     item.customData = item.customData.merge({

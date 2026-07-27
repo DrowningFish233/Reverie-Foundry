@@ -34,6 +34,10 @@
                 "operation": "ADD",
                 "value": 5
             },
+            "magic_damage": {
+                "operation": "ADD",
+                "value": 2.5
+            },
             "traits": [
                 {
                     "conditions": [],

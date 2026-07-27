@@ -23,14 +23,14 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 12.0,
+      "armor": 20.0,
       "armor_toughness": 0,
       "armor/boots": 2.0,
-      "armor/chestplate": 4.0,
-      "armor/helmet": 2.0,
-      "armor/leggings": 4.0,
+      "armor/chestplate": 8.0,
+      "armor/helmet": 4.0,
+      "armor/leggings": 6.0,
       "armor_durability": 8.0,
-      "attack_damage": 1.5,
+      "attack_damage": 5.0,
       "attack_speed": 0.0,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,
@@ -44,7 +44,7 @@
         "level_hint": "1",
         "name": "stone/石"
       },
-      "magic_armor": 16.0,
+      "magic_armor": 22.0,
       "magic_damage": 4.0,
       "ranged_damage": 1.3,
       "rarity": 40.0,

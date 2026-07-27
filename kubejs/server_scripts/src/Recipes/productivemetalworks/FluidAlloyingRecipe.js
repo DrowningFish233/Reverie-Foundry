@@ -109,6 +109,7 @@ ServerEvents.recipes(event => {
         new FluidAlloyingRecipe(
             [
                 createFluid("kubejs:golden_apple", 15),
+                createFluid("kubejs:blood_orb", 10),
                 createFluidTag("c:molten_iron", 15),
                 createFluidTag("c:molten_diamond", 4)
             ],
@@ -345,6 +346,7 @@ ServerEvents.recipes(event => {
             [
                 createFluid("productivemetalworks:molten_netherite", 10),
                 createFluid("kubejs:mithril", 10),
+                createFluid("kubejs:viculeam", 10),
                 createFluid("kubejs:soul_stained_steel", 10)
             ],
             {
@@ -366,6 +368,65 @@ ServerEvents.recipes(event => {
                 id: "irons_spellbooks:blood"
             },
             6
+        )
+    );
+
+    // 铂
+    register(
+        new FluidAlloyingRecipe(
+            [
+                createFluidTag("c:molten_gold", 10),
+                createFluidTag("c:molten_nickel", 10)
+            ],
+            {
+                amount: 20,
+                id: "productivemetalworks:molten_platinum"
+            },
+            6
+        )
+    );
+
+    // 铱
+    register(
+        new FluidAlloyingRecipe(
+            [
+                createFluidTag("c:molten_platinum", 10),
+                createFluidTag("c:molten_uranium", 10)
+            ],
+            {
+                amount: 20,
+                id: "productivemetalworks:molten_iridium"
+            },
+            8
+        )
+    );
+
+    // 铝 
+    register(
+        new FluidAlloyingRecipe(
+            [
+                createFluid("productivemetalworks:molten_redstone", 10),
+                createFluidTag("c:molten_iron", 10)
+            ],
+            {
+                amount: 20,
+                id: "productivemetalworks:molten_aluminum"
+            },
+            6
+        )
+    );
+
+    register(
+        new FluidAlloyingRecipe(
+            [
+                createFluid("kubejs:fluorite", 10),
+                createFluidTag("c:molten_iron", 10)
+            ],
+            {
+                amount: 20,
+                id: "productivemetalworks:molten_osmium"
+            },
+            8
         )
     );
 

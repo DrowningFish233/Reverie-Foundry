@@ -105,6 +105,67 @@ ServerEvents.recipes(event => {
 
 
     registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('hazennstuff:refined', 'hazennstuff:reinforced')
+            .addSpirit("arcane", 16)
+            .addSpirit("sacred", 16)
+            .addExtraInput('kubejs:ashes_of_calamity', 4)
+            .addExtraInput('hazennstuff:zenalite_ingot', 2)
+            .addExtraInput('irons_spellbooks:mana_upgrade_orb', 1)
+            .addExtraInput('hazennstuff:pyrium_nugget', 1)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('hazennstuff:strengthened', 'hazennstuff:singularity')
+            .addSpirit("arcane", 32)
+            .addSpirit("sacred", 24)
+            .addExtraInput('kubejs:ruinous_soul', 5)
+            .addExtraInput('hazennstuff:divine_mold', 1)
+            .addExtraInput('hazennstuff:deus_essence', 1)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('hazennstuff:abomination', 'hazennstuff:absolute')
+            .addSpirit("arcane", 32)
+            .addSpirit("sacred", 24)
+            .addExtraInput('kubejs:ruinous_soul', 5)
+            .addExtraInput('hazennstuff:divine_mold', 1)
+            .addExtraInput('hazennstuff:deus_essence', 1)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('hazennstuff:reinforced', 'hazennstuff:radiance')
+            .addSpirit("arcane", 32)
+            .addSpirit("sacred", 24)
+            .addExtraInput('kubejs:ruinous_soul', 5)
+            .addExtraInput('hazennstuff:divine_mold', 1)
+            .addExtraInput('hazennstuff:deus_essence', 1)
+    );
+
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('hazennstuff:advanced', 'hazennstuff:abomination')
+            .addSpirit("arcane", 32)
+            .addSpirit("sacred", 24)
+            .addExtraInput('kubejs:ashes_of_calamity', 4)
+            .addExtraInput('hazennstuff:zenalite_ingot', 4)
+            .addExtraInput('hazennstuff:melee_upgrade_orb', 1)
+            .addExtraInput('hazennstuff:dreadsteel_ingot', 2)
+            .addExtraInput('hazennstuff:pyrium_nugget', 1)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('hazennstuff:sacred', 'hazennstuff:strengthened')
+            .addSpirit("arcane", 32)
+            .addSpirit("sacred", 24)
+            .addExtraInput('kubejs:ashes_of_calamity', 4)
+            .addExtraInput('hazennstuff:zenalite_ingot', 4)
+            .addExtraInput('hazennstuff:health_upgrade_orb', 1)
+            .addExtraInput('hazennstuff:hallowed_ingot', 2)
+            .addExtraInput('hazennstuff:pyrium_nugget', 1)
+    );
+
+
+    registerCustomRecipe(
         new SpiritInfusionRecipeJSON("minecraft:paper", "irons_spellbooks:iron_spell_book")
             .addSpirit("earthen", 2)
             .addExtraInput("minecraft:leather", 4)
@@ -341,18 +402,18 @@ ServerEvents.recipes(event => {
             .addExtraInput("minecraft:netherite_ingot", 1)
     );
     event.remove({ output: 'irons_spellbooks:pyrium_staff' });
-
-    registerCustomRecipe(
-        new SpiritInfusionRecipeJSON("gobber2:gobber2_ring_end", "gobber2:gobber2_ring_stealth")
-            .addSpirit("umbral", 6)
-            .addSpirit("eldritch", 3)
-            .addSpirit("arcane", 3)
-            .addExtraInput("minecraft:fermented_spider_eye", 4)
-            .addExtraInput("kubejs:unholy_essence", 8)
-            .addExtraInput("enderscape:shadoline_ingot", 8)
-    );
-    event.remove({ output: 'gobber2:gobber2_ring_stealth' });
-
+    /*
+        registerCustomRecipe(
+            new SpiritInfusionRecipeJSON("gobber2:gobber2_ring_end", "gobber2:gobber2_ring_stealth")
+                .addSpirit("umbral", 6)
+                .addSpirit("eldritch", 3)
+                .addSpirit("arcane", 3)
+                .addExtraInput("minecraft:fermented_spider_eye", 4)
+                .addExtraInput("kubejs:unholy_essence", 8)
+                .addExtraInput("enderscape:shadoline_ingot", 8)
+        );
+        event.remove({ output: 'gobber2:gobber2_ring_stealth' });
+    */
     registerCustomRecipe(
         new SpiritInfusionRecipeJSON("gobber2:gobber2_medallion", "gobber2:gobber2_medallion_hero")
             .addSpirit("umbral", 2)
@@ -388,11 +449,23 @@ ServerEvents.recipes(event => {
     registerCustomRecipe(
         new SpiritInfusionRecipeJSON('kubejs:rhexis_ingot', 'kubejs:vorant_ingot')
             .addSpirit("umbral", 2)
+            .addExtraInput('irons_spellbooks:pyrium_ingot', 1)
             .addExtraInput('kubejs:rhexis_ingot', 1)
             .addExtraInput('silentgear:crimson_steel_ingot', 2)
             .addExtraInput('ftboceanmobs:sludge_ball', 4)
             .addExtraInput('#minecraft:meat', 8)
     );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('hazennstuff:hallowed_ingot', 'kubejs:xelkive_ingot')
+            .addSpirit("umbral", 2)
+            .addExtraInput('irons_spellbooks:pyrium_ingot', 1)
+            .addExtraInput('irons_spellbooks:divine_pearl', 12)
+            .addExtraInput('#c:glass_blocks', 6)
+            .addExtraInput('kubejs:ashes_of_calamity', 4)
+            .addExtraInput('irons_spellbooks:mithril_ingot', 8)
+    );
+
 
     registerCustomRecipe(
         new SpiritInfusionRecipeJSON('iceandfire:sapphire_gem', 'kubejs:sapphire')
@@ -445,6 +518,7 @@ ServerEvents.recipes(event => {
             .addSpirit("aerial", 8)
             .addSpirit("earthen", 8)
             .addExtraInput('kubejs:necroplasm', 4)
+            .addExtraInput('kubejs:viculeam_ingot', 1)
             .addExtraInput('alltheores:fluorite', 12)
             .addExtraInput('#c:gems', 8)
             .addExtraInput('#silentgear:starlight_charger_catalysts', 4)

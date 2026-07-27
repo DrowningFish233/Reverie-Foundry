@@ -76,13 +76,37 @@ global.new_materials = [
     { id: 'eye_of_dragon_cave_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_dragon_cave_located" },
     { id: 'eye_of_weeping_well_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_weeping_well_located" },
     { id: 'luminofish_ink_sac', maxStackSize: 32, texture: "kubejs:item/misc/luminofish_ink_sac" },
-    { id: 'holosphere', maxStackSize: 1, texture: "kubejs:item/debug/holosphere" },
     { id: 'eye_of_starlight_portal_located', maxStackSize: 1, texture: "kubejs:item/misc/eye_of_starlight_portal" },
     { id: 'scoria_ingot', maxStackSize: 64, rarity: 'uncommon', texture: "kubejs:item/ingots/scoria_ingot" },
     { id: 'frigid_ingot', maxStackSize: 64, rarity: 'uncommon', texture: "kubejs:item/ingots/frigid_ingot" },
     { id: 'perennial_ingot', maxStackSize: 64, rarity: 'rare', texture: "kubejs:item/ingots/perennial_ingot" },
     { id: 'uelibloom_ingot', maxStackSize: 64, rarity: 'rare', texture: "kubejs:item/ingots/uelibloom_ingot" },
-    { id: 'life_alloy', maxStackSize: 64, rarity: 'epic', texture: "kubejs:item/ingots/life_alloy" }
+    { id: 'life_alloy', maxStackSize: 64, rarity: 'epic', texture: "kubejs:item/ingots/life_alloy" },
+    { id: 'catalyst_t4', maxStackSize: 64, rarity: 'epic', texture: "kubejs:item/misc/catalyst_t4" },
+    { id: 'catalyst_t5', maxStackSize: 64, rarity: 'epic', texture: "kubejs:item/misc/catalyst_t5" },
+    { id: 'sulfuric_vial', maxStackSize: 1, texture: "kubejs:item/misc/sulfuric_vial" },
+    { id: 'broken_sulfuric_vial', maxStackSize: 1, texture: "kubejs:item/misc/broken_sulfuric_vial" },
+    { id: 'core_suppression_unit_form_one', maxStackSize: 8, rarity: 'uncommon', texture: "kubejs:item/misc/core_suppression_unit_form_one" },
+    { id: 'core_suppression_unit_form_two', maxStackSize: 8, rarity: 'uncommon', texture: "kubejs:item/misc/core_suppression_unit_form_two" },
+    { id: 'core_suppression_unit_form_three', maxStackSize: 8, rarity: 'uncommon', texture: "kubejs:item/misc/core_suppression_unit_form_three" },
+    { id: 'remove_armor', maxStackSize: 4, rarity: 'uncommon', texture: "kubejs:item/misc/remove_armor" },
+    { id: 'simple_rib', maxStackSize: 64, texture: "kubejs:item/material/simple_rib" },
+    { id: 'living_material', maxStackSize: 64, texture: "kubejs:item/material/living_material" },
+    { id: 'proliferating_flesh', maxStackSize: 64, texture: "kubejs:item/material/proliferating_flesh" },
+    { id: 'dense_muscle', maxStackSize: 64, texture: "kubejs:item/material/dense_muscle" },
+    { id: 'congealed_flesh', maxStackSize: 64, texture: "kubejs:item/material/congealed_flesh" },
+    { id: 'mutated_flesh', maxStackSize: 64, texture: "kubejs:item/material/mutated_flesh" },
+    { id: 'swollen_liver', maxStackSize: 64, texture: "kubejs:item/material/swollen_liver" },
+    { id: 'malignant_tumor', maxStackSize: 64, texture: "kubejs:item/material/malignant_tumor" },
+    { id: 'evolving_seed', maxStackSize: 64, texture: "kubejs:item/material/evolving_seed" },
+
+
+    { id: 'random_accessory_pouch', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch" },
+    { id: 'dimensional_stabilizer', maxStackSize: 8, texture: "kubejs:item/misc/dimensional_stabilizer" },
+    { id: 'dimensional_ripper', maxStackSize: 8, texture: "kubejs:item/misc/dimensional_ripper" },
+    { id: 'rift_probe', maxStackSize: 8, texture: "kubejs:item/misc/rift_probe" }
+
+
 
 ];
 
@@ -100,7 +124,7 @@ StartupEvents.registry('item', event => {
         }
     }
 });
-// 创建其他物品
+
 StartupEvents.registry('item', event => {
     // 砖块类
     const bricks = [

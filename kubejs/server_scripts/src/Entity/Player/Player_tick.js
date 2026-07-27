@@ -221,7 +221,7 @@ PlayerEvents.tick(event => {
         PRIDE: [{ id: "kubejs:pride", duration: 80, amplifier: 0, showParticles: true }],
         SLOTH: [
             { id: "kubejs:sloth", duration: 80, amplifier: 0, showParticles: true },
-            { id: "kubejs:sloth_2", duration: 80, amplifier: 0, showParticles: false }
+            { id: "kubejs:sloth_2", duration: 20, amplifier: 0, showParticles: false }
         ],
         WRATH: [{ id: "kubejs:wrath", duration: 80, amplifier: 0, showParticles: true }]
     };

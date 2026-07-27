@@ -1,5 +1,5 @@
 {
-  "textureId": "fancytoasts:textures/toast/vanilla.png",
+  "textureId": "fancytoasts:textures/toast/landspaper.png",
   "animationId": "fancytoasts:animations/toast/quirky",
   "soundIds": {
     "TASK": "minecraft:block.note_block.chime",

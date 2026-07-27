@@ -1,11 +1,11 @@
 {
     "conditions": [],
     "description": {
-        "translate": "trait.silentgear.calamatium_ingot.desc"
+        "translate": "trait.kubejs.calamatium_ingot.desc"
     },
     "effects": [],
     "max_level": 3,
     "name": {
-        "translate": "trait.silentgear.calamatium_ingot"
+        "translate": "trait.kubejs.calamatium_ingot"
     }
 }

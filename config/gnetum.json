@@ -12,12 +12,6 @@
   "maxFps": 60,
   "screenMaxFps": 20,
   "mapVanillaElements": {
-    "enderscape:debug": {
-      "enabled": {
-        "value": "ON"
-      },
-      "pass": 4
-    },
     "minecraft:spectator_tooltip": {
       "enabled": {
         "value": "AUTO"
@@ -114,6 +108,12 @@
       },
       "pass": 3
     },
+    "emberstextapi:immersive_messages": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "gnetum:minecraft_hand": {
       "enabled": {
         "value": "OFF"
@@ -150,6 +150,12 @@
       },
       "pass": 2
     },
+    "xaerohud:hud": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
     "minecraft:saving_indicator": {
       "enabled": {
         "value": "AUTO"
@@ -167,12 +173,6 @@
         "value": "OFF"
       },
       "pass": 3
-    },
-    "enderscape:stare_screen": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 1
     },
     "create:value_settings": {
       "enabled": {
@@ -288,12 +288,6 @@
       },
       "pass": 4
     },
-    "enderscape:nebulite_tool": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 4
-    },
     "irons_spellbooks:cast_bar": {
       "enabled": {
         "value": "AUTO"
@@ -361,12 +355,6 @@
       "pass": 3
     },
     "powerful_dummy:dps_overlay": {
-      "enabled": {
-        "value": "AUTO"
-      },
-      "pass": 1
-    },
-    "enderscape:mirror_screen": {
       "enabled": {
         "value": "AUTO"
       },

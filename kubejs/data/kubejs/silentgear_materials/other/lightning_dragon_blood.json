@@ -25,23 +25,23 @@
 		"silentgear:coating": {
 			"armor": {
 				"operation": "ADD",
-				"value": 4
+				"value": 2.5
 			},
 			"armor/helmet": {
 				"operation": "ADD",
-				"value": 1
+				"value": 0.5
 			},
 			"armor/chestplate": {
 				"operation": "ADD",
-				"value": 1
+				"value": 1.0
 			},
 			"armor/leggings": {
 				"operation": "ADD",
-				"value": 1
+				"value": 0.5
 			},
 			"armor/boots": {
 				"operation": "ADD",
-				"value": 1
+				"value": 0.5
 			},
 			"armor_durability": {
 				"operation": "MULTIPLY_BASE",

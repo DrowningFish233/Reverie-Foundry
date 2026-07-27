@@ -32,15 +32,15 @@
             },
             "attack_damage": {
                 "operation": "MULTIPLY_BASE",
-                "value": 0.25
+                "value": 0.45
             },
             "attack_speed": {
                 "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
             "magic_damage": {
-                "operation": "MULTIPLY_TOTAL",
-                "value": 0.15
+                "operation": "MULTIPLY_BASE",
+                "value": 0.4
             },
             "magic_armor": {
                 "operation": "ADD",

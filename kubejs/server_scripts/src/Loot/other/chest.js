@@ -1,3 +1,42 @@
+/**古城战利品 */
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("ancient_cities:ancient_city_pot");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('kubejs:catalyst_t4').withWeight(2).setCount([1, 2]))
+            pool.rolls([4, 10]);
+        });
+
+    }
+})
+
+/**古城战利品 */
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("ancient_cities:ancient_city_barrel");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('kubejs:catalyst_t4').withWeight(3).setCount([1, 6]))
+
+            pool.rolls(10);
+        });
+
+    }
+})
+
+/**古城战利品 */
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("minecraft:chests/ancient_city");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('kubejs:catalyst_t4').withWeight(3).setCount([1, 3]))
+
+            pool.rolls([5, 10]);
+        });
+
+    }
+})
+
+
 
 /**陶罐战利品 */
 LootJS.lootTables(event => {
@@ -616,3 +655,14 @@ LootJS.modifiers(event => {
 
     });
 })
+
+
+AStages.addRestrictionForLoot('astages/ancient_city_barrel', 'first_kill_dead_king')
+    .restrictForLootTables('ancient_cities:ancient_city_barrel')
+    .restrictItems('kubejs:isovol_ingot')
+    .replacer(stack => {
+        if (stack.is('kubejs:isovol_ingot')) {
+            return Item.of('minecraft:obsidian', 1)
+        }
+        return stack
+    })

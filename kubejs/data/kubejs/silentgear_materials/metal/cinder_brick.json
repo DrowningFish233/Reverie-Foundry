@@ -29,7 +29,7 @@
             "armor/chestplate": 3.0,
             "armor/helmet": 3.0,
             "armor/leggings": 3.0,
-            "attack_damage": 3.0,
+            "attack_damage": 6.0,
             "attack_speed": -0.2,
             "charging_value": 0.8,
             "durability": 250.0,

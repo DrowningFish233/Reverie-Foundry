@@ -24,19 +24,27 @@
         "silentgear:rod": {
             "attack_damage": {
                 "operation": "MULTIPLY_BASE",
-                "value": 0.1
+                "value": 0.25
+            },
+            "magic_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.2
             },
             "harvest_speed": {
                 "operation": "MULTIPLY_BASE",
                 "value": 0.35
             },
-            "projectile_accuracy": {
+            "draw_speed": {
                 "operation": "MULTIPLY_BASE",
-                "value": 0.25
+                "value": -0.1
             },
             "projectile_speed": {
                 "operation": "MULTIPLY_BASE",
-                "value": -0.1
+                "value": 0.25
+            },
+            "projectile_accuracy": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.25
             },
             "rarity": {
                 "operation": "ADD",

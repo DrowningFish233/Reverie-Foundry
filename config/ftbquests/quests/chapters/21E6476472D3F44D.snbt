@@ -1,17 +1,68 @@
 {
+	autofocus_id: "1EC459CAACF854F3"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "21E6476472D3F44D"
 	group: ""
 	id: "21E6476472D3F44D"
-	images: [{
-		height: 15.0d
-		image: "kubejs:textures/gui/slient_gui.png"
-		rotation: 0.0d
-		width: 24.0d
-		x: 1.0d
-		y: 7.0d
-	}]
+	images: [
+		{
+			height: 12.0d
+			image: "kubejs:textures/gui/slient_gui.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 31.5d
+			y: 14.0d
+		}
+		{
+			height: 12.0d
+			image: "kubejs:textures/gui/slient_gui.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			height: 12.0d
+			image: "kubejs:textures/gui/slient_gui.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			height: 12.0d
+			image: "kubejs:textures/gui/slient_gui.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 15.5d
+			y: 6.0d
+		}
+		{
+			height: 12.0d
+			image: "kubejs:textures/gui/slient_gui.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 15.5d
+			y: 14.0d
+		}
+		{
+			height: 12.0d
+			image: "kubejs:textures/gui/slient_gui.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 31.5d
+			y: 6.0d
+		}
+		{
+			height: 12.0d
+			image: "kubejs:textures/gui/slient_gui.png"
+			rotation: 0.0d
+			width: 20.0d
+			x: 47.5d
+			y: 6.0d
+		}
+	]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -28,18 +79,34 @@
 				type: "stat"
 				value: 1
 			}]
-			x: -7.0d
-			y: -6.0d
+			x: -7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1EC459CAACF854F3"]
+			icon: {
+				components: {
+					"irons_spellbooks:spell_container": {
+						data: [{
+							id: "gametechbcs_spellbooks:call_forth_the_dead_king"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+				id: "irons_spellbooks:scroll"
+			}
 			id: "1684A811A37D8C86"
 			tasks: [{
 				id: "72CBAB38AA1B3AA1"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -6.0d
+			x: 5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -48,14 +115,1585 @@
 			]
 			dependency_requirement: "one_started"
 			id: "2720C510975ACBF2"
+			tasks: [
+				{
+					entity: "irons_spellbooks:dead_king"
+					id: "3C533C1D427EEE51"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "400036D2DDCEE8D4"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			id: "2482C01B41948195"
+			rewards: [{
+				id: "25C40F1101994B36"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
-				entity: "irons_spellbooks:dead_king"
-				id: "3C533C1D427EEE51"
+				id: "3CCB252209BACFF5"
+				item: { count: 1, id: "kubejs:steel_ingot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			id: "4EB3AF395EE2F05E"
+			rewards: [{
+				id: "297C82E9357EF2EA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6278C6BB65D05658"
+				item: { count: 1, id: "kubejs:rhodium_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			id: "4073FA79B270F976"
+			rewards: [{
+				id: "02053325113B7EED"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4FA000F4BB8188A7"
+				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			id: "3F95B455EACD5B91"
+			rewards: [{
+				id: "76CC51B28424A47F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3318B901CCB2638D"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 8.5d
+		}
+		{
+			id: "5883458218829D00"
+			rewards: [{
+				id: "4EA5E2CE304C5C11"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "348A7409E27944E9"
+				item: { count: 1, id: "malum:malignant_pewter_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			id: "20848CB8F54AD783"
+			rewards: [{
+				id: "24BE4FDB66E81DC1"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "18B13FAB0AC576C9"
+				item: { count: 1, id: "cataclysm:lacrima" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			id: "35C26E629284AC1A"
+			rewards: [{
+				id: "3093E09322AC559F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "02B83F7030180B25"
+				item: { count: 1, id: "irons_spellbooks:hogskin" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "7BD9DC7DB2278AA5"
+			rewards: [{
+				id: "473783BC7DDD6345"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "14C06E5178FCFD9D"
+				item: { count: 1, id: "kubejs:isovol_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			id: "78E0C869F2BB2516"
+			rewards: [{
+				id: "5D7300C6576D8204"
+				type: "xp"
+				xp: 20
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "157A569E3CB0B702"
+				item: { count: 1, id: "minecraft:lapis_lazuli" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			id: "321BA6F89B9F2F5E"
+			rewards: [{
+				id: "773C034ACE3BC61E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3E60F0C1C6D4E533"
+				item: { count: 1, id: "kubejs:garnet" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			id: "35B14862D3D903B2"
+			rewards: [{
+				id: "4441F8966A282EC8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2322A2939EB0CA5B"
+				item: { count: 1, id: "alltheores:osmium_ingot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			id: "340694D4FDC5A098"
+			rewards: [{
+				id: "480C4D3D133D5698"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4EBCD8F69B48AECA"
+				item: { count: 1, id: "kubejs:osmium_ingot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			id: "7807160BB2108E79"
+			rewards: [{
+				id: "05B7DB995E0F28BD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "33CF3EF7C2271B0E"
+				item: { count: 1, id: "kubejs:rose_quartz" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			id: "366BD92ABD4B70A0"
+			rewards: [{
+				id: "607C2454CED4E40B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "43D0C382A2D10E39"
+				item: { count: 1, id: "aquaculture:neptunium_ingot" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 5.5d
+		}
+		{
+			id: "7FB5C401A36A72B5"
+			rewards: [{
+				id: "3EBF4D5F219D271F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2D53C929F1FA1BF0"
+				item: { count: 1, id: "kubejs:rhexis_ingot" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			id: "058E2E161B35737E"
+			rewards: [{
+				id: "4399AF6C5ED535D4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4677ACD89A8C2498"
+				item: { count: 1, id: "minecraft:bone_meal" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			id: "2AE9864AC40241A7"
+			rewards: [{
+				id: "6008C1DE7D2D6630"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "57F3EAAEE97FC60A"
+				item: { count: 1, id: "alltheores:cinnabar" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			id: "284F3685C1A776D4"
+			rewards: [{
+				id: "2914D5C2A49AAC69"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "61E638086279AFCC"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(eternal_starlight:yeti_fur)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.5d
+		}
+		{
+			id: "3E8F381CC8783800"
+			rewards: [{
+				id: "5A4B2082AA5A42E1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "17EB020BFEEB3C5C"
+				item: { count: 1, id: "minecraft:echo_shard" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			id: "4E25633D226B8C90"
+			rewards: [{
+				id: "17E62FFC691FFDC0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3791B1733EAF4B24"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(iceandfire:scales/dragon)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			id: "771C9B9ADDCDA5E6"
+			rewards: [{
+				id: "5318A329C67EF63E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "57EDC908120750B6"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(iceandfire:dragon_bloods)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			id: "270113919FB0BE75"
+			rewards: [{
+				id: "4EE61EB41C896576"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "204B23547057F7B2"
+				item: { count: 1, id: "kubejs:acril_rod" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 12.0d
+		}
+		{
+			id: "44568D0ED1546BF5"
+			rewards: [{
+				id: "38A81D48DBBE5A9F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5828A7E6A5193AAC"
+				item: { count: 1, id: "kubejs:nlatstone_rod" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 13.5d
+		}
+		{
+			id: "6386F7A674C56D65"
+			rewards: [{
+				id: "035539ED7169F22A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4EAB2083320CDE82"
+				item: { count: 1, id: "alltheores:platinum_ingot" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 16.5d
+		}
+		{
+			id: "2C9F35CB08351DC4"
+			rewards: [{
+				id: "3E67E7EA6DF7B5BC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "73DB6ECF75B88296"
+				item: { count: 1, id: "alltheores:steel_rod" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 15.0d
+		}
+		{
+			id: "1F1102772124A040"
+			rewards: [{
+				id: "2B970D5C6ED9DC5D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "076D1272E23157A2"
+				item: { count: 1, id: "malum:refined_brilliance" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 8.5d
+		}
+		{
+			id: "6CE4032D222E50F3"
+			rewards: [{
+				id: "7183C23A453689AE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3B95D84B70D63D70"
+				item: { count: 1, id: "kubejs:carbonatite_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			id: "35FDA2B4446874E0"
+			rewards: [{
+				id: "29BE85601766DB60"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "525145CAC7E0C5F5"
+				item: { count: 1, id: "kubejs:rhodium_rod" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 12.0d
+		}
+		{
+			id: "7995CC0B134AEC55"
+			rewards: [{
+				id: "58F5219A80E207B9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "34D625047AD6D2BE"
+				item: { count: 1, id: "minecraft:diamond" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.0d
+		}
+		{
+			id: "0045F58DC99A489C"
+			rewards: [{
+				id: "277355258BF8C448"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7FAB300B0EF735DC"
+				item: { count: 1, id: "kubejs:atalphaite" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 13.5d
+		}
+		{
+			id: "4D79C56FF94C03AE"
+			rewards: [{
+				id: "71D4C0CE636B0868"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4BDB7F2D3F25E2A0"
+				item: { count: 1, id: "kubejs:spinel" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			id: "6FE5B91598B5393A"
+			rewards: [{
+				id: "3B6C3707DD22222A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1A1315EA1D8D54D7"
+				item: { count: 1, id: "minecraft:quartz" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 15.0d
+		}
+		{
+			id: "5E89F969FC7A8AF9"
+			rewards: [{
+				id: "70043E0051B443FB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "320D20039FD23D50"
+				item: { count: 1, id: "eternal_starlight:thioquartz_shard" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 12.0d
+		}
+		{
+			id: "47AE747B665C5151"
+			rewards: [{
+				id: "7141F9567DA6081E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "05B766015DCAF51E"
+				item: { count: 1, id: "kubejs:citrine" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 15.0d
+		}
+		{
+			id: "3A3892760CA0F960"
+			rewards: [{
+				id: "789C0504B8D4E320"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6A29492728CED688"
+				item: { count: 1, id: "malum:hallowed_gold_ingot" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 16.5d
+		}
+		{
+			id: "2A3657E05759C933"
+			rewards: [{
+				id: "3C362B85DDF1C0EB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6CBA6905D7281E64"
+				item: { count: 1, id: "kubejs:tourmaline" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			id: "06C2F1EFADAD809F"
+			rewards: [{
+				id: "583E446052D5AAD4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2B4FB1753BB97176"
+				item: { count: 1, id: "irons_spellbooks:mithril_weave" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 16.5d
+		}
+		{
+			id: "059AFBCEE942C1B4"
+			rewards: [{
+				id: "6FF7D2DC49B4EE98"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "331C1C51D1B68FBB"
+				item: { count: 1, id: "irons_spellbooks:magic_cloth" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 15.0d
+		}
+		{
+			id: "4D00769819B3C7B5"
+			rewards: [{
+				id: "09D387425772E126"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4AF6D4AF828890FE"
+				item: { count: 1, id: "hazennstuff:storm_weave" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 15.0d
+		}
+		{
+			id: "3983E32C1CEC4DAA"
+			rewards: [{
+				id: "3C18C3AA5A2BB30C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7C382E6C2A5AB5C4"
+				item: { count: 1, id: "eternal_starlight:soul_dew" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 13.5d
+		}
+		{
+			id: "4D4B372937B102F6"
+			rewards: [{
+				id: "591AA5D31B42E02E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "10D90B75BFD46FA6"
+				item: { count: 1, id: "eternal_starlight:starfire" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 16.5d
+		}
+		{
+			id: "5E1CADCE38118460"
+			rewards: [{
+				id: "6B7AE708393B9B68"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7058A9C374AB0CD8"
+				item: { count: 1, id: "kubejs:raw_netherite_ingot" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.5d
+		}
+		{
+			id: "11BB8D522CF607E6"
+			rewards: [{
+				id: "6069C9AE4731592C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "19B1C53DECD3B229"
+				item: { count: 1, id: "iceandfire:witherbone" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 13.5d
+		}
+		{
+			id: "63D0E7814E6F4017"
+			rewards: [{
+				id: "6E20D0C082F7BE73"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1F1C6BF0DF19EB41"
+				item: { count: 1, id: "netherexp:banshee_rod" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 13.5d
+		}
+		{
+			id: "7D271783CE2A7614"
+			rewards: [{
+				id: "12CE3C70C53DA672"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "164CEC97C9DC4FF4"
+				item: { count: 1, id: "eternal_starlight:malarite" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			id: "55FBD2DCCC7E79D2"
+			rewards: [{
+				id: "166F3D6917CA15EC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4B97C51BF601FE52"
+				item: { count: 1, id: "kubejs:starlight_mythril_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.0d
+		}
+		{
+			id: "013A7BFCF95EA8B0"
+			rewards: [{
+				id: "231EE519C9800168"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "784DCEF0C614DA12"
+				item: { count: 1, id: "hazennstuff:hallowed_ingot" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			id: "6BC39E8AB37961DD"
+			rewards: [{
+				id: "7F7C7E62E07F34FA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "18E1F0C5DCA8343F"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(iceandfire:scales/sea_serpent)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			id: "65477F1881F13EBB"
+			rewards: [{
+				id: "11A59C63555433D0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0769EB6507506CD8"
+				item: { count: 1, id: "irons_spellbooks:blood_vial" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			id: "226A2B7E35FB2F05"
+			rewards: [{
+				id: "69F28A90666EB7C8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0B1AB1FECB7A04C8"
+				item: { count: 1, id: "irons_spellbooks:ice_venom_vial" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			id: "7F0DAB4DB433FC15"
+			rewards: [{
+				id: "7AC45022C1BCF800"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "375EFA6C1DDAE5BC"
+				item: { count: 1, id: "alltheores:invar_ingot" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			id: "08A257E690F34298"
+			rewards: [{
+				id: "334BF1FFFA579B33"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "32A490C0C30AF89A"
+				item: { count: 1, id: "hazennstuff:demonite_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 7.0d
+		}
+		{
+			id: "37EDF1917F18D163"
+			rewards: [{
+				id: "2ED06091260A22CA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2791AF228D02A4A9"
+				item: { count: 1, id: "irons_spellbooks:mithril_ingot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 8.5d
+		}
+		{
+			id: "523AD23A30544888"
+			rewards: [{
+				id: "13A04D3551E02DCF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "272351ECB13148E0"
+				item: { count: 1, id: "gobber2:gobber2_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.5d
+		}
+		{
+			id: "3FC49807F1694CE5"
+			rewards: [{
+				id: "427F077B820B2CF0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7F4C5E046293867A"
+				item: { count: 1, id: "allthemodium:allthemodium_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			id: "283E7DF6FCE579BC"
+			rewards: [{
+				id: "4B128038CBA54917"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "65C3B5335BA856B6"
+				item: { count: 1, id: "kubejs:viculeam_ingot" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 4.0d
+		}
+		{
+			id: "3D277D76C151604A"
+			rewards: [{
+				id: "668BBF11153BAD17"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5BD9B016009941A6"
+				item: { count: 1, id: "kubejs:ultimate_ingot" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 7.0d
+		}
+		{
+			id: "2376D883261AE9AC"
+			rewards: [{
+				id: "3DD2FCC59FF89496"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6BEEF9FC543E53DB"
+				item: { count: 1, id: "cataclysm:ignitium_ingot" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 8.5d
+		}
+		{
+			id: "6E7D9FC91B09210C"
+			rewards: [{
+				id: "6051DA0AAD3CC5BC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1326FCA3115F5317"
+				item: { count: 1, id: "cataclysm:cursium_ingot" }
+				type: "item"
+			}]
+			x: 28.0d
+			y: 5.5d
+		}
+		{
+			id: "1448882981E09E31"
+			rewards: [{
+				id: "5955D64B4DB416B1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "20AB79EB280853DB"
+				item: { count: 1, id: "kubejs:celeslar_ingot" }
+				type: "item"
+			}]
+			x: 28.0d
+			y: 7.0d
+		}
+		{
+			id: "45983509EA6BD841"
+			rewards: [{
+				id: "1C5DFA75A98B544A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0E9C6A1EA5B6E9CB"
+				item: { count: 1, id: "allthemodium:vibranium_ingot" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 5.5d
+		}
+		{
+			id: "2DCF4B22632FEAA6"
+			rewards: [{
+				id: "7BBFBE26DDDC572C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6E2D58A3029D15AC"
+				item: { count: 1, id: "iceandfire:dragonsteel_fire_ingot" }
+				type: "item"
+			}]
+			x: 29.5d
+			y: 5.5d
+		}
+		{
+			id: "2650317F3653A86F"
+			rewards: [{
+				id: "202B2E928C314144"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2BCB458CE217679D"
+				item: { count: 1, id: "iceandfire:dragonsteel_ice_ingot" }
+				type: "item"
+			}]
+			x: 29.5d
+			y: 4.0d
+		}
+		{
+			id: "57925645E9E7F4D8"
+			rewards: [{
+				id: "2A5A807C3D4C1834"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "56A497E952850296"
+				item: { count: 1, id: "iceandfire:dragonsteel_lightning_ingot" }
+				type: "item"
+			}]
+			x: 29.5d
+			y: 7.0d
+		}
+		{
+			id: "73271D059291EA31"
+			rewards: [{
+				id: "0770E3A5DAC8EC46"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2919C9180033A381"
+				item: { count: 1, id: "kubejs:isovol_ingot" }
+				type: "item"
+			}]
+			x: 28.0d
+			y: 4.0d
+		}
+		{
+			id: "4A4168EA1BC0644E"
+			rewards: [{
+				id: "215360CEC6556DB4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4EF0A9319B3F620A"
+				item: { count: 1, id: "irons_spellbooks:pyrium_ingot" }
+				type: "item"
+			}]
+			x: 28.0d
+			y: 8.5d
+		}
+		{
+			id: "57084B014CE6C718"
+			rewards: [{
+				id: "4846252F632C9A4E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "032265EF020C9AC8"
+				item: { count: 1, id: "cataclysm:witherite_ingot" }
+				type: "item"
+			}]
+			x: 29.5d
+			y: 8.5d
+		}
+		{
+			id: "2A56714310939AFB"
+			rewards: [{
+				id: "65FCD6D163BE178F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "75CF765141D04358"
+				item: { count: 1, id: "kubejs:silicon_rod" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 13.5d
+		}
+		{
+			id: "08DB4D29BBE0A6CD"
+			rewards: [{
+				id: "590A36CDF0E3B060"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "786977D3B5E73FCF"
+				item: { count: 1, id: "eternal_starlight:starlit_diamond" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 15.0d
+		}
+		{
+			id: "62B6DB17872E27D4"
+			rewards: [{
+				id: "066E67FB7E45EE68"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4889E98B63F40896"
+				item: { count: 1, id: "eternal_starlight:starlit_diamond" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 7.0d
+		}
+		{
+			id: "63A0E5D82118EC71"
+			rewards: [{
+				id: "4BA82167329BEE2A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7D2780F82A1F8787"
+				item: { count: 1, id: "kubejs:ultranium_gem" }
+				type: "item"
+			}]
+			x: 31.0d
+			y: 4.0d
+		}
+		{
+			id: "45ED7996360032EC"
+			rewards: [{
+				id: "0CC86C5475FA6BA2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5052679572F5E081"
+				item: { count: 1, id: "irons_spellbooks:dragonskin" }
+				type: "item"
+			}]
+			x: 37.0d
+			y: 12.0d
+		}
+		{
+			id: "178BC08D4F2D3809"
+			rewards: [{
+				id: "7E36EC16AEC29FA3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2A59DDF583DAE6E6"
+				item: { count: 1, id: "kubejs:vibranite_rod" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 12.0d
+		}
+		{
+			id: "3E76BD1AEDBFF421"
+			rewards: [{
+				id: "08540D76C7A1EFD7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3267ABF66FF6EAF1"
+				item: { count: 1, id: "kubejs:celeslar_rod" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 12.0d
+		}
+		{
+			id: "086F7ED726FBC65F"
+			rewards: [{
+				id: "45AF0FAD6896CA38"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "507CF90388ABC346"
+				item: { count: 1, id: "iceandfire:dragonbone" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 13.5d
+		}
+		{
+			id: "38AC7ED986231005"
+			rewards: [{
+				id: "0AF777C51508916C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2F83068DAFBA0132"
+				item: { count: 1, id: "kubejs:osmium_rod" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 16.5d
+		}
+		{
+			id: "50CA5A1721E6B28E"
+			rewards: [{
+				id: "329BD8EB7450BE01"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "43A752EF0F4C8CD4"
+				item: { count: 1, id: "minecraft:lapis_lazuli" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 15.0d
+		}
+		{
+			id: "43DA0D2247FEE7E0"
+			rewards: [{
+				id: "489CF826E5F8869F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "72C8CD82EAF6088B"
+				item: { count: 1, id: "malum:blazing_quartz" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.5d
+		}
+		{
+			id: "0DA24AFB83B99AA4"
+			rewards: [{
+				id: "69F482474889F689"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "364C396A7C611A14"
+				item: { count: 1, id: "kubejs:chalyblux_rod" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1EC459CAACF854F3"]
+			icon: {
+				components: {
+					"silentgear:material_list": [
+						{
+							item: {
+								count: 1
+								id: "minecraft:gold_ingot"
+							}
+							material: "silentgear:gold"
+						}
+						{
+							item: {
+								count: 1
+								id: "minecraft:copper_ingot"
+							}
+							material: "silentgear:copper"
+						}
+						{
+							item: {
+								count: 1
+								id: "minecraft:iron_ingot"
+							}
+							material: "silentgear:iron"
+						}
+					]
+				}
+				id: "silentgear:super_alloy"
+			}
+			id: "278B31B68AFBBC11"
+			tasks: [{
+				id: "005A5D05C5E2B03F"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2720C510975ACBF2"]
+			icon: {
+				id: "terra_entity:skeletron_spawn_egg"
+			}
+			id: "5A4CA3AFDA27A36B"
+			tasks: [{
+				id: "39324085D3E344F2"
+				type: "checkmark"
+			}]
+			x: 20.0d
+			y: -0.5d
+		}
+		{
+			id: "5E7CD5981F0CF887"
+			tasks: [
+				{
+					entity: "terra_entity:skeletron"
+					id: "7B50C5618A15AD70"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "18E775592FF42BB7"
+					type: "checkmark"
+				}
+			]
+			x: 21.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5E7CD5981F0CF887"]
+			icon: {
+				id: "hazennstuff:pyrium_battlemage_helmet"
+			}
+			id: "6856644DC0B509EE"
+			tasks: [{
+				id: "7780B27239B58593"
+				type: "checkmark"
+			}]
+			x: 36.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6856644DC0B509EE"]
+			id: "56F8015C97CDF40A"
+			tasks: [
+				{
+					entity: "irons_spellbooks:fire_boss"
+					id: "76B7C9970E15A5DC"
+					optional_task: true
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "42B14F92E249605C"
+					type: "checkmark"
+				}
+			]
+			x: 37.0d
+			y: -0.5d
+		}
+		{
+			id: "6CC1EDF75BF739C0"
+			rewards: [{
+				id: "6B90B2E0DBB4A054"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "64BB49BB20984448"
+				item: { count: 1, id: "irons_spellbooks:frosted_helve" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 15.0d
+		}
+		{
+			id: "5A9B842FAAFBFD26"
+			rewards: [{
+				id: "51CC57C20A90E1F0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "71B2712F70428859"
+				item: { count: 1, id: "kubejs:estalt_ingot" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			id: "524A12A30F00E96E"
+			rewards: [{
+				id: "0525E197BCE17610"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "78F858BA5DE7E82E"
+				item: { count: 1, id: "kubejs:starinium_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			id: "5DAD3734F5DAA6B1"
+			rewards: [{
+				id: "3995817F8F941E6F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1C0DCC2E251D28F9"
+				item: { count: 1, id: "kubejs:terraulite_ingot" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			id: "662FD441B3988A88"
+			rewards: [{
+				id: "6032CD1BA36A0406"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "064F3B5FED02CEE5"
+				item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:deathworm_chitin_yellow)item(iceandfire:deathworm_chitin_white)item(iceandfire:deathworm_chitin_red))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			id: "7C78F44CB8587BCB"
+			rewards: [{
+				id: "72EE7F8374D7AD65"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "07B18D6ABDAFCBE6"
+				item: { count: 1, id: "kubejs:solimrith_rod" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 16.5d
+		}
+		{
+			id: "1BF526B37EC8A965"
+			rewards: [{
+				id: "16AE7C146E733AA9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1135CFA607F4C12D"
+				item: { count: 1, id: "kubejs:adamanite_rod" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["56F8015C97CDF40A"]
+			id: "5221CF797B75325C"
+			tasks: [{
+				id: "2103D8FA6762C9C3"
+				type: "checkmark"
+			}]
+			x: 52.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5221CF797B75325C"]
+			id: "2310D5D0A274C8DE"
+			tasks: [{
+				entity: "darkdoppelganger:dark_doppelganger"
+				id: "71498DCC28C98A92"
+				optional_task: true
 				type: "kill"
 				value: 1L
 			}]
-			x: 2.0d
-			y: -6.0d
+			x: 53.5d
+			y: -0.5d
+		}
+		{
+			id: "305EC81E54A58CA7"
+			rewards: [{
+				id: "42CDCDF5C43D382C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "18D104FD898E5F8E"
+				item: { count: 1, id: "kubejs:europium_rod" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 16.5d
+		}
+		{
+			id: "630EEC8565D962D6"
+			rewards: [{
+				id: "016D889AB1A681B7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5A2DCAD33F558D5B"
+				item: { count: 1, id: "kubejs:plumbumanite_rod" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 13.5d
+		}
+		{
+			id: "5B0DD1682972CBF0"
+			rewards: [{
+				id: "70EA2458D2488C92"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "3B353704FEC1B4F2"
+				item: { count: 1, id: "kubejs:solimrith_ingot" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.0d
+		}
+		{
+			id: "1AF5C4332908323D"
+			rewards: [{
+				id: "0B1855D989CC0F4E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0ED003FAA5ED2F51"
+				item: { count: 1, id: "gobber2:gobber2_ingot_nether" }
+				type: "item"
+			}]
+			x: 31.0d
+			y: 5.5d
+		}
+		{
+			id: "41E046A25E593DE8"
+			rewards: [{
+				id: "63CAD676BCC9ABD8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0101BA63A2036042"
+				item: { count: 1, id: "kubejs:vorant_ingot" }
+				type: "item"
+			}]
+			x: 42.5d
+			y: 4.0d
+		}
+		{
+			id: "601016E861B6036F"
+			rewards: [{
+				id: "79FE0E3CC85B32B4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "133375EFF0298748"
+				item: { count: 1, id: "kubejs:lustful_haze_alloy" }
+				type: "item"
+			}]
+			x: 42.5d
+			y: 5.5d
+		}
+		{
+			id: "357A96DA2D1987CE"
+			rewards: [{
+				id: "67908D48AEEF3665"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6271C3A11157B945"
+				item: { count: 1, id: "allthemodium:unobtainium_ingot" }
+				type: "item"
+			}]
+			x: 44.0d
+			y: 4.0d
+		}
+		{
+			id: "6FF16C84BFDC23B4"
+			rewards: [{
+				id: "24C575F99E1B772A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2BD48DEE283D21AD"
+				item: { count: 1, id: "gobber2:gobber2_ingot_end" }
+				type: "item"
+			}]
+			x: 44.0d
+			y: 5.5d
+		}
+		{
+			id: "6D937711826032A4"
+			rewards: [{
+				id: "66B6FB99B2D217A6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "6D45CA69D9502A51"
+				item: { count: 1, id: "kubejs:xelkive_ingot" }
+				type: "item"
+			}]
+			x: 42.5d
+			y: 7.0d
+		}
+		{
+			id: "161C42E6B708C7DA"
+			rewards: [{
+				id: "7BE0458E9A4E5B83"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "18849E2143DB1691"
+				type: "checkmark"
+			}]
+			x: 37.0d
+			y: 13.5d
 		}
 	]
 }

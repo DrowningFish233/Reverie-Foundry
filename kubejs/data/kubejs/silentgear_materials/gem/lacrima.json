@@ -84,11 +84,11 @@
                 "value": 256.0
             },
             "attack_damage": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.25
             },
             "attack_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.25
             },
             "magic_damage": {

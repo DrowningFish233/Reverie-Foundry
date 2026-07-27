@@ -1,3 +1,13 @@
+// 这些物品的配方不会被统一化替换
+const recipeBlacklist = [
+    'terra_curio:copper_watch',
+    'terra_curio:tin_watch',
+    'terra_curio:silver_watch',
+    'terra_curio:tungsten_watch',
+    'terra_curio:gold_watch',
+    'terra_curio:platinum_watch'
+];
+
 /**
  * 统一化配方
  */
@@ -399,21 +409,35 @@ OreUnificationBuilder.prototype = {
 
     /**
      * 注册配方
-     * @param {Object} event - ServerEvents.recipes的event对象
+     * @param {Object} event 
      */
     register: function (event) {
         this.event = event;
 
-        // 批量替换同级金属
+        const savedRecipes = {};
+        for (let i = 0; i < this.skipAll.length; i++) {
+            let item = this.skipAll[i];
+            let recipes = event.findRecipes({ output: item });
+            if (recipes && recipes.length > 0) {
+                savedRecipes[item] = recipes.map(r => r.json);
+            }
+        }
+
         this._unifyTier();
 
-        // 处理每个金属的合成表
         for (let i = 0; i < this.ores.length; i++) {
             this._processSingleMetal(this.ores[i]);
         }
 
+        for (let item in savedRecipes) {
+            event.remove({ output: item });
+            for (let recipeJson of savedRecipes[item]) {
+                event.custom(recipeJson);
+            }
+        }
+
         return this;
-    }
+    },
 };
 
 
@@ -468,6 +492,7 @@ ServerEvents.recipes(event => {
         .setAddShapeless(true)
         .addBlockCastingByTag('minecraft:iron_ingot', 'c:molten_iron', 810)
         .addBlockCastingByTag('alltheores:lead_ingot', 'c:molten_lead', 810)
+        .skipAllProcessingList(recipeBlacklist)
         .register(event);
 
     new OreUnificationBuilder()
@@ -480,62 +505,58 @@ ServerEvents.recipes(event => {
         .addBlockCastingByTag('minecraft:copper_ingot', 'c:molten_copper', 810)
         .addBlockCastingByTag('alltheores:tin_ingot', 'c:molten_tin', 810)
         .setNugget('minecraft:copper_ingot', 'create:copper_nugget')
-        /*
-        .setNuggets({
-            'alltheores:tin_ingot': 'alltheores:tin_nugget'
-        })
-        */
+        .skipAllProcessingList(recipeBlacklist)
         .register(event);
 
     new OreUnificationBuilder()
         .setTag('#kubejs:ingots/tier_2')
         .addIngots(['kubejs:tungsten_ingot', 'iceandfire:silver_ingot'])
         .setAddBlockCasting(true)
-
         .setRemoveNuggets(true)
         .setRemoveBlocks(true)
         .setAddShapeless(true)
         .addBlockCastingByTag('iceandfire:silver_ingot', 'c:molten_silver', 810)
         .skipNugget('kubejs:tungsten_ingot')
         .skipBlock('kubejs:tungsten_ingot')
+        .skipAllProcessingList(recipeBlacklist)
         .register(event);
 
     new OreUnificationBuilder()
         .setTag('#kubejs:ingots/tier_3')
         .addIngots(['minecraft:gold_ingot', 'alltheores:platinum_ingot'])
         .setAddBlockCasting(true)
-
         .setRemoveNuggets(true)
         .setRemoveBlocks(true)
         .setAddShapeless(true)
         .addBlockCastingByTag('minecraft:gold_ingot', 'c:molten_gold', 810)
         .addBlockCastingByTag('alltheores:platinum_ingot', 'c:molten_platinum', 810)
+        .skipAllProcessingList(recipeBlacklist)
         .register(event);
 
     new OreUnificationBuilder()
         .setTag('#kubejs:gem/tier_0')
         .addIngots(['iceandfire:sapphire_gem', 'minecraft:emerald'])
         .setAddBlockCasting(true)
-
         .setRemoveNuggets(true)
         .setRemoveBlocks(true)
         .setAddShapeless(true)
         .skipNuggetsList(['iceandfire:sapphire_gem', 'minecraft:emerald'])
         .setBlock('iceandfire:sapphire_gem', 'iceandfire:sapphire_block')
         .addBlockCastingById('minecraft:emerald', 'productivemetalworks:molten_emerald', 810)
+        .skipAllProcessingList(recipeBlacklist)
         .register(event);
 
     new OreUnificationBuilder()
         .setTag('#kubejs:gem/tier_1')
         .addIngots(['kubejs:ruby', 'minecraft:diamond'])
         .setAddBlockCasting(true)
-
         .setRemoveNuggets(true)
         .setRemoveBlocks(true)
         .setAddShapeless(true)
         .skipNuggetsList(['kubejs:ruby', 'minecraft:diamond'])
         .addBlockCastingById('minecraft:diamond', 'productivemetalworks:molten_diamond', 810)
         .setBlock('kubejs:ruby', 'alltheores:ruby_block')
+        .skipAllProcessingList(recipeBlacklist)
         .register(event);
 
     new OreUnificationBuilder()
@@ -547,17 +568,18 @@ ServerEvents.recipes(event => {
         .skipBlock('minecraft:amethyst_shard')
         .skipNuggetsList(['kubejs:topaz', 'minecraft:amethyst_shard'])
         .setBlock('kubejs:topaz', 'silentgems:topaz_block')
+        .skipAllProcessingList(recipeBlacklist)
         .register(event);
 
     new OreUnificationBuilder()
         .setTag('#kubejs:gem/tier_3')
         .addIngots(['minecraft:redstone', 'alltheores:cinnabar'])
         .setAddBlockCasting(true)
-
         .setRemoveNuggets(true)
         .setRemoveBlocks(true)
         .setAddShapeless(true)
         .skipNuggetsList(['minecraft:redstone', 'alltheores:cinnabar'])
         .addBlockCastingById('minecraft:redstone', 'productivemetalworks:molten_redstone', 900)
+        .skipAllProcessingList(recipeBlacklist)
         .register(event);
 });

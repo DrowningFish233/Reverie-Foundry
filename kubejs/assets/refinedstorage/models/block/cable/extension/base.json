@@ -1,0 +1,35 @@
+{
+	"render_type": "cutout",
+	"textures": {
+		"particle": "refinedstorage:block/cable",
+		"cable": "refinedstorage:block/cable"
+	},
+	"elements": [
+		{
+			"name": "North",
+			"from": [5.5, 5.5, 1],
+			"to": [10.5, 10.5, 5.5],
+			"faces": {
+				"north": {"uv": [8, 8, 13, 13], "texture": "#cable"},
+				"east": {"uv": [0, 8, 4.5, 13], "texture": "#cable"},
+				"south": {"uv": [8, 8, 13, 13], "texture": "#cable"},
+				"west": {"uv": [3.5, 8, 8, 13], "texture": "#cable"},
+				"up": {"uv": [8, 3.5, 13, 8], "texture": "#cable"},
+				"down": {"uv": [8, 0, 13, 4.5], "texture": "#cable"}
+			}
+		},
+		{
+			"name": "NorthPipeEnd",
+			"from": [4.5, 4.5, 0],
+			"to": [11.5, 11.5, 2],
+			"faces": {
+				"north": {"uv": [0, 0, 7, 7], "texture": "#cable"},
+				"east": {"uv": [5, 0, 7, 7], "texture": "#cable"},
+				"south": {"uv": [0, 0, 7, 7], "texture": "#cable"},
+				"west": {"uv": [0, 0, 2, 7], "texture": "#cable"},
+				"up": {"uv": [0, 0, 7, 2], "texture": "#cable"},
+				"down": {"uv": [0, 5, 7, 7], "texture": "#cable"}
+			}
+		}
+	]
+}

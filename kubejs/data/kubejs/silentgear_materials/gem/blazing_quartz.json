@@ -29,7 +29,7 @@
             "armor/helmet": 3.0,
             "armor/leggings": 4.0,
             "armor_durability": 13.0,
-            "attack_damage": 2.0,
+            "attack_damage": 6.0,
             "attack_speed": 0.1,
             "charging_value": 1.2,
             "draw_speed": 0.1,
@@ -66,11 +66,11 @@
         },
         "silentgear:rod": {
             "attack_damage": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
             "harvest_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.2
             },
             "traits": [
@@ -112,7 +112,7 @@
             },
             "attack_damage": {
                 "operation": "ADD",
-                "value": 4.0
+                "value": 3.0
             },
             "durability": {
                 "operation": "ADD",

@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 9999999
 // 所有酒类效果列表
 const alcoholEffects = [
     "kubejs:lightingball",
@@ -159,6 +159,15 @@ const DIFFICULTY_BLACKLIST = [
     "irons_spellbooks:dead_king"
 ];
 
+const EXTRA_BUFF_ENTITIES = [
+    "terra_entity:dungeon_guardian",
+    "terra_entity:skeletron",
+    "terra_entity:king_slime",
+    "terra_entity:eye_of_cthulhu",
+    "terra_entity:brain_of_cthulhu",
+    "terra_entity:queen_bee"
+];
+
 // 基础难度配置
 const GAME_DIFFICULTY_LEVELS = {
     "EASY": {
@@ -185,6 +194,7 @@ const GAME_DIFFICULTY_LEVELS = {
 };
 
 // 玩家阶段难度加成
+// 先从5拓展到12...会改回去的...吧
 const STAGE_DIFFICULTY_BONUS = {
     'difficult_0': { health: 1, attack: 1, armor: 1, toughness: 1, level: 0 },
     'difficult_1': { health: 2, attack: 1.2, armor: 2, toughness: 2, level: 1 },
@@ -192,7 +202,15 @@ const STAGE_DIFFICULTY_BONUS = {
     'difficult_3': { health: 4, attack: 1.6, armor: 4, toughness: 4, level: 3 },
     'difficult_4': { health: 5, attack: 1.8, armor: 5, toughness: 5, level: 4 },
     'difficult_5': { health: 6, attack: 2, armor: 6, toughness: 6, level: 5 },
-    'difficult_6': { health: 8, attack: 3, armor: 8, toughness: 8, level: 6 }
+    'difficult_6': { health: 8, attack: 3, armor: 8, toughness: 8, level: 6 },
+
+
+    'difficult_7': { health: 10, attack: 3, armor: 10, toughness: 10, level: 7 },
+    'difficult_8': { health: 12, attack: 3.2, armor: 12, toughness: 12, level: 8 },
+    'difficult_9': { health: 14, attack: 3.4, armor: 14, toughness: 14, level: 9 },
+    'difficult_10': { health: 16, attack: 3.6, armor: 16, toughness: 16, level: 10 },
+    'difficult_11': { health: 18, attack: 3.8, armor: 18, toughness: 18, level: 11 },
+    'difficult_12': { health: 20, attack: 4, armor: 20, toughness: 20, level: 12 }
 };
 
 
@@ -253,4 +271,3 @@ const DEMOTION_MESSAGE = {
 
 // 缓存
 let REMOVABLE_TYPES_CACHE = null
-const panicEffect = "kubejs:panic";

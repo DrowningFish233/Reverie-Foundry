@@ -75,6 +75,9 @@
     "entity": true,
     "entity_variant": true
   },
+  "reveriefoundry": {
+    "custom_tooltip": true
+  },
   "ftbquests": {
     "barrier": true
   },
@@ -107,8 +110,17 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "betternether": {
+    "plant_growth": true
+  },
   "jadeaddons.lootr": {
     "info": true
+  },
+  "betterend": {
+    "plant_growth": true
+  },
+  "quark": {
+    "oretoise_eating_cooldown": true
   },
   "productivemetalworks": {
     "casting": true

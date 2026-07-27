@@ -1,0 +1,168 @@
+{
+	autofocus_id: "302F073922CA3873"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "797BA53935D7BF99"
+	group: ""
+	id: "797BA53935D7BF99"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "terra_curio:demon_heart"
+			}
+			id: "302F073922CA3873"
+			tasks: [{
+				id: "073419A4A5DD016C"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "minecraft:cat_spawn_egg"
+			}
+			id: "4440AB0D70D690ED"
+			tasks: [{
+				id: "0D21961282DE163E"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "kubejs:narrator"
+			}
+			id: "40AAE3AB0A6C05DF"
+			tasks: [{
+				id: "746B2455203DC358"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			icon: {
+				id: "kubejs:supreme_mana_potion"
+			}
+			id: "39138773ED14B1BA"
+			tasks: [{
+				id: "4BCEE4F010C4CFC9"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			icon: {
+				id: "minecraft:golden_carrot"
+			}
+			id: "288F52920CC79FEC"
+			tasks: [{
+				id: "086BF011A2B2F568"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "kubejs:moonpools"
+			}
+			id: "6449D872847D4B67"
+			tasks: [{
+				id: "40073D42A953332C"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "gobber2:dragon_star"
+			}
+			id: "1669DD338D104D3F"
+			tasks: [{
+				id: "65144856931008E9"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			icon: {
+				id: "minecraft:snow_block"
+			}
+			id: "3B3B3605F4F0AC43"
+			tasks: [{
+				id: "0BD33FA37C027B35"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			icon: {
+				id: "minecraft:fox_spawn_egg"
+			}
+			id: "2CE15B505BACCDC3"
+			tasks: [{
+				id: "5DDABBE6556C3026"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			icon: {
+				id: "minecraft:cod"
+			}
+			id: "76418D5CB8DDA0B1"
+			tasks: [{
+				id: "5036035283C82E2B"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			icon: {
+				id: "minecraft:oak_sapling"
+			}
+			id: "26F574E2557F8ADF"
+			tasks: [{
+				id: "285A4B1A756E08B1"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			icon: {
+				id: "minecraft:bone"
+			}
+			id: "70B6CF3213A607ED"
+			tasks: [{
+				id: "1E9C1BB2AC8320CD"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			icon: {
+				id: "minecraft:tropical_fish"
+			}
+			id: "223819B7B37AEFB2"
+			tasks: [{
+				id: "6EB0480B8A939400"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+	]
+}

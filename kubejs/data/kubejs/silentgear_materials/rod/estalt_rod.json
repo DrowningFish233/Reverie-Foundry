@@ -24,15 +24,15 @@
         "silentgear:rod": {
             "attack_damage": {
                 "operation": "MULTIPLY_BASE",
-                "value": 0.1
+                "value": 0.15
             },
             "repair_efficiency": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.2
             },
             "magic_damage": {
                 "operation": "MULTIPLY_BASE",
-                "value": 0.1
+                "value": 0.15
             },
             "ranged_damage": {
                 "operation": "MULTIPLY_BASE",

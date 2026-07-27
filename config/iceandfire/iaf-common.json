@@ -1,6 +1,6 @@
 {
   "dragon": {
-    "maxHealth": 800.0,
+    "maxHealth": 1000.0,
     "eggBornTime": 7200,
     "maxPathingNodes": 5000,
     "villagersFear": true,
@@ -159,7 +159,7 @@
     "dragonsteelArmorKnockbackResistance": 0.1
   },
   "worldgen": {
-    "dangerousDistanceLimit": 5000.0,
+    "dangerousDistanceLimit": 1500.0,
     "generateFireDragonCaveChance": 1.0,
     "generateFireDragonRoostChance": 1.0,
     "generateIceDragonCaveChance": 1.0,

@@ -24,7 +24,7 @@
     "properties": {
         "silentgear:lining": {
             "knockback_resistance": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.1
             },
             "traits": [

@@ -1,10 +1,75 @@
-#Whether to log the dirt block on common setup
-logDirtBlock = true
-#A magic number
-# Default: 42
-# Range: > 0
-magicNumber = 42
-#What you want the introduction message to be for the magic number
-magicNumberIntroduction = "The magic number is... "
-#A list of items to log on common setup.
-items = ["minecraft:iron_ingot"]
+#KeepInventory Settings
+[keepinventory]
+	#Enable KeepInventory mod functionality
+	enabled = true
+	#Keep player experience after death
+	keepExperience = true
+	#Keep player score after death
+	keepScore = true
+	#Keep player hunger after death
+	keepHunger = true
+	#Keep player saturation after death
+	keepSaturation = true
+	#Keep player potion effects after death
+	keepPotionEffects = false
+	#Apply durability penalty to kept items after death
+	applyDurabilityPenalty = true
+	#Keep all slots without specifying individually (like vanilla rule)
+	keepAllSlots = false
+	#Comma-separated list of slot IDs to keep. Example: '0,1,2,3,4,5,6,7,8,36,37,38,39,40'
+	keptSlots = "0,1,2,3,4,5,6,7,8,36,37,38,39,40"
+	#Comma-separated list of item IDs to keep. Example: 'minecraft:torch,minecraft:arrow'
+	keptItems = "minecraft:torch,minecraft:arrow,betteremeralds:wallet"
+	#Modifier multiplied by previous experience amount (0.0 = lose all, 1.0 = keep all)
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	experienceModifier = 0.9
+	#Modifier multiplied by previous hunger amount (0.0 = lose all, 1.0 = keep all)
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	hungerModifier = 0.85
+	#Minimum hunger value after death to prevent spawning with empty hunger bar
+	# Default: 8
+	# Range: 0 ~ 20
+	hungerMinLimit = 12
+	#Modifier multiplied by previous saturation amount (0.0 = lose all, 1.0 = keep all)
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	saturationModifier = 0.75
+	#Modifier applied to item durability when kept (0.0 = lose all durability, 1.0 = keep all)
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	durabilityModifier = 0.95
+
+#Loot Finder Settings - Server side configuration
+[loot_locator]
+	#Enable glow effect when using the Loot Finder
+	enableGlow = true
+	#Require the Loot Finder to be in hand for glow effect to work
+	requireItemInHand = true
+
+#Gateway Spawning Configuration - End dimension
+[gateway]
+	#Enable automatic gateway spawning in the End dimension
+	enabled = false
+	#Enable debug logging for gateway spawning
+	debug = false
+	#Chance of gateway spawning each in-game day (1-100)
+	# Default: 30
+	# Range: 1 ~ 100
+	spawnRate = 50
+	#Minimum spawn distance from the nearest player (blocks)
+	# Default: 32
+	# Range: 10 ~ 200
+	minDistance = 32
+	#Maximum spawn distance from the nearest player (blocks)
+	# Default: 128
+	# Range: 20 ~ 500
+	maxDistance = 128
+	#List of gateway IDs that can spawn in the End
+	gateways = ["gateways:basic/enderman", "gateways:basic/shulker", "gateways:basic/blaze", "gateways:basic/slime", "gateways:endless/blaze", "gateways:hellish_fortress", "gateways:overworldian_nights", "gateways:emerald_grove",   "kubejs:large_ocean_challenge",
+    "kubejs:large_spell_challenge",
+    "kubejs:medium_spell_challenge",
+    "kubejs:medium_ocean_challenge",
+    "kubejs:small_spell_challenge",
+    "kubejs:small_ocean_challenge"]

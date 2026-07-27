@@ -1,0 +1,13 @@
+{
+	"allowDefaultAsync": true,
+	"defaultDisableDuplicatePlugins": true,
+	"typeOverrides": {
+		"terra_entity:jei_plugin": "DISABLED"
+	},
+	"defaultPhaseOverrides": {
+	
+	},
+	"pluginPhaseOverrides": {
+	
+	}
+}

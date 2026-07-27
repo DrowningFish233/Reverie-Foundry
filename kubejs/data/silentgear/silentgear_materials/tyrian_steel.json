@@ -27,14 +27,14 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 25.0,
-      "armor/boots": 4.0,
-      "armor/chestplate": 9.0,
+      "armor": 30.0,
+      "armor/boots": 5.0,
+      "armor/chestplate": 12.0,
       "armor/helmet": 5.0,
-      "armor/leggings": 7.0,
+      "armor/leggings": 8.0,
       "armor_durability": 81.0,
       "armor_toughness": 12.0,
-      "attack_damage": 8.0,
+      "attack_damage": 35.0,
       "attack_speed": 0.0,
       "charging_value": 1.1,
       "draw_speed": 0.0,
@@ -46,8 +46,8 @@
         "level_hint": "4",
         "name": "tyrian_steel"
       },
-      "magic_armor": 12.0,
-      "magic_damage": 6.0,
+      "magic_armor": 22.0,
+      "magic_damage": 25.0,
       "projectile_accuracy": 1.1,
       "projectile_speed": 1.1,
       "ranged_damage": 4.0,
@@ -89,6 +89,16 @@
         "operation": "ADD",
         "value": -2.0
       },
+      "attack_damage": [
+        {
+          "operation": "ADD",
+          "value": 5.0
+        },
+        {
+          "operation": "MULTIPLY_BASE",
+          "value": 0.15
+        }
+      ],
       "traits": [
         {
           "conditions": [

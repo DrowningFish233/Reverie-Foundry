@@ -39,7 +39,7 @@
                 "value": 0.1
             },
             "magic_armor": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.1
             },
             "traits": [

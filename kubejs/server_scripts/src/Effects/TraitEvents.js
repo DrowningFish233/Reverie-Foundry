@@ -293,11 +293,11 @@ RFTrait('kubejs:hallowed_ingot', 0)
     .beforeHurt(event => {
         const { entity } = event;
         if (!entity.isPlayer()) return;
-        let COOLDOWN_KEY = "hallowed_ingot_COOLDOWN_KEY"
-        if ($CooldownManager.hasCooldown(entity, COOLDOWN_KEY)) return
-        if (!fu_hasTraitAnywhere(entity, 'kubejs:hallowed_ingot')) return
-        $CooldownManager.setCooldown(entity, COOLDOWN_KEY, 600)
-        event.cancel()
+        if (!fu_hasTraitAnywhere(entity, 'kubejs:hallowed_ingot')) return;
+
+        trySkill(entity, "hallowed_ingot", 600, () => {
+            event.cancel()
+        })
     })
     .register();
 
@@ -306,24 +306,20 @@ RFTrait('kubejs:hallowed_ingot', 0)
 RFTrait('kubejs:acril_ingot', 0)
     .leftClick(event => {
         const player = event.player
-        const COOLDOWN_KEY = "acril_ingot_COOLDOWN_KEY"
-
         if (!fu_hasTraitAnywhere(player, "kubejs:acril_ingot")) return;
-        if ($CooldownManager.hasCooldown(player, COOLDOWN_KEY)) return
 
-        let magicData = getPlayerMagicData(player)
-        let currentMana = magicData.getMana()
+        trySkill(player, "acril_ingot", 200, () => {
+            let magicData = getPlayerMagicData(player)
+            let currentMana = magicData.getMana()
 
-        if (currentMana >= 20) {
-            let amplifier = fu_getHighestTraitLevelAnywhere(player, "kubejs:acril_ingot")
-
-            overLimitSpellCast($ResourceLocation('irons_spellbooks', 'chain_lightning'), amplifier, player, false)
-            magicData.addMana(-20)
-            $CooldownManager.setCooldown(player, COOLDOWN_KEY, 200)
-            return
-        } else {
-            player.tell("§c魔力不足！")
-        }
+            if (currentMana >= 20) {
+                let amplifier = fu_getHighestTraitLevelAnywhere(player, "kubejs:acril_ingot")
+                overLimitSpellCast($ResourceLocation('irons_spellbooks', 'chain_lightning'), amplifier, player, false)
+                magicData.addMana(-20)
+            } else {
+                player.tell("§c魔力不足！")
+            }
+        })
     })
     .register();
 
@@ -552,22 +548,23 @@ RFTrait('kubejs:boron_ingot', 0)
             return;
         }
         const trait_level = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:boron_ingot")
-        entity.potionEffects.add("kubejs:boron_ingot", 30, 0);
+        entity.potionEffects.add("kubejs:maximum_health_reduction", 200, 0);
     })
     .register();
 
 
-// ???
 RFTrait('kubejs:high_health', 0)
     .beforeHurt(event => {
         const { source, entity } = event;
         const attacker = source.player;
         if (!attacker || !entity.isLiving()) return;
-        if (!fu_hasTraitAnywhere(attacker, 'kubejs:high_health')) return
+        if (!fu_hasTraitAnywhere(attacker, 'kubejs:high_health')) return;
 
+        const entity_maxhealth = entity.getMaxHealth();
+        const entity_Health = entity.getHealth();
         const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:high_health");
         const minHealthPercent = 1.0 - (traitLevel * 0.10);
-        const minHealthValue = entity_MaxHealth * minHealthPercent;
+        const minHealthValue = entity_maxhealth * minHealthPercent;
 
         if (entity_Health < minHealthValue) {
             const damageMultiplier = traitLevel * 0.10;
@@ -575,6 +572,7 @@ RFTrait('kubejs:high_health', 0)
         }
     })
     .register();
+
 
 
 // 'kubejs:vorant_ingot'
@@ -779,17 +777,15 @@ RFTrait('kubejs:echo_ingot', 0)
         const { source, entity } = event;
         const attacker = source.player
         if (!attacker || !attacker.isLiving()) return;
-
-        const COOLDOWN_KEY = "echo_ingot_COOLDOWN_KEY"
-        if ($CooldownManager.hasCooldown(attacker, COOLDOWN_KEY)) return
         if (!fu_hasTraitAnywhere(attacker, "kubejs:echo_ingot")) return;
-        let Trait_Level = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:echo_ingot")
 
-        $AddEffect(entity, "kubejs:bleed", Trait_Level, true)
-        $AddEffect(entity, "kubejs:paralysis", Trait_Level - 1, false, 200)
-        $AddEffect(entity, "minecraft:slowness", Trait_Level - 1, true)
+        trySkill(attacker, "echo_ingot", 15 * 20, () => {
+            let Trait_Level = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:echo_ingot")
 
-        $CooldownManager.setCooldown(attacker, COOLDOWN_KEY, 15 * 20)
+            $AddEffect(entity, "kubejs:bleed", Trait_Level, true)
+            $AddEffect(entity, "kubejs:paralysis", Trait_Level - 1, false, 200)
+            $AddEffect(entity, "minecraft:slowness", Trait_Level - 1, true)
+        })
     })
     .register();
 
@@ -999,10 +995,10 @@ RFTrait('kubejs:malarite', 0)
         if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:malarite")) {
             return;
         }
-        entity.potionEffects.add("minecaft:poison", 40, 0);
+        entity.potionEffects.add("minecraft:poison", 40, 0);
         let traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:malarite")
-        if (entity.hasEffect("minecaft:poison")) {
-            attacker.potionEffects.add("irons_spellbooks:spider_aspect", traitLevel * 2, traitLevel);
+        if (entity.hasEffect("minecraft:poison")) {
+            attacker.potionEffects.add("irons_spellbooks:spider_aspect", traitLevel * 2 * 20, traitLevel);
         }
     })
     .register();
@@ -1014,38 +1010,37 @@ RFTrait('kubejs:tenacious_vine', 0)
         let player = event.player
         if (!player) return;
         if (player.hasEffect("kubejs:tenacious_vine") && player.isPlayer()) {
-            let COOLDOWN_KEY = "tenacious_vine_COOLDOWN_KEY"
-            if ($CooldownManager.hasCooldown(player, COOLDOWN_KEY)) return
-            let level = player.level
-            let target = findTarget(player)
-            if (target && !level.isClientSide()) {
-                if (level instanceof $ServerLevel) {
-                    $ScreenShakeVfx.createInstance(
-                        level.dimension,
-                        player.position(),
-                        30, 30, 0.15, 0.24, 4, 5
-                    ).send(level)
-                    $CooldownManager.setCooldown(player, COOLDOWN_KEY, 20)
-                }
+            trySkill(player, "tenacious_vine", 20, () => {
+                let level = player.level
+                let target = findTarget(player)
+                if (target && !level.isClientSide()) {
+                    if (level instanceof $ServerLevel) {
+                        $ScreenShakeVfx.createInstance(
+                            level.dimension,
+                            player.position(),
+                            30, 30, 0.15, 0.24, 4, 5
+                        ).send(level)
+                    }
 
-                let yRotRad = player.yRot * Math.PI / 180
-                let x = -Math.sin(yRotRad)
-                let z = Math.cos(yRotRad)
+                    let yRotRad = player.yRot * Math.PI / 180
+                    let x = -Math.sin(yRotRad)
+                    let z = Math.cos(yRotRad)
 
-                for (let i = 0; i < 6; i++) {
-                    createThorn(
-                        level,                   // 世界
-                        player,                  // 所有者
-                        player.x + x * i * 1.5,
-                        player.y,
-                        player.z + z * i * 1.5,
-                        $Mth.wrapDegrees(-player.yRot), // 旋转角度
-                        40,                      // 最大下探距离
-                        i * 2,                    // 延迟
-                        1
-                    )
+                    for (let i = 0; i < 6; i++) {
+                        createThorn(
+                            level,
+                            player,
+                            player.x + x * i * 1.5,
+                            player.y,
+                            player.z + z * i * 1.5,
+                            $Mth.wrapDegrees(-player.yRot),
+                            40,
+                            i * 2,
+                            1
+                        )
+                    }
                 }
-            }
+            })
         }
     })
     .register();
@@ -1112,8 +1107,9 @@ RFTrait('kubejs:aethersent_ingot', 0)
             target.x,
             target.y,
             target.z,
-            80
-        )
+            20 + traitLevel * 5,
+            600
+        );
         let meteors = level.getEntitiesOfClass($MeteorClass, target.getBoundingBox().inflate(80))
         meteors.forEach(meteor => {
             if (meteor.getOwner() == entity) {
@@ -1159,13 +1155,32 @@ RFTrait('kubejs:witherbone', 0)
         if (witherHowitzerValue < 8) {
             if (!fu_hasTraitAnywhere(player, "kubejs:wither_howitzer")) return
             pData.putInt("wither_howitzer", witherHowitzerValue + 1);
-            player.setStatusMessage(
-                Text.join(
-                    Text.translate('message.wither_howitzer.charge').color('gold'),
-                    " ",
-                    Text.of(`${witherHowitzerValue + 1}/8`).color('yellow')
-                )
-            );
+
+            if (typeof EmbersText !== 'undefined' && EmbersText.markup) {
+                let chargeText = Text.translate('message.wither_howitzer.charge').getString();
+                let fullMessage =
+                    `<color color=gold>${chargeText}</color>` +
+                    ` ` +
+                    `<color color=yellow>${witherHowitzerValue + 1}/8</color>`;
+                fullMessage = `<pulse frequency=1.5>${fullMessage}</pulse>`;
+
+                let message = EmbersText.markup(20, fullMessage)
+                    .anchor('BOTTOM_LEFT')
+                    .scale(1.2)
+                    .fadeInTicks(3)
+                    .fadeOutTicks(5)
+                    .shadow(true);
+
+                EmbersText.send(player, message);
+            } else {
+                player.setStatusMessage(
+                    Text.join(
+                        Text.translate('message.wither_howitzer.charge').color('gold'),
+                        " ",
+                        Text.of(`${witherHowitzerValue + 1}/8`).color('yellow')
+                    )
+                );
+            }
         }
     })
     .beforeHurt(event => {
@@ -1258,7 +1273,7 @@ RFTrait('kubejs:fiery_tears', 0)
 
 // 秘银锭
 RFTrait('kubejs:mithril_ingot', 0)
-    .beforeHurt(event => {
+    .afterHurt(event => {
         let player = event.player;
         if (!player || !player.isLiving() || !fu_hasTraitAnywhere(player, "kubejs:mithril_ingot")) return;
 
@@ -1271,6 +1286,7 @@ RFTrait('kubejs:mithril_ingot', 0)
         if (currentMana >= manaCost) {
             player.heal(healAmount);
             magicData.setMana(currentMana - manaCost);
+        } else {
         }
     })
     .register();
@@ -1437,18 +1453,19 @@ RFTrait('kubejs:animated_steel_ingot', 0)
         const repairChance = traitLevel * 10;
         const weapon = attacker.getMainHandItem();
         if (!weapon.isDamageableItem()) return;
+
         const sharpnessLevel = weapon.getEnchantmentLevel("minecraft:sharpness");
         if (sharpnessLevel > 0) {
             const extraDamage = 0.5 * sharpnessLevel + 0.5;
             attackEntity(entity, 'generic', extraDamage, true)
         }
+
         if (Math.floor(Math.random() * 100) < repairChance) {
             const repairedAmount = 1 + Math.floor(Math.random() * 3);
-            const newDamage = Math.max(0, weapon.getDamageValue() - repairedAmount);
-            weapon.setDamageValue(newDamage);
+            fu_repairDurability(weapon, repairedAmount, attacker, "mainhand");
         }
     })
-    .register();
+    .register()
 
 
 //怪物词缀：蚀智实现
@@ -1484,7 +1501,7 @@ RFTrait('kubejs:genericluck', 0)
         const luck = attacker.getAttribute('minecraft:generic.luck')?.value ?? 0;
         const diceRoll = 1 + Math.floor(Math.random() * 10);
         if (diceRoll <= traitLevel) {
-            const bonusPercent = (20 * traitLevel - luck);
+            const bonusPercent = (20 * traitLevel + luck);
             const minBonus = 5;
             const effectiveBonus = Math.max(minBonus, bonusPercent);
             const bonusDamage = (effectiveBonus / 100);
@@ -1493,7 +1510,6 @@ RFTrait('kubejs:genericluck', 0)
         }
     })
     .register();
-
 
 
 RFTrait('kubejs:aquamarine', 0)
@@ -1505,15 +1521,12 @@ RFTrait('kubejs:aquamarine', 0)
         }
         const weapon = attacker.getMainHandItem();
         if (!weapon.isDamageableItem()) return;
+
         const durabilityCost = 1 + Math.floor(Math.random() * 10);
-        weapon.setDamageValue(weapon.getDamageValue() + durabilityCost);
+        fu_repairDurability(weapon, -durabilityCost, attacker, "mainhand");
         new_damage(event, STAGE.ADDITIVE, 1 + (0.1 * durabilityCost));
-        if (weapon.getDamageValue() >= weapon.getMaxDamage()) {
-            weapon.shrink(1);
-        }
     })
     .register();
-
 
 
 RFTrait('kubejs:tanzanite', 0)
@@ -2004,7 +2017,7 @@ RFTrait('kubejs:six_life_death', 0)
     .register();
 
 
-RFTrait('kubejs:six_life_death', 0)
+RFTrait('kubejs:corroded', 0)
     .beforeHurt(event => {
         const { source, entity } = event;
         const attacker = source.player || source.actual;
@@ -2018,9 +2031,9 @@ RFTrait('kubejs:six_life_death', 0)
         const durabilityPercentage = (remainingDurability / maxDurability) * 100;
         let damageMultiplier = 1;
         if (durabilityPercentage < 20) {
-            damageMultiplier = 2;
+            damageMultiplier = 1.25;
         } else if (durabilityPercentage < 50) {
-            damageMultiplier = 1.4;
+            damageMultiplier = 1.1;
         }
         new_damage(event, STAGE.ADDITIVE, damageMultiplier);
     })
@@ -2068,7 +2081,9 @@ RFTrait('kubejs:atalphaite', 0)
             entity.getBoundingBox().inflate(boom_radius)
         );
         for (let nearbyEntity of nearbyEntities) {
-            if (nearbyEntity.isLiving() && nearbyEntity !== entity) {
+            if (nearbyEntity.isLiving() &&
+                nearbyEntity !== entity &&
+                !nearbyEntity.isPlayer()) {
                 attackEntity(nearbyEntity, 'explosion', boom_attack, true)
             }
         }
@@ -2150,17 +2165,17 @@ RFTrait('kubejs:maxhealth', 0)
     .register();
 
 
-//消耗经验免疫伤害
+// 消耗经验免疫伤害
 RFTrait('kubejs:exalted_beauty_gem', 0)
     .beforeHurt(event => {
         const player = event.entity;
         if (!player || !player.isPlayer()) return
         if (fu_hasTraitAnywhere(player, 'kubejs:exalted_beauty_gem')) {
             const traitLevel = fu_getHighestTraitLevelAnywhere(player, 'kubejs:exalted_beauty_gem');
-            const chance = traitLevel * 2;
-            if (event.player.xpLevel >= 10) {
-                if (Math.random() * 1 < chance) {
-                    event.player.xpLevel -= 10
+            const chance = (traitLevel * 2) / 100;
+            if (player.xpLevel >= 10) {
+                if (Math.random() < chance) {
+                    player.xpLevel -= 10
                     event.cancel();
                 }
             }
@@ -2202,7 +2217,7 @@ RFTrait('kubejs:intrinsic', 0)
         const exp_level = Math.min(attacker.xpLevel, 900);
         const bonusPercent = Math.floor(exp_level / 5);
         if (bonusPercent > 0) {
-            new_damage(event, STAGE.ADDITIVE, bonusPercent);
+            new_damage(event, STAGE.ADDITIVE, 1 + bonusPercent / 100);
         }
     })
     .register();
@@ -2228,10 +2243,6 @@ RFTrait('kubejs:fluxing', 0)
     .register();
 
 
-/**
- * 都安静!时间由我来分配
- * 时间伤害加成效果
- */
 RFTrait('kubejs:systemtime', 0)
     .beforeHurt(event => {
         const { source, entity } = event;
@@ -2240,39 +2251,35 @@ RFTrait('kubejs:systemtime', 0)
         if (!attacker || !attacker.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:systemtime")) {
             return;
         }
+
         const now = new Date();
         const hours = now.getHours();
         const minutes = now.getMinutes();
 
-        let distance;
-        if (hours < 12) {
-            distance = hours * 60 + minutes;
-        } else {
-            distance = Math.abs((hours - 12) * 60 + minutes);
-        }
-        distance = Math.min(distance, 360);
-        const maxBonus = 0.75;
-        const bonus = maxBonus * (1 - distance / 360);
-        new_damage(event, STAGE.ADDITIVE, bonus);
+        let distanceFromNoon = Math.abs((hours - 12) * 60 + minutes);
+        const maxDistance = 720;
+        const ratio = Math.min(distanceFromNoon / maxDistance, 1);
+        const maxBonus = 0.2;
+        const bonus = maxBonus * (1 - ratio);
+
+        const damageMultiplier = 1 + bonus;
+        new_damage(event, STAGE.ADDITIVE, damageMultiplier);
     })
     .register();
-
 
 
 RFTrait('kubejs:irons_spellbooks_guiding_bolt', 0)
     .leftClick(event => {
         const player = event.player
-        const COOLDOWN_KEY = "garnet_guiding_bolt"
         if (player.hasEffect("kubejs:garnet")) {
-            if ($CooldownManager.hasCooldown(player, COOLDOWN_KEY)) return
             if (player.isOnFire() || player.isInLava()) {
-                overLimitSpellCast($ResourceLocation('irons_spellbooks', 'guiding_bolt'), 3, player, false)
-                $CooldownManager.setCooldown(player, COOLDOWN_KEY, 100)
+                trySkill(player, "garnet_guiding_bolt", 100, () => {
+                    overLimitSpellCast($ResourceLocation('irons_spellbooks', 'guiding_bolt'), 3, player, false)
+                })
             }
         }
     })
     .register();
-
 
 
 RFTrait('kubejs:irons_spellbooks_root', 0)
@@ -2355,14 +2362,14 @@ RFTrait('kubejs:xelkive_ingot', 0)
     .onTick(0, event => {
         let player = event.player
         const tick = player.tickCount;
-        if (tick % 100 === 0 || tick % 200 === 0) {
-            if (!player.isLiving() || !fu_hasTraitAnywhere(player, "kubejs:xelkive_ingot")) return;
-            const traitLevel = fu_getHighestTraitLevelAnywhere(player, "kubejs:xelkive_ingot");
-            const intervalTicks = (15 - (traitLevel * 5)) * 20;
 
-            if (tick % intervalTicks === 0) {
-                removeRandomNegativeEffect(player);
-            }
+        if (!player.isLiving() || !fu_hasTraitAnywhere(player, "kubejs:xelkive_ingot")) return;
+        const traitLevel = fu_getHighestTraitLevelAnywhere(player, "kubejs:xelkive_ingot");
+        const intervalSeconds = Math.max(5, 15 - (traitLevel * 5));
+        const intervalTicks = intervalSeconds * 20;
+
+        if (tick % intervalTicks === 0) {
+            removeRandomNegativeEffect(player);
         }
     })
     .register();
@@ -2397,11 +2404,11 @@ RFTrait('kubejs:meat_ingots', 0)
             return;
         }
 
-        mainHandItem.setDamageValue(currentDurability + durabilityCost);
+        fu_repairDurability(mainHandItem, -durabilityCost, player, "mainhand");
         player.heal(traitLevel);
-
     })
     .register();
+
 
 RFTrait('kubejs:moon', 0)
     .onTick(43, event => {
@@ -2463,12 +2470,7 @@ RFTrait('kubejs:emerald', 0)
         const effectLevel = Math.floor(traitLevel / 2);
         player.potionEffects.add("minecraft:hero_of_the_village", 60, effectLevel);
 
-        const newDamage = weapon.getDamageValue() + 4;
-        if (newDamage >= weapon.getMaxDamage()) {
-            weapon.shrink(1);
-        } else {
-            weapon.setDamageValue(newDamage);
-        }
+        fu_repairDurability(weapon, -4, player, "mainhand");
     })
     .register();
 
@@ -2479,9 +2481,7 @@ RFTrait('kubejs:celeslar_ingot', 0)
         let player = event.player
         if (!fu_hasTraitAnywhere(player, "kubejs:celeslar_ingot")) return
         const trait_level = fu_getHighestTraitLevelAnywhere(player, "kubejs:celeslar_ingot")
-        console.log(trait_level);
 
-        // 获取附近所有实体
         const nearbyEntities = player.level.getEntities(
             player,
             player.getBoundingBox().inflate(trait_level * 2)
@@ -2497,8 +2497,9 @@ RFTrait('kubejs:celeslar_ingot', 0)
             let maxAmplifier = trait_level * 3;
             let amplifier = Math.min(count - 1, maxAmplifier);
             player.potionEffects.add("kubejs:damage_amplification", 6 * 20, amplifier);
-        } return;
-
+        } else {
+            player.potionEffects.remove("kubejs:damage_amplification");
+        }
     })
     .register();
 
@@ -2562,13 +2563,16 @@ RFTrait('kubejs:dragonprotection', 0)
         let actual = event.source.actual
         if (!player || !fu_hasTraitAnywhere(player, "kubejs:dragonprotection")) return;
         let traitLevel = fu_getHighestTraitLevelAnywhere(player, "kubejs:dragonprotection");
+
+        if (!actual) return;
+
         let entityType = actual.getType();
-        if (!entityType.includes("dragon")) return;
+        if (!entityType || !entityType.includes("dragon")) return;
+
         let reduction = Math.min(0.1 * traitLevel, 0.5);
         new_damage(event, STAGE.MULTIPLY, 1 - reduction);
     })
     .register();
-
 
 
 RFTrait('kubejs:glacial_state', 0)
@@ -2601,12 +2605,13 @@ RFTrait('kubejs:deathworm_chitin', 0)
         if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:pest_emperor")) {
             return;
         }
-        let COOLDOWN_KEY = "pest_emperor_COOLDOWN_KEY"
-        if ($CooldownManager.hasCooldown(attacker, COOLDOWN_KEY)) return
+
         let trait_level = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:pest_infesting")
         let cooldownTime = 120 - trait_level * 30;
-        entity.potionEffects.add("kubejs:pest_infesting", 60 + trait_level * 20, trait_level);
-        $CooldownManager.setCooldown(attacker, COOLDOWN_KEY, cooldownTime);
+
+        trySkill(attacker, "pest_emperor", cooldownTime * 20, () => {
+            entity.potionEffects.add("kubejs:pest_infesting", 60 + trait_level * 20, trait_level);
+        })
     })
     .register();
 
@@ -2628,7 +2633,7 @@ RFTrait('kubejs:moonpools', 0)
         if (!player) return
         if (!isNight(player.getLevel())) return
         if (!player.hasEffect("kubejs:evening_primrose")) return
-        new_damage(event, STAGE.MULTIPLY, 0.75)
+        new_damage(event, STAGE.MULTIPLY, 0.9)
     })
     .register();
 
@@ -2686,6 +2691,31 @@ RFTrait('kubejs:gravity_anchor', 0)
 
 
 
+RFTrait('kubejs:ghost_player', 0)
+    .beforeHurt(event => {
+        const player = event.entity;
+        if (!fu_hasTraitAnywhere(player, "kubejs:ghost_player")) return;
+
+        trySkill(player, "ghost_player", 200, () => {
+            let ghostId = $RFUtils.summonGhostWithReturn(player);
+
+            if (ghostId !== -1) {
+                let ghost = player.level.getEntity(ghostId);
+
+                player.server.scheduleInTicks(200, () => {
+                    if (ghost && ghost.isAlive()) {
+                        ghost.discard();
+                    }
+                });
+            }
+        });
+
+        return;
+    })
+    .register();
+
+
+
 
 /**
 * 总效果类层
@@ -2695,17 +2725,17 @@ function allthe_event(event) {
     all_dynamic_damage(event)   //动态减伤!
     other_effect(event);    //其他药水效果处理
     depravityDamage(event);     //沉沦受伤机制
-    allthe_sin_event(event);    //七罪效果
+    sanityAttack(event);
     allthe_curios_hurt_event(event);    //饰品效果
     spell_type(event);  //法术效果处理
     death_time(event);  //濒死处理
-    spearMomentumDamage(event); // 矛类增伤
     EntityFixMain(event);
 }
 /**
  * 其他药水效果处理
  */
 function other_effect(event) {
+    hurtEffect(event);
     use_adrenaline_effect(event);
     load_protection_attack(event);
     load_protection(event);
@@ -2724,7 +2754,6 @@ function other_effect(event) {
     rune_of_deflection_effect(event);
     bloodlust_attack(event);
     handleBleed(event);
-    hurtEffect(event);
     melting_eyeball_ego_attack(event);
     damage_amplification(event);
     kubejs_arrow(event);
@@ -2733,15 +2762,9 @@ function other_effect(event) {
     protect(event);
 }
 
-/**
- * 七罪效果（已废弃）
- */
-function allthe_sin_event(event) {
-    sanityAttack(event);
-}
-
 
 /**
  * 受伤事件修改逻辑
  */
 EntityEvents.beforeHurt(allthe_event);
+

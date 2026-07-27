@@ -341,3 +341,9 @@ FoodEatenevents.register("exploding_chocolate_bar", function (event, player, mag
             .explode();
     }
 });
+
+
+FoodEatenevents.register("cerebrage", function (event, player, magicData) {
+    if (!(event.item.getId() == 'netherexp:cerebrage')) return;
+    $SanityHelper.updateSanity(player, 5);
+});

@@ -1,0 +1,17 @@
+    {
+        "type": "emi:world_interaction",
+        "left": {
+            "type": "item",
+            "id": "kubejs:estalt_ingot"
+        },
+        "right": {
+            "type": "fluid",
+            "id": "minecraft:water",
+            "amount": 1000
+        },
+        "output": {
+            "type": "fluid",
+            "id": "minecraft:lava",
+            "amount": 1000
+        }
+    }

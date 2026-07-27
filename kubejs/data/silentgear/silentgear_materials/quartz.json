@@ -65,11 +65,11 @@
     },
     "silentgear:rod": {
       "attack_damage": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.1
       },
       "harvest_speed": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.2
       },
       "traits": [
@@ -97,11 +97,11 @@
     "silentgear:tip": {
       "armor_durability": {
         "operation": "ADD",
-        "value": 64.0
+        "value": 4.0
       },
       "attack_damage": {
         "operation": "ADD",
-        "value": 4.0
+        "value": 2.5
       },
       "durability": {
         "operation": "ADD",

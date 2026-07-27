@@ -1,5 +1,88 @@
 ServerEvents.recipes(event => {
     event.shaped(
+        Item.of('silentgems:iron_potato', 1),
+        [
+            'BBB',
+            'BAB',
+            'BCB'
+        ],
+        {
+            A: 'minecraft:potato',
+            B: 'minecraft:iron_block',
+            C: 'kubejs:necroplasm'
+        }
+    )
+    event.shaped(
+        Item.of('reveriefoundry:loot_locator', 1),
+        [
+            'CBC',
+            'BAB',
+            'CBC'
+        ],
+        {
+            A: 'minecraft:compass',
+            B: 'minecraft:gold_ingot',
+            C: 'minecraft:chest'
+        }
+    )
+
+    event.shaped(
+        Item.of('netherexp:pump_charge_upgrade_smithing_template', 1),
+        [
+            'ADB',
+            'ECE',
+            'EEE'
+        ],
+        {
+            A: 'netherexp:nightspores',
+            B: 'netherexp:lightspores',
+            C: 'minecraft:netherite_upgrade_smithing_template',
+            D: 'netherexp:wisp_bottle',
+            E: 'netherexp:soul_magma_block'
+        }
+    )
+
+
+    event.shaped(
+        Item.of('kubejs:core_suppression_unit_form_three', 1),
+        [
+            'AAA',
+            'BCB',
+            ' B '
+        ],
+        {
+            A: 'minecraft:paper',
+            B: 'kubejs:necroplasm',
+            C: 'kubejs:core_suppression_unit_form_two'
+        }
+    )
+    event.shaped(
+        Item.of('kubejs:core_suppression_unit_form_two', 1),
+        [
+            'AAA',
+            'ACA',
+            ' B '
+        ],
+        {
+            A: 'minecraft:paper',
+            B: 'kubejs:necroplasm',
+            C: 'kubejs:core_suppression_unit_form_one'
+        }
+    )
+    event.shaped(
+        Item.of('kubejs:core_suppression_unit_form_one', 1),
+        [
+            'AAA',
+            'ACA',
+            ' B '
+        ],
+        {
+            A: 'minecraft:paper',
+            B: 'minecraft:stick',
+            C: 'minecraft:gold_ingot'
+        }
+    )
+    event.shaped(
         Item.of('irons_spellbooks:inscription_table', 1),
         [
             '  B',
@@ -175,7 +258,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'kubejs:meat',
-            B: 'biomesoplenty:flesh',
+            B: 'netherexp:wraithing_flesh',
             C: 'malum:living_flesh'
         }
     )
@@ -278,19 +361,7 @@ ServerEvents.recipes(event => {
             C: '#malum:soulwood_logs'
         }
     )
-    event.shaped(
-        Item.of('kubejs:the_error', 1),
-        [
-            'AAA',
-            'BBB',
-            'CCC'
-        ],
-        {
-            A: 'biomesoplenty:null_end_stone',
-            B: 'biomesoplenty:null_block',
-            C: 'biomesoplenty:unmapped_end_stone'
-        }
-    )
+
     /*
     event.shaped(
         Item.of('naraka:imitation_gold_block', 1),
@@ -386,15 +457,16 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:celeslar_ingot', 1),
         [
             'AEA',
-            'CBD',
-            'AAA'
+            'CFD',
+            'ABA'
         ],
         {
             A: 'eternal_starlight:raw_aethersent',
             B: 'eternal_starlight:starcore',
             C: 'eternal_starlight:red_starlight_crystal_shard',
             D: 'eternal_starlight:blue_starlight_crystal_shard',
-            E: 'eternal_starlight:starlit_diamond'
+            E: 'eternal_starlight:starlit_diamond',
+            F: 'kubejs:viculeam_ingot'
         }
     )
     event.shaped(
@@ -442,23 +514,7 @@ ServerEvents.recipes(event => {
             B: 'kubejs:soul_of_night',
             C: 'eternal_starlight:aethersent_ingot'
         }
-    )
-
-    event.shaped(
-        Item.of('kubejs:xelkive_ingot', 1),
-        [
-            'CDC',
-            'CEC',
-            'ABA'
-        ],
-        {
-            A: 'malum:hallowed_gold_ingot',
-            B: 'hazennstuff:hallowed_ingot',
-            C: 'irons_spellbooks:divine_pearl',
-            D: 'enderscape:nebulite',
-            E: 'irons_spellbooks:mithril_ingot'
-        }
-    )
+    ).id('kubejs:cosmos_aurora_ingot_from_aethersent');
 
     event.shaped(
         Item.of('kubejs:cosmos_aurora_ingot', 1),
@@ -471,7 +527,7 @@ ServerEvents.recipes(event => {
             A: 'kubejs:soul_of_light',
             C: 'kubejs:dark_cryopla_ingot'
         }
-    )
+    ).id('kubejs:cosmos_aurora_ingot_from_dark_cryopla');
 
     event.shaped(
         Item.of('kubejs:dark_cryopla_ingot', 1),
@@ -1248,12 +1304,13 @@ ServerEvents.recipes(event => {
         Item.of('extradelight:iron_spoon', 1),
         [
             'A  ',
-            ' B ',
+            ' C ',
             '  B'
         ],
         {
             A: 'minecraft:iron_ingot',
-            B: 'minecraft:stick'
+            B: 'minecraft:stick',
+            C: '#minecraft:planks'
         }
     )
 
@@ -1262,12 +1319,13 @@ ServerEvents.recipes(event => {
         Item.of('extradelight:stone_spoon', 1),
         [
             'A  ',
-            ' B ',
+            ' C ',
             '  B'
         ],
         {
             A: 'minecraft:cobblestone',
-            B: 'minecraft:stick'
+            B: 'minecraft:stick',
+            C: '#minecraft:planks'
         }
     )
 
@@ -1276,12 +1334,13 @@ ServerEvents.recipes(event => {
         Item.of('extradelight:wooden_spoon', 1),
         [
             'A  ',
-            ' B ',
+            ' C ',
             '  B'
         ],
         {
             A: 'minecraft:oak_planks',
-            B: 'minecraft:stick'
+            B: 'minecraft:stick',
+            C: '#minecraft:planks'
         }
     )
 
@@ -1290,12 +1349,13 @@ ServerEvents.recipes(event => {
         Item.of('extradelight:gold_spoon', 1),
         [
             'A  ',
-            ' B ',
+            ' C ',
             '  B'
         ],
         {
             A: 'minecraft:gold_ingot',
-            B: 'minecraft:stick'
+            B: 'minecraft:stick',
+            C: '#minecraft:planks'
         }
     )
 
@@ -1304,12 +1364,13 @@ ServerEvents.recipes(event => {
         Item.of('extradelight:diamond_spoon', 1),
         [
             'A  ',
-            ' B ',
+            ' C ',
             '  B'
         ],
         {
             A: 'minecraft:diamond',
-            B: 'minecraft:stick'
+            B: 'minecraft:stick',
+            C: '#minecraft:planks'
         }
     )
 
@@ -1318,12 +1379,13 @@ ServerEvents.recipes(event => {
         Item.of('extradelight:netherite_spoon', 1),
         [
             'A  ',
-            ' B ',
+            ' C ',
             '  B'
         ],
         {
             A: 'minecraft:netherite_ingot',
-            B: 'minecraft:stick'
+            B: 'minecraft:stick',
+            C: '#minecraft:planks'
         }
     )
 
@@ -1541,4 +1603,19 @@ ServerEvents.recipes(event => {
             D: 'minecraft:redstone'
         }
     )
+
+    event.shaped(
+        Item.of('productivelib:upgrade_time', 1),
+        [
+            ' B ',
+            'BAB',
+            ' B '
+        ],
+        {
+            A: 'productivelib:upgrade_base',
+            B: 'minecraft:clock',
+        }
+    )
+
+
 })

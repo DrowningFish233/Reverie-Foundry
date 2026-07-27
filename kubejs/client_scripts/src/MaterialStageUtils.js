@@ -1,9 +1,11 @@
-// 材料阶段配置：按阶段分组
+// 材料阶段配置
 const materialStages = {
     stage1: {
         color: "green",
         translationKey: "tooltip.material.stage.1",
         items: [
+            'netherexp:banshee_rod',
+            'netherexp:wisp_bottle',
             'createaddition:copper_wire',
             'createaddition:iron_wire',
             'createaddition:gold_wire',
@@ -90,8 +92,6 @@ const materialStages = {
             'refinedstorage:quartz_enriched_copper',
             'kubejs:spinel',
             'malum:strange_crystal',
-            'eternal_starlight:starfire',
-            'enderscape:shadoline_ingot',
             'eternal_starlight:brown_yeti_fur',
             'alltheores:peridot',
             'alltheores:invar_ingot',
@@ -164,7 +164,62 @@ const materialStages = {
             'alltheores:uranium_ingot',
             'alltheores:iridium_ingot',
             'malum:raw_brilliance',
-            'kubejs:ametrine'
+            'kubejs:ametrine',
+            'kubejs:moonpools',
+            'silentgear:rough_rod',
+            'kubejs:acril_plate',
+            'kubejs:aluminum_plate',
+            'kubejs:brass_plate',
+            'kubejs:bronze_plate',
+            'kubejs:electrum_plate',
+            'kubejs:europium_plate',
+            'kubejs:frigidite_plate',
+            'kubejs:invar_plate',
+            'kubejs:lead_plate',
+            'kubejs:nickel_plate',
+            'kubejs:nlatstone_plate',
+            'kubejs:osmium_plate',
+            'kubejs:palladium_plate',
+            'kubejs:platinum_plate',
+            'kubejs:scandium_plate',
+            'kubejs:silicon_plate',
+            'kubejs:silver_plate',
+            'kubejs:steel_plate',
+            'kubejs:tellurium_plate',
+            'kubejs:thorium_plate',
+            'kubejs:thulium_plate',
+            'kubejs:tin_plate',
+            'kubejs:tungsten_plate',
+            'kubejs:uranium_plate',
+            'kubejs:yttrium_plate',
+            'kubejs:zinc_plate',
+            'kubejs:zirconium_plate',
+            'kubejs:acril_wire',
+            'kubejs:brass_wire',
+            'kubejs:bronze_wire',
+            'kubejs:electrum_wire',
+            'kubejs:europium_wire',
+            'kubejs:frigidite_wire',
+            'kubejs:invar_wire',
+            'kubejs:lead_wire',
+            'kubejs:nickel_wire',
+            'kubejs:nlatstone_wire',
+            'kubejs:osmium_wire',
+            'kubejs:palladium_wire',
+            'kubejs:platinum_wire',
+            'kubejs:scandium_wire',
+            'kubejs:silicon_wire',
+            'kubejs:silver_wire',
+            'kubejs:steel_wire',
+            'kubejs:tellurium_wire',
+            'kubejs:thorium_wire',
+            'kubejs:thulium_wire',
+            'kubejs:tin_wire',
+            'kubejs:tungsten_wire',
+            'kubejs:uranium_wire',
+            'kubejs:yttrium_wire',
+            'kubejs:zinc_wire',
+            'kubejs:zirconium_wire'
         ]
     },
     stage2: {
@@ -199,7 +254,6 @@ const materialStages = {
             'kubejs:zirconium_ingot',
             'irons_spellbooks:hogskin',
             'irons_spellbooks:bloody_vellum',
-            'eternal_starlight:thioquartz_shard',
             'eternal_starlight:aethersent_ingot',
             'eternal_starlight:thermal_springstone_ingot',
             'eternal_starlight:starlit_diamond',
@@ -245,14 +299,7 @@ const materialStages = {
             'hazennstuff:demonite_ingot',
             'malum:refined_brilliance',
             'malum:blazing_quartz',
-            'malum:hallowed_gold_ingot'
-        ]
-    },
-    stage3: {
-        color: "red",
-        translationKey: "tooltip.material.stage.3",
-        items: [
-            'kubejs:isovol_ingot',
+            'malum:hallowed_gold_ingot',
             'iceandfire:dragonbone',
             '#iceandfire:scales/dragon',
             '#iceandfire:dragon_bloods',
@@ -261,8 +308,44 @@ const materialStages = {
             'iceandfire:dragonsteel_lightning_ingot',
             'allthemodium:vibranium_ingot',
             'aquaculture:neptunium_ingot',
-            'cataclysm:witherite_ingot',
             'cataclysm:ancient_metal_ingot',
+            'eternal_starlight:starfire',
+            'kubejs:adamanite_plate',
+            'kubejs:celeslar_plate',
+            'kubejs:chalyblux_plate',
+            'kubejs:cobalt_plate',
+            'kubejs:cosmos_aurora_plate',
+            'kubejs:dark_cryopla_plate',
+            'kubejs:estalt_plate',
+            'kubejs:rhodium_plate',
+            'kubejs:solimrith_plate',
+            'kubejs:starlight_mythril_plate',
+            'kubejs:titanium_plate',
+            'kubejs:void_plate',
+            'kubejs:xeproda_plate',
+            'kubejs:zapolgium_plate',
+            'kubejs:boron_wire',
+            'kubejs:celeslar_wire',
+            'kubejs:chalyblux_wire',
+            'kubejs:cosmos_aurora_wire',
+            'kubejs:dark_cryopla_wire',
+            'kubejs:estalt_wire',
+            'kubejs:rhodium_wire',
+            'kubejs:solimrith_wire',
+            'kubejs:starlight_mythril_wire',
+            'kubejs:titanium_wire',
+            'kubejs:void_wire',
+            'kubejs:xeproda_wire',
+            'kubejs:zapolgium_wire'
+
+        ]
+    },
+    stage3: {
+        color: "red",
+        translationKey: "tooltip.material.stage.3",
+        items: [
+            'kubejs:isovol_ingot',
+            'cataclysm:witherite_ingot',
             'cataclysm:lacrima',
             'cataclysm:ignitium_ingot',
             'cataclysm:cursium_ingot',
@@ -288,7 +371,19 @@ const materialStages = {
             'irons_spellbooks:mithril_weave',
             'irons_spellbooks:pyrium_ingot',
             'malum:malignant_pewter_ingot',
-            'malum:malignant_pewter_plating'
+            'malum:malignant_pewter_plating',
+            'kubejs:echo_plate',
+            'kubejs:lunium_nova_plate',
+            'kubejs:plumbumanite_plate',
+            'kubejs:thlanium_plate',
+            'kubejs:vibranite_plate',
+            'kubejs:viculeam_plate',
+            'kubejs:echo_wire',
+            'kubejs:lunium_nova_wire',
+            'kubejs:plumbumanite_wire',
+            'kubejs:thlanium_wire',
+            'kubejs:vibranite_wire',
+            'kubejs:viculeam_wire'
         ]
     },
     stage4: {
@@ -298,31 +393,43 @@ const materialStages = {
             'allthemodium:unobtainium_ingot',
             'gobber2:gobber2_ingot_end',
             'kubejs:glimmering_golden_amber',
-            'kubejs:scoria_ingot',
-            'kubejs:frigid_ingot',
-            'kubejs:perennial_ingot',
-            'kubejs:uelibloom_ingot',
-            'kubejs:life_alloy',
-            'kubejs:abiding_alloy_ingot',
             'kubejs:midnight_abyssal_ingot',
             'kubejs:mythril_ingot',
             'kubejs:stellar_ingot',
             'kubejs:vorant_ingot',
             'kubejs:xelkive_ingot',
-            'hazennstuff:cosmic_gold_ingot',
-            'irons_spellbooks:dragonskin'
+            'irons_spellbooks:dragonskin',
+            'kubejs:midnight_abyssal_plate',
+            'kubejs:mythril_plate',
+            'kubejs:stellar_plate',
+            'kubejs:xelkive_plate',
+            'kubejs:midnight_abyssal_wire',
+            'kubejs:mythril_wire',
+            'kubejs:stellar_wire',
+            'kubejs:xelkive_wire'
         ]
     },
     stage5: {
         color: "gold",
         translationKey: "tooltip.material.stage.5",
         items: [
-            'kubejs:moonpools',
-
+            'kubejs:abiding_alloy_ingot',
+            'kubejs:abiding_alloy_plate'
+        ]
+    },
+    stage_unknown: {
+        color: "gray",
+        translationKey: "tooltip.material.stage.unknown",
+        items: [
+            'kubejs:scoria_ingot',
+            'kubejs:frigid_ingot',
+            'kubejs:perennial_ingot',
+            'kubejs:uelibloom_ingot',
+            'kubejs:life_alloy',
+            'hazennstuff:cosmic_gold_ingot'
         ]
     }
 };
-
 
 
 ItemEvents.modifyTooltips((event) => {

@@ -25,9 +25,9 @@
         "silentgear:main": {
             "armor": 28.0,
             "armor/boots": 5.0,
-            "armor/chestplate": 12.0,
-            "armor/helmet": 6.0,
-            "armor/leggings": 5.0,
+            "armor/chestplate": 11.5,
+            "armor/helmet": 5.0,
+            "armor/leggings": 6.5,
             "armor_durability": 17.0,
             "armor_toughness": 10.0,
             "attack_damage": 2.0,

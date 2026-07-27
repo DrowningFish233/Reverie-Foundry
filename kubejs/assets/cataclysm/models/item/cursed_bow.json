@@ -1,0 +1,18 @@
+{
+    "parent": "minecraft:item/handheld",
+    "loader": "neoforge:separate_transforms",
+    "textures": {
+      "layer0": "cataclysm:item/cursed_bow_gui"
+    },
+    "base": {
+      "parent": "cataclysm:item/cursed_bow_hendheld"
+    },
+    "perspectives": {
+      "gui": {
+        "parent": "cataclysm:item/cursed_bow_gui"
+      },
+      "fixed": {
+        "parent": "cataclysm:item/cursed_bow_gui"
+      }
+    }
+  }

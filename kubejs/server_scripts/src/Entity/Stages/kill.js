@@ -9,6 +9,13 @@ const BOSS_STAGES = [
         ]
     },
     {
+        boss: "terra_entity:skeletron",
+        stage: "first_kill_skeletron",
+        messages: [
+            { text: "first_kill_skeletron.message.a", color: "#cfffff" },
+        ]
+    },
+    {
         boss: "irons_spellbooks:fire_boss",
         stage: "first_kill_fire_boss",
         messages: [
@@ -20,13 +27,6 @@ const BOSS_STAGES = [
         stage: "first_kill_ender_guardian",
         messages: [
             { text: "first_kill_ender_guardian.message.a", color: "#1ae8ff" },
-        ]
-    },
-    {
-        boss: "terra_entity:skeletron",
-        stage: "first_kill_skeletron",
-        messages: [
-            { text: "first_kill_skeletron.message.a", color: "#cfffff" },
         ]
     }
 ];

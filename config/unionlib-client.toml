@@ -5,7 +5,7 @@
 	#-------------------------------------------
 	#Default: true
 	#-------------------------------------------
-	"Boolean: Show Cosmetic Button" = true
+	"Boolean: Show Cosmetic Button" = false
 	#
 	############################################
 	#Enable this to show the unionlib config button in the main menu and pause screen

@@ -1,4 +1,66 @@
 ServerEvents.recipes(event => {
+
+    event.shapeless(
+        Item.of('reveriefoundry:pump_charge_shotgun_blueprint', 1),
+        [
+            'silentgear:blueprint_paper',
+            'netherexp:pump_charge_shotgun',
+            'gobber2:gobber2_ingot'
+        ]
+    );
+    event.shapeless(
+        Item.of('reveriefoundry:super_bone_meal', 1),
+        [
+            '4x minecraft:bone_meal',
+            'netherexp:sorroweed'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('netherexp:treacherous_flame', 1),
+        [
+            'malum:ether',
+            '4x netherexp:banshee_powder'
+        ]
+    );
+    event.shapeless(
+        Item.of('netherexp:shotgun_core', 1),
+        [
+            'minecraft:nether_star',
+            '4x netherexp:wisp_bottle',
+            '2x netherexp:wraithing_flesh'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('kubejs:random_accessory_pouch', 1),
+        [
+            '#kubejs:accessories',
+            '#kubejs:accessories',
+            '#kubejs:accessories'
+        ]
+    );
+    event.shapeless(
+        Item.of('irons_spellbooks:fire_ale', 1),
+        [
+            'kubejs:unholy_essence',
+            'minecraft:potion[potion_contents={potion:"minecraft:water"}]'
+        ]
+    );
+    event.shapeless(
+        Item.of('minecraft:gunpowder', 2),
+        [
+            '3x alltheores:sulfur'
+        ]
+    )
+
+    event.shapeless(
+        Item.of('kubejs:remove_armor', 1),
+        [
+            'minecraft:potion[potion_contents={potion:"minecraft:water"}]',
+            'malum:runic_sapball'
+        ]
+    )
     event.shapeless(
         Item.of('hazennstuff:deus_essence', 1),
         [
@@ -450,7 +512,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('reveriefoundry:annihilator_blueprint', 1),
         [
-            'cataclysm:gauntlet_of_guard',
+            'cataclysm:the_annihilator',
             'silentgear:blueprint_paper',
             'kubejs:viculeam_ingot'
         ]
@@ -696,6 +758,7 @@ ServerEvents.recipes(event => {
             'minecraft:netherite_sword'
         ]
     )
+
 })
 
 

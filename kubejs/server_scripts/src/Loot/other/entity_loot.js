@@ -10,25 +10,6 @@ LootJS.modifiers(event => {
         .randomChance(0.5)
         .when(c => c.matchMainHand(ItemFilter.hasEnchantment("minecraft:looting")))
     );
-    /*
-    event.addEntityModifier([
-        "minecraft:zombie",
-        "minecraft:zombie_villager",
-        "minecraft:husk",
-        "minecraft:drowned",
-        "minecraft:skeleton",
-        "minecraft:stray",
-        "minecraft:wither_skeleton",
-        "minecraft:phantom",
-        "minecraft:wither",
-        "minecraft:zoglin",
-        "minecraft:skeleton_horse",
-        "minecraft:zombie_horse"
-    ]).addLoot(LootEntry.of("kubejs:corruption")
-        .randomChance(0.5)
-        .when(c => c.matchMainHand(ItemFilter.hasEnchantment("minecraft:looting")))
-    );
-*/
     event.addEntityModifier([
         "minecraft:pillager",
         "minecraft:witch",
@@ -254,13 +235,7 @@ LootJS.modifiers(event => {
             item.setCount({ min: 2, max: 5 })
         })
     );
-    event.addEntityModifier([
-        "terra_entity:ghost"
-    ]).addLoot(LootEntry.of('kubejs:plumbumanite_ingot')
-        .apply(item => {
-            item.setCount({ min: 0, max: 3 })
-        })
-    );
+
     event.addEntityModifier([
         "terra_entity:king_slime"
     ]).addLoot(LootEntry.of('gobber2:gobber2_goo')
@@ -475,6 +450,18 @@ LootJS.modifiers(event => {
     );
 
 
+    event.addEntityModifier([
+        "minecraft:piglin",
+        "minecraft:piglin_brute",
+        "minecraft:hoglin"
+
+    ]).addLoot(LootEntry.of('irons_spellbooks:hogskin')
+        .apply(item => {
+            item.setCount({ min: 1, max: 2 });
+        })
+        .randomChance(0.4)
+    );
+
 
     event.addEntityModifier([
         "eternal_starlight:luminofish"
@@ -493,6 +480,16 @@ LootJS.modifiers(event => {
         })
     );
 
+    event.addEntityModifier([
+        "irons_spellbooks:fire_boss",
+
+    ]).addLoot(LootEntry.of('kubejs:catalyst_t5')
+        .apply(item => {
+            item.setCount({ min: 3, max: 9 });
+        })
+        .randomChance(0.75)
+    );
+
 
 });
 
@@ -500,6 +497,11 @@ LootJS.modifiers(event => {
 
 
 LootJS.lootTables(event => {
+    event.getLootTable("alshanex_familiars:chests/origin_island/workshop/scrolls").removeItem('hazennstuff:shadow_scale')
+    event.getLootTable("alshanex_familiars:chests/origin_island/workshop/random").removeItem('hazennstuff:shadow_scale')
+    event.getLootTable("irons_spellbooks:chests/component_storage").removeItem('hazennstuff:shadow_scale')
+    event.getLootTable("hazennstuff:entities/additional_loot/additional_phantom_loot").removeItem('hazennstuff:shadow_scale')
+
     event.getLootTable("terra_entity:entities/spore_skeleton").removeItem("terra_entity:skeletron_spawn_egg")
     event.getLootTable("terra_entity:entities/spore_skeleton").firstPool()
         .addEntry(LootEntry.of('hazennstuff:glowing_mushroom').withWeight(15).setCount([0, 2]))
@@ -622,3 +624,4 @@ LootJS.modifiers(event => {
         )
     );
 });
+

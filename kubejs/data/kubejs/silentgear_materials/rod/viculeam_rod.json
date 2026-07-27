@@ -22,17 +22,21 @@
     },
     "properties": {
         "silentgear:rod": {
-            "attack_damage": {
-                "operation": "MULTIPLY_TOTAL",
-                "value": 0.1
-            },
             "harvest_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.2
             },
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.35
+            },
             "ranged_damage": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": 0.1
+            },
+            "magic_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.2
             },
             "traits": [
                 {

@@ -3,7 +3,7 @@
   "dragonType": "ice",
   "cookTime": 500,
   "input": {
-    "item": "allthemodium:allthemodium_ingot"
+    "item": "kubejs:viculeam_ingot"
   },
   "blood": {
     "item": "iceandfire:ice_dragon_blood"

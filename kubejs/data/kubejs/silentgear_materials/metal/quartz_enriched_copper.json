@@ -29,7 +29,7 @@
             "armor/helmet": 2.0,
             "armor/leggings": 2.0,
             "armor_durability": 8.0,
-            "attack_damage": 2.0,
+            "attack_damage": 3.0,
             "attack_speed": 0.1,
             "charging_value": 1.0,
             "draw_speed": 0.1,

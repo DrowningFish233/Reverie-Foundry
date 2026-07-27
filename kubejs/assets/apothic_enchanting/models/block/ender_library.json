@@ -1,0 +1,11 @@
+{
+	"credit": "chaotix shenanigans lolololol",
+	"parent": "apothic_enchanting:block/library",
+	"textures": {
+		"0": "apothic_enchanting:blocks/ender_library/side",
+		"1": "apothic_enchanting:blocks/ender_library/top",
+		"2": "apothic_enchanting:blocks/ender_library/side2",
+		"3": "apothic_enchanting:blocks/ender_library/bottom",
+		"particle": "apothic_enchanting:blocks/ender_library/side2"
+	}
+}

@@ -1,0 +1,53 @@
+{
+    "conditions": [],
+    "description": {
+        "translate": "trait.kubejs.wisp_guardian.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:wielder_effect",
+            "potion_effects": {
+                "silentgear:armor": [
+                    {
+                        "type": "full_set_only",
+                        "duration": 38,
+                        "effect": "reveriefoundry:wisp_guardian",
+                        "levels": [
+                            1,
+                            2,
+                            3
+                        ]
+                    }
+                ],
+                "silentgear:tool": [
+                    {
+                        "type": "trait_level",
+                        "duration": 38,
+                        "effect": "reveriefoundry:wisp_guardian",
+                        "levels": [
+                            1,
+                            2,
+                            3
+                        ]
+                    }
+                ],
+                "silentgear:curio": [
+                    {
+                        "type": "trait_level",
+                        "duration": 38,
+                        "effect": "reveriefoundry:wisp_guardian",
+                        "levels": [
+                            1,
+                            2,
+                            3
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "max_level": 3,
+    "name": {
+        "translate": "trait.kubejs.wisp_guardian"
+    }
+}

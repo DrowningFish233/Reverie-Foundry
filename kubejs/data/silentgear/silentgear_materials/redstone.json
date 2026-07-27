@@ -55,7 +55,7 @@
         "value": 0.3
       },
       "harvest_speed": {
-        "operation": "MULTIPLY_TOTAL",
+        "operation": "MULTIPLY_BASE",
         "value": 0.2
       },
       "ranged_damage": {

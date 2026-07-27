@@ -1,3 +1,4 @@
+// priority: 999
 // 更新玩家生命值
 function updateHealth(player) {
     const pData = player.persistentData;

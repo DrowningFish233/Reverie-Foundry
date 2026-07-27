@@ -9,5 +9,5 @@ function moscow_mule_effect(event) {
         return;
     }
 
-    new_damage(event, STAGE.ADDITIVE, 0.09);
+    new_damage(event, STAGE.ADDITIVE, 1.09);
 }

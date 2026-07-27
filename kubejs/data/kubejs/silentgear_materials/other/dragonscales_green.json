@@ -24,18 +24,18 @@
 	"properties": {
 		"silentgear:main": {
 			"armor": 26,
-			"armor/helmet": 5,
-			"armor/chestplate": 9,
-			"armor/leggings": 7,
-			"armor/boots": 5,
+			"armor/helmet": 4.5,
+			"armor/chestplate": 10.5,
+			"armor/leggings": 6.5,
+			"armor/boots": 4.5,
 			"armor_toughness": 8,
 			"armor_durability": 100,
 			"durability": 1000,
 			"harvest_speed": 0.9,
 			"ranged_damage": 0.5,
 			"repair_value": 1,
-			"attack_damage": 8,
-			"attack_speed": 1.6,
+			"attack_damage": 10,
+			"attack_speed": 0.3,
 			"spell_resist": 0.1,
 			"traits": [
 				{
@@ -60,7 +60,7 @@
 				"value": 1
 			},
 			"durability": {
-				"operation": "MULTIPLY_TOTAL",
+				"operation": "MULTIPLY_BASE",
 				"value": 0.25
 			},
 			"knockback_resistance": {
@@ -95,7 +95,7 @@
 		"silentgear:coating": {
 			"attack_damage": {
 				"operation": "MULTIPLY_BASE",
-				"value": 0.2
+				"value": 0.15
 			},
 			"attack_speed": {
 				"operation": "MULTIPLY_BASE",

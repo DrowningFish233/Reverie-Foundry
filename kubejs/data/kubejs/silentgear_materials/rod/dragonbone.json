@@ -27,8 +27,8 @@
                 "value": 0.25
             },
             "attack_speed": {
-                "operation": "MULTIPLY_TOTAL",
-                "value": -0.25
+                "operation": "MULTIPLY_BASE",
+                "value": -0.1
             },
             "ranged_damage": {
                 "operation": "MULTIPLY_BASE",
@@ -43,7 +43,7 @@
                 "value": 0.2
             },
             "draw_speed": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.35
             },
             "magic_armor": {
@@ -51,7 +51,7 @@
                 "value": 0.15
             },
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.15
             },
             "rarity": {

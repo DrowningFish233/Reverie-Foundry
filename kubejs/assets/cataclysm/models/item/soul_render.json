@@ -1,0 +1,24 @@
+ {
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+
+  "base": {
+    "parent": "cataclysm:item/soul_render_handheld"
+  },
+
+  "perspectives": {
+    "gui": {
+      "parent": "cataclysm:item/soul_render_gui"
+    },
+    "fixed": {
+      "parent": "cataclysm:item/soul_render_gui"
+    }
+  },
+
+  "overrides": [
+    {
+      "predicate": { "blocking": 1 },
+      "model": "cataclysm:item/soul_render_blocking"
+    }
+  ]
+}

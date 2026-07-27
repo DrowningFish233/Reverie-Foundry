@@ -6,65 +6,15 @@
 	group: "7F00D0D8C7C916A0"
 	hide_quest_until_deps_visible: true
 	id: "44E1ED5935A6147B"
-	images: [
-		{
-			height: 30.0d
-			image: "kubejs:textures/gui/sms0.png"
-			rotation: 0.0d
-			width: 30.0d
-			x: 0.5d
-			y: -3.0d
-		}
-		{
-			height: 30.0d
-			image: "kubejs:textures/gui/sms0.png"
-			rotation: 0.0d
-			width: 30.0d
-			x: -25.0d
-			y: -3.0d
-		}
-		{
-			height: 30.0d
-			image: "kubejs:textures/gui/sms0.png"
-			rotation: 0.0d
-			width: 30.0d
-			x: 26.0d
-			y: -3.0d
-		}
-		{
-			height: 30.0d
-			image: "kubejs:textures/gui/sms0.png"
-			rotation: 0.0d
-			width: 30.0d
-			x: 0.5d
-			y: -28.5d
-		}
-		{
-			height: 30.0d
-			image: "kubejs:textures/gui/sms0.png"
-			rotation: 0.0d
-			width: 30.0d
-			x: 26.0d
-			y: -28.5d
-		}
-		{
-			height: 30.0d
-			image: "kubejs:textures/gui/sms0.png"
-			rotation: 0.0d
-			width: 30.0d
-			x: -25.0d
-			y: -28.5d
-		}
-		{
-			height: 3.0d
-			image: "eternal_starlight:textures/gui/jei/alloy_furnace/cooling_progress.png"
-			rotation: 0.0d
-			width: 3.0d
-			x: 0.0d
-			y: -15.0d
-		}
-	]
-	order_index: 1
+	images: [{
+		height: 3.0d
+		image: "eternal_starlight:textures/gui/jei/alloy_furnace/cooling_progress.png"
+		rotation: 0.0d
+		width: 3.0d
+		x: 0.0d
+		y: -15.0d
+	}]
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{

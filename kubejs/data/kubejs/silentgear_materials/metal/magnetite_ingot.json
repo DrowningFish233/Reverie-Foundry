@@ -25,10 +25,10 @@
     "silentgear:main": {
       "armor": 15.0,
       "armor_toughness": 4,
-      "armor/boots": 2.0,
+      "armor/boots": 2.5,
       "armor/chestplate": 6.0,
-      "armor/helmet": 2.0,
-      "armor/leggings": 5.0,
+      "armor/helmet": 2.5,
+      "armor/leggings": 4.0,
       "armor_durability": 21.0,
       "attack_damage": 4.5,
       "attack_speed": -0.2,
@@ -38,7 +38,7 @@
       "draw_speed": -0.2,
       "durability": 550.0,
       "enchantment_value": 8.0,
-      "harvest_speed": 6.0,
+      "harvest_speed": 9.0,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
         "level_hint": "2",

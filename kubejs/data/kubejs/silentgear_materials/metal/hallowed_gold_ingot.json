@@ -24,11 +24,11 @@
     "properties": {
         "silentgear:coating": {
             "armor_durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.1
             },
             "durability": {
-                "operation": "MULTIPLY_TOTAL",
+                "operation": "MULTIPLY_BASE",
                 "value": -0.1
             },
             "rarity": {
@@ -59,11 +59,11 @@
             ]
         },
         "silentgear:main": {
-            "armor": 13,
-            "armor/boots": 1.5,
-            "armor/chestplate": 5.5,
-            "armor/helmet": 2.5,
-            "armor/leggings": 3.5,
+            "armor": 16.0,
+            "armor/boots": 3.5,
+            "armor/chestplate": 6.0,
+            "armor/helmet": 3.5,
+            "armor/leggings": 3.0,
             "armor_durability": 7.0,
             "attack_damage": 0.0,
             "attack_speed": 0.0,

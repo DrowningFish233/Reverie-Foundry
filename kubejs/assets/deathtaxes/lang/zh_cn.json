@@ -1,0 +1,12 @@
+{
+  "item.deathtaxes.scavenger_spawn_egg": "拾荒者刷怪蛋",
+  "entity.deathtaxes.scavenger": "拾荒者村民",
+  "subtitles.deathtaxes.entity.scavenger.ambient": "拾荒者：喃喃自语",
+  "subtitles.deathtaxes.entity.scavenger.death": "拾荒者：死亡",
+  "subtitles.deathtaxes.entity.scavenger.hurt": "拾荒者：受伤",
+  "subtitles.deathtaxes.entity.scavenger.yes": "拾荒者：同意",
+  "subtitles.deathtaxes.entity.scavenger.no": "拾荒者：不同意",
+  "subtitles.deathtaxes.entity.scavenger.trade": "拾荒者：交易",
+  "subtitles.deathtaxes.misc.teleport": "某物：传送",
+  "subtitles.deathtaxes.misc.flies": "苍蝇：嗡嗡"
+}

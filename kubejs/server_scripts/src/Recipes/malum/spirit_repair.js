@@ -62,15 +62,710 @@ ServerEvents.recipes(event => {
     function registerCustomRecipe(recipeModel) {
         event.custom(recipeModel);
     }
-    const SpiritRepairRecipe = new SpiritRepairRecipeJSON()
     // 精魂修复配方
+
     registerCustomRecipe(
-        SpiritRepairRecipe
-            .setRepairMaterial("minecraft:iron_ingot", 2)
-            .addSpirit("infernal", 2)
-            .addSpirit("earthen", 8)
-            .setDurabilityPercentage(0.5)
-            .addValidItem("minecraft:mace")
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('malum:living_flesh', 1)
+            .addSpirit("wicked", 2)
+            .addSpirit("sacred", 2)
+            .addSpirit("arcane", 2)
+            .addSpirit("eldritch", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:whip')
     );
 
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('malum:living_flesh', 1)
+            .addSpirit("wicked", 2)
+            .addSpirit("sacred", 2)
+            .addSpirit("arcane", 2)
+            .addSpirit("eldritch", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:boomerang')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('malum:living_flesh', 1)
+            .addSpirit("wicked", 2)
+            .addSpirit("sacred", 2)
+            .addSpirit("arcane", 2)
+            .addSpirit("eldritch", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:yoyos')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('malum:living_flesh', 1)
+            .addSpirit("wicked", 2)
+            .addSpirit("sacred", 2)
+            .addSpirit("arcane", 2)
+            .addSpirit("eldritch", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:pump_charge_shotgun')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('malum:living_flesh', 1)
+            .addSpirit("wicked", 2)
+            .addSpirit("sacred", 2)
+            .addSpirit("arcane", 2)
+            .addSpirit("eldritch", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:sundering_anchor')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('malum:living_flesh', 1)
+            .addSpirit("wicked", 2)
+            .addSpirit("sacred", 2)
+            .addSpirit("arcane", 2)
+            .addSpirit("eldritch", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:sundering_anchor')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("infernal", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:flamberge')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:furioso')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:cane')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:weight_of_worlds')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:unwinding_chaos_staff')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:hex_staff')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:tyrving')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:tidal_claws')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:greatsword')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:lightning_spike')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:tiansha_star_blade')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:wide_excavator')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:astrape')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:ceraunus')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:autoloader_crossbow')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:brontes')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:ancient_spear')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:incinerator')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:meat_shredder')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:annihilator')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:flame_bulwark')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:scythe')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:robe_boots')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:robe_leggings')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:robe_chestplate')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:robe_helmet')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:heavy_boots')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:heavy_leggings')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:heavy_chestplate')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:heavy_helmet')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:spellbook')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:staff')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:soul_spear')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('reveriefoundry:infernal_forge')
+    );
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:sword')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:katana')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:machete')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:knife')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:dagger')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:spear')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:trident')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:mace')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:shield')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:bow')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:crossbow')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:slingshot')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:pickaxe')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:shovel')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:axe')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:paxel')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:hammer')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:excavator')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:saw')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:prospector_hammer')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:mattock')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:hoe')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:sickle')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:shears')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:fishing_rod')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:helmet')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:leggings')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:chestplate')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:boots')
+    );
+
+    registerCustomRecipe(
+        new SpiritRepairRecipeJSON()
+            .setRepairMaterial('irons_spellbooks:arcane_essence', 8)
+            .addSpirit("aqueous", 2)
+            .addSpirit("earthen", 2)
+            .addSpirit("sacred", 2)
+            .setDurabilityPercentage(0.3)
+            .addValidItem('silentgear:elytra')
+    );
 })

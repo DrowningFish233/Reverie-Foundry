@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:rainbow_eucalyptus_sign"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:item_ability",
+    "action": "axe_dig"
+  },
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "biomeswevegone:rainbow_eucalyptus_planks"
+      }
+    }
+  ]
+}
