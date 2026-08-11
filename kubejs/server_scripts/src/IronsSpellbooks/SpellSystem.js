@@ -158,10 +158,12 @@ function replaySpellCast(resourceLocation, amplifier, player, consume) {
         .attemptInitiateCast(Item.of('air'), amplifier, player.level, player, $CastSource.NONE, consume, "main_hand");
 }
 
-// 跨学派加成检测
+
+/*
 ISSEvents.spellOnCast(event => {
     applyCrossSchoolLevelBonus(event, false)
 })
+*/
 
 
 // 等级+2的检测

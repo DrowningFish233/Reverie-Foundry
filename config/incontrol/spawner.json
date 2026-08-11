@@ -82,54 +82,6 @@
     },
     {
         "mob": [
-            "endermanoverhaul:warped_forest_enderman"
-        ],
-        "persecond": 0.2,
-        "attempts": 3,
-        "amount": {
-            "minimum": 2,
-            "maximum": 3
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 6,
-            "and": {
-                "biome": [
-                    "minecraft:warped_forest"
-                ]
-            }
-        }
-    },
-    {
-        "mob": [
-            "endermanoverhaul:crimson_forest_enderman"
-        ],
-        "persecond": 0.2,
-        "attempts": 3,
-        "amount": {
-            "minimum": 2,
-            "maximum": 3
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 6,
-            "and": {
-                "biome": [
-                    "minecraft:crimson_forest"
-                ]
-            }
-        }
-    },
-    {
-        "mob": [
             "terra_entity:ghost"
         ],
         "persecond": 0.2,
@@ -148,54 +100,6 @@
             "and": {
                 "biome": [
                     "minecraft:soul_sand_valley"
-                ]
-            }
-        }
-    },
-    {
-        "mob": [
-            "endermanoverhaul:flower_fields_enderman"
-        ],
-        "persecond": 0.2,
-        "attempts": 3,
-        "amount": {
-            "minimum": 2,
-            "maximum": 3
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 6,
-            "and": {
-                "biome": [
-                    "minecraft:flower_forest"
-                ]
-            }
-        }
-    },
-    {
-        "mob": [
-            "endermanoverhaul:nether_wastes_enderman"
-        ],
-        "persecond": 0.2,
-        "attempts": 3,
-        "amount": {
-            "minimum": 2,
-            "maximum": 3
-        },
-        "conditions": {
-            "dimension": "minecraft:the_nether",
-            "mindist": 24,
-            "maxdist": 64,
-            "minheight": 1,
-            "maxheight": 256,
-            "maxthis": 6,
-            "and": {
-                "biome": [
-                    "minecraft:nether_wastes"
                 ]
             }
         }

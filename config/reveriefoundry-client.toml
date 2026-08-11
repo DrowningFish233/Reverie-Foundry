@@ -138,16 +138,6 @@
 		#Enable dynamic calculation of rows based on available space (if false, uses fixedMaxRows)
 		enableDynamicRowCalculation = true
 
-#Sodium Leaf Culling Settings
-[leaf_culling]
-	#Controls how aggressively leaf blocks are culled to improve performance.
-	#NONE: No additional culling
-	#HOLLOW: Culls leaves facing other leaves (2-layer check)
-	#SOLID: Only renders leaves on the surface of leaf clusters
-	#SOLID_AGGRESSIVE: Same as SOLID but ignores vertical faces
-	#Allowed Values: NONE, HOLLOW, SOLID, SOLID_AGGRESSIVE
-	leafCullingQuality = "SOLID"
-
 #Loot Finder Settings - Client side configuration
 [loot_locator]
 	#Enable Loot Finder functionality

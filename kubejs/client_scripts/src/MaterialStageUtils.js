@@ -289,7 +289,6 @@ const materialStages = {
             'kubejs:starinium_ingot',
             'kubejs:starlight_mythril_ingot',
             'kubejs:strontium_ingot',
-            'kubejs:unstable_luminescence_ingot',
             'kubejs:void_ingot',
             'kubejs:xeproda_ingot',
             'kubejs:alexandrite',
@@ -336,7 +335,9 @@ const materialStages = {
             'kubejs:titanium_wire',
             'kubejs:void_wire',
             'kubejs:xeproda_wire',
-            'kubejs:zapolgium_wire'
+            'kubejs:zapolgium_wire',
+            'kubejs:lunium_nova_ingot',
+
 
         ]
     },
@@ -344,6 +345,7 @@ const materialStages = {
         color: "red",
         translationKey: "tooltip.material.stage.3",
         items: [
+            'kubejs:unstable_luminescence_ingot',
             'kubejs:isovol_ingot',
             'cataclysm:witherite_ingot',
             'cataclysm:lacrima',
@@ -353,7 +355,6 @@ const materialStages = {
             'kubejs:atalphaite',
             'kubejs:calamatium_ingot',
             'kubejs:echo_ingot',
-            'kubejs:lunium_nova_ingot',
             'kubejs:lustful_haze_alloy',
             'kubejs:luteous_ingot',
             'kubejs:plumbumanite_ingot',

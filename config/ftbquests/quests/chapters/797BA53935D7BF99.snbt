@@ -4,7 +4,11 @@
 	default_quest_shape: ""
 	filename: "797BA53935D7BF99"
 	group: ""
+	icon: {
+		id: "minecraft:cooked_cod"
+	}
 	id: "797BA53935D7BF99"
+	images: [ ]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
@@ -22,7 +26,11 @@
 		}
 		{
 			icon: {
-				id: "minecraft:cat_spawn_egg"
+				components: {
+					"!ftbquests:icon": { }
+					"ftbquests:entity_face": "minecraft:cat"
+				}
+				id: "ftbquests:custom_icon"
 			}
 			id: "4440AB0D70D690ED"
 			tasks: [{

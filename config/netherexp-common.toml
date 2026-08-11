@@ -129,14 +129,18 @@
 	#Normally frogmists can only be broken when other frogmist or a hoe is held in hand 
 	#This config makes it breakable with anything regardless of what's in your hand
 	canAnythingBreakFrogmist = false
-	#Completed treacherous candles will become active again after the specified time in seconds has elapsed
-	# Default: 1800
-	# Range: 0 ~ 86400
-	treacherousCandleCompletionCooldown = 1800
 	#Defines how long a haze block will last after being placed in seconds
 	# Default: 8
 	# Range: > 0
 	hazeBlockCooldown = 8
+	#Completed Cierges of Treachery will become active again after the specified time in seconds has elapsed
+	# Default: 1800
+	# Range: 0 ~ 86400
+	ciergeOfTreacheryCompletionCooldown = 1800
+	#Unlocked brazier chests will extinguish after the specified time in seconds has elapsed and refill their loot
+	# Default: 3600
+	# Range: 0 ~ 86400
+	brazierChestRefillCooldown = 3600
 
 #Item Settings
 [itemSettings]
@@ -444,6 +448,8 @@
 	# Default: 5
 	# Range: > 0
 	maxStampedeStriditeDrops = 5
+	#Magma Cube textures will scale with the model and conform to pixel consistency
+	pixelConsistentMagmaCubes = true
 
 #World Settings
 [worldSettings]
@@ -568,7 +574,7 @@
 	#Adds more dynamic and animated particles to all fire blocks
 	improvedFireParticles = true
 	#Enables new smoke particles for fire
-	fireSmokeParticles = true
+	fireSmokeParticles = false
 	#Enables new ember particles for fire
 	fireEmberParticles = true
 	#Adds slight color variation gradients to lava to break up the repetitive texture in large areas
@@ -590,11 +596,11 @@
 	#Toggle petrification screen shake
 	ectoSlabPetrificationScreenshake = true
 	#Toggles all heat distortion effects in JNE; To disable individual heat distortion effects check the below configs
-	enableHeatDistortion = true
+	enableHeatDistortion = false
 	#Heat distortion is applied to far away objects when in certain biomes such as the nether
 	biomeHeatDistortion = true
 	#A much stronger heat distortion is applied when close to lava source blocks
-	lavaHeatDistortion = true
+	lavaHeatDistortion = false
 	#Intensity of heat distortion wobbling
 	# Default: 0.003
 	# Range: 0.0 ~ 1.7976931348623157E308
@@ -631,7 +637,7 @@
 	#§cWARNING: Lower numbers can increase lag especially when paired with high proximity distances to iterate through
 	# Default: 100
 	# Range: > 0
-	heatDistortionLavaCheckPeriod = 100
+	heatDistortionLavaCheckPeriod = 200
 	#How far the game will check around the player for heat distortion lava sources 
 	#§cWARNING: Increasing the distance can add some latency to performance! as it needs to iterate through all the specified blocks in-range
 	# Default: 2.0
@@ -650,15 +656,15 @@
 	#Adds a particle effect around the player after drinking from a potion or antidote similar to Minecraft Dungeons
 	potionConsumptionParticles = true
 	#Improves the nether portal's particles
-	improvedNetherPortalParticles = true
+	improvedNetherPortalParticles = false
 	#Gives every nether biome a custom lightmap that compliments its environment
 	enableNetherBiomeLightmaps = true
 	#When the betrayed effect is active, it'll turn all lighting red
-	treacherousCandleRedLights = true
+	ciergeOfTreacheryRedLights = true
 	#When the betrayed effect is active, a dense red fog will appear
-	treacherousCandleFog = true
-	#Treacherous Candle will produce red haze and sparkle particles
-	treacherousCandleParticles = true
+	ciergeOfTreacheryFog = true
+	#Cierge of Treachery will produce red haze and sparkle particles
+	ciergeOfTreacheryParticles = true
 
 #Game Mechanic Settings
 [gameMechanicSettings]
@@ -676,8 +682,5 @@
 	silverParanormalProtectionDamage = 5.0
 	#Silver armor and weapons will inflict possessed and ghost mobs with slowness
 	silverInflictsParanormalSlowness = true
-	#Turns on various developer loggers, technical information and such for debugging purposes 
-	#I suggest you keep this disabled if you're just a casual player
-	developerMode = false
 	#Pretty self-explanatory; When running beta builds of JNE, a pop-up will appear on screen warning you upon joining worlds
-	showBetaWarningPopUp = true
+	showBetaWarningPopUp = false

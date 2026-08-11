@@ -1,4 +1,5 @@
 // priority: 10
+
 // 检查生物是否在黑名单中
 function isBlacklisted(entity) {
     return DIFFICULTY_BLACKLIST.includes(entity.getType().toString());
@@ -9,12 +10,16 @@ function needsExtraBuff(entity) {
     return EXTRA_BUFF_ENTITIES.includes(entity.getType().toString());
 }
 
-// 计算合并后的难度倍数
+// 检查是否在强制应用白名单中
+function isForceApplyWhitelisted(entity) {
+    return FORCE_APPLY_WHITELIST && FORCE_APPLY_WHITELIST.includes(entity.getType().toString());
+}
+
+// 合并后的难度倍数
 function calculateCombinedMultipliers(gameDiff, stageDiff, isBlacklisted) {
     let gameMultiplier = GAME_DIFFICULTY_LEVELS[gameDiff];
     let stageBonus = STAGE_DIFFICULTY_BONUS[stageDiff] || STAGE_DIFFICULTY_BONUS['difficult_0'];
 
-    // 如果是黑名单生物，忽略游戏难度加成
     if (isBlacklisted) {
         return {
             health: stageBonus.health,
@@ -56,16 +61,42 @@ function getPlayerHighestStageDifficulty(player) {
     return highestDifficulty;
 }
 
-EntityEvents.checkSpawn(event => {
+function getEntityMarkKey(entity) {
+    return 'difficulty_applied_' + entity.getUUID().toString();
+}
+
+// 检查生物是否已经应用过难度
+function hasDifficultyApplied(entity) {
+    return entity.persistentData.contains('difficulty_applied') &&
+        entity.persistentData.getBoolean('difficulty_applied');
+}
+
+// 标记生物已应用难度
+function markDifficultyApplied(entity) {
+    entity.persistentData.putBoolean('difficulty_applied', true);
+}
+
+EntityEvents.spawned(event => {
     const DEBUG_MODE = false;
 
     let entity = event.entity;
     if (!entity) return;
-    if (!entity.isLiving() || !entity.isMonster()) return;
+
+    // 检查是否在强制应用白名单中
+    let forceApply = isForceApplyWhitelisted(entity);
+
+    // 如果不是强制应用白名单，且不是活的怪物，则跳过
+    if (!forceApply && (!entity.isLiving() || !entity.isMonster())) return;
 
     let player = entity.getLevel().getNearestPlayer(entity, 129);
     if (!player) {
         if (DEBUG_MODE) console.log(`[Debug] ${entity.getType()} - 没有找到附近玩家，跳过`);
+        return;
+    }
+
+    // 检查是否已经应用过难度（使用通用标记）
+    if (hasDifficultyApplied(entity)) {
+        if (DEBUG_MODE) console.log(`[Debug] ${entity.getType()} - 已应用过难度，跳过`);
         return;
     }
 
@@ -82,7 +113,7 @@ EntityEvents.checkSpawn(event => {
         }
         console.log(`[Debug] === 开始处理 ${entity.getType()} ===`);
         console.log(`[Debug] 玩家: ${player.getName().getString()}, 世界难度: ${worldDifficulty}, 阶段: ${highestStageDifficulty}`);
-        console.log(`[Debug] 黑名单: ${blacklisted}, 额外加成: ${extraBuff}`);
+        console.log(`[Debug] 黑名单: ${blacklisted}, 额外加成: ${extraBuff}, 强制应用: ${forceApply}`);
         console.log(`[Debug] 初始血量: ${initialHealth}`);
     }
 
@@ -108,14 +139,8 @@ EntityEvents.checkSpawn(event => {
         console.log(`[Debug] 计算出的倍率 - 生命: ${finalMultipliers.health}, 攻击: ${finalMultipliers.attack}, 护甲: ${finalMultipliers.armor}`);
     }
 
-    let markKey = 'applied_difficulty_' + worldDifficulty + (highestStageDifficulty ? "_" + highestStageDifficulty : "");
-    if (entity.persistentData.contains(markKey)) {
-        if (DEBUG_MODE) console.log(`[Debug] ${entity.getType()} - 已标记 ${markKey}，跳过重复应用`);
-        return;
-    }
-
-    if (DEBUG_MODE) console.log(`[Debug] 标记键: ${markKey}`);
-    entity.persistentData.putString(markKey, 'true');
+    // 立即标记已应用，防止后续重复
+    markDifficultyApplied(entity);
 
     // 应用属性增强
     if (entity.attributes.hasAttribute('minecraft:generic.max_health')) {
@@ -197,25 +222,31 @@ EntityEvents.checkSpawn(event => {
             if (attr) finalHealth = attr.getValue();
         }
         console.log(`[Debug] === 处理完成，最终血量: ${finalHealth} ===`);
-        //debug用ai写太伟大了
     }
 });
 
-
-
-
-
-
-EntityEvents.checkSpawn(event => {
+EntityEvents.spawned(event => {
     const entity = event.entity;
     if (!entity || !entity.isLiving() || !entity.isMonster()) return;
 
     entity.server.scheduleInTicks(2, () => {
         Object.entries(pactToGeasMap).forEach(([pactKey, geasId]) => {
             if (entity.persistentData.contains(pactKey)) {
+                if (fu_hasGeasEffect(entity, geasId)) {
+                    return;
+                }
+
                 let success = fu_addGeasEffect(entity, geasId);
                 if (!success) {
                     console.log(`警告: 无法添加誓令效果 ${geasId}（条约类型: ${pactKey}）`);
+                    console.log(`实体类型: ${entity.getType()}`);
+                    console.log(`是否存活: ${entity.isAlive()}`);
+
+                    const limit = $RFMalumUtils.getGeasLimit(entity);
+                    const current = fu_getGeasEffects(entity).length;
+                    if (current >= limit) {
+                        console.log(`誓约数量已达上限: ${current}/${limit}`);
+                    }
                 }
             }
         })

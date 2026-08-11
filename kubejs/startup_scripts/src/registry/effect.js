@@ -1373,4 +1373,8 @@ event.create('purple_haze_attack')
         )
     event.create('panic')
         .harmful()
+    event.create('hallowed_ingot')
+        .beneficial()
+    event.create('dragon_might')
+        .harmful()
 });

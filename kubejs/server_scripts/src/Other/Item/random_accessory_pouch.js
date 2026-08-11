@@ -2,10 +2,40 @@ ItemEvents.rightClicked('kubejs:random_accessory_pouch', event => {
     let player = event.player
     let item = player.getMainHandItem()
 
-    let level = Math.floor(Math.random() * 4) + 1
-    let tagPath = `kubejs:level_${level}`
+    $RFUtils.giveRandomItemToPlayer(player, 'kubejs:level_1', 1, 1)
 
-    $RFUtils.giveRandomItemToPlayer(player, tagPath, 1, 1)
+    if (!player.isCreative()) {
+        item.count--
+    }
+})
+
+ItemEvents.rightClicked('kubejs:random_accessory_pouch_t2', event => {
+    let player = event.player
+    let item = player.getMainHandItem()
+
+    $RFUtils.giveRandomItemToPlayer(player, 'kubejs:level_2', 1, 1)
+
+    if (!player.isCreative()) {
+        item.count--
+    }
+})
+
+ItemEvents.rightClicked('kubejs:random_accessory_pouch_t3', event => {
+    let player = event.player
+    let item = player.getMainHandItem()
+
+    $RFUtils.giveRandomItemToPlayer(player, 'kubejs:level_3', 1, 1)
+
+    if (!player.isCreative()) {
+        item.count--
+    }
+})
+
+ItemEvents.rightClicked('kubejs:random_accessory_pouch_t4', event => {
+    let player = event.player
+    let item = player.getMainHandItem()
+
+    $RFUtils.giveRandomItemToPlayer(player, 'kubejs:level_4', 1, 1)
 
     if (!player.isCreative()) {
         item.count--

@@ -133,7 +133,7 @@
 		#Effectiveness of gear repairs done in an anvil. Set to 0 to disable anvil repairs.
 		# Default: 0.5
 		# Range: 0.0 ~ 1.0
-		anvil_effectiveness = 0.5
+		anvil_effectiveness = 0.25
 
 	[gear.upgrades]
 		#If true, upgrade parts may only be applied in an anvil.

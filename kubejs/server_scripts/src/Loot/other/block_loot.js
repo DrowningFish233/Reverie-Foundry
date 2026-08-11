@@ -24,7 +24,7 @@ LootJS.modifiers(event => {
     ])
         .addLoot(
             LootEntry.of('kubejs:tourmaline')
-                .randomChance(0.02)
+                .randomChance(0.05)
                 .matchTool(ItemFilter.not(
                     ItemFilter.hasEnchantment("minecraft:silk_touch")
                 ))

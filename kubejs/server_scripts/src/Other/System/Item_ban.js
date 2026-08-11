@@ -1,10 +1,10 @@
 // 禁用物品列表
 let bannedItems = [
-    'allthemodium:teleport_pad',
     'malum:weavers_workbench',
     'malum:esoteric_spool',
     'alltheores:enderium_plate',
     /*
+    'allthemodium:teleport_pad',
     'naraka:soul_infused_redstone_block',
     'naraka:soul_infused_copper_block',
     'naraka:soul_infused_gold_block',
@@ -100,7 +100,6 @@ ServerEvents.recipes(event => {
 
 
 
-// 物品变化监听
 PlayerEvents.inventoryChanged(event => {
     const player = event.player;
     const changedItem = event.item;

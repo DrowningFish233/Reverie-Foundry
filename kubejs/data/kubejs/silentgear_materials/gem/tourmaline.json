@@ -23,14 +23,14 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 40.0,
+      "armor": 35.0,
       "armor/boots": 9.0,
-      "armor/chestplate": 15.0,
+      "armor/chestplate": 10.0,
       "armor/helmet": 9.0,
       "armor/leggings": 7.0,
       "armor_durability": 45.0,
       "armor_toughness": 12.0,
-      "attack_damage": 10.0,
+      "attack_damage": 9.0,
       "attack_speed": 0.1,
       "attack_speed/hoe": 1.2,
       "charging_value": 1.1,
@@ -39,24 +39,29 @@
       "enchantment_value": 140.0,
       "harvest_speed": 12.0,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "silentgear:incorrect_for_allthemodium_tools",
-        "level_hint": "5",
-        "name": "allthemodium"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite/下界合金"
       },
       "knockback_resistance": 0.4,
-      "magic_armor": 28.0,
-      "magic_damage": 3.0,
+      "magic_armor": 22.0,
+      "magic_damage": 4.0,
       "projectile_accuracy": 1.1,
       "projectile_speed": 1.5,
       "spell_slots": 3.0,
       "ranged_damage": 3.0,
-      "rarity": 140.0,
+      "rarity": 110.0,
       "repair_value": 0.4,
       "traits": [
         {
           "conditions": [],
           "level": 1,
           "trait": "silentgear:kitty_vision"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:emerald"
         }
       ]
     },
@@ -66,6 +71,11 @@
           "conditions": [],
           "level": 1,
           "trait": "silentgear:kitty_vision"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:emerald"
         }
       ]
     },
@@ -91,6 +101,11 @@
           "conditions": [],
           "level": 1,
           "trait": "silentgear:kitty_vision"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:emerald"
         }
       ]
     }

@@ -2,6 +2,24 @@
 ServerEvents.recipes((event) => {
     addCreateRecipeHandler(event);
 
+    const crushedToNuggetMap = {
+        'create:crushed_raw_osmium': 'alltheores:osmium_nugget',
+        'create:crushed_raw_platinum': 'alltheores:platinum_nugget',
+        'create:crushed_raw_tin': 'alltheores:tin_nugget',
+        'create:crushed_raw_lead': 'alltheores:lead_nugget',
+        'create:crushed_raw_aluminum': 'alltheores:aluminum_nugget',
+        'create:crushed_raw_uranium': 'alltheores:uranium_nugget',
+        'create:crushed_raw_nickel': 'alltheores:nickel_nugget'
+    }
+
+    Object.entries(crushedToNuggetMap).forEach(([crushedOre, nugget]) => {
+        event.recipes.create.splashing(
+            [`${9}x ${nugget}`],
+            crushedOre
+        )
+    })
+
+
     event.recipes.createMixing(
         "kubejs:plutonium_ingot",
         [
@@ -62,6 +80,7 @@ ServerEvents.recipes((event) => {
         ],
         "create:brass_ingot"
     ).id("high_effort_brass_sheet");
+
     event.recipes.createSequencedAssembly(
         "farmersdelight:organic_compost",
         "farmersdelight:rich_soil",
@@ -95,35 +114,36 @@ ServerEvents.recipes((event) => {
             Fluid.of("water", 250),
         ],
     );
-
-    event.recipes
-        .createSequencedAssembly(
-            [
-                withChance("create:large_cogwheel", 32.0, 6),
-                withChance("create:brass_ingot", 2.0),
-                "minecraft:andesite",
-                "create:cogwheel",
-                "minecraft:stick",
-                "minecraft:iron_nugget",
-            ],
-            "create:brass_ingot",
-            [
-                event.recipes.createDeploying("create:large_cogwheel", [
-                    "create:large_cogwheel",
-                    "#minecraft:planks",
-                ]),
-                event.recipes.createDeploying("create:large_cogwheel", [
-                    "create:large_cogwheel",
-                    "#minecraft:wooden_buttons",
-                ]),
-                event.recipes
-                    .createCutting("create:large_cogwheel", "create:large_cogwheel")
-                    .processingTime(50),
-            ]
-        )
-        .transitionalItem("create:large_cogwheel")
-        .loops(6);
-    event.recipes.create.finalize();
+    /*
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    withChance("create:large_cogwheel", 32.0, 6),
+                    withChance("create:brass_ingot", 2.0),
+                    "minecraft:andesite",
+                    "create:cogwheel",
+                    "minecraft:stick",
+                    "minecraft:iron_nugget",
+                ],
+                "create:brass_ingot",
+                [
+                    event.recipes.createDeploying("create:large_cogwheel", [
+                        "create:large_cogwheel",
+                        "#minecraft:planks",
+                    ]),
+                    event.recipes.createDeploying("create:large_cogwheel", [
+                        "create:large_cogwheel",
+                        "#minecraft:wooden_buttons",
+                    ]),
+                    event.recipes
+                        .createCutting("create:large_cogwheel", "create:large_cogwheel")
+                        .processingTime(50),
+                ]
+            )
+            .transitionalItem("create:large_cogwheel")
+            .loops(6);
+        event.recipes.create.finalize();
+        */
     /*
     // 这必须是事件处理程序的第一行
     addCreateRecipeHandler(event);
@@ -298,8 +318,6 @@ ServerEvents.recipes((event) => {
         )
         .transitionalItem("create:large_cogwheel")
         .loops(6);
-
-    //这必须是事件处理程序的最后一行
-    event.recipes.create.finalize();
     */
+    event.recipes.create.finalize();
 });

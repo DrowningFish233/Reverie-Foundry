@@ -1,6 +1,10 @@
 ServerEvents.recipes(event => {
     //唉，自己写的mod还得自己remove掉配方重写，怎么汇逝
     const items = [
+        'irons_spellbooks:amethyst_rapier',
+        'hazennstuff:hallowed_ingot',
+        'silentgear:bort_block',
+        'natures_spirit:mahogany_mosaic',
         'silentgems:iron_potato',
         'hazennstuff:absolute',
         'hazennstuff:singularity',
@@ -8,7 +12,6 @@ ServerEvents.recipes(event => {
         'hazennstuff:abomination',
         'hazennstuff:strengthened',
         'reveriefoundry:pump_charge_shotgun_blueprint',
-        'irons_spellbooks:amethyst_rapier',
         'productivelib:upgrade_time',
         'productivelib:upgrade_time_2',
         'productivelib:upgrade_stability',
@@ -95,8 +98,11 @@ ServerEvents.recipes(event => {
 
     singleItems.forEach(item => event.remove({ output: item }))
     event.remove({ output: '#alltheores:ore_hammers' })
+    event.remove({ output: 'malum:malignant_pewter_ingot' })
+    event.remove({ output: 'allthemodium:teleport_pad' })
     event.remove({ input: '#alltheores:ore_hammers' })
     event.remove({ id: 'hazennstuff:crafting/materials/deus_essence_from_nether_star' })
+    event.remove({ id: 'jbr:smooth_quartz_from_blasting_quartz' })
     event.remove({ id: 'hazennstuff:crafting/materials/nether_star_fragment' })
     event.remove({ mod: 'productivelib' })
     event.smelting('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)
@@ -138,5 +144,34 @@ ServerEvents.recipes(event => {
         'terra_curio:sorcerer_emblem',
         'kubejs:sorcerer_emblem'
     )
+
+    event.replaceInput(
+        { input: 'minecraft:crafting_table' },
+        'minecraft:crafting_table',
+        '#kubejs:crafting_table'
+    )
+
+
+    const oreToIngotMap = {
+        'alltheores:osmium_ingot': 'create:crushed_raw_osmium',
+        'alltheores:platinum_ingot': 'create:crushed_raw_platinum',
+        'alltheores:tin_ingot': 'create:crushed_raw_tin',
+        'alltheores:lead_ingot': 'create:crushed_raw_lead',
+        'alltheores:aluminum_ingot': 'create:crushed_raw_aluminum',
+        'alltheores:uranium_ingot': 'create:crushed_raw_uranium',
+        'alltheores:nickel_ingot': 'create:crushed_raw_nickel',
+    }
+
+    Object.entries(oreToIngotMap).forEach(([ingot, crushedOre]) => {
+        event.smelting(ingot, crushedOre)
+            .xp(0.7)
+            .cookingTime(200)
+    })
+
+    Object.entries(oreToIngotMap).forEach(([ingot, crushedOre]) => {
+        event.blasting(ingot, crushedOre)
+            .xp(0.35)
+            .cookingTime(100)
+    })
 
 })

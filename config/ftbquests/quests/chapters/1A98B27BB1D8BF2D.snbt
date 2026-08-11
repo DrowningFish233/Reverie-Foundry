@@ -18,6 +18,7 @@
 	id: "1A98B27BB1D8BF2D"
 	images: [{
 		height: 4.0d
+		id: "7B48D34D0A5ECDDB"
 		image: "irons_spellbooks:item/chronicle_old"
 		rotation: 0.0d
 		width: 4.0d

@@ -1,0 +1,71 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"medium",
+			"other",
+			"metal"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "eternal_starlight:unrealium_ingot"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#7f3797",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.eternal_starlight:unrealium_ingot"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:main": {
+			"armor": 20,
+			"armor/helmet": 3,
+			"armor/chestplate": 8,
+			"armor/leggings": 6,
+			"armor/boots": 3,
+			"armor_toughness": 2,
+			"armor_durability": 40,
+			"magic_armor": 12,
+			"harvest_tier": {
+				"name": "netherite/下界合金",
+				"level_hint": "4",
+				"incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool"
+			},
+			"harvest_speed": 2,
+			"enchantment_value": 20,
+			"attack_damage": 8,
+			"attack_speed": 1.6,
+			"ranged_damage": 1.2,
+			"draw_speed": 1,
+			"charging_value": 1.2,
+			"projectile_accuracy": 2,
+			"durability": 2000,
+			"traits": [
+				{
+					"conditions": [],
+					"level": 3,
+					"trait": "kubejs:unrealium_ingot"
+				}
+			]
+		},
+		"silentgear:coating": {
+			"armor_durability": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.25
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:unrealium_ingot"
+				}
+			]
+		}
+	}
+}

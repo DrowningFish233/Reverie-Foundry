@@ -12,9 +12,9 @@
                         "attribute": "aces_spell_utils:evasive",
                         "operation": "add_value",
                         "values": [
-                            1,
-                            2,
-                            3
+                            0.1,
+                            0.2,
+                            0.3
                         ]
                     }
                 ]

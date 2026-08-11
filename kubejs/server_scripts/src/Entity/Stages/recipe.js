@@ -1,3 +1,4 @@
+/*
 AStages.addRestrictionForRecipe(
     "astage/recipe/dragonforge_ice_core_disabled",
     "first_kill_skeletron",
@@ -48,3 +49,4 @@ AStages.addRestrictionForRecipe(
     "iceandfire:dragonforge_lightning_input")
 
 AStages.addRestrictionForTag("astage/recipe/tag", "first_kill_skeletron", "iceandfire:dragon_steels")
+*/

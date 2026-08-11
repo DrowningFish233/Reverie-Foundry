@@ -60,6 +60,7 @@ ReverieFoundry
     .registerStage(
         new OreStageSystem("first_kill_dead_king")
             .hideOre('gobber2:gobber2_globette', 'minecraft:cobblestone')
+            .hideOre('gobber2:gobber2_ore_deepslate', 'minecraft:cobbled_deepslate')
             .hideOre('hazennstuff:dreadstone', 'minecraft:cobbled_deepslate')
             .hideOre('hazennstuff:runestone_fragments', 'minecraft:cobblestone')
     )

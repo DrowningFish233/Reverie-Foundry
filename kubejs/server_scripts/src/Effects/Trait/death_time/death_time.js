@@ -26,79 +26,56 @@ function gift_Heaven(event, player) {
     let equippedItem = null;
     let slotToClear = -1;
     let isCurio = false;
-    let curioIdentifier = '';
     let curioIndex = -1;
 
-    let equipSlots = [0, 40, 36, 37, 38, 39];
     let inventory = player.getInventory();
 
     let curiosInventory = $CuriosApi.getCuriosInventory(player);
-
     if (curiosInventory.isPresent()) {
         let inv = curiosInventory.get();
         let equippedCurios = inv.getEquippedCurios();
-
         if (equippedCurios) {
             let size = equippedCurios.getSlots();
-
             for (let i = 0; i < size; i++) {
                 let item = equippedCurios.getStackInSlot(i);
-                if (item && !item.isEmpty()) {
-                    let hasTrait = fu_hasTrait(item, "kubejs:gift_heaven");
-                    let isGear = fu_isGear(item);
-
-                    if (hasTrait && isGear) {
-                        equippedItem = item;
-                        isCurio = true;
-                        curioIndex = i;
-                        let curiosMap = inv.getCurios();
-                        for (let [identifier, handler] of Object.entries(curiosMap)) {
-                            if (handler && handler.getSlots() > i) {
-                                let stackInSlot = handler.getStackInSlot(i);
-                                if (stackInSlot && stackInSlot.equals(item, true)) {
-                                    curioIdentifier = identifier;
-                                    break;
-                                }
-                            }
-                        }
-                        break;
-                    }
+                if (!item.isEmpty() && fu_hasTrait(item, "kubejs:gift_heaven") && fu_isGear(item)) {
+                    equippedItem = item;
+                    isCurio = true;
+                    curioIndex = i;
+                    break;
                 }
             }
         }
     }
 
     if (!equippedItem) {
-        if (fu_hasTraitEitherHand(player, "kubejs:gift_heaven")) {
-            let mainHand = player.getMainHandItem();
-            if (fu_hasTrait(mainHand, "kubejs:gift_heaven") && fu_isGear(mainHand)) {
-                equippedItem = mainHand;
-                slotToClear = 0;
-            } else {
-                let offHand = player.getOffhandItem();
-                if (fu_hasTrait(offHand, "kubejs:gift_heaven") && fu_isGear(offHand)) {
-                    equippedItem = offHand;
-                    slotToClear = 40;
-                }
-            }
+        let mainHand = player.getMainHandItem();
+        if (!mainHand.isEmpty() && fu_hasTrait(mainHand, "kubejs:gift_heaven") && fu_isGear(mainHand)) {
+            equippedItem = mainHand;
+            slotToClear = 0;
         }
     }
 
     if (!equippedItem) {
-        if (fu_hasTraitArmor(player, "kubejs:gift_heaven")) {
-            let armorSlots = [39, 38, 37, 36];
-            for (let i of armorSlots) {
-                let item = inventory.extractItem(i, 1, true);
-                if (item && !item.isEmpty()) {
-                    if (fu_hasTrait(item, "kubejs:gift_heaven") && fu_isGear(item)) {
-                        equippedItem = item;
-                        slotToClear = i;
-                        break;
-                    }
-                }
+        let offHand = player.getOffhandItem();
+        if (!offHand.isEmpty() && fu_hasTrait(offHand, "kubejs:gift_heaven") && fu_isGear(offHand)) {
+            equippedItem = offHand;
+            slotToClear = 40;
+        }
+    }
+
+    if (!equippedItem) {
+        let armorSlots = [39, 38, 37, 36];
+        for (let i of armorSlots) {
+            let item = inventory.extractItem(i, 1, true);
+            if (!item.isEmpty() && fu_hasTrait(item, "kubejs:gift_heaven") && fu_isGear(item)) {
+                equippedItem = item;
+                slotToClear = i;
+                break;
             }
         }
     }
+
     if (!equippedItem) return;
 
     player.sendData("gift_Heaven", {
@@ -107,29 +84,26 @@ function gift_Heaven(event, player) {
     });
 
     if (isCurio) {
-        if (curioIdentifier) {
-            let curiosInventory = $CuriosApi.getCuriosInventory(player);
-            if (curiosInventory.isPresent()) {
-                let inv = curiosInventory.get();
-                inv.setEquippedCurio(curioIdentifier, curioIndex, Item.of('minecraft:air'));
-            }
-        } else {
-            let curiosInventory = $CuriosApi.getCuriosInventory(player);
-            if (curiosInventory.isPresent()) {
-                let inv = curiosInventory.get();
-                let equippedCurios = inv.getEquippedCurios();
-                if (equippedCurios) {
-                    equippedCurios.setStackInSlot(curioIndex, Item.of('minecraft:air'));
-                }
+        let curiosInventory = $CuriosApi.getCuriosInventory(player);
+        if (curiosInventory.isPresent()) {
+            let inv = curiosInventory.get();
+            let equippedCurios = inv.getEquippedCurios();
+            if (equippedCurios) {
+                equippedCurios.setStackInSlot(curioIndex, Item.of('minecraft:air'));
             }
         }
     } else {
-        inventory.extractItem(slotToClear, 1, false);
+        if (slotToClear === 0) {
+            player.setMainHandItem(Item.of('minecraft:air'));
+        } else if (slotToClear === 40) {
+            player.setOffHandItem(Item.of('minecraft:air'));
+        } else {
+            inventory.extractItem(slotToClear, 1, false);
+        }
     }
 
     player.setHealth(2);
     player.heal(6);
-
     event.cancel();
 }
 

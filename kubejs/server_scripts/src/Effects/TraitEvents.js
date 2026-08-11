@@ -1,4 +1,57 @@
+
 // priority: 100
+/**
+* 总效果类层
+*/
+function allthe_event(event) {
+    paralysis_combined_effect(event);    //麻痹效果
+    all_dynamic_damage(event)   //动态减伤!
+    other_effect(event);    //其他药水效果处理
+    depravityDamage(event);     //沉沦受伤机制
+    sanityAttack(event);
+    allthe_curios_hurt_event(event);    //饰品效果
+    spell_type(event);  //法术效果处理
+    death_time(event);  //濒死处理
+    EntityFixMain(event);
+}
+/**
+ * 其他药水效果处理
+ */
+function other_effect(event) {
+    hurtEffect(event);
+    use_adrenaline_effect(event);
+    load_protection_attack(event);
+    load_protection(event);
+    elemental_mix(event);
+    lightning_electrified(event);
+    plunder_effect(event);
+    old_fashioned_effect(event);
+    moonshine_effect(event);
+    moscow_mule_effect(event);
+    bloody_mary_effect(event);
+    everclear_effect(event);
+    vodka_effect(event);
+    purple_haze_effect(event);
+    whiskey_effect(event);
+    eternal_life(event);
+    rune_of_deflection_effect(event);
+    bloodlust_attack(event);
+    handleBleed(event);
+    melting_eyeball_ego_attack(event);
+    damage_amplification(event);
+    kubejs_arrow(event);
+    chainmail_arrow(event);
+    disillusionment(event);
+    protect(event);
+}
+
+
+/**
+ * 受伤事件修改逻辑
+ */
+EntityEvents.beforeHurt(allthe_event);
+
+
 let traitCount = 0;
 
 function printTraitStats() {
@@ -290,14 +343,19 @@ RFTrait('kubejs:luminofish_ink_sac', 0)
 
 //'hazennstuff:hallowed_ingot' 神圣庇护
 RFTrait('kubejs:hallowed_ingot', 0)
-    .beforeHurt(event => {
+    .onTick(600, event => {
         const { entity } = event;
         if (!entity.isPlayer()) return;
         if (!fu_hasTraitAnywhere(entity, 'kubejs:hallowed_ingot')) return;
+        entity.potionEffects.add("kubejs:hallowed_ingot", 1200, 0);
+    })
+    .beforeHurt(event => {
+        const { entity } = event;
+        if (!entity.isPlayer()) return;
+        if (!entity.hasEffect("kubejs:hallowed_ingot")) return;
+        entity.removeEffect("kubejs:hallowed_ingot");
+        event.cancel()
 
-        trySkill(entity, "hallowed_ingot", 600, () => {
-            event.cancel()
-        })
     })
     .register();
 
@@ -433,7 +491,7 @@ RFTrait('kubejs:demonite_ingot', 0)
 
             const damageReductionPercent = absorbedDamage / damage;
             const remainingDamagePercent = 1 - damageReductionPercent;
-            new_damage(event, STAGE.ADDITIVE, remainingDamagePercent);
+            new_damage(event, STAGE.MULTIPLY, remainingDamagePercent);
 
             entity.heal(traitLevel * 2);
             if (traitLevel >= 2) {
@@ -670,56 +728,36 @@ RFTrait('kubejs:vorant_ingot', 0)
 
 //'gobber2:gobber2_ingot'
 RFTrait('kubejs:gobber', 0)
+
     .beforeHurt(event => {
         const { source, entity } = event;
         const attacker = source.player;
         if (!attacker || !entity.isLiving()) return;
+
         const hasGobber = fu_hasTraitAnywhere(attacker, 'kubejs:gobber');
         const hasGobberNether = fu_hasTraitAnywhere(attacker, 'kubejs:gobber_nether');
         const hasGobberEnd = fu_hasTraitAnywhere(attacker, 'kubejs:gobber_end');
-        if (!hasGobber && !hasGobberNether && !hasGobberEnd) return;
-        let TraitsCount = fu_getUniqueTraitsCount(attacker);
-        let damageBonus = 0;
-        const count = (hasGobber ? 1 : 0) + (hasGobberNether ? 1 : 0) + (hasGobberEnd ? 1 : 0);
-        const baseBonus = {
-            gobber: 0.10,
-            nether: 0.20,
-            end: 0.30
-        };
-        if (count === 1) {
-            if (hasGobber) damageBonus = baseBonus.gobber;
-            else if (hasGobberNether) damageBonus = baseBonus.nether;
-            else if (hasGobberEnd) damageBonus = baseBonus.end;
-        } else if (count === 2) {
-            if (hasGobber && hasGobberNether) {
-                const maxBonus = Math.max(baseBonus.gobber, baseBonus.nether);
-                const avgBonus = (baseBonus.gobber + baseBonus.nether) / 2;
-                if (TraitsCount % 4 === 0) {
-                    damageBonus = (baseBonus.gobber + baseBonus.nether) * 1.5;
-                } else {
-                    damageBonus = maxBonus + avgBonus;
-                }
-            } else if (hasGobber && hasGobberEnd) {
-                const maxBonus = Math.max(baseBonus.gobber, baseBonus.end);
-                const avgBonus = (baseBonus.gobber + baseBonus.end) / 2;
-                if (TraitsCount % 3 === 0) {
-                    damageBonus = (baseBonus.gobber + baseBonus.end) * 1.5;
-                } else {
-                    damageBonus = maxBonus + avgBonus;
-                }
-            } else if (hasGobberNether && hasGobberEnd) {
-                const maxBonus = Math.max(baseBonus.nether, baseBonus.end);
-                const avgBonus = (baseBonus.nether + baseBonus.end) / 2;
 
-                if (TraitsCount % 2 === 0) {
-                    damageBonus = (baseBonus.nether + baseBonus.end) * 1.5;
-                } else {
-                    damageBonus = maxBonus + avgBonus;
-                }
-            }
-        } else if (count === 3) {
-            damageBonus = 1.00;
+        if (!hasGobber && !hasGobberNether && !hasGobberEnd) return;
+
+        const totalTraits = fu_getUniqueTraitsCount(attacker);
+        let damageBonus = 0;
+
+        // 每有1个词条 +2% 伤害
+        if (hasGobber) {
+            damageBonus += totalTraits * 0.02;
         }
+
+        // 词条总数为奇数时，每有1个词条 +2% 伤害
+        if (hasGobberNether && totalTraits % 2 === 1) {
+            damageBonus += totalTraits * 0.02;
+        }
+
+        // 词条总数为偶数时，每有1个词条 +2% 伤害
+        if (hasGobberEnd && totalTraits % 2 === 0) {
+            damageBonus += totalTraits * 0.02;
+        }
+
         if (damageBonus > 0) {
             new_damage(event, STAGE.MULTIPLY, 1 + damageBonus);
         }
@@ -841,31 +879,28 @@ RFTrait('kubejs:arcane_ingot', 0)
         const attacker = source.player
         if (!attacker || !attacker.isLiving()) return;
         if (!fu_hasTraitAnywhere(attacker, "kubejs:arcane_ingot")) return;
+
         const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:arcane_ingot");
         const magicData = attacker.getMagicData();
         const currentMana = magicData.getMana();
 
-        const damageCap = 0.2 * traitLevel;
+        const maxBonus = traitLevel * 0.2;
+
         let damageMultiplier = 1.0;
+
         if (currentMana < 50) {
             damageMultiplier = 0.8;
-        } else if (currentMana <= 100) {
-            const progress = (currentMana - 50) / 50;
-            const bonus = progress * damageCap;
-            damageMultiplier = 1.0 + Math.min(bonus, damageCap);
         } else {
-            const baseBonus = damageCap;
+            const manaAbove50 = currentMana - 50;
+            const bonusFromMana = Math.floor(manaAbove50 / 10) * 0.01;
 
-            const extraMana = currentMana - 100;
-            const extraBonus = Math.floor(extraMana / 10) * 0.01;
-
-            const totalBonus = Math.min(baseBonus + extraBonus, damageCap);
-            damageMultiplier = 1.0 + totalBonus;
+            const finalBonus = Math.min(bonusFromMana, maxBonus);
+            damageMultiplier = 1.0 + finalBonus;
         }
+
         new_damage(event, STAGE.ADDITIVE, damageMultiplier);
     })
     .register();
-
 
 
 // 'kubejs:polonium_ingot'
@@ -1408,7 +1443,7 @@ RFTrait('kubejs:bismuthgems', 0)
         let NewLevel = traitLevel * 4
         let currentArmor = entity.getArmorValue()
         if (currentArmor < NewLevel) {
-            attackEntity(entity, 'generic', 10, true)
+            new_damage(event, STAGE.FLAT, 10)
         }
     })
     .register();
@@ -1817,9 +1852,9 @@ RFTrait('kubejs:alexandrite', 0)
         const remainingDurability = maxDurability - currentDurability;
         const durabilityPercentage = (remainingDurability / maxDurability) * 100;
         if (durabilityPercentage > 66) {
-            new_damage(event, STAGE.ADDITIVE, 1.5);
+            new_damage(event, STAGE.ADDITIVE, 1.2);
         } else if (durabilityPercentage < 33) {
-            new_damage(event, STAGE.ADDITIVE, 0.5);
+            new_damage(event, STAGE.ADDITIVE, 0.8);
         }
     })
     .register();
@@ -2089,6 +2124,8 @@ RFTrait('kubejs:atalphaite', 0)
         }
     })
     .register();
+
+
 
 //你觉得你是词条吗，我觉得我是
 RFTrait('kubejs:seraph', 0)
@@ -2638,33 +2675,10 @@ RFTrait('kubejs:moonpools', 0)
     .register();
 
 
-//特性-月见草
-RFTrait('kubejs:fairies_care', 0)
-    .onTick(150, event => {
-        let player = event.player
-        if (!player) return
-        if (!isNight(player.getLevel())) return
-        if (!fu_hasTraitAnywhere(player, "kubejs:moonpools")) return;
-        player.heal(2)
-        player.potionEffects.add("kubejs:evening_primrose", 140, 0);
-        if (!fu_hasTraitMainHand(player, "kubejs:moonpools")) return;
-        fu_attemptDamageByHand(player.getMainHandItem(), -3, player, "MAIN_HAND")
-    })
-    .beforeHurt(event => {
-        let player = event.player
-        if (!player) return
-        if (!isNight(player.getLevel())) return
-        if (!player.hasEffect("kubejs:evening_primrose")) return
-        new_damage(event, STAGE.MULTIPLY, 0.75)
-    })
-    .register();
-
-
-
 RFTrait('kubejs:ultimine_test', 0)
     .blockBroken(event => {
         const { player, block } = event;
-        if (!fu_hasTraitMainHand(player, "kubejs:ultimine_test")) return;
+        if (!fu_hasTraitAnywhere(player, "kubejs:ultimine_test")) return;
         if (player.crouching) return;
 
         const blockId = block.getId().toString();
@@ -2715,56 +2729,201 @@ RFTrait('kubejs:ghost_player', 0)
     .register();
 
 
+RFTrait('kubejs:unrealium_ingot', 0)
+    .onTick(200, event => {
+        const player = event.entity;
+        if (!fu_hasTraitAnywhere(player, "kubejs:unrealium_ingot")) return;
+        player.potionEffects.add("irons_spellbooks:true_invisibility", 20 * 5, 0);
+    })
+    .beforeHurt(event => {
+        const { source, entity } = event;
+        const attacker = source.player || source.actual;
+
+        if (!attacker || !attacker.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:unrealium_ingot")) {
+            return;
+        }
+        if (!entity.hasEffect("irons_spellbooks:true_invisibility")) return;
+        new_damage(event, STAGE.ADDITIVE, 1.5)
+    })
+    .register();
+
+
+
+RFTrait('kubejs:dragonskill', 0)
+    .beforeHurt(event => {
+        const { source, entity } = event;
+        const attacker = source.player || source.actual;
+
+        if (!attacker || !attacker.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:dragonskill")) {
+            return;
+        }
+        const isDragon = /dragon/i.test(String(entity.getId()));
+
+        if (!isDragon) {
+            entity.potionEffects.add("kubejs:dragon_might", 20 * 5, 0);
+        }
+    })
+    .beforeHurt(event => {
+        const { source } = event;
+        if (source.actual && source.actual.hasEffect("kubejs:dragon_might")) {
+            new_damage(event, STAGE.MULTIPLY, 0.85)
+        }
+    })
+    .register();
 
 
 /**
-* 总效果类层
+* 根据拥有的誓令数量提供攻击力加成
+* 每个誓令提供 10% × 词条等级 的伤害加成，最高100%
 */
-function allthe_event(event) {
-    paralysis_combined_effect(event);    //麻痹效果
-    all_dynamic_damage(event)   //动态减伤!
-    other_effect(event);    //其他药水效果处理
-    depravityDamage(event);     //沉沦受伤机制
-    sanityAttack(event);
-    allthe_curios_hurt_event(event);    //饰品效果
-    spell_type(event);  //法术效果处理
-    death_time(event);  //濒死处理
-    EntityFixMain(event);
-}
-/**
- * 其他药水效果处理
- */
-function other_effect(event) {
-    hurtEffect(event);
-    use_adrenaline_effect(event);
-    load_protection_attack(event);
-    load_protection(event);
-    elemental_mix(event);
-    lightning_electrified(event);
-    plunder_effect(event);
-    old_fashioned_effect(event);
-    moonshine_effect(event);
-    moscow_mule_effect(event);
-    bloody_mary_effect(event);
-    everclear_effect(event);
-    vodka_effect(event);
-    purple_haze_effect(event);
-    whiskey_effect(event);
-    eternal_life(event);
-    rune_of_deflection_effect(event);
-    bloodlust_attack(event);
-    handleBleed(event);
-    melting_eyeball_ego_attack(event);
-    damage_amplification(event);
-    kubejs_arrow(event);
-    chainmail_arrow(event);
-    disillusionment(event);
-    protect(event);
-}
+RFTrait('kubejs:oathbound_strength', 90)
+    .beforeHurt(event => {
+        const { source, entity } = event;
+        const attacker = source.player || source.actual;
+
+        if (!attacker || !attacker.isLiving()) return;
+        if (!fu_hasTraitAnywhere(attacker, "kubejs:oathbound_strength")) return;
+
+        const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:oathbound_strength");
+
+        const geasEffects = fu_getGeasEffects(attacker);
+        const geasCount = geasEffects.length;
+
+        if (geasCount <= 0) return;
+
+        const bonusPerGeas = 0.1 * traitLevel;
+        let damageBonus = geasCount * bonusPerGeas;
+        damageBonus = Math.min(damageBonus, 1.0);
+
+        new_damage(event, STAGE.ADDITIVE, 1 + damageBonus);
+    })
+    .register();
+
 
 
 /**
- * 受伤事件修改逻辑
- */
-EntityEvents.beforeHurt(allthe_event);
+* 攻击时暴露目标灵魂，暴露期间目标受到伤害+15%
+*/
+RFTrait('kubejs:soul_exposure', 85)
+    .beforeHurt(event => {
+        const { source, entity } = event;
+        const attacker = source.player || source.actual;
 
+        if (!attacker || !attacker.isLiving()) return;
+        if (!fu_hasTraitAnywhere(attacker, "kubejs:soul_exposure")) return;
+
+        if (!entity.isLiving()) return;
+
+        const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:soul_exposure");
+        const duration = 5 * traitLevel * 20;
+
+        fu_exposeSoul(entity);
+        fu_setExposedSoulDuration(entity, duration);
+    })
+    .beforeHurt(event => {
+        const { source, entity } = event;
+        const attacker = source.player || source.actual;
+
+        if (!attacker || !attacker.isLiving()) return;
+        if (!fu_hasTraitAnywhere(attacker, "kubejs:soul_exposure")) return;
+
+        const exposedDuration = fu_getExposedSoulDuration(entity);
+        if (exposedDuration <= 0) return;
+
+        new_damage(event, STAGE.ADDITIVE, 1.15);
+    })
+    .register();
+
+
+
+/**
+ * 攻击消耗灵魂护盾百分比，造成额外百分比伤害
+ */
+RFTrait('kubejs:soul_consumption', 80)
+    .beforeHurt(event => {
+        const { source, entity } = event;
+        const attacker = source.player || source.actual;
+
+        if (!attacker || !attacker.isLiving()) return;
+        if (!fu_hasTraitAnywhere(attacker, "kubejs:soul_consumption")) return;
+
+        const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:soul_consumption");
+
+        const currentWard = fu_getCurrentSoulWard(attacker);
+        if (currentWard <= 0) return;
+
+        const percentCost = 0.02 * traitLevel;
+        const actualCost = Math.floor(currentWard * percentCost);
+
+        if (actualCost <= 0) return;
+
+        fu_reduceSoulWard(attacker, actualCost);
+
+        const bonusPercent = 0.15 * traitLevel;
+        new_damage(event, STAGE.ADDITIVE, 1 + bonusPercent);
+    })
+    .register();
+
+
+
+/**
+ * 饥饿值归零时自动消耗灵魂护盾代替
+ * 灵魂护盾归零时自动消耗饥饿值代替
+ */
+RFTrait('kubejs:soul_conversion', 60)
+    .onTick(20, event => {
+        const player = event.player;
+        if (!player || !player.isLiving()) return;
+        if (!fu_hasTraitAnywhere(player, "kubejs:soul_conversion")) return;
+
+        const foodLevel = player.getFoodLevel();
+        const saturation = player.getSaturation();
+        const currentWard = fu_getCurrentSoulWard(player);
+        const maxFood = 20;
+
+        if (foodLevel <= 0 && currentWard > 0) {
+            const lastWardToFood = player.persistentData.getInt("soul_conversion_ward_to_food") || 0;
+            if (player.tickCount - lastWardToFood < 100) return;
+
+            const wardCost = Math.min(4, currentWard);
+            fu_reduceSoulWard(player, wardCost);
+
+            const foodGain = Math.min(1, maxFood - foodLevel);
+            player.setFoodLevel(foodLevel + foodGain);
+            player.setSaturation(Math.min(saturation + 0.5, maxFood));
+
+            player.persistentData.putInt("soul_conversion_ward_to_food", player.tickCount);
+        }
+
+        if (currentWard <= 0 && foodLevel > 10) {
+            const foodCost = Math.min(8, foodLevel - 2);
+            const wardGain = Math.floor(foodCost / 2);
+
+            if (wardGain > 0) {
+                player.setFoodLevel(foodLevel - foodCost);
+                player.setSaturation(Math.max(0, saturation - foodCost));
+                fu_addSoulWard(player, wardGain);
+
+                player.potionEffects.add("minecraft:weakness", 30, 254);
+            }
+        }
+    })
+    .register();
+
+/**
+* 受到攻击时有概率恢复灵魂护盾
+*/
+RFTrait('kubejs:dream_barrier', 70)
+    .beforeHurt(event => {
+        const { entity } = event;
+        if (!entity.isLiving() || !entity.isPlayer()) return;
+        if (!fu_hasTraitAnywhere(entity, "kubejs:dream_barrier")) return;
+
+        const traitLevel = fu_getHighestTraitLevelAnywhere(entity, "kubejs:dream_barrier");
+
+        const chance = 0.1 * traitLevel;
+        if (Math.random() < chance) {
+            fu_addSoulWard(entity, traitLevel);
+        }
+    })
+    .register();

@@ -1054,6 +1054,53 @@ ServerEvents.recipes(event => {
         new SpiritInfusionRecipeJSON('kubejs:moonstone', 'kubejs:moonpools')
             .addSpirit("umbral", 2)
             .addExtraInput('#minecraft:flowers', 1)
+            .addExtraInput('kubejs:necroplasm', 1)
     );
 
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('minecraft:gold_ingot', 'hazennstuff:hallowed_ingot')
+            .addSpirit("umbral", 3)
+            .addExtraInput('kubejs:necroplasm', 2)
+            .addExtraInput('silentgems:chaos_essence', 6)
+            .addExtraInput('kubejs:viculeam_ingot', 1)
+    );
+
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:viculeam_ingot', 'malum:malignant_pewter_ingot')
+            .addSpirit("umbral", 1)
+            .addSpirit("earthen", 16)
+            .addSpirit("eldritch", 16)
+            .addExtraInput('malum:malignant_lead', 1)
+            .addExtraInput('malum:null_slate', 8)
+            .addExtraInput('minecraft:netherite_scrap', 2)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('malum:soul_stained_steel_ingot', 'kubejs:lunium_nova_ingot')
+            .addSpirit("earthen", 6)
+            .addSpirit("eldritch", 6)
+            .addExtraInput('kubejs:moonstone', 1)
+            .addExtraInput('kubejs:necroplasm', 1)
+            .addExtraInput('minecraft:netherite_scrap', 1)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:viculeam_ingot', 'kubejs:unstable_luminescence_ingot')
+            .addSpirit("earthen", 8)
+            .addSpirit("eldritch", 8)
+            .addExtraInput('netherexp:lightspores', 8)
+            .addExtraInput('netherexp:nightspores', 8)
+            .addExtraInput('kubejs:necroplasm', 1)
+            .addExtraInput('minecraft:netherite_scrap', 1)
+    );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:viculeam_ingot', 'kubejs:thlanium_ingot')
+            .addSpirit("eldritch", 6)
+            .addSpirit("infernal", 6)
+            .addExtraInput('malum:iridescent_ether', 3)
+            .addExtraInput('kubejs:necroplasm', 1)
+            .addExtraInput('minecraft:netherite_scrap', 1)
+    );
 });

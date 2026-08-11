@@ -11,6 +11,7 @@
 	images: [
 		{
 			height: 2.5d
+			id: "4ACE656884BC284D"
 			image: "kubejs:textures/gui/diff.png"
 			rotation: 0.0d
 			width: 10.0d
@@ -20,6 +21,7 @@
 		{
 			dependency: "66EA89C1E75509EB"
 			height: 5.0d
+			id: "562D94C3FB6CCD3B"
 			image: "kubejs:textures/gui/green1.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -29,6 +31,7 @@
 		{
 			dependency: "66EA89C1E75509EB"
 			height: 5.0d
+			id: "7DDA53C91BAB915B"
 			image: "kubejs:textures/gui/night.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -38,6 +41,7 @@
 		{
 			dependency: "66EA89C1E75509EB"
 			height: 5.0d
+			id: "1DD752CE449B557F"
 			image: "kubejs:textures/gui/red3.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -47,6 +51,7 @@
 		{
 			dependency: "66EA89C1E75509EB"
 			height: 5.0d
+			id: "623D4CE96D4DE3A6"
 			image: "kubejs:textures/gui/yellow2.png"
 			order: 100
 			rotation: 0.0d
@@ -57,6 +62,7 @@
 		{
 			dependency: "66EA89C1E75509EB"
 			height: 5.0d
+			id: "021D4B01E28E9F97"
 			image: "kubejs:textures/gui/red5.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -66,6 +72,7 @@
 		{
 			dependency: "66EA89C1E75509EB"
 			height: 5.0d
+			id: "664BFE1AD68110DB"
 			image: "kubejs:textures/gui/red6.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -75,6 +82,7 @@
 		{
 			dependency: "66EA89C1E75509EB"
 			height: 5.0d
+			id: "61E4A659C01B9DFA"
 			image: "kubejs:textures/gui/green2.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -140,7 +148,7 @@
 					type: "item"
 				}
 				{
-					auto: "no_toast"
+					auto: "disabled"
 					exclude_from_claim_all: true
 					id: "08D44DB184D9838B"
 					table_id: 8769696413750133854L
@@ -261,7 +269,7 @@
 				}
 				{
 					auto: "enabled"
-					command: "/kubejs stages add @p difficult_6"
+					command: "/kubejs stages add @p difficult_10"
 					exclude_from_claim_all: true
 					icon: {
 						id: "minecraft:wither_skeleton_skull"
@@ -373,11 +381,9 @@
 			}
 			id: "56CB359C8D5426A3"
 			rewards: [{
-				auto: "disabled"
 				exclude_from_claim_all: true
-				id: "66F7257F63391C43"
-				table_id: 6178956261800163341L
-				team_reward: false
+				id: "2DB822BCF538B1C6"
+				table_id: 8891736767377608546L
 				type: "choice"
 			}]
 			tasks: [{
@@ -429,26 +435,6 @@
 			}]
 			x: 2.0d
 			y: -6.0d
-		}
-		{
-			can_repeat: true
-			dependencies: ["66EA89C1E75509EB"]
-			icon: {
-				id: "kubejs:randomweapon"
-			}
-			id: "61AD6CC3CE0AC9F4"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6868DD13E03B7C97"
-				table_id: 2486001279399555208L
-				type: "choice"
-			}]
-			tasks: [{
-				id: "2A2F3B895F40F65B"
-				type: "checkmark"
-			}]
-			x: 2.0d
-			y: -9.0d
 		}
 		{
 			dependencies: ["01891B78BD11035B"]

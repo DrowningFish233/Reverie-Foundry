@@ -24,15 +24,15 @@
         "silentgear:rod": {
             "attack_damage": {
                 "operation": "MULTIPLY_BASE",
-                "value": 0.2
+                "value": 0.15
             },
             "attack_speed": {
                 "operation": "MULTIPLY_BASE",
-                "value": 0.2
+                "value": 0.15
             },
             "harvest_speed": {
                 "operation": "MULTIPLY_BASE",
-                "value": 0.7
+                "value": 0.5
             },
             "durability": {
                 "operation": "MULTIPLY_BASE",
@@ -48,7 +48,7 @@
             },
             "armor": {
                 "operation": "ADD",
-                "value": 8
+                "value": 6
             },
             "rarity": {
                 "operation": "ADD",

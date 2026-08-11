@@ -6,3 +6,5 @@ messageDigest = ""
 # Default: -1
 # Range: > -2147483648
 alarmTimes = -1
+attributeReplacements = ["crit_chance = confluence_magic_lib:generic.critical_chance", "ranged_damage = confluence_magic_lib:generic.ranged_damage", "dodge_chance = confluence_magic_lib:generic.dodge_chance", "magic_damage = confluence_magic_lib:generic.magic_damage", "armor_penetration = confluence_magic_lib:generic.armor_penetration"]
+itemGroups = true

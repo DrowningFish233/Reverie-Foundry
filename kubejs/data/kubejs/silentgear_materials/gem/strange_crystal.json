@@ -36,6 +36,11 @@
 					"conditions": [],
 					"level": 3,
 					"trait": "kubejs:strange_crystal"
+				},
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:crystal"
 				}
 			]
 		}

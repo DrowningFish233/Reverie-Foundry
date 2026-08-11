@@ -8,11 +8,12 @@
 	id: "44E1ED5935A6147B"
 	images: [{
 		height: 3.0d
+		id: "5877997115755A05"
 		image: "eternal_starlight:textures/gui/jei/alloy_furnace/cooling_progress.png"
 		rotation: 0.0d
 		width: 3.0d
-		x: 0.0d
-		y: -15.0d
+		x: 0.1d
+		y: -14.9d
 	}]
 	order_index: 2
 	quest_links: [ ]

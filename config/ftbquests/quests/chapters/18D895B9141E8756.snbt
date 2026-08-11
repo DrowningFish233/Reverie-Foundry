@@ -9,6 +9,7 @@
 	id: "18D895B9141E8756"
 	images: [{
 		height: 6.0d
+		id: "1A19EAF0D004F789"
 		image: "alltheores:item/brass_gear"
 		rotation: 0.0d
 		width: 6.0d

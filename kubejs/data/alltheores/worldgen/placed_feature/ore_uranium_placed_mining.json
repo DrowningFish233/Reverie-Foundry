@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 6
+      "chance": 4
     },
     {
       "type": "minecraft:in_square"
@@ -21,7 +21,8 @@
       "type": "minecraft:height_range"
     },
     {
-      "type": "minecraft:biome"
+      "type": "minecraft:biome",
+      "biomes": "#allthemodium:mining_features/mining_biomes"
     }
   ]
 }

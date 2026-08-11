@@ -11,14 +11,16 @@
 	images: [
 		{
 			height: 10.0d
+			id: "7B7ABC3E2493BF41"
 			image: "eternal_starlight:item/soulit_spectator"
 			rotation: 0.0d
 			width: 10.0d
-			x: -0.5d
-			y: -4.0d
+			x: -0.25d
+			y: -4.25d
 		}
 		{
 			height: 1.0d
+			id: "5620C5B2BA24AEA5"
 			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -27,6 +29,7 @@
 		}
 		{
 			height: 1.0d
+			id: "5F5BB69959F2F5E3"
 			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -35,6 +38,7 @@
 		}
 		{
 			height: 1.0d
+			id: "4104AACE6BC5DB41"
 			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -43,6 +47,7 @@
 		}
 		{
 			height: 1.0d
+			id: "4958F5CC47A83C3E"
 			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -51,6 +56,7 @@
 		}
 		{
 			height: 1.0d
+			id: "5912DBF356A02EF3"
 			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -59,6 +65,7 @@
 		}
 		{
 			height: 1.0d
+			id: "6D7F86136A94401E"
 			image: "eternal_starlight:textures/particle/amaramber_wax_on.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -484,6 +491,7 @@
 		{
 			dependencies: ["3FFA3C2B5E1FC24A"]
 			id: "55566ED56D9E8281"
+			optional: true
 			tasks: [{
 				id: "6A644FA7B4FBAA2B"
 				item: { count: 1, id: "kubejs:summon_lunar_monstrosity" }
@@ -495,6 +503,7 @@
 		{
 			dependencies: ["5E513FFD985CDDF9"]
 			id: "3FD324391F9D0115"
+			optional: true
 			tasks: [{
 				id: "0F99ED21B06D612E"
 				item: { count: 1, id: "kubejs:summon_starlight_golem" }

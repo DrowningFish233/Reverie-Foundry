@@ -24,7 +24,7 @@
   "properties": {
     "silentgear:main": {
       "armor": 30.0,
-      "armor_toughness": 8,
+      "armor_toughness": 10,
       "armor/boots": 3.0,
       "armor/chestplate": 12.0,
       "armor/helmet": 6.0,
@@ -44,9 +44,9 @@
       "harvest_speed": 8.0,
       "geas_limit": 0.5,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "silentgear:incorrect_for_iron_tools",
-        "level_hint": "2",
-        "name": "iron/铁"
+        "incorrect_blocks_for_tool": "minecraft:incorrect_for_netherite_tool",
+        "level_hint": "4",
+        "name": "netherite/下界合金"
       },
       "magic_armor": 25.0,
       "magic_damage": 8.0,

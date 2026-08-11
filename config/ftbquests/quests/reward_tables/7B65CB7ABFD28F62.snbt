@@ -1,0 +1,102 @@
+{
+	id: "7B65CB7ABFD28F62"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{
+			auto: "invisible"
+			command: "/kubejs stages add @p difficult_1"
+			icon: {
+				id: "minecraft:player_head"
+			}
+			id: "766A6E590C718618"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "invisible"
+			command: "/kubejs stages add @p difficult_2"
+			icon: {
+				id: "minecraft:zombie_head"
+			}
+			id: "074704F04DA73584"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "invisible"
+			command: "/kubejs stages add @p difficult_3"
+			icon: {
+				id: "minecraft:creeper_head"
+			}
+			id: "569E94AC4C71C068"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "no_toast"
+			command: "/kubejs stages add @p difficult_4"
+			icon: {
+				id: "minecraft:skeleton_skull"
+			}
+			id: "598AAA24175DD85B"
+			ignore_reward_blocking: true
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "invisible"
+			command: "/kubejs stages add @p difficult_5"
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "5DDFB170B6667E05"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "no_toast"
+			command: "/kubejs stages add @p difficult_6"
+			icon: {
+				id: "minecraft:piglin_head"
+			}
+			id: "664C6C72515B60A2"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "invisible"
+			command: "/kubejs stages add @p difficult_7"
+			icon: {
+				id: "cataclysm:aptrgangr_head"
+			}
+			id: "2D3A77F42169E94B"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "no_toast"
+			command: "/kubejs stages add @p difficult_8"
+			icon: {
+				id: "cataclysm:remnant_skull"
+			}
+			id: "106D7F2AF370F828"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+	]
+}

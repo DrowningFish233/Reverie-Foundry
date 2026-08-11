@@ -24,12 +24,34 @@ const BOSS_MOBS = [
     ["astage/boss/obsidilith", "bosses_of_mass_destruction:obsidilith", "first_kill_fire_boss"],
     ["astage/boss/ender_guardian", "cataclysm:ender_guardian", "first_kill_fire_boss"],
     ["astage/boss/rift_weaver", "ftboceanmobs:rift_weaver", "first_kill_fire_boss"],
-    //最终
-    ["astage/boss/dark_doppelganger", "darkdoppelganger:dark_doppelganger", "first_kill_ender_guardian"],
+    ["astage/boss/dark_doppelganger", "darkdoppelganger:dark_doppelganger", "first_kill_fire_boss"],
 ];
 
 BOSS_MOBS.forEach(([id, mob, stage]) => {
     AStages.addRestrictionForMob(id, stage, mob)
-        .setCanBeAttacked(false)
+        .disableAttack()
 });
 
+
+
+EntityEvents.beforeHurt(event => {
+    const { entity, source } = event;
+    const attacker = source.getPlayer();
+    if (!attacker) return;
+
+    const targetType = entity.getType();
+
+    let requiredStage = null;
+    for (let i = 0; i < BOSS_MOBS.length; i++) {
+        if (BOSS_MOBS[i][1] === targetType) {
+            requiredStage = BOSS_MOBS[i][2];
+            break;
+        }
+    }
+
+    if (!requiredStage) return;
+
+    if (!AStages.playerHasStage(requiredStage, attacker)) {
+        event.cancel();
+    }
+});

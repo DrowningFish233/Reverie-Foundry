@@ -12,10 +12,12 @@
 	warpPlateUseTime = 15
 	#The time in ticks it takes to use a scroll. This is the charge-up time when holding right-click.
 	scrollUseTime = 32
+	#The time in ticks that an entity has to be off of a target warp plate before it can teleport from that same warp plate again.
+	warpPlateCooldownTime = 20
 
 [teleports]
 	#Set to false to simply disable all xp costs. See warpRequirements for more fine-grained control.
-	enableCosts = true
+	enableCosts = false
 	#Set to false to simply disable all cooldowns. See warpRequirements for more fine-grained control.
 	enableCooldowns = true
 	#List of warp requirements with comma-separated parameters in parentheses. Conditions can be defined as comma-separated list in square brackets. Will be applied in order.
@@ -25,13 +27,13 @@
 	transportPets = "DISABLED"
 	#Set to ENABLED to have leashed mobs teleport with you. Set to SAME_DIMENSION to have leashed mobs teleport with you only if you're not changing dimensions. Set to DISABLED to disable.
 	#Allowed Values: ENABLED, SAME_DIMENSION, DISABLED
-	transportLeashed = "ENABLED"
+	transportLeashed = "SAME_DIMENSION"
 	#List of entities that cannot be teleported, either as pet, leashed, or on warp plates.
 	entityDenyList = ["minecraft:wither"]
 	#Set to true to enable warp modifier items for applying status effects on teleports.
 	enableModifiers = true
 	#Set to false to disable durability loss on warp stones.
-	enableDurability = true
+	enableDurability = false
 
 [inventoryButton]
 	#Set to 'NONE' for no inventory button. Set to 'NEAREST' for an inventory button that teleports to the nearest waystone. Set to 'ANY' for an inventory button that opens the waystone selection menu. Set to a waystone name for an inventory button that teleports to a specifically named waystone.
@@ -50,7 +52,7 @@
 	#Allowed Values: DEFAULT, MOSSY, SANDY, BLACKSTONE, DEEPSLATE, END_STONE, BIOME
 	wildWaystoneStyle = "BIOME"
 	#Approximate chunk distance between wild waystones being generated. Set to 0 to disable generation.
-	chunksBetweenWildWaystones = 25
+	chunksBetweenWildWaystones = 15
 	#List of dimensions that wild waystones are allowed to spawn in. If left empty, all dimensions except those in wildWaystonesDimensionDenyList will be able to spawn waystones, provided the biomes are in the `has_structure/waystone` tag.
 	wildWaystonesDimensionAllowList = ["minecraft:overworld", "minecraft:the_end", "minecraft:the_nether"]
 	#List of dimensions that wild waystones are not allowed to spawn in, even if the biome is in the `has_structure/waystone` tag. Only used if wildWaystonesDimensionAllowList is empty.

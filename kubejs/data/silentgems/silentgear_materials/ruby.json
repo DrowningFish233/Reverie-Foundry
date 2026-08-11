@@ -39,9 +39,9 @@
       "enchantment_value": 12.0,
       "harvest_speed": 6.0,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "silentgems:incorrect_for_ruby_tools",
-        "level_hint": "2",
-        "name": "ruby"
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_dimerald_tools",
+        "level_hint": "3",
+        "name": "dimerald"
       },
       "magic_armor": 6.0,
       "ranged_damage": 1.0,

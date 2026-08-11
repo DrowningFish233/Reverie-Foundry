@@ -1,5 +1,5 @@
 // priority: 999999
-
+const $RFTraitUtils = Java.loadClass("com.drowningfish233.reveriefoundry.Utils.RFTraitUtils");
 const $RFPureSufferingUtils = Java.loadClass("com.drowningfish233.reveriefoundry.Utils.RFPureSufferingUtils");
 const $EndGatewaySpawner = Java.loadClass("com.drowningfish233.reveriefoundry.compat.Gateway.EndGatewaySpawner");
 const $CooldownManager = Java.loadClass('com.drowningfish233.reveriefoundry.core.CooldownManager');

@@ -3,24 +3,7 @@
     "description": {
         "translate": "trait.silentgear.chalyblux.desc"
     },
-    "effects": [
-        {
-            "type": "silentgear:attribute",
-            "attribute_modifiers": {
-                "all/any": [
-                    {
-                        "attribute": "malum:malignant_aegis_recovery_gain",
-                        "operation": "add_value",
-                        "values": [
-                            0.5,
-                            1,
-                            2
-                        ]
-                    }
-                ]
-            }
-        }
-    ],
+    "effects": [],
     "max_level": 3,
     "name": {
         "translate": "trait.silentgear.chalyblux"

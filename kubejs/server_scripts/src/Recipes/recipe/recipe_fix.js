@@ -334,32 +334,30 @@ OreUnificationBuilder.prototype = {
     * 内部方法：处理单个金属
     */
     _processSingleMetal: function (ingot) {
-        // 将金属锭替换为标签
-        this.event.replaceInput(
-            { input: ingot },
-            ingot,
-            this.tag
-        );
-
         // 检查是否完全跳过处理
         if (this._shouldSkip(ingot, 'all')) {
-            return;  // 只做了标签替换，其他什么都不做
+            // 只做标签替换
+            this.event.replaceInput({ input: ingot }, ingot, this.tag);
+            return;
         }
 
         // 处理粒相关
         if (!this._shouldSkip(ingot, 'nugget')) {
             const nuggetId = this._getNuggetId(ingot);
 
-            // 移除原有粒合成
+            // 移除原有粒合成（只移除工作台配方）
             if (this.settings.removeNuggets) {
-                this.event.remove({ output: nuggetId });
+                this.event.remove({
+                    output: nuggetId,
+                    type: 'minecraft:crafting'
+                });
             }
 
-            // 添加新粒合成
+            // 添加新粒合成：1个锭 → 9个粒
             if (this.settings.addShapeless) {
                 this.event.shapeless(
                     Item.of(nuggetId, 9),
-                    [ingot]
+                    [ingot]  // 使用具体锭，不用标签
                 );
             }
         }
@@ -368,12 +366,15 @@ OreUnificationBuilder.prototype = {
         if (!this._shouldSkip(ingot, 'block')) {
             const blockId = this._getBlockId(ingot);
 
-            // 移除原有块合成
+            // 移除原有块合成（只移除工作台配方）
             if (this.settings.removeBlocks) {
-                this.event.remove({ output: blockId });
+                this.event.remove({
+                    output: blockId,
+                    type: 'minecraft:crafting'
+                });
             }
 
-            // 添加新块合成
+            // 块分解为锭：1个块 → 9个锭
             if (this.settings.addShapeless) {
                 this.event.shapeless(
                     Item.of(ingot, 9),
@@ -381,27 +382,45 @@ OreUnificationBuilder.prototype = {
                 );
             }
 
+            // 锭合成块：9个锭 → 1个块
             if (this.settings.addBlockRecipe) {
                 this.event.shaped(
                     Item.of(blockId),
                     ['III', 'III', 'III'],
-                    { I: ingot }
+                    { I: ingot }  // 使用具体锭，不用标签
                 );
             }
 
             // 添加块铸造配方
             this._addBlockCastingRecipe(ingot);
         }
-    },
-    /**
-     * 批量替换同级金属
-     */
-    _unifyTier: function () {
-        for (let i = 0; i < this.ores.length; i++) {
-            const ore = this.ores[i];
+
+        // 替换其他配方中的输入（工具、装备等）
+        // 排除产出粒和块的配方
+        const nuggetId = this._getNuggetId(ingot);
+        const blockId = this._getBlockId(ingot);
+        const notFilters = [];
+
+        if (!this._shouldSkip(ingot, 'nugget')) {
+            notFilters.push({ output: nuggetId });
+        }
+        if (!this._shouldSkip(ingot, 'block')) {
+            notFilters.push({ output: blockId });
+        }
+
+        if (notFilters.length > 0) {
             this.event.replaceInput(
-                { input: ore },
-                ore,
+                {
+                    input: ingot,
+                    not: notFilters
+                },
+                ingot,
+                this.tag
+            );
+        } else {
+            this.event.replaceInput(
+                { input: ingot },
+                ingot,
                 this.tag
             );
         }
@@ -423,12 +442,12 @@ OreUnificationBuilder.prototype = {
             }
         }
 
-        this._unifyTier();
-
+        // 逐个处理每个金属（不再批量替换）
         for (let i = 0; i < this.ores.length; i++) {
             this._processSingleMetal(this.ores[i]);
         }
 
+        // 恢复黑名单配方的原始配方
         for (let item in savedRecipes) {
             event.remove({ output: item });
             for (let recipeJson of savedRecipes[item]) {

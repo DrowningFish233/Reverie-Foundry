@@ -1,0 +1,46 @@
+{
+	"conditions": [],
+	"description": {
+		"translate": "trait.kubejs.unrealium_ingot.desc"
+	},
+	"effects": [
+		{
+			"type": "silentgear:attribute",
+			"attribute_modifiers": {
+				"all/any": [
+					{
+						"attribute": "eternal_starlight:generic.enemy_follow_range_multiplier",
+						"operation": "add_multiplied_base",
+						"values": [
+							-0.05,
+							-0.1,
+							-0.15
+						]
+					},
+					{
+						"attribute": "minecraft:generic.knockback_resistance",
+						"operation": "add_multiplied_base",
+						"values": [
+							-0.05,
+							-0.05,
+							-0.05
+						]
+					},
+					{
+						"attribute": "minecraft:generic.movement_speed",
+						"operation": "add_multiplied_base",
+						"values": [
+							0.05,
+							0.05,
+							0.05
+						]
+					}
+				]
+			}
+		}
+	],
+	"max_level": 3,
+	"name": {
+		"translate": "trait.kubejs.unrealium_ingot"
+	}
+}

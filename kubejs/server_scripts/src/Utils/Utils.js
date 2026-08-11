@@ -1772,6 +1772,19 @@ function executeUltimine(player, startPos, sourceBlockId) {
 
     if (tool.isEmpty()) return;
 
+    const enchantments = tool.getEnchantments();
+    let hasSilk = false;
+    let entries = enchantments.entrySet();
+    for (let entry of entries) {
+        let key = String(entry.getKey());
+        if (key.includes('silk')) {
+            hasSilk = true;
+            break;
+        }
+    }
+
+    if (hasSilk) return;
+
     const startBlock = level.getBlock(startPos.getX(), startPos.getY(), startPos.getZ());
     if (!startBlock.hasTag('c:ores')) {
         return;

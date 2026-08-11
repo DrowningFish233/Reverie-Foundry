@@ -7,15 +7,15 @@
 	#Attack Damage of the Dark Doppelganger
 	# Default: 10.0
 	# Range: 0.1 ~ 1000.0
-	attack_damage = 40.0
+	attack_damage = 35.0
 	#Movement Speed of the Dark Doppelganger
 	# Default: 0.2
 	# Range: 0.01 ~ 2.0
-	movement_speed = 0.2
+	movement_speed = 0.25
 	#Knockback Resistance of the Dark Doppelganger
 	# Default: 0.6
 	# Range: 0.0 ~ 1.0
-	knockback_resistance = 0.6
+	knockback_resistance = 0.8
 	#Armor of the Dark Doppelganger
 	# Default: 10.0
 	# Range: 0.0 ~ 100.0
@@ -65,11 +65,11 @@
 	#Base max health for minions
 	# Default: 40.0
 	# Range: 1.0 ~ 1000.0
-	health = 100.0
+	health = 1000.0
 	#Base attack damage for minions
 	# Default: 6.0
 	# Range: 0.1 ~ 100.0
-	attack_damage = 8.0
+	attack_damage = 18.0
 	#Base movement speed for minions
 	# Default: 0.28
 	# Range: 0.01 ~ 2.0

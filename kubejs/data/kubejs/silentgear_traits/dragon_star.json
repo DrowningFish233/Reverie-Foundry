@@ -1,0 +1,26 @@
+{
+	"conditions": [],
+	"description": {
+		"translate": "trait.kubejs.dragon_star.desc"
+	},
+	"effects": [
+		{
+			"type": "silentgear:attribute",
+			"attribute_modifiers": {
+				"all/any": [
+					{
+						"attribute": "neoforge:creative_flight",
+						"operation": "add_value",
+						"values": [
+							1.0
+						]
+					}
+				]
+			}
+		}
+	],
+	"max_level": 1,
+	"name": {
+		"translate": "trait.kubejs.dragon_star"
+	}
+}

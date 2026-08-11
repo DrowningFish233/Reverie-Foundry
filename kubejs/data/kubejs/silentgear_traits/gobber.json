@@ -5,6 +5,18 @@
 	},
 	"effects": [
 		{
+			"type": "silentgear:synergy_multiplier",
+			"multiplier": 0.10,
+			"range_min": 0.0,
+			"range_max": 0.8
+		},
+		{
+			"type": "silentgear:synergy_multiplier",
+			"multiplier": 0.40,
+			"range_min": 1.6,
+			"range_max": 999.0
+		},
+		{
 			"type": "silentgear:attribute",
 			"attribute_modifiers": {
 				"all/any": [

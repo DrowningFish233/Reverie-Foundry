@@ -4,187 +4,236 @@
 	default_quest_shape: ""
 	filename: "boss"
 	group: "7F00D0D8C7C916A0"
+	icon: {
+		id: "terra_entity:king_slime_spawn_egg"
+	}
 	id: "7B5D2936F42B645B"
 	images: [
 		{
+			click_action: "none:"
 			height: 3.0d
-			image: "entity:eternal_starlight:lunar_monstrosity[rotate=true]"
+			id: "6834D17A711ACF8E"
+			image: "entity:eternal_starlight:lunar_monstrosity"
 			rotation: 0.0d
 			width: 3.0d
 			x: -1.0d
 			y: -13.0d
 		}
 		{
-			height: 0.6d
-			image: "entity:terra_entity:king_slime[rotate=true]"
+			click_action: "none:"
+			height: 0.5d
+			id: "302B24AE403A4276"
+			image: "entity:terra_entity:king_slime"
 			rotation: 0.0d
-			width: 0.6d
-			x: -11.578571428571422d
-			y: -9.220238095238145d
+			width: 0.5d
+			x: -11.5d
+			y: -9.0d
 		}
 		{
+			click_action: "none:"
 			height: 1.5d
-			image: "entity:terra_entity:eye_of_cthulhu[rotate=true]"
+			id: "0D5C835DFDAEBB19"
+			image: "entity:terra_entity:eye_of_cthulhu"
 			rotation: 0.0d
 			width: 1.5d
 			x: -11.388095238095161d
 			y: -5.130952380952458d
 		}
 		{
+			click_action: "none:"
 			height: 2.0d
-			image: "entity:minecraft:wither[rotate=true]"
+			id: "1B94A714349EE343"
+			image: "entity:minecraft:wither"
 			rotation: 0.0d
 			width: 2.0d
 			x: -11.531087564375923d
 			y: -1.0125526707583887d
 		}
 		{
+			click_action: "none:"
 			height: 2.0d
-			image: "entity:bosses_of_mass_destruction:void_blossom[rotate=true]"
+			id: "7DC91156060A5A2A"
+			image: "entity:bosses_of_mass_destruction:void_blossom"
 			rotation: 0.0d
 			width: 2.0d
 			x: -11.745373278661638d
 			y: 2.166018757813056d
 		}
 		{
+			click_action: "none:"
 			height: 2.0d
-			image: "entity:eternal_starlight:starlight_golem[rotate=true]"
+			id: "359CD16F46B667C8"
+			image: "entity:eternal_starlight:starlight_golem"
 			rotation: 0.0d
 			width: 2.0d
 			x: -1.0d
 			y: 7.0d
 		}
 		{
+			click_action: "none:"
 			height: 3.5d
-			image: "entity:irons_spellbooks:dead_king[rotate=true,look_at_cursor=true]"
+			id: "187C778625CDF931"
+			image: "entity:irons_spellbooks:dead_king"
 			rotation: 0.0d
 			width: 3.5d
 			x: -6.0d
 			y: -3.0d
 		}
 		{
+			click_action: "none:"
 			height: 2.0d
-			image: "entity:bosses_of_mass_destruction:lich[rotate=true]"
+			id: "70E4351CE309356F"
+			image: "entity:bosses_of_mass_destruction:lich"
 			rotation: 0.0d
 			width: 2.0d
 			x: -1.1355051429510183d
 			y: -4.949765484281762d
 		}
 		{
+			click_action: "none:"
 			height: 1.5d
-			image: "entity:terra_entity:brain_of_cthulhu[rotate=true]"
+			id: "4EEFB42E46FB40FC"
+			image: "entity:terra_entity:brain_of_cthulhu"
 			rotation: 0.0d
 			width: 1.5d
 			x: -1.173944707233069d
 			y: -9.22683838504409d
 		}
 		{
-			height: 1.5d
-			image: "entity:terra_entity:eater_of_worlds[rotate=true]"
+			click_action: "none:"
+			height: 1.3d
+			id: "2554C5F46BDF1EFF"
+			image: "entity:terra_entity:eater_of_worlds"
 			rotation: 0.0d
-			width: 1.5d
-			x: -0.7307432381891203d
+			width: 1.3d
+			x: -1.0d
 			y: -1.0d
 		}
 		{
+			click_action: "none:"
 			height: 1.5d
-			image: "entity:terra_entity:queen_bee[rotate=true]"
+			id: "0ABADCF6F2F3EA8D"
+			image: "entity:terra_entity:queen_bee"
 			rotation: 0.0d
 			width: 1.5d
 			x: -1.066801850090208d
 			y: 2.808875900670195d
 		}
 		{
+			click_action: "none:"
 			height: 3.0d
-			image: "entity:terra_entity:skeletron[look_at_cursor=true]"
+			id: "55E788AA2CAE15B0"
+			image: "entity:terra_entity:skeletron"
 			rotation: 0.0d
 			width: 3.0d
 			x: 4.5d
 			y: -3.0d
 		}
 		{
+			click_action: "none:"
 			height: 2.0d
-			image: "entity:cataclysm:ignis[rotate=true]"
+			id: "6C430AFAF7112A06"
+			image: "entity:cataclysm:ignis"
 			rotation: 0.0d
 			width: 2.0d
 			x: 11.445102911814544d
 			y: -3.0125526707583745d
 		}
 		{
+			click_action: "none:"
 			height: 3.0d
-			image: "entity:bosses_of_mass_destruction:gauntlet[rotate=true]"
+			id: "2F5ED29D9C36B3B7"
+			image: "entity:bosses_of_mass_destruction:gauntlet"
 			rotation: 0.0d
 			width: 3.0d
 			x: 11.5d
 			y: -6.0d
 		}
 		{
+			click_action: "none:"
 			height: 1.1d
-			image: "entity:cataclysm:the_leviathan[rotate=true]"
+			id: "3CF3AB8634418338"
+			image: "entity:cataclysm:the_leviathan"
 			rotation: 0.0d
 			width: 1.1d
 			x: 11.5d
 			y: -9.0d
 		}
 		{
+			click_action: "none:"
 			height: 1.5d
-			image: "entity:cataclysm:ancient_remnant[rotate=true]"
+			id: "2A000F9B1DD4BE5B"
+			image: "entity:cataclysm:ancient_remnant"
 			rotation: 0.0d
 			width: 1.5d
 			x: 10.980817197528808d
 			y: -11.95540981361551d
 		}
 		{
+			click_action: "none:"
 			height: 1.8d
-			image: "entity:cataclysm:the_harbinger[rotate=true]"
+			id: "05F6BDC04A798153"
+			image: "entity:cataclysm:the_harbinger"
 			rotation: 0.0d
 			width: 1.8d
 			x: 11.5d
 			y: 0.0d
 		}
 		{
+			click_action: "none:"
 			height: 1.5d
-			image: "entity:cataclysm:maledictus[rotate=true]"
+			id: "666FE5AD5ED1E065"
+			image: "entity:cataclysm:maledictus"
 			rotation: 0.0d
 			width: 1.5d
 			x: 11.5d
 			y: 3.0d
 		}
 		{
+			click_action: "none:"
 			height: 2.0d
-			image: "entity:cataclysm:scylla[rotate=true]"
+			id: "1CD13A7586430A86"
+			image: "entity:cataclysm:scylla"
 			rotation: 0.0d
 			width: 2.0d
 			x: 11.5d
 			y: 6.0d
 		}
 		{
+			click_action: "none:"
 			height: 2.0d
-			image: "entity:irons_spellbooks:fire_boss[look_at_cursor=true]"
+			id: "7FCF86C270626E23"
+			image: "entity:irons_spellbooks:fire_boss"
 			rotation: 0.0d
 			width: 2.0d
 			x: 18.173469596879087d
 			y: -2.7407081873253674d
 		}
 		{
+			click_action: "none:"
 			height: 5.0d
-			image: "entity:minecraft:ender_dragon[rotate=true]"
+			id: "1D5096F7736B368B"
+			image: "entity:minecraft:ender_dragon"
 			rotation: 0.0d
 			width: 5.0d
 			x: 25.819933505236463d
 			y: -3.988901710086367d
 		}
 		{
+			click_action: "none:"
 			height: 2.0d
-			image: "entity:cataclysm:ender_guardian[rotate=true]"
+			id: "01EE84522541D5B0"
+			image: "entity:cataclysm:ender_guardian"
 			rotation: 0.0d
 			width: 2.0d
 			x: 25.5d
 			y: -9.0d
 		}
 		{
+			click_action: "none:"
 			height: 3.0d
-			image: "entity:bosses_of_mass_destruction:obsidilith[rotate=true]"
+			id: "4E34C3C0CA14E27D"
+			image: "entity:bosses_of_mass_destruction:obsidilith"
 			rotation: 0.0d
 			width: 3.0d
 			x: 25.248504933807908d
@@ -192,6 +241,7 @@
 		}
 		{
 			height: 2.0d
+			id: "0C55F2E74F85E45E"
 			image: "malum:block/banners/soulwoven_banner_default"
 			rotation: 0.0d
 			width: 1.0d
@@ -200,6 +250,7 @@
 		}
 		{
 			height: 2.0d
+			id: "4A8CC729657D703B"
 			image: "malum:block/banners/soulwoven_banner_default"
 			rotation: 0.0d
 			width: 1.0d
@@ -208,6 +259,7 @@
 		}
 		{
 			height: 2.0d
+			id: "14ECB32B9BAC1FB9"
 			image: "malum:block/banners/soulwoven_banner_default"
 			rotation: 0.0d
 			width: 1.0d
@@ -216,6 +268,7 @@
 		}
 		{
 			height: 2.0d
+			id: "7319AFFAC918530E"
 			image: "malum:block/banners/soulwoven_banner_default"
 			rotation: 0.0d
 			width: 1.0d
@@ -224,6 +277,7 @@
 		}
 		{
 			height: 2.0d
+			id: "6754FBA7738F28E1"
 			image: "malum:block/banners/soulwoven_banner_default"
 			rotation: 0.0d
 			width: 1.0d
@@ -738,6 +792,9 @@
 				"4939B8B2FE7A3B5D"
 			]
 			dependency_requirement: "one_completed"
+			icon: {
+				id: "irons_spellbooks:pyrium_ingot"
+			}
 			icon_scale: 0.7d
 			id: "7A4449338F885205"
 			rewards: [{

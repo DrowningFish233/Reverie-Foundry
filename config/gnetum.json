@@ -152,7 +152,7 @@
     },
     "xaerohud:hud": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 1
     },
@@ -194,7 +194,7 @@
     },
     "xaeroworldmap:crosshair_message": {
       "enabled": {
-        "value": "AUTO"
+        "value": "OFF"
       },
       "pass": 1
     },
@@ -287,6 +287,12 @@
         "value": "AUTO"
       },
       "pass": 4
+    },
+    "biomeswevegone:textures/misc/palepumpkinblur.png": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
     },
     "irons_spellbooks:cast_bar": {
       "enabled": {
@@ -404,6 +410,12 @@
     }
   },
   "mapModdedElementsPre": {
+    "gnetum_unknown": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 1
+    },
     "ruokmod": {
       "enabled": {
         "value": "ON"

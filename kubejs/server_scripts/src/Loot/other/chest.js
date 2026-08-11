@@ -1,3 +1,50 @@
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("minecraft:chests/village/village_weaponsmith");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('kubejs:randomweapon').withWeight(2).setCount([0, 1]))
+        });
+    }
+})
+
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("minecraft:chests/village/village_toolsmith");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('kubejs:randomweapon').withWeight(2).setCount([0, 1]))
+        });
+    }
+})
+
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("minecraft:chests/village/village_fletcher");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('kubejs:randomweapon').withWeight(2).setCount([0, 1]))
+        });
+    }
+})
+
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("minecraft:chests/village/village_tannery");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('kubejs:randomweapon').withWeight(2).setCount([0, 1]))
+        });
+    }
+})
+
+
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("minecraft:chests/village/village_armorer");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('kubejs:randomweapon').withWeight(2).setCount([0, 1]))
+        });
+    }
+})
+
+
 /**古城战利品 */
 LootJS.lootTables(event => {
     let roostTable = event.getLootTable("ancient_cities:ancient_city_pot");

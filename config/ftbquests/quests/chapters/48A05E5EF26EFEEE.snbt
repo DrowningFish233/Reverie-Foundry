@@ -11,6 +11,7 @@
 	images: [{
 		alpha: 200
 		height: 4.0d
+		id: "7BD40D30F377123F"
 		image: "eternal_starlight:item/seeking_eye"
 		rotation: 0.0d
 		width: 4.0d
@@ -26,6 +27,7 @@
 			}
 			icon_scale: 0.8d
 			id: "017488D14BA19FAA"
+			shape: "hexagon"
 			size: 2.0d
 			tasks: [
 				{
@@ -182,7 +184,7 @@
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["54207C49530C50BC"]
@@ -195,7 +197,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -220,7 +222,7 @@
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -235,6 +237,16 @@
 			}]
 			tasks: [{
 				id: "008CE044C39CDBA7"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["017488D14BA19FAA"]
+			id: "6DA0846CF76DCC86"
+			tasks: [{
+				id: "667D543034FB4B21"
 				type: "checkmark"
 			}]
 			x: -0.5d

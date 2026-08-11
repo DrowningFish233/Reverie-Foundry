@@ -25,7 +25,7 @@
 		"silentgear:coating": {
 			"armor": {
 				"operation": "ADD",
-				"value": 5
+				"value": 4
 			},
 			"armor/helmet": {
 				"operation": "ADD",
@@ -33,11 +33,11 @@
 			},
 			"armor/chestplate": {
 				"operation": "ADD",
-				"value": 1.5
+				"value": 1
 			},
 			"armor/leggings": {
 				"operation": "ADD",
-				"value": 1.5
+				"value": 1
 			},
 			"armor/boots": {
 				"operation": "ADD",
@@ -45,16 +45,16 @@
 			},
 			"armor_durability": {
 				"operation": "MULTIPLY_BASE",
-				"value": 0.15
+				"value": 0.1
 			},
 			"attack_damage": {
 				"operation": "MULTIPLY_BASE",
-				"value": 0.1
+				"value": 0.05
 			},
 			"traits": [
 				{
 					"conditions": [],
-					"level": 4,
+					"level": 2,
 					"trait": "kubejs:echo_shard"
 				}
 			]

@@ -75,8 +75,13 @@ global.new_materials = [
     { id: 'eye_of_ancient_city_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_ancient_city_located" },
     { id: 'eye_of_dragon_cave_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_dragon_cave_located" },
     { id: 'eye_of_weeping_well_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_weeping_well_located" },
+
+    { id: 'eye_of_fortress_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_fortress_located" },
+    { id: 'eye_of_ancient_battleground_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_ancient_battleground_located" },
+    { id: 'eye_of_monument_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_monument_located" },
+
     { id: 'luminofish_ink_sac', maxStackSize: 32, texture: "kubejs:item/misc/luminofish_ink_sac" },
-    { id: 'eye_of_starlight_portal_located', maxStackSize: 1, texture: "kubejs:item/misc/eye_of_starlight_portal" },
+    { id: 'eye_of_starlight_portal_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_starlight_portal" },
     { id: 'scoria_ingot', maxStackSize: 64, rarity: 'uncommon', texture: "kubejs:item/ingots/scoria_ingot" },
     { id: 'frigid_ingot', maxStackSize: 64, rarity: 'uncommon', texture: "kubejs:item/ingots/frigid_ingot" },
     { id: 'perennial_ingot', maxStackSize: 64, rarity: 'rare', texture: "kubejs:item/ingots/perennial_ingot" },
@@ -99,12 +104,14 @@ global.new_materials = [
     { id: 'swollen_liver', maxStackSize: 64, texture: "kubejs:item/material/swollen_liver" },
     { id: 'malignant_tumor', maxStackSize: 64, texture: "kubejs:item/material/malignant_tumor" },
     { id: 'evolving_seed', maxStackSize: 64, texture: "kubejs:item/material/evolving_seed" },
-
-
-    { id: 'random_accessory_pouch', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch" },
     { id: 'dimensional_stabilizer', maxStackSize: 8, texture: "kubejs:item/misc/dimensional_stabilizer" },
     { id: 'dimensional_ripper', maxStackSize: 8, texture: "kubejs:item/misc/dimensional_ripper" },
-    { id: 'rift_probe', maxStackSize: 8, texture: "kubejs:item/misc/rift_probe" }
+    { id: 'rift_probe', maxStackSize: 8, texture: "kubejs:item/misc/rift_probe" },
+    { id: 'random_accessory_pouch', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch" },
+    { id: 'random_accessory_pouch_t2', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch_t2" },
+    { id: 'random_accessory_pouch_t3', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch_t3" },
+    { id: 'random_accessory_pouch_t4', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch_t4" },
+
 
 
 

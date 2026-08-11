@@ -111,18 +111,50 @@ ServerEvents.loaded(event => {
     }
 });
 
+
+
 EntityEvents.spawned('minecraft:item', event => {
     let itemEntity = event.getEntity();
     let itemStack = itemEntity.getItem();
     let itemId = itemStack.id;
 
-    let nearbyPlayers = itemEntity.level.getPlayers();
-    if (nearbyPlayers.isEmpty()) return;
+    let isHiddenOre = false;
+    let defaultReplacement = null;
+
+    for (var stageIndex = 0; stageIndex < ReverieFoundry.stages.length; stageIndex++) {
+        var stage = ReverieFoundry.stages[stageIndex];
+        if (!stage) continue;
+
+        for (var j = 0; j < stage.hiddenOres.length; j++) {
+            var oreConfig = stage.hiddenOres[j];
+            if (itemId === oreConfig.original) {
+                isHiddenOre = true;
+                defaultReplacement = oreConfig.replacement;
+                break;
+            }
+        }
+        if (isHiddenOre) break;
+    }
+
+    if (!isHiddenOre) return;
+
+    let players = itemEntity.level.getPlayers();
+
+    if (players.isEmpty()) {
+        let oldStack = itemEntity.getItem();
+        let newItem = Item.of(defaultReplacement, oldStack.count);
+        itemEntity.setItem(newItem);
+
+        if (ReverieFoundry.debugMode) {
+            console.log("[Reverie Foundry] 默认替换矿石（无玩家）: " + itemId + " -> " + defaultReplacement);
+        }
+        return;
+    }
 
     let closestPlayer = null;
-    let closestDistance = 16;
+    let closestDistance = Infinity;
 
-    nearbyPlayers.forEach(function (player) {
+    players.forEach(function (player) {
         let distance = player.distanceToSqr(itemEntity);
         if (distance < closestDistance) {
             closestDistance = distance;
@@ -130,7 +162,12 @@ EntityEvents.spawned('minecraft:item', event => {
         }
     });
 
-    if (!closestPlayer) return;
+    if (!closestPlayer) {
+        let oldStack = itemEntity.getItem();
+        let newItem = Item.of(defaultReplacement, oldStack.count);
+        itemEntity.setItem(newItem);
+        return;
+    }
 
     let oreConfig = ReverieFoundry.checkOreShouldBeHidden(itemId, closestPlayer);
 
@@ -140,7 +177,11 @@ EntityEvents.spawned('minecraft:item', event => {
         itemEntity.setItem(newItem);
 
         if (ReverieFoundry.debugMode) {
-            console.log("[Reverie Foundry] 为玩家 " + closestPlayer.getName().getString() + " 隐藏矿石: " + oreConfig.original + " -> " + oreConfig.replacement);
+            console.log("[Reverie Foundry] 为最近的玩家 " + closestPlayer.getName().getString() + " 隐藏矿石: " + oreConfig.original + " -> " + oreConfig.replacement + " (距离: " + Math.sqrt(closestDistance).toFixed(1) + "格)");
+        }
+    } else {
+        if (ReverieFoundry.debugMode) {
+            console.log("[Reverie Foundry] 最近的玩家 " + closestPlayer.getName().getString() + " 已解锁，保持矿石原样: " + itemId);
         }
     }
 });

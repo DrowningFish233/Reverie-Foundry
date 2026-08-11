@@ -44,15 +44,15 @@
         "level_hint": "2",
         "name": "iron/铁"
       },
-      "magic_armor": 50.0,
+      "magic_armor": 40.0,
       "magic_damage": 6.0,
       "ranged_damage": 4.0,
       "rarity": 75.0,
       "traits": [
         {
           "conditions": [],
-          "level": 3,
-          "trait": "kubejs:chalyblux"
+          "level": 1,
+          "trait": "kubejs:soul_conversion"
         },
         {
           "conditions": [],

@@ -1,0 +1,38 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"advanced"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "malum:arcane_charcoal"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#2A1A3A",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.malum:arcane_charcoal"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:coating": {
+			"magic_damage": {
+				"operation": "ADD",
+				"value": 0.5
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:arcane_ingot"
+				}
+			]
+		}
+	}
+}

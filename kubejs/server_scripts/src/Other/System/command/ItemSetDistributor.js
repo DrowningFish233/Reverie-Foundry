@@ -53,6 +53,7 @@ const itemSet1 = [
 
 const itemSet2 = [
     { command: "drunkard", oneUse: true },
+    { id: "sophisticatedbackpacks:backpack", count: 1 },
     { id: `minecraft:bundle[bundle_contents=[{count:1,id:"kubejs:bloody_mary"},{count:1,id:"kubejs:star_beam_rye"},{count:1,id:"kubejs:lightingball"},{count:1,id:"kubejs:everclear"},{count:1,id:"kubejs:evergreen_gin"},{count:1,id:"kubejs:rum"},{count:1,id:"kubejs:caribbean_rum"},{count:1,id:"kubejs:screwdriver"},{count:1,id:"kubejs:white_wine"},{count:1,id:"kubejs:fireball"},{count:1,id:"kubejs:cinnamon_roll"},{count:1,id:"kubejs:moscow_mule"},{count:1,id:"kubejs:purple_haze"},{count:1,id:"kubejs:margarita"},{count:1,id:"kubejs:red_wine"},{count:1,id:"kubejs:tequila"}]]` },
     { id: "kubejs:hangover_tea", count: 6 },
     { id: () => getRandomScrollId(), count: 1 },

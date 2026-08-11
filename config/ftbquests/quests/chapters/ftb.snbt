@@ -13,6 +13,7 @@
 	id: "7CEAFF10D33DEDBC"
 	images: [{
 		height: 3.0d
+		id: "2DCEB583959EF46B"
 		image: "eternal_starlight:item/seeking_eye"
 		rotation: 0.0d
 		width: 3.0d

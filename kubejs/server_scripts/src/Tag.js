@@ -1,5 +1,40 @@
 // priority: 500
 ServerEvents.tags('item', event => {
+
+    event.add('hazennstuff:enchanted_spellbook',
+        "reveriefoundry:spellbook"
+    )
+
+    event.add('kubejs:crafting_table',
+        "minecraft:crafting_table",
+        "biomeswevegone:aspen_crafting_table",
+        "biomeswevegone:baobab_crafting_table",
+        "biomeswevegone:blue_enchanted_crafting_table",
+        "biomeswevegone:cika_crafting_table",
+        "biomeswevegone:cypress_crafting_table",
+        "biomeswevegone:ebony_crafting_table",
+        "biomeswevegone:fir_crafting_table",
+        "biomeswevegone:florus_crafting_table",
+        "biomeswevegone:green_enchanted_crafting_table",
+        "biomeswevegone:holly_crafting_table",
+        "biomeswevegone:ironwood_crafting_table",
+        "biomeswevegone:jacaranda_crafting_table",
+        "biomeswevegone:mahogany_crafting_table",
+        "biomeswevegone:maple_crafting_table",
+        "biomeswevegone:palm_crafting_table",
+        "biomeswevegone:pine_crafting_table",
+        "biomeswevegone:rainbow_eucalyptus_crafting_table",
+        "biomeswevegone:redwood_crafting_table",
+        "biomeswevegone:sakura_crafting_table",
+        "biomeswevegone:skyris_crafting_table",
+        "biomeswevegone:spirit_crafting_table",
+        "biomeswevegone:white_mangrove_crafting_table",
+        "biomeswevegone:willow_crafting_table",
+        "biomeswevegone:witch_hazel_crafting_table",
+        "biomeswevegone:zelkova_crafting_table"
+    )
+
+
     event.remove('irons_spellbooks:lootable_focus', 'hazennstuff:shadow_scale')
     event.add('c:gems',
         'kubejs:topaz',
@@ -177,7 +212,6 @@ ServerEvents.tags('item', event => {
         'terra_curio:rifle_scope',
         'terra_curio:shiny_stone',
         'terra_curio:hand_of_creation',
-        'terra_curio:demon_heart',
         'terra_curio:gravity_globe',
         'terra_curio:architect_gizmo_pack',
         'terra_curio:cell_phone',
@@ -190,7 +224,6 @@ ServerEvents.tags('item', event => {
         'terra_curio:treasure_magnet',
         'terra_curio:the_plan',
         'terra_curio:explorers_equipment',
-        'terra_curio:star',
         'terra_curio:tabi',
         'terra_curio:black_belt',
         'terra_curio:eye_of_the_golem',
@@ -299,57 +332,56 @@ ServerEvents.tags('item', event => {
         'terra_curio:tungsten_watch',
         'terra_curio:gold_watch',
         'terra_curio:platinum_watch'
+    )
+    event.add('kubejs:level_2',
+        'terra_curio:obsidian_shield',
+        'terra_curio:dunerider_boots',
+        'terra_curio:water_walking_boots',
+        'terra_curio:obsidian_horseshoe',
+        'terra_curio:lucky_horseshoe',
+        'terra_curio:flipper',
+        'terra_curio:frog_leg',
+        'terra_curio:frog_flipper',
+        'terra_curio:diving_gear',
+        'terra_curio:jellyfish_diving_gear',
+        'terra_curio:arctic_diving_gear',
+        'terra_curio:inner_tube',
+        'terra_curio:rocket_boots',
+
+        'terra_curio:cloud_in_a_balloon',
+        'terra_curio:blizzard_in_a_balloon',
+        'terra_curio:sandstorm_in_a_balloon',
+        'terra_curio:fart_in_a_balloon',
+        'terra_curio:honey_balloon',
+        'terra_curio:balloon_pufferfish',
+        'terra_curio:blue_horseshoe_balloon',
+        'terra_curio:white_horseshoe_balloon',
+        'terra_curio:yellow_horseshoe_balloon',
+        'terra_curio:green_horseshoe_balloon',
+        'terra_curio:pink_horseshoe_balloon',
+        'terra_curio:amber_horseshoe_balloon',
+        'terra_curio:sharkron_balloon',
+
+        'terra_curio:anklet_of_the_wind',
+        'terra_curio:magiluminescence',
+        'terra_curio:obsidian_rose',
+        'terra_curio:lava_charm',
+        'terra_curio:shield_of_cthulhu',
+        'terra_curio:jellyfish_necklace',
+        'terra_curio:bee_cloak',
+        'terra_curio:honey_comb',
+        'terra_curio:flesh_knuckles',
+        'terra_curio:worm_scarf',
+        'terra_curio:brain_of_confusion',
+        'terra_curio:royal_gel',
+
+        'terra_curio:depth_meter',
+        'terra_curio:stopwatch',
+        'terra_curio:life_form_analyzer',
+        'terra_curio:tally_counter',
+        'terra_curio:metal_detector',
+        'terra_curio:dps_meter'
     ),
-
-        event.add('kubejs:level_2',
-            'terra_curio:obsidian_shield',
-            'terra_curio:dunerider_boots',
-            'terra_curio:water_walking_boots',
-            'terra_curio:obsidian_horseshoe',
-            'terra_curio:lucky_horseshoe',
-            'terra_curio:flipper',
-            'terra_curio:frog_leg',
-            'terra_curio:frog_flipper',
-            'terra_curio:diving_gear',
-            'terra_curio:jellyfish_diving_gear',
-            'terra_curio:arctic_diving_gear',
-            'terra_curio:inner_tube',
-            'terra_curio:rocket_boots',
-
-            'terra_curio:cloud_in_a_balloon',
-            'terra_curio:blizzard_in_a_balloon',
-            'terra_curio:sandstorm_in_a_balloon',
-            'terra_curio:fart_in_a_balloon',
-            'terra_curio:honey_balloon',
-            'terra_curio:balloon_pufferfish',
-            'terra_curio:blue_horseshoe_balloon',
-            'terra_curio:white_horseshoe_balloon',
-            'terra_curio:yellow_horseshoe_balloon',
-            'terra_curio:green_horseshoe_balloon',
-            'terra_curio:pink_horseshoe_balloon',
-            'terra_curio:amber_horseshoe_balloon',
-            'terra_curio:sharkron_balloon',
-
-            'terra_curio:anklet_of_the_wind',
-            'terra_curio:magiluminescence',
-            'terra_curio:obsidian_rose',
-            'terra_curio:lava_charm',
-            'terra_curio:shield_of_cthulhu',
-            'terra_curio:jellyfish_necklace',
-            'terra_curio:bee_cloak',
-            'terra_curio:honey_comb',
-            'terra_curio:flesh_knuckles',
-            'terra_curio:worm_scarf',
-            'terra_curio:brain_of_confusion',
-            'terra_curio:royal_gel',
-
-            'terra_curio:depth_meter',
-            'terra_curio:stopwatch',
-            'terra_curio:life_form_analyzer',
-            'terra_curio:tally_counter',
-            'terra_curio:metal_detector',
-            'terra_curio:dps_meter'
-        ),
 
         event.add('kubejs:level_3',
             'terra_curio:lightning_boots',
@@ -437,7 +469,6 @@ ServerEvents.tags('item', event => {
             'terra_curio:rifle_scope',
             'terra_curio:shiny_stone',
             'terra_curio:hand_of_creation',
-            'terra_curio:demon_heart',
             'terra_curio:gravity_globe',
             'terra_curio:architect_gizmo_pack',
 
@@ -452,7 +483,6 @@ ServerEvents.tags('item', event => {
             'terra_curio:the_plan',
 
             'terra_curio:explorers_equipment',
-            'terra_curio:star',
             'terra_curio:tabi',
             'terra_curio:black_belt',
             'terra_curio:eye_of_the_golem',
@@ -464,8 +494,6 @@ ServerEvents.tags('item', event => {
             'terra_curio:rek_3000',
             'terra_curio:base_point',
 
-
-            'terra_curio:workshop',
             'terra_curio:shot_put'
 
         )
@@ -793,6 +821,18 @@ ServerEvents.tags('block', event => {
         'hazennstuff:solar_core_blackstone_ore'
     ]);
 
+    event.add('c:ores', [
+        'hazennstuff:runestone_slag',
+        'hazennstuff:zenalite_voidstone_ore',
+        'hazennstuff:zenalite_abysslate_ore',
+        'hazennstuff:zenalite_end_stone_ore',
+        'hazennstuff:zenalite_stone_ore',
+        'hazennstuff:dreadstone_ore',
+        'hazennstuff:chlorophyte_ore',
+        'hazennstuff:solar_core_netherrack_ore',
+        'hazennstuff:solar_core_blackstone_ore'
+    ]);
+
     event.add('reveriefoundry:stageores', [
         'hazennstuff:runestone_slag',
         'hazennstuff:zenalite_voidstone_ore',
@@ -801,12 +841,13 @@ ServerEvents.tags('block', event => {
         'hazennstuff:zenalite_stone_ore',
         'hazennstuff:dreadstone_ore',
         'hazennstuff:chlorophyte_ore',
+        'hazennstuff:solar_core_netherrack_ore',
+        'hazennstuff:solar_core_blackstone_ore',
         'gobber2:gobber2_ore_end',
         'gobber2:gobber2_ore_nether',
         'gobber2:gobber2_ore_deepslate',
-        'gobber2:gobber2_ore',
-        'hazennstuff:solar_core_netherrack_ore',
-        'hazennstuff:solar_core_blackstone_ore'
+        'gobber2:gobber2_ore'
+
     ]);
 });
 

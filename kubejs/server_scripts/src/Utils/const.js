@@ -159,6 +159,15 @@ const DIFFICULTY_BLACKLIST = [
     "irons_spellbooks:dead_king"
 ];
 
+// 强制应用难度加成的实体白名单
+const FORCE_APPLY_WHITELIST = [
+    "iceandfire:fire_dragon",
+    "iceandfire:ice_dragon",
+    "iceandfire:lightning_dragon"
+
+];
+
+
 const EXTRA_BUFF_ENTITIES = [
     "terra_entity:dungeon_guardian",
     "terra_entity:skeletron",
@@ -198,19 +207,18 @@ const GAME_DIFFICULTY_LEVELS = {
 const STAGE_DIFFICULTY_BONUS = {
     'difficult_0': { health: 1, attack: 1, armor: 1, toughness: 1, level: 0 },
     'difficult_1': { health: 2, attack: 1.2, armor: 2, toughness: 2, level: 1 },
-    'difficult_2': { health: 3, attack: 1.4, armor: 3, toughness: 3, level: 2 },
-    'difficult_3': { health: 4, attack: 1.6, armor: 4, toughness: 4, level: 3 },
-    'difficult_4': { health: 5, attack: 1.8, armor: 5, toughness: 5, level: 4 },
-    'difficult_5': { health: 6, attack: 2, armor: 6, toughness: 6, level: 5 },
-    'difficult_6': { health: 8, attack: 3, armor: 8, toughness: 8, level: 6 },
+    'difficult_2': { health: 3, attack: 1.4, armor: 3, toughness: 2, level: 2 },
+    'difficult_3': { health: 4, attack: 1.6, armor: 4, toughness: 3, level: 3 },
+    'difficult_4': { health: 5, attack: 1.8, armor: 5, toughness: 3, level: 4 },
+    'difficult_5': { health: 6, attack: 2, armor: 6, toughness: 4, level: 5 },
+    'difficult_6': { health: 8, attack: 3, armor: 8, toughness: 4, level: 6 },
+    'difficult_7': { health: 10, attack: 3, armor: 10, toughness: 5, level: 7 },
+    'difficult_8': { health: 12, attack: 3.5, armor: 12, toughness: 6, level: 8 },
 
-
-    'difficult_7': { health: 10, attack: 3, armor: 10, toughness: 10, level: 7 },
-    'difficult_8': { health: 12, attack: 3.2, armor: 12, toughness: 12, level: 8 },
-    'difficult_9': { health: 14, attack: 3.4, armor: 14, toughness: 14, level: 9 },
-    'difficult_10': { health: 16, attack: 3.6, armor: 16, toughness: 16, level: 10 },
-    'difficult_11': { health: 18, attack: 3.8, armor: 18, toughness: 18, level: 11 },
-    'difficult_12': { health: 20, attack: 4, armor: 20, toughness: 20, level: 12 }
+    'difficult_9': { health: 14, attack: 3.5, armor: 14, toughness: 7, level: 9 },
+    'difficult_10': { health: 16, attack: 4, armor: 16, toughness: 8, level: 10 },
+    'difficult_11': { health: 18, attack: 5, armor: 18, toughness: 9, level: 11 },
+    'difficult_12': { health: 20, attack: 5, armor: 20, toughness: 10, level: 12 }
 };
 
 

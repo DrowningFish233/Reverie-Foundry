@@ -34,7 +34,7 @@
       "armor/leggings": 8.0,
       "armor_durability": 81.0,
       "armor_toughness": 12.0,
-      "attack_damage": 35.0,
+      "attack_damage": 15.0,
       "attack_speed": 0.0,
       "charging_value": 1.1,
       "draw_speed": 0.0,
@@ -47,7 +47,7 @@
         "name": "tyrian_steel"
       },
       "magic_armor": 22.0,
-      "magic_damage": 25.0,
+      "magic_damage": 11.0,
       "projectile_accuracy": 1.1,
       "projectile_speed": 1.1,
       "ranged_damage": 4.0,

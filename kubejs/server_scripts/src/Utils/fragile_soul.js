@@ -48,6 +48,8 @@ function updateHealth(player) {
 
     player.setHealth(Math.min(player.getHealth(), maxHealth));
 }
+
+
 // 检查系统是否对特定玩家启用
 function isSystemEnabledForPlayer(player) {
     const pData = player.persistentData;

@@ -1,0 +1,19 @@
+[wirelessCraftingGrid]
+	# Default: 1000
+	# Range: 1 ~ 9223372036854775807
+	energyCapacity = 1000
+	# Default: 5
+	# Range: 0 ~ 9223372036854775807
+	openEnergyUsage = 5
+	# Default: 5
+	# Range: 0 ~ 9223372036854775807
+	craftingEnergyUsage = 5
+	# Default: 10
+	# Range: 0 ~ 9223372036854775807
+	autocraftingEnergyUsage = 10
+	# Default: 5
+	# Range: 0 ~ 9223372036854775807
+	clearMatrixEnergyUsage = 5
+	# Default: 5
+	# Range: 0 ~ 9223372036854775807
+	recipeTransferEnergyUsage = 5

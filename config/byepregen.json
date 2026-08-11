@@ -3,7 +3,7 @@
   "enableFastTickChunks": true,
   "enableArenaPalette": true,
   "enableServerRuntimeArenaPalette": true,
-  "enableClientArenaPalette": true,
+  "enableClientArenaPalette": false,
   "enableGcFreeWorldgenSave": true,
   "enableYALightEngine": true
 }

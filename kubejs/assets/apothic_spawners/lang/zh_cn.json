@@ -1,7 +1,7 @@
 {
     "item.apothic_spawners.spawner": "%s刷怪笼",
     "enchantment.apothic_spawners.capturing": "捕捉",
-    "enchantment.apothic_spawners.capturing.desc": "使生物死亡时有概率掉落自身刷怪蛋。",
+    "enchantment.apothic_spawners.capturing.desc": "使生物死亡时有概率掉落自身刷怪蛋（已大幅削弱，请使用末影栓绳）",
     "misc.apothic_spawners.concat": "%s %s",
     "misc.apothic_spawners.value_concat": "%s: %s",
     "misc.apothic_spawners.min_value": "最小值：%s",

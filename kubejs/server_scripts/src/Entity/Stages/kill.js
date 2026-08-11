@@ -32,10 +32,7 @@ const BOSS_STAGES = [
 ];
 
 EntityEvents.death(event => {
-    const { entity, source, server, level } = event;
-
-    const killer = source.player;
-    if (!killer) return;
+    const { entity, server, level } = event;
 
     const entityType = entity.getType();
 
@@ -43,7 +40,7 @@ EntityEvents.death(event => {
         if (entityType === bossStage.boss) {
 
             let nearbyPlayers = level.getPlayers().filter(player =>
-                player.distanceToSqr(entity) <= 256
+                player.distanceToSqr(entity) <= 1024
             );
 
             nearbyPlayers.forEach(nearbyPlayer => {

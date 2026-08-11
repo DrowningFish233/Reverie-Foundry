@@ -5,6 +5,7 @@ ItemEvents.firstRightClicked((event) => {
     const { item, level } = event;
     // 检查物品是否可损耗耐久
     if (!item.isDamageableItem()) return;
+    if (!fu_hasTrait(item, "kubejs:carbonatite_ingot")) return;
     const trait_level = fu_getHighestTraitLevelAnywhere(player, "kubejs:carbonatite_ingot")
     let enchantment_count = getDataValue(item, "add_enchantment_count") || 0;
     if (enchantment_count >= trait_level * 6) return

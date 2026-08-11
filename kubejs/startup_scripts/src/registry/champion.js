@@ -23,7 +23,7 @@ StartupEvents.registry("champions:affix", event => {
                 }
 
                 let soulWardBonusDamage = amount * (bonus / 100);
-                attackEntity(player, 'generic', soulWardBonusDamage, true);
+                attackEntity(player, 'generic', soulWardBonusDamage, false);
 
                 return true;
             });
@@ -55,7 +55,7 @@ StartupEvents.registry("champions:affix", event => {
                 let damageBonus = newLevel * 5;
                 let extraDamage = amount * (damageBonus / 100);
                 if (extraDamage > 0) {
-                    attackEntity(player, 'generic', extraDamage, true);
+                    attackEntity(player, 'generic', extraDamage, false);
                 }
 
                 if (newLevel >= 5) {
@@ -494,13 +494,16 @@ StartupEvents.registry("champions:affix", event => {
                     let itemStack = getCuriosItem(player, 'cataclysm:sticky_gloves');
                     if (itemStack !== null) return true;
                     let item = player.mainHandItem;
+                    player.potionEffects.add('minecraft:slowness', 20 * 5, 0);
                     const EnchantmentLevel = item.getEnchantmentLevel("minecraft:binding_curse");
                     if (EnchantmentLevel == 0) {
-                        let level = player.getLevel();
-                        let dropedItem = new $ItemEntity(level, player.x, player.y, player.z, item);
-                        dropedItem.setPickUpDelay(60);
-                        dropedItem.spawn();
-                        player.getInventory().removeItem(item);
+                        if (Math.random() < 0.01) {
+                            let level = player.getLevel();
+                            let dropedItem = new $ItemEntity(level, player.x, player.y, player.z, item);
+                            dropedItem.setPickUpDelay(60);
+                            dropedItem.spawn();
+                            player.getInventory().removeItem(item);
+                        }
                     }
                 }
                 return true;

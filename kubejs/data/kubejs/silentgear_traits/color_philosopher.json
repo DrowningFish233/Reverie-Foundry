@@ -1,0 +1,41 @@
+{
+	"conditions": [],
+	"description": {
+		"translate": "trait.kubejs.color_philosopher.desc"
+	},
+	"effects": [
+		{
+			"type": "silentgear:attribute",
+			"attribute_modifiers": {
+				"all/any": [
+					{
+						"attribute": "irons_spellbooks:cast_time_reduction",
+						"operation": "add_multiplied_base",
+						"values": [
+							0.02,
+							0.04,
+							0.06,
+							0.08,
+							0.1
+						]
+					},
+					{
+						"attribute": "aces_spell_utils:magic_damage_crit_chance",
+						"operation": "add_multiplied_base",
+						"values": [
+							0.01,
+							0.02,
+							0.03,
+							0.04,
+							0.05
+						]
+					}
+				]
+			}
+		}
+	],
+	"max_level": 5,
+	"name": {
+		"translate": "trait.kubejs.color_philosopher"
+	}
+}

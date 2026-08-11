@@ -67,9 +67,4 @@
 	# Range: 20 ~ 500
 	maxDistance = 128
 	#List of gateway IDs that can spawn in the End
-	gateways = ["gateways:basic/enderman", "gateways:basic/shulker", "gateways:basic/blaze", "gateways:basic/slime", "gateways:endless/blaze", "gateways:hellish_fortress", "gateways:overworldian_nights", "gateways:emerald_grove",   "kubejs:large_ocean_challenge",
-    "kubejs:large_spell_challenge",
-    "kubejs:medium_spell_challenge",
-    "kubejs:medium_ocean_challenge",
-    "kubejs:small_spell_challenge",
-    "kubejs:small_ocean_challenge"]
+	gateways = ["gateways:basic/enderman", "gateways:basic/shulker", "gateways:basic/blaze", "gateways:basic/slime", "gateways:endless/blaze", "gateways:hellish_fortress", "gateways:overworldian_nights", "gateways:emerald_grove", "kubejs:large_ocean_challenge", "kubejs:large_spell_challenge", "kubejs:medium_spell_challenge", "kubejs:medium_ocean_challenge", "kubejs:small_spell_challenge", "kubejs:small_ocean_challenge"]

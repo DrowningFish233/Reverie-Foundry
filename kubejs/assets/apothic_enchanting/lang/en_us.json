@@ -1,6 +1,14 @@
 {
     "creative_tab.apothic_enchanting.all": "Apothic Enchanting",
 
+    "apothic_enchanting:max_eterna": "Max Eterna",
+    "apothic_enchanting:max_eterna.desc": "The maximum amount of Eterna you can use in an Enchanting Table.",
+
+    "block.apothic_enchanting.apothic_enchanting_table": "Apothic Enchanting Table",
+    "block.apothic_enchanting.apothic_enchanting_table.desc": "A cosmetic variant of the Enchanting Table.",
+    "block.apothic_enchanting.raven_enchanting_table": "Enchanting Table of the Raven",
+    "block.apothic_enchanting.raven_enchanting_table.desc": "Allows manually customizing the core enchanting stats.",
+    "block.apothic_enchanting.basic_bookshelf": "Basic Bookshelf",
     "block.apothic_enchanting.hellshelf": "Hellshelf",
     "block.apothic_enchanting.infused_hellshelf": "Infused Hellshelf",
     "block.apothic_enchanting.blazing_hellshelf": "Blazing Hellshelf",
@@ -66,6 +74,7 @@
     "gui.apothic_enchanting.enchant.eterna.desc": " - Magical Energy",
     "gui.apothic_enchanting.enchant.eterna.desc2": "Sets the max enchanting level",
     "gui.apothic_enchanting.enchant.eterna.desc3": "Current Value: %s/%s",
+    "gui.apothic_enchanting.enchant.eterna.desc4": "Clamped to %s by your Max Eterna attribute",
     "gui.apothic_enchanting.enchant.quanta.desc": " - Pure Chaos",
     "gui.apothic_enchanting.enchant.quanta.desc2": "Increases underlying randomness",
     "gui.apothic_enchanting.enchant.quanta.desc3": " lessens the negative effects",
@@ -153,6 +162,18 @@
     "item.apothic_enchanting.ender_lead.desc": "Can capture and move most entities",
     "item.apothic_enchanting.occult_ender_lead": "Occult Ender Lead",
     "item.apothic_enchanting.occult_ender_lead.desc": "Can capture and move most entities, and bind them to Mob Spawners",
+
+    "item.apothic_enchanting.music_disc_eterna": "Music Disc",
+    "jukebox_song.apothic_enchanting.eterna": "Firel - Eterna",
+    "subtitle.apothic_enchanting.music_disc.eterna": "Firel - Eterna",
+
+    "item.apothic_enchanting.music_disc_quanta": "Music Disc",
+    "jukebox_song.apothic_enchanting.quanta": "Firel - Quanta",
+    "subtitle.apothic_enchanting.music_disc.quanta": "Firel - Quanta",
+
+    "item.apothic_enchanting.music_disc_arcana": "Music Disc",
+    "jukebox_song.apothic_enchanting.arcana": "Firel - Arcana",
+    "subtitle.apothic_enchanting.music_disc.arcana": "Firel - Arcana",
 
     "info.apothic_enchanting.tome_error": "Bugged Item - Right click in the air to turn into an enchanted book.",
     "info.apothic_enchanting.other_tome": "Accepts miscellaneous enchantments.",

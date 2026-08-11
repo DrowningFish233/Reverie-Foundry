@@ -6,28 +6,24 @@
 /** @type {Object.<string, {id: string, config: (mat: GenerateSilentGearMaterial) => void}>} */
 const MaterialConfigs = {
     enabled: true, // 设为false可禁用生成
-    auto_ingot: {
-        id: "kubejs:perennial_ingot",
+    auto_ingot12: {
+        id: 'malum:refined_soulstone',
         config: (mat) => {
-            mat.setCategories(["advanced", "organic", "metal"])
-                .setIngredientItem("kubejs:perennial_ingot")
-                .setDisplayColor("#2d8f38")
-                .setName("material.silentgear.kubejs:perennial_ingot")
-                .addMain((/** @type {PartBuilder} */part) => {
+            mat.setCategories(["gem", "advanced"])
+                .setIngredientItem('malum:refined_soulstone')
+                .setDisplayColor("#913c9f")
+                .setName("material.silentgear.malum:refined_soulstone")
+
+                // 握把
+                .addGrip((/** @type {PartBuilder} */part) => {
                     part
-                        .armor(25)
-                        .armorHelmet(5)
-                        .armorChestplate(8)
-                        .armorLeggings(7)
-                        .armorBoots(5)
-                        .armorDurability(15)
-                        .attackDamage(5)
-                        .attackSpeed(1)
-                        .durability(100)
-                        .addTrait("kubejs:unchecked_growth", 1)
+                        .magicDamageWithOperation("MULTIPLY_BASE", 0.15)   // 魔法伤害 +15%
+                        .durabilityWithOperation("MULTIPLY_BASE", -0.15)   // 耐久 -15%
+                        .addTrait("kubejs:soul_consumption", 1)            // 特性
                 })
         }
     }
+
 };
 
 
@@ -38,29 +34,12 @@ const MaterialConfigs = {
 /** ↓提供补全用代码，不可删除 */
 /** @type {Object.<string, {id: string, config: (trait: GenerateSilentGearTrait) => void}>} */
 const TraitConfigs = {
-    enabled: true, // 设为false可禁用生成
+    enabled: true,
 
-    auto_trait: {
-        id: "kubejs:unchecked_growth",
+    soul_conversion: {
+        id: "kubejs:soul_conversion",
         config: (trait) => {
-            trait.setMaxLevel(1)
-            trait.addAttribute([
-                trait.createAttributeValue(
-                    "minecraft:generic.max_health",
-                    "add_multiplied_total",
-                    [0.5]
-                ),
-                trait.createAttributeValue(
-                    "minecraft:generic.movement_speed",
-                    "add_multiplied_total",
-                    [-0.25]
-                ),
-                trait.createAttributeValue(
-                    "terra_curio:player.aggro",
-                    "add_value",
-                    [600]
-                )
-            ])
+            trait.setMaxLevel(1);
         }
     }
 }

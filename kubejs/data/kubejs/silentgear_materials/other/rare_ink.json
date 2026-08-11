@@ -1,0 +1,55 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"medium",
+			"medium"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "irons_spellbooks:rare_ink"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#033e3c",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.irons_spellbooks:rare_ink"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:coating": {
+			"durability": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"magic_damage": {
+				"operation": "ADD",
+				"value": 1.5
+			},
+			"spell_power": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.06
+			},
+			"spell_resist": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.06
+			},
+			"max_mana": {
+				"operation": "ADD",
+				"value": 30
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 3,
+					"trait": "kubejs:color_philosopher"
+				}
+			]
+		}
+	}
+}

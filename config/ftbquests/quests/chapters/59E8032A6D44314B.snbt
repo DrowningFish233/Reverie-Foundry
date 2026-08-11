@@ -3,7 +3,11 @@
 	default_quest_shape: ""
 	filename: "59E8032A6D44314B"
 	group: "7F00D0D8C7C916A0"
+	icon: {
+		id: "alshanex_familiars:monocle"
+	}
 	id: "59E8032A6D44314B"
+	images: [ ]
 	order_index: 3
 	quest_links: [ ]
 	quests: [

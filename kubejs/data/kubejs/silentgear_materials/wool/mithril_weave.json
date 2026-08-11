@@ -29,7 +29,7 @@
 			},
 			"attack_damage": {
 				"operation": "MULTIPLY_BASE",
-				"value": 0.2
+				"value": 0.15
 			},
 			"durability": {
 				"operation": "ADD",
@@ -46,7 +46,7 @@
 			"traits": [
 				{
 					"conditions": [],
-					"level": 4,
+					"level": 3,
 					"trait": "kubejs:arcane_ingot"
 				}
 			]
@@ -83,7 +83,7 @@
 			"traits": [
 				{
 					"conditions": [],
-					"level": 4,
+					"level": 3,
 					"trait": "kubejs:arcane_ingot"
 				}
 			]

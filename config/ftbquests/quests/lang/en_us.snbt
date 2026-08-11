@@ -4,7 +4,6 @@
 	chapter.18D895B9141E8756.title: "&3Create"
 	chapter.1A98B27BB1D8BF2D.title: "&3Iron's Spells 'n Spellbooks"
 	chapter.21E6476472D3F44D.title: "&6Material Recommendations"
-	chapter.374C0851A23B3549.title: "&3Silent Gear"
 	chapter.44E1ED5935A6147B.title: "&3Grand Journey"
 	chapter.48A05E5EF26EFEEE.title: "&dImportant Info !!!"
 	chapter.566973DCC685511A.title: "&3Apotheosis"
@@ -94,12 +93,6 @@
 	quest.01891B78BD11035B.title: "&a\"Honey That Conceals Suffering at the Beginning?!\""
 	quest.01DFC41A894B42AC.quest_desc: ["&7Can be used for &#66CCFFfishing&7. &#FFD700Luck&7 reduces the time it takes to catch a fish."]
 	quest.01DFC41A894B42AC.quest_subtitle: "What're you looking at? Never seen someone come back empty-handed?"
-	quest.01F90096B5781A59.quest_desc: [
-		"&b&lBlueprint Base&r&7 can be used to craft the base for various weapon parts. While not as convenient as reusable &6&lBlueprints&r&7, they are &acheaper&r&7 and &aeasier to use&r&7."
-		""
-		"&7Templates require &3&lTemplate Bases&r&7. Template Bases require a &dknife&r&7 or &ddagger&r&7 and a &6Stone Anvil&r&7. Place &2Logs&r&7 on the &6Stone Anvil&r&7 and right-click with a &dknife&r&7. &7Sometimes knives from other mods may also work. You may not yet have the &6&lKnife Blueprint&r&7, so you will need to craft a &c&lCrude Knife&r&7 first."
-	]
-	quest.01F90096B5781A59.quest_subtitle: "Basic Equipment"
 	quest.01FCAFCAA454BC91.quest_desc: [
 		"&7Candles have long been associated with the occult. In Apotheosis enchanting, candles provide 1.25% &5Arcana&7. While small, multiple candles together provide more &5Arcana&7 power."
 		""
@@ -255,8 +248,6 @@
 		"&mEquip me and I'll make you fly&r"
 	]
 	quest.0490EDB36F1CF908.quest_subtitle: "The Sky Is the Limit"
-	quest.04D12E5A5BAC565F.quest_desc: ["Need paper? You can get it by peeling bark from logs. Blue dye can be crafted from Lapis Lazuli."]
-	quest.04D12E5A5BAC565F.quest_subtitle: "\"Premium Goods\""
 	quest.04DD58980F332FEE.quest_desc: ["&7Similar to a knife, but with lower damage and attack speed. However, it is more &#66DDCCdurable&7 and can be used for cutting board recipes."]
 	quest.04DD58980F332FEE.quest_subtitle: "Survival Essential"
 	quest.04F1594414B048D0.quest_desc: [
@@ -475,28 +466,9 @@
 		"&7Place the &eweapon&r&7 you want to transmute in the first slot, and the item you want it to look like in the second slot. Then consume Amethyst energy to transmute your weapon!&r&7&r"
 	]
 	quest.092C65BDEC1E30A4.quest_subtitle: "Ever-Changing"
-	quest.0937218D11FA4D34.quest_desc: [
-		"&7You want to craft a sword. First, use the &#66DDCCSword Blueprint&7 with two &#66CCFFIron Ingots&7 to make a &#FFD700Iron Blade&7. Then, use the &#66DDCCTool Handle Blueprint&7 with two &#66CCFFIron Ingots&7 to make an &#FFD700Iron Tool Handle&7. Combine the blade and handle to get a strange &#66CCFFIron Sword&7."
-		""
-		"&7Now the &#66DDCCTip Upgrade&7, &#66DDCCBinding&7, &#66DDCCCoat&7, and &#66DDCCGrip&7 slots are empty. You craft the corresponding four blueprints and press U on each to see which materials can be used. After picking your materials, you craft those four parts and combine them with the &#66CCFFIron Sword&7—now it looks even stranger (?)"
-		""
-		"&7Suddenly you feel the &#FFD700Iron Blade&7 isn't good enough—why not use Diamond? You craft a &#FFD700Diamond Blade&7 using two &#66CCFFDiamonds&7 and the &#66DDCCSword Blueprint&7, then combine it with the strange &#66CCFFIron Sword&7 to replace the &#FFD700Iron Blade&7. You now have a strange &#66CCFFDiamond Sword&7."
-	]
-	quest.0937218D11FA4D34.title: "In Case You Still Didn't Get It"
 	quest.0973A81F39964B58.quest_subtitle: "Familiar Summoning Ritual"
 	quest.09BD7CB2DEA2CD89.quest_desc: ["Allows customization of arrow velocity and accuracy."]
 	quest.09BD7CB2DEA2CD89.quest_subtitle: "Customized Experience"
-	quest.09E68D57095A5F1D.quest_desc: [
-		"&7To forge your own &6armor&7/&6weapons&7/&6tools&7, you first need to craft &b&lBlueprints&r&7. Hold &2&lCTRL&r&7 to see which parts an item crafted from a blueprint can have."
-		""
-		"&7Take the &fsword&7 for example. A regular iron sword has only two parts: &7blade and handle&7, so it only deals &c6&7 damage (huge?). But looking at the &b&lSword Blueprint&r&7 reveals that a blueprint-crafted sword can have &dtip upgrades&7, &dbindings&7, &dcoatings&7, and &dhandles&7—a whole &afour additional parts&7, clearly providing a massive boost."
-		""
-		"&7Different materials can be used for different parts. Some can make &6main parts&7, while others can only make &etip upgrades&7, etc. Hold &2&lCTRL&r&7 to see which parts a material can be used for."
-		""
-		"&7For detailed instructions on using blueprints, see &3\"Assembling Your Sword Explained\"&7. You can also press &b&lU&r&7 to view recipes and part assembly info."
-	]
-	quest.09E68D57095A5F1D.quest_subtitle: "Bonk Bonk Bang"
-	quest.09E68D57095A5F1D.title: "Forging Tutorial"
 	quest.0A12067C6B752CAC.quest_desc: ["&7Through the power of the Heart of the Sea, the Ocean Bookshelf has been transformed. Its power is more abundant yet gentle. This bookshelf provides two to three times the &aEterna&7 and &5Arcana&7 of its predecessor. However, the power of the Heart of the Sea is ultimately gentle—it does not raise the &aEterna&7 cap beyond its limit. After all, perfection is rare; achieving this much is already commendable."]
 	quest.0A12067C6B752CAC.quest_subtitle: "Mystical Embrace"
 	quest.0A12067C6B752CAC.title: "Heart's Blessing"
@@ -1067,14 +1039,6 @@
 	quest.1448882981E09E31.quest_subtitle: "Celestial Power"
 	quest.147DBFF8D9EC5476.quest_desc: ["&7Can pre-load &#FFD700arrows&7 for later firing."]
 	quest.147DBFF8D9EC5476.quest_subtitle: "Illager's Favorite"
-	quest.14B45DE7BEE5AABB.quest_desc: [
-		"&7Must be set in the &#FFD700Key Bindings&7 menu."
-		""
-		"&7Weapons default to &#FFAA333&7 socket slots. Equipping items in sockets attempts to apply their effects. Socket count can be dynamically increased through certain materials."
-		""
-		"（Currently only 2 socket items exist... more will be added in the future）"
-	]
-	quest.14B45DE7BEE5AABB.quest_subtitle: "While holding a Silent Gear weapon, press Open Socket Interface to open the socket slots"
 	quest.14D4101B90CF5417.quest_subtitle: "Time for a break, right?"
 	quest.14D4101B90CF5417.title: "One Hour Played"
 	quest.14F646FF9C81DCA0.quest_desc: [
@@ -1318,16 +1282,6 @@
 	quest.1BF4B358E8923423.title: "Sanity"
 	quest.1BF526B37EC8A965.quest_desc: ["&7Sacrifices attack speed for a substantial damage boost."]
 	quest.1BF526B37EC8A965.quest_subtitle: "Power at a Cost"
-	quest.1BFAA25BC7843F1C.quest_desc: [
-		"&7Starlight Charging now only works on &#66DDCCSilent Gear weapons&7—materials can no longer be charged."
-		""
-		"&7The &#FFAA33stat bonuses&7 from Starlight Charging now diminish with use."
-		""
-		"&7Depending on the catalyst tier, the weapon receives a corresponding level of &#66CCFFStarlight Charge&7."
-		""
-		"&7Higher charge levels increase the &#FFAA33stat multiplier&7, but also cause faster charge depletion."
-	]
-	quest.1BFAA25BC7843F1C.quest_subtitle: "Charging Time!"
 	quest.1C22E01E9591DC36.quest_subtitle: "N E V E R  C O M E  B A C K  E M P T Y"
 	quest.1C22E01E9591DC36.title: "Caught 10 Fish"
 	quest.1CBEB689E8C2B677.quest_desc: [
@@ -1677,8 +1631,6 @@
 		"&6Mirror of Truth&r"
 		"&7Used to reveal disguised &dIllusionist&r&7 familiars. Obtained via &6ritual&r&7.&r"
 	]
-	quest.21F608E19AD6FDF6.quest_desc: ["&7Can recycle &6some basic materials&7. Toss leftover &balloys&7 in—it will attempt to &arandomly return&7 raw materials. If &6all raw materials&7 are available, it &ereturns everything&7."]
-	quest.21F608E19AD6FDF6.quest_subtitle: "Recycling"
 	quest.21FE19A7D8EFA94C.quest_desc: ["Sneak + Right-click to dash forward, dealing damage and stunning targets on impact."]
 	quest.21FE19A7D8EFA94C.quest_subtitle: "Shield Hero"
 	quest.221645B2BE16D7E1.quest_desc: [
@@ -1849,13 +1801,6 @@
 		"{image:kubejs:textures/gui/spawn.png width:150 height:130 align:center}"
 	]
 	quest.25CE20F4B934CF78.quest_subtitle: "Stage 0"
-	quest.25E7F5CB8E34CB58.quest_desc: [
-		"{\"text\":\"\",\"extra\":[{\"text\":\"Search with prefix \",\"color\":\"gray\"},{\"text\":\"%\",\"color\":\"#FFD700\"},{\"text\":\" to look up trait names directly (e.g. \",\"color\":\"gray\"},{\"text\":\"%malleable\",\"color\":\"#66CCFF\"},{\"text\":\")—find all materials with that trait instantly.  \",\"color\":\"gray\"}]}"
-		""
-		"{\"text\":\"\",\"extra\":[{\"text\":\"Search with prefix \",\"color\":\"gray\"},{\"text\":\"&\",\"color\":\"#FFD700\"},{\"text\":\" to look up part names directly (e.g. \",\"color\":\"gray\"},{\"text\":\"&main_part\",\"color\":\"#66DDCC\"},{\"text\":\", \",\"color\":\"gray\"},{\"text\":\"&tip_upgrade\",\"color\":\"#66DDCC\"},{\"text\":\")—find all materials usable for that part instantly.\",\"color\":\"gray\"}]}"
-	]
-	quest.25E7F5CB8E34CB58.quest_subtitle: "Compatibility Features"
-	quest.25E7F5CB8E34CB58.title: "EMI Adjustments"
 	quest.26199250ABE1AA3E.quest_desc: [
 		"&7Applies bone meal to crops within a &#FFAA333×3×3&7 range."
 		"&7Since it's a &#FFAA333×3×3&7 area centered on the crop you click, all crops within that range will receive a &#66FF66bone meal effect&7."
@@ -1998,22 +1943,10 @@
 		""
 		"&7An advanced internal component that requires multiple delicate steps to produce. Commonly used in assembling complex machinery like &eMechanical Arms&7.&r"
 	]
-	quest.2A13C5752A65E4B7.quest_desc: [
-		"&7Functions like the Rending Anchor Blade—can be thrown. It actively tracks &FFAA33all nearby creatures&7, quickly &#66CCFFdashes between targets&7, and applies &#FF6666Hatred&7 stacks. Higher stacks increase bonus damage."
-		""
-		"&7When thrown, the Rending Anchor Blade in your inventory temporarily becomes an &#66CCFFAnchor Soul&7, reverting upon return."
-	]
-	quest.2A13C5752A65E4B7.quest_subtitle: "Are you really going to craft this in Stage I?"
 	quest.2A3657E05759C933.quest_desc: ["&7Excellent stats early on, but only has a &#FFAA332%&7 chance to drop from &#66CCFFDiamond Ore&7."]
 	quest.2A3657E05759C933.quest_subtitle: "The Lucky One"
 	quest.2A56714310939AFB.quest_desc: ["&7Directly increases luck, affecting loot quality and drops. Stacking luck early on is a high-yield strategy with long-term benefits."]
 	quest.2A56714310939AFB.quest_subtitle: "Lucky One"
-	quest.2A84178C4163B375.quest_desc: [
-		"&7If you really don't want to spend time and effort learning &#FFD700Create&7 to power up &#66CCFFRS&7, you can use the method shown below to obtain &#FFAA33Stress&7 before crafting the &#66DDCCOvercreative Controller&7."
-		"{image:kubejs:textures/gui/rs/create.png width:180 height:120 align:center}"
-		"&7Place support blocks on top of a &#FFD700Water Wheel&7, then place water on the side to start it."
-	]
-	quest.2A84178C4163B375.quest_subtitle: "Quick Start... But Do You Really Want to Learn This?"
 	quest.2A8629B66F128293.quest_desc: ["&7No need to say more—it sounds great, and I love it."]
 	quest.2A8629B66F128293.quest_subtitle: "Comes with Its Own Sound Effect"
 	quest.2AE9864AC40241A7.quest_desc: ["Provides percentage-based armor bonus, but reduces healing received and enchantment stats."]
@@ -2024,8 +1957,6 @@
 		"&7Requires a Ghast Tear for modification; otherwise, the spawn cap limit may bottleneck efficiency."
 	]
 	quest.2AF2FF75BEEDF6FF.quest_subtitle: "Minimum 2000 Spent Here"
-	quest.2AF5D893979F9511.quest_desc: ["&7You can find &#FF6666Crimson Iron&7 ore in the Nether—a common but slightly weaker material. Combining it with a &#FFD700Blaze Rod&7 lets you craft &#FF6666Crimson Steel&7... though still mediocre, it can be used for some specialized tools."]
-	quest.2AF5D893979F9511.quest_subtitle: "Blazing Iron"
 	quest.2B4635BB16624A15.quest_desc: [
 		"&7The Essence Altar can perform &#CC99FFessence infusion crafting&7."
 		"{image:kubejs:textures/gui/malum_kjs1.png width:150 height:100 align:center fit:true}"
@@ -2154,12 +2085,6 @@
 	]
 	quest.2D0DFDD4C050FFA3.quest_subtitle: "Ancient City Reborn"
 	quest.2D0DFDD4C050FFA3.title: "A Gift from the Deep Dark"
-	quest.2D3028037A6530D4.quest_desc: [
-		"&7Faced with the dilemma of not wanting to build &#FFD700power generators&7, you can craft &#66DDCCOvercreative items&7 to solve the problem."
-		""
-		"&7Of course, you'll need to start with the &#66CCFFblue&7 tier."
-	]
-	quest.2D3028037A6530D4.quest_subtitle: "Infinite Energy"
 	quest.2D343AAA8E8523D1.quest_desc: [
 		"&7Each &#66FF99Essence&7 harvested while equipped grants &e30&7 seconds of &#66BB66Tumorous Growth&7 effect."
 		""
@@ -2640,12 +2565,6 @@
 		"&7This ore can be found in &8Deepslate layers&r&7 underground, embedded within veins rich in &6Gold Ore&r&7."
 	]
 	quest.36DC8D2564CAC70C.quest_subtitle: "Infused with Arcane Energy"
-	quest.379D5523E1B96E7C.quest_desc: [
-		"&7Public smelting recipes are either extremely cheap—easy for anyone to figure out—or highly practical, with creators willing to share them. &#66DDCCHardened Steel&7 conveniently possesses both qualities. Its smelting recipe is simple, requiring only the addition of some &#CC99FFAmethyst&7 to regular steel, yet the performance boost is significant. It was quickly adopted across many fields after being published."
-		""
-		"&7In my fading memories, &#66DDCCHardened Steel&7 was probably already the strongest material. Either I've forgotten even stronger ones, or I truly only know how to make &#66DDCCHardened Steel&7..."
-	]
-	quest.379D5523E1B96E7C.title: "Fire Up the Smelter"
 	quest.37AB4AF2D44BDEB1.quest_desc: [
 		"&5I have found a... structure&r&7. Its significance surpasses almost everything I have found before—it is proof that someone has already walked the path of arcane research."
 		""
@@ -2706,8 +2625,6 @@
 	quest.38AC7ED986231005.quest_desc: ["&7Provides good damage bonuses and experience gain early on. A cost-effective choice for the early game."]
 	quest.38AC7ED986231005.quest_subtitle: "I Have a FOMO Table"
 	quest.38C6EDEB38BC8B99.quest_subtitle: "Enable natural Eternal Gate spawning in the End"
-	quest.38F479D74D519A6E.quest_desc: ["&7If you need to use it a lot, you might want to make a &buseful knife&7..."]
-	quest.38F479D74D519A6E.quest_subtitle: "Simple Tool"
 	quest.39138773ED14B1BA.quest_desc: [
 		"They solved Cod's biggest problem since starting the pack!"
 		""
@@ -2901,14 +2818,6 @@
 		""
 		"&7Cannot be used as a substitute for &8vanilla ink sacs&r&7 in crafting recipes. &r"
 	]
-	quest.3D854DF7007E1CB8.quest_desc: [
-		"&eLoot quality increases with the number of boss kills."
-		""
-		"&7Some craftsmen lack skill, occasionally wasting materials—forcing ill-suited materials onto parts. This results in trait loss. Thankfully, it's not irreversible—simply replace the part to restore proper stats."
-		""
-		"&eCan yield various strange parts, possibly illegal or cross-era items—like early Elytra."
-	]
-	quest.3D854DF7007E1CB8.quest_subtitle: "Legacy Equipment"
 	quest.3DEBEF47CB42C180.quest_desc: [
 		"As the fuel's heat value increases, the maximum achievable temperature also rises."
 		""
@@ -3298,7 +3207,6 @@
 		"&7Additionally, the Distortion Engine's chain activations grant stacking &abonuses&r&7 to all other attributes. But clearly, this significantly increases &cfuel consumption&r&7. Finally, it slightly increases the tuning burden of the standard &etuning process&r&7.&r"
 	]
 	quest.46C1263DC7062475.quest_subtitle: "Beyond Linear Time"
-	quest.46C1B03029F1C41D.quest_desc: ["&7Can remove a specific part from equipped gear. Though you can usually just replace a part directly by combining it with a new one, this tool may still come in handy."]
 	quest.4761041D4596C446.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"I know this mod's \",\"color\":\"gray\"},{\"text\":\"eyes\",\"color\":\"red\"},{\"text\":\" might give you a headache, but now they can all be \",\"color\":\"gray\"},{\"text\":\"crafted\",\"color\":\"green\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
 	quest.4761041D4596C446.quest_subtitle: "Craftable"
 	quest.47AE747B665C5151.quest_desc: ["Unlike Refined Brilliance, this can be applied to tip upgrades."]
@@ -3308,16 +3216,6 @@
 		"{image:kubejs:textures/gui/spawn.png width:150 height:130 align:center}"
 	]
 	quest.47CF8DC4847AD311.quest_subtitle: "Stage 2"
-	quest.47D658272D1D7048.quest_desc: [
-		"&7Take the Sword Blueprint again. The item crafted from this type of blueprint is called a &2\"Main Part\"&7—for a sword, it's the blade. To craft a main part, you must use matching materials (e.g., two iron ingots or two diamonds). The quantity varies by blueprint. These materials must be able to craft &2\"Main Parts\"&7."
-		""
-		"&7Crafted main parts aren't usable on their own—blades must be combined with a handle, while armor parts can be assembled directly into finished armor. Missing parts can be added later."
-		""
-		"&7The &etip upgrades, bindings, coats, and grips&7 mentioned earlier also require blueprints—they're not main parts. Equipment works even without them, but you can combine them later for extra bonuses."
-		""
-		"If you're unsatisfied with a part and have a better material, simply combine it in the crafting grid. The new part will replace the old one, and the old part will be returned."
-	]
-	quest.47D658272D1D7048.title: "Assembling Your Sword Explained"
 	quest.4846CE562BCEFAD5.quest_desc: ["Extends the wireless access point's transmission range to infinite blocks."]
 	quest.4846CE562BCEFAD5.quest_subtitle: "Signal Base Station"
 	quest.48A06F2501866438.quest_desc: [
@@ -3726,47 +3624,6 @@
 		"&8A note in the margin: It's friendly enough that a beginner with a file and hammer can get started. Of course, don't expect to make a sword out of it.&r"
 	]
 	quest.5057DE8E48849E95.quest_subtitle: "An important metal, commonly used to craft advanced components"
-	quest.50B7EEE2AA34EAFE.quest_desc: [
-		"&6Equipment Repair&r"
-		""
-		"Repair requires placing a Repair Kit and the Silent Gear weapon together in a crafting table."
-		"&7During travels, weapons and equipment inevitably suffer wear and tear. &eRepair Kits&r&7 help you maintain them effectively.&r"
-		""
-		"&7*   &eAnvil Repair&r&7: Uses materials more efficiently, restoring more durability, but costs experience.&r"
-		"&7*   &eRepair Kit Repair&r&7: No experience cost—repair on the go, but material efficiency is slightly lower.&r"
-		""
-		"Since Diamonds aren't hard to obtain, it's recommended to use Sturdy Repair Kits as a transitional option."
-		"{@pagebreak}"
-		"&6Repair Principles&r"
-		"&7Repair involves two core concepts:&r"
-		"&7*   &eRepair Efficiency&r&7: Repair Kits, equipment, or parts may have this multiplier. It multiplies with material durability during repair.&r"
-		"&7*   &eRepair Value&r&7: Some materials have this attribute—their durability multiplies with it, making certain materials better or worse for repairs.&r"
-		"{@pagebreak}"
-		"&6Material Selection&r"
-		"&7&cKey Principle&r&7: You must use materials &cof the same main material type&r&7 as the equipment.&r"
-		"&7*   &eAttribute Application&r&7: Repairing armor and shields uses the material's &barmor durability&r&7; repairing tools and weapons uses its &bnormal durability&r&7.&r"
-		"&7*   &eEfficiency Impact&r&7: Some materials also have &brepair efficiency modifiers&r&7 that affect the actual repair amount.&r"
-		"{@pagebreak}"
-		"&6Repair Kit Details&r"
-		"&7Kits come in multiple tiers. Higher-tier kits have &alarger capacity&r&7 and &ahigher repair efficiency&r&7.&r"
-		"{@pagebreak}"
-		"&6How to Use&r"
-		"&71.  &eFill the Kit&r&7: Place a Repair Kit with one or more compatible materials in a crafting grid to store them.&r"
-		"&72.  &ePerform Repair&r&7:&r"
-		"&7    *   Place a &cfilled&r&7 Repair Kit with the equipment to repair in a crafting grid.&r"
-		"&7    *   You can also add &cadditional materials&r&7 along with the kit and equipment—these will be consumed directly.&r"
-		"{@pagebreak}"
-		"&6Important Notes&r&7:&r"
-		"&7*   Repair Kits &aconsume materials as needed&r&7. For example, if a repair only needs half an iron ingot, the other half remains in the kit.&r"
-		"&7*   However, &cadditional materials placed in the crafting grid during repair&r&7 are &ccompletely consumed&r&7, even if more than needed.&r"
-		"{@pagebreak}"
-		"&6Emptying the Kit&r"
-		"&7To empty a Repair Kit, combine it with a stick in a crafting grid. &cWarning: This destroys&r&7 all stored materials, returning only an empty kit.&r"
-		"{@pagebreak}"
-		"&6Anvil Repair&r"
-		"&7Same as vanilla: place equipment on the left and compatible material on the right. Repair efficiency is 50%.&r"
-	]
-	quest.50B7EEE2AA34EAFE.quest_subtitle: "Before getting Mending?"
 	quest.50CA5A1721E6B28E.quest_desc: ["As a tip upgrade, provides excellent luck bonuses—perfect for early-game looting and late-game gambling."]
 	quest.50CA5A1721E6B28E.quest_subtitle: "I'm So Lucky"
 	quest.50E57652755EC341.quest_desc: [
@@ -4120,8 +3977,6 @@
 	quest.57925645E9E7F4D8.quest_subtitle: "Enslaving Dragons Is Truly Disgraceful"
 	quest.57D76B1B33C57F9F.quest_desc: ["Even though you've swum this far and probably don't need these anymore, I'll give them to you anyway—I don't know what else to give... Have some aquatic specialties."]
 	quest.57D76B1B33C57F9F.quest_subtitle: "Then Tell Me, Why Am I Not Taking a Boat?"
-	quest.582C0861954C8D52.quest_desc: ["Acts as a combination of all workstations with 8 input slots."]
-	quest.582C0861954C8D52.quest_subtitle: "Better All-in-One Device"
 	quest.5883458218829D00.quest_desc: [
 		"&7The ProMAX version of Soul-Stained Steel. High cost, powerful effect. The Primordial Malice trait provides a massive boost to soul shields and scythe proficiency."
 		""
@@ -4369,15 +4224,6 @@
 		"&7The Rune of Heresy dismantles magic, &csilencing&r&7 enemies similarly to an Erosion Scepter. This effect weakens their &eEssence Magic&r&7 and can stack to completely suppress a target's &cmagical abilities&r&7.&r"
 	]
 	quest.5F1C1AA992472C3D.quest_subtitle: "Destroying Creation"
-	quest.5F1DF9EB50535CA1.quest_desc: [
-		"&fTo craft your first &bSilent Gear weapon&f, you need either &eBlueprints&f or &eTemplates&f.&r"
-		""
-		"&7Before you have many blueprints, you'll need a &3Stone Anvil&7 to make templates.&r"
-		""
-		"&7Typically used for crushing into powder—you'll need a &bHammer&7 for that. Place the material on the &6Stone Anvil&7 and hit it with the &bHammer&7 to make &apowder&7. These &apowders&7 usually have special uses—you'll find out when you need them."
-	]
-	quest.5F1DF9EB50535CA1.quest_subtitle: "Preparation"
-	quest.5F1DF9EB50535CA1.title: "The Beginning of Everything"
 	quest.5F253340FE9F4FCF.quest_desc: [
 		"&7With many new materials unlocked, it's time to upgrade your gear. Try more alloy combinations and select materials based on your needs."
 		""
@@ -4394,8 +4240,6 @@
 		"&7Example: A Creeper drops 4 &bEssence&7, so the &cbonus damage&7 is 4 × 2 = &68 points&7."
 	]
 	quest.5FC4F86EF4128003.quest_subtitle: "Kill!"
-	quest.5FE4FAAD4501DE1F.quest_desc: ["Acts as a combination of all workstations with 4 input slots."]
-	quest.5FE4FAAD4501DE1F.quest_subtitle: "All-in-One Device"
 	quest.5FFB29607E15D805.quest_desc: [
 		"&6Pact of Defiance"
 		"&7Magic has transformed your perception of death: damage becomes increasingly &cpainful&r&7.&r&cMaximum health reduced by one fifth"
@@ -4465,7 +4309,6 @@
 	quest.613D2E97D95993FF.quest_subtitle: "Mother's Tenderness"
 	quest.613D3C5BA25706B6.quest_subtitle: "This Is... a Workbench?"
 	quest.613D3C5BA25706B6.title: "The Beginning of Everything"
-	quest.61AD6CC3CE0AC9F4.quest_subtitle: "Global Options"
 	quest.61CD195A772A6255.quest_desc: [
 		"&7When &#6Sanity&7 drops to &e-45&7, you have a chance to enter the &#88DDFFErosion state&7."
 		""
@@ -4484,14 +4327,6 @@
 	quest.62B6DB17872E27D4.quest_desc: ["&7Great base stats and exceptional Starlight Affinity. Even just using its trait, it's already top-tier. A worthwhile investment with great versatility."]
 	quest.62B6DB17872E27D4.quest_subtitle: "Stellar Core"
 	quest.62F882E969E15846.quest_subtitle: "Used for Casting Nuggets"
-	quest.62FCCE8BC35F8C17.quest_desc: [
-		"&7To overcome the limitations of single materials, I developed the Recrystallizer."
-		""
-		"&7This device fuses multiple items, supporting up to four components. The resulting material's stats vary based on the types and proportions of input items."
-		""
-		"&7It calculates based on the &cmain component&7 (the &cfirst item&7 in the slot) and the rarity of each item."
-	]
-	quest.62FCCE8BC35F8C17.quest_subtitle: "&cImportant Item"
 	quest.630EEC8565D962D6.quest_desc: ["&7Excellent ranged stats. When enough stacks are accumulated, consumes a small amount of health to trigger extra damage—trading blood for damage."]
 	quest.630EEC8565D962D6.quest_subtitle: "Erase Me! Erase You Too!"
 	quest.6324F101E1CFA4CA.quest_desc: [
@@ -5123,16 +4958,6 @@
 	]
 	quest.70F085FC6F1CAAF2.quest_subtitle: "It's Time..."
 	quest.70F085FC6F1CAAF2.title: "Set Off"
-	quest.712A04EBF3733C96.quest_desc: [
-		"&7The Material Grader categorizes most Silent Gear-supported materials by tier, with different tiers providing varying degrees of stat enhancement to crafted parts and equipment."
-		""
-		"&3Tiers range from E, D, C, B, A, S, SS, SSS, to Dreamscape."
-		""
-		"&7The device requires a catalyst to operate: the second input slot is for catalysts. Each grading consumes the catalyst, and its tier influences the average result. Higher-quality catalysts yield higher potential grades."
-		""
-		"&7It's pure gambling—you might burn through dozens of catalysts without reaching MAX. However, the stat boosts are significant, and unlike Starlight Charging, grading also affects percentage-based stats, directly impacting damage multipliers."
-	]
-	quest.712A04EBF3733C96.quest_subtitle: "&cImportant Item"
 	quest.713CA5306C2B86A2.quest_desc: [
 		"&6Connector&r"
 		""
@@ -5200,14 +5025,6 @@
 	]
 	quest.727B996FAE26B0BB.quest_subtitle: "&mSwing Umbrella, Step into the Mud, Open!&r"
 	quest.727B996FAE26B0BB.title: "Open the Door"
-	quest.727E7E58CDD35234.quest_desc: [
-		"&7To overcome the limitations of single materials, I developed the &6Alloy Furnace&r&7."
-		""
-		"&7This device fuses multiple items, supporting up to four components. The resulting &ematerial stats&r&7 vary based on the types and proportions of input items."
-		""
-		"&7&eIt calculates based on the &cmain component&r&7 (the &cfirst item&r&7 in the slot) and the &erarity&r&7 of each item."
-	]
-	quest.727E7E58CDD35234.quest_subtitle: "&cImportant Item"
 	quest.729E08704E144DC7.quest_desc: ["{\"text\":\"\",\"extra\":[{\"text\":\"In the \",\"color\":\"gray\"},{\"text\":\"Nether\",\"color\":\"red\"},{\"text\":\", \",\"color\":\"gray\"},{\"text\":\"right-click\",\"color\":\"yellow\"},{\"text\":\" with this item and it will turn into a \",\"color\":\"gray\"},{\"text\":\"map\",\"color\":\"aqua\"},{\"text\":\" pointing to a \",\"color\":\"gray\"},{\"text\":\"Castle structure\",\"color\":\"gold\"},{\"text\":\".\",\"color\":\"gray\"}]}"]
 	quest.729E08704E144DC7.quest_subtitle: "How Does Smearing Materials on This Tell Me Where the Castle Is?"
 	quest.72C552BE02BA433D.quest_desc: [
@@ -5253,8 +5070,6 @@
 	]
 	quest.734CF87743FF73AB.quest_desc: ["&7A base trinket that only provides a small amount of &#FF8844armor&7. A necessary prerequisite for crafting its higher-tier variants."]
 	quest.734CF87743FF73AB.quest_subtitle: "Trinket Base"
-	quest.73689A06F7BF9EB3.quest_desc: ["Can be used to craft custom trinkets."]
-	quest.73689A06F7BF9EB3.quest_subtitle: "Gem Polishing"
 	quest.737A6C878749DFB1.quest_desc: [
 		"&7&#66FF66Wisps&7 search for nearby &#55D5D5Soul Sand&7, hide inside, and transform it into &#66CCFFSoul-Infused Soul Sand&7."
 		""
@@ -5341,16 +5156,6 @@
 	quest.74F6BCC9482F2FD6.quest_subtitle: "Double the Payback"
 	quest.74F6BCC9482F2FD6.title: "Pact of Reciprocation"
 	quest.7501056B288C71E1.quest_subtitle: "Food Value > 8"
-	quest.750FC99EE02F979D.quest_desc: [
-		"&7To overcome the limitations of single materials, I developed the Sewing Machine."
-		""
-		"&7This device fuses multiple items, supporting up to four components. The resulting material's stats vary based on the types and proportions of input items."
-		""
-		"&7It calculates based on the &cmain component&7 (the &cfirst item&7 in the slot) and the rarity of each item."
-		""
-		"&7Some materials that increase spell power cannot be processed by the Sewing Machine."
-	]
-	quest.750FC99EE02F979D.quest_subtitle: "&cImportant Item"
 	quest.7535B9010BCF5E06.quest_desc: [
 		"&6Rune of Flame Embrace&r"
 		""
@@ -5424,16 +5229,6 @@
 	quest.76BD72A25B241E0C.quest_desc: ["&7Using the light of Glowstone, I improved the Nether Bookshelf. It now provides additional &4Quanta&7 along with a small amount of &5Arcana&7. Though still not as good as the Ocean Bookshelf, every bit counts."]
 	quest.76BD72A25B241E0C.quest_subtitle: "A More Balanced Nether Bookshelf"
 	quest.76BD72A25B241E0C.title: "Chaos Expansion"
-	quest.770E6D9F52724FCC.quest_desc: [
-		"&7Fusing multiple materials of the same type creates &dComposite Materials&7 with &bcomplex&7 properties. Experiment to find &agood combinations&7."
-		""
-		"&7First, Composite Materials inherit all &6traits&7 from their components—this lets you &dstack traits&7 for &5trinkets&7. Trinkets care mainly about &6traits&7—negative effects are negligible—and &dstacking traits&7 greatly enhances &5trinket&7 performance."
-		""
-		"&7Second, if you want &cmaximum attack damage&7, include &chigh-damage&7 materials like &6Obsidian Ingots&7 found in Ancient Cities."
-		""
-		"&7Finally, Composite Materials have specific &bpart&7 restrictions. For example, to use a Composite Material for a &bcoating&7, &eall&7 raw materials must be usable for &bcoatings&7. If &cany one&7 can't be used for coatings, the resulting Composite Material can't either. The same applies to other &bparts&7."
-	]
-	quest.770E6D9F52724FCC.title: "Composite Materials"
 	quest.771C9B9ADDCDA5E6.quest_desc: ["A dragon has treasures all over its body—provides excellent armor and base attack bonuses."]
 	quest.771C9B9ADDCDA5E6.quest_subtitle: "You're a Dragon Too, Huh"
 	quest.773AC14F2AF8822B.quest_desc: [
@@ -5816,17 +5611,6 @@
 		"&7Molten Steel is crafted in the furnace by smelting coal and iron in a 1:1 ratio—four coal and four iron yield 360mB of Molten Steel."
 	]
 	quest.7E11D3149C613671.quest_subtitle: "Casting Fluid into Items"
-	quest.7E57D8FC5D757153.quest_desc: [
-		"\"The Dead King has been defeated. The sealed minerals have reappeared.&r\""
-		""
-		"&#67B1E5Gobber&r&7 generates in the Overworld at depths from -40 to 30."
-		""
-		"&#757369Rune Shards&r&7 generate in the Overworld above Y=0."
-		""
-		"&7\"Your ambition grows ever stronger.\""
-	]
-	quest.7E57D8FC5D757153.quest_subtitle: "Gold Miner"
-	quest.7E57D8FC5D757153.title: "A Moment's Rest"
 	quest.7E59A0E6979C8FF1.quest_desc: [
 		"&6Pact of Blazing Fire"
 		"&7The nature of fire is undeniable.&r"
@@ -6038,7 +5822,6 @@
 	reward.4E3EDC65B6FED37D.title: "Mage"
 	reward.4ED830C463206C6C.title: "N3"
 	reward.599B06FAED12C9AD.title: "Random Spell Scroll"
-	reward.5F55121DA2AFD36E.title: "Journey's Beginning"
 	reward.5FAE827FECB3B03D.title: "Keep Inventory On"
 	reward.614956D135BA7286.title: "N5"
 	reward.644449F246F10339.title: "N2"
@@ -6079,7 +5862,6 @@
 	task.02E724791B98221B.title: "Any Skull"
 	task.03566662B2722669.title: "Spellbook Template"
 	task.036A59E301E473EE.title: "Flying Sword"
-	task.039882FFD197EB3D.title: "Most Abstract"
 	task.056D9A1558C41C1B.title: "Exquisite"
 	task.05D692FEA8B7F8C3.title: "Meat Grinder Template"
 	task.061EADF2EDD58507.title: "Click to Continue"
@@ -6122,10 +5904,8 @@
 	task.18E775592FF42BB7.title: "Already Killed It"
 	task.18FB41E76B4DB850.title: "Actually, I Already Killed It"
 	task.1A50131386B4F8B8.title: "I, Chaovy, Made the Biomes Well!"
-	task.1A88FDBE9D283208.title: "Scene: Base"
 	task.1AFDE62B4FC715E5.title: "Silent Gear"
 	task.1B1EAA42882C0ED0.title: "Shears Template"
-	task.1B222983F0D7548E.title: "Overcreative Controller"
 	task.1B2684D7ECCEF198.title: "Helmet Template"
 	task.1B3D8C6E12F08794.title: "Any Wood"
 	task.1C06992A966B5537.title: "Arrow Template"
@@ -6136,7 +5916,6 @@
 	task.1E6F37B4C4187836.title: "Cursed Realm Great Axe Template"
 	task.1E9C1BB2AC8320CD.title: "Wugu"
 	task.1F47FF09840A0E4F.title: "You Killed This One Too?"
-	task.1F9EA3307220B408.title: "EMI"
 	task.201E6C48702846AC.title: "Bangle Template"
 	task.20E752F817977436.title: "Heavy Boots Template"
 	task.2103D8FA6762C9C3.title: "Before Killing the Abyssal Prisoner"
@@ -6144,7 +5923,6 @@
 	task.21D3967C48FCE9DE.title: "Any Runic Plank"
 	task.221E5092A09BCA29.title: "Rampart Template"
 	task.22843A56213A380B.title: "Molten Uranium"
-	task.23901D225AA63116.title: "Mechanic Change: Starlight Charging"
 	task.23B079325E8F6976.title: "Heavy Chestplate Template"
 	task.2535599FB0298A82.title: "Forge Hammer Template"
 	task.25B8CE24D26D2658.title: "Auto-Loading Crossbow Template"
@@ -6153,17 +5931,14 @@
 	task.285A4B1A756E08B1.title: "Westernat"
 	task.28F0C1066808D8E9.title: "The Hunt"
 	task.2953AA70E267ADF7.title: "Keybind Settings"
-	task.2A2F3B895F40F65B.title: "Keep Inventory"
 	task.2AB642EE8FD15F3A.title: "Any Tank"
 	task.2B380F2F0C346C76.title: "Any Paint"
 	task.2BF2DB6EC9E778D8.title: "Any Brooch"
 	task.2D2AAB7B62B6E1EC.title: "About Villagers"
 	task.2D51A4DF6E0A68BB.title: "Wireless Access Point"
-	task.2DE829FF51CE080F.title: "Rending Anchor Blade Template"
 	task.2E67FAD790EF983F.title: "Endless Enigma"
 	task.2EA26F22192ECD45.title: "Stage II"
 	task.2EDE23B58CA58D2A.title: "&6Magic Essence&r"
-	task.30745A9EFC246987.title: "Understanding: Sockets"
 	task.308969B113784A45.title: "Gwa! A Bug!"
 	task.30E9B4F107737CFF.title: "Eterna"
 	task.316298B9E876209C.title: "Info from MC百科"
@@ -6183,7 +5958,6 @@
 	task.38A99B8EA19DE61C.title: "Traveling Time"
 	task.38B4C442C0398B8E.title: "Any Ink"
 	task.39324085D3E344F2.title: "Before Killing Skeletron"
-	task.39642AB20E758993.title: "Blueprint"
 	task.398B0F926CC0BE0B.title: "Any Rune"
 	task.3A6DD67986C67095.title: "Leggings Template"
 	task.3A8109644A12D03B.title: "Building Wand"
@@ -6270,7 +6044,6 @@
 	task.661A96A3B20665DE.title: "Visit: Nether"
 	task.679088C9A7CDA862.title: "Any Aircraft Weapon"
 	task.67A8A0FF953C5802.title: "Soul Lava"
-	task.6890A68210C54FB5.title: "Repair Kit"
 	task.69036ACE2DE0E96F.title: "Lava"
 	task.69A66193E0DCE55A.title: "Sanity Effects"
 	task.69CDF3DF581ED08F.title: "Sanity"

@@ -4,10 +4,14 @@
 	default_quest_shape: "hexagon"
 	filename: "21E6476472D3F44D"
 	group: ""
+	icon: {
+		id: "hazennstuff:cosmic_gold_ingot"
+	}
 	id: "21E6476472D3F44D"
 	images: [
 		{
 			height: 12.0d
+			id: "7F225BD524496F9B"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
 			width: 20.0d
@@ -16,6 +20,7 @@
 		}
 		{
 			height: 12.0d
+			id: "550850051DC0C49D"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
 			width: 20.0d
@@ -24,6 +29,7 @@
 		}
 		{
 			height: 12.0d
+			id: "21E476A815DC5598"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
 			width: 20.0d
@@ -32,6 +38,7 @@
 		}
 		{
 			height: 12.0d
+			id: "7326F996B827C84C"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
 			width: 20.0d
@@ -40,6 +47,7 @@
 		}
 		{
 			height: 12.0d
+			id: "2330AEE48FC6B0EE"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
 			width: 20.0d
@@ -48,6 +56,7 @@
 		}
 		{
 			height: 12.0d
+			id: "18C05AD3C398DB8E"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
 			width: 20.0d
@@ -56,6 +65,7 @@
 		}
 		{
 			height: 12.0d
+			id: "270EE01FEEB2442F"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
 			width: 20.0d

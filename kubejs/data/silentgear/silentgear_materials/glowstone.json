@@ -37,6 +37,11 @@
       "traits": [
         {
           "conditions": [],
+          "level": 1,
+          "trait": "silentgear:kitty_vision"
+        },
+        {
+          "conditions": [],
           "level": 3,
           "trait": "silentgear:renew"
         }
@@ -67,7 +72,7 @@
         {
           "conditions": [],
           "level": 1,
-          "trait": "silentgear:refractive"
+          "trait": "silentgear:kitty_vision"
         },
         {
           "conditions": [],

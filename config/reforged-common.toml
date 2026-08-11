@@ -8,6 +8,13 @@
 "Boolean: Can Crafted Items Receive Tiers" = true
 #
 ############################################
+#Disabling this will remove the experience cost when attempting to reforge any item
+#-------------------------------------------
+#Default: true
+#-------------------------------------------
+"Boolean: Enable Reforge Experience Cost" = true
+#
+############################################
 #
 #Default: false
 #-------------------------------------------

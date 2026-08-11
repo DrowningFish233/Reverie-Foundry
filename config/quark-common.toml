@@ -98,7 +98,7 @@
 	"Compressed Blocks" = true
 	"Duskbound Blocks" = true
 	"Framed Glass" = true
-	"Glass Item Frame" = true
+	"Glass Item Frame" = false
 	"Gold Bars" = true
 	Grate = true
 	Hedges = true

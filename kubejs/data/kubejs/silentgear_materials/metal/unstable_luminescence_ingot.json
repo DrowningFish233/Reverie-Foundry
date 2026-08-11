@@ -23,41 +23,43 @@
   },
   "properties": {
     "silentgear:main": {
-      "armor": 20.0,
-      "armor_toughness": 0,
-      "armor/boots": 2.0,
-      "armor/chestplate": 8.0,
-      "armor/helmet": 4.0,
-      "armor/leggings": 6.0,
-      "armor_durability": 8.0,
-      "attack_damage": 5.0,
-      "attack_speed": 0.0,
-      "attack_speed/axe": -0.1,
-      "attack_speed/hoe": 0.0,
-      "charging_value": 1.0,
-      "draw_speed": -0.2,
-      "durability": 200.0,
-      "enchantment_value": 22.0,
-      "harvest_speed": 7.0,
+      "geas_limit": 1,
+      "armor": 30.0,
+      "armor/boots": 7.0,
+      "armor/chestplate": 11.0,
+      "armor/helmet": 7.0,
+      "armor/leggings": 5.0,
+      "armor_durability": 30.0,
+      "armor_toughness": 12.0,
+      "attack_damage": 20.0,
+      "attack_speed": 0.1,
+      "charging_value": 1.1,
+      "spell_slots": 6,
+      "durability": 1000.0,
+      "enchantment_value": 100.0,
+      "harvest_speed": 10.0,
       "harvest_tier": {
-        "incorrect_blocks_for_tool": "silentgear:incorrect_for_stone_tools",
-        "level_hint": "1",
-        "name": "stone/石"
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_allthemodium_tools",
+        "level_hint": "5",
+        "name": "allthemodium/ATM"
       },
-      "magic_armor": 22.0,
-      "magic_damage": 4.0,
-      "ranged_damage": 1.3,
-      "rarity": 40.0,
+      "forge_positive_chance": 20,
+      "forge_power": -10,
+      "magic_damage": 12.0,
+      "magic_armor": 30.0,
+      "projectile_speed": 5.0,
+      "projectile_accuracy": 0.1,
+      "rarity": 100.0,
       "traits": [
         {
           "conditions": [],
           "level": 1,
-          "trait": "kubejs:eternal_starlight"
+          "trait": "kubejs:strikesoul"
         },
         {
           "conditions": [],
-          "level": 1,
-          "trait": "kubejs:unstable_luminescence_ingot"
+          "level": 3,
+          "trait": "kubejs:oathbound_strength"
         }
       ]
     }

@@ -1,4 +1,42 @@
 ServerEvents.recipes(event => {
+    event.shapeless(
+        Item.of('kubejs:rift_probe', 1),
+        [
+            'minecraft:ender_pearl',
+            'minecraft:echo_shard'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('silentgear:bort_block', 1),
+        [
+            '9x silentgear:bort'
+        ]
+    );
+    event.shapeless(
+        Item.of('natures_spirit:mahogany_mosaic', 1),
+        [
+            'natures_spirit:mahogany_slab',
+            'natures_spirit:mahogany_planks'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('refinedstorage_quartz_arsenal:creative_wireless_crafting_grid', 1),
+        [
+            'minecraft:crafting_table',
+            'refinedstorage:creative_wireless_grid'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('alltheores:nickel_ingot', 1),
+        [
+            '#kubejs:ingots/tier_1',
+            'minecraft:flint',
+            'minecraft:clay_ball'
+        ]
+    );
 
     event.shapeless(
         Item.of('reveriefoundry:pump_charge_shotgun_blueprint', 1),
@@ -35,11 +73,40 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('kubejs:random_accessory_pouch', 1),
         [
-            '#kubejs:accessories',
-            '#kubejs:accessories',
-            '#kubejs:accessories'
+            '#kubejs:level_1',
+            '#kubejs:level_1',
+            '#kubejs:level_1'
         ]
     );
+
+
+    event.shapeless(
+        Item.of('kubejs:random_accessory_pouch_t2', 1),
+        [
+            '#kubejs:level_2',
+            '#kubejs:level_2',
+            '#kubejs:level_2'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('kubejs:random_accessory_pouch_t3', 1),
+        [
+            '#kubejs:level_3',
+            '#kubejs:level_3',
+            '#kubejs:level_3'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('kubejs:random_accessory_pouch_t4', 1),
+        [
+            '#kubejs:level_4',
+            '#kubejs:level_4',
+            '#kubejs:level_4'
+        ]
+    );
+
     event.shapeless(
         Item.of('irons_spellbooks:fire_ale', 1),
         [
@@ -50,7 +117,9 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('minecraft:gunpowder', 2),
         [
-            '3x alltheores:sulfur'
+            'alltheores:sulfur',
+            'minecraft:charcoal',
+            'minecraft:sugar'
         ]
     )
 
@@ -217,7 +286,6 @@ ServerEvents.recipes(event => {
         Item.of('reveriefoundry:heavy_boots_blueprint', 1),
         [
             '4x silentgear:blueprint_paper',
-            'kubejs:ashes_of_calamity',
             'minecraft:iron_ingot'
         ]
     )
@@ -235,7 +303,6 @@ ServerEvents.recipes(event => {
         Item.of('reveriefoundry:heavy_boots_template', 1),
         [
             '4x silentgear:template_board',
-            'kubejs:viculeam_ingot',
             'minecraft:iron_ingot'
         ]
     )
@@ -252,8 +319,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('reveriefoundry:heavy_leggings_template', 1),
         [
-            '6x silentgear:template_board',
-            'kubejs:viculeam_ingot',
+            '7x silentgear:template_board',
             'minecraft:iron_ingot'
         ]
     )
@@ -270,8 +336,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('reveriefoundry:heavy_leggings_blueprint', 1),
         [
-            '6x silentgear:blueprint_paper',
-            'kubejs:ashes_of_calamity',
+            '7x silentgear:blueprint_paper',
             'minecraft:iron_ingot'
         ]
     )
@@ -288,8 +353,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('reveriefoundry:heavy_chestplate_blueprint', 1),
         [
-            '7x silentgear:blueprint_paper',
-            'kubejs:ashes_of_calamity',
+            '8x silentgear:blueprint_paper',
             'minecraft:iron_ingot'
         ]
     )
@@ -307,8 +371,7 @@ ServerEvents.recipes(event => {
     event.shapeless(
         Item.of('reveriefoundry:heavy_chestplate_template', 1),
         [
-            '7x silentgear:template_board',
-            'kubejs:viculeam_ingot',
+            '8x silentgear:template_board',
             'minecraft:iron_ingot'
         ]
     )
@@ -327,7 +390,6 @@ ServerEvents.recipes(event => {
         Item.of('reveriefoundry:heavy_helmet_blueprint', 1),
         [
             '5x silentgear:blueprint_paper',
-            'kubejs:viculeam_ingot',
             'minecraft:iron_ingot'
         ]
     )
@@ -346,7 +408,6 @@ ServerEvents.recipes(event => {
         Item.of('reveriefoundry:heavy_helmet_template', 1),
         [
             '5x silentgear:template_board',
-            'kubejs:viculeam_ingot',
             'minecraft:iron_ingot'
         ]
     )

@@ -490,7 +490,6 @@ LootJS.modifiers(event => {
         .randomChance(0.75)
     );
 
-
 });
 
 

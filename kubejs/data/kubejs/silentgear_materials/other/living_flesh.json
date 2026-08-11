@@ -1,0 +1,60 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"organic",
+			"intermediate"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "malum:living_flesh"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#e84141",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.malum:living_flesh"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:tip": {
+			"attack_damage": {
+				"operation": "ADD",
+				"value": 0.5
+			},
+			"magic_damage": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"healing_received": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.05
+			},
+			"attack_speed": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"durability": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:meat_ingots"
+				},
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:hunger"
+				}
+			]
+		}
+	}
+}

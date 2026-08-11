@@ -1,4 +1,4 @@
-general = {disable_mod = false, auto_start = false, space_modules = true, shadow_text = false, animations = true, animationSpeed = 1.5, fontScale = 1.1, background_color = 1867534416, hide_debug_crosshair = false, hide_sidebar = true, hide_bossbar = true, always_show_profiler = false, always_show_tps = true, always_show_ping = false}
+general = {disable_mod = true, auto_start = false, space_modules = true, shadow_text = false, animations = true, animationSpeed = 1.5, fontScale = 1.1, background_color = 1867534416, hide_debug_crosshair = false, hide_sidebar = true, hide_bossbar = true, always_show_profiler = false, always_show_tps = true, always_show_ping = false}
 [[modules_left]]
 	name = "minecraft"
 	name_color = 10506797

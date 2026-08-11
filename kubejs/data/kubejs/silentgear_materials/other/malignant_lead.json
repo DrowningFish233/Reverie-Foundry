@@ -1,0 +1,55 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"metal",
+			"intermediate"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "malum:malignant_lead"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#C0D0E0",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.malum:malignant_lead"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:grip": {
+			"geas_limit": {
+				"operation": "ADD",
+				"value": 0.5
+			},
+			"magic_damage": {
+				"operation": "ADD",
+				"value": 2
+			},
+			"attack_damage": {
+				"operation": "ADD",
+				"value": 0.5
+			},
+			"spell_power": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.05
+			},
+			"healing_received": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.05
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:soul_exposure"
+				}
+			]
+		}
+	}
+}

@@ -520,6 +520,16 @@ const itemTooltips = {
 
 // 通用提示
 const commonTooltips = {
+    'endermanoverhaul:summoner_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
+    'endermanoverhaul:bubble_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
+    'endermanoverhaul:icy_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
+    'endermanoverhaul:crimson_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
+    'endermanoverhaul:corrupted_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
+    'endermanoverhaul:soul_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
+    'endermanoverhaul:ancient_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
+    'endermanoverhaul:warped_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
+
+
     'kubejs:dimensional_ripper': TooltipUtils.simpleText('tooltip.common.dimensional_ripper', 'dark_green'),
     'kubejs:dimensional_stabilizer': TooltipUtils.simpleText('tooltip.common.dimensional_stabilizer', 'dark_green'),
     'kubejs:rift_probe': TooltipUtils.simpleText('tooltip.common.rift_probe', 'dark_green'),
@@ -534,6 +544,12 @@ const commonTooltips = {
     'kubejs:eye_of_weeping_well_located': TooltipUtils.simpleText('tooltip.common.eye_of_weeping_well_located', 'yellow'),
     'kubejs:eye_of_dragon_cave_located': TooltipUtils.simpleText('tooltip.common.eye_of_dragon_cave_located', 'yellow'),
     'kubejs:eye_of_starlight_portal_located': TooltipUtils.simpleText('tooltip.common.eye_of_starlight_portal_located', 'yellow'),
+
+    'kubejs:eye_of_fortress_located': TooltipUtils.simpleText('tooltip.common.eye_of_fortress', 'yellow'),
+    'kubejs:eye_of_ancient_battleground_located': TooltipUtils.simpleText('tooltip.common.eye_of_ancient_battleground', 'yellow'),
+    'kubejs:eye_of_monument_located': TooltipUtils.simpleText('tooltip.common.eye_of_monument', 'yellow'),
+
+
     'kubejs:bad_apple': TooltipUtils.simpleText('tooltip.common.bad_apple', 'pink_dye'),
     'kubejs:randomweapon': TooltipUtils.simpleText('tooltip.common.randomweapon', 'yellow'),
     'kubejs:summon_gauntlet': TooltipUtils.simpleText('tooltip.common.boss_spawn_egg', 'yellow'),

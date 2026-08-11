@@ -71,4 +71,24 @@ ServerEvents.recipes(event => {
     registerCustomRecipe(
         new VoidFavorRecipeJSON('minecraft:beetroot_seeds', 'netherexp:cerebrage_seeds')
     );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('minecraft:glass_bottle', 'kubejs:sulfuric_vial')
+    );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('kubejs:sulfuric_vial', 'kubejs:broken_sulfuric_vial')
+    );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('kubejs:rift_probe', 'kubejs:dimensional_stabilizer')
+    );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('kubejs:dimensional_stabilizer', 'kubejs:dimensional_ripper')
+    );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('kubejs:dimensional_ripper', 'kubejs:rift_probe')
+    );
 });

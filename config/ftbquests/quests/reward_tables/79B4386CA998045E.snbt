@@ -38,6 +38,10 @@
 		{
 			command: "/rf give traveler"
 			icon: {
+				components: {
+					"sophisticatedcore:number_of_inventory_slots": 27
+					"sophisticatedcore:number_of_upgrade_slots": 1
+				}
 				id: "sophisticatedbackpacks:backpack"
 			}
 			id: "6705463FAB6A4578"

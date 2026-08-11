@@ -1,4 +1,4 @@
 [DimBan]
-	DimensionsToBan = ["allthemodium:mining","allthemodium:the_beyond","allthemodium:the_other","iceandfire:dread_land"]
+	DimensionsToBan = ["allthemodium:the_beyond","allthemodium:the_other","iceandfire:dread_land"]
 	#Where will the player go if their current dimension is banned.
 	WhereToGo = "minecraft:overworld"

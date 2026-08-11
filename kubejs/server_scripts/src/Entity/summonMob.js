@@ -158,3 +158,34 @@ EntityEvents.spawned('minecraft:item', event => {
             break;
     }
 })
+
+
+ItemEvents.foodEaten(event => {
+    let player = event.getPlayer()
+    let item = event.getItem()
+
+    if (item.getId() != 'netherexp:wraithing_flesh') return
+
+    let level = player.getLevel()
+    let px = player.getX()
+    let py = player.getY()
+    let pz = player.getZ()
+    let entities = level.getEntities()
+
+    for (let entity of entities) {
+        if (entity.getType() != 'minecraft:blaze') continue
+
+        let dx = entity.getX() - px
+        let dy = entity.getY() - py
+        let dz = entity.getZ() - pz
+        if (Math.sqrt(dx * dx + dy * dy + dz * dz) > 4) continue
+
+        let banshee = level.createEntity('netherexp:banshee')
+        if (banshee) {
+            banshee.setPosition(entity.getX(), entity.getY(), entity.getZ())
+            banshee.spawn()
+        }
+        entity.discard()
+    }
+
+})

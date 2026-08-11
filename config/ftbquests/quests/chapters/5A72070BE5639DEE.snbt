@@ -7,6 +7,7 @@
 		id: "transmog:transmogrification_table"
 	}
 	id: "5A72070BE5639DEE"
+	images: [ ]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -872,6 +873,36 @@
 			}]
 			x: 3.0d
 			y: -1.0d
+		}
+		{
+			id: "3FB8B9BB50F88F62"
+			tasks: [{
+				id: "6C42822206F2CBD4"
+				item: { count: 1, id: "kubejs:eye_of_fortress_located" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "401A3487AEA60E00"
+			tasks: [{
+				id: "5F31F530DF525614"
+				item: { count: 1, id: "kubejs:eye_of_ancient_battleground_located" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "761C662C880C3BC3"
+			tasks: [{
+				id: "0600D7DD646E81EE"
+				item: { count: 1, id: "kubejs:eye_of_monument_located" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
 		}
 	]
 }

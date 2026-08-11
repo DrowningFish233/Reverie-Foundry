@@ -1,1 +1,1 @@
-attributeReplacements = ["crit_chance = apothic_attributes:crit_chance", "ranged_damage = apothic_attributes:arrow_damage", "dodge_chance = terra_curio:generic.dodge_chance", "magic_damage = irons_spellbooks:spell_power", "armor_pass = apothic_attributes:armor_pierce"]
+attributeReplacements = ["crit_chance = terra_curio:generic.crit_chance", "ranged_damage = terra_curio:generic.ranged_damage", "dodge_chance = terra_curio:generic.dodge_chance", "magic_damage = terra_curio:generic.magic_damage", "armor_pass = terra_curio:generic.armor_penetration"]

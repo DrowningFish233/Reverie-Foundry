@@ -1,0 +1,35 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"endgame",
+			"other"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "gobber2:dragon_star"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#fcaeae",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.gobber2:dragon_star"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:setting": {
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:dragon_star"
+				}
+			]
+		}
+	}
+}

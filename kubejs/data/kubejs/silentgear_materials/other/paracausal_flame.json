@@ -1,0 +1,55 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"advanced",
+			"soul"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "malum:paracausal_flame"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#8B00FF",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.malum:paracausal_flame"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:coating": {
+			"geas_limit": {
+				"operation": "ADD",
+				"value": 0.5
+			},
+			"spell_power": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.05
+			},
+			"spell_resist": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.05
+			},
+			"healing_received": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"armor": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:oathbound_strength"
+				}
+			]
+		}
+	}
+}

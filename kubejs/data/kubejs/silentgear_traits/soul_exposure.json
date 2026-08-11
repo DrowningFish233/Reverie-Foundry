@@ -1,0 +1,11 @@
+{
+	"conditions": [],
+	"description": {
+		"translate": "trait.kubejs.soul_exposure.desc"
+	},
+	"effects": [],
+	"max_level": 3,
+	"name": {
+		"translate": "trait.kubejs.soul_exposure"
+	}
+}

@@ -13,6 +13,7 @@
 		{
 			alpha: 100
 			height: 5.0d
+			id: "2E822AA8CEE8EA1A"
 			image: "malum:textures/gui/book/icons/soul_shard.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -22,6 +23,7 @@
 		{
 			alpha: 100
 			height: 5.0d
+			id: "40AC8367D3515544"
 			image: "malum:textures/gui/book/icons/void_button.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -31,6 +33,7 @@
 		{
 			alpha: 100
 			height: 5.0d
+			id: "38875260647E43B3"
 			image: "malum:textures/gui/book/icons/soul_blade.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -40,6 +43,7 @@
 		{
 			alpha: 100
 			height: 5.0d
+			id: "49F0C975D2F0A8B0"
 			image: "malum:textures/gui/book/icons/esoteric_reaping.png"
 			rotation: 0.0d
 			width: 5.0d
@@ -48,6 +52,7 @@
 		}
 		{
 			height: 4.0d
+			id: "43AF7FDA754C23FE"
 			image: "malum:textures/gui/book/widget_fade.png"
 			rotation: 0.0d
 			width: 4.0d
@@ -55,7 +60,7 @@
 			y: 0.0d
 		}
 	]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

@@ -35,6 +35,7 @@
 			"ranged_damage": 0.5,
 			"repair_value": 1,
 			"attack_damage": 10,
+			"enchantment_value": 20,
 			"attack_speed": 0.3,
 			"spell_resist": 0.1,
 			"traits": [

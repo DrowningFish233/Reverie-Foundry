@@ -440,7 +440,7 @@
 	brassTunnelTimer = 10
 	#.
 	#Whether hostile mobs walking near a seat will start riding it.
-	seatHostileMobs = true
+	seatHostileMobs = false
 	#.
 	#The amount of ticks a factory gauge waits between requests.
 	# Default: 100
@@ -484,7 +484,7 @@
 		#Amount of game ticks between shots of the cannon. Higher => Slower
 		# Default: 10
 		# Range: > 1
-		schematicannonDelay = 10
+		schematicannonDelay = 2
 		#.
 		#Amount of blocks a Schematicannon can print per Gunpowder item provided.
 		# Default: 400

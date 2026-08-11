@@ -1,4 +1,69 @@
 ServerEvents.recipes(event => {
+
+    event.shaped(
+        Item.of('allthemodium:teleport_pad', 1),
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],
+        {
+            A: 'minecraft:iron_nugget',
+            B: 'minecraft:ender_pearl'
+        }
+    )
+    event.shaped(
+        Item.of('apothic_enchanting:scrap_tome', 8),
+        [
+            'BBB',
+            'BAB',
+            'BBB'
+        ],
+        {
+            A: 'minecraft:anvil',
+            B: 'minecraft:book'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:eye_of_fortress_located', 1),
+        [
+            ' B ',
+            'BAB',
+            ' B '
+        ],
+        {
+            A: 'minecraft:ender_eye',
+            B: 'minecraft:netherrack'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:eye_of_ancient_battleground_located', 1),
+        [
+            ' B ',
+            'BAB',
+            ' B '
+        ],
+        {
+            A: 'minecraft:ender_eye',
+            B: 'irons_spellbooks:arcane_essence'
+        }
+    )
+
+    event.shaped(
+        Item.of('kubejs:eye_of_monument_located', 1),
+        [
+            ' B ',
+            'BAB',
+            ' B '
+        ],
+        {
+            A: 'minecraft:ender_eye',
+            B: 'minecraft:kelp'
+        }
+    )
+
     event.shaped(
         Item.of('silentgems:iron_potato', 1),
         [
@@ -400,19 +465,6 @@ ServerEvents.recipes(event => {
             B: 'minecraft:emerald',
             C: 'minecraft:warped_fungus',
             D: 'eternal_starlight:saltpeter_powder'
-        }
-    )
-    event.shaped(
-        Item.of('kubejs:lunium_nova_ingot', 1),
-        [
-            'CAC',
-            ' B ',
-            'ACA'
-        ],
-        {
-            A: 'eternal_starlight:lunar_berries',
-            B: 'eternal_starlight:deepsilver_ingot',
-            C: 'eternal_starlight:glacite_shard'
         }
     )
 
@@ -1193,7 +1245,7 @@ ServerEvents.recipes(event => {
             'EAE'
         ],
         {
-            B: 'kubejs:ashes_of_calamity',
+            B: 'kubejs:ruinous_soul',
             A: 'silentgear:crude_mixer',
             C: 'minecraft:diamond',
             D: 'minecraft:beacon',

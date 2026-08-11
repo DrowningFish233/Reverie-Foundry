@@ -698,19 +698,36 @@ function PartBuilder(partType) {
     }
 
     /**
-     * 设置挖掘等级
-     * @param {string} tierName 等级名称
-     * @param {string} levelHint 等级提示
-     * @param {string} incorrectBlocks 可挖掘的方块
+     * 设置挖掘等级（简化版）
+     * @param {number|string} tier 等级：0=木, 1=石, 2=铁, 3=钻石, 4=下界合金, 5=ATM, 6=振金, 7=难得素
      * @returns {PartBuilder}
      */
-    this.harvestTier = function (tierName, levelHint, incorrectBlocks) {
-        this.stats.harvest_tier = {
-            name: tierName,
-            level_hint: levelHint,
-            incorrect_blocks_for_tool: incorrectBlocks
+    this.harvestTier = function (tier) {
+        var tierStr = String(tier);
+
+        var tierMap = {
+            '0': { name: 'wood/木', hint: '0', incorrect: 'minecraft:incorrect_for_wood_tools' },
+            '1': { name: 'stone/石', hint: '1', incorrect: 'silentgear:incorrect_for_stone_tools' },
+            '2': { name: 'iron/铁', hint: '2', incorrect: 'silentgear:incorrect_for_iron_tools' },
+            '3': { name: 'diamond/钻石', hint: '3', incorrect: 'silentgear:incorrect_for_diamond_tools' },
+            '4': { name: 'netherite/下界合金', hint: '4', incorrect: 'minecraft:incorrect_for_netherite_tool' },
+            '5': { name: 'allthemodium/ATM', hint: '5', incorrect: 'silentgear:incorrect_for_allthemodium_tools' },
+            '6': { name: 'vibranium/振金', hint: '6', incorrect: 'silentgear:incorrect_for_vibranium_tools' },
+            '7': { name: 'unobtainium/难得素', hint: '7', incorrect: 'silentgear:incorrect_for_unobtainium_tools' }
+        };
+
+        var mapping = tierMap[tierStr];
+        if (!mapping) {
+            console.warn('[Reverie Foundry] 未知的挖掘等级: ' + tier + '，使用默认等级0（木）');
+            mapping = tierMap['0'];
         }
-        return this
+
+        this.stats.harvest_tier = {
+            name: mapping.name,
+            level_hint: mapping.hint,
+            incorrect_blocks_for_tool: mapping.incorrect
+        };
+        return this;
     }
 
     /**
@@ -846,9 +863,8 @@ function PartBuilder(partType) {
         return this._setOperationStat('repair_value', { operation: operation, value: value })
     }
 
-
     /**
-     * 设置修复值
+     * 设置修复效率
      * @param {number} value
      * @returns {PartBuilder}
      */
@@ -857,7 +873,7 @@ function PartBuilder(partType) {
     }
 
     /**
-     * 设置运算型修复值
+     * 设置运算型修复效率
      * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
      * @param {number} value 数值
      * @returns {PartBuilder}
@@ -904,13 +920,12 @@ function PartBuilder(partType) {
         return this._setOperationStat('spell_resist', { operation: operation, value: value })
     }
 
-
     /**
- * 设置法术槽位上限
- * @param {number} value
- * @returns {PartBuilder}
- */
-    this.spellPower = function (value) {
+     * 设置法术槽位上限
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.spellSlots = function (value) {
         return this._setNumberStat('spell_slots', value)
     }
 
@@ -920,10 +935,28 @@ function PartBuilder(partType) {
      * @param {number} value 数值
      * @returns {PartBuilder}
      */
-    this.spellPowerWithOperation = function (operation, value) {
+    this.spellSlotsWithOperation = function (operation, value) {
         return this._setOperationStat('spell_slots', { operation: operation, value: value })
     }
 
+    /**
+     * 设置最大魔力值
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.maxMana = function (value) {
+        return this._setNumberStat('max_mana', value)
+    }
+
+    /**
+     * 设置运算型最大魔力值
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.maxManaWithOperation = function (operation, value) {
+        return this._setOperationStat('max_mana', { operation: operation, value: value })
+    }
 
     /**
      * 设置魔力恢复
@@ -980,6 +1013,63 @@ function PartBuilder(partType) {
      */
     this.healingReceivedWithOperation = function (operation, value) {
         return this._setOperationStat('healing_received', { operation: operation, value: value })
+    }
+
+    /**
+     * 设置嵌孔槽
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.socketSlots = function (value) {
+        return this._setNumberStat('socket_slots', value)
+    }
+
+    /**
+     * 设置运算型嵌孔槽
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.socketSlotsWithOperation = function (operation, value) {
+        return this._setOperationStat('socket_slots', { operation: operation, value: value })
+    }
+
+    /**
+     * 设置精锻概率修正
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.forgePositiveChance = function (value) {
+        return this._setNumberStat('forge_positive_chance', value)
+    }
+
+    /**
+     * 设置运算型精锻概率修正
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.forgePositiveChanceWithOperation = function (operation, value) {
+        return this._setOperationStat('forge_positive_chance', { operation: operation, value: value })
+    }
+
+    /**
+     * 设置精锻强度修正
+     * @param {number} value
+     * @returns {PartBuilder}
+     */
+    this.forgePower = function (value) {
+        return this._setNumberStat('forge_power', value)
+    }
+
+    /**
+     * 设置运算型精锻强度修正
+     * @param {"ADD"|"MULTIPLY_BASE"|"MULTIPLY_TOTAL"} operation 运算类型
+     * @param {number} value 数值
+     * @returns {PartBuilder}
+     */
+    this.forgePowerWithOperation = function (operation, value) {
+        return this._setOperationStat('forge_power', { operation: operation, value: value })
     }
 
     /**

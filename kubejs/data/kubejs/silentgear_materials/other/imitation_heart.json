@@ -1,0 +1,59 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"advanced",
+			"gem"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "malum:imitation_heart"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#FF3B3B",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.malum:imitation_heart"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:tip": {
+			"attack_speed": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.15
+			},
+			"attack_damage": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"magic_damage": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"healing_received": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.05
+			},
+			"spell_power": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"spell_resist": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:dreadsteel_ingot"
+				}
+			]
+		}
+	}
+}

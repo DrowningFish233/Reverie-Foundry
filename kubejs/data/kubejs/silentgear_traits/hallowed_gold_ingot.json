@@ -12,7 +12,7 @@
                         "attribute": "malum:scythe_proficiency",
                         "operation": "add_multiplied_base",
                         "values": [
-                            0.15
+                            0.05
                         ]
                     },
                     {

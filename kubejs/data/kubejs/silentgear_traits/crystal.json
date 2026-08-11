@@ -1,0 +1,47 @@
+{
+	"conditions": [],
+	"description": {
+		"translate": "trait.kubejs.crystal.desc"
+	},
+	"effects": [
+		{
+			"type": "silentgear:wielder_effect",
+			"potion_effects": {
+				"silentgear:armor": [
+					{
+						"type": "full_set_only",
+						"duration": 38,
+						"effect": "reveriefoundry:strange_crystal",
+						"levels": [
+							1
+						]
+					}
+				],
+				"silentgear:tool": [
+					{
+						"type": "trait_level",
+						"duration": 38,
+						"effect": "reveriefoundry:strange_crystal",
+						"levels": [
+							1
+						]
+					}
+				],
+				"silentgear:curio": [
+					{
+						"type": "trait_level",
+						"duration": 38,
+						"effect": "reveriefoundry:strange_crystal",
+						"levels": [
+							1
+						]
+					}
+				]
+			}
+		}
+	],
+	"max_level": 3,
+	"name": {
+		"translate": "trait.kubejs.crystal"
+	}
+}

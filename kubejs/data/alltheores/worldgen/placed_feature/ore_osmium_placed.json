@@ -21,7 +21,8 @@
       }
     },
     {
-      "type": "minecraft:biome"
+      "type": "minecraft:biome",
+      "biomes": "#allthemodium:mining_features/mining_biomes"
     }
   ]
 }

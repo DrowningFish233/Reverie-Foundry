@@ -1,0 +1,76 @@
+{
+	"type": "silentgear:simple",
+	"parent": "silentgear:empty",
+	"crafting": {
+		"can_salvage": true,
+		"categories": [
+			"fabric",
+			"basic"
+		],
+		"gear_type_blacklist": [],
+		"ingredient": {
+			"item": "malum:soulwoven_silk"
+		},
+		"part_substitutes": {}
+	},
+	"display": {
+		"color": "#9e549b",
+		"main_texture_type": "HIGH_CONTRAST",
+		"name": {
+			"translate": "material.silentgear.malum:soulwoven_silk"
+		},
+		"name_prefix": ""
+	},
+	"properties": {
+		"silentgear:grip": {
+			"geas_limit": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"attack_speed": {
+				"operation": "MULTIPLY_BASE",
+				"value": 0.1
+			},
+			"attack_damage": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"magic_damage": {
+				"operation": "ADD",
+				"value": 2
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:strikesoul"
+				}
+			]
+		},
+		"silentgear:fletching": {
+			"projectile_accuracy": 1.1,
+			"projectile_speed": 1.5
+		},
+		"silentgear:lining": {
+			"magic_armor": {
+				"operation": "ADD",
+				"value": 1
+			},
+			"geas_limit": {
+				"operation": "ADD",
+				"value": 0.5
+			},
+			"durability": {
+				"operation": "MULTIPLY_BASE",
+				"value": -0.1
+			},
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:strikesoul"
+				}
+			]
+		}
+	}
+}

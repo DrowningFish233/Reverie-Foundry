@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 998
 //base
 ServerEvents.commandRegistry(event => {
     const { commands: Commands } = event;

@@ -24,7 +24,7 @@
     "properties": {
         "silentgear:main": {
             "armor": 28.0,
-            "armor_toughness": 16.0,
+            "armor_toughness": 12.0,
             "armor/boots": 6.0,
             "armor/chestplate": 10.0,
             "armor/helmet": 6.0,
