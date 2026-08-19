@@ -1,11 +1,43 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "755D62AEC8757466"
+	filename: "755d62aec8757466"
 	group: "2F1F238400B8A177"
 	id: "755D62AEC8757466"
 	images: [ ]
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["3B98D98415628260"]
+			id: "05F590213B78B32C"
+			tasks: [{
+				id: "57B40D85A4BBF056"
+				item: { count: 1, id: "kubejs:heart_of_darkness" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "3B98D98415628260"
+			tasks: [{
+				id: "3030A648CA58B7F8"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B98D98415628260"]
+			id: "58B30930CE3B8139"
+			tasks: [{
+				id: "0C1E7B82C6371B99"
+				item: { count: 1, id: "kubejs:totem_of_undying" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+	]
 }

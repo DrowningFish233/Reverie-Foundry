@@ -768,4 +768,5 @@ ServerEvents.recipes(event => {
             .setDurabilityPercentage(0.3)
             .addValidItem('silentgear:elytra')
     );
+
 })

@@ -30,8 +30,8 @@
       "armor/helmet": 2.0,
       "armor/leggings": 5.0,
       "armor_durability": 6.0,
-      "attack_damage": 7.0,
-      "attack_speed": 0.0,
+      "attack_damage": 10.0,
+      "attack_speed": 1.6,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,
       "charging_value": 1.0,
@@ -56,8 +56,8 @@
         },
         {
           "conditions": [],
-          "level": 1,
-          "trait": "kubejs:wip"
+          "level": 2,
+          "trait": "kubejs:eternal_starlight"
         }
       ]
     }

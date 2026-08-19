@@ -2,7 +2,7 @@
 	autofocus_id: "4D2D9898C6477E3B"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "594B7E5B489F5F45"
+	filename: "594b7e5b489f5f45"
 	group: "2F1F238400B8A177"
 	icon: {
 		id: "immersive_aircraft:quadrocopter"

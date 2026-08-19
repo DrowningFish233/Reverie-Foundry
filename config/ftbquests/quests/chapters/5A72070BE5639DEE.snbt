@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "5A72070BE5639DEE"
+	filename: "5a72070be5639dee"
 	group: "2F1F238400B8A177"
 	icon: {
 		id: "transmog:transmogrification_table"
@@ -39,61 +39,6 @@
 			}]
 			x: -4.5d
 			y: -5.0d
-		}
-		{
-			dependencies: ["5731A86EC589BF22"]
-			id: "083877BA307014F0"
-			tasks: [{
-				id: "00D0F74AD6D77A0E"
-				item: { count: 1, id: "constructionstick:template_angel" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["5731A86EC589BF22"]
-			id: "28857417261F2A6D"
-			tasks: [{
-				id: "1195A729BCA616DE"
-				item: { count: 1, id: "constructionstick:template_replacement" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["5731A86EC589BF22"]
-			id: "562806C63C1C8825"
-			tasks: [{
-				id: "5D4ECA9A3733D23B"
-				item: { count: 1, id: "constructionstick:template_destruction" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["5731A86EC589BF22"]
-			id: "6DCEE288B18B4C0C"
-			tasks: [{
-				id: "36682A9AAFC95404"
-				item: { count: 1, id: "constructionstick:template_unbreakable" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["5731A86EC589BF22"]
-			id: "75301DBE2A2A7531"
-			tasks: [{
-				id: "599DF59B13686577"
-				item: { count: 1, id: "constructionstick:template_battery" }
-				type: "item"
-			}]
-			x: -8.5d
-			y: -3.0d
 		}
 		{
 			icon: {
@@ -849,7 +794,7 @@
 				item: { count: 1, id: "kubejs:core_suppression_unit_form_one" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: -5.0d
 		}
 		{
@@ -860,7 +805,7 @@
 				item: { count: 1, id: "kubejs:core_suppression_unit_form_two" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
@@ -871,7 +816,7 @@
 				item: { count: 1, id: "kubejs:core_suppression_unit_form_three" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
@@ -903,6 +848,71 @@
 			}]
 			x: 1.5d
 			y: 1.0d
+		}
+		{
+			id: "4B307CE1A9A7465A"
+			tasks: [{
+				id: "59C151B2EACB45F0"
+				item: { count: 1, id: "kubejs:remove_armor" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "06CB5714D04531CF"
+			tasks: [{
+				id: "2CDE97A31DF2F469"
+				item: { count: 1, id: "constructionstick:template_angel" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "4866C82816656776"
+			tasks: [{
+				id: "4E501F20AF3C7022"
+				item: { count: 1, id: "constructionstick:template_destruction" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "387E6248FCA73252"
+			tasks: [{
+				id: "1CC65EED0551C9E3"
+				item: { count: 1, id: "constructionstick:template_replacement" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "2C785227C207E08B"
+			tasks: [{
+				id: "4014485DFF58CA3E"
+				item: { count: 1, id: "constructionstick:template_unbreakable" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5731A86EC589BF22"]
+			id: "0AEE6C86706F0EB1"
+			tasks: [{
+				id: "3BC0E8F035080AD7"
+				item: { count: 1, id: "constructionstick:template_battery" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.0d
 		}
 	]
 }

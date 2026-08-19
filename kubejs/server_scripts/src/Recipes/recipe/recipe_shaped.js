@@ -1,5 +1,17 @@
 ServerEvents.recipes(event => {
-
+    
+    event.shaped(
+        Item.of('allthemodium:teleport_pad', 1),
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],
+        {
+            A: 'minecraft:iron_nugget',
+            B: 'minecraft:ender_pearl'
+        }
+    )
     event.shaped(
         Item.of('allthemodium:teleport_pad', 1),
         [

@@ -697,7 +697,7 @@
   "spell.irons_spellbooks.fang_strike.guide": "在你面前召唤一排唤魔者尖牙，经典的唤魔者风格。",
   "spell.irons_spellbooks.fang_ward.guide": "在你周围召唤唤魔者尖牙的保护圈，经典的唤魔者风格。",
   "spell.irons_spellbooks.evasion.guide": "施放后注入末影能量。受到攻击时，你会立即瞬移到短半径范围内，躲避伤害。只能躲避有限次数的攻击，之后效果消失。",
-  "spell.irons_spellbooks.heartstop.guide": "施放后获得“心跳停止”效果，暂时无敌。效果结束后，你将受到效果期间累积总伤害的 50%。",
+  "spell.irons_spellbooks.heartstop.guide": "施放后获得“心跳停止”效果。效果期间累积受到的伤害，并在效果结束时一次性结算。若累积伤害超过法术等级 × 目标最大生命值，则会提前结算并造成1.5倍伤害。",
   "spell.irons_spellbooks.lightning_lance.guide": "按住为闪电长枪充能。释放时投掷，对击中的生物造成高额伤害。",
   "spell.irons_spellbooks.lightning_bolt.guide": "从天而降，召唤一道闪电。",
   "spell.irons_spellbooks.raise_dead.guide": "施放后从脚下召唤亡灵随从。法术强度越高，它们的装备越好。",

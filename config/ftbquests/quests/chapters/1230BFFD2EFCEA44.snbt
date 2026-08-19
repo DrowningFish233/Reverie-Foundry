@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "rsquare"
 	default_quest_size: 1.2d
-	filename: "1230BFFD2EFCEA44"
+	filename: "1230bffd2efcea44"
 	group: "17FDF36D1B965C72"
 	icon: {
 		id: "malum:encyclopedia_arcana"

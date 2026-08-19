@@ -7,5 +7,5 @@ function use_adrenaline_effect(event) {
         return;
     }
 
-    new_damage(event, STAGE.MULTIPLY, 1.5);
+    new_damage(event, STAGE.MULTIPLY, 2.0);
 }

@@ -2,7 +2,7 @@
 	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "57B4DF1E5B70F0C0"
+	filename: "57b4df1e5b70f0c0"
 	group: "2F1F238400B8A177"
 	icon: {
 		id: "kubejs:drowning_fish"

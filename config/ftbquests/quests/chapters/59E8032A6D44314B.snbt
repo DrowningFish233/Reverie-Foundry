@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "59E8032A6D44314B"
+	filename: "59e8032a6d44314b"
 	group: "7F00D0D8C7C916A0"
 	icon: {
 		id: "alshanex_familiars:monocle"
@@ -29,6 +29,14 @@
 				id: "kubejs:sanity_curios"
 			}
 			id: "3F3E9DDBDE86C19C"
+			rewards: [{
+				id: "7ADB78597D9B07C5"
+				item: {
+					count: 1
+					id: "kubejs:sanity_curios"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "69A66193E0DCE55A"
 				type: "checkmark"

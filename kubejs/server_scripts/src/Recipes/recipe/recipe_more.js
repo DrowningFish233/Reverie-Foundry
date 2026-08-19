@@ -1,6 +1,14 @@
 ServerEvents.recipes(event => {
     //唉，自己写的mod还得自己remove掉配方重写，怎么汇逝
     const items = [
+        "reveriefoundry:soul_hunter_helmet_blueprint",
+        "reveriefoundry:soul_hunter_leggings_blueprint",
+        "reveriefoundry:soul_hunter_chestplate_blueprint",
+        "reveriefoundry:soul_hunter_boots_blueprint",
+        "reveriefoundry:soul_hunter_helmet_template",
+        "reveriefoundry:soul_hunter_chestplate_template",
+        "reveriefoundry:soul_hunter_leggings_template",
+        "reveriefoundry:soul_hunter_boots_template",
         'irons_spellbooks:amethyst_rapier',
         'hazennstuff:hallowed_ingot',
         'silentgear:bort_block',

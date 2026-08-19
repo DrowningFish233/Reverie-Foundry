@@ -2,7 +2,7 @@
 	autofocus_id: "1EC459CAACF854F3"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
-	filename: "21E6476472D3F44D"
+	filename: "21e6476472d3f44d"
 	group: ""
 	icon: {
 		id: "hazennstuff:cosmic_gold_ingot"
@@ -10,67 +10,84 @@
 	id: "21E6476472D3F44D"
 	images: [
 		{
-			height: 12.0d
+			click_action: "none:"
+			height: 10.0d
 			id: "7F225BD524496F9B"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
-			width: 20.0d
-			x: 31.5d
-			y: 14.0d
+			width: 15.0d
+			x: 28.0d
+			y: 12.5d
 		}
 		{
-			height: 12.0d
+			click_action: "none:"
+			height: 10.0d
 			id: "550850051DC0C49D"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
-			width: 20.0d
-			x: 0.0d
+			width: 15.0d
+			x: -0.5d
 			y: 6.0d
 		}
 		{
-			height: 12.0d
+			click_action: "none:"
+			height: 10.0d
 			id: "21E476A815DC5598"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
-			width: 20.0d
-			x: 0.0d
-			y: 14.0d
+			width: 15.0d
+			x: -0.5d
+			y: 12.5d
 		}
 		{
-			height: 12.0d
+			click_action: "none:"
+			height: 10.0d
 			id: "7326F996B827C84C"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
-			width: 20.0d
-			x: 15.5d
+			width: 15.0d
+			x: 13.0d
 			y: 6.0d
 		}
 		{
-			height: 12.0d
+			click_action: "none:"
+			height: 10.0d
 			id: "2330AEE48FC6B0EE"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
-			width: 20.0d
-			x: 15.5d
-			y: 14.0d
+			width: 15.0d
+			x: 13.0d
+			y: 12.5d
 		}
 		{
-			height: 12.0d
+			click_action: "none:"
+			height: 10.0d
 			id: "18C05AD3C398DB8E"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
-			width: 20.0d
-			x: 31.5d
+			width: 15.0d
+			x: 28.0d
 			y: 6.0d
 		}
 		{
-			height: 12.0d
+			click_action: "none:"
+			height: 10.0d
 			id: "270EE01FEEB2442F"
 			image: "kubejs:textures/gui/slient_gui.png"
 			rotation: 0.0d
-			width: 20.0d
-			x: 47.5d
+			width: 15.0d
+			x: 44.5d
 			y: 6.0d
+		}
+		{
+			click_action: "none:"
+			height: 10.0d
+			id: "09B8943F636E33F4"
+			image: "kubejs:textures/gui/slient_gui.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 44.5d
+			y: 12.5d
 		}
 	]
 	order_index: 3
@@ -152,8 +169,8 @@
 				item: { count: 1, id: "kubejs:steel_ingot" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.0d
+			x: -4.0d
+			y: 4.5d
 		}
 		{
 			id: "4EB3AF395EE2F05E"
@@ -167,7 +184,7 @@
 				item: { count: 1, id: "kubejs:rhodium_ingot" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: 0.0d
 			y: 5.5d
 		}
 		{
@@ -182,8 +199,8 @@
 				item: { count: 1, id: "malum:soul_stained_steel_ingot" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 7.0d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			id: "3F95B455EACD5B91"
@@ -197,8 +214,8 @@
 				item: { count: 1, id: "minecraft:netherite_ingot" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 8.5d
+			x: -3.0d
+			y: 5.5d
 		}
 		{
 			id: "5883458218829D00"
@@ -212,8 +229,8 @@
 				item: { count: 1, id: "malum:malignant_pewter_ingot" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 5.5d
+			x: 26.5d
+			y: 6.5d
 		}
 		{
 			id: "20848CB8F54AD783"
@@ -228,8 +245,8 @@
 				item: { count: 1, id: "cataclysm:lacrima" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 12.0d
+			x: 12.5d
+			y: 11.0d
 		}
 		{
 			id: "35C26E629284AC1A"
@@ -243,8 +260,8 @@
 				item: { count: 1, id: "irons_spellbooks:hogskin" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			id: "7BD9DC7DB2278AA5"
@@ -258,8 +275,8 @@
 				item: { count: 1, id: "kubejs:isovol_ingot" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 7.0d
+			x: 11.5d
+			y: 4.5d
 		}
 		{
 			id: "78E0C869F2BB2516"
@@ -274,8 +291,8 @@
 				item: { count: 1, id: "minecraft:lapis_lazuli" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 4.0d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			id: "321BA6F89B9F2F5E"
@@ -289,7 +306,7 @@
 				item: { count: 1, id: "kubejs:garnet" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -2.0d
 			y: 5.5d
 		}
 		{
@@ -304,8 +321,8 @@
 				item: { count: 1, id: "alltheores:osmium_ingot" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 7.0d
+			x: -3.0d
+			y: 6.5d
 		}
 		{
 			id: "340694D4FDC5A098"
@@ -319,8 +336,8 @@
 				item: { count: 1, id: "kubejs:osmium_ingot" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 8.5d
+			x: -4.0d
+			y: 6.5d
 		}
 		{
 			id: "7807160BB2108E79"
@@ -334,8 +351,8 @@
 				item: { count: 1, id: "kubejs:rose_quartz" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			id: "366BD92ABD4B70A0"
@@ -349,7 +366,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_ingot" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -1.0d
 			y: 5.5d
 		}
 		{
@@ -364,8 +381,8 @@
 				item: { count: 1, id: "kubejs:rhexis_ingot" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 7.0d
+			x: -4.0d
+			y: 5.5d
 		}
 		{
 			id: "058E2E161B35737E"
@@ -379,8 +396,8 @@
 				item: { count: 1, id: "minecraft:bone_meal" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 7.0d
+			x: 2.0d
+			y: 6.5d
 		}
 		{
 			id: "2AE9864AC40241A7"
@@ -394,8 +411,8 @@
 				item: { count: 1, id: "alltheores:cinnabar" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.5d
+			x: -2.0d
+			y: 7.5d
 		}
 		{
 			id: "284F3685C1A776D4"
@@ -409,8 +426,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(eternal_starlight:yeti_fur)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.5d
+			x: 3.0d
+			y: 6.5d
 		}
 		{
 			id: "3E8F381CC8783800"
@@ -424,8 +441,8 @@
 				item: { count: 1, id: "minecraft:echo_shard" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 4.0d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			id: "4E25633D226B8C90"
@@ -439,8 +456,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(iceandfire:scales/dragon)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 5.5d
+			x: 10.5d
+			y: 7.5d
 		}
 		{
 			id: "771C9B9ADDCDA5E6"
@@ -454,8 +471,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(iceandfire:dragon_bloods)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 7.0d
+			x: 1.0d
+			y: 6.5d
 		}
 		{
 			id: "270113919FB0BE75"
@@ -469,8 +486,8 @@
 				item: { count: 1, id: "kubejs:acril_rod" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 12.0d
+			x: -4.0d
+			y: 11.0d
 		}
 		{
 			id: "44568D0ED1546BF5"
@@ -484,8 +501,8 @@
 				item: { count: 1, id: "kubejs:nlatstone_rod" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 13.5d
+			x: -4.0d
+			y: 12.0d
 		}
 		{
 			id: "6386F7A674C56D65"
@@ -499,8 +516,8 @@
 				item: { count: 1, id: "alltheores:platinum_ingot" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 16.5d
+			x: -4.0d
+			y: 14.0d
 		}
 		{
 			id: "2C9F35CB08351DC4"
@@ -514,8 +531,8 @@
 				item: { count: 1, id: "alltheores:steel_rod" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 15.0d
+			x: -4.0d
+			y: 13.0d
 		}
 		{
 			id: "1F1102772124A040"
@@ -529,8 +546,8 @@
 				item: { count: 1, id: "malum:refined_brilliance" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 8.5d
+			x: -1.0d
+			y: 7.5d
 		}
 		{
 			id: "6CE4032D222E50F3"
@@ -545,7 +562,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
 			id: "35FDA2B4446874E0"
@@ -559,8 +576,8 @@
 				item: { count: 1, id: "kubejs:rhodium_rod" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 12.0d
+			x: -3.0d
+			y: 11.0d
 		}
 		{
 			id: "7995CC0B134AEC55"
@@ -574,8 +591,8 @@
 				item: { count: 1, id: "minecraft:diamond" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 12.0d
+			x: 0.0d
+			y: 11.0d
 		}
 		{
 			id: "0045F58DC99A489C"
@@ -589,8 +606,8 @@
 				item: { count: 1, id: "kubejs:atalphaite" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 13.5d
+			x: 11.5d
+			y: 12.0d
 		}
 		{
 			id: "4D79C56FF94C03AE"
@@ -604,8 +621,8 @@
 				item: { count: 1, id: "kubejs:spinel" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 12.0d
+			x: -2.0d
+			y: 11.0d
 		}
 		{
 			id: "6FE5B91598B5393A"
@@ -619,8 +636,8 @@
 				item: { count: 1, id: "minecraft:quartz" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 15.0d
+			x: 1.0d
+			y: 12.0d
 		}
 		{
 			id: "5E89F969FC7A8AF9"
@@ -634,8 +651,8 @@
 				item: { count: 1, id: "eternal_starlight:thioquartz_shard" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 12.0d
+			x: 1.0d
+			y: 11.0d
 		}
 		{
 			id: "47AE747B665C5151"
@@ -649,8 +666,8 @@
 				item: { count: 1, id: "kubejs:citrine" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 15.0d
+			x: -2.0d
+			y: 13.0d
 		}
 		{
 			id: "3A3892760CA0F960"
@@ -664,8 +681,8 @@
 				item: { count: 1, id: "malum:hallowed_gold_ingot" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 16.5d
+			x: 0.0d
+			y: 12.0d
 		}
 		{
 			id: "2A3657E05759C933"
@@ -679,7 +696,7 @@
 				item: { count: 1, id: "kubejs:tourmaline" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: 5.5d
 		}
 		{
@@ -694,8 +711,8 @@
 				item: { count: 1, id: "irons_spellbooks:mithril_weave" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 16.5d
+			x: -3.0d
+			y: 14.0d
 		}
 		{
 			id: "059AFBCEE942C1B4"
@@ -709,8 +726,8 @@
 				item: { count: 1, id: "irons_spellbooks:magic_cloth" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 15.0d
+			x: -3.0d
+			y: 13.0d
 		}
 		{
 			id: "4D00769819B3C7B5"
@@ -724,8 +741,8 @@
 				item: { count: 1, id: "hazennstuff:storm_weave" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 15.0d
+			x: 9.5d
+			y: 13.0d
 		}
 		{
 			id: "3983E32C1CEC4DAA"
@@ -739,8 +756,8 @@
 				item: { count: 1, id: "eternal_starlight:soul_dew" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 13.5d
+			x: 10.5d
+			y: 14.0d
 		}
 		{
 			id: "4D4B372937B102F6"
@@ -754,8 +771,8 @@
 				item: { count: 1, id: "eternal_starlight:starfire" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 16.5d
+			x: 11.5d
+			y: 13.0d
 		}
 		{
 			id: "5E1CADCE38118460"
@@ -769,8 +786,8 @@
 				item: { count: 1, id: "kubejs:raw_netherite_ingot" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 8.5d
+			x: -1.0d
+			y: 6.5d
 		}
 		{
 			id: "11BB8D522CF607E6"
@@ -784,8 +801,8 @@
 				item: { count: 1, id: "iceandfire:witherbone" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 13.5d
+			x: -1.0d
+			y: 12.0d
 		}
 		{
 			id: "63D0E7814E6F4017"
@@ -799,8 +816,8 @@
 				item: { count: 1, id: "netherexp:banshee_rod" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 13.5d
+			x: -3.0d
+			y: 12.0d
 		}
 		{
 			id: "7D271783CE2A7614"
@@ -814,8 +831,8 @@
 				item: { count: 1, id: "eternal_starlight:malarite" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 13.5d
+			x: 11.5d
+			y: 14.0d
 		}
 		{
 			id: "55FBD2DCCC7E79D2"
@@ -829,8 +846,8 @@
 				item: { count: 1, id: "kubejs:starlight_mythril_ingot" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 4.0d
+			x: 9.5d
+			y: 4.5d
 		}
 		{
 			id: "013A7BFCF95EA8B0"
@@ -844,8 +861,8 @@
 				item: { count: 1, id: "hazennstuff:hallowed_ingot" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 4.0d
+			x: -1.0d
+			y: 4.5d
 		}
 		{
 			id: "6BC39E8AB37961DD"
@@ -859,7 +876,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(iceandfire:scales/sea_serpent)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: 12.5d
 			y: 12.0d
 		}
 		{
@@ -874,8 +891,8 @@
 				item: { count: 1, id: "irons_spellbooks:blood_vial" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.0d
+			x: 1.0d
+			y: 4.5d
 		}
 		{
 			id: "226A2B7E35FB2F05"
@@ -889,7 +906,7 @@
 				item: { count: 1, id: "irons_spellbooks:ice_venom_vial" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 5.5d
 		}
 		{
@@ -904,7 +921,7 @@
 				item: { count: 1, id: "alltheores:invar_ingot" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.0d
 			y: 5.5d
 		}
 		{
@@ -919,8 +936,8 @@
 				item: { count: 1, id: "hazennstuff:demonite_ingot" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 7.0d
+			x: 9.5d
+			y: 5.5d
 		}
 		{
 			id: "37EDF1917F18D163"
@@ -935,7 +952,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 8.5d
+			y: 6.5d
 		}
 		{
 			id: "523AD23A30544888"
@@ -949,8 +966,8 @@
 				item: { count: 1, id: "gobber2:gobber2_ingot" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 8.5d
+			x: 9.5d
+			y: 7.5d
 		}
 		{
 			id: "3FC49807F1694CE5"
@@ -964,8 +981,8 @@
 				item: { count: 1, id: "allthemodium:allthemodium_ingot" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 4.0d
+			x: 10.5d
+			y: 4.5d
 		}
 		{
 			id: "283E7DF6FCE579BC"
@@ -979,8 +996,8 @@
 				item: { count: 1, id: "kubejs:viculeam_ingot" }
 				type: "item"
 			}]
-			x: 26.5d
-			y: 4.0d
+			x: 24.5d
+			y: 4.5d
 		}
 		{
 			id: "3D277D76C151604A"
@@ -994,8 +1011,8 @@
 				item: { count: 1, id: "kubejs:ultimate_ingot" }
 				type: "item"
 			}]
-			x: 26.5d
-			y: 7.0d
+			x: 25.5d
+			y: 5.5d
 		}
 		{
 			id: "2376D883261AE9AC"
@@ -1009,8 +1026,8 @@
 				item: { count: 1, id: "cataclysm:ignitium_ingot" }
 				type: "item"
 			}]
-			x: 26.5d
-			y: 8.5d
+			x: 27.5d
+			y: 6.5d
 		}
 		{
 			id: "6E7D9FC91B09210C"
@@ -1024,7 +1041,7 @@
 				item: { count: 1, id: "cataclysm:cursium_ingot" }
 				type: "item"
 			}]
-			x: 28.0d
+			x: 26.5d
 			y: 5.5d
 		}
 		{
@@ -1039,8 +1056,8 @@
 				item: { count: 1, id: "kubejs:celeslar_ingot" }
 				type: "item"
 			}]
-			x: 28.0d
-			y: 7.0d
+			x: 24.5d
+			y: 6.5d
 		}
 		{
 			id: "45983509EA6BD841"
@@ -1054,7 +1071,7 @@
 				item: { count: 1, id: "allthemodium:vibranium_ingot" }
 				type: "item"
 			}]
-			x: 26.5d
+			x: 24.5d
 			y: 5.5d
 		}
 		{
@@ -1069,8 +1086,8 @@
 				item: { count: 1, id: "iceandfire:dragonsteel_fire_ingot" }
 				type: "item"
 			}]
-			x: 29.5d
-			y: 5.5d
+			x: 25.5d
+			y: 4.5d
 		}
 		{
 			id: "2650317F3653A86F"
@@ -1084,8 +1101,8 @@
 				item: { count: 1, id: "iceandfire:dragonsteel_ice_ingot" }
 				type: "item"
 			}]
-			x: 29.5d
-			y: 4.0d
+			x: 26.5d
+			y: 4.5d
 		}
 		{
 			id: "57925645E9E7F4D8"
@@ -1099,23 +1116,8 @@
 				item: { count: 1, id: "iceandfire:dragonsteel_lightning_ingot" }
 				type: "item"
 			}]
-			x: 29.5d
-			y: 7.0d
-		}
-		{
-			id: "73271D059291EA31"
-			rewards: [{
-				id: "0770E3A5DAC8EC46"
-				type: "xp"
-				xp: 20
-			}]
-			tasks: [{
-				id: "2919C9180033A381"
-				item: { count: 1, id: "kubejs:isovol_ingot" }
-				type: "item"
-			}]
-			x: 28.0d
-			y: 4.0d
+			x: 25.5d
+			y: 6.5d
 		}
 		{
 			id: "4A4168EA1BC0644E"
@@ -1129,8 +1131,8 @@
 				item: { count: 1, id: "irons_spellbooks:pyrium_ingot" }
 				type: "item"
 			}]
-			x: 28.0d
-			y: 8.5d
+			x: 24.5d
+			y: 7.5d
 		}
 		{
 			id: "57084B014CE6C718"
@@ -1144,8 +1146,8 @@
 				item: { count: 1, id: "cataclysm:witherite_ingot" }
 				type: "item"
 			}]
-			x: 29.5d
-			y: 8.5d
+			x: 25.5d
+			y: 7.5d
 		}
 		{
 			id: "2A56714310939AFB"
@@ -1160,7 +1162,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
 			id: "08DB4D29BBE0A6CD"
@@ -1174,8 +1176,8 @@
 				item: { count: 1, id: "eternal_starlight:starlit_diamond" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 15.0d
+			x: 9.5d
+			y: 14.0d
 		}
 		{
 			id: "62B6DB17872E27D4"
@@ -1189,8 +1191,8 @@
 				item: { count: 1, id: "eternal_starlight:starlit_diamond" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 7.0d
+			x: -2.0d
+			y: 6.5d
 		}
 		{
 			id: "63A0E5D82118EC71"
@@ -1204,8 +1206,8 @@
 				item: { count: 1, id: "kubejs:ultranium_gem" }
 				type: "item"
 			}]
-			x: 31.0d
-			y: 4.0d
+			x: 42.0d
+			y: 6.5d
 		}
 		{
 			id: "45ED7996360032EC"
@@ -1219,8 +1221,8 @@
 				item: { count: 1, id: "irons_spellbooks:dragonskin" }
 				type: "item"
 			}]
-			x: 37.0d
-			y: 12.0d
+			x: 25.5d
+			y: 11.0d
 		}
 		{
 			id: "178BC08D4F2D3809"
@@ -1234,8 +1236,8 @@
 				item: { count: 1, id: "kubejs:vibranite_rod" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 12.0d
+			x: 9.5d
+			y: 11.0d
 		}
 		{
 			id: "3E76BD1AEDBFF421"
@@ -1249,8 +1251,8 @@
 				item: { count: 1, id: "kubejs:celeslar_rod" }
 				type: "item"
 			}]
-			x: 26.5d
-			y: 12.0d
+			x: 24.5d
+			y: 11.0d
 		}
 		{
 			id: "086F7ED726FBC65F"
@@ -1264,8 +1266,8 @@
 				item: { count: 1, id: "iceandfire:dragonbone" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: 13.5d
+			x: 9.5d
+			y: 12.0d
 		}
 		{
 			id: "38AC7ED986231005"
@@ -1280,7 +1282,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 16.5d
+			y: 14.0d
 		}
 		{
 			id: "50CA5A1721E6B28E"
@@ -1294,8 +1296,8 @@
 				item: { count: 1, id: "minecraft:lapis_lazuli" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 15.0d
+			x: 0.0d
+			y: 13.0d
 		}
 		{
 			id: "43DA0D2247FEE7E0"
@@ -1309,8 +1311,8 @@
 				item: { count: 1, id: "malum:blazing_quartz" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 16.5d
+			x: 0.0d
+			y: 14.0d
 		}
 		{
 			id: "0DA24AFB83B99AA4"
@@ -1324,8 +1326,8 @@
 				item: { count: 1, id: "kubejs:chalyblux_rod" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 12.0d
+			x: -1.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["1EC459CAACF854F3"]
@@ -1440,8 +1442,8 @@
 				item: { count: 1, id: "irons_spellbooks:frosted_helve" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 15.0d
+			x: -1.0d
+			y: 13.0d
 		}
 		{
 			id: "5A9B842FAAFBFD26"
@@ -1455,8 +1457,8 @@
 				item: { count: 1, id: "kubejs:estalt_ingot" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 8.5d
+			x: -4.0d
+			y: 7.5d
 		}
 		{
 			id: "524A12A30F00E96E"
@@ -1470,7 +1472,7 @@
 				item: { count: 1, id: "kubejs:starinium_ingot" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.5d
 			y: 5.5d
 		}
 		{
@@ -1485,8 +1487,8 @@
 				item: { count: 1, id: "kubejs:terraulite_ingot" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 7.0d
+			x: 9.5d
+			y: 6.5d
 		}
 		{
 			id: "662FD441B3988A88"
@@ -1500,8 +1502,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(iceandfire:deathworm_chitin_yellow)item(iceandfire:deathworm_chitin_white)item(iceandfire:deathworm_chitin_red))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 8.5d
+			x: -3.0d
+			y: 7.5d
 		}
 		{
 			id: "7C78F44CB8587BCB"
@@ -1516,7 +1518,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 16.5d
+			y: 13.0d
 		}
 		{
 			id: "1BF526B37EC8A965"
@@ -1530,8 +1532,8 @@
 				item: { count: 1, id: "kubejs:adamanite_rod" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 12.0d
+			x: 10.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["56F8015C97CDF40A"]
@@ -1568,8 +1570,8 @@
 				item: { count: 1, id: "kubejs:europium_rod" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 16.5d
+			x: -1.0d
+			y: 14.0d
 		}
 		{
 			id: "630EEC8565D962D6"
@@ -1583,8 +1585,8 @@
 				item: { count: 1, id: "kubejs:plumbumanite_rod" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: 13.5d
+			x: 10.5d
+			y: 12.0d
 		}
 		{
 			id: "5B0DD1682972CBF0"
@@ -1598,8 +1600,8 @@
 				item: { count: 1, id: "kubejs:solimrith_ingot" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 4.0d
+			x: 11.5d
+			y: 5.5d
 		}
 		{
 			id: "1AF5C4332908323D"
@@ -1613,7 +1615,7 @@
 				item: { count: 1, id: "gobber2:gobber2_ingot_nether" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 27.5d
 			y: 5.5d
 		}
 		{
@@ -1628,8 +1630,8 @@
 				item: { count: 1, id: "kubejs:vorant_ingot" }
 				type: "item"
 			}]
-			x: 42.5d
-			y: 4.0d
+			x: 41.0d
+			y: 4.5d
 		}
 		{
 			id: "601016E861B6036F"
@@ -1643,7 +1645,7 @@
 				item: { count: 1, id: "kubejs:lustful_haze_alloy" }
 				type: "item"
 			}]
-			x: 42.5d
+			x: 41.0d
 			y: 5.5d
 		}
 		{
@@ -1658,8 +1660,8 @@
 				item: { count: 1, id: "allthemodium:unobtainium_ingot" }
 				type: "item"
 			}]
-			x: 44.0d
-			y: 4.0d
+			x: 42.0d
+			y: 4.5d
 		}
 		{
 			id: "6FF16C84BFDC23B4"
@@ -1673,7 +1675,7 @@
 				item: { count: 1, id: "gobber2:gobber2_ingot_end" }
 				type: "item"
 			}]
-			x: 44.0d
+			x: 42.0d
 			y: 5.5d
 		}
 		{
@@ -1688,8 +1690,8 @@
 				item: { count: 1, id: "kubejs:xelkive_ingot" }
 				type: "item"
 			}]
-			x: 42.5d
-			y: 7.0d
+			x: 41.0d
+			y: 6.5d
 		}
 		{
 			id: "161C42E6B708C7DA"
@@ -1702,8 +1704,178 @@
 				id: "18849E2143DB1691"
 				type: "checkmark"
 			}]
-			x: 37.0d
-			y: 13.5d
+			x: 32.0d
+			y: 11.0d
+		}
+		{
+			id: "2150AC43C2C52806"
+			tasks: [{
+				id: "1E7440BB81D632FD"
+				item: { count: 1, id: "kubejs:animated_steel_ingot" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			id: "50E6C68BC9D70346"
+			tasks: [{
+				id: "28B75A93C0DB6FA1"
+				item: { count: 1, id: "kubejs:aero_steel_ingot" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 7.5d
+		}
+		{
+			id: "03F4A8614BB920BF"
+			tasks: [{
+				id: "2C77D1A698E696E2"
+				item: { count: 1, id: "kubejs:starlight_mythril_rod" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 11.0d
+		}
+		{
+			id: "4C9D927032A98883"
+			tasks: [{
+				id: "3A3661474F016FAA"
+				item: { count: 1, id: "kubejs:viculeam_rod" }
+				type: "item"
+			}]
+			x: 24.5d
+			y: 12.0d
+		}
+		{
+			id: "45783E62762E2004"
+			tasks: [{
+				id: "6FCD2F726650A548"
+				item: { count: 1, id: "kubejs:xelkive_rod" }
+				type: "item"
+			}]
+			x: 41.0d
+			y: 11.0d
+		}
+		{
+			id: "1F0087CBFB4E0275"
+			tasks: [{
+				id: "70DE517EF56D6DD0"
+				item: { count: 1, id: "kubejs:xeproda_rod" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 13.0d
+		}
+		{
+			id: "3C8D7934954DA215"
+			tasks: [{
+				id: "42BF168B20E2035D"
+				item: { count: 1, id: "kubejs:xeproda_ingot" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 7.5d
+		}
+		{
+			id: "15DDE00E526D43A1"
+			tasks: [{
+				id: "45CC840AEC051AB8"
+				item: { count: 1, id: "kubejs:lunium_nova_rod" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 14.0d
+		}
+		{
+			id: "1051CF07BFF75644"
+			tasks: [{
+				id: "08489EE512EC0B0B"
+				item: { count: 1, id: "kubejs:lunium_nova_ingot" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.5d
+		}
+		{
+			id: "540315F91CBA0F77"
+			tasks: [{
+				id: "531A05E61B7458DA"
+				item: { count: 1, id: "kubejs:thlanium_ingot" }
+				type: "item"
+			}]
+			x: 27.5d
+			y: 4.5d
+		}
+		{
+			id: "72115220B9B69A16"
+			tasks: [{
+				id: "22FC9BCCAFD4EC69"
+				item: { count: 1, id: "kubejs:thlanium_rod" }
+				type: "item"
+			}]
+			x: 25.5d
+			y: 12.0d
+		}
+		{
+			id: "7D2142146614638C"
+			tasks: [{
+				id: "702345A1304EA8F4"
+				item: { count: 1, id: "kubejs:void_ingot" }
+				type: "item"
+			}]
+			x: 27.5d
+			y: 7.5d
+		}
+		{
+			id: "7F0EB703538AF425"
+			tasks: [{
+				id: "09EF649DB77DB3C2"
+				item: { count: 1, id: "kubejs:void_rod" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 11.0d
+		}
+		{
+			id: "20C6879D332BCC1C"
+			tasks: [{
+				id: "3746E3E932A878F7"
+				item: { count: 1, id: "kubejs:cosmos_aurora_ingot" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 5.5d
+		}
+		{
+			id: "124A3DCF1B3DA894"
+			tasks: [{
+				id: "4564E8131391A981"
+				item: { count: 1, id: "kubejs:cosmos_aurora_rod" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 11.0d
+		}
+		{
+			id: "1D0A4CF257B8F53C"
+			tasks: [{
+				id: "2B14DA754A9D5DFD"
+				item: { count: 1, id: "kubejs:midnight_abyssal_ingot" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.5d
+		}
+		{
+			id: "252D5B1C2C327A08"
+			tasks: [{
+				id: "031ACF8F41800C9C"
+				item: { count: 1, id: "kubejs:midnight_abyssal_rod" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 12.0d
 		}
 	]
 }

@@ -111,6 +111,8 @@ global.new_materials = [
     { id: 'random_accessory_pouch_t2', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch_t2" },
     { id: 'random_accessory_pouch_t3', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch_t3" },
     { id: 'random_accessory_pouch_t4', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch_t4" },
+    { id: 'gluttonous_authority', maxStackSize: 1, texture: "kubejs:item/misc/gluttonous_authority" },
+
 
 
 

@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
     );
 
     registerCustomRecipe(
-        new VoidFavorRecipeJSON('create:chromatic_compound', 'kubejs:void_ingot')
+        new VoidFavorRecipeJSON('kubejs:viculeam_ingot', 'kubejs:void_ingot')
     );
 
     registerCustomRecipe(
@@ -90,5 +90,9 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(
         new VoidFavorRecipeJSON('kubejs:dimensional_ripper', 'kubejs:rift_probe')
+    );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('eternal_starlight:deepsilver_ingot', 'kubejs:midnight_abyssal_ingot')
     );
 });

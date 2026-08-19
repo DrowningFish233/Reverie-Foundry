@@ -1,5 +1,156 @@
 ServerEvents.recipes(event => {
     event.shapeless(
+        Item.of('kubejs:catalyst_t4', 1),
+        [
+            '9x silentgear:glittery_dust',
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_boots_blueprint', 1),
+        [
+            '2x silentgear:blueprint_paper',
+            'irons_spellbooks:arcane_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_boots_template', 1),
+        [
+            '2x silentgear:template_board',
+            'irons_spellbooks:arcane_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_helmet_blueprint', 1),
+        [
+            '4x silentgear:blueprint_paper',
+            'irons_spellbooks:arcane_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_helmet_template', 1),
+        [
+            '4x silentgear:template_board',
+            'irons_spellbooks:arcane_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_chestplate_blueprint', 1),
+        [
+            '7x silentgear:blueprint_paper',
+            'irons_spellbooks:arcane_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_chestplate_template', 1),
+        [
+            '7x silentgear:template_board',
+            'irons_spellbooks:arcane_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_leggings_blueprint', 1),
+        [
+            '5x silentgear:blueprint_paper',
+            'irons_spellbooks:arcane_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:robe_leggings_template', 1),
+        [
+            '5x silentgear:template_board',
+            'irons_spellbooks:arcane_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_hunter_helmet_blueprint', 1),
+        [
+            '4x silentgear:blueprint_paper',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_hunter_helmet_template', 1),
+        [
+            '4x silentgear:template_board',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_hunter_chestplate_blueprint', 1),
+        [
+            '7x silentgear:blueprint_paper',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_hunter_chestplate_template', 1),
+        [
+            '7x silentgear:template_board',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_hunter_leggings_blueprint', 1),
+        [
+            '5x silentgear:blueprint_paper',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_hunter_leggings_template', 1),
+        [
+            '5x silentgear:template_board',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_hunter_boots_blueprint', 1),
+        [
+            '2x silentgear:blueprint_paper',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:soul_hunter_boots_template', 1),
+        [
+            '2x silentgear:template_board',
+            'malum:soul_stained_steel_ingot',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
         Item.of('kubejs:rift_probe', 1),
         [
             'minecraft:ender_pearl',
@@ -218,7 +369,7 @@ ServerEvents.recipes(event => {
         Item.of('apothic_enchanting:occult_ender_lead', 1),
         [
             'apothic_enchanting:ender_lead',
-            '4x kubejs:ashes_of_calamity'
+            '1x kubejs:viculeam_ingot'
         ]
     )
     event.shapeless(
@@ -291,15 +442,6 @@ ServerEvents.recipes(event => {
     )
 
     event.shapeless(
-        Item.of('reveriefoundry:robe_boots_blueprint', 1),
-        [
-            '4x silentgear:blueprint_paper',
-            'kubejs:ashes_of_calamity',
-            'irons_spellbooks:arcane_ingot'
-        ]
-    )
-
-    event.shapeless(
         Item.of('reveriefoundry:heavy_boots_template', 1),
         [
             '4x silentgear:template_board',
@@ -307,29 +449,12 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    event.shapeless(
-        Item.of('reveriefoundry:robe_boots_template', 1),
-        [
-            '4x silentgear:template_board',
-            'kubejs:viculeam_ingot',
-            'irons_spellbooks:arcane_ingot'
-        ]
-    )
 
     event.shapeless(
         Item.of('reveriefoundry:heavy_leggings_template', 1),
         [
             '7x silentgear:template_board',
             'minecraft:iron_ingot'
-        ]
-    )
-
-    event.shapeless(
-        Item.of('reveriefoundry:robe_leggings_template', 1),
-        [
-            '6x silentgear:template_board',
-            'kubejs:viculeam_ingot',
-            'irons_spellbooks:arcane_ingot'
         ]
     )
 
@@ -342,28 +467,10 @@ ServerEvents.recipes(event => {
     )
 
     event.shapeless(
-        Item.of('reveriefoundry:robe_leggings_blueprint', 1),
-        [
-            '6x silentgear:blueprint_paper',
-            'kubejs:ashes_of_calamity',
-            'irons_spellbooks:arcane_ingot'
-        ]
-    )
-
-    event.shapeless(
         Item.of('reveriefoundry:heavy_chestplate_blueprint', 1),
         [
             '8x silentgear:blueprint_paper',
             'minecraft:iron_ingot'
-        ]
-    )
-
-    event.shapeless(
-        Item.of('reveriefoundry:robe_chestplate_blueprint', 1),
-        [
-            '7x silentgear:blueprint_paper',
-            'kubejs:ashes_of_calamity',
-            'irons_spellbooks:arcane_ingot'
         ]
     )
 
@@ -377,29 +484,10 @@ ServerEvents.recipes(event => {
     )
 
     event.shapeless(
-        Item.of('reveriefoundry:robe_chestplate_template', 1),
-        [
-            '7x silentgear:template_board',
-            'kubejs:viculeam_ingot',
-            'irons_spellbooks:arcane_ingot'
-        ]
-    )
-
-
-    event.shapeless(
         Item.of('reveriefoundry:heavy_helmet_blueprint', 1),
         [
             '5x silentgear:blueprint_paper',
             'minecraft:iron_ingot'
-        ]
-    )
-
-    event.shapeless(
-        Item.of('reveriefoundry:robe_helmet_blueprint', 1),
-        [
-            '5x silentgear:blueprint_paper',
-            'kubejs:viculeam_ingot',
-            'irons_spellbooks:arcane_ingot'
         ]
     )
 
@@ -409,15 +497,6 @@ ServerEvents.recipes(event => {
         [
             '5x silentgear:template_board',
             'minecraft:iron_ingot'
-        ]
-    )
-
-    event.shapeless(
-        Item.of('reveriefoundry:robe_helmet_template', 1),
-        [
-            '5x silentgear:template_board',
-            'kubejs:viculeam_ingot',
-            'irons_spellbooks:arcane_ingot'
         ]
     )
 

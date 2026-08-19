@@ -1,6 +1,11 @@
 // priority: 500
 ServerEvents.tags('item', event => {
 
+
+    event.add('reveriefoundry:gluttonous_authority',
+        "kubejs:gluttonous_authority"
+    )
+
     event.add('hazennstuff:enchanted_spellbook',
         "reveriefoundry:spellbook"
     )

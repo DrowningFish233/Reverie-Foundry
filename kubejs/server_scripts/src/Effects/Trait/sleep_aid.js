@@ -7,7 +7,7 @@ NativeEvents.onEvent($PlayerWakeUpEvent, event => {
         updateplayersanity(player, sanity + 10)
         if (fu_hasTraitAnywhere(player, "kubejs:sleep_aid")) {
             let trait_level = fu_getHighestTraitLevelAnywhere(player, "kubejs:sleep_aid")
-            player.potionEffects.add('kubejs:protect', 20 * 60, trait_level - 1, false, true)
+            player.potionEffects.add('kubejs:protect', 20 * 90, trait_level - 1, false, true)
         }
     }
 })

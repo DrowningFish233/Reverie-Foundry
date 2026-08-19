@@ -19,4 +19,4 @@
 	#If true, item and fluid recipe viewer caches for stage restrictions are built
 	#asynchronously, reducing stutter upon (re)load at the cost of a slight delay
 	#before restrictions take effect.
-	"Build Caches Asynchronously" = false
+	"Build Caches Asynchronously" = true

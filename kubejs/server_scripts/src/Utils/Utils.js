@@ -1845,15 +1845,23 @@ function handleSocketChange(event, player, itemId) {
  * @param {number} amount 修复量（正数修复，负数扣除）
  * @param {Internal.Player} [player] 可选，持有物品的玩家，传入则扣除耐久时触发破损回调
  * @param {string} [slotName] 可选，槽位名称（"mainhand"、"offhand"、"head"、"chest"、"legs"、"feet"），默认 "mainhand"
+ * @returns {boolean} 扣除耐久时返回是否成功扣除（耐久不足返回false），修复时返回true
  */
 function fu_repairDurability(stack, amount, player, slotName) {
-    if (!stack || stack.isEmpty() || amount === 0) return;
+    if (!stack || stack.isEmpty() || amount === 0) return true;
 
-    if (amount < 0 && player && player.isPlayer()) {
+    if (amount < 0) {
         let damageAmount = Math.abs(amount);
         let currentDamage = stack.getDamageValue();
         let maxDamage = stack.getMaxDamage();
-        let newDamage = currentDamage + damageAmount;
+
+        let remainingDurability = maxDamage - currentDamage;
+        if (remainingDurability <= 1) {
+            return false;
+        }
+
+        let actualDamage = Math.min(damageAmount, remainingDurability - 1);
+        let newDamage = currentDamage + actualDamage;
 
         if (fu_isGear(stack)) {
             fu_setDamage(stack, newDamage, (s, d) => s.setDamageValue(d));
@@ -1861,11 +1869,11 @@ function fu_repairDurability(stack, amount, player, slotName) {
             stack.setDamageValue(newDamage);
         }
 
-        if (newDamage >= maxDamage - 1) {
+        if (newDamage >= maxDamage - 1 && player && player.isPlayer()) {
             let slot = slotName || "mainhand";
             triggerGearBroken(stack, player, slot);
         }
-        return;
+        return true;
     }
 
     if (fu_isGear(stack)) {
@@ -1876,6 +1884,7 @@ function fu_repairDurability(stack, amount, player, slotName) {
         let newDamage = Math.max(0, stack.getDamageValue() - amount);
         stack.setDamageValue(newDamage);
     }
+    return true;
 }
 
 /**

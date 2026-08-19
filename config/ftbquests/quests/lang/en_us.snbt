@@ -5060,8 +5060,6 @@
 	]
 	quest.731473A765D3B6B6.quest_subtitle: "Channeling Winds"
 	quest.731473A765D3B6B6.title: "Wind Weaving"
-	quest.73271D059291EA31.quest_desc: ["Found in Ancient City chests after defeating the Dead King. Provides extremely high stats."]
-	quest.73271D059291EA31.quest_subtitle: "High-Value Stats"
 	quest.732853B6E9D536CC.quest_desc: [
 		"&6Aurora Antler&r&7"
 		"&7A special drop obtained without killing the Aurora Deer; &r"
@@ -5915,7 +5913,6 @@
 	task.1E1639DB2A1EB27B.title: "Robe Boots Template"
 	task.1E6F37B4C4187836.title: "Cursed Realm Great Axe Template"
 	task.1E9C1BB2AC8320CD.title: "Wugu"
-	task.1F47FF09840A0E4F.title: "You Killed This One Too?"
 	task.201E6C48702846AC.title: "Bangle Template"
 	task.20E752F817977436.title: "Heavy Boots Template"
 	task.2103D8FA6762C9C3.title: "Before Killing the Abyssal Prisoner"
@@ -6008,7 +6005,6 @@
 	task.4F130F44D6BF4752.title: "Observe Soul-Infused Soul Sand"
 	task.5036035283C82E2B.title: "Beta Test Group Members"
 	task.508096ECD78B8896.title: "Ring Template"
-	task.5225B30B12D274F9.title: "Any Hidden Ore"
 	task.52F0A853C5CDA88B.title: "Whip Template"
 	task.541556CE37259715.title: "Sword Template"
 	task.55950E58A8C1E62C.title: "Music Disc Upgrade"

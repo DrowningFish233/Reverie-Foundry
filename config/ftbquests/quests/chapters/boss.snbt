@@ -894,27 +894,16 @@
 			dependency_requirement: "one_completed"
 			icon_scale: 0.7d
 			id: "332CE7AF2598E3F1"
-			rewards: [{
-				id: "175C7082BFFD219F"
-				type: "xp_levels"
-				xp_levels: 100
-			}]
 			shape: "netheritetier"
 			size: 3.0d
-			tasks: [
-				{
-					disable_toast: true
-					entity: "darkdoppelganger:dark_doppelganger"
-					id: "1183215ABA9D897C"
-					optional_task: true
-					type: "kill"
-					value: 1L
-				}
-				{
-					id: "1F47FF09840A0E4F"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				disable_toast: true
+				entity: "darkdoppelganger:dark_doppelganger"
+				id: "1183215ABA9D897C"
+				optional_task: true
+				type: "kill"
+				value: 1L
+			}]
 			x: 31.5d
 			y: -3.0d
 		}

@@ -1103,4 +1103,23 @@ ServerEvents.recipes(event => {
             .addExtraInput('kubejs:necroplasm', 1)
             .addExtraInput('minecraft:netherite_scrap', 1)
     );
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('kubejs:animated_steel_ingot', 'kubejs:aero_steel_ingot')
+            .addSpirit("eldritch", 6)
+            .addSpirit("infernal", 6)
+            .addSpirit("wicked", 6)
+            .addSpirit("aqueous", 6)
+            .addExtraInput('kubejs:viculeam_ingot', 1)
+    );
+
+
+    registerCustomRecipe(
+        new SpiritInfusionRecipeJSON('create:brass_ingot', 'kubejs:animated_steel_ingot')
+            .addSpirit("eldritch", 3)
+            .addSpirit("infernal", 3)
+            .addSpirit("wicked", 3)
+            .addSpirit("aqueous", 3)
+            .addExtraInput('kubejs:necroplasm', 1)
+    );
 });

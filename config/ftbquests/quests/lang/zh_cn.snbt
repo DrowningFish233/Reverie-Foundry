@@ -13,7 +13,7 @@
 	chapter.5A72070BE5639DEE.title: "&3实用工具"
 	chapter.6610553945D768F8.title: "&3永恒星光"
 	chapter.7210F70FE99AF2C8.title: "&3寂静装备"
-	chapter.755D62AEC8757466.title: "奇思妙想"
+	chapter.755D62AEC8757466.title: "&2奇思妙想"
 	chapter.75D59DE79FD7569A.title: "&d追加的苦难"
 	chapter.797BA53935D7BF99.title: "&6鸣谢"
 	chapter.7B5D2936F42B645B.title: "&3BOSS列表"
@@ -246,16 +246,18 @@
 	]
 	quest.02F458E4623EBD67.quest_subtitle: "一往无前！"
 	quest.03639EDED6577831.quest_desc: [
-		"{\"text\":\"\",\"extra\":[{\"text\":\"忧郁\",\"color\":\"aqua\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"释放法术时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"每释放1次法术，获得1层\",\"color\":\"gray\"},{\"text\":\"“奥术烙印”\",\"color\":\"aqua\"},{\"text\":\"，最多5层，持续60秒\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"每层提供\",\"color\":\"gray\"},{\"text\":\"施法速度、冷却缩减和法术强度\",\"color\":\"green\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击带有\",\"color\":\"gray\"},{\"text\":\"“奥术烙印”\",\"color\":\"aqua\"},{\"text\":\"的目标时（满5层）：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"造成\",\"color\":\"gray\"},{\"text\":\"额外法术伤害\",\"color\":\"light_purple\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"对目标叠加\",\"color\":\"gray\"},{\"text\":\"“奥术烙印层数”\",\"color\":\"aqua\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"重置自身的烙印层数\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"带有\",\"color\":\"gray\"},{\"text\":\"“奥术烙印”\",\"color\":\"aqua\"},{\"text\":\"的敌人死亡时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"附件10格内所有玩家\",\"color\":\"gray\"},{\"text\":\"恢复15%最大生命值与200点法力值\",\"color\":\"green\"}]}"
+		"&7&#66CCFF忧郁&7  "
+		"&7释放法术时：  "
+		"&7每释放1次法术，获得1层 &#66CCFF“奥术烙印”&7，最多 &#FFAA335层&7，持续 &#FFAA3360秒&7  "
+		"&7每层提供 &#66FF66施法速度、冷却缩减和法术强度&7  "
+		""
+		"&7攻击带有 &#66CCFF“奥术烙印”&7 的目标时（满5层）：  "
+		"&7造成 &#CC99FF额外法术伤害&7  "
+		"&7对目标叠加 &#66CCFF“奥术烙印层数”&7  "
+		"&7重置自身的烙印层数  "
+		""
+		"&7带有 &#66CCFF“奥术烙印”&7 的敌人死亡时：  "
+		"&7附近 &#FFAA3310格&7 内所有玩家 &#66FF66恢复15%最大生命值与200点法力值&7"
 	]
 	quest.03639EDED6577831.quest_subtitle: "忧郁侵蚀"
 	quest.03639EDED6577831.title: "忧郁侵蚀"
@@ -317,27 +319,7 @@
 		"&7堆叠升级同样会作用于储罐，使储罐的存储量也相应提高。"
 	]
 	quest.04F1594414B048D0.quest_subtitle: "堆一点，再堆一点，再堆亿点"
-	quest.05499B6A45252488.quest_desc: [
-		"&7将南瓜丢入 &#CC99FF虚空之井&7 后产出，将其放置在 &#55D5D5灵魂沙&7 上用 &#66FF66骨粉&7 催熟可以产生 &#FF6666苦难堆&7。"
-		""
-		"或是将南瓜种子种植在灵魂沙上，它会向上生长成的难瓜植株；"
-		""
-		"难瓜植株在生长一定高度后便会结出一块难瓜"
-		""
-		"难瓜植株会随时间向上生长；"
-		""
-		"难瓜植株每自然生长 1 格高度，就有 1/5 的概率结出一颗难瓜；"
-		""
-		"当植株已经结出难瓜时，难瓜植株会停滞生长，直到这颗难瓜被破坏；"
-		""
-		"对难瓜植株使用骨粉只会让其无限生长至建筑高度上限；"
-		""
-		"（每节）难瓜植株破坏后有概率掉落 1 颗南瓜种子；"
-		""
-		"破坏相连且更靠下的难瓜植株时，上方与之相连的难瓜植株和难瓜也会被一齐破坏；"
-		""
-		"玩家也可以像攀爬缠怨藤一样沿难瓜植株进行攀爬。"
-	]
+	quest.05499B6A45252488.quest_desc: ["&7将南瓜丢入 &#CC99FF虚空之井&7 后产出，将其放置在 &#55D5D5灵魂沙&7 上用 &#66FF66骨粉&7 催熟可以产生 &#FF6666苦难堆&7。"]
 	quest.05499B6A45252488.quest_subtitle: "我太难了"
 	quest.056130E2CD71DC75.quest_desc: [
 		"&7本整合包对 &#66CCFF寂静装备&7 进行了大量 &#FFD700QOL魔改&7 以及优化，具体的教程与蓝图等内容请参见 &#66CCFF寂静装备&7 章节。"
@@ -392,6 +374,8 @@
 		"&7镰刃威能符文以镰刀所夺&8灵魂&r&7为代价，给予佩戴者力量。一定时间内，每次击杀都使得手中的&e武器&r&7愈发&a强大&r&7。&r"
 	]
 	quest.05EA527792F0F44E.quest_subtitle: "破坏碎裂之物"
+	quest.05F590213B78B32C.quest_desc: ["穿戴后会随时间充能，充满后会发出音效提示，此时按下对应按键绑定会使用肾上腺素，拥有肾上腺素期间造成的伤害*2"]
+	quest.05F590213B78B32C.quest_subtitle: "肾上腺素"
 	quest.05F6670AAFE979C5.quest_subtitle: "该歇歇了吧？"
 	quest.05F6670AAFE979C5.title: "游戏时长4h"
 	quest.065CA86479CA3AF9.quest_desc: [
@@ -926,6 +910,7 @@
 	quest.1031E9949D709475.quest_desc: ["末地书架是利用灌注龙息的魔力制作的更高级的书架，这种书架虽然并没提供太高的数值，但是他所能提供的&a位阶&r上限提升到了90。"]
 	quest.1031E9949D709475.quest_subtitle: "即将到达附魔的终局"
 	quest.1031E9949D709475.title: "末地之力引入"
+	quest.1051CF07BFF75644.quest_subtitle: "举头望明月"
 	quest.1063B9A89D3EE67C.quest_desc: [
 		"{\"text\":\"\",\"extra\":[{\"text\":\"手持\",\"color\":\"gray\"},{\"text\":\"右击\",\"color\":\"yellow\"},{\"text\":\"后会从玩家手中飞出一个\",\"color\":\"gray\"},{\"text\":\"诅咒之眼\",\"color\":\"red\"},{\"text\":\"的复制飞向最近的\",\"color\":\"gray\"},{\"text\":\"苦寒监牢\",\"color\":\"aqua\"},{\"text\":\"，同时玩家手中的诅咒之眼进入\",\"color\":\"gray\"},{\"text\":\"3s\",\"color\":\"yellow\"},{\"text\":\"的冷却。\",\"color\":\"gray\"}]}"
 		""
@@ -1003,6 +988,7 @@
 		""
 		"&8手稿的这一页边缘画着一个叠高的罐体，侧面连着几个简笔的仪表。下方草草写着一行小字：装得满，看得清，必要时也能吼出声。&r"
 	]
+	quest.124A3DCF1B3DA894.quest_subtitle: "法力之子"
 	quest.124EF6C94011C149.quest_desc: [
 		"&6奇异蘑菇&r"
 		"&7右键对已驯服的魔宠使用，赋予其1层‘&c狂怒&r&7’效果（受到攻击时，有概率消耗1层‘&c狂怒&r&7’以获得持续数秒的‘&c止心术&r&7’状态）。每只魔宠最多可叠加10层，由&e哞菇&r&7和被剪毛的&e沼泽村民&r&7掉落。&r"
@@ -1217,8 +1203,9 @@
 	quest.159E4C31CF4AB181.title: "无恕渊喉誓约"
 	quest.15DC053FF5BA0E9B.quest_subtitle: "同时拥有护甲与微量的法术属性值，深受欢迎"
 	quest.15DDBCE29F4CEB4B.quest_subtitle: "合成材料，主要用作与制作部分高级机械以及智能元件。"
+	quest.15DDE00E526D43A1.quest_subtitle: "举头望明月"
 	quest.1618DB9594EF15C3.quest_subtitle: "无敌是多么寂寞"
-	quest.161C42E6B708C7DA.quest_subtitle: "1.1再更新这里的...苦露西"
+	quest.161C42E6B708C7DA.quest_subtitle: "后面再更新这里的...苦露西"
 	quest.1633AD29D81FB414.quest_desc: [
 		"&a位阶&7比原版书架高了一点点点点……不同等级位阶的方块堆放在附魔台附近会从低到高叠加，例如15个普通书架可以堆叠30位阶，此时再放置十个紫水晶即可让位阶+10到达40，对其他书架也成立。"
 		""
@@ -1493,6 +1480,7 @@
 		" "
 		"&7完成初期发展以后，就可以开始探索其他维度，并寻找各类boss作战了。"
 	]
+	quest.1CDBC70DB8D56271.quest_subtitle: "战斗，爽"
 	quest.1CDBC70DB8D56271.title: "你要战，那便战"
 	quest.1CE41ACD131E060B.quest_desc: [
 		"&6星火&r"
@@ -1514,6 +1502,7 @@
 	quest.1CE41ACD131E060B.quest_subtitle: "燃晶之焰"
 	quest.1D08BC5C6C98F4D7.quest_desc: ["&7你最好不是故意的"]
 	quest.1D08BC5C6C98F4D7.quest_subtitle: "触发了5次袭击的传奇大英雄？！？"
+	quest.1D0A4CF257B8F53C.quest_subtitle: "魔法特化"
 	quest.1D30682DE64D68A1.quest_desc: ["&7用于调节 &#CC99FFMalum&7 的 &#FF8844红石设备&7。"]
 	quest.1D30682DE64D68A1.quest_subtitle: "设备条件"
 	quest.1D3C94736A0C19AA.quest_desc: ["管理你存储网络中所有已配置的自动合成方案，随时进行物品的存取与调度。"]
@@ -1635,6 +1624,7 @@
 	]
 	quest.1EC459CAACF854F3.quest_subtitle: "于此观看所有推荐的材料的属性与数值"
 	quest.1EC459CAACF854F3.title: "材料推荐"
+	quest.1F0087CBFB4E0275.quest_subtitle: "天下武功，唯快不破"
 	quest.1F0DFA4EF202BD42.quest_desc: [
 		"&7通过人为合成获得。  "
 		"&7&#FFD700下界合金镀层&7 的存在能够让玩家大规模合成 &#66DDCC下界合金镶板块&7 及其变种等“假货”，用作建筑和装饰。  "
@@ -1752,6 +1742,7 @@
 		"&7除了用于运输 &#66FF66小鬼火&7，该物品也可以作为合成材料使用。"
 	]
 	quest.20B149C81F944E27.quest_subtitle: "Oi，老登，我鬼火停你楼下了嗷"
+	quest.20C6879D332BCC1C.quest_subtitle: "法力之子"
 	quest.20DE0F4E18ED1452.quest_subtitle: "黑暗权能"
 	quest.20E0FE36906F6A98.quest_desc: [
 		"&7根据伤害量削减目标 &#FF6666最大生命值&7（血量高于50%时不造成伤害，只削上限）。"
@@ -1836,6 +1827,8 @@
 		"&7奥术和邪术确实对立，也确实可以用它们制造对立增强件。然而，在奥术向邪术之终结如洪流般的涌动中，产生的只会是混沌，结果则是……腐蚀万物的爆炸，及其带来的腐枯。这则条目谨作警告，不作推荐。&r"
 	]
 	quest.214D64602702D242.quest_subtitle: "一则警示故事"
+	quest.2150AC43C2C52806.quest_desc: ["较为便宜的造价"]
+	quest.2150AC43C2C52806.quest_subtitle: "苦苦卡卡"
 	quest.215AB6260ED8DAAD.quest_desc: ["&7搏一搏？&r"]
 	quest.215AB6260ED8DAAD.quest_subtitle: "随机等级+随机附魔"
 	quest.215AB6260ED8DAAD.title: "随机附魔书售卖"
@@ -2061,6 +2054,7 @@
 		"&7反常耐力符文给予佩戴者歇斯底里般的速度，他们将永远能疾速运动，甚至在&c饥饿值&r&7低到无法疾跑时仍能疾跑。&r"
 	]
 	quest.24F8461D0711F786.quest_subtitle: "逃离追寻之物"
+	quest.252D5B1C2C327A08.quest_subtitle: "假如我是神射手"
 	quest.257E95B5ED03904D.quest_desc: ["&7锄头的升级版，你也可以把它当 &#66DDCC斧头&7 和 &#66DDCC铲子&7 使用，可以小范围连锁挖掘地上的草，但在功能性上并不能完全替代 &#66DDCC斧头&7 和 &#66DDCC铲子&7，毕竟它是一把锄头。"]
 	quest.257E95B5ED03904D.quest_subtitle: "比锄头好"
 	quest.25CE20F4B934CF78.quest_desc: [
@@ -2241,7 +2235,7 @@
 		""
 		"&7一种需经过多道精细工序方能制成的高级内部组件，常用于&e动力臂&7等复杂机械的组装。&r"
 	]
-	quest.2A3657E05759C933.quest_desc: ["&7前期来说极其优秀的各项属性，但是只有 &#FFAA332%&7 的概率从 &#66CCFF钻石矿&7 中挖取。"]
+	quest.2A3657E05759C933.quest_desc: ["&7前期来说极其优秀的各项属性，但是只有 &#FFAA335%&7 的概率从 &#66CCFF钻石矿&7 中挖取。"]
 	quest.2A3657E05759C933.quest_subtitle: "好运之人"
 	quest.2A56714310939AFB.quest_desc: ["&7直接提升玩家幸运值，从而影响战利品品质与掉落物质量。前期优先堆叠幸运，是回报率极高的发育策略，长远来看受益无穷。"]
 	quest.2A56714310939AFB.quest_subtitle: "幸运儿"
@@ -2834,11 +2828,11 @@
 	]
 	quest.360AE4AB3B482FAC.quest_subtitle: "声望值"
 	quest.3611F55056F7105F.quest_desc: [
-		"{\"text\":\"\",\"extra\":[{\"text\":\"暴食\",\"color\":\"green\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"食用任意食物时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"若生命值未满：食物每提供1点饱食度\",\"color\":\"gray\"},{\"text\":\"回复2点生命值\",\"color\":\"green\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"若生命值已满：获得\",\"color\":\"gray\"},{\"text\":\"随机正面增益效果\",\"color\":\"green\"},{\"text\":\"，持续30秒\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"附件5格内的其他玩家也会\",\"color\":\"gray\"},{\"text\":\"恢复等量的饱食度和饱和度\",\"color\":\"yellow\"}]}"
+		"&7&#66FF66暴食&7  "
+		"&7食用任意食物时：  "
+		"&7若生命值未满：食物每提供1点饱食度 &#66FF66回复2点生命值&7  "
+		"&7若生命值已满：获得 &#66FF66随机正面增益效果&7，持续 &#FFAA3330秒&7  "
+		"&7附近 &#FFAA335格&7 内的其他玩家也会 &#FFD700恢复等量的饱食度和饱和度&7"
 	]
 	quest.3611F55056F7105F.quest_subtitle: "暴食侵蚀"
 	quest.3611F55056F7105F.title: "暴食侵蚀"
@@ -3149,6 +3143,9 @@
 		"&7转阶段动画期间的月藤巨物不免疫攻击伤害，也不会释放攻击招式；月藤巨物进入二阶段后会解锁新的攻击招式，而原有攻击招式也仍能在二阶段期间继续施放。"
 	]
 	quest.3B7226A9387FD816.quest_subtitle: "受诅之花"
+	quest.3B98D98415628260.quest_desc: ["只是因为问的人多了才做了这么个章节，里面的东西并不重要（可能也并不算多）"]
+	quest.3B98D98415628260.quest_subtitle: "这个章节充斥着鳕鱼&m脑子一抽&r奇思妙想做出来的东西"
+	quest.3B98D98415628260.title: "奇思妙想"
 	quest.3BB2417F411ABDDE.quest_desc: [
 		"{\"text\":\"\",\"extra\":[{\"text\":\"重要的合成材料\",\"color\":\"gold\"}]}"
 		""
@@ -3190,6 +3187,7 @@
 		"  &8• &f整合包版本信息 "
 	]
 	quest.3C4F9B874C336EB6.quest_subtitle: "补豪！"
+	quest.3C8D7934954DA215.quest_subtitle: "并不能透视"
 	quest.3CCFC8763640AC83.quest_desc: [
 		"&6动力臂&r"
 		""
@@ -3797,6 +3795,8 @@
 	quest.4AF740882E852DBF.quest_subtitle: "大别墅"
 	quest.4AFE778B9A79DA33.quest_subtitle: "健步如飞"
 	quest.4B2894FD0E46313C.quest_subtitle: "布料融合"
+	quest.4B307CE1A9A7465A.quest_desc: ["寂静装备作者也没有想到会有人穿上带有绑定诅咒的寂静装备，如果你这么做了，这个物品也许会帮到你"]
+	quest.4B307CE1A9A7465A.quest_subtitle: "献给Baka"
 	quest.4B3F9F49C0FF6B3B.quest_desc: [
 		"&7尽管制备工艺已有所改进，但奥术精华墨水——尤其是高阶品级——其珍贵性仍不容置疑。"
 		""
@@ -3864,6 +3864,8 @@
 	quest.4C4D49730F599ADA.quest_subtitle: "一闪一闪亮晶晶"
 	quest.4C4D49730F599ADA.title: "晶化沙漠"
 	quest.4C7B1F3BC1ACBD92.quest_desc: ["&7可以改变燃料消耗和发动机输出功率，后者直接影响飞机的飞行速度，相比之下燃料并不是什么珍贵的东西。"]
+	quest.4C9D927032A98883.quest_desc: ["又是这个攮的过粉的BOSS"]
+	quest.4C9D927032A98883.quest_subtitle: "哇袄"
 	quest.4CC2D82F6A669265.quest_desc: [
 		"&6烈焰二极管&r"
 		""
@@ -4194,12 +4196,14 @@
 	quest.527B5583A09AF510.quest_subtitle: "更强的量子化增长"
 	quest.527B5583A09AF510.title: "已献祭之头颅"
 	quest.52FB65193EF182F4.quest_desc: [
-		"{\"text\":\"\",\"extra\":[{\"text\":\"暴怒\",\"color\":\"red\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"受到攻击时：对攻击者施加10秒的\",\"color\":\"gray\"},{\"text\":\"“暴怒伤害”\",\"color\":\"red\"},{\"text\":\"标记，并使其\",\"color\":\"gray\"},{\"text\":\"发光\",\"color\":\"yellow\"},{\"text\":\"。\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击带有\",\"color\":\"gray\"},{\"text\":\"“暴怒伤害”\",\"color\":\"red\"},{\"text\":\"标记的目标时，\",\"color\":\"gray\"},{\"text\":\"伤害增加\",\"color\":\"gray\"},{\"text\":\"10%\",\"color\":\"green\"},{\"text\":\"（装备\",\"color\":\"gray\"},{\"text\":\"暴怒之印\",\"color\":\"aqua\"},{\"text\":\"时增加\",\"color\":\"gray\"},{\"text\":\"20%\",\"color\":\"green\"},{\"text\":\"），并消耗标记。\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"每次攻击获得1层\",\"color\":\"gray\"},{\"text\":\"“强化纹章”\",\"color\":\"yellow\"},{\"text\":\"，最多5层，\",\"color\":\"gray\"},{\"text\":\"持续15秒\",\"color\":\"green\"},{\"text\":\"，每层提供效果。\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"若持续5秒没有攻击任何目标，受到\",\"color\":\"gray\"},{\"text\":\"10%最大生命值的真实伤害\",\"color\":\"red\"},{\"text\":\"，触发此效果后仍未攻击，每4秒再次受到等量伤害。\",\"color\":\"gray\"}]}"
+		"&7&#FF6666暴怒&7  "
+		"&7受到攻击时：对攻击者施加 &#FFAA3310秒&7 的 &#FF6666“暴怒伤害”&7 标记，并使其 &#FFD700发光&7。  "
+		""
+		"&7攻击时：  "
+		"&7攻击带有 &#FF6666“暴怒伤害”&7 标记的目标时，伤害增加 &#66FF6610%&7（装备 &#66CCFF暴怒之印&7 时增加 &#66FF6620%&7），并消耗标记。  "
+		"&7每次攻击获得1层 &#FFD700“强化纹章”&7，最多 &#FFAA335层&7，持续 &#66FF6615秒&7，每层提供效果。  "
+		""
+		"&7若持续 &#FFAA335秒&7 没有攻击任何目标，受到 &#FF666610%最大生命值的真实伤害&7，触发此效果后仍未攻击，每 &#FFAA334秒&7 再次受到等量伤害。"
 	]
 	quest.52FB65193EF182F4.quest_subtitle: "暴怒侵蚀"
 	quest.52FB65193EF182F4.title: "暴怒侵蚀"
@@ -4290,6 +4294,7 @@
 		"&r&#7EE344叶绿矿&r&7"
 		"&#770808惧石&r&7"
 		"&#DD660A烈阳核心&r"
+		"天顶矿"
 		""
 		"&7特殊掉落物主要包含：骨头手套、山铜锭。"
 	]
@@ -4487,14 +4492,16 @@
 	quest.57084B014CE6C718.quest_desc: ["凋零标弹可以提供伤害加成，以及提供冲锋能力"]
 	quest.57084B014CE6C718.quest_subtitle: "哈！看来不是浪费我子弹的家伙啊"
 	quest.571979CF7DC3291C.quest_desc: [
-		"{\"text\":\"\",\"extra\":[{\"text\":\"傲慢\",\"color\":\"gold\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"每秒效果：获得1层\",\"color\":\"gray\"},{\"text\":\"“神性”\",\"color\":\"gold\"},{\"text\":\"，每层提供\",\"color\":\"gray\"},{\"text\":\"7.5%暴击率\",\"color\":\"green\"},{\"text\":\"（佩戴\",\"color\":\"gray\"},{\"text\":\"傲慢之冠\",\"color\":\"gold\"},{\"text\":\"时提升至\",\"color\":\"gray\"},{\"text\":\"15%\",\"color\":\"green\"},{\"text\":\"），最多\",\"color\":\"gray\"},{\"text\":\"6\",\"color\":\"white\"},{\"text\":\"层（佩戴傲慢之冠时提升至\",\"color\":\"gray\"},{\"text\":\"10\",\"color\":\"white\"},{\"text\":\"层）\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"根据\",\"color\":\"gray\"},{\"text\":\"“神性”\",\"color\":\"gold\"},{\"text\":\"层数判定是否暴击\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"暴击时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"造成\",\"color\":\"gray\"},{\"text\":\"110%伤害\",\"color\":\"green\"},{\"text\":\"（佩戴傲慢之冠时提升至\",\"color\":\"gray\"},{\"text\":\"120%\",\"color\":\"green\"},{\"text\":\"）\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"重置\",\"color\":\"gray\"},{\"text\":\"“神性”\",\"color\":\"gold\"},{\"text\":\"层数\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"获得1层\",\"color\":\"gray\"},{\"text\":\"“神格”\",\"color\":\"gold\"},{\"text\":\"，最多\",\"color\":\"gray\"},{\"text\":\"6\",\"color\":\"white\"},{\"text\":\"层（佩戴傲慢之冠时提升至\",\"color\":\"gray\"},{\"text\":\"10\",\"color\":\"white\"},{\"text\":\"层），每层提供\",\"color\":\"gray\"},{\"text\":\"5%暴击伤害\",\"color\":\"green\"}]}"
+		"&7&#FFD700傲慢&7  "
+		"&7每秒效果：获得1层 &#FFD700“神性”&7，每层提供 &#66FF667.5%暴击率&7（佩戴 &#FFD700傲慢之冠&7 时提升至 &#66FF6615%&7），最多 &#FFAA336&7 层（佩戴傲慢之冠时提升至 &#FFAA3310&7 层）  "
+		""
+		"&7攻击时：  "
+		"&7根据 &#FFD700“神性”&7 层数判定是否暴击  "
+		""
+		"&7暴击时：  "
+		"&7造成 &#66FF66110%伤害&7（佩戴傲慢之冠时提升至 &#66FF66120%&7）  "
+		"&7重置 &#FFD700“神性”&7 层数  "
+		"&7获得1层 &#FFD700“神格”&7，最多 &#FFAA336&7 层（佩戴傲慢之冠时提升至 &#FFAA3310&7 层），每层提供 &#66FF665%暴击伤害&7"
 	]
 	quest.571979CF7DC3291C.quest_subtitle: "傲慢侵蚀"
 	quest.571979CF7DC3291C.title: "傲慢侵蚀"
@@ -4530,6 +4537,8 @@
 		""
 		"&7适合悬停协助做建筑的机型，非常平稳但是也非常慢。由于飞机本身被认为是静音的，在古城戏弄监守者时也有一战之力。"
 	]
+	quest.58B30930CE3B8139.quest_desc: ["我也不知道我为什么要做这么个东西"]
+	quest.58B30930CE3B8139.quest_subtitle: "你不觉得他跳的舞很好看吗"
 	quest.58BCF9F1BE8BAA5E.quest_desc: [
 		"&7当它倒下时，体内封存的力量似乎逸散而出……我得去查探一番，看看留下了什么痕迹。"
 		""
@@ -4930,6 +4939,8 @@
 		"&7如果你戴着 &#FFD700七罪饰品&7，会被对应的罪孽侵蚀。"
 		""
 		"&7没戴饰品时，&e25%&7概率被随机罪孽侵蚀，&e75%&7概率陷入 &#FF6666恐慌&7。"
+		""
+		"&7进入侵蚀后，将不能通过常规的理智值自然恢复来解除侵蚀状态，必须通过死亡/食用恢复理智的物品解除侵蚀"
 	]
 	quest.61CD195A772A6255.quest_subtitle: "侵蚀状态"
 	quest.62214066B0F19784.quest_desc: ["&7讨厌烦人的屠宰场噪音吗？听烦了生物们的哼唧唧吗？这个更改会让刷怪笼产生的生物不再发出声音。减少噪音污染。"]
@@ -5023,16 +5034,17 @@
 	quest.648E4AF815BE0547.quest_subtitle: "撕裂灵魂"
 	quest.6495C96750D3BA0C.quest_desc: ["&7一部分机型可以挂载飞机武器，但一般来说飞机不是很需要战斗。其中炸弹舱输出较为可观，消耗也较大。"]
 	quest.64AC4146C392E8A6.quest_desc: [
-		"{\"text\":\"\",\"extra\":[{\"text\":\"嫉妒\",\"color\":\"yellow\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"给目标挂上10秒的\",\"color\":\"gray\"},{\"text\":\"“敌意”\",\"color\":\"red\"},{\"text\":\"标记\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"对没有\",\"color\":\"gray\"},{\"text\":\"“敌意”\",\"color\":\"red\"},{\"text\":\"标记的目标，\",\"color\":\"gray\"},{\"text\":\"伤害减少30%\",\"color\":\"red\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击带有\",\"color\":\"gray\"},{\"text\":\"“敌意”\",\"color\":\"red\"},{\"text\":\"标记的目标时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"偷取目标身上1个正面效果\",\"color\":\"yellow\"},{\"text\":\"（每0.5秒最多1次）\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"减少目标\",\"color\":\"gray\"},{\"text\":\"5%最大生命值\",\"color\":\"red\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"偷取者获得\",\"color\":\"gray\"},{\"text\":\"临时生命值\",\"color\":\"green\"}]}"
+		"&7&#FFD700嫉妒&7  "
+		"&7攻击时：  "
+		"&7给目标挂上 &#FFAA3310秒&7 的 &#FF6666“敌意”&7 标记  "
+		"&7对没有 &#FF6666“敌意”&7 标记的目标，&#FF6666伤害减少30%&7  "
 		""
-		"{\"text\":\"\",\"extra\":[{\"text\":\"被动：被带有\",\"color\":\"gray\"},{\"text\":\"嫉妒\",\"color\":\"yellow\"},{\"text\":\"效果的人攻击时，如果没有\",\"color\":\"gray\"},{\"text\":\"“敌意”\",\"color\":\"red\"},{\"text\":\"标记，\",\"color\":\"gray\"},{\"text\":\"伤害减少30%\",\"color\":\"red\"}]}"
+		"&7攻击带有 &#FF6666“敌意”&7 标记的目标时：  "
+		"&7偷取目标身上1个正面效果（每0.5秒最多1次）  "
+		"&7减少目标 &#FF66665%最大生命值&7  "
+		"&7偷取者获得 &#66FF66临时生命值&7  "
+		""
+		"&7被动：被带有 &#FFD700嫉妒&7 效果的人攻击时，如果没有 &#FF6666“敌意”&7 标记，&#FF6666伤害减少30%&7"
 	]
 	quest.64AC4146C392E8A6.quest_subtitle: "嫉妒侵蚀"
 	quest.64AC4146C392E8A6.title: "嫉妒侵蚀"
@@ -5136,10 +5148,10 @@
 	]
 	quest.65B599AA9888FBF2.quest_subtitle: "星空祝福"
 	quest.660EAD8BBC2734CA.quest_desc: [
-		"{\"text\":\"\",\"extra\":[{\"text\":\"怠惰\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"受伤时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"受到任何伤害，对周围2格内所有敌人造成基于自身护甲值的\",\"color\":\"gray\"},{\"text\":\"魔法伤害\",\"color\":\"light_purple\"},{\"text\":\"（1秒冷却）\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"同时触发\",\"color\":\"gray\"},{\"text\":\"35%的伤害减免\",\"color\":\"green\"},{\"text\":\"效果\",\"color\":\"gray\"}]}"
+		"&7&#66CCFF怠惰&7  "
+		"&7受伤时：  "
+		"&7受到任何伤害，对周围 &#FFAA332格&7 内所有敌人造成基于自身护甲值的 &#CC99FF魔法伤害&7（&#FFAA331秒&7 冷却）  "
+		"&7同时触发 &#66FF6615%伤害减免&7 效果"
 	]
 	quest.660EAD8BBC2734CA.quest_subtitle: "懒惰侵蚀"
 	quest.660EAD8BBC2734CA.title: "懒惰侵蚀"
@@ -5772,8 +5784,6 @@
 	]
 	quest.731473A765D3B6B6.quest_subtitle: "催发气流"
 	quest.731473A765D3B6B6.title: "疾风编织"
-	quest.73271D059291EA31.quest_desc: ["击杀死者之王后，可从古城箱子中开出，有着极其高额的属性"]
-	quest.73271D059291EA31.quest_subtitle: "高额数值"
 	quest.732853B6E9D536CC.quest_desc: [
 		"&6极光鹿角&r&7"
 		"&7极光鹿未被击杀时产出的特殊掉落物；&r"
@@ -6200,7 +6210,7 @@
 	]
 	quest.7BACE6601BC4DFED.quest_subtitle: "空间不够了？来试试次元口袋"
 	quest.7BD9DC7DB2278AA5.quest_desc: [
-		"&7需要在古城战利品箱获取，拥有相当高的攻击伤害，但没有特殊词条，适合用于合金制作武器部件。"
+		"&7需要杀死死者之王后在古城战利品箱获取，拥有相当高的攻击伤害，但没有特殊词条，适合用于合金制作武器部件。"
 		""
 		"推荐部位：武器"
 	]
@@ -6330,6 +6340,7 @@
 	]
 	quest.7D0410D74877C78A.quest_subtitle: "基础教程"
 	quest.7D0410D74877C78A.title: "Tips：基础用法"
+	quest.7D2142146614638C.quest_subtitle: "你为什么在这里"
 	quest.7D237676ED4A865D.quest_desc: [
 		"&7神化附魔模块为MC加入了新的合成方式——&b灌注&7。灌注和普通附魔类似，但是会对某些属性进行限制，几乎所有物品都有对&a位阶&7的下限设置，也几乎没有物品对&a位阶&7的上限进行限制（"
 		""
@@ -6417,6 +6428,7 @@
 	quest.7EF077D05E3E3B7E.quest_subtitle: "抵挡难当之物"
 	quest.7F0DAB4DB433FC15.quest_desc: ["用于护甲时给予抗性提升效果，虽然也会附带虚弱效果，前期搭配飞剑或许有意想不到的效果"]
 	quest.7F0DAB4DB433FC15.quest_subtitle: "高额防护"
+	quest.7F0EB703538AF425.quest_subtitle: "我即虚空"
 	quest.7F11174C00472167.quest_desc: [
 		"&6星光森林&r"
 		"&7是星光维度的地表生物群系之一，最为普通，也最为常见。"
@@ -6431,15 +6443,17 @@
 	quest.7F11174C00472167.quest_subtitle: "十分の平常"
 	quest.7F11174C00472167.title: "星光森林"
 	quest.7F2C0291CE6F6B66.quest_desc: [
-		"{\"text\":\"\",\"extra\":[{\"text\":\"色欲\",\"color\":\"light_purple\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击时：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"每次攻击给目标叠加1层\",\"color\":\"gray\"},{\"text\":\"“玫瑰”\",\"color\":\"light_purple\"},{\"text\":\"（每0.5秒最多1次）\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击者自身\",\"color\":\"gray\"},{\"text\":\"额外受到1点伤害\",\"color\":\"red\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"当\",\"color\":\"gray\"},{\"text\":\"“玫瑰”\",\"color\":\"light_purple\"},{\"text\":\"叠满7层时触发效果：\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"攻击者\",\"color\":\"gray\"},{\"text\":\"恢复15%最大生命值\",\"color\":\"green\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"对目标施加\",\"color\":\"gray\"},{\"text\":\"随机减益效果\",\"color\":\"red\"},{\"text\":\"，持续10秒\",\"color\":\"gray\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"目标拥有的所有减益效果\",\"color\":\"gray\"},{\"text\":\"层数+1\",\"color\":\"yellow\"}]}"
-		"{\"text\":\"\",\"extra\":[{\"text\":\"被动：自身\",\"color\":\"gray\"},{\"text\":\"不会因流血伤害而死\",\"color\":\"green\"},{\"text\":\"，流血伤害会保留至少1点生命值。\",\"color\":\"gray\"}]}"
+		"&7&#CC99FF色欲&7  "
+		"&7攻击时：  "
+		"&7每次攻击给目标叠加1层 &#CC99FF“玫瑰”&7（每0.5秒最多1次）  "
+		"&7攻击者自身 &#FF6666额外受到1点伤害&7  "
+		""
+		"&7当 &#CC99FF“玫瑰”&7 叠满 &#FFAA337层&7 时触发效果：  "
+		"&7攻击者 &#66FF66恢复15%最大生命值&7  "
+		"&7对目标施加 &#FF6666随机减益效果&7，持续 &#FFAA3310秒&7  "
+		"&7目标拥有的所有减益效果 &#FFD700层数+1&7  "
+		""
+		"&7被动：自身 &#66FF66不会因流血伤害而死&7，流血伤害会保留至少1点生命值。"
 	]
 	quest.7F2C0291CE6F6B66.quest_subtitle: "色欲侵蚀"
 	quest.7F2C0291CE6F6B66.title: "色欲侵蚀"
@@ -6723,7 +6737,6 @@
 	task.1E6F37B4C4187836.title: "咒界重斧 模板"
 	task.1E9C1BB2AC8320CD.title: "物骨"
 	task.1F30E9E5C1091C22.title: "雷霆战锤"
-	task.1F47FF09840A0E4F.title: "这个你也杀过了？"
 	task.201E6C48702846AC.title: "手镯 模板"
 	task.20E752F817977436.title: "重型靴子 模板"
 	task.2103D8FA6762C9C3.title: "击杀幻渊囚魂前"
@@ -6752,6 +6765,7 @@
 	task.2E67FAD790EF983F.title: "无尽奥秘"
 	task.2EA26F22192ECD45.title: "阶段II"
 	task.2EDE23B58CA58D2A.title: "&6魔法精华&r"
+	task.3030A648CA58B7F8.title: "奇思妙想"
 	task.308969B113784A45.title: "咕哇！是bug！"
 	task.30E9B4F107737CFF.title: "位阶"
 	task.316298B9E876209C.title: "资料来源于MC百科"
@@ -6828,7 +6842,6 @@
 	task.4F130F44D6BF4752.title: "观察灵浸灵魂沙"
 	task.5036035283C82E2B.title: "内测群群U"
 	task.508096ECD78B8896.title: "戒指 模板"
-	task.5225B30B12D274F9.title: "任意 隐藏矿石"
 	task.52F0A853C5CDA88B.title: "鞭子 模板"
 	task.541556CE37259715.title: "剑 模板"
 	task.557F54279E2F89D7.title: "稳定性"

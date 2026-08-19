@@ -657,7 +657,7 @@ RFTrait('kubejs:vorant_ingot', 0)
         }
         if (value_playerkill > 0) {
             let percentBonus = value_playerkill * 0.01
-            percentBonus = Math.min(percentBonus, fu_hasTraitMainHand * 0.1)
+            percentBonus = Math.min(percentBonus, traitLevel * 0.1)
             new_damage(event, STAGE.ADDITIVE, 1 + percentBonus)
         }
     })
@@ -681,7 +681,6 @@ RFTrait('kubejs:vorant_ingot', 0)
             PlayerKill++
             player.heal(entity.getMaxHealth() / 10)
             setDataValue(item, "vorant_ingot_playerkill", PlayerKill)
-
         } else {
             MobKill++
             player.heal(2)
@@ -690,35 +689,35 @@ RFTrait('kubejs:vorant_ingot', 0)
     })
     .death(event => {
         let player = event.player;
-        if (!player) return;
+        if (!player || !player.isPlayer()) return;
 
-        const item = player.getMainHandItem();
-        if (item.getId() == "minecraft:air") return;
+        const inventory = player.getInventory();
+        for (let i = 0; i < inventory.getSlots(); i++) {
+            const item = inventory.getItem(i);
+            if (item.getId() == "minecraft:air") continue;
+            if (!fu_hasTrait(item, "kubejs:vorant_ingot")) continue;
 
-        if (!fu_hasTraitMainHand(player, "kubejs:vorant_ingot")) return;
+            let current_mobkill = getDataValue(item, "vorant_ingot_mobkill") || 0
+            let current_playerkill = getDataValue(item, "vorant_ingot_playerkill") || 0
 
-        let current_mobkill = getDataValue(item, "vorant_ingot_mobkill") || 0
-        let current_playerkill = getDataValue(item, "vorant_ingot_playerkill") || 0
+            const mobkill_loss = Math.max(1, Math.floor(current_mobkill * 0.25));
+            const playerkill_loss = Math.max(1, Math.floor(current_playerkill * 0.25));
 
-        const mobkill_loss = Math.max(1, Math.floor(current_mobkill * 0.25));
-        const playerkill_loss = Math.max(1, Math.floor(current_playerkill * 0.25));
+            let new_mobkill = Math.max(0, current_mobkill - mobkill_loss);
+            let new_playerkill = Math.max(0, current_playerkill - playerkill_loss);
 
-        let new_mobkill = Math.max(0, current_mobkill - mobkill_loss);
-        let new_playerkill = Math.max(0, current_playerkill - playerkill_loss);
-
-        if (new_mobkill !== current_mobkill) {
-            setDataValue(item, "vorant_ingot_mobkill", new_mobkill);
-
-            if (mobkill_loss > 0) {
-                player.tell(Text.of("§c你的武器失去了 " + mobkill_loss + " 个生物击杀计数！"));
+            if (new_mobkill !== current_mobkill) {
+                setDataValue(item, "vorant_ingot_mobkill", new_mobkill);
+                if (mobkill_loss > 0) {
+                    player.tell(Text.of("§c你的武器失去了 " + mobkill_loss + " 个生物击杀计数！"));
+                }
             }
-        }
 
-        if (new_playerkill !== current_playerkill) {
-            setDataValue(item, "vorant_ingot_playerkill", new_playerkill);
-
-            if (playerkill_loss > 0) {
-                player.tell(Text.of("§c你的武器失去了 " + playerkill_loss + " 个玩家击杀计数！"));
+            if (new_playerkill !== current_playerkill) {
+                setDataValue(item, "vorant_ingot_playerkill", new_playerkill);
+                if (playerkill_loss > 0) {
+                    player.tell(Text.of("§c你的武器失去了 " + playerkill_loss + " 个玩家击杀计数！"));
+                }
             }
         }
     })
@@ -738,24 +737,50 @@ RFTrait('kubejs:gobber', 0)
         const hasGobberNether = fu_hasTraitAnywhere(attacker, 'kubejs:gobber_nether');
         const hasGobberEnd = fu_hasTraitAnywhere(attacker, 'kubejs:gobber_end');
 
-        if (!hasGobber && !hasGobberNether && !hasGobberEnd) return;
-
         const totalTraits = fu_getUniqueTraitsCount(attacker);
         let damageBonus = 0;
 
-        // 每有1个词条 +2% 伤害
-        if (hasGobber) {
-            damageBonus += totalTraits * 0.02;
-        }
+        const combination = (hasGobber ? 1 : 0) + (hasGobberNether ? 2 : 0) + (hasGobberEnd ? 3 : 0);
 
-        // 词条总数为奇数时，每有1个词条 +2% 伤害
-        if (hasGobberNether && totalTraits % 2 === 1) {
-            damageBonus += totalTraits * 0.02;
-        }
+        switch (combination) {
+            case 1: // 只有戈伯
+                damageBonus = totalTraits * 0.02;
+                break;
 
-        // 词条总数为偶数时，每有1个词条 +2% 伤害
-        if (hasGobberEnd && totalTraits % 2 === 0) {
-            damageBonus += totalTraits * 0.02;
+            case 2: // 只有下界戈伯
+                if (totalTraits % 2 === 1) {
+                    damageBonus = totalTraits * 0.02;
+                }
+                break;
+
+            case 3: // 只有末地戈伯
+                if (totalTraits % 2 === 0) {
+                    damageBonus = totalTraits * 0.02;
+                }
+                break;
+
+            case 3: // 戈伯 + 下界
+                if (totalTraits % 2 === 1) {
+                    damageBonus = totalTraits * 0.03;
+                }
+                break;
+
+            case 4: // 戈伯 + 末地
+                if (totalTraits % 2 === 0) {
+                    damageBonus = totalTraits * 0.04;
+                }
+                break;
+
+            case 5: // 下界 + 末地
+                damageBonus = totalTraits * 0.03;
+                break;
+
+            case 6: // 戈伯 + 下界 + 末地
+                damageBonus = totalTraits * 0.05;
+                break;
+
+            default:
+                damageBonus = 0;
         }
 
         if (damageBonus > 0) {
@@ -2502,6 +2527,7 @@ RFTrait('kubejs:emerald', 0)
         if (!fu_hasTraitAnywhere(player, "kubejs:emerald")) return;
         const weapon = player.getMainHandItem();
         if (!weapon.isDamageableItem()) return;
+        if (!fu_isGear(weapon)) return;
 
         const traitLevel = fu_getHighestTraitLevelAnywhere(player, "kubejs:emerald");
         const effectLevel = Math.floor(traitLevel / 2);
@@ -2913,13 +2939,13 @@ RFTrait('kubejs:soul_conversion', 60)
 /**
 * 受到攻击时有概率恢复灵魂护盾
 */
-RFTrait('kubejs:dream_barrier', 70)
+RFTrait('kubejs:chalyblux', 70)
     .beforeHurt(event => {
         const { entity } = event;
         if (!entity.isLiving() || !entity.isPlayer()) return;
-        if (!fu_hasTraitAnywhere(entity, "kubejs:dream_barrier")) return;
+        if (!fu_hasTraitAnywhere(entity, "kubejs:chalyblux")) return;
 
-        const traitLevel = fu_getHighestTraitLevelAnywhere(entity, "kubejs:dream_barrier");
+        const traitLevel = fu_getHighestTraitLevelAnywhere(entity, "kubejs:chalyblux");
 
         const chance = 0.1 * traitLevel;
         if (Math.random() < chance) {

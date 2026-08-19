@@ -141,6 +141,10 @@
 	# Default: 3600
 	# Range: 0 ~ 86400
 	brazierChestRefillCooldown = 3600
+	#Defines how experience points is ejected out when an item is grinded in sculk grinders
+	# Default: 450
+	# Range: > 0
+	sculkGrinderExperience = 450
 
 #Item Settings
 [itemSettings]
@@ -163,7 +167,7 @@
 	# Range: 0.0 ~ 1.7976931348623157E308
 	pointBlankSelfRecoilBonus = 0.45
 	#How close you need to be to a target in blocks to get a point-blank self recoil bonus
-	# Default: 18.0
+	# Default: 2.5
 	# Range: 0.0 ~ 1.7976931348623157E308
 	pointBlankSelfRecoilDistance = 18.0
 	#The base amount of shotgun pellets fired from a shotgun-fist

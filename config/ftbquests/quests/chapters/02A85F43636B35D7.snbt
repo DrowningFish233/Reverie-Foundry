@@ -2,7 +2,7 @@
 	autofocus_id: "1A58667FA2440598"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "02A85F43636B35D7"
+	filename: "02a85f43636b35d7"
 	group: "7F00D0D8C7C916A0"
 	icon: {
 		id: "kubejs:margarita"
@@ -183,6 +183,14 @@
 						}
 						count: 1
 						id: "silentgear:saw"
+					}
+					type: "item"
+				}
+				{
+					id: "0016A66026C21804"
+					item: {
+						count: 1
+						id: "kubejs:scroll_of_friendship"
 					}
 					type: "item"
 				}
@@ -1587,11 +1595,6 @@
 				id: "gobber2:gobber2_globette"
 			}
 			id: "015EB916702B3797"
-			tasks: [{
-				id: "5225B30B12D274F9"
-				item: { components: { "ftbfiltersystem:filter": "or(item(gobber2:gobber2_globette)item(hazennstuff:chlorophyte_chunk)item(hazennstuff:dreadstone)item(hazennstuff:solar_core))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
 			x: 0.0d
 			y: -30.0d
 		}
@@ -2747,7 +2750,7 @@
 			id: "1DCC3ACDD6DBDB35"
 			tasks: [{
 				id: "7F878829EF00B2F6"
-				item: { count: 1, id: "darkerdepths:magma_pad" }
+				item: { components: { "ftbquests:missing_item": "darkerdepths:magma_pad" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d

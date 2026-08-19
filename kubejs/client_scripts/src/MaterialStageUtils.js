@@ -219,7 +219,9 @@ const materialStages = {
             'kubejs:uranium_wire',
             'kubejs:yttrium_wire',
             'kubejs:zinc_wire',
-            'kubejs:zirconium_wire'
+            'kubejs:zirconium_wire',
+            'kubejs:midnight_abyssal_ingot'
+
         ]
     },
     stage2: {
@@ -337,6 +339,8 @@ const materialStages = {
             'kubejs:xeproda_wire',
             'kubejs:zapolgium_wire',
             'kubejs:lunium_nova_ingot',
+            'kubejs:isovol_ingot'
+
 
 
         ]
@@ -346,7 +350,6 @@ const materialStages = {
         translationKey: "tooltip.material.stage.3",
         items: [
             'kubejs:unstable_luminescence_ingot',
-            'kubejs:isovol_ingot',
             'cataclysm:witherite_ingot',
             'cataclysm:lacrima',
             'cataclysm:ignitium_ingot',
@@ -394,7 +397,6 @@ const materialStages = {
             'allthemodium:unobtainium_ingot',
             'gobber2:gobber2_ingot_end',
             'kubejs:glimmering_golden_amber',
-            'kubejs:midnight_abyssal_ingot',
             'kubejs:mythril_ingot',
             'kubejs:stellar_ingot',
             'kubejs:vorant_ingot',
