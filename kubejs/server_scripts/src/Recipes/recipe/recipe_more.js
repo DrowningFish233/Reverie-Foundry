@@ -1,6 +1,8 @@
 ServerEvents.recipes(event => {
     //唉，自己写的mod还得自己remove掉配方重写，怎么汇逝
     const items = [
+        "reveriefoundry:magic_scythe_template",
+        "reveriefoundry:magic_scythe_blueprint",
         "reveriefoundry:soul_hunter_helmet_blueprint",
         "reveriefoundry:soul_hunter_leggings_blueprint",
         "reveriefoundry:soul_hunter_chestplate_blueprint",
@@ -109,6 +111,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'malum:malignant_pewter_ingot' })
     event.remove({ output: 'allthemodium:teleport_pad' })
     event.remove({ input: '#alltheores:ore_hammers' })
+    event.remove({ id: 'productivemetalworks:alloying/molten_signalum' })
     event.remove({ id: 'hazennstuff:crafting/materials/deus_essence_from_nether_star' })
     event.remove({ id: 'jbr:smooth_quartz_from_blasting_quartz' })
     event.remove({ id: 'hazennstuff:crafting/materials/nether_star_fragment' })

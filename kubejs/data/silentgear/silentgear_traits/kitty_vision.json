@@ -1,0 +1,47 @@
+{
+  "conditions": [],
+  "description": {
+    "translate": "trait.silentgear.kitty_vision.desc"
+  },
+  "effects": [
+    {
+      "type": "silentgear:wielder_effect",
+      "potion_effects": {
+        "silentgear:curio": [
+          {
+            "type": "trait_level",
+            "duration": 318,
+            "effect": "minecraft:night_vision",
+            "levels": [
+              1
+            ]
+          }
+        ],
+        "silentgear:armor": [
+          {
+            "type": "trait_level",
+            "duration": 318,
+            "effect": "minecraft:night_vision",
+            "levels": [
+              1
+            ]
+          }
+        ],
+        "silentgear:tool": [
+          {
+            "type": "trait_level",
+            "duration": 318,
+            "effect": "minecraft:night_vision",
+            "levels": [
+              1
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "max_level": 1,
+  "name": {
+    "translate": "trait.silentgear.kitty_vision"
+  }
+}

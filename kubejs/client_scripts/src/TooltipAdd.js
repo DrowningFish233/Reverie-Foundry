@@ -544,6 +544,8 @@ const commonTooltips = {
     'kubejs:eye_of_weeping_well_located': TooltipUtils.simpleText('tooltip.common.eye_of_weeping_well_located', 'yellow'),
     'kubejs:eye_of_dragon_cave_located': TooltipUtils.simpleText('tooltip.common.eye_of_dragon_cave_located', 'yellow'),
     'kubejs:eye_of_starlight_portal_located': TooltipUtils.simpleText('tooltip.common.eye_of_starlight_portal_located', 'yellow'),
+    'kubejs:eye_of_furled_citadel_located': TooltipUtils.simpleText('tooltip.common.eye_of_furled_citadel_located', 'yellow'),
+
 
     'kubejs:eye_of_fortress_located': TooltipUtils.simpleText('tooltip.common.eye_of_fortress', 'yellow'),
     'kubejs:eye_of_ancient_battleground_located': TooltipUtils.simpleText('tooltip.common.eye_of_ancient_battleground', 'yellow'),

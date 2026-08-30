@@ -1,4 +1,7 @@
 // priority: 9999999
+
+const DEBUG_MODE = false;
+
 // 所有酒类效果列表
 const alcoholEffects = [
     "kubejs:lightingball",
@@ -133,6 +136,10 @@ const kubejs_player = [
 ]
 
 
+const NO_DIFFICULTY_BLACKLIST = [
+    "darkdoppelganger:dark_doppelganger"
+];
+
 // 黑名单配置 
 const DIFFICULTY_BLACKLIST = [
     "cataclysm:ignis",
@@ -221,6 +228,22 @@ const STAGE_DIFFICULTY_BONUS = {
     'difficult_12': { health: 20, attack: 5, armor: 20, toughness: 10, level: 12 }
 };
 
+const DRAGON_STAGE_DIFFICULTY_BONUS = {
+    'difficult_0': { health: 1, attack: 1, armor: 1, toughness: 1, level: 0 },
+    'difficult_1': { health: 1.25, attack: 1.1, armor: 1.2, toughness: 1.1, level: 1 },
+    'difficult_2': { health: 1.5, attack: 1.2, armor: 1.5, toughness: 1.2, level: 2 },
+    'difficult_3': { health: 1.8, attack: 1.4, armor: 1.8, toughness: 1.4, level: 3 },
+    'difficult_4': { health: 2.1, attack: 1.6, armor: 2.1, toughness: 1.6, level: 4 },
+    'difficult_5': { health: 2.5, attack: 1.8, armor: 2.5, toughness: 1.8, level: 5 },
+    'difficult_6': { health: 2.8, attack: 2.0, armor: 2.8, toughness: 2.0, level: 6 },
+    'difficult_7': { health: 3.2, attack: 2.2, armor: 3.2, toughness: 2.2, level: 7 },
+    'difficult_8': { health: 4.0, attack: 2.5, armor: 4.0, toughness: 2.5, level: 8 },
+
+    'difficult_9': { health: 4.2, attack: 2.8, armor: 4.2, toughness: 2.8, level: 9 },
+    'difficult_10': { health: 4.5, attack: 3.0, armor: 4.5, toughness: 3.0, level: 10 },
+    'difficult_11': { health: 4.8, attack: 3.2, armor: 4.8, toughness: 3.2, level: 11 },
+    'difficult_12': { health: 5.0, attack: 3.5, armor: 5.0, toughness: 3.5, level: 12 }
+};
 
 // 最终BOSS
 const FINAL_BOSS = "darkdoppelganger:dark_doppelganger";
@@ -239,6 +262,7 @@ const SEPHIRAH_NAMES = [
     { minKills: 30, name: "Kether" }
 ];
 
+const DRAGON_MODIFIER_ID = 'difficulty_dragon_bonus';
 const HEALTH_MODIFIER_ID = 'death_based_health';
 const DEATH_COUNT_KEY = 'player_deaths';
 const SYSTEM_ENABLED_KEY = 'death_system_enabled';

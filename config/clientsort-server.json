@@ -30,6 +30,18 @@
         "sortEnabled": false,
         "stackFillEnabled": false,
         "transferEnabled": false
+      },
+      "net.p3pp3rf1y.sophisticatedbackpacks.common.gui.BackpackContainer": {
+        "className": "net.p3pp3rf1y.sophisticatedbackpacks.common.gui.BackpackContainer",
+        "sortEnabled": false,
+        "stackFillEnabled": false,
+        "transferEnabled": false
+      },
+      "net.p3pp3rf1y.sophisticatedstorage.common.gui.StorageContainerMenu": {
+        "className": "net.p3pp3rf1y.sophisticatedstorage.common.gui.StorageContainerMenu",
+        "sortEnabled": false,
+        "stackFillEnabled": false,
+        "transferEnabled": false
       }
     }
   }

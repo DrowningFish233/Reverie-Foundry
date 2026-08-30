@@ -49,13 +49,13 @@ function dynamic_damage(event) {
     if (entity.hasEffect("kubejs:adaptive_damage_reduction")) {
         const effect = entity.getEffect("kubejs:adaptive_damage_reduction");
         const duration = effect.getDuration();
-        const amplifier = effect.getAmplifier();
+        const amplifier = effect.getAmplifier() + 1;
 
         // 基础参数
         const baseReductionPerLevel = 0.1;    // 每等级基础加成
         const timeBasedMaxReduction = 0.4;   // 初始减伤上限
         const maxDuration = 80;             // 参考时长
-        const absoluteMaxReduction = 0.7;    // 全局减伤上限70%
+        const absoluteMaxReduction = 0.6;    // 全局减伤上限
 
         const isInfinite = duration < 0;
         const timeRatio = isInfinite ? 1 : Math.min(duration / maxDuration, 1);

@@ -599,3 +599,54 @@ function fu_updateDarknessTouch(entity) {
 function fu_tryGenerateStrangeCrystal(level, pos) {
     return $RFMalumUtils.tryGenerateStrangeCrystal(level, pos);
 }
+
+
+/**
+ * 强制触发隐秘收割掉落
+ * 直接从 REAPING_DATA 读取配置并生成掉落物，绕过灵魂暴露状态检测和死亡事件
+ * @param {Internal.LivingEntity} target 目标生物（需要已在 REAPING_DATA 中配置）
+ */
+function fu_forceReapingDrop(target) {
+    if (!target) return;
+    $RFMalumUtils.forceReapingDrop(target);
+}
+
+/**
+ * 强制触发隐秘收割掉落 + 标记为无魂（防止重复掉落）
+ * @param {Internal.LivingEntity} target 目标生物
+ */
+function fu_forceReapingDropAndSoulless(target) {
+    if (!target) return;
+    $RFMalumUtils.forceReapingDropAndSoulless(target);
+}
+
+/**
+ * 对指定生物执行完整的隐秘收割流程（包含灵魂暴露状态检测）
+ * 模拟原版 SoulHarvestHandler.onDeath() 中的调用逻辑，只有在生物处于灵魂暴露状态时才会掉落
+ * @param {Internal.LivingEntity} target 目标生物
+ * @returns {boolean} 是否成功触发
+ */
+function fu_dropIfExposed(target) {
+    if (!target) return false;
+    return $RFMalumUtils.dropIfExposed(target);
+}
+
+/**
+ * 检查生物是否有隐秘收割配置
+ * @param {Internal.LivingEntity} target 目标生物
+ * @returns {boolean} 是否有配置
+ */
+function fu_hasReapingData(target) {
+    if (!target) return false;
+    return $RFMalumUtils.hasReapingData(target);
+}
+
+/**
+ * 获取生物配置的隐秘收割掉落条目数量
+ * @param {Internal.LivingEntity} target 目标生物
+ * @returns {number} 配置的掉落条目数量
+ */
+function fu_getReapingDataCount(target) {
+    if (!target) return 0;
+    return $RFMalumUtils.getReapingDataCount(target);
+}

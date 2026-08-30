@@ -110,17 +110,17 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
-  "betternether": {
-    "plant_growth": true
-  },
   "jadeaddons.lootr": {
     "info": true
   },
-  "betterend": {
-    "plant_growth": true
-  },
   "quark": {
     "oretoise_eating_cooldown": true
+  },
+  "naraka": {
+    "soul_smithing_block": true,
+    "entity_data": true,
+    "nectarium_core": true,
+    "soul_stabilizer": true
   },
   "productivemetalworks": {
     "casting": true

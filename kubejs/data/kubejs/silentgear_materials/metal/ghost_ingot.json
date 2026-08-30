@@ -23,7 +23,7 @@
     "properties": {
         "silentgear:main": {
             "attack_damage": 12.0,
-            "attack_reach": 3.0,
+            "attack_reach": 1.5,
             "attack_speed": 0.2,
             "charging_value": 1.1,
             "durability": 3000.0,

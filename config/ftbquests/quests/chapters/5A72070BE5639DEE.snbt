@@ -4,7 +4,7 @@
 	filename: "5a72070be5639dee"
 	group: "2F1F238400B8A177"
 	icon: {
-		id: "transmog:transmogrification_table"
+		id: "constructionstick:netherite_stick"
 	}
 	id: "5A72070BE5639DEE"
 	images: [ ]
@@ -23,18 +23,28 @@
 		}
 		{
 			id: "092C65BDEC1E30A4"
-			rewards: [{
-				count: 16
-				id: "2E0B7DDC286737F3"
-				item: {
-					count: 1
-					id: "minecraft:amethyst_shard"
+			rewards: [
+				{
+					count: 16
+					id: "2E0B7DDC286737F3"
+					item: {
+						count: 1
+						id: "minecraft:amethyst_shard"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "28DA36E6EEFB6277"
+					item: {
+						count: 1
+						id: "transmog:transmogrification_table"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "3D3D65B0C7952380"
-				item: { count: 1, id: "transmog:transmogrification_table" }
+				id: "3EB6A23984AF9E64"
+				item: { count: 1, id: "minecraft:amethyst_block" }
 				type: "item"
 			}]
 			x: -4.5d
@@ -856,8 +866,8 @@
 				item: { count: 1, id: "kubejs:remove_armor" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: -6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5731A86EC589BF22"]
@@ -912,6 +922,16 @@
 				type: "item"
 			}]
 			x: -8.5d
+			y: 3.0d
+		}
+		{
+			id: "7BD83673ECEA9F2E"
+			tasks: [{
+				id: "2E7504E8E5EEF34C"
+				item: { count: 1, id: "kubejs:eye_of_furled_citadel_located" }
+				type: "item"
+			}]
+			x: 1.5d
 			y: 3.0d
 		}
 	]

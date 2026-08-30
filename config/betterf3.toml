@@ -43,6 +43,12 @@ general = {disable_mod = false, auto_start = false, space_modules = true, shadow
 	empty_lines = 1
 	enabled = true
 	lines = {nothing = true}
+[[modules_left]]
+	name = "miscleft"
+	name_color = 16645526
+	value_color = 5636095
+	enabled = true
+	lines = {misc_left = true}
 
 [[modules_right]]
 	name = "entity"
@@ -66,3 +72,14 @@ general = {disable_mod = false, auto_start = false, space_modules = true, shadow
 	value_color = 16777045
 	enabled = true
 	lines = {targeted_block = true, id_block = true, block_states = true, block_tags = false, nothing = true, targeted_fluid = true, id_fluid = true, fluid_states = true, fluid_tags = false, nothing2 = true, targeted_entity = true}
+[[modules_right]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+[[modules_right]]
+	name = "miscright"
+	name_color = 16645526
+	value_color = 5636095
+	enabled = true
+	lines = {misc_right = true}

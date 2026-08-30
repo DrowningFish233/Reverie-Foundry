@@ -68,3 +68,11 @@
 	maxDistance = 128
 	#List of gateway IDs that can spawn in the End
 	gateways = ["gateways:basic/enderman", "gateways:basic/shulker", "gateways:basic/blaze", "gateways:basic/slime", "gateways:endless/blaze", "gateways:hellish_fortress", "gateways:overworldian_nights", "gateways:emerald_grove", "kubejs:large_ocean_challenge", "kubejs:large_spell_challenge", "kubejs:medium_spell_challenge", "kubejs:medium_ocean_challenge", "kubejs:small_spell_challenge", "kubejs:small_ocean_challenge"]
+
+#Anti Stack Death - Prevent players from using multiple lives to wear down bosses
+[anti_stack_death]
+	#Configure entities that will reset when a player dies too many times to them.
+	#Format: 'entity_registry_name;max_death_count'
+	#Example: 'cataclysm:ignis;3' means if a player is killed by Ignis 3 times, Ignis will fully heal.
+	#Use -1 to disable for a specific entity.
+	entities = ["cataclysm:ignis;3"]

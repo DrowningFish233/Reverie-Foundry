@@ -10,6 +10,7 @@
     "generate.denGoldAmount": 0.3,
     "generate.oreRatio": 0.023,
     "griefing": true,
+    "softBlockGriefing": false,
     "tamedGriefing": true,
     "flapNoiseDistance": 4,
     "fluteDistance": 8,
@@ -48,6 +49,7 @@
   },
   "pixie": {
     "size": 2,
+    "maxPixiesPerVillage": 8,
     "stealItems": false
   },
   "cyclops": {

@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-    
+
     event.shaped(
         Item.of('allthemodium:teleport_pad', 1),
         [
@@ -489,7 +489,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'minecraft:sculk_catalyst',
-            B: 'minecraft:iron_ingot',
+            B: 'kubejs:necroplasm',
             C: 'minecraft:sculk',
         }
     )
@@ -813,7 +813,7 @@ ServerEvents.recipes(event => {
         ],
         {
             B: 'kubejs:necroplasm',
-            C: 'minecraft:potion'
+            C: 'minecraft:potion[potion_contents={potion:"minecraft:water"}]'
         }
     )
 

@@ -1,28 +1,34 @@
 {
 	id: "22800CFE01C6F088"
 	loot_size: 1
-	order_index: 7
+	order_index: 6
 	rewards: [
 		{
-			auto: "no_toast"
-			command: "/gamerule keepInventory true"
+			auto: "invisible"
+			command: "/reveriefoundry momlove add @p"
+			disable_reward_screen_blur: true
+			feedback_message: "已开启死亡不掉落"
 			icon: {
 				id: "cataclysm:meat_shredder"
 			}
 			id: "5FAE827FECB3B03D"
+			ignore_reward_blocking: true
 			permission_level: 4
+			silent: true
 			type: "command"
 		}
 		{
-			auto: "no_toast"
-			command: "/gamerule keepInventory false"
+			auto: "invisible"
+			command: "/reveriefoundry momlove remove @p"
 			disable_reward_screen_blur: true
+			feedback_message: "已移除死亡不掉落"
 			icon: {
 				id: "minecraft:bone"
 			}
 			id: "428CD61F9842D150"
 			ignore_reward_blocking: true
 			permission_level: 4
+			silent: true
 			type: "command"
 		}
 	]

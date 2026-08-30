@@ -4,7 +4,8 @@ const blacklisted_mobs = [
     "powerful_dummy:test_dummy_arthropod",
     "powerful_dummy:test_dummy_illager",
     "powerful_dummy:test_dummy_undead",
-    "darkdoppelganger:dark_doppelganger"
+    "darkdoppelganger:dark_doppelganger",
+    "gravestone:player_ghost"
 ]
 
 function clamp(value, min, max) {

@@ -1,0 +1,30 @@
+{
+    "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": {
+        "buttonHints": {
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": 40
+            },
+            "SORT": {
+                "horizontalOffset": 40
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 30
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 30
+            },
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 26,
+                "bottom": -1
+            },
+            "SHOW_EDITOR": {
+                "horizontalOffset": 74,
+                "top": -8
+            },
+            "SETTINGS": {
+                "horizontalOffset": 60,
+                "top": -23
+            }
+        }
+    }
+}

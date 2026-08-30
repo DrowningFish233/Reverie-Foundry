@@ -41,17 +41,17 @@
 		#The amount of days until an invasion can start.
 		# Default: 1
 		# Range: > 0
-		invasionStartDelay = 50
+		invasionStartDelay = 30
 		#The max amount of mobs that can spawn from Primary Invasions at once.
 		#NOTE: Reduce for increased performance!
 		# Default: 100
 		# Range: > 0
-		primaryInvasionMobCap = 50
+		primaryInvasionMobCap = 80
 		#The max amount of mobs that can spawn from Secondary Invasions at once.
 		#NOTE: Reduce for increased performance!
 		# Default: 25
 		# Range: > 0
-		secondaryInvasionMobCap = 20
+		secondaryInvasionMobCap = 25
 		#The mob kill limit for the invasion that would cause it to end after the player kills so many mobs from that invasion.
 		#NOTE: Setting to 0 will disable the limit, limits specified by a datapack will still apply.
 		# Default: 0

@@ -558,18 +558,17 @@ ServerEvents.recipes(event => {
         new SpiritInfusionRecipeJSON('kubejs:gold_crown', 'terra_entity:king_slime_spawn_egg')
             .addSpirit("earthen", 6)
             .addSpirit("arcane", 3)
-            .addExtraInput('minecraft:slime_ball', 16)
-            .addExtraInput('minecraft:honey_bottle', 1)
+            .addExtraInput('minecraft:slime_block', 2)
+            .addExtraInput('#kubejs:gem/tier_1', 1)
     );
 
     //召唤仪式
     registerCustomRecipe(
-        new SpiritInfusionRecipeJSON('malum:imitation_flesh', 'terra_entity:cthulhu_eye_spawn_egg')
+        new SpiritInfusionRecipeJSON('minecraft:ender_eye', 'terra_entity:cthulhu_eye_spawn_egg')
             .addSpirit("wicked", 6)
             .addSpirit("eldritch", 6)
-            .addExtraInput('minecraft:slime_ball', 4)
-            .addExtraInput('kubejs:meat', 6)
-            .addExtraInput('iceandfire:ectoplasm', 3)
+            .addExtraInput('kubejs:meat', 2)
+            .addExtraInput('iceandfire:ectoplasm', 1)
     );
 
     //召唤仪式

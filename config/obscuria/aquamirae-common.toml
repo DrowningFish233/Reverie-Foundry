@@ -1,0 +1,157 @@
+#=============[ Aquamirae Common Config ]============
+# Please prefer editing the config through the in-game 
+# configuration screen (available via the mods list),
+# as it includes many hints and quality-of-life improvements.
+#====================================================
+#Allowed Values: EVERYWHERE, ICE_MAZE
+shell_horn_usage_mode = "EVERYWHERE"
+# Default: 12
+# Range: 6 ~ 64
+shell_horn_search_radius = 12
+# Default: -4
+# Range: -16 ~ 0
+shell_horn_spawn_offset = -4
+# Default: 3
+# Range: 0 ~ 60
+shell_horn_summon_delay = 3
+# Default: 5
+# Range: 0 ~ 60
+shell_horn_cooldown = 5
+# Default: 0.1
+# Range: 0.0 ~ 1.0
+remnant_saber_base_bonus = 0.1
+# Default: 0.001
+# Range: 0.0 ~ 1.0
+remnant_saber_per_kill_bonus = 0.001
+# Default: 2.0
+# Range: 0.0 ~ 10.0
+remnant_saber_max_bonus = 2.0
+# Default: 0.0
+# Range: 0.0 ~ 9.0
+terrible_blade_poison_amplifier = 0.0
+# Default: 6.0
+# Range: 0.0 ~ 60.0
+terrible_blade_poison_duration = 6.0
+# Default: 1.0
+# Range: 0.0 ~ 9.0
+terrible_blade_regeneration_amplifier = 1.0
+# Default: 6.0
+# Range: 0.0 ~ 60.0
+terrible_blade_regeneration_duration = 6.0
+# Default: 0.25
+# Range: 0.0 ~ 10.0
+terrible_cleaver_min_bonus_damage = 0.25
+# Default: 0.5
+# Range: 0.0 ~ 10.0
+terrible_cleaver_max_bonus_damage = 0.5
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+terrible_cleaver_crit_chance = 0.5
+# Default: 0.5
+# Range: 0.0 ~ 10.0
+terrible_cleaver_min_crit_bonus = 0.5
+# Default: 1.0
+# Range: 0.0 ~ 10.0
+terrible_cleaver_max_crit_bonus = 1.0
+# Default: 0.15
+# Range: 0.0 ~ 3.0
+terrible_fang_per_heart_bonus = 0.15
+# Default: 1.5
+# Range: 0.0 ~ 3.0
+terrible_fang_max_bonus = 1.5
+scuttler_attributes = ["generic.scale set(0.5~1.5)", "generic.max_health set(8~12)", "generic.movement_speed set(0.3)", "generic.armor set(2~4)", "generic.step_height set(1)"]
+shellback_attributes = ["generic.max_health set(30~50)", "generic.movement_speed set(0.25)", "generic.armor set(10~20)", "generic.step_height set(1)"]
+golden_moth_attributes = ["generic.max_health set(3~4)", "generic.movement_speed set(0.4)", "generic.flying_speed set(0.4)"]
+spinefish_attributes = ["generic.scale set(0.5~1.5)", "generic.max_health set(8~12)"]
+maw_attributes = ["generic.scale set(0.85~1.15)", "generic.max_health set(18~22)", "generic.movement_speed set(0.18~0.22)", "generic.attack_damage set(4)", "generic.attack_knockback set(0.3)", "generic.follow_range set(24)", "generic.step_height set(1)"]
+anglerfish_attributes = ["generic.max_health set(30~40)", "generic.armor set(2~4)", "generic.movement_speed set(0.35)", "generic.attack_damage set(5)", "generic.attack_knockback set(1)", "generic.follow_range set(64)"]
+eel_attributes = ["generic.max_health set(160~200)", "generic.armor set(20)", "generic.attack_damage set(8)", "generic.attack_knockback set(2)", "generic.knockback_resistance set(100)", "generic.movement_speed set(0)"]
+tortured_soul_attributes = ["generic.max_health set(30)", "generic.armor set(4)", "generic.movement_speed set(0.2)", "generic.attack_damage set(7)", "generic.attack_knockback set(0.7)", "generic.knockback_resistance set(0)", "generic.follow_range set(24)"]
+maze_mother_attributes = ["generic.max_health set(100)", "generic.armor set(10)", "generic.movement_speed set(64)", "generic.attack_damage set(5)", "generic.attack_knockback set(0.5)", "generic.knockback_resistance set(0.2)", "generic.follow_range set(128)"]
+captain_cornelia_attributes = ["generic.max_health set(300)", "generic.armor set(16)", "generic.movement_speed set(0.2)", "generic.attack_damage set(1)", "generic.attack_knockback set(2)", "generic.knockback_resistance set(0.75)", "generic.follow_range set(128)", "generic.step_height set(1)", "aquamirae:depths_fury set(2)", "aquamirae:depths_resilience set(2)"]
+ice_maze_biomes = ["minecraft:deep_frozen_ocean", "minecraft:deep_cold_ocean"]
+# Default: 35
+# Range: 1 ~ 512
+pirate_ship_placement_spacing = 35
+# Default: 10
+# Range: 1 ~ 512
+pirate_ship_placement_separation = 10
+# Default: 18
+# Range: 1 ~ 512
+pirate_outpost_placement_spacing = 18
+# Default: 10
+# Range: 1 ~ 512
+pirate_outpost_placement_separation = 10
+# Default: 30
+# Range: 1 ~ 512
+pirate_shelter_placement_spacing = 30
+# Default: 20
+# Range: 1 ~ 512
+pirate_shelter_placement_separation = 20
+shipbreaker_griefing = true
+enable_shipbreaker_spawning = true
+# Default: 30.0
+# Range: 1.0 ~ 300.0
+shipbreaker_spawn_cooldown = 30.0
+# Default: 10.0
+# Range: 0.0 ~ 300.0
+shipbreaker_spawn_cooldown_variance = 10.0
+# Default: 1.0
+# Range: 1.0 ~ 60.0
+shipbreaker_spawn_retry_delay = 1.0
+#Allowed Values: OVERRIDE, MERGE, NONE
+biome_spawner_mode = "OVERRIDE"
+enable_maw_spawning = true
+# Default: 600
+# Range: 1 ~ 1000
+maw_spawn_weight = 600
+# Default: 2
+# Range: 1 ~ 10
+maw_spawn_min_count = 2
+# Default: 4
+# Range: 1 ~ 10
+maw_spawn_max_count = 4
+enable_anglerfish_spawning = true
+# Default: 10
+# Range: 1 ~ 1000
+anglerfish_spawn_weight = 10
+# Default: 1
+# Range: 1 ~ 10
+anglerfish_spawn_min_count = 1
+# Default: 1
+# Range: 1 ~ 10
+anglerfish_spawn_max_count = 1
+enable_scuttler_spawning = true
+# Default: 100
+# Range: 1 ~ 1000
+scuttler_spawn_weight = 100
+# Default: 1
+# Range: 1 ~ 10
+scuttler_spawn_min_count = 1
+# Default: 2
+# Range: 1 ~ 10
+scuttler_spawn_max_count = 2
+enable_spinefish_spawning = true
+# Default: 100
+# Range: 1 ~ 1000
+spinefish_spawn_weight = 100
+# Default: 4
+# Range: 1 ~ 10
+spinefish_spawn_min_count = 4
+# Default: 8
+# Range: 1 ~ 10
+spinefish_spawn_max_count = 8
+enable_abyssal_scyphoid_spawning = true
+# Default: 50
+# Range: 1 ~ 1000
+abyssal_spawn_weight = 50
+# Default: 2
+# Range: 1 ~ 10
+abyssal_spawn_min_count = 2
+# Default: 4
+# Range: 1 ~ 10
+abyssal_spawn_max_count = 4
+enable_maze_mother_spawning = true
+# Default: 0.005
+# Range: 0.0 ~ 1.0
+maze_mother_spawn_chance = 0.005

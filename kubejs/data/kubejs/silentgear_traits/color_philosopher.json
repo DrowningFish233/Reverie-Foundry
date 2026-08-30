@@ -10,7 +10,7 @@
 				"all/any": [
 					{
 						"attribute": "irons_spellbooks:cast_time_reduction",
-						"operation": "add_multiplied_base",
+						"operation": "add_value",
 						"values": [
 							0.02,
 							0.04,
@@ -21,7 +21,7 @@
 					},
 					{
 						"attribute": "aces_spell_utils:magic_damage_crit_chance",
-						"operation": "add_multiplied_base",
+						"operation": "add_value",
 						"values": [
 							0.01,
 							0.02,

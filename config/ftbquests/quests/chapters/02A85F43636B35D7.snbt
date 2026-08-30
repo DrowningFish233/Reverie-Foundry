@@ -194,6 +194,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "2F12FA3FB5C349F3"
+					item: {
+						count: 1
+						id: "powerful_dummy:dummy_stand"
+					}
+					type: "item"
+				}
 			]
 			shape: "square"
 			size: 1.2d
@@ -832,7 +840,7 @@
 			}
 			id: "0FE4EF207A6937B7"
 			rewards: [{
-				count: 32
+				count: 12
 				id: "5BCD654A2C90DF04"
 				item: {
 					count: 1
@@ -1224,7 +1232,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -10.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["72387868BC05D119"]
@@ -1435,7 +1443,7 @@
 			size: 1.4d
 			tasks: [{
 				consume_items: true
-				count: 48L
+				count: 32L
 				id: "2F29023B321D3770"
 				item: { count: 1, id: "minecraft:emerald" }
 				type: "item"
@@ -1724,7 +1732,7 @@
 			id: "613D3C5BA25706B6"
 			tasks: [{
 				id: "18D87A1D53A4536C"
-				item: { count: 1, id: "minecraft:crafting_table" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:crafting_table)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -2564,6 +2572,7 @@
 				{
 					id: "44E3D965442C993C"
 					item: { count: 1, id: "darkdoppelganger:shadow_orb" }
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2746,17 +2755,6 @@
 			y: -15.5d
 		}
 		{
-			dependencies: ["72387868BC05D119"]
-			id: "1DCC3ACDD6DBDB35"
-			tasks: [{
-				id: "7F878829EF00B2F6"
-				item: { components: { "ftbquests:missing_item": "darkerdepths:magma_pad" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: -12.5d
-		}
-		{
 			dependencies: ["0EDF39B55FB4F610"]
 			id: "06CCE0753B027D72"
 			tasks: [{
@@ -2801,6 +2799,62 @@
 			}]
 			x: -5.5d
 			y: -14.0d
+		}
+		{
+			dependencies: ["28235FFD2D0DE1DD"]
+			id: "7EFD778DFD9450E1"
+			rewards: [
+				{
+					id: "0D5FAC474D3C5FB4"
+					item: {
+						count: 1
+						id: "malum:spirit_altar"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4A744C355791A489"
+					item: {
+						count: 1
+						id: "malum:gilded_runewood_item_pedestal"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5014AA2480987B1E"
+					table_id: 3086006686890514771L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DEC5C84FB5D9693"
+					table_id: 3086006686890514771L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5463000B3C9536EC"
+					table_id: 3086006686890514771L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "73D0AA6D5426B1A8"
+					table_id: 3086006686890514771L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 12L
+				id: "73BA44295F5894AF"
+				item: { count: 1, id: "malum:refined_soulstone" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
 		}
 	]
 }

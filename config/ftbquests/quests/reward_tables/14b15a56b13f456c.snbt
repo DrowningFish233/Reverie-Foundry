@@ -1,0 +1,34 @@
+{
+	id: "14B15A56B13F456C"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{
+			auto: "invisible"
+			command: "/reveriefoundry soulfading add @p"
+			disable_reward_screen_blur: true
+			exclude_from_claim_all: true
+			icon: {
+				id: "iceandfire:ectoplasm"
+			}
+			id: "5FE55FA582E622DF"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "invisible"
+			command: "/reveriefoundry soulfading remove @p"
+			disable_reward_screen_blur: true
+			icon: {
+				id: "malum:sacred_spirit"
+			}
+			id: "59D4AD0BA33A3EA0"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+	]
+}

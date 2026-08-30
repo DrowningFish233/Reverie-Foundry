@@ -468,7 +468,7 @@
 	/**
 	 * Whether hovering the output of a recipe should show the recipe's EMI ID.
 	 */
-	show-recipe-ids: false;
+	show-recipe-ids: true;
 
 	/**
 	 * Whether to display additional widgets added to recipes from other mods.

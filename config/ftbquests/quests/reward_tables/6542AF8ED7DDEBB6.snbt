@@ -1,7 +1,7 @@
 {
 	id: "6542AF8ED7DDEBB6"
 	loot_size: 1
-	order_index: 4
+	order_index: 3
 	rewards: [
 		{ id: "5B4E28EFFBFFF320", item: { count: 1, id: "terra_curio:paladins_shield" } }
 		{ id: "4A4F0C4B68A3926D", item: { count: 1, id: "terra_curio:hero_shield" } }

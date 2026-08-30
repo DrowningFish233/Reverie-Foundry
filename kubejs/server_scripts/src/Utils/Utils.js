@@ -1,5 +1,51 @@
 //priority: 100
 
+
+/**
+ * @param {*} player 玩家
+ * @param {*} item 物品
+ * @param {*} server 服务器
+ * @param {*} structureKey 结构tag
+ * @param {*} messageKey 提示信息
+ * @param {*} duration 珍珠消失延迟
+ * @returns 
+ */
+function locateStructure(player, item, server, structureKey, messageKey, duration) {
+    if (!server) return
+
+    let serverLevel = server.getLevel(player.level.dimension)
+    let playerPos = player.blockPosition()
+
+    try {
+        let structurePos = serverLevel.findNearestMapStructure(
+            structureKey,
+            playerPos,
+            10000,
+            false
+        )
+
+        if (structurePos) {
+            player.tell(Text.translatable(`message.kubejs.${messageKey}.found`)
+                .append(Text.of(` X:${structurePos.x}, Z:${structurePos.z}`).gold()))
+
+            let eye = serverLevel.createEntity('minecraft:eye_of_ender')
+            eye.setPos(player.x, player.y + 1, player.z)
+            eye.signalTo(structurePos)
+            serverLevel.addFreshEntity(eye)
+
+            server.scheduleInTicks(duration, () => {
+                eye.discard()
+            })
+        } else {
+            player.tell(Text.translatable(`message.kubejs.${messageKey}.not_found`).red())
+        }
+    } catch (e) {
+        console.error(`查找结构 ${structureKey} 时出错:`, e)
+        player.tell(Text.translatable(`message.kubejs.${messageKey}.failed`).red())
+    }
+}
+
+
 //是否是晚上
 function isNight(level) {
     let timeOfDay = level.getDayTime() % 24000;

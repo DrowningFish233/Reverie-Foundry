@@ -315,11 +315,11 @@ ServerEvents.recipes(event => {
     register(
         new FluidAlloyingRecipe(
             [
-                createFluidTag("c:molten_bronze", 15),
-                createFluidTag("c:molten_tin", 15)
+                createFluidTag("c:molten_bronze", 5),
+                createFluid("kubejs:fluorite", 5)
             ],
             {
-                amount: 30,
+                amount: 10,
                 id: "kubejs:strontium"
             },
             6
@@ -401,21 +401,6 @@ ServerEvents.recipes(event => {
         )
     );
 
-    // 铝 
-    register(
-        new FluidAlloyingRecipe(
-            [
-                createFluid("productivemetalworks:molten_redstone", 10),
-                createFluidTag("c:molten_iron", 10)
-            ],
-            {
-                amount: 20,
-                id: "productivemetalworks:molten_aluminum"
-            },
-            6
-        )
-    );
-
     register(
         new FluidAlloyingRecipe(
             [
@@ -430,4 +415,17 @@ ServerEvents.recipes(event => {
         )
     );
 
+    register(
+        new FluidAlloyingRecipe(
+            [
+                createFluid("productivemetalworks:molten_redstone", 5),
+                createFluidTag("c:molten_silver", 5)
+            ],
+            {
+                amount: 10,
+                id: "productivemetalworks:molten_signalum"
+            },
+            8
+        )
+    );
 });

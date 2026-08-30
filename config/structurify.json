@@ -1,6 +1,6 @@
 {
-  "config_version": "2.0.28",
-  "config_datetime": "2026-07-20_22-30-34",
+  "config_version": "2.0.34",
+  "config_datetime": "2026-08-29_17-11-56",
   "general": {
     "disable_all_structures": false,
     "prevent_structure_overlap": true,
@@ -50,268 +50,100 @@
   ],
   "structure_sets": [
     {
-      "spacing": 16,
-      "separation": 12,
       "name": "cataclysm:abandoned_structures",
-      "is_disabled": false,
-      "salt": 514659267,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:abandoned_spire": 1,
-        "cataclysm:abandoned_village": 1,
-        "cataclysm:abandoned_temple": 1
-      }
-    },
-    {
       "spacing": 16,
       "separation": 12,
+      "override_global_spacing_and_separation_modifier": true
+    },
+    {
       "name": "cataclysm:acropolis",
-      "is_disabled": false,
-      "salt": 913530101,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:acropolis": 1
-      }
-    },
-    {
       "spacing": 16,
       "separation": 12,
+      "override_global_spacing_and_separation_modifier": true
+    },
+    {
       "name": "cataclysm:amethyst_nest",
-      "is_disabled": false,
-      "salt": 14325760,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:amethyst_nest": 1
-      }
+      "spacing": 10,
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
-      "spacing": 16,
-      "separation": 12,
       "name": "cataclysm:ancient_factory",
-      "is_disabled": false,
-      "salt": 319514301,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:ancient_factory": 1
-      }
+      "spacing": 10,
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
-      "spacing": 16,
-      "separation": 12,
       "name": "cataclysm:burning_arena",
-      "is_disabled": false,
-      "salt": 533522197,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:burning_arena": 1
-      }
+      "spacing": 10,
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
-      "spacing": 16,
-      "separation": 12,
       "name": "cataclysm:cursed_pyramid",
-      "is_disabled": false,
-      "salt": 577299997,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:cursed_pyramid": 1
-      }
+      "spacing": 10,
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
-      "spacing": 16,
-      "separation": 12,
       "name": "cataclysm:desert_structures",
-      "is_disabled": false,
-      "salt": 31547671,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:desert_temple": 1,
-        "cataclysm:desert_occupied_village": 1,
-        "cataclysm:desert_site": 1
-      }
+      "spacing": 10,
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
-      "spacing": 16,
-      "separation": 12,
       "name": "cataclysm:frosted_prison",
-      "is_disabled": false,
-      "salt": 1577172143,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:frosted_prison": 1
-      }
+      "spacing": 10,
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
-      "spacing": 16,
-      "separation": 12,
       "name": "cataclysm:ruined_citadel",
-      "is_disabled": false,
-      "salt": 367895146,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:ruined_citadel": 1
-      }
+      "spacing": 10,
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
-      "spacing": 16,
-      "separation": 12,
       "name": "cataclysm:soul_black_smith",
-      "is_disabled": false,
-      "salt": 1984567320,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:soul_black_smith": 1
-      }
+      "spacing": 10,
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
-      "spacing": 16,
-      "separation": 12,
       "name": "cataclysm:sunken_city",
-      "is_disabled": false,
-      "salt": 1673928450,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "cataclysm:sunken_city": 1
-      }
+      "spacing": 10,
+      "separation": 6,
+      "override_global_spacing_and_separation_modifier": true
     },
     {
-      "spacing": 67,
-      "separation": 50,
       "name": "irons_spellbooks:ice_spider_den",
-      "is_disabled": false,
-      "salt": 126346,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "structure_weights": {
-        "irons_spellbooks:ice_spider_den": 1
-      }
+      "spacing": 67
     },
     {
-      "spacing": 52,
-      "separation": 50,
       "name": "irons_spellbooks:impaled_icebreaker",
-      "is_disabled": false,
-      "salt": 87959402,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "structure_weights": {
-        "irons_spellbooks:impaled_icebreaker": 1
-      }
+      "spacing": 52
     },
     {
-      "spacing": 19,
-      "separation": 18,
       "name": "irons_spellbooks:mangrove_hut",
-      "is_disabled": false,
-      "salt": 169476080,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "structure_weights": {
-        "irons_spellbooks:mangrove_hut": 1
-      }
+      "spacing": 19
     },
     {
-      "spacing": 39,
-      "separation": 33,
       "name": "irons_spellbooks:mountain_tower",
-      "is_disabled": false,
-      "salt": 194767080,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "structure_weights": {
-        "irons_spellbooks:mountain_tower": 1
-      }
+      "spacing": 39
     },
     {
-      "spacing": 59,
-      "separation": 50,
       "name": "irons_spellbooks:pyromancer_tower",
-      "is_disabled": false,
-      "salt": 1512684,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "structure_weights": {
-        "irons_spellbooks:pyromancer_tower": 1
-      }
+      "spacing": 59
     },
     {
-      "spacing": 13,
-      "separation": 8,
       "name": "mss:arena",
-      "is_disabled": false,
-      "salt": 982034754,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "structure_weights": {
-        "mss:arena": 1
-      }
+      "spacing": 13,
+      "separation": 8
     },
     {
-      "spacing": 59,
-      "separation": 31,
       "name": "skyvillages:skyvillage",
-      "is_disabled": false,
-      "salt": 23734816,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": false,
-      "structure_weights": {
-        "skyvillages:skyvillage": 1
-      }
-    },
-    {
-      "spacing": 8,
-      "separation": 4,
-      "name": "treasure2:aquatic_treasures_set",
-      "is_disabled": false,
-      "salt": 345678,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "treasure2:ruins/aquatic/ruins": 20
-      }
-    },
-    {
-      "spacing": 8,
-      "separation": 4,
-      "name": "treasure2:terranean_treasures_set",
-      "is_disabled": false,
-      "salt": 2345678,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "treasure2:surface/temperate": 5,
-        "treasure2:wither_tree/wither_tree": 4,
-        "treasure2:surface/general": 15,
-        "treasure2:dungeon/general": 60,
-        "treasure2:ruins/desert/ruins": 20,
-        "treasure2:ruins/ruins": 20
-      }
-    },
-    {
-      "spacing": 8,
-      "separation": 4,
-      "name": "treasure2:wishing_well_set",
-      "is_disabled": false,
-      "salt": 1234567,
-      "frequency": 1.0,
-      "override_global_spacing_and_separation_modifier": true,
-      "structure_weights": {
-        "treasure2:well/wishing_well": 1,
-        "treasure2:well/jungle/wishing_well": 1,
-        "treasure2:well/forest/wishing_well": 1,
-        "treasure2:well/desert/wishing_well": 1
-      }
+      "spacing": 59,
+      "separation": 31
     }
   ],
   "structure_template_pools": []

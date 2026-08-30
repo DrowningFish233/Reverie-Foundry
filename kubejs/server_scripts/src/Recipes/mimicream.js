@@ -11,6 +11,7 @@ ServerEvents.modifyRecipeResult("duplicate", (event) => {
     // 黑名单（完全禁止复制的物品）
     const blacklist = [
         'create:minecart_contraption',
+        'eternal_starlight:golem_steel_crate'
     ];
 
     // 剥离组件白名单（只复制 ID）

@@ -157,7 +157,9 @@
       }
     },
     "screenClassBlacklist": [
-      "com.simibubi.create.content.logistics.stockTicker.StockKeeperCategoryScreen"
+      "com.simibubi.create.content.logistics.stockTicker.StockKeeperCategoryScreen",
+      "net.p3pp3rf1y.sophisticatedbackpacks.common.gui.BackpackContainer",
+      "net.p3pp3rf1y.sophisticatedstorage.common.gui.StorageContainerMenu"
     ]
   }
 }

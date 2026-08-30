@@ -1,0 +1,109 @@
+{
+    "Features": {
+        "highlight_foused_items": {
+            "value": false
+        },
+        "enable_profiles": {
+            "value": false
+        }
+    },
+    "ModSettings": {
+        "enable_updates_check": false,
+        "first_run": false,
+        "enable_profiles": {
+            "value": false
+        },
+        "restock_hotbar": {
+            "value": true
+        },
+        "highlight_foused_items": {
+            "value": false
+        }
+    },
+    "GuiSettings": {
+        "inventory_overlay_buttons_visible": {
+            "value": false
+        },
+        "enable_inventory_editor_button": {
+            "value": false
+        },
+        "enable_inventory_settings_button": {
+            "value": false
+        },
+        "enable_profiles_ui": {
+            "value": false
+        },
+        "enable_profiles_announcement": false,
+        "enable_inventory_buttons": {
+            "value": false
+        },
+        "continuous_crafting_saved_value": false,
+        "show_sort_in_columns_button": {
+            "value": false
+        },
+        "show_sort_in_rows_button": {
+            "value": false
+        }
+    },
+    "SortSettings": {
+        "restock_hotbar": {
+            "value": true
+        }
+    },
+    "AutoRefillSettings": {
+        "refill_armor": {
+            "value": false
+        },
+        "refill_before_tool_break": {
+            "value": false
+        },
+        "auto_refill_enable_indicator_icons": {
+            "value": false
+        },
+        "auto_refill_enable_horbar_indicator_icons": {
+            "value": false
+        },
+        "allow_break_for_non_enchanted": {
+            "value": true
+        },
+        "tool_max_durability_threshold": 0,
+        "allow_alerts_without_tool_protection": {
+            "value": true
+        },
+        "visual_durability_notification": {
+            "value": false
+        },
+        "type_visual_durability_notification": "CHAT",
+        "audio_durability_notification": {
+            "value": false
+        },
+        "visual_replace_success_notification": {
+            "value": false
+        },
+        "type_visual_replace_success_notification": "CHAT",
+        "visual_replace_failed_notification": {
+            "value": false
+        },
+        "audio_replace_failed_notification": {
+            "value": false
+        },
+        "type_visual_replace_failed_notification": "CHAT"
+    },
+    "EditProfiles": {
+        "enable_profiles": {
+            "value": false
+        }
+    },
+    "Hotkeys": {
+        "copy_components": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "copy_item_id": {
+            "main": {
+                "keys": ""
+            }
+        }
+    }
+}

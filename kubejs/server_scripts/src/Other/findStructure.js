@@ -15,60 +15,70 @@ ItemEvents.firstRightClicked('kubejs:eye_of_starlight_portal_located', event => 
 
 ItemEvents.firstRightClicked('kubejs:eye_of_ancient_city_located', event => {
     const { player, item, server } = event
-    locateStructure(player, item, server, 'kubejs:eye_of_ancient_city_located', 'eye_of_ancient_city', 60)
+    locateStructure(player, item, server, 'kubejs:eye_of_ancient_city_located', 'structure', 60)
 })
 
 ItemEvents.firstRightClicked('kubejs:eye_of_fortress_located', event => {
     const { player, item, server } = event
-    locateStructure(player, item, server, 'kubejs:eye_of_fortress_located', 'eye_of_fortress', 60)
+    locateStructure(player, item, server, 'kubejs:eye_of_fortress_located', 'structure', 60)
 })
 
 ItemEvents.firstRightClicked('kubejs:eye_of_ancient_battleground_located', event => {
     const { player, item, server } = event
-    locateStructure(player, item, server, 'kubejs:eye_of_ancient_battleground_located', 'eye_of_ancient_battleground', 60)
+    locateStructure(player, item, server, 'kubejs:eye_of_ancient_battleground_located', 'structure', 60)
 })
 
 ItemEvents.firstRightClicked('kubejs:eye_of_monument_located', event => {
     const { player, item, server } = event
-    locateStructure(player, item, server, 'kubejs:eye_of_monument_located', 'eye_of_monument', 60)
+    locateStructure(player, item, server, 'kubejs:eye_of_monument_located', 'structure', 60)
 })
 
+ItemEvents.firstRightClicked('irons_spellbooks:wayward_compass', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:catacombs_located', 'structure', 60)
+})
 
-function locateStructure(player, item, server, structureKey, messageKey, duration) {
-    if (!server) return
+ItemEvents.firstRightClicked('cataclysm:flame_eye', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:burning_arena_located', 'structure', 60)
+})
 
-    let serverLevel = server.getLevel(player.level.dimension)
-    let playerPos = player.blockPosition()
+ItemEvents.firstRightClicked('cataclysm:mech_eye', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:ancient_factory_located', 'structure', 60)
+})
 
-    try {
-        let structurePos = serverLevel.findNearestMapStructure(
-            structureKey,
-            playerPos,
-            10000,
-            false
-        )
+ItemEvents.firstRightClicked('cataclysm:void_eye', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:ruined_citadel_located', 'structure', 60)
+})
 
-        if (structurePos) {
-            player.tell(Text.translatable(`message.kubejs.${messageKey}.found`)
-                .append(Text.of(` X:${structurePos.x}, Z:${structurePos.z}`).gold()))
+ItemEvents.firstRightClicked('cataclysm:monstrous_eye', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:soul_black_smith_located', 'structure', 60)
+})
 
-            let eye = serverLevel.createEntity('minecraft:eye_of_ender')
-            eye.setPos(player.x, player.y + 1, player.z)
-            eye.signalTo(structurePos)
-            serverLevel.addFreshEntity(eye)
+ItemEvents.firstRightClicked('cataclysm:abyss_eye', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:sunken_city_located', 'structure', 60)
+})
 
-            server.scheduleInTicks(duration, () => {
-                eye.discard()
-            })
+ItemEvents.firstRightClicked('cataclysm:desert_eye', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:cursed_pyramid_located', 'structure', 60)
+})
 
-            if (!player.isCreative()) {
-                item.shrink(1)
-            }
-        } else {
-            player.tell(Text.translatable(`message.kubejs.${messageKey}.not_found`).red())
-        }
-    } catch (e) {
-        console.error(`查找结构 ${structureKey} 时出错:`, e)
-        player.tell(Text.translatable(`message.kubejs.${messageKey}.failed`).red())
-    }
-}
+ItemEvents.firstRightClicked('cataclysm:cursed_eye', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:frosted_prison_located', 'structure', 60)
+})
+
+ItemEvents.firstRightClicked('cataclysm:storm_eye', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:acropolis_located', 'structure', 60)
+})
+
+ItemEvents.firstRightClicked('kubejs:eye_of_furled_citadel_located', event => {
+    const { player, item, server } = event
+    locateStructure(player, item, server, 'kubejs:eye_of_furled_citadel_located', 'structure', 60)
+})

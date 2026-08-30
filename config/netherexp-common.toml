@@ -205,6 +205,9 @@
 	willOWispStackSize = 64
 	#When enabled almost all types of potions can be stacked to 16 like in the combat snapshots
 	stackablePotions = true
+	#Removes the soul speed enchantment from the game, everywhere.
+	#This will not retroactively remove pre-existing items with the enchantment
+	removeSoulSpeedEnchantment = true
 
 #Entity Settings
 [entitySettings]
@@ -213,7 +216,7 @@
 	# Range: 0.0 ~ 1.0
 	wispBoredomChance = 0.02
 	#The amount of freezing in ticks that all black ices can inflict
-	# Default: 100
+	# Default: 400
 	# Range: > 0
 	blackIceFreezingTicks = 100
 	#Upon death skeletons will fossilize soul soil blocks they are standing on into fossil ore
@@ -366,9 +369,10 @@
 	# Default: 2.0
 	# Range: 0.0 ~ 1.7976931348623157E308
 	emergeBurstDamageMultiplier = 2.0
-	#The absolute maximum stack size for all ecto slabs
-	#§cWARNING: Higher values can easily cause FPS lag when too many ecto slabs are present
-	# Due to the additional segments needing to be added for rendering
+	#The absolute maximum stack size for all ecto slabs 
+	#§cWARNING: Higher values can easily cause FPS lag when too many ecto slabs are present 
+	# 
+	#Due to the additional segments needing to be added for rendering
 	# Default: 16
 	# Range: 1 ~ 99
 	absoluteMaximumStackSize = 16
@@ -454,6 +458,10 @@
 	maxStampedeStriditeDrops = 5
 	#Magma Cube textures will scale with the model and conform to pixel consistency
 	pixelConsistentMagmaCubes = true
+	#The chance for a stampede to be befriended when fed favorite foods; higher numbers make befriending harder
+	# Default: 8
+	# Range: > 0
+	stampedeBefriendingOdds = 8
 
 #World Settings
 [worldSettings]
@@ -513,6 +521,11 @@
 		siltFlintOre = true
 		#Prevents those ugly ravines and noodle caves from cutting through the nether's terrain by removing them entirely
 		removeNetherNoodleCaves = true
+
+	#Sub-Biomes Settings
+	[worldSettings.subBiomesSettings]
+		#Enables the tertiary sub-biome for soul sand valleys
+		blackIceGlaciers = true
 
 #Visual & Sound Settings
 [visualAndSoundSettings]
@@ -615,14 +628,14 @@
 	heatDistortionSpeed = 2.0
 	#Minimum distance from the camera that heat distortion starts at
 	# Default: 12.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
 	heatDistortionMinDistance = 12.0
 	#Maximum distance from the camera that heat distortion reaches its max intensity at
 	# Default: 128.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
 	heatDistortionMaxDistance = 128.0
 	#Intensity of heat distortion wobbling when close to lava sources
-	# Default: 0.006000000052154064
+	# Default: 0.004000000189989805
 	# Range: 0.0 ~ 1.7976931348623157E308
 	heatDistortionLavaIntensity = 0.006000000052154064
 	#Speed of heat distortion wobbling when close to lava sources
@@ -631,15 +644,15 @@
 	heatDistortionLavaSpeed = 2.0
 	#Minimum distance from the camera that heat distortion starts at when close to lava sources
 	# Default: 0.0
-	# Range: 0.0 ~ 1.7976931348623157E308
-	heatDistortionLavaMinDistance = 0.0
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
+	heatDistortionLavaMinDistance = 4.9E-324
 	#Maximum distance from the camera that heat distortion reaches its max intensity at when close to lava sources
 	# Default: 64.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 4.9E-324 ~ 1.7976931348623157E308
 	heatDistortionLavaMaxDistance = 64.0
 	#How often the game will check around the player for lava heat distortion in ticks 
 	#§cWARNING: Lower numbers can increase lag especially when paired with high proximity distances to iterate through
-	# Default: 100
+	# Default: 150
 	# Range: > 0
 	heatDistortionLavaCheckPeriod = 200
 	#How far the game will check around the player for heat distortion lava sources 
@@ -669,6 +682,14 @@
 	ciergeOfTreacheryFog = true
 	#Cierge of Treachery will produce red haze and sparkle particles
 	ciergeOfTreacheryParticles = true
+	#Toggle stampede screen shake
+	stampedeScreenshake = true
+	#Replaces all flame particles with animated ones from Minecraft: Dungeons
+	dungeonsFlameParticles = true
+	#Replaces the ugly fire texture when mobs are burning with particles based on Minecraft: Dungeons
+	improvedBurnParticles = true
+	#Mobs on fire will pulse a glow corresponding to the fire type they are on
+	mobBurningGlow = false
 
 #Game Mechanic Settings
 [gameMechanicSettings]

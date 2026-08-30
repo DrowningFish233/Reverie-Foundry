@@ -326,6 +326,7 @@
 		""
 		"请务必查看支线，主线只起到引导流程的作用，无其他任何内容！"
 		""
+		"&z你可以制作多功能镐与广域采掘镐来显著提升你的游玩体验"
 		"[ { \"text\": \"点击跳转至寂静装备\", \"underlined\": true, \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"59FD6ADB15123223\" } } ]"
 	]
 	quest.056130E2CD71DC75.quest_subtitle: "万恶之源"
@@ -402,7 +403,10 @@
 		"&e如果不同装备上同时存在多个奥术谐振词条，增加法力值的效果可以叠加，但增伤无法叠加，以最高等级计算。"
 	]
 	quest.06C2F1EFADAD809F.quest_subtitle: "优秀的增伤类材料"
-	quest.06CCE0753B027D72.quest_desc: ["好累好累————苦露西"]
+	quest.06CCE0753B027D72.quest_desc: [
+		"好累好累————苦露西"
+		"然而因为学业原因，开学后版本更新将减慢...不过肯定不会弃坑的，会在有空时继续攥写新版本内容"
+	]
 	quest.06CCE0753B027D72.quest_subtitle: "1.2再更新"
 	quest.070C94F2F2F2D972.quest_desc: [
 		"&6修补弥散器&r"
@@ -547,6 +551,7 @@
 		"&7第一个槽位放置需要被幻化的&e武器&r&7，第二个槽位放置需要幻化成什么模样，随后消耗紫水晶能量来幻化您的武器！&r&7&r"
 	]
 	quest.092C65BDEC1E30A4.quest_subtitle: "变换莫测"
+	quest.092C65BDEC1E30A4.title: "幻化台"
 	quest.0973A81F39964B58.quest_subtitle: "魔宠召唤仪式"
 	quest.09BD7CB2DEA2CD89.quest_desc: ["可以定制发射出的箭矢速度与精度"]
 	quest.09BD7CB2DEA2CD89.quest_subtitle: "定制体验"
@@ -1554,8 +1559,6 @@
 		"&7这个阶段下，星光傀儡的身体会不断颤抖并迸射火花，时不时产生与受到攻击时一致的标红效果（但这里的标红仅仅是视觉效果，星光傀儡实际上并没有自扣血被动）。"
 	]
 	quest.1DC249D36D54E164.quest_subtitle: "精妙造物"
-	quest.1DCC3ACDD6DBDB35.quest_desc: ["在主世界挖掘暗板岩获取，岩浆版睡莲"]
-	quest.1DCC3ACDD6DBDB35.quest_subtitle: "如履平地"
 	quest.1DDF2D0C0D0D8DDA.quest_desc: ["&7飞行堡垒，可以在空中缓慢飞行并使用机载武器向下扫射，由于体型巨大，速度缓慢，机载武器也并不出色，在此也仅作介绍，并不推荐实际使用。"]
 	quest.1DEBD3A3C7F6C452.quest_subtitle: "提升收集到精魂时所触发效果的额外强度"
 	quest.1DFDD58AC91C2543.quest_desc: [
@@ -1624,6 +1627,7 @@
 	]
 	quest.1EC459CAACF854F3.quest_subtitle: "于此观看所有推荐的材料的属性与数值"
 	quest.1EC459CAACF854F3.title: "材料推荐"
+	quest.1EE0B5A8018CD9BB.title: "挽魂锋镰 模板"
 	quest.1F0087CBFB4E0275.quest_subtitle: "天下武功，唯快不破"
 	quest.1F0DFA4EF202BD42.quest_desc: [
 		"&7通过人为合成获得。  "
@@ -1702,6 +1706,7 @@
 		"&7大法师们前往&6末地&r&7维度研究无尽虚空的秘密，因此他们需要一个临时的居所。于是他们决定在整个末地建造临时家园，以便在那里进行研究与探索。&r"
 	]
 	quest.1FB95C69AF3C83E3.title: "&6大法师定居点&r"
+	quest.1FBA0FE6A13F8E70.quest_desc: ["自选开局职业奖励"]
 	quest.1FBA0FE6A13F8E70.quest_subtitle: "你将得到一份新手礼包"
 	quest.1FBA0FE6A13F8E70.title: "&a“于初始掩饰苦难的蜜糖”"
 	quest.1FC7A319D738A388.quest_desc: ["&7效果同原版 &#66CCFF剑&7，可在工作台中放入原版 &#66CCFF剑&7 以将其转换成 &#66DDCC寂静装备剑&7。"]
@@ -1932,6 +1937,13 @@
 		"&7[JNE]Jaden's Nether Expansion，是一个优秀的 &#FF6666下界拓展&7 模组，但是在1.21.1中，显然他还没移植完整"
 		""
 		"所以部分特性可能未能实现，所以这部分没能实现的机制在整合包中会进行修改，比如新增获取来源"
+		""
+		"1.1.6任务编辑留："
+		"在2026/8/20时，为了修精妙背包整理丢物品的bug，发现此模组更新了，于是更了一下，后续会单开章节讲这个，不过丢东西物品的bug过于严重，没什么空补任务，所以你可能会觉得这个mod没什么引导，后续会补上"
+		""
+		"1.1.6更新一半留："
+		"我刚更新完发现他删掉了这个版本..."
+		"那放到1.2再更吧"
 	]
 	quest.22C4B375D17DC6C8.quest_subtitle: "半成品来的"
 	quest.22DBDBE68B6E1B4D.quest_desc: [
@@ -2407,7 +2419,7 @@
 		""
 		"&7前期炉子可以做得 &#FFD700小一点&7，方便随时拆卸带走。"
 		""
-		"[ { \"text\": \"[点击跳转至寂静装备]\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"09E68D57095A5F1D\" } } ]"
+		"[ { \"text\": \"点击跳转至寂静装备\", \"underlined\": true, \"color\":\"yellow\",\"clickEvent\": { \"action\": \"change_page\", \"value\": \"59FD6ADB15123223\" } } ]"
 	]
 	quest.2DD51904F4629516.quest_subtitle: "锻炉基石"
 	quest.2DE8D48077862833.quest_desc: [
@@ -2701,7 +2713,11 @@
 	quest.346013B6D966C7F2.quest_subtitle: "通常在击败骷髅王后才能解锁该阶段的蓝图"
 	quest.3462310EEE3AC2DF.quest_desc: ["会试图把容器中的物品输入"]
 	quest.3462310EEE3AC2DF.quest_subtitle: "向RS网络输入物品或流体"
-	quest.34AFC6414A805C2D.quest_desc: ["恢复方法:食用金苹果，附魔金苹果，GoodApple"]
+	quest.34AFC6414A805C2D.quest_desc: [
+		"&7恢复方法：食用 &#FFD700金苹果&7、&#FFD700附魔金苹果&7、&#FFD700GoodApple&7，或输入命令 &#66CCFF/reveriefoundry soulfading reset <对应玩家>&7。"
+		""
+		"&7易碎灵魂于1.2改版，若你是从1.1系版本转移的存档，请使用 &#66CCFF/rf deathsystem&7 系列命令，关闭旧版易碎灵魂，再通过旧版命令恢复后死亡刷新状态。"
+	]
 	quest.34AFC6414A805C2D.quest_subtitle: "&c你每次死亡都会丢失最大生命值"
 	quest.34AFC6414A805C2D.title: "&c\"死亡是抛却自我的过程\""
 	quest.34D446AE0315168C.quest_desc: [
@@ -3222,6 +3238,9 @@
 		""
 		"&7位阶越高，附魔结果自然就越好，可以远超原版的附魔极限等级。"
 	]
+	quest.3D58537D375B1FB6.quest_desc: ["从材料中获取的物理属性降低75%"]
+	quest.3D58537D375B1FB6.quest_subtitle: "魔法镰刀！稳辣！稳辣！"
+	quest.3D58537D375B1FB6.title: "奥法镰刀 模板"
 	quest.3D65B82D6967E302.quest_desc: [
 		"&7相较于存储方块，&#66DDCC存储磁盘&7 是一种更加节约空间的设计，&#66DDCC磁盘驱动器&7 只占用一格空间，其中可以插入八个 &#66DDCC存储磁盘&7。"
 		""
@@ -3543,6 +3562,8 @@
 	]
 	quest.43DDDB9D9BA35A28.quest_subtitle: "代价换力量"
 	quest.43DDDB9D9BA35A28.title: "誓令，及其他誓约"
+	quest.441A5EBCA3952517.quest_subtitle: "独立死亡不掉落系统"
+	quest.441A5EBCA3952517.title: "死亡不掉落"
 	quest.4432A2327732E7FF.quest_desc: [
 		"&7腐枯，&c能够破坏和损毁的事物&r&7。无向仪式的造物有很多奇怪属性，我想试着给它们归类。"
 		"&7"
@@ -4627,6 +4648,7 @@
 	]
 	quest.5A59A7F48EA53168.quest_subtitle: "机霸动力"
 	quest.5A59A7F48EA53168.title: "飞旋齿轮"
+	quest.5A8ACB926DFAB615.quest_desc: ["随机开局职业奖励"]
 	quest.5A8ACB926DFAB615.quest_subtitle: "你将得到一份新手礼包"
 	quest.5A8ACB926DFAB615.title: "&a“于初始掩饰苦难的蜜糖？！”"
 	quest.5A8B3E256CCCB82C.quest_desc: [
@@ -5197,7 +5219,7 @@
 		"&e自选，非强制任务，不影响绝大多数游戏内容，非必要不乱开"
 		"实际上也有部分奖励而非苦难"
 	]
-	quest.66EA89C1E75509EB.quest_subtitle: "&6\"一旦踏出这一步，便再无回头之路\""
+	quest.66EA89C1E75509EB.quest_subtitle: "&6\"&6一旦踏出这一步，便再无回头之路\"&r"
 	quest.66EA89C1E75509EB.title: "&c追加的苦难"
 	quest.66F8BBB3BC24A7FF.quest_desc: [
 		"&d这根缠绕着诡谲气息的绳索，能捕获多数生物的灵魂……"
@@ -5630,6 +5652,8 @@
 		""
 		"&#3399FF碧水精魂&7可以通过击杀水生动物获取"
 		"如 &#3399FF海豚&7，&#3399FF溺尸&7"
+		""
+		"你可以对着精魂按R来查看有什么实体掉落"
 	]
 	quest.6FDF4D8E43BF594B.quest_subtitle: "魔法的构件"
 	quest.6FE5B91598B5393A.quest_desc: ["在前期，最高贵的就是基础值加成"]
@@ -5951,6 +5975,7 @@
 	]
 	quest.768F736B2B18FA1B.quest_subtitle: "百步穿杨"
 	quest.768F736B2B18FA1B.title: "犀利锐眼誓约"
+	quest.76B1E6898606A248.title: "材料推荐将在1.2重置"
 	quest.76B78E211A0AEC85.quest_desc: [
 		"&7由 &6寂静装备 &7属性决定："
 		"&7• 护甲 &7→ &c护甲值&7，同时提供 &c生命值加成（护甲 ÷ 2）"
@@ -6201,6 +6226,15 @@
 		"&7用于提升魔宠&a生命值&r&7的消耗品。共有3个等级，每个等级有使用上限&r"
 	]
 	quest.7B8819152EE73E21.title: "&6生命果实&r"
+	quest.7B8A4E62A807BF77.quest_desc: [
+		"&7可以通过 &#FFD700潜行+右键&7 切换模式。  "
+		"&7共有四种模式：  "
+		"&7&#66CCFF小型隧道&7：挖掘 &#FFAA331×1×5&7 大小的通道  "
+		"&7&#66CCFF大型隧道&7：挖掘 &#FFAA333×3×5&7 大小的通道  "
+		"&7&#66CCFF采矿通道&7 与 &#66CCFF逃生通道&7 则会挖掘阶梯式通道"
+	]
+	quest.7B8A4E62A807BF77.quest_subtitle: "真正的矿道开掘者"
+	quest.7B8A4E62A807BF77.title: "多功能镐 模具"
 	quest.7BACE6601BC4DFED.quest_desc: [
 		"&7可以用于随身携带物品，可以使用 &#66DDCC矿物升级&7 向上按照 &#FFAA33铁&7-&#FFD700金&7-&#66CCFF钻石&7-&#CC99FF合金&7 升级，每次升级都会扩大 &#66DDCC收纳空间&7，觉得一个背包不够用还可以制作多个背包，再也不用担心 &#FFAA33战利品&7 带不走了。如果一时找不到安家地点甚至可以大量携带背包存储物品。"
 		""
@@ -6209,6 +6243,7 @@
 		"&7背包右上角 &#FFD700设置&7 则可以修改背包的一些具体项目，比如在背包上 &#66CCFF显示某一格的物品&7，或是指定某一格 &#FFAA33只能存放某一种物品&7，可以让一些需要随身携带的物品无视整理且只能存放在指定位置，便于日常存取。"
 	]
 	quest.7BACE6601BC4DFED.quest_subtitle: "空间不够了？来试试次元口袋"
+	quest.7BD83673ECEA9F2E.quest_subtitle: "寻找城堡的实用工具"
 	quest.7BD9DC7DB2278AA5.quest_desc: [
 		"&7需要杀死死者之王后在古城战利品箱获取，拥有相当高的攻击伤害，但没有特殊词条，适合用于合金制作武器部件。"
 		""
@@ -6426,6 +6461,9 @@
 		"&7不屈符文能稳固佩戴者的姿态，抵消全部&c击退&r&7。&r"
 	]
 	quest.7EF077D05E3E3B7E.quest_subtitle: "抵挡难当之物"
+	quest.7EFD778DFD9450E1.quest_desc: ["如果你不想推灵灾基础设施，可以使用铁魔法来收获精魂"]
+	quest.7EFD778DFD9450E1.quest_subtitle: "设施购入"
+	quest.7EFD778DFD9450E1.title: "祭坛购买"
 	quest.7F0DAB4DB433FC15.quest_desc: ["用于护甲时给予抗性提升效果，虽然也会附带虚弱效果，前期搭配飞剑或许有意想不到的效果"]
 	quest.7F0DAB4DB433FC15.quest_subtitle: "高额防护"
 	quest.7F0EB703538AF425.quest_subtitle: "我即虚空"
@@ -6606,7 +6644,6 @@
 	]
 	quest.7FFEDC8A8DA45A2F.quest_subtitle: "整合包字体不喜欢！"
 	reward.0039A626D8431A26.title: "忘记所有学习的法术"
-	reward.0116627ECA2E3471.title: "切换易碎灵魂启用状态"
 	reward.0271EB97C3EE0E0B.title: "关闭 放逐之人效果"
 	reward.0587A8A6F15D12D2.title: "战士（只影响开局奖励）"
 	reward.074704F04DA73584.title: "N2"
@@ -6629,8 +6666,10 @@
 	reward.569E94AC4C71C068.title: "N3"
 	reward.598AAA24175DD85B.title: "N4"
 	reward.599B06FAED12C9AD.title: "随机法术卷轴"
+	reward.59D4AD0BA33A3EA0.title: "禁用易碎灵魂"
 	reward.5DDFB170B6667E05.title: "N5"
 	reward.5FAE827FECB3B03D.title: "死亡不掉落开"
+	reward.5FE55FA582E622DF.title: "启用易碎灵魂"
 	reward.614956D135BA7286.title: "N5"
 	reward.641E221E302FFDCD.title: "随机选择开局奖励"
 	reward.644449F246F10339.title: "N2"
@@ -6641,18 +6680,19 @@
 	reward.6D784B65B7B6B474.title: "N1"
 	reward.737667DDDD217523.title: "永夜"
 	reward.73E3F7F3D81A4378.title: "N4"
+	reward.766A6E590C718618.title: "N1"
 	reward.79F3944BD5EEA0A1.title: "随机法术卷轴"
 	reward.7CC7F792128C3592.title: "切换抑郁症启用状态"
 	reward.7D68FC48AF26A5C1.title: "启用 放逐之人效果"
 	reward.7D8C106B8D90BF8D.title: "战士"
 	reward_table.14503C2938D82D10.title: "高价回收"
+	reward_table.14B15A56B13F456C.title: "易碎灵魂"
 	reward_table.22800CFE01C6F088.title: "死亡不掉落"
 	reward_table.2AD3B2BB3A96D953.title: "任意精魂"
 	reward_table.2EE8C4EF7AB3771A.title: "隐秘收割"
 	reward_table.2EF123C84F963336.title: "徽章"
 	reward_table.317976CB2BE234D8.title: "随机奖励"
 	reward_table.34E3D5128D809C0E.title: "正餐回收"
-	reward_table.55C00FFB8B46380D.title: "难度选择"
 	reward_table.57C9A0983101D7E3.title: "好好睡"
 	reward_table.5B2093FE63EC30D3.title: "放逐之人"
 	reward_table.6542AF8ED7DDEBB6.title: "护盾"
@@ -6669,6 +6709,7 @@
 	task.00F4B3FFF5644B7A.title: "点击继续"
 	task.010977A0B683361F.title: "镰刀 模板"
 	task.0120F8C1B059DF5D.title: "任意 蜡烛"
+	task.01829A1CC89680D8.title: "挽魂锋镰 模板"
 	task.02081D27FED67724.title: "正餐回收"
 	task.02E724791B98221B.title: "任意 头颅"
 	task.03566662B2722669.title: "法术书 模板"
@@ -6720,6 +6761,7 @@
 	task.17D165E1F90F67DA.title: "拾荒者"
 	task.17FD4724C406FFAA.title: "匕首 模板"
 	task.18849E2143DB1691.title: "啊我知道这里的材料确实少"
+	task.18D87A1D53A4536C.title: "任意 工作台"
 	task.18E1F0C5DCA8343F.title: "海蟒鳞片"
 	task.18E775592FF42BB7.title: "已经杀过了"
 	task.18FB41E76B4DB850.title: "其实我杀过了"
@@ -6777,6 +6819,7 @@
 	task.35A3054C9A7DE78E.title: "正餐回收"
 	task.36C03950D6AE6E5A.title: "我已经了解"
 	task.36C977BD4D881D5A.title: "任意 法术书"
+	task.36F9993DFCF818DF.title: "材料推荐将在1.2重置"
 	task.3763E0FE3154E4C4.title: "弓 模板"
 	task.3791B1733EAF4B24.title: "龙鳞"
 	task.37F5F052C29AD61B.title: "其实我杀过了"
@@ -6795,6 +6838,7 @@
 	task.3D218C514EAC6367.title: "开掘铲 模板"
 	task.3DE2898A1A9A4C07.title: "法袍长袍 模板"
 	task.3E1F111ADD777D77.title: "Any #eternal_starlight:yeti_fur"
+	task.3EA015A2C09F05E3.title: "多功能镐 模具"
 	task.3ED2718D6CB139B6.title: "阶段III"
 	task.3F63C56803BA4F6F.title: "勘探锤 模板"
 	task.3F853F214743B9E6.title: "Any #alshanex_familiars:familiar_trinkets"
@@ -6886,6 +6930,7 @@
 	task.6674D177EF2E8116.title: "任意 修理套件"
 	task.667D543034FB4B21.title: "区块常加载"
 	task.6699E616F26FF6E0.title: " 我准备好了！"
+	task.66C30B7224361EA2.title: "任意 奥法镰刀"
 	task.679088C9A7CDA862.title: "任意 飞机武器"
 	task.67A8A0FF953C5802.title: "灵魂熔岩"
 	task.69036ACE2DE0E96F.title: "熔岩"
@@ -6939,4 +6984,5 @@
 	task.7E6571DCE7F5F2D6.title: "Any #malum:soulwoven_pouch_efficient"
 	task.7E73F2D97C765D46.title: "Furioso 模板"
 	task.7E8CF4B1C7566AB3.title: "蓝图和模板"
+	task.7EE48C8958A33065.title: "死亡不掉落选择"
 }

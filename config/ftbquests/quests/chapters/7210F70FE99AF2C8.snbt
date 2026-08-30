@@ -1184,7 +1184,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(silentgear:sickle_blueprint)item(silentgear:sickle_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.0d
 			y: -17.0d
 		}
 		{
@@ -1692,8 +1692,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:greatsword_blueprint)item(reveriefoundry:greatsword_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -17.0d
+			x: 3.5d
+			y: -15.0d
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
@@ -1790,8 +1790,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:sundering_anchor_template)item(reveriefoundry:sundering_anchor_blueprint))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -30.5d
+			x: 2.0d
+			y: -31.5d
 		}
 		{
 			hide_dependent_lines: true
@@ -2445,6 +2445,48 @@
 			}]
 			x: 0.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["5DA66C973C8C8C39"]
+			icon: {
+				id: "reveriefoundry:magic_scythe_blueprint"
+			}
+			id: "3D58537D375B1FB6"
+			tasks: [{
+				id: "66C30B7224361EA2"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:magic_scythe_blueprint)item(reveriefoundry:magic_scythe_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["346013B6D966C7F2"]
+			icon: {
+				id: "reveriefoundry:deliverance_scythe_blueprint"
+			}
+			id: "1EE0B5A8018CD9BB"
+			tasks: [{
+				id: "01829A1CC89680D8"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:deliverance_scythe_blueprint)item(reveriefoundry:deliverance_scythe_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -32.5d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			icon: {
+				id: "reveriefoundry:mode_pickaxe_blueprint"
+			}
+			id: "7B8A4E62A807BF77"
+			tasks: [{
+				id: "3EA015A2C09F05E3"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:mode_pickaxe_blueprint)item(reveriefoundry:mode_pickaxe_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -17.0d
 		}
 	]
 }

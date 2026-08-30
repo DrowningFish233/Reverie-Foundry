@@ -79,7 +79,7 @@ global.new_materials = [
     { id: 'eye_of_fortress_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_fortress_located" },
     { id: 'eye_of_ancient_battleground_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_ancient_battleground_located" },
     { id: 'eye_of_monument_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_monument_located" },
-
+    { id: 'eye_of_furled_citadel_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_furled_citadel_located" },
     { id: 'luminofish_ink_sac', maxStackSize: 32, texture: "kubejs:item/misc/luminofish_ink_sac" },
     { id: 'eye_of_starlight_portal_located', maxStackSize: 64, texture: "kubejs:item/misc/eye_of_starlight_portal" },
     { id: 'scoria_ingot', maxStackSize: 64, rarity: 'uncommon', texture: "kubejs:item/ingots/scoria_ingot" },
@@ -333,4 +333,4 @@ StartupEvents.registry('item', event => {
         .texture("kubejs:item/gems/moonpools")
         .rarity('epic')
         .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER);
-});   
+});

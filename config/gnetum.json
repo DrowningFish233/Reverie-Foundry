@@ -162,6 +162,12 @@
       },
       "pass": 4
     },
+    "netherexp:stampede_hunger": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 3
+    },
     "sophisticatedstorage:storage_tool_info": {
       "enabled": {
         "value": "AUTO"
@@ -269,6 +275,12 @@
         "value": "AUTO"
       },
       "pass": 3
+    },
+    "loot_journal:pickup_component": {
+      "enabled": {
+        "value": "AUTO"
+      },
+      "pass": 2
     },
     "minecraft:experience_level": {
       "enabled": {

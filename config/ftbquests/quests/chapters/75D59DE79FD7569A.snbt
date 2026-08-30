@@ -324,15 +324,10 @@
 			}
 			id: "34AFC6414A805C2D"
 			rewards: [{
-				auto: "enabled"
-				command: "/rf deathsystem toggle"
 				exclude_from_claim_all: true
-				icon: {
-					id: "kubejs:heart_of_darkness"
-				}
-				id: "0116627ECA2E3471"
-				permission_level: 2
-				type: "command"
+				id: "792DC71AB42F3D28"
+				table_id: 1491072280023745900L
+				type: "choice"
 			}]
 			tasks: [{
 				id: "34FE428FE172708E"
@@ -375,7 +370,6 @@
 			can_repeat: true
 			dependencies: ["66EA89C1E75509EB"]
 			disable_toast: true
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:zombie_head"
 			}
@@ -396,7 +390,6 @@
 		{
 			can_repeat: true
 			dependencies: ["66EA89C1E75509EB"]
-			hide_until_deps_complete: true
 			icon: {
 				id: "minecraft:player_head"
 			}
@@ -536,6 +529,26 @@
 			}]
 			x: -10.5d
 			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["66EA89C1E75509EB"]
+			icon: {
+				id: "kubejs:random_accessory_pouch"
+			}
+			id: "441A5EBCA3952517"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C7C438B68B06116"
+				table_id: 2486001279399555208L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "7EE48C8958A33065"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -9.0d
 		}
 	]
 }

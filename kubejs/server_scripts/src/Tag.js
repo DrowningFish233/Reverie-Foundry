@@ -1,6 +1,22 @@
 // priority: 500
 ServerEvents.tags('item', event => {
-
+    event.add('reveriefoundry:unique_item',
+        "kubejs:necromantic_scroll",
+        "kubejs:sorcerer_emblem",
+        "kubejs:avenger_emblem",
+        "kubejs:destroyer_emblem",
+        "kubejs:angler_earring",
+        "kubejs:red_skull",
+        "kubejs:sanity_curios",
+        "kubejs:magic_cuffs",
+        "kubejs:magnet_flower",
+        "kubejs:mana_cloak",
+        "kubejs:band_of_starpower",
+        "kubejs:arcane_flower",
+        "kubejs:mana_regeneration_band",
+        "kubejs:mana_flower",
+        "kubejs:papyrus_scarab"
+    )
 
     event.add('reveriefoundry:gluttonous_authority',
         "kubejs:gluttonous_authority"

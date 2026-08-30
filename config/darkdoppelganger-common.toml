@@ -30,7 +30,7 @@
 	#Examples:
 	#minecraft:netherite_helmet
 	#irons_spellbooks:*
-	banned_armor = ["minecraft:netherite_helmet","silentgear:*","reveriefoundry:*"]
+	banned_armor = ["minecraft:netherite_helmet", "silentgear:*", "reveriefoundry:*"]
 	#Scales all Iron's Spellbooks spell power attributes copied from the summoner. 1.0 = no change.
 	# Default: 1.0
 	# Range: 0.0 ~ 100.0
@@ -51,14 +51,14 @@
 	[dark_doppelganger.phase3]
 		spells_a = ["irons_spellbooks:lightning_lance", "irons_spellbooks:stomp"]
 		spells_b = ["irons_spellbooks:shockwave", "irons_spellbooks:ascension"]
-		spells_c = ["irons_spellbooks:blood_step"]
+		spells_c = ["cataclysm_spellbooks:void_rune"]
 		spells_d = ["irons_spellbooks:evasion", "irons_spellbooks:echoing_strikes"]
 
 	[dark_doppelganger.final]
-		spells_a = ["irons_spellbooks:eldritch_blast", "irons_spellbooks:sonic_boom", "irons_spellbooks:abyssal_shroud", "irons_spellbooks:ray_of_frost", "irons_spellbooks:sculk_tentacles"]
-		spells_b = ["irons_spellbooks:ascension", "irons_spellbooks:abyssal_shroud"]
-		spells_c = ["irons_spellbooks:blood_step"]
-		spells_d = ["irons_spellbooks:abyssal_shroud", "irons_spellbooks:echoing_strikes", "irons_spellbooks:root", "irons_spellbooks:blight"]
+		spells_a = ["irons_spellbooks:eldritch_blast", "irons_spellbooks:sonic_boom", "irons_spellbooks:ray_of_frost", "irons_spellbooks:sculk_tentacles"]
+		spells_b = ["irons_spellbooks:ascension"]
+		spells_c = ["cataclysm_spellbooks:void_rune"]
+		spells_d = ["irons_spellbooks:echoing_strikes", "irons_spellbooks:root", "irons_spellbooks:blight"]
 
 #Minion Configuration
 [minion]

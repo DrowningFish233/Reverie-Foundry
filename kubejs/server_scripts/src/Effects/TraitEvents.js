@@ -727,7 +727,6 @@ RFTrait('kubejs:vorant_ingot', 0)
 
 //'gobber2:gobber2_ingot'
 RFTrait('kubejs:gobber', 0)
-
     .beforeHurt(event => {
         const { source, entity } = event;
         const attacker = source.player;
@@ -740,47 +739,34 @@ RFTrait('kubejs:gobber', 0)
         const totalTraits = fu_getUniqueTraitsCount(attacker);
         let damageBonus = 0;
 
-        const combination = (hasGobber ? 1 : 0) + (hasGobberNether ? 2 : 0) + (hasGobberEnd ? 3 : 0);
+        const count = (hasGobber ? 1 : 0) + (hasGobberNether ? 1 : 0) + (hasGobberEnd ? 1 : 0);
 
-        switch (combination) {
-            case 1: // 只有戈伯
+        if (count === 1) {
+            if (hasGobber) {
                 damageBonus = totalTraits * 0.02;
-                break;
-
-            case 2: // 只有下界戈伯
+            } else if (hasGobberNether) {
                 if (totalTraits % 2 === 1) {
                     damageBonus = totalTraits * 0.02;
                 }
-                break;
-
-            case 3: // 只有末地戈伯
+            } else if (hasGobberEnd) {
                 if (totalTraits % 2 === 0) {
                     damageBonus = totalTraits * 0.02;
                 }
-                break;
-
-            case 3: // 戈伯 + 下界
+            }
+        } else if (count === 2) {
+            if (hasGobber && hasGobberNether) {
                 if (totalTraits % 2 === 1) {
                     damageBonus = totalTraits * 0.03;
                 }
-                break;
-
-            case 4: // 戈伯 + 末地
+            } else if (hasGobber && hasGobberEnd) {
                 if (totalTraits % 2 === 0) {
                     damageBonus = totalTraits * 0.04;
                 }
-                break;
-
-            case 5: // 下界 + 末地
+            } else if (hasGobberNether && hasGobberEnd) {
                 damageBonus = totalTraits * 0.03;
-                break;
-
-            case 6: // 戈伯 + 下界 + 末地
-                damageBonus = totalTraits * 0.05;
-                break;
-
-            default:
-                damageBonus = 0;
+            }
+        } else if (count === 3) {
+            damageBonus = totalTraits * 0.05;
         }
 
         if (damageBonus > 0) {
@@ -2705,6 +2691,7 @@ RFTrait('kubejs:ultimine_test', 0)
     .blockBroken(event => {
         const { player, block } = event;
         if (!fu_hasTraitAnywhere(player, "kubejs:ultimine_test")) return;
+        if (fu_hasTraitAnywhere(player, "silentgear:silky")) return;
         if (player.crouching) return;
 
         const blockId = block.getId().toString();
@@ -2902,9 +2889,12 @@ RFTrait('kubejs:soul_conversion', 60)
         if (!player || !player.isLiving()) return;
         if (!fu_hasTraitAnywhere(player, "kubejs:soul_conversion")) return;
 
+
         const foodLevel = player.getFoodLevel();
         const saturation = player.getSaturation();
         const currentWard = fu_getCurrentSoulWard(player);
+        const maxWard = fu_getSoulWardCapacity(player);
+        if (maxWard <= 0) return;
         const maxFood = 20;
 
         if (foodLevel <= 0 && currentWard > 0) {
@@ -2935,6 +2925,7 @@ RFTrait('kubejs:soul_conversion', 60)
         }
     })
     .register();
+
 
 /**
 * 受到攻击时有概率恢复灵魂护盾

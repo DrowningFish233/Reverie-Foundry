@@ -1,5 +1,30 @@
 ServerEvents.recipes(event => {
     event.shapeless(
+        Item.of('kubejs:eye_of_furled_citadel_located', 1),
+        [
+            'irons_spellbooks:furled_map_citadel'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:magic_scythe_template', 16),
+        [
+            'kubejs:necroplasm',
+            'reveriefoundry:scythe_template',
+            'malum:soul_stained_steel_plating'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('reveriefoundry:magic_scythe_blueprint', 1),
+        [
+            'kubejs:necroplasm',
+            'reveriefoundry:scythe_blueprint',
+            'malum:soul_stained_steel_plating'
+        ]
+    );
+
+    event.shapeless(
         Item.of('kubejs:catalyst_t4', 1),
         [
             '9x silentgear:glittery_dust',

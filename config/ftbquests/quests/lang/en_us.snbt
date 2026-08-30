@@ -1374,8 +1374,6 @@
 		"&7In this phase, the golem's body constantly trembles and sparks, occasionally flashing red (visual only—no self-damage)."
 	]
 	quest.1DC249D36D54E164.quest_subtitle: "Exquisite Creation"
-	quest.1DCC3ACDD6DBDB35.quest_desc: ["Mined from Deepslate in the Overworld. A lava-proof lily pad."]
-	quest.1DCC3ACDD6DBDB35.quest_subtitle: "Walking on Lava"
 	quest.1DDF2D0C0D0D8DDA.quest_desc: ["&7A flying fortress. Can slowly fly and use mounted weapons to strafe below. Due to its massive size, slow speed, and mediocre weaponry, it's mentioned here for completeness but not recommended for actual use."]
 	quest.1DEBD3A3C7F6C452.quest_subtitle: "Increases the extra strength of effects triggered by essence harvesting"
 	quest.1DFDD58AC91C2543.quest_desc: [
@@ -5802,7 +5800,6 @@
 	]
 	quest.7FFEDC8A8DA45A2F.quest_subtitle: "Don't Like the Modpack Font!"
 	reward.0039A626D8431A26.title: "Forget All Learned Spells"
-	reward.0116627ECA2E3471.title: "Toggle Fragile Soul State"
 	reward.0271EB97C3EE0E0B.title: "Disable The Banished Effect"
 	reward.0587A8A6F15D12D2.title: "Warrior"
 	reward.08D44DB184D9838B.title: "Second Chance"
@@ -5840,7 +5837,6 @@
 	reward_table.2EF123C84F963336.title: "Emblem"
 	reward_table.317976CB2BE234D8.title: "Random Reward"
 	reward_table.34E3D5128D809C0E.title: "Meal Recycling"
-	reward_table.55C00FFB8B46380D.title: "Difficulty Selection"
 	reward_table.57C9A0983101D7E3.title: "Sleep Well"
 	reward_table.5B2093FE63EC30D3.title: "The Banished"
 	reward_table.6542AF8ED7DDEBB6.title: "Shield"

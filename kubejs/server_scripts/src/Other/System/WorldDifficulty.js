@@ -1,4 +1,7 @@
 // priority: 10
+function isNoDifficulty(entity) {
+    return NO_DIFFICULTY_BLACKLIST.includes(entity.getType().toString());
+}
 
 // 检查生物是否在黑名单中
 function isBlacklisted(entity) {
@@ -77,11 +80,10 @@ function markDifficultyApplied(entity) {
 }
 
 EntityEvents.spawned(event => {
-    const DEBUG_MODE = false;
-
     let entity = event.entity;
     if (!entity) return;
 
+    if (isDragon(entity)) return;
     // 检查是否在强制应用白名单中
     let forceApply = isForceApplyWhitelisted(entity);
 
@@ -119,6 +121,11 @@ EntityEvents.spawned(event => {
 
     if (!highestStageDifficulty && blacklisted) {
         if (DEBUG_MODE) console.log(`[Debug] ${entity.getType()} - 黑名单且无阶段，跳过`);
+        return;
+    }
+
+    if (isNoDifficulty(entity)) {
+        if (DEBUG_MODE) console.log(`[Debug] ${entity.getType()} - 此生物不应用阶段，跳过`);
         return;
     }
 

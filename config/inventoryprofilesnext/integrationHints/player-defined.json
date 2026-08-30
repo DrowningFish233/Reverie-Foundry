@@ -1,0 +1,26 @@
+{
+    "net.minecraft.client.gui.screens.inventory.InventoryScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": -4,
+                "bottom": 2
+            },
+            "SORT": {
+                "horizontalOffset": -4,
+                "bottom": 2
+            },
+            "CONTINUOUS_CRAFTING": {
+                "horizontalOffset": -2,
+                "bottom": -1
+            },
+            "SHOW_EDITOR": {
+                "horizontalOffset": 81,
+                "top": -8
+            },
+            "SETTINGS": {
+                "horizontalOffset": 66,
+                "top": -23
+            }
+        }
+    }
+}

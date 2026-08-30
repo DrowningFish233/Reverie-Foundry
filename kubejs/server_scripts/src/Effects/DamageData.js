@@ -47,6 +47,7 @@ function getDamageData(event) {
  */
 function new_damage(event, stage, value) {
     const data = getDamageData(event);
+    const oldDamage = event.getDamage();
 
     switch (stage) {
         case STAGE.FLAT:
@@ -62,5 +63,15 @@ function new_damage(event, stage, value) {
             break;
     }
     /** (基础伤害 × (1 + 基础乘区) × 独立乘区) + 固定加成 */
-    event.setDamage((data[0] * (1 + data[2]) * data[3]) + data[1])
+    const newDamage = (data[0] * (1 + data[2]) * data[3]) + data[1];
+    event.setDamage(newDamage);
+
+    if (DEBUG_MODE) {
+        console.log('[Debug] 基础伤害: ' + data[0]);
+        console.log('[Debug] 固定加成: ' + data[1]);
+        console.log('[Debug] 加算倍率: ' + data[2]);
+        console.log('[Debug] 独立乘区: ' + data[3]);
+        console.log('[Debug] 计算公式: ' + data[0] + ' × (1 + ' + data[2] + ') × ' + data[3] + ' + ' + data[1] + ' = ' + newDamage);
+        console.log('[Debug] 伤害变化: ' + oldDamage + ' → ' + newDamage);
+    }
 }
