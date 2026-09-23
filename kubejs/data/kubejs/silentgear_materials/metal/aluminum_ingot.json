@@ -51,6 +51,98 @@
       "traits": [
         {
           "conditions": [],
+          "level": 2,
+          "trait": "kubejs:eternal_starlight"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ],
+          "level": 2,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:synergistic"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:eternal_starlight"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.5
+            }
+          ],
+          "level": 1,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:eternal_starlight"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:eternal_starlight"
+        },
+        {
+          "conditions": [],
           "level": 4,
           "trait": "silentgear:malleable"
         },

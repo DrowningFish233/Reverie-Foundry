@@ -19,6 +19,13 @@
 	# Killing protected entities (#thief:killing_protected/<level>) in protected structure (#thief:protected) is considered a crime.
 	# Default: true
 	killing_protected_entities = true
+	# Picking up (with CarryOn mod) protected entities (#thief:pickup_protected/<level>) in protected structure (#thief:protected) is considered a crime.
+	# Default: true
+	picking_up_protected_entities = true
+	# Crime severity for looting an item frame.
+	# Default: LIGHT
+	#Allowed Values: NONE, LIGHT, MEDIUM, HEAVY
+	looting_item_frame = "LIGHT"
 
 [witness]
 	# Max distance (in blocks) at which an entity can notice a crime.

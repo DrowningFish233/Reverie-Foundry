@@ -85,6 +85,28 @@
           "trait": "silentgear:soft"
         }
       ]
+    },
+    "silentgear:lining": {
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
     }
   }
 }

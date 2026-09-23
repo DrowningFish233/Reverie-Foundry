@@ -64,6 +64,20 @@
 					"trait": "kubejs:strip"
 				}
 			]
+		},
+		"silentgear:binding": {
+			"traits": [
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:dreadsteel_ingot"
+				},
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "kubejs:strip"
+				}
+			]
 		}
 	}
 }

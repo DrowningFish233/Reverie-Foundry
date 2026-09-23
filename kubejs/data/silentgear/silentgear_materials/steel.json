@@ -72,6 +72,29 @@
           "trait": "silentgear:malleable"
         }
       ]
+    },
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
     }
   }
 }

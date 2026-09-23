@@ -65,6 +65,77 @@
           "trait": "kubejs:eternal_starlight"
         }
       ]
+    },
+    "silentgear:rod": {
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 10
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.25
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.3
+      },
+      "traits": []
+    },
+    "silentgear:cord": {
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      },
+      "traits": []
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": []
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:cosmos_aurora_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:eternal_starlight"
+        }
+      ]
     }
   }
 }

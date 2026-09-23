@@ -63,6 +63,115 @@
           "trait": "kubejs:high_health"
         }
       ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.2
+      },
+      "attack_reach": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.5
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.4
+      },
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.25
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.25
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.25
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.25
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 40
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:malarite"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:high_health"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.3
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:malarite"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:high_health"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "traits": []
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "kubejs:malarite"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "kubejs:high_health"
+        }
+      ]
     }
   }
 }

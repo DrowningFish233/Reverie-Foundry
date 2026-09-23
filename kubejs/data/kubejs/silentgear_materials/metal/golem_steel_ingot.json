@@ -72,6 +72,30 @@
                     "trait": "kubejs:eternal_starlight"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [
+                        {
+                            "type": "silentgear:material_ratio",
+                            "ratio": 0.7
+                        }
+                    ],
+                    "level": 1,
+                    "trait": "silentgear:soft"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:golem_steel_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
         }
     }
 }

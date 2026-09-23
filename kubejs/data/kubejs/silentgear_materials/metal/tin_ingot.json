@@ -67,6 +67,91 @@
           "trait": "kubejs:dropped_experience"
         }
       ]
+    },
+    "silentgear:cord": {
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 4
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:dropped_experience"
+        }
+      ]
     }
   }
 }

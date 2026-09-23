@@ -48,6 +48,15 @@
                     "trait": "silentgear:ancient"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:ancient"
+                }
+            ]
         }
     }
 }

@@ -62,6 +62,20 @@
                     "trait": "kubejs:arcane_ingot"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:blazing_magic_set"
+                },
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "kubejs:arcane_ingot"
+                }
+            ]
         }
     }
 }

@@ -41,13 +41,64 @@
       "harvest_speed": 15.0,
       "harvest_tier": {
         "incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools",
-        "level_hint": "8",
+        "level_hint": "3",
         "name": "diamond/钻石"
       },
       "magic_armor": 8.0,
       "magic_damage": 4.0,
       "ranged_damage": 1.0,
       "rarity": 45.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:cobalt_ingot"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:cobalt_ingot"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:cobalt_ingot"
+        }
+      ]
+    },
+    "silentgear:binding": {
       "traits": [
         {
           "conditions": [],

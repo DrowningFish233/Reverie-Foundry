@@ -84,6 +84,23 @@
           "trait": "silentgear:soft"
         }
       ]
+    },
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
     }
   }
 }

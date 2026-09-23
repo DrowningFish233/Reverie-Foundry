@@ -1193,5 +1193,16 @@
 			x: -5.0d
 			y: 4.5d
 		}
+		{
+			dependencies: ["70A16F668336C964"]
+			id: "0E82AB0377376FBD"
+			tasks: [{
+				id: "299C1FD0F7AC944D"
+				item: { count: 1, id: "apothic_enchanting:raven_enchanting_table" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.0d
+		}
 	]
 }

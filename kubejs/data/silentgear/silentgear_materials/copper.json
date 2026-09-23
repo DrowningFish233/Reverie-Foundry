@@ -116,6 +116,19 @@
           "trait": "silentgear:dulling"
         }
       ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
     }
   }
 }

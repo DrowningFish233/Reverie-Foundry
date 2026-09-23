@@ -2,7 +2,6 @@
 // 矿石限制 - 石头
 const ORES = [
     ["astages/ore/runestone_slag", "hazennstuff:runestone_slag", "first_kill_dead_king"],
-    ["astages/ore/runestone_fragments", "hazennstuff:runestone_fragments", "first_kill_dead_king"],
     ["astages/ore/gobber2_ore", "gobber2:gobber2_ore", "first_kill_dead_king"],
 
     ["astages/ore/chlorophyte_ore", "hazennstuff:chlorophyte_ore", "first_kill_skeletron"],

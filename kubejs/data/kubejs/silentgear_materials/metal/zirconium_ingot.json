@@ -30,7 +30,7 @@
       "armor/helmet": 6.0,
       "armor/leggings": 6.0,
       "armor_durability": 10.0,
-      "attack_damage": 4.0,
+      "attack_damage": 10.0,
       "attack_speed": -0.3,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,
@@ -51,6 +51,100 @@
       "projectile_speed": 0.0,
       "ranged_damage": 2.0,
       "rarity": 40.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:eroded"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:jagged"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.15
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:eroded"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:eroded"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:heavy"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:eroded"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:binding": {
       "traits": [
         {
           "conditions": [],

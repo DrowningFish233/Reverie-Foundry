@@ -1,0 +1,8 @@
+{
+  "material": "minecraft:deepslate_bricks",
+  "additional_materials": [
+    "minecraft:deepslate_tiles",
+    "minecraft:polished_deepslate",
+    "minecraft:chiseled_deepslate"
+  ]
+}

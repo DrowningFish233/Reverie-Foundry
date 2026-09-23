@@ -2,7 +2,13 @@
 	"allowDefaultAsync": true,
 	"defaultDisableDuplicatePlugins": true,
 	"typeOverrides": {
-		"terra_entity:jei_plugin": "DISABLED"
+		"reveriefoundry:gateway_loot_plugin": "NORMAL",
+		"reveriefoundry:silentgear_materials": "NORMAL",
+		"reveriefoundry:spirit_drop": "NORMAL",
+		"reveriefoundry:reaping_drop": "NORMAL",
+		"terra_entity:jei_plugin": "DISABLED",
+		"reveriefoundry:catalyst_salvage": "NORMAL",
+		"reveriefoundry:silentgear_traits": "NORMAL"
 	},
 	"defaultPhaseOverrides": {
 	

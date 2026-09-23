@@ -50,7 +50,22 @@
       "projectile_speed": 1.1,
       "ranged_damage": 0.0,
       "rarity": 30.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:soft"
+        }
+      ]
     }
   }
 }

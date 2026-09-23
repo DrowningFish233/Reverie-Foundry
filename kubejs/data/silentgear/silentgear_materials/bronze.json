@@ -26,6 +26,23 @@
     "name_prefix": ""
   },
   "properties": {
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
     "silentgear:main": {
       "armor": 15.0,
       "armor/boots": 2.0,

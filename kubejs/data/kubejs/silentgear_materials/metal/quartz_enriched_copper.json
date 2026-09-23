@@ -47,7 +47,16 @@
             "traits": [
                 {
                     "conditions": [],
-                    "level": 1,
+                    "level": 2,
+                    "trait": "silentgear:soft"
+                }
+            ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
                     "trait": "silentgear:soft"
                 }
             ]

@@ -196,11 +196,6 @@ const itemTooltips = {
             TooltipUtils.simpleText('tooltip.scroll_of_friendship', 'yellow'),
         ]
     },
-    'powerful_dummy:dummy_stand': {
-        lines: [
-            TooltipUtils.simpleText('tooltip.dummy_stand', 'green'),
-        ]
-    },
     'kubejs:bluestar': {
         lines: [
             TooltipUtils.simpleText('tooltip.bluestar.quote', 'blue')
@@ -520,6 +515,7 @@ const itemTooltips = {
 
 // 通用提示
 const commonTooltips = {
+    'explorerscompass:explorerscompass': TooltipUtils.simpleText('tooltip.explorerscompass.located', 'dark_green'),
     'endermanoverhaul:summoner_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
     'endermanoverhaul:bubble_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
     'endermanoverhaul:icy_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
@@ -528,8 +524,6 @@ const commonTooltips = {
     'endermanoverhaul:soul_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
     'endermanoverhaul:ancient_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
     'endermanoverhaul:warped_pearl': TooltipUtils.simpleText('tooltip.endermanoverhaul.pearl_common', 'dark_green'),
-
-
     'kubejs:dimensional_ripper': TooltipUtils.simpleText('tooltip.common.dimensional_ripper', 'dark_green'),
     'kubejs:dimensional_stabilizer': TooltipUtils.simpleText('tooltip.common.dimensional_stabilizer', 'dark_green'),
     'kubejs:rift_probe': TooltipUtils.simpleText('tooltip.common.rift_probe', 'dark_green'),

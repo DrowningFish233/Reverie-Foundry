@@ -60,6 +60,20 @@
           "trait": "silentgear:crushing"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:ancient"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:crushing"
+        }
+      ]
     }
   }
 }

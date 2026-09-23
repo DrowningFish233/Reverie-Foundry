@@ -69,8 +69,8 @@
 				item: { count: 1, id: "kubejs:eye_of_ancient_city_located" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: -8.5d
+			y: 8.5d
 		}
 		{
 			id: "086482C52023DB55"
@@ -79,8 +79,8 @@
 				item: { count: 1, id: "kubejs:eye_of_dragon_cave_located" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.0d
+			x: -8.5d
+			y: 6.5d
 		}
 		{
 			can_repeat: true
@@ -784,8 +784,8 @@
 				item: { count: 1, id: "kubejs:eye_of_weeping_well_located" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.0d
+			x: -7.0d
+			y: 6.5d
 		}
 		{
 			id: "11113DE0965217BB"
@@ -794,8 +794,8 @@
 				item: { count: 1, id: "kubejs:eye_of_starlight_portal_located" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.0d
+			x: -7.0d
+			y: 8.5d
 		}
 		{
 			id: "22E5438A416558FF"
@@ -836,8 +836,8 @@
 				item: { count: 1, id: "kubejs:eye_of_fortress_located" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -5.5d
+			y: 6.5d
 		}
 		{
 			id: "401A3487AEA60E00"
@@ -846,8 +846,8 @@
 				item: { count: 1, id: "kubejs:eye_of_ancient_battleground_located" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: -5.5d
+			y: 8.5d
 		}
 		{
 			id: "761C662C880C3BC3"
@@ -856,8 +856,8 @@
 				item: { count: 1, id: "kubejs:eye_of_monument_located" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.0d
+			x: -4.0d
+			y: 6.5d
 		}
 		{
 			id: "4B307CE1A9A7465A"
@@ -931,8 +931,38 @@
 				item: { count: 1, id: "kubejs:eye_of_furled_citadel_located" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			id: "128E156219284544"
+			tasks: [{
+				id: "5CF108BF981B6AA5"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			id: "54F73037E3ABF0EC"
+			tasks: [{
+				id: "19E800F189AEFE91"
+				item: { count: 1, id: "explorerscompass:explorerscompass" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			id: "1AEA01C8E559B517"
+			tasks: [{
+				id: "7F0377132509D78A"
+				item: { count: 1, id: "reveriefoundry:loot_locator" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.0d
 		}
 	]
 }

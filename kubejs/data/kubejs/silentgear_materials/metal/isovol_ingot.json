@@ -55,6 +55,15 @@
           "trait": "kubejs:family_sacrifice"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:family_sacrifice"
+        }
+      ]
     }
   }
 }

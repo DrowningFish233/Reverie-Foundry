@@ -36,7 +36,13 @@ RFTrait('kubejs:sloth', 999)
                 );
 
                 nearbyEntities.forEach(target => {
-                    attackEntity(target, 'generic', rangeDamage, true);
+                    let currentHealth = target.getHealth();
+                    let maxHealth = target.getMaxHealth();
+                    let finalDamage = Math.min(rangeDamage, currentHealth - 1);
+
+                    if (finalDamage > 0) {
+                        attackEntity(target, 'generic', finalDamage, true);
+                    }
                 });
             }
         })
@@ -47,8 +53,8 @@ RFTrait('kubejs:sloth', 999)
         if (!entity.isLiving() || !entity.isPlayer()) return;
         if (entity.hasEffect("kubejs:sloth_2")) {
             let hasPendantOfSloth = getCuriosItem(entity, 'kubejs:pendant_of_sloth') !== null;
-            let damageReduction = hasPendantOfSloth ? 0.15 : 0.35;
-            new_damage(event, STAGE.MULTIPLY, damageReduction);
+            let damageMultiplier = hasPendantOfSloth ? 0.65 : 0.85;
+            new_damage(event, STAGE.MULTIPLY, damageMultiplier);
         }
     })
     .register();

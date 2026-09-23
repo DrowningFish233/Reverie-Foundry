@@ -37,8 +37,8 @@ ServerEvents.recipes(event => {
         new ApothecInfusionRecipe(
             "alltheores:bronze_ingot",
             "kubejs:bronze_ingot",
-            { eterna: 40, quanta: 20, arcana: 30 },
-            { eterna: -1, quanta: 40, arcana: -1 },
+            { eterna: 20, quanta: 5, arcana: 0 },
+            { eterna: -1, quanta: -1, arcana: -1 },
             1
         )
     );
@@ -48,8 +48,8 @@ ServerEvents.recipes(event => {
         new ApothecInfusionRecipe(
             "alltheores:invar_ingot",
             "kubejs:invar_ingot",
-            { eterna: 40, quanta: 20, arcana: 30 },
-            { eterna: -1, quanta: 40, arcana: -1 },
+            { eterna: 20, quanta: 5, arcana: 5 },
+            { eterna: -1, quanta: 30, arcana: -1 },
             1
         )
     );
@@ -59,8 +59,8 @@ ServerEvents.recipes(event => {
         new ApothecInfusionRecipe(
             "minecraft:gold_ingot",
             "kubejs:brass_ingot",
-            { eterna: 60, quanta: 30, arcana: 50 },
-            { eterna: -1, quanta: 50, arcana: -1 },
+            { eterna: 20, quanta: 5, arcana: 5 },
+            { eterna: -1, quanta: 30, arcana: -1 },
             1
         )
     );
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         new ApothecInfusionRecipe(
             "alltheores:nickel_ingot",
             "kubejs:nickel_ingot",
-            { eterna: 20, quanta: 15, arcana: 25 },
+            { eterna: 20, quanta: 5, arcana: 5 },
             { eterna: -1, quanta: 30, arcana: -1 },
             1
         )
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
         new ApothecInfusionRecipe(
             "silentgear:crimson_steel_ingot",
             "kubejs:adamanite_ingot",
-            { eterna: 70, quanta: 20, arcana: 30 },
+            { eterna: 30, quanta: 10, arcana: 0 },
             { eterna: -1, quanta: -1, arcana: -1 },
             1
         )
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
         new ApothecInfusionRecipe(
             "create:zinc_ingot",
             "kubejs:zinc_ingot",
-            { eterna: 5, quanta: 5, arcana: 0 },
+            { eterna: 30, quanta: 5, arcana: 0 },
             { eterna: -1, quanta: -1, arcana: -1 },
             1
         )
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
         new ApothecInfusionRecipe(
             "silentgems:citrine",
             "kubejs:citrine",
-            { eterna: 35, quanta: 30, arcana: 10 },
+            { eterna: 30, quanta: 10, arcana: 0 },
             { eterna: -1, quanta: -1, arcana: -1 },
             1
         )
@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
         new ApothecInfusionRecipe(
             "alltheores:electrum_ingot",
             "kubejs:electrum_ingot",
-            { eterna: 20, quanta: 20, arcana: 20 },
+            { eterna: 30, quanta: 10, arcana: 0 },
             { eterna: -1, quanta: -1, arcana: -1 },
             1
         )

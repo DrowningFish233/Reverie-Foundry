@@ -67,6 +67,120 @@
           "trait": "kubejs:golem_steel_ingot"
         }
       ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.5
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 1.0
+      },
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.8
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.3
+      },
+      "armor": {
+        "operation": "ADD",
+        "value": 6
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 45
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:eternal_starlight"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:golem_steel_ingot"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:eternal_starlight"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:golem_steel_ingot"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:eternal_starlight"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:golem_steel_ingot"
+        }
+      ]
     }
   }
 }

@@ -48,6 +48,20 @@
                     "trait": "kubejs:ghost_ingot"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:ghost_player"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:ghost_ingot"
+                }
+            ]
         }
     }
 }

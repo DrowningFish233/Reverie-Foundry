@@ -79,7 +79,7 @@
 	# Default: 1.0
 	# Range: -999.9000244140625 ~ 999.0
 	"Chance for guards to lose durability" = 1.0
-	"Allow guards to sink temporarily to fight mobs that are under water?" = true
+	"Allow guards to sink temporarily to fight mobs that are under water?" = false
 	"Mobs that guards actively protect when they get targeted" = ["minecraft:villager", "guardvillagers:guard", "minecraft:iron_golem"]
 	#Mobs in this list also won't get hurt by a guard's arrow if the config option to disable guard arrows hurting villagers is enabled.
 	"Mobs that guards actively protect when they get hurt" = ["minecraft:villager", "guardvillagers:guard", "minecraft:iron_golem"]

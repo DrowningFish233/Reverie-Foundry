@@ -26,6 +26,9 @@ function handleEffectExpired(effectId, entity, isPlayer, effectInstance) {
         case "kubejs:fire":
             attackEntity(entity, 'lava', Amplifier, true);
             break;
+        case "kubejs:forging":
+            attackEntity(entity, 'generic', Amplifier * 2, true);
+            break;
         case "kubejs:tooth_of_hunger":
             if (isPlayer) {
                 let FoodLevel = entity.getFoodLevel();

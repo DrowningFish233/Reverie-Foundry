@@ -3,13 +3,13 @@
   "particle": {
     "particleLimit": 16384,
     "cleanupStrategy": "PARALLEL_WITH_TICK",
-    "parallelQueueRemoval": false,
-    "parallelQueueEviction": false,
+    "parallelQueueRemoval": true,
+    "parallelQueueEviction": true,
     "particleLightCache": true,
     "cullUnderwaterParticleType": true
   },
   "tick": {
-    "animationTickMode": false,
+    "animationTickMode": true,
     "particleAsyncMode": "SEQUENTIAL",
     "gpuOnlyAsyncParticleTick": false,
     "tickWeatherAsync": true,
@@ -17,7 +17,10 @@
     "failPerSecLimit": 5,
     "failBehavior": "RAISE_CRASH",
     "suppressCME": true,
-    "syncParticleClasses": []
+    "syncAnimationClasses": [],
+    "syncParticleClasses": [
+      "pigcart.particlerain.particle.BlockDisplayParticle"
+    ]
   },
   "rendering": {
     "particleCulling": "SPHERE",

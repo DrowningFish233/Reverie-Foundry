@@ -16,6 +16,10 @@
         # if they rely on details of the vanilla placement path.
         enabled = "Default"
         # Default: True
+        # Applies mathematically equivalent local placement and predicate optimizations
+        # without replacing the complete placed-feature pipeline.
+        local-optimizations = "Default"
+        # Default: True
         # Reuses block-predicate results while disk features such as clay and sand
         # are placed, trading a small amount of temporary memory for fewer block lookups.
         memoized-disk-plan = "Default"
@@ -50,6 +54,18 @@
         # uniform areas. Uses additional temporary memory while the chunk surface is generated.
         biome-cache = "Default"
 
+    # Independent world-generation optimizations.
+    [worldgen.misc]
+        # Default: True
+        # Lets compiled density columns read NoiseChunk flat-cache values directly.
+        # When disabled, density functions are evaluated through their standard compute method.
+        flat-cache-access = "Default"
+        # Default: True
+        # Removes the internal lock of PalettedContainer, whose acquire/release bookkeeping is redundant
+        # If you installed Lithium and disabled its chunk.no_locking option, disable this option too;
+        # otherwise the two sides would disagree about whether palette locking is still required.
+        palette-lock = "Default"
+
 # Dedicated and integrated server optimizations.
 [server]
 
@@ -58,7 +74,7 @@
         # Default: False
         # Reuses arrays, lists, and chunk lookups during chunk ticking, natural spawning,
         # and weather updates. Experimental; it may affect spawning, weather, or modded tick logic.
-        enabled = "False"
+        enabled = "True"
 
 # Chunk serialization and storage options.
 [chunk-saving]

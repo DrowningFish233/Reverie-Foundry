@@ -60,6 +60,20 @@
           "trait": "kubejs:animated_steel_ingot"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:renew"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:animated_steel_ingot"
+        }
+      ]
     }
   }
 }

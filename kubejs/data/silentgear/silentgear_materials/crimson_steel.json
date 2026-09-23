@@ -34,7 +34,7 @@
       "armor/leggings": 6.0,
       "armor_durability": 42.0,
       "armor_toughness": 10.0,
-      "attack_damage": 6.0,
+      "attack_damage": 10.0,
       "attack_speed": -0.1,
       "charging_value": 0.9,
       "draw_speed": -0.1,

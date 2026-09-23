@@ -80,6 +80,24 @@
           "trait": "silentgear:soft"
         }
       ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
     }
   }
 }

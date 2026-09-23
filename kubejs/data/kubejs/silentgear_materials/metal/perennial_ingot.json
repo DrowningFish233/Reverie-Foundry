@@ -48,6 +48,15 @@
 					"trait": "kubejs:unchecked_growth"
 				}
 			]
+		},
+		"silentgear:binding": {
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:unchecked_growth"
+				}
+			]
 		}
 	}
 }

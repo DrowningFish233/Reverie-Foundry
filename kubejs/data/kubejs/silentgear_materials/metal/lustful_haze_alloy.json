@@ -77,6 +77,35 @@
           "trait": "kubejs:malignant_pewter_ingot"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:arcane_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:spell_level_up"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:mithril_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:chalyblux"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:malignant_pewter_ingot"
+        }
+      ]
     }
   }
 }

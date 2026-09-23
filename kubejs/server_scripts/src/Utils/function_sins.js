@@ -291,6 +291,19 @@ EntityEvents.afterHurt(event => {
     }
 });
 
+EntityEvents.afterHurt(event => {
+    const { entity, source } = event;
+
+    if (!entity || !entity.isPlayer()) return;
+
+    if (source.getType() !== "sanity") return;
+
+    const pData = entity.persistentData;
+    const currentSanity = pData.getInt("sanity") ?? 0;
+
+    updateplayersanity(entity, currentSanity - 1);
+});
+
 /**
  * 获取玩家装备的七罪饰品对应的罪孽类型
  */

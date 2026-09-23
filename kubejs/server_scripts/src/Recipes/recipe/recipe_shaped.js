@@ -1,6 +1,131 @@
 ServerEvents.recipes(event => {
 
     event.shaped(
+        Item.of("endrem:undead_eye", 1),
+        [
+            'CCC',
+            'CAC',
+            'CCC'
+        ],
+        {
+            A: 'kubejs:necroplasm',
+            C: 'minecraft:rotten_flesh'
+        }
+    )
+
+
+    event.shaped(
+        Item.of('reveriefoundry:gale_spinner_template', 1),
+        [
+            ' B ',
+            'BAB',
+            ' B '
+        ],
+        {
+            A: 'kubejs:necroplasm',
+            B: 'silentgear:template_board'
+        }
+    )
+
+    event.shaped(
+        Item.of('reveriefoundry:gale_spinner_blueprint', 1),
+        [
+            ' B ',
+            'BAB',
+            ' B '
+        ],
+        {
+            A: 'kubejs:necroplasm',
+            B: 'silentgear:blueprint_paper'
+        }
+    )
+
+
+    event.shaped(
+        Item.of('silentgear:trident_blueprint', 1),
+        [
+            'BBB',
+            ' A ',
+            ' B '
+        ],
+        {
+            A: 'minecraft:heart_of_the_sea',
+            B: 'silentgear:blueprint_paper'
+        }
+    )
+
+
+    event.shaped(
+        Item.of('apothic_enchanting:raven_enchanting_table', 1),
+        [
+            ' A ',
+            'CBC',
+            'CCC'
+        ],
+        {
+            A: 'kubejs:ashes_of_calamity',
+            B: 'apothic_enchanting:apothic_enchanting_table',
+            C: 'minecraft:obsidian'
+        }
+    )
+
+    event.shaped(
+        Item.of('reveriefoundry:flight_charm', 4),
+        [
+            ' A ',
+            ' B ',
+            '   '
+        ],
+        {
+            A: 'minecraft:string',
+            B: 'malum:refined_brilliance'
+        }
+    )
+
+    event.shaped(
+        Item.of('minecraft:heart_of_the_sea', 1),
+        [
+            'ACA',
+            'CBC',
+            'ACA'
+        ],
+        {
+            A: '#c:glass_blocks',
+            B: 'minecraft:lapis_lazuli',
+            C: '#c:foods/raw_fish'
+        }
+    )
+
+    event.shaped(
+        Item.of('silentgear:recrystallizer', 1),
+        [
+            ' D ',
+            'BCB',
+            'BAB'
+        ],
+        {
+            A: 'minecraft:gold_block',
+            B: 'minecraft:iron_ingot',
+            C: 'minecraft:diamond',
+            D: 'minecraft:emerald'
+        }
+    )
+
+    event.shaped(
+        Item.of('irons_spellbooks:cinder_essence', 3),
+        [
+            'BAB',
+            'ACA',
+            'BAB'
+        ],
+        {
+            A: 'minecraft:blaze_powder',
+            B: 'irons_spellbooks:arcane_essence',
+            C: 'minecraft:netherite_scrap'
+        }
+    )
+
+    event.shaped(
         Item.of('allthemodium:teleport_pad', 1),
         [
             ' A ',
@@ -160,19 +285,6 @@ ServerEvents.recipes(event => {
         }
     )
     event.shaped(
-        Item.of('irons_spellbooks:inscription_table', 1),
-        [
-            '  B',
-            'AAA',
-            'C C'
-        ],
-        {
-            A: '#malum:runewood_slabs',
-            B: 'minecraft:book',
-            C: '#minecraft:wooden_fences'
-        }
-    )
-    event.shaped(
         Item.of('kubejs:berkelium_ingot', 1),
         [
             'ACA',
@@ -181,7 +293,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'eternal_starlight:saltpeter_powder',
-            B: 'minecraft:iron_ingot',
+            B: '#kubejs:ingots/tier_1',
             C: 'minecraft:gunpowder'
         }
     )
@@ -336,20 +448,7 @@ ServerEvents.recipes(event => {
         {
             A: 'kubejs:meat',
             B: 'netherexp:wraithing_flesh',
-            C: 'malum:living_flesh'
-        }
-    )
-    event.shaped(
-        Item.of('kubejs:nlatstone_ingot', 1),
-        [
-            'ABA',
-            'BCB',
-            'ABA'
-        ],
-        {
-            A: 'minecraft:glowstone',
-            B: 'eternal_starlight:golem_steel_ingot',
-            C: 'alltheores:steel_ingot'
+            C: '#minecraft:meat'
         }
     )
     event.shaped(
@@ -376,19 +475,7 @@ ServerEvents.recipes(event => {
             C: 'create:bar_of_chocolate'
         }
     )
-    event.shaped(
-        Item.of('kubejs:thulium_ingot', 1),
-        [
-            ' B ',
-            'BCB',
-            ' A '
-        ],
-        {
-            A: 'minecraft:fire_charge',
-            B: 'alltheores:fluorite_dust',
-            C: 'minecraft:iron_ingot'
-        }
-    )
+
     event.shaped(
         Item.of('minecraft:suspicious_gravel', 1),
         [
@@ -414,18 +501,6 @@ ServerEvents.recipes(event => {
         }
     )
     event.shaped(
-        Item.of('kubejs:zapolgium_ingot', 1),
-        [
-            'A A',
-            ' B ',
-            'A A'
-        ],
-        {
-            A: 'create:weathered_iron_block',
-            B: 'minecraft:iron_ingot'
-        }
-    )
-    event.shaped(
         Item.of('kubejs:soul', 1),
         [
             ' A ',
@@ -439,20 +514,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    /*
-    event.shaped(
-        Item.of('naraka:imitation_gold_block', 1),
-        [
-            'AAA',
-            'ABA',
-            'AAA'
-        ],
-        {
-            A: 'minecraft:iron_ingot',
-            B: 'minecraft:yellow_dye',
-        }
-    )
-    */
     event.shaped(
         Item.of('kubejs:foul_flesh', 8),
         [
@@ -480,19 +541,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    event.shaped(
-        Item.of('kubejs:echo_ingot', 1),
-        [
-            'CCC',
-            'CBC',
-            'AAA'
-        ],
-        {
-            A: 'minecraft:sculk_catalyst',
-            B: 'kubejs:necroplasm',
-            C: 'minecraft:sculk',
-        }
-    )
     event.shaped(
         Item.of('terra_entity:amber_whip', 1),
         [
@@ -826,7 +874,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'minecraft:enchanted_book',
-            B: 'minecraft:iron_ingot',
+            B: '#kubejs:ingots/tier_1',
             C: 'kubejs:soul_of_night'
         }
     )
@@ -1082,7 +1130,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'minecraft:stick',
-            B: 'minecraft:iron_ingot',
+            B: '#kubejs:ingots/tier_1',
             C: 'minecraft:emerald'
         }
     )
@@ -1096,7 +1144,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'minecraft:stick',
-            B: 'minecraft:iron_ingot',
+            B: '#kubejs:ingots/tier_1',
             C: 'minecraft:emerald'
         }
     )
@@ -1110,7 +1158,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'minecraft:stick',
-            B: 'minecraft:iron_ingot',
+            B: '#kubejs:ingots/tier_1',
             C: 'minecraft:emerald'
         }
     )
@@ -1372,7 +1420,7 @@ ServerEvents.recipes(event => {
             '  B'
         ],
         {
-            A: 'minecraft:iron_ingot',
+            A: '#kubejs:ingots/tier_1',
             B: 'minecraft:stick',
             C: '#minecraft:planks'
         }
@@ -1668,18 +1716,114 @@ ServerEvents.recipes(event => {
         }
     )
 
+
     event.shaped(
-        Item.of('productivelib:upgrade_time', 1),
+        Item.of('refinedstorage:4096b_fluid_storage_part', 1),
         [
-            ' B ',
             'BAB',
-            ' B '
+            'DCD',
+            'BDB'
         ],
         {
-            A: 'productivelib:upgrade_base',
-            B: 'minecraft:clock',
+            A: 'refinedstorage:quartz_enriched_iron',
+            B: 'refinedstorage:advanced_processor',
+            C: 'refinedstorage:1024b_fluid_storage_part',
+            D: 'minecraft:redstone'
         }
     )
 
 
+    event.shaped(
+        Item.of('waystones:waystone', 2),
+        [
+            'BBB',
+            'BAB',
+            'BBB'
+        ],
+        {
+            A: 'waystones:waystone',
+            B: '#minecraft:stone_crafting_materials'
+        }
+    )
+
+    event.shaped(
+        Item.of('alloy_forgery:end_stone_bricks_forge_controller', 1),
+        [
+            'BBB',
+            'BAB',
+            'BCB'
+        ],
+        {
+            A: 'minecraft:blast_furnace',
+            B: 'minecraft:end_stone_bricks',
+            C: 'kubejs:necroplasm'
+        }
+    )
+
+    event.shaped(
+        Item.of('alloy_forgery:polished_blackstone_forge_controller', 1),
+        [
+            'BBB',
+            'BAB',
+            'BCB'
+        ],
+        {
+            A: 'minecraft:blast_furnace',
+            B: 'minecraft:polished_blackstone',
+            C: 'minecraft:netherite_scrap'
+        }
+    )
+
+    event.shaped(
+        Item.of('alloy_forgery:prismarine_bricks_forge_controller', 1),
+        [
+            'BBB',
+            'BAB',
+            'BCB'
+        ],
+        {
+            A: 'minecraft:blast_furnace',
+            B: 'minecraft:prismarine_bricks',
+            C: 'minecraft:netherite_scrap'
+        }
+    )
+
+    event.shaped(
+        Item.of('alloy_forgery:bricks_forge_controller', 1),
+        [
+            'BBB',
+            'BAB',
+            'BBB'
+        ],
+        {
+            A: 'minecraft:blast_furnace',
+            B: 'minecraft:bricks'
+        }
+    )
+
+    event.shaped(
+        Item.of('alloy_forgery:deepslate_bricks_forge_controller', 1),
+        [
+            'BBB',
+            'BAB',
+            'BBB'
+        ],
+        {
+            A: 'minecraft:blast_furnace',
+            B: 'minecraft:deepslate_bricks'
+        }
+    )
+
+    event.shaped(
+        Item.of('alloy_forgery:stone_bricks_forge_controller', 1),
+        [
+            'BBB',
+            'BAB',
+            'BBB'
+        ],
+        {
+            A: 'minecraft:blast_furnace',
+            B: 'minecraft:stone_bricks'
+        }
+    )
 })

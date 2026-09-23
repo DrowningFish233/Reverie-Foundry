@@ -63,6 +63,20 @@
           "trait": "kubejs:achroous_ingot"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:plague"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:achroous_ingot"
+        }
+      ]
     }
   }
 }

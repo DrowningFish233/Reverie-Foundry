@@ -62,6 +62,20 @@
           "trait": "kubejs:polonium_ingot"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:pearl"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:polonium_ingot"
+        }
+      ]
     }
   }
 }

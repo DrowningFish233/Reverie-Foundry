@@ -12,7 +12,7 @@
 	#The permission system to use for everything that requires permission checks (e.g. permission_api, ftb_ranks, luck_perms, prometheus). Non-built-in permission systems can be registered through the API with an addon.
 	permissionSystem = "prometheus"
 	#The player party system to prefer and use for anything that can't support multiple systems (e.g. default, ftb_teams, argonauts, argonauts_guilds). Non-built-in party systems can be registered through the API with an addon.
-	primaryPartySystem = "argonauts_guilds"
+	primaryPartySystem = "ftb_teams"
 	#The maximum number of player groups that a player can create in their config. Bonus group limits can be configured for individual players in their config.
 	#This value can be overridden with a player permission.
 	# Default: 16
@@ -138,7 +138,7 @@
 		#Allowed Values: NOT_SYNCED, OWNED_ONLY, ALL
 		claimsSynchronization = "ALL"
 		#Whether to display "welcome" messages when a player enters a claim or wilderness. Not recommended to turn off unless you have another mod handling this.
-		claimWelcomeMessages = true
+		claimWelcomeMessages = false
 		#Whether parties from the primary party system (option "primaryPartySystem") should act as owners of claims.
 		#The technical owner of a party's claims is still a player: the party owner.
 		#Party members who are at least the rank equivalent of Claimer can claim and unclaim as the party (owner).

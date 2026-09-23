@@ -70,6 +70,138 @@
           "trait": "silentgear:heat_resistant"
         }
       ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.2
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flame_ward"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:fluxing"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:heat_resistant"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flame_ward"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:fluxing"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:heat_resistant"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flame_ward"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:fluxing"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:heat_resistant"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:fluxing"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flame_ward"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:fireproof"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:heat_resistant"
+        }
+      ]
     }
   }
 }

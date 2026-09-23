@@ -61,6 +61,20 @@
                     "trait": "kubejs:black_steel_ingot"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:black_steel_ingot"
+                }
+            ]
         }
     }
 }

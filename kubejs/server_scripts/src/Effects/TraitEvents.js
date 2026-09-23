@@ -1551,7 +1551,7 @@ RFTrait('kubejs:genericluck', 0)
             const minBonus = 5;
             const effectiveBonus = Math.max(minBonus, bonusPercent);
             const bonusDamage = (effectiveBonus / 100);
-            new_damage(event, STAGE.FLAT, bonusDamage);
+            new_damage(event, STAGE.ADDITIVE, bonusDamage);
             spawnParticles_witch(entity, attacker);
         }
     })
@@ -1708,7 +1708,7 @@ RFTrait('kubejs:dragonsteel_fire_ingot', 0)
         entity.potionEffects.add("kubejs:dragonsteel_armor_break", 20 * 30, armorBreakLevel);
         entity.potionEffects.add("kubejs:bleed", 20 * 5, 0);
         let currentArmor = entity.getArmorValue()
-        if (currentArmor <= 0 && !entity.hasEffect("kubejs:dragonsteel_ignite")) {
+        if (currentArmor <= 0) {
             entity.setRemainingFireTicks(20 * 60)
         }
         if (currentArmor <= 0 && (entity.isOnFire() || entity.isInLava())) {
@@ -2941,6 +2941,31 @@ RFTrait('kubejs:chalyblux', 70)
         const chance = 0.1 * traitLevel;
         if (Math.random() < chance) {
             fu_addSoulWard(entity, traitLevel);
+        }
+    })
+    .register();
+
+
+
+RFTrait('kubejs:silver_ingot', 0)
+    .beforeHurt(event => {
+        const { source, entity } = event;
+        const attacker = source.player || source.actual;
+
+        if (!attacker || !attacker.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:silver_ingot")) {
+            return;
+        }
+
+        const traitLevel = fu_getHighestTraitLevelAnywhere(attacker, "kubejs:silver_ingot");
+
+        const existingEffect = entity.getEffect("kubejs:forging");
+        if (!existingEffect) {
+            const duration = traitLevel * 20;
+            entity.potionEffects.add("kubejs:forging", duration, 0);
+        } else {
+            const currentAmplifier = existingEffect.getAmplifier();
+            const currentDuration = existingEffect.getDuration();
+            entity.potionEffects.add("kubejs:forging", currentDuration, currentAmplifier + 1);
         }
     })
     .register();

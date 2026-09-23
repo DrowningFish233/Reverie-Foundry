@@ -86,6 +86,12 @@
           "trait": "silentgear:lustrous"
         }
       ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 2
+      }
     }
   }
 }

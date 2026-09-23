@@ -66,6 +66,25 @@
           "trait": "kubejs:calamatium_ingot"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:fire_spell_power"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:fiery"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:calamatium_ingot"
+        }
+      ]
     }
   }
 }

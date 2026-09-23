@@ -58,6 +58,20 @@
                     "trait": "silentgear:heat_resistant"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "kubejs:ignitium_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:heat_resistant"
+                }
+            ]
         }
     }
 }

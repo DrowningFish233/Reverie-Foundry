@@ -63,6 +63,20 @@
 					"trait": "silentgear:soft"
 				}
 			]
+		},
+		"silentgear:binding": {
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:gravity_anchor"
+				},
+				{
+					"conditions": [],
+					"level": 2,
+					"trait": "silentgear:soft"
+				}
+			]
 		}
 	}
 }

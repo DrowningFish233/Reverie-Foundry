@@ -62,6 +62,81 @@
           "trait": "silentgear:flame_ward"
         }
       ]
+    },
+    "silentgear:rod": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 4
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "magic_armor": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "traits": []
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 0.5
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:heat_resistant"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flame_ward"
+        }
+      ]
     }
   }
 }

@@ -12,7 +12,7 @@
 		MobFarmTypes = []
 		#If enabled, Does Potato Tick will keep tracking if your worlds have mob farms of enemies.
 		#Require game restart to take effect.
-		DetectEnemies = true
+		DetectEnemies = false
 
 		[DoesPotatoTickConfig."Entity Ticking Settings"."General Toggle Settings"]
 			#Master switch for the entity optimization system. Disable to turn off all optimizations.

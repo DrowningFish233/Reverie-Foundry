@@ -1,0 +1,7 @@
+{
+  "material": "minecraft:polished_blackstone",
+  "additional_materials": [
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:chiseled_polished_blackstone"
+  ]
+}

@@ -1,6 +1,9 @@
 {
   "_comment": "Presets replace vanilla structures with Moogs ones. Spacing multipliers make structures rarer (higher) or denser (lower); effective = universal x per_mod x per_structure. Changes apply on world reload and only affect newly generated chunks.",
   "presets": {
+    "mns": {
+      "replace_nether_fortress": false
+    },
     "mtr": {
       "replace_desert_temple": false,
       "replace_jungle_temple": false,

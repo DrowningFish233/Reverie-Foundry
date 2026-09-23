@@ -10,7 +10,6 @@ const BOSS_MOBS = [
     ["astage/boss/skeletron", "terra_entity:skeletron", "first_kill_dead_king"],
     ["astage/boss/lich", "bosses_of_mass_destruction:lich", "first_kill_dead_king"],
     //下界戈伯后
-    ["astage/boss/gauntlet", "bosses_of_mass_destruction:gauntlet", "first_kill_skeletron"],
     ["astage/boss/fire_boss", "irons_spellbooks:fire_boss", "first_kill_skeletron"],
     ["astage/boss/netherite_ministrosity", "cataclysm:netherite_ministrosity", "first_kill_skeletron"],
     ["astage/boss/the_harbinger", "cataclysm:the_harbinger", "first_kill_skeletron"],

@@ -31,7 +31,7 @@
       "armor/leggings": 4.0,
       "armor_durability": 13.0,
       "attack_damage": 3.0,
-      "attack_speed": 0.0,
+      "attack_speed": 0.2,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,
       "charging_value": 0.7,
@@ -45,11 +45,89 @@
         "name": "stone/石"
       },
       "magic_armor": 6.0,
-      "magic_damage": 1.0,
+      "magic_damage": 3.0,
       "projectile_accuracy": 1.1,
       "projectile_speed": 1.0,
       "ranged_damage": 0.0,
       "rarity": 20.0,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:boron_ingot"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "attack_speed": {
+        "operation": "ADD",
+        "value": -0.1
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.5
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.5
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:boron_ingot"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.9
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.20
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:boron_ingot"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:boron_ingot"
+        }
+      ]
+    },
+    "silentgear:binding": {
       "traits": [
         {
           "conditions": [],

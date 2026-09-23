@@ -65,6 +65,25 @@
           "trait": "silentgear:magnetic"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:fortunate"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:holy"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:magnetic"
+        }
+      ]
     }
   }
 }

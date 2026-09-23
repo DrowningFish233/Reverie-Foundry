@@ -70,6 +70,137 @@
           "trait": "kubejs:lunium_nova_ingot"
         }
       ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.3
+      },
+      "charging_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      },
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 1.0
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 50
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:lunium_nova"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.3
+            }
+          ],
+          "level": 1,
+          "trait": "silentgear:moonwalker"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:lunium_nova_ingot"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:lunium_nova"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.3
+            }
+          ],
+          "level": 2,
+          "trait": "silentgear:moonwalker"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:lunium_nova"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.3
+            }
+          ],
+          "level": 2,
+          "trait": "silentgear:moonwalker"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:lunium_nova_ingot"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:lunium_nova"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:material_ratio",
+              "ratio": 0.3
+            }
+          ],
+          "level": 2,
+          "trait": "silentgear:moonwalker"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:lunium_nova_ingot"
+        }
+      ]
     }
   }
 }

@@ -151,6 +151,19 @@
           "trait": "silentgear:soft"
         }
       ]
+    },
+    "silentgear:lining": {
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
     }
   }
 }

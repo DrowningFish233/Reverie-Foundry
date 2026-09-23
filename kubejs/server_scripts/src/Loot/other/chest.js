@@ -108,6 +108,39 @@ LootJS.lootTables(event => {
     }
 })
 
+/**下界铁掌战利品 */
+LootJS.lootTables(event => {
+    let roostTable = event.getLootTable("bosses_of_mass_destruction:chests/gauntlet");
+    if (roostTable) {
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('bosses_of_mass_destruction:blazing_eye').setCount([1, 1]))
+            pool.rolls([1, 1]);
+        });
+
+        roostTable.firstPool(pool => {
+            pool.addEntry(LootEntry.of('bosses_of_mass_destruction:brimstone_nectar').setCount([1, 1]))
+            pool.rolls([1, 1]);
+        });
+
+        roostTable.createPool(pool => {
+            pool.addEntry(LootEntry.of('minecraft:ancient_debris').withWeight(30).setCount([3, 9]))
+            pool.rolls([1, 2]);
+        });
+
+        roostTable.createPool(pool => {
+            pool.addEntry(LootEntry.of('bosses_of_mass_destruction:soul_star').withWeight(30).setCount([3, 9]))
+            pool.rolls([1, 2]);
+        });
+
+        roostTable.createPool(pool => {
+            pool.addEntry(LootEntry.of('create:blaze_cake').withWeight(30).setCount([2, 4]))
+            pool.rolls([1, 2]);
+        });
+
+    }
+})
+
+
 /**冰龙战利品 */
 LootJS.lootTables(event => {
     // 地表冰龙巢穴战利品表
@@ -120,6 +153,7 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of('iceandfire:frost_lily').withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("kubejs:meat").withWeight(50).setCount([1, 3]));
             pool.addEntry(LootEntry.of("fruitsdelight:pear_with_rock_sugar").withWeight(20).setCount([0, 1]));
+            pool.addEntry(LootEntry.of('iceandfire:dragonforge_ice_brick').withWeight(100).setCount([1, 6]));
             pool.rolls([2, 4]);
         });
 
@@ -168,13 +202,14 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of('iceandfire:frost_lily').withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("irons_spellbooks:frozen_bone").withWeight(50).setCount([0, 3]));
             pool.addEntry(LootEntry.of("kubejs:meat").withWeight(40).setCount([0, 2]));
-            pool.rolls([0, 2]);
+            pool.addEntry(LootEntry.of('iceandfire:dragonforge_ice_brick').withWeight(100).setCount([1, 6]));
+            pool.rolls([2, 4]);
         });
 
         caveTable.createPool(pool => {
             pool.addEntry(LootEntry.of("fruitsdelight:pear_with_rock_sugar").withWeight(40).setCount([0, 3]));
             pool.addEntry(LootEntry.of("create:experience_nugget").withWeight(60).setCount([0, 3]));
-            pool.rolls([0, 3]);
+            pool.rolls([1, 3]);
         });
 
         caveTable.createPool(pool => {
@@ -182,7 +217,7 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("irons_spellbooks:greater_healing_potion").withWeight(35).setCount([0, 1]));
             pool.addEntry(LootEntry.of("irons_spellbooks:oakskin_elixir").withWeight(35).setCount([0, 1]));
             pool.addEntry(LootEntry.of("irons_spellbooks:evasion_elixir").withWeight(30).setCount([0, 1]));
-            pool.rolls([0, 2]);
+            pool.rolls([1, 2]);
         });
 
         caveTable.createPool(pool => {
@@ -241,7 +276,8 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("iceandfire:fire_lily").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("kubejs:meat").withWeight(50).setCount([1, 3]));
             pool.addEntry(LootEntry.of('extradelight:aebleflaesk').withWeight(20).setCount([0, 1]));
-            pool.rolls([2, 4]);
+            pool.addEntry(LootEntry.of('iceandfire:dragonforge_fire_brick').withWeight(100).setCount([1, 6]));
+            pool.rolls([4, 7]);
         });
 
 
@@ -305,7 +341,8 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of("iceandfire:fire_lily").withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of('iceandfire:witherbone').withWeight(50).setCount([0, 3]));
             pool.addEntry(LootEntry.of("kubejs:meat").withWeight(40).setCount([0, 2]));
-            pool.rolls([0, 2]);
+            pool.addEntry(LootEntry.of('iceandfire:dragonforge_fire_brick').withWeight(100).setCount([1, 6]));
+            pool.rolls([4, 7]);
         });
 
 
@@ -381,7 +418,9 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of('iceandfire:lightning_lily').withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of("kubejs:meat").withWeight(50).setCount([1, 3]));
             pool.addEntry(LootEntry.of('extradelight:pasta_alfredo').withWeight(20).setCount([0, 1]));
-            pool.rolls([2, 4]);
+            pool.addEntry(LootEntry.of('iceandfire:dragonforge_lightning_brick').withWeight(100).setCount([1, 6]));
+
+            pool.rolls([4, 7]);
         });
 
         roostTable.createPool(pool => {
@@ -445,7 +484,8 @@ LootJS.lootTables(event => {
             pool.addEntry(LootEntry.of('iceandfire:lightning_lily').withWeight(5).setCount([0, 1]));
             pool.addEntry(LootEntry.of('hazennstuff:overgrown_bone').withWeight(50).setCount([0, 3]));
             pool.addEntry(LootEntry.of("kubejs:meat").withWeight(40).setCount([0, 2]));
-            pool.rolls([0, 2]);
+            pool.addEntry(LootEntry.of('iceandfire:dragonforge_lightning_brick').withWeight(100).setCount([1, 6]));
+            pool.rolls([4, 7]);
         });
 
         caveTable.createPool(pool => {

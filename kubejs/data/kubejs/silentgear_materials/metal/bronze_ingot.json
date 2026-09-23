@@ -59,6 +59,81 @@
           "trait": "silentgear:sharp"
         }
       ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:sharp"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:sharp"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:sharp"
+        }
+      ]
     }
   }
 }

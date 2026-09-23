@@ -151,7 +151,7 @@
 	#The median (most common, average) grade that a material grader with tier 1 catalyst will produce.
 	#Higher tier catalysts will increase the median by one grade per tier past 1 (if 1 = C, 2 = B, etc.)
 	#Allowed Values: NONE, E, D, C, B, A, S, SS, SSS, MAX
-	median_grade = "C"
+	median_grade = "B"
 	#The standard deviation of grades the material grader will produce.
 	#Grades are normally distributed, with the median grade being at the center of the bell curve.
 	#Larger numbers will make both higher and lower grades more common.

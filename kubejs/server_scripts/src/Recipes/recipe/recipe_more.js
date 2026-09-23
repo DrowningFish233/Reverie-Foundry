@@ -1,6 +1,21 @@
 ServerEvents.recipes(event => {
     //唉，自己写的mod还得自己remove掉配方重写，怎么汇逝
     const items = [
+        "endrem:undead_eye",
+        'reveriefoundry:gale_spinner_template',
+        'reveriefoundry:gale_spinner_blueprint',
+        'silentgear:trident_blueprint',
+        'silentgear:binding_blueprint',
+        'silentgear:binding_template',
+        'silentgear:coating_blueprint',
+        'silentgear:coating_template',
+        'silentgear:tip_blueprint',
+        'silentgear:tip_template',
+        'silentgear:coating_smithing_template',
+        'silentgear:recrystallizer',
+        'hazennstuff:sacred',
+        'hazennstuff:advanced',
+        'hazennstuff:refined',
         "reveriefoundry:magic_scythe_template",
         "reveriefoundry:magic_scythe_blueprint",
         "reveriefoundry:soul_hunter_helmet_blueprint",
@@ -22,9 +37,6 @@ ServerEvents.recipes(event => {
         'hazennstuff:abomination',
         'hazennstuff:strengthened',
         'reveriefoundry:pump_charge_shotgun_blueprint',
-        'productivelib:upgrade_time',
-        'productivelib:upgrade_time_2',
-        'productivelib:upgrade_stability',
         'reveriefoundry:summon_sword_template',
         'reveriefoundry:summon_sword_blueprint',
         'reveriefoundry:tiansha_star_blade_blueprint',
@@ -82,19 +94,8 @@ ServerEvents.recipes(event => {
         'extradelight:netherite_spoon',
         'silentgear:nether_star_fragment',
         'iceandfire:ambrosia',
-        'productivemetalworks:plate_cast',
         'silentgear:super_mixer',
         'minecraft:lodestone',
-        'irons_spellbooks:iron_spell_book',
-        'irons_spellbooks:copper_spell_book',
-        'irons_spellbooks:ice_spell_book',
-        'irons_spellbooks:cursed_doll_spell_book',
-        'irons_spellbooks:netherite_spell_book',
-        'irons_spellbooks:gold_spell_book',
-        'irons_spellbooks:diamond_spell_book',
-        'irons_spellbooks:dragonskin_spell_book',
-        'irons_spellbooks:druidic_spell_book',
-        'irons_spellbooks:inscription_table',
         'apothic_enchanting:occult_ender_lead',
         'endrem:exotic_eye',
         'silentgear:metal_press',
@@ -102,20 +103,25 @@ ServerEvents.recipes(event => {
         'terra_curio:mechanical_glove',
         'terra_curio:sniper_scope',
         'silentgems:garnet_teleporter',
-        'hazennstuff:scroll_sheath',
-        'productivemetalworks:gear_cast'
+        'hazennstuff:scroll_sheath'
     ]
 
     singleItems.forEach(item => event.remove({ output: item }))
     event.remove({ output: '#alltheores:ore_hammers' })
     event.remove({ output: 'malum:malignant_pewter_ingot' })
     event.remove({ output: 'allthemodium:teleport_pad' })
+
+    //event.remove({ output: 'alloy_forgery:stone_bricks_forge_controller' })
+    //event.remove({ output: 'alloy_forgery:deepslate_bricks_forge_controller' })
+    //event.remove({ output: 'alloy_forgery:bricks_forge_controller' })
+    //event.remove({ output: 'alloy_forgery:prismarine_bricks_forge_controller' })
+    //event.remove({ output: 'alloy_forgery:polished_blackstone_forge_controller' })
+    //event.remove({ output: 'alloy_forgery:end_stone_bricks_forge_controller' })
+
     event.remove({ input: '#alltheores:ore_hammers' })
-    event.remove({ id: 'productivemetalworks:alloying/molten_signalum' })
     event.remove({ id: 'hazennstuff:crafting/materials/deus_essence_from_nether_star' })
     event.remove({ id: 'jbr:smooth_quartz_from_blasting_quartz' })
     event.remove({ id: 'hazennstuff:crafting/materials/nether_star_fragment' })
-    event.remove({ mod: 'productivelib' })
     event.smelting('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)
     event.smoking('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)
     event.campfireCooking('kubejs:cooked_manflesh', 'kubejs:raw_manflesh').xp(0.1).cookingTime(20 * 8)

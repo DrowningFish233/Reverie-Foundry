@@ -49,7 +49,77 @@
       "projectile_speed": 1.0,
       "ranged_damage": 0.0,
       "rarity": 7.0,
-      "traits": []
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:silicon_rod"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "rarity": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.25
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.15
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:silicon_rod"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.75
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.25
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:silicon_rod"
+        }
+      ]
     }
   }
 }

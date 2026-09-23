@@ -6,6 +6,9 @@ enabledOnMacOS = false
 enabledOnLinux = true
 #Specifies whether to enable the mod on other platforms
 enabledOnOtherPlatforms = true
+#Enable to allow busy-waiting in the framerate limiter, which improves FPS stability. Disable for lower CPU usage.
+#This option has no effect on 26.1 and above.
+allowBusyWaitInFramerateLimiter = true
 #Enable to use some experimental GLFW state cache, which may improve performance with some mods
 aggressiveCaching = false
 #Enable to use a more flexible threading model, which improves performance while obeying threading requirements of the underlying operating system.

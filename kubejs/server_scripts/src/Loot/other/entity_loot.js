@@ -7,7 +7,7 @@ LootJS.modifiers(event => {
         "minecraft:trader_llama",
         "minecraft:player"
     ]).addLoot(LootEntry.of("kubejs:meat")
-        .randomChance(0.5)
+        .randomChance(0.95)
         .when(c => c.matchMainHand(ItemFilter.hasEnchantment("minecraft:looting")))
     );
     event.addEntityModifier([
@@ -39,11 +39,7 @@ LootJS.modifiers(event => {
             .matchWeather(true, true)
         );
 
-    event.addEntityModifier([
-        "minecraft:ender_dragon"
-    ]).addLoot(LootEntry.of("kubejs:mimicream")
-        .randomChance(0.6)
-    );
+
 
     event.addEntityModifier([
         "bosses_of_mass_destruction:void_blossom"
@@ -224,7 +220,7 @@ LootJS.modifiers(event => {
         "terra_entity:skeletron"
     ]).addLoot(LootEntry.of('kubejs:viculeam_ingot')
         .apply(item => {
-            item.setCount({ min: 2, max: 5 })
+            item.setCount({ min: 3, max: 8 })
         })
     );
 
@@ -490,6 +486,7 @@ LootJS.modifiers(event => {
         .randomChance(0.75)
     );
 
+
 });
 
 
@@ -624,3 +621,85 @@ LootJS.modifiers(event => {
     );
 });
 
+
+
+LootJS.modifiers(event => {
+    event.addEntityModifier([
+        "irons_spellbooks:fire_boss"
+    ])
+        .addLoot(
+            LootEntry.alternative(
+                LootEntry.of('hazennstuff:tyros_loot_bag').apply(item => {
+                    item.setCount({ min: 1, max: 2 });
+                })
+            )
+        );
+
+    event.addEntityModifier([
+        "netherexp:wisp",
+        "netherexp:apparition",
+        "netherexp:vessel"
+    ])
+        .addLoot(
+            LootEntry.alternative(
+                LootEntry.of('iceandfire:ectoplasm').apply(item => {
+                    item.setCount({ min: 1, max: 2 });
+                })
+            )
+        );
+
+    event.addEntityModifier([
+        "irons_spellbooks:dead_king"
+    ])
+        .addLoot(
+            LootEntry.alternative(
+                LootEntry.of('irons_spellbooks:upgrade_orb').apply(item => {
+                    item.setCount({ min: 3, max: 9 });
+                })
+            )
+        );
+
+    event.addEntityModifier([
+        "irons_spellbooks:fire_boss"
+    ])
+        .addLoot(
+            LootEntry.alternative(
+                LootEntry.of('irons_spellbooks:upgrade_orb').apply(item => {
+                    item.setCount({ min: 6, max: 18 });
+                })
+            )
+        );
+
+    event.addEntityModifier([
+        "minecraft:ender_dragon"
+    ])
+        .addLoot(
+            LootEntry.alternative(
+                LootEntry.of("kubejs:mimicream").apply(item => {
+                    item.setCount({ min: 1, max: 3 });
+                })
+            )
+        );
+
+    event.addEntityModifier([
+        "terra_entity:eye_of_cthulhu"
+    ])
+        .addLoot(
+            LootEntry.alternative(
+                LootEntry.of('kubejs:stellar_ingot').apply(item => {
+                    item.setCount({ min: 3, max: 6 });
+                })
+            )
+        );
+
+    event.addEntityModifier([
+        "cataclysm:ancient_remnant"
+    ])
+        .addLoot(
+            LootEntry.alternative(
+                LootEntry.of('kubejs:ancient_remnant_bone').apply(item => {
+                    item.setCount({ min: 3, max: 6 });
+                })
+            )
+        );
+});

@@ -190,6 +190,40 @@
                     "trait": "silentgear:soft"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [
+                        {
+                            "type": "silentgear:material_ratio",
+                            "ratio": 0.7
+                        }
+                    ],
+                    "level": 1,
+                    "trait": "silentgear:brilliant"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:strikesoul"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:hallowed_gold_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:soft"
+                }
+            ]
         }
     }
 }

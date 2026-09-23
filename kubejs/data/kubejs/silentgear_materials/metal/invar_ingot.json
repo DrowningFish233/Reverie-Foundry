@@ -81,6 +81,113 @@
           "trait": "kubejs:dropped_experience"
         }
       ]
+    },
+    "silentgear:rod": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.5
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.20
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:adamant"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.35
+                }
+              ]
+            }
+          ],
+          "level": 2,
+          "trait": "silentgear:adamant"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:dropped_experience"
+        }
+      ]
     }
   }
 }

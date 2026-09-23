@@ -62,6 +62,108 @@
           "trait": "kubejs:overload"
         }
       ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:set_ponder"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:overload"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:set_ponder"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:overload"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.2
+      },
+      "attack_damage": [
+        {
+          "operation": "ADD",
+          "value": 5.0
+        },
+        {
+          "operation": "MULTIPLY_BASE",
+          "value": -0.05
+        }
+      ],
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "armor": {
+        "operation": "ADD",
+        "value": -4
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:set_ponder"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:overload"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:set_ponder"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:overload"
+        }
+      ]
     }
   }
 }

@@ -7,19 +7,26 @@
 const MaterialConfigs = {
     enabled: true, // 设为false可禁用生成
     auto_ingot12: {
-        id: 'malum:refined_soulstone',
+        id: 'kubejs:ancient_remnant_bone',
         config: (mat) => {
-            mat.setCategories(["gem", "advanced"])
-                .setIngredientItem('malum:refined_soulstone')
-                .setDisplayColor("#913c9f")
-                .setName("material.silentgear.malum:refined_soulstone")
+            mat.setCategories(["bone", "advanced"])
+                .setIngredientItem('kubejs:ancient_remnant_bone')
+                .setDisplayColor("#f1dcd5")
+                .setName("material.silentgear.kubejs:ancient_remnant_bone")
 
                 // 握把
-                .addGrip((/** @type {PartBuilder} */part) => {
+                .addRod((/** @type {PartBuilder} */part) => {
                     part
-                        .magicDamageWithOperation("MULTIPLY_BASE", 0.15)   // 魔法伤害 +15%
-                        .durabilityWithOperation("MULTIPLY_BASE", -0.15)   // 耐久 -15%
-                        .addTrait("kubejs:soul_consumption", 1)            // 特性
+                        .attackDamageWithOperation("ADD", 5)
+                        .attackDamageWithOperation("MULTIPLY_BASE", 0.15)
+                        .magicDamageWithOperation("ADD", 3)
+                        .magicDamageWithOperation("MULTIPLY_BASE", 0.15)
+                        .durabilityWithOperation("ADD", 200)
+                        .durabilityWithOperation("MULTIPLY_BASE", -0.3)
+                        .rangedDamageWithOperation("MULTIPLY_BASE", 0.25)
+                        .rarityWithOperation("ADD", 50)
+                        .forgePositiveChanceWithOperation("ADD", 20)
+                        .addTrait("kubejs:remnant_possession", 1)
                 })
         }
     }
@@ -37,7 +44,7 @@ const TraitConfigs = {
     enabled: true,
 
     soul_conversion: {
-        id: "kubejs:soul_conversion",
+        id: "kubejs:remnant_possession",
         config: (trait) => {
             trait.setMaxLevel(1);
         }

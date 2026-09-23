@@ -730,4 +730,21 @@ StartupEvents.registry("champions:affix", event => {
                 }
             });
         });
+
+    event.create('butterfly_funeral')
+        .settings(setting => {
+            setting.withDefault()
+                .setPrefix("affix.")
+                .setCategory("offense")
+        })
+        .behavior(behavior => {
+            behavior.onAttack((champion, player, damageSource, amount) => {
+                if (!player || !player.isPlayer()) return false;
+
+                const duration = (2 + Math.floor(Math.random() * 2)) * 20;
+                player.potionEffects.add("reveriefoundry:butterfly_funeral", duration, 0);
+
+                return true;
+            });
+        })
 })

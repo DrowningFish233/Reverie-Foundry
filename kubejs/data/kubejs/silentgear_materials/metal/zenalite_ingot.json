@@ -54,6 +54,15 @@
                     "trait": "kubejs:arcane_ingot"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 4,
+                    "trait": "kubejs:arcane_ingot"
+                }
+            ]
         }
     }
 }

@@ -1,0 +1,8 @@
+{
+	"allowHigherTierOutput": true,
+	"allowBlastingFurnaceAdaption": true,
+	"baseInputAmount": 2,
+	"higherTierOutputIncrease": 1,
+	"darkModeTheme": false,
+	"strictRecipeChecks": true
+}

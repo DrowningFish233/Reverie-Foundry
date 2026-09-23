@@ -60,6 +60,95 @@
           "trait": "silentgear:bounce"
         }
       ]
+    },
+    "silentgear:rod": {
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.6
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.3
+      },
+      "magic_armor": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:bounce"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:radiance"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:bounce"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:radiance"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:bounce"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:radiance"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:radiance"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:bounce"
+        }
+      ]
     }
   }
 }

@@ -18,4 +18,4 @@ generate_projectile_particle = true
 #Allowed Values: CLOUD, RECT
 npc_chat_bubble_style = "RECT"
 #Enable Entity Motion Blur.
-enable_entity_motion_blur = true
+enable_entity_motion_blur = false

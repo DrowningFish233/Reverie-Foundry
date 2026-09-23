@@ -66,6 +66,25 @@
           "trait": "silentgear:chipping"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:bending"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:brilliant"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:chipping"
+        }
+      ]
     }
   }
 }

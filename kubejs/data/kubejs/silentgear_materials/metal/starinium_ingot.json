@@ -72,6 +72,25 @@
           "trait": "kubejs:blood_spell_power"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:starinium_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "kubejs:vorant_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:blood_spell_power"
+        }
+      ]
     }
   }
 }

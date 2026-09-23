@@ -179,6 +179,12 @@ ServerEvents.recipes(event => {
             .addIngredient('#kubejs:soul_item')
             .addIngredient('kubejs:necroplasm')
     );
+
+    registerTerraCurioRecipe(
+        new TerraCurioWorkshopRecipeJSON('terra_curio:mechanical_glove')
+            .addIngredient('terra_curio:power_glove')
+            .addIngredient('kubejs:avenger_emblem')
+    );
 });
 
 

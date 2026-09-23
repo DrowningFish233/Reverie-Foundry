@@ -49,7 +49,15 @@
         "#5f403a",
         "#3d2a26",
         "#5f403a"
-      ]
+      ],
+      "specialEffect": "fireflies_2",
+      "effectSettings": {
+        "nebula": {
+          "intensity": 1.0,
+          "density": 1.0,
+          "twist": 1.0
+        }
+      }
     },
     {
       "texture": "kubejs:textures/overlay/farmersdelight.png",
@@ -60,7 +68,8 @@
         "#5f403a",
         "#3d2a26",
         "#5f403a"
-      ]
+      ],
+      "specialEffect": "fireflies_2"
     },
     {
       "texture": "kubejs:textures/overlay/farmersdelight.png",
@@ -71,7 +80,8 @@
         "#5f403a",
         "#3d2a26",
         "#5f403a"
-      ]
+      ],
+      "specialEffect": "fireflies_2"
     },
     {
       "texture": "kubejs:textures/overlay/irons_spellbooks.png",
@@ -83,7 +93,24 @@
         "#f5ca79",
         "#ffb868"
       ],
-      "specialEffect": "nebula"
+      "specialEffect": "fluorite",
+      "effectSettings": {
+        "stars": {
+          "speed": 2.039801
+        }
+      }
+    },
+    {
+      "texture": "kubejs:textures/overlay/irons_spellbooks.png",
+      "namespace": "cataclysm_spellbooks",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#fcdc89",
+        "#f5ca79",
+        "#ffb868"
+      ],
+      "specialEffect": "fluorite"
     },
     {
       "texture": "kubejs:textures/overlay/irons_spellbooks.png",
@@ -95,7 +122,7 @@
         "#f5ca79",
         "#ffb868"
       ],
-      "specialEffect": "spiral"
+      "specialEffect": "fluorite"
     },
     {
       "texture": "kubejs:textures/overlay/irons_spellbooks.png",
@@ -107,13 +134,13 @@
         "#f5ca79",
         "#ffb868"
       ],
-      "specialEffect": "nebula"
+      "specialEffect": "fluorite"
     },
     {
       "texture": "kubejs:textures/overlay/iceandfire.png",
       "namespace": "iceandfire",
       "borderType": "gradient",
-      "specialEffect": "metal_shining",
+      "specialEffect": "steel_shining",
       "gradientType": "custom",
       "gradientColors": [
         "#f46c60",
@@ -176,7 +203,7 @@
     {
       "texture": "kubejs:textures/overlay/irons_spellbooks.png",
       "namespace": "hazennstuff",
-      "specialEffect": "cinder",
+      "specialEffect": "astral",
       "borderType": "gradient",
       "gradientType": "custom",
       "gradientColors": [
@@ -188,7 +215,7 @@
     {
       "texture": "kubejs:textures/overlay/irons_spellbooks.png",
       "namespace": "allthewizardgear",
-      "specialEffect": "cinder",
+      "specialEffect": "astral",
       "borderType": "gradient",
       "gradientType": "custom",
       "gradientColors": [
@@ -201,6 +228,7 @@
       "texture": "kubejs:textures/overlay/bosses_of_mass_destruction.png",
       "namespace": "bosses_of_mass_destruction",
       "borderType": "gradient",
+      "specialEffect": "searchlights",
       "gradientType": "custom",
       "gradientColors": [
         "#57596b",
@@ -224,27 +252,40 @@
       "texture": "kubejs:textures/overlay/eternal_starlight.png",
       "namespace": "eternal_starlight",
       "borderType": "gradient",
+      "specialEffect": "floating_stars",
       "gradientType": "custom",
       "gradientColors": [
         "#4b448c",
         "#7a5c8a",
         "#5f403a"
-      ]
+      ],
+      "effectSettings": {
+        "stars": {
+          "speed": 1.3432835
+        }
+      }
     },
     {
       "texture": "kubejs:textures/overlay/eternal_starlight.png",
       "namespace": "eternal_starlight_vo",
+      "specialEffect": "floating_stars",
       "borderType": "gradient",
       "gradientType": "custom",
       "gradientColors": [
         "#4b448c",
         "#7a5c8a",
         "#5f403a"
-      ]
+      ],
+      "effectSettings": {
+        "stars": {
+          "speed": 1.4427861
+        }
+      }
     },
     {
       "texture": "kubejs:textures/overlay/apothic_enchanting.png",
       "namespace": "apothic_enchanting",
+      "specialEffect": "opal",
       "borderType": "gradient",
       "gradientType": "custom",
       "gradientColors": [
@@ -280,7 +321,12 @@
         "kubejs:tequila",
         "kubejs:hangover_tea"
       ],
-      "specialEffect": "spiral"
+      "specialEffect": "cinder",
+      "effectSettings": {
+        "spiral": {
+          "speed": 1.9154229
+        }
+      }
     },
     {
       "tags": [
@@ -332,14 +378,20 @@
       "tags": [
         "malum:scythe"
       ],
-      "specialEffect": "spiral"
+      "specialEffect": "rim_light",
+      "effectSettings": {
+        "spiral": {
+          "intensity": 1.0,
+          "speed": 1.0
+        }
+      }
     },
     {
       "items": [
         "kubejs:soul_of_night",
         "kubejs:soul_of_light"
       ],
-      "specialEffect": "white_dust"
+      "specialEffect": "echo"
     },
     {
       "items": [
@@ -372,6 +424,18 @@
     },
     {
       "texture": "kubejs:textures/overlay/silentgear.png",
+      "namespace": "silentgems",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#5685fa",
+        "#4c4fb5",
+        "#421970"
+      ],
+      "specialEffect": "shield"
+    },
+    {
+      "texture": "kubejs:textures/overlay/silentgear.png",
       "namespace": "silentgear",
       "borderType": "gradient",
       "gradientType": "custom",
@@ -379,7 +443,8 @@
         "#5685fa",
         "#4c4fb5",
         "#421970"
-      ]
+      ],
+      "specialEffect": "shield"
     },
     {
       "texture": "kubejs:textures/overlay/silentgear.png",
@@ -390,7 +455,8 @@
         "#5685fa",
         "#4c4fb5",
         "#421970"
-      ]
+      ],
+      "specialEffect": "shield"
     },
     {
       "texture": "kubejs:textures/overlay/create.png",
@@ -401,7 +467,20 @@
         "#fcdc89",
         "#c6a566",
         "#916e44"
-      ]
+      ],
+      "specialEffect": "sunbeams"
+    },
+    {
+      "texture": "kubejs:textures/overlay/create.png",
+      "namespace": "createaddition",
+      "borderType": "gradient",
+      "gradientType": "custom",
+      "gradientColors": [
+        "#fcdc89",
+        "#c6a566",
+        "#916e44"
+      ],
+      "specialEffect": "sunbeams"
     },
     {
       "texture": "kubejs:textures/overlay/malum.png",
@@ -413,14 +492,26 @@
         "#5e479b",
         "#4c2367"
       ],
-      "specialEffect": "nebula"
+      "specialEffect": "rim_light",
+      "effectSettings": {
+        "opal": {
+          "speed": 2.5,
+          "density": 1.0,
+          "variation": 19.0,
+          "distortion": 1.0
+        }
+      }
+    },
+    {
+      "namespace": "aquaculture",
+      "specialEffect": "bubbles"
     },
     {
       "texture": "kubejs:textures/overlay/malum.png",
       "tags": [
         "malum:spirits"
       ],
-      "specialEffect": "spiral",
+      "specialEffect": "magic_orbs",
       "gradientType": "custom",
       "gradientColors": [
         "#716cd0",
@@ -429,11 +520,69 @@
       ]
     },
     {
-      "namespace": "illagerinvasion",
-      "name": "illagerinvasion",
-      "specialEffect": "fireflies",
-      "innerFrameCornerType": "rounded",
-      "borderType": "auto_gradient"
+      "namespace": "immersive_aircraft",
+      "specialEffect": "speed_lines"
+    },
+    {
+      "namespace": "cataclysm",
+      "specialEffect": "spiral"
+    },
+    {
+      "namespace": "gobber2",
+      "specialEffect": "ripples"
+    },
+    {
+      "items": [
+        "kubejs:ring_of_gluttony",
+        "kubejs:mark_of_wrath",
+        "kubejs:stone_of_melancholy",
+        "kubejs:crown_of_pride",
+        "kubejs:eye_of_envy",
+        "kubejs:chain_of_lust",
+        "kubejs:pendant_of_sloth"
+      ],
+      "specialEffect": "wisps"
+    },
+    {
+      "items": [
+        "kubejs:bad_apple",
+        "kubejs:emergency_sanity_elixir_a",
+        "kubejs:emergency_sanity_elixir_b",
+        "kubejs:emergency_sanity_elixir_y"
+      ],
+      "specialEffect": "sonar"
+    },
+    {
+      "namespace": "kubejs",
+      "specialEffect": "fluorite"
+    },
+    {
+      "namespace": "waystones",
+      "specialEffect": "searchlights"
+    },
+    {
+      "namespace": "netherexp",
+      "specialEffect": "cinder"
+    },
+    {
+      "namespace": "terra_entity",
+      "specialEffect": "snowfall"
+    },
+    {
+      "namespace": "refinedstorage",
+      "specialEffect": "shield"
+    },
+    {
+      "namespace": "rsinfinitybooster",
+      "specialEffect": "shield"
+    },
+    {
+      "namespace": "refinedstorage_quartz_arsenal",
+      "specialEffect": "shield"
+    },
+    {
+      "namespace": "alloy_forgery",
+      "specialEffect": "firebreath"
     }
   ]
 }

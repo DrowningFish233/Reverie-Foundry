@@ -84,6 +84,44 @@
           "trait": "silentgear:soft"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:brittle"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.5
+                }
+              ]
+            }
+          ],
+          "level": 1,
+          "trait": "silentgear:lustrous"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:brilliant"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:soft"
+        }
+      ]
     }
   }
 }

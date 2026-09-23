@@ -27,7 +27,7 @@
 			rotation: 0.0d
 			width: 0.5d
 			x: -11.5d
-			y: -9.0d
+			y: -6.0d
 		}
 		{
 			click_action: "none:"
@@ -36,8 +36,8 @@
 			image: "entity:terra_entity:eye_of_cthulhu"
 			rotation: 0.0d
 			width: 1.5d
-			x: -11.388095238095161d
-			y: -5.130952380952458d
+			x: -11.5d
+			y: 3.0d
 		}
 		{
 			click_action: "none:"
@@ -46,8 +46,8 @@
 			image: "entity:minecraft:wither"
 			rotation: 0.0d
 			width: 2.0d
-			x: -11.531087564375923d
-			y: -1.0125526707583887d
+			x: -11.5d
+			y: -3.0d
 		}
 		{
 			click_action: "none:"
@@ -56,8 +56,8 @@
 			image: "entity:bosses_of_mass_destruction:void_blossom"
 			rotation: 0.0d
 			width: 2.0d
-			x: -11.745373278661638d
-			y: 2.166018757813056d
+			x: -11.5d
+			y: -0.5d
 		}
 		{
 			click_action: "none:"
@@ -137,7 +137,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: 11.445102911814544d
-			y: -3.0125526707583745d
+			y: -5.5d
 		}
 		{
 			click_action: "none:"
@@ -146,8 +146,8 @@
 			image: "entity:bosses_of_mass_destruction:gauntlet"
 			rotation: 0.0d
 			width: 3.0d
-			x: 11.5d
-			y: -6.0d
+			x: -11.5d
+			y: -9.0d
 		}
 		{
 			click_action: "none:"
@@ -314,14 +314,24 @@
 			dependencies: ["3FD3535AE922834F"]
 			icon_scale: 0.8d
 			id: "7CB11EBD34BA84FB"
-			rewards: [{
-				id: "690F827B978B7DC9"
-				item: {
-					count: 1
-					id: "kubejs:bad_apple"
+			rewards: [
+				{
+					id: "690F827B978B7DC9"
+					item: {
+						count: 1
+						id: "kubejs:bad_apple"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "2DC3C9B02DC2CF30"
+					item: {
+						count: 1
+						id: "malum:umbral_spirit"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				icon: {
 					components: {
@@ -357,7 +367,7 @@
 				value: 1L
 			}]
 			x: -13.5d
-			y: -5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7CB11EBD34BA84FB"]
@@ -378,7 +388,7 @@
 				value: 1L
 			}]
 			x: -13.5d
-			y: -9.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7CB11EBD34BA84FB"]
@@ -422,7 +432,7 @@
 				value: 1L
 			}]
 			x: -13.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7CB11EBD34BA84FB"]
@@ -446,7 +456,7 @@
 				value: 1L
 			}]
 			x: -13.5d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7CB11EBD34BA84FB"]
@@ -477,6 +487,7 @@
 				"143A6CDB76F7A3DC"
 				"40C75417213642DC"
 				"7CB11EBD34BA84FB"
+				"4939B8B2FE7A3B5D"
 			]
 			dependency_requirement: "one_completed"
 			hide_text_until_complete: true
@@ -680,6 +691,8 @@
 		}
 		{
 			dependencies: ["53C821423589F530"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "58CA43B9AA0530E2"
 			optional: true
 			rewards: [{
@@ -695,10 +708,10 @@
 				value: 1L
 			}]
 			x: 9.0d
-			y: -3.0d
+			y: -5.4874473292416255d
 		}
 		{
-			dependencies: ["53C821423589F530"]
+			dependencies: ["7CB11EBD34BA84FB"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "4939B8B2FE7A3B5D"
@@ -714,8 +727,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: 9.0d
-			y: -6.0d
+			x: -13.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["53C821423589F530"]
@@ -789,7 +802,6 @@
 				"35AEBBC251933E78"
 				"4E826A5530F49919"
 				"67A539CCFEDE8EBC"
-				"4939B8B2FE7A3B5D"
 			]
 			dependency_requirement: "one_completed"
 			icon: {

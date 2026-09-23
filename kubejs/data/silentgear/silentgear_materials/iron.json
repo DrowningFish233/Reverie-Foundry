@@ -107,6 +107,23 @@
           "trait": "silentgear:malleable"
         }
       ]
+    },
+    "silentgear:binding": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 0.5
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
     }
   }
 }

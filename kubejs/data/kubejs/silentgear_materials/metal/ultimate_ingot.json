@@ -66,6 +66,25 @@
           "trait": "kubejs:wip"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:indestructible"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:bribery"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:wip"
+        }
+      ]
     }
   }
 }

@@ -396,7 +396,6 @@ StartupEvents.registry('item', event => {
         event.create("violet_baptism")
             .texture('kubejs:item/curios/violet_baptism')
             .tag("curios:accessory")
-            .tag("kubejs:level_3")
             .unstackable()
             .component($ConfluenceMagicLib.MOD_RARITY, $ModRarity.MASTER)
     )

@@ -66,7 +66,7 @@ LootJS.modifiers(event => {
     ])
         .addLoot(
             LootEntry.of('kubejs:soul_of_light')
-                .randomChance(0.05)
+                .randomChance(0.5)
                 .matchTool(ItemFilter.not(
                     ItemFilter.hasEnchantment("minecraft:silk_touch")
                 ))
@@ -77,9 +77,10 @@ LootJS.modifiers(event => {
     ])
         .addLoot(
             LootEntry.of('kubejs:soul_of_night')
-                .randomChance(0.05)
+                .randomChance(0.5)
                 .matchTool(ItemFilter.not(
                     ItemFilter.hasEnchantment("minecraft:silk_touch")
                 ))
         );
+
 });

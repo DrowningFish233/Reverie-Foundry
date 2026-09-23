@@ -81,6 +81,30 @@
                     "trait": "kubejs:gift_heaven"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:gift_heaven"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:overgrown_bone"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:terraulite_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                }
+            ]
         }
     }
 }

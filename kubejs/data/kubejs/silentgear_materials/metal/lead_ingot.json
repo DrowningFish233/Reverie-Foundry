@@ -79,6 +79,153 @@
           "trait": "silentgear:aquatic"
         }
       ]
+    },
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 10
+      },
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.35
+                }
+              ]
+            }
+          ],
+          "level": 2,
+          "trait": "silentgear:aquatic"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.35
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -1
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.6
+      },
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.35
+                }
+              ]
+            }
+          ],
+          "level": 1,
+          "trait": "silentgear:aquatic"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.35
+                }
+              ]
+            }
+          ],
+          "level": 1,
+          "trait": "silentgear:aquatic"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:hard"
+        },
+        {
+          "conditions": [
+            {
+              "type": "silentgear:or",
+              "values": [
+                {
+                  "type": "silentgear:material_count",
+                  "count": 3
+                },
+                {
+                  "type": "silentgear:material_ratio",
+                  "ratio": 0.35
+                }
+              ]
+            }
+          ],
+          "level": 2,
+          "trait": "silentgear:aquatic"
+        }
+      ]
     }
   }
 }

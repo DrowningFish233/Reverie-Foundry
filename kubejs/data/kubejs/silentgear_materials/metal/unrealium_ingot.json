@@ -66,6 +66,15 @@
 					"trait": "kubejs:unrealium_ingot"
 				}
 			]
+		},
+		"silentgear:binding": {
+			"traits": [
+				{
+					"conditions": [],
+					"level": 3,
+					"trait": "kubejs:unrealium_ingot"
+				}
+			]
 		}
 	}
 }

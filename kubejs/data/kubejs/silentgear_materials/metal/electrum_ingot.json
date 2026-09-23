@@ -60,6 +60,93 @@
           "trait": "kubejs:gift_heaven"
         }
       ]
+    },
+    "silentgear:rod": {
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.15
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.25
+      },
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:gift_heaven"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.35
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:gift_heaven"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:gift_heaven"
+        }
+      ]
     }
   }
 }

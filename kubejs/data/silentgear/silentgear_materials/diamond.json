@@ -163,6 +163,23 @@
           "trait": "silentgear:lustrous"
         }
       ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": -1
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:brittle"
+        }
+      ]
     }
   }
 }

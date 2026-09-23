@@ -45,9 +45,101 @@
                 "name": "iron/铁"
             },
             "magic_armor": 20.0,
-            "magic_damage": 8.0,
+            "magic_damage": 3.0,
             "ranged_damage": 2.0,
             "rarity": 60,
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:fortunate"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:hunger"
+                }
+            ]
+        },
+        "silentgear:rod": {
+            "attack_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.1
+            },
+            "magic_armor": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.25
+            },
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.2
+            },
+            "rarity": {
+                "operation": "ADD",
+                "value": 20
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:fortunate"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:hunger"
+                }
+            ]
+        },
+        "silentgear:cord": {
+            "durability": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.5
+            },
+            "ranged_damage": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.25
+            },
+            "draw_speed": {
+                "operation": "MULTIPLY_BASE",
+                "value": -0.25
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:fortunate"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:hunger"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:brittle"
+                }
+            ]
+        },
+        "silentgear:lining": {
+            "armor": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "knockback_resistance": {
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:hard"
+                }
+            ]
+        },
+        "silentgear:binding": {
             "traits": [
                 {
                     "conditions": [],

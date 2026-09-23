@@ -54,6 +54,15 @@
           "trait": "kubejs:gobber_nether"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:gobber_nether"
+        }
+      ]
     }
   }
 }

@@ -163,18 +163,10 @@
 					type: "item"
 				}
 				{
-					id: "08BAFA74143ADC54"
+					id: "7382B6524548C553"
 					item: {
 						count: 1
-						id: "silentgear:material_book"
-					}
-					type: "item"
-				}
-				{
-					id: "1F1736E8FF5B0966"
-					item: {
-						count: 1
-						id: "reveriefoundry:trait_book"
+						id: "reveriefoundry:catalog"
 					}
 					type: "item"
 				}
@@ -245,6 +237,8 @@
 		{
 			dependencies: ["017488D14BA19FAA"]
 			id: "6DA0846CF76DCC86"
+			shape: "diamond"
+			size: 2.0d
 			tasks: [{
 				id: "667D543034FB4B21"
 				type: "checkmark"

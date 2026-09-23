@@ -269,7 +269,7 @@
 				}
 				{
 					auto: "enabled"
-					command: "/kubejs stages add @p difficult_10"
+					command: "/kubejs stages add @p difficult_13"
 					exclude_from_claim_all: true
 					icon: {
 						id: "minecraft:wither_skeleton_skull"

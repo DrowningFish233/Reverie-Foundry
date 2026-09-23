@@ -1,40 +1,25 @@
-#lots of cosmetic stuff in here
 [visuals]
-	#To edit the damage numbers color you'll have to edit the config file manually
-	#How much the dummy swings in degrees with respect to the damage dealt. default=0.75
+	#How much the dummy swings in degrees with respect to the damage dealt
 	# Default: 0.75
 	# Range: 0.0 ~ 2.0
 	animation_intensity = 0.75
-	#Show hearths instead of damage dealt? (1 hearth = two damage)
-	show_hearths = false
-	#Show damage numbers on entity
-	damage_numbers = true
-	#Display particles fullbright
-	full_bright_damage_numbers = true
-	#How crits should be shown
-	#Allowed Values: OFF, COLOR, COLOR_AND_MULTIPLIER
-	crit_mode = "COLOR_AND_MULTIPLIER"
 	#Show hay particles when dealing damage
 	hay_particles = true
 	#Skin used by the dummy
 	#Allowed Values: DEFAULT, ORIGINAL, ALTERNATIVE, DUNGEONS
 	texture = "DEFAULT"
 
-	#Add here custom colors (in hex format) to associate with your damage types. This is a map from damage source ID to a color where you can add new entries for each
-	[visuals.damage_type_colors]
-		"minecraft:generic" = "#00FFFFFF"
-		"#dummmmmmy:is_wither" = "#00666666"
-		"minecraft:dragon_breath" = "#00E600FF"
-		"attributeslib:bleeding" = "#00810A0A"
-		"minecraft:trident" = "#0000FF9D"
-		"#dummmmmmy:is_thorn" = "#000FA209"
-		"dummmmmmy:true" = "#00910038"
-		"#dummmmmmy:is_fire" = "#00FF7700"
-		"#minecraft:witch_resistant_to" = "#00844CE7"
-		"minecraft:sonic_boom" = "#00074550"
-		"#dummmmmmy:is_explosion" = "#00FFBB29"
-		"dummmmmmy:critical" = "#00FF0000"
-		"minecraft:wind_charge" = "#00BEF3FF"
-		"#dummmmmmy:is_cold" = "#0009D2FF"
-		"#minecraft:is_lightning" = "#00FFF200"
-		"#minecraft:is_drowning" = "#001898E3"
+[damage_numbers]
+	#Floating damage numbers popping off the dummy every time it's hit
+	enabled = true
+	#Show hearths instead of damage dealt? (1 hearth = two damage)
+	show_hearths = false
+	#Display the numbers fullbright, so they stay readable in the dark
+	full_bright = true
+	#How crits should be shown
+	#Allowed Values: OFF, COLOR, COLOR_AND_MULTIPLIER
+	crit_mode = "COLOR_AND_MULTIPLIER"
+	#Make critical hit damage numbers bold
+	crit_bold = false
+	#Color to use for each damage type. Keys are damage type ids, or #tags, and are tested in insertion order
+	damage_type_colors = ["dummmmmmy:true=9502776", "dummmmmmy:critical=16711680", "minecraft:generic=16777215", "minecraft:trident=65437", "minecraft:dragon_breath=15073535", "minecraft:sonic_boom=476496", "minecraft:wind_charge=12514303", "attributeslib:bleeding=8456714", "#dummmmmmy:is_explosion=16759593", "#dummmmmmy:is_cold=643839", "#dummmmmmy:is_thorn=1024521", "#dummmmmmy:is_fire=16742144", "#dummmmmmy:is_wither=6710886", "#minecraft:is_lightning=16773632", "#minecraft:is_drowning=1612003", "#minecraft:witch_resistant_to=8670439"]

@@ -39,5 +39,16 @@
 			x: 0.5d
 			y: 4.0d
 		}
+		{
+			dependencies: ["3B98D98415628260"]
+			id: "73FCDE97B31913FF"
+			tasks: [{
+				id: "1343FC76B1A82199"
+				item: { count: 1, id: "kubejs:exploding_chocolate_bar" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
 	]
 }

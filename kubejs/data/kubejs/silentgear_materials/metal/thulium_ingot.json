@@ -44,10 +44,111 @@
         "level_hint": "1",
         "name": "stone/石"
       },
-      "magic_armor": 20.0,
-      "magic_damage": 10.0,
+      "magic_armor": 14.0,
+      "magic_damage": 4.0,
       "ranged_damage": 1.8,
       "rarity": 65,
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:thermal_springstone_ingot"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 4
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:thermal_springstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:thermal_springstone_ingot"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.15
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 5
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.5
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:venom"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:thermal_springstone_ingot"
+        }
+      ]
+    },
+    "silentgear:binding": {
       "traits": [
         {
           "conditions": [],

@@ -1,4 +1,104 @@
 ServerEvents.recipes(event => {
+
+    event.shapeless(
+        Item.of("minecraft:black_dye", 4),
+        [
+            'minecraft:obsidian',
+            'minecraft:potion[potion_contents={potion:"minecraft:water"}]'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('minecraft:bone_meal', 12),
+        [
+            'kubejs:ancient_remnant_bone'
+        ]
+    );
+    event.shapeless(
+        Item.of('silentgear:binding_template', 16),
+        [
+            '2x #c:strings',
+            'silentgear:template_board',
+            'kubejs:ashes_of_calamity'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('silentgear:binding_blueprint', 1),
+        [
+            '2x #c:strings',
+            'silentgear:blueprint_paper',
+            'kubejs:ashes_of_calamity'
+        ]
+    );
+
+
+    event.shapeless(
+        Item.of('silentgear:coating_template', 16),
+        [
+            '#kubejs:gem/tier_0',
+            '#kubejs:gem/tier_1',
+            '2x silentgear:template_board',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('silentgear:coating_blueprint', 1),
+        [
+            '#kubejs:gem/tier_0',
+            '#kubejs:gem/tier_1',
+            '2x silentgear:blueprint_paper',
+            'kubejs:viculeam_ingot'
+        ]
+    );
+
+
+    event.shapeless(
+        Item.of('silentgear:tip_template', 16),
+        [
+            '#c:stones',
+            'minecraft:paper',
+            '2x silentgear:template_board',
+            'kubejs:necroplasm'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('silentgear:tip_blueprint', 1),
+        [
+            '#c:stones',
+            'minecraft:paper',
+            '2x silentgear:blueprint_paper',
+            'kubejs:necroplasm'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('hazennstuff:sacred', 1),
+        [
+            'hazennstuff:shattered',
+            '2x kubejs:necroplasm'
+        ]
+    );
+
+    event.shapeless(
+        Item.of('hazennstuff:advanced', 1),
+        [
+            'hazennstuff:abstract',
+            '2x kubejs:necroplasm'
+        ]
+    );
+
+
+    event.shapeless(
+        Item.of('hazennstuff:refined', 1),
+        [
+            'hazennstuff:ruptured',
+            '2x kubejs:necroplasm'
+        ]
+    );
+
     event.shapeless(
         Item.of('kubejs:eye_of_furled_citadel_located', 1),
         [
@@ -383,14 +483,6 @@ ServerEvents.recipes(event => {
         ]
     )
     event.shapeless(
-        Item.of('kubejs:starlight_mythril_ingot', 1),
-        [
-            'eternal_starlight:deepsilver_ingot',
-            'eternal_starlight:aethersent_ingot',
-            'malum:runic_sapball'
-        ]
-    )
-    event.shapeless(
         Item.of('apothic_enchanting:occult_ender_lead', 1),
         [
             'apothic_enchanting:ender_lead',
@@ -418,15 +510,6 @@ ServerEvents.recipes(event => {
         [
             'terra_curio:obsidian_skull',
             '3x minecraft:red_dye'
-        ]
-    )
-    event.shapeless(
-        Item.of('kubejs:tungsten_ingot', 1),
-        [
-            'minecraft:lime_dye',
-            'minecraft:white_dye',
-            'minecraft:iron_ingot',
-            'alltheores:steel_nugget'
         ]
     )
     event.shapeless(

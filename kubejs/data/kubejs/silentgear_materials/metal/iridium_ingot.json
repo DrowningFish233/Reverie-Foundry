@@ -49,6 +49,23 @@
             "ranged_damage": 1.5,
             "rarity": 30,
             "traits": []
+        },
+        "silentgear:lining": {
+            "armor_toughness": {
+                "operation": "ADD",
+                "value": 1
+            },
+            "magic_armor": {
+                "operation": "ADD",
+                "value": 2
+            },
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "silentgear:flexible"
+                }
+            ]
         }
     }
 }

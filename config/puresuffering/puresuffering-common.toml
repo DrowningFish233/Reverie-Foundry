@@ -41,7 +41,7 @@
 		#The amount of days until an invasion can start.
 		# Default: 1
 		# Range: > 0
-		invasionStartDelay = 30
+		invasionStartDelay = 15
 		#The max amount of mobs that can spawn from Primary Invasions at once.
 		#NOTE: Reduce for increased performance!
 		# Default: 100

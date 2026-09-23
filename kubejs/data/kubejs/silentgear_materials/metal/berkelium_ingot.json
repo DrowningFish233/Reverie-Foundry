@@ -67,6 +67,25 @@
           "trait": "silentgear:soft"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:boron_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:jabberwocky"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:soft"
+        }
+      ]
     }
   }
 }

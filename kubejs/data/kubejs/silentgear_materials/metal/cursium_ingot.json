@@ -52,6 +52,15 @@
                     "trait": "kubejs:cursium_ingot"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:cursium_ingot"
+                }
+            ]
         }
     }
 }

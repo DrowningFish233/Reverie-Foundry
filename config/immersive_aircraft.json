@@ -30,6 +30,11 @@
   "dropUpgrades": false,
   "regenerateHealthEveryNTicks": 0,
   "requireShiftForRepair": false,
+  "defaultCanEnter": true,
+  "canEnter": {
+    "#immersive_aircraft:water_animals": false,
+    "minecraft:player": false
+  },
   "bombBayEntity": {
     "minecraft:egg": "minecraft:chicken"
   },

@@ -66,6 +66,25 @@
                     "trait": "kubejs:xeproda"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:strikesoul"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:malignant_pewter_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:xeproda"
+                }
+            ]
         }
     }
 }

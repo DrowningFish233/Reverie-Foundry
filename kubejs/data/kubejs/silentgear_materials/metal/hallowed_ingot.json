@@ -46,6 +46,15 @@
 					"trait": "kubejs:hallowed_ingot"
 				}
 			]
+		},
+		"silentgear:binding": {
+			"traits": [
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "kubejs:hallowed_ingot"
+				}
+			]
 		}
 	}
 }

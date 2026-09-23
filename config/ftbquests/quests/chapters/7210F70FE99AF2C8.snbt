@@ -400,6 +400,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "eternal_starlight:deepsilver_sword"
+			}
 			id: "1FABC71D3623013A"
 			rewards: [{
 				id: "6B7CB29148B791AA"
@@ -719,7 +722,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["46B041A7876340F6"]
+			dependencies: ["59FD6ADB15123223"]
 			id: "598B46F6AEFCA272"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -784,7 +787,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["40ACEE794ED65B95"]
+			dependencies: ["59FD6ADB15123223"]
 			icon: {
 				id: "minecraft:writable_book"
 			}
@@ -1947,7 +1950,10 @@
 			y: -23.5d
 		}
 		{
-			dependencies: ["40ACEE794ED65B95"]
+			dependencies: [
+				"40ACEE794ED65B95"
+				"598B46F6AEFCA272"
+			]
 			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
 			icon: {
@@ -2487,6 +2493,20 @@
 			}]
 			x: 0.5d
 			y: -17.0d
+		}
+		{
+			dependencies: ["5DA66C973C8C8C39"]
+			id: "7C8FEB4083F60A23"
+			tasks: [{
+				icon: {
+					id: "reveriefoundry:gale_spinner_blueprint"
+				}
+				id: "3D73F445A3DD0FF5"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:gale_spinner_blueprint)item(reveriefoundry:gale_spinner_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -24.5d
 		}
 	]
 }

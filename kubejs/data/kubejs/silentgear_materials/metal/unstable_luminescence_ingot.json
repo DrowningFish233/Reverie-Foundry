@@ -62,6 +62,20 @@
           "trait": "kubejs:oathbound_strength"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:strikesoul"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:oathbound_strength"
+        }
+      ]
     }
   }
 }

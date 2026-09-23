@@ -68,6 +68,25 @@
                     "trait": "kubejs:eternal_starlight"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:thermal_springstone_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
         }
     }
 }

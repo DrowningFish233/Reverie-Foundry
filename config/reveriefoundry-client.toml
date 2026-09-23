@@ -166,3 +166,10 @@
 	# Default: 100
 	# Range: 20 ~ 300
 	searchCacheDuration = 100
+
+#Damage Number Settings
+[damage_numbers]
+	#Enable damage number particles
+	enabled = true
+	#Enable text shadow for damage numbers
+	shadow = true

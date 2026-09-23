@@ -53,6 +53,15 @@
                     "trait": "kubejs:wither_howitzer"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:wither_howitzer"
+                }
+            ]
         }
     }
 }

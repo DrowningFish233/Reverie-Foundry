@@ -1,0 +1,27 @@
+{
+    "conditions": [],
+    "description": {
+        "translate": "trait.kubejs.frigidite_ingot.desc"
+    },
+    "effects": [
+        {
+            "type": "silentgear:attribute",
+            "attribute_modifiers": {
+                "all/any": [
+                    {
+                        "attribute": "minecraft:generic.armor",
+                        "operation": "add_value",
+                        "values": [
+                            1,
+                            2
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "max_level": 2,
+    "name": {
+        "translate": "trait.kubejs.frigidite_ingot"
+    }
+}

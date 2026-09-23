@@ -1377,4 +1377,6 @@ event.create('purple_haze_attack')
         .beneficial()
     event.create('dragon_might')
         .harmful()
+    event.create('forging')
+        .harmful()
 });

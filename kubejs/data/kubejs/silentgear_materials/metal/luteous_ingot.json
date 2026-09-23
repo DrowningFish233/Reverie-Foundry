@@ -72,6 +72,30 @@
           "trait": "kubejs:exalted_beauty_gem"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:exp_to_death"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:citrine"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "kubejs:exalted_beauty_gem"
+        }
+      ]
     }
   }
 }

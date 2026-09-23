@@ -54,6 +54,15 @@
           "trait": "kubejs:prismarine_crystals"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:prismarine_crystals"
+        }
+      ]
     }
   }
 }

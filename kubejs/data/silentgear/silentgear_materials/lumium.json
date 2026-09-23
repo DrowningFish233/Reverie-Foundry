@@ -96,6 +96,12 @@
           "trait": "silentgear:refractive"
         }
       ]
+    },
+    "silentgear:lining": {
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2
+      }
     }
   }
 }

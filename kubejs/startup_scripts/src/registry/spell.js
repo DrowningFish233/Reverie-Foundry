@@ -391,23 +391,24 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             if (currentDim.toString().includes('overworld')) {
                 targetDim = nether;
                 targetX = player.x / spellLevel;
-                targetY = player.y;
+                targetY = 194;
                 targetZ = player.z / spellLevel;
             }
-            // 地狱 => 主世界
+            // 地狱 => 主世界（y 保持不变）
             else if (currentDim.toString().includes('the_nether')) {
                 targetDim = overworld;
                 targetX = player.x * spellLevel;
                 targetY = player.y;
                 targetZ = player.z * spellLevel;
             }
-            // 其他维度传送到主世界
+            // 其他维度传送到主世界（y 保持不变）
             else {
                 targetDim = overworld;
                 targetX = player.x;
-                targetY = player.y;
+                targetY = player.y;  // y 保持不变
                 targetZ = player.z;
             }
+
 
             let targetLevel = level.getServer().getLevel(targetDim);
             if (targetLevel) {

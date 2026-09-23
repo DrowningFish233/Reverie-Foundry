@@ -1,34 +1,24 @@
 {
-  "tradeCategories": [
-    {
-      "pattern": [
-        ".*"
-      ],
-      "key": "ali:trade_loot",
-      "icon": "minecraft:emerald_block"
-    }
+  "defaultBlockLootFunctions": [
+    "minecraft:explosion_decay"
   ],
-  "configVersion": 2,
-  "blockCategories": [
-    {
-      "blocks": [
-        "#minecraft:crops"
-      ],
-      "key": "ali:plant_loot",
-      "icon": "minecraft:diamond_hoe"
-    },
-    {
-      "blocks": [],
-      "key": "ali:block_loot",
-      "icon": "minecraft:diamond_pickaxe"
-    }
+  "ignoredPredicateConditions": [
+    "minecraft:random_chance",
+    "minecraft:random_chance_with_enchanted_bonus",
+    "minecraft:table_bonus",
+    "minecraft:survives_explosion"
   ],
-  "entityCategories": [
-    {
-      "entityTypes": [],
-      "key": "ali:entity_loot",
-      "icon": "minecraft:skeleton_skull"
-    }
+  "entityLootTables": {},
+  "tooltipColors": {
+    "text": "gold",
+    "value": "aqua",
+    "error": "red",
+    "branch": "dark_gray"
+  },
+  "showInGameNames": true,
+  "hideDefaultBlockLoot": true,
+  "defaultBlockLootConditions": [
+    "minecraft:survives_explosion"
   ],
   "gameplayCategories": [
     {
@@ -56,8 +46,7 @@
         "^.*:pots/trial_chambers/.*$",
         "^.*:dispensers/trial_chambers/.*$",
         "^.*:spawners/ominous/trial_chamber/.*$",
-        "^.*:spawners/trial_chamber/.*$",
-        "^.*:equipment/.*$"
+        "^.*:spawners/trial_chamber/.*$"
       ],
       "key": "ali:trial_chambers",
       "icon": "minecraft:trial_spawner"
@@ -168,6 +157,39 @@
       ],
       "key": "ali:gameplay_loot",
       "icon": "minecraft:compass"
+    }
+  ],
+  "tradeCategories": [
+    {
+      "pattern": [
+        ".*"
+      ],
+      "key": "ali:trade_loot",
+      "icon": "minecraft:emerald_block"
+    }
+  ],
+  "disabledEntities": [],
+  "logMoreStatistics": false,
+  "configVersion": 2,
+  "blockCategories": [
+    {
+      "blocks": [
+        "#minecraft:crops"
+      ],
+      "key": "ali:plant_loot",
+      "icon": "minecraft:diamond_hoe"
+    },
+    {
+      "blocks": [],
+      "key": "ali:block_loot",
+      "icon": "minecraft:diamond_pickaxe"
+    }
+  ],
+  "entityCategories": [
+    {
+      "entityTypes": [],
+      "key": "ali:entity_loot",
+      "icon": "minecraft:skeleton_skull"
     }
   ]
 }

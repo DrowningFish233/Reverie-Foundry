@@ -1,0 +1,3 @@
+#The language used when the export command omits its language argument.
+#Use 'current' to follow the language selected in the Minecraft client.
+defaultLanguage = "current"

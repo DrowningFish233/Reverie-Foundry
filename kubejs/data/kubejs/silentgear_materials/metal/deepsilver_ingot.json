@@ -63,6 +63,20 @@
                     "trait": "kubejs:eternal_starlight"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:swamp_silver_ingot"
+                },
+                {
+                    "conditions": [],
+                    "level": 2,
+                    "trait": "kubejs:eternal_starlight"
+                }
+            ]
         }
     }
 }

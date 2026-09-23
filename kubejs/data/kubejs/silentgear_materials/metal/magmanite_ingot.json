@@ -60,6 +60,20 @@
           "trait": "silentgear:magnetic"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:arrow"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:magnetic"
+        }
+      ]
     }
   }
 }

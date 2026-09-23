@@ -62,6 +62,99 @@
           "trait": "silentgear:ignite"
         }
       ]
+    },
+    "silentgear:rod": {
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.25
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 0.5
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "projectile_speed": {
+        "operation": "ADD",
+        "value": 0.1
+      },
+      "repair_efficiency": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 4
+      },
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "charging_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.2
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:combustion_boost"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:combustion_boost"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:combustion_boost"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:ignite"
+        }
+      ]
     }
   }
 }

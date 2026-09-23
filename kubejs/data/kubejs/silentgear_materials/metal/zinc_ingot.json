@@ -67,6 +67,95 @@
           "trait": "silentgear:soft"
         }
       ]
+    },
+    "silentgear:rod": {
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "durability": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:soft"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "enchantment_value": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:dropped_experience"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:malleable"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,13 @@
+{
+    "registry_name": "iceandfire:pixie",
+    "drops": [
+        {
+            "ingredient": {
+                "item": "kubejs:soul_of_light"
+            },
+            "chance": "0.5",
+            "min": "1",
+            "max": "3"
+        }
+    ]
+}

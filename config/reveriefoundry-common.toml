@@ -75,4 +75,9 @@
 	#Format: 'entity_registry_name;max_death_count'
 	#Example: 'cataclysm:ignis;3' means if a player is killed by Ignis 3 times, Ignis will fully heal.
 	#Use -1 to disable for a specific entity.
-	entities = ["cataclysm:ignis;3"]
+	entities = ["cataclysm:ignis;3", "cataclysm:the_leviathan;3", "cataclysm:ancient_remnant;3", "cataclysm:maledictus;3", "cataclysm:scylla;3", "cataclysm:the_harbinger;3", "cataclysm:ender_guardian;3", "cataclysm:netherite_monstrosity;3", "minecraft:wither;3", "minecraft:ender_dragon;3", "bosses_of_mass_destruction:gauntlet;3", "bosses_of_mass_destruction:lich;3", "bosses_of_mass_destruction:obsidilith;3", "bosses_of_mass_destruction:void_blossom;3", "irons_spellbooks:fire_boss;3", "terra_entity:dungeon_guardian;3", "terra_entity:skeletron;3", "terra_entity:king_slime;3", "terra_entity:eye_of_cthulhu;3", "terra_entity:brain_of_cthulhu;3", "terra_entity:queen_bee;3", "irons_spellbooks:dead_king;3", "darkdoppelganger:dark_doppelganger;3"]
+
+#Damage Number Settings
+[damage_numbers]
+	#Enable damage number particles (server-side, prevents packet sending)
+	enabled = true

@@ -1,0 +1,58 @@
+{
+  "fuels": [
+    {
+      "item": "minecraft:lava_bucket",
+      "return_item": "minecraft:bucket",
+      "fuel": 24000
+    },
+    {
+      "item": "eternal_starlight:ether_bucket",
+      "return_item": "minecraft:bucket",
+      "fuel": 6000
+    },
+    {
+      "item": "create:blaze_cake",
+      "fuel": 6000
+    },
+    {
+      "item": "minecraft:coal",
+      "fuel": 1000
+    },
+    {
+      "item": "minecraft:charcoal",
+      "fuel": 1000
+    },
+    {
+      "item": "minecraft:blaze_rod",
+      "fuel": 2000
+    },
+    {
+      "item": "minecraft:coal_block",
+      "fuel": 9000
+    },
+    {
+      "item": "gobber2:gobber2_foo",
+      "fuel": 40000
+    },
+    {
+      "item": "gobber2:gobber2_foo_nether",
+      "fuel": 60000
+    },
+    {
+      "item": "gobber2:gobber2_foo_end",
+      "fuel": 80000
+    },
+    {
+      "item": "alltheores:raw_uranium",
+      "fuel": 500
+    },
+    {
+      "item": "alltheores:uranium_ingot",
+      "fuel": 2000
+    },
+    {
+      "item": "alltheores:uranium_block",
+      "fuel": 24000
+    }
+  ]
+}

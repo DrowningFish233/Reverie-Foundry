@@ -136,6 +136,25 @@
                     "trait": "kubejs:soul_stained_steel_ingot"
                 }
             ]
+        },
+        "silentgear:binding": {
+            "traits": [
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:strikesoul"
+                },
+                {
+                    "conditions": [],
+                    "level": 3,
+                    "trait": "silentgear:malleable"
+                },
+                {
+                    "conditions": [],
+                    "level": 1,
+                    "trait": "kubejs:soul_stained_steel_ingot"
+                }
+            ]
         }
     }
 }

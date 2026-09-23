@@ -80,6 +80,20 @@
           "trait": "silentgear:lustrous"
         }
       ]
+    },
+    "silentgear:setting": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:kitty_vision"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:renew"
+        }
+      ]
     }
   }
 }

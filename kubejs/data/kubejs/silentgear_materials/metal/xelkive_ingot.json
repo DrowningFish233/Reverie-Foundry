@@ -67,6 +67,130 @@
           "trait": "silentgear:holy"
         }
       ]
+    },
+    "silentgear:rod": {
+      "rarity": {
+        "operation": "ADD",
+        "value": 20
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.6
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.45
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.4
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 4
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:xelkive_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:holy"
+        }
+      ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.4
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "projectile_accuracy": {
+        "operation": "MULTIPLY_BASE",
+        "value": 1.35
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:xelkive_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:holy"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:xelkive_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 4,
+          "trait": "silentgear:holy"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "kubejs:nlatstone_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:xelkive_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 5,
+          "trait": "silentgear:holy"
+        }
+      ]
     }
   }
 }

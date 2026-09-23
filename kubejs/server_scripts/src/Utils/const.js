@@ -222,10 +222,12 @@ const STAGE_DIFFICULTY_BONUS = {
     'difficult_7': { health: 10, attack: 3, armor: 10, toughness: 5, level: 7 },
     'difficult_8': { health: 12, attack: 3.5, armor: 12, toughness: 6, level: 8 },
 
-    'difficult_9': { health: 14, attack: 3.5, armor: 14, toughness: 7, level: 9 },
-    'difficult_10': { health: 16, attack: 4, armor: 16, toughness: 8, level: 10 },
+    'difficult_9': { health: 14, attack: 4, armor: 14, toughness: 7, level: 9 },
+    'difficult_10': { health: 16, attack: 4.5, armor: 16, toughness: 8, level: 10 },
     'difficult_11': { health: 18, attack: 5, armor: 18, toughness: 9, level: 11 },
-    'difficult_12': { health: 20, attack: 5, armor: 20, toughness: 10, level: 12 }
+    'difficult_12': { health: 20, attack: 6, armor: 20, toughness: 10, level: 12 },
+
+    'difficult_13': { health: 30, attack: 10, armor: 30, toughness: 15, level: 13 }
 };
 
 const DRAGON_STAGE_DIFFICULTY_BONUS = {
@@ -242,7 +244,10 @@ const DRAGON_STAGE_DIFFICULTY_BONUS = {
     'difficult_9': { health: 4.2, attack: 2.8, armor: 4.2, toughness: 2.8, level: 9 },
     'difficult_10': { health: 4.5, attack: 3.0, armor: 4.5, toughness: 3.0, level: 10 },
     'difficult_11': { health: 4.8, attack: 3.2, armor: 4.8, toughness: 3.2, level: 11 },
-    'difficult_12': { health: 5.0, attack: 3.5, armor: 5.0, toughness: 3.5, level: 12 }
+    'difficult_12': { health: 5.0, attack: 3.5, armor: 5.0, toughness: 3.5, level: 12 },
+
+    'difficult_13': { health: 10.0, attack: 5, armor: 10.0, toughness: 5, level: 13 },
+
 };
 
 // 最终BOSS

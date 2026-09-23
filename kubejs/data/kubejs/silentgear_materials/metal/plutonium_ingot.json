@@ -55,6 +55,15 @@
           "trait": "kubejs:tanzanite"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:tanzanite"
+        }
+      ]
     }
   }
 }

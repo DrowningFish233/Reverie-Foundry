@@ -1,0 +1,22 @@
+{
+  "passiveMobDistanceSq": 4096,
+  "hostileMobDistanceSq": 4096,
+  "armorStandDistanceSq": 1024,
+  "droppedItemDistanceSq": 1024,
+  "miscEntityDistanceSq": 4096,
+  "storageDistanceSq": 4096,
+  "decorativeDistanceSq": 4096,
+  "machineDistanceSq": 4096,
+  "aggressiveParticleCulling": true,
+  "disableDistantAnimations": true,
+  "disableDistantShadows": true,
+  "aggressiveShaderCulling": true,
+  "shaderCullMode": "AUTO",
+  "manualShaderCullPercentage": 25,
+  "enableLoadStabilizer": true,
+  "chunkUpdatesResting": 10,
+  "chunkUpdatesSprinting": 4,
+  "chunkUpdatesElytra": 1,
+  "debugMode": false,
+  "itemFrame2DDistance": 12
+}

@@ -62,6 +62,89 @@
           "trait": "kubejs:wip"
         }
       ]
+    },
+    "silentgear:cord": {
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.05
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.05
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:knockback"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:wip"
+        }
+      ]
+    },
+    "silentgear:lining": {
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:flexible"
+        }
+      ]
+    },
+    "silentgear:rod": {
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.5
+      },
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 3
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.4
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.6
+      },
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:knockback"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:wip"
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:knockback"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:wip"
+        }
+      ]
     }
   }
 }

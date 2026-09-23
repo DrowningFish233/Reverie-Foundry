@@ -98,5 +98,53 @@
 			silent: true
 			type: "command"
 		}
+		{
+			auto: "no_toast"
+			command: "/kubejs stages add @p difficult_9"
+			icon: {
+				id: "iceandfire:hydra_skull"
+			}
+			id: "3A81A06F07E5A09B"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "no_toast"
+			command: "/kubejs stages add @p difficult_10"
+			icon: {
+				id: "cataclysm:draugr_head"
+			}
+			id: "0419293047C83440"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "no_toast"
+			command: "/kubejs stages add @p difficult_11"
+			icon: {
+				id: "cataclysm:aptrgangr_head"
+			}
+			id: "243AECB5D07676A5"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
+		{
+			auto: "no_toast"
+			command: "/kubejs stages add @p difficult_12"
+			icon: {
+				id: "iceandfire:dragon_skull_fire"
+			}
+			id: "7B44FA8A785B2DC4"
+			ignore_reward_blocking: true
+			permission_level: 4
+			silent: true
+			type: "command"
+		}
 	]
 }

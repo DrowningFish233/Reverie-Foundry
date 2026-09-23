@@ -3,11 +3,11 @@
 	#Health of the Dark Doppelganger
 	# Default: 600.0
 	# Range: 1.0 ~ 100000.0
-	health = 30000.0
+	health = 50000.0
 	#Attack Damage of the Dark Doppelganger
 	# Default: 10.0
 	# Range: 0.1 ~ 1000.0
-	attack_damage = 35.0
+	attack_damage = 45.0
 	#Movement Speed of the Dark Doppelganger
 	# Default: 0.2
 	# Range: 0.01 ~ 2.0
@@ -19,7 +19,7 @@
 	#Armor of the Dark Doppelganger
 	# Default: 10.0
 	# Range: 0.0 ~ 100.0
-	armor = 30.0
+	armor = 35.0
 	#Follow Range of the Dark Doppelganger
 	# Default: 64.0
 	# Range: 1.0 ~ 256.0

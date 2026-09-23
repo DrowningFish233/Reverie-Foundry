@@ -73,6 +73,30 @@
           "trait": "silentgear:soft"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:yummy"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "silentgear:stellar"
+        },
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:meat_ingots"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "silentgear:soft"
+        }
+      ]
     }
   }
 }

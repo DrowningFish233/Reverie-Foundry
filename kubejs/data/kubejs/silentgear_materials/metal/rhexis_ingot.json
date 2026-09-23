@@ -70,6 +70,25 @@
           "trait": "silentgear:stellar"
         }
       ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "conditions": [],
+          "level": 1,
+          "trait": "kubejs:vorant_ingot"
+        },
+        {
+          "conditions": [],
+          "level": 2,
+          "trait": "kubejs:meat_ingots"
+        },
+        {
+          "conditions": [],
+          "level": 3,
+          "trait": "silentgear:stellar"
+        }
+      ]
     }
   }
 }

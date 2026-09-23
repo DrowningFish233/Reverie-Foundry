@@ -873,6 +873,10 @@ ServerEvents.tags('block', event => {
 });
 
 ServerEvents.tags('entity_type', event => {
+    event.add('reveriefoundry:no_damage_number', [
+        "dummmmmmy:target_dummy"
+
+    ]);
     event.add('c:boss', [
         "cataclysm:ignis",
         "cataclysm:the_leviathan",

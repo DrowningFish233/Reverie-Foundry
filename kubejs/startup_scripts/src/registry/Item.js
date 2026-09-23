@@ -112,6 +112,8 @@ global.new_materials = [
     { id: 'random_accessory_pouch_t3', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch_t3" },
     { id: 'random_accessory_pouch_t4', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch_t4" },
     { id: 'gluttonous_authority', maxStackSize: 1, texture: "kubejs:item/misc/gluttonous_authority" },
+    { id: 'ancient_remnant_bone', maxStackSize: 64, texture: "kubejs:item/rods/ancient_remnant_bone" },
+
 
 
 
@@ -146,50 +148,6 @@ StartupEvents.registry('item', event => {
     bricks.forEach(brick => {
         event.create(brick)
             .texture(`kubejs:item/bricks/${brick}`)
-            .maxStackSize(64);
-    });
-
-    // 宝石细胞类
-    const gemCells = [
-        'alexandrite_cell', 'amber_cell', 'amethyst_cell', 'ametrine_cell',
-        'aquamarine_cell', 'bismuth_cell', 'citrine_cell', 'diamond_cell',
-        'emerald_cell', 'garnet_cell', 'jade_cell', 'kunzite_cell',
-        'lapis_cell', 'moonstone_cell', 'opal_cell', 'pearl_cell',
-        'peridot_cell', 'prismarine_cell', 'quartz_cell', 'rose_quartz_cell',
-        'ruby_cell', 'sapphire_cell', 'spinel_cell', 'sunstone_cell',
-        'tanzanite_cell', 'topaz_cell', 'tourmaline_cell', 'turquoise_cell',
-        'ultranium_gem_cell'
-    ];
-
-    gemCells.forEach(cell => {
-        let gemName = cell.replace('_cell', '');
-        event.create(cell)
-            .texture(`kubejs:item/cells/${gemName}`)
-            .maxStackSize(64);
-    });
-
-    // 粉尘类
-    const dusts = [
-        'acril_dust', 'cosmos_aurora_dust', 'adamanite_dust', 'aluminum_dust',
-        'boron_dust', 'brass_dust', 'bronze_dust', 'celeslar_dust',
-        'chalyblux_dust', 'abiding_alloy_dust', 'chromium_dust', 'dark_cryopla_dust',
-        'echo_dust', 'electrum_dust', 'europium_dust', 'frigidite_dust',
-        'invar_dust', 'iridium_dust', 'lead_dust', 'lunium_nova_dust',
-        'magnesium_dust', 'midnight_abyssal_dust', 'mythril_dust', 'nickel_dust',
-        'nlatstone_dust', 'osmium_dust', 'palladium_dust', 'platinum_dust',
-        'plumbumanite_dust', 'rhodium_dust', 'silicon_dust', 'scandium_dust',
-        'silver_dust', 'solimrith_dust', 'starlight_mythril_dust', 'steel_dust',
-        'stellar_dust', 'thorium_dust', 'thlanium_dust', 'tellurium_dust',
-        'thulium_dust', 'tin_dust', 'titanium_dust', 'tungsten_dust',
-        'uranium_dust', 'vibranite_dust', 'viculeam_dust', 'void_dust',
-        'xelkive_dust', 'xeproda_dust', 'yttrium_dust', 'zapolgium_dust',
-        'zinc_dust', 'zirconium_dust'
-    ];
-
-    dusts.forEach(dust => {
-        let dustName = dust.replace('_dust', '');
-        event.create(dust)
-            .texture(`kubejs:item/dust/${dustName}`)
             .maxStackSize(64);
     });
 
@@ -234,77 +192,6 @@ StartupEvents.registry('item', event => {
     gems.forEach(gem => {
         event.create(gem)
             .texture(`kubejs:item/gems/${gem}`)
-            .maxStackSize(64);
-    });
-
-    // 板类
-    const plates = [
-        'abiding_alloy_plate', 'acril_plate', 'adamanite_plate', 'aluminum_plate',
-        'boron_plate', 'brass_plate', 'bronze_plate', 'celeslar_plate',
-        'chalyblux_plate', 'cobalt_plate', 'cosmos_aurora_plate', 'dark_cryopla_plate',
-        'echo_plate', 'electrum_plate', 'estalt_plate', 'europium_plate',
-        'frigidite_plate', 'invar_plate', 'lead_plate', 'lunium_nova_plate',
-        'midnight_abyssal_plate', 'mythril_plate', 'nickel_plate', 'nlatstone_plate',
-        'osmium_plate', 'palladium_plate', 'platinum_plate', 'plumbumanite_plate',
-        'rhodium_plate', 'scandium_plate', 'silicon_plate', 'silver_plate',
-        'solimrith_plate', 'starlight_mythril_plate', 'steel_plate', 'stellar_plate',
-        'tellurium_plate', 'thlanium_plate', 'thorium_plate', 'thulium_plate',
-        'tin_plate', 'titanium_plate', 'tungsten_plate', 'uranium_plate',
-        'vibranite_plate', 'viculeam_plate', 'void_plate', 'xelkive_plate',
-        'xeproda_plate', 'yttrium_plate', 'zapolgium_plate', 'zinc_plate', 'zirconium_plate'
-    ];
-
-    plates.forEach(plate => {
-        let plateName = plate.replace('_plate', '');
-        event.create(plate)
-            .texture(`kubejs:item/plates/${plateName}`)
-            .maxStackSize(64);
-    });
-
-    // 线类
-    const wires = [
-        'acril_wire', 'boron_wire', 'brass_wire', 'bronze_wire', 'celeslar_wire',
-        'chalyblux_wire', 'cosmos_aurora_wire', 'dark_cryopla_wire', 'echo_wire',
-        'electrum_wire', 'estalt_wire', 'europium_wire', 'frigidite_wire',
-        'invar_wire', 'lead_wire', 'lunium_nova_wire', 'midnight_abyssal_wire',
-        'mythril_wire', 'nickel_wire', 'nlatstone_wire', 'osmium_wire',
-        'palladium_wire', 'platinum_wire', 'plumbumanite_wire', 'rhodium_wire',
-        'scandium_wire', 'silicon_wire', 'silver_wire', 'solimrith_wire',
-        'starlight_mythril_wire', 'steel_wire', 'stellar_wire', 'tellurium_wire',
-        'thlanium_wire', 'thorium_wire', 'thulium_wire', 'tin_wire',
-        'titanium_wire', 'tungsten_wire', 'uranium_wire', 'vibranite_wire',
-        'viculeam_wire', 'void_wire', 'xelkive_wire', 'xeproda_wire',
-        'yttrium_wire', 'zapolgium_wire', 'zinc_wire', 'zirconium_wire'
-    ];
-
-    wires.forEach(wire => {
-        let wireName = wire.replace('_wire', '');
-        event.create(wire)
-            .texture(`kubejs:item/wires/${wireName}`)
-            .maxStackSize(64);
-    });
-
-    // 棍类
-    const rods = [
-        'abiding_alloy_rod', 'acril_rod', 'adamanite_rod', 'aluminum_rod',
-        'boron_rod', 'brass_rod', 'bronze_rod', 'celeslar_rod',
-        'chalyblux_rod', 'cobalt_rod', 'cosmos_aurora_rod', 'dark_cryopla_rod',
-        'echo_rod', 'electrum_rod', 'estalt_rod', 'europium_rod',
-        'frigidite_rod', 'invar_rod', 'lead_rod', 'lunium_nova_rod',
-        'midnight_abyssal_rod', 'mythril_rod', 'nickel_rod', 'nlatstone_rod',
-        'osmium_rod', 'palladium_rod', 'platinum_rod', 'plumbumanite_rod',
-        'rhodium_rod', 'scandium_rod', 'silicon_rod', 'silver_rod',
-        'solimrith_rod', 'starlight_mythril_rod', 'steel_rod', 'stellar_rod',
-        'tellurium_rod', 'thlanium_rod', 'thorium_rod', 'thulium_rod',
-        'tin_rod', 'titanium_rod', 'tungsten_rod', 'uranium_rod',
-        'vibranite_rod', 'viculeam_rod', 'void_rod', 'xelkive_rod',
-        'xeproda_rod', 'yttrium_rod', 'zapolgium_rod', 'zinc_rod', 'zirconium_rod'
-    ];
-
-    rods.forEach(rod => {
-        let rodName = rod.replace('_rod', '');
-        event.create(rod)
-            .texture(`kubejs:item/rods/${rodName}`)
             .maxStackSize(64);
     });
 
