@@ -1,0 +1,52 @@
+# arrow that shows where incoming damage came from
+[directional_indicator]
+	# enables the directional damage indicator
+	enable = true
+	# which indicator texture to use (0 or 1)
+	texture = "0"
+	# distance from the center of the screen that the indicator appears
+	distance = 0
+	# hex color code, e.g. #CE0025
+	color = "#CE0025"
+	# opacity, 0-255
+	alpha = 255
+	# fade out the damage indicator over time
+	fade_out = true
+	# time for damage indicator to show (in ticks)
+	indicate_time = 25
+
+# a brief X shown when you hit another entity
+[hitmarker]
+	# enables the hit marker
+	enable = false
+	# time for the hit marker to show (in ticks)
+	duration = 5
+	# length of the hit marker lines
+	size = 10
+	# thickness of the hit marker lines
+	thickness = 1.75
+	# gap of the hitmarker lines
+	gap = 3
+	# hex color of the hit marker for a normal hit, e.g. #FFFFFF
+	color = "#FFFFFF"
+	# hex color of the hit marker for a critical hit, e.g. #FFFF00
+	crit_color = "#FFFF00"
+	# hex color of the hit marker when the hit kills the entity, e.g. #FF0000
+	kill_color = "#FF0000"
+
+# floating text that shows the amount of damage done to an entity
+[damage_text]
+	# enables damage text
+	enable = false
+
+# a text health bar for entities
+[health_bar]
+	# enables health bar
+	enable = false
+	# only show health bar for entities the player is directly looking at (if false, shows health bar for all nearby entities)
+	only_show_target = true
+
+# an overlay of red outlining your screen when you take damage
+[blood_overlay]
+	# enables blood overlay
+	enable = false

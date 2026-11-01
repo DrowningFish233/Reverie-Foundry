@@ -1,0 +1,14 @@
+#Stops lunge from working if the player is below 3 hunger points
+lunge_hunger_cutoff = true
+#Whether spears have a charge attack
+spear_charge_attacks = true
+#Whether spears have a stabbing animation
+spear_stabbing_animation = true
+#Whether tridents attack like spears
+tridents_use_spear_attack_animation = false
+#Allows lunging while using an Elytra
+can_use_lunge_while_gliding = false
+#Allows lunging while underwater
+can_use_lunge_while_in_water = false
+#Enables attribute swapping on spears for lunge swapping
+attribute_swap_bypasses_minimum_attack_charge = true

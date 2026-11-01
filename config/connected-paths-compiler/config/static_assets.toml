@@ -1,0 +1,11 @@
+[GrassFix]
+enabled = true
+target_packs = ["Paths"]
+path = "GrassFix"
+description = "Custom blockstates and models for grass, podzol, and mycelium snow overlay fixes"
+
+[EmissiveProperties]
+enabled = true
+target_packs = ["Paths", "Rocks"]
+path = "EmissiveProperties"
+description = "OptiFine emissive.properties required for emissive textures to work"

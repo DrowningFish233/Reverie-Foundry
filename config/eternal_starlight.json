@@ -12,6 +12,7 @@
   "aethersentMeteorDropRate": 5.0E-4,
   "aethersentMeteorReplaceBlocks": false,
   "mobMaxTearyTicks": 200,
+  "mobSpawnPreventionRange": 6,
   "mobsConfig": {
     "boarwarf": {
       "maxHealth": 30.0,

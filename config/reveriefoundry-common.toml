@@ -1,3 +1,8 @@
+#Damage Number Settings
+[damage_numbers]
+	#Enable damage number particles (server-side, prevents packet sending)
+	enabled = true
+
 #KeepInventory Settings
 [keepinventory]
 	#Enable KeepInventory mod functionality
@@ -7,39 +12,39 @@
 	#Keep player score after death
 	keepScore = true
 	#Keep player hunger after death
-	keepHunger = true
+	keepHunger = false
 	#Keep player saturation after death
-	keepSaturation = true
+	keepSaturation = false
 	#Keep player potion effects after death
 	keepPotionEffects = false
 	#Apply durability penalty to kept items after death
-	applyDurabilityPenalty = true
+	applyDurabilityPenalty = false
 	#Keep all slots without specifying individually (like vanilla rule)
 	keepAllSlots = false
 	#Comma-separated list of slot IDs to keep. Example: '0,1,2,3,4,5,6,7,8,36,37,38,39,40'
 	keptSlots = "0,1,2,3,4,5,6,7,8,36,37,38,39,40"
 	#Comma-separated list of item IDs to keep. Example: 'minecraft:torch,minecraft:arrow'
-	keptItems = "minecraft:torch,minecraft:arrow,betteremeralds:wallet"
+	keptItems = "minecraft:torch,minecraft:arrow"
 	#Modifier multiplied by previous experience amount (0.0 = lose all, 1.0 = keep all)
 	# Default: 1.0
 	# Range: 0.0 ~ 1.0
-	experienceModifier = 0.9
+	experienceModifier = 1.0
 	#Modifier multiplied by previous hunger amount (0.0 = lose all, 1.0 = keep all)
 	# Default: 1.0
 	# Range: 0.0 ~ 1.0
-	hungerModifier = 0.85
+	hungerModifier = 1.0
 	#Minimum hunger value after death to prevent spawning with empty hunger bar
 	# Default: 8
 	# Range: 0 ~ 20
-	hungerMinLimit = 12
+	hungerMinLimit = 8
 	#Modifier multiplied by previous saturation amount (0.0 = lose all, 1.0 = keep all)
 	# Default: 1.0
 	# Range: 0.0 ~ 1.0
-	saturationModifier = 0.75
+	saturationModifier = 1.0
 	#Modifier applied to item durability when kept (0.0 = lose all durability, 1.0 = keep all)
 	# Default: 1.0
 	# Range: 0.0 ~ 1.0
-	durabilityModifier = 0.95
+	durabilityModifier = 1.0
 
 #Loot Finder Settings - Server side configuration
 [loot_locator]
@@ -51,13 +56,13 @@
 #Gateway Spawning Configuration - End dimension
 [gateway]
 	#Enable automatic gateway spawning in the End dimension
-	enabled = false
+	enabled = true
 	#Enable debug logging for gateway spawning
 	debug = false
 	#Chance of gateway spawning each in-game day (1-100)
 	# Default: 30
 	# Range: 1 ~ 100
-	spawnRate = 50
+	spawnRate = 30
 	#Minimum spawn distance from the nearest player (blocks)
 	# Default: 32
 	# Range: 10 ~ 200
@@ -67,7 +72,7 @@
 	# Range: 20 ~ 500
 	maxDistance = 128
 	#List of gateway IDs that can spawn in the End
-	gateways = ["gateways:basic/enderman", "gateways:basic/shulker", "gateways:basic/blaze", "gateways:basic/slime", "gateways:endless/blaze", "gateways:hellish_fortress", "gateways:overworldian_nights", "gateways:emerald_grove", "kubejs:large_ocean_challenge", "kubejs:large_spell_challenge", "kubejs:medium_spell_challenge", "kubejs:medium_ocean_challenge", "kubejs:small_spell_challenge", "kubejs:small_ocean_challenge"]
+	gateways = ["gateways:basic/enderman", "gateways:basic/shulker", "gateways:basic/blaze", "gateways:basic/slime", "gateways:endless/blaze", "gateways:hellish_fortress", "gateways:overworldian_nights", "gateways:emerald_grove"]
 
 #Anti Stack Death - Prevent players from using multiple lives to wear down bosses
 [anti_stack_death]
@@ -75,9 +80,380 @@
 	#Format: 'entity_registry_name;max_death_count'
 	#Example: 'cataclysm:ignis;3' means if a player is killed by Ignis 3 times, Ignis will fully heal.
 	#Use -1 to disable for a specific entity.
-	entities = ["cataclysm:ignis;3", "cataclysm:the_leviathan;3", "cataclysm:ancient_remnant;3", "cataclysm:maledictus;3", "cataclysm:scylla;3", "cataclysm:the_harbinger;3", "cataclysm:ender_guardian;3", "cataclysm:netherite_monstrosity;3", "minecraft:wither;3", "minecraft:ender_dragon;3", "bosses_of_mass_destruction:gauntlet;3", "bosses_of_mass_destruction:lich;3", "bosses_of_mass_destruction:obsidilith;3", "bosses_of_mass_destruction:void_blossom;3", "irons_spellbooks:fire_boss;3", "terra_entity:dungeon_guardian;3", "terra_entity:skeletron;3", "terra_entity:king_slime;3", "terra_entity:eye_of_cthulhu;3", "terra_entity:brain_of_cthulhu;3", "terra_entity:queen_bee;3", "irons_spellbooks:dead_king;3", "darkdoppelganger:dark_doppelganger;3"]
+	entities = ["cataclysm:ignis;3"]
 
-#Damage Number Settings
-[damage_numbers]
-	#Enable damage number particles (server-side, prevents packet sending)
+#Boss AI Rework - replaces the plain Terraria ports of boss AIs with boss-fight
+#choreography tuned for Minecraft combat (readable telegraphs, real DPS windows,
+#no constant dashing). The entity, its loot table, tags and animations are untouched:
+#only the skill state machine behind the boss is swapped.
+[boss_rework]
+	#Master switch for every boss AI rework in this mod
 	enabled = true
+	#Enable the Eye of Cthulhu AI rework (off restores the untouched terra_entity behaviour)
+	eye_of_cthulhu = true
+	#Enable the Brain of Cthulhu AI rework (off restores the untouched terra_entity behaviour)
+	brain_of_cthulhu = true
+	#Enable the King Slime AI rework (off restores the untouched terra_entity behaviour)
+	king_slime = true
+	#Enable the Queen Bee AI rework (off restores the untouched terra_entity behaviour)
+	queen_bee = true
+	#Enable the Eater of Worlds AI rework (off restores the untouched terra_entity behaviour)
+	eater_of_worlds = true
+	#Enable the Skeletron AI rework (off restores the untouched terra_entity behaviour)
+	skeletron = true
+	#Enable the Ignis AI rework (off restores the untouched Cataclysm behaviour)
+	ignis = true
+	#Enable the Maledictus AI rework (off restores the untouched Cataclysm behaviour)
+	maledictus = true
+	#Enable the Ender Guardian AI rework (off restores the untouched Cataclysm behaviour)
+	ender_guardian = true
+	#Enable the Netherite Monstrosity AI rework (off restores the untouched Cataclysm behaviour)
+	netherite_monstrosity = true
+	#Enable The Harbinger AI rework (off restores the untouched Cataclysm behaviour)
+	harbinger = true
+	#Enable The Leviathan AI rework (off restores the untouched Cataclysm behaviour)
+	leviathan = true
+	#Enable the Ancient Remnant AI rework (off restores the untouched Cataclysm behaviour)
+	ancient_remnant = true
+	#Enable the Scylla AI rework (off restores the untouched Cataclysm behaviour)
+	scylla = true
+	#Enable the Fire Boss AI rework (off restores the untouched irons_spellbooks behaviour)
+	fire_boss = true
+	#Enable the Dead King AI rework (off restores the untouched irons_spellbooks behaviour)
+	dead_king = true
+	#Enable the final Dark Doppelganger three-phase rework (off restores the untouched darkdoppelganger behaviour)
+	dark_doppelganger = true
+	#Enable the Lunar Monstrosity attack telegraphs (off restores the untouched Eternal Starlight behaviour)
+	lunar_monstrosity = true
+	#Enable the Starlight Golem AI rework and telegraphed moves (off restores the untouched Eternal Starlight behaviour)
+	starlight_golem = true
+	#Boss pool for the Boss Rush. Every entry is an entity id.
+	#Only entities present in the registry are used; duplicates and the final boss itself are ignored.
+	#The number of entries controls how much health each kill removes.
+	dark_doppelganger_rush_bosses = ["cataclysm:ignis", "cataclysm:maledictus", "cataclysm:ender_guardian", "cataclysm:netherite_monstrosity", "cataclysm:the_harbinger", "cataclysm:the_leviathan", "cataclysm:ancient_remnant", "cataclysm:scylla", "bosses_of_mass_destruction:gauntlet", "bosses_of_mass_destruction:lich", "bosses_of_mass_destruction:obsidilith", "bosses_of_mass_destruction:void_blossom", "terra_entity:dungeon_guardian", "terra_entity:skeletron", "terra_entity:king_slime", "terra_entity:eye_of_cthulhu", "terra_entity:brain_of_cthulhu", "terra_entity:queen_bee", "terra_entity:eater_of_worlds", "irons_spellbooks:fire_boss", "irons_spellbooks:dead_king", "minecraft:wither"]
+	#Let the final Dark Doppelganger break blocks it overlaps or gets stuck on, Cataclysm-style.
+	#Respects the mobGriefing game rule and NeoForge protection events; never drops items.
+	dark_doppelganger_block_breaking = true
+	#Let the final Dark Doppelganger answer players who fly, pillar up or fight from above
+	#with a delayed vertical judgment beam that also tears down player-made pillars.
+	dark_doppelganger_anti_air = true
+	#Clear boats and minecarts that are physically stuck inside the final Dark Doppelganger
+	#so vehicles cannot pin the boss in place.
+	#Only vehicles colliding with the boss are removed; player boats elsewhere are never targeted.
+	dark_doppelganger_clear_blocking_vehicles = true
+	#Enable the Gauntlet (Bosses of Mass Destruction) choreography (off restores the untouched BOMD behaviour)
+	gauntlet = true
+	#Enable the Lich (Bosses of Mass Destruction) choreography (off restores the untouched BOMD behaviour)
+	lich = true
+	#Enable the Obsidilith (Bosses of Mass Destruction) choreography (off restores the untouched BOMD behaviour)
+	obsidilith = true
+	#Enable the Void Blossom (Bosses of Mass Destruction) choreography (off restores the untouched BOMD behaviour)
+	void_blossom = true
+	#How much of an arrow's damage a reworked boss ignores (0.5 = 50% reduction).
+	#Applies to the bosses covered by this section while the master switch is on.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	arrow_damage_reduction = 0.5
+
+#World Phase - Terraria-like global progression driven by killing specific bosses.
+#Phases themselves are defined by data packs: data/<namespace>/world_phase/*.json
+#The lists below are entity lists; each entry is either an entity id or #namespace:tag.
+[world_phase]
+	#Master switch for the world phase difficulty scaling
+	enabled = true
+	#Log the computed multipliers of every scaled mob
+	debug = false
+	#Entities that are never touched by the world phase system
+	blacklist = []
+	#Entities that skip the vanilla EASY/NORMAL/HARD difficulty multiplier.
+	#Use this for bosses so their scaling comes purely from the world phase.
+	ignore_vanilla_difficulty = ["cataclysm:ignis", "cataclysm:the_leviathan", "cataclysm:ancient_remnant", "cataclysm:maledictus", "cataclysm:scylla", "cataclysm:the_harbinger", "cataclysm:ender_guardian", "cataclysm:netherite_monstrosity", "minecraft:wither", "bosses_of_mass_destruction:gauntlet", "bosses_of_mass_destruction:lich", "bosses_of_mass_destruction:obsidilith", "bosses_of_mass_destruction:void_blossom", "irons_spellbooks:fire_boss", "terra_entity:dungeon_guardian", "terra_entity:skeletron", "terra_entity:king_slime", "terra_entity:eye_of_cthulhu", "terra_entity:brain_of_cthulhu", "terra_entity:queen_bee", "irons_spellbooks:dead_king", "darkdoppelganger:dark_doppelganger"]
+	#Entities that get scaled even if they are not counted as monsters
+	force_apply = ["iceandfire:lightning_dragon"]
+	#Entities that receive an extra multiplier on top of everything else
+	elite_entities = ["terra_entity:dungeon_guardian", "terra_entity:skeletron", "terra_entity:king_slime", "terra_entity:eye_of_cthulhu", "terra_entity:brain_of_cthulhu", "terra_entity:queen_bee"]
+	#How much the bonus of an elite entity is amplified (1.0 = no change)
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	elite_multiplier = 2.0
+	#Sound played for everyone when the world phase advances.
+	#A phase can override this with its own "sound" field in json.
+	#Leave empty to disable the sound.
+	advance_sound = "minecraft:ui.toast.challenge_complete"
+
+	#World phase rewards - purely additive. Vanilla drops are never modified.
+	#Each phase declares an "echo" coefficient in its json; it controls both how many extra
+	#loot table rolls happen and how strongly those rolls are tilted towards rare entries.
+	[world_phase.rewards]
+		#Master switch for the world phase reward system
+		enabled = true
+		#How aggressively extra loot is tilted towards rare entries.
+		#The reweighting exponent is 1 / (1 + echo * tilt_strength), applied to both entry
+		#weights and pool condition chances. Larger values tilt harder; 0 disables the tilt
+		#and extra rolls keep the original distribution.
+		# Default: 1.0
+		# Range: 0.0 ~ 10.0
+		tilt_strength = 1.0
+		#Hard cap on how many extra loot table rolls a single kill may perform.
+		#Keeps large mob farms from becoming a performance problem.
+		# Default: 4
+		# Range: 0 ~ 32
+		roll_cap = 4
+		#Upper bound applied to a phase's xp_multiplier
+		# Default: 5.0
+		# Range: 1.0 ~ 100.0
+		max_xp_multiplier = 5.0
+
+	#Personal Difficulty - opt-in per-player tiers (N1..N13) stacked on top of the world phase.
+	#Tiers live in data packs: data/<namespace>/personal_difficulty/*.json
+	#Every player starts with NO tier and nothing unlocks automatically; a tier is only ever
+	#turned on by command: /reveriefoundry difficulty personaldifficulty set <tier> [<player>]
+	#The tier of the nearest player at the moment a mob spawns is baked into that mob and
+	#never changes afterwards.
+	#Which entities are affected is shared with the world_phase section above:
+	#blacklist / force_apply / elite_entities / ignore_vanilla_difficulty.
+	[world_phase.personal_difficulty]
+		#Master switch for the personal difficulty scaling
+		enabled = true
+		#Log the computed multipliers (and the personal tier used) of every scaled mob
+		debug = false
+		#How far to look for the nearest player when a mob spawns.
+		#That player's tier is the one baked into the mob. Keep it at or below the
+		#simulation distance (128) so the result matches where mobs can actually spawn.
+		# Default: 128.0
+		# Range: 1.0 ~ 512.0
+		nearest_player_radius = 128.0
+		#Entities that ignore personal difficulty but still receive world phase scaling.
+		#The final boss uses this so its health is the same for every player regardless
+		#of their selected tier. Accepts entity ids and #tags.
+		exclusions = ["darkdoppelganger:dark_doppelganger", "darkdoppelganger:dark_doppelganger_minion"]
+
+	#Trait Budget - the whole-body limit on how many different Silent Gear traits a player may wear at once.
+	#The limit is the sum of five parts:
+	#  base_budget + personal difficulty ladder + world phase ladder + side boss unlocks + the max_traits attribute.
+	#With the defaults that is 24 (base) + 12 (N12 and N13) + 12 (phase 3) + 24 (12 side bosses) = 72.
+	[world_phase.trait_budget]
+		#Master switch for the trait budget system
+		enabled = true
+		#Log each player's distinct trait count, budget and overload once per scan
+		debug = false
+		#How many distinct traits a player may equip for free
+		# Default: 24
+		# Range: 0 ~ 512
+		base_budget = 24
+		#Personal difficulty tier that starts granting extra trait slots
+		# Default: 1
+		# Range: 0 ~ 64
+		bonus_start_tier = 1
+		#Extra trait slots granted for EVERY personal tier from bonus_start_tier upwards
+		#The bonus is a smooth ladder instead of a few big jumps.
+		#With the defaults this gives N1 +1, N2 +2, ... and the cap below.
+		# Default: 1
+		# Range: 0 ~ 128
+		bonus_per_tier = 1
+		#Upper bound of the personal tier bonus.
+		#With the defaults the ladder is used up at N12, so N12 and N13 grant the same budget
+		#and unlocking N13 never raises the trait limit.
+		# Default: 12
+		# Range: 0 ~ 512
+		bonus_cap = 12
+		#World phase index that starts granting extra trait slots
+		# Default: 1
+		# Range: 0 ~ 64
+		world_bonus_start_phase = 1
+		#Extra trait slots granted for EVERY world phase from world_bonus_start_phase upwards
+		#The phase index comes from the index field of data/<namespace>/world_phase/*.json.
+		# Default: 4
+		# Range: 0 ~ 128
+		world_bonus_per_phase = 4
+		#Upper bound of the world phase bonus.
+		#With the defaults the four shipped phases give +0 / +4 / +8 / +12.
+		# Default: 12
+		# Range: 0 ~ 512
+		world_bonus_cap = 12
+		#Master switch for the side boss trait budget unlocks
+		boss_unlock_enabled = true
+		#Trait slots granted the first time a player kills each side boss in the list below
+		#Kills are tracked per player and survive death; killing the same boss again grants nothing.
+		# Default: 2
+		# Range: 0 ~ 128
+		boss_bonus_per_boss = 2
+		#Upper bound of the side boss bonus.
+		#With the defaults 12 different side bosses are enough to reach +24.
+		# Default: 24
+		# Range: 0 ~ 512
+		boss_bonus_cap = 24
+		#The bosses that unlock trait slots. Each entry is an entity id or #namespace:tag.
+		#Default: #reveriefoundry:side_bosses, defined in
+		#data/reveriefoundry/tags/entity_type/side_bosses.json.
+		#The story bosses that open a world phase, plus the Dark Doppelganger, live in
+		##reveriefoundry:main_bosses and deliberately grant no trait slots.
+		##reveriefoundry:bosses is the union of both tags.
+		boss_unlock_entities = ["#reveriefoundry:side_bosses"]
+		#Damage and gear attribute values lost per trait over the budget (0.05 = -5%)
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		penalty_per_trait = 0.05
+		#Hard floor for the penalty multipliers, so a huge overload cannot reduce a player to zero
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		penalty_floor = 0.1
+		#Also count Silent Gear items worn in Curios slots
+		count_curios = true
+		#Minimum delay (in ticks) between two refreshes of the same player.
+		#Players are only refreshed when marked dirty (equipment change, difficulty change,
+		#login) or by the safety scan below, so most ticks do no work at all.
+		# Default: 10
+		# Range: 1 ~ 200
+		scan_interval_ticks = 10
+		#Fallback full scan interval (in ticks).
+		#Catches changes that do not fire an equipment event (Curios edits, in-place item
+		#mutation). Lower values are safer but cost a full inventory scan for every player.
+		# Default: 100
+		# Range: 20 ~ 1200
+		safety_scan_ticks = 100
+
+	#Adrenaline - the per-player combat resource that comes with personal difficulty.
+	#Every tier defines its own adrenaline block in data/<namespace>/personal_difficulty/*.json,
+	#so the numbers below are only the parts that are shared by all tiers.
+	#Nothing here does anything unless the player has a personal difficulty tier turned on.
+	[world_phase.adrenaline]
+		#Master switch for the adrenaline system
+		enabled = true
+		#Log when a player's adrenaline bar is full
+		debug = false
+		#How far away a target may be and still charge the bar.
+		#Low tiers only charge near a boss; tier 6+ also charge near ordinary hostiles and
+		#charge faster the closer that target is.
+		# Default: 8.0
+		# Range: 1.0 ~ 32.0
+		radius = 8.0
+		#After taking any damage the bar stops charging for this many ticks (20 = 1 second)
+		# Default: 20
+		# Range: 0 ~ 200
+		pause_ticks = 20
+		#How often to look for a nearby target that charges the bar, in ticks.
+		#Charging itself is still applied every tick using the cached result, so this only
+		#controls how quickly the rate reacts to you moving closer or a target appearing.
+		#4 ticks (0.2s) is imperceptible and cuts the entity scan cost by 4x.
+		#Raise it if you run a very large player count; 1 restores a scan every tick.
+		# Default: 4
+		# Range: 1 ~ 40
+		scan_interval_ticks = 4
+		#What counts as a boss. Each entry is an entity id or #namespace:tag.
+		#Default: #reveriefoundry:bosses, the union of #reveriefoundry:main_bosses and
+		##reveriefoundry:side_bosses. Edit those two tags to add or remove bosses.
+		#Bosses matter twice: low tiers can ONLY charge near one, and on every tier a boss
+		#charges the bar faster (see boss_multiplier in each tier's json).
+		bosses = ["#reveriefoundry:bosses"]
+		#Sound played when the bar becomes full. Leave empty to disable
+		sound_full = "reveriefoundry:adrenaline_full"
+		#Sound played when the player fires the burst. Leave empty to disable
+		sound_used = "reveriefoundry:adrenaline_use"
+		#Sound played when a FULL bar is knocked down by a hit.
+		#Taking damage while the bar is not full does not play this.
+		#Leave empty to disable.
+		sound_lost = "reveriefoundry:adrenaline_lost"
+
+	#Stamina - the resource that replaces the Combat Roll cooldown.
+	#The pool size and the regeneration speed are attributes
+	#(reveriefoundry:max_stamina = 100, reveriefoundry:stamina_recovery = 10 points/s),
+	#so gear, traits and potions can raise them. The rules below are shared by everyone.
+	[world_phase.stamina]
+		#Master switch. When false the roll gate is released and Combat Roll's own
+		#charge/cooldown system takes over again, and the stamina bar is hidden.
+		enabled = true
+		#Stamina spent per roll.
+		#With the default pool of 100 this is 3 rolls from full, and about 3s to earn one back.
+		# Default: 30.0
+		# Range: 1.0 ~ 1000.0
+		roll_cost = 30.0
+		#After spending stamina, wait this many ticks before it starts regenerating (20 = 1 second).
+		#This is what stops you from rolling forever at exactly the cost of one roll.
+		# Default: 12
+		# Range: 0 ~ 200
+		regen_delay_ticks = 12
+		#Regeneration multiplier while the player is not on the ground (0.4 = 40% speed)
+		# Default: 0.4
+		# Range: 0.0 ~ 1.0
+		air_regen_multiplier = 0.4
+		#Spending more stamina than you have exhausts you: the bar turns red and drops to 0.
+		#For this many ticks (100 = 5 seconds) nothing regenerates and sprinting, rolling and
+		#blocking are all disabled. The bar turns back to normal only after the recovery starts.
+		# Default: 100
+		# Range: 0 ~ 1200
+		exhausted_lock_ticks = 100
+		#Regeneration multiplier while the player has the Wither effect (0.5 = half speed)
+		#Set to 1.0 to disable the wither penalty.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		wither_regen_multiplier = 0.5
+		#Potion effects that raise or lower the stamina pool. Each entry is
+		#'effect_id=value', where value is either a flat amount (+25) or a percentage
+		#of the base pool (-25%). Both forms can be mixed freely.
+		#The modified maximum is what the bar shows; the colour of the maximum number
+		#tells you whether it is currently boosted (gold) or reduced (yellow).
+		effect_modifiers = ["farmersdelight:nourishment=+25", "minecraft:hunger=-25"]
+		#Potion effects that grant unlimited stamina while active.
+		#Unlimited stamina costs nothing, cannot be exhausted, and shows the rainbow bar
+		#with a flashing highlight. Staying in creative or spectator mode does the same.
+		#Example: ["minecraft:conduit_power"]
+		infinite_effects = []
+
+	#Combat Telegraph Settings
+	[world_phase.combat_telegraph]
+		#Master switch. When false, mob melee hits land with vanilla timing and no indicator is shown.
+		#When true a mob's melee hit is held back for windupTelegraphTicks, the player sees the
+		#indicator, and the hit only resolves after the windup.
+		#Only applies to players wearing a Curio with the #reveriefoundry:blocking tag - the
+		#windup window exists to make blocking possible, so without the tag combat stays vanilla.
+		enabled = true
+		#How many ticks a mob melee hit is delayed while the indicator plays (20 ticks = 1 second)
+		#Keep it at or above parryWindowTicks, otherwise a press can expire before the hit lands.
+		# Default: 10
+		# Range: 1 ~ 40
+		windupTicks = 10
+		#If true, melee hits from other players are also telegraphed and delayed (PvP)
+		telegraphPlayers = false
+		#Hold the attacker in place (no walking) while its windup plays, so the pose reads as a real swing
+		freezeAttacker = true
+		#How many windups one attacker can have in flight. A mob that swings again during a
+		#windup queues another ring instead of having that swing eaten. Swings past this are ignored.
+		# Default: 3
+		# Range: 1 ~ 10
+		queueLimit = 3
+		#After its hit is parried the attacker stops attacking and walking for this many ticks
+		# Default: 20
+		# Range: 0 ~ 600
+		parryStunTicks = 20
+		#How long a parry press stays active, in ticks. Every hit inside this window is parried
+		# Default: 6
+		# Range: 1 ~ 20
+		parryWindowTicks = 6
+		#Stamina spent on every block (parry) press. The press is refused when you have
+		#less than this, and spending more than you have exhausts you. 0 makes blocking free.
+		#Blocking only works while a Curio carrying the item tag
+		##reveriefoundry:blocking is equipped - there is no config switch for it.
+		# Default: 20.0
+		# Range: 0.0 ~ 1000.0
+		parryStaminaCost = 20.0
+		#The hit is held back this many ticks after the windup, so a press a few ticks late still counts
+		# Default: 3
+		# Range: 0 ~ 10
+		parryGraceTicks = 3
+		#Damage types that can never be parried. They are also not telegraphed, so the indicator
+		#only ever appears on a hit you can actually parry. Each entry is a damage type id or
+		##namespace:tag. #neoforge:is_magic already covers vanilla magic, thorns, dragon breath
+		#and the spell schools of iron's spellbooks.
+		parryExcludedDamage = ["#minecraft:is_explosion", "#minecraft:is_projectile", "#neoforge:is_magic"]
+		#Entity types whose attacks are never telegraphed (they hit with vanilla timing)
+		#Example: minecraft:wither
+		excludedEntities = []
+
+	#Better Combat compatibility blacklist.
+	#Items whose id is listed here are treated as non-Better-Combat weapons:
+	#Better Combat will not replace their attack mode, range or animations.
+	#They keep vanilla attacks and any other mod's own attack logic.
+	#Entries are item ids, for example "reveriefoundry:lunge_spear".
+	[world_phase.better_combat]
+		blacklist = ["reveriefoundry:lunge_spear", "minecraft:wooden_spear", "minecraft:stone_spear", "minecraft:iron_spear", "minecraft:golden_spear", "minecraft:diamond_spear"]

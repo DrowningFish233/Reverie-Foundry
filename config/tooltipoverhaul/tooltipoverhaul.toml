@@ -246,6 +246,10 @@
 	# 
 	# Default: false
 	SHOW_REGISTRY_NAME = false
+	# Center the title and rating over the whole tooltip width instead of the space left next to the icon.
+	# 
+	# Default: false
+	ALIGNMENT_IGNORES_ICON = false
 
 # effects §§
 [effects]

@@ -1,0 +1,9 @@
+{
+    "connectTiles": "minecraft:suspicious_sand_0",
+    "connectTilesAppend": [
+        "minecraft:suspicious_sand_1",
+        "minecraft:suspicious_sand_2",
+        "minecraft:suspicious_sand_3"
+    ],
+	"minGameVersion": "1.20"
+}

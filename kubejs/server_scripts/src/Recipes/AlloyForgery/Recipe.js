@@ -172,6 +172,7 @@ ServerEvents.recipes(event => {
             .addInput('iceandfire:sapphire_gem', 2)
             .addInput('minecraft:amethyst_shard', 2)
             .addInput('minecraft:netherite_scrap', 1)
+            .addInput('kubejs:necroplasm', 1)
             .setOutput('kubejs:alexandrite', 2)
             .setMinForgeTier(1)
             .setFuelPerTick(5)
@@ -280,7 +281,7 @@ ServerEvents.recipes(event => {
     registerCustomRecipe(
         new AlloyForgingRecipeJSON()
             .addInput('minecraft:slime_ball', 1)
-            .addInput('kubejs:uranium_ingot', 1)
+            .addInput('alltheores:uranium_ingot', 1)
             .addOverride('3+', 'kubejs:uranium_ingot', 3)
             .setOutput('kubejs:uranium_ingot', 2)
             .setMinForgeTier(1)
@@ -582,6 +583,36 @@ ServerEvents.recipes(event => {
             .setOutput('create:brass_ingot', 2)
             .addOverride('3+', 'create:brass_ingot', 3)
             .setMinForgeTier(2)
+            .setFuelPerTick(10)
+    );
+
+    registerCustomRecipe(
+        new AlloyForgingRecipeJSON()
+            .addInput('alltheores:nickel_ingot', 1)
+            .addInput('minecraft:copper_ingot', 1)
+            .setOutput('alltheores:invar_ingot', 2)
+            .addOverride('3+', 'alltheores:invar_ingot', 3)
+            .setMinForgeTier(2)
+            .setFuelPerTick(10)
+    );
+
+    registerCustomRecipe(
+        new AlloyForgingRecipeJSON()
+            .addInput('alltheores:nickel_ingot', 1)
+            .addInput('minecraft:copper_ingot', 1)
+            .setOutput('alltheores:invar_ingot', 2)
+            .addOverride('3+', 'alltheores:invar_ingot', 3)
+            .setMinForgeTier(2)
+            .setFuelPerTick(10)
+    );
+
+    registerCustomRecipe(
+        new AlloyForgingRecipeJSON()
+            .addInput('minecraft:sand', 1)
+            .addInput('minecraft:iron_ingot', 1)
+            .setOutput('alltheores:aluminum_ingot', 2)
+            .addOverride('3+', 'alltheores:aluminum_ingot', 3)
+            .setMinForgeTier(1)
             .setFuelPerTick(10)
     );
 });

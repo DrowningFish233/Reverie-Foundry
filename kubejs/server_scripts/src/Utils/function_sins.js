@@ -13,7 +13,9 @@ function loggedInplayersanity(player) {
     if (!pData.contains(depravity)) pData.putInt(depravity, 0);
     if (!pData.contains(sloth_cumulative_damage)) pData.putInt(sloth_cumulative_damage, 0);
     //肾上腺素
-    if (!pData.contains(adrenaline)) pData.putInt(adrenaline, 0);
+    /*
+    if (!pData.contains()) pData.putInt(adrenaline, 0);
+    */
     //石榴石：冷却
     if (!pData.contains(garnet)) pData.putInt(garnet, 0);
     //浸血阅历：冷却

@@ -220,7 +220,7 @@ LootJS.modifiers(event => {
         "terra_entity:skeletron"
     ]).addLoot(LootEntry.of('kubejs:viculeam_ingot')
         .apply(item => {
-            item.setCount({ min: 3, max: 8 })
+            item.setCount({ min: 7, max: 12 })
         })
     );
 
@@ -698,6 +698,17 @@ LootJS.modifiers(event => {
         .addLoot(
             LootEntry.alternative(
                 LootEntry.of('kubejs:ancient_remnant_bone').apply(item => {
+                    item.setCount({ min: 3, max: 6 });
+                })
+            )
+        );
+
+    event.addEntityModifier([
+        "terra_entity:king_slime"
+    ])
+        .addLoot(
+            LootEntry.alternative(
+                LootEntry.of('kubejs:crown_jewel').apply(item => {
                     item.setCount({ min: 3, max: 6 });
                 })
             )

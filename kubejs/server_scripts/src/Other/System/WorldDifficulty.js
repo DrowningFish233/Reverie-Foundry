@@ -79,6 +79,7 @@ function markDifficultyApplied(entity) {
     entity.persistentData.putBoolean('difficulty_applied', true);
 }
 
+/*
 EntityEvents.spawned(event => {
     let entity = event.entity;
     if (!entity) return;
@@ -231,6 +232,8 @@ EntityEvents.spawned(event => {
         console.log(`[Debug] === 处理完成，最终血量: ${finalHealth} ===`);
     }
 });
+*/
+
 
 EntityEvents.spawned(event => {
     const entity = event.entity;

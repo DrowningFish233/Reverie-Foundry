@@ -57,7 +57,7 @@
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: -5.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -72,8 +72,8 @@
 				id: "46012C86914DC29F"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: -4.0d
+			x: -4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -89,7 +89,7 @@
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -104,8 +104,8 @@
 				id: "308969B113784A45"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -4.0d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -120,8 +120,8 @@
 				id: "5E61C66706DB394E"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: -4.0d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -136,8 +136,8 @@
 				id: "2953AA70E267ADF7"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			can_repeat: false
@@ -175,8 +175,8 @@
 				id: "5A0F513FCD1F0C69"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 4.0d
+			x: -3.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["54207C49530C50BC"]
@@ -188,13 +188,15 @@
 				id: "4CB25FFD3173ADD6"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 4.0d
+			x: 2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
 				"0594FF6909227B41"
 				"13AFD3688361872A"
+				"736EC3FA7781BDA2"
+				"7FC742CE5DF7585C"
 			]
 			icon: {
 				id: "kubejs:gold_crown"
@@ -214,7 +216,7 @@
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: 5.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
@@ -227,15 +229,19 @@
 				type: "xp"
 				xp: 5
 			}]
+			size: 3.0d
 			tasks: [{
 				id: "008CE044C39CDBA7"
 				type: "checkmark"
 			}]
 			x: -0.5d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["017488D14BA19FAA"]
+			icon: {
+				id: "terra_curio:trifold_map"
+			}
 			id: "6DA0846CF76DCC86"
 			shape: "diamond"
 			size: 2.0d
@@ -245,6 +251,29 @@
 			}]
 			x: -0.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["54207C49530C50BC"]
+			icon: {
+				id: "minecraft:diamond_sword"
+			}
+			id: "736EC3FA7781BDA2"
+			tasks: [{
+				id: "46D469A4C008D9FC"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["54207C49530C50BC"]
+			id: "7FC742CE5DF7585C"
+			tasks: [{
+				id: "022106FFBCB108D5"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 9.5d
 		}
 	]
 }

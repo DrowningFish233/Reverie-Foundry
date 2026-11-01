@@ -19,7 +19,7 @@ function allthe_event(event) {
  */
 function other_effect(event) {
     hurtEffect(event);
-    use_adrenaline_effect(event);
+    /*use_adrenaline_effect(event);*/
     load_protection_attack(event);
     load_protection(event);
     elemental_mix(event);
@@ -355,7 +355,6 @@ RFTrait('kubejs:hallowed_ingot', 0)
         if (!entity.hasEffect("kubejs:hallowed_ingot")) return;
         entity.removeEffect("kubejs:hallowed_ingot");
         event.cancel()
-
     })
     .register();
 
@@ -862,27 +861,6 @@ RFTrait('kubejs:wheat_dough', 0)
 
 
 
-// 'farmersdelight:wheat_dough'
-RFTrait('kubejs:wheat_dough', 0)
-    .beforeHurt(event => {
-        const { source, entity } = event;
-        const attacker = source.player || source.actual;
-
-        if (!attacker || !attacker.isPlayer() || !entity.isLiving() || !fu_hasTraitAnywhere(attacker, "kubejs:farmersdelight")) {
-            return;
-        }
-
-        const currentHealth = entity.getHealth();
-        const damage = event.getDamage();
-
-        if (currentHealth <= damage) {
-            event.cancel();
-            entity.setHealth(1);
-        }
-    })
-    .register();
-
-
 // 'irons_spellbooks:arcane_ingot'
 RFTrait('kubejs:arcane_ingot', 0)
     .beforeHurt(event => {
@@ -1332,8 +1310,7 @@ RFTrait('kubejs:mithril_ingot', 0)
         if (currentMana >= manaCost) {
             player.heal(healAmount);
             magicData.setMana(currentMana - manaCost);
-        } else {
-        }
+        } return;
     })
     .register();
 
@@ -1915,8 +1892,7 @@ RFTrait('kubejs:pearl', 0)
     })
     .register();
 
-
-//你是词条吗，我觉得我是
+/*
 RFTrait('kubejs:naughty', 0)
     .beforeHurt(event => {
         const { source, entity } = event;
@@ -1949,6 +1925,7 @@ RFTrait('kubejs:naughty', 0)
         }
     })
     .register();
+    */
 
 //12倍耐久加伤
 RFTrait('kubejs:topaz', 0)

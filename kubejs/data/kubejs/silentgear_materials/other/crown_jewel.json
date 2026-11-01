@@ -1,0 +1,81 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.kubejs:crown_jewel"
+    },
+    "name_prefix": "",
+    "color": "#e43842",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "kubejs:crown_jewel"
+    },
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:rod": {
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.4
+      },
+      "armor": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.3
+      },
+      "magic_armor": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.3
+      },
+      "magic_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.4
+      },
+      "traits": [
+        {
+          "trait": "reveriefoundry:slime_crown_gems",
+          "level": 1,
+          "conditions": []
+        }
+      ],
+      "spell_resist": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.3
+      },
+      "spell_power": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.25
+      }
+    },
+    "silentgear:setting": {
+      "armor": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2.0
+      },
+      "traits": [
+        {
+          "trait": "reveriefoundry:slime_crown_gems",
+          "level": 1,
+          "conditions": []
+        }
+      ],
+      "max_mana": {
+        "operation": "ADD",
+        "value": 50.0
+      },
+      "geas_limit": {
+        "operation": "ADD",
+        "value": 0.5
+      }
+    }
+  }
+}

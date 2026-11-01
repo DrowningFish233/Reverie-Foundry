@@ -162,24 +162,6 @@ StartupEvents.registry("champions:affix", event => {
                 entity.persistentData.putBoolean("malum_pact_of_the_high_priest", true)
             })
         })
-
-    event.create('malum_pact_of_the_berserker')
-        .settings(setting => {
-            setting.withDefault()
-                .setPrefix("affix.")
-                .setCategory("defense")
-            // 必须设置类别：cc、defense、offense
-            //offense攻击
-            //defense防御
-            //cc控制
-        })
-        .behavior(behavior => {
-            behavior.onSpawn((champion) => {
-                const entity = champion.getLivingEntity();
-                entity.persistentData.putBoolean("malum_pact_of_the_berserker", true)
-            })
-        })
-
     event.create('malum_pact_of_the_warlock')
         .settings(setting => {
             setting.withDefault()
@@ -674,10 +656,8 @@ StartupEvents.registry("champions:affix", event => {
 
                 const isPhaseTwo = healthPercent < 35;
 
-                // 根据阶段选择效果类型
                 const effectType = isPhaseTwo ? 'kubejs:soul_fire' : 'kubejs:fire';
 
-                // 检查玩家是否已有该效果
                 if (player.hasEffect(effectType)) {
                     const currentEffect = player.getEffect(effectType);
                     const currentAmplifier = currentEffect.getAmplifier();
@@ -699,7 +679,7 @@ StartupEvents.registry("champions:affix", event => {
                 return true;
             });
 
-            // 服务器更新行为
+            // 服务器更新
             behavior.onServerUpdate(champion => {
                 const entity = champion.getLivingEntity();
                 const entityID = entity.getType();
@@ -710,7 +690,6 @@ StartupEvents.registry("champions:affix", event => {
                 const currentHealth = entity.getHealth();
                 const healthPercent = currentHealth / maxHealth * 100;
 
-                // 血量低于40%时
                 if (healthPercent < 40) {
                     if (entity.tickCount % 100 === 0) {
                         entity.level.getEntities(

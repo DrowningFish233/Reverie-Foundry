@@ -12,7 +12,7 @@
   "disableDistantShadows": true,
   "aggressiveShaderCulling": true,
   "shaderCullMode": "AUTO",
-  "manualShaderCullPercentage": 25,
+  "manualShaderCullPercentage": 10,
   "enableLoadStabilizer": true,
   "chunkUpdatesResting": 10,
   "chunkUpdatesSprinting": 4,

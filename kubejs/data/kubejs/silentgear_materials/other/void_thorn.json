@@ -1,0 +1,64 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.bosses_of_mass_destruction:void_thorn"
+    },
+    "name_prefix": "",
+    "color": "#FFFFFFFF",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "bosses_of_mass_destruction:void_thorn"
+    },
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:lining": {
+      "durability": {
+        "operation": "ADD",
+        "value": 100.0
+      },
+      "armor": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 0.5
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 10.0
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 20.0
+      },
+      "repair_efficiency": {
+        "operation": "ADD",
+        "value": 0.5
+      },
+      "traits": [
+        {
+          "trait": "reveriefoundry:blossom_spores",
+          "level": 1,
+          "conditions": []
+        }
+      ],
+      "spell_slots": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "forge_positive_chance": {
+        "operation": "ADD",
+        "value": 20.0
+      }
+    }
+  }
+}

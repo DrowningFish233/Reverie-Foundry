@@ -1,0 +1,93 @@
+#Unreachable Target Cache
+#Remembers targets a mob's pathfinding dead-ended on, per mob, so retries
+#within the TTL are skipped instead of re-running the search.
+#Entries are dropped when blocks change in their target chunk.
+#TTLs are wall-clock based: 1 tick = 50 ms.
+[unreachable_cache]
+	#Enable the unreachable target cache.
+	enabled = true
+	#TTL in ticks for unreachable target entries.
+	#Default: 200 (10 seconds)
+	# Default: 200
+	# Range: 40 ~ 1200
+	ttl = 200
+	#Maximum cache entries.
+	# Default: 1024
+	# Range: 32 ~ 4096
+	maxSize = 1024
+	#Drop entries as soon as a block changes in their target chunk.
+	#Keeps mobs responsive to doors opening, bridges being built, etc.
+	chunkInvalidation = true
+
+#Distance-Based Optimizations
+#Mobs farther than 'distance' from every player get reduced pathfinding and AI
+#tick rates. Near mobs always behave exactly like vanilla.
+#Urgent mobs (attacking, or hurt within the last 10 seconds) are never affected.
+[lod]
+	#Distance (in blocks) beyond which a mob counts as far from players.
+	#Default: 48 blocks
+	# Default: 48.0
+	# Range: 16.0 ~ 256.0
+	distance = 48.0
+	#Recompute in-progress paths less often for far mobs.
+	reducedPathRecompute = true
+	#Minimum ticks between path recomputes for far mobs.
+	#Vanilla recomputes at most every 20 ticks, so values at or below 20 have no effect.
+	#Default: 60
+	# Default: 60
+	# Range: 20 ~ 400
+	recomputeInterval = 60
+
+#Search Depth Limiter
+#Caps the maximum nodes A* can visit per pathfind.
+#Most successful village-scale paths complete in 200-300 nodes.
+#Failed pathfinds can visit 800+, so capping mostly saves CPU on failures.
+#Urgent mobs are exempt and always get the full vanilla budget.
+[search_depth]
+	#Enable search depth limiting.
+	enabled = true
+	#Maximum nodes A* can visit per pathfind.
+	#Vanilla default: followRange * 16 (e.g. 512 for a follow range of 32).
+	#Recommended: 300-500 for villages, 200 for tight spaces.
+	# Default: 400
+	# Range: 100 ~ 2000
+	maxNodes = 400
+
+#Recomputation Cooldown
+#After a failed pathfind, wait longer than vanilla's 20 ticks before retrying.
+[recompute_cooldown]
+	#Enable extended recomputation cooldown for failed paths.
+	enabled = true
+	#Ticks to wait before retrying a failed pathfind.
+	#Vanilla: 20. Recommended: 60-100.
+	# Default: 60
+	# Range: 20 ~ 400
+	cooldownTicks = 60
+
+#Pathfinding Throttle
+#Limits how many path computations can start per server tick.
+#When many mobs decide to pathfind on the same tick (e.g. villagers at dawn),
+#this spreads the work across ticks to avoid a lag spike.
+#A denied pathfind fails that attempt; the mob's AI retries on its own schedule.
+#Urgent mobs bypass the throttle.
+[throttle]
+	#Enable pathfinding throttle.
+	enabled = true
+	#Maximum pathfinding computations per server tick.
+	#Recommended: 3-5 for smooth TPS, 8+ for more responsive pathfinding.
+	# Default: 4
+	# Range: 1 ~ 20
+	maxPerTick = 4
+
+#AI Tick Reduction
+#Far-from-player mobs run their AI decisions (goal selectors, and brains when
+#idle or resting) only every Nth tick, staggered across mobs.
+#Navigation, sensing, and movement controls still run every tick, so mobs keep
+#moving smoothly. Mobs in liquids are exempt so they never sink or drown.
+[tick_reduction]
+	#Enable AI tick reduction for far mobs.
+	enabled = true
+	#Run AI decisions every Nth tick for far mobs. 1 = vanilla, 4 = every 4th tick.
+	# Default: 4
+	# Range: 1 ~ 20
+	interval = 4

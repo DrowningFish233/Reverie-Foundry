@@ -1,0 +1,1066 @@
+[always_on_top]
+items = [
+    "minecraft:magma_block",
+    "biomesoplenty:null_block"
+]
+
+[powders]
+items = [
+	"regions_unexplored:ash_vent",
+	"regions_unexplored:ash",
+	"regions_unexplored:volcanic_ash",
+	"minecraft:snow_block",
+	"minecraft:white_concrete_powder",
+	"minecraft:light_gray_concrete_powder",
+	"minecraft:gray_concrete_powder",
+	"minecraft:black_concrete_powder",
+	"minecraft:brown_concrete_powder",
+	"minecraft:red_concrete_powder",
+	"minecraft:orange_concrete_powder",
+	"minecraft:yellow_concrete_powder",
+	"minecraft:lime_concrete_powder",
+	"minecraft:green_concrete_powder",
+	"minecraft:cyan_concrete_powder",
+	"minecraft:light_blue_concrete_powder",
+	"minecraft:blue_concrete_powder",
+	"minecraft:purple_concrete_powder",
+	"minecraft:magenta_concrete_powder",
+	"minecraft:pink_concrete_powder"
+]
+
+[granular_soils]
+items = [
+	"biomesoplenty:black_sand",
+	"biomeswevegone:black_sand",
+	"biomeswevegone:white_sand",
+	"biomesoplenty:white_sand",
+	"biomeswevegone:windswept_sand",
+	"biomesoplenty:orange_sand",
+	"biomeswevegone:blue_sand",
+	"biomeswevegone:purple_sand",
+	"minecraft:suspicious_sand",
+	"minecraft:sand",
+	"biomeswevegone:cracked_sand",
+	"minecraft:red_sand",
+	"biomeswevegone:cracked_red_sand",
+	"minecraft:suspicious_gravel",
+	"minecraft:gravel"
+]
+
+[sculks]
+items = [
+	"deeperdarker:gloomy_geyser",
+	"deeperdarker:gloomy_sculk",
+	"deeperdarker:infested_sculk",
+	"minecraft:sculk",
+	"deeperdarker:echo_soil"
+]
+
+[grasses]
+items = [
+	"deeperdarker:blooming_sculk_stone",
+	"minecraft:warped_nylium",
+	"minecraft:crimson_nylium",
+	"regions_unexplored:brimsprout_nylium",
+	"pyrellium:burning_nylium",
+	"regions_unexplored:glistering_wart",
+	"regions_unexplored:glistering_nylium",
+	"regions_unexplored:overgrown_bone_block",
+	"regions_unexplored:cobalt_nylium",
+	"betternether:mushroom_grass",
+	"betternether:jungle_grass",
+	"betternether:sepia_mushroom_grass",
+	"betternether:swampland_grass",
+	"regions_unexplored:deepslate_viridescent_nylium",
+	"regions_unexplored:viridescent_nylium",
+	"minecraft:podzol",
+	"biomeswevegone:podzol_dacite",
+	"biomeswevegone:white_podzol_dacite",
+	"regions_unexplored:peat_podzol",
+	"regions_unexplored:silt_podzol",
+	"minecraft:mycelium",
+	"pyrellium:netherrack_mycelium",
+	"betternether:nether_mycelium",
+	"biomeswevegone:lush_grass_block",
+	"biomeswevegone:overgrown_dacite",
+	"biomeswevegone:white_overgrown_dacite",
+	"biomeswevegone:overgrown_stone",
+	"minecraft:grass_block",
+	"regions_unexplored:peat_grass_block",
+	"regions_unexplored:silt_grass_block",
+	"regions_unexplored:deepslate_grass_block",
+	"regions_unexplored:argillite_grass_block",
+	"regions_unexplored:chalk_grass_block",
+	"regions_unexplored:stone_grass_block",
+	"biomesoplenty:origin_grass_block",
+	"regions_unexplored:alpha_grass_block"
+]
+
+[mosses]
+items = [
+	"biomesoplenty:algal_end_stone",
+	"deeperdarker:blooming_moss_block",
+	"regions_unexplored:mycotoxic_moss",
+	"betternether:netherrack_moss",
+	"regions_unexplored:deepslate_prismoss",
+	"regions_unexplored:prismoss",
+	"biomesoplenty:glowing_moss_block",
+	"minecraft:pale_moss_block",
+	"minecraft:moss_block",
+	"biomesoplenty:mossy_black_sand"
+]
+
+[wet_soils]
+items = [
+	"minecraft:muddy_mangrove_roots",
+	"minecraft:clay"
+]
+
+[crumbly_soils]
+items = [
+	"biomeswevegone:sandy_dirt",
+	"minecraft:soul_soil",
+	"regions_unexplored:ashen_dirt",
+	"regions_unexplored:peat_coarse_dirt",
+	"regions_unexplored:peat_dirt",
+	"biomeswevegone:lush_dirt",
+	"regions_unexplored:silt_coarse_dirt",
+	"regions_unexplored:silt_dirt",
+	"minecraft:rooted_dirt",
+	"minecraft:coarse_dirt",
+	"minecraft:dirt"
+]
+
+[dry_soils]
+items = [
+	"biomeswevegone:packed_pale_mud",
+	"minecraft:packed_mud",
+	"biomesoplenty:dried_salt",
+	"biomeswevegone:peat"
+]
+
+[cut_copper_like_bricks]
+items = [
+	"betternether:cincinnasite_tile_small",
+	"betternether:nether_brick_tile_small",
+	"betternether:blue_obsidian_tile_small",
+	"betternether:obsidian_tile_small",
+	"deeperdarker:cut_sculk_stone",
+	"deeperdarker:gloomslate_tiles",
+	"minecraft:oxidized_cut_copper",
+	"minecraft:waxed_oxidized_cut_copper",
+	"minecraft:weathered_cut_copper",
+	"minecraft:waxed_weathered_cut_copper",
+	"minecraft:exposed_cut_copper",
+	"minecraft:exposed_cut_copper",
+	"minecraft:waxed_exposed_cut_copper",
+	"minecraft:cut_copper",
+	"minecraft:waxed_cut_copper",
+	"minecraft:purpur_block"
+]
+
+[stone_bricks_like_bricks]
+items = [
+	"cobblemon:tumblestone_bricks",
+	"cobblemon:black_tumblestone_bricks",
+	"cobblemon:sky_tumblestone_bricks",
+	"mega_showdown:mega_meteorid_brick",
+	"betternether:blue_obsidian_bricks",
+	"betternether:obsidian_bricks",
+	"deeperdarker:sculk_stone_bricks",
+	"deeperdarker:gloomslate_bricks",
+	"minecraft:infested_mossy_stone_bricks",
+	"minecraft:mossy_stone_bricks",
+	"minecraft:infested_cracked_stone_bricks",
+	"minecraft:cracked_stone_bricks",
+	"minecraft:infested_stone_bricks",
+	"minecraft:stone_bricks",
+	"minecraft:cinnabar_bricks",
+	"minecraft:sulfur_bricks",
+	"minecraft:cracked_polished_blackstone_bricks",
+	"minecraft:polished_blackstone_bricks",
+	"betternether:basalt_bricks",
+	"minecraft:cracked_deepslate_bricks",
+	"minecraft:deepslate_bricks",
+	"minecraft:tuff_bricks",
+	"minecraft:end_stone_bricks"
+]
+
+[mud_bricks_like_bricks]
+items = [
+	"biomeswevegone:pale_mud_bricks",
+	"minecraft:mud_bricks"
+]
+
+[quartz_brciks_like_bricks]
+items = [
+	"biomeswevegone:mossy_red_rock_bricks",
+	"biomeswevegone:cracked_red_rock_bricks",
+	"biomeswevegone:red_rock_bricks",
+	"minecraft:quartz_bricks"
+]
+
+[sculk_grime_bricks_like_bricks]
+items = [
+	"deeperdarker:sculk_grime_bricks"
+]
+
+[resin_brciks_like_bricks]
+items = [
+	"minecraft:bricks",
+	"minecraft:resin_bricks"
+]
+
+[nether_bricks_like_bricks]
+items = [
+	"minecraft:cracked_nether_bricks",
+	"minecraft:nether_bricks",
+	"minecraft:red_nether_bricks"
+]
+
+[dacite_bricks_like_bricks]
+items = [
+	"biomeswevegone:mossy_dacite_bricks",
+	"biomeswevegone:cracked_dacite_bricks",
+	"biomeswevegone:chiseled_dacite_bricks",
+	"biomeswevegone:dacite_bricks",
+	"biomeswevegone:mossy_white_dacite_bricks",
+	"biomeswevegone:cracked_white_dacite_bricks",
+	"biomeswevegone:chiseled_white_dacite_bricks",
+	"biomeswevegone:white_dacite_bricks"
+]
+
+[sculk_stone_tiles_like_bricks]
+items = [
+	"deeperdarker:sculk_stone_tiles"
+]
+
+[cut_gloomslate_like_bricks]
+items = [
+	"deeperdarker:cut_gloomslate"
+]
+
+[chalk_bricks_like_bricks]
+items = [
+	"regions_unexplored:chalk_bricks"
+]
+
+[chiseled_mega_meteorid_brick_like_bricks]
+items = [
+	"mega_showdown:chiseled_mega_meteorid_brick"
+]
+
+[brimstone_bricks_like_bricks]
+items = [
+	"biomesoplenty:brimstone_bricks"
+]
+
+[deepslate_tiles_like_bricks]
+items = [
+	"betternether:obsidian_rod_tiles",
+	"betternether:blue_obsidian_rod_tiles",
+	"minecraft:cracked_deepslate_tiles",
+	"minecraft:deepslate_tiles"
+]
+
+[bedrock]
+items = [
+	"minecraft:bedrock"
+]
+
+[raw_ores]
+items = [
+	"minecraft:raw_gold_block",
+	"minecraft:raw_copper_block",
+	"minecraft:raw_iron_block",
+	"regions_unexplored:raw_redstone_block"
+]
+
+[cobblestones]
+items = [
+	"deeperdarker:cobbled_sculk_stone",
+	"biomeswevegone:dacite_cobblestone",
+	"biomeswevegone:white_dacite_cobblestone",
+	"minecraft:mossy_cobblestone",
+	"minecraft:infested_cobblestone",
+	"minecraft:cobblestone",
+	"deeperdarker:cobbled_gloomslate",
+	"minecraft:cobbled_deepslate",
+	"minecraft:prismarine"
+]
+
+[gems]
+items = [
+	"cobblemon:tumblestone_block",
+	"cobblemon:black_tumblestone_block",
+	"cobblemon:sky_tumblestone_block"
+]
+
+[crystals]
+items = [
+	"biomesoplenty:rose_quartz_block",
+	"pyrellium:budding_opal",
+	"pyrellium:opal_block",
+	"pyrellium:clear_opal_block",
+	"minecraft:budding_amethyst",
+	"minecraft:amethyst_block",
+	"pyrellium:clear_amethyst_block"
+]
+
+[special_rocks]
+items = [
+	"biomesoplenty:flesh",
+	"biomesoplenty:porous_flesh",
+	"mega_showdown:mega_meteorid_radiated_block",
+	"mega_showdown:keystone_ore",
+	"mega_showdown:mega_meteorid_water_ore",
+	"mega_showdown:mega_meteorid_dawn_ore",
+	"mega_showdown:mega_meteorid_dusk_ore",
+	"mega_showdown:mega_meteorid_fire_ore",
+	"mega_showdown:mega_meteorid_ice_ore",
+	"mega_showdown:mega_meteorid_leaf_ore",
+	"mega_showdown:mega_meteorid_moon_ore",
+	"mega_showdown:mega_meteorid_shiny_ore",
+	"mega_showdown:mega_meteorid_sun_ore",
+	"mega_showdown:mega_meteorid_thunder_ore",
+	"mega_showdown:mega_meteorid_block",
+	"cobblemon:dripstone_moon_stone_ore",
+	"minecraft:dripstone_block",
+	"biomesoplenty:null_end_stone",
+	"biomesoplenty:unmapped_end_stone",
+	"minecraft:end_stone",
+	"biomesoplenty:brimstone",
+	"minecraft:gilded_blackstone",
+	"minecraft:blackstone",
+	"minecraft:nether_gold_ore",
+	"minecraft:nether_quartz_ore",
+	"cobblemon:nether_fire_stone_ore",
+	"betternether:nether_lapis_ore",
+	"betternether:nether_redstone_ore",
+	"betternether:nether_ruby_ore",
+	"betternether:cincinnasite_ore",
+	"minecraft:netherrack",
+	"biomesoplenty:thermal_calcite_vent",
+	"biomesoplenty:thermal_calcite",
+	"minecraft:calcite",
+	"minecraft:smooth_basalt",
+	"minecraft:basalt",
+	"minecraft:tuff"
+]
+
+[slates]
+items = [
+	"deeperdarker:gloomslate_coal_ore",
+	"deeperdarker:gloomslate_iron_ore",
+	"deeperdarker:gloomslate_copper_ore",
+	"deeperdarker:gloomslate_gold_ore",
+	"deeperdarker:gloomslate_redstone_ore",
+	"deeperdarker:gloomslate_emerald_ore",
+	"deeperdarker:gloomslate_lapis_ore",
+	"deeperdarker:gloomslate_diamond_ore",
+	"deeperdarker:gloomslate",
+	"minecraft:deepslate_coal_ore",
+	"minecraft:deepslate_iron_ore",
+	"minecraft:deepslate_copper_ore",
+	"minecraft:deepslate_gold_ore",
+	"minecraft:deepslate_redstone_ore",
+	"minecraft:deepslate_emerald_ore",
+	"minecraft:deepslate_lapis_ore",
+	"minecraft:deepslate_diamond_ore",
+	"cobblemon:deepslate_dawn_stone_ore",
+	"cobblemon:deepslate_dusk_stone_ore",
+	"cobblemon:deepslate_fire_stone_ore",
+	"cobblemon:deepslate_ice_stone_ore",
+	"cobblemon:deepslate_leaf_stone_ore",
+	"cobblemon:deepslate_moon_stone_ore",
+	"cobblemon:deepslate_shiny_stone_ore",
+	"cobblemon:deepslate_sun_stone_ore",
+	"cobblemon:deepslate_thunder_stone_ore",
+	"cobblemon:deepslate_water_stone_ore",
+	"minecraft:infested_deepslate",
+	"minecraft:deepslate"
+]
+
+[rocks]
+items = [
+	"biomeswevegone:dacite",
+	"biomeswevegone:white_dacite",
+	"minecraft:cinnabar",
+	"minecraft:potent_sulfur",
+	"minecraft:sulfur",
+	"minecraft:andesite",
+	"minecraft:diorite",
+	"minecraft:granite"
+]
+
+[stones]
+items = [
+	"deeperdarker:sculk_stone_coal_ore",
+	"deeperdarker:sculk_stone_iron_ore",
+	"deeperdarker:sculk_stone_copper_ore",
+	"deeperdarker:sculk_stone_gold_ore",
+	"deeperdarker:sculk_stone_redstone_ore",
+	"deeperdarker:sculk_stone_emerald_ore",
+	"deeperdarker:sculk_stone_lapis_ore",
+	"deeperdarker:sculk_stone_diamond_ore",
+	"deeperdarker:sculk_stone",
+	"biomeswevegone:red_rock",
+	"regions_unexplored:argillite",
+	"regions_unexplored:chalk",
+	"biomeswevegone:mossy_stone",
+	"regions_unexplored:mossy_stone",
+	"biomeswevegone:rocky_stone",
+	"minecraft:coal_ore",
+	"minecraft:iron_ore",
+	"minecraft:copper_ore",
+	"minecraft:gold_ore",
+	"minecraft:redstone_ore",
+	"minecraft:emerald_ore",
+	"minecraft:lapis_ore",
+	"minecraft:diamond_ore",
+	"cobblemon:dawn_stone_ore",
+	"cobblemon:dusk_stone_ore",
+	"cobblemon:fire_stone_ore",
+	"cobblemon:ice_stone_ore",
+	"cobblemon:leaf_stone_ore",
+	"cobblemon:moon_stone_ore",
+	"cobblemon:shiny_stone_ore",
+	"cobblemon:sun_stone_ore",
+	"cobblemon:thunder_stone_ore",
+	"cobblemon:water_stone_ore",
+	"minecraft:infested_stone",
+	"minecraft:stone"
+]
+
+[smooth_blocks]
+items = [
+	"minecraft:sandstone",
+	"minecraft:chiseled_sandstone",
+	"minecraft:smooth_sandstone",
+	"minecraft:cut_sandstone",
+	"minecraft:red_sandstone",
+	"minecraft:chiseled_red_sandstone",
+	"minecraft:smooth_red_sandstone",
+	"minecraft:cut_red_sandstone",
+	"minecraft:bone_block",
+	"minecraft:smooth_quartz",
+	"cobblemon:smooth_tumblestone",
+	"cobblemon:smooth_black_tumblestone",
+	"cobblemon:smooth_sky_tumblestone",
+	"biomesoplenty:white_sandstone",
+	"biomesoplenty:chiseled_white_sandstone",
+	"biomesoplenty:smooth_white_sandstone",
+	"biomesoplenty:cut_white_sandstone",
+	"biomesoplenty:orange_sandstone",
+	"biomesoplenty:chiseled_orange_sandstone",
+	"biomesoplenty:smooth_orange_sandstone",
+	"biomesoplenty:cut_orange_sandstone",
+	"biomesoplenty:black_sandstone",
+	"biomesoplenty:chiseled_black_sandstone",
+	"biomesoplenty:smooth_black_sandstone",
+	"biomesoplenty:cut_black_sandstone",
+	"biomeswevegone:black_sandstone",
+	"biomeswevegone:chiseled_black_sandstone",
+	"biomeswevegone:smooth_black_sandstone",
+	"biomeswevegone:cut_black_sandstone",
+	"biomeswevegone:white_sandstone",
+	"biomeswevegone:chiseled_white_sandstone",
+	"biomeswevegone:smooth_white_sandstone",
+	"biomeswevegone:cut_white_sandstone",
+	"biomeswevegone:blue_sandstone",
+	"biomeswevegone:chiseled_blue_sandstone",
+	"biomeswevegone:smooth_blue_sandstone",
+	"biomeswevegone:cut_blue_sandstone",
+	"biomeswevegone:purple_sandstone",
+	"biomeswevegone:chiseled_purple_sandstone",
+	"biomeswevegone:smooth_purple_sandstone",
+	"biomeswevegone:cut_purple_sandstone",
+	"biomeswevegone:windswept_sandstone",
+	"biomeswevegone:chiseled_windswept_sandstone",
+	"biomeswevegone:smooth_windswept_sandstone",
+	"biomeswevegone:cut_windswept_sandstone",
+	"betternether:bone_block",
+	"betternether:soul_sandstone_chiseled",
+	"betternether:soul_sandstone_cut",
+	"betternether:soul_sandstone_smooth",
+	"betternether:soul_sandstone",
+	"deeperdarker:smooth_sculk_stone",
+	"deeperdarker:smooth_gloomslate"
+]
+
+[logs]
+items = [
+	"minecraft:oak_log",
+	"minecraft:spruce_log",
+	"minecraft:birch_log",
+	"minecraft:jungle_log",
+	"minecraft:acacia_log",
+	"minecraft:dark_oak_log",
+	"minecraft:mangrove_log",
+	"minecraft:cherry_log",
+	"minecraft:pale_oak_log",
+	"minecraft:crimson_stem",
+	"minecraft:warped_stem",
+	"minecraft:bamboo_block",
+	"cobblemon:apricorn_log",
+	"cobblemon:saccharine_log",
+	"biomesoplenty:fir_log",
+	"biomesoplenty:pine_log",
+	"biomesoplenty:maple_log",
+	"biomesoplenty:redwood_log",
+	"biomesoplenty:mahogany_log",
+	"biomesoplenty:jacaranda_log",
+	"biomesoplenty:palm_log",
+	"biomesoplenty:willow_log",
+	"biomesoplenty:dead_log",
+	"biomesoplenty:magic_log",
+	"biomesoplenty:umbran_log",
+	"biomesoplenty:hellbark_log",
+	"biomesoplenty:empyreal_log",
+	"biomeswevegone:aspen_log",
+	"biomeswevegone:baobab_log",
+	"biomeswevegone:blue_enchanted_log",
+	"biomeswevegone:cika_log",
+	"biomeswevegone:cypress_log",
+	"biomeswevegone:ebony_log",
+	"biomeswevegone:fir_log",
+	"biomeswevegone:green_enchanted_log",
+	"biomeswevegone:holly_log",
+	"biomeswevegone:ironwood_log",
+	"biomeswevegone:jacaranda_log",
+	"biomeswevegone:mahogany_log",
+	"biomeswevegone:maple_log",
+	"biomeswevegone:palm_log",
+	"biomeswevegone:pine_log",
+	"biomeswevegone:rainbow_eucalyptus_log",
+	"biomeswevegone:redwood_log",
+	"biomeswevegone:sakura_log",
+	"biomeswevegone:skyris_log",
+	"biomeswevegone:spirit_log",
+	"biomeswevegone:white_mangrove_log",
+	"biomeswevegone:willow_log",
+	"biomeswevegone:witch_hazel_log",
+	"biomeswevegone:zelkova_log",
+	"biomeswevegone:palo_verde_log",
+	"biomeswevegone:florus_stem",
+	"betternether:willow_log",
+	"betternether:wart_log",
+	"betternether:stalagnate_log",
+	"betternether:anchor_tree_log",
+	"betternether:nether_sakura_log",
+	"betternether:rubeus_log",
+	"betternether:mushroom_fir_log",
+	"deeperdarker:echo_log",
+	"regions_unexplored:alpha_log",
+	"regions_unexplored:ashen_log",
+	"regions_unexplored:silver_birch_log",
+	"regions_unexplored:baobab_log",
+	"regions_unexplored:blackwood_log",
+	"regions_unexplored:blue_bioshroom_stem",
+	"regions_unexplored:brimwood_log",
+	"regions_unexplored:brimwood_log_magma",
+	"regions_unexplored:cobalt_log",
+	"regions_unexplored:cypress_log",
+	"regions_unexplored:dead_log",
+	"regions_unexplored:eucalyptus_log",
+	"regions_unexplored:green_bioshroom_stem",
+	"regions_unexplored:joshua_log",
+	"regions_unexplored:kapok_log",
+	"regions_unexplored:larch_log",
+	"regions_unexplored:magnolia_log",
+	"regions_unexplored:maple_log",
+	"regions_unexplored:mauve_log",
+	"regions_unexplored:palm_log",
+	"regions_unexplored:pine_log",
+	"regions_unexplored:pink_bioshroom_stem",
+	"regions_unexplored:redwood_log",
+	"regions_unexplored:socotra_log",
+	"regions_unexplored:willow_log",
+	"regions_unexplored:yellow_bioshroom_stem",
+	"pyrellium:burning_log"
+]
+
+[stripped_logs]
+items = [
+	"minecraft:stripped_oak_log",
+	"minecraft:stripped_spruce_log",
+	"minecraft:stripped_birch_log",
+	"minecraft:stripped_jungle_log",
+	"minecraft:stripped_acacia_log",
+	"minecraft:stripped_dark_oak_log",
+	"minecraft:stripped_mangrove_log",
+	"minecraft:stripped_cherry_log",
+	"minecraft:stripped_pale_oak_log",
+	"minecraft:stripped_crimson_stem",
+	"minecraft:stripped_warped_stem",
+	"minecraft:stripped_bamboo_block",
+	"cobblemon:stripped_apricorn_log",
+	"cobblemon:stripped_saccharine_log",
+	"biomesoplenty:stripped_fir_log",
+	"biomesoplenty:stripped_pine_log",
+	"biomesoplenty:stripped_maple_log",
+	"biomesoplenty:stripped_redwood_log",
+	"biomesoplenty:stripped_mahogany_log",
+	"biomesoplenty:stripped_jacaranda_log",
+	"biomesoplenty:stripped_palm_log",
+	"biomesoplenty:stripped_willow_log",
+	"biomesoplenty:stripped_dead_log",
+	"biomesoplenty:stripped_magic_log",
+	"biomesoplenty:stripped_umbran_log",
+	"biomesoplenty:stripped_hellbark_log",
+	"biomesoplenty:stripped_empyreal_log",
+	"biomeswevegone:stripped_aspen_log",
+	"biomeswevegone:stripped_baobab_log",
+	"biomeswevegone:stripped_blue_enchanted_log",
+	"biomeswevegone:stripped_cika_log",
+	"biomeswevegone:stripped_cypress_log",
+	"biomeswevegone:stripped_ebony_log",
+	"biomeswevegone:stripped_fir_log",
+	"biomeswevegone:stripped_green_enchanted_log",
+	"biomeswevegone:stripped_holly_log",
+	"biomeswevegone:stripped_ironwood_log",
+	"biomeswevegone:stripped_jacaranda_log",
+	"biomeswevegone:stripped_mahogany_log",
+	"biomeswevegone:stripped_maple_log",
+	"biomeswevegone:stripped_palm_log",
+	"biomeswevegone:stripped_pine_log",
+	"biomeswevegone:stripped_rainbow_eucalyptus_log",
+	"biomeswevegone:stripped_redwood_log",
+	"biomeswevegone:stripped_sakura_log",
+	"biomeswevegone:stripped_skyris_log",
+	"biomeswevegone:stripped_spirit_log",
+	"biomeswevegone:stripped_white_mangrove_log",
+	"biomeswevegone:stripped_willow_log",
+	"biomeswevegone:stripped_witch_hazel_log",
+	"biomeswevegone:stripped_zelkova_log",
+	"biomeswevegone:stripped_palo_verde_log",
+	"biomeswevegone:stripped_florus_stem",
+	"betternether:willow_stripped_log",
+	"betternether:wart_stripped_log",
+	"betternether:stalagnate_stripped_log",
+	"betternether:anchor_tree_stripped_log",
+	"betternether:nether_sakura_stripped_log",
+	"betternether:rubeus_stripped_log",
+	"betternether:mushroom_fir_stripped_log",
+	"deeperdarker:stripped_echo_log",
+	"regions_unexplored:stripped_baobab_log",
+	"regions_unexplored:stripped_blackwood_log",
+	"regions_unexplored:stripped_blue_bioshroom_stem",
+	"regions_unexplored:stripped_brimwood_log",
+	"regions_unexplored:stripped_cobalt_log",
+	"regions_unexplored:stripped_cypress_log",
+	"regions_unexplored:stripped_dead_log",
+	"regions_unexplored:stripped_eucalyptus_log",
+	"regions_unexplored:stripped_green_bioshroom_stem",
+	"regions_unexplored:stripped_joshua_log",
+	"regions_unexplored:stripped_kapok_log",
+	"regions_unexplored:stripped_larch_log",
+	"regions_unexplored:stripped_magnolia_log",
+	"regions_unexplored:stripped_maple_log",
+	"regions_unexplored:stripped_mauve_log",
+	"regions_unexplored:stripped_palm_log",
+	"regions_unexplored:stripped_pine_log",
+	"regions_unexplored:stripped_pink_bioshroom_stem",
+	"regions_unexplored:stripped_redwood_log",
+	"regions_unexplored:stripped_socotra_log",
+	"regions_unexplored:stripped_willow_log",
+	"regions_unexplored:stripped_yellow_bioshroom_stem",
+	"pyrellium:stripped_burning_log"
+]
+
+[woods]
+items = [
+	"minecraft:oak_wood",
+	"minecraft:spruce_wood",
+	"minecraft:birch_wood",
+	"minecraft:jungle_wood",
+	"minecraft:acacia_wood",
+	"minecraft:dark_oak_wood",
+	"minecraft:mangrove_wood",
+	"minecraft:cherry_wood",
+	"minecraft:pale_oak_wood",
+	"minecraft:crimson_hyphae",
+	"minecraft:warped_hyphae",
+	"cobblemon:apricorn_wood",
+	"cobblemon:saccharine_wood",
+	"biomesoplenty:fir_wood",
+	"biomesoplenty:pine_wood",
+	"biomesoplenty:maple_wood",
+	"biomesoplenty:mahogany_wood",
+	"biomesoplenty:jacaranda_wood",
+	"biomesoplenty:palm_wood",
+	"biomesoplenty:willow_wood",
+	"biomesoplenty:dead_wood",
+	"biomesoplenty:magic_wood",
+	"biomesoplenty:umbran_wood",
+	"biomesoplenty:hellbark_wood",
+	"biomesoplenty:empyreal_wood",
+	"biomeswevegone:aspen_wood",
+	"biomeswevegone:baobab_wood",
+	"biomeswevegone:blue_enchanted_wood",
+	"biomeswevegone:imbued_blue_enchanted_wood",
+	"biomeswevegone:cika_wood",
+	"biomeswevegone:cypress_wood",
+	"biomeswevegone:ebony_wood",
+	"biomeswevegone:fir_wood",
+	"biomeswevegone:green_enchanted_wood",
+	"biomeswevegone:imbued_green_enchanted_wood",
+	"biomeswevegone:holly_wood",
+	"biomeswevegone:ironwood_wood",
+	"biomeswevegone:jacaranda_wood",
+	"biomeswevegone:mahogany_wood",
+	"biomeswevegone:maple_wood",
+	"biomeswevegone:palm_wood",
+	"biomeswevegone:pine_wood",
+	"biomeswevegone:rainbow_eucalyptus_wood",
+	"biomeswevegone:redwood_wood",
+	"biomeswevegone:sakura_wood",
+	"biomeswevegone:skyris_wood",
+	"biomeswevegone:spirit_wood",
+	"biomeswevegone:white_mangrove_wood",
+	"biomeswevegone:willow_wood",
+	"biomeswevegone:witch_hazel_wood",
+	"biomeswevegone:zelkova_wood",
+	"biomeswevegone:palo_verde_wood",
+	"biomeswevegone:florus_wood",
+	"betternether:willow_bark",
+	"betternether:wart_bark",
+	"betternether:stalagnate_bark",
+	"betternether:anchor_tree_bark",
+	"betternether:nether_sakura_bark",
+	"betternether:rubeus_bark",
+	"betternether:mushroom_fir_bark",
+	"deeperdarker:echo_wood",
+	"regions_unexplored:ashen_wood",
+	"regions_unexplored:silver_birch_wood",
+	"regions_unexplored:baobab_wood",
+	"regions_unexplored:blackwood_wood",
+	"regions_unexplored:blue_bioshroom_hyphae",
+	"regions_unexplored:brimwood_wood",
+	"regions_unexplored:cobalt_wood",
+	"regions_unexplored:cypress_wood",
+	"regions_unexplored:dead_wood",
+	"regions_unexplored:eucalyptus_wood",
+	"regions_unexplored:green_bioshroom_hyphae",
+	"regions_unexplored:joshua_wood",
+	"regions_unexplored:kapok_wood",
+	"regions_unexplored:larch_wood",
+	"regions_unexplored:magnolia_wood",
+	"regions_unexplored:maple_wood",
+	"regions_unexplored:mauve_wood",
+	"regions_unexplored:palm_wood",
+	"regions_unexplored:pine_wood",
+	"regions_unexplored:pink_bioshroom_hyphae",
+	"regions_unexplored:redwood_wood",
+	"regions_unexplored:socotra_wood",
+	"regions_unexplored:willow_wood",
+	"regions_unexplored:yellow_bioshroom_hyphae",
+	"pyrellium:burning_wood"
+]
+
+[stripped_woods]
+items = [
+	"minecraft:stripped_oak_wood",
+	"minecraft:stripped_spruce_wood",
+	"minecraft:stripped_birch_wood",
+	"minecraft:stripped_jungle_wood",
+	"minecraft:stripped_acacia_wood",
+	"minecraft:stripped_dark_oak_wood",
+	"minecraft:stripped_mangrove_wood",
+	"minecraft:stripped_cherry_wood",
+	"minecraft:stripped_pale_oak_wood",
+	"minecraft:stripped_crimson_hyphae",
+	"minecraft:stripped_warped_hyphae",
+	"cobblemon:stripped_apricorn_wood",
+	"biomesoplenty:stripped_fir_wood",
+	"biomesoplenty:stripped_pine_wood",
+	"biomesoplenty:stripped_maple_wood",
+	"biomesoplenty:stripped_redwood_wood",
+	"biomesoplenty:stripped_mahogany_wood",
+	"biomesoplenty:stripped_jacaranda_wood",
+	"biomesoplenty:stripped_palm_wood",
+	"biomesoplenty:stripped_willow_wood",
+	"biomesoplenty:stripped_dead_wood",
+	"biomesoplenty:stripped_magic_wood",
+	"biomesoplenty:stripped_umbran_wood",
+	"biomesoplenty:stripped_hellbark_wood",
+	"biomesoplenty:stripped_empyreal_wood",
+	"biomeswevegone:stripped_aspen_wood",
+	"biomeswevegone:stripped_baobab_wood",
+	"biomeswevegone:stripped_blue_enchanted_wood",
+	"biomeswevegone:stripped_cika_wood",
+	"biomeswevegone:stripped_cypress_wood",
+	"biomeswevegone:stripped_ebony_wood",
+	"biomeswevegone:stripped_fir_wood",
+	"biomeswevegone:stripped_green_enchanted_wood",
+	"biomeswevegone:stripped_holly_wood",
+	"biomeswevegone:stripped_ironwood_wood",
+	"biomeswevegone:stripped_jacaranda_wood",
+	"biomeswevegone:stripped_mahogany_wood",
+	"biomeswevegone:stripped_maple_wood",
+	"biomeswevegone:stripped_palm_wood",
+	"biomeswevegone:stripped_pine_wood",
+	"biomeswevegone:stripped_rainbow_eucalyptus_wood",
+	"biomeswevegone:stripped_redwood_wood",
+	"biomeswevegone:stripped_sakura_wood",
+	"biomeswevegone:stripped_skyris_wood",
+	"biomeswevegone:stripped_spirit_wood",
+	"biomeswevegone:stripped_white_mangrove_wood",
+	"biomeswevegone:stripped_willow_wood",
+	"biomeswevegone:stripped_witch_hazel_wood",
+	"biomeswevegone:stripped_zelkova_wood",
+	"biomeswevegone:stripped_palo_verde_wood",
+	"biomeswevegone:stripped_florus_wood",
+	"betternether:willow_stripped_bark",
+	"betternether:wart_stripped_bark",
+	"betternether:stalagnate_stripped_bark",
+	"betternether:anchor_tree_stripped_bark",
+	"betternether:nether_sakura_stripped_bark",
+	"betternether:rubeus_stripped_bark",
+	"betternether:mushroom_fir_stripped_bark",
+	"deeperdarker:stripped_echo_wood",
+	"regions_unexplored:stripped_baobab_wood",
+	"regions_unexplored:stripped_blackwood_wood",
+	"regions_unexplored:stripped_blue_bioshroom_hyphae",
+	"regions_unexplored:stripped_brimwood_wood",
+	"regions_unexplored:stripped_cobalt_wood",
+	"regions_unexplored:stripped_cypress_wood",
+	"regions_unexplored:stripped_dead_wood",
+	"regions_unexplored:stripped_eucalyptus_wood",
+	"regions_unexplored:stripped_green_bioshroom_hyphae",
+	"regions_unexplored:stripped_joshua_wood",
+	"regions_unexplored:stripped_kapok_wood",
+	"regions_unexplored:stripped_larch_wood",
+	"regions_unexplored:stripped_magnolia_wood",
+	"regions_unexplored:stripped_maple_wood",
+	"regions_unexplored:stripped_mauve_wood",
+	"regions_unexplored:stripped_palm_wood",
+	"regions_unexplored:stripped_pine_wood",
+	"regions_unexplored:stripped_pink_bioshroom_hyphae",
+	"regions_unexplored:stripped_redwood_wood",
+	"regions_unexplored:stripped_socotra_wood",
+	"regions_unexplored:stripped_willow_wood",
+	"regions_unexplored:stripped_yellow_bioshroom_hyphae",
+	"pyrellium:stripped_burning_wood"
+]
+
+[planks]
+items = [
+	"minecraft:oak_planks",
+	"minecraft:spruce_planks",
+	"minecraft:birch_planks",
+	"minecraft:jungle_planks",
+	"minecraft:acacia_planks",
+	"minecraft:dark_oak_planks",
+	"minecraft:mangrove_planks",
+	"minecraft:cherry_planks",
+	"minecraft:pale_oak_planks",
+	"minecraft:crimson_planks",
+	"minecraft:warped_planks",
+	"minecraft:bamboo_planks",
+	"cobblemon:apricorn_planks",
+	"cobblemon:saccharine_planks",
+	"biomesoplenty:fir_planks",
+	"biomesoplenty:pine_planks",
+	"biomesoplenty:maple_planks",
+	"biomesoplenty:redwood_planks",
+	"biomesoplenty:mahogany_planks",
+	"biomesoplenty:jacaranda_planks",
+	"biomesoplenty:palm_planks",
+	"biomesoplenty:willow_planks",
+	"biomesoplenty:dead_planks",
+	"biomesoplenty:magic_planks",
+	"biomesoplenty:umbran_planks",
+	"biomesoplenty:hellbark_planks",
+	"biomesoplenty:empyreal_planks",
+	"betternether:nether_reed_planks",
+	"betternether:anchor_tree_planks",
+	"betternether:willow_planks",
+	"betternether:nether_mushroom_planks",
+	"betternether:stalagnate_planks",
+	"betternether:rubeus_planks",
+	"betternether:wart_planks",
+	"betternether:mushroom_fir_planks",
+	"deeperdarker:echo_planks",
+	"deeperdarker:bloom_planks",
+	"regions_unexplored:alpha_planks",
+	"regions_unexplored:baobab_planks",
+	"regions_unexplored:blackwood_planks",
+	"regions_unexplored:blue_bioshroom_planks",
+	"regions_unexplored:brimwood_planks",
+	"regions_unexplored:cobalt_planks",
+	"regions_unexplored:cypress_planks",
+	"regions_unexplored:dead_planks",
+	"regions_unexplored:eucalyptus_planks",
+	"regions_unexplored:green_bioshroom_planks",
+	"regions_unexplored:joshua_planks",
+	"regions_unexplored:kapok_planks",
+	"regions_unexplored:larch_planks",
+	"regions_unexplored:magnolia_planks",
+	"regions_unexplored:maple_planks",
+	"regions_unexplored:mauve_planks",
+	"regions_unexplored:palm_planks",
+	"regions_unexplored:pine_planks",
+	"regions_unexplored:pink_bioshroom_planks",
+	"regions_unexplored:redwood_planks",
+	"regions_unexplored:socotra_planks",
+	"regions_unexplored:willow_planks",
+	"regions_unexplored:yellow_bioshroom_planks",
+	"regions_unexplored:red_painted_planks",
+	"regions_unexplored:orange_painted_planks",
+	"regions_unexplored:yellow_painted_planks",
+	"regions_unexplored:lime_painted_planks",
+	"regions_unexplored:green_painted_planks",
+	"regions_unexplored:cyan_painted_planks",
+	"regions_unexplored:light_blue_painted_planks",
+	"regions_unexplored:blue_painted_planks",
+	"regions_unexplored:purple_painted_planks",
+	"regions_unexplored:magenta_painted_planks",
+	"regions_unexplored:pink_painted_planks",
+	"regions_unexplored:brown_painted_planks",
+	"regions_unexplored:white_painted_planks",
+	"regions_unexplored:light_gray_painted_planks",
+	"regions_unexplored:gray_painted_planks",
+	"regions_unexplored:black_painted_planks",
+	"pyrellium:burning_planks"
+]
+
+[nature]
+items = [
+	"minecraft:mushroom_stem",
+	"minecraft:brown_mushroom_block",
+	"minecraft:red_mushroom_block",
+	"minecraft:nether_wart_block",
+	"minecraft:warped_wart_block",
+	"minecraft:shroomlight",
+	"minecraft:melon",
+	"minecraft:pumpkin",
+	"minecraft:carved_pumpkin",
+	"minecraft:jack_o_lantern",
+	"biomesoplenty:toadstool_block",
+	"biomesoplenty:glowshroom_block",
+	"biomeswevegone:green_mushroom_block",
+	"biomeswevegone:weeping_milkcap_mushroom_block",
+	"biomeswevegone:wood_blewit_mushroom_block",
+	"biomeswevegone:white_mushroom_stem",
+	"biomeswevegone:brown_mushroom_stem",
+	"biomeswevegone:allium_petal_block",
+	"biomeswevegone:pink_allium_petal_block",
+	"biomeswevegone:white_allium_petal_block",
+	"biomeswevegone:rose_petal_block",
+	"biomeswevegone:pale_pumpkin",
+	"biomeswevegone:carved_pale_pumpkin",
+	"biomeswevegone:pale_jack_o_lantern",
+	"betternether:whispering_gourd_lantern",
+	"betternether:giant_lucis",
+	"betternether:whispering_gourd",
+	"betternether:ceiling_mushrooms",
+	"deeperdarker:sculk_gleam",
+	"regions_unexplored:blue_bioshroom_block",
+	"regions_unexplored:glowing_blue_bioshroom_block",
+	"regions_unexplored:green_bioshroom_block",
+	"regions_unexplored:glowing_green_bioshroom_block",
+	"regions_unexplored:pink_bioshroom_block",
+	"regions_unexplored:glowing_pink_bioshroom_block",
+	"regions_unexplored:yellow_bioshroom_block",
+	"regions_unexplored:glowing_yellow_bioshroom_block"
+]
+
+[ices]
+items = [
+	"minecraft:blue_ice",
+	"biomeswevegone:packed_black_ice",
+	"biomeswevegone:packed_borealis_ice",
+	"minecraft:packed_ice",
+	"pyrellium:freezing_ice",
+	"biomeswevegone:black_ice",
+	"biomeswevegone:borealis_ice",
+	"minecraft:ice"
+]
+
+[terracottas]
+items = [
+	"minecraft:white_terracotta",
+	"minecraft:light_gray_terracotta",
+	"minecraft:gray_terracotta",
+	"minecraft:black_terracotta",
+	"minecraft:brown_terracotta",
+	"minecraft:red_terracotta",
+	"minecraft:orange_terracotta",
+	"minecraft:yellow_terracotta",
+	"minecraft:lime_terracotta",
+	"minecraft:green_terracotta",
+	"minecraft:cyan_terracotta",
+	"minecraft:light_blue_terracotta",
+	"minecraft:blue_terracotta",
+	"minecraft:purple_terracotta",
+	"minecraft:magenta_terracotta",
+	"minecraft:pink_terracotta",
+	"cobblemon:terracotta_sun_stone_ore",
+	"minecraft:terracotta"
+]
+
+[concretes]
+items = [
+	"minecraft:white_concrete",
+	"minecraft:light_gray_concrete",
+	"minecraft:gray_concrete",
+	"minecraft:black_concrete",
+	"minecraft:brown_concrete",
+	"minecraft:red_concrete",
+	"minecraft:orange_concrete",
+	"minecraft:yellow_concrete",
+	"minecraft:lime_concrete",
+	"minecraft:green_concrete",
+	"minecraft:cyan_concrete",
+	"minecraft:light_blue_concrete",
+	"minecraft:blue_concrete",
+	"minecraft:purple_concrete",
+	"minecraft:magenta_concrete",
+	"minecraft:pink_concrete"
+]
+
+[wools]
+items = [
+	"minecraft:white_wool",
+	"minecraft:light_gray_wool",
+	"minecraft:gray_wool",
+	"minecraft:black_wool",
+	"minecraft:brown_wool",
+	"minecraft:red_wool",
+	"minecraft:orange_wool",
+	"minecraft:yellow_wool",
+	"minecraft:lime_wool",
+	"minecraft:green_wool",
+	"minecraft:cyan_wool",
+	"minecraft:light_blue_wool",
+	"minecraft:blue_wool",
+	"minecraft:purple_wool",
+	"minecraft:magenta_wool",
+	"minecraft:pink_wool",
+	"pyrellium:silk_block"
+]
+
+[obsidians]
+items = [
+	"betternether:blue_weeping_obsidian",
+	"betternether:weeping_obsidian",
+	"betternether:blue_crying_obsidian",
+	"regions_unexplored:cobalt_obsidian",
+	"minecraft:crying_obsidian",
+	"betternether:blue_obsidian",
+	"minecraft:obsidian"
+]
+
+[non_full_hitbox]
+items = [
+	"minecraft:powder_snow",
+	"minecraft:mud",
+	"minecraft:soul_sand",
+	"biomeswevegone:pale_mud",
+	"biomeswevegone:quicksand",
+	"biomeswevegone:red_quicksand",
+	"deeperdarker:sculk_grime",
+	"regions_unexplored:peat_mud",
+	"regions_unexplored:silt_mud"
+]

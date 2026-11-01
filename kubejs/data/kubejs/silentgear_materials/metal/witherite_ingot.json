@@ -1,67 +1,77 @@
 {
-    "type": "silentgear:simple",
-    "parent": "silentgear:empty",
-    "crafting": {
-        "can_salvage": true,
-        "categories": [
-            "metal"
-        ],
-        "gear_type_blacklist": [],
-        "ingredient": {
-            "item": "cataclysm:witherite_ingot"
-        },
-        "part_substitutes": {}
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.cataclysm:witherite_ingot"
     },
-    "display": {
-        "color": "#4B0082",
-        "main_texture_type": "HIGH_CONTRAST",
-        "name": {
-            "translate": "material.silentgear.cataclysm:witherite_ingot"
-        },
-        "name_prefix": ""
+    "name_prefix": "",
+    "color": "#4B0082",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "cataclysm:witherite_ingot"
     },
-    "properties": {
-        "silentgear:main": {
-            "armor": 30.0,
-            "armor/boots": 5.0,
-            "armor/chestplate": 12.0,
-            "armor/helmet": 5.0,
-            "armor/leggings": 8.0,
-            "armor_durability": 33.0,
-            "armor_toughness": 28.0,
-            "attack_damage": 20.0,
-            "attack_reach": 1.0,
-            "attack_speed": 0.1,
-            "charging_value": 1.1,
-            "durability": 1500.0,
-            "enchantment_value": 140.0,
-            "harvest_speed": 12.0,
-            "harvest_tier": {
-                "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
-                "level_hint": "4",
-                "name": "netherite/下界合金"
-            },
-            "knockback_resistance": 0.4,
-            "magic_armor": 28.0,
-            "projectile_speed": 5.0,
-            "projectile_accuracy": 0.1,
-            "rarity": 140.0,
-            "traits": [
-                {
-                    "conditions": [],
-                    "level": 1,
-                    "trait": "kubejs:wither_howitzer"
-                }
-            ]
+    "can_salvage": true,
+    "categories": [
+      "metal"
+    ],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:main": {
+      "durability": 1500.0,
+      "armor_durability": 33.0,
+      "harvest_speed": 12.0,
+      "harvest_tier": {
+        "name": "netherite/下界合金",
+        "level_hint": "4",
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools"
+      },
+      "attack_damage": 20.0,
+      "attack_speed": 0.1,
+      "armor": 30.0,
+      "armor_toughness": 28.0,
+      "magic_armor": 28.0,
+      "projectile_speed": 5.0,
+      "projectile_accuracy": 0.1,
+      "charging_value": 1.1,
+      "enchantment_value": 140.0,
+      "rarity": 140.0,
+      "attack_reach": 1.0,
+      "knockback_resistance": 0.4,
+      "traits": [
+        {
+          "trait": "kubejs:wither_howitzer",
+          "level": 1,
+          "conditions": []
         },
-        "silentgear:binding": {
-            "traits": [
-                {
-                    "conditions": [],
-                    "level": 1,
-                    "trait": "kubejs:wither_howitzer"
-                }
-            ]
+        {
+          "trait": "reveriefoundry:harbinger_grenades",
+          "level": 1,
+          "conditions": []
         }
+      ],
+      "armor/boots": 5.0,
+      "armor/chestplate": 12.0,
+      "armor/helmet": 5.0,
+      "armor/leggings": 8.0
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "trait": "kubejs:wither_howitzer",
+          "level": 1,
+          "conditions": []
+        },
+        {
+          "trait": "reveriefoundry:harbinger_grenades",
+          "level": 1,
+          "conditions": []
+        }
+      ]
     }
+  }
 }

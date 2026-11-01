@@ -1220,9 +1220,6 @@
 		}
 		{
 			dependencies: ["038444481D165CED"]
-			icon: {
-				id: "silentgear:helmet_blueprint"
-			}
 			id: "15DC053FF5BA0E9B"
 			tasks: [{
 				id: "1B2684D7ECCEF198"
@@ -1234,9 +1231,6 @@
 		}
 		{
 			dependencies: ["038444481D165CED"]
-			icon: {
-				id: "silentgear:chestplate_blueprint"
-			}
 			id: "6AE4DE3DC4964CB6"
 			tasks: [{
 				id: "107CD75BA2850AF5"
@@ -1248,9 +1242,6 @@
 		}
 		{
 			dependencies: ["038444481D165CED"]
-			icon: {
-				id: "silentgear:leggings_blueprint"
-			}
 			id: "0EE6ADB913E3CF80"
 			tasks: [{
 				id: "3A6DD67986C67095"
@@ -1262,9 +1253,6 @@
 		}
 		{
 			dependencies: ["038444481D165CED"]
-			icon: {
-				id: "silentgear:boots_blueprint"
-			}
 			id: "429669316E4CF3A9"
 			tasks: [{
 				id: "4589838CDC8B4082"
@@ -1332,9 +1320,6 @@
 		}
 		{
 			dependencies: ["038444481D165CED"]
-			icon: {
-				id: "reveriefoundry:heavy_helmet_blueprint"
-			}
 			id: "76B78E211A0AEC85"
 			tasks: [{
 				id: "777C45CF49CC817C"
@@ -1346,9 +1331,6 @@
 		}
 		{
 			dependencies: ["038444481D165CED"]
-			icon: {
-				id: "reveriefoundry:heavy_chestplate_blueprint"
-			}
 			id: "28FBA3F985201394"
 			tasks: [{
 				id: "23B079325E8F6976"
@@ -1360,9 +1342,6 @@
 		}
 		{
 			dependencies: ["038444481D165CED"]
-			icon: {
-				id: "reveriefoundry:heavy_leggings_blueprint"
-			}
 			id: "244305D501AB31AA"
 			tasks: [{
 				id: "1C9206E00C139795"
@@ -1374,9 +1353,6 @@
 		}
 		{
 			dependencies: ["038444481D165CED"]
-			icon: {
-				id: "reveriefoundry:heavy_boots_blueprint"
-			}
 			id: "2723E285F0AD8412"
 			tasks: [{
 				id: "20E752F817977436"
@@ -1416,9 +1392,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:robe_helmet_blueprint"
-			}
 			id: "7C227ABAEC91DA58"
 			tasks: [{
 				id: "64A308976F77F050"
@@ -1430,9 +1403,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:robe_chestplate_blueprint"
-			}
 			id: "39EB3B61CB5E3E73"
 			tasks: [{
 				id: "3DE2898A1A9A4C07"
@@ -1444,9 +1414,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:robe_leggings_blueprint"
-			}
 			id: "6930993364FD1814"
 			tasks: [{
 				id: "5E065AD5537737D0"
@@ -1458,9 +1425,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:robe_boots_blueprint"
-			}
 			id: "72EADB2FF95D25B3"
 			tasks: [{
 				id: "1E1639DB2A1EB27B"
@@ -1953,6 +1917,7 @@
 			dependencies: [
 				"40ACEE794ED65B95"
 				"598B46F6AEFCA272"
+				"59FD6ADB15123223"
 			]
 			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
@@ -2275,9 +2240,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:soul_hunter_helmet_blueprint"
-			}
 			id: "66934F0F1697D259"
 			tasks: [{
 				id: "4A75BB75D2D0152A"
@@ -2289,9 +2251,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:soul_hunter_chestplate_blueprint"
-			}
 			id: "30C9167F3BD42C27"
 			tasks: [{
 				id: "6E7063C81C4D6C7E"
@@ -2303,9 +2262,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:soul_hunter_leggings_blueprint"
-			}
 			id: "190BDB7675C3DDE6"
 			tasks: [{
 				id: "41A599BD060DB8A9"
@@ -2317,9 +2273,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:soul_hunter_boots_blueprint"
-			}
 			id: "587FB780DD173114"
 			tasks: [{
 				id: "638815CCE32FFB4B"
@@ -2331,9 +2284,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:malignant_stronghold_helmet_blueprint"
-			}
 			id: "5C063BC7C8CDF924"
 			tasks: [{
 				id: "13E5A7D69834884E"
@@ -2345,9 +2295,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:malignant_stronghold_chestplate_blueprint"
-			}
 			id: "020AE936ACC785EC"
 			tasks: [{
 				id: "17595B27B97DA81C"
@@ -2359,9 +2306,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:malignant_stronghold_leggings_blueprint"
-			}
 			id: "1EB3E26B49C19C5C"
 			tasks: [{
 				id: "13A25142BF08F9CE"
@@ -2373,9 +2317,6 @@
 		}
 		{
 			dependencies: ["346013B6D966C7F2"]
-			icon: {
-				id: "reveriefoundry:malignant_stronghold_boots_blueprint"
-			}
 			id: "42FEDD895565B7A9"
 			tasks: [{
 				id: "15241CDEF7795DC5"
@@ -2507,6 +2448,221 @@
 			}]
 			x: -4.0d
 			y: -24.5d
+		}
+		{
+			dependencies: ["1FABC71D3623013A"]
+			icon_scale: 0.7d
+			id: "36E0CC88FC76ACC0"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "7634B3F5027AC0DA"
+				item: { count: 1, id: "reveriefoundry:gear_forge" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1FABC71D3623013A"]
+			id: "25D2BC1E00FD8A9C"
+			shape: "circle"
+			tasks: [{
+				id: "0B8A79FC9E2764B3"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "378B05A4FC1D2374"
+			tasks: [{
+				id: "3BACC04AA8408E61"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:ranger_helmet_blueprint)item(reveriefoundry:ranger_helmet_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "58344CCF1B7CA47A"
+			tasks: [{
+				id: "23D5079D278D412B"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:ranger_chestplate_blueprint)item(reveriefoundry:ranger_chestplate_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "2A6780EADBC6F28E"
+			tasks: [{
+				id: "2E6A823E2B09B140"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:ranger_leggings_blueprint)item(reveriefoundry:ranger_leggings_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "24FCBC837854D40A"
+			tasks: [{
+				id: "7331864C34F99894"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:ranger_boots_blueprint)item(reveriefoundry:ranger_boots_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -13.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "36B0379E68D23C9B"
+			tasks: [{
+				id: "22CFC1D29A10B6FB"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:monk_helmet_blueprint)item(reveriefoundry:monk_helmet_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "3D16A06EFBD67FC4"
+			tasks: [{
+				id: "15BAE3A7578DD8D7"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:monk_chestplate_blueprint)item(reveriefoundry:monk_chestplate_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "63B25126C6E30D7A"
+			tasks: [{
+				id: "58786D68B17BDC2B"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:monk_leggings_blueprint)item(reveriefoundry:monk_leggings_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "574B377AB5EA72F4"
+			tasks: [{
+				id: "7E7A3039F8B109B5"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:monk_boots_blueprint)item(reveriefoundry:monk_boots_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -14.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "020FEF94893C1CE9"
+			tasks: [{
+				id: "7B2F5FBBC9AF24E5"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:summoner_helmet_blueprint)item(reveriefoundry:summoner_helmet_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "63941BD338F29A96"
+			tasks: [{
+				id: "031789BB0E8CFD48"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:summoner_chestplate_blueprint)item(reveriefoundry:summoner_chestplate_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "3C6D03BC6BC87A72"
+			tasks: [{
+				id: "6A3B436767F1A969"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:summoner_leggings_blueprint)item(reveriefoundry:summoner_leggings_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "0B9D7E1D4D2565BB"
+			tasks: [{
+				id: "2AEBEA438DD42E5B"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:summoner_boots_blueprint)item(reveriefoundry:summoner_boots_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -15.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "5CF5266F2179B2A6"
+			tasks: [{
+				id: "36CCC526AEC6DB2B"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:traveler_helmet_blueprint)item(reveriefoundry:traveler_helmet_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "6CBA2AD38FB4E9A7"
+			tasks: [{
+				id: "1B1EDBA7EEF5C5AB"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:traveler_chestplate_blueprint)item(reveriefoundry:traveler_chestplate_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "6B8C0650EE2E030A"
+			tasks: [{
+				id: "6028F179D0863ECB"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:traveler_boots_blueprint)item(reveriefoundry:traveler_boots_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			id: "3317C00B7604C9F2"
+			tasks: [{
+				id: "73F55CE768AB1EF8"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:traveler_leggings_blueprint)item(reveriefoundry:traveler_leggings_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -16.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["038444481D165CED"]
+			icon: {
+				id: "reveriefoundry:lunge_spear_blueprint"
+			}
+			id: "20AA6DA7398517C6"
+			tasks: [{
+				id: "37FF69D07B7FCFFF"
+				item: { components: { "ftbfiltersystem:filter": "or(item(reveriefoundry:lunge_spear_blueprint)item(reveriefoundry:lunge_spear_template))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -15.0d
 		}
 	]
 }

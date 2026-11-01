@@ -83,12 +83,6 @@
 
 [notifications]
 	#configuration options for notifications
-	#prevent notifications of decaying or refreshed chests
-	disable_notifications = false
-	#maximum time (in ticks) remaining on a chest before a notification for refreshing or decaying is sent to a player (default 30 seconds, -1 for no delay)
-	# Default: 600
-	# Range: > -1
-	notification_delay = 600
 	#disables styling of breaking, decaying and refreshing messages sent to players
 	disable_message_styles = false
 

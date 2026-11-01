@@ -1,0 +1,64 @@
+#An alternative render to weather
+override_weather = false
+#The how many particles will have a chance to spawn in a given tick. This will be affected by in game Minecraft options as well, so be aware if changing. You may also ask, why is this not separate for rain and snow, and that is simply due to the way the loop works at the moment so we don't do 2 different large loops
+# Default: 4500
+# Range: 100 ~ 20000
+weather_particle_count = 4500
+#The same as `weather_particle_count`, but during thunderstorms.
+# Default: 7875
+# Range: 100 ~ 20000
+weather_particle_thunder_count = 7875
+
+[Rain]
+	#The opacity of the rain particle. (1 is fully opaque)
+	# Default: 0.8
+	# Range: 0.2 ~ 1.0
+	rain_particle_alpha = 0.8
+	#Base scaling of the rain particle.
+	# Default: 1.65
+	# Range: 0.1 ~ 4.0
+	rain_particle_scale = 1.65
+	#How long can a single rain particle live for without hitting the ground.
+	# Default: 70
+	# Range: 10 ~ 120
+	rain_lifetime = 70
+	#How far from the player should rain particles spawn. Lowering this number will increase the density if the weather amount is not changed
+	# Default: 22
+	# Range: 5 ~ 64
+	rain_range = 22
+	#Determines if the rain should fall deterministically down, or have a slight random appearance
+	rain_random = true
+	#How often can a rain particle "collide" with the ground
+	# Default: 100
+	# Range: 0 ~ 100
+	rain_collision_percent = 100
+	#How frequently should rain particles try to color towards the biome's color. (set to 0 to turn off)
+	# Default: 4
+	# Range: 0 ~ 20
+	rain_color_blending_frequency = 4
+	#There is a calculation done at the start of a rain droplet that determines if the particle should render. This trades memory for performance. At the moment, neither option is known which is better by default.
+	use_cached_aabb = true
+	#Note, this is provided purely as an option and is HIGHLY likely not to change any noticeable performance.
+	full_biome_lookup = true
+
+[Snow]
+	#The opacity of the rain particle. (1 is fully opaque)
+	# Default: 1.0
+	# Range: 0.2 ~ 1.0
+	snow_particle_alpha = 1.0
+	#Changes the base scaling of the rain particle.
+	# Default: 1.4
+	# Range: 0.1 ~ 4.0
+	snow_particle_scale = 1.4
+	#How long can a single snow particle live for without hitting the ground.
+	# Default: 30
+	# Range: 10 ~ 100
+	snow_lifetime = 30
+	#How far from the player should snow particles spawn. Lowering this number will increase the density if the weather amount is not changed
+	# Default: 12
+	# Range: 5 ~ 64
+	snow_range = 12
+	#How far from the player should the secondary layer of snow particles spawn. Lowering this number will increase the density if the weather amount is not changed
+	# Default: 16
+	# Range: 5 ~ 64
+	snow_outer_range = 16

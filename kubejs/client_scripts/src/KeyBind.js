@@ -2,7 +2,7 @@
 const keysToCheck = [
     "key.test",
     "key.test_2",
-    "key.test_3",
+    /*"key.test_3",*/
     "key.test_4",
     "key.test_5",
     "key.test_6",

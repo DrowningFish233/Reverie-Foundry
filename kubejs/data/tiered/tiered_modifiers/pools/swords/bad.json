@@ -2,6 +2,9 @@
   "weight": 25,
   "verifiers": [
     {
+      "tag": "minecraft:spears"
+    },
+    {
       "tag": "gobber2:swords"
     },
     {

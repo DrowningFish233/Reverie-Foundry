@@ -1,17 +1,17 @@
 [region]
-	# Default: 4
+	# Default: 35
 	# Range: > 0
 	terra_ferax_weight = 6
-	# Default: 4
+	# Default: 35
 	# Range: > 0
 	terra_solaris_weight = 6
-	# Default: 4
+	# Default: 35
 	# Range: > 0
 	terra_flava_weight = 6
-	# Default: 4
+	# Default: 35
 	# Range: > 0
 	terra_laeta_weight = 6
-	# Default: 4
+	# Default: 35
 	# Range: > 0
 	terra_mater_weight = 6
 
@@ -33,6 +33,8 @@
 	savanna_toggle = true
 	dark_forest_toggle = true
 	windswept_hills_toggle = true
+	taiga_toggle = true
+	plains_toggle = true
 
 [biome]
 	has_sugi_forest = true
@@ -86,3 +88,19 @@
 	has_blooming_highlands = true
 	has_chaparral = true
 	has_floral_ridges = true
+	has_sandy_river = true
+	has_pink_sandy_river = true
+	has_red_sandy_river = true
+	has_arid_river = true
+	has_xeric_river = true
+	has_tundra_river = true
+	has_lush_river = true
+	has_savanna_river = true
+	has_taiga_river = true
+	has_alpine_river = true
+	has_prairie_river = true
+	has_autumnal_river = true
+	has_birch_river = true
+	has_cold_beach = true
+	lukewarm_beach = true
+	red_beach = true

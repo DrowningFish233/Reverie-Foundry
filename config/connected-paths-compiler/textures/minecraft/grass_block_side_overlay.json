@@ -1,0 +1,6 @@
+{
+  "connectTiles": "minecraft:grass_block_side",
+  "blockID": "minecraft:grass_block",
+  "tintIndex": 0,
+  "tintBlock": "minecraft:grass_block"
+}

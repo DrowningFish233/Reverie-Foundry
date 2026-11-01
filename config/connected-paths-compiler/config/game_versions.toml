@@ -1,0 +1,345 @@
+# Game versions and their pack_format, ordered from min (oldest) to max (newest)
+
+[[versions]]
+version = "1.6.1"
+pack_format = 1
+
+[[versions]]
+version = "1.6.2"
+pack_format = 1
+
+[[versions]]
+version = "1.6.4"
+pack_format = 1
+
+[[versions]]
+version = "1.7.2"
+pack_format = 1
+
+[[versions]]
+version = "1.7.4"
+pack_format = 1
+
+[[versions]]
+version = "1.7.5"
+pack_format = 1
+
+[[versions]]
+version = "1.7.6"
+pack_format = 1
+
+[[versions]]
+version = "1.7.7"
+pack_format = 1
+
+[[versions]]
+version = "1.7.8"
+pack_format = 1
+
+[[versions]]
+version = "1.7.9"
+pack_format = 1
+
+[[versions]]
+version = "1.7.10"
+pack_format = 1
+
+[[versions]]
+version = "1.8"
+pack_format = 1
+
+[[versions]]
+version = "1.8.1"
+pack_format = 1
+
+[[versions]]
+version = "1.8.2"
+pack_format = 1
+
+[[versions]]
+version = "1.8.3"
+pack_format = 1
+
+[[versions]]
+version = "1.8.4"
+pack_format = 1
+
+[[versions]]
+version = "1.8.5"
+pack_format = 1
+
+[[versions]]
+version = "1.8.6"
+pack_format = 1
+
+[[versions]]
+version = "1.8.7"
+pack_format = 1
+
+[[versions]]
+version = "1.8.8"
+pack_format = 1
+
+[[versions]]
+version = "1.8.9"
+pack_format = 1
+
+[[versions]]
+version = "1.9"
+pack_format = 2
+
+[[versions]]
+version = "1.9.1"
+pack_format = 2
+
+[[versions]]
+version = "1.9.2"
+pack_format = 2
+
+[[versions]]
+version = "1.9.3"
+pack_format = 2
+
+[[versions]]
+version = "1.9.4"
+pack_format = 2
+
+[[versions]]
+version = "1.10"
+pack_format = 2
+
+[[versions]]
+version = "1.10.1"
+pack_format = 2
+
+[[versions]]
+version = "1.10.2"
+pack_format = 2
+
+[[versions]]
+version = "1.11"
+pack_format = 3
+
+[[versions]]
+version = "1.11.1"
+pack_format = 3
+
+[[versions]]
+version = "1.11.2"
+pack_format = 3
+
+[[versions]]
+version = "1.12"
+pack_format = 3
+
+[[versions]]
+version = "1.12.1"
+pack_format = 3
+
+[[versions]]
+version = "1.12.2"
+pack_format = 3
+
+[[versions]]
+version = "1.13"
+pack_format = 4
+
+[[versions]]
+version = "1.13.1"
+pack_format = 4
+
+[[versions]]
+version = "1.13.2"
+pack_format = 4
+
+[[versions]]
+version = "1.14"
+pack_format = 4
+
+[[versions]]
+version = "1.14.1"
+pack_format = 4
+
+[[versions]]
+version = "1.14.2"
+pack_format = 4
+
+[[versions]]
+version = "1.14.3"
+pack_format = 4
+
+[[versions]]
+version = "1.14.4"
+pack_format = 4
+
+[[versions]]
+version = "1.15"
+pack_format = 5
+
+[[versions]]
+version = "1.15.1"
+pack_format = 5
+
+[[versions]]
+version = "1.15.2"
+pack_format = 5
+
+[[versions]]
+version = "1.16"
+pack_format = 5
+
+[[versions]]
+version = "1.16.1"
+pack_format = 5
+
+[[versions]]
+version = "1.16.2"
+pack_format = 6
+
+[[versions]]
+version = "1.16.3"
+pack_format = 6
+
+[[versions]]
+version = "1.16.4"
+pack_format = 6
+
+[[versions]]
+version = "1.16.5"
+pack_format = 6
+
+[[versions]]
+version = "1.17"
+pack_format = 7
+
+[[versions]]
+version = "1.17.1"
+pack_format = 7
+
+[[versions]]
+version = "1.18"
+pack_format = 8
+
+[[versions]]
+version = "1.18.1"
+pack_format = 8
+
+[[versions]]
+version = "1.18.2"
+pack_format = 8
+
+[[versions]]
+version = "1.19"
+pack_format = 9
+
+[[versions]]
+version = "1.19.1"
+pack_format = 9
+
+[[versions]]
+version = "1.19.2"
+pack_format = 9
+
+[[versions]]
+version = "1.19.3"
+pack_format = 12
+
+[[versions]]
+version = "1.19.4"
+pack_format = 13
+
+[[versions]]
+version = "1.20"
+pack_format = 15
+
+[[versions]]
+version = "1.20.1"
+pack_format = 15
+
+[[versions]]
+version = "1.20.2"
+pack_format = 18
+
+[[versions]]
+version = "1.20.3"
+pack_format = 22
+
+[[versions]]
+version = "1.20.4"
+pack_format = 22
+
+[[versions]]
+version = "1.20.5"
+pack_format = 32
+
+[[versions]]
+version = "1.20.6"
+pack_format = 32
+
+[[versions]]
+version = "1.21"
+pack_format = 34
+
+[[versions]]
+version = "1.21.1"
+pack_format = 34
+
+[[versions]]
+version = "1.21.2"
+pack_format = 42
+
+[[versions]]
+version = "1.21.3"
+pack_format = 42
+
+[[versions]]
+version = "1.21.4"
+pack_format = 46
+
+[[versions]]
+version = "1.21.5"
+pack_format = 55
+
+[[versions]]
+version = "1.21.6"
+pack_format = 63
+
+[[versions]]
+version = "1.21.7"
+pack_format = 64
+
+[[versions]]
+version = "1.21.8"
+pack_format = 64
+
+[[versions]]
+version = "1.21.9"
+pack_format = 69
+
+[[versions]]
+version = "1.21.10"
+pack_format = 69
+
+[[versions]]
+version = "1.21.11"
+pack_format = 75
+
+[[versions]]
+version = "26.1"
+pack_format = 84
+
+[[versions]]
+version = "26.1.1"
+pack_format = 84
+
+[[versions]]
+version = "26.1.2"
+pack_format = 84
+
+[[versions]]
+version = "26.2"
+pack_format = 88
+
+[[versions]]
+version = "26.3"
+pack_format = 97.1

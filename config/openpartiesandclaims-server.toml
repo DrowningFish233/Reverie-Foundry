@@ -179,7 +179,8 @@
 		overLimitClaimAccessCooldown = 5
 		#Whether players should be able to claim chunks that are directly next to claimed chunks owned by another player/party.
 		#Disallowing it can prevent players from doing so without realizing that chunks next to claims can also be partially protected,
-		#e.g. from item use and mob griefing, making them not ideal for some purposes.
+		#e.g. from item use and mob griefing, making them not ideal for some purposes. Players can make exceptions using the "Can Claim Next To"
+		#option in their player config.
 		#Only affects claiming wilderness, so reclaimable claims can still work.
 		allowTouchingClaims = true
 		#The maximum size (in chunks) of a single claim action, whether it's claiming, unclaiming or forceloading.
@@ -194,6 +195,53 @@
 		impersonationPermission = "xaero.pac_claims_impersonation"
 		#The permission that gives non-OP players the ability to teleport to any player's claims. The used permission system can be configured with "permissionSystem".
 		teleportationPermission = "xaero.pac_claims_teleport"
+		#How much the party's claiming anchor limit should be increased per party member when option "partyOwnedClaims" is enabled. This option supports fractions, so the default value 0.1 means that 1 anchor is added for every 10 players in the party.
+		# Default: 0.1
+		# Range: 0.0 ~ 1.7976931348623157E308
+		claimingAnchorBonusPerPartyMember = 0.1
+		#How much the party's claiming anchor limit should be increased when a player's party has at least another member and
+		#"partyOwnedClaims" is enabled. This bonus is added on top of "claimingAnchorBonusPerPartyMember". The main use for this
+		#is to prevent players from claiming until they have started a party with another player ("maxPlayerClaimingAnchors" should be 0).
+		# Default: 0
+		# Range: > 0
+		claimingAnchorBonusForPartyOwner = 0
+		#Whether players should only be allowed to claim chunks around a limited number of claiming "anchors".
+		#Players can choose where to add their claiming anchors.
+		#You can edit the range of a claiming anchor with the option claimingAnchorRange and the default
+		#maximum number of claiming anchors with the option maxPlayerClaimingAnchors.
+		#This can help prevent players making a large number of tiny claims all over the world.
+		anchorBasedClaiming = false
+		#The maximum number of claiming anchors that a player can add in a dimension. Additional claiming anchors can be configured in the player config.
+		#The bonus claiming anchors in the wilderness config apply to every player, which supports the dimension-based sub-configs.
+		#This value can be overridden with a player permission.
+		# Default: 3
+		# Range: > 0
+		maxPlayerClaimingAnchors = 3
+		#The maximum distance from a claiming anchor on either axis at which a player chunk claim could be made when using
+		#anchorBasedClaiming. The covered range forms a square. This value can be overridden with a player permission.
+		#The bonus claiming anchor range option in a player config and the wilderness config can be used to further adjust
+		#this value for specific players and/or dimensions.
+		# Default: 16
+		# Range: > 0
+		claimingAnchorRange = 16
+		#The permission that should override the default "maxPlayerClaimingAnchors" value. Set it to an empty string to never check permissions.
+		#Checking permissions requires the player to be online. If you change a permission value for an offline player,
+		#it will only take effect when the player logs in.
+		#This might not work well with party-owned claims. The party owner would have to log in for any changes.
+		#The used permission system can be configured with "permissionSystem".
+		maxPlayerClaimingAnchorsPermission = "xaero.pac_max_claiming_anchors"
+		#The permission that should override the default "claimingAnchorRange" value. Set it to an empty string to never check permissions.
+		#Checking permissions requires the player to be online. If you change a permission value for an offline player,
+		#it will only take effect when the player logs in.
+		#This might not work well with party-owned claims. The party owner would have to log in for any changes.
+		#The used permission system can be configured with "permissionSystem".
+		claimingAnchorRangePermission = "xaero.pac_claiming_anchor_range"
+		#The permission that is used to check whether claiming is paused for a player. Set it to an empty string to never check permissions.
+		#The used permission system can be configured with "permissionSystem".
+		claimingPausedPermission = "xaero.pac_claiming_paused"
+		#The permission that is used to check whether new forceloads are paused for a player. Set it to an empty string to never check permissions.
+		#The used permission system can be configured with "permissionSystem".
+		newForceloadsPausedPermission = "xaero.pac_new_forceloads_paused"
 
 		[serverConfig.claims.protection]
 			#The type of the list defined in "friendlyChunkProtectedEntityList". ONLY - include only the listed entities. ALL_BUT - include all but the listed entities.

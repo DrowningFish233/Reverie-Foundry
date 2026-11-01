@@ -21,13 +21,6 @@ const BOSS_STAGES = [
         messages: [
             { text: "first_kill_fire_boss.message.a", color: "#ffcc00ff" },
         ]
-    },
-    {
-        boss: "cataclysm:ender_guardian",
-        stage: "first_kill_ender_guardian",
-        messages: [
-            { text: "first_kill_ender_guardian.message.a", color: "#1ae8ff" },
-        ]
     }
 ];
 

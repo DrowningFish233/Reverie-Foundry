@@ -1,83 +1,88 @@
 {
-	"type": "silentgear:simple",
-	"parent": "silentgear:empty",
-	"crafting": {
-		"can_salvage": true,
-		"categories": [
-			"metal",
-			"intermediate"
-		],
-		"gear_type_blacklist": [],
-		"ingredient": {
-			"item": "hazennstuff:demonite_ingot"
-		},
-		"part_substitutes": {}
-	},
-	"display": {
-		"color": "#531191",
-		"main_texture_type": "HIGH_CONTRAST",
-		"name": {
-			"translate": "material.silentgear.kubejs:demonite_ingot"
-		},
-		"name_prefix": ""
-	},
-	"properties": {
-		"silentgear:main": {
-			"armor": 18.0,
-			"armor_toughness": 4,
-			"armor/helmet": 4,
-			"armor/chestplate": 5,
-			"armor/leggings": 5,
-			"armor/boots": 4,
-			"armor_durability": 90,
-			"attack_damage": 14.0,
-			"attack_speed": 0.2,
-			"charging_value": 1.4,
-			"draw_speed": 0.3,
-			"durability": 700,
-			"ranged_damage": 0.15,
-			"projectile_accuracy": 0.1,
-			"projectile_speed": 0.1,
-			"enchantment_value": 12,
-			"harvest_speed": 12,
-			"harvest_tier": {
-				"name": "diamond/钻石",
-				"level_hint": "3",
-				"incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools"
-			},
-			"spell_power": 0.15,
-			"spell_resist": 0.1,
-			"mana_regen": 0.05,
-			"spell_slots": 5,
-			"healing_received": -0.02,
-			"rarity": 120,
-			"geas_limit": 0.25,
-			"traits": [
-				{
-					"conditions": [],
-					"level": 2,
-					"trait": "kubejs:demonite_ingot"
-				},
-				{
-					"conditions": [],
-					"level": 1,
-					"trait": "kubejs:cobalt_ingot"
-				}
-			]
-		},
-		"silentgear:binding": {
-			"traits": [
-				{
-					"conditions": [],
-					"level": 2,
-					"trait": "kubejs:demonite_ingot"
-				},
-				{
-					"conditions": [],
-					"level": 1,
-					"trait": "kubejs:cobalt_ingot"
-				}
-			]
-		}
-	}
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.kubejs:demonite_ingot"
+    },
+    "name_prefix": "",
+    "color": "#531191",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "hazennstuff:demonite_ingot"
+    },
+    "can_salvage": true,
+    "categories": [
+      "metal",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:main": {
+      "durability": 700,
+      "armor_durability": 90,
+      "harvest_speed": 12,
+      "harvest_tier": {
+        "name": "diamond/钻石",
+        "level_hint": "3",
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_diamond_tools"
+      },
+      "attack_damage": 14.0,
+      "attack_speed": 0.2,
+      "armor": 18.0,
+      "armor_toughness": 4,
+      "ranged_damage": 0.15,
+      "draw_speed": 0.3,
+      "projectile_speed": 0.1,
+      "projectile_accuracy": 0.1,
+      "charging_value": 1.4,
+      "enchantment_value": 12,
+      "rarity": 120,
+      "traits": [
+        {
+          "trait": "kubejs:demonite_ingot",
+          "level": 2,
+          "conditions": []
+        },
+        {
+          "trait": "kubejs:cobalt_ingot",
+          "level": 1,
+          "conditions": []
+        },
+        {
+          "trait": "reveriefoundry:eater_corrosion",
+          "level": 1,
+          "conditions": []
+        }
+      ],
+      "armor/helmet": 4,
+      "armor/chestplate": 5,
+      "armor/leggings": 5,
+      "armor/boots": 4,
+      "spell_power": 0.15,
+      "spell_resist": 0.1,
+      "mana_regen": 0.05,
+      "spell_slots": 5,
+      "healing_received": -0.02,
+      "geas_limit": 0.25
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "trait": "kubejs:demonite_ingot",
+          "level": 2,
+          "conditions": []
+        },
+        {
+          "trait": "kubejs:cobalt_ingot",
+          "level": 1,
+          "conditions": []
+        }
+      ]
+    }
+  }
 }

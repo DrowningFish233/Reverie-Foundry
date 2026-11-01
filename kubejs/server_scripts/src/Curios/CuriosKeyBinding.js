@@ -5,7 +5,8 @@ NetworkEvents.dataReceived("key.test_2", (event) => {
     showsanity(event, player);
 });
 
-/*使用肾上腺素*/
+/*使用肾上腺素（已弃用）*/
+/*
 NetworkEvents.dataReceived("key.test_3", (event) => {
     const { player, level } = event
     if (!player) return;
@@ -33,7 +34,7 @@ NetworkEvents.dataReceived("key.test_3", (event) => {
             (null, player.x, player.y, player.z, "kubejs:use_adrenaline", "players", 0.6, 1)
     }
 });
-
+*/
 /*血欲-红舞鞋*/
 NetworkEvents.dataReceived("key.test_5", (event) => {
     const player = event.player;

@@ -37,29 +37,16 @@ function kubejs_curios(event) {
  * @type {Object.<string, function($BeforeLivingEntityHurtKubeEvent_, any, any, any)>}
  */
 const curios_event_hurt = {
+
     'kubejs:heart_of_darkness': function (event, curios, slot, itemStack) {
         if (itemStack !== null) {
             let player = event.player;
-            if (player) {
-                const { x, y, z } = player;
-                const pData = player.persistentData;
-                let playerName = getplayerName(player.toString());
-                let sound_adrenaline = pData.getInt("adrenaline");
-                if (sound_adrenaline >= 25) {
-                    event.level[$playersound]
-                        (null, player.x, player.y, player.z, "kubejs:no_adrenaline", "players", 0.6, 1)
-                }
-                player.setStatusMessage(
-                    Text.join([
-                        Text.of(playerName).color('red'),
-                        Text.translate('message.adrenaline.depleted').color('dark_red')
-                    ])
-                );
-                pData.putInt("adrenaline", 0);
-                player.potionEffects.add("kubejs:no_adrenaline", 20 * 5, 0);
+            if (player && !player.level.isClientSide()) {
+                player.persistentData.putLong("lastHurtTick", player.level.getTime());
             }
         }
     },
+
     'kubejs:totem_of_undying': function (event, curios, slot, itemStack) {
         if (itemStack !== null) {
             let player = event.player;

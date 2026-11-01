@@ -1,0 +1,7 @@
+#Display order of the attributes screen. Attributes listed earlier are shown first.
+#Attributes not listed here are sorted by their localized name and shown after all listed ones.
+#Each entry is an attribute ID, for example minecraft:generic.attack_damage
+attribute_sort = ["minecraft:generic.attack_damage", "minecraft:generic.attack_speed", "minecraft:generic.max_health", "minecraft:generic.armor", "minecraft:generic.armor_toughness", "minecraft:generic.movement_speed", "apothic_attributes_extension:mob_looting", "apothic_attributes_extension:mining_fortune", "apothic_attributes_extension:fishing_speed", "apothic_attributes_extension:fishing_luck", "irons_spellbooks:max_mana", "irons_spellbooks:spell_power"]
+#Show ADD_MULTIPLIED_TOTAL attribute modifiers in multiplier form, for example 'x200% Max Health'.
+#When disabled they are displayed like ADD_MULTIPLIED_BASE, for example '+100% Max Health'.
+advanced_attribute_tooltip = true

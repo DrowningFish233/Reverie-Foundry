@@ -1,7 +1,4 @@
 #version 330
-
-#define parallaxIntensity 3.0
-
 uniform mat4 ModelViewMat;
 uniform mat4 ProjMat;
 uniform vec2 size;
@@ -9,225 +6,214 @@ uniform vec2 scrollOffset;
 uniform vec2 scrollSize;
 uniform float time;
 uniform float zoom;
-
 in vec2 texCoord0;
 out vec4 fragColor;
-
-uint hash(uint x) {
-    x += (x << 10u);
-    x ^= (x >> 6u);
-    x += (x << 3u);
-    x ^= (x >> 11u);
-    x += (x << 15u);
-    return x;
+#define BACKGROUND_GAIN 1.25
+#define GEAR_SPEED      0.020
+float hash12(vec2 p) {
+    vec3 p3 = fract(vec3(p.xyx) * 0.1031);
+    p3 += dot(p3, p3.yzx + 33.33);
+    return fract((p3.x + p3.y) * p3.z);
 }
-uint hash(uvec2 v) { return hash(v.x ^ hash(v.y)); }
-
-float floatConstruct(uint m) {
-    const uint ieeeMantissa = 0x007FFFFFu;
-    const uint ieeeOne = 0x3F800000u;
-    m &= ieeeMantissa;
-    m |= ieeeOne;
-    float f = uintBitsToFloat(m);
-    return f - 1.0;
+vec2 hash22(vec2 p) {
+    vec3 p3 = fract(vec3(p.xyx) * vec3(0.1031, 0.1030, 0.0973));
+    p3 += dot(p3, p3.yzx + 33.33);
+    return fract((p3.xx + p3.yz) * p3.zy);
 }
-
-float random(vec2 v) { return floatConstruct(hash(floatBitsToUint(v))); }
-vec2 random2(vec2 v) {
-    return vec2(
-        floatConstruct(hash(floatBitsToUint(v))),
-        floatConstruct(hash(floatBitsToUint(v * 2.0)))
-    ) * 2.0 - 1.0;
-}
-
-float noise(vec2 st) {
-    vec2 i = floor(st);
-    vec2 f = fract(st);
+float vnoise(vec2 p) {
+    vec2 i = floor(p);
+    vec2 f = fract(p);
     vec2 u = f * f * (3.0 - 2.0 * f);
     return mix(
-        mix(dot(random2(i + vec2(0.0, 0.0)), f - vec2(0.0, 0.0)),
-            dot(random2(i + vec2(1.0, 0.0)), f - vec2(1.0, 0.0)), u.x),
-        mix(dot(random2(i + vec2(0.0, 1.0)), f - vec2(0.0, 1.0)),
-            dot(random2(i + vec2(1.0, 1.0)), f - vec2(1.0, 1.0)), u.x),
+        mix(hash12(i + vec2(0.0, 0.0)), hash12(i + vec2(1.0, 0.0)), u.x),
+        mix(hash12(i + vec2(0.0, 1.0)), hash12(i + vec2(1.0, 1.0)), u.x),
         u.y
-    ) * 0.40 + 0.02;
+    );
 }
-
-float fbm(vec2 p) {
-    float value = 0.0;
-    float amp = 0.5;
-    float freq = 1.0;
-    for (int i = 0; i < 5; i++) {
-        value += amp * noise(p * freq);
-        amp *= 0.5;
-        freq *= 2.0;
-    }
-    return value * 0.5 + 0.5;
+float fbm2(vec2 p) {
+    float v = 0.5 * vnoise(p)
+            + 0.25 * vnoise(mat2(0.80, 0.60, -0.60, 0.80) * p * 2.03 + 17.7);
+    return v / 0.75;
 }
-
+vec2 normalizedScroll() {
+    vec2 s = vec2(0.0);
+    if (scrollSize.x > 0.0) s.x = scrollOffset.x / scrollSize.x;
+    if (scrollSize.y > 0.0) s.y = scrollOffset.y / scrollSize.y;
+    return s;
+}
+mat2 rot2(float a) {
+    float c = cos(a);
+    float s = sin(a);
+    return mat2(c, s, -s, c);
+}
+float magicCircle(vec2 p, vec2 c, float R, float rot, float aa) {
+    vec2 d = p - c;
+    float r = length(d);
+    float a = atan(d.y, d.x) + rot;
+    float ring1 = exp(-pow((r - R) / aa, 2.0));
+    float ring2 = exp(-pow((r - R * 0.86) / (aa * 1.4), 2.0)) * 0.55;
+    float tick = smoothstep(0.86, 0.98, abs(cos(a * 96.0)));
+    float band = smoothstep(R * 0.90, R * 0.91, r)
+               * smoothstep(R * 0.99, R * 0.98, r);
+    float ticks = tick * band * 0.30;
+    float runeCell = floor(a / 6.2831853 * 72.0);
+    float rune = step(0.86, hash12(vec2(runeCell, R * 97.0)))
+               * smoothstep(R * 0.91, R * 0.92, r)
+               * smoothstep(R * 0.945, R * 0.935, r) * 0.20;
+    return ring1 + ring2 + ticks + rune;
+}
+vec3 crystal(vec2 p, vec2 c, float w, float h, float rot, vec3 tint) {
+    vec2 d = rot2(-rot) * (p - c);
+    d.x /= w;
+    d.y /= h;
+    float diamond = abs(d.x) + abs(d.y);
+    float body = smoothstep(1.0, 0.90, diamond);
+    float rim  = exp(-pow((diamond - 1.0) * 11.0, 2.0));
+    float inner = exp(-diamond * diamond * 2.2);
+    float halo = exp(-diamond * diamond * 0.7);
+    float facet = exp(-pow(d.x * 5.0, 2.0)) * body * 0.22;
+    return tint * (body * 0.055 + rim * 0.30 + inner * 0.045 + facet * 0.14 + halo * 0.022);
+}
+vec3 emberLayer(vec2 p, float scale, float seed, float speed,
+                float radius, float brightness) {
+    vec2 sp = p * scale + vec2(seed, -time * speed)
+            + normalizedScroll() * 0.006 * scale;
+    vec2 cell = floor(sp);
+    vec2 f = fract(sp) - 0.5;
+    float h = hash12(cell + seed);
+    float presence = step(0.90, h);
+    vec2 offset = (hash22(cell + seed * 1.7) - 0.5) * 0.7;
+    vec2 d = f - offset;
+    float rr = radius * (0.55 + 0.9 * fract(h * 57.3));
+    float glow = exp(-dot(d, d) / (rr * rr));
+    float heightFade = smoothstep(0.55, -0.42, p.y);
+    float twinkle = 0.78 + 0.22 * sin(time * 2.1 + h * 39.0);
+    vec3 tint = mix(vec3(1.0, 0.42, 0.72), vec3(0.82, 0.55, 1.0), fract(h * 7.3));
+    return tint * glow * presence * heightFade * twinkle * brightness;
+}
 void main() {
-    vec2 uv = texCoord0;
-
+    vec2 uv = vec2(texCoord0.x, 1.0 - texCoord0.y);
     float aspect = size.x / size.y;
-    vec2 aspect_uv = uv;
-    aspect_uv.x *= aspect;
-
-    vec2 scrollPos = vec2(0.0);
-    if (scrollSize.x > 0.0) scrollPos.x = scrollOffset.x / scrollSize.x;
-    if (scrollSize.y > 0.0) scrollPos.y = scrollOffset.y / scrollSize.y;
-
-    vec3 bgColor = mix(
-        vec3(0.06, 0.02, 0.15),
-        vec3(0.12, 0.04, 0.26),
-        uv.y * 0.8 + 0.2
-    );
-    fragColor = vec4(bgColor, 1.0);
-
-    float t = time * 0.005;
-
-    vec2 centerPos = aspect_uv - 0.5;
-    float radius = length(centerPos);
-    float angle = atan(centerPos.y, centerPos.x);
-
-    float rotStrength = 3.0 + radius * 2.0;
-    float cosA = cos(rotStrength);
-    float sinA = sin(rotStrength);
-
-    vec2 rotPos = vec2(
-        centerPos.x * cosA - centerPos.y * sinA,
-        centerPos.x * sinA + centerPos.y * cosA
-    );
-
-    vec2 spiralCoord = rotPos * 1.5 + vec2(t * 0.3, t * 0.2) - radius * 1.0;
-
-    float spiral = fbm(spiralCoord);
-    spiral = smoothstep(0.3, 0.7, spiral);
-
-    float ringDist = radius;
-    float ringWave = sin(ringDist * 20.0 - t * 2.0) * 0.5 + 0.5;
-    float ringFade = 1.0 - exp(-ringDist * 8.0);
-    float ring = ringFade * ringWave * 0.14;
-
-    vec2 dustUv = aspect_uv * 2.5 + vec2(t * 0.2, t * 0.1);
-    float dust1 = fbm(dustUv + vec2(1.3, 2.7));
-    float dust2 = fbm(dustUv * 1.7 - vec2(0.5, 1.3) + vec2(t * 0.15, 0.0));
-    float dust = (dust1 * 0.6 + dust2 * 0.4) * 0.5;
-
-    float glow1 = exp(-pow(radius - 0.15, 2.0) * 80.0) * 0.55;
-    float glow2 = exp(-pow(radius - 0.35, 2.0) * 100.0) * 0.35;
-    float glow3 = exp(-pow(radius - 0.55, 2.0) * 120.0) * 0.20;
-
-    float pulse = sin(t * 0.5) * 0.15 + 0.85;
-
-    vec3 colorSpiral = vec3(0.9, 0.3, 0.9) * spiral * 0.45 * pulse;
-    vec3 colorRing = vec3(0.4, 0.2, 0.9) * ring * 0.55;
-    vec3 colorDust = mix(
-        vec3(0.8, 0.2, 0.8),
-        vec3(0.3, 0.1, 0.8),
-        dust
-    ) * dust * 0.35;
-
-    vec3 colorGlow1 = vec3(1.0, 0.4, 1.0) * glow1 * 0.65;
-    vec3 colorGlow2 = vec3(0.5, 0.3, 1.0) * glow2 * 0.55;
-    vec3 colorGlow3 = vec3(0.9, 0.2, 0.8) * glow3 * 0.45;
-
-    vec3 nebula = colorSpiral + colorRing + colorDust + colorGlow1 + colorGlow2 + colorGlow3;
-    fragColor += vec4(nebula, 0.0);
-
-    for (int i = 0; i < 5; i++) {
-        float fi = float(i);
-        float rad = 0.08 + fi * 0.09 + 0.05 * sin(t * 0.3 + fi * 1.2);
-        float ang = t * (0.2 + fi * 0.05) + fi * 1.8;
-        vec2 pos = vec2(0.5 + rad * cos(ang), 0.5 + rad * sin(ang) * 0.6);
-        pos += scrollPos * 0.03;
-
-        float sz = 0.04 + 0.02 * sin(t * 0.5 + fi * 2.0);
-        float g = exp(-pow(length(aspect_uv - pos), 2.0) / (sz * sz));
-        float bright = 0.3 + 0.7 * (sin(t * 0.4 + fi * 1.3) * 0.5 + 0.5);
-
-        vec3 col = mix(
-            vec3(0.9, 0.2, 0.9),
-            vec3(0.3, 0.2, 1.0),
-            sin(fi * 0.7 + t * 0.2) * 0.5 + 0.5
-        );
-        fragColor += vec4(col * g * bright * 0.55, 0.0);
-    }
-
-    vec4 stars = vec4(0.0);
-    for (float starsize = 4.0; starsize > 0.0; starsize -= 0.5) {
-        float cellsize = starsize * 120.0;
-        float ratio = starsize / cellsize;
-
-        float c1 = random(vec2(starsize)) * 500.0;
-        float c2 = 40.0 * starsize + 20.0;
-
-        vec2 coord = uv * size + vec2(c1, c1) + (scrollPos * vec2(c2, c2) * parallaxIntensity);
-        vec2 luv = mod(coord, cellsize) / cellsize;
-        vec2 cell = floor(coord / cellsize);
-
-        float r1 = random(cell + vec2(1.0));
-        float r2 = random(cell);
-
-        vec2 col = luv - clamp(vec2(r1, r2), ratio, 1.0 - ratio);
-        col /= max(ratio * 0.7, 0.001);
-        float lensq = dot(col, col);
-        float core = exp(-lensq);
-        float glow = 1.0 / (1.0 + lensq);
-        float intensity = core + 0.3 * glow;
-
-        float colorSeed = random(cell + vec2(0.5));
-        vec3 starColor = mix(
-            vec3(1.0, 0.9, 1.0),
-            mix(
-                vec3(0.6, 0.8, 1.0),
-                vec3(1.0, 0.7, 0.9),
-                colorSeed
-            ),
-            0.5
-        );
-
-        float twinkle = sin(time * 0.9 + cell.x * 73.0 + cell.y * 51.0 + starsize * 31.0) * 0.5 + 0.5;
-        twinkle = twinkle * twinkle * twinkle;
-        intensity *= (0.1 + 0.9 * twinkle);
-
-        stars += vec4(starColor * intensity, 1.0);
-    }
-    fragColor += stars * 0.95;
-
-    float meteor = 0.0;
+    vec2 p = (uv - 0.5) * vec2(aspect, 1.0);
+    vec2 scroll = normalizedScroll();
+    vec3 col = mix(vec3(0.035, 0.010, 0.050),
+                   vec3(0.012, 0.006, 0.022),
+                   smoothstep(-0.4, 0.7, p.y));
+    col += vec3(0.030, 0.008, 0.040) * smoothstep(0.4, -0.7, p.y);
+    col += vec3(0.020, 0.030, 0.075) * smoothstep(-0.2, 0.75, p.y);
+    vec2 smokeUV = vec2(p.x * 1.25, p.y * 1.8) + vec2(0.0, -time * 0.006);
+    float smoke = fbm2(smokeUV + vec2(2.7, 1.3));
+    float smoke2 = fbm2(p * 2.6 + vec2(-1.4, 4.1) + time * 0.003);
+    col += vec3(0.10, 0.030, 0.13) * pow(smoke, 2.2) * 0.55;
+    col += vec3(0.16, 0.045, 0.15) * pow(smoke2, 3.0) * 0.35
+         * smoothstep(0.5, -0.6, p.y);
+    vec2 fpos = vec2(-0.06, -0.62);
+    float fd = length((p - fpos) * vec2(1.0, 1.45));
+    float furnace = exp(-fd * 2.4);
+    float furnaceWide = exp(-fd * 0.85);
+    col += vec3(0.95, 0.32, 0.62) * furnace * 0.34;
+    col += vec3(0.50, 0.14, 0.50) * furnaceWide * 0.22;
+    col += vec3(0.22, 0.06, 0.26) * exp(-fd * 0.45) * 0.10;
+    float pool = exp(-pow((p.y + 0.62) * 7.5, 2.0))
+               * exp(-pow((p.x + 0.06) * 1.5, 2.0));
+    col += vec3(1.0, 0.38, 0.66) * pool * 0.16;
+    float seam = exp(-pow((p.y + 0.665) * 38.0, 2.0))
+               * exp(-pow((p.x + 0.06) * 0.75, 2.0));
+    col += vec3(1.0, 0.45, 0.72) * seam * 0.30;
+    float shaft = exp(-abs(p.x + 0.06) * 2.2)
+                * smoothstep(0.25, -0.65, p.y)
+                * (0.55 + 0.45 * fbm2(vec2(p.x * 4.0, p.y * 2.0 - time * 0.02)));
+    col += vec3(0.55, 0.16, 0.42) * shaft * 0.10;
+    float starFade = smoothstep(-0.45, 0.15, p.y);
+    vec2 ssp = p;
+    vec3 stars = vec3(0.0);
     for (int i = 0; i < 3; i++) {
         float fi = float(i);
-        float meteorTime = fract(time * 0.02 + fi * 0.3);
-
-        float startX = 0.1 + fi * 0.3;
-        float startY = 0.1 + fi * 0.2;
-        float speed = 0.6 + fi * 0.1;
-
-        vec2 meteorPos = vec2(
-            startX + meteorTime * speed * 0.5,
-            startY + meteorTime * speed * 0.3
-        );
-
-        float trailLength = 0.08;
-        float distToMeteor = length(aspect_uv - meteorPos);
-        float trail = exp(-distToMeteor * distToMeteor / (trailLength * trailLength));
-
-        float fadeIn = smoothstep(0.0, 0.1, meteorTime);
-        float fadeOut = 1.0 - smoothstep(0.7, 1.0, meteorTime);
-        float meteorAlpha = fadeIn * fadeOut;
-
-        meteor += trail * meteorAlpha * 0.55;
+        float scale = 120.0 + fi * 70.0;
+        vec2 sp = ssp * scale + fi * 37.0 + normalizedScroll() * (0.004 + fi * 0.006) * scale;
+        vec2 cell = floor(sp);
+        vec2 f = fract(sp) - 0.5;
+        float h = hash12(cell + fi * 11.0);
+        float thresh = (i == 0) ? 0.734 : 0.62;
+        float presence = step(thresh, h);
+        vec2 off = (hash22(cell + fi * 5.0) - 0.5) * 0.72;
+        vec2 d = f - off;
+        float rr = (0.05 - fi * 0.008) * (0.7 + 0.6 * fract(h * 43.0));
+        float core = exp(-dot(d, d) / (rr * rr));
+        float tw = 0.8 + 0.2 * sin(time * 0.7 + h * 51.0);
+        stars += vec3(0.86, 0.82, 1.0) * core * presence * tw * (0.06 + 0.5 * h * h * h);
     }
-    fragColor += vec4(vec3(1.0, 0.9, 1.0) * meteor, 0.0);
-
-    vec2 vigUV = texCoord0 - 0.5;
-    float vig = 1.0 - dot(vigUV, vigUV) * 1.0;
-    vig = max(vig, 0.0);
-    fragColor *= vec4(vec3(vig * 0.55 + 0.45), 1.0);
-
-    fragColor = mix(fragColor, fragColor * vec4(0.95, 0.85, 1.0, 1.0), 0.15);
-
-    float bloom = max(max(fragColor.r, fragColor.g), fragColor.b);
-    vec3 bloomColor = vec3(0.3, 0.2, 0.5) * bloom * bloom * 0.25;
-    fragColor += vec4(bloomColor, 0.0);
+    col += stars * starFade * 0.55;
+    {
+        vec2 c = vec2(0.0, -0.68);
+        float m = magicCircle(p, c, 0.58, time * 0.012, 0.0018);
+        col += mix(vec3(0.75, 0.30, 0.55), vec3(0.55, 0.35, 0.85),
+                   smoothstep(-0.4, 0.4, p.y)) * m * 0.065;
+    }
+    {
+        vec2 c = vec2(-0.47, 0.33);
+        float m = magicCircle(p, c, 0.28, -time * 0.020, 0.0014);
+        col += mix(vec3(0.70, 0.32, 0.58), vec3(0.50, 0.35, 0.88),
+                   smoothstep(0.0, 0.6, p.y)) * m * 0.050;
+    }
+    {
+        vec2 c = vec2(0.60, -0.12);
+        float m = magicCircle(p, c, 0.16, time * 0.028, 0.0012);
+        col += vec3(0.62, 0.32, 0.82) * m * 0.040;
+    }
+    {
+        vec3 t = vec3(1.00, 0.48, 0.76);
+        col += crystal(p, vec2(-0.50, 0.16 + 0.010 * sin(time * 0.42 + 0.5)),
+                       0.030, 0.088, 0.32, t);
+    }
+    {
+        vec3 t = vec3(0.78, 0.58, 1.00);
+        col += crystal(p, vec2(0.44, 0.16 + 0.013 * sin(time * 0.36 + 2.1)),
+                       0.024, 0.070, -0.22, t);
+    }
+    {
+        vec3 t = vec3(1.00, 0.62, 0.86);
+        col += crystal(p, vec2(-0.26, 0.36 + 0.008 * sin(time * 0.50 + 4.0)),
+                       0.017, 0.046, 0.58, t);
+    }
+    {
+        vec3 t = vec3(0.72, 0.52, 1.00);
+        col += crystal(p, vec2(0.18, 0.40 + 0.007 * sin(time * 0.46 + 1.2)),
+                       0.014, 0.038, -0.42, t);
+    }
+    {
+        vec3 t = vec3(1.00, 0.42, 0.70);
+        col += crystal(p, vec2(0.30, -0.30 + 0.009 * sin(time * 0.40 + 3.2)),
+                       0.022, 0.060, 0.14, t);
+    }
+    {
+        vec3 t = vec3(0.84, 0.60, 1.00);
+        col += crystal(p, vec2(-0.36, -0.18 + 0.011 * sin(time * 0.38 + 5.0)),
+                       0.020, 0.055, -0.55, t);
+    }
+    {
+        vec3 t = vec3(1.00, 0.55, 0.82);
+        col += crystal(p, vec2(-0.66, -0.02 + 0.008 * sin(time * 0.44 + 2.7)),
+                       0.016, 0.044, 0.40, t);
+    }
+    {
+        vec3 t = vec3(0.78, 0.55, 1.00);
+        col += crystal(p, vec2(0.57, -0.28 + 0.010 * sin(time * 0.34 + 0.9)),
+                       0.016, 0.042, -0.30, t);
+    }
+    {
+        vec2 d = p - vec2(0.0, -0.52);
+        float rr = length(d) - 0.66;
+        float ring = exp(-rr * rr * 900.0);
+        col += vec3(0.35, 0.12, 0.40) * ring * 0.05;
+    }
+    col += emberLayer(p, 26.0, 13.0, 0.030, 0.060, 1.00);
+    col += emberLayer(p, 9.0, 41.0, 0.022, 0.030, 1.20);
+    col += emberLayer(p, 15.0, 71.0, 0.018, 0.075, 0.75);
+    vec2 v = (uv - 0.5) * vec2(aspect * 0.84, 1.0);
+    float vig = 1.0 - smoothstep(0.28, 0.95, length(v));
+    col *= mix(0.46, 1.0, vig);
+    col *= BACKGROUND_GAIN;
+    col += (hash12(gl_FragCoord.xy) - 0.5) * (1.0 / 255.0);
+    fragColor = vec4(max(col, 0.0), 1.0);
 }

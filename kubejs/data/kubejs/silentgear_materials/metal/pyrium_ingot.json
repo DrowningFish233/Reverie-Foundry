@@ -1,81 +1,91 @@
 {
-    "type": "silentgear:simple",
-    "parent": "silentgear:empty",
-    "crafting": {
-        "can_salvage": true,
-        "categories": [
-            "metal"
-        ],
-        "gear_type_blacklist": [],
-        "ingredient": {
-            "item": "irons_spellbooks:pyrium_ingot"
-        },
-        "part_substitutes": {}
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.irons_spellbooks:pyrium_ingot"
     },
-    "display": {
-        "color": "#ceaa38",
-        "main_texture_type": "HIGH_CONTRAST",
-        "name": {
-            "translate": "material.silentgear.irons_spellbooks:pyrium_ingot"
-        },
-        "name_prefix": ""
+    "name_prefix": "",
+    "color": "#ceaa38",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "irons_spellbooks:pyrium_ingot"
     },
-    "properties": {
-        "silentgear:main": {
-            "armor": 35.0,
-            "armor/boots": 8.0,
-            "armor/chestplate": 13.0,
-            "armor/helmet": 8.0,
-            "armor/leggings": 6.0,
-            "armor_durability": 60.0,
-            "armor_toughness": 8.0,
-            "attack_damage": 35.0,
-            "attack_speed": -0.1,
-            "charging_value": 1.1,
-            "durability": 2031.0,
-            "enchantment_value": 100.0,
-            "harvest_speed": 10.0,
-            "harvest_tier": {
-                "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
-                "level_hint": "4",
-                "name": "netherite/下界合金"
-            },
-            "knockback_resistance": 0.4,
-            "magic_armor": 24.0,
-            "spell_power": 0.15,
-            "spell_slots": 9,
-            "max_mana": 25,
-            "forge_positive_chance": 15,
-            "forge_power": 15,
-            "projectile_speed": 5.0,
-            "projectile_accuracy": 0.1,
-            "rarity": 100.0,
-            "traits": [
-                {
-                    "conditions": [],
-                    "level": 3,
-                    "trait": "kubejs:blazing_magic_set"
-                },
-                {
-                    "conditions": [],
-                    "level": 4,
-                    "trait": "kubejs:arcane_ingot"
-                }
-            ]
+    "can_salvage": true,
+    "categories": [
+      "metal"
+    ],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:main": {
+      "durability": 2031.0,
+      "armor_durability": 60.0,
+      "harvest_speed": 10.0,
+      "harvest_tier": {
+        "name": "netherite/下界合金",
+        "level_hint": "4",
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools"
+      },
+      "attack_damage": 35.0,
+      "attack_speed": -0.1,
+      "armor": 35.0,
+      "armor_toughness": 8.0,
+      "magic_armor": 24.0,
+      "projectile_speed": 5.0,
+      "projectile_accuracy": 0.1,
+      "charging_value": 1.1,
+      "enchantment_value": 100.0,
+      "rarity": 100.0,
+      "knockback_resistance": 0.4,
+      "traits": [
+        {
+          "trait": "kubejs:blazing_magic_set",
+          "level": 3,
+          "conditions": []
         },
-        "silentgear:binding": {
-            "traits": [
-                {
-                    "conditions": [],
-                    "level": 3,
-                    "trait": "kubejs:blazing_magic_set"
-                },
-                {
-                    "conditions": [],
-                    "level": 4,
-                    "trait": "kubejs:arcane_ingot"
-                }
-            ]
+        {
+          "trait": "kubejs:arcane_ingot",
+          "level": 4,
+          "conditions": []
+        },
+        {
+          "trait": "reveriefoundry:fire_boss_knights",
+          "level": 1,
+          "conditions": []
         }
+      ],
+      "armor/boots": 8.0,
+      "armor/chestplate": 13.0,
+      "armor/helmet": 8.0,
+      "armor/leggings": 6.0,
+      "spell_power": 0.15,
+      "spell_slots": 9,
+      "max_mana": 25,
+      "forge_positive_chance": 15,
+      "forge_power": 15
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "trait": "kubejs:blazing_magic_set",
+          "level": 3,
+          "conditions": []
+        },
+        {
+          "trait": "kubejs:arcane_ingot",
+          "level": 4,
+          "conditions": []
+        },
+        {
+          "trait": "reveriefoundry:fire_boss_knights",
+          "level": 1,
+          "conditions": []
+        }
+      ]
     }
+  }
 }

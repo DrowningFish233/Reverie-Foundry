@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.bosses_of_mass_destruction:ancient_anima"
+    },
+    "color": "#62b9e4",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "bosses_of_mass_destruction:ancient_anima"
+    },
+    "can_salvage": true,
+    "categories": [
+      "intermediate",
+      "organic"
+    ],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:coating": {
+      "durability": {
+        "operation": "ADD",
+        "value": 50.0
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "magic_armor": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "magic_damage": {
+        "operation": "ADD",
+        "value": 2.0
+      },
+      "enchantment_value": {
+        "operation": "ADD",
+        "value": 25.0
+      },
+      "traits": [
+        {
+          "trait": "reveriefoundry:lich_soul_stars",
+          "level": 1,
+          "conditions": []
+        }
+      ]
+    }
+  }
+}

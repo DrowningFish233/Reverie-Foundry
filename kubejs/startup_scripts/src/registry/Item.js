@@ -113,11 +113,7 @@ global.new_materials = [
     { id: 'random_accessory_pouch_t4', maxStackSize: 64, texture: "kubejs:item/misc/random_accessory_pouch_t4" },
     { id: 'gluttonous_authority', maxStackSize: 1, texture: "kubejs:item/misc/gluttonous_authority" },
     { id: 'ancient_remnant_bone', maxStackSize: 64, texture: "kubejs:item/rods/ancient_remnant_bone" },
-
-
-
-
-
+    { id: 'crown_jewel', maxStackSize: 16, texture: "kubejs:item/misc/crown_jewel" }
 
 ];
 

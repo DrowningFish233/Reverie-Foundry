@@ -1,66 +1,76 @@
 {
-    "type": "silentgear:simple",
-    "parent": "silentgear:empty",
-    "crafting": {
-        "can_salvage": true,
-        "categories": [
-            "metal"
-        ],
-        "gear_type_blacklist": [],
-        "ingredient": {
-            "item": "cataclysm:cursium_ingot"
-        },
-        "part_substitutes": {}
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.cataclysm:cursium_ingot"
     },
-    "display": {
-        "color": "#74fcdf",
-        "main_texture_type": "HIGH_CONTRAST",
-        "name": {
-            "translate": "material.silentgear.cataclysm:cursium_ingot"
-        },
-        "name_prefix": ""
+    "name_prefix": "",
+    "color": "#74fcdf",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "cataclysm:cursium_ingot"
     },
-    "properties": {
-        "silentgear:main": {
-            "armor": 28.0,
-            "armor/boots": 5.0,
-            "armor/chestplate": 12.0,
-            "armor/helmet": 6.0,
-            "armor/leggings": 5.0,
-            "armor_durability": 33.0,
-            "armor_toughness": 16.0,
-            "attack_damage": 28.0,
-            "attack_speed": 0.1,
-            "charging_value": 1.1,
-            "durability": 1200.0,
-            "enchantment_value": 100.0,
-            "harvest_speed": 10.0,
-            "harvest_tier": {
-                "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
-                "level_hint": "4",
-                "name": "netherite/下界合金"
-            },
-            "knockback_resistance": 0.2,
-            "magic_armor": 24.0,
-            "projectile_speed": 5.0,
-            "projectile_accuracy": 0.1,
-            "rarity": 100.0,
-            "traits": [
-                {
-                    "conditions": [],
-                    "level": 1,
-                    "trait": "kubejs:cursium_ingot"
-                }
-            ]
+    "can_salvage": true,
+    "categories": [
+      "metal"
+    ],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:main": {
+      "durability": 1200.0,
+      "armor_durability": 33.0,
+      "harvest_speed": 10.0,
+      "harvest_tier": {
+        "name": "netherite/下界合金",
+        "level_hint": "4",
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools"
+      },
+      "attack_damage": 28.0,
+      "attack_speed": 0.1,
+      "armor": 28.0,
+      "armor_toughness": 16.0,
+      "magic_armor": 24.0,
+      "projectile_speed": 5.0,
+      "projectile_accuracy": 0.1,
+      "charging_value": 1.1,
+      "enchantment_value": 100.0,
+      "rarity": 100.0,
+      "knockback_resistance": 0.2,
+      "traits": [
+        {
+          "trait": "kubejs:cursium_ingot",
+          "level": 1,
+          "conditions": []
         },
-        "silentgear:binding": {
-            "traits": [
-                {
-                    "conditions": [],
-                    "level": 1,
-                    "trait": "kubejs:cursium_ingot"
-                }
-            ]
+        {
+          "trait": "reveriefoundry:maledictus_rage_slam",
+          "level": 1,
+          "conditions": []
         }
+      ],
+      "armor/boots": 5.0,
+      "armor/chestplate": 12.0,
+      "armor/helmet": 6.0,
+      "armor/leggings": 5.0
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "trait": "kubejs:cursium_ingot",
+          "level": 1,
+          "conditions": []
+        },
+        {
+          "trait": "reveriefoundry:maledictus_rage_slam",
+          "level": 1,
+          "conditions": []
+        }
+      ]
     }
+  }
 }

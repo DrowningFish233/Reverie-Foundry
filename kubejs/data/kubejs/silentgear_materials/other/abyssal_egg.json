@@ -1,0 +1,60 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.cataclysm:abyssal_egg"
+    },
+    "name_prefix": "",
+    "color": "#be94fd",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "cataclysm:abyssal_egg"
+    },
+    "can_salvage": true,
+    "categories": [
+      "organic",
+      "slime",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:setting": {
+      "armor": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "armor_toughness": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "traits": [
+        {
+          "trait": "reveriefoundry:leviathan_beam",
+          "level": 1,
+          "conditions": []
+        }
+      ],
+      "max_mana": {
+        "operation": "ADD",
+        "value": 100.0
+      },
+      "spell_power": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      },
+      "spell_slots": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "spell_resist": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      }
+    }
+  }
+}

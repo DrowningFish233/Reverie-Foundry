@@ -137,7 +137,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: 11.445102911814544d
-			y: -5.5d
+			y: -7.0d
 		}
 		{
 			click_action: "none:"
@@ -157,7 +157,7 @@
 			rotation: 0.0d
 			width: 1.1d
 			x: 11.5d
-			y: -9.0d
+			y: -10.5d
 		}
 		{
 			click_action: "none:"
@@ -167,7 +167,7 @@
 			rotation: 0.0d
 			width: 1.5d
 			x: 10.980817197528808d
-			y: -11.95540981361551d
+			y: -13.45540981361551d
 		}
 		{
 			click_action: "none:"
@@ -177,7 +177,7 @@
 			rotation: 0.0d
 			width: 1.8d
 			x: 11.5d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			click_action: "none:"
@@ -187,7 +187,7 @@
 			rotation: 0.0d
 			width: 1.5d
 			x: 11.5d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			click_action: "none:"
@@ -197,7 +197,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: 11.5d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			click_action: "none:"
@@ -666,7 +666,7 @@
 				value: 1L
 			}]
 			x: 9.0d
-			y: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["53C821423589F530"]
@@ -687,7 +687,7 @@
 				value: 1L
 			}]
 			x: 9.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["53C821423589F530"]
@@ -708,7 +708,7 @@
 				value: 1L
 			}]
 			x: 9.0d
-			y: -5.4874473292416255d
+			y: -6.9874473292416255d
 		}
 		{
 			dependencies: ["7CB11EBD34BA84FB"]
@@ -749,7 +749,7 @@
 				value: 1L
 			}]
 			x: 9.0d
-			y: -9.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["53C821423589F530"]
@@ -770,7 +770,7 @@
 				value: 1L
 			}]
 			x: 9.0d
-			y: -12.0d
+			y: -13.5d
 		}
 		{
 			dependencies: ["53C821423589F530"]
@@ -791,7 +791,7 @@
 				value: 1L
 			}]
 			x: 9.0d
-			y: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -802,6 +802,7 @@
 				"35AEBBC251933E78"
 				"4E826A5530F49919"
 				"67A539CCFEDE8EBC"
+				"3CC892E55491B7D7"
 			]
 			dependency_requirement: "one_completed"
 			icon: {
@@ -918,6 +919,20 @@
 			}]
 			x: 31.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["53C821423589F530"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "3CC892E55491B7D7"
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				id: "5F0AC62F88808254"
+				type: "kill"
+				value: 1L
+			}]
+			x: 9.0d
+			y: 7.0d
 		}
 	]
 }

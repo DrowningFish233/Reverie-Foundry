@@ -1,4 +1,4 @@
-general = {disable_mod = false, auto_start = false, space_modules = true, shadow_text = false, animations = true, animationSpeed = 1.5, fontScale = 1.1, background_color = 1867534416, hide_debug_crosshair = false, hide_sidebar = true, hide_bossbar = true, always_show_profiler = false, always_show_tps = true, always_show_ping = false}
+general = {disable_mod = false, auto_start = false, space_modules = true, shadow_text = false, animations = true, animationSpeed = 1.5, fontScale = 1.1, background_color = 1867534416, hide_debug_crosshair = false, hide_sidebar = true, hide_bossbar = true, always_show_profiler = false, always_show_tps = false, always_show_ping = true}
 [[modules_left]]
 	name = "minecraft"
 	name_color = 10506797
@@ -43,12 +43,6 @@ general = {disable_mod = false, auto_start = false, space_modules = true, shadow
 	empty_lines = 1
 	enabled = true
 	lines = {nothing = true}
-[[modules_left]]
-	name = "miscleft"
-	name_color = 16645526
-	value_color = 5636095
-	enabled = true
-	lines = {misc_left = true}
 
 [[modules_right]]
 	name = "entity"
@@ -56,7 +50,7 @@ general = {disable_mod = false, auto_start = false, space_modules = true, shadow
 	value_color = 16777045
 	total_entities_color = 16755200
 	enabled = true
-	lines = {particles = true, entities = true, monster = true, creature = true, ambient = true, axolotls = false, underground_water_creature = true, water_creature = true, water_ambient = true, misc = true, glares = true, rascals = true}
+	lines = {particles = true, entities = true, monster = true, creature = true, ambient = true, axolotls = false, underground_water_creature = true, water_creature = true, water_ambient = true, misc = true, friendsandfoes_glares = true, friendsandfoes_rascals = true}
 [[modules_right]]
 	name = "chunks"
 	name_color = 43775
@@ -77,9 +71,3 @@ general = {disable_mod = false, auto_start = false, space_modules = true, shadow
 	empty_lines = 1
 	enabled = true
 	lines = {nothing = true}
-[[modules_right]]
-	name = "miscright"
-	name_color = 16645526
-	value_color = 5636095
-	enabled = true
-	lines = {misc_right = true}

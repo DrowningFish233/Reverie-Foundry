@@ -18,7 +18,7 @@ modpackMode = false
 [fpsDisplay]
   # FPS and system details overlay
   # Accepted values are: [OFF, SIMPLE, ADVANCED]
-  mode = "ADVANCED"
+  mode = "SIMPLE"
 
   # Accepted values are: [LEFT, CENTER, RIGHT]
   align = "LEFT"
@@ -38,7 +38,7 @@ modpackMode = false
 
 [fog]
   # Fog rendering and the sky blue band
-  enabled = true
+  enabled = false
   onOverworld = true
   onNether = true
   onEnd = true

@@ -1,76 +1,76 @@
 {
   "type": "silentgear:simple",
   "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.kubejs:viculeam_ingot"
+    },
+    "name_prefix": "",
+    "color": "#b52773",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
   "crafting": {
+    "ingredient": {
+      "item": "kubejs:viculeam_ingot"
+    },
     "can_salvage": true,
     "categories": [
       "metal",
       "advanced"
     ],
     "gear_type_blacklist": [],
-    "ingredient": {
-      "item": "kubejs:viculeam_ingot"
-    },
     "part_substitutes": {}
-  },
-  "display": {
-    "color": "#b52773",
-    "main_texture_type": "HIGH_CONTRAST",
-    "name": {
-      "translate": "material.silentgear.kubejs:viculeam_ingot"
-    },
-    "name_prefix": ""
   },
   "properties": {
     "silentgear:main": {
+      "durability": 1020.0,
+      "armor_durability": 28.0,
+      "harvest_speed": 8.0,
+      "harvest_tier": {
+        "name": "netherite/下界合金",
+        "level_hint": "4",
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools"
+      },
+      "attack_damage": 20.0,
+      "attack_speed": 0.1,
       "armor": 35.0,
       "armor_toughness": 8,
+      "magic_armor": 4.0,
+      "magic_damage": 4.0,
+      "ranged_damage": 2.2,
+      "draw_speed": 0.2,
+      "charging_value": 0.7,
+      "enchantment_value": 12.0,
+      "rarity": 65.0,
+      "traits": [
+        {
+          "trait": "kubejs:high_health",
+          "level": 4,
+          "conditions": []
+        },
+        {
+          "trait": "silentgear:greedy",
+          "level": 2,
+          "conditions": []
+        },
+        {
+          "trait": "silentgear:hard",
+          "level": 3,
+          "conditions": []
+        },
+        {
+          "trait": "reveriefoundry:skeletron_bone_hands",
+          "level": 1,
+          "conditions": []
+        }
+      ],
       "armor/boots": 8.0,
       "armor/chestplate": 13.0,
       "armor/helmet": 8.0,
       "armor/leggings": 6.0,
-      "armor_durability": 28.0,
-      "attack_damage": 20.0,
-      "attack_speed": 0.1,
       "attack_speed/axe": -0.1,
       "attack_speed/hoe": 0.0,
-      "charging_value": 0.7,
-      "draw_speed": 0.2,
-      "durability": 1020.0,
-      "enchantment_value": 12.0,
-      "harvest_speed": 8.0,
-      "harvest_tier": {
-        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
-        "level_hint": "4",
-        "name": "netherite/下界合金"
-      },
-      "magic_armor": 4.0,
-      "magic_damage": 4.0,
-      "spell_slots": 4.0,
-      "ranged_damage": 2.2,
-      "rarity": 65.0,
-      "traits": [
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "kubejs:ironwood_ingot"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "kubejs:high_health"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:greedy"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
-        }
-      ]
+      "spell_slots": 4.0
     },
     "silentgear:rod": {
       "harvest_speed": {
@@ -81,24 +81,48 @@
         "operation": "MULTIPLY_BASE",
         "value": 0.35
       },
-      "ranged_damage": {
-        "operation": "MULTIPLY_BASE",
-        "value": 0.1
-      },
       "magic_damage": {
         "operation": "MULTIPLY_BASE",
         "value": 0.2
       },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
       "traits": [
         {
-          "conditions": [],
+          "trait": "kubejs:high_health",
           "level": 3,
-          "trait": "kubejs:high_health"
+          "conditions": []
         },
         {
-          "conditions": [],
+          "trait": "silentgear:greedy",
           "level": 2,
-          "trait": "silentgear:greedy"
+          "conditions": []
+        }
+      ]
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "trait": "kubejs:ironwood_ingot",
+          "level": 2,
+          "conditions": []
+        },
+        {
+          "trait": "kubejs:high_health",
+          "level": 4,
+          "conditions": []
+        },
+        {
+          "trait": "silentgear:greedy",
+          "level": 2,
+          "conditions": []
+        },
+        {
+          "trait": "silentgear:hard",
+          "level": 3,
+          "conditions": []
         }
       ]
     },
@@ -117,19 +141,19 @@
       },
       "traits": [
         {
-          "conditions": [],
+          "trait": "kubejs:high_health",
           "level": 3,
-          "trait": "kubejs:high_health"
+          "conditions": []
         },
         {
-          "conditions": [],
+          "trait": "silentgear:greedy",
           "level": 1,
-          "trait": "silentgear:greedy"
+          "conditions": []
         },
         {
-          "conditions": [],
+          "trait": "silentgear:hard",
           "level": 2,
-          "trait": "silentgear:hard"
+          "conditions": []
         }
       ]
     },
@@ -148,33 +172,9 @@
       },
       "traits": [
         {
-          "conditions": [],
+          "trait": "silentgear:hard",
           "level": 2,
-          "trait": "silentgear:hard"
-        }
-      ]
-    },
-    "silentgear:binding": {
-      "traits": [
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "kubejs:ironwood_ingot"
-        },
-        {
-          "conditions": [],
-          "level": 4,
-          "trait": "kubejs:high_health"
-        },
-        {
-          "conditions": [],
-          "level": 2,
-          "trait": "silentgear:greedy"
-        },
-        {
-          "conditions": [],
-          "level": 3,
-          "trait": "silentgear:hard"
+          "conditions": []
         }
       ]
     }

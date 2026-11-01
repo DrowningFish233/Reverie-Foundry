@@ -24,29 +24,13 @@ const curiosEffects = new Map([
         player.potionEffects.add("kubejs:protect", 20 * 3, 0);
     }],
     ['kubejs:heart_of_darkness', (player, event) => {
-        const { x, y, z } = player;
-        player.potionEffects.add('kubejs:heart_of_darkness', 20 * 3, 0);
-        if (player.hasEffect('kubejs:heart_of_darkness')) {
-            if (!player.hasEffect('kubejs:use_adrenaline')) {
-                if (!player.hasEffect('kubejs:no_adrenaline')) {
-                    const currentAdrenaline = player.persistentData.getInt("adrenaline");
-                    if (currentAdrenaline < 100) {
-                        player.persistentData.putInt("adrenaline", currentAdrenaline + 1);
-                        if (currentAdrenaline + 1 === 100) {
-                            let playerName = getplayerName(player.toString());
-                            player.setStatusMessage(
-                                Text.translate('message.adrenaline.charged', [
-                                    Text.of(playerName).color('yellow')
-                                ]).color('yellow')
-                            );
-                            event.level[$playersound]
-                                (null, player.x, player.y, player.z, "kubejs:full_adrenaline", "players", 0.6, 1)
-                        }
-                    }
-                }
-            }
-        } else {
-            player.persistentData.putInt("adrenaline", 0);
+        const now = player.level.getTime();
+        const lastHurt = player.persistentData.getLong("lastHurtTick");
+
+        const safeTime = 100;
+
+        if (now - lastHurt > safeTime) {
+            player.potionEffects.add('minecraft:regeneration', 20 * 2, 1);
         }
     }]
 ]);

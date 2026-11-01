@@ -1,0 +1,6 @@
+{
+    "connectTilesAppend": [
+        "cobblemon:block/evolution/dripstone_moon_stone_ore"
+    ],
+	"minGameVersion": "1.17"
+}

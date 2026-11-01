@@ -1,0 +1,71 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.cataclysm:essence_of_the_storm"
+    },
+    "name_prefix": "",
+    "color": "#77dcd7",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "cataclysm:essence_of_the_storm"
+    },
+    "can_salvage": true,
+    "categories": [
+      "advanced",
+      "metal"
+    ],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:tip": {
+      "durability": {
+        "operation": "ADD",
+        "value": 200.0
+      },
+      "harvest_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.4
+      },
+      "attack_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.25
+      },
+      "armor": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.2
+      },
+      "armor_toughness": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "magic_armor": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "ranged_damage": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.2
+      },
+      "draw_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "projectile_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "traits": [
+        {
+          "trait": "reveriefoundry:scylla_lightning_slam",
+          "level": 1,
+          "conditions": []
+        }
+      ]
+    }
+  }
+}

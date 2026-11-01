@@ -96,4 +96,4 @@
         # Experimental. Patches vanilla light storage and scheduling, making light
         # calculations about 4.5x faster and light-data reads over 3x faster. On clients, this may
         # also provide a small improvement to 1% low FPS.
-        enabled = "False"
+        enabled = "True"

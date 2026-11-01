@@ -1,0 +1,23 @@
+{
+    "connectTilesAppend": [
+        "minecraft:deepslate_coal_ore",
+        "minecraft:deepslate_iron_ore",
+        "minecraft:deepslate_copper_ore",
+        "minecraft:deepslate_gold_ore",
+        "minecraft:deepslate_redstone_ore",
+        "minecraft:deepslate_emerald_ore",
+        "minecraft:deepslate_lapis_ore",
+        "minecraft:deepslate_diamond_ore",
+        "cobblemon:block/evolution/deepslate_dawn_stone_ore",
+        "cobblemon:block/evolution/deepslate_dusk_stone_ore",
+        "cobblemon:block/evolution/deepslate_fire_stone_ore",
+        "cobblemon:block/evolution/deepslate_ice_stone_ore",
+        "cobblemon:block/evolution/deepslate_leaf_stone_ore",
+        "cobblemon:block/evolution/deepslate_moon_stone_ore",
+        "cobblemon:block/evolution/deepslate_shiny_stone_ore",
+        "cobblemon:block/evolution/deepslate_sun_stone_ore",
+        "cobblemon:block/evolution/deepslate_thunder_stone_ore",
+        "cobblemon:block/evolution/deepslate_water_stone_ore"
+    ],
+	"minGameVersion": "1.17"
+}

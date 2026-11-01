@@ -1,6 +1,90 @@
 ServerEvents.recipes(event => {
 
     event.shaped(
+        Item.of('minecraft:diamond_spear', 1),
+        [
+            '  A',
+            ' B ',
+            'C  '
+        ],
+        {
+            A: '#c:gems/diamond',
+            B: 'silentgear:crude_tool_parts',
+            C: 'minecraft:stick'
+        }
+    )
+
+    event.shaped(
+        Item.of('minecraft:golden_spear', 1),
+        [
+            '  A',
+            ' B ',
+            'C  '
+        ],
+        {
+            A: '#c:ingots/gold',
+            B: 'silentgear:crude_tool_parts',
+            C: 'minecraft:stick'
+        }
+    )
+
+    event.shaped(
+        Item.of('minecraft:iron_spear', 1),
+        [
+            '  A',
+            ' B ',
+            'C  '
+        ],
+        {
+            A: '#c:ingots/iron',
+            B: 'silentgear:crude_tool_parts',
+            C: 'minecraft:stick'
+        }
+    )
+
+    event.shaped(
+        Item.of('minecraft:stone_spear', 1),
+        [
+            '  A',
+            ' B ',
+            'C  '
+        ],
+        {
+            A: '#c:cobblestones',
+            B: 'silentgear:crude_tool_parts',
+            C: 'minecraft:stick'
+        }
+    )
+
+    event.shaped(
+        Item.of('minecraft:wooden_spear', 1),
+        [
+            '  A',
+            ' B ',
+            'C  '
+        ],
+        {
+            A: '#minecraft:planks',
+            B: 'silentgear:crude_tool_parts',
+            C: 'minecraft:stick'
+        }
+    )
+
+
+    event.shaped(
+        Item.of("endrem:undead_eye", 1),
+        [
+            'CCC',
+            'CAC',
+            'CCC'
+        ],
+        {
+            A: 'kubejs:necroplasm',
+            C: 'minecraft:rotten_flesh'
+        }
+    )
+
+    event.shaped(
         Item.of("endrem:undead_eye", 1),
         [
             'CCC',

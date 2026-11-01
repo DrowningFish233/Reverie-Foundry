@@ -1,0 +1,17 @@
+[startup]
+	#Explicitly install bootstrap Agent JVM arguments for the next launch. Disabled by default to keep exported modpacks free of machine-specific startup paths. Restart after changing this option.
+	installBootstrapAgent = false
+	#Use a dedicated work-stealing pool for resource reload preparation instead of competing for the shared Minecraft worker pool.
+	dedicatedResourceReloadExecutor = true
+	#Use indexed resource lookup for safe pack segments while preserving vanilla priority and filter order.
+	parallelResourceLookup = true
+	#Cache per-pack resource existence checks. The persisted cache is loaded lazily so it does not block startup IO.
+	cacheResourceExistence = true
+	#Validate persisted per-mod resource caches with the full JAR SHA-256 instead of the default module/version/file-name identity. Reads each JAR once per launch; changing this option requires a restart and rebuilds these caches.
+	verifyJarHash = false
+
+[compatibility]
+	#Opt in to isolating failures owned by explicitly configured third-party resource reload listener classes.
+	isolateModdedResourceReloadFailures = true
+	#Explicit class-name prefixes that may be isolated when resource reload fails. Wildcards are rejected so unrelated failures remain visible.
+	isolatedResourceReloadListenerPatterns = []

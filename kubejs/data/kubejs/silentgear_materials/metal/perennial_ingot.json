@@ -46,6 +46,11 @@
 					"conditions": [],
 					"level": 1,
 					"trait": "kubejs:unchecked_growth"
+				},
+				{
+					"conditions": [],
+					"level": 1,
+					"trait": "reveriefoundry:skeletron_bone_hands"
 				}
 			]
 		},

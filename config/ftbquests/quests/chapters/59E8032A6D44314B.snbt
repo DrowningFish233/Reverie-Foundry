@@ -176,5 +176,26 @@
 			x: 1.5d
 			y: -4.5d
 		}
+		{
+			icon: {
+				id: "kubejs:rift_probe"
+			}
+			id: "391CAE104F77FA71"
+			tasks: [{
+				id: "4087C417AC2DB78A"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			id: "7360E6C863DF84C0"
+			tasks: [{
+				id: "20ED83C86890B1FB"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
 	]
 }

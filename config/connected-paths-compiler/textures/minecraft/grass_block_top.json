@@ -1,0 +1,11 @@
+{
+  "blockID": "minecraft:grass_block",
+  "connectTilesAppend": [
+    "biomeswevegone:block/overgrown_stone_top",
+    "biomeswevegone:block/overgrown_dacite_top",
+    "biomeswevegone:block/white_overgrown_dacite_top",
+    "biomeswevegone:block/lush_grass_block_top"
+  ],
+  "tintIndex": 0,
+  "tintBlock": "minecraft:grass_block"
+}

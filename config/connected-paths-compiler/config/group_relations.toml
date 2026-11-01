@@ -1,0 +1,835 @@
+[always_on_top]
+items = [
+    "powders",
+    "granular_soils",
+    "sculks",
+    "grasses",
+    "mosses",
+    "wet_soils",
+    "crumbly_soils",
+    "dry_soils",
+    "cut_copper_like_bricks",
+    "stone_bricks_like_bricks",
+    "mud_bricks_like_bricks",
+    "quartz_brciks_like_bricks",
+    "sculk_grime_bricks_like_bricks",
+    "resin_brciks_like_bricks",
+    "nether_bricks_like_bricks",
+    "dacite_bricks_like_bricks",
+    "sculk_stone_tiles_like_bricks",
+    "cut_gloomslate_like_bricks",
+    "chalk_bricks_like_bricks",
+    "chiseled_mega_meteorid_brick_like_bricks",
+    "brimstone_bricks_like_bricks",
+    "deepslate_tiles_like_bricks",
+    "bedrock",
+    "raw_ores",
+    "cobblestones",
+    "gems",
+    "crystals",
+    "special_rocks",
+    "slates",
+    "rocks",
+    "stones",
+    "smooth_blocks",
+    "logs",
+    "stripped_logs",
+    "woods",
+    "stripped_woods",
+    "planks",
+    "nature",
+    "ices",
+    "terracottas",
+    "concretes",
+    "wools",
+    "obsidians",
+    "non_full_hitbox"
+]
+
+[powders]
+items = [
+    "granular_soils",
+    "sculks",
+    "grasses",
+    "mosses",
+    "wet_soils",
+    "crumbly_soils",
+    "dry_soils",
+    "cut_copper_like_bricks",
+    "stone_bricks_like_bricks",
+    "mud_bricks_like_bricks",
+    "quartz_brciks_like_bricks",
+    "sculk_grime_bricks_like_bricks",
+    "resin_brciks_like_bricks",
+    "nether_bricks_like_bricks",
+    "dacite_bricks_like_bricks",
+    "sculk_stone_tiles_like_bricks",
+    "cut_gloomslate_like_bricks",
+    "chalk_bricks_like_bricks",
+    "chiseled_mega_meteorid_brick_like_bricks",
+    "brimstone_bricks_like_bricks",
+    "deepslate_tiles_like_bricks",
+    "bedrock",
+    "raw_ores",
+    "cobblestones",
+    "gems",
+    "crystals",
+    "special_rocks",
+    "slates",
+    "rocks",
+    "stones",
+    "smooth_blocks",
+    "logs",
+    "stripped_logs",
+    "woods",
+    "stripped_woods",
+    "planks",
+    "nature",
+    "ices",
+    "terracottas",
+    "concretes",
+    "wools",
+    "obsidians",
+    "non_full_hitbox"
+]
+
+[granular_soils]
+items = [
+    "sculks",
+    "grasses",
+    "mosses",
+    "wet_soils",
+    "crumbly_soils",
+    "dry_soils",
+    "cut_copper_like_bricks",
+    "stone_bricks_like_bricks",
+    "mud_bricks_like_bricks",
+    "quartz_brciks_like_bricks",
+    "sculk_grime_bricks_like_bricks",
+    "resin_brciks_like_bricks",
+    "nether_bricks_like_bricks",
+    "dacite_bricks_like_bricks",
+    "sculk_stone_tiles_like_bricks",
+    "cut_gloomslate_like_bricks",
+    "chalk_bricks_like_bricks",
+    "chiseled_mega_meteorid_brick_like_bricks",
+    "brimstone_bricks_like_bricks",
+    "deepslate_tiles_like_bricks",
+    "bedrock",
+    "raw_ores",
+    "cobblestones",
+    "gems",
+    "crystals",
+    "special_rocks",
+    "slates",
+    "rocks",
+    "stones",
+    "smooth_blocks",
+    "logs",
+    "stripped_logs",
+    "woods",
+    "stripped_woods",
+    "planks",
+    "nature",
+    "ices",
+    "terracottas",
+    "concretes",
+    "wools",
+    "obsidians",
+    "non_full_hitbox"
+]
+
+[sculks]
+items = [
+    "grasses",
+    "mosses",
+    "wet_soils",
+    "crumbly_soils",
+    "dry_soils",
+    "cut_copper_like_bricks",
+    "stone_bricks_like_bricks",
+    "mud_bricks_like_bricks",
+    "quartz_brciks_like_bricks",
+    "sculk_grime_bricks_like_bricks",
+    "resin_brciks_like_bricks",
+    "nether_bricks_like_bricks",
+    "dacite_bricks_like_bricks",
+    "sculk_stone_tiles_like_bricks",
+    "cut_gloomslate_like_bricks",
+    "chalk_bricks_like_bricks",
+    "chiseled_mega_meteorid_brick_like_bricks",
+    "brimstone_bricks_like_bricks",
+    "deepslate_tiles_like_bricks",
+    "bedrock",
+    "raw_ores",
+    "cobblestones",
+    "gems",
+    "crystals",
+    "special_rocks",
+    "slates",
+    "rocks",
+    "stones",
+    "smooth_blocks",
+    "logs",
+    "stripped_logs",
+    "woods",
+    "stripped_woods",
+    "planks",
+    "nature",
+    "ices",
+    "terracottas",
+    "concretes",
+    "wools",
+    "obsidians",
+    "non_full_hitbox"
+]
+
+[grasses]
+items = [
+    "mosses",
+    "wet_soils",
+    "crumbly_soils",
+    "dry_soils",
+    "cut_copper_like_bricks",
+    "stone_bricks_like_bricks",
+    "mud_bricks_like_bricks",
+    "quartz_brciks_like_bricks",
+    "sculk_grime_bricks_like_bricks",
+    "resin_brciks_like_bricks",
+    "nether_bricks_like_bricks",
+    "dacite_bricks_like_bricks",
+    "sculk_stone_tiles_like_bricks",
+    "cut_gloomslate_like_bricks",
+    "chalk_bricks_like_bricks",
+    "chiseled_mega_meteorid_brick_like_bricks",
+    "brimstone_bricks_like_bricks",
+    "deepslate_tiles_like_bricks",
+    "bedrock",
+    "raw_ores",
+    "cobblestones",
+    "gems",
+    "crystals",
+    "special_rocks",
+    "slates",
+    "rocks",
+    "stones",
+    "smooth_blocks",
+    "logs",
+    "stripped_logs",
+    "woods",
+    "stripped_woods",
+    "planks",
+    "nature",
+    "ices",
+    "terracottas",
+    "concretes",
+    "wools",
+    "obsidians",
+    "non_full_hitbox"
+]
+
+[mosses]
+items = [
+    "wet_soils",
+    "crumbly_soils",
+    "dry_soils",
+    "cut_copper_like_bricks",
+    "stone_bricks_like_bricks",
+    "mud_bricks_like_bricks",
+    "quartz_brciks_like_bricks",
+    "sculk_grime_bricks_like_bricks",
+    "resin_brciks_like_bricks",
+    "nether_bricks_like_bricks",
+    "dacite_bricks_like_bricks",
+    "sculk_stone_tiles_like_bricks",
+    "cut_gloomslate_like_bricks",
+    "chalk_bricks_like_bricks",
+    "chiseled_mega_meteorid_brick_like_bricks",
+    "brimstone_bricks_like_bricks",
+    "deepslate_tiles_like_bricks",
+    "bedrock",
+    "raw_ores",
+    "cobblestones",
+    "gems",
+    "crystals",
+    "special_rocks",
+    "slates",
+    "rocks",
+    "stones",
+    "smooth_blocks",
+    "logs",
+    "stripped_logs",
+    "woods",
+    "stripped_woods",
+    "planks",
+    "nature",
+    "ices",
+    "terracottas",
+    "concretes",
+    "wools",
+    "obsidians",
+    "non_full_hitbox"
+]
+
+[wet_soils]
+items = [
+    "crumbly_soils",
+    "dry_soils",
+    "cut_copper_like_bricks",
+    "stone_bricks_like_bricks",
+    "mud_bricks_like_bricks",
+    "quartz_brciks_like_bricks",
+    "sculk_grime_bricks_like_bricks",
+    "resin_brciks_like_bricks",
+    "nether_bricks_like_bricks",
+    "dacite_bricks_like_bricks",
+    "sculk_stone_tiles_like_bricks",
+    "cut_gloomslate_like_bricks",
+    "chalk_bricks_like_bricks",
+    "chiseled_mega_meteorid_brick_like_bricks",
+    "brimstone_bricks_like_bricks",
+    "deepslate_tiles_like_bricks",
+    "bedrock",
+    "raw_ores",
+    "cobblestones",
+    "gems",
+    "crystals",
+    "special_rocks",
+    "slates",
+    "rocks",
+    "stones",
+    "smooth_blocks",
+    "logs",
+    "stripped_logs",
+    "woods",
+    "stripped_woods",
+    "planks",
+    "nature",
+    "ices",
+    "terracottas",
+    "concretes",
+    "wools",
+    "obsidians",
+    "non_full_hitbox"
+]
+
+[crumbly_soils]
+items = [
+    "dry_soils",
+    "cut_copper_like_bricks",
+    "stone_bricks_like_bricks",
+    "mud_bricks_like_bricks",
+    "quartz_brciks_like_bricks",
+    "sculk_grime_bricks_like_bricks",
+    "resin_brciks_like_bricks",
+    "nether_bricks_like_bricks",
+    "dacite_bricks_like_bricks",
+    "sculk_stone_tiles_like_bricks",
+    "cut_gloomslate_like_bricks",
+    "chalk_bricks_like_bricks",
+    "chiseled_mega_meteorid_brick_like_bricks",
+    "brimstone_bricks_like_bricks",
+    "deepslate_tiles_like_bricks",
+    "bedrock",
+    "raw_ores",
+    "cobblestones",
+    "gems",
+    "crystals",
+    "special_rocks",
+    "slates",
+    "rocks",
+    "stones",
+    "smooth_blocks",
+    "logs",
+    "stripped_logs",
+    "woods",
+    "stripped_woods",
+    "planks",
+    "nature",
+    "ices",
+    "terracottas",
+    "concretes",
+    "wools",
+    "obsidians",
+    "non_full_hitbox"
+]
+
+[dry_soils]
+items = [
+	"cut_copper_like_bricks",
+    "stone_bricks_like_bricks",
+    "mud_bricks_like_bricks",
+    "quartz_brciks_like_bricks",
+    "sculk_grime_bricks_like_bricks",
+    "resin_brciks_like_bricks",
+    "nether_bricks_like_bricks",
+    "dacite_bricks_like_bricks",
+    "sculk_stone_tiles_like_bricks",
+    "cut_gloomslate_like_bricks",
+    "chalk_bricks_like_bricks",
+    "chiseled_mega_meteorid_brick_like_bricks",
+    "brimstone_bricks_like_bricks",
+    "deepslate_tiles_like_bricks",
+    "bedrock",
+    "raw_ores",
+    "cobblestones",
+    "gems",
+    "crystals",
+    "special_rocks",
+    "slates",
+    "rocks",
+    "stones",
+    "smooth_blocks",
+    "logs",
+    "stripped_logs",
+    "woods",
+    "stripped_woods",
+    "planks",
+    "nature",
+    "ices",
+    "terracottas",
+    "concretes",
+    "wools",
+    "obsidians",
+    "non_full_hitbox"
+]
+
+[cut_copper_like_bricks]
+items = [
+    "stone_bricks_like_bricks", 
+    "mud_bricks_like_bricks", 
+    "quartz_brciks_like_bricks", 
+    "sculk_grime_bricks_like_bricks", 
+    "resin_brciks_like_bricks", 
+    "nether_bricks_like_bricks", 
+    "dacite_bricks_like_bricks", 
+    "sculk_stone_tiles_like_bricks", 
+    "cut_gloomslate_like_bricks", 
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[stone_bricks_like_bricks]
+items = [
+    
+    "mud_bricks_like_bricks", 
+    "quartz_brciks_like_bricks", 
+    "sculk_grime_bricks_like_bricks", 
+    "resin_brciks_like_bricks", 
+    "nether_bricks_like_bricks", 
+    "dacite_bricks_like_bricks", 
+    "sculk_stone_tiles_like_bricks", 
+    "cut_gloomslate_like_bricks", 
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[mud_bricks_like_bricks]
+items = [
+    "quartz_brciks_like_bricks", 
+    "sculk_grime_bricks_like_bricks", 
+    "resin_brciks_like_bricks", 
+    "nether_bricks_like_bricks", 
+    "dacite_bricks_like_bricks", 
+    "sculk_stone_tiles_like_bricks", 
+    "cut_gloomslate_like_bricks", 
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[quartz_brciks_like_bricks]
+items = [
+    "sculk_grime_bricks_like_bricks", 
+    "resin_brciks_like_bricks", 
+    "nether_bricks_like_bricks", 
+    "dacite_bricks_like_bricks", 
+    "sculk_stone_tiles_like_bricks", 
+    "cut_gloomslate_like_bricks", 
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[sculk_grime_bricks_like_bricks]
+items = [
+    "resin_brciks_like_bricks", 
+    "nether_bricks_like_bricks", 
+    "dacite_bricks_like_bricks", 
+    "sculk_stone_tiles_like_bricks", 
+    "cut_gloomslate_like_bricks", 
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[resin_brciks_like_bricks]
+items = [
+    "nether_bricks_like_bricks", 
+    "dacite_bricks_like_bricks", 
+    "sculk_stone_tiles_like_bricks", 
+    "cut_gloomslate_like_bricks", 
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[nether_bricks_like_bricks]
+items = [
+    "dacite_bricks_like_bricks", 
+    "sculk_stone_tiles_like_bricks", 
+    "cut_gloomslate_like_bricks", 
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[dacite_bricks_like_bricks]
+items = [
+    "sculk_stone_tiles_like_bricks", 
+    "cut_gloomslate_like_bricks", 
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[sculk_stone_tiles_like_bricks]
+items = [
+    "cut_gloomslate_like_bricks", 
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[cut_gloomslate_like_bricks]
+items = [
+    "chalk_bricks_like_bricks", 
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[chalk_bricks_like_bricks]
+items = [
+    "chiseled_mega_meteorid_brick_like_bricks", 
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[chiseled_mega_meteorid_brick_like_bricks]
+items = [
+    "brimstone_bricks_like_bricks", 
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[brimstone_bricks_like_bricks]
+items = [
+    "deepslate_tiles_like_bricks",
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[deepslate_tiles_like_bricks]
+items = [
+    "bedrock", 
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes"
+]
+
+[bedrock]
+items = [
+    "raw_ores", 
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes", 
+    "non_full_hitbox"
+]
+
+[raw_ores]
+items = [
+    "cobblestones", 
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes", 
+    "non_full_hitbox"
+]
+
+[cobblestones]
+items = [
+    "gems", 
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes", 
+    "non_full_hitbox"
+]
+
+[gems]
+items = [
+    "crystals", 
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes", 
+    "non_full_hitbox"
+]
+
+[crystals]
+items = [
+    "special_rocks", 
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes", 
+    "non_full_hitbox"
+]
+
+[special_rocks]
+items = [
+    "slates", 
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes", 
+    "non_full_hitbox"
+]
+
+[slates]
+items = [
+    "rocks", 
+    "stones", 
+    "terracottas", 
+    "concretes", 
+    "non_full_hitbox"
+]
+
+[rocks]
+items = [
+    "stones", 
+    "terracottas", 
+    "concretes", 
+    "non_full_hitbox"
+]
+
+[stones]
+items = [
+    "terracottas", 
+    "concretes", 
+    "non_full_hitbox"
+]
+
+[smooth_blocks]
+items = []
+
+[logs]
+items = []
+
+[stripped_logs]
+items = []
+
+[woods]
+items = []
+
+[stripped_woods]
+items = []
+
+[planks]
+items = []
+
+[nature]
+items = []
+
+[ices]
+items = []
+
+[terracottas]
+items = []
+
+[concretes]
+items = []
+
+[wools]
+items = []
+
+[obsidians]
+items = []
+
+[non_full_hitbox]
+items = []

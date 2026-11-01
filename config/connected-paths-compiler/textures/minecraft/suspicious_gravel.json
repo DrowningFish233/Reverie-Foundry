@@ -1,0 +1,9 @@
+{
+    "connectTiles": "minecraft:suspicious_gravel_0",
+    "connectTilesAppend": [
+        "minecraft:suspicious_gravel_1",
+        "minecraft:suspicious_gravel_2",
+        "minecraft:suspicious_gravel_3"
+    ],
+	"minGameVersion": "1.20"
+}

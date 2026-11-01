@@ -252,36 +252,20 @@
 				id: "minecraft:small_amethyst_bud"
 			}
 			id: "110C8BBFDBFBA375"
-			rewards: [
-				{
-					auto: "enabled"
-					command: "/kubejs stages clear @p"
-					exclude_from_claim_all: true
-					icon: {
-						id: "minecraft:wither_skeleton_skull"
-					}
-					id: "462D52E228A4BD62"
-					ignore_reward_blocking: true
-					permission_level: 4
-					silent: true
-					team_reward: false
-					type: "command"
+			rewards: [{
+				auto: "enabled"
+				command: "/reveriefoundry difficulty personaldifficulty set n13 @p"
+				exclude_from_claim_all: true
+				icon: {
+					id: "minecraft:wither_skeleton_skull"
 				}
-				{
-					auto: "enabled"
-					command: "/kubejs stages add @p difficult_13"
-					exclude_from_claim_all: true
-					icon: {
-						id: "minecraft:wither_skeleton_skull"
-					}
-					id: "2C437A71A95E6CCC"
-					ignore_reward_blocking: true
-					permission_level: 4
-					silent: true
-					team_reward: false
-					type: "command"
-				}
-			]
+				id: "2C437A71A95E6CCC"
+				ignore_reward_blocking: true
+				permission_level: 4
+				silent: true
+				team_reward: false
+				type: "command"
+			}]
 			tasks: [{
 				id: "100B5EC4DB6167A4"
 				type: "checkmark"
@@ -394,34 +378,18 @@
 				id: "minecraft:player_head"
 			}
 			id: "142C80D05D6B1FDC"
-			rewards: [
-				{
-					auto: "no_toast"
-					command: "/kubejs stages clear @p"
-					exclude_from_claim_all: true
-					icon: {
-						id: "minecraft:enchanted_golden_apple"
-					}
-					id: "667762DC69B2AD5E"
-					ignore_reward_blocking: true
-					permission_level: 4
-					silent: true
-					team_reward: false
-					type: "command"
+			rewards: [{
+				auto: "no_toast"
+				command: "/reveriefoundry difficulty personaldifficulty clear @p"
+				icon: {
+					id: "minecraft:enchanted_golden_apple"
 				}
-				{
-					auto: "no_toast"
-					command: "/kubejs stages add @p difficult_0"
-					icon: {
-						id: "minecraft:enchanted_golden_apple"
-					}
-					id: "24D0E080B0406AF6"
-					ignore_reward_blocking: true
-					permission_level: 4
-					silent: true
-					type: "command"
-				}
-			]
+				id: "24D0E080B0406AF6"
+				ignore_reward_blocking: true
+				permission_level: 4
+				silent: true
+				type: "command"
+			}]
 			tasks: [{
 				id: "4841C69FA35E0AB5"
 				type: "checkmark"
@@ -549,6 +517,18 @@
 			}]
 			x: 2.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["56CB359C8D5426A3"]
+			id: "6BC92F6A6F4CB222"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "57236190017A11C6"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -7.5d
 		}
 	]
 }

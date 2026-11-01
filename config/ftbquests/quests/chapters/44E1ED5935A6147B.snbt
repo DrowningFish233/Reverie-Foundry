@@ -432,19 +432,19 @@
 			id: "41555B67D70627EB"
 			rewards: [
 				{
-					id: "5AD767D2D58DA236"
-					item: {
-						count: 1
-						id: "kubejs:heart_of_darkness"
-					}
-					type: "item"
-				}
-				{
 					count: 3
 					id: "3EA1B1B8A0F5D66F"
 					item: {
 						count: 1
 						id: "minecraft:enchanted_golden_apple"
+					}
+					type: "item"
+				}
+				{
+					id: "1C66B7D0B028942E"
+					item: {
+						count: 1
+						id: "kubejs:heart_of_darkness"
 					}
 					type: "item"
 				}

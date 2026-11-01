@@ -1,0 +1,247 @@
+#Reverie Foundry - JEI Layout Configuration
+[jei_layout]
+
+	#Icon Settings
+	[jei_layout.icon]
+		#Size of the icon in pixels
+		# Default: 18
+		# Range: 8 ~ 32
+		iconSize = 18
+		#X position of the icon
+		# Default: 1
+		# Range: -10 ~ 50
+		iconX = 1
+		#Y position of the icon
+		# Default: 1
+		# Range: -10 ~ 50
+		iconY = 1
+		#X position where text starts
+		# Default: 23
+		# Range: 0 ~ 100
+		textStartX = 23
+
+	#Text Settings
+	[jei_layout.text]
+		#Top padding for text
+		# Default: 4
+		# Range: 0 ~ 50
+		topPadding = 4
+		#Height of each text line
+		# Default: 9
+		# Range: 5 ~ 30
+		lineHeight = 9
+		#Spacing between lines
+		# Default: 2
+		# Range: 0 ~ 20
+		lineSpacing = 2
+		#Indentation for nested text
+		# Default: 10
+		# Range: 0 ~ 50
+		indent = 10
+		#Height of title text
+		# Default: 12
+		# Range: 5 ~ 30
+		titleHeight = 12
+		#Spacing between sections
+		# Default: 4
+		# Range: 0 ~ 20
+		sectionSpacing = 4
+
+	#Scroll Area Settings
+	[jei_layout.scroll_area]
+		#X position of the scroll area
+		# Default: 0
+		# Range: -20 ~ 50
+		scrollAreaX = 0
+		#Y position of the scroll area
+		# Default: 3
+		# Range: -20 ~ 50
+		scrollAreaY = 3
+		#Width of the scroll area
+		# Default: 164
+		# Range: 50 ~ 500
+		scrollAreaWidth = 164
+		#Height of the scroll area
+		# Default: 180
+		# Range: 50 ~ 500
+		scrollAreaHeight = 180
+
+	#Slot Layout Settings
+	[jei_layout.slots]
+		#X position of material area
+		# Default: 1
+		# Range: -50 ~ 100
+		materialAreaStartX = 1
+		#Y position of material area
+		# Default: 100
+		# Range: 0 ~ 200
+		materialAreaStartY = 100
+		#Size of slots in pixels
+		# Default: 18
+		# Range: 8 ~ 32
+		slotSize = 18
+		#Number of slots per row
+		# Default: 9
+		# Range: 1 ~ 18
+		slotsPerRow = 9
+
+	#Text Limits
+	[jei_layout.limits]
+		#Maximum number of parts per line
+		# Default: 3
+		# Range: 1 ~ 10
+		maxPartsPerLine = 3
+		#Maximum width of trait line before wrapping
+		# Default: 35
+		# Range: 10 ~ 100
+		maxTraitLineWidth = 35
+		#Maximum width of tooltip before wrapping
+		# Default: 35
+		# Range: 10 ~ 100
+		tooltipWidth = 35
+		#Maximum width of text before wrapping
+		# Default: 140
+		# Range: 50 ~ 300
+		textMaxWidth = 140
+
+	#Color Settings
+	[jei_layout.colors]
+		#Gray text color (hex format)
+		textColorGray = "0xFF888888"
+		#Purple text color (hex format)
+		textColorPurple = "0xFFAA00AA"
+		#Black text color (hex format)
+		textColorBlack = "0xFF000000"
+		#Dark gray text color (hex format)
+		textColorDarkGray = "0xFF555555"
+		#Label text color (Minecraft color code)
+		textColorLabel = "§3"
+		#Value text color (Minecraft color code)
+		textColorValue = "§f"
+		#Title text color (Minecraft color code)
+		textColorTitle = "§6§l"
+		#Subtitle text color (Minecraft color code)
+		textColorSubtitle = "§b§n"
+		#Property name text color (Minecraft color code)
+		textColorPropName = "§7"
+
+	#Row Limit Settings
+	[jei_layout.row_limits]
+		#Maximum number of material rows to display (if dynamic calculation is disabled)
+		# Default: 3
+		# Range: 1 ~ 10
+		maxMaterialRows = 3
+		#Fixed maximum number of rows (used when dynamic calculation is disabled)
+		# Default: 3
+		# Range: 1 ~ 10
+		fixedMaxRows = 5
+		#Enable dynamic calculation of rows based on available space (if false, uses fixedMaxRows)
+		enableDynamicRowCalculation = true
+
+#Loot Finder Settings - Client side configuration
+[loot_locator]
+	#Enable Loot Finder functionality
+	enabled = true
+	#Horizontal search radius in blocks for finding loot containers
+	# Default: 64
+	# Range: 16 ~ 256
+	searchRadiusXZ = 64
+	#Vertical search radius in blocks for finding loot containers
+	# Default: 32
+	# Range: 8 ~ 128
+	searchRadiusY = 32
+	#Duration of the glow effect in seconds when using the item
+	# Default: 10
+	# Range: 1 ~ 60
+	glowDuration = 10
+	#Cooldown time in seconds before the item can be used again
+	# Default: 5
+	# Range: 0 ~ 30
+	glowCooldown = 5
+	#How often (in ticks) the item searches for nearby loot containers. 20 ticks = 1 second
+	# Default: 20
+	# Range: 5 ~ 100
+	searchFrequency = 20
+	#How long (in ticks) to cache search results to improve performance
+	# Default: 100
+	# Range: 20 ~ 300
+	searchCacheDuration = 100
+
+#Damage Number Settings
+[damage_numbers]
+	#Enable damage number particles
+	enabled = true
+	#Enable text shadow for damage numbers
+	shadow = true
+
+#Better Combat Settings
+[better_combat]
+	#Global switch for Better Combat combat system
+	enabled = true
+
+#Combat Telegraph Indicator Settings
+[windup_indicator]
+	#Draw the attack windup indicator above mobs that are about to hit you
+	#Only shows while a Curio carrying the #reveriefoundry:blocking tag is equipped
+	enabled = true
+	#Overall size multiplier of the indicator
+	# Default: 1.0
+	# Range: 0.25 ~ 3.0
+	scale = 1.0
+	#Draw the gold ring marking the moment you should parry
+	showParryNotch = true
+	#How many ticks before the hit lands the gold ring sits at on a zero-ping connection.
+	#Your ping is added on top of this automatically.
+	#Pressing within this many ticks before the hit lands counts as a perfect parry, so the
+	#ring lines up with the perfect window.
+	# Default: 2
+	# Range: 0 ~ 20
+	parryNotchTicks = 2
+	#Play audio cues: a whoosh when a windup starts and a chime on the parry notch
+	soundsEnabled = true
+	#Volume multiplier for the indicator sounds
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	soundVolume = 1.0
+	#Do not draw the indicator for attackers farther than this many blocks
+	# Default: 48.0
+	# Range: 4.0 ~ 128.0
+	maxDistance = 48.0
+
+#Adrenaline HUD - the icon drawn above the vanilla experience bar.
+#The values themselves (charge rate, burst bonus, ...) are per personal difficulty tier
+#and live in data packs: data/<namespace>/personal_difficulty/*.json
+[adrenaline_hud]
+	#Draw the adrenaline icon above the experience bar
+	enabled = true
+	#Size multiplier of the icon
+	# Default: 1.0
+	# Range: 0.5 ~ 3.0
+	scale = 1.0
+	#Distance in pixels from the bottom edge of the screen to the bottom of the icon.
+	#The vanilla experience bar sits 32px above the bottom edge and the experience level
+	#number is drawn just above it, so keep this above 42 to avoid overlapping them.
+	# Default: 41
+	# Range: 0 ~ 200
+	offsetY = 41
+
+#Stamina HUD - the bar drawn in the bottom-left corner, tucked against the hotbar.
+#The bar itself is 98x16 and shrinks automatically if the window is too narrow to fit it.
+[stamina_hud]
+	#Draw the stamina bar
+	enabled = true
+	#Size multiplier of the bar
+	# Default: 1.0
+	# Range: 0.5 ~ 3.0
+	scale = 1.0
+	#Horizontal offset in pixels from the default spot, positive moves the bar right
+	# Default: 0
+	# Range: -200 ~ 200
+	offsetX = 0
+	#Vertical offset in pixels from the bottom edge, positive moves the bar up
+	# Default: 0
+	# Range: 0 ~ 200
+	offsetY = 0
+	#When the bar is full and nothing is being spent, fade it out over two seconds.
+	#Turn this off to keep the bar on screen all the time.
+	fadeWhenFull = true

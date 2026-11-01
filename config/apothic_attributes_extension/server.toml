@@ -1,0 +1,4 @@
+#Fishing speed granted per level of the Lure enchantment.
+# Default: 50.0
+# Range: 0.0 ~ 1.7976931348623157E308
+fishing_speed_per_lure = 50.0

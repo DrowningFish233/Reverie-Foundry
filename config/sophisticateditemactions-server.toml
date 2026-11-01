@@ -1,0 +1,4 @@
+#Server-side Settings
+[server]
+	#Whether recipe viewer restock buttons can pull recipe ingredients from nearby storage
+	recipeRestockEnabled = true

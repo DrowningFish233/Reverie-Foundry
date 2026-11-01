@@ -1,0 +1,297 @@
+{
+  "trail_appearance": {
+    "default_appearance": {
+      "primary": {
+        "color_rgba": 4294967193,
+        "glows": false
+      },
+      "secondary": {
+        "color_rgba": 2576980326,
+        "glows": false
+      }
+    },
+    "conditional": {
+      "is_enchanted": {
+        "primary": {
+          "color_rgba": 1725562777,
+          "glows": true
+        },
+        "secondary": {
+          "color_rgba": 2582052684,
+          "glows": true
+        }
+      }
+    }
+  },
+  "animation_based": {
+    "bettercombat:one_handed_slash_horizontal_right": [
+      {
+        "particle_type": "slash90",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "bettercombat:one_handed_slash_horizontal_left": [
+      {
+        "particle_type": "slash90",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 180.0
+      }
+    ],
+    "bettercombat:one_handed_uppercut_right": [
+      {
+        "particle_type": "slash90",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 75.0
+      }
+    ],
+    "bettercombat:one_handed_swipe_horizontal_right": [
+      {
+        "particle_type": "slash90",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": -0.1
+      }
+    ],
+    "bettercombat:one_handed_slam": [
+      {
+        "particle_type": "slash90",
+        "x_addition": 0.05,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 45.0,
+        "pitch_addition": 0.0,
+        "roll_set": -85.0
+      }
+    ],
+    "bettercombat:one_handed_stab": [
+      {
+        "particle_type": "stab",
+        "x_addition": 0.0,
+        "y_addition": -0.13,
+        "z_addition": 0.2,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "bettercombat:one_handed_stab_mounted": [
+      {
+        "particle_type": "stab",
+        "x_addition": 0.0,
+        "y_addition": 0.15,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "bettercombat:one_handed_punch": [
+      {
+        "particle_type": "stab",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.15,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "bettercombat:dual_handed_slash_cross": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.2,
+        "y_addition": -0.15,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": -120.0
+      },
+      {
+        "particle_type": "slash180",
+        "x_addition": -0.2,
+        "y_addition": -0.15,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": -60.0
+      }
+    ],
+    "bettercombat:dual_handed_slash_uncross": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.2,
+        "y_addition": -0.15,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 240.0
+      },
+      {
+        "particle_type": "slash180",
+        "x_addition": -0.2,
+        "y_addition": -0.15,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 300.0
+      }
+    ],
+    "bettercombat:dual_handed_stab": [
+      {
+        "particle_type": "stab",
+        "x_addition": 0.4,
+        "y_addition": -0.3,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      },
+      {
+        "particle_type": "stab",
+        "x_addition": -0.4,
+        "y_addition": -0.3,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "bettercombat:two_handed_stab_left": [
+      {
+        "particle_type": "stab",
+        "x_addition": 0.0,
+        "y_addition": -0.15,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "bettercombat:two_handed_stab_right": [
+      {
+        "particle_type": "stab",
+        "x_addition": 0.0,
+        "y_addition": -0.15,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "bettercombat:two_handed_slash_horizontal_right": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": -5.0
+      }
+    ],
+    "bettercombat:two_handed_slash_horizontal_left": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 180.0
+      }
+    ],
+    "bettercombat:one_handed_slash_switch_blade_right": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 0.0
+      }
+    ],
+    "bettercombat:one_handed_slash_switch_blade_left": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 180.0
+      }
+    ],
+    "bettercombat:two_handed_spin": [
+      {
+        "particle_type": "slash360",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 0.0,
+        "pitch_addition": 0.0,
+        "roll_set": 180.0
+      }
+    ],
+    "bettercombat:two_handed_slash_vertical_right": [
+      {
+        "particle_type": "slash90",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 45.0,
+        "pitch_addition": 0.0,
+        "roll_set": -80.0
+      }
+    ],
+    "bettercombat:two_handed_slash_vertical_left": [
+      {
+        "particle_type": "slash90",
+        "x_addition": 0.0,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 45.0,
+        "pitch_addition": 0.0,
+        "roll_set": -100.0
+      }
+    ],
+    "bettercombat:two_handed_slam": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.1,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 45.0,
+        "pitch_addition": 0.0,
+        "roll_set": -86.0
+      }
+    ],
+    "bettercombat:two_handed_slam_heavy": [
+      {
+        "particle_type": "slash180",
+        "x_addition": 0.1,
+        "y_addition": -0.1,
+        "z_addition": 0.0,
+        "local_yaw": 45.0,
+        "pitch_addition": 0.0,
+        "roll_set": -86.0
+      }
+    ]
+  }
+}

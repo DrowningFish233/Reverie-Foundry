@@ -1,0 +1,64 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.bosses_of_mass_destruction:obsidian_heart"
+    },
+    "name_prefix": "",
+    "color": "#3c3056",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "bosses_of_mass_destruction:obsidian_heart"
+    },
+    "can_salvage": true,
+    "categories": [],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:setting": {
+      "armor": {
+        "operation": "ADD",
+        "value": 2.0
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "rarity": {
+        "operation": "ADD",
+        "value": 50.0
+      },
+      "traits": [
+        {
+          "trait": "reveriefoundry:gauntlet_quake_ring",
+          "level": 1,
+          "conditions": []
+        }
+      ],
+      "spell_power": {
+        "operation": "ADD",
+        "value": 0.1
+      },
+      "spell_resist": {
+        "operation": "ADD",
+        "value": 0.1
+      },
+      "spell_slots": {
+        "operation": "ADD",
+        "value": 2.0
+      },
+      "geas_limit": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "max_mana": {
+        "operation": "ADD",
+        "value": 50.0
+      }
+    }
+  }
+}

@@ -43,6 +43,7 @@
   "fuelList": {
     "minecraft:blaze_powder": 1200
   },
+  "fluidFuelList": {},
   "validDimensions": {
     "minecraft:the_end": true,
     "minecraft:overworld": true,

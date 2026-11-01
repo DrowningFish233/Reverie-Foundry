@@ -14,10 +14,8 @@ function applyAdaptiveReduction(entity, duration, amplifier) {
  * 根据实体ID配置减伤
  */
 const ENTITY_CONFIG = {
-    "eternal_starlight:starlight_golem": { duration: 30, level: 1 },
-    "eternal_starlight:lunar_monstrosity": { duration: 30, level: 1 },
-    "darkdoppelganger:dark_doppelganger": { duration: 20, level: 2 },
-    "bosses_of_mass_destruction:obsidilith": { duration: 20, level: 2 }
+    "eternal_starlight:starlight_golem": { duration: 20, level: 1 },
+    "eternal_starlight:lunar_monstrosity": { duration: 20, level: 1 }
 };
 
 

@@ -1,0 +1,120 @@
+[general]
+	#Performance profile. The values in the custom section apply only when this is CUSTOM.
+	#LIGHT: closest to vanilla. Mobs beyond 48 blocks from every player think every
+	#  4th tick. Pathfinding capped at 400 nodes and 4 searches per tick.
+	#BALANCED: 36 blocks, every 6th tick, 300 nodes, 3 searches per tick.
+	#AGGRESSIVE: 24 blocks, every 8th tick, 200 nodes, 2 searches per tick, and the
+	#  longest retry delays. Far mobs wander noticeably less.
+	#Mobs in combat or hurt in the last 10 seconds are never slowed down or throttled.
+	#Allowed Values: LIGHT, BALANCED, AGGRESSIVE, CUSTOM
+	profile = "BALANCED"
+	#Write the active profile to the game log when the config loads or changes.
+	logActiveProfile = false
+
+#Values used by the CUSTOM profile.
+[custom]
+
+	#Unreachable Target Cache
+	#Remembers targets a mob could not find a path to, per mob, so retries
+	#within the TTL are skipped instead of running the search again.
+	#Entries are dropped when blocks change in their target chunk.
+	#The TTL counts real time: 1 tick = 50 ms.
+	[custom.unreachable_cache]
+		#Enable the unreachable target cache.
+		enabled = true
+		#TTL in ticks for unreachable target entries.
+		# Default: 400
+		# Range: 40 ~ 1200
+		ttl = 400
+		#Maximum cache entries.
+		# Default: 2048
+		# Range: 32 ~ 4096
+		maxSize = 2048
+		#Drop entries as soon as a block changes in their target chunk.
+		#Keeps mobs responsive to doors opening, bridges being built, etc.
+		chunkInvalidation = true
+
+	#Distance Based Optimizations
+	#Mobs farther than 'distance' from every player get reduced pathfinding and AI
+	#tick rates. Near mobs always behave exactly like vanilla.
+	[custom.lod]
+		#Distance (in blocks) beyond which a mob counts as far from players.
+		# Default: 36.0
+		# Range: 16.0 ~ 256.0
+		distance = 36.0
+		#Recompute paths already being followed less often for far mobs.
+		reducedPathRecompute = true
+		#Minimum ticks between path recomputes for far mobs.
+		#Vanilla recomputes at most every 20 ticks, so values at or below 20 have no effect.
+		# Default: 100
+		# Range: 20 ~ 400
+		recomputeInterval = 100
+
+	#Search Depth Limiter
+	#Caps the maximum nodes A* can visit per pathfind.
+	#Most successful paths inside a village complete in 200 to 300 nodes.
+	#Failed pathfinds can visit 800+, so capping mostly saves CPU on failures.
+	[custom.search_depth]
+		#Enable search depth limiting.
+		enabled = true
+		#Maximum nodes A* can visit per pathfind.
+		#Vanilla default: followRange * 16 (e.g. 512 for a follow range of 32).
+		# Default: 300
+		# Range: 100 ~ 2000
+		maxNodes = 300
+
+	#Pathfinding Throttle
+	#Limits how many path computations can start per server tick.
+	#When many mobs decide to pathfind on the same tick (e.g. villagers at dawn),
+	#this spreads the work across ticks to avoid a lag spike.
+	#Only searches that actually run count. Reusing a path a mob already follows does not.
+	#A denied pathfind fails that attempt, and the mob's AI retries on its own schedule.
+	#Villager job site and bed searches count toward the limit but are never denied.
+	[custom.throttle]
+		#Enable pathfinding throttle.
+		enabled = true
+		#Maximum pathfinding computations per server tick.
+		# Default: 3
+		# Range: 1 ~ 20
+		maxPerTick = 3
+
+	#AI Tick Reduction
+	#Mobs far from every player run their AI decisions (goal selectors, and brains when
+	#idle or resting) only once every 'interval' ticks, staggered across mobs.
+	#Higher is more aggressive: 2 skips half the decisions, 8 skips seven in eight.
+	#Navigation, sensing, and movement controls still run every tick, so mobs keep
+	#moving smoothly. Mobs in liquids are exempt so they never sink or drown.
+	[custom.tick_reduction]
+		#Enable AI tick reduction for far mobs.
+		enabled = true
+		#Run AI decisions once every N ticks for far mobs. 1 = vanilla.
+		# Default: 6
+		# Range: 1 ~ 20
+		interval = 6
+
+	#Villager Job Site and Bed Retries
+	#When a villager fails to path to a free job site, bed or meeting point, vanilla
+	#retries it after a growing delay capped at 400 ticks, then forgets and starts over.
+	#This keeps the delay growing up to 'maxDelay' instead, so unreachable job blocks and
+	#beds stop costing a pathfind every few seconds. Newly placed ones are claimed
+	#immediately: the delay only applies to positions that already failed.
+	[custom.villager_poi]
+		#Enable longer retry delays for unreachable job sites and beds.
+		enabled = true
+		#Longest delay in ticks between attempts at the same position. Vanilla: 400.
+		# Default: 1200
+		# Range: 400 ~ 6000
+		maxDelay = 1200
+
+	#Brain Walk Target Retries
+	#When a villager (or another mob with a brain) finds no path at all to where it
+	#wants to walk, vanilla searches again as soon as the same destination is picked,
+	#which can be every tick. This skips repeat searches to that exact destination
+	#for 'delay' ticks, with the same outcome vanilla's failed search would have had.
+	[custom.walk_retry]
+		#Enable the repeat search delay.
+		enabled = true
+		#Ticks to skip repeat searches to a destination that just failed.
+		# Default: 40
+		# Range: 1 ~ 200
+		delay = 40

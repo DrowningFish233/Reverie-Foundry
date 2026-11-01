@@ -1465,8 +1465,9 @@ function getRandomWeapon() {
     return Item.of(WEAPONS[randomIndex]);
 }
 
+
+
 /**
- * 
  * @param {integer} interval 执行前的等待时间（单位：Tick）
  * @param {ItemEntity} entity 被抛出的物品实体
  * @param {ItemStack} mainHand 主手物品（可选）
@@ -1487,49 +1488,49 @@ function summonDarkDoppelganger(interval, entity, mainHand, helmet, chestplate, 
         let level = entity.level;
 
         try {
-            let nearestPlayer = level.getNearestPlayer(entity, 32.0);
-            if (!nearestPlayer) {
+            let player = level.getNearestPlayer(entity, 48.0);
+            if (!player) {
                 entity.discard();
                 return;
             }
 
-            let player = nearestPlayer;
-            let spawnPos = entity.position();
+            let idOf = (stack) => (stack && !stack.isEmpty()) ? String(stack.id) : '';
 
-            let boss = $ShadowOrbItem.summonDoppelgangerWithCustomEquipment(
-                level,
-                spawnPos,
+            let bossId = $RFUtils.summonFinalBoss(
                 player,
-                mainHand || getRandomWeapon(),
-                helmet || Item.of('allthewizardgear:unobtainium_mage_helmet'),
-                chestplate || Item.of('allthewizardgear:unobtainium_mage_chestplate'),
-                leggings || Item.of('allthewizardgear:unobtainium_mage_leggings'),
-                boots || Item.of('allthewizardgear:unobtainium_mage_boots')
+                idOf(mainHand),
+                '',
+                idOf(helmet),
+                idOf(chestplate),
+                idOf(leggings),
+                idOf(boots)
             );
 
-            if (boss) {
-                if (sound) {
-                    level[$playersound](
-                        null,
-                        spawnPos.x,
-                        spawnPos.y,
-                        spawnPos.z,
-                        sound,
-                        "hostile",
-                        1.0,
-                        1.0
-                    );
-                }
-
-                entity.item.count--;
-
-                if (entity.item.count <= 0) {
-                    entity.discard();
-                }
-            } else {
+            if (bossId < 0) {
                 entity.discard();
+                return;
             }
 
+            if (sound) {
+                let boss = level.getEntity(bossId);
+                let pos = boss ? boss.position() : player.position();
+                level[$playersound](
+                    null,
+                    pos.x,
+                    pos.y,
+                    pos.z,
+                    sound,
+                    "hostile",
+                    1.0,
+                    1.0
+                );
+            }
+
+            entity.item.count--;
+
+            if (entity.item.count <= 0) {
+                entity.discard();
+            }
         } catch (error) {
             entity.discard();
         }

@@ -103,6 +103,21 @@
           "trait": "silentgear:fireproof"
         }
       ]
+    },
+    "silentgear:lining": {
+      "armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "knockback_resistance": {
+        "operation": "MULTIPLY_BASE",
+        "value": 0.1
+      },
+      "magic_armor": {
+        "operation": "ADD",
+        "value": 2
+      },
+      "traits": []
     }
   }
 }

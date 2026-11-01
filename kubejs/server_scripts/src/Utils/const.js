@@ -107,6 +107,7 @@ const entity_curios_Boss = [
 
 // Boss生物 列表
 const BOSS_LIST = [
+    "terra_entity:eater_of_worlds",
     "cataclysm:ignis",
     "cataclysm:the_leviathan",
     "cataclysm:ancient_remnant",
@@ -128,7 +129,9 @@ const BOSS_LIST = [
     "terra_entity:eye_of_cthulhu",
     "terra_entity:brain_of_cthulhu",
     "terra_entity:queen_bee",
-    "irons_spellbooks:dead_king"
+    "irons_spellbooks:dead_king",
+    "eternal_starlight:lunar_monstrosity",
+    "eternal_starlight:starlight_golem"
 ];
 
 const kubejs_player = [

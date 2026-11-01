@@ -1,0 +1,6 @@
+{
+    "connectTilesAppend": [
+        "minecraft:gilded_blackstone"
+    ],
+	"minGameVersion": "1.16"
+}

@@ -1,77 +1,87 @@
 {
-    "type": "silentgear:simple",
-    "parent": "silentgear:empty",
-    "crafting": {
-        "can_salvage": true,
-        "categories": [
-            "metal"
-        ],
-        "gear_type_blacklist": [],
-        "ingredient": {
-            "item": "cataclysm:ignitium_ingot"
-        },
-        "part_substitutes": {}
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.cataclysm:ignitium_ingot"
     },
-    "display": {
-        "color": "#FF4500",
-        "main_texture_type": "HIGH_CONTRAST",
-        "name": {
-            "translate": "material.silentgear.cataclysm:ignitium_ingot"
-        },
-        "name_prefix": ""
+    "name_prefix": "",
+    "color": "#FF4500",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "cataclysm:ignitium_ingot"
     },
-    "properties": {
-        "silentgear:main": {
-            "armor": 30.0,
-            "armor/boots": 7.0,
-            "armor/chestplate": 11.0,
-            "armor/helmet": 7.0,
-            "armor/leggings": 5.0,
-            "armor_durability": 33.0,
-            "armor_toughness": 16.0,
-            "attack_damage": 25.0,
-            "attack_reach": 0.5,
-            "attack_speed": 0.0,
-            "charging_value": 1.2,
-            "durability": 1500.0,
-            "enchantment_value": 140.0,
-            "harvest_speed": 12.0,
-            "harvest_tier": {
-                "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools",
-                "level_hint": "4",
-                "name": "netherite/下界合金"
-            },
-            "knockback_resistance": 0.6,
-            "magic_armor": 28.0,
-            "projectile_speed": 5.0,
-            "projectile_accuracy": 0.1,
-            "rarity": 140.0,
-            "traits": [
-                {
-                    "conditions": [],
-                    "level": 3,
-                    "trait": "kubejs:ignitium_ingot"
-                },
-                {
-                    "conditions": [],
-                    "level": 1,
-                    "trait": "silentgear:heat_resistant"
-                }
-            ]
+    "can_salvage": true,
+    "categories": [
+      "metal"
+    ],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:main": {
+      "durability": 1500.0,
+      "armor_durability": 33.0,
+      "harvest_speed": 12.0,
+      "harvest_tier": {
+        "name": "netherite/下界合金",
+        "level_hint": "4",
+        "incorrect_blocks_for_tool": "silentgear:incorrect_for_netherite_tools"
+      },
+      "attack_damage": 25.0,
+      "attack_speed": 0.0,
+      "armor": 30.0,
+      "armor_toughness": 16.0,
+      "magic_armor": 28.0,
+      "projectile_speed": 5.0,
+      "projectile_accuracy": 0.1,
+      "charging_value": 1.2,
+      "enchantment_value": 140.0,
+      "rarity": 140.0,
+      "attack_reach": 0.5,
+      "knockback_resistance": 0.6,
+      "traits": [
+        {
+          "trait": "kubejs:ignitium_ingot",
+          "level": 3,
+          "conditions": []
         },
-        "silentgear:binding": {
-            "traits": [
-                {
-                    "conditions": [],
-                    "level": 3,
-                    "trait": "kubejs:ignitium_ingot"
-                },
-                {
-                    "conditions": [],
-                    "level": 1,
-                    "trait": "silentgear:heat_resistant"
-                }
-            ]
+        {
+          "trait": "silentgear:heat_resistant",
+          "level": 1,
+          "conditions": []
+        },
+        {
+          "trait": "reveriefoundry:ignis_meteor",
+          "level": 1,
+          "conditions": []
         }
+      ],
+      "armor/boots": 7.0,
+      "armor/chestplate": 11.0,
+      "armor/helmet": 7.0,
+      "armor/leggings": 5.0
+    },
+    "silentgear:binding": {
+      "traits": [
+        {
+          "trait": "kubejs:ignitium_ingot",
+          "level": 3,
+          "conditions": []
+        },
+        {
+          "trait": "silentgear:heat_resistant",
+          "level": 1,
+          "conditions": []
+        },
+        {
+          "trait": "reveriefoundry:ignis_meteor",
+          "level": 1,
+          "conditions": []
+        }
+      ]
     }
+  }
 }

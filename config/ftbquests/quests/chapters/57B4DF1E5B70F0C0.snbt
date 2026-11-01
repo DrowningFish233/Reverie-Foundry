@@ -103,5 +103,15 @@
 			x: -4.5d
 			y: -2.0d
 		}
+		{
+			id: "0F18E6E2B166F055"
+			tasks: [{
+				id: "42934BCF7A01D076"
+				item: { count: 1, id: "reveriefoundry:gear_json_editor" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
 	]
 }

@@ -1,6 +1,11 @@
 ServerEvents.recipes(event => {
     //唉，自己写的mod还得自己remove掉配方重写，怎么汇逝
     const items = [
+        'minecraft:wooden_spear',
+        'minecraft:stone_spear',
+        'minecraft:iron_spear',
+        'minecraft:golden_spear',
+        'minecraft:diamond_spear',
         "endrem:undead_eye",
         'reveriefoundry:gale_spinner_template',
         'reveriefoundry:gale_spinner_blueprint',

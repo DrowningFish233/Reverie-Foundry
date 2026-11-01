@@ -4,22 +4,6 @@
     "name": "b",
     "entries": [
       {
-        "key": "gui.xaero_new_waypoint",
-        "title": "新建路径点",
-        "icon": {
-          "id": "waystones:waystone",
-          "count": 1
-        }
-      },
-      {
-        "key": "gui.xaero_open_map",
-        "title": "打开世界地图",
-        "icon": {
-          "id": "minecraft:map",
-          "count": 1
-        }
-      },
-      {
         "key": "key.sophisticatedbackpacks.open_backpack",
         "title": "打开背包",
         "icon": {
@@ -48,18 +32,34 @@
         }
       },
       {
-        "key": "key.ftbquests.quests",
-        "title": "打开任务",
-        "icon": {
-          "id": "ftbquests:book",
-          "count": 1
-        }
-      },
-      {
         "key": "gui.xaero_waypoints_key",
         "title": "打开路径点界面",
         "icon": {
           "id": "waystones:return_scroll",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.sophisticateditemactions.deposit_item",
+        "title": "将物品卸货至容器",
+        "icon": {
+          "id": "sophisticatedbackpacks:advanced_deposit_upgrade",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.sophisticateditemactions.item_highlight",
+        "title": "高亮存有物品的容器",
+        "icon": {
+          "id": "terra_curio:searchlight",
+          "count": 1
+        }
+      },
+      {
+        "key": "key.sophisticateditemactions.restock_item",
+        "title": "从容器中补充物品",
+        "icon": {
+          "id": "sophisticatedbackpacks:restock_upgrade",
           "count": 1
         }
       }

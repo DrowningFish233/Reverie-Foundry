@@ -1,4 +1,3 @@
-// 材料阶段配置
 const materialStages = {
     stage1: {
         color: "green",

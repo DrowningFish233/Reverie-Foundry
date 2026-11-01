@@ -173,3 +173,80 @@
 	enabled = true
 	#Enable text shadow for damage numbers
 	shadow = true
+
+#Better Combat Settings
+[better_combat]
+	#Default preference for the Better Combat combat system
+	#The real state is stored per world, in
+	#<world>/reveriefoundry/bettercombat/bettercombat_data.json (one entry per player),
+	#and synced from the server. This value is only used as the starting value for a
+	#world that has no record for you yet. Toggling in game only changes your own
+	#state in the current world; other players are never affected.
+	enabled = true
+
+#Combat Telegraph Indicator Settings
+[windup_indicator]
+	#Draw the attack windup indicator above mobs that are about to hit you
+	#Only shows while a Curio carrying the #reveriefoundry:blocking tag is equipped
+	enabled = true
+	#Overall size multiplier of the indicator
+	# Default: 1.0
+	# Range: 0.25 ~ 3.0
+	scale = 1.0
+	#Draw the gold ring marking the moment you should parry
+	showParryNotch = true
+	#How many ticks before the hit lands the gold ring sits at on a zero-ping connection.
+	#Your ping is added on top of this automatically.
+	#Pressing within this many ticks before the hit lands counts as a perfect parry, so the
+	#ring lines up with the perfect window.
+	# Default: 2
+	# Range: 0 ~ 20
+	parryNotchTicks = 2
+	#Play audio cues: a whoosh when a windup starts and a chime on the parry notch
+	soundsEnabled = true
+	#Volume multiplier for the indicator sounds
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	soundVolume = 1.0
+	#Do not draw the indicator for attackers farther than this many blocks
+	# Default: 48.0
+	# Range: 4.0 ~ 128.0
+	maxDistance = 48.0
+
+#Adrenaline HUD - the icon drawn above the vanilla experience bar.
+#The values themselves (charge rate, burst bonus, ...) are per personal difficulty tier
+#and live in data packs: data/<namespace>/personal_difficulty/*.json
+[adrenaline_hud]
+	#Draw the adrenaline icon above the experience bar
+	enabled = true
+	#Size multiplier of the icon
+	# Default: 1.0
+	# Range: 0.5 ~ 3.0
+	scale = 1.0
+	#Distance in pixels from the bottom edge of the screen to the bottom of the icon.
+	#The vanilla experience bar sits 32px above the bottom edge and the experience level
+	#number is drawn just above it, so keep this above 42 to avoid overlapping them.
+	# Default: 41
+	# Range: 0 ~ 200
+	offsetY = 41
+
+#Stamina HUD - the bar drawn in the bottom-left corner, tucked against the hotbar.
+#The bar itself is 98x16 and shrinks automatically if the window is too narrow to fit it.
+[stamina_hud]
+	#Draw the stamina bar
+	enabled = true
+	#Size multiplier of the bar
+	# Default: 1.0
+	# Range: 0.5 ~ 3.0
+	scale = 1.0
+	#Horizontal offset in pixels from the default spot, positive moves the bar right
+	# Default: 0
+	# Range: -200 ~ 200
+	offsetX = 0
+	#Vertical offset in pixels from the bottom edge, positive moves the bar up
+	# Default: 0
+	# Range: 0 ~ 200
+	offsetY = 0
+	#When the bar is full and nothing is being spent, fade it out over two seconds.
+	#Turn this off to keep the bar on screen all the time.
+	fadeWhenFull = true

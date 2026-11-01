@@ -4,6 +4,6 @@
   "maxCollision": 16,
   "gridSize": 1,
   "densityWindow": 4,
-  "densityThreshold": 12,
+  "densityThreshold": 16,
   "maxThreads": 1
 }

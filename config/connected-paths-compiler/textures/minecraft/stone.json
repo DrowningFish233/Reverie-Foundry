@@ -1,0 +1,22 @@
+{
+    "connectTilesAppend": [
+        "minecraft:coal_ore",
+        "minecraft:iron_ore",
+        "minecraft:copper_ore",
+        "minecraft:gold_ore",
+        "minecraft:redstone_ore",
+        "minecraft:emerald_ore",
+        "minecraft:lapis_ore",
+        "minecraft:diamond_ore",
+        "cobblemon:block/evolution/dawn_stone_ore",
+        "cobblemon:block/evolution/dusk_stone_ore",
+        "cobblemon:block/evolution/fire_stone_ore",
+        "cobblemon:block/evolution/ice_stone_ore",
+        "cobblemon:block/evolution/leaf_stone_ore",
+        "cobblemon:block/evolution/moon_stone_ore",
+        "cobblemon:block/evolution/shiny_stone_ore",
+        "cobblemon:block/evolution/sun_stone_ore",
+        "cobblemon:block/evolution/thunder_stone_ore",
+        "cobblemon:block/evolution/water_stone_ore"
+    ]
+}

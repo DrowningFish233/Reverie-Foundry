@@ -1,0 +1,48 @@
+{
+  "type": "silentgear:simple",
+  "parent": "silentgear:empty",
+  "display": {
+    "name": {
+      "translate": "material.silentgear.kubejs:blood_orb"
+    },
+    "name_prefix": "",
+    "color": "#d4555a",
+    "main_texture_type": "HIGH_CONTRAST"
+  },
+  "crafting": {
+    "ingredient": {
+      "item": "kubejs:blood_orb"
+    },
+    "can_salvage": true,
+    "categories": [
+      "slime",
+      "organic",
+      "intermediate"
+    ],
+    "gear_type_blacklist": [],
+    "part_substitutes": {}
+  },
+  "properties": {
+    "silentgear:binding": {
+      "attack_damage": {
+        "operation": "ADD",
+        "value": 1.0
+      },
+      "attack_speed": {
+        "operation": "MULTIPLY_BASE",
+        "value": -0.1
+      },
+      "attack_reach": {
+        "operation": "ADD",
+        "value": 0.25
+      },
+      "traits": [
+        {
+          "trait": "reveriefoundry:eye_proliferation",
+          "level": 1,
+          "conditions": []
+        }
+      ]
+    }
+  }
+}
