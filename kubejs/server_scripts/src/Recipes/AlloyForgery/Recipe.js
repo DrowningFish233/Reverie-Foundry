@@ -615,4 +615,14 @@ ServerEvents.recipes(event => {
             .setMinForgeTier(1)
             .setFuelPerTick(10)
     );
+
+    registerCustomRecipe(
+        new AlloyForgingRecipeJSON()
+            .addInput('alltheores:tin_ingot', 1)
+            .addInput('minecraft:copper_ingot', 1)
+            .setOutput('alltheores:bronze_ingot', 2)
+            .addOverride('3+', 'alltheores:bronze_ingot', 3)
+            .setMinForgeTier(1)
+            .setFuelPerTick(10)
+    );
 });

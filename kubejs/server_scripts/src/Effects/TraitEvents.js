@@ -2663,7 +2663,8 @@ RFTrait('kubejs:moonpools', 0)
     })
     .register();
 
-
+/*
+已由mod实现
 RFTrait('kubejs:ultimine_test', 0)
     .blockBroken(event => {
         const { player, block } = event;
@@ -2676,7 +2677,7 @@ RFTrait('kubejs:ultimine_test', 0)
         executeUltimine(player, pos, blockId);
     })
     .register();
-
+*/
 
 // 引力锚点
 RFTrait('kubejs:gravity_anchor', 0)

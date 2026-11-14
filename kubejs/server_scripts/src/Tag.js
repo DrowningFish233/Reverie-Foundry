@@ -71,6 +71,7 @@ ServerEvents.tags('item', event => {
         'reveriefoundry:sundering_anchor',
     )
     event.add('kubejs:tools/weapon',
+        'reveriefoundry:soul_spear',
         'reveriefoundry:yoyos',
         'reveriefoundry:whip',
         'reveriefoundry:boomerang',

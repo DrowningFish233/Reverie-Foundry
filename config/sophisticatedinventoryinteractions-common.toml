@@ -1,0 +1,18 @@
+#Common settings
+[common]
+
+		[common.controls.search]
+			#Hides the search box in containers with this many usable slots or fewer.
+			#Usable slots are non-player slots, excluding anything listed in Screen Slot Exclusions.
+			#With the default, search is hidden in hoppers (5) and dispensers/droppers (9), but shown in chests (27).
+			# Default: 9
+			# Range: > 0
+			hideAtOrBelowActionableContainerSlots = 9
+
+		[common.controls.sortBy]
+			#Hides the sort-by button in containers with this many usable slots or fewer.
+			#When hidden, the sort button moves into its place.
+			#With the default, sort-by is hidden in hoppers (5) and dispensers/droppers (9), but shown in chests (27).
+			# Default: 9
+			# Range: > 0
+			hideAtOrBelowActionableContainerSlots = 9

@@ -1,4 +1,10 @@
 ServerEvents.recipes(event => {
+    event.shapeless(
+        Item.of('malum:malignant_pewter_ingot', 9),
+        [
+            'malum:block_of_malignant_pewter',
+        ]
+    );
 
     event.shapeless(
         Item.of("minecraft:black_dye", 4),

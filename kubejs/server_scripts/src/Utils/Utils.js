@@ -1812,7 +1812,7 @@ function getNeighbors(pos) {
     }
     return neighbors;
 }
-
+/*已弃用*/
 function executeUltimine(player, startPos, sourceBlockId) {
     const level = player.level;
     const tool = player.getMainHandItem();

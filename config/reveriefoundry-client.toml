@@ -250,3 +250,15 @@
 	#When the bar is full and nothing is being spent, fade it out over two seconds.
 	#Turn this off to keep the bar on screen all the time.
 	fadeWhenFull = true
+
+#Refined Storage wireless terminal compatibility.
+#If the player inventory cannot hold all missing recipe ingredients, place the ingredients
+#directly into the opened workbench instead of restocking them into the inventory.
+#Set both options below to false to always require free inventory space.
+[refined_storage]
+	#Allow direct workbench filling when the player inventory is full
+	directFillWhenInventoryFull = true
+	#Always place ingredients directly into the opened workbench, even when the inventory has room.
+	#This avoids putting recipe ingredients into the player inventory at all.
+	#Falls back to the normal inventory restock when the workbench layout cannot be filled directly.
+	directFillAlways = false

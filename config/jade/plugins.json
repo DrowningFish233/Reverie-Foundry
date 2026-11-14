@@ -76,7 +76,8 @@
     "entity_variant": true
   },
   "reveriefoundry": {
-    "custom_tooltip": true
+    "custom_tooltip": true,
+    "biomancy_cradle": true
   },
   "ftbquests": {
     "barrier": true
@@ -115,15 +116,6 @@
   },
   "quark": {
     "oretoise_eating_cooldown": true
-  },
-  "naraka": {
-    "soul_smithing_block": true,
-    "entity_data": true,
-    "nectarium_core": true,
-    "soul_stabilizer": true
-  },
-  "productivemetalworks": {
-    "casting": true
   },
   "waystones": {
     "waystone": true

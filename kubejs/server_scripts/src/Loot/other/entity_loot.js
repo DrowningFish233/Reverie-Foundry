@@ -713,4 +713,15 @@ LootJS.modifiers(event => {
                 })
             )
         );
+
+    event.addEntityModifier([
+        "bosses_of_mass_destruction:obsidilith"
+    ])
+        .addLoot(
+            LootEntry.alternative(
+                LootEntry.of('bosses_of_mass_destruction:obsidian_heart').apply(item => {
+                    item.setCount({ min: 2, max: 4 });
+                })
+            )
+        );
 });

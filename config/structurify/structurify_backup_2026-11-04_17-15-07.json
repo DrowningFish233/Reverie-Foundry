@@ -1,0 +1,17 @@
+{
+  "config_version": "2.0.43",
+  "config_datetime": "2026-11-04_17-13-31",
+  "general": {
+    "prevent_structure_overlap": true
+  },
+  "structure_namespaces": [
+    {
+      "name": "global",
+      "enable_min_distance_from_world_center": true,
+      "min_distance_from_world_center": 16
+    }
+  ],
+  "structures": [],
+  "structure_sets": [],
+  "structure_template_pools": []
+}

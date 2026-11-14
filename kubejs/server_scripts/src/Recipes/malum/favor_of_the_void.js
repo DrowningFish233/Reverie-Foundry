@@ -95,4 +95,8 @@ ServerEvents.recipes(event => {
     registerCustomRecipe(
         new VoidFavorRecipeJSON('eternal_starlight:deepsilver_ingot', 'kubejs:midnight_abyssal_ingot')
     );
+
+    registerCustomRecipe(
+        new VoidFavorRecipeJSON('minecraft:copper_ingot', 'kubejs:strontium_ingot')
+    );
 });

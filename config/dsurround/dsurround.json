@@ -73,7 +73,7 @@
     "replaceThunderSounds": false,
     // Enables playing biome background music while in creative
     // Default: false
-    "playBiomeMusicWhileCreative": true,
+    "playBiomeMusicWhileCreative": false,
     // Enables display of toast messages for credited music
     // Default: true
     "displayToastMessagesForMusic": false,
@@ -139,13 +139,13 @@
   "fireflyOptions": {
     // Enable/disable fireflies
     // Default: true
-    "enableFireflies": true,
+    "enableFireflies": false,
     // Enable/disable a soft glow around fireflies
     // Default: true
-    "enableGlow": true,
+    "enableGlow": false,
     // Enable/disable fireflies lighting the grass, leaves and ground close to them. Not shown while a shader pack is in use
     // Default: true
-    "enableLight": true
+    "enableLight": false
   },
   // Configuration options for entity effects
   "entityEffects": {
@@ -214,7 +214,7 @@
     "suppressProjectileParticleTrails": false,
     // Smoke, ash, leaves and spores, from the game and other mods, drift with the wind out in the open
     // Default: true
-    "windBlowsParticles": true
+    "windBlowsParticles": false
   },
   // Configuration options for the compass and clock overlay
   "compassAndClockOptions": {
@@ -305,9 +305,12 @@
     // Frost forms on the outside of clear glass windows when it is cold
     // Default: true
     "enableWindowFrost": false,
-    // Mist lying low over the ground in swamps and eerie biomes: off, or how finely it is drawn. Fast costs least; Fabulous costs several times Fancy
-    // Values: NONE, FAST, FANCY, FABULOUS, default: "FANCY"
-    "groundFogQuality": "NONE",
+    // Mist lying low over the ground in swamps and eerie biomes, drifting with the wind
+    // Default: true
+    "enableGroundFog": false,
+    // How finely the ground fog is drawn. Fast costs least; Fabulous costs several times Fancy
+    // Values: FAST, FANCY, FABULOUS, default: "FANCY"
+    "groundFogQuality": "FANCY",
     // Clouds that change with the weather: scattered puffs that build up through fair afternoons, a low dark deck in a storm, towering in a thunderstorm. Drawn in place of vanilla's clouds
     // Default: true
     "enableDynamicClouds": false,

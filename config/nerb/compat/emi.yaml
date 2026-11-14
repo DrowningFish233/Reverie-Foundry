@@ -1,3 +1,3 @@
-# Specifies the list of sidebars that should be disabled/enabled when the recipe book button is pressed. Only works when TOGGLE mode is enabled. Supported values: index, craftables, favorites, lookup-history, craft-history, chess. If none of the values are specified, clicking the recipe book button will disable the entire EMI UI. Even though all sidebars are listed here, EMI itself may prevent some its UI elements from being disabled.
+# Specifies which EMI sidebar page types to hide/show when the recipe book button is pressed. Only works when TOGGLE mode is enabled. A sidebar is hidden when its active page has a listed type; matching subpanels are hidden separately. Supported values: index, craftables, favorites, lookup-history, craft-history, chess. The chess type refers to EMI's chess board. Set toggleableSidebars: [] to toggle the entire EMI UI.
 toggleableSidebars:
 - craftables

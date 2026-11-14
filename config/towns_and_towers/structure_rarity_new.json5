@@ -1,5 +1,5 @@
 /*
-This config file makes it possible to change the spacing, separation, salt (and frequency) of Towns and Towers' structure sets. Big thanks to Cristelknight for making this all possible.
+This config makes it possible to change the spacing, separation, salt (and frequency) of Towns and Towers' structure sets.
 	SPACING ---  controls how far a structure can be from others of its kind
 	SEPARATION --- controls how close to each other two structures of the same type can be.
 By default, the values should be 48/24 for villages and outposts (spacing/separation respectively) - a hypothetical village is going to appear not further than 48 chunks away (ca. 760 blocks), but not closer than 24 chunks (ca. 380 blocks).
@@ -15,29 +15,29 @@ PMC link: https://www.planetminecraft.com/data-pack/towns-amp-towers-structure-o
 GitHub Repository: [NEED TO MAKE ONE]
 */
 {
-	// Here you can find all pillager outposts.
-	"towers": {
-		// DEFAULT 48
-		"spacing": 48,
-		// DEFAULT 24
-		"separation": 12,
-		"frequency": 0.2,
-		"salt": 213742069
-	},
 	// Here you can find all structures that aren't villages or outposts.
 	"other": {
-		// DEFAULT 32
-		"spacing": 32,
+		"salt": 213742069,
 		// DEFAULT 16
 		"separation": 16,
-		"salt": 213742069
+		// DEFAULT 32
+		"spacing": 32
+	},
+	// Here you can find all pillager outposts.
+	"towers": {
+		"frequency": 0.2,
+		"salt": 213742069,
+		// DEFAULT 24
+		"separation": 12,
+		// DEFAULT 48
+		"spacing": 48
 	},
 	// Here you can find all villages.
 	"towns": {
-		// DEFAULT 48
-		"spacing": 51,
+		"salt": 213742069,
 		// DEFAULT 24
 		"separation": 12,
-		"salt": 213742069
+		// DEFAULT 48
+		"spacing": 51
 	}
 }

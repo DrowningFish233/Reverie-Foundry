@@ -12,6 +12,7 @@
 		"reveriefoundry:reaping_drop": "NORMAL",
 		"terra_entity:jei_plugin": "DISABLED",
 		"reveriefoundry:catalyst_salvage": "NORMAL",
+		"reveriefoundry:biomancy": "NORMAL",
 		"reveriefoundry:silentgear_traits": "NORMAL"
 	},
 	// Default dispatch strategy overrides.

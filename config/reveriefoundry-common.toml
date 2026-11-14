@@ -129,6 +129,9 @@
 	starlight_golem = true
 	#Boss pool for the Boss Rush. Every entry is an entity id.
 	#Only entities present in the registry are used; duplicates and the final boss itself are ignored.
+	#Cataclysm bosses are kept, except the Leviathan which needs its own abyssal arena.
+	#Skeletron, Dead King, Fire Boss, Brain of Cthulhu, Dungeon Guardian and the BOMD bosses
+	#are always filtered out because they are hard-bound to their own arena/structure.
 	#The number of entries controls how much health each kill removes.
 	dark_doppelganger_rush_bosses = ["cataclysm:ignis", "cataclysm:maledictus", "cataclysm:ender_guardian", "cataclysm:netherite_monstrosity", "cataclysm:the_harbinger", "cataclysm:the_leviathan", "cataclysm:ancient_remnant", "cataclysm:scylla", "bosses_of_mass_destruction:gauntlet", "bosses_of_mass_destruction:lich", "bosses_of_mass_destruction:obsidilith", "bosses_of_mass_destruction:void_blossom", "terra_entity:dungeon_guardian", "terra_entity:skeletron", "terra_entity:king_slime", "terra_entity:eye_of_cthulhu", "terra_entity:brain_of_cthulhu", "terra_entity:queen_bee", "terra_entity:eater_of_worlds", "irons_spellbooks:fire_boss", "irons_spellbooks:dead_king", "minecraft:wither"]
 	#Let the final Dark Doppelganger break blocks it overlaps or gets stuck on, Cataclysm-style.

@@ -34,9 +34,6 @@
             "value": false
         },
         "enable_profiles_announcement": false,
-        "enable_inventory_buttons": {
-            "value": false
-        },
         "continuous_crafting_saved_value": false,
         "show_sort_in_columns_button": {
             "value": false
